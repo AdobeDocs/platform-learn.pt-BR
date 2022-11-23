@@ -3,9 +3,9 @@ title: Configurar permissões para o tutorial
 description: Saiba como solicitar acesso ao Experience Platform Web SDK e configurar a permissão necessária para concluir o tutorial Implementar o Adobe Experience Cloud com Web SDK.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 6%
 
 ---
@@ -16,14 +16,14 @@ Saiba como solicitar acesso ao Experience Platform Web SDK e configurar a permis
 
 ## Coleção de dados
 
-* Ter permissão para **[!UICONTROL Desenvolver]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprovar]**, **[!UICONTROL Publicar]**, **[!UICONTROL Gerenciar extensões]** e **[!UICONTROL Gerenciar ambientes]** propriedades da tag. Para obter mais informações sobre permissões de tags, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Ter permissão para **[!UICONTROL Desenvolver]**, **[!UICONTROL Editar]**, **[!UICONTROL Aprovar]**, **[!UICONTROL Publicar]**, **[!UICONTROL Gerenciar extensões]**, **[!UICONTROL Gerenciar ambientes]** e **[!UICONTROL Gerenciar propriedades]**. Para obter mais informações sobre permissões de tags, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * Se você estiver concluindo a lição de encaminhamento de eventos opcional, tenha uma licença de produto que inclua o encaminhamento de borda e o item de permissão **[!UICONTROL Plataformas]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 Esses recursos devem estar disponíveis para todos os clientes do Experience Cloud, mesmo que você não seja um cliente de um aplicativo baseado em plataforma como a CDP em tempo real.
 
-* Acesso ao **produção padrão** sandbox.
+* Acesso ao **produção padrão**, **&quot;Prod&quot;** sandbox (.
 * Acesso ao **[!UICONTROL Gerenciar esquemas]** e **[!UICONTROL Exibir esquemas]** under **[!UICONTROL Modelagem de dados]**
 * Acesso ao **[!UICONTROL Gerenciar namespaces de identidade]** e **[!UICONTROL Exibir namespaces de identidade]** under **[!UICONTROL Identity Management]**
 * Acesso ao **[!UICONTROL Gerenciar datastreams]** e **[!UICONTROL Visualizar fluxos de dados]** under **[!UICONTROL Coleta de dados]**

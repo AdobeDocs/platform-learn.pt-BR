@@ -3,10 +3,10 @@ title: Configurar um namespace de identidade
 description: Saiba como configurar namespaces de identidade para usar com o SDK da Web da Adobe Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 7%
+source-wordcount: '695'
+ht-degree: 6%
 
 ---
 
@@ -52,6 +52,11 @@ Agora, crie um namespace para a ID do CRM Luma:
 
 1. Abra o [Interface da Coleta de dados](https://launch.adobe.com/){target=&quot;_blank&quot;}
 1. Selecione a sandbox que você está usando para o tutorial
+
+   >[!NOTE]
+   >
+   >Se você for o cliente de um aplicativo baseado em plataforma, como a CDP em tempo real, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso contrário, use a variável **[!UICONTROL Prod]** sandbox.
+
 1. Selecionar **[!UICONTROL Identidades]** na navegação à esquerda
 1. Selecionar **[!UICONTROL Procurar]**
 
