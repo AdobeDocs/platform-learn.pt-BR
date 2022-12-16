@@ -3,9 +3,9 @@ title: Criar uma regra de tag
 description: Saiba como enviar um evento para a Rede de borda da plataforma com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '849'
 ht-degree: 5%
 
 ---
@@ -54,6 +54,8 @@ em que;
 
 ## Criar regra de tag
 
+Em tags, as regras são usadas para executar ações (chamadas de acionamento) sob várias condições. Você usará essa primeira regra para enviar o objeto XDM para a Rede de borda usando os SDKs da Web [!UICONTROL Enviar evento] ação. Posteriormente neste tutorial, você enviará diferentes versões do objeto XDM com base no tipo de página em que o visitante está. Por esse motivo, você usará as condições da regra para excluir esses outros tipos de páginas.
+
 Para criar uma regra de tag:
 
 1. Abra a propriedade de tag usada neste tutorial
@@ -84,7 +86,7 @@ Para criar uma regra de tag:
 1. Adicione mais três exceções para os seguintes caminhos de URL
 
    * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** para `/content/luma/us/en/user/checkout/order/thank-you.html`
+   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
    * **`Core - product page`** para `/products/` com o interruptor Regex ligado
 
    ![Adicionar condições](assets/rule-condition-exception-all.png)
