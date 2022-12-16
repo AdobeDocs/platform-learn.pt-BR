@@ -3,9 +3,9 @@ title: Configurar o Adobe Analytics usando o Experience Platform Web SDK
 description: Saiba como configurar o Adobe Analytics usando o Experience Platform Web SDK. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 2%
 
 ---
@@ -121,7 +121,7 @@ Em seguida, capture dados adicionais da camada de dados do Luma e envie-os para 
 
 ### Criar elementos de dados de comércio eletrônico
 
-Durante a lição Criar elementos de dados , você [elementos de dados JavaScript criados](create-data-elements.md#create-data-elements-to-capture-the-data-layer) que capturou o conteúdo e os detalhes de identidade. Agora, você criará elementos de dados adicionais para capturar dados de comércio eletrônico. Porque a variável [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html)O {target=&quot;_blank&quot;} usa diferentes estruturas de camada de dados para páginas e produtos de detalhes do produto no carrinho. Você deve criar elementos de dados para cada cenário. Use os trechos de código fornecidos abaixo:
+Durante a lição Criar elementos de dados , você [elementos de dados JavaScript criados](create-data-elements.md#create-data-elements-to-capture-the-data-layer) que capturou o conteúdo e os detalhes de identidade. Agora, você criará elementos de dados adicionais para capturar dados de comércio eletrônico. Porque a variável [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html)O {target=&quot;_blank&quot;} usa diferentes estruturas de camada de dados para páginas e produtos de detalhes do produto no carrinho. Você deve criar elementos de dados para cada cenário. Será necessário criar alguns elementos de dados de código personalizados para capturar o que é necessário na camada de dados do Luma, que pode ou não ser necessária durante a implementação em seu próprio site. Nesse caso, é necessário executar um loop por uma variedade de itens do carrinho de compras para capturar detalhes específicos de cada produto. Use os trechos de código fornecidos abaixo:
 
 1. Abra a propriedade de tag usada para o tutorial
 1. Ir para **[!UICONTROL Elementos de dados]**
