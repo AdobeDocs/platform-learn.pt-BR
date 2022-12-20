@@ -2,7 +2,7 @@
 title: Criar um fluxo de dados
 description: Criar um fluxo de dados
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
@@ -34,7 +34,7 @@ A próxima tela permite que você adicione quais produtos e serviços do Adobe d
 
 As empresas geralmente têm um caminho de promoção para qualquer atualização de site. Alguém na empresa (um profissional de marketing ou engenheiro, dependendo das mudanças) normalmente testa suas alterações em um ambiente de desenvolvimento que somente essa pessoa está usando. Uma vez que se sintam confortáveis com as alterações, as alterações são promovidas para um ambiente de preparo onde recebem mais testes. Por fim, as alterações são publicadas no site de produção que os usuários veem. Os datastreams são compatíveis com esse padrão de promoção.
 
-Se você estiver suportando aplicativos baseados em plataforma como Real-time CDP, Journey Optimizer ou Customer Journey Analytics, os conjuntos de dados adicionais deverão ser criados nas sandboxes separadas da Platform que correspondem a esses ambientes.
+Se você estiver suportando aplicativos baseados em plataforma como Real-Time CDP, Journey Optimizer ou Customer Journey Analytics, os conjuntos de dados adicionais deverão ser criados nas sandboxes separadas da Platform, que correspondem a esses ambientes.
 
 Se você não for um cliente da Platform, poderá criar vários conjuntos de dados em uma única sandbox e usar o recurso de cópia do conjunto de dados para duplicar as configurações.
 

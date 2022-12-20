@@ -1,15 +1,15 @@
 ---
 title: Visão geral das fontes
-description: Saiba como assimilar facilmente dados de aplicativos próprios e de terceiros da Adobe no perfil do cliente em tempo real da plataforma e no data lake.
+description: Saiba como assimilar facilmente dados de aplicativos de Adobe, próprios e de terceiros no Perfil do cliente em tempo real da plataforma e no lago de dados.
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 31%
+ht-degree: 11%
 
 ---
 

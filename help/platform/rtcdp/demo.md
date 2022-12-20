@@ -1,22 +1,22 @@
 ---
 title: Demonstração da Real-time Customer Data Platform (RTCDP)
-description: Veja uma demonstração de como o Real-time CDP é usado para coletar dados de várias fontes, mesclar esses dados em um único perfil do cliente em tempo real e ativa-los para criar experiências do cliente personalizadas.
+description: Veja uma demonstração de como a Real-Time CDP é usada para coletar dados de várias fontes, mesclar esses dados em um único perfil do cliente em tempo real e ativá-los para criar experiências personalizadas do cliente.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 5291
 thumbnail: 34558.jpg
 exl-id: 1e766a0f-7b4f-4c3d-a908-5cb4cba8b334
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 80%
+ht-degree: 6%
 
 ---
 
-# Demonstração da plataforma de dados do cliente em tempo real
+# Demonstração do Real-time Customer Data Platform
 
-Este vídeo mostra como a Real-time CDP é usada para coletar dados de várias fontes, mesclar esses dados em um único perfil do cliente em tempo real e ativa-los para criar experiências do cliente personalizadas.
+Este vídeo mostra como o Real-Time CDP é usado para coletar dados de várias fontes, mesclar esses dados em um único perfil do cliente em tempo real e ativá-los para criar experiências personalizadas do cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34558?quality=12&learn=on)
 

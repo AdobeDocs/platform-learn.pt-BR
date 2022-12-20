@@ -3,7 +3,7 @@ title: Configurar o Adobe Analytics usando o Experience Platform Web SDK
 description: Saiba como configurar o Adobe Analytics usando o Experience Platform Web SDK. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
+source-git-commit: 17b87daf399b11fb698d34bd6f1b93fa8cbaa1d4
 workflow-type: tm+mt
 source-wordcount: '3554'
 ht-degree: 2%
@@ -561,7 +561,7 @@ Neste exercício, você mapeia uma variável XDM para uma prop para que possa vi
    ![Conteúdo em tempo real](assets/analytics-real-time-content.png)
 
    **Visualizações do produto**
-   ![Exibições do produto em tempo real](assets/analytics-real-time-prodView.png)
+   ![Exibições de produto em tempo real](assets/analytics-real-time-prodView.png)
 
    **Compras**
    ![Compra em tempo real](assets/analytics-real-time-purchase.png)

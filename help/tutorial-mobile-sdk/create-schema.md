@@ -2,7 +2,7 @@
 title: Criar um esquema do XDM
 description: Saiba como criar um esquema XDM para eventos de aplicativos móveis.
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 6%
@@ -53,7 +53,7 @@ Nesta lição, você:
 
    >[!NOTE]
    >
-   > Os clientes de aplicativos baseados em plataforma, como a CDP em tempo real, devem usar uma sandbox de desenvolvimento para este tutorial. Outros clientes usarão a sandbox de produção padrão.
+   > Os clientes de aplicativos baseados em plataforma como o Real-Time CDP devem usar uma sandbox de desenvolvimento para este tutorial. Outros clientes usarão a sandbox de produção padrão.
 
 
 1. Selecionar **[!UICONTROL Esquemas]** under **[!UICONTROL Gerenciamento de dados]**.
@@ -66,7 +66,7 @@ Agora, você está na página dos schemas principais e recebe uma lista de qualq
 * **Classes** defina os aspectos comportamentais dos dados que o schema contém. Por exemplo: `XDM ExperienceEvent` captura a série de tempo, os dados do evento e `XDM Individual Profile` captura dados do atributo sobre um indivíduo.
 * **Tipos de dados** são usados como tipos de campos de referência em classes ou grupos de campos da mesma forma que campos literais básicos.
 
-As descrições acima são uma visão geral de alto nível. Para obter mais detalhes, consulte a [Blocos de construção do schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=pt-BR) vídeo ou leitura [Noções básicas da composição do schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) na documentação do produto.
+As descrições acima são uma visão geral de alto nível. Para obter mais detalhes, consulte a [Blocos de construção do schema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=pt-BR) vídeo ou leitura [Noções básicas da composição do schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR) na documentação do produto.
 
 Neste tutorial, você usa o grupo de campos Evento de experiência do consumidor e cria um grupo personalizado para demonstrar o processo.
 

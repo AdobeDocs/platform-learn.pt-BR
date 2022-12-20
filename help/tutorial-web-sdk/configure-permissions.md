@@ -3,7 +3,7 @@ title: Configurar permissões para o tutorial
 description: Saiba como solicitar acesso ao Experience Platform Web SDK e configurar a permissão necessária para concluir o tutorial Implementar o Adobe Experience Cloud com Web SDK.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 6%
@@ -21,7 +21,7 @@ Saiba como solicitar acesso ao Experience Platform Web SDK e configurar a permis
 
 ## Experience Platform
 
-Esses recursos devem estar disponíveis para todos os clientes do Experience Cloud, mesmo que você não seja um cliente de um aplicativo baseado em plataforma como a CDP em tempo real.
+Esses recursos devem estar disponíveis para todos os clientes do Experience Cloud, mesmo que você não seja um cliente de um aplicativo baseado em plataforma como o Real-Time CDP.
 
 * Acesso ao **produção padrão**, **&quot;Prod&quot;** sandbox (.
 * Acesso ao **[!UICONTROL Gerenciar esquemas]** e **[!UICONTROL Exibir esquemas]** under **[!UICONTROL Modelagem de dados]**

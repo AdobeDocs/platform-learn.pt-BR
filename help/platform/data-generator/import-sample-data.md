@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -176,10 +176,10 @@ Ao navegar pelos dados no **[!UICONTROL Atributos]** e **[!UICONTROL Eventos]** 
 Se você quiser saber mais sobre as políticas de mesclagem, governança de dados, serviço de query e o construtor de segmentos, vá para [lição 11 do tutorial Introdução aos arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). As lições anteriores deste outro tutorial permitem criar manualmente tudo o que acabou de ser preenchido por essas coleções do Postman — aproveite o início da página!
 
 Se quiser criar uma implementação de SDK da Web de amostra para vincular a essa sandbox, verifique o
-[Implementar o Adobe Experience Cloud com o tutorial do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Depois de configurar as lições &quot;Configuração inicial&quot;, &quot;Configuração de tags&quot; e &quot;Configurar Experience Platform&quot; do tutorial do SDK da Web, faça logon no site Luma usando os primeiros dez endereços de email na `luma-crm.json` arquivo usando a senha `test` para ver os fragmentos de perfil se mesclam aos dados carregados neste tutorial.
+[Implementar o Adobe Experience Cloud com o tutorial do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR). Depois de configurar as lições &quot;Configuração inicial&quot;, &quot;Configuração de tags&quot; e &quot;Configurar Experience Platform&quot; do tutorial do SDK da Web, faça logon no site Luma usando os primeiros dez endereços de email na `luma-crm.json` arquivo usando a senha `test` para ver os fragmentos de perfil se mesclam aos dados carregados neste tutorial.
 
 Se você deseja criar uma amostra da implementação do SDK móvel para vincular a essa sandbox, consulte
-[Tutorial Implementar o Adobe Experience Cloud em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). Após configurar as lições de &quot;Configuração inicial&quot;, &quot;Implementação do aplicativo&quot; e &quot;Experience Platform&quot; do tutorial do SDK da Web, faça logon no site Luma usando os primeiros endereços de email na `luma-crm.json` para ver uma mesclagem de fragmento de perfil com dados carregados neste tutorial.
+[Tutorial Implementar o Adobe Experience Cloud em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR). Após configurar as lições de &quot;Configuração inicial&quot;, &quot;Implementação do aplicativo&quot; e &quot;Experience Platform&quot; do tutorial do SDK da Web, faça logon no site Luma usando os primeiros endereços de email na `luma-crm.json` para ver uma mesclagem de fragmento de perfil com dados carregados neste tutorial.
 
 ## Redefinir ambiente de sandbox {#reset-sandbox}
 

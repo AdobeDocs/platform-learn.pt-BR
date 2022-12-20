@@ -3,7 +3,7 @@ title: Configurar um conjunto de dados
 description: Saiba como habilitar um conjunto de dados e configurar soluções do Experience Cloud. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 6%
@@ -43,7 +43,7 @@ Agora é possível criar um armazenamento de dados para informar à Rede de bord
 
    >[!NOTE]
    >
-   >Se você for o cliente de um aplicativo baseado em plataforma, como a CDP em tempo real, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso contrário, use a variável **[!UICONTROL Prod]** sandbox.
+   >Se você for o cliente de um aplicativo baseado em plataforma como o Real-Time CDP, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso contrário, use a variável **[!UICONTROL Prod]** sandbox.
 
 1. Ir para **[!UICONTROL Datastreams]** na navegação à esquerda
 1. Selecionar **[!UICONTROL Novo fluxo de dados]** no lado direito do ecrã.

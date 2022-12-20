@@ -1,12 +1,12 @@
 ---
 title: Assimilar dados usando o conector de dados do Adobe Audience Manager
-description: À medida que você reconfigura seus processos e funcionários para migrar do Adobe Audience Manager para o Real-time Customer Data Platform, você pode usar o Audience Manager Data Connector para trazer características e segmentos do AAM para a Plataforma, combiná-los com outros dados avançados (incluindo PII) e enviá-los para parceiros de destino. Este vídeo o orienta pela configuração do Conector de dados AAM para CDP em tempo real.
+description: À medida que você reconfigura seus processos e funcionários para migrar do Adobe Audience Manager para o Real-time Customer Data Platform, você pode usar o Audience Manager Data Connector para trazer características e segmentos do AAM para a Plataforma, combiná-los com outros dados avançados (incluindo PII) e enviá-los para parceiros de destino. Este vídeo o orienta pela configuração do AAM Data Connector for Real-Time CDP.
 role: Data Engineer, Data Architect
 feature: Sources
 thumbnail: 331214.jpg
 kt: 7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Assimilar dados usando o conector de dados do Adobe Audience Manager
 
-À medida que você reconfigura seus processos e funcionários para migrar do Adobe Audience Manager para o Real-time Customer Data Platform (CDP em tempo real), pode usar o conector de dados do Audience Manager para trazer características e segmentos do AAM para a plataforma, combiná-los com outros dados avançados (incluindo PII) e enviá-los para parceiros de destino. Este vídeo o orienta pela configuração do conector de dados AAM para CDP em tempo real.
+À medida que você reconfigura seus processos e funcionários para migrar do Adobe Audience Manager para o Real-time Customer Data Platform (Real-Time CDP), pode usar o conector de dados do Audience Manager para trazer características e segmentos do AAM para a Plataforma, combiná-los com outros dados avançados (incluindo PII) e enviá-los para parceiros de destino. Este vídeo o orienta pela configuração do conector de dados AAM para Real-Time CDP.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?quality=12&learn=on)
 

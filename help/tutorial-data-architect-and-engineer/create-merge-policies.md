@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -141,6 +141,6 @@ Um caso de uso importante para as políticas de mesclagem é o controle de dados
 ## Recursos adicionais
 
 * [Documentação das Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* [Referência da API das políticas de mesclagem (parte da API do perfil do cliente em tempo real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
+* [Referência da API de políticas de mesclagem (parte da API de perfil do cliente em tempo real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Agora vamos para o [estrutura de governança de dados](apply-data-governance-framework.md).

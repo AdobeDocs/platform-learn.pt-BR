@@ -6,7 +6,7 @@ feature: Sources
 kt: 3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 15%
@@ -23,4 +23,4 @@ O conector de origem da Adobe Analytics permite fazer o stream fácil de dados d
 >
 > Este vídeo é parte de um curso [Ingestão de dados para engenheiros de dados](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion?lang=pt-BR), disponível gratuitamente no Experience League!
 
-Para obter mais informações, consulte o [Documentação do conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+Para obter mais informações, consulte o [Documentação do conector de origem do Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR).

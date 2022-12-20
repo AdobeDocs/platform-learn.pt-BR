@@ -4,7 +4,7 @@ breadcrumb-title: Tutoriais
 user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 30%
@@ -56,14 +56,14 @@ ht-degree: 30%
    + [Criar e preencher um conjunto de dados](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Mapear um arquivo CSV para XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=pt-BR){target=&quot;_blank&quot;}
    + [Visão geral das fontes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Assimilar dados da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [Assimilar dados da Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
    + [Assimilar dados do Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [Assimilar dados do armazenamento na nuvem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-   + [Assimilar dados do CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [Assimilar dados do armazenamento na nuvem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=pt-BR)
+   + [Assimilar dados do CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=pt-BR)
    + [Assimilar dados de bancos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [Visão geral da assimilação de streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [Dados de fluxo com API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
-   + [Dados de fluxo usando Conectores de origem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
+   + [Dados de fluxo com API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=pt-BR)
+   + [Dados de fluxo usando Conectores de origem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=pt-BR)
    + [Tutoriais do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
    + [Tutoriais do SDK móvel](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
 + Data Science Workspace {#data-science-workspace}
@@ -103,7 +103,7 @@ ht-degree: 30%
    + [Monitorar ativação de segmento](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Monitorar fluxos de dados](/help/platform/monitoring/data-monitoring.md)
 + Perfis {#profiles}
-   + [Compreensão do Perfil do cliente em tempo real](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
+   + [Noções básicas sobre o perfil do cliente em tempo real](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagrama de visão geral do perfil](/help/platform/profiles/overview-diagram.md)
    + [Trazer dados para o Perfil](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [Personalizar detalhes de exibição de perfil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
@@ -184,7 +184,7 @@ ht-degree: 30%
    + [Tutoriais do Customer Journey Analytics](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Tutoriais do Journey Orchestration](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Tutoriais do Offer Decisioning](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=pt-BR){target=&quot;_blank&quot;}
-   + Tutoriais da CDP em tempo real{#rtcdp}
+   + Tutoriais do Real-Time CDP{#rtcdp}
       + [Visão geral](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [Visão geral da B2B Edition](/help/platform/rtcdp/b2b-overview.md)
       + [Demonstração completa](/help/platform/rtcdp/demo.md)

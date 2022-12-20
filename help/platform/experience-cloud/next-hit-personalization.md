@@ -1,5 +1,5 @@
 ---
-title: Personalização de próxima ocorrência com o Real-time CDP e o Adobe Target
+title: Personalização de próxima ocorrência com Real-Time CDP e Adobe Target
 description: Saiba como personalizar na próxima ocorrência com Real-time Customer Data Platform (CDP) e Adobe Target.
 role: User
 solution: Real-time Customer Data Platform,Target
@@ -8,16 +8,16 @@ feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experi
 kt: 9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 32%
+ht-degree: 0%
 
 ---
 
-# Personalização de próxima ocorrência com o Real-time CDP e o Adobe Target
+# Personalização de próxima ocorrência com Real-Time CDP e Adobe Target
 
-Saiba como personalizar a próxima ocorrência com o Real-time Customer Data Platform e o Adobe Target. O destino Adobe Target na CDP em tempo real permite usar segmentos de Experience Platform no Adobe Target para a mesma página e personalização da próxima página com suporte de governança e privacidade.
+Saiba como personalizar na próxima ocorrência com o Real-time Customer Data Platform e o Adobe Target. O destino do Adobe Target no Real-Time CDP permite usar segmentos do Experience Platform no Adobe Target para a mesma página e personalização da próxima página com suporte de governança e privacidade.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
 

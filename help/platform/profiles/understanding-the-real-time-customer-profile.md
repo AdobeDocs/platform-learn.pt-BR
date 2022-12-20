@@ -1,15 +1,15 @@
 ---
-title: Compreensão do Perfil do cliente em tempo real
+title: Noções básicas sobre o perfil do cliente em tempo real
 description: Este vídeo explica como a Adobe Experience Platform monta e atualiza Perfis de clientes em tempo real e como você pode acessar e usar esses perfis.
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 61%
+ht-degree: 57%
 
 ---
 

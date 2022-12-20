@@ -2,7 +2,7 @@
 title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
 description: Saiba como fazer o stream de dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -189,7 +189,7 @@ A próxima etapa é ativar o conjunto de dados e o esquema para o Perfil do clie
 
    >[!IMPORTANT]
    >
-   >    As identidades primárias são necessárias em cada registro enviado ao Perfil do cliente em tempo real. Normalmente, os campos de identidade são rotulados dentro do esquema. No entanto, ao usar mapas de identidade, os campos de identidade não ficam visíveis no esquema. Essa caixa de diálogo tem o objetivo de confirmar que você tem uma identidade primária em mente e a especificará em um mapa de identidade ao enviar seus dados. Como você sabe, o SDK da Web usa um mapa de identidade, e a ID do Experience Cloud (ECID) é a identidade primária padrão.
+   >    As identidades primárias são necessárias em cada registro enviado para o Perfil do cliente em tempo real. Normalmente, os campos de identidade são rotulados dentro do esquema. No entanto, ao usar mapas de identidade, os campos de identidade não ficam visíveis no esquema. Essa caixa de diálogo tem o objetivo de confirmar que você tem uma identidade primária em mente e a especificará em um mapa de identidade ao enviar seus dados. Como você sabe, o SDK da Web usa um mapa de identidade, e a ID do Experience Cloud (ECID) é a identidade primária padrão.
 
 
 1. Selecionar **[!UICONTROL Habilitar]**
@@ -235,7 +235,7 @@ Primeiro, você deve gerar mais dados de amostra. Repita as etapas anteriores ne
 
    ![Perfil do cliente](assets/experience-platform-validate-dataset-custProfile.png)
 
-Agora você ativou o SDK da Web da plataforma para o Experience Platform (e a CDP em tempo real! E Customer Journey Analytics! E Journey Optimizer!)!
+Agora você ativou o SDK da Web da plataforma para o Experience Platform (e o Real-Time CDP! E Customer Journey Analytics! E Journey Optimizer!)!
 
 
 [Próximo: ](setup-analytics.md)
