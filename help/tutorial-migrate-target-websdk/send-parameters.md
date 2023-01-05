@@ -1,0 +1,492 @@
+---
+title: Enviar parâmetros | Migrar o Target da at.js 2.x para o SDK da Web
+description: Saiba como enviar parâmetros de mbox, perfil e entidade para o Adobe Target usando o Experience Platform Web SDK.
+source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+workflow-type: tm+mt
+source-wordcount: '1104'
+ht-degree: 0%
+
+---
+
+# Enviar parâmetros para o Target usando o SDK da Web da plataforma
+
+As implementações do Target diferem entre sites devido à arquitetura do site, aos requisitos comerciais e aos recursos usados. A maioria das implementações do Target inclui a transmissão de vários parâmetros para informações contextuais, públicos-alvo e recomendações de conteúdo.
+
+Vamos usar uma página simples de detalhes do produto e uma página de confirmação de pedido para demonstrar as diferenças entre as bibliotecas ao transmitir parâmetros para o Target.
+
+Considere a seguinte página de exemplo usando at.js:
+
+<!--Assume the following two example pages using at.js:-->
+
+Detalhes do produto:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Product Details - Men's Shirt</title>
+  <!--Target parameters -->
+  <script>
+    targetPageParams = function() {
+      return {
+        // Property token
+        "at_property": "5a0fd9bb-67de-4b5a-0fd7-9cc09f50a58d",
+        // Mbox parameters
+        "siteSection": "product details",
+        // Profile parameters
+        "profile.gender": "male",
+        "user.categoryId": "clothing",
+        // Entity parameters for Target Recomendations
+        "entity.id": "SKU-00001-LARGE",
+        "entity.categoryId": "clothing,shirts",
+        "entity.customEntity": "some value",
+        "cartIds": "SKU-00002,SKU-00003",
+        "excludedIds": "SKU-00001-SMALL",
+        // Customer ID for cross-device profile synching and Customer Attributes
+        "mbox3rdPartyId": "TT8675309",
+      };
+    };
+  </script>
+  <!--Target at.js library loaded asynchonously-->
+  <script src="/libraries/at.js" async></script>
+</head>
+<body>
+  <h1 id="title">Men's Large Shirt</h1>
+  <p>SKU: SKU-00001-LARGE</p>
+</body>
+</html>
+```
+
+<!--
+
+Order Confirmation:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Order Confirmation</title>-->
+<!--Target parameters -->
+<!--  <script>
+    targetPageParams = function() {
+      return {
+        // Property token
+        "at_property": "5a0fd9bb-67de-4b5a-0fd7-9cc09f50a58d",
+        // Order confirmation parameters
+        "orderId": "ABC123",
+        "productPurchasedId": "SKU-00002,SKU-00003",
+        "orderTotal": 1337.89,
+        // Customer ID for cross-device profile synching and Customer Attributes
+        "mbox3rdPartyId": "TT8675309",
+      };
+    };
+  </script>-->
+<!--Target at.js library loaded asynchonously-->
+<!--  <script src="/libraries/at.js" async></script>
+</head>
+<body>
+  <h1 id="title">Order Confirmation</h1>
+  <p>Thank you for your order</p>
+</body>
+</html>
+```
+-->
+
+
+## Resumo do mapeamento de parâmetros
+
+Os parâmetros do Target usados nessas duas páginas de exemplo devem ser enviados de forma um pouco diferente usando o SDK da Web da plataforma. Há várias maneiras de enviar parâmetros para o Target usando at.js:
+
+- Defina com `targetPageParams()` para o evento de carregamento de página
+- Defina com `targetPageParamsAll()` para todas as solicitações do Target na página
+- Envie parâmetros diretamente com o `getOffer()` para um único local
+- Envie parâmetros diretamente com o `getOffers()` para um ou mais locais
+
+Para os fins deste exemplo, a variável `targetPageParams()` é utilizada.
+
+O SDK da Web da plataforma simplifica isso, fornecendo uma única maneira consistente de enviar dados sem a necessidade de funções adicionais. Todos os parâmetros devem ser transmitidos no payload com a variável `sendEvent` comando.
+
+Parâmetros transmitidos com o SDK da Web da plataforma `sendEvent` a carga está dividida em duas categorias:
+
+1. Mapeado automaticamente do `xdm` objeto
+1. Passado manualmente usando o `data.__adobe.target` objeto
+
+A tabela abaixo descreve como os parâmetros de exemplo seriam remapeados usando o SDK da Web da plataforma:
+
+| Exemplo de parâmetro at.js | Opção de SDK da Web da plataforma | Notas |
+| --- | --- | --- |
+| `at_property` | N/D | Os tokens de propriedade são configurados no [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) e não podem ser definidas no `sendEvent` chame. |
+| `siteSection` | `xdm.web.webPageDetails.siteSection` | Todos os parâmetros da mbox do Target devem ser enviados como parte do `xdm` e estar em conformidade com um esquema usando a classe XDM ExperienceEvent. Os parâmetros da mbox não podem ser transmitidos como parte do `data` objeto. |
+| `profile.gender` | `data.__adobe.target.profile.gender` | Todos os parâmetros de perfil do Target devem ser passados como parte do `data` objeto e prefixado com `profile.` a mapear adequadamente. |
+| `user.categoryId` | `data.__adobe.target.user.categoryId` | Parâmetro reservado usado para o recurso Afinidade de categorias do Target que deve ser passado como parte do `data` objeto. |
+| `entity.id` | `data.__adobe.target.entity.id` <br>OR<br> `xdm.productListItems[0].SKU` | As IDs de entidade são usadas para contadores comportamentais do Target Recommendations. Essas IDs de entidade podem ser passadas como parte do `data` objeto ou mapeado automaticamente a partir do primeiro item no `xdm.productListItems` matriz se sua implementação usar esse grupo de campos. |
+| `entity.categoryId` | `data.__adobe.target.entity.categoryId` | As IDs de categoria de entidade podem ser passadas como parte do `data` objeto. |
+| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Os parâmetros de entidade personalizados são usados para atualizar o catálogo de produtos do Recommendations. Esses parâmetros personalizados devem ser passados como parte do `data` objeto. |
+| `cartIds` | `data.__adobe.target.cartIds` | Usado para os algoritmos de recomendações baseadas em carrinho do Target. |
+| `excludedIds` | `data.__adobe.target.excludedIds` | Usado para impedir que IDs de entidade específicas retornem em um design de recomendações. |
+| `mbox3rdPartyId` | Definido no identityMap. Consulte [Sincronização de perfis com uma ID do cliente](#synching-profiles-with-a-customer-id) | Usada para sincronizar perfis do Target em dispositivos e atributos do cliente. O namespace a ser usado para a ID do cliente deve ser especificado na variável [Configuração do Target do armazenamento de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+
+{style=&quot;table-layout:auto&quot;}
+
+<!--
+| `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
+| `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | -->
+
+
+## Parâmetros personalizados
+
+Todos os parâmetros de mbox personalizados devem ser passados como dados XDM com o `sendEvent` comando. É importante garantir que o esquema XDM inclua todos os pontos de dados necessários para sua implementação do Target.
+
+Exemplo de at.js usando `targetPageParams()`:
+
+```JavaScript
+targetPageParams = function() {
+  return {
+    "siteSection": "product detail"
+  };
+};
+```
+
+Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+
+```JavaScript
+alloy("sendEvent", {
+  "xdm": {
+    "web": {
+      "webPageDetails": {
+        // Other attributes included according to xdm schema
+        "siteSection": "product detail"
+      }
+    }
+  }
+});
+```
+
+>[!NOTE]
+>
+>Como os parâmetros de mbox personalizados devem ser enviados como parte de `xdm` na `sendEvent` , qualquer parâmetro de mbox usado em sua implementação do at.js Target precisa ser reatribuído a um equivalente XDM. Isso significa que você precisa atualizar qualquer público-alvo, atividade ou script de perfil que faça referência a esses parâmetros mbox.
+
+
+## Parâmetros do perfil
+
+Os parâmetros do perfil do Target devem ser transmitidos no `data.__adobe.target` objeto no SDK da Web da plataforma `sendEvent` carga do comando.
+
+Semelhante à at.js, todos os parâmetros de perfil também devem ter o prefixo `profile.` para que o valor seja armazenado apropriadamente como um atributo de perfil persistente do Target. O reservado `user.categoryId` O parâmetro para o recurso Afinidade de categorias do Target recebe o prefixo `user.`.
+
+Exemplo de at.js usando `targetPageParams()`:
+
+```JavaScript
+targetPageParams = function() {
+  return {
+    "profile.gender": "male",
+    "user.categoryId": "clothing"
+  };
+};
+```
+
+Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+
+```JavaScript
+alloy("sendEvent", {
+  "data": {
+    "__adobe": {
+      "target": {
+        "profile.gender": "male",
+        "user.categoryId": "clothing"
+      }
+    }
+  }
+});
+```
+
+## Parâmetros da entidade
+
+Parâmetros de entidade são usados para transmitir dados comportamentais e informações de catálogo complementares para o Target Recommendations. Semelhante aos parâmetros do perfil, todos os parâmetros de entidade devem ser transmitidos no `data.__adobe.target` objeto no SDK da Web da plataforma `sendEvent` carga do comando.
+
+Parâmetros de entidade para um item específico devem receber o prefixo `entity.` para captura de dados adequada. O reservado `cartIds` e `excludedIds` os parâmetros para algoritmos do recommendations não devem ter o prefixo e o valor de cada deve conter uma lista separada por vírgulas de IDs de entidade.
+
+Exemplo de at.js usando `targetPageParams()`:
+
+```JavaScript
+targetPageParams = function() {
+  return {
+    "entity.id": "SKU-00001-LARGE",
+    "entity.categoryId": "clothing,shirts",
+    "entity.customEntity": "some value",
+    "cartIds": "SKU-00002,SKU-00003",
+    "excludedIds": "SKU-00001-SMALL"
+  };
+};
+```
+
+Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+
+```JavaScript
+alloy("sendEvent", {
+  "data": {
+    "__adobe": {
+      "target": {
+        "entity.id": "SKU-00001-LARGE",
+        "entity.categoryId": "clothing,shirts"
+        "entity.customEntity": "some value",
+        "cartIds": "SKU-00002,SKU-00003",
+        "excludedIds": "SKU-00001-SMALL"
+      }
+    }
+  }
+});
+```
+
+Todos [parâmetros da entidade](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) compatível com at.js também é compatível com o SDK da Web da plataforma.
+
+>[!NOTE]
+>
+>Se a variável `commerce` grupo de campos é usado e o `productListItems` A matriz está incluída na carga do XDM e, em seguida, na primeira `SKU` nesta matriz está mapeado para `entity.id` para incrementar uma visualização de produto.
+
+<!-- 
+## Purchase parameters
+
+Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Web SDK implementation, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+
+at.js example using `targetPageParams()`:
+
+```JavaScript
+targetPageParams = function() {
+  return {
+    "orderId": "ABC123",
+    "productPurchasedId": "SKU-00002,SKU-00003"
+    "orderTotal": 1337.89
+  };
+};
+```
+
+Purchase information is passed to Target when the `commerce` field group has `puchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+
+Platform Web SDK example using `sendEvent` command:
+
+```JavaScript
+alloy("sendEvent", {
+  "xdm": {
+    "commerce": {
+      "order": {
+        "purchaseID": "ABC123",
+        "priceTotal": 1337.89
+      },
+      "purchases": {
+        "value": 1
+      }
+    },
+    "productListItems": [{
+      "SKU": "SKU-00002"
+    }, {
+      "SKU": "SKU-00003"
+    }]
+  }
+});
+```
+
+>[!NOTE]
+>
+>The `productPurchasedId` value can also be passed as a comma-separated list of entity IDs under the `data` object.
+
+-->
+
+## Sincronização de perfis com uma ID do cliente
+
+O Target permite a sincronização de perfis entre dispositivos e sistemas usando uma única ID do cliente. Com a at.js, isso pode ser definido como `mbox3rdPartyId` na solicitação do Target ou como a primeira ID do cliente enviada para o serviço de identidade do Experience Cloud. Ao contrário da at.js, a implementação do SDK da Web da plataforma permite especificar qual ID do cliente usar como a `mbox3rdPartyId` se houver vários. Por exemplo, se sua empresa tem uma ID de cliente global e IDs de cliente separadas para diferentes linhas de negócios, você pode configurar qual ID o Target deve usar.
+
+Há algumas etapas para configurar a sincronização de ID para os casos de uso de Atributos do cliente e entre dispositivos do Target:
+
+1. Crie um **[!UICONTROL namespace de identidade]** para a ID do cliente em **[!UICONTROL Identidades]** tela Coleta de dados ou plataforma
+1. Certifique-se de que a variável **[!UICONTROL alias]** em Atributos do cliente corresponde à variável **[!UICONTROL símbolo de identidade]** do namespace
+1. Especifique a **[!UICONTROL símbolo de inabundância]** como **[!UICONTROL Namespace da ID de terceiros do Target]** na configuração do Target do conjunto de dados
+1. Executar um `sendEvent` usando o `identityMap` grupo de campos
+
+Exemplo de at.js usando `targetPageParams()`:
+
+```JavaScript
+targetPageParams = function() {
+  return {
+    "mbox3rdPartyId": "TT8675309"
+  };
+};
+```
+
+Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+
+```JavaScript
+alloy("sendEvent", {
+  "xdm": {
+    "identityMap": {
+      "GLOBAL_CUSTOMER_ID": [{
+        "id": "TT8675309",
+        "authenticatedState": "authenticated"
+      }]
+    }
+  }
+});
+```
+
+
+## Exemplo de SDK da Web da plataforma
+
+Agora que você entende como os diferentes parâmetros do Target são mapeados usando o SDK da Web da plataforma, as duas páginas de exemplo podem ser migradas da at.js para o SDK da Web da plataforma, conforme mostrado abaixo. As páginas de exemplo incluem:
+
+- O Target pré-oculta o trecho para uma implementação de biblioteca assíncrona
+- O código base do SDK da Web da plataforma
+- A biblioteca JavaScript do SDK da Web da plataforma
+- A `configure` comando para inicializar a biblioteca
+- A `sendEvent` comando para enviar dados e solicitar a renderização do conteúdo do Target
+
+Detalhes do produto:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Product Details - Men's Shirt</title>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+  <!--Platform Web SDK base code-->
+  <script>
+    !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+    []).push(o),n[o]=function(){var u=arguments;return new Promise(
+    function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+    (window,["alloy"]);
+  </script>
+
+  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+
+  <!--Configure Platform Web SDK and send event-->
+  <script>
+    alloy("configure", {
+      "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
+      "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
+    });
+    alloy("sendEvent", {
+      "renderDecisions": true,
+      "xdm": {
+        "identityMap": {
+          "GLOBAL_CUSTOMER_ID": [{
+            "id": "TT8675309",
+            "authenticatedState": "authenticated"
+          }]
+        },
+        "web": {
+          "webPageDetails": {
+            // Other attributes included according to XDM schema
+            "siteSection": "product detail"
+          }
+        }
+      },
+      "data": {
+        "__adobe": {
+          "target": {
+            "profile.gender": "male",
+            "user.categoryId": "clothing",
+            "entity.id": "SKU-00001-LARGE",
+            "entity.categoryId": "clothing,shirts",
+            "entity.customEntity": "some value",
+            "cartIds": "SKU-00002,SKU-00003",
+            "excludedIds": "SKU-00001-SMALL"
+          }
+        }
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1 id="title">Men's Large Shirt</h1>
+  <p>SKU: SKU-00001-LARGE</p>
+</body>
+</html>
+```
+
+<!--
+Order Confirmation:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Order Confirmation</title>
+
+-->
+<!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+<!--
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+-->
+<!--Platform Web SDK base code-->
+<!--
+  <script>
+    !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+    []).push(o),n[o]=function(){var u=arguments;return new Promise(
+    function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+    (window,["alloy"]);
+  </script>
+-->
+<!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+<!--  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+-->
+<!--Configure Platform Web SDK and send event-->
+<!--  <script>
+    alloy("configure", {
+      "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
+      "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
+    });
+    alloy("sendEvent", {
+      "xdm": {
+        "identityMap": {
+          "GLOBAL_CUSTOMER_ID": [{
+            "id": "TT8675309",
+            "authenticatedState": "authenticated"
+          }]
+        },
+        "commerce": {
+          "order": {
+            "purchaseID": "ABC123",
+            "priceTotal": 1337.89
+          },
+          "purchases": {
+            "value": 1
+          }
+        },
+        "productListItems": [{
+          "SKU": "SKU-00002"
+        }, {
+          "SKU": "SKU-00003"
+        }]
+      }
+    });
+  </script>
+</head>
+<body>
+  <h1 id="title">Order Confirmation</h1>
+  <p>Thank you for your order</p>
+</body>
+</html>
+```
+-->
+
+Em seguida, saiba como [rastrear eventos de conversão do Target](track-events.md) com o SDK da Web da plataforma.
+
+>[!NOTE]
+>
+>Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
