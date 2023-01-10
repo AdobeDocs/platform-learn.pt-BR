@@ -20,7 +20,7 @@ Saiba mais sobre o Adobe Experience Platform Debugger [Extensão do Chrome](http
 
 ## Recursos adicionais
 
-* [Baixar o complemento Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [Baixar o complemento Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/adobe-experience-platform-dbg/)
 * [Baixe a extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Documentação do Experience Platform Debugger](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=pt-BR)
 * [Depurar uma implementação de tags](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

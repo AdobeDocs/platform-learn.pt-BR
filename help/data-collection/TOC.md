@@ -26,11 +26,11 @@ ht-degree: 34%
    + [Usuários e permissões](tags/users-and-permissions.md)
    + [Implementar em sites com o SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
    + [Implementar em sites com SDKs de solução](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
 + Web SDK{#web-sdk}
    + [Visão geral](web-sdk/overview.md)
    + [Demonstração](web-sdk/demo.md)
-   + [Tutorial de implementação (com tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Tutorial de implementação (com tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
    + Consentimento{#consent}
       + [Visão geral](web-sdk/consent/overview.md)
       + [Definir valores de consentimento usando o padrão Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 34%
    + [Visão geral](mobile-sdk/overview.md)
    + [Criar propriedades móveis](mobile-sdk/create-mobile-properties.md)
    + [Usar gerentes de dependência](mobile-sdk/use-dependency-managers.md)
-   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
 + API do servidor{#server-api}
    + [Visão geral](server-api/overview.md)
    + [Noções básicas das APIs](server-api/introduction.md)
