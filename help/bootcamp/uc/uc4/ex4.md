@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '755'
 ht-degree: 4%
 
 ---
@@ -48,9 +48,7 @@ Você verá um projeto vazio.
 
 ![demonstração](./images/premptyprojects.png)
 
-Primeiro, selecione a Exibição de dados correta no canto superior direito da tela. Neste exemplo, a Exibição de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
-
-![demonstração](./images/prdv.png)
+Primeiro, selecione a Exibição de dados correta no canto superior direito da tela. Neste exemplo, a Exibição de dados a ser selecionada é `CJA Bootcamp - Omnichannel Data View`.
 
 Em seguida, você salvará seu projeto e lhe dará um nome. Você pode usar o seguinte comando para salvar:
 
@@ -113,7 +111,7 @@ Finalmente, altere o nome e a descrição da métrica calculada:
 
 | Title | Descrição |
 | ----------------- |-------------| 
-| Taxa de conversão | Taxa de conversão |
+| yourLastName - Índice de conversão | yourLastName - Índice de conversão |
 
 Você terá algo como isto na sua tela:
 
