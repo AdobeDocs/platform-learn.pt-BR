@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ Vamos usar o projeto criado em [4.4 Preparação de dados no Analysis Workspace]
 
 Abra o projeto `yourLastName - Omnichannel Analysis`.
 
-Com seu projeto aberto e a Exibição de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a criar suas primeiras visualizações.
+Com seu projeto aberto e a Exibição de dados `CJA Bootcamp - Omnichannel Data View` selecionado, você está pronto para começar a criar suas primeiras visualizações.
 
 ![demonstração](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ Primeiro, precisamos selecionar as datas certas para analisar os dados. Vá para
 
 >[!IMPORTANT]
 >
->Selecione um intervalo de datas como **Nesta Semana** ou **Este mês**. Os dados disponíveis mais recentes foram assimilados em 19 de setembro de 2022.
+>Os dados disponíveis mais recentemente foram assimilados em 09/19/2022. Selecione um intervalo de datas que inclua essa data.
 
 ![demonstração](./images/pro1.png)
 
@@ -77,9 +76,9 @@ Em seguida, clique em **Bloquear seleção** e selecione **Itens Selecionados** 
 
 ![demonstração](./images/pro7b.png)
 
-## Os 5 principais produtos visualizados
+## Os 4 principais produtos visualizados
 
-Quais são os 5 principais produtos visualizados?
+Quais são os 4 principais produtos visualizados?
 
 Lembre-se de salvar o projeto de vez em quando.
 
@@ -88,7 +87,7 @@ Lembre-se de salvar o projeto de vez em quando.
 | Windows | Controle + S |
 | Mac | Command+S |
 
-Vamos começar a encontrar os 5 principais produtos visualizados. No menu lateral esquerdo, localize a variável **Nome do produto** - Dimension.
+Vamos começar a encontrar os 4 principais produtos visualizados. No menu lateral esquerdo, localize a variável **Nome do produto** - Dimension.
 
 ![demonstração](./images/pro8.png)
 
@@ -102,7 +101,7 @@ Em seguida, tente detalhar um dos produtos por Nome da Marca. Procurar por **bra
 
 ![demonstração](./images/pro13.png)
 
-Em seguida, faça um detalhamento usando o Agente do usuário. Procurar por **Agente do usuário** e arraste-a sob o nome da marca.
+Em seguida, faça um detalhamento usando o nível de fidelidade. Procurar por **Nível de Fidelidade** e arraste-a sob o nome da marca.
 
 ![demonstração](./images/pro15.png)
 
@@ -114,7 +113,7 @@ Por fim, é possível adicionar mais visualizações. No lado esquerdo, em visua
 
 ![demonstração](./images/pro18.png)
 
-Em seguida, na Tabela, selecione os primeiros 5 **Agente do usuário**  linhas do detalhamento em que fizemos **Google Pixel XL Smartphone preto de 32 GB** > **Signal do Haqqani**. Ao selecionar as 5 linhas, mantenha pressionada a tecla **CTRL** (no Windows) ou o botão **Comando** (no Mac).
+Em seguida, na Tabela, selecione o 3 **Nível de Fidelidade**  linhas do detalhamento em que fizemos **Google Pixel XL Smartphone preto de 32 GB** > **Signal do Haqqani**. Ao selecionar as 3 linhas, mantenha pressionada a tecla **CTRL** (no Windows) ou o botão **Comando** (no Mac).
 
 ![demonstração](./images/pro20.png)
 
@@ -154,7 +153,7 @@ Clique na visualização **Fallout**.
 
 Selecione o mesmo intervalo de datas do exercício anterior.
 
-![demonstração](./images/prodatef.png)
+![demonstração](./images/pro1.png)
 
 Você verá isso.
 
@@ -216,7 +215,7 @@ Você verá isso:
 
 Selecione o mesmo intervalo de datas do exercício anterior.
 
-![demonstração](./images/pro0b.png)
+![demonstração](./images/pro1.png)
 
 Encontre a dimensão **Nome da página** sob os componentes do lado esquerdo:
 
@@ -297,7 +296,7 @@ Em seguida, adicione um novo painel em branco clicando em **+ Adicionar painel e
 
 Selecione o mesmo intervalo de datas do exercício anterior.
 
-![demonstração](./images/pro24d.png)
+![demonstração](./images/pro1.png)
 
 Clique em **Tabela de forma livre**.
 
