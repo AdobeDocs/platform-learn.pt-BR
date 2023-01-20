@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1615'
 ht-degree: 2%
 
 ---
@@ -175,6 +174,8 @@ Em seguida, é necessário configurar muitas Dimension e métricas, conforme ind
 | ID da transação | ID da transação |  |
 | URL (web.webPageDetails.URL) | URL |  |
 | Agente do usuário | Agente do usuário | Mais recente, sessão |
+| nível | Nível de Fidelidade |  |
+| pontos | Valor vitalício do cliente |  |
 
 ### MÉTRICAS
 
@@ -278,7 +279,7 @@ Você deve ser redirecionado para esta tela:
 
 ![demonstração](./images/8-v2.png)
 
-Nesta guia, é possível modificar algumas configurações importantes para alterar o modo como os dados são processados. Vamos começar definindo a variável **Tempo limite da sessão** até 30 min. Graças ao carimbo de data e hora de cada evento de experiência, você pode estender o conceito de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente chamar a central de atendimento depois de visitar o site? Com o uso de Limites de tempo de sessão personalizados, você tem muita flexibilidade para decidir o que é uma sessão e como essa sessão unirá os dados.
+Nesta guia, é possível modificar algumas configurações importantes para alterar o modo como os dados são processados. Vamos começar definindo a variável **Tempo limite da sessão** até 30 min. Graças ao carimbo de data e hora de cada evento de experiência, você pode estender o conceito de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente chamar a central de atendimento depois de visitar o site? Usando os Limites de tempo de sessão personalizados, você tem muita flexibilidade para decidir o que é uma sessão e como essa sessão unirá os dados.
 
 ![demonstração](./images/ext8.png)
 
