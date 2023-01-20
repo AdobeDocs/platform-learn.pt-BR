@@ -3,9 +3,9 @@ title: Bootcamp dos criadores de experiência
 description: Ponto de partida para participantes do Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -28,41 +28,45 @@ A personalização em escala começa com a compreensão do que pode ser melhorad
 
 10.00 - 10.30: Início e introduções
 
-10.30 - 11.15: Sessão de quadro de permissões: &quot;1-1 personalização, caça ao atrito, silos, Adobe POV&quot;
+10.30 - 11.00: &quot;Demonstração da Jornada do cliente - arte da possível&quot;
 
-11.15 - 11.30: Quebra
+11.00 - 11.45: Sessão de quadro de permissões: &quot;1-1 personalização, caça ao atrito, silos, Adobe POV&quot;
 
-11.30 - 12.00: &quot;Demonstração da Jornada do cliente - arte da possível&quot;
+11.45 - 12.00: Quebra
 
-12.00 - 12.45: Sessão de quadro de permissões: &quot;Detalhamento da arquitetura da solução&quot;
+12.00 - 13.00: Sessão de quadro de permissões: &quot;Detalhamento da arquitetura da solução&quot;
 
-12.45 - 13.45: Quebra
+13.00 - 14.00: Almoço
 
-13.45 - 15.00: Fluxo do usuário 1: Exercício prático de &quot;aquisição&quot;
+14.00 - 15.30: Fluxo do usuário 1: Exercício prático de &quot;aquisição&quot;
 
 15.00 - 15.15: Quebra
 
 15.15 - 17.00: Fluxo do usuário 2: Exercício prático &quot;Registro e integração&quot;
 
+18.00 - 19.00: Experimente a &quot;competição de produção de coquetéis&quot;
+
+19.00 - 22.00: Aproveite o jantar
+
 ### Dia 2
 
-08.00 - 09.30: Sessão de café da manhã: &quot;Introdução ao delivery baseado em Jornada do usuário, estrutura da equipe, registro retroativo de delivery&quot;
+09.00 - 09.30: &quot;Introdução ao delivery baseado em Jornada do usuário, estrutura da equipe, registro retroativo de delivery&quot;
 
 09.30 - 09.45: Quebra
 
-09.45 - 11.15: Fluxo do usuário 3: Exercício prático de &quot;mesclagem física e digital&quot;
+09.45 - 11.15: Fluxo do usuário 4: Exercício prático de &quot;Análise do cliente&quot;
 
 11.15 - 11.30: Quebra
 
-11.30 - 12.30: Fluxo de usuário 3 continuado
+11.30 - 12.30: &quot;Introdução ao delivery baseado em Jornada do usuário, estrutura da equipe, registro retroativo de delivery&quot;
 
 12.30 - 13.30: Almoço
 
-13.30 - 14.30: Fluxo do usuário 4: Exercício prático de &quot;Análise do cliente&quot;
+13.30 - 14.30: Personalização em escala - Como fazer isso acontecer
 
 14.30 - 15.00: Conclusão, encerramento e próximas etapas
 
-15.:30: Partida
+15.00: Interrupção
 
 ## Pré-requisitos
 
