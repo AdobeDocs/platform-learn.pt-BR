@@ -3,9 +3,9 @@ title: Configurar o Adobe Target com o SDK da Web da plataforma
 description: Saiba como implementar o Adobe Target usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ O Target deve ser ativado na configuração do conjunto de dados antes que qualq
 
 Para configurar o Target no armazenamento de dados:
 
-1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection)Interface {target=&quot;blank&quot;}
+1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**
 1. Selecione o criado anteriormente `Luma Web SDK` datastream
 
@@ -184,7 +184,7 @@ Primeiro, você deve entender a terminologia usada nas interfaces do Target e de
 
 As decisões de personalização visual do Target são entregues pelo SDK da Web da plataforma, se o Target estiver ativado no armazenamento de dados. No entanto, _eles não são renderizados automaticamente_. Você deve modificar a regra de carregamento da página global para ativar a renderização automática.
 
-1. No [Coleta de dados](https://experience.adobe.com/#/data-collection)Interface do {target=&quot;blank&quot;}, abra a propriedade da tag usada neste tutorial
+1. No [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} abra a propriedade de tag usada neste tutorial
 1. Abra o `all pages - library load - AA & AT` regra
 1. Selecione o `Adobe Experience Platform Web SDK - Send event` ação
 1. Habilitar **[!UICONTROL Renderizar decisões de personalização visual]** com a caixa de seleção
@@ -334,7 +334,7 @@ Agora que você configurou o SDK da Web da plataforma para solicitar conteúdo p
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
