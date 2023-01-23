@@ -3,7 +3,7 @@ title: Bootcamp dos criadores de experiência
 description: Ponto de partida para participantes do Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 0%
@@ -40,9 +40,9 @@ A personalização em escala começa com a compreensão do que pode ser melhorad
 
 14.00 - 15.30: Fluxo do usuário 1: Exercício prático de &quot;aquisição&quot;
 
-15.00 - 15.15: Quebra
+15.30 - 15.45: Quebra
 
-15.15 - 17.00: Fluxo do usuário 2: Exercício prático &quot;Registro e integração&quot;
+15.45 - 17.00: Fluxo do usuário 2: Exercício prático &quot;Registro e integração&quot;
 
 18.00 - 19.00: Experimente a &quot;competição de produção de coquetéis&quot;
 
