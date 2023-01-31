@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1650'
 ht-degree: 4%
 
 ---
@@ -50,6 +50,7 @@ Antes de seguir as etapas, certifique-se de ter baixado a variável [Postman](ht
 
 1. Na pasta de downloads, mova a `platform-utils-main.zip` para o local desejado em seu computador e descompacte-o.
 1. No `luma-data` , abra todas as `json` arquivos em um editor de texto e substitua todas as instâncias de `_techmarketingdemos` com sua própria ID de locatário, precedida por um sublinhado.
+1. Abrir `luma-offline-purchases.json` em um editor de texto e atualize todos os carimbos de data e hora para que os eventos ocorram no último mês (por exemplo, pesquise por `"timestamp":"2022-06` e substituir o ano e o mês)
 1. Observe a localização da pasta descompactada, pois você precisará dela posteriormente ao configurar a variável `FILE_PATH` Variável de ambiente do Postman:
 
    >[!NOTE]

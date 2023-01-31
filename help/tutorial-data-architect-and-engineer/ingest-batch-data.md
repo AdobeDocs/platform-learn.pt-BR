@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2553'
 ht-degree: 0%
 
 ---
@@ -289,6 +289,7 @@ Muitas das Fontes têm um fluxo de trabalho de configuração semelhante, no qua
 
 1. Você já deve ter baixado e descompactado [luma-data.zip](assets/luma-data.zip) em seu `Luma Tutorial Assets` pasta.
 1. Abrir `luma-offline-purchases.json` em um editor de texto e substitua todas as instâncias de `_techmarketingdemos` com sua própria id de locatário do underscore, como visualizado em seus esquemas
+1. Atualize todos os carimbos de data e hora para que os eventos ocorram no último mês (por exemplo, pesquise por `"timestamp":"2022-06` e substituir o ano e o mês)
 1. Escolha seu provedor de armazenamento em nuvem preferido, certificando-se de que ele esteja disponível na [!UICONTROL Fontes] catálogo
 1. Upload `luma-offline-purchases.json` para um local no seu provedor de armazenamento em nuvem preferido
 
