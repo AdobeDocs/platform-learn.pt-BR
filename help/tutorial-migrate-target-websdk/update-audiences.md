@@ -1,9 +1,9 @@
 ---
 title: Atualizar públicos-alvo e scripts de perfil | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como atualizar públicos-alvo e scripts de perfil do Adobe Target para compatibilidade com o Experience Platform Web SDK.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ Todos os parâmetros de mbox do Target devem ser enviados no formato XDM com uma
 * Atualizar públicos-alvo que usam parâmetros mbox
 * Atualizar scripts de perfil que usam parâmetros de mbox
 * Atualize qualquer oferta e atividade usando a substituição de token do parâmetro da mbox (por exemplo, `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> As implementações do SDK da Web da plataforma iniciadas após 1º de outubro de 2022 podem precisar usar o [solução alternativa de pré-busca](prefetch-workaround.md) para usar com sucesso alguns dos recursos descritos nesta página.
 
 ## Ajustar públicos-alvo
 
