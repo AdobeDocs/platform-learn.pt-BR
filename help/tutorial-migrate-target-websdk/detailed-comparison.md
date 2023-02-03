@@ -1,9 +1,9 @@
 ---
 title: Comparação da at.js 2.x com o SDK da Web | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba mais sobre as diferenças entre a at.js 2.x e o SDK da Web da plataforma, incluindo recursos, funções, configurações e fluxo de dados.
-source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -43,8 +43,8 @@ Se você nunca usou o Platform Web SDK, não se preocupe. Os itens abaixo são a
 | Ofertas remotas | Suportado | Suportado |
 | Ofertas de redirecionamento | Suportado | Suportado. No entanto, não há suporte para o redirecionamento de uma página com o SDK da Web da plataforma para uma página com a at.js (e na direção oposta). |
 | Decisão no dispositivo | Suportado | Não suportado no momento |
-| Buscar mboxes previamente | Suportado | Parcialmente suportado. Entre em contato com o suporte ao cliente para ativar esse recurso, pois ele altera o comportamento da busca prévia da atividade. |
-| Eventos Personalizados | Suportado | Não suportado. Consulte a [roteiro público](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) para status atual. |
+| Buscar mboxes previamente | Suportado | Ativado por padrão em todas as novas migrações iniciadas após 1 de outubro de 2022 |
+| Eventos Personalizados | Suportado | Não suportado. Consulte a [roteiro público](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) para status atual. |
 | Tokens de resposta | Suportado | Suportado. Consulte a [documentação de tokens de resposta dedicados](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) para exemplos de código e diferenças entre at.js e SDK da Web da plataforma |
 | Provedores de dados | Suportado | Não suportado. O código personalizado pode ser usado para acionar um SDK da Web da plataforma `sendEvent` depois que os dados são recuperados de outro provedor. |
 
@@ -79,7 +79,7 @@ Muitas funções da at.js têm uma abordagem equivalente usando o SDK da Web da 
 | `trackEvent()` e `sendNotifications()` | Use o `sendEvent` com um [específico `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) definido:<br><br>`decisioning.propositionDisplay` sinaliza a renderização de uma atividade<br><br>`decisioning.propositionInteract` sinaliza uma interação do usuário com uma atividade , como um clique do mouse. |
 | `targetGlobalSettings()` | Nenhum equivalente direto. Consulte a [Comparação de configurações do Target](detailed-comparison.md) para obter mais detalhes. |
 | `targetPageParams()` e `targetPageParamsAll()` | Todos os dados transmitidos no `xdm` da `sendEvent` é mapeado para os parâmetros da mbox do Target. Como os parâmetros da mbox são nomeados usando a notação de pontos serializada, a migração para o SDK da Web da plataforma pode exigir a atualização de públicos e atividades existentes para usar os novos nomes de parâmetros da mbox. <br><br>Dados passados como parte de `data.__adobe.target` do `sendEvent` está mapeado para [Perfil do Target e parâmetros específicos do Recommendations](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| Eventos personalizados da at.js | Não suportado. Consulte a [roteiro público](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) para status atual. [Tokens de resposta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) são expostas como parte da `propositions` na resposta do `sendEvent` chame. |
+| Eventos personalizados da at.js | Não suportado. Consulte a [roteiro público](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) para status atual. [Tokens de resposta](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) são expostas como parte da `propositions` na resposta do `sendEvent` chame. |
 
 ## Configurações da at.js e equivalentes do SDK da Web da plataforma
 
