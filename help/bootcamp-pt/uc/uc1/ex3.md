@@ -5,85 +5,85 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 3%
+source-wordcount: '516'
+ht-degree: 2%
 
 ---
 
-# 1.3 Criar um segmento - Interface do usuário
+# 1.3 Segmento de Crie - Interface do usuário
 
-Neste exercício, você criará um segmento usando o Construtor de segmentos do Adobe Experience Platform.
+Ouro, Você, Um segmento usando Construtor de Segmentos da Adobe Experience Platform.
 
 ## História
 
-Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você será direcionado para a página inicial do Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de &quot;Faça&quot;, você vai acessar um início do logon no Adobe Experience Platform.
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada de ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produto de produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox], você verá a tela mudar e agora você estará em seu [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. É possível isto clicando texto **[!UICONTROL Produto de produção]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora está em sua [!UICONTROL sandbox] dedicado.
 
 ![Assimilação de dados](./images/sb1.png)
 
-No menu no lado esquerdo, vá para **Segmentos**. Nesta página, você pode ver uma visão geral de todos os segmentos existentes. Clique no botão **+ Criar segmento** botão para começar a criar um novo segmento.
+Sem menu à esquerda, acesse **Segmentos**. Volte, você tem uma visão geral de todos os segmentos existentes. no +  para um segmento de novo.
 
 ![Segmentação](./images/menuseg.png)
 
-Quando estiver no novo construtor de segmentos, você imediatamente notará o **Atributos** e a **Perfil individual XDM** referência.
+Quando, no construtor de segmentos você vai perceber imediatamente menu de **Atributos** e a referência **Perfil individual XDM**.
 
 ![Segmentação](./images/segmentationui.png)
 
-Como o XDM é a linguagem que alimenta os negócios da experiência, o XDM também é a base do construtor de segmentos. Todos os dados assimilados na Platform devem ser mapeados em relação ao XDM e, como tal, todos os dados se tornam parte do mesmo modelo de dados, independentemente de onde esses dados vêm. Isso oferece uma grande vantagem ao criar segmentos, a partir dessa interface do usuário do construtor de segmentos, é possível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os segmentos criados no Construtor de segmentos podem ser enviados para soluções como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
+Como o XDM é a linguagem que alimenta o setor de experiência, o XDM também é a base para o construtor de segmentos. Todos os os dados ingeridos na plataforma devem ser eados em relação ao XDM e, portanto, todos os dados se tornam parte do leme de dados, independentemente da origem dos dados. Isso é uma grande vantagem ao segmentos, pois é uma interface do usuário do construtor de segmento, é possível combinação de qualquer origem não fluxo do trabalho. Os segmentos não criados Construtor de segmentos ser enviados para soluções Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-Agora é necessário criar um segmento de todos os clientes que visualizaram o produto **Real-Time CDP**.
+Agora você vê o segmento de todos clientes **Real-Time CDP**.
 
-Para criar esse segmento, é necessário adicionar um Evento de experiência. Você pode encontrar todos os Eventos de experiência clicando no botão **Eventos** no ícone na **Campos** barra de menu.
+Para construir este segmento, você é um Evento de experiência. Você pode clicando os de experiência no ícone **Eventos** na barra do menu **Campos**.
 
 ![Segmentação](./images/findee.png)
 
-Em seguida, você verá o nível superior, **ExperienceEvents XDM** nó . Clique em **ExperiênciaEvento XDM**.
+Em, você **ExperienceEvents XDM** faça superior. Clique em **ExperiênciaEvento XDM**.
 
 ![Segmentação](./images/see.png)
 
-Ir para **Itens da lista de produtos**.
+Acesse **Itens da lista de produtos**.
 
 ![Segmentação](./images/plitems.png)
 
-Selecionar **Nome** e arraste e solte a **Nome** objeto do menu esquerdo na tela do construtor de segmentos na **Eventos** seção. Você verá isso:
+Selecione **Nome** e arraste e solte o objeto **Nome** do menu à esquerda na tela do construtor de segmentos na seção **Eventos**. Em, seguinte será exibido:
 
 ![Segmentação](./images/eewebpdtlname.png)
 
-O parâmetro de comparação deve ser **igual** e, no campo de entrada, digite **CDP em tempo real**.
+O parâmetro de comparação. **igual** e, sem campo de entrada, insira **CDP em tempo real**.
 
 ![Segmentação](./images/pv.png)
 
-Toda vez que você adicionar um elemento ao construtor de segmentos, você pode clicar no botão **Atualizar Estimativa** para obter uma nova estimativa da população em seu segmento.
+Sempre que você elemento construtor clicar não **Atualizar Estimativa** para uma nova estimativa da população em segmento.
 
 ![Segmentação](./images/refreshest.png)
 
-As **Método de avaliação**, selecione **Edge**.
+Parágrafo **Método de avaliação** selecione **Edge**.
 
 ![Segmentação](./images/evedge.png)
 
-Por fim, vamos dar um nome ao seu segmento e salvá-lo.
+Por fim, vamos um ao nome e salvá-lo.
 
-Como convenção de nomenclatura, use:
+Como da nomenclatura, use:
 
-- `yourLastName - Interest in Real-Time CDP`
+- `seuSobrenome - Interest in Real-Time CDP`
 
-Em seguida, clique no botão **Salvar e fechar** para salvar o segmento.
+Em, nada **Salvar e fechar** para salvar segmento.
 
 ![Segmentação](./images/segmentname.png)
 
-Agora você será redirecionado para a página de visão geral do segmento, onde verá uma amostra de perfis de clientes qualificados para o seu segmento.
+Agora você vai tornar ao &quot;Voltar do visão geral do segmento&quot;, onde verá uma visualização de amostra dos perfis de clientes que se qualificam para o segmento.
 
 ![Segmentação](./images/savedsegment.png)
 
-Agora você pode continuar para o próximo exercício e usar seu segmento com o Adobe Target.
+Agora você continuar no exercício próximo e seu segmento com o Adobe Target.
 
-Próxima etapa: [1.4 Tomar medidas: enviar seu segmento para a Adobe Target](./ex4.md)
+Proxima. [1.4 Ação: segmento do ambiente para o Adobe Target](./ex4.md)
 
-[Voltar para Fluxo de Usuário 1](./uc1.md)
+[Retornar para Fluxo de Correio](./uc1.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

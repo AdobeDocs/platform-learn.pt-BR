@@ -5,26 +5,26 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
-# 3.1 Usar o aplicativo móvel e acionar uma entrada de beacon
+# 3.1 Uso aplicativo beacon móvel e acione um
 
-## Instalar o aplicativo móvel
+## Instalar ou aplicativo móvel
 
-Antes de instalar o aplicativo, é necessário ativar **Rastreamento** no seu dispositivo iOS. Para fazer isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e garantir que a opção **Permitir que aplicativos solicitem rastreamento**.
+Antes de instalar o aplicativo, é necessário abilitar o **Rastreamento** nenhum problema dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e Segurança** > **Rastreamento** e verifique a. **Permitir que os aplicativos solicititem o rastre**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Vá para a Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
+Acessar um App Store da Apple e pesquisar `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abrir**.
+Depois que o aplicativo instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -40,7 +40,7 @@ Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir Ao Usar Aplicativo**.
+Clique em **Permitir eua - aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -48,84 +48,84 @@ Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora você está no aplicativo, na página inicial, pronto para passar pela jornada do cliente.
+Agora, agora, não aplicativo, cedo, para verificar hoje uma jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Fluxo de jornada do cliente
+## Fluxo da jornada do cliente
 
-Primeiro de tudo, você precisa fazer logon. Clique em **Logon**.
+Primeiramente, é necessário fazer logon. Clique em **Logon**.
 
 ![DSN](./images/app13.png)
 
-Depois de criar sua conta nos exercícios anteriores, você viu isso no site. Agora é necessário reutilizar o endereço de email da conta criada no aplicativo para fazer logon.
+Depois de isso, é anteriores. Agora é necessário reo endereço de e-mail conta que você criou no aplicativo para fazer login.
 
 ![Demonstração](./images/pv1.png)
 
-Digite o endereço de email que você usou no site aqui e clique em **Logon**.
+Digite de e-mail que você não endereço no site e clique em **Logon**.
 
 ![DSN](./images/app14.png)
 
-Em seguida, você receberá uma confirmação de que está conectado e receberá uma notificação por push.
+Você receberá uma confirmação de que está conectado e receberá uma notificação por push.
 
 ![DSN](./images/app15.png)
 
-Retorne à página inicial no aplicativo e você verá recursos adicionais serem exibidos.
+Regresso para o início do começo do aplicativo e os. aparecer.
 
 ![DSN](./images/app17.png)
 
-Primeiro, acesse **Produtos**. Clique em qualquer produto, neste exemplo **Café para ir**.
+Primeiro, acesse **Produtos**. Clique em Qualquer informação, anotado exemplo: **Café para ir**.
 
 ![DSN](./images/app19.png)
 
-Você verá o **Café para ir** página do produto no aplicativo.
+Você vê o produto **Café para ir** sem aplicativo.
 
 ![DSN](./images/app20.png)
 
-Agora você simulará um evento de entrada de beacon em um local de armazenamento offline. O objetivo de simular isso é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, uma página foi criada e mostrará dinamicamente as informações relevantes para o cliente que acabou de entrar na loja.
+Agora você irá simular um evento de entrada de sinalização (beacon) em uma loja offline. O objetivo da simulação é persona experiência cliente nas telas da loja. Para visualizar uma experiência na loja, foi criada uma forma como informações relevantes para o cliente na loja.
 
-Antes de continuar, abra esta página da Web no seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra o caminho da Web em questão: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Você verá isso:
+Em, tela exibida
 
 ![DSN](./images/screen1.png)
 
-Em seguida, volte para a página inicial. Clique no botão **beacon** ícone .
+Em, repara torne para a posição inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Você verá isso. Primeiro, selecione **Beacon de tela de bootcamp** e clique no botão **entrada** botão. Isso permitirá simular uma entrada de beacon.
+Após, o seguinte. Primeiro, selecione **Beacon de tela de bootcamp** e não há nada. **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
-Agora, dê uma olhada na tela da loja. Você verá o último produto exibido lá em 5 segundos.
+Agora confira tela da loja. Você verá o último produto visualizado, nessa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-Então, volte para **Produtos**. Clique em qualquer produto, neste exemplo **Balão de praia - Tan**.
+Em, torne para **Produtos**. Clique em Qualquer informação, anotado exemplo: **Balão de praia - Tan**.
 
 ![DSN](./images/app22.png)
 
-Em seguida, volte para a página inicial. Clique no botão **beacon** ícone .
+Em, repara torne para a posição inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-Você verá isso. Primeiro, selecione **Beacon de tela de bootcamp** e clique no botão **entrada** novamente. Isso permitirá simular uma entrada de beacon.
+selecione **Beacon de tela de bootcamp** e não há nada. **Entrada** Data Isso permitirá que você simule uma entrada de sinalização (beacon).
 
 ![DSN](./images/app21.png)
 
-Agora, dê uma olhada na tela da loja novamente. Você verá o último produto exibido lá em 5 segundos.
+Agora, confira da tela da folha. Você verá o último produto visualizado, nessa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-Também vamos consultar seu Visualizador de perfil no site agora. Você verá muitos eventos que foram adicionados lá, apenas para mostrar que qualquer interação com um cliente é coletada e armazenada no Adobe Experience Platform.
+Agora, vamos verificar o seu Visualizador de Perfil no site. Você verá muitos eventos que foram adicionados, para mostrar que interação com um cliente coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-Nos próximos exercícios, você configurará e testará sua própria jornada de entrada de beacon.
+Nos próximos exercícios, você irá configurar e testar sua própria jornada de entrada do beacon.
 
-Próxima etapa: [3.2 Criar seu evento](./ex2.md)
+Proxima. [3.2 Evento de emissão de moeda eletrônica](./ex2.md)
 
-[Voltar para Fluxo de Usuário 3](./uc3.md)
+[Retornar para Fluxo 3](./uc3.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

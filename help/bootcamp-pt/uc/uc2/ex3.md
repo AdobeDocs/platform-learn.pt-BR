@@ -5,28 +5,28 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 4%
+source-wordcount: '934'
+ht-degree: 3%
 
 ---
 
-# 2.3 Criar sua jornada e mensagem de email
+# 2.3 Crie sua jornada e de e-mail
 
-Neste exercício, você configurará a jornada que precisa ser acionada quando alguém criar uma conta no site de demonstração.
+Você vai configurar um jorque precisa ser acionada e não demonstração. um site
 
-Faça logon no Adobe Journey Optimizer acessando [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
+Faça logon sem acesso ao Adobe Journey Optimizer [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para o **Início**  no Journey Optimizer. Primeiro, certifique-se de usar a sandbox correta. A sandbox a ser usada é chamada de `Bootcamp`. Para alterar de uma sandbox para outra, clique em **Prod** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **Bootcamp**. Você estará no **Início** exibição da sandbox `Bootcamp`.
+Você será redirecion para a visualização da **Início**  sem Journey Optimizer. Primeiro, verifique está usando caixa de proteção. O nome do fenômeno da sandbox que é usado `Bootcamp`. Para alternar de um sandbox para, clique em **Prod** e selecione a sandbox na lista. exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Início** fazer sua sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1 Criar a jornada
+## 2.3.1 Cristo da sua jornada
 
-No menu esquerdo, clique em **Jornada**. Em seguida, clique em **Criar Jornada** para criar uma nova jornada.
+Sem menu à esquerda, clique em **Jornada**. Em **Criar Jornada** para jornada.
 
 ![ACOP](./images/createjourney.png)
 
@@ -34,107 +34,107 @@ Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-No exercício anterior, você criou um novo **Evento**. Você o nomeou assim `yourLastNameAccountCreationEvent` e substituído `yourLastName` com seu sobrenome. Este foi o resultado da criação do Evento:
+Sem exercício anterior, você criou um novo **Evento**. Você nomeou ou evento `seuSobrenomeAccountCreationEvent` e substituiu `seuSobrenome` pelo seu sobrenome. Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-Agora é necessário tomar esse evento como o início desta Jornada. Você pode fazer isso indo para o lado esquerdo da tela e procurando pelo evento na lista de eventos.
+Agora você considerar este como a desta Jornada. Você pode fazer &quot; isso lado esquerdo da tela para o evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-Selecione seu evento, arraste-o e solte-o na tela de Jornada. A Jornada agora tem esta aparência:
+Selecione evento, arraste e solte o evento na tela de nada. Sua Jornada ágora, um fenômeno semelhante ao seguinte:
 
 ![ACOP](./images/journeyevent.png)
 
-Como a segunda etapa da jornada, é necessário adicionar um curto **Aguardar** etapa. Vá para o lado esquerdo da tela para **Orquestração** para encontrar isso. Você estará usando os atributos do perfil e precisará verificar se eles estão preenchidos no Perfil do cliente em tempo real.
+Como jornada, você acha que há uma coisa curta. **Aguardar**. Vá para o lado esquerdo da tela a seção **Orquestração** para isso. Você usará atributos de está precisa, ará garantir que eles não sejam Perfil do tempo real.
 
 ![ACOP](./images/journeywait.png)
 
-Sua jornada agora fica assim. No lado direito da tela, é necessário configurar o tempo de espera. Defina para 1 minuto. Isso dará tempo suficiente para que os atributos do perfil estejam disponíveis após o acionamento do evento.
+Sua jornada agora é um fenômeno semelhante ao seguinte. Não há calendário de você configurar. Defina como 1. Isso dará bastante para o que os atributos do estejam do disponíveis dísmo do evento.
 
 ![ACOP](./images/journeywait1.png)
 
-Clique em **Ok** para salvar as alterações.
+Clique em **Ok** para salvar suas alterações.
 
-Como a terceira etapa da jornada, é necessário adicionar um **Email** ação. Vá para o lado esquerdo da tela para **Ações**, selecione o **Email** , em seguida, arraste e solte no segundo nó da jornada. Agora você vê isso.
+Como é a jornada, você é uma obra. **Email**. Vá para o lado esquerdo da tela **Ações** selecione uma ação **Email** e arraste e solte a ação no segundo nó da jornada. Agora o seguinte será exibido.
 
 ![ACOP](./images/journeyactions.png)
 
-Defina as **Categoria** para **Marketing** e selecione uma superfície de email que permita enviar emails. Nesse caso, a superfície do email a ser selecionada é **Email**. Certifique-se de que as caixas de seleção de **Cliques no email** e **aberturas de email** estão ativadas.
+Defina a **Categoria** como **Marketing** e selecione uma **superfície de email** permita para envio de e-mail. Caso, a **superfície de email** um usuário selecionada é E-mail. Certifique-se de que as caixas de seleção **Cliques no email** e **aberturas de email** estejam marcadas.
 
 ![ACOP](./images/journeyactions1.png)
 
-A próxima etapa é criar a mensagem. Para fazer isso, clique em **Editar conteúdo**.
+Um próximo é . Para isso, clique em **Editar conteúdo**.
 
 ![ACOP](./images/journeyactions2.png)
 
-## 2.3.2 Criar sua mensagem
+## 2.3.2 Crie um vídeo
 
-Para criar sua mensagem, clique em **Editar conteúdo**.
+Para sua família **Editar conteúdo**.
 
 ![ACOP](./images/journeyactions2.png)
 
-Agora você vê isso.
+O seguinte será exibido.
 
 ![ACOP](./images/journeyactions3.png)
 
-Clique no botão **Linha de assunto** campo de texto.
+Clique sem campo de texto **Linha de assunto**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Na área de texto, comece a escrever **Oi**
+Na cor da texto, comece **Hello**
 
 ![Journey Optimizer](./images/msg6.png)
 
-A linha de assunto ainda não foi feita. Em seguida, é necessário trazer o token de personalização para o campo **Nome** armazenado em `profile.person.name.firstName`. No menu esquerdo, role para baixo até encontrar a variável **Pessoa** e clique na seta para ir um nível mais fundo.
+A linha de não está agora. Em, você trazer o token personalization para o **Nome** que está armazenado `profile.person.name.firstName`. Não há menu à esquerda, função para parágrafo elemento **Pessoa** e panelinha na posição para visualizar mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-Agora encontre a variável **Nome completo** e clique na seta para ir um nível mais fundo.
+Agora elemento **Nome completo** e panelinha em lugar visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Finalmente, encontre a **Nome** e clique no botão **+** sinal ao lado. Em seguida, você verá o token de personalização aparecer no campo de texto.
+Por fim, localize o campo **Nome** e panelhe no símbolo **+**  ao lado dele. Você verá o token de personalização aparecer no campo de texto.
 
 ![Journey Optimizer](./images/msg9.png)
 
-Em seguida, adicione o texto **, obrigado por se inscrever!**. Clique em **Salvar**.
+Em, texto **agrecemos a sua inscrição!**. Clique em **Salvar**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-Então você estará de volta. Clique em **Email Designer** para criar o conteúdo do email.
+Então, você vai retornar para esta tela. Clique em **Email Designer**  para o conteúdo do e-mail
 
 ![Journey Optimizer](./images/msg11.png)
 
-Na próxima tela, você receberá 3 métodos diferentes para fornecer o conteúdo do email:
+Na tela, será solicitado que você forneça fazer e-mail através de 3 métodos diferentes:
 
-- **Design do zero**: Comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo do email.
-- **Codifique seu próprio**: Crie seu próprio modelo de email codificando-o usando o HTML
-- **Importar HTML**: Importe um template HTML existente, que poderá editar.
+- **Design do zero**: Comece com tela em branco e uso do editor WYSIWYG para arrastar e soltar a estrutura e os de conteúdo para visita o conteúdo do e-mail.
+- **Codifique seu próprio**: Codificação da Correio Eletrônico usando HTML
+- **Importar HTML**: Importe um HTML existente, que poderá editar.
 
-Clique em **Importar HTML**.
+Clique em **Importar HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixar [here](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
+Arraste e solte o in **mailtemplatebootcamp.html**, que você pode [aqui](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
-Você verá este template de email padrão:
+Você verá  de correio eletrônico:
 
 ![Journey Optimizer](./images/msg14.png)
 
-Vamos personalizar o email. Clique ao lado do texto **Oi** e clique no botão **Adicionar personalização** ícone .
+Continuar a enviar correio eletrônico personalizado. Clique ao lado do texto **Hello** e, em, não ícone **Adicionar personalização**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você precisa trazer o **Nome** token de personalização armazenado em `profile.person.name.firstName`. No menu, encontre a variável **Pessoa** elemento, navegue até o **Nome completo** e clique no botão **+** ícone para adicionar o campo Nome no editor de expressão.
+Em, você trazer o token personalization **Nome** que está armazenado `profile.person.name.firstName`. Nenhum menu, localize ou elemento **Pessoa** faça uma busca detalhada não elemento **Nome completo** e panelhe no ícone **+** para **Nome** ao editor.
 
-Clique em **Salvar**.
+Clique em **Salvar**.
 
 ![Journey Optimizer](./images/msg36.png)
 
-Agora você perceberá como o campo de personalização foi adicionado ao texto.
+Agora você verá como o campo de personalização é adicionado ao seu texto.
 
 ![Journey Optimizer](./images/msg37.png)
 
@@ -142,11 +142,11 @@ Clique em **Salvar** para salvar sua mensagem.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Volte para o painel de mensagens clicando no botão **seta** ao lado do texto da linha de assunto no canto superior esquerdo.
+Retorne para painel de mensagens clicando na linha da linha do sentido do lado esquerdo.
 
 ![Journey Optimizer](./images/msg56.png)
 
-Você concluiu a criação do email de registro. Clique na seta no canto superior esquerdo para retornar à jornada.
+Agora você concluiu criação do seu e-mail de cadastro. Clique na seta no canto superior esquerdo para retornar à sua jornada.
 
 ![Journey Optimizer](./images/msg57.png)
 
@@ -154,32 +154,32 @@ Clique em **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 Publicar a jornada
+## 2.3.3 Publicar a sua jornada
 
-Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no botão **Propriedades** no lado superior direito da tela.
+Você precisa de um nome à sua jornada. Você pode fazer isso clicando no ícone **Propriedades** não canto superior da tela.
 
 ![ACOP](./images/journeyname.png)
 
-Você pode então inserir o nome da jornada aqui. Use `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as alterações.
+Você pode fazer isso clicando nenhum item clicar nenhum item &quot;Nome&quot; e inserindo seguinte nome `yourLastName - Account Creation Journey`. Clique em **OK** para salvar como mudanças.
 
 ![ACOP](./images/journeyname1.png)
 
-Agora você pode publicar sua jornada clicando em **Publicar**.
+Agora você publicar sua jornada clicando **Publicar**.
 
 ![ACOP](./images/publishjourney.png)
 
-Clique em **Publicar** novamente.
+Clique em **Publicar**  Data
 
 ![ACOP](./images/publish1.png)
 
-Em seguida, você verá uma barra de confirmação verde informando que sua jornada foi publicada.
+Você verá uma barra de confirmação verde informando que sua jornada agora está publicada.
 
 ![ACOP](./images/published.png)
 
-Você já terminou este exercício.
+Você terminou este.
 
-Próxima etapa: [2.4 Teste sua jornada](./ex4.md)
+Proxima. [2.4 Teste da sua jornada](./ex4.md)
 
-[Voltar para Fluxo de Usuário 2](./uc2.md)
+[Retornar para Fluxo 2](./uc2.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)
