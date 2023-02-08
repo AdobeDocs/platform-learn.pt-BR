@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
@@ -16,71 +16,72 @@ ht-degree: 0%
 
 ## Objetivos
 
-- Entender o serviço de aplicativo CJA
-- Saiba como posicionar o CJA
-- Entenda o fluxo de trabalho do CJA: da conexão de dados para insights
+- Entenda o que é o CJA
+- Entenda qual é o papel do CJA
+- Entenda o workflow do CJA: da conexão de dados aos insights
 
 ## 4.1.1 O que é o Customer Journey Analytics?
 
-O Customer Journey Analytics (CJA) fornece um kit de ferramentas para as equipes de business intelligence e de ciência de dados para compilar e analisar dados entre canais (online e offline). Os recursos no CJA fornecem contexto e clareza para a complexa jornada do cliente de vários canais. O contexto fornecido leva a um insight acionável sobre a remoção de pontos problemáticos do processo de conversão do cliente, além de projetar e fornecer experiências excepcionais para os momentos mais importantes.
+O Customer Journey Analytics (CJA) fornece uma interface em que os tempos de Analytics, Negócios e Tecnologia conseguem unir todos os dados da companhia e analisar uma jornada entre canais (online e offline) ponta cliente de ponta. O CJA é capaz de fornecer e clareza para essa jornada, trazendo uma visão acionável em dificuldades sem processo de conversão e possibilidades oitandos pontos.
 
-O CJA traz o Analysis Workspace para cima do Adobe Experience Platform. O Adobe Experience Platform é o cérebro para comunicação e orquestração e, com o CJA, as marcas agora podem contextualizar e visualizar todos esses dados, para que as equipes de negócios e de Insight possam aprender com isso ao analisar toda a jornada de clientes online para offline.
+O traz CJA no Analysis Workspace conectado à Adobe Experience Platform. Um Adobe Experience Platform é o comunicação e da orquestração e, com o CJA, como Marcas podem contextualização e visualizar todos esses dados, para que as equipes de negócios e insights possam Analando hoje uma jornada on line para offline do cliente.
 
-As equipes de negócios e de Insight podem conversar com o CJA, fazer perguntas e obter respostas rapidamente com a interface do usuário do Analysis Workspace que pode ser usada para arrastar e soltar, apontar e clicar.
+Como equipes de negócios e insights podem conversar com o CJA, &quot;fazer perguntas e respostas em real com a interface do usuário de arrastar e soltar, apontar e tempo e passo de usar usar a Analysis Workspace.
 
 ![demonstração](./images/cja-adv-analysis1.png)
 
-## 4.1.2 Principais vantagens
+## 4.1.2 vantagens Principais
 
 Os três principais benefícios para os clientes são:
 
-- A capacidade de disponibilizar insights para todos (ou seja, democratizando o acesso aos dados)
-- A capacidade de ver o cliente em uma jornada contextual (ou seja, os dados podem ser visualizados sequencialmente, abrangendo vários canais online e offline)
-- A capacidade de aproveitar o poder dos dados sem a necessidade de (ou seja, permite que os humanos usem dados para explorar análises e insights profundos para ativação de marketing)
+- Um acordo para todos, ou ainda, democracia, o calendário dos disponibilizar.
+- Um acordo de ver o cliente em uma jornada contextual (ou, os dados podem ser visualizados encialmente, abrangendo múltiplos on-line e off-line).
+- Um acordo de aproveitar o poder de um necessidade (ou, permite que indivíduos usem para desbloquear insights e análises das para ativação de).
 
-## 4.1.3 Por que escolher o Customer Journey Analytics?
+## 4.1.3 ## 4.1.3 Por que escolher o Customer Journey Analytics?
 
-O CJA não se destina a substituir um aplicativo de BI atual, como Power BI, Microestratégia, Locker ou Tableau. Esses aplicativos de BI são destinados a visualizar dados para criar painéis corporativos, de modo que todos em uma organização possam visualizar rapidamente métricas importantes.\
-O objetivo do CJA é trazer o poder de análise para as equipes de negócios e de marketing, tornando-o uma ferramenta de análise &quot;obrigatória&quot; para essas personas.
+O CJA não se destina a substituir um aplicativo de BI atualidade, como Power BI, Locker ou Tableau. O as usas aplicativos de BI são visualizar corporais para possam para que objetivo um painéis, rapidamente métricas. importantes. O objetivo JJA é trazer de análise para as equipes de Marketing Negócios, tornando-o da análise obrigatória.
 
-Tradicionalmente, os aplicativos de BI são incapazes de permitir verdadeira inteligência do cliente:
 
-- Eles não podem fazer atribuição e não fazem análise de jornada do cliente.
-- Os aplicativos de BI precisam conhecer a questão com antecedência
-- As consultas interativas são limitadas pela estrutura do banco de dados
-- Habilidades SQL são necessárias.
-- Os aplicativos de BI não dão a capacidade de perguntar por que algo aconteceu.
-- Os aplicativos de BI não têm conexão direta com pontos de contato do cliente.
 
-Por causa do acima, os usuários e analistas empresariais atingem os becos sem saída quase imediatamente, tornando a análise cara, lenta, inflexível e desconectada dos sistemas de ação.
+Tradicionalmente, os aplicativos de BI têm incapazes de permitir uma verdadeira inteligente clientes:
 
-Com o CJA, você pode ter uma visão 360 da jornada do cliente, usando dados offline e online, com as ferramentas certas para reduzir o tempo de insight, tornando os usuários de negócios independentes em entender por que algo aconteceu e como responder a ele.
+- Eles não podem &quot;fazer atribuição e não fazem de jornada do cliente.
+- Os aplicativos de BI precisam sabre a pergunta com antecedência
+- Como consultas interativas são limitadas estrutura do banco de dados
+- Habilidades de SQL são necessárias.
+- Os aplicativos de BI permitem que você pergun te o de acontecimento.
+- Os aplicativos de BI conexão direta com os de não é.
+
+Portanto, usuários de negócios e analistas chegam a becos sem saída imediatamente, tornando uma análise cara, lenta, flexível e desconectada dos sistemas de ação.
+
+Com o Cvocê pode ter uma visão Jjornada do cliente, usando fline e online, com as certas para reduzir o tempo de insight, tornando os usuários de negócios para o que respondem a isso.
 
 ![demonstração](./images/cja-use-case.png)
 
-## 4.1.4 Entender o fluxo de trabalho do Customer Journey Analytics
+## 4.1.4 Compreensão do fluxo do trabalho do Customer Journey Analytics
 
-Antes de iniciar os próximos exercícios, é importante entender quais etapas são necessárias para trazer dados do Adobe Experience Platform para o CJA, a fim de visualizá-los e obter alguns insights profundos. É o que chamamos de fluxo de trabalho do CJA. Vamos dar uma olhada nisso:
+Antes de os exercícios, é Adobe Experience Platform para os necessárias para o Cos Jalizá-los alguns insights. É o que chamamos de fluxo de trabalho do CJA. Vamos verificar:
 
 ![demonstração](./images/cja-work-flow.jpg)
 
-Antes de iniciar as etapas acima, não se esqueça da etapa 0, que é entender os dados disponíveis no Adobe Experience Platform.
+Antes de etapas, não se esqueça da Adobe Experience Platform, que é os.
 
-**Lixo dentro, lixo fora.** Lembra? Você deve ter uma ideia clara de quais dados estão disponíveis e como os schemas no Adobe Experience Platform são configurados. Entender os dados no Adobe Experience Platform facilitará as coisas, não apenas na parte da conexão de dados, mas também ao criar visualizações e fazer análise.
+**Lixo dentro, lixo fora.** Você tem uma ideia de cidadania disponíveis e os esquemas na Adobe Experience Platform são configurados. Compreender os dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexão de dados, mas também na hora de construir visualização e análises.
 
-## 4.1.5 Passo 0: Noções básicas sobre esquemas e conjuntos de dados do Adobe Experience Platform
+## 4.1.5 Etapa 0: Compreender esquemas e conjuntos de dados da Adobe Experience Platform
 
-Faça logon no Adobe Experience Platform acessando este URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Faça logon na Adobe Experience Platform acessando um URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-Depois de fazer logon, você será direcionado para a página inicial do Adobe Experience Platform.
+Depois de &quot;Faça&quot;, você vai acessar um início do logon no Adobe Experience Platform.
 
 ![Assimilação de dados](../uc1/images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada de ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Prod]** no canto superior direito da tela. Depois de selecionar a sandbox apropriada, você verá a tela mudar e agora estará na sandbox dedicada.
+Antes de continuar, você precisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso clicando no ícone **[!UICONTROL Prod]** não canto superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora está em sua sandbox dedicado.
 
 ![Assimilação de dados](../uc1/images/sb1.png)
 
-Consulte esses esquemas e conjuntos de dados no Adobe Experience Platform.
+Verifique os esquemas e conjuntos de dados na Adobe Experience Platform.
 
 | Conjunto de dados | Esquema |
 | ----------------- |-------------| 
@@ -88,23 +89,26 @@ Consulte esses esquemas e conjuntos de dados no Adobe Experience Platform.
 | Sistema de demonstração - Conjunto de dados de eventos para Central de chamadas (Global v1.1) | Sistema de demonstração - Esquema de evento para Central de chamadas (Global v1.1) |
 | Sistema de demonstração - Conjunto de dados de eventos para assistentes de voz (Global v1.1) | Sistema de demonstração - Esquema de evento para assistentes de voz (Global v1.1) |
 
-Certifique-se de ter verificado pelo menos coisas como:
+Certifique-se de ter verificado ao menos:
 
 - Identidades: CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores secundários?
 Você pode encontrar os identificadores abrindo um esquema e observando o objeto `_experienceplatform.identification.core`. Verificar o esquema [Sistema de demonstração - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
 
+- Identidades: entidades CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, nuns são identificadores secundários?
+Você pode, os identificadores abrindo um schema e observando o objeto `_experienceplatform.identification.core`. Verifique no schema [Sistema de demonstração - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
+
 ![demonstração](./images/identity.png)
 
-- Explore o objeto de comércio dentro do esquema [Sistema de demonstração - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Explore o objeto de comércio do esquema [Sistema de demonstração - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demonstração](./images/commerce.png)
 
-- Visualize todas as [conjuntos de dados](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e analisar os dados
+- Visualizar todos os os [conjuntos de dados](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
 
-Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
+Agora você está pronto para usar uma interface usuário do Customer Journey Analytics.
 
-Próxima etapa: [4.2 Conectar conjuntos de dados do Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
+Proxima. [Conecte os conjuntos de dados da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
-[Voltar para Fluxo de Usuário 4](./uc4.md)
+[Retornar para Fluxo 4](./uc4.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

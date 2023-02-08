@@ -5,27 +5,28 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '269'
+ht-degree: 0%
 
 ---
 
-# 2.5 Instalar e usar o aplicativo móvel
+# 2.5 Instalação e uso do aplicativo móvel
 
 
-## Instalar o aplicativo móvel
+## Instalar ou aplicativo móvel
 
-Antes de instalar o aplicativo, é necessário ativar **Rastreamento** no seu dispositivo iOS. Para fazer isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e garantir que a opção **Permitir que aplicativos solicitem rastreamento**.
+Antes de instalar o aplicativo, é necessário abilitar Rastreamento no seu dispositivo iOS. Para isso, Configurações > Privacidade e segurança > Rastreamento e confirmação Permitir item o rastre pedido.
 
 ![DSN](./../uc3/images/app4.png)
 
-Vá para a Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
+Acessar um App Store da Apple e pesquisar `aepmobile-bootcamp`.\
+Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abrir**.
+Depois que o aplicativo instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -37,11 +38,11 @@ Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clique em **Concordo**.
+Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir Ao Usar Aplicativo**.
+Clique em **Permitir aplicativo do Live**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -49,44 +50,44 @@ Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora você está no aplicativo, na página inicial, pronto para passar pela jornada do cliente.
+Agora, agora, não aplicativo, cedo, para verificar hoje uma jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Fluxo de jornada do cliente
+## Fluxo da jornada do cliente
 
-Primeiro de tudo, você precisa fazer logon. Clique em **Logon**.
+Primeiramente, é necessário fazer logon. Clique em **Logon**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Depois de criar sua conta nos exercícios anteriores, você viu isso no site. Agora é necessário reutilizar o endereço de email da conta criada no aplicativo para fazer logon.
+Depois de isso, é anteriores. Agora é necessário reo endereço de e-mail conta que você criou no aplicativo para fazer login.
 
 ![Demonstração](./../uc3/images/pv1.png)
 
-Digite o endereço de email que você usou no site aqui e clique em **Logon**.
+Digite de e-mail que você não endereço no site e clique em **Logon**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Em seguida, você receberá uma confirmação de que está conectado e receberá uma notificação por push.
+Você receberá uma confirmação de que está conectado e receberá uma notificação por push.
 
 ![DSN](./../uc3/images/app15.png)
 
-Retorne à página inicial no aplicativo e você verá recursos adicionais serem exibidos.
+Regresso para o início do começo do aplicativo e os. aparecer.
 
 ![DSN](./../uc3/images/app17.png)
 
-Ir para **Produtos**. Clique em qualquer produto, neste exemplo **Café para ir**.
+Acesse **Produtos**. Clique em Qualquer informação, anotado exemplo: **Café para ir**.
 
 ![DSN](./images/app19.png)
 
-Você verá o **Café para ir** página do produto no aplicativo. Clique em **Comprar**.
+Você vê o produto **Café para ir** sem aplicativo. Clique em **Comprar**.
 
 ![DSN](./images/app20.png)
 
-Você já terminou este exercício e está pronto para os próximos exercícios.
+Agora você terminou este e está agora para as próximas atividades.
 
-Próxima etapa: [2.6 Personalização na central de atendimento](./ex6.md)
+Proxima. [ 2.6 Personalização sem central de atendimento](./ex6.md)
 
-[Voltar para Fluxo de Usuário 2](./uc2.md)
+[Retornar para Fluxo 2](./uc2.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

@@ -5,51 +5,51 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 1%
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
-# 2. Registro e integração
+# 2. Objetivos de amêndizado
 
 ## Objetivos de aprendizagem
 
 ## Pré-requisitos
 
 - Acesso ao Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleta de dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acesso ao site de demonstração
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- acesso de demonstração
 
 >[!IMPORTANT]
 >
->Este tutorial foi criado para facilitar um formato de bootcamp específico. Ele usa sistemas e contas específicos aos quais você pode não ter acesso. Mesmo sem acesso, achamos que você ainda pode aprender muito lendo esse conteúdo muito detalhado. Se você for um participante em um dos bootcamp e precisar de suas credenciais de acesso, entre em contato com o representante do Adobe que fornecerá as informações necessárias.
+>Este tutorial foi para facilitar um bootcamp. Sistemas e relé você não tem um calendário específicos são Mesmo assim, você aprende com. Se você é um participante de um bootcamp e das credenciais, representante em Adobe para as informações....................................................................................................................................................................................................................................
 
 ## Exercícios
 
-[2.1 Visite o site e crie sua conta](./ex1.md)
+[2.1 Visita ao site crie sua conta](./ex1.md)
 
-Neste exercício, você aprenderá a configurar um evento.
+, você aprende como configurar evento.
 
-[2.2 Criar seu evento](./ex2.md)
+[2.2 Evento de emissão de moeda eletrônica](./ex2.md)
 
-Neste exercício, você aprenderá a configurar um evento.
+, você aprende como configurar evento.
 
-[2.3 Criar sua jornada e mensagem de email](./ex3.md)
+[2.3 Crie sua jornada e de e-mail](./ex3.md)
 
-Neste exercício, você aprenderá a configurar uma jornada e uma mensagem de email.
+Jornada, você aprende como configurar uma jornada e um e-mail.
 
-[2.4 Teste sua jornada](./ex4.md)
+[2.4 Teste da sua jornada](./ex4.md)
 
-Neste exercício, você testará a jornada que acabou de criar.
+Você sabe que você testar uma jornada criada.
 
-[2.5 Instalar e usar o aplicativo móvel](./ex5.md)
+[2.5 Instalação e uso do aplicativo móvel](./ex5.md)
 
-Neste exercício, você instalará o aplicativo móvel.
+instalar...
 
-[2.6 Personalização na central de atendimento](./ex6.md)
+[2.6 Personalização sem central de atendimento](./ex6.md)
 
-Neste exercício, você verá como uma experiência da central de atendimento pode ser otimizada com base na inteligência do Adobe Experience Platform.
+exercício do exercício, você verá como uma experiência de call center que otimiza com base na inteligência da Adobe Experience Platform.
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

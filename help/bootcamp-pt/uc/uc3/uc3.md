@@ -5,43 +5,43 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 1%
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
-# 3. Combinação física e digital
+# 3. Retornar para Todos os Módulos
 
-## Objetivos de aprendizagem
+## Objetivos de aprendizado
 
 ## Pré-requisitos
 
-- Acesso ao Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleta de dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acesso ao site de demonstração
+- Acesso ao Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- acesso de demonstração
 
 >[!IMPORTANT]
 >
->Este tutorial foi criado para facilitar um formato de bootcamp específico. Ele usa sistemas e contas específicos aos quais você pode não ter acesso. Mesmo sem acesso, achamos que você ainda pode aprender muito lendo esse conteúdo muito detalhado. Se você for um participante em um dos bootcamp e precisar de suas credenciais de acesso, entre em contato com o representante do Adobe que fornecerá as informações necessárias.
+>Este tutorial foi para facilitar um bootcamp. Sistemas e relé você não tem um calendário específicos são Mesmo assim, você aprende com. Se você é um participante de um bootcamp e das credenciais, representante em Adobe para as informações....................................................................................................................................................................................................................................
 
 ## Exercícios
 
-[3.1 Usar o aplicativo móvel e acionar uma entrada de beacon](./ex1.md)
+[3.1 Utilização aplicativo sinalizador de móvel e acione](./ex1.md)
 
-Neste exercício, você aprenderá a configurar um evento.
+, você aprende como configurar evento.
 
-[3.2 Criar seu evento](./ex2.md)
+[3.2 Evento de emissão de moeda eletrônica](./ex2.md)
 
-Neste exercício, você aprenderá a configurar um evento.
+, você aprende como configurar evento.
 
-[3.3 Criar sua jornada e notificação por push](./ex3.md)
+[3.3 Notificação por push da sua jornada](./ex3.md)
 
-Neste exercício, você aprenderá a configurar uma jornada e uma notificação por push e como vincular o evento e a mensagem a essa jornada.
+Você sabe aprender como configurar uma citação de notificação e como vincular para uma jornada.
 
-[3.4 Teste sua jornada](./ex4.md)
+[3.4 Teste da sua jornada](./ex4.md)
 
-Neste exercício, você aprenderá a configurar uma jornada e como vincular seu evento e mensagem a essa jornada.
+Você sabe aprender como configurar jornada vincular jornada e para jornada.
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
@@ -16,192 +16,192 @@ ht-degree: 1%
 
 ## Objetivos
 
-- Entender a interface do usuário do Analysis Workspace
-- Saiba mais sobre alguns recursos que tornam o Analysis Workspace tão diferente.
-- Saiba como analisar no CJA usando o Analysis Workspace
+- Entenda a interface do usuário do Analysis Workspace
+- Conheça alguns Recursos que tornam o Analysis Workspace Diferente.
+- Aprenda uma analisar no CJA usando no Analysis Workspace
 
 ## Contexto
 
-Neste exercício, você usará o Analysis Workspace no CJA para analisar exibições de produtos, funis de produtos, churn etc.
+exercício do exercício, você usará o Analysis Workspace no JA para analisar visualizações de produtos, funis de produtos, rotativo, etc.
 
-Vamos usar o projeto criado em [4.4 Preparação de dados no Analysis Workspace](./ex4.md), vá para [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projeto que você criou em  [4.4 Preparação de dados no Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demonstração](./images/prohome.png)
 
-Abra o projeto `yourLastName - Omnichannel Analysis`.
+Abra seu projeto `yourLastName - Omnichannel Analysis`.
 
-Com seu projeto aberto e a Exibição de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a criar suas primeiras visualizações.
+Com es projeto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar um construir suas primeiras visual alizações.
 
 ![demonstração](./images/prodataView1.png)
 
-## Quantas visualizações de produtos temos diariamente
+## O Quantas visualizações de produtos temos diariamente?
 
-Primeiro, precisamos selecionar as datas certas para analisar os dados. Vá para a lista suspensa do calendário no lado direito da tela de desenho. Clique nele e selecione o intervalo de datas aplicável.
+Em Lugar, precisamos como dados certas para analisar os dados. Acessar o menu suspenso não calendário lado da tela. Clique em e selecione em intervalo de data aplicável.
 
 >[!IMPORTANT]
 >
->Selecione um intervalo de datas como **Nesta Semana** ou **Este mês**. Os dados disponíveis mais recentes foram assimilados em 19 de setembro de 2022.
+>Selecione um intervalo de dados como **Nesta Semana** ou **Este mês**. Os dados disponíveis mais recentes foram absorvem vídeos em 19 de setembro de 2022.
 
 ![demonstração](./images/pro1.png)
-
-No menu à esquerda (área de componentes), localize a Métrica calculada **Exibições do produto**. Selecione-o e arraste-o e solte-o na tela, na parte superior direita da tabela de forma livre.
+Nenhum menu do lado esquerdo (cor da face), métricas calculadas **Exibições do produto**. Selecione-as e arraste e solte na tela, no canto superior tabela de forma livre.
 
 ![demonstração](./images/pro2.png)
 
-Dimensionar automaticamente a dimensão **Dia** serão adicionadas para criar a primeira tabela. Agora vocês podem ver sua pergunta respondida em tempo real.
+dimensão **Dia** Será adicionada para sua tabela. Agora você pode ver sua pergunta respondida imediatamente.
 
 ![demonstração](./images/pro3.png)
 
-Em seguida, clique com o botão direito do mouse no resumo da métrica.
+Em, clique com o do métrica
 
 ![demonstração](./images/pro4.png)
 
-Clique em **Visualizar** e depois selecione **Linha** como visualização.
+Clique em **Visualizar** e selecione **Linha** Como visualização.
 
 ![demonstração](./images/pro5.png)
 
-Você verá suas visualizações de produtos por dia.
+Você verá como suas visual alizações de produto por dia.
 
 ![demonstração](./images/pro6.png)
 
-Você pode alterar o escopo de tempo para dia clicando em **Configurações** na visualização.
+Você pode alterar o escopo de tempo para o dia clicando em **Configurações** visualização.
 
 ![demonstração](./images/pro7.png)
 
-Clique no ponto ao lado de **Linha** para **Gerenciar a fonte de dados**.
+Clique no ponto ao lado de **Linha** e **Gerenciar a fonte de dados**.
 
 ![demonstração](./images/pro7a.png)
 
-Em seguida, clique em **Bloquear seleção** e selecione **Itens Selecionados** para bloquear essa visualização de modo que ela sempre exiba uma linha do tempo de Exibições do produto.
+Em **Bloquear seleção** e selecione **Itens Selecionados** para bloquear esta visualização para que ela etera uma linha do tempo de visualização dos produtos.
 
 ![demonstração](./images/pro7b.png)
 
-## Os 5 principais produtos visualizados
+## 5 produtos vistos
 
-Quais são os 5 principais produtos visualizados?
+Quais são os 5 produtos mais vistos?
 
-Lembre-se de salvar o projeto de vez em quando.
+Lembre-se de salvar o projeto de andamento em andamento.
 
 | OS | Curto |
 | ----------------- |-------------| 
 | Windows | Controle + S |
 | Mac | Command+S |
 
-Vamos começar a encontrar os 5 principais produtos visualizados. No menu lateral esquerdo, localize a variável **Nome do produto** - Dimension.
+Vamos começar um dos 5 mais vistos. Nenhum menu do lado esquerdo, o Nome do Produto - Dimensão.
 
 ![demonstração](./images/pro8.png)
 
-Arrastar e soltar **Nome do produto** para substituir o **Dia** dimensão:
+Agora arraste e solte **Nome do produto** para substituir a dimensão **Dia**:
 
-Esse será o resultado
+Este será resultado.
 
 ![demonstração](./images/pro10a.png)
 
-Em seguida, tente detalhar um dos produtos por Nome da Marca. Procurar por **brandName** e arraste-o para baixo do nome do produto.
+Em Nome dividir dos produtos. Pesquisas **brandName** e arraste para primeiro do produto.
 
 ![demonstração](./images/pro13.png)
 
-Em seguida, faça um detalhamento usando o Agente do usuário. Procurar por **Agente do usuário** e arraste-a sob o nome da marca.
+Em, faça um detail usando Agente de usuário. Pesquisas **Agente do usuário** e arraste-o para baixo do nome da marca.
 
 ![demonstração](./images/pro15.png)
 
-Você verá isso:
+Em, exibida a abaixo:
 
 ![demonstração](./images/pro15a.png)
 
-Por fim, é possível adicionar mais visualizações. No lado esquerdo, em visualizações, procure por `Donut`. Tome `Donut`, arraste-o e solte-o na tela sob a **Linha** visualização.
+Por fim, você conhece mais alizações. Nenhum lado esquerdo, em visualizações, pesquisar `Donut`. Pegue `Donut`Arste e solte na tela visualização **Linha** 
 
 ![demonstração](./images/pro18.png)
 
 Em seguida, na Tabela, selecione os primeiros 5 **Agente do usuário**  linhas do detalhamento em que fizemos **Google Pixel XL Smartphone preto de 32 GB** > **Signal do Haqqani**. Ao selecionar as 5 linhas, mantenha pressionada a tecla **CTRL** (no Windows) ou o botão **Comando** (no Mac).
 
+Em, na Tabela, selecione como primeiras **Agente do usuário** faça fizemos detalhes **Google Pixel XL Smartphone preto de 32 GB** > **Signal do Haqqani**. Ao selecionar como 5 linhas, segure o **CTRL** (sem Windows) ou não **Comando** (sem Mac).
+
 ![demonstração](./images/pro20.png)
 
-Você verá o gráfico de rosca alterado:
+Você verá o gráfico de donut:
 
 ![demonstração](./images/pro21.png)
 
-Você pode até adaptar o design para que seja mais legível, tornando **Linha** e o **Rosca** gráfico um pouco menor para que se ajustem um ao outro:
+Você pode adaptar o design para ser legível, tornando o gráfico de **Linha** e o gráfico de **Rosca** um pouco menor para que sejam lado a lado
 
 ![demonstração](./images/pro22.png)
 
-Clique no ponto ao lado de **Rosca** para **Gerenciar a fonte de dados**.
-Em seguida, clique em **Bloquear seleção** para bloquear essa visualização de modo que ela sempre exiba uma linha do tempo de Exibições do produto.
+Clique no ponto ao lado de *Rosca** para **Gerenciar a fonte de dados**. Em **Bloquear seleção** para bloquear essa visualização para que ela evida uma linha do tempo de visualização alizações produto.
 
 ![demonstração](./images/pro22b.png)
 
-Saiba mais sobre visualizações usando o Analysis Workspace aqui:
+Saiba mais sobre visualizações usando no Analysis Workspace em:
 
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=pt-BR](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=pt-BR)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Funil de interação do produto, da visualização à compra
+## Funil de interação do produto, da visualização de compra
 
-Há muitas maneiras de resolver essa questão. Uma delas é usar o Tipo de interação do produto e usá-lo em uma tabela de forma livre. Outra maneira é usar um **Visualização de fallout**. Vamos usar o último como queremos visualizar e analisar ao mesmo tempo.
+Existem muitas formas de resolver esta questão. Uma tartaruga é do tipo da Interação de usino-lo em uma tabela de livre. Outra forma é usar uma **Visualização de fallout**. Vamos usar o último pois queremos e analisar ao tempo.
 
-Feche o painel atual clicando aqui:
+Feche o painel real clicando aqui:
 
 ![demonstração](./images/pro23.png)
 
-Em seguida, adicione um novo painel em branco clicando em **+ Adicionar painel em branco**.
+Agora adicione um novo painel em branco **+ Adicionar painel em branco**.
 
 ![demonstração](./images/pro24.png)
 
-Clique na visualização **Fallout**.
+Clique na visualização de **Fallout**.
 
 ![demonstração](./images/pro25.png)
 
-Selecione o mesmo intervalo de datas do exercício anterior.
+Selecione o intervalo de dados do exercício anterior.
 
 ![demonstração](./images/prodatef.png)
 
-Você verá isso.
+Em, você
 
 ![demonstração](./images/prodatefa.png)
 
-Encontre a dimensão **Tipo de evento** sob os componentes do lado esquerdo:
+Encontrar um dimensão **Tipo de evento** nos no lado esquerdo:
 
 ![demonstração](./images/pro26.png)
 
-Clique na seta para abrir a dimensão:
+Clique na seta para abrir dimensão:
 
 ![demonstração](./images/pro27.png)
 
-Você verá todos os tipos de evento disponíveis.
+Você verá os pos de eventos disponíveis.
 
 ![demonstração](./images/pro28.png)
 
-Selecionar o item **commerce.productViews** e arraste e solte-o no **Adicionar ponto de contato** dentro do **Visualização de fallout**.
+Selecione no item **commerce.productViews** e arraste e solte-o no campo **Adicionar ponto de contato** da **Visualização de fallout**.
 
 ![demonstração](./images/pro29.png)
 
-Faça o mesmo com **commerce.productListAdds** e **commerce.purches** e solte-os no **Adicionar ponto de contato** dentro do **Visualização de fallout**. A visualização terá esta aparência:
+Faça o o com **commerce.productListAdds** e **commerce.purches** e solte-os no campo **Adicionar ponto de contato** da  **Visualização de fallout**. O seu visualização agora, o romance semelhante ao seguinte:
 
 ![demonstração](./images/props1.png)
 
-Você pode fazer muitas coisas aqui. Alguns exemplos: comparar ao longo do tempo, comparar cada etapa por dispositivo ou comparar por fidelidade. No entanto, se queremos analisar coisas interessantes como por que os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta no CJA: clique com o botão direito do mouse.
+Você faz muitas coisas. exemplos: comparar ao longo do tempo, comparar passo por dispositivo ou comparar fidelidade. Não entanto, se quiseeeeanalisar interessantes o porquê clientes não comparação am como  o item, podemos a carrinho do CA: clicar com o.
 
-Clique com o botão direito no ponto de contato **commerce.productListAdds**. Em seguida, clique em **Detalhar o fallout neste ponto de contato**.
+Clique com o ponto de contato do mouse sem toque **commerce.productListAdds**. Em **Detalhar o fallout neste ponto de contato**.
 
 ![demonstração](./images/pro32.png)
 
-Será criada uma nova tabela de forma livre para analisar o que as pessoas fizeram se não compraram.
+Uma nova tabela de obra é criada para analisar o que se fizeram.
 
 ![demonstração](./images/pro33.png)
 
-Altere o **Tipo de evento** por **Nome da página**, na nova tabela de forma livre, para ver quais páginas estão indo, em vez da Página de confirmação de compra.
+Alteração o **Tipo de evento** por **Nome da página**, uma nova tabela de moeda, para ver em páginas eles estão indo, em vez da confirmação de compra.
 
 ![demonstração](./images/pro34.png)
 
-## O que as pessoas fazem no site antes de acessar a página Cancelar Serviço?
+## O que é fazem não há lugar a acessar de uma bandeira Cancelar?
 
-Novamente, há muitas maneiras de executar essa análise. Vamos usar a análise de fluxo para iniciar a parte de descoberta.
+Novamente, há muitas formas de realizar análise. Vamos usar a análise fluxo para parte da descoberta.
 
-Feche o painel atual clicando aqui:
+Feche o painel real clicando aqui:
 
 ![demonstração](./images/pro0.png)
 
-Em seguida, adicione um novo painel em branco clicando em **+ Adicionar painel em branco**.
+Agora adicione um novo painel em branco **+ Adicionar painel em branco**.
 
 ![demonstração](./images/pro0a.png)
 
@@ -209,60 +209,58 @@ Clique na visualização **Fluxo**.
 
 ![demonstração](./images/pro35.png)
 
-Você verá isso:
+Em, exibido:
 
 ![demonstração](./images/pro351.png)
 
-Selecione o mesmo intervalo de datas do exercício anterior.
+Selecione o intervalo de dados do exercício anterior.
 
 ![demonstração](./images/pro0b.png)
 
-Encontre a dimensão **Nome da página** sob os componentes do lado esquerdo:
+Encontrar um dimensão **Nome da página** nos no lado esquerdo:
 
 ![demonstração](./images/pro36.png)
 
-Clique na seta para abrir a dimensão:
+Clique na seta para abrir dimensão:
 
 ![demonstração](./images/pro37.png)
 
-Você encontrará todas as páginas visualizadas. Encontre o nome da página: **Cancelar Serviço**.
-Arrastar e soltar **Cancelar Serviço** no campo Fluxo Visualization no meio:
+Você encontr ará como vistas páginas. Encontro no início: **Cancelar Serviço**.
+Arraste e solte **Cancelar Serviço** uma Visualização de fluxo no campo meio:
 
 ![demonstração](./images/pro38.png)
 
-Você verá isso:
+Em, exibido:
 
 ![demonstração](./images/pro40.png)
 
-Agora vamos analisar se os clientes que visitaram o **Cancelar Serviço** A página no site também chamou o callcenter e qual foi o resultado.
+Vamos agora analisar os clientes que visitaram a C **Cancelar Serviço** nenhum site também ligaram para o call center e qual foi o resultado.
 
-Sob as dimensões, volte e localize **Tipo de interação da chamada**.
-Arrastar e soltar **Tipo de interação da chamada** para substituir a primeira interação à direita no **Visualização de fluxo**.
+Nas, torne e, de interação. Arraste e solte **Tipo de interação da chamada** para substituir primeira interação em direita **Visualização de fluxo**.
 
 ![demonstração](./images/pro43.png)
 
-Agora você está vendo o tíquete de suporte dos clientes que chamaram a central de atendimento depois de visitar o **Cancelar Serviço** página.
+Agora você visualiza o tíquete dos clientes que ligaram para a central atendimento depois de visitar **Cancelar Serviço**.
 
 ![demonstração](./images/pro44.png)
 
-Em seguida, nas dimensões, pesquise por **Feed de chamada**.  Arraste e solte-o para substituir a primeira interação à direita no **Visualização de fluxo**.
+Em, aquisição **Feed de chamada**. Arraste e solte para substituir a primeira interação à direita na visualização de fluxo.
 
 ![demonstração](./images/pro46.png)
 
-Você verá isso:
+Em, exibido:
 
 ![demonstração](./images/flow.png)
 
-Como você pode ver, executamos uma análise omnicanal usando a Visualização de fluxo. Graças a isso, descobrimos que alguns clientes que pensavam em cancelar seu serviço tinham um sentimento positivo depois de ligar para o centro de atendimento. Será que talvez tenhamos mudado de ideias com uma promoção?
+Como pode ver, executamos uma análise omnichannel usando um visualização de fluxo. Graças a isso, descobrimos que alguns que se estavam em cancelar o tiveram. Uma positiva de para o call center. Talvez mudado de ideia?
 
+## Qual é o desempenho dos clientes com um relação Call center Positivo principais KPIs
 
-## Como os clientes com um contato Callcenter positivo estão se saindo em relação aos KPIs principais?
-
-Vamos primeiro segmentar os dados para obter somente usuários com **positivo** chamadas . No CJA, os segmentos são chamados de Filtros. Vá para filtros dentro da área do componente (no lado esquerdo) e clique em **+**.
+Primeiros passos os dados para usuários com chamadas **positivo**. Não há CJA, os Segmentos são chamados de Filtros. Acesse para filtros na mané (no lado esquerdo e panelhe em) **+**.
 
 ![demonstração](./images/pro58.png)
 
-No Construtor de filtros, dê um nome ao filtro
+Dentro do Construtor de filtro, dê um nome ao filtro
 
 | Nome | Descrição |
 | ----------------- |-------------| 
@@ -270,31 +268,31 @@ No Construtor de filtros, dê um nome ao filtro
 
 ![demonstração](./images/pro47.png)
 
-Nos componentes (dentro do Construtor de filtros), encontre **Feed de chamada** e arraste e solte-o em Definição do Construtor de filtros.
+N. o S. (Construtor de filtro), **Feed de chamada** e arraste e solte na Definição do construtor de filtro.
 
 ![demonstração](./images/pro48.png)
 
-Em seguida, selecione **positivo** como valor para o filtro.
+Ágora selecione **positivo** como valor para o filtro.
 
 ![demonstração](./images/pro49.png)
 
-Alterar o escopo a ser **Pessoa** nível.
+Altere o espo para o nível **Pessoa**.
 
 ![demonstração](./images/pro50.png)
 
-Para concluir, basta clicar em **Salvar**.
+Para finatualizata, basta clicar em **Salvar**.
 
 ![demonstração](./images/pro51.png)
 
-Então você estará de volta. Se ainda não tiver sido feito, feche o painel anterior.
+Então, você vai retornar para esta tela. Se Cabinda não tornou, feche painel anterior.
 
 ![demonstração](./images/pro0c.png)
 
-Em seguida, adicione um novo painel em branco clicando em **+ Adicionar painel em branco**.
+Agora adicione um novo painel em branco **+ Adicionar painel em branco**.
 
 ![demonstração](./images/pro24c.png)
 
-Selecione o mesmo intervalo de datas do exercício anterior.
+Selecione o intervalo de dados do exercício anterior.
 
 ![demonstração](./images/pro24d.png)
 
@@ -302,27 +300,26 @@ Clique em **Tabela de forma livre**.
 
 ![demonstração](./images/pro52.png)
 
-Agora, arraste e solte o filtro que acabou de criar.
+Agora arraste e filtro que você acabou de solte.
 
 ![demonstração](./images/pro53.png)
 
-Tempo para adicionar algumas métricas. Comece com **Exibições do produto**. Arraste e solte na tabela de forma livre. Também é possível excluir o **Eventos** métrica.
+Hora de métricas. Comece com **Exibições do produto**. Arraste e solte na tabela de forma livre. Você também pode excluir a métrica **Eventos**.
 
 ![demonstração](./images/pro54.png)
 
-Faça o mesmo com **Pessoas**,  **Adicionar ao carrinho** e **Compras**. Você vai acabar com uma mesa como esta.
+Faça o o com **Pessoas**, **Adicionar ao carrinho** e **Compras**. Você vai acabar com uma tabela como um seguinte.
 
 ![demonstração](./images/pro55.png)
 
-Graças à primeira análise de fluxo, veio-me à mente uma nova questão. Então decidimos criar esta tabela e verificar alguns KPIs em relação a um segmento para responder essa pergunta. Como você pode ver, o tempo de insight é muito mais rápido do que usar SQL ou outras soluções de BI.
+Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos tomar tabela e verificar KPIs em um segmento para responder a essa pergunta. Como você pode ver, tempo de insight é muito o rápido do usar SQL ou usar soluções de BI.
 
-## Recapitulação do Customer Journey Analytics e Analysis Workspace
+## Recapitulação do Analysis Workspace e do Customer Journey Analytics
 
-Como você aprendeu neste laboratório, a Analysis Workspace une os dados de todos os canais para analisar toda a jornada do cliente. Além disso, lembre-se de que é possível trazer dados para o mesmo espaço de trabalho que não é compilado para a jornada.
-Pode ser realmente útil trazer dados desconectados para sua análise para contextualizar a jornada. Alguns exemplos incluem informações como dados NPS, pesquisas, eventos Facebook Ads ou interações offline (não identificadas).
+Como você aninhou laboratório, no Analysis Workspace reúne os dados dos os para analisar jornada do cliente. Além disso, lembre-se de que você trazer para o espaço de trabalho que não está à jornada. Pode ser muito útil trazer desconectados para sua análise contextua Apostjornada. Alguns exemplos coisas como os dados NPS, pesquisas, eventos de anúncios do Facebook ou interações offline (não identificadas).
 
-Próxima etapa: [4.6 De insights à ação](./ex6.md)
+Proxima. [4.6 De insights a ação](./ex6.md)
 
-[Voltar para Fluxo de Usuário 4](./uc4.md)
+[Retornar para Fluxo 4](./uc4.md)
 
-[Voltar para todos os módulos](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

@@ -5,47 +5,47 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 1%
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
 # 1. Aquisição
 
-## Objetivos de aprendizagem
+## Objetivos de aprendizado
 
 ## Pré-requisitos
 
 - Acesso ao Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleta de dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acesso ao site de demonstração
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- acesso de demonstração
 
 >[!IMPORTANT]
 >
->Este tutorial foi criado para facilitar um formato de bootcamp específico. Ele usa sistemas e contas específicos aos quais você pode não ter acesso. Mesmo sem acesso, achamos que você ainda pode aprender muito lendo esse conteúdo muito detalhado. Se você for um participante em um dos bootcamp e precisar de suas credenciais de acesso, entre em contato com o representante do Adobe que fornecerá as informações necessárias.
+>Este tutorial foi para facilitar um vinho de Bootcamp. Sistemas e relé você não tem um calendário específicos são Mesmo assim, você aprende com. Se você é um participante de Bootcamp e das credenciais, representante em Adobe para as informações.....................................................................................................................................................................................................................................
 
 ## Exercícios
 
-[1.1 Visite o site](./ex1.md)
+[1.1 Visita ao site](./ex1.md)
 
-Neste exercício, você seguirá um script e passará pelo site.
+Zé, você irá seguir um roteiro e pero site.
 
-[1.2 Visualizar seu próprio perfil de cliente em tempo real - Interface do usuário](./ex2.md)
+[1.2 Visualizar seu inimigo de cliente em tempo real - IU](./ex2.md)
 
-Neste exercício, você fará logon no Adobe Experience Platform e visualizará seu próprio Perfil do cliente em tempo real na interface do usuário do .
+Você faz o logon na Adobe Experience Platform e visualizar, no perfil em tempo.
 
-[1.3 Criar um segmento - Interface do usuário](./ex3.md)
+[1.3 Segmento de Crie - Interface do usuário](./ex3.md)
 
-Neste exercício, você criará um segmento usando o Construtor de segmentos do Adobe Experience Platform.
+Ouro, Você, Um segmento usando Construtor de Segmentos da Adobe Experience Platform.
 
-[1.4 Tomar medidas: enviar seu segmento para a Adobe Target](./ex4.md)
+[1.4 Ação: segmento do ambiente para o Adobe Target](./ex4.md)
 
-Use o segmento criado no exercício 1.1 para configurar uma Atividade de Direcionamento de experiência no Adobe Target.
+Utilização do segmento construído n.o 1.1 para configurar uma atividade de segmentação por experiência Adobe Target.
 
-[1.5 Tomar medidas: enviar seu segmento para a Facebook](./ex5.md)
+[1.5 Ação: segmento do ambiente para o Facebook](./ex5.md)
 
-Conecte o segmento que você criou no exercício 1.1 ao Facebook de destino.
+Conecte o segmento que você criou no 1.1 para o Facebook.
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os módulos](../../overview.md)

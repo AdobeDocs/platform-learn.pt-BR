@@ -5,55 +5,54 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 072179998d19c32589280defdb257a86d8728fea
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1655'
 ht-degree: 2%
 
 ---
 
-# 4.3 Criar uma visualização de dados
+# 4.3 Crie uma Visualização de Dados
 
 ## Objetivos
 
-- Entender a interface do usuário da visualização de dados
-- Entender as configurações básicas da definição de visita
-- Entender a atribuição e a persistência em uma visualização de dados
+- Entenda a UI de Visualização de dados
+- Compreenda as configurações básicas de Passagem de Passagem
+- Compreenda a atribuição e a Persistência em uma Visualização de
 
 ## 4.3.1 Visualização de dados
 
-Com a conexão concluída, agora é possível avançar para influenciar a visualização. Uma diferença entre o Adobe Analytics e o CJA é que o CJA precisa de uma Exibição de dados para limpar e preparar os dados antes da visualização.
+Agora, com seu concluída conexão, é possível progredir para influenciar a visualização. Uma entra o Adobe Analytics e o CJA é que o CJA precisa de uma visualização de dados limpar e preparar os dados da visualização.
 
-Uma Exibição de dados é semelhante ao conceito de Conjuntos de relatórios virtuais no Adobe Analytics, onde você define definições de visitas sensíveis ao contexto, filtragem e também como os componentes são chamados.
+Uma Visualização de dados é semelhante ao conceito de Conjuntos de relatórios virtuais no Adobe Analytics, onde estabelece como definições de visita com reconhecimento de contexto, filtragem e também como os são chamados.
 
-Você precisará de no mínimo uma Exibição de dados por Conexão. No entanto, para alguns casos de uso, é ótimo ter várias Visualizações de dados para a mesma conexão, com o objetivo de fornecer diferentes insights para diferentes equipes.
-Se quiser que sua empresa se torne orientada por dados, você deve adaptar como os dados são visualizados em cada equipe. Alguns exemplos:
+necessário &#39;Será&#39;, &quot;uma visualização de dados por conexão. Sem entanto, para alguns de uso, é ótimo ter múltiplas Visualizações de Dados para a mesma, com o conexão de objetivo insights para fornecer. Se você deseja que seu empreendimento orientada por, adaptar um formato como os dados são vistos em cada equipe. exemplos:
 
-- Métricas UX somente para a equipe de Design UX
-- Use os mesmos nomes para KPIs e Métricas para Google Analytics, assim como para o Customer Journey Analytics, para que a equipe de análise digital possa falar apenas um idioma.
-- A Exibição de dados foi filtrada para mostrar, por exemplo, dados de um mercado, uma marca ou apenas para dispositivos móveis.
+- Design das Métricas de UX
+- Use os mesmos para KPIs e para o Google Analytics e o Customer Journey Analytics, para o equipe de análise digital, para o idioma métricas.
+- Visualização de Dados filtrados para mostrar, por exemplo, para fins de informação, ou Dispositivos para ou para.
 
-No **Conexões** marque a caixa de seleção na frente da conexão que você acabou de criar. Clique em **Criar Exibição de Dados**.
+Na tela de **Conexões** marque a caixa de seleção da conexão que você acabou de. Clique em  **Criar Exibição de Dados**.
 
 ![demonstração](./images/exta.png)
 
-Você será redirecionado para o **Criar Exibição de Dados** fluxo de trabalho.
+Você será redirecion para o fluxo do trabalho **Criar Exibição de Dados** fluxo de trabalho.
 
 ![demonstração](./images/0-v2.png)
 
-## 4.3.2 Definição da visualização de dados
+## 4.3.2 Definição de Visualização de dados
 
-Agora você pode configurar as definições básicas para sua Exibição de dados.
+Agora você configurar como definições para sua visualização de dados.
 
 ![demonstração](./images/0-v2.png)
 
-O **Conexão** você criou no exercício anterior já está selecionado. Sua conexão é nomeada `yourLastName – Omnichannel Data Connection`.
+A **Conexão** que você já está selecionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
 
 ![demonstração](./images/ext5.png)
 
-Em seguida, dê um nome à Exibição de dados seguindo esta convenção de nomenclatura: `yourLastName – Omnichannel Data View`.
+Em, Nome um nome à sua Visualização de seguindo. `yourLastName – Omnichannel Data View`.
 
-Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data View`.
+Insira o truque para descrição: `yourLastName – Omnichannel Data View`.
 
 | Nome | Descrição |
 | ----------------- |-------------| 
@@ -61,13 +60,13 @@ Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data View
 
 ![demonstração](./images/1-v2.png)
 
-Para o **Fuso Horário**, selecione o fuso horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, Amesterdã GMT+01:00**. Esse cenário é realmente interessante, já que algumas empresas operam em diferentes países e regiões. Alocar o fuso horário certo para cada país evitará erros típicos de dados, como acreditar que, por exemplo, no Peru, a maioria das pessoas compra camisetas às 4:00 AM.
+Parágrafo **Fuso Horário** selecione o fuso horário **Alagoas, Estocolmo, Roma, Berna, Bruxelas, Viena, Amsterdã GMT+01:00**. Este é um realmente interessante, pois operam em diferentes geografias. Alocar o fuso horário certo para cada país evitará erros típ icos de dados, como, acreditar que a maioria das camisetas às 4h no Peru.
 
 ![demonstração](./images/ext7.png)
 
-Também é possível modificar o nome das métricas principais (Pessoa, Sessão e Evento). Isso não é necessário, mas alguns clientes gostam de usar Pessoas, Visitas e Ocorrências em vez de Pessoa, Sessão e Eventos (convenção de nomenclatura padrão do Customer Journey Analytics).
+Você também pode modificar uma nomenclatura das métricas (Pessoa, Navegação). Não é obrigatório, mas alguns clientes gostam de usar, Visitas e Acessos em vez de Pessoa Eventos (convenção de padrão do Isso do Customer Journey Analytics).
 
-Agora você deve ter as seguintes configurações definidas:
+Ágora você como seguintes configurações definidas:
 
 ![demonstração](./images/1-v2.png)
 
@@ -75,61 +74,61 @@ Clique em **Salvar e continuar**.
 
 ![demonstração](./images/12-v2.png)
 
-## 4.3.3 Componentes da visualização de dados
+## 4.3.3 Componentes da Visualização de Dados
 
-Neste exercício, você configurará os componentes necessários para analisar os dados e visualizá-los usando o Analysis Workspace. Nesta interface do usuário, há três áreas principais:
+exercício, você irá configurar os necessários para analisar os dados e usando o Analysis Workspace. ESTA IU, há áreas principais:
 
-- Lado esquerdo: Componentes disponíveis dos conjuntos de dados selecionados
-- Meio: Componentes adicionados à Exibição de dados
-- Lado direito: Configurações do componente
+- Lado esquerdo: Componentes disponíveis conjuntos de dados dos selecionados
+- Meio: Componentes adicionados à Visualização de Dados
+- Lado: Configurações do fazem
 
 ![demonstração](./images/2-v2.png)
 
 >[!IMPORTANT]
 >
->Se não conseguir encontrar uma métrica ou dimensão específica, verifique se o campo `Contains data` é removido da visualização de dados. Caso contrário, exclua esse campo.
+>Se você não tem uma métrica específica, verifique se o campo `Contains data` foi removideo de sua visualização de dados. Caso contrário, exclua esse campo.
 >
 >![demonstração](./images/2-v2a.png)
 
-Agora é necessário arrastar e soltar os componentes necessários para a análise para a **Componentes adicionados**. Para fazer isso, você precisa selecionar os componentes no menu esquerdo e arrastá-los e soltá-los na tela no meio.
+Agora você arrastar e soltar os necessários para a análise **Componentes adicionados**. Para isso, você selecionar os componentes no menu à esquerda e arrastá-los e solà na tela no meio.
 
-Vamos começar com o primeiro componente: **Nome (web.webPageDetails.name)**. Procure esse componente e arraste e solte-o na tela.
+Vamos começar com o. d. **Nome (web.webPageDetails.name)**. Pesquise esse esforço e arraste-o e solte-o na tela.
 
 ![demonstração](./images/3-v2.png)
 
-Esse componente é o nome da página, como você pode derivar da leitura do campo de esquema `(web.webPageDetails.name)`.
+Esse é o nome do início, como você pode derivar da campo do campo `(web.webPageDetails.name)`.
 
-No entanto, usando **Nome** já que o nome não é a melhor convenção de nomenclatura para um usuário empresarial entender rapidamente essa dimensão.
+Sem entanto, usar **Nome** Como o nome não é a melhor convenção de nomenclatura para um usuário corporativo rapidamente essa dimensão.
 
-Vamos alterar o nome a ser **Nome da página**. Clique no componente e renomeie-o no **Configurações do componente** área.
+Vamos mudar o nome para **Nome da página**. Clique em e o renomeie na sa **Configurações do componente**.
 
 ![demonstração](./images/3-0-v2.png)
 
-Algo realmente importante é o **Configurações de persistência**. O conceito de evars e prop não existe no CJA, mas as configurações de Persistência possibilitam um comportamento semelhante.
+As Configurações de persistência são **Configurações de persistência**. Os conceitos de eVars e prop não existem no CJA, mas as as configurações de Persistência possibilitam comportamento semelhante.
 
 ![demonstração](./images/3-0-v21.png)
 
-Se você não alterar essas configurações, o CJA interpretará a dimensão como uma **Prop** (nível de ocorrência). Além disso, podemos alterar a Persistência para tornar a dimensão uma **eVar** (mantenha o valor na jornada).
+Se você não alterar essas configurações, o CJA irá interpretar um dimensão como um **Prop** (de ocorrência). Além disso, podemos alterar a Persistência para tornar uma dimensão uma **eVar** (persistindo o valor ao longo da jornada).
 
-Se você não estiver familiarizado com eVars e Props, será possível [leia mais sobre eles na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se Você não está familiarizado com Props, [leia mais sobre isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)...
 
-Vamos deixar o Nome da página como uma Prop. Dessa forma, você não precisa alterar nenhuma **Configurações de persistência**.
+Vamos deixar o Nome da Página como Prop. Dessa forma, você não precisa alterar nenhuma **Configurações de persistência**.
 
 | Nome do componente para pesquisa | Novo nome | Configurações de persistência |
 | ----------------- |-------------| --------------------| 
 | Nome (web.webPageDetails.name) | Nome da página |  |
 
-Em seguida, escolha a dimensão **phoneNumber** e solte na tela. O novo nome deve ser **Número de telefone**.
+Em, escolha um dimensão **phoneNumber** e solte-a na tela. O novo fenômeno **Número de telefone**.
 
 ![demonstração](./images/3-1-v2.png)
 
-Por fim, vamos alterar as configurações de Persistência, já que o Número do celular deve persistir no nível do usuário.
+Por fim, vamos alterar como Configurações de persistência, pois o Número do Celular persistente no nível do usuário.
 
-Para alterar a Persistência, role para baixo no menu direito e abra o **Persistência** guia :
+Para alterar a Persistência, papel para no menu à direita e abra aba **Persistência**:
 
 ![demonstração](./images/5-v2.png)
 
-Marque a caixa de seleção para modificar as configurações de persistência. Selecionar **Mais recente** e **Pessoa (janela Relatório)** , já que nos preocupamos apenas com o último número de celular dessa pessoa. Se o cliente não preencher o dispositivo móvel em visitas futuras, você ainda verá esse valor preenchido.
+Marque um caixa de seleção para modificar como configurações de persistência. Selecione **Mais recente** e o escopo **Pessoa (janela Relatório)**, pois nos preocup amos com o número de calendário. Se o cliente não preencher o celular em futuras você, ainda será preenchido.
 
 ![demonstração](./images/6-v2.png)
 
@@ -137,11 +136,11 @@ Marque a caixa de seleção para modificar as configurações de persistência. 
 | ----------------- |-------------| --------------------| 
 | phoneNumber | Número de telefone | Mais recente, Pessoa (janela de relatórios) |
 
-O próximo componente é `web.webPageDetails.pageViews.value`.
+O próximo é `web.webPageDetails.pageViews.value`.
 
-No menu do lado esquerdo, procure por `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela.
+Nenhum menu à esquerda, pesquisar `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela.
 
-Alterar o nome a ser **Exibições de página** nos termos do **Configurações do componente**.
+Alteração do nome para **Exibições de página** nos termos do **Configurações do componente**.
 
 | Nome do componente para pesquisa | Novo nome | Configurações de atribuição |
 | ----------------- |-------------| --------------------| 
@@ -149,14 +148,13 @@ Alterar o nome a ser **Exibições de página** nos termos do **Configurações 
 
 ![demonstração](./images/7-v2.png)
 
-Para as configurações de atribuição, deixaremos isso em branco.
+Pará as configurações de atribuição, pará em branco.
 
-Observação: Configurações de persistência em métricas também podem ser alteradas no Analysis Workspace. Em alguns casos, você pode optar por defini-lo aqui para evitar que os usuários corporativos precisem pensar qual é o melhor modelo de persistência.
+Observação: As configurações de persistência métricas podem ser alteradas no Analysis Workspace. Em alguns, você optar por configurá-las para evitar que os usuários de negócios tenham que pensar qual é o melhor de persistência.
 
-Em seguida, é necessário configurar muitas Dimension e métricas, conforme indicado na tabela abaixo.
+Em, você terá que várias Dimensões e Métricas, em indicado na tabela.
 
-### DIMENSION
-
+### DIMENSÕES
 
 | Nome do componente para pesquisa | Novo nome | Configurações de persistência |
 | ----------------- |-------------| --------------------| 
@@ -175,39 +173,38 @@ Em seguida, é necessário configurar muitas Dimension e métricas, conforme ind
 | URL (web.webPageDetails.URL) | URL |  |
 | Agente do usuário | Agente do usuário | Mais recente, sessão |
 
-### MÉTRICAS
+### MÉTRICA
 
 | Nome do componente para pesquisa | Novo nome | Configurações de atribuição |
 | ----------------- |-------------| --------------------| 
 | Quantidade | Quantidade |  |
 | commerce.order.priceTotal | Receita |  |
 
-Sua configuração deve ter esta aparência:
+Seu configuração, semelhante ao seguinte:
 
 ![demonstração](./images/11-v2.png)
 
-Não se esqueça de **Salvar** sua Exibição de dados. Então clique em **Salvar** agora.
+Não se esqueça de sua visualização de dados. Então clique em **Salvar**.
 
 ![demonstração](./images/12-v2s.png)
 
-## 4.3.4 Métricas calculadas
+## 4.3.4 calculadas das metricas
 
-Embora tenhamos organizado todos os componentes na Exibição de dados, você ainda precisa adaptar alguns deles, para que os usuários empresariais estejam prontos para iniciar a análise.
+Tensões os na Visualização de você, adaptar os prontos para o que usuários para os alguns .
 
-Se você se lembrar, não incluímos especificamente métricas como Adicionar ao carrinho, Visualização do produto ou Compras na Visualização de dados.
-No entanto, temos uma dimensão chamada: **Tipo de evento**. Portanto, vamos derivar esses tipos de interação criando 3 métricas calculadas.
+Se você se lembra, não trouxemos especificamente Métricas Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados. Não entanto, temos uma dimensão. **Tipo de evento**. Então, vamos derivar os ovos de criando 3 métricas calculadas.
 
-Vamos começar com a primeira métrica: **Exibições do produto**.
+Vamos começar com a primeira métrica: **Exibições do produto**.
 
-No lado esquerdo, pesquise **Tipo de evento** e selecione a dimensão . Em seguida, arraste e solte no **Componentes incluídos** tela.
+Não esquerdo lado, pesquisar **Tipo de evento** selecione um dimensão. Em, set-o na tela **Componentes incluídos**.
 
 ![demonstração](./images/calcmetr1.png)
 
-Clique para selecionar a nova métrica **Tipo de evento**.
+Clique para selecionar nova métrica **Tipo de evento**.
 
 ![demonstração](./images/calcmetr2.png)
 
-Agora, altere o nome e a descrição do componente para os seguintes valores:
+Agora altere o nome e a descrição do para os seguintes valores:
 
 | Nome do componente | Descrição do componente |
 | ----------------- |-------------| 
@@ -215,31 +212,31 @@ Agora, altere o nome e a descrição do componente para os seguintes valores:
 
 ![demonstração](./images/calcmetr3.png)
 
-Agora vamos contar somente **Exibições do produto** eventos. Para fazer isso, role para baixo no **Configurações do componente** até que você veja **Incluir valores de exclusão**. Certifique-se de ativar a opção **Definir valores de inclusão/exclusão**.
+Agora, contar eventos **Exibições do produto**. Para fazer isso, papel para baixo **Configurações do componente** até ver de Valores **Incluir valores de exclusão**. Certifique-se de reabilitação **Definir valores de inclusão/exclusão**.
 
 ![demonstração](./images/calcmetr4.png)
 
-Como só queremos contar **Exibições do produto**, especifique **commerce.productViews** de acordo com os critérios.
+Como queremos contar **Exibições do produto** especifique **commerce.productViews** critérios.
 
 ![demonstração](./images/calcmetr5.png)
 
-Sua métrica calculada agora está pronta!
+Agora a sua métrica calculada, esteja em andamento!
 
-Em seguida, repita o mesmo processo para **Adicionar ao carrinho** e **Compra** eventos.
+Em, répita o processador para os eventos **Adicionar ao carrinho** e **Compra**.
 
 ### Adicionar ao carrinho
 
-Primeiro arraste e solte a mesma dimensão **Tipo de evento**.
+Primeiro, arraste e solte um dimensão mesma **Tipo de evento**.
 
 ![demonstração](./images/calcmetr1.png)
 
-Você verá um pop-up de alerta de um campo duplicado, pois estamos usando a mesma variável. Clique em **Adicionar assim mesmo**:
+Você verá um pop-up de um Campo Duplicado, pois usando a mesma variável. Clique em **Adicionar assim mesmo**:
 
 ![demonstração](./images/calcmetr6.png)
 
-Agora, siga o mesmo processo que seguimos para a métrica Visualizações de produto:
-- Primeiro, altere o nome e a descrição.
-- Finalmente adicionar **commerce.productListAdds** como critério para contar somente Adicionar ao carrinho
+Agora, siga o mesmo processador que fizemos para a métrica Visualizações de produto:
+- Primeiro altere o nome e descrição.
+- Por fim, adicione **commerce.productListAdds** Como critério para contar Adicionar ao Carrinho
 
 | Nome | Descrição | Critérios |
 | ----------------- |-------------| -------------|
@@ -249,17 +246,17 @@ Agora, siga o mesmo processo que seguimos para a métrica Visualizações de pro
 
 ### Compras
 
-Primeiro arraste e solte a mesma dimensão **Tipo de evento** como fizemos para ambas as métricas anteriores.
+Primeiro, arraste e solte um dimensão mesma **Tipo de evento** como fizemos para as duas métricas anteriores.
 
 ![demonstração](./images/calcmetr1.png)
 
-Você verá um pop-up de alerta de um campo duplicado, pois estamos usando a mesma variável. Clique em **Adicionar assim mesmo**:
+Você verá um pop-up de um Campo Duplicado, pois usando a mesma variável. Clique em **Adicionar assim mesmo**:
 
 ![demonstração](./images/calcmetr7.png)
 
-Agora, siga o mesmo processo que seguimos para as métricas Exibições do produto e Adicionar ao carrinho:
-- Primeiro, altere o nome e a descrição.
-- Finalmente adicionar **commerce.purches** como critérios para contar somente compras
+Agora, siga o mesmo processador que fizemos para as métricas visualizações do produto e Adicione ao carrinho:
+- Primeiro altere o nome e descrição.
+- Por fim, adicione **commerce.purches** Como critérios para contabil Compras
 
 | Nome | Descrição | Critérios |
 | ----------------- |-------------| -------------|
@@ -267,21 +264,21 @@ Agora, siga o mesmo processo que seguimos para as métricas Exibições do produ
 
 ![demonstração](./images/calcmetr7a.png)
 
-A configuração final deve ser semelhante a esta. Clique em **Salvar e continuar**.
+Seu configuração último fenômeno semelhante ao seguinte. Clique em **Salvar e continuar**.
 
 ![demonstração](./images/calcmetr8.png)
 
-## 4.3.5 Configurações da visualização de dados
+## 4.3.5 Componentes da Configuração de Dados
 
-Você deve ser redirecionado para esta tela:
+Você é redirecion para esta tela:
 
 ![demonstração](./images/8-v2.png)
 
-Nesta guia, é possível modificar algumas configurações importantes para alterar o modo como os dados são processados. Vamos começar definindo a variável **Tempo limite da sessão** até 30 min. Graças ao carimbo de data e hora de cada evento de experiência, você pode estender o conceito de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente chamar a central de atendimento depois de visitar o site? Com o uso de Limites de tempo de sessão personalizados, você tem muita flexibilidade para decidir o que é uma sessão e como essa sessão unirá os dados.
+NESTA, você modificar algumas configurações para alterar forma os dados são processados. Vamos começar definição o **Tempo limite da sessão** como 30 min. Ao registro de dados e de cada evento de experiência, você estender o conceito de uma vida em dias os canais. Por, o que acontece se um exemplo para o call center de visitar? Usando Tempos Limite de Sais Personalizados, flexibilidade item muita o decidir é cluma  e,  os dados.
 
 ![demonstração](./images/ext8.png)
 
-Nesta guia, é possível modificar outras coisas, como filtrar os dados usando um segmento/filtro. Você não precisará fazer isso neste exercício.
+NESTA, você modificar coisas como filtrar os dados usando um segmento/filtro. Você não precisa fazer &quot;isso&quot;.
 
 ![demonstração](./images/10-v2.png)
 
@@ -291,12 +288,12 @@ Quando terminar, clique em **Salvar e concluir**.
 
 >[!NOTE]
 >
->Você pode voltar a essa Exibição de dados depois e alterar as configurações e os componentes a qualquer momento. As alterações afetarão a forma como os dados históricos são mostrados.
+>Você pode promover uma visualização de uma esta posteriormente como configurações e os dados de um momento. Como alterações afetarão um formato como os dados históricos são mostrados.
 
-Agora você pode continuar com a parte de visualização e análise!
+Agora você continuar com a parte de visualização e análise!
 
-Próxima etapa: [4.4 Preparação de dados no Customer Journey Analytics](./ex4.md)
+Proxima. [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 
-[Voltar para Fluxo de Usuário 4](./uc4.md)
+[Retornar para Fluxo 4](./uc4.md)
 
-[Voltar para todos os módulos](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

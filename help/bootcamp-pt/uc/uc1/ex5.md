@@ -5,57 +5,57 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 3%
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
-# 1.5 Tomar medidas: enviar seu segmento para a Facebook
+# 1.5 Ação: segmento do ambiente para o Facebook
 
-Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você será direcionado para a página inicial do Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de &quot;Faça&quot;, você vai acessar um início do logon no Adobe Experience Platform.
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada de ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produto de produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox], você verá a tela mudar e agora você estará em seu [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar um **sandbox**. O nome faz sandbox a ser selecionado é Bootcamp. É possível isto clicando texto **[!UICONTROL Produto de produção]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora está em sua [!UICONTROL sandbox] dedicado.
 
 ![Assimilação de dados](./images/sb1.png)
 
-No menu esquerdo, acesse **Destinos**, em seguida, vá para **Catálogo**. Você verá o **Catálogo de destinos**. Em **Destinos**, clique em **Ativar segmentos** no **Público-alvo personalizado do facebook** cartão.
+Sem menu à esquerda, vá para **Destinos** e, em, para. **Catálogo**. Você verá o **Catálogo de destinos**. Em **Destinos**, clique em **Ativar segmentos** sem cartão **Público-alvo personalizado do facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selecione o destino **bootcamp-facebook** e clique em **Próximo**.
+Selecione o **bootcamp-facebook** e panelinha **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de segmentos disponíveis, selecione o segmento que você criou no exercício anterior. Clique em **Próximo**.
+Na lista de segmentos, selecione o segmento que você . Clique em **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-No **Mapeamento** verifique se a variável **Aplicar transformação** a caixa de seleção está ativada. Clique em **Próximo**.
+Na tela **Mapeamento**, verifique um seleção **Aplicar transformação** está marcada. Clique em **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-No **Agendamento do segmento** selecione o **Origem do público-alvo** e defina-o como **Diretamente dos clientes**. Clique em **Próximo**.
+Na tela **Agendamento do segmento** selecione a **Origem do público-alvo** e defina como **Diretamente dos clientes**. Clique em **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por último, no **Revisão** página, clique em **Concluir**.
+Por Voltar **Revisão**, clique em **Concluir**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Seu segmento agora está vinculado aos Públicos personalizados da Facebook. Toda vez que um cliente se qualifica para esse segmento, um sinal será enviado para o lado do servidor do Facebook para incluir esse cliente no Público-alvo personalizado no lado do Facebook.
+Seu segmento agora está no cio Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento, um sinal enviado ao lado do servidor do Facebook para esse cliente incluir cliente em Público no lado do Facebook.
 
-No Facebook, você encontrará seu segmento no Adobe Experience Platform em Públicos personalizados :
+Sem Facebook, você encontr o segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-Agora é possível ver seu público-alvo personalizado aparecer no Facebook:
+Agora você Facebook personalizado aparecer no:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[Voltar para Fluxo de Usuário 1](./uc1.md)
+[Retornar para Fluxo de Correio](./uc1.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

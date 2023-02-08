@@ -5,22 +5,22 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4 Teste sua jornada
+# 2.4 Teste da sua jornada
 
-## Fluxo de jornada do cliente
+## Fluxo da jornada do cliente
 
-Abra uma nova janela do navegador limpa e incógnita e acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Permitir Tudo**. Com base no seu comportamento de navegação no fluxo de usuário anterior, você verá a personalização acontecer na página inicial do site.
+Abra uma nova janela e anôn ima do navegador e vá para [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Permitir Tudo**. Com base no no comportamento de navegação no fluxo de usuário anterior, verá a personalização acontecer na primeira página do início do sítio.
 
 ![DSN](./images/web8a.png)
 
-Clique no botão **Perfil** no canto superior direito da tela.
+Clique em ícone **Perfil** não canto superior da tela.
 
 ![Demonstração](./images/web8b.png)
 
@@ -28,32 +28,33 @@ Clique em **Criar uma conta**.
 
 ![Demonstração](./images/pv5.png)
 
-Preencha todos os campos do formulário. Use um valor real para endereço de email e número de telefone, pois ele será usado em exercícios posteriores para delivery de email e SMS.
+Preencha todos os campos do formulário. Use um valor real para endereço de e-mail e número de telefone, pois será usado exercícios para envio de e-mail e SMS.
 
 ![Demonstração](./images/pv7a.png)
 
-Role para baixo. Agora é necessário inserir a eventID do evento personalizado criado no exercício 2.2. Você pode encontrá-la aqui:
+Papel para baixo. Agora você inserir o eventID do evento, que você criou no  2.2. Você pode encontrá-lo aqui:
 
 ![ACOP](./images/payloadeventID.png)
 
-A ID de evento é o que precisa ser enviado para o Adobe Experience Platform para acionar a jornada criada. Este é o eventID neste exemplo: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+O eventID é o que precisa enviado à Adobe Experience Platform para acionar a jornada que construiu. Este é o eventID anotado exemplo:
+`19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Preencha eventID no campo **Sua ID de evento de criação de conta** e clique em **Registrar**.
+Preencha o eventID no campo **Sua ID de evento de criação de conta** e panelinha **Registrar**.
 
 ![Demonstração](./images/pv8a.png)
 
-Você verá isso.
+Em, tela exibida
 
 ![Demonstração](./images/pv9.png)
 
-Você também receberá esse email, que é o email que você criou como parte deste exercício.
+Você também este e-mail, que é o e-mail que você é o você, é o .
 
 ![Demonstração](./images/pv10a.png)
 
-Você já terminou este exercício.
+Você terminou este.
 
-Próxima etapa: [2.5 Instalar e usar o aplicativo móvel](./ex5.md)
+Proxima. [2.5 Instalação e uso do aplicativo móvel](./ex5.md)
 
-[Voltar para Fluxo de Usuário 2](./uc2.md)
+[Retornar para Fluxo 2](./uc2.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)
