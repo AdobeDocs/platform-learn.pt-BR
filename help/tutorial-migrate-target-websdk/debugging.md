@@ -1,10 +1,10 @@
 ---
 title: Depurar | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como depurar uma implementação do Adobe Target usando o Adobe Experience Platform Web SDK. Os tópicos incluem opções de depuração, extensões do navegador e diferenças entre o at.js e o SDK da Web da plataforma.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 4%
+source-wordcount: '1534'
+ht-degree: 3%
 
 ---
 
@@ -120,7 +120,7 @@ Para exibir os rastreamentos do Platform Web SDK do Target com o Adobe Experienc
 1. Recarregue a página e o log deve ser preenchido com informações detalhadas sobre as interações da rede de borda
 1. Concentre-se nas entradas de log que começam com &quot;Target Traces&quot; na descrição e selecione **[!UICONTROL Exibir]** para ver os detalhes de rastreamento do Target
 
-![Como visualizar rastreamentos do Target com o Adobe Experience Platform Debugger](assets/target-trace-debugger.png)
+![Como visualizar rastreamentos do Target com o Adobe Experience Platform Debugger](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 Depois de selecionar **[!UICONTROL Exibir]**, uma sobreposição será exibida permitindo que você veja as seguintes informações relacionadas à solicitação:
 
@@ -142,7 +142,7 @@ As informações de rastreamento do Target podem ser visualizadas na extensão d
 1. Selecione uma entrada de log com o tipo `com.adobe.target.trace`
 1. Expanda os detalhes do payload e visualize as informações em `context > targetTrace`
 
-![Como visualizar rastreamentos do Target com Controle de qualidade](assets/target-trace-assurance.png)
+![Como visualizar rastreamentos do Target com Controle de qualidade](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## Examinar solicitação e resposta de rede
 
@@ -150,7 +150,7 @@ A carga e a resposta da solicitação do SDK da Web da plataforma `sendEvent` As
 
 ### Carga da solicitação de conteúdo
 
-![Elementos específicos do Target da carga do SDK da Web da plataforma](assets/target-payload.png)
+![Elementos específicos do Target da carga do SDK da Web da plataforma](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - Perfil, entidade e outros parâmetros que não sejam de mbox são transmitidos na matriz de eventos em `data.__adobe.target`
 - Os escopos de decisão estão localizados na matriz de eventos em `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ A carga e a resposta da solicitação do SDK da Web da plataforma `sendEvent` As
 
 ### Corpo de resposta do conteúdo
 
-![Elementos específicos do Target do corpo de resposta do SDK da Web da plataforma](assets/target-response.png)
+![Elementos específicos do Target do corpo de resposta do SDK da Web da plataforma](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - O SDK da Web da plataforma retorna ações para todos os aplicativos Adobe sob `handle` objeto
 - O `personalization:decisions` ação significa uma resposta do Target ou offer decisioning
@@ -169,7 +169,7 @@ A carga e a resposta da solicitação do SDK da Web da plataforma `sendEvent` As
 
 ### Carga do evento de apresentação
 
-![Exemplo de evento da apresentação do Target](assets/target-proposition-event.png)
+![Exemplo de evento da apresentação do Target](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Os eventos do SDK específicos do Target são `decisioning.propositionDisplay` para uma impressão ou `decisioning.propositionInteract` para uma interação, como um clique
 - Os detalhes do evento de proposta estão localizados na matriz de eventos em `xdm._experience.decisioning`

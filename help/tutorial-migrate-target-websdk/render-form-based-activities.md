@@ -1,9 +1,9 @@
 ---
 title: Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como migrar uma implementação do Adobe Target da at.js 2.x para o Adobe Experience Platform Web SDK. Os tópicos incluem visão geral da biblioteca, diferenças de implementação e outras chamadas importantes.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,8 @@ Algumas implementações do Target podem usar mboxes regionais (agora conhecidas
 
 As atividades criadas usando o compositor baseado em formulário do Target e entregues às mboxes regionais não podem ser renderizadas automaticamente pelo SDK da Web da plataforma. Semelhante à at.js, as ofertas entregues a locais específicos do Target precisam ser renderizadas sob demanda.
 
-Exemplo de at.js usando `getOffer()` e `applyOffer()`:
+
++++at.js Exemplo usando `getOffer()` e `applyOffer()`:
 
 1. Executar `getOffer()` para solicitar uma oferta para um local
 1. Executar `applyOffer()` para renderizar a oferta para um seletor especificado
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-equivalente do SDK da Web da plataforma usando o `applyPropositions` comando:
++++
+
++++SDK da Web da plataforma equivalente usando o `applyPropositions` comando:
 
 1. Executar `sendEvent` comando para solicitar ofertas (propostas) para um ou mais locais (escopos)
 1. Executar `applyPropositions` comando com objeto de metadados que fornece instruções sobre como aplicar conteúdo à página para cada escopo
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 O SDK da Web da plataforma oferece maior controle para aplicar atividades baseadas em formulário à página usando o `applyPropositions` com um `actionType` especificado:
 
 | `actionType` | Descrição | at.js `applyOffer()` | SDK da Web da Platform `applyPropositions` |
@@ -99,6 +104,8 @@ Consulte a [documentação dedicada](https://experienceleague.adobe.com/docs/exp
 ## Exemplo de implementação
 
 A página de exemplo abaixo baseia-se na implementação descrita na seção anterior, mas adiciona escopos adicionais à `sendEvent` comando.
+
++++Exemplo de SDK da Web da plataforma com vários escopos
 
 ```HTML
 <!doctype html>

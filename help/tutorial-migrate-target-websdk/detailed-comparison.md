@@ -1,9 +1,9 @@
 ---
 title: Comparação da at.js 2.x com o SDK da Web | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba mais sobre as diferenças entre a at.js 2.x e o SDK da Web da plataforma, incluindo recursos, funções, configurações e fluxo de dados.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2156'
 ht-degree: 8%
 
 ---
@@ -118,7 +118,7 @@ Os diagramas a seguir devem ajudar você a entender as diferenças do fluxo de d
 
 ### Diagrama de sistema da at.js 2.x
 
-![Comportamento do at.js 2.0 no carregamento da página](assets/target-at-js-2x-diagram.png)
+![Comportamento do at.js 2.0 no carregamento da página](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
 
 | Chame | Detalhes |
 | --- | --- |

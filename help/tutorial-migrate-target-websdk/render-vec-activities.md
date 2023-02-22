@@ -2,9 +2,9 @@
 title: Renderizar atividades do VEC | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como recuperar e aplicar atividades do visual experience composer com uma implementação do SDK da Web do Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '812'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ A extensão do navegador do assistente do Visual Editing funciona com sites que 
 1. Navegue até o [Extensão de navegador Adobe Experience Cloud Visual Editing Helper na Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 1. Clique em Adicionar a **Cromo** > **Adicionar extensão**.
 1. Abra o VEC no Target.
-1. Para usar a extensão, clique no ícone de extensão do navegador do Visual Editing Helper ![Ícone da extensão de edição visual](assets/VEC-Helper.png) na barra de ferramentas do navegador Chrome, no VEC ou no Modo de QA.
+1. Para usar a extensão, clique no ícone de extensão do navegador do Visual Editing Helper ![Ícone da extensão de edição visual](assets/VEC-Helper.png){zoomable=&quot;yes&quot;} na barra de ferramentas do navegador Chrome enquanto estiver no VEC ou no Modo de QA.
 
 O Auxiliar de edição visual é ativado automaticamente quando um site é aberto no VEC do Target para permitir a criação. A extensão não tem configurações condicionais. A extensão lida com todas as configurações automaticamente, incluindo as configurações de cookies SameSite.
 
@@ -44,25 +44,35 @@ Depois que o SDK da Web da plataforma é configurado na página, você pode soli
 
 Se sua implementação da at.js tiver o `pageLoadEnabled` definir como `true` que permite a renderização automática de atividades baseadas em VEC, você executaria o seguinte `sendEvent` com o SDK da Web da plataforma:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```Javascript
 alloy("sendEvent", {
   "renderDecisions": true
 });
 ```
 
->[!TIP]
->
-> Ao usar o recurso de tags (antigo Launch) para implementar o SDK da Web, os comandos &#39;sendEvent&#39; para atividades do VEC podem ser implementados em uma regra usando o [!UICONTROL Enviar evento] tipo de ação com a [!UICONTROL Renderizar decisões de personalização visual] opção selecionada.
+>[!TAB Tags]
 
-Quando o SDK da Web da plataforma renderiza uma atividade para a página com `renderDecisions` defina como `true`, uma chamada de notificação adicional é acionada automaticamente para incrementar uma impressão e atribuir o visitante à atividade. Essa chamada usa um tipo de evento com o valor `decisioning.propositionDisplay`.
+Nas tags , use o [!UICONTROL Enviar evento] tipo de ação com a [!UICONTROL Renderizar decisões de personalização visual] opção selecionada:
 
-![Chamada de SDK da Web da plataforma que aumenta uma impressão do Target](assets/target-impression-call.png)
+![Enviar um evento com Personalizações de renderização definidas como true nas tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
+
+<!--
+When the Platform Web SDK renders an activity to the page with `renderDecisions` set to `true`, an additional notification call fires automatically to increment an impression and attribute the visitor to the activity. This call uses an event type with the value `decisioning.propositionDisplay`.
+
+![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
+-->
 
 ## Solicitar e aplicar conteúdo sob demanda
 
-Algumas implementações da at.js do Target podem ter `pageLoadEnabled` defina como `false` em vez disso, use o `getOffers()` para executar uma `pageLoad` solicitação. Esse tipo de configuração é usado se sua implementação requer processamento adicional da variável `getOffers()` antes de aplicar conteúdo à página ou para solicitar conteúdo para vários locais em uma única chamada.
+Algumas implementações do Target exigem processamento personalizado de ofertas de VEC antes de aplicá-las à página. Ou solicitam vários locais em uma única chamada. Em uma implementação da at.js, isso pode ser feito definindo `pageLoadEnabled` para `false` e usando o `getOffers()` para executar uma `pageLoad` solicitação.
 
-O código a seguir usa `getOffers()` e `applyOffers()` para aplicar atividades baseadas em VEC sob demanda em vez de automaticamente ao carregar a biblioteca.
++++ Exemplo de at.js usando `getOffers()` e `applyOffers()` para renderizar manualmente atividades baseadas em VEC
 
 ```JavaScript
 adobe.target.getOffers({
@@ -75,7 +85,11 @@ adobe.target.getOffers({
 then(response => adobe.target.applyOffers({ response: response }));
 ```
 
-O SDK da Web da plataforma não tem um `pageLoad` evento. Todas as solicitações de conteúdo do Target são controladas com a variável `decisionScopes` com a opção `sendEvent` comando. O `__view__` o âmbito de aplicação `pageLoad` solicitação. Um SDK da Web da plataforma equivalente `sendEvent` A abordagem seria:
++++
+
+O SDK da Web da plataforma não tem um `pageLoad` evento. Todas as solicitações de conteúdo do Target são controladas com a variável `decisionScopes` com a opção `sendEvent` comando. O `__view__` o âmbito de aplicação `pageLoad` solicitação.
+
++++ Um SDK da Web da plataforma equivalente `sendEvent` abordagem:
 
 1. Executar um `sendEvent` que inclui o comando `__view__` escopo de decisão
 1. Aplique o conteúdo retornado à página com a variável `applyPropositions` comando
@@ -110,6 +124,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 >[!NOTE]
 >
 >É possível [renderizar manualmente modificações](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) criado no Visual Experience Composer. A renderização manual de modificações com base em VEC não é comum. Verifique se a implementação da at.js usa a variável `getOffers()` para executar manualmente um Target `pageLoad` solicitação sem usar `applyOffers()` para aplicar o conteúdo à página.
@@ -118,7 +134,9 @@ O SDK da Web da plataforma oferece aos desenvolvedores uma grande flexibilidade 
 
 ## Exemplo de implementação
 
-A implementação do SDK da Web da plataforma fundamental está concluída. Nossa página de exemplo básica com a renderização automática de conteúdo do Target ativada deve ser semelhante a:
+A implementação do SDK da Web da plataforma fundamental está concluída.
+
+Página de exemplo do SDK da Web ++ com renderização automática do conteúdo do Target:
 
 ```HTML
 <!doctype html>
@@ -179,6 +197,8 @@ A implementação do SDK da Web da plataforma fundamental está concluída. Noss
 </body>
 </html>
 ```
+
++++
 
 >[!TIP]
 >
