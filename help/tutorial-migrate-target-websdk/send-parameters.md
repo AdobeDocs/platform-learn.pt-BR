@@ -1,10 +1,10 @@
 ---
 title: Enviar parâmetros | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como enviar parâmetros de mbox, perfil e entidade para o Adobe Target usando o Experience Platform Web SDK.
-source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
+source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 0%
+source-wordcount: '1652'
+ht-degree: 1%
 
 ---
 
@@ -14,11 +14,9 @@ As implementações do Target diferem entre sites devido à arquitetura do site,
 
 Vamos usar uma página simples de detalhes do produto e uma página de confirmação de pedido para demonstrar as diferenças entre as bibliotecas ao transmitir parâmetros para o Target.
 
-Considere a seguinte página de exemplo usando at.js:
+Considere os dois exemplos de páginas a seguir usando a at.js:
 
-<!--Assume the following two example pages using at.js:-->
-
-Detalhes do produto:
++++at.js em uma página de Detalhes do produto:
 
 ```HTML
 <!doctype html>
@@ -57,9 +55,10 @@ Detalhes do produto:
 </html>
 ```
 
++++
 
 
-Confirmação do pedido:
++++at.js em uma página de confirmação de pedido:
 
 ```HTML
 <!doctype html>
@@ -90,6 +89,8 @@ Confirmação do pedido:
 </body>
 </html>
 ```
+
++++
 
 
 ## Resumo do mapeamento de parâmetros
@@ -140,12 +141,16 @@ Exemplo de at.js usando `targetPageParams()`:
 ```JavaScript
 targetPageParams = function() {
   return {
-    "siteSection": "product detail"
+    "pageName": "product detail"
   };
 };
 ```
 
-Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+Exemplos de JavaScript do SDK da Web da plataforma usando `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -153,12 +158,25 @@ alloy("sendEvent", {
     "web": {
       "webPageDetails": {
         // Other attributes included according to xdm schema
-        "siteSection": "product detail"
+        "name": "product detail"
       }
     }
   }
 });
 ```
+
+>[!TAB Tags]
+
+Nas tags , primeiro use um [!UICONTROL Objeto XDM] elemento de dados a ser mapeado para o campo XDM:
+
+![Mapeamento para um campo XDM em um elemento de dados de objeto XDM](assets/params-tags-pageName.png)
+
+E inclua seu [!UICONTROL Objeto XDM] em seu [!UICONTROL Enviar evento] [!UICONTROL ação] (vários [!UICONTROL Objetos XDM] pode ser [mesclado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusão de um elemento de dados de objeto XDM em um evento Enviar](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -182,7 +200,11 @@ targetPageParams = function() {
 };
 ```
 
-Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+Exemplos de SDK da Web da plataforma usando `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -196,6 +218,18 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+Nas tags , primeiro crie um elemento de dados para definir a variável `data.__adobe.target` objeto:
+
+![Definição do objeto de dados em um elemento de dados](assets/params-tags-dataObject.png)
+
+Em seguida, inclua seu objeto de dados em [!UICONTROL Enviar evento] [!UICONTROL ação] (vários [!UICONTROL objetos] pode ser [mesclado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusão de um objeto de dados em um evento Enviar](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
 
 ## Parâmetros da entidade
 
@@ -217,7 +251,11 @@ targetPageParams = function() {
 };
 ```
 
-Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+Exemplos de SDK da Web da plataforma usando `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -234,6 +272,22 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+Nas tags , primeiro crie um elemento de dados para definir a variável `data.__adobe.target` objeto:
+
+![Definição do objeto de dados em um elemento de dados](assets/params-tags-dataObject-entities.png)
+
+Em seguida, inclua seu objeto de dados em [!UICONTROL Enviar evento] [!UICONTROL ação] (vários [!UICONTROL objetos] pode ser [mesclado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusão de um objeto de dados em um evento Enviar](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
+
+
+
+
 
 Todos [parâmetros da entidade](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) compatível com at.js também é compatível com o SDK da Web da plataforma.
 
@@ -258,9 +312,13 @@ targetPageParams = function() {
 };
 ```
 
-As informações de compra são passadas para o Target quando a variável `commerce` grupo de campos possui `puchases.value` defina como `1`. A ID do pedido e o total do pedido são mapeados automaticamente do `order` objeto. Se a variável `productListItems` estiver presente, então a variável `SKU` são usados para `productPurchasedId`.
+As informações de compra são passadas para o Target quando a variável `commerce` grupo de campos possui `purchases.value` defina como `1`. A ID do pedido e o total do pedido são mapeados automaticamente do `order` objeto. Se a variável `productListItems` estiver presente, então a variável `SKU` são usados para `productPurchasedId`.
 
-Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+Exemplos de SDK da Web da plataforma usando `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -282,6 +340,19 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+Nas tags , primeiro use um [!UICONTROL Objeto XDM] elemento de dados para mapear para os campos XDM:
+
+![Mapeamento para um campo XDM em um elemento de dados de objeto XDM](assets/params-tags-purchase.png)
+
+E inclua seu [!UICONTROL Objeto XDM] em seu [!UICONTROL Enviar evento] [!UICONTROL ação] (vários [!UICONTROL Objetos XDM] pode ser [mesclado](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Inclusão de um elemento de dados de objeto XDM em um evento Enviar](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -309,7 +380,11 @@ targetPageParams = function() {
 };
 ```
 
-Exemplo de SDK da Web da plataforma usando `sendEvent` comando:
+Exemplos de SDK da Web da plataforma usando `sendEvent` comando:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -324,6 +399,22 @@ alloy("sendEvent", {
 });
 ```
 
+>[!TAB Tags]
+
+O [!UICONTROL ID] valor, [!UICONTROL Estado autenticado] e [!UICONTROL Namespace] são capturados em um [!UICONTROL Mapa de identidade] elemento de dados:
+![Elemento de dados do Mapa de identidade que captura a ID do cliente](assets/params-tags-customerIdDataElement.png)
+
+O [!UICONTROL Mapa de identidade] o elemento de dados é usado para definir a variável [!UICONTROL identityMap] no campo [!UICONTROL Objeto XDM] elemento de dados:
+![Elemento de dados do Mapa de identidade usado no elemento de dados do objeto XDM](assets/params-tags-customerIdInXDMObject.png)
+
+O [!UICONTROL Objeto XDM] é incluída no [!UICONTROL Enviar evento] ação de uma regra:
+
+![Inclusão de um elemento de dados de objeto XDM em um evento Enviar](assets/params-tags-sendEvent.png)
+
+No serviço Adobe Target do armazenamento de dados, certifique-se de definir a variável [!UICONTROL Namespace da ID de terceiros do Target] para o mesmo namespace usado no [!UICONTROL Mapa de identidade] elemento de dados
+![Definir o namespace da ID de terceiros do Target no armazenamento de dados](assets/params-tags-customerIdNamespaceInDatastream.png)
+
+>[!ENDTABS]
 
 ## Exemplo de SDK da Web da plataforma
 
@@ -335,7 +426,7 @@ Agora que você entende como os diferentes parâmetros do Target são mapeados u
 - A `configure` comando para inicializar a biblioteca
 - A `sendEvent` comando para enviar dados e solicitar a renderização do conteúdo do Target
 
-Detalhes do produto:
++++SDK da Web em uma página Detalhes do produto:
 
 ```HTML
 <!doctype html>
@@ -408,8 +499,9 @@ Detalhes do produto:
 </html>
 ```
 
++++
 
-Confirmação do pedido:
++++SDK da Web em uma página de confirmação de pedido:
 
 ```HTML
 <!doctype html>
@@ -477,6 +569,8 @@ Confirmação do pedido:
 </body>
 </html>
 ```
+
++++
 
 Em seguida, saiba como [rastrear eventos de conversão do Target](track-events.md) com o SDK da Web da plataforma.
 
