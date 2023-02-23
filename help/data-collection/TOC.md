@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriais de Coleção de dados
 user-guide-description: Vídeos e tutoriais explicativos para torná-lo um usuário avançado da Coleção de dados na Experience Platform.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 6f2410a66538d3e16ba27f5330ec95ef2600b154
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 34%
+source-wordcount: '239'
+ht-degree: 40%
 
 ---
 
@@ -24,13 +24,14 @@ ht-degree: 34%
    + [Criar regras](tags/build-rules.md)
    + [Criar e publicar uma biblioteca](tags/build-and-publish-a-library.md)
    + [Usuários e permissões](tags/users-and-permissions.md)
-   + [Implementar em sites com o SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
-   + [Implementar em sites com SDKs de solução](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
+   + [Implementar em sites com o SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
+   + [Implementar em sites com SDKs de solução](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target="_blank"}
 + Web SDK{#web-sdk}
    + [Visão geral](web-sdk/overview.md)
    + [Demonstração](web-sdk/demo.md)
-   + [Tutorial de implementação (com tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
+   + [Tutorial de implementação (com tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
+   + [Tutorial de migração do Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
    + Consentimento{#consent}
       + [Visão geral](web-sdk/consent/overview.md)
       + [Definir valores de consentimento usando o padrão Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -41,14 +42,14 @@ ht-degree: 34%
    + [Visão geral](mobile-sdk/overview.md)
    + [Criar propriedades móveis](mobile-sdk/create-mobile-properties.md)
    + [Usar gerentes de dependência](mobile-sdk/use-dependency-managers.md)
-   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target=&quot;_blank&quot;}
+   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target="_blank"}
 + API do servidor{#server-api}
    + [Visão geral](server-api/overview.md)
    + [Noções básicas das APIs](server-api/introduction.md)
 + Encaminhamento de evento{#event-forwarding}
    + [Visão geral](event-forwarding/overview.md)
    + [Criar uma propriedade](event-forwarding/create-a-property.md)
-   + [Configurar um armazenamento de dados](event-forwarding/set-up-a-datastream.md)
+   + [Configurar um fluxo de dados](event-forwarding/set-up-a-datastream.md)
    + [Adicionar uma extensão](event-forwarding/add-an-extension.md)
    + [Criar uma regra](event-forwarding/create-a-rule.md)
    + [Monitorar o encaminhamento de eventos](event-forwarding/monitor.md)
@@ -65,5 +66,5 @@ ht-degree: 34%
    + Experience Cloud Debugger{#experience-cloud}
       + [Instalar o Debugger](debugger/experience-cloud/add-the-extension.md)
       + [Usar o Debugger](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-      + [Solução de problemas do Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target=&quot;_blank&quot;}
-      + [Alternar ambientes de tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target=&quot;_blank&quot;}
+      + [Solução de problemas do Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
+      + [Alternar ambientes de tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}

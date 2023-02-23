@@ -3,9 +3,9 @@ title: Configurar o Adobe Target com o SDK da Web da plataforma
 description: Saiba como implementar o Adobe Target usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3801'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 Saiba como implementar o Adobe Target usando o SDK da Web da plataforma. Saiba como fornecer experiências e como enviar parâmetros adicionais para o Target.
 
 [Adobe Target](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html) O é o aplicativo Adobe Experience Cloud que oferece tudo o que você precisa para ajustar e personalizar a experiência do cliente e maximizar a receita em sites da Web e móveis, aplicativos e outros canais digitais.
+
 
 ## Objetivos de aprendizagem
 
@@ -26,6 +27,10 @@ No final desta lição, você poderá:
 * Envio de dados XDM para o Target e compreensão do mapeamento para parâmetros do Target
 * Envio de dados personalizados para o Target, como parâmetros de perfil e de entidade
 * Validar uma implementação do Target com o SDK da Web da plataforma
+
+>[!TIP]
+>
+>Veja nossa [Migrar o Target da at.js 2.x para o SDK da Web da plataforma](/help/tutorial-migrate-target-websdk/introduction.md) tutorial para obter um guia passo a passo sobre como migrar sua implementação at.js existente.
 
 
 ## Pré-requisitos
@@ -123,7 +128,7 @@ Para configurar o Target no armazenamento de dados:
 
    ![Selecione o armazenamento de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
 
-1. Selecionar **[!UICONTROL Adicionar Serviço]**
+1. Selecione **[!UICONTROL Adicionar serviço]**
 
    ![Adicionar um serviço ao armazenamento de dados](assets/target-datastream-addService.png)
 1. Selecionar **[!UICONTROL Adobe Target]** como **[!UICONTROL Serviço]**
