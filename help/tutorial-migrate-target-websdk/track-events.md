@@ -1,9 +1,9 @@
 ---
 title: Rastrear eventos | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como rastrear eventos de conversão do Adobe Target usando o Experience Platform Web SDK.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '655'
 ht-degree: 1%
 
 ---
@@ -147,4 +147,4 @@ Em seguida, saiba como [habilitar o compartilhamento de ID entre domínios](cros
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

@@ -2,9 +2,9 @@
 title: Renderizar atividades do VEC | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como recuperar e aplicar atividades do visual experience composer com uma implementação do SDK da Web do Adobe Target.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 Nas tags , use o [!UICONTROL Enviar evento] tipo de ação com a [!UICONTROL Renderizar decisões de personalização visual] opção selecionada:
 
-![Enviar um evento com Personalizações de renderização definidas como true nas tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![Enviar um evento com decisões de personalização visual de renderização selecionadas em tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ O SDK da Web da plataforma oferece aos desenvolvedores uma grande flexibilidade 
 
 A implementação do SDK da Web da plataforma fundamental está concluída.
 
-Página de exemplo do SDK da Web ++ com renderização automática do conteúdo do Target:
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+Exemplo de JavaScript com renderização automática do conteúdo do Target:
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ Página de exemplo do SDK da Web ++ com renderização automática do conteúdo 
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> Ao usar o recurso de tags (antigo Launch) para implementar o SDK da Web, o código de inserção de tags substitui as seções &quot;Código base do SDK da Web da plataforma&quot;, &quot;SDK da Web da plataforma carregado de forma assíncrona&quot; e &quot;Configurar SDK da Web da plataforma&quot; acima. O comando &#39;sendEvent&#39; é feito em uma regra usando o [!UICONTROL Enviar evento] tipo de ação com a [!UICONTROL Renderizar decisões de personalização visual] opção selecionada.
+>[!TAB Tags]
+
+Página de exemplo de tags com renderização automática do conteúdo do Target:
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+Em tags, adicione a extensão SDK da Web da Adobe Experience Platform:
+
+![Adicionar a extensão Adobe Experience Platform Web SDK](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+Adicione as configurações desejadas:
+![configuração das opções de migração da extensão de tag do SDK da Web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+Crie uma regra com uma [!UICONTROL Enviar evento] ação e [!UICONTROL Renderizar decisões de personalização visual] selecionado:
+![Enviar um evento com Personalizações de renderização selecionadas em tags](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 Em seguida, saiba como solicitar e [renderizar atividades do Target baseadas em formulário](render-form-based-activities.md).
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

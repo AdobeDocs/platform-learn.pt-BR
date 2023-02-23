@@ -1,9 +1,9 @@
 ---
 title: Atualizar públicos-alvo e scripts de perfil | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como atualizar públicos-alvo e scripts de perfil do Adobe Target para compatibilidade com o Experience Platform Web SDK.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ if(mbox.param('pageName') == 'Product Details'){
 Script de perfil atualizado para compatibilidade com o SDK da Web da plataforma:
 
 ```Javascript
-if((mbox.param('pageName') == 'Product Details') || (mbox.param('page.webpagedetails.pageName') =='Product Details')){
+if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
   return true
 }
 ```
@@ -69,7 +69,7 @@ Exemplo de oferta JSON usando nomes de parâmetro do SDK da Web da plataforma:
 
 ```JSON
 {
-  "pageName" : "${mbox.web.webpagedetails.pageName}",
+  "pageName" : "${mbox.web.webPagedDetails.pageName}",
   "layoutVariation" : "grid"
 }
 ```
@@ -80,4 +80,4 @@ Em seguida, saiba como [validar a implementação do Target](validate.md).
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

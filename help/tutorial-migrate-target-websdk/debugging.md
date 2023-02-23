@@ -1,9 +1,9 @@
 ---
 title: Depurar | Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como depurar uma implementação do Adobe Target usando o Adobe Experience Platform Web SDK. Os tópicos incluem opções de depuração, extensões do navegador e diferenças entre o at.js e o SDK da Web da plataforma.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1535'
 ht-degree: 3%
 
 ---
@@ -180,4 +180,4 @@ Parabéns, você chegou ao fim do tutorial! Boa sorte ao migrar a implementaçã
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
