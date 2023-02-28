@@ -20,6 +20,6 @@ Saiba mais sobre a arquitetura de alto nível da Adobe Experience Platform por m
 
 >[!INFO]
 >
-> Este vídeo é parte de um curso [Introdução ao Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), disponível gratuitamente no Experience League!
+> Este vídeo é parte de um curso [Introdução ao Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1&amp;lang=pt-BR), disponível gratuitamente no Experience League!
 
 

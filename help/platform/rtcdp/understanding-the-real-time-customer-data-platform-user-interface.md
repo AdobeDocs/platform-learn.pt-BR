@@ -1,6 +1,6 @@
 ---
 title: Interface do usuário e fluxo de trabalho do Real-time Customer Data Platform
-description: Saiba como navegar na interface do usuário do Real-time Customer Data Platform (CDP) para ver como seus recursos se unem para fornecer ativação em tempo real na jornada digital do cliente.
+description: Saiba como navegar na interface da Real-time Customer Data Platform (CDP) para ver como seus recursos se unem para fornecer ativação em tempo real pela jornada digital do cliente.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
@@ -10,13 +10,13 @@ exl-id: bc9fdedd-ce95-4bd2-8b14-30fd74604ea8
 source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 6%
+ht-degree: 69%
 
 ---
 
 # Interface do usuário e fluxo de trabalho do Real-time Customer Data Platform
 
-Saiba como navegar na interface do usuário do Real-time Customer Data Platform (CDP) para ver como seus recursos se unem para fornecer ativação em tempo real na jornada digital do cliente.
+Saiba como navegar na interface da Real-time Customer Data Platform (CDP) para ver como seus recursos se unem para fornecer ativação em tempo real pela jornada digital do cliente.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29762?quality=12&learn=on)
 
