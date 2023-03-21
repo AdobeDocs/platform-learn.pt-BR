@@ -3,10 +3,10 @@ title: Bootcamp dos criadores de experiência
 description: Ponto de partida para participantes do Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -26,47 +26,12 @@ A personalização em escala começa com a compreensão do que pode ser melhorad
 
 ### Dia 1
 
-10.00 - 10.30: Início e introduções
 
-10.30 - 11.00: &quot;Demonstração da Jornada do cliente - arte da possível&quot;
-
-11.00 - 11.45: Sessão de quadro de permissões: &quot;1-1 personalização, caça ao atrito, silos, Adobe POV&quot;
-
-11.45 - 12.00: Quebra
-
-12.00 - 13.00: Sessão de quadro de permissões: &quot;Detalhamento da arquitetura da solução&quot;
-
-13.00 - 14.00: Almoço
-
-14.00 - 15.30: Fluxo do usuário 1: Exercício prático de &quot;aquisição&quot;
-
-15.30 - 15.45: Quebra
-
-15.45 - 17.00: Fluxo do usuário 2: Exercício prático &quot;Registro e integração&quot;
-
-18.00 - 19.00: Experimente a &quot;competição de produção de coquetéis&quot;
-
-19.00 - 22.00: Aproveite o jantar
+10º:00: Início 10:30: Demonstração da Jornada do cliente: arte das possíveis 11:00: 1-1 personalização, caça ao atrito, silos, Adobe POV (quadro branco) 11:45: Quebra 12:00: Detalhamento da arquitetura da solução (quadro branco) 13:00: Lunch 14:00: Registro e integração do fluxo de usuário 1 - apresentação (por que) 15:30: Quebra 16:00: Fluxo de usuário 2 Mesclagem física e digital - apresentação e prática / mergulho profundo 18:00: Quebra 18:30: Caminhe até o restaurante 19:00: Jantar
 
 ### Dia 2
 
-09.00 - 09.30: &quot;Introdução ao delivery baseado em Jornada do usuário, estrutura da equipe, registro retroativo de delivery&quot;
-
-09.30 - 09.45: Quebra
-
-09.45 - 11.15: Fluxo do usuário 4: Exercício prático de &quot;Análise do cliente&quot;
-
-11.15 - 11.30: Quebra
-
-11.30 - 12.30: &quot;Introdução ao delivery baseado em Jornada do usuário, estrutura da equipe, registro retroativo de delivery&quot;
-
-12.30 - 13.30: Almoço
-
-13.30 - 14.30: Personalização em escala - Como fazer isso acontecer
-
-14.30 - 15.00: Conclusão, encerramento e próximas etapas
-
-15.00: Interrupção
+08:00: Café da manhã 08:30: Introdução ao delivery baseado em Jornada do usuário, estrutura da equipe, registro retroativo de delivery 09.45: Fluxo de usuário 3 Combinação física e digital - Apresentação com exercícios práticos 11.15: Break 11.30: Fluxos de usuários são encerrados - (em que lugar) 12:00: Grupo Presentations 12.30: Lunch 13.30: Fluxo de usuário 4: Análise do cliente - aprofundar 14.30: Conclusão, encerramento e próximas etapas 15.00: Bebidas e intervalos
 
 ## Pré-requisitos
 
@@ -100,7 +65,7 @@ Você pode encontrar outros vídeos interessantes [em nosso canal YouTube](https
 
 ## Fluxos do usuário
 
-[1. Aquisição](./uc/uc1/uc1.md)
+[1. Aquisição ](./uc/uc1/uc1.md)
 
 Nesse fluxo de usuário, você compreenderá todos os elementos necessários para implementar casos de uso focados na aquisição para usuários desconhecidos e não autenticados ao lado de usuários conhecidos e autenticados usando o Real-Time CDP.
 
