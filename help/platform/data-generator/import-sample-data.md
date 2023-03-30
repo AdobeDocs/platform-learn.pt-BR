@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 4%
+source-wordcount: '1752'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ Este tutorial foca em uma marca fictícia de varejo chamada Luma. Eles investem 
 
 >[!NOTE]
 >
->O resultado final deste tutorial é uma sandbox contendo os mesmos dados de amostra do [Tutorial Introdução à Adobe Experience Platform para arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>O resultado final deste tutorial é uma sandbox contendo dados semelhantes ao [Tutorial Introdução à Adobe Experience Platform para arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Ela foi atualizada em abril de 2023 para oferecer suporte à variável [Desafios da Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=pt-BR).
 
 
 ## Pré-requisitos
@@ -48,9 +48,9 @@ Antes de seguir as etapas, certifique-se de ter baixado a variável [Postman](ht
    >
    >Os dados do usuário contidos na variável [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) O ficheiro é fictício e deve ser utilizado apenas para fins de demonstração.
 
-1. Na pasta de downloads, mova a `platform-utils-main.zip` para o local desejado em seu computador e descompacte-o.
-1. No `luma-data` , abra todas as `json` arquivos em um editor de texto e substitua todas as instâncias de `_techmarketingdemos` com sua própria ID de locatário, precedida por um sublinhado.
-1. Abrir `luma-offline-purchases.json` em um editor de texto e atualize todos os carimbos de data e hora para que os eventos ocorram no último mês (por exemplo, pesquise por `"timestamp":"2022-06` e substituir o ano e o mês)
+1. Na pasta de downloads, mova o arquivo `platform-utils-main.zip` para o local desejado em seu computador e descompacte-o.
+1. No `luma-data` , abra todas as `json` arquivos em um editor de texto e substitua todas as instâncias de `_yourOrganizationID` com sua própria ID de locatário, precedida por um sublinhado.
+1. Abrir `luma-offline-purchases.json` e `luma-web-events.json` em um editor de texto e atualize todos os carimbos de data e hora para que os eventos ocorram no último mês (por exemplo, pesquise por `"timestamp":"2022-11` e substituir o ano e o mês)
 1. Observe a localização da pasta descompactada, pois você precisará dela posteriormente ao configurar a variável `FILE_PATH` Variável de ambiente do Postman:
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Em seguida, é necessário importar as coleções para o Postman.
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![Importação de Coleções](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Agora você pode preparar e importar os dados para a sandbox da Platform. As col
    * `3-Luma-Product-Catalog.postman_collection.json` cria um esquema e um conjunto de dados preenchido para informações do catálogo de produtos. O esquema é baseado em uma classe personalizada de catálogo de produtos e usa um grupo de campos personalizado de catálogo de produtos.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` cria um esquema e um conjunto de dados preenchido para dados de eventos de compra offline de clientes. O esquema é baseado na classe XDM ExperienceEvent e inclui uma identidade personalizada e grupos de campos Detalhes de comércio .
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` cria um esquema e um conjunto de dados preenchido para eventos relacionados a produtos que entram e saem do estoque. O esquema é baseado em uma classe de evento comercial personalizada e em um grupo de campo personalizado.
+   * `6-Luma-Test-Profiles.postman_collection.json` cria um esquema e um conjunto de dados preenchido com perfis de teste para usar no Adobe Journey Optimizer
+   * `7-Luma-Web-Events.postman_collection.json` cria um esquema e um conjunto de dados preenchido com dados históricos da Web simples.
+
+
 ## Validação
 
 Os dados de amostra foram projetados para que, quando as coleções forem executadas, os Perfis do cliente em tempo real sejam criados e combinem dados de vários sistemas. Um bom exemplo disso é o primeiro registro dos conjuntos de dados de fidelidade, CRM e compra offline. Procure esse perfil para confirmar que os dados foram assimilados. No [Interface do Adobe Experience Platform](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Ao navegar pelos dados no **[!UICONTROL Atributos]** e **[!UICONTROL Eventos]** 
 ![Dados do evento do arquivo de eventos de Compra offline](../assets/data-generator/images/validation-profile-events.png)
 
 ## Próximas etapas
+
+Se você quiser saber mais sobre o Adobe Journey Optimizer, esta sandbox contém tudo o que você precisa para pegar a variável [Desafios da Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=pt-BR)
 
 Se você quiser saber mais sobre as políticas de mesclagem, governança de dados, serviço de query e o construtor de segmentos, vá para [lição 11 do tutorial Introdução aos arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). As lições anteriores deste outro tutorial permitem criar manualmente tudo o que acabou de ser preenchido por essas coleções do Postman — aproveite o início da página!
 
