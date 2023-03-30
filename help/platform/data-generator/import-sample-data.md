@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
+source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1832'
 ht-degree: 5%
 
 ---
@@ -160,7 +160,6 @@ Agora você pode preparar e importar os dados para a sandbox da Platform. As col
    * `2-Luma-CRM-Data.postman_collection.json` cria um esquema e um conjunto de dados preenchido para dados do CRM de clientes. O esquema é baseado na classe Perfil individual XDM que compreende Detalhes demográficos, Detalhes de contato pessoal, Detalhes de preferência e um grupo de campo de identidade personalizado.
    * `3-Luma-Product-Catalog.postman_collection.json` cria um esquema e um conjunto de dados preenchido para informações do catálogo de produtos. O esquema é baseado em uma classe personalizada de catálogo de produtos e usa um grupo de campos personalizado de catálogo de produtos.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` cria um esquema e um conjunto de dados preenchido para dados de eventos de compra offline de clientes. O esquema é baseado na classe XDM ExperienceEvent e inclui uma identidade personalizada e grupos de campos Detalhes de comércio .
-
    * `5-Luma-Product-Inventory-Events.postman_collection.json` cria um esquema e um conjunto de dados preenchido para eventos relacionados a produtos que entram e saem do estoque. O esquema é baseado em uma classe de evento comercial personalizada e em um grupo de campo personalizado.
    * `6-Luma-Test-Profiles.postman_collection.json` cria um esquema e um conjunto de dados preenchido com perfis de teste para usar no Adobe Journey Optimizer
    * `7-Luma-Web-Events.postman_collection.json` cria um esquema e um conjunto de dados preenchido com dados históricos da Web simples.
@@ -173,7 +172,12 @@ Os dados de amostra foram projetados para que, quando as coleções forem execut
 1. Ir para **[!UICONTROL Perfis]** > **[!UICONTROL Procurar]**
 1. Selecionar `Luma Loyalty Id` como **[!UICONTROL Namespace de identidade]**
 1. Procurar por `5625458` como **[!UICONTROL Valor de identidade]**
-1. Abra o `Danny Wright` perfil
+1. Abra o `Daniel Wright` perfil
+
+>[!TIP]
+>
+>Se você não vir o perfil, verifique o [!UICONTROL Conjuntos de dados] para confirmar que todos os conjuntos de dados foram criados e assimilados com êxito. Se isso parecer bom, espere 15 minutos e veja se o perfil está disponível no visualizador.  Se houver problemas com a assimilação de dados, verifique as mensagens de erro para tentar localizar o problema. Você também pode tentar ativar o diagnóstico de erros no [!UICONTROL Conjuntos de dados] e arraste e solte o arquivo de dados json para assimilar novamente os dados.
+
 
 ![Abrir um perfil](../assets/data-generator/images/validation-profile-open.png)
 
