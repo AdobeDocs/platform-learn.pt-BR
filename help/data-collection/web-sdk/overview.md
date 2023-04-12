@@ -2,14 +2,14 @@
 title: Visão geral do SDK da Web da Adobe Experience Platform e da rede de borda
 description: Saiba como o SDK da Web da Adobe Experience Platform e a rede de borda permitem que os clientes usem uma biblioteca JavaScript e um beacon para enviar dados para aplicativos da Adobe e destinos de terceiros.
 landing-page-description: Obtenha uma visão geral do SDK da Web e da rede de borda.
-short-description: Get an overview of Web SDK and Edge Network.
+short-description: Obtenha uma visão geral do SDK da Web e da rede de borda.
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 38%
+source-wordcount: '217'
+ht-degree: 41%
 
 ---
 

@@ -2,14 +2,14 @@
 title: Visão geral do Adobe Experience Platform Debugger
 description: Saiba como a extensão do Adobe Experience Platform Debugger para o Chrome e um complemento do Firefox ajudam a depurar as implementações da Web do SDK da Web da Adobe Experience Platform, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags e muito mais.
 landing-page-description: Depurar as implementações da Web dos aplicativos SDK da Web da Adobe Experience Platform e Experience Cloud.
-short-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
+short-description: Depurar as implementações da web dos aplicativos SDK da Web da Adobe Experience Platform e Experience Cloud.
 kt: 4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 59%
+source-wordcount: '166'
+ht-degree: 63%
 
 ---
 
