@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '2553'
+source-wordcount: '2538'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Primeiro, obtenha os dados de amostra e personalize-os para seu locatário:
 1. Se você recarregar a página após alguns minutos, verá que o lote foi carregado com êxito com 1000 registros e 1000 fragmentos de perfil.
 
    ![Assimilação](assets/ingestion-loyalty-uploadJson.png)
-<!--do i need to explain error diagnostics and partial ingestion-->
+   <!--do i need to explain error diagnostics and partial ingestion-->
 
 >[!NOTE]
 >
@@ -338,7 +338,6 @@ A Adobe faz parceria com vários fornecedores de ETL para dar suporte à assimil
 * [Desenvolvimento de integrações de ETL para o Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Página Informatica Adobe Experience Platform Connector no Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Documentação informativa do Adobe Experience Platform Connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
-* [Experiências de público-alvo exclusivas derivadas dos dados: Unifi e Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
 * [[!DNL Snaplogic] Pacote do Adobe Experience Platform Snap](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Recursos adicionais

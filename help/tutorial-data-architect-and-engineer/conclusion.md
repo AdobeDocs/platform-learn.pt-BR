@@ -6,10 +6,10 @@ description: Nesta lição, você configurará as permissões do usuário do Ado
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -50,9 +50,5 @@ Os principais recursos:
 * [Tutoriais da Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Documentação da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=pt-BR)
 * [cursos de Experience League](https://experienceleague.adobe.com/?lang=pt-BR#dashboard/learning)
-
-Este é outro tutorial que você pode analisar para saber mais sobre conexões com aplicativos de terceiros:
-
-* [Tutorial técnico completo da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Obrigado por seus esforços e boa sorte em sua jornada com a Adobe Experience Platform!
