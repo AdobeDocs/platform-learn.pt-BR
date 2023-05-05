@@ -4,10 +4,10 @@ breadcrumb-title: Tutorials
 user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
+source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 33%
+source-wordcount: '931'
+ht-degree: 32%
 
 ---
 
@@ -101,6 +101,7 @@ ht-degree: 33%
       + [Personalização de próxima ocorrência com o Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=pt-BR)
       + [Configurar o destino do Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Ativar segmentos e atributos de perfil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [Usar segmentos do Real-Time CDP no Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
    + [Ativar dados para aplicativos que não sejam Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identidades {#identities}
    + [Visão geral dos gráficos de identidade](/help/platform/identities/understanding-identity-and-identity-graphs.md)
