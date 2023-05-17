@@ -1,6 +1,6 @@
 ---
 title: Usar pontuações e insights do Customer AI
-description: Saiba mais sobre como usar as pontuações de propensão e insights do Customer AI para converter e reter clientes.
+description: Saiba mais sobre como usar as pontuações de propensão e insights da IA do cliente para converter e reter clientes.
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
 role: User
@@ -16,7 +16,7 @@ ht-degree: 50%
 
 # Usar pontuações e insights do Customer AI
 
-Saiba mais sobre como usar as pontuações de propensão e insights do Customer AI para converter e reter clientes.
+Saiba mais sobre como usar as pontuações de propensão e insights da IA do cliente para converter e reter clientes.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
 

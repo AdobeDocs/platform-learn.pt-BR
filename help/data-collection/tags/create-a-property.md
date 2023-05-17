@@ -1,6 +1,6 @@
 ---
 title: Visão geral das tags e criação de uma propriedade (antigo Launch)
-description: Obtenha uma visão geral rápida das tags na Coleção de dados e saiba como criar propriedades para receber o código do seu site.
+description: Obtenha uma visão geral rápida das tags da coleção de dados e saiba como criar propriedades para receber o código do seu site.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
 feature: Tags
 kt: 3524
@@ -14,7 +14,7 @@ ht-degree: 72%
 
 # Visão geral das tags e criação de uma propriedade
 
-Obtenha uma visão geral rápida das tags na Coleção de dados e saiba como criar propriedades para receber o código do seu site.
+Obtenha uma visão geral rápida das tags da coleção de dados e saiba como criar propriedades para receber o código do seu site.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Visão geral do encaminhamento de eventos
-description: Saiba como o encaminhamento de eventos centraliza a Coleção de dados, reduz a quantidade de códigos necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções que não são da Adobe pela Rede de borda da Adobe Experience Platform.
+description: Saiba como o encaminhamento de eventos centraliza a coleção de dados, reduz a quantidade de códigos necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções de terceiros usando a rede de borda da Adobe Experience Platform.
 feature: Event Forwarding
 kt: 6419
 thumbnail: 331937.jpeg
@@ -14,7 +14,7 @@ ht-degree: 62%
 
 # Visão geral do encaminhamento de eventos
 
-Saiba como o encaminhamento de eventos centraliza a Coleção de dados, reduz a quantidade de códigos necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções que não são da Adobe pela Rede de borda da Adobe Experience Platform.
+Saiba como o encaminhamento de eventos centraliza a coleção de dados, reduz a quantidade de códigos necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções de terceiros usando a rede de borda da Adobe Experience Platform.
 
 >[!NOTE]
 >

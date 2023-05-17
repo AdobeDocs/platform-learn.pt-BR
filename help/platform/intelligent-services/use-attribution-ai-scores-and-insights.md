@@ -1,6 +1,6 @@
 ---
 title: Usar pontuações e insights do Attribution AI
-description: Saiba como usar a página de insights do Attribution AI para entender o ROI de canais e campanhas de marketing
+description: Saiba como usar a página de insights da IA de atribuição para entender o ROI dos canais e das campanhas de marketing
 feature: Attribution AI
 role: User
 kt: 4173
@@ -15,7 +15,7 @@ ht-degree: 53%
 
 # Usar pontuações e insights do Attribution AI
 
-Saiba como usar a página de insights do Attribution AI para entender o ROI de canais e campanhas de marketing.
+Saiba como usar a página de insights da IA de atribuição para entender o ROI dos canais e das campanhas de marketing.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?quality=12&learn=on)
 
