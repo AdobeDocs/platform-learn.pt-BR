@@ -4,9 +4,9 @@ breadcrumb-title: Tutorials
 user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: bc55e75f7bfdde878f4e95bfb1fdd02fca9018b5
+source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 31%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 31%
 + Governança de dados {#data-governance}
    + [Visão geral](/help/platform/governance/understanding-data-governance.md)
    + [Demonstração completa](/help/platform/governance/introduction-to-data-governance.md)
-   + [Classificar dados usando rótulos de governança](/help/platform/governance/classify-data-using-governance-labels.md)
+   + [Classificar dados usando rótulos](/help/platform/governance/classify-data-using-labels.md)
    + [Criar políticas de uso de dados](/help/platform/governance/create-data-usage-policies.md)
    + [Aplicar políticas de uso de dados](/help/platform/governance/enforce-data-usage-policies.md)
    + [Impor consentimento](/help/platform/governance/enforce-consent.md)
