@@ -7,10 +7,10 @@ role: User
 kt: 6247
 thumbnail: 40374.jpg
 exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d
-source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 53%
+source-wordcount: '64'
+ht-degree: 75%
 
 ---
 
@@ -20,8 +20,4 @@ Este vídeo mostra como o Customer AI enriquece os perfis do cliente com propens
 
 >[!VIDEO](https://video.tv.adobe.com/v/40374?quality=12&learn=on)
 
->[!INFO]
->
-> Este vídeo é parte de um curso. [Introdução aos Serviços inteligentes para profissionais de marketing](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), disponível gratuitamente no Experience League!
-
-Para obter mais informações, visite o [Documentação do Customer AI](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)
+Para obter mais informações, visite o [Documentação da IA do cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)
