@@ -4,8 +4,8 @@ breadcrumb-title: Tutorial sobre Aplicativos para dispositivos móveis
 user-guide-description: Saiba como implementar aplicativos da Adobe Experience Cloud em aplicativos para dispositivos móveis com o SDK móvel da Experience Platform.
 solution: Data Collection
 kt: 6987
-recommendation: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+recommendations: noDisplay,noCatalog
+source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 81%
@@ -24,7 +24,7 @@ ht-degree: 81%
    + [Instalar SDKs](install-sdks.md)
    + [Assurance](assurance.md)
    + [Consentimento](consent.md)
-   + [Dados de ciclo de vida](lifecycle-data.md)
+   + [Dados do ciclo de vida](lifecycle-data.md)
    + [Dados do evento](events.md)
    + [WebViews](web-views.md)
    + [Identidade](identity.md)
