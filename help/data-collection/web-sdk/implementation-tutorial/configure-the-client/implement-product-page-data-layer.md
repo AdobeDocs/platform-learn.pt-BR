@@ -4,11 +4,11 @@ description: Implementar uma camada de dados em uma página de produto
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: a72011a5-ea9c-45df-a0f3-5eb40bc99d3f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Implementar uma camada de dados em uma página de produto
 
-Neste tutorial, você implementará a Camada de dados do cliente do Adobe para um site de comércio eletrônico típico. Se ainda não o fez, leia [Como usar a camada de dados do cliente do Adobe](how-to-use-the-adobe-client-data-layer.md) primeiro para entender como a Camada de dados do cliente do Adobe opera.
+Para este tutorial, você implementará a Camada de dados do cliente Adobe para um site de comércio eletrônico típico. Se ainda não tiver feito isso, leia [Como usar a Camada de dados de clientes Adobe](how-to-use-the-adobe-client-data-layer.md) primeiro para entender como a Camada de dados de clientes Adobe funciona.
 
-Vamos supor que o usuário navegue em seus produtos e clique em um cilindro de espuma para saber mais. O usuário acessa a página de detalhes do produto do cilindro de espuma.
+Vamos supor que o usuário navegue em seus produtos e clique em um cilindro de espuma para saber mais. O usuário acessa a página de detalhes do produto de cilindro de espuma.
 
-Aqui está a HTML para sua página de detalhes simples do produto:
+Esta é a HTML da página de detalhes simples do produto:
 
 ```html
 <!DOCTYPE html>
@@ -41,9 +41,9 @@ Aqui está a HTML para sua página de detalhes simples do produto:
 </html>
 ```
 
-Como você pode ter notado, dentro da `<head>` há uma tag `<script>` . É aqui que você coloca seu código JavaScript. Não é necessário colocar a variável `<script>` dentro da tag `<head>`, mas enviar dados para a camada de dados o mais rápido possível ajuda a garantir que ela esteja rapidamente disponível para o profissional de marketing enviar para a Adobe Experience Platform antes de o usuário sair da página.
+Como você deve ter notado, dentro do `<head>` há uma tag `<script>` tag. É aqui que você colocará seu código JavaScript. Não é necessário colocar o `<script>` tag no `<head>`, mas o envio de dados para a camada de dados assim que possível ajuda a garantir que ela esteja rapidamente disponível para o profissional de marketing enviar para o Adobe Experience Platform antes que o usuário saia da página.
 
-Dentro do `<script>` , você começará criando a variável `adobeDataLayer` e, em seguida, enviando informações apropriadas de evento e dados para o array. Os dados estão em conformidade com o esquema XDM [você criou anteriormente](../configure-the-server/create-a-schema.md).
+Dentro do `<script>` , você começará criando o `adobeDataLayer` e, em seguida, enviar as informações apropriadas sobre eventos e dados para o array. Os dados estão em conformidade com o esquema XDM [você criou anteriormente](../configure-the-server/create-a-schema.md).
 
 ```js
 window.adobeDataLayer = window.adobeDataLayer || [];
@@ -69,17 +69,17 @@ window.adobeDataLayer.push({
 });
 ```
 
-Neste exemplo, você fez dois empurrões para a camada de dados, cada um contendo um `event` chave. Inclusão de um `event` A chave não apenas comunica o evento que ocorreu na página, como também torna mais simples para o profissional de marketing criar regras apropriadas dentro das Tags do Adobe Experience Platform.
+Neste exemplo, você fez dois envios para a camada de dados, cada um contendo um `event` chave. Incluindo um `event` A chave não apenas comunica qual evento ocorreu na página, como também facilita para o profissional de marketing a criação de regras apropriadas dentro das Tags do Adobe Experience Platform.
 
-O primeiro push para a camada de dados notifica os ouvintes (regras de Tags) que o usuário visualizou a página. Ele também adiciona o nome da página e a seção do site à camada de dados.
+O primeiro push para a camada de dados notifica os ouvintes (regras de tags) de que o usuário visualizou a página. Ele também adiciona o nome da página e a seção do site à camada de dados.
 
-O segundo push para a camada de dados notifica os ouvintes (regras de Tags) que o usuário visualizou um produto. Ele também adiciona informações do produto à camada de dados.
+O segundo push para a camada de dados notifica os ouvintes (regras de tags) de que o usuário visualizou um produto. Também adiciona informações do produto à camada de dados.
 
 ## Adicionar ao carrinho
 
-Você também deve querer rastrear quando o usuário clicar no botão [!UICONTROL Adicionar ao carrinho] botão.
+Você provavelmente também deseja rastrear quando o usuário clica na variável [!UICONTROL Adicionar ao carrinho] botão.
 
-Para fazer isso, crie uma função chamada quando o usuário clicar no botão [!UICONTROL Adicionar ao carrinho] botão.
+Para fazer isso, crie uma função que seja chamada quando o usuário clicar no [!UICONTROL Adicionar ao carrinho] botão.
 
 ```js
 window.onAddToCartClick = function() {
@@ -97,11 +97,11 @@ window.onAddToCartClick = function() {
 };
 ```
 
-Quando essa função é chamada, verifica primeiro se um carrinho já existe para um usuário. Normalmente, isso seria feito verificando se um cookie ou variável específica existe. Se o carrinho não existir, você pressionará um `cartOpened` na camada de dados. Posteriormente, você pressionará um `productAddedToCart` na camada de dados. As informações do produto já existem na camada de dados, portanto, não é necessário adicioná-las novamente.
+Quando essa função é chamada, ela verifica primeiro se um carrinho já existe para um usuário. Normalmente, isso é feito verificando se um cookie ou uma variável específica existe. Se o carrinho não existir, você enviará um `cartOpened` na camada de dados. Posteriormente, você enviará um `productAddedToCart` na camada de dados. As informações do produto já existem na camada de dados, portanto, não é necessário adicioná-las novamente.
 
-Adicione um `onclick` para a [!UICONTROL Adicionar ao carrinho] botão que chama o novo `onAddToCartClick` .
+Adicionar um `onclick` atributo para o [!UICONTROL Adicionar ao carrinho] botão que chama seu novo `onAddToCartClick` função.
 
-O resultado da sua página do HTML deve ser o seguinte:
+O resultado da sua página de HTML deve ser semelhante ao seguinte:
 
 ```html
 <!DOCTYPE html>
@@ -156,9 +156,9 @@ O resultado da sua página do HTML deve ser o seguinte:
 
 ## Baixar o aplicativo
 
-Uma última coisa a fazer é rastrear quando o usuário clica no botão _[!UICONTROL Baixar o aplicativo]_ link .
+Uma última coisa a fazer é rastrear quando o usuário clica no _[!UICONTROL Baixar o aplicativo]_ link.
 
-Para fazer isso, crie uma função chamada quando o usuário clicar no botão _[!UICONTROL Baixar o aplicativo]_ link .
+Para fazer isso, crie uma função que seja chamada quando o usuário clicar no _[!UICONTROL Baixar o aplicativo]_ link.
 
 ```js
 window.onDownloadAppClick = function(event) {
@@ -177,11 +177,11 @@ window.onDownloadAppClick = function(event) {
 };
 ```
 
-Nesse caso, as informações sobre o link são encapsuladas dentro de um `eventInfo` chave. Conforme discutido no [Como usar a camada de dados do cliente do Adobe](how-to-use-the-adobe-client-data-layer.md), isso instrui a camada de dados a comunicar esses dados juntamente com o evento, mas para _not_ mantenha os dados dentro da camada de dados. Para um clique em um link, não é útil adicionar informações sobre o link clicado à camada de dados porque ela não pertence à página como um todo e não se aplica a outros eventos que podem ocorrer.
+Nesse caso, as informações sobre o link são colocadas dentro de um `eventInfo` chave. Conforme discutido em [Como usar a Camada de dados de clientes Adobe](how-to-use-the-adobe-client-data-layer.md), isso instrui a camada de dados a comunicar esses dados junto com o evento, mas a _não_ reter os dados na camada de dados. Para um clique em links, não é útil adicionar informações sobre o link clicado à camada de dados, pois ele não pertence à página como um todo e não se aplica a outros eventos que podem ocorrer.
 
-Adicione um `onclick` para a [!UICONTROL Baixar o aplicativo] link que chama seu novo `onDownloadAppClick` .
+Adicionar um `onclick` atributo para o [!UICONTROL Baixar o aplicativo] link que chama seu novo `onDownloadAppClick` função.
 
-O resultado da sua página do HTML deve ser o seguinte:
+O resultado da sua página de HTML deve ser semelhante ao seguinte:
 
 ```html
 <!DOCTYPE html>

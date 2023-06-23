@@ -1,61 +1,62 @@
 ---
-title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360 - Brasil
-description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360 - Brasil
-kt: 5342
+title: Bootcamp - CDP em tempo real - Criar um segmento e realizar ações - Enviar seu segmento para DV360 - Brasil
+description: Bootcamp - CDP em tempo real - Criar um segmento e realizar ações - Enviar seu segmento para DV360 - Brasil
+jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: acb32859-6f82-44e0-8948-a045a9fe2afe
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 1%
 
 ---
 
-# 1.5 Ação: segmento do ambiente para o Facebook
+# 1.5 Ação: Desejo seu segmento para o Facebook
 
-Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de &quot;Faça&quot;, você vai acessar um início do logon no Adobe Experience Platform.
+Acessado [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você acessará a página inicial da Adobe Experience Platform.
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, você precisa selecionar um **sandbox**. O nome faz sandbox a ser selecionado é Bootcamp. É possível isto clicando texto **[!UICONTROL Produto de produção]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora está em sua [!UICONTROL sandbox] dedicado.
+Antes de continuar, você precisa atualizar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. painel de navegação o sandbox, você é a tela e agora está você em seu [!UICONTROL sandbox] Comparar.
 
 ![Assimilação de dados](./images/sb1.png)
 
-Sem menu à esquerda, vá para **Destinos** e, em, para. **Catálogo**. Você verá o **Catálogo de destinos**. Em **Destinos**, clique em **Ativar segmentos** sem cartão **Público-alvo personalizado do facebook**.
+Sem menu à esquerda, vá para **Destinos** e, em seguida, vá para **Catálogo**. Você verá o **Catálogo de destinos**. Em **Destinos**, clique em **Ativar segmentos** sem cartão **Público-alvo personalizado do facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selecione o **bootcamp-facebook** e panelinha **Próximo**.
+o **bootcamp-facebook** e clique em **Próxima**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de segmentos, selecione o segmento que você . Clique em **Próximo**.
+Na lista de conjuntos, o segmento que criou no exercício anterior. Clique em **Próxima**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Na tela **Mapeamento**, verifique um seleção **Aplicar transformação** está marcada. Clique em **Próximo**.
+Na página **Mapeamento**, se a seleção de seleção **Aplicar transformação** está alterado. Clique em **Próxima**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Na tela **Agendamento do segmento** selecione a **Origem do público-alvo** e defina como **Diretamente dos clientes**. Clique em **Próximo**.
+Na página **Agendamento do segmento**, a **Origem do seu público** e ➡ como **Diretamente dos clientes**. Clique em **Próxima**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por Voltar **Revisão**, clique em **Concluir**.
+Por fim, na página **Revisão**, clique em **Concluir**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Seu segmento agora está no cio Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento, um sinal enviado ao lado do servidor do Facebook para esse cliente incluir cliente em Público no lado do Facebook.
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento, um sinal será enviado ao lado do servidor do Facebook para incluir cliente não personalizado no lado do Facebook.
 
-Sem Facebook, você encontr o segmento da Adobe Experience Platform em Públicos Personalizados:
+Não há Facebook, você tem seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-Agora você Facebook personalizado aparecer no:
+Agora você pode ver seu público no Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[Retornar para Fluxo de Correio](./uc1.md)
+[Retorno para Fluxo de monitoramento 1](./uc1.md)
 
-[Retornar para Todos os Módulos](../../overview.md)
+[Retorno para Todos os compartilhados](../../overview.md)

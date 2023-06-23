@@ -1,13 +1,13 @@
 ---
 user-guide-title: Tutoriais da Adobe Experience Platform
-breadcrumb-title: Tutorials
+breadcrumb-title: Tutoriais
 user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 31%
+source-wordcount: '937'
+ht-degree: 32%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 31%
 + Governança de dados {#data-governance}
    + [Visão geral](/help/platform/governance/understanding-data-governance.md)
    + [Demonstração completa](/help/platform/governance/introduction-to-data-governance.md)
-   + [Classificar dados usando rótulos](/help/platform/governance/classify-data-using-labels.md)
+   + [Classificação de dados usando rótulos](/help/platform/governance/classify-data-using-labels.md)
    + [Criar políticas de uso de dados](/help/platform/governance/create-data-usage-policies.md)
    + [Aplicar políticas de uso de dados](/help/platform/governance/enforce-data-usage-policies.md)
    + [Impor consentimento](/help/platform/governance/enforce-consent.md)
@@ -100,7 +100,7 @@ ht-degree: 31%
    + Adobe Target e personalização personalizada{#target}
       + [Personalização de próxima ocorrência com o Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configurar o destino do Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
-      + [Ativar segmentos e atributos de perfil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [Ativação de segmentos e atributos de perfil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Usar segmentos do Real-Time CDP no Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Usar os atributos de perfil do Real-Time CDP no Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [Ativar dados para webinar de aplicativos que não sejam do Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
@@ -203,7 +203,7 @@ ht-degree: 31%
    + [Personalização de próxima ocorrência com o Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Integrações da Experience Cloud {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Orquestrar campanhas com o Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Orquestrar campanhas com o Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + Tendências do setor {#industry}
    + [O futuro do gerenciamento de dados e do ambiente em mudança](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Os dois lados da moeda - marcas e consumidores](/help/platform/industry/brands-vs-consumers.md)

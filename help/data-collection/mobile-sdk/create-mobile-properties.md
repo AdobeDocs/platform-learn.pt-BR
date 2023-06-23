@@ -2,9 +2,9 @@
 title: Criar propriedades de tag móvel
 description: Saiba como criar uma propriedade de tag móvel em Coleção de dados. Adicione o Mobile Core e outras extensões, publique a configuração em um ambiente e faça referência à propriedade no aplicativo móvel.
 feature: Mobile SDK
-kt: null
+jira: KT-
 exl-id: c0bfdd5a-03f7-49db-9124-7d420a884048
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 4%

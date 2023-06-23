@@ -3,10 +3,10 @@ title: Visão geral dos gráficos de identidade e identidade
 description: Saiba mais sobre os principais recursos de resolução de identidades no Adobe Experience Platform&mdash;coleção de identidades, gráficos de identidade e APIs. Saiba como o Serviço de identidade vincula identidades desconectadas para fornecer uma experiência conectada consistente por meio da construção de um perfil unificado.
 role: Data Architect
 feature: Identities
-kt: 3039
+jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 5%

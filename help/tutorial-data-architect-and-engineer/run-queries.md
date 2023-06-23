@@ -2,34 +2,34 @@
 title: Executar consultas
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Executar consultas
-description: Nesta lição, você aprenderá a configurar, gravar e executar queries para validar os dados assimilados.
+description: Nesta lição, você aprenderá a configurar, gravar e executar consultas para validar os dados assimilados.
 role: Data Architect, Data Engineer
 feature: Queries
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
 # Executar consultas
 
 <!-- 15 min-->
-Nesta lição, você aprenderá a configurar, gravar e executar queries para validar os dados assimilados.
+Nesta lição, você aprenderá a configurar, gravar e executar consultas para validar os dados assimilados.
 
-O Adobe Experience Platform Query Service ajuda você a entender seus dados, permitindo que você use o SQL padrão para consultar dados na Platform. Usando o Serviço de query, você pode unir qualquer conjunto de dados no Data Lake e capturar os resultados da consulta como um novo conjunto de dados para uso em relatórios, aprendizado de máquina ou para assimilação no Perfil do cliente em tempo real.
+O Serviço de consulta da Adobe Experience Platform ajuda você a entender seus dados, permitindo que use o SQL padrão para consultar dados na Platform. Usando o Serviço de consulta, você pode ingressar em qualquer conjunto de dados no Data Lake e capturar os resultados da consulta como um novo conjunto de dados para usar em relatórios, aprendizado de máquina ou para assimilação no Perfil do cliente em tempo real.
 
-**Arquitetos de dados** e **Engenheiros de dados** O precisará usar o serviço de query fora deste tutorial.
+**Arquitetos de dados** e **Engenheiros de dados** precisará usar o serviço de consulta fora deste tutorial.
 
-Antes de começar os exercícios, assista a este breve vídeo para saber mais sobre o Serviço de query:
+Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre o Serviço de consulta:
 >[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
 
 ## Permissões necessárias
 
-No [Configurar permissões](configure-permissions.md) lição, configure todos os controles de acesso necessários para concluir esta lição.
+No [Configurar permissões](configure-permissions.md) você configura todos os controles de acesso necessários para concluir esta lição.
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -37,12 +37,12 @@ No [Configurar permissões](configure-permissions.md) lição, configure todos o
 * User-role access to the `Luma Tutorial Platform` product profile
 -->
 
-## Queries Simples
+## Consultas simples
 
 Vamos começar com algumas consultas simples:
 
-1. Na interface do usuário da Platform, acesse **Queries** na navegação à esquerda
-1. Selecione o **Criar Consulta** botão na parte superior direita para abrir uma caixa de texto para executar e executar consultas
+1. Na interface do usuário da Platform, acesse **Consultas** na navegação à esquerda
+1. Selecione o **Criar consulta** botão na parte superior direita para abrir uma caixa de texto para executar e executar consultas
 1. Insira a seguinte consulta no editor e pressione Shift+Enter ou Shift+Return para executar a consulta.
 
    ```
@@ -51,10 +51,10 @@ Vamos começar com algumas consultas simples:
 
 1. Isso mostra a lista de tabelas disponíveis
 
-   ![MOSTRAR consulta DE TABELA](assets/queries-showTables.png)
+   ![Consulta SHOW TABLE](assets/queries-showTables.png)
 
 
-1. Agora tente esta consulta, substituindo `_techmarketingdemos` com seu próprio namespace de locatário, que, se você lembrar, é visível em seus esquemas.
+1. Agora, tente esta consulta, substituindo `_techmarketingdemos` com seu próprio namespace de locatário, que, se você se lembrar, está visível em seus esquemas.
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -64,12 +64,12 @@ Vamos começar com algumas consultas simples:
 
    ![SELECIONAR dados do conjunto de dados de fidelidade](assets/queries-loyaltySelect.png)
 
-1. Se houver algum erro, mensagens detalhadas aparecerão na variável **[!UICONTROL Console]** conforme mostrado abaixo
+1. Se houver algum erro, mensagens detalhadas serão exibidas no **[!UICONTROL Console]** conforme a figura abaixo
    ![Erro na consulta](assets/queries-error.png)
 
-1. Com sua query bem-sucedida, **[!UICONTROL Nome]** it `Luma Gold Level Customers`
+1. Com seu query bem-sucedido, **[!UICONTROL Nome]** it `Luma Gold Level Customers`
 1. Selecione o botão **[!UICONTROL Salvar]**
-   ![Salvar a consulta](assets/queries-loyaltySelect-save.png)
+   ![Salvamento da consulta](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Recursos adicionais
 
-* [Documentação do Serviço de query](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR)
-* [Referência da API do serviço de query](https://www.adobe.io/experience-platform-apis/references/query-service/)
+* [Documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR)
+* [Referência da API do serviço de consulta](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-E agora para a última lição prática. [criação de segmentos](build-segments.md)!
+E agora para a última lição prática, [criação de segmentos](build-segments.md)!

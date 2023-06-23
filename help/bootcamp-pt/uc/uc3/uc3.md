@@ -1,47 +1,48 @@
 ---
-title: Bootcamp - Combinação física e digital - Brasil
-description: Bootcamp - Combinação física e digital - Brasil
-kt: 5342
+title: Bootcamp - Mesclagem física e digital - Brasil
+description: Bootcamp - Mesclagem física e digital - Brasil
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
 
 ---
 
-# 3. Retornar para Todos os Módulos
+# 3. Retenção para Todos os compartilhados
 
-## Objetivos de aprendizado
+## Pesquisar o aprendizado
 
 ## Pré-requisitos
 
-- Acesso ao Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- acesso de demonstração
+- Acesso ao site de ➡
 
 >[!IMPORTANT]
 >
->Este tutorial foi para facilitar um bootcamp. Sistemas e relé você não tem um calendário específicos são Mesmo assim, você aprende com. Se você é um participante de um bootcamp e das credenciais, representante em Adobe para as informações....................................................................................................................................................................................................................................
+>Este tutorial foi criado para facilitar um destino de bootcamp. Sistemas e relatórios relacionados aos quais você pode não ter acesso são baseados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste segmento. Se você é participante de um bootcamp, precisa e das passagens de acesso, entre em contato com seu representante da Adobe para receber as informações.
 
 ## Exercícios
 
-[3.1 Utilização aplicativo sinalizador de móvel e acione](./ex1.md)
+[3.1 Utilização do móvel e acione sinalizador beacon](./ex1.md)
 
-, você aprende como configurar evento.
+Neste exercício, você aprende como modificar um evento.
 
-[3.2 Evento de emissão de moeda eletrônica](./ex2.md)
+[3.2 Crise do evento](./ex2.md)
 
-, você aprende como configurar evento.
+Neste exercício, você aprende como modificar um evento.
 
-[3.3 Notificação por push da sua jornada](./ex3.md)
+[3.3 Promoção da notificação da jornada e da notificação](./ex3.md)
 
-Você sabe aprender como configurar uma citação de notificação e como vincular para uma jornada.
+Neste exercício, você aprende como positivo uma jornada e uma notificação push e como vinculado seu evento e mensagem para a jornada.
 
-[3.4 Teste da sua jornada](./ex4.md)
+[3.4 Testa sua jornada](./ex4.md)
 
-Você sabe aprender como configurar jornada vincular jornada e para jornada.
+Neste exercício, você irá aprender como modificar uma jornada e vincular seu evento e mensagem para a jornada.
 
-[Retornar para Todos os Módulos](../../overview.md)
+[Retorno para Todos os compartilhados](../../overview.md)

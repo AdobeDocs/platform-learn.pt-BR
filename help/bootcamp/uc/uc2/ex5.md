@@ -1,12 +1,12 @@
 ---
 title: Bootcamp - Instalar e usar o aplicativo móvel
 description: Bootcamp - Instalar e usar o aplicativo móvel
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 1%
@@ -18,15 +18,15 @@ ht-degree: 1%
 
 ## Instalar o aplicativo móvel
 
-Antes de instalar o aplicativo, é necessário ativar **Rastreamento** no seu dispositivo iOS. Para fazer isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e garantir que a opção **Permitir que aplicativos solicitem rastreamento**.
+Antes de instalar o aplicativo, é necessário ativar **Rastreamento** no dispositivo iOS. Para fazer isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e garantir que a opção **Permitir que aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Vá para a Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
+Acesse o Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abrir**.
+Depois que o aplicativo estiver instalado, clique em **Abertura**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -42,7 +42,7 @@ Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir Ao Usar Aplicativo**.
+Clique em **Permitir ao usar o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -50,13 +50,13 @@ Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora você está no aplicativo, na página inicial, pronto para passar pela jornada do cliente.
+Agora você está no aplicativo, na página inicial, pronto para acessar a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
 ## Fluxo de jornada do cliente
 
-Primeiro de tudo, você precisa fazer logon. Clique em **Logon**.
+Primeiro, é necessário fazer logon. Clique em **Logon**.
 
 ![DSN](./../uc3/images/app13.png)
 
@@ -64,15 +64,15 @@ Depois de criar sua conta nos exercícios anteriores, você viu isso no site. Ag
 
 ![Demonstração](./../uc3/images/pv1.png)
 
-Digite o endereço de email que você usou no site aqui e clique em **Logon**.
+Insira o endereço de email que você usou no site aqui e clique em **Logon**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Em seguida, você receberá uma confirmação de que está conectado e receberá uma notificação por push.
+Você receberá uma confirmação de que está conectado e uma notificação por push.
 
 ![DSN](./../uc3/images/app15.png)
 
-Retorne à página inicial no aplicativo e você verá recursos adicionais serem exibidos.
+Volte para a página inicial no aplicativo e você verá recursos adicionais aparecendo.
 
 ![DSN](./../uc3/images/app17.png)
 
@@ -90,4 +90,4 @@ Próxima etapa: [2.6 Personalização na central de atendimento](./ex6.md)
 
 [Voltar para Fluxo de Usuário 2](./uc2.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Voltar a todos os módulos](../../overview.md)

@@ -1,12 +1,12 @@
 ---
 title: Usar alertas
-description: Saiba como assinar e administrar alertas na Adobe Experience Platform. Os alertas ajudam a monitorar vários processos para garantir que a implementação da plataforma esteja em execução sem problemas.
+description: Saiba como assinar e administrar alertas na Adobe Experience Platform. Alertas ajudam a monitorar vários processos para garantir que a implementação de sua plataforma esteja funcionando sem problemas.
 role: Data Engineer, User, Admin
 feature: Alerts
-kt: 8324
+jira: KT-8324
 thumbnail: 336218.jpg
 exl-id: 56f927db-1f16-4c0b-a0e0-a25e43f1a535
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 47%
@@ -15,7 +15,7 @@ ht-degree: 47%
 
 # Usar alertas
 
-Saiba como assinar e administrar alertas na Adobe Experience Platform. Os alertas ajudam a monitorar vários processos para garantir que a implementação da plataforma esteja em execução sem problemas.
+Saiba como assinar e administrar alertas na Adobe Experience Platform. Alertas ajudam a monitorar vários processos para garantir que a implementação de sua plataforma esteja funcionando sem problemas.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336218?quality=12&learn=on)
 

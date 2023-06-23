@@ -1,25 +1,25 @@
 ---
-title: Estruturação de dados
-description: Estruturação de dados
+title: Estruturação dos dados
+description: Estruturação dos dados
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: d300429a-5a66-4b61-97cb-b934fc8e8291
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
-# Estruturação de dados
+# Estruturação dos dados
 
-As empresas têm a sua própria linguagem para comunicar sobre o seu domínio. As concessionárias de carros lidam com marcas, modelos e cilindros. As companhias aéreas lidam com números de voo, classe de serviço e atribuições de lugares. Alguns desses termos são exclusivos de uma empresa específica, alguns são compartilhados entre um negócio vertical e alguns são compartilhados por quase todas as empresas. Para termos que são compartilhados entre um negócio vertical ou ainda mais amplo, você pode começar a fazer coisas poderosas com seus dados ao nomear e estruturar esses termos de uma maneira comum.
+As empresas têm sua própria linguagem para se comunicar sobre seus domínios. As concessionárias de automóveis lidam com marcas, modelos e cilindros. As companhias aéreas lidam com números de voo, classe de serviço e atribuições de assentos. Alguns desses termos são exclusivos de uma empresa específica, alguns são compartilhados entre um setor vertical e alguns são compartilhados por quase todas as empresas. Para termos que são compartilhados entre um setor vertical ou mesmo mais amplo, você pode começar a fazer coisas poderosas com seus dados ao nomear e estruturar esses termos de uma maneira comum.
 
-Por exemplo, muitas empresas lidam com pedidos. E se coletivamente essas empresas decidissem modelar um pedido de maneira semelhante. Por exemplo, e se o modelo de dados consistisse de um objeto com um `priceTotal` propriedade que representava o preço total do pedido. E se esse objeto também tivesse propriedades nomeadas `currencyCode` e `purchaseOrderNumber`. Talvez o objeto do pedido contenha uma propriedade chamada `payments` seria uma matriz de objetos de pagamento. Cada objeto representaria um pagamento para a ordem. Por exemplo, talvez um cliente tenha pago parte do pedido com um cartão-presente e o restante com um cartão de crédito. Você pode começar a construir um modelo que se pareça com isto:
+Por exemplo, muitas empresas lidam com pedidos. E se coletivamente essas empresas decidissem modelar um pedido de maneira semelhante. Por exemplo, e se o modelo de dados consistisse em um objeto com uma `priceTotal` propriedade que representava o preço total do pedido. E se esse objeto também tiver propriedades chamadas? `currencyCode` e `purchaseOrderNumber`. Talvez o objeto da ordem contenha uma propriedade chamada `payments` que seria uma matriz de objetos de pagamento. Cada objeto representaria um pagamento para o pedido. Por exemplo, talvez um cliente tenha pago parte do pedido com um cartão-presente e pago o restante usando um cartão de crédito. Você pode começar a construir um modelo com esta aparência:
 
 ```json
 {
@@ -41,8 +41,8 @@ Por exemplo, muitas empresas lidam com pedidos. E se coletivamente essas empresa
 }
 ```
 
-Se todas as empresas que lidam com pedidos decidissem modelar seus dados de pedido de maneira consistente para termos que são comuns no setor, coisas mágicas poderiam começar a acontecer. As informações poderiam ser trocadas de forma mais fluida dentro e fora da sua organização, em vez de interpretar e traduzir constantemente os dados (props e evars, qualquer um?). O aprendizado de máquina poderia entender mais facilmente quais dados _meios_ e fornecer insights acionáveis. As interfaces do usuário para surfar dados relevantes podem se tornar mais intuitivas. Seus dados podem ser perfeitamente integrados a parceiros e fornecedores que seguem a mesma modelagem.
+Se todas as empresas que lidam com pedidos decidissem modelar seus dados de pedidos de maneira consistente para termos comuns no setor, coisas mágicas poderiam começar a acontecer. As informações poderiam ser trocadas de forma mais fluida dentro e fora da organização, em vez de interpretar e traduzir constantemente os dados (props e evars, alguém?). O aprendizado de máquina poderia entender mais facilmente o que seus dados _significa_ e fornecer insights acionáveis. As interfaces do usuário para encontrar dados relevantes podem se tornar mais intuitivas. Seus dados podem ser perfeitamente integrados a parceiros e fornecedores que estejam seguindo a mesma modelagem.
 
 ## XDM
 
-Este é o objetivo do Adobe [Experience Data Model](https://business.adobe.com/products/experience-platform/experience-data-model.html). O XDM fornece modelagem normativa para dados comuns no setor, além de permitir que você estenda o modelo para suas necessidades específicas. A Adobe Experience Platform é criada em torno do XDM e, como tal, os dados enviados para o Experience Platform precisarão estar no XDM. Em vez de pensar em onde e como você pode transformar seus modelos de dados atuais em XDM antes de enviar os dados para o Experience Platform, considere adotar o XDM de forma mais abrangente em sua organização para que a tradução raramente precise ocorrer.
+Esse é o objetivo do Adobe [Experience Data Model](https://business.adobe.com/products/experience-platform/experience-data-model.html). O XDM fornece modelagem prescritiva para dados comuns no setor, além de permitir estender o modelo para suas necessidades específicas. O Adobe Experience Platform é construído com base no XDM e, como tal, os dados enviados para o Experience Platform precisarão estar no XDM. Em vez de pensar em onde e como você pode transformar seus modelos de dados atuais em XDM antes de enviar os dados para o Experience Platform, considere adotar o XDM de forma mais abrangente em toda a organização para que a tradução raramente precise ocorrer.

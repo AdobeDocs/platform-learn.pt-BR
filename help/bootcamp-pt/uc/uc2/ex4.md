@@ -1,26 +1,27 @@
 ---
-title: Bootcamp - Journey Optimizer Create your jornada - Brasil
-description: Bootcamp - Journey Optimizer Create your jornada - Brasil
-kt: 5342
+title: Bootcamp - Journey Optimizer Crie sua jornada - Brasil
+description: Bootcamp - Journey Optimizer Crie sua jornada - Brasil
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: 674a9baa-5900-405e-b744-ea211f60a16d
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4 Teste da sua jornada
+# 2.4 Testa sua jornada
 
 ## Fluxo da jornada do cliente
 
-Abra uma nova janela e anôn ima do navegador e vá para [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Permitir Tudo**. Com base no no comportamento de navegação no fluxo de usuário anterior, verá a personalização acontecer na primeira página do início do sítio.
+Abra uma nova e anônima do navegador e janela para [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Permitir todos**. Com base no seu comportamento de navegação no fluxo de dados anterior, verá a personalização na página inicial do site.
 
 ![DSN](./images/web8a.png)
 
-Clique em ícone **Perfil** não canto superior da tela.
+Clique no ➡ **Perfil** nenhum canto superior direito da tela.
 
 ![Demonstração](./images/web8b.png)
 
@@ -28,33 +29,33 @@ Clique em **Criar uma conta**.
 
 ![Demonstração](./images/pv5.png)
 
-Preencha todos os campos do formulário. Use um valor real para endereço de e-mail e número de telefone, pois será usado exercícios para envio de e-mail e SMS.
+Preencha todos os campos do campo. Use um valor real para endereço de e-mail e número de telefone, pois usado em para envio de e-mail SMS.
 
 ![Demonstração](./images/pv7a.png)
 
-Papel para baixo. Agora você inserir o eventID do evento, que você criou no  2.2. Você pode encontrá-lo aqui:
+Função para baixo. Agora você deve o eventoID do seu evento personalizado que criou no exercício 2.2. Você pode encontrar-lo aqui:
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventID é o que precisa enviado à Adobe Experience Platform para acionar a jornada que construiu. Este é o eventID anotado exemplo:
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada que você perdeu. Este é o eventID exemplo:
 `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Preencha o eventID no campo **Sua ID de evento de criação de conta** e panelinha **Registrar**.
+Preencha o eventID no campo **ID do evento de criação da sua conta** e clique em **Registrar**.
 
 ![Demonstração](./images/pv8a.png)
 
-Em, tela exibida
+Em seguida, a tela abaixo é apresentada:
 
 ![Demonstração](./images/pv9.png)
 
-Você também este e-mail, que é o e-mail que você é o você, é o .
+Você também recebe este e-mail, que é o e-mail que é mesmo criado como parte deste exercício.
 
 ![Demonstração](./images/pv10a.png)
 
-Você terminou este.
+Você terminou este exercício.
 
-Proxima. [2.5 Instalação e uso do aplicativo móvel](./ex5.md)
+Próxima etapa: [2.Instale e use o móvel móvel 5](./ex5.md)
 
-[Retornar para Fluxo 2](./uc2.md)
+[Retorno para Fluxo de monitoramento 2](./uc2.md)
 
-[Retornar para Todos os Módulos](../../overview.md)
+[Retorno para Todos os compartilhados](../../overview.md)

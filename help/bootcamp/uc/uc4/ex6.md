@@ -1,47 +1,48 @@
 ---
-title: Bootcamp - Customer Journey Analytics - De insights à ação
-description: Bootcamp - Customer Journey Analytics - De insights à ação
-kt: 5342
+title: Bootcamp - Customer Journey Analytics - Dos insights à ação
+description: Bootcamp - Customer Journey Analytics - Dos insights à ação
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: e5c2ad88967d7f6a45d3a5cc09ca4c9bc9a62a08
+exl-id: 7a38a0a4-46e4-41f2-9a75-316dfde7128f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
 
-# 4.6 De insights à ação
+# 4.6 Dos insights à ação
 
 ## Metas
 
-- Saiba como criar um público-alvo com base em uma exibição coletada no Customer Journey Analytics
-- Usar este público-alvo no Real-Time CDP e Adobe Journey Optimizer
+- Entenda como criar um público-alvo com base em uma exibição coletada no Customer Journey Analytics
+- Usar este público no Real-Time CDP e no Adobe Journey Optimizer
 
 ## 4.6.1 Criar um público-alvo e publicá-lo
 
-No seu projeto, você criou um filtro chamado **Feelings de chamada** e puderam visualizar o número de usuários que tiveram suas chamadas para a central de atendimento classificadas como **positivo**. Agora é possível criar um segmento com esses usuários e ativá-los em jornadas ou canais de comunicação.
+No seu projeto, você criou um filtro chamado **Sentimentos de chamada** e puderam exibir o número de usuários que tiveram suas chamadas para a central de atendimento classificadas como **positivo**. Agora é possível criar um segmento com esses usuários e ativá-los no jornada ou em canais de comunicação.
 
-O primeiro passo é: No painel criado no último exercício, selecione a linha **1. Feed de chamada - Positivo**, clique com o botão direito do mouse e selecione o **Criar público-alvo a partir da seleção** opção:
+A primeira etapa é: no painel criado no último exercício, selecione a linha **1. Sensação de chamada - Positiva**, clique com o botão direito do mouse e selecione o **Criar público a partir da seleção** opção:
 
 ![demonstração](./images/aud1.png)
 
-Em seguida, dê um nome ao público-alvo seguindo o modelo **yourLastName - Chamada de público-alvo CJA positiva**:
+Em seguida, nomeie o público-alvo seguindo o modelo **yourLastName - A chamada de público do CJA parece positiva**:
 
 ![demonstração](./images/aud2.png)
 
-Observe que é possível ter uma pré-visualização do público-alvo que está sendo criado:
+Observe que é possível pré-visualizar o público-alvo que está sendo criado:
 
 ![demonstração](./images/aud3.png)
 
-Finalmente, clique em **Publicar**.
+Por fim, clique em **Publish**.
 
 ![demonstração](./images/aud4.png)
 
 ## 4.6.2 Usar seu público-alvo como parte de um segmento
 
-Volte para a Adobe Experience Platform e acesse **Segmentos > Procurar** e você poderá ver seu segmento criado no CJA pronto e disponível para ser usado em suas ativações e jornadas!
+Volte para a Adobe Experience Platform e vá para **Segmentos > Navegar** e você poderá ver seu segmento criado no CJA pronto e disponível para ser usado em suas ativações e jornadas!
 
 ![demonstração](./images/aud5.png)
 
@@ -49,23 +50,23 @@ Agora vamos usar esse segmento em uma ativação do Facebook e em uma jornada do
 
 ## 4.6.3 Usar seu segmento no Real-Time CDP em tempo real
 
-No Adobe Experience Platform, acesse **Segmentos > Procurar** e encontre o público-alvo que você criou no CJA:
+No Adobe Experience Platform, acesse **Segmentos > Navegar** e encontre o público-alvo que você criou no CJA:
 
 ![demonstração](./images/aud6.png)
 
-Clique no seu segmento e, em seguida, clique em **Ativar para destino**:
+Clique no seu segmento e em **Ativar para destino**:
 
 ![demonstração](./images/aud7.png)
 
-Selecione o destino com o nome **bootcamp-facebook** e, em seguida, clique em **Próximo**.
+Selecione o destino chamado **bootcamp-facebook** e clique em **Próxima**.
 
 ![demonstração](./images/aud8.png)
 
-Clique em **Próximo** novamente.
+Clique em **Próxima** novamente.
 
 ![demonstração](./images/aud9.png)
 
-Selecione o **Origem do público-alvo** e defina-a como **Diretamente dos clientes**, clique em **Próximo**.
+Selecione o **Origem do seu público** e defina-a como **Diretamente dos clientes**, clique em **Próxima**.
 
 ![demonstração](./images/aud10.png)
 
@@ -73,11 +74,11 @@ Clique em **Concluir**.
 
 ![demonstração](./images/aud11.png)
 
-Seu segmento agora está conectado aos Públicos-alvo personalizados da Facebook. Agora vamos usar o mesmo segmento no Adobe Journey Optimizer.
+Seu segmento agora está conectado aos Públicos-alvo personalizados da Facebook. Agora vamos usar esse mesmo segmento no Adobe Journey Optimizer.
 
 ## 4.6.4 Usar seu segmento no Adobe Journey Optimizer
 
-No Adobe Experience Platform, clique em **Journey Optimizer** e, em seguida, no menu à esquerda, clique em **Jornada** e comece a criar uma jornada clicando em **Criar Jornada**.
+No Adobe Experience Platform, clique em **Journey Optimizer** e, no menu do lado esquerdo, clique em **Jornadas** e comece a criar uma jornada clicando em **Criar Jornada**.
 
 ![demonstração](./images/aud20.png)
 
@@ -85,7 +86,7 @@ No Adobe Experience Platform, clique em **Journey Optimizer** e, em seguida, no 
 
 ![demonstração](./images/aud22.png)
 
-Em seguida, no menu lateral esquerdo, em **Eventos**, selecione **Qualificação do segmento** e arraste-o para a jornada:
+Em seguida, no menu do lado esquerdo, em **Eventos**, selecione **Qualificação do segmento** e arraste-a para a jornada:
 
 ![demonstração](./images/aud23.png)
 
@@ -93,12 +94,12 @@ Em Segmento, clique em **Editar** para selecionar um segmento:
 
 ![demonstração](./images/aud24.png)
 
-Selecione o público-alvo criado anteriormente no CJA e clique em  **Salvar**.
+Selecione o público criado anteriormente no CJA e clique em  **Salvar**.
 
 ![demonstração](./images/aud25.png)
 
-Pronto! Aqui, você pode criar uma jornada para clientes qualificados para este segmento.
+Pronto! Aqui, é possível criar uma jornada para clientes que se qualificam para esse segmento.
 
 [Voltar para Fluxo de Usuário 4](./uc4.md)
 
-[Voltar para todos os módulos](./../../overview.md)
+[Voltar para todos os processos](./../../overview.md)

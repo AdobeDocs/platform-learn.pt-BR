@@ -5,10 +5,10 @@ breadcrumb-title: Assimilar dados em lote
 description: Nesta lição, você assimilará dados em lote no Experience Platform usando vários métodos.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '2528'
 ht-degree: 0%

@@ -1,58 +1,59 @@
 ---
-title: Bootcamp - Mistura física e digital - Teste sua jornada - Brasil
-description: Bootcamp - Mistura física e digital - Teste sua jornada - Brasil
-kt: 5342
+title: Bootcamp - Mesclagem física e digital - Teste sua jornada - Brasil
+description: Bootcamp - Mesclagem física e digital - Teste sua jornada - Brasil
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: 04e2877f-8672-4584-8204-4489a7025c63
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# 3.4 Teste da sua jornada
+# 3.4 Testa sua jornada
 
-Para testar jornada, você usa usar o eventID no seu exercício 3.2, que é o seu semelhante ao seguinte.
+Para testar sua jornada, você deve usar o eventoID criado no exercício 3.2, que deve ser igual ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventID é o que precisa enviado à Adobe Experience Platform para acionar uma jornada. exemplo, o eventID é:
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. Exemplo, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Abra o aplicativo e vá para o início. Clique no ícone de **Configuração**.
+Abra o móvel e vá para a página inicial. Clique no ➡ de **µ**.
 
 ![DSN](./images/appsett.png)
 
-Criar eventID sem campo **EventID de sinal** e panelinha **Salvar**.
+Cole seu eventID no campo **EventID de sinal** e clique em **Salvar**.
 
 ![DSN](./images/beacon1.png)
 
-Antes de continuar, abra o caminho da Web em questão: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Em, exibida a tela:
+Em seguida, será exibido a tela:
 
 ![DSN](./images/screen1.png)
 
-Regressar para início. Clique no ícone do **beacon**.
+Retorno para a página inicial. Clique no ➡ do **sinal**.
 
 ![DSN](./images/app23.png)
 
-Primeiro, selecione **Beacon de tela de bootcamp** e não há nada. **entrada** botão. Isso permitirá que você simule uma entrada do beacon.
+Primeiro, **Beacon de tela de bootcamp** e clique no botão de **entrada** botão. Isso que você simule uma entrada.
 
 ![DSN](./images/app21.png)
 
-Agora confira tela da loja. Você verá o último produto visualizado, nessa tela em 5 segundos.
+Agora confira a tela da loja. Você verá o produto visualizado nessa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-Você também terá recebido sua notificação.
+Você também tem que lidar com sua notificação.
 
 ![DSN](./images/beacon2.png)
 
-Você terminou este.
+Você terminou este exercício.
 
-[Retornar para Fluxo 3](./uc3.md)
+[Retorno para Fluxo de monitoramento 3](./uc3.md)
 
-[Retornar para Todos os Módulos](../../overview.md)
+[Retorno para Todos os compartilhados](../../overview.md)

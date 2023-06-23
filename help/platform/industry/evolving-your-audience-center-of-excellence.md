@@ -1,23 +1,23 @@
 ---
-title: Evolução do seu centro de excelência de público-alvo
-description: Como as plataformas que facilitam o gerenciamento de dados do cliente, os públicos-alvo e os programas de ativação também devem evoluir. Assim também as pessoas e processos que suportam estas plataformas. Há muito que um modelo do Audience Center of Excellence (COE) é o meio ideal para oferecer suporte às DMPs (Data Management Platforms, plataformas de gerenciamento de dados).
+title: Evolução do seu centro de excelência de público
+description: Como as plataformas que facilitam o gerenciamento de dados do cliente, os públicos-alvo e os programas de ativação também devem evoluir. Assim como as pessoas e processos que suportam estas plataformas. Um modelo de Centro de excelência de público-alvo (COE) foi estabelecido há muito tempo como a maneira ideal de oferecer suporte às Plataformas de gerenciamento de dados (DMPs).
 feature: Data Governance
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 thumbnail: 336938.jpg
-kt: 8864
+jira: KT-8864
 exl-id: d0e1235d-a1a0-4da9-a209-92bc8c2b9d4f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
-# Evolução do seu centro de excelência de público-alvo
+# Evolução do seu centro de excelência de público
 
-Como as plataformas que facilitam o gerenciamento de dados do cliente, os públicos-alvo e os programas de ativação também devem evoluir. Assim também as pessoas e processos que suportam estas plataformas. Há muito que um modelo do Audience Center of Excellence (COE) é o meio ideal para oferecer suporte às DMPs (Data Management Platforms, plataformas de gerenciamento de dados).
+Como as plataformas que facilitam o gerenciamento de dados do cliente, os públicos-alvo e os programas de ativação também devem evoluir. Assim como as pessoas e processos que suportam estas plataformas. Um modelo de Centro de excelência de público-alvo (COE) foi estabelecido há muito tempo como a maneira ideal de oferecer suporte às Plataformas de gerenciamento de dados (DMPs).
 
 >[!VIDEO](https://video.tv.adobe.com/v/336938/?quality=12&learn=on)
 
-Para complementar este vídeo, você também pode [baixar um whitepaper](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf)
+Para complementar esse vídeo, você também pode [baixar um whitepaper](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf)

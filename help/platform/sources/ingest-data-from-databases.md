@@ -3,10 +3,10 @@ title: Assimilar dados usando um conector de origem de banco de dados
 description: Este vídeo mostra como assimilar dados em lote de uma fonte de banco de dados no Perfil do cliente em tempo real da Adobe Experience Platform e no Experience Data Lake, de forma contínua e escalável.
 role: Data Engineer
 feature: Sources
-kt: 6546
+jira: KT-6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

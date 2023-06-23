@@ -1,24 +1,24 @@
 ---
-title: Criar segmentos em classes e Incluir contexto de segmento
-description: A segmentação em classes (segmentação de várias entidades) permite criar segmentos que combinam dados com base na classe de perfil XDM e em conjuntos de dados criados com outras classes XDM. O contexto do segmento (carga do segmento) permite fornecer detalhes contextuais principais, como o conteúdo do carrinho abandonado de um visitante, na definição do segmento para que você possa enviar mensagens personalizadas.
+title: Criar segmentos entre classes e Incluir contexto de segmento
+description: A segmentação entre classes (segmentação de várias entidades) permite criar segmentos combinando dados com base na classe de perfil XDM e nos conjuntos de dados criados usando outras classes XDM. O contexto de segmento (carga útil do segmento) permite que você forneça os principais detalhes contextuais, como o conteúdo do carrinho abandonado de um visitante, na definição do segmento para que você possa enviar mensagens personalizadas.
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 28947.jpg
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '140'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# Criar segmentos em classes e Incluir contexto de segmento
+# Criar segmentos entre classes e Incluir contexto de segmento
 
-A segmentação em classes (segmentação de várias entidades) permite criar segmentos que combinam dados com base na classe de perfil XDM e em conjuntos de dados criados com *outras classes XDM*.
+A segmentação entre classes (segmentação de várias entidades) permite criar segmentos combinando dados com base na classe de perfil XDM e nos conjuntos de dados criados usando o *outras classes XDM*.
 
-O contexto do segmento (carga do segmento) permite fornecer detalhes contextuais principais, como o conteúdo do carrinho abandonado de um visitante, na definição do segmento para que você possa enviar mensagens personalizadas.
+O contexto de segmento (carga útil do segmento) permite que você forneça os principais detalhes contextuais, como o conteúdo do carrinho abandonado de um visitante, na definição do segmento para que você possa enviar mensagens personalizadas.
 >[!VIDEO](https://video.tv.adobe.com/v/28947?quality=12&learn=on)
 
-Para obter mais informações, consulte o [Documentação do Construtor de segmentos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+Para obter mais informações, consulte [Documentação do Construtor de segmentos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=pt-br).
 

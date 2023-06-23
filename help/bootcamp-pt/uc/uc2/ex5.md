@@ -1,32 +1,33 @@
 ---
 title: Bootcamp - Instalar e usar o aplicativo móvel - Brasil
 description: Bootcamp - Instalar e usar o aplicativo móvel - Brasil
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# 2.5 Instalação e uso do aplicativo móvel
+# 2.Instale e use o móvel móvel 5
 
 
-## Instalar ou aplicativo móvel
+## Instalação o móvel
 
-Antes de instalar o aplicativo, é necessário abilitar Rastreamento no seu dispositivo iOS. Para isso, Configurações > Privacidade e segurança > Rastreamento e confirmação Permitir item o rastre pedido.
+Antes de migrar o movimento, é necessário habilitar Rastreamento no seu toque iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e segurança confirme a opção Permitir os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acessar um App Store da Apple e pesquisar `aepmobile-bootcamp`.\
+Acessar um App Store da Apple e pesquise `aepmobile-bootcamp`.\
 Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo instalado, clique em **Abrir**.
+Depois que o conjunto da arquitetura instalada, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -42,7 +43,7 @@ Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir aplicativo do Live**.
+Clique em **Permitir enquanto o uso o app**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -50,44 +51,44 @@ Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora, agora, não aplicativo, cedo, para verificar hoje uma jornada do cliente.
+Agora você está no movimento, na página inicial, pronto(a) para verificar hoje a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
 ## Fluxo da jornada do cliente
 
-Primeiramente, é necessário fazer logon. Clique em **Logon**.
+Primado, é necessário fazer o login. Clique em **Logon**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Depois de isso, é anteriores. Agora é necessário reo endereço de e-mail conta que você criou no aplicativo para fazer login.
+Depois de criar sua conta nos relatórios, isso é alterado no site. Agora é necessário reutilizar o endereço de e-mail da conta que você criou no movimento para fazer o logon.
 
 ![Demonstração](./../uc3/images/pv1.png)
 
-Digite de e-mail que você não endereço no site e clique em **Logon**.
+publicar o endereço de e-mail que você usou no site e clique em **Logon**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Você receberá uma confirmação de que está conectado e receberá uma notificação por push.
+Você recebe uma entrevista de que está passando e recebe uma notificação por push.
 
 ![DSN](./../uc3/images/app15.png)
 
-Regresso para o início do começo do aplicativo e os. aparecer.
+Retorno para a página do movimento e os recursos.
 
 ![DSN](./../uc3/images/app17.png)
 
-Acesse **Produtos**. Clique em Qualquer informação, anotado exemplo: **Café para ir**.
+Acessado **Produtos**. Clique em qualquer produto, exemplo: **Café para ir**.
 
 ![DSN](./images/app19.png)
 
-Você vê o produto **Café para ir** sem aplicativo. Clique em **Comprar**.
+Você verá a página do produto **Café para ir** nenhum ➡. Clique em **Comprar**.
 
 ![DSN](./images/app20.png)
 
-Agora você terminou este e está agora para as próximas atividades.
+Agora terminou este exercício e está pronto para as atividades.
 
-Proxima. [ 2.6 Personalização sem central de atendimento](./ex6.md)
+Próxima etapa: [ 2.6 Personalização sem central de atendimento](./ex6.md)
 
-[Retornar para Fluxo 2](./uc2.md)
+[Retorno para Fluxo de monitoramento 2](./uc2.md)
 
-[Retornar para Todos os Módulos](../../overview.md)
+[Retorno para Todos os compartilhados](../../overview.md)

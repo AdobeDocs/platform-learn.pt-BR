@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial da Web
 user-guide-description: Saiba como implementar soluções da Adobe Experience Cloud em um site com tags.
 solution: Data Collection
 feature: Tags
-kt: 2179
+jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 27%
@@ -19,7 +19,7 @@ ht-degree: 27%
 + [Tutorial Implementar em sites com tags](overview.md)
 + Configurar tags{#configure-tags}
    + [Criar uma propriedade de tag](create-a-property.md)
-   + [Adicionar o código incorporado](add-embed-code.md)
+   + [Adicionar o código incorporado do](add-embed-code.md)
    + [Adicionar um elemento de dados, uma regra e uma biblioteca](add-data-elements-rules.md)
    + [Alternar ambientes com o Debugger](switch-environments.md)
 + Implementar soluções{#implement-solutions}

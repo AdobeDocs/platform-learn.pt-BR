@@ -1,26 +1,26 @@
 ---
-title: Recarregue os dados do cliente para fornecer experiências de eletrificação
-description: Saiba como reduzir o impacto de dados de baixa qualidade, reduzir o tempo de implantação e multiplicar o ROI usando os mesmos dados para vários casos de uso.
+title: Recarregue os dados do cliente para fornecer experiências eletrizantes
+description: Saiba como reduzir o impacto de dados de baixa qualidade, reduzir o tempo de implantação e multiplicar o ROI usando os mesmos dados para uma variedade de casos de uso.
 role: Data Engineer, Data Architect, Developer
 feature: Queries
-kt: 10323
+jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
 
 ---
 
-# Recarregue os dados do cliente para fornecer experiências de eletrificação
+# Recarregue os dados do cliente para fornecer experiências eletrizantes
 
-Os dados omnicanais são um ingrediente essencial para potencializar perfis de clientes acionáveis usados por profissionais de marketing para orquestrar a ativação e medir as jornadas de clientes resultantes. No entanto, as organizações enfrentam desafios no gerenciamento da qualidade, escala e variedade desses dados. Eles exigem soluções simplificadas para reduzir o impacto de dados de baixa qualidade, reduzir o tempo de implantação e multiplicar o ROI usando os mesmos dados para vários casos de uso.
+Os dados omnichannel são um ingrediente essencial para potencializar perfis acionáveis do cliente usados por profissionais de marketing para orquestrar a ativação e medir as jornadas resultantes do cliente. No entanto, as organizações enfrentam desafios para gerenciar a qualidade, a escala e a variedade desses dados. Elas exigem soluções simplificadas para reduzir o impacto de dados de baixa qualidade, o tempo de implantação e o ROI, usando os mesmos dados para uma grande variedade de casos de uso.
 
-Este vídeo explora:
+Este vídeo aborda:
 
 * Recursos de preparação de dados do Adobe Experience Platform que você pode aproveitar
-* Aumento do ROI do Adobe Real-Time CDP, Adobe Journey Optimizer e Customer Journey Analytics
+* Aumento do ROI da Adobe Real-Time CDP, Adobe Journey Optimizer e Customer Journey Analytics
 
 >[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
 
@@ -45,8 +45,8 @@ GROUP BY customerId,sku
 order by price desc)D;
 ```
 
-Para obter mais informações, visite o [Documentação do Serviço de query](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
+Para obter mais informações, visite o [Documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
 
 >[!NOTE]
 >
->Este vídeo é um trecho da sessão de Adobe Summit 2020 *[Recarregamento de dados omnichannel para experiências de eletrificação](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Recarregando dados omnicanal para experiências de eletrificação](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
