@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriais
 user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 32%
+source-wordcount: '943'
+ht-degree: 33%
 
 ---
 
@@ -130,6 +130,7 @@ ht-degree: 32%
    + [Exibir perfis de conta](/help/platform/profiles/view-account-profiles.md)
    + [Criar políticas de mesclagem](/help/platform/profiles/create-merge-policies.md)
    + [Visão geral dos esquemas de união](/help/platform/profiles/union-schemas-overview.md)
+   + [Atualizar um atributo específico usando upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacidade e segurança {#privacy}
    + [Introdução ao Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Dados de identidade em solicitações de privacidade](/help/platform/privacy/identity-data-in-privacy-requests.md)
