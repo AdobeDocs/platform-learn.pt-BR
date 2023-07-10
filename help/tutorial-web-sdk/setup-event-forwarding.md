@@ -1,9 +1,9 @@
 ---
 title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
-feature: Event Forwarding
+feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1887'
 ht-degree: 5%
@@ -20,7 +20,7 @@ Para usar o encaminhamento de eventos na Adobe Experience Platform, os dados dev
 
 * [SDK da Web da Adobe Experience Platform](overview.md)
 * [SDK móvel da Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/)
-   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ Neste final desta lição, você poderá:
 * Uma licença de software que inclui encaminhamento de eventos. O encaminhamento de eventos é um recurso pago da Coleção de dados. Entre em contato com a equipe de conta do Adobe para obter mais detalhes.
 * Encaminhamento de eventos habilitado na sua organização Experience Cloud.
 * Permissão de usuário para encaminhamento de eventos. (Em [Admin Console](https://adminconsole.adobe.com/), no produto Adobe Experience Platform Launch, itens de permissão para[!UICONTROL Plataformas] > [!UICONTROL Edge] e todos [!UICONTROL Direitos de propriedade]). Depois de concedido, você deve ver [!UICONTROL Encaminhamento de evento] na navegação à esquerda da interface da Coleção de dados:
-   ![Propriedades do encaminhamento de eventos](assets/event-forwarding-menu.png)
+  ![Propriedades do encaminhamento de eventos](assets/event-forwarding-menu.png)
 
 * SDK da Web ou móvel do Adobe Experience Platform configurado para enviar dados para a Rede de borda. Você deve ter concluído as seguintes lições deste tutorial:
 
@@ -55,13 +55,13 @@ Neste final desta lição, você poderá:
       * [Configurar um esquema XDM](configure-schemas.md)
       * [Configurar um namespace de identidade](configure-identities.md)
       * [Configurar uma sequência de dados](configure-datastream.md)
+
    * Configuração de tags
 
       * [Instalar extensão SDK da Web](install-web-sdk.md)
       * [Criar elementos de dados](create-data-elements.md)
       * [Criar uma regra de tag](create-tag-rule.md)
       * [Validar com o Adobe Experience Platform Debugger](validate-with-debugger.md)
-
 
 
 ## Criar uma propriedade de encaminhamento de eventos
@@ -91,7 +91,6 @@ Para configurar o Target na sequência de dados:
    ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
 
 1. Selecione **[!UICONTROL Adicionar serviço]**
-
    ![Adicionar um serviço à sequência de dados](assets/event-forwarding-datastream-addService.png)
 1. Selecionar **[!UICONTROL Encaminhamento de evento]** como o **[!UICONTROL Serviço]**
 
@@ -183,6 +182,7 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 
 
    >[!TIP]
+   >
    Ao trabalhar com seu próprio site, você pode encontrar o caminho do objeto XDM com as ferramentas de rede do navegador da Web, filtrando por `/ee` solicitações, abertura do sinal [!UICONTROL **Carga**] e detalhando a variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
    ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
 
@@ -277,6 +277,7 @@ Para configurar uma regra para encaminhar dados para o seu webhook, primeiro obt
 Crie uma biblioteca e crie todas as alterações no ambiente de desenvolvimento do encaminhamento de eventos, como você faria normalmente em uma propriedade de tag.
 
 >[!NOTE]
+>
 Se não tiver vinculado as propriedades de encaminhamento de eventos de Preparo e Produção à sequência de dados, você verá o ambiente de desenvolvimento como a única opção para criar uma biblioteca no.
 
 ![Salvar regra de encaminhamento de eventos](assets/event-forwarding-initial-build.png)
@@ -319,4 +320,5 @@ Parabéns! Você configurou o encaminhamento de eventos!
 [Próximo: ](conclusion.md)
 
 >[!NOTE]
+>
 Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

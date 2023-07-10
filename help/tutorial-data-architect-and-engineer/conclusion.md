@@ -6,10 +6,10 @@ description: Nesta lição, você configurará as permissões de usuário do Ado
 role: Data Architect, Data Engineer
 jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -47,7 +47,7 @@ Sugiro que você a mantenha e use para experimentos adicionais com a Platform. E
 
 Os principais recursos:
 
-* [Tutoriais da Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Tutoriais da Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=pt-BR)
 * [Documentação da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=pt-BR)
 * [cursos de Experience League](https://experienceleague.adobe.com/?lang=pt-BR#dashboard/learning)
 

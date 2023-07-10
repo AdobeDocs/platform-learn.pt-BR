@@ -3,10 +3,13 @@ title: Demonstração do SDK da Web da Adobe Experience Platform e da rede de bo
 description: Veja o SDK da Web da Adobe Experience Platform e a rede de borda em ação, com uma única chamada para a Adobe enviando dados para a Experience Platform, o Analytics, o Audience Manager e o Target.
 landing-page-description: Veja uma demonstração do SDK da Web e da rede de borda em ação, com uma única chamada para a Adobe enviando dados para a Experience Platform, o Analytics, o Audience Manager e o Target.
 short-description: Veja uma demonstração do SDK da Web e da rede de borda em ação, com uma única chamada para a Adobe enviando dados para a Experience Platform, o Analytics, o Audience Manager e o Target.
+feature: Web SDK
+role: Developer
+level: Beginner
 jira: KT-5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 78%

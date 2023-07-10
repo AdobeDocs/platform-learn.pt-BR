@@ -1,12 +1,12 @@
 ---
 title: Recarregue os dados do cliente para fornecer experiências eletrizantes
 description: Saiba como reduzir o impacto de dados de baixa qualidade, reduzir o tempo de implantação e multiplicar o ROI usando os mesmos dados para uma variedade de casos de uso.
-role: Data Engineer, Data Architect, Developer
 feature: Queries
+role: Data Engineer, Data Architect, Developer
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%

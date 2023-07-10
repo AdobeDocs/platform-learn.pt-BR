@@ -1,9 +1,9 @@
 ---
 title: Tutoriais da Coleção de dados
-description: Vídeos explicativos e tutoriais para torná-lo um usuário avançado da Coleta de dados
-mini-toc-levels: 1
+description: Vídeos e tutoriais explicativos para torná-lo um usuário avançado da Coleção de dados
+mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 40%
@@ -12,21 +12,18 @@ ht-degree: 40%
 
 # Tutoriais da Coleção de dados
 
-A coleta de dados é a próxima geração de recursos de Tag Management de site e de SDKs móveis do Adobe. A coleta de dados oferece aos clientes uma forma simples de implantar e gerenciar as soluções de análise, marketing e anúncios necessárias para potencializar experiências de cliente relevantes. Use esses vídeos e tutoriais para ajudar a aprender essa tecnologia crítica.
+A Coleção de dados é a próxima geração de recursos de Tag Management de site e de SDKs móveis do Adobe. A Coleção de dados oferece aos clientes uma forma simples de implantar e gerenciar as soluções de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Use estes vídeos e tutoriais para ajudá-lo a conhecer esta tecnologia crítica.
 
 <div id="whats-new-section">
 
 ## Novidades
 
 * **[Visão geral da API do servidor (vídeo)](server-api/overview.md)**
-
-   *Envie dados usando uma API de servidor segura e autenticada.*
-* **[Implementar o Adobe Experience Cloud em aplicativos móveis (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR)**
-
-   *Implemente aplicativos Experience Cloud com o SDK móvel.*
+  *Envie dados usando uma API de servidor autenticada e segura.*
+* **[Implementar o Adobe Experience Cloud em aplicativos para dispositivos móveis (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR)**
+  *Implemente aplicativos Experience Cloud com o SDK móvel.*
 * **[Mover tags do lado do cliente (tutorial)](event-forwarding/consider-moving-tags.md)**
-
-   *Considere mover tags do lado do cliente para o encaminhamento do evento.*
+  *Considere mover as tags do lado do cliente para o encaminhamento de eventos.*
 
 </div>
 
@@ -48,23 +45,23 @@ A coleta de dados é a próxima geração de recursos de Tag Management de site 
       <img alt="Implementar a Adobe Experience Cloud com o SDK da Web" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-    <strong>Implementar o Experience Cloud com SDK da Web</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR" target="_blank">
+    <strong>Implementar o Experience Cloud com o SDK da Web</strong>
     </a>
     </div>
     <p>
-    <em>Usar tags para implementar o SDK da Web da plataforma</em>
+    <em>Usar tags para implementar o SDK da Web da Platform</em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR" target="_blank">
       <img alt="Implementar em aplicativos móveis" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank"><strong> sobre Implementação da Experience Cloud em aplicativos para dispositivos móveis</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR" target="_blank"><strong> sobre Implementação da Experience Cloud em aplicativos para dispositivos móveis</strong></a>
     </div>
     <p>
-    <em>Usar tags para implementar o SDK móvel da plataforma</em>
+    <em>Usar tags para implementar o SDK móvel da Platform</em>
     <p>
   </td>
 </tr>

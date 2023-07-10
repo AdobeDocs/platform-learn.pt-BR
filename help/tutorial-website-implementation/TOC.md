@@ -4,9 +4,11 @@ breadcrumb-title: Tutorial da Web
 user-guide-description: Saiba como implementar soluções da Adobe Experience Cloud em um site com tags.
 solution: Data Collection
 feature: Tags
+role: Data Engineer
+level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 27%
