@@ -8,16 +8,20 @@ doc-type: feature video
 thumbnail: 333303.jpg
 jira: KT-7890
 exl-id: 5a4e4cce-5371-4731-978e-2ace22fb4551
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 7%
+source-wordcount: '113'
+ht-degree: 6%
 
 ---
 
 # Criar públicos de conversão
 
 Neste vídeo, saiba como usar o construtor de regras de público-alvo no Experience Platform para criar um público-alvo que executou um evento de conversão, em um site ou em outros sistemas de dados.
+
+>[!NOTE]
+>
+> &quot;[!UICONTROL Segmentos]&quot; foram renomeados &quot;[!UICONTROL Públicos-alvo]&quot; na interface da Platform. Selecionar **[!UICONTROL Criar público]** > **[!UICONTROL Criar regra]** para entrar no construtor de regras apresentado neste vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333303/?quality=12&learn=on)
 

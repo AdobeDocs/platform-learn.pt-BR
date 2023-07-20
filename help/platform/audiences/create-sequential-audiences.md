@@ -8,16 +8,20 @@ doc-type: feature video
 thumbnail: 333305.jpg
 jira: KT-7892
 exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 7%
+source-wordcount: '115'
+ht-degree: 6%
 
 ---
 
 # Criar públicos sequenciais
 
 Neste vídeo, saiba como adicionar Eventos de experiência a uma linha do tempo no seu público-alvo para criar um público-alvo que executou ações em uma determinada ordem em um determinado período.
+
+>[!NOTE]
+>
+> &quot;[!UICONTROL Segmentos]&quot; foram renomeados &quot;[!UICONTROL Públicos-alvo]&quot; na interface da Platform. Selecionar **[!UICONTROL Criar público]** > **[!UICONTROL Criar regra]** para entrar no construtor de regras apresentado neste vídeo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333305/?quality=12&learn=on)
 
