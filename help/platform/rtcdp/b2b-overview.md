@@ -1,12 +1,12 @@
 ---
 title: Visão geral do Real-time Customer Data Platform, B2B Edition
 description: Saiba como os profissionais de marketing B2B (B2B) podem unificar pessoas e perfis de conta em todos os sistemas e obter uma compreensão completa de seus clientes.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 role: User
 jira: KT-9257
 thumbnail: 338249.jpg
 exl-id: a1bde52d-33f7-4de2-953e-ff7abcc7ef84
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%
