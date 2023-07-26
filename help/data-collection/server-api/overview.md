@@ -1,13 +1,12 @@
 ---
 title: Visão geral da API do servidor de rede de borda da Adobe Experience Platform
 description: Saiba as vantagens de enviar dados para a Rede de borda da Platform usando uma API de servidor autenticada e segura.
-role: Developer,Data Engineer
 feature: Server API
 level: Beginner
 jira: KT-10013
 thumbnail: 341448.jpeg
 exl-id: 282ecadc-c475-4b4b-bfd0-aaa4f8d8f0a8
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 61%

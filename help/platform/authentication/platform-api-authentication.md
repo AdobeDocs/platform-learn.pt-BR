@@ -1,20 +1,21 @@
 ---
 title: Autenticar e acessar APIs da Experience Platform
 description: Saiba como acessar APIs da Adobe Experience Platform.
-role: Developer
 feature: API
+role: Developer
+level: Beginner
 jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 13%
+ht-degree: 18%
 
 ---
 
-# Autenticar e acessar [!DNL Experience Platform] APIs
+# Autenticar e acessar as APIs da [!DNL Experience Platform]
 
 Saiba como começar a usar APIs do Adobe Experience Platform. Este tutorial o orienta pelo processo de criação de credenciais de autenticação e começa a fazer solicitações de API do Experience Platform.
 
@@ -26,7 +27,7 @@ Saiba como começar a usar APIs do Adobe Experience Platform. Este tutorial o or
 
 >[!IMPORTANT]
 >
->Para acessar o [Console do Adobe Developer](https://developer.adobe.com/console/home), você deve ser um [Administrador do sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html) ou um [Desenvolvedor](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) no [Adobe Admin Console](https://adminconsole.adobe.com).
+>Para acessar o [Console do Adobe Developer](https://developer.adobe.com/console/home), você deve ser um [Administrador do sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html) ou um [Desenvolvedor](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) no [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Depois de criar a credencial da API, um Administrador do sistema deve associá-la a uma função no Experience Platform.
 

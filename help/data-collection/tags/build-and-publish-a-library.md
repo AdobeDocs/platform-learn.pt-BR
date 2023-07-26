@@ -2,9 +2,10 @@
 title: Criar e publicar uma biblioteca de tags (antiga biblioteca do Launch)
 description: Saiba como criar uma biblioteca em sua propriedade de tag e enviar alterações por meio de ambientes de desenvolvimento, preparo e produção.
 feature: Tags
+level: Beginner
 jira: KT-3531
 exl-id: 877b92e1-9b93-4abe-99e4-f80a3e353681
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%

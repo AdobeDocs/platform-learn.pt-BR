@@ -1,16 +1,17 @@
 ---
 title: Importar dados de amostra para a Adobe Experience Platform
 description: Saiba como configurar um ambiente de sandbox do Experience Platform com alguns dados de amostra.
-role: Developer
 feature: API
+role: Developer
+level: Experienced
 jira: KT-7349
 thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '1831'
-ht-degree: 5%
+ht-degree: 6%
 
 ---
 
@@ -26,7 +27,7 @@ Este tutorial se concentra em uma marca fictícia de varejo chamada Luma. Eles i
 
 >[!NOTE]
 >
->O resultado final deste tutorial é uma sandbox contendo dados semelhantes ao [Tutorial de introdução à Adobe Experience Platform para arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). Foi atualizado em abril de 2023 para apoiar a [Desafios do Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=pt-BR). Ele foi atualizado em junho de 2023 para alternar o método de autenticação para OAuth.
+>O resultado final deste tutorial é uma sandbox contendo dados semelhantes ao [Tutorial de introdução à Adobe Experience Platform para arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=pt-BR). Foi atualizado em abril de 2023 para apoiar a [Desafios do Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=pt-BR). Ele foi atualizado em junho de 2023 para alternar o método de autenticação para OAuth.
 
 
 ## Pré-requisitos

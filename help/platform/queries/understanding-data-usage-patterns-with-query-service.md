@@ -2,11 +2,12 @@
 title: Noções básicas sobre padrões de uso de dados com o serviço de consulta
 description: Este vídeo compartilha dicas e práticas recomendadas para executar consultas na interface do editor de consultas, clientes PSQL, soluções de business intelligence (BI) e a API HTTP.
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-3715
 thumbnail: 29811.jpg
 exl-id: 8d99063a-5107-4bee-a0a4-6778b56aeac0
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 7%

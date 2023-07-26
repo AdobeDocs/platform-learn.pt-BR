@@ -3,11 +3,10 @@ title: Adicione o Experience Cloud Debugger
 description: Saiba como adicionar a extensão do Adobe Experience Cloud Debugger ao navegador Chrome para que você possa entender e solucionar problemas das implementações do Experience Cloud.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/add-the-extension.html
 feature: Debugger
-role: Data Engineer
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: ba94065e-ef18-4b8c-8f83-c772287bbfe4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 16%

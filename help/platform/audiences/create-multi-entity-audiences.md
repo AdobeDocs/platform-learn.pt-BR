@@ -1,12 +1,13 @@
 ---
 title: Criar públicos-alvo de várias entidades
 description: Este vídeo mostra como criar públicos-alvo de várias entidades no construtor de regras de público-alvo da Adobe Experience Platform.  A segmentação de várias entidades, ou segmentação entre classes, permite criar públicos-alvo combinando dados com base em várias classes XDM.
-role: User
 feature: Segments
+role: User
+level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%

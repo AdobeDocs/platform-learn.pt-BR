@@ -1,12 +1,13 @@
 ---
 title: Assimilar dados usando o conector de dados do Adobe Audience Manager
 description: Ao reconfigurar seus processos e pessoal para migrar do Adobe Audience Manager para o Real-time Customer Data Platform, você pode usar o Conector de dados do Audience Manager AAM para trazer características e segmentos do para a Plataforma, combiná-los com outros dados avançados (incluindo PII) e enviá-los para parceiros de destino. Este vídeo o orienta durante a configuração do Conector de dados do AAM para Real-Time CDP.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 2%

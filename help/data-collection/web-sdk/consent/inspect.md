@@ -2,10 +2,10 @@
 title: Inspect e validar sinais de consentimento
 description: Saiba como validar se as configurações de consentimento foram aplicadas corretamente aos seus dados no Adobe Experience Platform.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 jira: KT-7571
 exl-id: d7534d2d-6a64-4189-bc35-0de8c6c8bf5a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%

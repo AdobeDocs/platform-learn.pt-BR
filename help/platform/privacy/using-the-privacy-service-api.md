@@ -1,12 +1,13 @@
 ---
 title: Uso da API Privacy Service
 description: Saiba como fazer chamadas para endpoints da API, incluindo listas e pesquisas, criação de uma solicitação de trabalho e criação de uma solicitação de consentimento.
-role: Data Engineer, Data Architect
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-8189
 thumbnail: 336080.png
 exl-id: a6a82217-d717-49e1-9d20-ed2dacd218ab
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 8%

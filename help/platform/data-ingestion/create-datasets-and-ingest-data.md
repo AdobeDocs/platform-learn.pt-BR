@@ -1,12 +1,13 @@
 ---
 title: Criar conjuntos de dados e assimilar dados na Adobe Experience Platform
 description: Este vídeo mostra como criar conjuntos de dados e assimilar dados na interface do Adobe Experience Platform.
-role: Data Engineer, Data Architect
 feature: Data Ingestion
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 19%
