@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriais
 user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 33%
+source-wordcount: '975'
+ht-degree: 34%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 33%
    + [Integrações com aplicativos Experience Cloud](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [Principais casos de uso](/help/platform/intro-to-platform/key-use-cases.md)
    + [Arquitetura básica](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Uso da interface do usuário da Platform](/help/platform/intro-to-platform/interface-tour.md)
+   + [Interface do usuário](/help/platform/intro-to-platform/interface-tour.md)
    + [Funções e fases do projeto](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Introdução ao Real-Time CDP {#rtcdp}
    + [Visão geral](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -157,9 +157,9 @@ ht-degree: 33%
    + [Biblioteca JavaScript de privacidade](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Rótulos de privacidade no Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Introdução à API Privacy Service](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [IU DO PRIVACY SERVICE](/help/platform/privacy/using-privacy-services-ui.md)
-   + [API PRIVACY SERVICE](/help/platform/privacy/using-the-privacy-service-api.md)
-   + [Assinar eventos de privacidade](/help/platform/privacy/subscribe-to-privacy-events.md)
+   + [Interface do Privacy Service](/help/platform/privacy/using-privacy-services-ui.md)
+   + [API do Privacy Service](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [Inscrever-se em eventos de privacidade](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [Configurar chaves gerenciadas pelo cliente](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [10 considerações para o gerenciamento responsável de dados do cliente](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [Elevar a função do profissional de marketing como administrador de dados](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
