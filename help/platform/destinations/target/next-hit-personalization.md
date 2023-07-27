@@ -1,17 +1,20 @@
 ---
 title: O que é personalização de próxima ocorrência com o Real-Time CDP e o Adobe Target?
 description: Saiba como personalizar a próxima ocorrência com o Real-time Customer Data Platform (CDP) e o Adobe Target.
-role: User
 solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
+topic: Integrations
+badgeIntegration: label="Integração" type="positive"
+role: User
+level: Beginner
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 7%
+source-wordcount: '102'
+ht-degree: 8%
 
 ---
 
