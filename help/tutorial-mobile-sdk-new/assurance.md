@@ -1,0 +1,138 @@
+---
+title: Configurar o Assurance
+description: Saiba como implementar a extensão Assurance em um aplicativo móvel.
+feature: Mobile SDK,Assurance
+hide: true
+hidefromtoc: true
+source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 9%
+
+---
+
+# Assurance
+
+Saiba como configurar o Adobe Experience Platform Assurance em um aplicativo móvel.
+
+O Assurance, formalmente conhecido como Projeto Griffon, foi projetado para ajudá-lo a inspecionar, testar, simular e validar a maneira como você coleta dados ou veicula experiências em seu aplicativo móvel.
+
+O Assurance ajuda a inspecionar eventos brutos de SDK gerados pelo SDK móvel da Adobe Experience Platform. Todos os eventos coletados pelo SDK estão disponíveis para inspeção. Os eventos do SDK são carregados em uma exibição de lista classificada por tempo. Cada evento tem uma exibição detalhada que fornece mais detalhes. Exibições adicionais para procurar a configuração do SDK, elementos de dados, Estados compartilhados e versões de extensão do SDK também são fornecidas. Saiba mais sobre o [Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) na documentação do produto.
+
+
+## Pré-requisitos
+
+* Aplicativo com SDKs instalado e configurado com êxito.
+
+## Objetivos de aprendizagem
+
+Nesta lição, você vai:
+
+* Confirme se sua organização tem acesso (e solicite-o caso não tenha).
+* Configure seu URL base.
+* Adicione o código específico necessário do iOS.
+* Conectar-se a uma sessão.
+
+## Confirmar acesso
+
+Confirme se sua organização tem acesso ao Assurance realizando as seguintes etapas:
+
+1. Visita [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance{target="_blank"}).
+1. Faça logon usando as credenciais de Adobe ID do Experience Cloud.
+1. Se você vir a variável **[!UICONTROL Sessões]** e, em seguida, você terá acesso. Se você visualizar a página de acesso (beta), selecione **[!UICONTROL Registrar]** para se registrar.
+
+## Implementação
+
+Para além do quadro [Instalação do SDK](install-sdks.md), que você concluiu na lição anterior, o iOS também exige a seguinte adição para iniciar a sessão do Assurance para seu aplicativo. Adicione o código a seguir a **[!UICONTROL SceneDelegate]**:
+
+```swift {highlight="5"}
+func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        // Called when the app in background is opened with a deep link.
+        if let deepLinkURL = URLContexts.first?.url {
+            // Start the Assurance session
+            Assurance.startSession(url: deepLinkURL)
+        }
+    }
+```
+
+Mais informações podem ser encontradas [aqui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
+
+## Assinatura
+
+Antes de executar o aplicativo pela primeira vez no Xcode, atualize a assinatura.
+
+1. Abra o projeto no Xcode.
+1. Selecionar **[!UICONTROL Luma]** no Navegador.
+1. Selecione o **[!UICONTROL Luma]** público-alvo.
+1. Selecione o **Assinatura e recursos** guia.
+1. Configurar **[!UICONTROL Gerenciar assinatura automaticamente]**, **[!UICONTROL Equipe]**, e **[!UICONTROL Identificador do pacote]**.
+
+   ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png)
+
+## Configurar um URL de base
+
+1. Vá para o seu projeto no Xcode.
+1. Selecionar **[!UICONTROL Luma]** no Navegador.
+1. Selecione o **[!UICONTROL Luma]** público-alvo.
+1. Selecione o **Informações** guia.
+1. Para adicionar um URL base, role para baixo até **Tipos de URL** e selecione o **+** botão.
+1. Definir **Identificador** ao Identificador de pacote que você configurou em [Assinatura](#signing) (por exemplo `com.adobe.luma.tutorial.swiftui`) e **Esquemas de URL** para `lumatutorialswiftui`.
+
+   ![url de garantia](assets/assurance-url-type.png)
+
+Para saber mais sobre Esquemas de URL no iOS, revise [Documentação da Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app{target="_blank"}).
+
+O Assurance funciona abrindo um URL, seja via navegador ou código QR. Esse URL começa com o URL de base que abre o aplicativo e contém parâmetros adicionais. Esses parâmetros exclusivos são usados para conectar a sessão.
+
+
+## Conectar-se a uma sessão
+
+1. Execute o aplicativo no simulador ou em um dispositivo físico conectado.
+1. Selecionar **[!UICONTROL Assurance]** no painel esquerdo da interface da Coleção de dados.
+1. Selecionar **[!UICONTROL Criar sessão]**.
+1. Selecionar **[!UICONTROL Início]**.
+1. Forneça um **[!UICONTROL Nome da sessão]** como `Luma Mobile App Session` e a variável **[!UICONTROL URL base]**, que são os Esquemas de URL inseridos no Xcode, seguidos por `://`. Por exemplo: `lumatutorialswiftui://`.
+1. Selecione **[!UICONTROL Próximo]**.
+   ![criação de sessão do assurance](assets/assurance-create-session.png)
+1. Na caixa de diálogo Criar nova sessão:
+
+   Se você estiver usando um dispositivo físico:
+
+   * Selecionar **[!UICONTROL Digitalizar código QR]**. Use sua câmera em seu dispositivo físico para digitalizar o código QR e toque no link para abrir o aplicativo.
+
+     ![código de controle de qualidade do assurance](assets/assurance-qr-code.png)
+
+   Se estiver usando um simulador:
+
+   1. Selecionar **[!UICONTROL Copiar link]**.
+   1. Copiar o deep link usando a cópia ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) e use o deep link para abrir o aplicativo com o Safari no simulador.
+      ![Link de cópia de garantia](assets/assurance-copy-link.png)
+
+1. Quando o aplicativo é carregado, uma caixa de diálogo modal é exibida solicitando que você insira o PIN mostrado na etapa 7.
+
+   <img src="assets/assurance-enter-pin.png" width="300">
+
+   Insira o PIN e selecione **[!UICONTROL Conectar]**.
+
+
+1. Se a conexão tiver sido bem-sucedida, você verá:
+   * Um ícone do Assurance flutuando sobre seu aplicativo.
+
+   <img src="assets/assurance-modal.png" width="300">
+
+   * Atualizações de Experience Cloud que vêm pela interface do usuário baseada na Web do Assurance, mostrando:
+
+      1. Eventos de experiência provenientes do aplicativo.
+      1. Detalhes de um evento selecionado.
+      1. O dispositivo e a linha do tempo.
+
+     ![eventos de garantia](assets/assurance-events.png)
+
+Se tiver algum desafio, revise o [técnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/{target="_blank"}) e [documentação geral](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html{target="_blank"}).
+
+>[!SUCCESS]
+>
+>Agora você configurou seu aplicativo para usar o Assurance para o restante do tutorial.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+
+Próximo: **[Consentimento](consent.md)**
