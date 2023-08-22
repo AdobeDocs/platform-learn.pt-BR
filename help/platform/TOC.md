@@ -4,10 +4,10 @@ breadcrumb-title: Tutoriais
 user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
-source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
+source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 35%
+source-wordcount: '989'
+ht-degree: 34%
 
 ---
 
@@ -142,6 +142,11 @@ ht-degree: 35%
    + [Monitorar assimilação de dados](/help/platform/monitoring/monitoring-dashboard.md)
    + [Monitorar ativação de segmento](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Monitorar fluxos de dados](/help/platform/monitoring/data-monitoring.md)
++ Suporte a dados de parceiros {#partner-data-support}
+   + [Visão geral do suporte a dados de parceiros](/platform/partner-data-support/partner-data-support-overview.md)
+   + [Suporte à prospecção externa](/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [Adicionar atributos do parceiro aos perfis](/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [Personalizar no site para visitantes desconhecidos](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + Perfis {#profiles}
    + [Compreensão do Perfil do cliente em tempo real](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagrama de visão geral do perfil](/help/platform/profiles/overview-diagram.md)
