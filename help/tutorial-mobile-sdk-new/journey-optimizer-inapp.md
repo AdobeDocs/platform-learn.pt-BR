@@ -4,7 +4,7 @@ description: Saiba como criar mensagens no aplicativo para um aplicativo móvel 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -123,6 +123,7 @@ Você tem todos os ingredientes em vigor para enviar uma mensagem no aplicativo.
 1. Vá para a **[!UICONTROL Configurações]** guia.
 
 1. Toque **[!UICONTROL Mensagem no aplicativo]**. Você vê a mensagem no aplicativo aparecer no seu aplicativo.
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
