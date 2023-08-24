@@ -2,10 +2,9 @@
 title: Perfil
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -40,39 +39,19 @@ Nesta lição, você vai:
 * Recuperar atributos do usuário.
 
 
-## Definir e atualizar
+## Definir e atualizar atributos do usuário
 
 Seria útil para direcionamento e/ou personalização saber rapidamente se um usuário fez uma compra no aplicativo antes. Vamos configurar isso no aplicativo Luma.
 
-1. Navegue até **[!UICONTROL ProductView]** (em **[!UICONTROL Visualizações]** > **[!UICONTROL Produtos]**) no projeto de aplicativo Xcode Luma e encontre a chamada para `updateUserAttributes` (no botão Purchases ):
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** e localize o `func updateUserAttribute(attributeName: String, attributeValue: String)` função. Adicione o seguinte código:
 
-   ```swift {highlight="8-9"}
-   Button {
-       Task {
-           if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-               // Send purchase commerce experience event
-               MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
-               // Update attributes
-               MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
-           }
-       }
-       showPurchaseDialog.toggle()
-   } label: {
-       Label("", systemImage: "creditcard")
-   }
-   .alert(isPresented: $showPurchaseDialog, content: {
-       Alert(title: Text( "Purchases"), message: Text("The selected item is purchased…"))
-   })
-   ```
-
-2. Navegue até **[!UICONTROL MobileSDK]** e localize o `updateUserAttributes` função. Adicione o seguinte código destacado:
-
-   ```swift {highlight="2-4"}
-   func updateUserAttributes(attributeName: String, attributeValue: String) {
-       var profileMap = [String: Any]()
-       profileMap[attributeName] = attributeValue
-       UserProfile.updateUserAttributes(attributeDict: profileMap)
-   }
+   ```swift
+   // Create a profile map
+   var profileMap = [String: Any]()
+   // Add attributes to profile map
+   profileMap[attributeName] = attributeValue
+   // Use profile map to update user attributes
+   UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
    Este código:
@@ -83,27 +62,29 @@ Seria útil para direcionamento e/ou personalização saber rapidamente se um us
 
    1. Usa o `profileMap` dicionário como um valor para o `attributeDict` parâmetro do `UserProfile.updateUserAttributes` chamada à API.
 
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Produtos]** > **[!UICONTROL ProductView]** no navegador do projeto Xcode e localize a chamada para `updateUserAttributes` (no código para Compras <img src="assets/purchase.png" width="15" /> botão):
 
-Adicional `updateUserAttributes` a documentação pode ser encontrada [aqui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+   ```swift
+   // Update attributes
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   ```
 
-## Obtenha
+A documentação adicional pode ser encontrada [aqui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+
+## Obter atributos do usuário
 
 Depois de atualizar o atributo de um usuário, ele estará disponível para outros SDKs Adobe, mas você também poderá recuperar os atributos explicitamente.
 
-1. Navegue até **[!UICONTROL HomeView]** (em **[!UICONTROL Visualizações]** > **[!UICONTROL Geral]**) e encontre o `.onAppear` modificador. Adicione o seguinte código:
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > Geral > **[!UICONTROL HomeView]** no navegador do projeto Xcode e localize o `.onAppear` modificador. Adicione o seguinte código:
 
-   ```swift {highlight="3-11"}
-   .onAppear {
-       // Track view screen
-       MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: home")
-       // Get attributes
-       UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-           if attributes?["isPaidUser"] as! String == "yes" {
-               showBadgeForUser = true
-           }
-           else {
-               showBadgeForUser = false
-           }
+   ```swift
+   // Get attributes
+   UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
+       if attributes?["isPaidUser"] as! String == "yes" {
+           showBadgeForUser = true
+       }
+       else {
+           showBadgeForUser = false
        }
    }
    ```
@@ -111,9 +92,9 @@ Depois de atualizar o atributo de um usuário, ele estará disponível para outr
    Este código:
 
    1. Chama o `UserProfile.getUserAttributes` encerramento com a `iPaidUser` nome do atributo como elemento único na variável `attributeNames` matriz.
-   1. Em seguida, verifica o valor de `isPaidUser` atributo e quando `yes`, coloca um selo no ícone Pessoa na parte superior direita.
+   1. Em seguida, verifica o valor de `isPaidUser` atributo e quando `yes`, coloca um selo na <img src="assets/paiduser.png" width="20" /> ícone na barra de ferramentas na parte superior direita.
 
-Adicional `getUserAttributes` a documentação pode ser encontrada [aqui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+A documentação adicional pode ser encontrada [aqui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Validar com garantia
 
@@ -124,23 +105,23 @@ Adicional `getUserAttributes` a documentação pode ser encontrada [aqui](https:
 
    1. Mova o ícone do Assurance para a esquerda.
    1. Selecionar **[!UICONTROL Início]** na barra de guias.
-   1. Para abrir a planilha de Logon, selecione o **[!UICONTROL Logon]** botão.
-   1. Para inserir um email e uma ID do cliente aleatórios, selecione **[!UICONTROL A|]** botão .
+   1. Para abrir a planilha de Logon, selecione o <img src="assets/login.png" width="15" /> botão.
+   1. Para inserir um email e uma ID do cliente aleatórios, selecione <img src="assets/insert.png" width="15" /> botão .
    1. Selecionar **[!UICONTROL Logon]**.
    1. Selecionar **[!UICONTROL Produtos]** na barra de guias.
    1. Selecione um produto.
-   1. Selecionar **[!UICONTROL Salvar para mais tarde]**.
-   1. Selecionar **[!UICONTROL Adicionar ao carrinho]**.
-   1. Selecionar **[!UICONTROL Comprar]**.
-   1. Retornar para **[!UICONTROL Início]** tela. Você deve ver um botão de logon atualizado.
+   1. Selecionar <img src="assets/saveforlater.png" width="15" />.
+   1. Selecionar <img src="assets/addtocart.png" width="20" />.
+   1. Selecionar <img src="assets/purchase.png" width="15" />.
+   1. Retornar para **[!UICONTROL Início]** tela. Você deve ver valores atualizados para **[!UICONTROL E-mail]** e **[!UICONTROL ID do CRM]**.
 
       <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
 
-1. Você deve ver um **[!UICONTROL UserProfileUpdate]** e **[!UICONTROL getUserAttributes]** eventos na interface do usuário do Assurance com o `profileMap` valor.
+1. Na interface do usuário do Assurance, você deve ver uma **[!UICONTROL UserProfileUpdate]** e **[!UICONTROL getUserAttributes]** eventos com o atualizado `profileMap` valor.
    ![validar perfil](assets/profile-validate.png)
 
 >[!SUCCESS]
 >
->Agora você configurou o aplicativo para atualizar atributos de perfis na Rede de borda e (quando configurado) com o Adobe Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Agora você configurou o aplicativo para atualizar atributos de perfis na Rede de borda e (quando configurado) com o Adobe Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Mapear dados para o Adobe Analytics](analytics.md)**

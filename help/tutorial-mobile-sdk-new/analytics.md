@@ -3,10 +3,9 @@ title: Mapeamento do Analytics
 description: Saiba como coletar dados para o Adobe Analytics em um aplicativo móvel.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 2%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 Veja como uma regra de processamento usando esses dados pode ser exibida:
 
-* Você está substituindo o valor de `App Screen Name (eVar2)` (1) com o valor de `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2) se `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` está definido.
+* Você **[!UICONTROL Substituir valor de]** (1) **[!UICONTROL Nome da tela do aplicativo (eVar 2)]** (2) com o valor de **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) se **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL está definido]** (5).
 
-* Você definiu `Add to Wishlist (Event 3)` para `a.x.commerce.saveForLaters.value(Context)` se `a.x.commerce.saveForLaters.value(Context)` está definido.
+* Você **[!UICONTROL Definir evento]** (6) **[!UICONTROL Adicionar à lista de desejos (Evento 3)]** (7) a **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) se **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL está definido]** (10).
 
 ![regras de processamento do analytics](assets/analytics-processing-rules.png)
 

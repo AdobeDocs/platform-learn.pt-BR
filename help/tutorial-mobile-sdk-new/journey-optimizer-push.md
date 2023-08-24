@@ -5,11 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 2%
+source-wordcount: '1899'
+ht-degree: 3%
 
 ---
 
@@ -33,7 +32,7 @@ O Journey Optimizer permite criar suas jornadas e enviar mensagens para público
    * Criar uma mensagem.
    * Criar predefinições de mensagem.
 * Conta de desenvolvedor paga do Apple com acesso suficiente para criar certificados, identificadores e chaves.
-* Dispositivo iOS físico para teste.
+* Dispositivo ou simulador físico iOS para teste.
 
 ## Objetivos de aprendizagem
 
@@ -46,6 +45,8 @@ Nesta lição, você vai:
 * Atualize seu aplicativo para incluir a extensão de tag do AJO.
 * Valide a configuração no Assurance.
 * Envie uma mensagem de teste.
+* Defina seu próprio evento de notificação por push, jornada e experiência no Journey Optimizer.
+* Envie sua própria notificação por push de dentro do aplicativo.
 
 
 ## Registrar ID do aplicativo com APN
@@ -104,7 +105,7 @@ A documentação adicional pode ser [encontrado aqui](https://help.apple.com/dev
 >Se você não vir `AJO Push Tracking Experience Event Dataset` como opção, entre em contato com o atendimento ao cliente.
 >
 
-## Implementar a Adobe Journey Optimizer no aplicativo
+## Implementar o Adobe Journey Optimizer no aplicativo
 
 Conforme discutido nas lições anteriores, a instalação de uma extensão de tag móvel fornece apenas a configuração. Em seguida, você deve instalar e registrar o SDK de mensagens. Se essas etapas não estiverem claras, revise o [Instalar SDKs](install-sdks.md) seção.
 
@@ -114,7 +115,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 >
 
 1. No Xcode, verifique se [Mensagens AEP](https://github.com/adobe/aepsdk-messaging-ios.git) é adicionado à lista de pacotes nas Dependências de pacote. Consulte [Gerenciador de pacotes Swift](install-sdks.md#swift-package-manager).
-1. Abra o Xcode e navegue até **[!UICONTROL AppDelegate]**.
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
 1. Assegurar `AEPMessaging` faz parte da lista de importações.
 
    `import AEPMessaging`
@@ -137,24 +138,16 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    ]
    ```
 
-1. Adicione o `MobileCore.setPushIdentifier` para o `application(_, didRegisterForRemoteNotificationsWithDeviceToken)` função.
+1. Adicione o `MobileCore.setPushIdentifier` para o `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` função.
 
-   ```swift {highlight="7"}
-   func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-       // Required to log the token
-       let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
-       let token = tokenParts.joined()
-       Logger.notifications.info("didRegisterForRemoteNotificationsWithDeviceToken - device token: \(token)")
-   
-       // Send push token to Experience Platform
-       MobileCore.setPushIdentifier(deviceToken)
-       currentDeviceToken = token
-   }
+   ```swift
+   // Send push token to Experience Platform
+   MobileCore.setPushIdentifier(deviceToken)
    ```
 
-   Essa função recupera o token do dispositivo exclusivo para o dispositivo no qual o aplicativo está instalado e envia o token para o Adobe Apple para entrega de mensagens de push.
+   Essa função recupera o token do dispositivo exclusivo para o dispositivo no qual o aplicativo está instalado. Em seguida, define o token para delivery de notificação por push usando a configuração definida e que depende do Serviço de notificação por push (APNS) da Apple.
 
-## Validar enviando uma mensagem de push de teste
+## Validar com garantia
 
 1. Revise o [instruções de configuração](assurance.md) seção.
 1. Instale o aplicativo no dispositivo físico ou no simulador.
@@ -178,8 +171,168 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    <img src="assets/luma-app-push.png" width="300" />
 
 
+## Criar sua própria notificação por push
+
+Para criar sua própria notificação por push, você deve definir um evento no Journey Optimizer que acione uma jornada que controle o envio de uma notificação por push.
+
+### Definir um evento
+
+1. Na interface do Journey Optimizer, selecione **[!UICONTROL Configurações]** do painel esquerdo.
+
+1. No **[!UICONTROL Painel]** , selecione a **[!UICONTROL Gerenciar]** botão na caixa **[!UICONTROL Eventos]** bloco.
+
+1. No **[!UICONTROL Eventos]** , selecione **[!UICONTROL Criar evento]**.
+
+1. No **[!UICONTROL Editar event1]** painel:
+
+   1. Enter `LumaTestEvent` como o **[!UICONTROL Nome]** do evento.
+   1. Forneça um **[!UICONTROL Descrição]**, por exemplo `Test event to trigger push notifications in Luma app`.
+
+   1. Selecione o esquema de evento de experiência de aplicativo móvel criado anteriormente no [Criar um esquema XDM](create-schema.md) do **[!UICONTROL Esquema]** lista, por exemplo **[!UICONTROL Esquema de evento do aplicativo móvel Luma v.1]**.
+   1. Selecionar ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) ao lado da lista Campos.
+
+      ![Editar etapa 1 do evento](assets/ajo-edit-event1.png)
+
+      No **[!UICONTROL Campos]** verifique se os seguintes campos estão selecionados (sobre os campos padrão que estão sempre selecionados (_id, id e carimbo de data e hora)). Você pode alternar, usando a lista suspensa, entre **[!UICONTROL Selecionado]**, **[!UICONTROL Todos]** e **[!UICONTROL Principal]** ou use o ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) campo.
+
+      * **[!UICONTROL Aplicativo identificado (id)]**,
+      * **[!UICONTROL Tipo de evento (eventType)]**,
+      * **[!UICONTROL Principal (primary)]**.
+
+      ![Editar campos de evento](assets/ajo-event-fields.png)
+
+      Em seguida, selecione **[!UICONTROL Ok]**.
+
+   1. Selecionar ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) ao lado da **[!UICONTROL Condição de id de evento]** campo.
+
+      1. No **[!UICONTROL Adicionar uma condição de id de evento]** , arraste e solte **[!UICONTROL Identificador do aplicativo (id)]** abaixo **[!UICONTROL Aplicativo (application)]** em para **[!UICONTROL Arraste e solte um elemento aqui]**.
+      1. No popover, insira o Identificador de pacote do Xcode, por exemplo `com.adobe.luma.tutorial.swiftui` no campo ao lado de **[!UICONTROL igual a]**.
+      1. Clique em **[!UICONTROL Ok]**.
+      1. Clique em **[!UICONTROL Ok]**.
+         ![Editar condição de evento](assets/ajo-edit-condition.png)
+
+   1. Selecionar **[!UICONTROL ECID (ECID)]** do **[!UICONTROL Namespace]** lista. Automaticamente, o **[!UICONTROL Identificador de perfil]** o campo é preenchido com **[!UICONTROL A ID do primeiro elemento da chave ECID para o mapa identityMap]**.
+   1. Selecione **[!UICONTROL Salvar]**.
+      ![Editar etapa 2 do evento](assets/ajo-edit-event2.png)
+
+Você acabou de criar uma configuração de evento baseada no schema de eventos de experiência do aplicativo móvel criado anteriormente como parte deste tutorial. Essa configuração de evento filtrará os eventos de experiência recebidos usando o identificador do aplicativo móvel, para garantir que apenas eventos iniciados pelo aplicativo móvel acionem a jornada que você criará na próxima etapa.
+
+### Criar a jornada
+
+A próxima etapa é criar a jornada que aciona o envio da notificação por push ao receber o evento apropriado.
+
+1. Na interface do Journey Optimizer, selecione **[!UICONTROL Jornadas]** do painel esquerdo.
+1. Selecionar **[!UICONTROL Criar Jornada]**.
+1. No **[!UICONTROL Jornada propriedades]** painel:
+
+   1. Insira um **[!UICONTROL Nome]** para a jornada, por exemplo `Luma - Test Push Notification Journey`.
+   1. Insira um **[!UICONTROL Descrição]** para a jornada, por exemplo `Journey for test push notifications in Luma mobile app`.
+   1. Assegurar **[!UICONTROL Permitir reentrada]** está selecionado e definido **[!UICONTROL Período de espera de reentrada]** para **[!UICONTROL 30]** **[!UICONTROL Segundos]**.
+   1. Selecionar **[!UICONTROL Ok]**.
+      ![Propriedades da jornada](assets/ajo-journey-properties.png)
+
+1. De volta à tela da jornada, a partir da **[!UICONTROL EVENTOS]**, arraste e solte seu ![Evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL EventoTesteLuma]** na tela onde ele lê **[!UICONTROL Selecionar um evento de entrada ou uma atividade de público-alvo de leitura]**.
+
+   * Em Eventos: **[!UICONTROL EventoTesteLuma]** , insira um **[!UICONTROL Rótulo]**, por exemplo `Luma Test Event`.
+
+1. No **[!UICONTROL AÇÕES]** lista suspensa, arrastar e soltar ![Push](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL Push]** no ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) aparecendo diretamente para o seu **[!UICONTROL EventoTesteLuma]** atividade. No **[!UICONTROL Ações: push]** painel:
+
+   1. Forneça um **[!UICONTROL Rótulo]**, por exemplo `Luma Test Push Notification`, forneça uma **[!UICONTROL Descrição]**, por exemplo `Test push notification for Luma mobile app`, selecione **[!UICONTROL Transacional]** do **[!UICONTROL Categoria]** e selecione **[!UICONTROL Luma]** do **[!UICONTROL Superfície de push]**.
+   1. Selecionar ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar conteúdo]** para começar a editar a notificação por push real.
+      ![Propriedades de push](assets/ajo-push-properties.png)
+
+      No **[!UICONTROL Notificação por push]** editor:
+
+      1. Insira um **[!UICONTROL Título]**, por exemplo `Luma Test Push Notification` e insira um **[!UICONTROL Corpo]**, por exemplo `Test push notification for Luma mobile app`.
+      1. Para salvar e sair do editor, selecione ![Divisa esquerda](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
+         ![Enviar editor](assets/ajo-push-editor.png)
+
+   1. Para salvar e concluir a definição de notificação por push, selecione **[!UICONTROL Ok]**.
+
+1. Sua jornada deve ser parecida com a exibida abaixo. Selecionar **[!UICONTROL Publish]** para publicar e ativar sua jornada.
+   ![Jornada concluída](assets/ajo-journey-finished.png)
+
+
+## Acionamento da notificação por push
+
+Você tem todos os ingredientes em vigor para enviar uma notificação por push. O que resta é como acionar essa notificação por push. Em essência, é o mesmo que você viu antes: basta enviar um evento de experiência com a carga útil adequada.
+
+Desta vez, o evento de experiência que você está prestes a enviar não foi construído criando um dicionário XDM simples. Você usará uma estrutura que representa uma carga de notificação por push. Definir um tipo de dados dedicado é uma maneira alternativa de implementar a construção de cargas de evento de experiência no seu aplicativo.
+
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Modelo]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** e inspecione o código.
+
+   ```swift
+   import Foundation
+   
+   // MARK: - TestPush
+   struct TestPushPayload: Codable {
+      let application: Application
+      let eventType: String
+   }
+   
+   // MARK: - Application
+   struct Application: Codable {
+      let id: String
+   }
+   ```
+
+   O código é uma representação da seguinte carga simples que você enviará para acionar a jornada de notificação por push de teste
+
+   ```json
+   {
+      "eventType": string,
+      "application" : [
+          "id": string
+      ]
+   }
+   ```
+
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** no navegador do projeto Xcode e adicione o seguinte código a `func sendTestPushEvent(applicationId: String, eventType: String)`:
+
+   ```swift
+   Task {
+       let testPushPayload = TestPushPayload(
+           application: Application(
+               id: applicationId
+           ),
+           eventType: eventType
+       )
+       // send the final experience event
+       await sendExperienceEvent(
+           xdm: testPushPayload.asDictionary() ?? [:]
+       )
+   }
+   ```
+
+   Esse código cria uma `testPushPayload` instância usando os parâmetros fornecidos para a função (`applicationId` e `eventType`) e, em seguida, chama `sendExperienceEvent` ao converter a carga em um dicionário. Esse código, desta vez, também leva em conta os aspectos assíncronos de chamar o SDK do Adobe Experience Platform usando o modelo de simultaneidade do Swift com base em `await` e `async`.
+
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Geral]** > **[!UICONTROL ConfigView]** no navegador de projetos do Xcode. Na definição do Botão de notificação por push, adicione o seguinte código para enviar a carga do evento de experiência de notificação por push de teste para acionar a jornada sempre que esse botão for tocado.
+
+   ```swift
+   // Setting parameters and calling function to send push notification
+   let eventType = "mobileapp.testpush"
+   let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
+   await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)   
+   ```
+
+
+## Validar usando seu aplicativo
+
+1. Abra o aplicativo em um dispositivo ou no simulador.
+
+1. Vá para a **[!UICONTROL Configurações]** guia.
+
+1. Toque **[!UICONTROL Notificação por push]**. Você vê a notificação por push aparecer em seu aplicativo.
+   <img src="assets/ajo-test-push.png" width="300" />
+
+
+## Implementar no aplicativo
+
+Agora você deve ter todas as ferramentas para começar a adicionar notificações por push, quando relevante e aplicável, ao aplicativo Luma. Por exemplo, receber o usuário ao fazer logon no aplicativo ou ao se aproximar de uma geolocalização específica.
+
 >[!SUCCESS]
 >
->Agora você habilitou o aplicativo para notificação por push usando a extensão Adobe Journey Optimizer para o SDK do Adobe Experience Platform Mobile.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Agora você ativou o aplicativo para notificação por push usando o Adobe Journey Optimizer e a extensão do Adobe Journey Optimizer para o SDK do Adobe Experience Platform Mobile.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Próximo: **[Conclusão e próximas etapas](conclusion.md)**
+Próximo: **[Mensagens no aplicativo com Journey Optimizer](journey-optimizer-inapp.md)**
+
