@@ -4,7 +4,7 @@ description: Saiba como criar mensagens no aplicativo para um aplicativo móvel 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -73,11 +73,11 @@ Neste tutorial, você usará as APIs genéricas e independentes de extensão do 
 1. Role para baixo até **[!UICONTROL Ação]** e selecione **[!UICONTROL Editar conteúdo]**.
 1. No **[!UICONTROL Mensagem no aplicativo]** tela:
    1. Selecionar **[!UICONTROL Modal]** como o **[!UICONTROL Layout da mensagem]**.
-   1. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` para **[!UICONTROL URL de mídia]**.
-   1. Insira um **[!UICONTROL Cabeçalho]**, por exemplo `Welcome to this Luma In-App Message` e insira um **[!UICONTROL Corpo]**, por exemplo `Triggered by pushing that button in the app...`.
-   1. Enter **[!UICONTROL Ignorar]** como o **[!UICONTROL Texto do botão #1 (principal)]**.
-   1. Observe como a visualização é atualizada.
-   1. Selecionar **[!UICONTROL Revisar para ativar]**.
+   2. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` para **[!UICONTROL URL de mídia]**.
+   3. Insira um **[!UICONTROL Cabeçalho]**, por exemplo `Welcome to this Luma In-App Message` e insira um **[!UICONTROL Corpo]**, por exemplo `Triggered by pushing that button in the app...`.
+   4. Enter **[!UICONTROL Ignorar]** como o **[!UICONTROL Texto do botão #1 (principal)]**.
+   5. Observe como a visualização é atualizada.
+   6. Selecionar **[!UICONTROL Revisar para ativar]**.
       ![Editor no aplicativo](assets/ajo-in-app-editor.png)
 1. No **[!UICONTROL Revise para ativar (Luma - Campanha de mensagens no aplicativo)]** , selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) no **[!UICONTROL Agendar]** bloco.
    ![Revisar agendamento e selecionar agendamento](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ Neste tutorial, você usará as APIs genéricas e independentes de extensão do 
    1. Clique em **[!UICONTROL Concluído]**.
       ![Lógica de acionamento](assets/ajo-trigger-logic.png)
 
-   Você definiu uma ação de rastreamento, onde a variável **[!UICONTROL Ação]** igual a `in-app` e a variável **[!UICONTROL Dados de contexto]** com a ação é um par de valores fundamental de `showMessage = true`.
+   Você definiu uma ação de rastreamento, onde a variável **[!UICONTROL Ação]** igual a `in-app` e a variável **[!UICONTROL Dados de contexto]** com a ação é um par de valores fundamental de `"showMessage" : "true"`.
 
 1. De volta ao **[!UICONTROL Luma - Campanha de mensagens no aplicativo]** , selecione **[!UICONTROL Revisar para ativar]**.
 1. No **[!UICONTROL Revise para ativar (Luma - Campanha de mensagens no aplicativo)]** , selecione **[!UICONTROL Ativar]**.
@@ -103,14 +103,14 @@ Você tem todos os ingredientes em vigor para enviar uma mensagem no aplicativo.
 1. Vá para Luma > Luma > Utils > MobileSDK no navegador do Projeto Xcode e localize o `func sendTrackAction(action: String, data: [String: Any]?)` e adicione o seguinte código, que chama a função `MobileCore.track` baseada nos parâmetros `action` e `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. Vá para Luma > Luma > Exibições > Geral > ConfigView no Navegador de projetos do Xcode. Localize o código do botão Mensagens no aplicativo e adicione o seguinte código:
+1. Ir para **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Geral]** > **[!UICONTROL ConfigView]** no Navegador de projetos do Xcode. Localize o código do botão Mensagens no aplicativo e adicione o seguinte código:
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
