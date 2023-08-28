@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2309'
 ht-degree: 2%
 
 ---
@@ -40,8 +40,8 @@ Nesta lição, você
 * Atualize sua propriedade de tag com a extensão Journey Optimizer - Decisioning.
 * Atualize seu esquema para capturar eventos de apresentação.
 * Valide a configuração no Assurance.
-* Crie um teste A/B simples no Target.
-* Atualize seu aplicativo para incluir a extensão Otimizar.
+* Crie uma decisão de oferta com base em ofertas no Journey Optimizer - Gestão de decisões.
+* Atualize seu aplicativo para incluir a extensão Otimizer.
 * Implemente ofertas da Gestão de decisões no seu aplicativo.
 
 
@@ -283,7 +283,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
    * configura um dicionário XDM `xdmData`, contendo a ECID para identificar o perfil para o qual você deve apresentar as ofertas.
    * define `decisionScope`, um objeto que determina o posicionamento, a coleção a ser usada, a fórmula de classificação e as regras de qualificação, conforme definido na interface do Journey Optimizer - Gerenciamento de decisões.
-   * O chama duas APIs: [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Essas funções limpam todas as propostas em cache e atualizam as propostas para esse perfil. O aplicativo Luma usa um arquivo de configuração (`decisions.json`) que recupera os parâmetros do escopo, com base no seguinte formato JSON:
+   * O chama duas APIs: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Essas funções limpam todas as propostas em cache e atualizam as propostas para esse perfil. O aplicativo Luma usa um arquivo de configuração (`decisions.json`) que recupera os parâmetros do escopo, com base no seguinte formato JSON:
 
      ```swift
      "scopes": [
@@ -298,7 +298,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
      No entanto, você pode usar qualquer tipo de implementação para garantir que as APIs do Otimizer obtenham os parâmetros adequados (`activityId`, `placementId` e, `itemCount`), para construir um válido [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) para sua implementação.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Personalização]** > **[!UICONTROL EdgeOffersView]** no navegador do Projeto Xcode. Localize o `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` e inspecione o código dessa função. A parte mais importante dessa função é a  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) chamada à API, que
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Personalização]** > **[!UICONTROL EdgeOffersView]** no navegador do Projeto Xcode. Localize o `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` e inspecione o código dessa função. A parte mais importante dessa função é a  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) chamada à API, que
 
    * recupera as apresentações do perfil atual com base no escopo de decisão (que você definiu na Journey Optimizer - Gestão de decisões) e
    * O desenvolve o resultado em conteúdo que pode ser exibido corretamente no aplicativo.
