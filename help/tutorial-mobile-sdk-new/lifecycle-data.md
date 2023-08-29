@@ -2,9 +2,9 @@
 title: Dados do ciclo de vida
 description: Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Agora você pode atualizar seu projeto para registrar os eventos de ciclo de vida.
 
-1. Navegue até Luma > Luma > SceneDelegate no navegador de projetos do Xcode.
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** no navegador do Projeto Xcode.
 
 1. Quando iniciado, se o aplicativo sair do estado em segundo plano, o iOS pode chamar o `sceneWillEnterForeground:` delegar método e é aqui que você deseja acionar um evento de início de ciclo de vida. Adicionar este código a `func sceneWillEnterForeground(_ scene: UIScene)`:
 
@@ -87,24 +87,23 @@ O exercício anterior despacha os eventos em primeiro e segundo plano para o SDK
 1. Selecionar **[!UICONTROL Build inicial]** como a biblioteca a ser usada.
 1. Selecione **[!UICONTROL Criar nova regra]**.
    ![Criar nova regra](assets/rules-create-new.png)
-1. No [!UICONTROL Criar regra] , insira `Application Status` para **[!UICONTROL Nome]**.
+1. No **[!UICONTROL Criar regra]** , insira `Application Status` para **[!UICONTROL Nome]**.
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** abaixo **[!UICONTROL EVENTOS]**.
    ![Caixa de diálogo Criar regra](assets/rule-create-name.png)
-1. No [!UICONTROL Configuração de evento] etapa:
+1. No **[!UICONTROL Configuração de evento]** etapa:
    1. Selecionar **[!UICONTROL Núcleo móvel]** como o **[!UICONTROL Extensão]**.
    1. Selecionar **[!UICONTROL Primeiro plano]** como o **[!UICONTROL Tipo de evento]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
       ![Configuração de evento de regra](assets/rule-event-configuration.png)
-1. Na tela Criar regra, selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** ao lado de **[!UICONTROL Mobile Core - Primeiro plano]**.
+1. De volta ao **[!UICONTROL Criar regra]** , selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** ao lado de **[!UICONTROL Mobile Core - Primeiro plano]**.
    ![Configuração do próximo evento](assets/rule-event-configuration-next.png)
-1. No [!UICONTROL Configuração de evento] etapa:
+1. No **[!UICONTROL Configuração de evento]** etapa:
    1. Selecionar **[!UICONTROL Núcleo móvel]** como o **[!UICONTROL Extensão]**.
    1. Selecionar **[!UICONTROL Histórico]** como o **[!UICONTROL Tipo de evento]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
       ![Configuração de evento de regra](assets/rule-event-configuration-background.png)
-1. Na tela Criar regra, selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** abaixo **[!UICONTROL AÇÕES]**.
-   ![Regra Adicionar Ação](assets/rule-action-button.png)
-1. No [!UICONTROL Configuração de ação] etapa:
+      ![Regra Adicionar Ação](assets/rule-action-button.png)
+1. No **[!UICONTROL Configuração de ação]** etapa:
    1. Selecionar **[!UICONTROL Rede de borda da Adobe Experience]** como o **[!UICONTROL Extensão]**.
    1. Selecionar **[!UICONTROL Encaminhar evento para a rede de borda]** como o **[!UICONTROL Tipo de ação]**.
    1. Selecione **[!UICONTROL Manter alterações]**.

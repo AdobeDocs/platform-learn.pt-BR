@@ -3,9 +3,9 @@ title: Identidade
 description: Saiba como coletar dados de identidade em um aplicativo móvel.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 6%
 
 ---
@@ -144,7 +144,7 @@ Você pode usar `removeIdentity` para remover a identidade do IdentityMap armaze
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. Procure na interface do usuário da Web do Assurance o **[!UICONTROL Identidades de atualização de identidade da borda]**evento do **[!UICONTROL com.adobe.griffon.mobile]** fornecedor.
+1. Examine a interface do usuário da Web do Assurance para **[!UICONTROL Identidades de atualização de identidade da borda]** evento do **[!UICONTROL com.adobe.griffon.mobile]** fornecedor.
 1. Selecione o evento e revise os dados na variável **[!UICONTROL ACPExtensionEventData]** objeto. Você deve ver as identidades atualizadas.
    ![validar atualização de identidades](assets/identity-validate-assurance.png)
 

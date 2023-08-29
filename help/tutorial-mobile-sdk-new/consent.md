@@ -3,9 +3,9 @@ title: Consentimento
 description: Saiba como implementar o consentimento em um aplicativo móvel.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '535'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Para começar a coletar dados, você deve obter o consentimento do usuário. Nes
 
 1. Você só deseja perguntar ao usuário uma vez. Portanto, você deseja combinar o consentimento do SDK móvel com as autorizações necessárias para rastreamento usando a interface do Apple [Estrutura de transparência de rastreamento de aplicativos](https://developer.apple.com/documentation/apptrackingtransparency). Neste aplicativo, você presume que, quando o usuário autoriza o rastreamento, o usuário também consente em coletar eventos.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** no Navegador de projetos do Xcode.
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode.
 
    Adicione esse código à `updateConsent` função.
 
