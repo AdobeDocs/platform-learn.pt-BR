@@ -3,9 +3,9 @@ title: Configurar o Assurance
 description: Saiba como implementar a extensão Assurance em um aplicativo móvel.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '738'
 ht-degree: 10%
 
 ---
@@ -36,7 +36,7 @@ Nesta lição, você vai:
 
 Confirme se sua organização tem acesso ao Assurance realizando as seguintes etapas:
 
-1. Visita [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance{target="_blank"}).
+1. Visita [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
 1. Faça logon usando as credenciais de Adobe ID do Experience Cloud.
 1. Se você vir a variável **[!UICONTROL Sessões]** e, em seguida, você terá acesso. Se você visualizar a página de acesso (beta), selecione **[!UICONTROL Registrar]** para se registrar.
 
@@ -56,7 +56,7 @@ Para além do quadro [Instalação do SDK](install-sdks.md), que você concluiu 
    }
    ```
 
-Mais informações podem ser encontradas [aqui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
+Mais informações podem ser encontradas [aqui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Assinatura
 
@@ -81,7 +81,7 @@ Antes de executar o aplicativo pela primeira vez no Xcode, atualize a assinatura
 
    ![url de garantia](assets/assurance-url-type.png)
 
-Para saber mais sobre Esquemas de URL no iOS, revise [Documentação da Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app{target="_blank"}).
+Para saber mais sobre Esquemas de URL no iOS, revise [Documentação da Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 O Assurance funciona abrindo um URL, seja via navegador ou código QR. Esse URL começa com o URL de base que abre o aplicativo e contém parâmetros adicionais. Esses parâmetros exclusivos são usados para conectar a sessão.
 
@@ -129,7 +129,7 @@ O Assurance funciona abrindo um URL, seja via navegador ou código QR. Esse URL 
 
      ![eventos de garantia](assets/assurance-events.png)
 
-Se tiver algum desafio, revise o [técnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/{target="_blank"}) e [documentação geral](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html{target="_blank"}).
+Se tiver algum desafio, revise o [técnico](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 >[!SUCCESS]
 >
