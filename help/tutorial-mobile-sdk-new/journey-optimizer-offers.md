@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 3%
 
 ---
@@ -45,11 +45,11 @@ Nesta lição, você
 * Implemente ofertas da Gestão de decisões no seu aplicativo.
 
 
-## Configurar seu aplicativo
+## Configuração
 
 >[!TIP]
 >
->Se você já tiver configurado seu aplicativo como parte da variável [Configurar testes A/B com o Target](target.md) tutorial, você pode ignorar [Instalar a extensão Adobe Journey Optimizer - Decisioning tags](#install-adobe-journey-optimizer---decisioning-tags-extension) e [Atualizar seu esquema](#update-your-schema).
+>Se você já tiver configurado seu ambiente como parte da [Configurar testes A/B com o Target](target.md) tutorial, você pode ignorar [Instalar a extensão Adobe Journey Optimizer - Decisioning tags](#install-adobe-journey-optimizer---decisioning-tags-extension) e [Atualizar seu esquema](#update-your-schema).
 
 ### Atualizar configuração do Edge
 
@@ -368,7 +368,7 @@ Agora você deve ter todas as ferramentas para começar a adicionar mais funcion
 
 * aplicar parâmetros diferentes às suas ofertas (por exemplo, prioridade, limite)
 * coletar atributos de perfil no aplicativo (consulte [Perfil](profile.md)) e usar esses atributos de perfil para criar públicos-alvo. Em seguida, use esses públicos-alvo como parte das regras de qualificação na sua decisão.
-* combinar mais de um escopo de decisão
+* combinar mais de um escopo de decisão.
 
 >[!SUCCESS]
 >
