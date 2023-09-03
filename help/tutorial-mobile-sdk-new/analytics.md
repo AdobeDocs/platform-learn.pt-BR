@@ -3,9 +3,9 @@ title: Mapeamento do Analytics
 description: Saiba como coletar dados para o Adobe Analytics em um aplicativo móvel.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Muitos dos campos XDM padrão são mapeados automaticamente para variáveis do A
 
 ### Exemplo #1 - s.products
 
-Um bom exemplo é o [variável products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) que não podem ser preenchidos com regras de processamento. Com uma implementação XDM, você passa todos os dados necessários em productListItems e s.products são preenchidos automaticamente por meio do mapeamento do Analytics.
+Um bom exemplo é o [variável products](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) que não podem ser preenchidos com regras de processamento. Com uma implementação XDM, você passa todos os dados necessários no `productListItems` e `s.products` são automaticamente preenchidos por meio do mapeamento do Analytics.
 
 Este objeto:
 
@@ -56,7 +56,7 @@ Este objeto:
 ]
 ```
 
-Resultaria no seguinte:
+resulta em:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >Atualmente `productListItems[N].SKU` é ignorado pelo mapeamento automático.
+
 
 ### Exemplo #2 - scAdd
 
@@ -80,7 +81,7 @@ Este objeto:
 }
 ```
 
-Resultaria no seguinte:
+resulta em:
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ Este objeto:
 }
 ```
 
-Resultaria no seguinte:
+resulta em:
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## Validar com garantia
 
-Usar o [Ferramenta de controle de qualidade Assurance](assurance.md) Você pode confirmar que está enviando um ExperienceEvent, que os dados XDM estão corretos e que o mapeamento do Analytics está acontecendo conforme esperado. Por exemplo:
+Usar o [Assurance](assurance.md) você pode confirmar que está enviando um evento de experiência, que os dados XDM estão corretos e que o mapeamento do Analytics está acontecendo conforme esperado. Por exemplo:
 
 1. Envie um evento productListAdds.
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 Por exemplo:
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 

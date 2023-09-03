@@ -3,7 +3,7 @@ title: Configurar uma propriedade de tag
 description: Saiba como configurar uma propriedade de tag no [!UICONTROL Coleta de dados] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 8%
@@ -129,7 +129,7 @@ Sua biblioteca é criada para as novas extensões e configurações. Uma build b
 
    ![tela inicial dos ambientes](assets/tags-environments.png)
 
-1. No [!UICONTROL Instruções de instalação em dispositivos móveis] , selecione a **[!UICONTROL iOS]** guia.
+1. No **[!UICONTROL Instruções de instalação em dispositivos móveis]** , selecione a **[!UICONTROL iOS]** guia.
 
 1. Você pode copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) as instruções para configurar seu projeto usando o CocoaPods. Os CocoaPods são usados para gerenciar versões e downloads do SDK. Para saber mais, reveja o [documentação](https://cocoapods.org/).
 

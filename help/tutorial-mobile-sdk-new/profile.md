@@ -2,9 +2,9 @@
 title: Perfil
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '612'
 ht-degree: 2%
 
 ---
@@ -41,16 +41,14 @@ Nesta lição, você vai:
 
 ## Definir e atualizar atributos do usuário
 
-Seria útil para direcionamento e/ou personalização saber rapidamente se um usuário fez uma compra no aplicativo antes. Vamos configurar isso no aplicativo Luma.
+Seria útil para direcionamento e/ou personalização no aplicativo saber rapidamente se um usuário fez uma compra no passado ou recentemente. Vamos configurar isso no aplicativo Luma.
 
 1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e localize o `func updateUserAttribute(attributeName: String, attributeValue: String)` função. Adicione o seguinte código:
 
    ```swift
-   // Create a profile map
+   // Create a profile map, add attributes to the map and update profile using the map
    var profileMap = [String: Any]()
-   // Add attributes to profile map
    profileMap[attributeName] = attributeValue
-   // Use profile map to update user attributes
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
@@ -60,22 +58,21 @@ Seria útil para direcionamento e/ou personalização saber rapidamente se um us
 
    1. Adiciona um elemento ao dicionário usando `attributeName` (por exemplo `isPaidUser`) e `attributeValue` (por exemplo `yes`).
 
-   1. Usa o `profileMap` dicionário como um valor para o `attributeDict` parâmetro do `UserProfile.updateUserAttributes` chamada à API.
+   1. Usa o `profileMap` dicionário como um valor para o `attributeDict` parâmetro do [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) chamada à API.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Produtos]** > **[!UICONTROL ProductView]** no navegador do Projeto Xcode e localize a chamada para `updateUserAttributes` (no código para Compras <img src="assets/purchase.png" width="15" /> botão):
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Produtos]** > **[!UICONTROL ProductView]** no navegador do Projeto Xcode e localize a chamada para `updateUserAttributes` (no código para Compras <img src="assets/purchase.png" width="15" /> botão). Adicione o seguinte código:
 
    ```swift
    // Update attributes
    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
-A documentação adicional pode ser encontrada [aqui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Obter atributos do usuário
 
-Depois de atualizar o atributo de um usuário, ele estará disponível para outros SDKs Adobe, mas você também poderá recuperar os atributos explicitamente.
+Depois de atualizar o atributo de um usuário, ele fica disponível para outros SDKs Adobe, mas você também pode recuperar atributos explicitamente, para permitir que seu aplicativo se comporte da maneira que você quiser.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > Geral > **[!UICONTROL HomeView]** no navegador do Projeto Xcode e localize o `.onAppear` modificador. Adicione o seguinte código:
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Geral]** > **[!UICONTROL HomeView]** no navegador do Projeto Xcode e localize o `.onAppear` modificador. Adicione o seguinte código:
 
    ```swift
    // Get attributes
@@ -91,7 +88,7 @@ Depois de atualizar o atributo de um usuário, ele estará disponível para outr
 
    Este código:
 
-   1. Chama o `UserProfile.getUserAttributes` encerramento com a `iPaidUser` nome do atributo como elemento único na variável `attributeNames` matriz.
+   1. Chama o [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API com o `iPaidUser` nome do atributo como elemento único na variável `attributeNames` matriz.
    1. Em seguida, verifica o valor de `isPaidUser` atributo e quando `yes`, coloca um selo na <img src="assets/paiduser.png" width="20" /> ícone na barra de ferramentas na parte superior direita.
 
 A documentação adicional pode ser encontrada [aqui](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
@@ -106,18 +103,25 @@ A documentação adicional pode ser encontrada [aqui](https://developer.adobe.co
    1. Mova o ícone do Assurance para a esquerda.
    1. Selecionar **[!UICONTROL Início]** na barra de guias.
    1. Para abrir a planilha de Logon, selecione o <img src="assets/login.png" width="15" /> botão.
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. Para inserir um email e uma ID do cliente aleatórios, selecione <img src="assets/insert.png" width="15" /> botão .
    1. Selecionar **[!UICONTROL Logon]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
+
    1. Selecionar **[!UICONTROL Produtos]** na barra de guias.
    1. Selecione um produto.
    1. Selecionar <img src="assets/saveforlater.png" width="15" />.
    1. Selecionar <img src="assets/addtocart.png" width="20" />.
    1. Selecionar <img src="assets/purchase.png" width="15" />.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
    1. Retornar para **[!UICONTROL Início]** tela. Você deve ver uma medalha adicionada <img src="assets/person-badge-icon.png" width="15" />.
 
-      <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/personbadges.png" width="300">
 
 
 

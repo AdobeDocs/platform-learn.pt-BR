@@ -3,9 +3,9 @@ title: Criar um esquema do XDM
 description: Saiba como criar um esquema XDM para eventos de aplicativos móveis.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1416'
 ht-degree: 7%
 
 ---
@@ -100,7 +100,7 @@ Para fins de aprendizado, você usa grupos de campos pré-criados e personalizad
 
    ![Seleção de ExperienceEvent no menu suspenso](assets/schema-create.png)
 
-1. Selecionar ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar** ao lado de [!UICONTROL Grupos de campos].
+1. Selecionar ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar** ao lado de **[!UICONTROL Grupos de campos]**.
 
    ![Adicione um grupo de campos](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Para fins de aprendizado, você usa grupos de campos pré-criados e personalizad
 
    Você é redirecionado à tela principal de composição do esquema, onde é possível ver todos os campos disponíveis.
 
-1. Nomeie seu esquema selecionando **[!UICONTROL Esquema sem título]** no canto superior esquerdo e, em seguida, **[!UICONTROL Nome de exibição]** &amp; **[!UICONTROL Descrição]**, por exemplo `Luma Mobile App Event Schema` e `Schema for Luma mobile app experience events.`
+1. Nomeie seu esquema selecionando **[!UICONTROL Esquema sem título]** do **[!UICONTROL Composição]** painel (abaixo **[!UICONTROL Esquema]**) e fornecendo uma **[!UICONTROL Nome de exibição]** &amp; **[!UICONTROL Descrição]**, por exemplo `Luma Mobile App Event Schema` e `Schema for Luma mobile app experience events.`
 
 1. Selecione **[!UICONTROL Salvar]**.
 
@@ -125,8 +125,8 @@ Para fins de aprendizado, você usa grupos de campos pré-criados e personalizad
 >[!NOTE]
 >
 >Lembre-se de que não é necessário usar todos os campos em um grupo. Se for útil, você pode considerar um esquema como uma camada de dados vazia. No aplicativo, você preenche os valores relevantes no momento apropriado.
->
->A variável `Consumer Experience Event` tem um tipo de dados chamado `Web information`, que descreve eventos como exibição de página e cliques em links. No momento da escrita, não há uma paridade de aplicativo móvel para este recurso, portanto, você vai criar o seu próprio.
+
+A variável [!UICONTROL Evento de experiência do consumidor] o grupo de campos tem um tipo de dados chamado [!UICONTROL Informações da Web], que descreve eventos como exibição de página e cliques em links. No momento da escrita, não há uma paridade de aplicativo móvel para este recurso, portanto, você vai criar o seu próprio.
 
 ## Criar um tipo de dados personalizado
 
@@ -152,9 +152,8 @@ Você começa criando um tipo de dados personalizado que descreve os dois evento
 
 1. Para adicionar um campo, selecione a variável ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) botão.
 
-   Este campo é um objeto container para interação com o aplicativo.
 
-1. Fornecer um camel-case **[!UICONTROL Nome do campo]** `appInteraction`, **[!UICONTROL Nome de exibição]** `App Interaction`e selecione `Object` do **[!UICONTROL Tipo]** lista.
+1. Este campo é um objeto de contêiner para interação com o aplicativo. Portanto, forneça um caso de camelo **[!UICONTROL Nome do campo]** `appInteraction`, **[!UICONTROL Nome de exibição]** `App Interaction`e selecione `Object` do **[!UICONTROL Tipo]** lista.
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
@@ -180,7 +179,7 @@ Você começa criando um tipo de dados personalizado que descreve os dois evento
 
 1. Role até a parte inferior do painel direito e selecione **[!UICONTROL Aplicar]**.
 
-1. Para criar uma `appStateDetails` objeto que contém um **[!UICONTROL Medir]** campo chamado `screenView` e dois **[!UICONTROL String]** campos chamados `screenName` e `screenType` siga as mesmas etapas que usou ao criar o **[!UICONTROL appInteraction]** objeto.
+1. Para criar uma `appStateDetails` objeto que contém um **[!UICONTROL Medir]** campo chamado `screenView` e dois **[!UICONTROL String]** campos chamados `screenName` e `screenType`, siga as mesmas etapas usadas ao criar a variável **[!UICONTROL appInteraction]** objeto.
 
 1. Selecione **[!UICONTROL Salvar]**.
 
@@ -196,7 +195,7 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 
    ![Adição de novo grupo de campos](assets/schema-fieldgroup-add.png)
 
-1. Crie um grupo de campos personalizado selecionando o **[!UICONTROL Criar novo grupo de campos]** botão de opção próximo à parte superior.
+1. Selecione **[!UICONTROL Criar novo grupo de campos]**.
 
 1. Forneça um **[!UICONTROL Nome de exibição]** e **[!UICONTROL Descrição]**, por exemplo, `App Interactions` e `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 
 1. No painel direito, forneça uma **[!UICONTROL Nome do campo]** de `appInformation`, um **[!UICONTROL Nome de exibição]** de `App Information`, e uma **[!UICONTROL Tipo]** de `App Information`.
 
-1. Selecionar **[!UICONTROL Interações do aplicativo]** do **[!UICONTROL Tipo]** que é o tipo de dados criado no exercício anterior.
+1. Selecionar **[!UICONTROL Interações do aplicativo]** do **[!UICONTROL Tipo]** que é o tipo de dados personalizado que você criou no exercício anterior.
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
@@ -220,7 +219,7 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 
 >[!NOTE]
 >
->Os grupos de campos personalizados são sempre colocados em seu identificador de Experience Cloud Org. Então `_techmarketingdemos` é substituído pelo valor único da sua organização.
+>Os grupos de campos personalizados são sempre colocados em seu identificador de Experience Cloud Org. Então `_techmarketingdemos`, usado nas capturas de tela, é substituído pelo valor único de sua organização.
 
 
 >[!SUCCESS]

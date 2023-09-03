@@ -2,9 +2,9 @@
 title: Dados do ciclo de vida
 description: Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,8 @@ O exercício anterior despacha os eventos em primeiro e segundo plano para o SDK
    1. Selecionar **[!UICONTROL Histórico]** como o **[!UICONTROL Tipo de evento]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
       ![Configuração de evento de regra](assets/rule-event-configuration-background.png)
-      ![Regra Adicionar Ação](assets/rule-action-button.png)
+1. De volta ao **[!UICONTROL Criar regra]** , selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** abaixo **[!UICONTROL AÇÕES]**.
+   ![Regra Adicionar Ação](assets/rule-action-button.png)
 1. No **[!UICONTROL Configuração de ação]** etapa:
    1. Selecionar **[!UICONTROL Rede de borda da Adobe Experience]** como o **[!UICONTROL Extensão]**.
    1. Selecionar **[!UICONTROL Encaminhar evento para a rede de borda]** como o **[!UICONTROL Tipo de ação]**.
