@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2368'
 ht-degree: 3%
 
 ---
 
 # Ofertas do Journey Optimizer
 
-Saiba como mostrar ofertas da Gestão de decisões da Journey Optimizer em seus aplicativos móveis com o SDK móvel da Platform.
+Saiba como mostrar ofertas da Gestão de decisões da Journey Optimizer em seus aplicativos móveis com o SDK móvel do Experience Platform.
 
 O Journey Optimizer Decision Management ajuda você a fornecer a melhor oferta e experiência aos seus clientes em todos os pontos de contato na hora certa. Depois de projetado, direcione o público com ofertas personalizadas.
 
@@ -23,7 +23,7 @@ A gestão de decisões facilita a personalização com uma biblioteca central de
 
 >[!NOTE]
 >
->Esta lição é opcional e se aplica somente aos usuários do Jornada Otimizers que desejam usar a funcionalidade de Gestão de decisões para exibir ofertas em um aplicativo móvel.
+>Esta lição é opcional e se aplica somente aos usuários do Journey Optimizer que desejam usar a funcionalidade de Gestão de decisões para exibir ofertas em um aplicativo móvel.
 
 
 ## Pré-requisitos
@@ -92,7 +92,7 @@ Para validar sua configuração no Assurance:
 1. Vá para a interface do usuário do Assurance.
 1. Selecionar **[!UICONTROL Configurar]** no painel esquerdo e selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado de **[!UICONTROL Validar configuração]** abaixo **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Selecione **[!UICONTROL Salvar]**.
-1. Selecionar **[!UICONTROL Validar configuração]** no painel esquerdo. A configuração da sequência de dados é validada e a configuração do SDK em seu aplicativo.
+1. Selecionar **[!UICONTROL Validar configuração]** no painel esquerdo. A configuração da sequência de dados e a configuração do SDK em seu aplicativo são validadas.
    ![Validação da decisão do AJO](assets/ajo-decisioning-validation.png)
 
 
@@ -144,7 +144,7 @@ Para validar sua configuração no Assurance:
 
       Use a tabela abaixo para definir as quatro outras ofertas.
 
-      | Nome da oferta | Conteúdo da oferta |
+      | Nome da oferta | Conteúdo de oferta em JSON |
       |---|---|
       | Luma - Afirmar Garrafa de Água | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma - Tee fitness desejado | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
@@ -192,10 +192,11 @@ Para apresentar uma oferta ao usuário do aplicativo móvel, você deve definir 
 1. Na interface do Journey Optimizer, selecione **[!UICONTROL Ofertas]** do painel esquerdo.
 1. Selecionar **[!UICONTROL Coleções]** na barra superior.
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Criar coleção]**.
-1. No **[!UICONTROL Nova coleção]** modal, insira um **[!UICONTROL Nome]** para sua coleção, por exemplo `Luma - Mobile App Collection`, selecione **[!UICONTROL Criar coleção estática]** e clique em **[!UICONTROL Próxima]**.
-1. Entrada **[!UICONTROL Luma - Coleção de aplicativos móveis]**, selecione as ofertas que deseja incluir na coleção. Para este tutorial, escolha as cinco ofertas que você criou.
-   ![Ofertas - Coleção](assets/ajo-collection-offersselected.png)
+1. No **[!UICONTROL Nova coleção]** , insira um **[!UICONTROL Nome]** para sua coleção, por exemplo `Luma - Mobile App Collection`, selecione **[!UICONTROL Criar coleção estática]** e clique em **[!UICONTROL Próxima]**.
+1. Entrada **[!UICONTROL Luma - Coleção de aplicativos móveis]**, selecione as ofertas que deseja incluir na coleção. Para este tutorial, escolha as cinco ofertas que você criou. É possível filtrar facilmente a lista usando o campo de pesquisa, por exemplo, digitando **[!UICONTROL Luma]**.
 1. Selecione **[!UICONTROL Salvar]**.
+
+   ![Ofertas - Coleção](assets/ajo-collection-offersselected.png)
 
 
 ## Criar uma decisão
@@ -206,11 +207,11 @@ Um escopo de decisão é uma combinação de um posicionamento específico (por 
 
 Um critério de avaliação é a combinação de
 
-* coleção de ofertas,
-* regras de elegibilidade: por exemplo, a oferta está disponível somente para um público-alvo específico,
-* método de classificação: quando várias ofertas estão disponíveis para seleção, qual método você usa para classificá-las (por exemplo, por prioridade de oferta, usando uma fórmula ou um modelo de IA).
+* uma coleção de ofertas,
+* regras de elegibilidade: por exemplo, a oferta está disponível somente para um público-alvo específico?
+* um método de classificação: quando várias ofertas estão disponíveis para seleção, qual método você usa para classificá-las (por exemplo, por prioridade de oferta, usando uma fórmula ou um modelo de IA).
 
-Consulte [Etapas principais para criar e gerenciar ofertas](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) se você quiser entender melhor como as disposições, regras, classificações, ofertas, representações, coleções, decisões e assim por diante, interagem e se relacionam entre si. Este tutorial foca apenas no uso da saída de uma decisão em vez da flexibilidade na definição de uma decisão.
+Consulte [Etapas principais para criar e gerenciar ofertas](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) se você quiser entender melhor como as disposições, regras, classificações, ofertas, representações, coleções, decisões e assim por diante, interagem e se relacionam entre si. Este tutorial foca apenas no uso dos resultados de uma decisão em vez da flexibilidade na definição de decisões no Journey Optimizer - Gestão de decisões.
 
 1. Na interface do Journey Optimizer, selecione **[!UICONTROL Ofertas]** do painel esquerdo.
 1. Selecionar **[!UICONTROL Decisões]** na barra superior.
@@ -286,24 +287,38 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    ]
    ```
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode. Localize o `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` função. Inspect o código que
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode. Localize o `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` função. Adicione o seguinte código:
+
+   ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   Task {  
+      let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+      let identityMap = ["identityMap" : ecid]
+      let xdmData = ["xdm" : identityMap]
+      let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   Esta função:
 
    * configura um dicionário XDM `xdmData`, contendo a ECID para identificar o perfil para o qual você deve apresentar as ofertas.
-   * define `decisionScope`, um objeto baseado na decisão definida na interface do usuário do Journey Optimizer - Gestão de decisões e definido por meio do escopo de decisão copiado de [Criar uma decisão](#create-a-decision).
-   * O chama duas APIs: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   Essas funções limpam todas as propostas em cache e atualizam as propostas para esse perfil. O aplicativo Luma usa um arquivo de configuração (`decisions.json`) que recupera os parâmetros do escopo, com base no seguinte formato JSON:
+   * define `decisionScope`, um objeto baseado na decisão definida na interface do usuário do Journey Optimizer - Gestão de decisões e definido por meio do escopo de decisão copiado de [Criar uma decisão](#create-a-decision).  O aplicativo Luma usa um arquivo de configuração (`decisions.json`) que recupera os parâmetros do escopo, com base no seguinte formato JSON:
 
      ```swift
      "scopes": [
          {
-             "name": "luma - Mobile App Decision",
-             "activityId": "xcore:offer-activity:177cdaa5e1fd589d",
-             "placementId": "xcore:offer-placement:13a3b264ce69bb14",
+             "name": "name of the scope",
+             "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+             "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
              "itemCount": 2
          }
      ]
      ```
 
      No entanto, você pode usar qualquer tipo de implementação para garantir que as APIs de otimização obtenham os parâmetros adequados (`activityId`, `placementId` e, `itemCount`), para construir um válido [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) para sua implementação.
+   * O chama duas APIs: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  Essas funções limpam todas as propostas em cache e atualizam as propostas para esse perfil.
 
 1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Personalização]** > **[!UICONTROL EdgeOffersView]** no navegador do Projeto Xcode. Localize o `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` e inspecione o código dessa função. A parte mais importante dessa função é a  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) chamada à API, que
 
@@ -313,22 +328,24 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 1. Ainda em **[!UICONTROL EdgeOffersView]**, localize o `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` e adicione o seguinte código:
 
    ```swift
-       Task {
-           await self.updatePropositionOD(
-               ecid: currentEcid,
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionOD(
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
+   // Update and then get propositions
+   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
+   Task {
+      await self.updatePropositionOD(
+          ecid: currentEcid,
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+     )
+   }
+   try? await Task.sleep(seconds: 2.0)
+   Task {
+      await self.getPropositionOD(
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+      )
+   }
    ```
 
    Esse código garante que você atualize as apresentações e recupere os resultados usando as funções descritas nas etapas 5 e 6.

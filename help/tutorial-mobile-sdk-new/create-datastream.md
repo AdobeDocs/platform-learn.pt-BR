@@ -3,10 +3,10 @@ title: Configurar uma sequência de dados
 description: Saiba como criar um fluxo de dados no Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 9%
+source-wordcount: '551'
+ht-degree: 10%
 
 ---
 
@@ -50,6 +50,8 @@ As sequências de dados podem ser criadas no [!UICONTROL Coleta de dados] usando
 
 Em seguida, você conecta os serviços do Experience Cloud ao fluxo de dados. Quando o SDK móvel da Platform envia dados para a rede de borda, a sequência de dados envia os dados para estes serviços:
 
+### Adobe Analytics
+
 1. Selecione **[!UICONTROL Adicionar serviço]**.
 
 1. Adicionar **[!UICONTROL Adobe Analytics]** do [!UICONTROL Serviço] lista,
@@ -61,6 +63,9 @@ Em seguida, você conecta os serviços do Experience Cloud ao fluxo de dados. Qu
 1. Selecione **[!UICONTROL Salvar]**.
 
    ![Adicionar o Adobe Analytics como serviço de sequência de dados](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 Talvez você também queira ativar o serviço Adobe Experience Platform.
 

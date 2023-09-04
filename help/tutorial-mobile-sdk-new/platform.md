@@ -4,9 +4,9 @@ description: Saiba como enviar dados para o Adobe Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '963'
 ht-degree: 4%
 
 ---
@@ -51,21 +51,20 @@ Todos os dados assimilados com sucesso na Adobe Experience Platform são mantido
 1. Selecione **[!UICONTROL Criar conjunto de dados a partir do esquema]**.
    ![início: conjunto de dados](assets/dataset-create.png)
 
-1. Pesquisar pelo esquema
-
-1. Selecione seu esquema.
+1. Procure pelo esquema. por exemplo, usando `Luma Mobile` no campo de pesquisa.
+1. Selecione seu esquema, por exemplo **[!UICONTROL Esquema de evento do aplicativo móvel Luma]**.
 
 1. Selecione **[!UICONTROL Próximo]**.
    ![configuração do conjunto de dados](assets/dataset-configure.png)
 
-1. Forneça um **[!UICONTROL Nome]** e **[!UICONTROL Descrição]**.
+1. Forneça um **[!UICONTROL Nome]**, por exemplo `Luma Mobile App Events Dataset` e uma **[!UICONTROL Descrição]**.
 
 1. Selecione **[!UICONTROL Concluir]**.
    ![término do conjunto de dados](assets/dataset-finish.png)
 
 ## Atualizar a sequência de dados
 
-Depois de criar seu conjunto de dados, verifique se [atualizar o fluxo de dados](create-datastream.md) para adicionar o Adobe Experience Platform. Essa atualização garante que os dados fluam para a Platform.
+Depois de criar seu conjunto de dados, verifique se [atualizar o fluxo de dados](create-datastream.md#adobe-experience-platform) para adicionar o Adobe Experience Platform. Essa atualização garante que os dados fluam para a Platform.
 
 ## Validar dados no conjunto de dados
 
@@ -88,23 +87,23 @@ O Perfil do cliente em tempo real do Experience Platform permite criar uma visua
 
 ### Ativar o esquema
 
-1. Abra seu esquema
-1. Ativar **[!UICONTROL Perfil]**
-1. Selecionar **[!UICONTROL Os dados deste esquema conterão uma identidade principal no campo identityMap.]** na caixa de diálogo modal
-1. **[!UICONTROL Salvar]** o schema
+1. Abra o esquema, por exemplo **[!UICONTROL Esquema de evento do aplicativo móvel Luma]**.
+1. Ativar **[!UICONTROL Perfil]**.
+1. Selecionar **[!UICONTROL Os dados deste esquema conterão uma identidade principal no campo identityMap.]** na caixa de diálogo.
+1. **[!UICONTROL Salvar]** o schema.
 
    ![ativar o esquema para o perfil](assets/platform-profile-schema.png)
 
 ### Ativar o conjunto de dados
 
-1. Abra seu conjunto de dados
-1. Ativar **[!UICONTROL Perfil]**
+1. Abra seu conjunto de dados, por exemplo **[!UICONTROL Conjunto de dados de evento do aplicativo móvel Luma]**.
+1. Ativar **[!UICONTROL Perfil]**.
 
    ![ativar o conjunto de dados para o perfil](assets/platform-profile-dataset.png)
 
 ### Validar dados no perfil
 
-Abra o aplicativo e navegue até as telas onde você está rastreando eventos. Faça logon no aplicativo Luma e faça uma compra.
+Abra o aplicativo e navegue até as telas onde você está rastreando eventos, por exemplo: faça logon no aplicativo Luma e faça uma compra.
 
 Use o Assurance para localizar uma das identidades transmitidas no identityMap (Email, lumaCrmId ou ECID), por exemplo, a ID do CRM.
 
@@ -112,7 +111,7 @@ Use o Assurance para localizar uma das identidades transmitidas no identityMap (
 
 Na interface da Platform,
 
-1. Navegue até **[!UICONTROL Perfis]** > **[!UICONTROL Procurar]**,
+1. Navegue até **[!UICONTROL Perfis]** e selecione **[!UICONTROL Procurar]** na barra superior.
 1. Especifique os detalhes de identidade que você acabou de capturar, por exemplo `Luma CRM ID` para **[!UICONTROL Namespace de identidade]** e o valor copiado para **[!UICONTROL Valor de identidade]**. Em seguida, selecione **[!UICONTROL Exibir]**.
 1. Para exibir detalhes, selecione o perfil.
 
@@ -128,7 +127,7 @@ No **[!UICONTROL Eventos]**, você pode ver os eventos coletados da implementaç
 
 Na tela de detalhes do perfil:
 
-1. Para exibir o gráfico de identidade, clique no link ou navegue até **[!UICONTROL Identidades]** > **[!UICONTROL Gráfico de identidade]**
+1. Para exibir o gráfico de identidade, clique no link ou navegue até **[!UICONTROL Identidades]** e selecione **[!UICONTROL Gráfico de identidade]** na barra superior.
 1. Para pesquisar o valor de identidade, especifique `Luma CRM ID` como o **[!UICONTROL Namespace de identidade]** e o valor copiado como o **[!UICONTROL Valor de identidade]**. Em seguida, selecione **[!UICONTROL Exibir]**.
 
    Esta visualização mostra todas as identidades que estão vinculadas em um perfil e suas origens. Este é um exemplo de um gráfico de identidade construído com dados coletados ao concluir este tutorial do SDK móvel (Fonte de dados 2) e o [Tutorial do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR) (Fonte de dados 1):
