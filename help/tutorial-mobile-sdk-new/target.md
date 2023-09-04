@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1433'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    * recupera as apresentações do perfil atual com base no escopo da decisão (que é o local definido no Teste A/B) e
    * O desenvolve o resultado em conteúdo que pode ser exibido corretamente no aplicativo.
 
-1. Ainda em **[!UICONTROL ExibiçãoDeOfertasDeDestino]**, localize o f`unc updatePropositions(location: String) async` e adicione o seguinte código:
+1. Ainda em **[!UICONTROL ExibiçãoDeOfertasDeDestino]**, localize o `func updatePropositions(location: String) async` e adicione o seguinte código:
 
    ```swift
        Task {
