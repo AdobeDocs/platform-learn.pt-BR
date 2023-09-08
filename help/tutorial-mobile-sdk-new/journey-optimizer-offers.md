@@ -5,10 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
 workflow-type: tm+mt
-source-wordcount: '2367'
-ht-degree: 3%
+source-wordcount: '2412'
+ht-degree: 2%
 
 ---
 
@@ -326,6 +326,23 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    * recupera a oferta da proposta,
    * desenvolve o conteúdo da oferta para que ela possa ser exibida corretamente no aplicativo e
    * aciona o `displayed()` ação na oferta que enviará um evento de volta para a Rede de borda informando que a oferta é exibida.
+
+1. Ainda em **[!UICONTROL EdgeOffersView]**, adicione o seguinte código à `.onFirstAppear` modificador. Esse código garantirá que a chamada de retorno para atualização das ofertas seja registrada apenas uma vez.
+
+   ```swift
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateOD(activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   }
+   ```
+
+1. Ainda em **[!UICONTROL EdgeOffersView]**, adicione o seguinte código à `.task` modificador. Esse código atualizará as ofertas quando a visualização for atualizada.
+
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   ```
+
 
 
 ## Validar usando o aplicativo
