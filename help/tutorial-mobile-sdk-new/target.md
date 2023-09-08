@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -214,29 +214,27 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
    Em seguida, a função chama duas APIs: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  e [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). Essas funções limpam todas as propostas em cache e atualizam as propostas para esse perfil.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Personalização]** > **[!UICONTROL ExibiçãoDeOfertasDeDestino]** no navegador do Projeto Xcode. Localize o `func getPropositionAT(location: String) async` e inspecione o código dessa função. A parte mais importante dessa função é a  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) chamada à API, que
-   * recupera as apresentações do perfil atual com base no escopo da decisão (que é o local definido no Teste A/B) e
-   * O desenvolve o resultado em conteúdo que pode ser exibido corretamente no aplicativo.
+1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Personalização]** > **[!UICONTROL ExibiçãoDeOfertasDeDestino]** no navegador do Projeto Xcode. Localize o `func onPropositionsUpdateAT(location: String) async {` e inspecione o código dessa função. A parte mais importante dessa função é a  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) chamada à API, que
+   * recupera as apresentações do perfil atual com base no escopo da decisão (que é o local definido no Teste A/B),
+   * recupera a oferta da proposta,
+   * desenvolve o conteúdo da oferta para que ela possa ser exibida corretamente no aplicativo e
+   * aciona o `displayed()` ação na oferta que enviará um evento de volta para a Rede de borda informando que a oferta é exibida.
 
-1. Ainda em **[!UICONTROL ExibiçãoDeOfertasDeDestino]**, localize o `func updatePropositions(location: String) async` e adicione o seguinte código:
+1. Ainda em **[!UICONTROL ExibiçãoDeOfertasDeDestino]**, adicione o seguinte código à `.onFirstAppear` modificador. Esse código garantirá que a chamada de retorno para atualização das ofertas seja registrada apenas uma vez.
 
    ```swift
-       Task {
-           await self.updatePropositionAT(
-               ecid: currentEcid,
-               location: location
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionAT(
-               location: location
-           )
-       }
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateAT(location: location)
+   }
    ```
 
-   Esse código garante que você atualize as apresentações e recupere os resultados usando as funções descritas nas etapas 5 e 6.
+1. Ainda em **[!UICONTROL ExibiçãoDeOfertasDeDestino]**, adicione o seguinte código à `.task` modificador. Esse código atualizará as ofertas quando a visualização for atualizada.
 
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsAT(ecid: currentEcid, location: location)
+   ```
 
 ## Validar usando o aplicativo
 
@@ -262,11 +260,11 @@ Para validar o teste AB no Assurance:
 1. Selecionar **[!UICONTROL Solicitações]** na barra superior. Você vê o seu **[!UICONTROL Target]** solicitações.
    ![Validação da decisão do AJO](assets/assurance-decisioning-requests.png)
 
-1. Você pode explorar as guias Simular e Lista de eventos para obter mais funcionalidades, verificando sua configuração para ofertas do Target.
+1. Você pode explorar **[!UICONTROL Simular]** e **[!UICONTROL Lista de Eventos]** guias para obter mais funcionalidades, verificando a configuração de ofertas do Target.
 
 ## Próximas etapas
 
-Agora você deve ter todas as ferramentas para começar a adicionar mais testes A/B ou outras atividades do Target (como Direcionamento de experiência, Teste multivariado), quando relevante e aplicável, ao aplicativo Luma.
+Agora você deve ter todas as ferramentas para começar a adicionar mais testes A/B ou outras atividades do Target (como Direcionamento de experiência, Teste multivariado), quando relevante e aplicável, ao aplicativo Luma. Há informações mais detalhadas disponíveis no [Acordo de recompra do GitHub para a extensão Otimize](https://github.com/adobe/aepsdk-optimize-ios) onde você também pode encontrar um link para uma [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) sobre como rastrear ofertas do Adobe Target.
 
 >[!SUCCESS]
 >
