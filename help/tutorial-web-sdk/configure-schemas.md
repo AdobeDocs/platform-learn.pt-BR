@@ -3,9 +3,9 @@ title: Criar um esquema XDM para dados da Web
 description: Saiba como criar um esquema XDM para dados da Web na interface da Coleção de dados. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 6%
 
 ---
