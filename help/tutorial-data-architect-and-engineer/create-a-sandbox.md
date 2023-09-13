@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 2%
@@ -62,13 +62,13 @@ As sandboxes levam aproximadamente 30 segundos para serem criadas, período dura
 
 Aguarde até que sua sandbox seja &quot;[!UICONTROL Ativo]&quot; antes de continuar com o próximo exercício.
 
-## Adicionar a nova sandbox ao perfil do produto
+## Adicionar a nova sandbox à sua função
 
 Quando a sandbox estiver ativa, você deverá incluí-la na sua função para usá-la. Para adicioná-lo à sua função (requer privilégios de Administrador do sistema ou de Administrador de produto):
 
 1. Vá para a [!UICONTROL Permissões] tela
 1. Abra o `Luma Tutorial Platform` função
-1. _Remover_ o `Prod` sandbox da função
+1. Opcionalmente _remover_ o `Prod` sandbox da função
 1. Adicione o `Luma Tutorial` sandbox
 1. Selecione **[!UICONTROL Salvar]**
 1. No [!UICONTROL Sandboxes] linha, selecione **[!UICONTROL Editar]**
