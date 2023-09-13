@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
+source-git-commit: fdb6a49caa29d98d73524fd0887d25641ef67780
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 2%
@@ -62,7 +62,7 @@ As sandboxes levam aproximadamente 30 segundos para serem criadas, período dura
 
 Aguarde até que sua sandbox seja &quot;[!UICONTROL Ativo]&quot; antes de continuar com o próximo exercício.
 
-## Adicionar a nova sandbox à sua função
+## Adicionar a nova sandbox à função
 
 Quando a sandbox estiver ativa, você deverá incluí-la na sua função para usá-la. Para adicioná-lo à sua função (requer privilégios de Administrador do sistema ou de Administrador de produto):
 
