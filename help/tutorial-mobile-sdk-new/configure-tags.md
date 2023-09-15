@@ -3,9 +3,9 @@ title: Configurar uma propriedade de tag
 description: Saiba como configurar uma propriedade de tag no [!UICONTROL Coleta de dados] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1095'
 ht-degree: 8%
 
 ---
@@ -45,7 +45,7 @@ Nesta lição, você vai:
 
       >[!NOTE]
       >
-      > As configurações de consentimento padrão para as implementações do sdk móvel baseado em borda, como a que você está fazendo neste tutorial, vêm do [!UICONTROL Extensão de consentimento] e não o [!UICONTROL Privacidade] na configuração da propriedade tag. Você adiciona e configura a Extensão de consentimento posteriormente nesta lição. Para obter mais informações, consulte [a documentação](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > As configurações de consentimento padrão para as implementações do sdk móvel baseado em borda, como a que você está fazendo nesta lição, vêm do [!UICONTROL Extensão de consentimento] e não o [!UICONTROL Privacidade] na configuração da propriedade tag. Você adiciona e configura a Extensão de consentimento posteriormente nesta lição. Para obter mais informações, consulte [a documentação](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Abra a nova propriedade.
@@ -112,13 +112,13 @@ Nesta lição, você vai:
 
    1. Entrada **[!UICONTROL Datastreams]** selecione o **[!UICONTROL Sequência de dados]** que você criou na [etapa anterior](create-datastream.md) para cada ambiente, por exemplo **[!UICONTROL Aplicativo móvel Luma]**.
 
-   1. Especifique a **[!UICONTROL Domínio da rede de borda]** no prazo de **[!UICONTROL Configuração de domínio]**. O domínio Edge Network é o nome da sua sandbox, seguido por `data.adobedc.net`, por exemplo `techmarketingdemos.data.adobedc.net`.
+   1. Especifique a **[!UICONTROL Domínio da rede de borda]** no prazo de **[!UICONTROL Configuração de domínio]**. O domínio da Rede de borda é o nome da sua organização, seguido por `data.adobedc.net`, por exemplo `techmarketingdemos.data.adobedc.net`.
 
    1. No **[!UICONTROL Salvar na biblioteca]** selecione **[!UICONTROL Salvar na biblioteca e criar]**.
 
       ![configurações de rede de borda](assets/tags-extension-edge.png)
 
-Sua biblioteca é criada para as novas extensões e configurações. Uma build bem-sucedida é indicada por um <span style="color:green">●</span> no **[!UICONTROL Build inicial]** botão.
+Sua biblioteca foi criada para as novas extensões e configurações. Uma build bem-sucedida é indicada por um <span style="color:green">●</span> no **[!UICONTROL Build inicial]** botão.
 
 
 ## Gerar instruções de instalação do SDK
@@ -131,7 +131,7 @@ Sua biblioteca é criada para as novas extensões e configurações. Uma build b
 
 1. No **[!UICONTROL Instruções de instalação em dispositivos móveis]** , selecione a **[!UICONTROL iOS]** guia.
 
-1. Você pode copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) as instruções para configurar seu projeto usando o CocoaPods. Os CocoaPods são usados para gerenciar versões e downloads do SDK. Para saber mais, reveja o [documentação](https://cocoapods.org/).
+1. Você pode copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) as instruções para configurar seu projeto usando o CocoaPods. Os CocoaPods são usados para gerenciar versões e downloads do SDK. Para saber mais, reveja o [Documentação do Cocoapods](https://cocoapods.org/). Se estiver usando o Android como plataforma de desenvolvimento, o Gradle é a ferramenta para gerenciar a versão, os downloads e as dependências do SDK. Para saber mais, reveja o [Documentação do Gradle](https://gradle.org/)
 
    As instruções de instalação fornecem um bom ponto de partida para a implementação. Você pode encontrar informações adicionais [aqui](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Se você estiver familiarizado com a versão da Web de Tags, antes chamada de La
 
 * Na Web, uma propriedade de tag é renderizada no JavaScript, que é então (geralmente) hospedado na nuvem. Esse arquivo JavaScript é referenciado diretamente no site.
 
-* Em uma propriedade de tag móvel, as regras e configurações são renderizadas em arquivos JSON que são hospedados na nuvem. Os arquivos JSON são baixados e lidos pela extensão Mobile Core no aplicativo móvel. As extensões são SDKs separados que funcionam juntos. Se você adicionar uma extensão à propriedade da tag, também deverá atualizar o aplicativo. Se você alterar uma configuração de extensão ou criar uma regra, essas alterações serão refletidas no aplicativo depois de publicar a biblioteca de tags atualizada.
+* Em uma propriedade de tag móvel, as regras e configurações são renderizadas em arquivos JSON que são hospedados na nuvem. Os arquivos JSON são baixados e lidos pela extensão Mobile Core no aplicativo móvel. As extensões são SDKs separados que funcionam juntos. Se você adicionar uma extensão à propriedade da tag, também deverá atualizar o aplicativo. Se você alterar uma configuração de extensão ou criar uma regra, essas alterações serão refletidas no aplicativo depois de publicar a biblioteca de tags atualizada. Essa flexibilidade permite modificar configurações (como a id do conjunto de relatórios do Adobe Analyrics) ou até mesmo alterar o comportamento do seu aplicativo (usando elementos de dados e regras, como você verá em lições posteriores) sem precisar alterar o código no seu aplicativo e ter que reenviar o aplicativo para a loja de aplicativos.
 
 >[!SUCCESS]
 >

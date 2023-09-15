@@ -3,9 +3,9 @@ title: Configurar uma sequência de dados
 description: Saiba como criar um fluxo de dados no Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '598'
 ht-degree: 10%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 10%
 Saiba como criar um fluxo de dados no Experience Platform.
 
 Uma sequência de dados é uma configuração do lado do servidor na Platform Edge Network. A sequência de dados garante que os dados recebidos na Platform Edge Network sejam roteados adequadamente para aplicativos e serviços da Adobe Experience Cloud. Para obter mais informações, consulte [documentação](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR) ou esta [vídeo](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=pt-BR).
+
+![Arquitetura](assets/architecture.png)
 
 ## Pré-requisitos
 
@@ -33,13 +35,18 @@ Nesta lição, você vai:
 
 As sequências de dados podem ser criadas no [!UICONTROL Coleta de dados] usando a [!UICONTROL Sequência de dados] ferramenta de configuração. Para criar um fluxo de dados:
 
-1. Verifique se você está na sandbox de Experience Platform correta, pois as sequências de dados são definidas em um nível de sandbox.
+1. Verifique se você está na sandbox de Experience Platform correta, pois os fluxos de dados são definidos em um nível de sandbox.
 1. Selecionar **[!UICONTROL Datastreams]** no painel esquerdo.
 1. Selecione **[!UICONTROL Novo fluxo de dados]**.
 
    ![início: datastreams](assets/datastream-new.png)
 
 1. Forneça um **[!UICONTROL Nome]**, por exemplo `Luma Mobile App` e uma **[!UICONTROL Descrição]**, por exemplo `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >Lembrete final: se você estiver assistindo a este tutorial com várias pessoas em uma única sandbox ou se estiver usando uma conta compartilhada, considere anexar ou anexar uma identificação como parte de suas convenções de nomenclatura. Por exemplo, em vez de `Luma Mobile App Event Dataset`, use `Luma Mobile App Event Dataset - Joe Smith`. Consulte também a nota em [Visão geral](overview.md).
+
 1. Selecione o schema criado na lição anterior do **Esquema de evento** uma lista.
 1. Selecione **[!UICONTROL Salvar]**.
 

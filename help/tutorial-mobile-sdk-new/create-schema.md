@@ -3,10 +3,10 @@ title: Criar um esquema do XDM
 description: Saiba como criar um esquema XDM para eventos de aplicativos móveis.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 7%
+source-wordcount: '1473'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ A padronização e a interoperabilidade são os principais conceitos por trás d
 
 ## O que são esquemas XDM?
 
-O XDM é uma especificação documentada publicamente projetada para melhorar o potencial das experiências digitais. Ela fornece estruturas e definições comuns que permitem que qualquer aplicativo se comunique com os serviços da plataforma. Seguindo os padrões XDM, todos os dados de experiência do cliente podem ser incorporados a uma representação comum que pode fornecer insights de maneira mais rápida e integrada. Você pode obter insights valiosos das ações do cliente, definir públicos-alvo do cliente por meio de segmentos e expressar atributos do cliente para fins de personalização.
+O XDM é uma especificação documentada publicamente projetada para melhorar o potencial das experiências digitais. Ela fornece estruturas e definições comuns que permitem que qualquer aplicativo se comunique com os serviços da plataforma. Seguindo os padrões XDM, todos os dados de experiência do cliente podem ser incorporados a uma representação comum que pode fornecer insights de maneira mais rápida e integrada. Você obtém insights valiosos das ações do cliente, define públicos do cliente por meio de segmentos e usa atributos do cliente para fins de personalização.
 
 A Experience Platform utiliza esquemas para descrever a estrutura dos dados de forma consistente e reutilizável. Ao definir os dados de forma consistente em todos os sistemas, fica mais fácil manter o significado e, portanto, obter valor dos dados.
 
@@ -118,13 +118,18 @@ Para fins de aprendizado, você usa grupos de campos pré-criados e personalizad
 
 1. Nomeie seu esquema selecionando **[!UICONTROL Esquema sem título]** do **[!UICONTROL Composição]** painel (abaixo **[!UICONTROL Esquema]**) e fornecendo uma **[!UICONTROL Nome de exibição]** &amp; **[!UICONTROL Descrição]**, por exemplo `Luma Mobile App Event Schema` e `Schema for Luma mobile app experience events.`
 
+   >[!NOTE]
+   >
+   >Se você estiver assistindo a este tutorial com várias pessoas em uma única sandbox ou se estiver usando uma conta compartilhada, considere anexar ou anexar uma identificação como parte de suas convenções de nomenclatura. Por exemplo, em vez de `Luma Mobile App Event Schema`, use `Luma Mobile App Event Schema - Joe Smith`. Consulte também a nota em [Visão geral](overview.md).
+
+
 1. Selecione **[!UICONTROL Salvar]**.
 
    ![Selecionar aplicar](assets/schema-name-save.png)
 
 >[!NOTE]
 >
->Lembre-se de que não é necessário usar todos os campos em um grupo. Se for útil, você pode considerar um esquema como uma camada de dados vazia. No aplicativo, você preenche os valores relevantes no momento apropriado.
+>Lembre-se de que não é necessário usar todos os campos em um grupo. Também é possível remover campos se isso ajudar a manter o esquema conciso e compreensível. Se for útil, você pode considerar um esquema como uma camada de dados vazia. No aplicativo, você preenche os valores relevantes no momento apropriado.
 
 A variável [!UICONTROL Evento de experiência do consumidor] o grupo de campos tem um tipo de dados chamado [!UICONTROL Informações da Web], que descreve eventos como exibição de página e cliques em links. No momento da escrita, não há uma paridade de aplicativo móvel para este recurso, portanto, você vai criar o seu próprio.
 

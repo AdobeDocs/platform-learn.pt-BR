@@ -3,9 +3,9 @@ title: Configurar o Assurance
 description: Saiba como implementar a extensão Assurance em um aplicativo móvel.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 9%
 
 ---
@@ -34,11 +34,7 @@ Nesta lição, você vai:
 
 ## Confirmar acesso
 
-Confirme se sua organização tem acesso ao Assurance realizando as seguintes etapas:
-
-1. Visita [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Faça logon usando as credenciais da Adobe ID para o Experience Cloud.
-1. Se você vir a variável **[!UICONTROL Sessões]** e, em seguida, você terá acesso. Se você visualizar a página de acesso (beta), selecione **[!UICONTROL Registrar]** para se registrar.
+Confirme se sua organização tem acesso ao Assurance. Você, como usuário, deve ser adicionado ao perfil do Adobe Experience Platform. Consulte [Acesso do usuário](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) no guia do Assurance para obter mais informações.
 
 ## Implementação
 
@@ -70,7 +66,7 @@ Antes de executar o aplicativo pela primeira vez no Xcode, atualize a assinatura
 1. Selecione o **Assinatura e recursos** guia.
 1. Configurar **[!UICONTROL Gerenciar assinatura automaticamente]**, **[!UICONTROL Equipe]**, e **[!UICONTROL Identificador do pacote]** ou use seus detalhes específicos de provisionamento de desenvolvimento do Apple.
 
-   ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png)
+   ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png){zoom=&quot;yes&quot;}
 
 ## Configurar um URL de base
 

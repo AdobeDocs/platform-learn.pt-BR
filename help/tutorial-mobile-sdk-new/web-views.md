@@ -3,9 +3,9 @@ title: Manipular WebViews
 description: Saiba como lidar com a coleta de dados com WebViews em um aplicativo móvel.
 jira: KT-6987
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ Se você enviar dados da parte nativa do aplicativo e de um WebView dentro do ap
 
 Para resolver essa situação indesejável, é importante transmitir a ECID do usuário da parte nativa do aplicativo para um WebView que você possa desejar usar no aplicativo.
 
-A extensão JavaScript do serviço de ID do Experience Cloud no WebView extrai a ECID do URL em vez de enviar uma solicitação ao Adobe para obter uma nova ID. O serviço de ID usa essa ECID para rastrear o visitante.
+A extensão de identidade de borda da AEP usada no WebView coleta a ECID atual e a adiciona ao URL em vez de enviar uma solicitação ao Adobe para uma nova ID. A implementação usa essa ECID para solicitar o URL.
 
 ## Implementação
 

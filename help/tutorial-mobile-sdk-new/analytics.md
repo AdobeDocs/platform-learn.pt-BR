@@ -3,7 +3,7 @@ title: Mapeamento do Analytics
 description: Saiba como coletar dados para o Adobe Analytics em um aplicativo móvel.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 2%
@@ -15,6 +15,8 @@ ht-degree: 2%
 Saiba como mapear dados móveis para o Adobe Analytics.
 
 A variável [evento](events.md) Os dados coletados e enviados para a Platform Edge Network em lições anteriores são encaminhados para os serviços configurados na sua sequência de dados, incluindo o Adobe Analytics. Mapeie os dados para as variáveis corretas em seu conjunto de relatórios.
+
+![Arquitetura](assets/architecture-aa.png)
 
 ## Pré-requisitos
 
@@ -186,7 +188,7 @@ Veja como uma regra de processamento usando esses dados pode ser exibida:
 >Algumas das variáveis mapeadas automaticamente podem não estar disponíveis para uso nas regras de processamento.
 >
 >
->Na primeira vez que você mapeia para uma regra de processamento, a interface do usuário não mostra as variáveis de dados de contexto do objeto XDM. Para corrigir isso, selecione qualquer valor, Salve e volte para editar. Todas as variáveis XDM agora devem aparecer.
+>Na primeira vez que você mapeia para uma regra de processamento, a interface não mostra as variáveis de dados de contexto do objeto XDM. Para corrigir isso, selecione qualquer valor, Salve e volte para editar. Todas as variáveis XDM agora devem aparecer.
 
 
 Informações adicionais sobre regras de processamento e dados de contexto podem ser encontradas [aqui](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).

@@ -2,9 +2,9 @@
 title: Eventos
 description: Saiba como coletar dados do evento em um aplicativo móvel.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1321'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ Para os grupos de campos padrão, o processo é semelhante a:
    * `commerce.productViews.id`: um valor de string que representa o SKU do produto
    * `commerce.productViews.value`: o valor numérico ou booleano do evento. Se for um Booleano (ou &quot;Contador&quot; no Adobe Analytics), o valor sempre será definido como 1. Se for um evento numérico ou de moeda, o valor poderá ser > 1.
 
-* No esquema, identifique quaisquer dados adicionais associados ao evento de visualização de produto de comércio. Neste exemplo, inclua **[!UICONTROL productListItem]** que é um conjunto padrão de campos usados com qualquer evento relacionado ao comércio:
+* No esquema, identifique quaisquer dados adicionais associados ao evento de visualização de produto de comércio. Neste exemplo, inclua **[!UICONTROL productListItems]** que é um conjunto padrão de campos usados com qualquer evento relacionado ao comércio:
 
   ![esquema de itens da lista de produtos](assets/datacollection-prodListItems-schema.png)
    * Observe que **[!UICONTROL productListItems]** O é um array para que vários produtos possam ser fornecidos.
@@ -189,6 +189,11 @@ Para implementar o envio de eventos de experiência relacionados ao comércio de
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Caso esteja desenvolvendo para Android, use o Map (`java.util.Map`) como a interface fundamental para criar sua carga XDM.
+
 
 ### Grupos de campos personalizados
 
@@ -339,15 +344,7 @@ Novamente, vamos implementar esse código no seu projeto Xcode.
 1. Execute o aplicativo, faça logon e interaja com um produto.
 
    1. Mova o ícone do Assurance para a esquerda.
-   1. Selecionar **[!UICONTROL Início]** na barra de guias.
-   1. Selecione o <img src="assets/login.png" width="15" /> botão para abrir a folha Logon.
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. Selecione o <img src="assets/insert.png" width="15" /> botão para inserir um email e uma id do cliente aleatórios.
-   1. Selecionar **[!UICONTROL Logon]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. Selecionar **[!UICONTROL Início]** na barra de guias e verifique se há uma **[!UICONTROL ECID]**, **[!UICONTROL E-mail]** e **[!UICONTROL ID do CRM]** na tela inicial.
    1. Selecionar **[!UICONTROL Produtos]** na barra de guias.
    1. Selecione um produto.
    1. Selecionar <img src="assets/saveforlater.png" width="15" />.

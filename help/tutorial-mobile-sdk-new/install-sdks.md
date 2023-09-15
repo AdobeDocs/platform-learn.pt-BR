@@ -2,9 +2,9 @@
 title: Instalar SDKs do Adobe Experience Platform Mobile
 description: Saiba como implementar o Adobe Experience Platform Mobile SDK em um aplicativo móvel.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '946'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Saiba como implementar o Adobe Experience Platform Mobile SDK em um aplicativo m
 * Biblioteca de tags criada com sucesso com as extensões descritas em [lição anterior](configure-tags.md).
 * ID do arquivo do ambiente de desenvolvimento do [Instruções de instalação em dispositivos móveis](configure-tags.md#generate-sdk-install-instructions).
 * Baixou o vazio [aplicativo de amostra](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
-* Experiência com [XCode](Https://developer.apple.com/xcode/){target="_blank"}.
+* Experiência com [Xcode](Https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Objetivos de aprendizagem
 
@@ -39,20 +39,20 @@ No Xcode, use **[!UICONTROL Arquivo]** > **[!UICONTROL Adicionar pacotes...]** e
 
 | Pacote | Descrição |
 |---|---|
-| [AEP Core](https://github.com/adobe/aepsdk-core-ios.git) | A variável `AEPCore`, `AEPServices`, e `AEPIdentity` As extensões representam a base do SDK do Adobe Experience Platform - todos os aplicativos que usam o SDK devem incluí-las. Esses módulos contêm um conjunto comum de funcionalidades e serviços exigidos por todas as extensões do SDK.<br/>`AEPCore` contém a implementação do Hub de eventos. O Hub de eventos é o mecanismo usado para fornecer eventos entre o aplicativo e o SDK. O Hub de eventos também é usado para compartilhar dados entre extensões.<br/>`AEPServices` O fornece várias implementações reutilizáveis necessárias para suporte à plataforma, incluindo rede, acesso ao disco e gerenciamento de banco de dados.<br/>`AEPIdentity` implementa a integração com os serviços de identidade da Adobe Experience Platform.<br/>`AEPSignal` representa a extensão Signal do SDK da Adobe Experience Platform que permite que os profissionais de marketing enviem um &quot;sinal&quot; para seus aplicativos a fim de enviar dados para destinos externos ou abrir URLs.<br/>`AEPLifecycle` representa a extensão Lifecycle do SDK do Adobe Experience Platform que ajuda a coletar medições de ciclo de vida do aplicativo, como informações de instalação ou atualização do aplicativo, informações de inicialização e sessão do aplicativo, informações do dispositivo e quaisquer dados de contexto adicionais fornecidos pelo desenvolvedor do aplicativo. |
-| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | A extensão móvel da Rede de borda da Adobe Experience Platform permite enviar dados para a Rede da Adobe Edge a partir de um aplicativo móvel. Essa extensão permite implementar os recursos do Adobe Experience Cloud de forma mais robusta, atender a várias soluções de Adobe por meio de uma chamada de rede e, simultaneamente, encaminhar essas informações para a Adobe Experience Platform.<br/>A extensão móvel da Rede de borda é uma extensão para o SDK do Adobe Experience Platform e requer o `AEPCore` e `AEPServices` extensões para manipulação de eventos, bem como a `AEPEdgeIdentity` extensão para recuperar as identidades, como ECID. |
-| [Identidade da borda da AEP](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | A extensão móvel AEP Edge Identity permite o tratamento de dados de identidade do usuário de um aplicativo móvel ao usar o SDK do Adobe Experience Platform e a extensão Edge Network. |
-| [Consentimento de borda da AEP](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | A extensão móvel AEP Consent Collection permite a coleta de preferências de consentimento do aplicativo móvel ao usar o SDK do Adobe Experience Platform e a extensão Edge Network. |
-| [Perfil de usuário da AEP](https://github.com/adobe/aepsdk-userprofile-ios.git) | A extensão móvel do perfil de usuário do Adobe Experience Platform é uma extensão para gerenciar perfis de usuário para o SDK do Adobe Experience Platform. |
-| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | A extensão AEPPaces permite rastrear eventos de geolocalização conforme definido na interface do usuário do Adobe Places e nas regras de tag da coleção de dados do Adobe. |
-| [Mensagens AEP](https://github.com/adobe/aepsdk-messaging-ios.git) | A extensão Mensagens da AEP permite enviar tokens de notificação por push e feedback de click-through de notificação por push para a Adobe Experience Platform. |
-| [Otimização da AEP](https://github.com/adobe/aepsdk-optimize-ios) | A extensão Otimizar AEP fornece APIs para permitir fluxos de trabalho de personalização em tempo real nos SDKs móveis da Adobe Experience Platform usando o Adobe Target ou o Adobe Journey Optimizer Offer Decisioning. Exige `AEPCore` e `AEPEdge` extensões para enviar eventos de consulta de personalização para a rede Experience Edge. |
-| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | O Assurance (também conhecido como projeto Griffon) é um produto novo e inovador para ajudá-lo a inspecionar, testar, simular e validar a maneira como você coleta dados ou veicula experiências em seu aplicativo móvel. Essa extensão habilita seu aplicativo para Assurance. |
+| [AEP Core](https://github.com/adobe/aepsdk-core-ios.git) | A variável `AEPCore`, `AEPServices`, e `AEPIdentity` As extensões representam a base do SDK do Adobe Experience Platform - todos os aplicativos que usam o SDK devem incluí-las. Esses módulos contêm um conjunto comum de funcionalidades e serviços exigidos por todas as extensões do SDK.<br/><ul><li>`AEPCore` contém a implementação do Hub de eventos. O Hub de eventos é o mecanismo usado para fornecer eventos entre o aplicativo e o SDK. O Hub de eventos também é usado para compartilhar dados entre extensões.</li><li>`AEPServices` O fornece várias implementações reutilizáveis necessárias para suporte à plataforma, incluindo rede, acesso ao disco e gerenciamento de banco de dados.</li><li>`AEPIdentity` implementa a integração com os serviços de identidade da Adobe Experience Platform.</li><li>`AEPSignal` representa a extensão de sinal dos SDKs da Adobe Experience Platform que permite aos profissionais de marketing enviar um &quot;sinal&quot; para seus aplicativos a fim de enviar dados para destinos externos ou abrir URLs.</li><li>`AEPLifecycle` representa a extensão Lifecycle dos SDKs da Adobe Experience Platform que ajuda a coletar métricas de ciclo de vida do aplicativo, como informações de instalação ou atualização do aplicativo, informações de inicialização e sessão do aplicativo, informações do dispositivo e quaisquer dados de contexto adicionais fornecidos pelo desenvolvedor do aplicativo.</li></ul> |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | A extensão móvel da Rede de borda da Adobe Experience Platform (`AEPEdge`) permite enviar dados para a Rede da Adobe Edge a partir de um aplicativo para dispositivos móveis. Essa extensão permite implementar os recursos do Adobe Experience Cloud de forma mais robusta, atender a várias soluções de Adobe por meio de uma chamada de rede e, simultaneamente, encaminhar essas informações para a Adobe Experience Platform.<br/>A extensão móvel da Rede de borda é uma extensão para o SDK do Adobe Experience Platform e requer o `AEPCore` e `AEPServices` extensões para manipulação de eventos, bem como a `AEPEdgeIdentity` extensão para recuperar as identidades, como ECID. |
+| [Identidade da borda da AEP](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | A extensão móvel da AEP Edge Identity (`AEPEdgeIdentity`) permite a manipulação de dados de identidade do usuário de um aplicativo móvel ao usar o SDK do Adobe Experience Platform e a extensão Edge Network. |
+| [Consentimento de borda da AEP](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | A extensão móvel da Coleção de consentimento da AEP (`AEPConsent`) ativa a coleção de preferências de consentimento do aplicativo móvel ao usar o SDK do Adobe Experience Platform e a extensão Edge Network. |
+| [Perfil de usuário da AEP](https://github.com/adobe/aepsdk-userprofile-ios.git) | A extensão móvel do perfil de usuário do Adobe Experience Platform (`AEPUserProfile`) é uma extensão para gerenciar perfis de usuário para o SDK do Adobe Experience Platform. |
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | A extensão do AEP Places (`AEPPlaces`) permite rastrear eventos de geolocalização, conforme definido na interface do Adobe Places e nas regras de tag da coleção de dados do Adobe. |
+| [Mensagens AEP](https://github.com/adobe/aepsdk-messaging-ios.git) | A extensão Mensagens da AEP (`AEPMessaging`) permite enviar tokens de notificação por push e feedback de click-through de notificação por push para a Adobe Experience Platform. |
+| [Otimização da AEP](https://github.com/adobe/aepsdk-optimize-ios) | A extensão Otimizar AEP (`AEPOptimize`) fornece APIs para permitir workflows de personalização em tempo real nos SDKs do Adobe Experience Platform Mobile usando o Adobe Target ou o Adobe Journey Optimizer Offer Decisioning. Exige `AEPCore` e `AEPEdge` extensões para enviar eventos de consulta de personalização para a rede Experience Edge. |
+| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | O Assurance (também conhecido como projeto Griffon) é uma extensão nova e inovadora (`AEPAssurance`) para ajudá-lo a inspecionar, testar, simular e validar a maneira como você coleta dados ou fornece experiências em seu aplicativo móvel. Essa extensão habilita seu aplicativo para Assurance. |
 
 
 Após instalar todos os pacotes, seu Xcode **[!UICONTROL Dependências de pacote]** A tela deve ter a seguinte aparência:
 
-![Dependências do pacote Xcode](assets/xcode-package-dependencies.png)
+![Dependências do pacote Xcode](assets/xcode-package-dependencies.png){zoom=&quot;yes&quot;}
 
 
 ## Importar extensões

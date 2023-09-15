@@ -3,9 +3,9 @@ title: Identidade
 description: Saiba como coletar dados de identidade em um aplicativo móvel.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 6%
 
 ---
@@ -108,7 +108,7 @@ Você deseja atualizar a identidade padrão (email) e a identidade personalizada
 
 ## Remover uma identidade
 
-Você pode usar o [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API para remover a identidade do mapa de identidade armazenado do lado do cliente. A extensão Identity interrompe o envio do identificador para a Rede de borda. O uso dessa API não remove o identificador do gráfico de perfil do usuário do lado do servidor ou do gráfico de identidade.
+Você pode usar o [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API para remover a identidade do mapa de identidade armazenado do lado do cliente. A extensão Identity interrompe o envio do identificador para a Rede de borda. O uso dessa API não remove o identificador do gráfico de identidade do lado do servidor. Consulte [Visualização de gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) para obter mais informações sobre gráficos de identidade.
 
 1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Geral]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e adicione o seguinte código à `func removeIdentities(emailAddress: String, crmId: String)` função:
 
@@ -144,13 +144,13 @@ Você pode usar o [`Identity.removeIdentity`](https://developer.adobe.com/client
       <img src="./assets/identity2.png" width="300">
 
 
-1. Examine a interface do usuário da Web do Assurance para **[!UICONTROL Identidades de atualização de identidade da borda]** evento do **[!UICONTROL com.adobe.griffon.mobile]** fornecedor.
+1. Examine a interface da Web do Assurance para **[!UICONTROL Identidades de atualização de identidade da borda]** evento do **[!UICONTROL com.adobe.griffon.mobile]** fornecedor.
 1. Selecione o evento e revise os dados na variável **[!UICONTROL ACPExtensionEventData]** objeto. Você deve ver as identidades atualizadas.
    ![validar atualização de identidades](assets/identity-validate-assurance.png)
 
 ## Validar com gráfico de identidade
 
-Depois de concluir as etapas no [lição do Experience Platform](platform.md), você pode confirmar a captura de identidade no visualizador de gráficos de identidade de Plataformas:
+Depois de concluir as etapas no [lição do Experience Platform](platform.md), você poderá confirmar a captura de identidade no visualizador de gráficos de identidade de Plataformas:
 
 1. Selecionar **[!UICONTROL Identidades]** na interface da Coleção de dados.
 1. Selecionar **[!UICONTROL Gráfico de identidade]** na barra superior.

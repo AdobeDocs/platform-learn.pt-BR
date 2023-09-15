@@ -2,7 +2,7 @@
 title: Places
 description: Saiba como usar o serviço de localização geográfica do Places no aplicativo móvel.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Nesta lição, você
 * Atualize a propriedade da tag com a extensão Places.
 * Atualize seu esquema para capturar eventos de localização geográfica.
 * Valide a configuração no Assurance.
-* Atualize seu aplicativo para incluir a extensão Places.
+* Atualize seu aplicativo para registrar a extensão Places.
 * Implemente o rastreamento de localização geográfica do serviço Places em seu aplicativo.
 
 
@@ -49,7 +49,7 @@ Nesta lição, você
 * Atualize seu esquema para capturar eventos de apresentação.
 * Valide a configuração no Assurance.
 * Crie uma decisão de oferta com base em ofertas no Journey Optimizer - Gestão de decisões.
-* Atualize seu aplicativo para incluir a extensão Otimizer.
+* Atualize seu aplicativo para registrar a extensão Otimizer.
 * Implemente ofertas da Gestão de decisões no seu aplicativo.
 
 
@@ -258,7 +258,7 @@ Para validar sua configuração no Assurance:
    ![Validação da decisão do AJO](assets/places-events.png)
 
 
-## Implementar locais no aplicativo
+## Implementar o Places no aplicativo
 
 Conforme discutido nas lições anteriores, a instalação de uma extensão de tag móvel fornece apenas a configuração. Em seguida, você deve instalar e registrar o SDK do Places. Se essas etapas não estiverem claras, revise o [Instalar SDKs](install-sdks.md) seção.
 
@@ -320,7 +320,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    }
    ```
 
-Este tutorial não aborda a explicação dos detalhes sobre a implementação do gerenciador de local no iOS.
+Está além do assunto desta lição explicar os detalhes sobre a implementação do gerenciador de local no iOS.
 
 
 ## Validar usando seu aplicativo
