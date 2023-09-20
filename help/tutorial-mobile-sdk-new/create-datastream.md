@@ -3,9 +3,9 @@ title: Configurar uma sequência de dados
 description: Saiba como criar um fluxo de dados no Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '617'
 ht-degree: 10%
 
 ---
@@ -106,4 +106,4 @@ Ao implementar o SDK móvel da Platform em seu próprio aplicativo, você deve c
 >
 >Agora você tem um fluxo de dados para usar no restante do tutorial.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Próximo: **[Configurar tags](configure-tags.md)**
+Próximo: **[Configurar uma propriedade de tag](configure-tags.md)**

@@ -3,9 +3,9 @@ title: Configurar o Assurance
 description: Saiba como implementar a extensão Assurance em um aplicativo móvel.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '775'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,7 @@ Antes de executar o aplicativo pela primeira vez no Xcode, atualize a assinatura
 
    >[!IMPORTANT]
    >
-   >Selecione um identificador de pacote exclusivo diferente do padrão já inserido no projeto Start, pois cada identificador de pacote precisa ser exclusivo.
+   >Certifique-se de usar um identificador de conjunto exclusivo, diferente do padrão `com.adobe.luma.tutorial.swiftui`  inserido no projeto Start, pois cada identificador de pacote precisa ser exclusivo.
 
 
    ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png){zoom=&quot;yes&quot;}
@@ -139,4 +139,4 @@ Se tiver algum desafio, revise o [técnico](https://developer.adobe.com/client-s
 >Agora você configurou seu aplicativo para usar o Assurance para o restante do tutorial.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-Próximo: **[Consentimento](consent.md)**
+Próximo: **[Implementar consentimento](consent.md)**

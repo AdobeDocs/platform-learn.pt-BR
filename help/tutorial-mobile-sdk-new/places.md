@@ -1,15 +1,15 @@
 ---
-title: Usar serviços de localização geográfica
-description: Saiba como usar o serviço de localização geográfica do Places no aplicativo móvel.
+title: Usar serviços de geolocalização
+description: Saiba como usar o serviço de geolocalização do Places no aplicativo móvel.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 3%
 
 ---
 
-# Usar serviços de localização geográfica
+# Usar serviços de geolocalização
 
 Saiba como usar o serviço de localização geográfica no aplicativo.
 
@@ -33,24 +33,6 @@ Nesta lição, você
 * Valide a configuração no Assurance.
 * Atualize seu aplicativo para registrar a extensão Places.
 * Implemente o rastreamento de localização geográfica do serviço Places em seu aplicativo.
-
-
-## Pré-requisitos
-
-* O aplicativo foi criado e executado com êxito com os SDKs adequados instalados e configurados.
-
-
-## Objetivos de aprendizagem
-
-Nesta lição, você
-
-* Atualize sua configuração do Edge para o Gerenciamento de decisão.
-* Atualize sua propriedade de tag com a extensão Journey Optimizer - Decisioning.
-* Atualize seu esquema para capturar eventos de apresentação.
-* Valide a configuração no Assurance.
-* Crie uma decisão de oferta com base em ofertas no Journey Optimizer - Gestão de decisões.
-* Atualize seu aplicativo para registrar a extensão Otimizer.
-* Implemente ofertas da Gestão de decisões no seu aplicativo.
 
 
 ## Configuração

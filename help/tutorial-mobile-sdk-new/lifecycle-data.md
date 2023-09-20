@@ -2,9 +2,9 @@
 title: Coletar dados do ciclo de vida
 description: Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -124,4 +124,4 @@ Você deve ver **[!UICONTROL Fechamento do aplicativo (plano de fundo)]** e **[!
 >
 >Agora você configurou o aplicativo para enviar eventos de estado do aplicativo (primeiro plano, segundo plano) para a Rede de borda da Adobe Experience Platform e todos os serviços definidos no fluxo de dados.<br>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Próximo: **[Rastrear eventos](events.md)**
+Próximo: **[Rastrear dados do evento](events.md)**

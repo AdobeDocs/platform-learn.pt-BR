@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 3%
@@ -403,5 +403,5 @@ Agora você deve ter todas as ferramentas para lidar com notificações por push
 >
 >Agora você ativou o aplicativo para notificação por push usando o Journey Optimizer e a extensão Journey Optimizer para o SDK móvel do Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Próximo: **[Mensagens no aplicativo com Journey Optimizer](journey-optimizer-inapp.md)**
+Próximo: **[Criar e enviar mensagens no aplicativo](journey-optimizer-inapp.md)**
 

@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1546'
 ht-degree: 4%
 
 ---
@@ -247,4 +247,4 @@ Agora você deve ter todas as ferramentas para começar a adicionar mensagens no
 >
 >Você habilitou o aplicativo para mensagens no aplicativo e adicionou uma campanha de mensagens no aplicativo usando o Journey Optimizer e a extensão Journey Optimizer para o SDK móvel do Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Próximo: **[Exibir ofertas com o Journey Optimizer](journey-optimizer-offers.md)**
+Próximo: **[Criar e exibir ofertas](journey-optimizer-offers.md)**

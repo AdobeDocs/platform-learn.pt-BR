@@ -3,9 +3,9 @@ title: Coletar dados de identidade
 description: Saiba como coletar dados de identidade em um aplicativo móvel.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -171,4 +171,4 @@ Depois de concluir as etapas no [lição do Experience Platform](platform.md), v
 >
 >Agora você configurou o aplicativo para atualizar identidades na Rede de borda e (quando configurado) com o Adobe Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Próximo: **[Perfil](profile.md)**
+Próximo: **[Coletar dados de perfil](profile.md)**

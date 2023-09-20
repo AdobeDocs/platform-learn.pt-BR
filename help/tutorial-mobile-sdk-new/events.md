@@ -1,15 +1,15 @@
 ---
-title: Coletar dados do evento
-description: Saiba como coletar dados do evento em um aplicativo móvel.
+title: Rastrear dados do evento
+description: Saiba como rastrear dados do evento em um aplicativo móvel.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
+source-wordcount: '1310'
 ht-degree: 1%
 
 ---
 
-# Coletar dados do evento
+# Rastrear dados do evento
 
 Saiba como rastrear eventos em um aplicativo móvel.
 
@@ -380,4 +380,4 @@ Agora que você coletou os eventos e os enviou para a Platform Edge Network, ele
 >
 >Agora você configurou o aplicativo para rastrear eventos de comércio, interação com o aplicativo e rastreamento de tela para a Rede de borda da Adobe Experience Platform e todos os serviços definidos no fluxo de dados.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Próximo: **[WebViews](web-views.md)**
+Próximo: **[Manipular WebViews](web-views.md)**

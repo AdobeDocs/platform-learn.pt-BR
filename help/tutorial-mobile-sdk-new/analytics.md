@@ -1,11 +1,11 @@
 ---
-title: Coletar e mapear dados do Analytics
+title: Mapear dados para dados do Analytics
 description: Saiba como coletar e mapear dados para o Adobe Analytics em um aplicativo móvel.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 2%
 
 ---
@@ -230,4 +230,4 @@ Additional information about processing rules and context data can be found [her
 >
 >Você configurou o aplicativo para mapear os objetos XDM da Experience Edge para variáveis do Adobe Analytics, habilitando o serviço da Adobe Analytics no fluxo de dados e usando regras de processamento, quando aplicável.<br/> Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Próximo: **[Experience Platform](platform.md)**
+Próximo: **[Enviar dados para o Experience Platform](platform.md)**
