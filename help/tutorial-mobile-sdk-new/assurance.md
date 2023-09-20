@@ -3,14 +3,14 @@ title: Configurar o Assurance
 description: Saiba como implementar a extensão Assurance em um aplicativo móvel.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '776'
 ht-degree: 9%
 
 ---
 
-# Assurance
+# Configurar o Assurance
 
 Saiba como configurar o Adobe Experience Platform Assurance em um aplicativo móvel.
 
@@ -40,7 +40,7 @@ Confirme se sua organização tem acesso ao Assurance. Você, como usuário, dev
 
 Para além do quadro [Instalação do SDK](install-sdks.md), que você concluiu na lição anterior, o iOS também exige a seguinte adição para iniciar a sessão do Assurance para seu aplicativo.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** no navegador de projetos do Xcode.
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** no navegador de projetos do Xcode.
 
 1. Adicione o código a seguir a `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`:
 
@@ -61,18 +61,23 @@ Mais informações podem ser encontradas [aqui](https://developer.adobe.com/clie
 Antes de executar o aplicativo pela primeira vez no Xcode, atualize a assinatura.
 
 1. Abra o projeto no Xcode.
-1. Selecionar **[!UICONTROL Luma]** no Navegador de projetos.
-1. Selecione o **[!UICONTROL Luma]** público-alvo.
+1. Selecionar **[!DNL Luma]** no Navegador de projetos.
+1. Selecione o **[!DNL Luma]** público-alvo.
 1. Selecione o **Assinatura e recursos** guia.
 1. Configurar **[!UICONTROL Gerenciar assinatura automaticamente]**, **[!UICONTROL Equipe]**, e **[!UICONTROL Identificador do pacote]** ou use seus detalhes específicos de provisionamento de desenvolvimento do Apple.
+
+   >[!IMPORTANT]
+   >
+   >Selecione um identificador de pacote exclusivo diferente do padrão já inserido no projeto Start, pois cada identificador de pacote precisa ser exclusivo.
+
 
    ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png){zoom=&quot;yes&quot;}
 
 ## Configurar um URL de base
 
 1. Vá para o seu projeto no Xcode.
-1. Selecionar **[!UICONTROL Luma]** no Navegador de projetos.
-1. Selecione o **[!UICONTROL Luma]** público-alvo.
+1. Selecionar **[!DNL Luma]** no Navegador de projetos.
+1. Selecione o **[!DNL Luma]** público-alvo.
 1. Selecione o **Informações** guia.
 1. Para adicionar um URL base, role para baixo até **Tipos de URL** e selecione o **+** botão.
 1. Definir **Identificador** ao Identificador de pacote que você configurou em [Assinatura](#signing) (por exemplo `com.adobe.luma.tutorial.swiftui`) e defina um **Esquemas de URL**, por exemplo `lumatutorialswiftui`.
@@ -90,7 +95,7 @@ O Assurance funciona abrindo um URL, seja via navegador ou código QR. Esse URL 
 1. Selecionar **[!UICONTROL Assurance]** no painel esquerdo da interface da Coleção de dados.
 1. Selecionar **[!UICONTROL Criar sessão]**.
 1. Selecionar **[!UICONTROL Início]**.
-1. Forneça um **[!UICONTROL Nome da sessão]** como `Luma Mobile App Session` e a variável **[!UICONTROL URL base]**, que são os Esquemas de URL inseridos no Xcode, seguidos por `://`. Por exemplo: `lumatutorialswiftui://`.
+1. Forneça um **[!UICONTROL Nome da sessão]** como `Luma Mobile App Session` e a variável **[!UICONTROL URL base]**, que são os Esquemas de URL inseridos no Xcode, seguidos por `://` Por exemplo: `lumatutorialswiftui://`
 1. Selecione **[!UICONTROL Próximo]**.
    ![criação de sessão do assurance](assets/assurance-create-session.png)
 1. No **[!UICONTROL Criar nova sessão]** caixa de diálogo modal:

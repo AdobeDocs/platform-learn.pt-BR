@@ -1,16 +1,16 @@
 ---
-title: Consentimento
+title: Implementar consentimento
 description: Saiba como implementar o consentimento em um aplicativo móvel.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# Consentimento
+# Implementar consentimento
 
 Saiba como implementar o consentimento em um aplicativo móvel.
 
@@ -36,7 +36,7 @@ Para começar a coletar dados, você deve obter o consentimento do usuário. Nes
 
 1. Você só deseja perguntar ao usuário uma vez. Portanto, você deseja combinar o consentimento do SDK móvel com as autorizações necessárias para rastreamento usando a interface do Apple [Estrutura de transparência de rastreamento de aplicativos](https://developer.apple.com/documentation/apptrackingtransparency). Neste aplicativo, você presume que, quando o usuário autoriza o rastreamento, o usuário também consente em coletar eventos.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode.
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode.
 
    Adicione esse código à `updateConsent` função.
 
@@ -48,7 +48,7 @@ Para começar a coletar dados, você deve obter o consentimento do usuário. Nes
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Geral]** > **[!UICONTROL ExibiçãoDeAviso]** no navegador Project do Xcode, que é a exibição mostrada após instalar ou reinstalar o aplicativo e iniciar o aplicativo pela primeira vez. Apple O usuário é solicitado a autorizar o rastreamento de acordo com as [Estrutura de transparência de rastreamento de aplicativos](https://developer.apple.com/documentation/apptrackingtransparency). Se o usuário autorizar, você também atualizará o consentimento.
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ExibiçãoDeAviso]** no navegador Project do Xcode, que é a exibição mostrada após instalar ou reinstalar o aplicativo e iniciar o aplicativo pela primeira vez. Apple O usuário é solicitado a autorizar o rastreamento de acordo com as [Estrutura de transparência de rastreamento de aplicativos](https://developer.apple.com/documentation/apptrackingtransparency). Se o usuário autorizar, você também atualizará o consentimento.
 
    Adicione o seguinte código à `ATTrackingManager.requestTrackingAuthorization { status in` encerramento.
 
@@ -68,7 +68,7 @@ Para começar a coletar dados, você deve obter o consentimento do usuário. Nes
 
 A extensão móvel de consentimento suprime/pendente automaticamente/permite rastreamento com base no valor de consentimento atual. Você também pode acessar o estado de consentimento atual sozinho:
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** no navegador Project do Xcode.
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** no navegador Project do Xcode.
 
    Adicione o seguinte código à `getConsents` função:
 
@@ -82,7 +82,7 @@ A extensão móvel de consentimento suprime/pendente automaticamente/permite ras
    }
    ```
 
-2. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Geral]** > **[!UICONTROL HomeView]** no navegador Project do Xcode.
+2. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** no navegador Project do Xcode.
 
    Adicione o seguinte código à `.task` modificador:
 

@@ -1,15 +1,15 @@
 ---
-title: Dados do ciclo de vida
+title: Coletar dados do ciclo de vida
 description: Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
 
-# Dados do ciclo de vida
+# Coletar dados do ciclo de vida
 
 Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Agora você pode atualizar seu projeto para registrar os eventos de ciclo de vida.
 
-1. Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** no navegador do Projeto Xcode.
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** no navegador do Projeto Xcode.
 
 1. Quando iniciado, se o aplicativo sair do estado em segundo plano, o iOS pode chamar o `sceneWillEnterForeground:` delegar método e é aqui que você deseja acionar um evento de início de ciclo de vida. Adicionar este código a `func sceneWillEnterForeground(_ scene: UIScene)`:
 

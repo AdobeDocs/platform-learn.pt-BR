@@ -3,9 +3,9 @@ title: Configurar uma propriedade de tag
 description: Saiba como configurar uma propriedade de tag no [!UICONTROL Coleta de dados] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 8%
 
 ---
@@ -110,9 +110,9 @@ Nesta lição, você vai:
 
 1. Use o ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Pesquisar]** para localizar e instalar o **Rede de borda Adobe Experience Platform** extensão.
 
-   1. Entrada **[!UICONTROL Datastreams]** selecione o **[!UICONTROL Sequência de dados]** que você criou na [etapa anterior](create-datastream.md) para cada ambiente, por exemplo **[!UICONTROL Aplicativo móvel Luma]**.
+   1. Entrada **[!UICONTROL Datastreams]** selecione o **[!UICONTROL Sequência de dados]** que você criou na [etapa anterior](create-datastream.md) para cada ambiente, por exemplo **[!DNL Luma Mobile App]**.
 
-   1. Especifique a **[!UICONTROL Domínio da rede de borda]** no prazo de **[!UICONTROL Configuração de domínio]**. O domínio da Rede de borda é o nome da sua organização, seguido por `data.adobedc.net`, por exemplo `techmarketingdemos.data.adobedc.net`.
+   1. Se ainda não estiver preenchido, especifique o **[!UICONTROL Domínio da rede de borda]** no prazo de **[!UICONTROL Configuração de domínio]**. O domínio da Rede de borda é o nome da sua organização, seguido por `data.adobedc.net`, por exemplo `techmarketingdemos.data.adobedc.net`.
 
    1. No **[!UICONTROL Salvar na biblioteca]** selecione **[!UICONTROL Salvar na biblioteca e criar]**.
 

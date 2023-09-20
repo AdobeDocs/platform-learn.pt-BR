@@ -3,9 +3,9 @@ title: Criar um esquema do XDM
 description: Saiba como criar um esquema XDM para eventos de aplicativos móveis.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1482'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,7 @@ Para obter mais informações sobre o modelo de composição do schema, incluind
 
 >[!TIP]
 >
->Se você estiver familiarizado com a Referência de design de solução (SDRs) do Analytics, poderá considerar um esquema como um SDR mais robusto.
+>Se você estiver familiarizado com a Referência de design de solução (SDRs) do Analytics, poderá considerar um esquema como um SDR mais robusto. Consulte [Criação e manutenção de um documento de Referência de design de solução (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=pt-BR) para obter mais informações.
 
 ## Pré-requisitos
 
@@ -214,7 +214,7 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 
 1. No painel direito, forneça uma **[!UICONTROL Nome do campo]** de `appInformation`, um **[!UICONTROL Nome de exibição]** de `App Information`, e uma **[!UICONTROL Tipo]** de `App Information`.
 
-1. Selecionar **[!UICONTROL Interações do aplicativo]** do **[!UICONTROL Tipo]** que é o tipo de dados personalizado que você criou no exercício anterior.
+1. Selecionar **[!UICONTROL Interações do aplicativo]** do **[!UICONTROL Grupo de campos]** para atribuir os campos ao novo grupo de campos.
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
@@ -224,7 +224,7 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 
 >[!NOTE]
 >
->Os grupos de campos personalizados são sempre colocados em seu identificador de Experience Cloud Org. Então `_techmarketingdemos`, usado nas capturas de tela, é substituído pelo valor único de sua organização.
+>Os grupos de campos personalizados são sempre colocados em seu identificador de Experience Cloud Org.
 
 
 >[!SUCCESS]

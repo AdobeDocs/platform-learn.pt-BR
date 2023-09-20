@@ -4,9 +4,9 @@ description: Saiba como enviar dados para o Adobe Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 5%
 
 ---
@@ -33,6 +33,7 @@ Se você não tiver acesso, poderá [ignorar esta lição](install-sdks.md).
 Nesta lição, você vai:
 
 * Crie um conjunto de dados de Experience Platform.
+* Configure seu fluxo de dados para encaminhar dados para o Experience Platform.
 * Validar dados no conjunto de dados.
 * Ative seu esquema e conjunto de dados para o Perfil de cliente em tempo real.
 * Validar dados no Perfil do cliente em tempo real.
@@ -54,7 +55,7 @@ Todos os dados assimilados com sucesso na Adobe Experience Platform são mantido
    ![início: conjunto de dados](assets/dataset-create.png)
 
 1. Procure pelo esquema. por exemplo, usando `Luma Mobile` no campo de pesquisa.
-1. Selecione seu esquema, por exemplo **[!UICONTROL Esquema de evento do aplicativo móvel Luma]**.
+1. Selecione seu esquema, por exemplo **[!DNL Luma Mobile App Event Schema]**.
 
 1. Selecione **[!UICONTROL Próximo]**.
    ![configuração do conjunto de dados](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Todos os dados assimilados com sucesso na Adobe Experience Platform são mantido
 1. Selecione **[!UICONTROL Concluir]**.
    ![término do conjunto de dados](assets/dataset-finish.png)
 
-## Atualizar a sequência de dados
 
-Depois de criar seu conjunto de dados, verifique se [atualizar o fluxo de dados](create-datastream.md#adobe-experience-platform) para adicionar o Adobe Experience Platform. Essa atualização garante que os dados fluam para a Platform.
+## Adicionar serviço de sequência de dados do Adobe Experience Platform
+
+Para enviar seus dados XDM da rede de borda para a Adobe Experience Platform, configure o serviço da Adobe Experience Platform para o fluxo de dados configurado como parte da [Criar um fluxo de dados](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>Você só pode ativar o serviço Adobe Experience Platform ao criar um conjunto de dados de evento.
+
+1. Na interface da Coleção de dados, selecione **[!UICONTROL Datastreams]** e sua sequência de dados.
+
+1. Em seguida, selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar serviço]**.
+
+1. Selecione **[!UICONTROL Adobe Experience Platform]** na lista [!UICONTROL Serviço].
+
+1. Habilitar o serviço alternando **[!UICONTROL Ativado]** em.
+
+1. Selecione o **[!UICONTROL Conjunto de dados do evento]** que você criou anteriormente, por exemplo **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Selecione **[!UICONTROL Salvar]**.
+
+   ![Adicionar o Adobe Experience Platform como um serviço de sequência de dados](assets/datastream-service-aep.png)
+1. A configuração final deve ser semelhante a esta.
+
+   ![configurações de sequência de dados](assets/datastream-settings.png)
+
 
 ## Validar dados no conjunto de dados
 
@@ -89,7 +113,7 @@ O Perfil do cliente em tempo real do Experience Platform permite criar uma visua
 
 ### Ativar o esquema
 
-1. Abra o esquema, por exemplo **[!UICONTROL Esquema de evento do aplicativo móvel Luma]**.
+1. Abra o esquema, por exemplo **[!DNL Luma Mobile App Event Schema]**.
 1. Ativar **[!UICONTROL Perfil]**.
 1. Selecionar **[!UICONTROL Os dados deste esquema conterão uma identidade principal no campo identityMap.]** na caixa de diálogo.
 1. **[!UICONTROL Salvar]** o schema.
@@ -98,7 +122,7 @@ O Perfil do cliente em tempo real do Experience Platform permite criar uma visua
 
 ### Ativar o conjunto de dados
 
-1. Abra seu conjunto de dados, por exemplo **[!UICONTROL Conjunto de dados de evento do aplicativo móvel Luma]**.
+1. Abra seu conjunto de dados, por exemplo **[!DNL Luma Mobile App Event Dataset]**.
 1. Ativar **[!UICONTROL Perfil]**.
 
    ![ativar o conjunto de dados para o perfil](assets/platform-profile-dataset.png)

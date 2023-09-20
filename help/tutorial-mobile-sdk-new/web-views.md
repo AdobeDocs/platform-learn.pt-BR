@@ -3,9 +3,9 @@ title: Manipular WebViews
 description: Saiba como lidar com a coleta de dados com WebViews em um aplicativo móvel.
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ A extensão de identidade de borda da AEP usada no WebView coleta a ECID atual e
 
 ## Implementação
 
-Navegue até **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Visualizações]** > **[!UICONTROL Informações]** > **[!UICONTROL TermsOfServiceSheet]** e localize o `func loadUrl()` na caixa `final class SwiftUIWebViewModel: ObservableObject` classe. Adicione a seguinte chamada para lidar com a exibição da Web:
+Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]** e localize o `func loadUrl()` na caixa `final class SwiftUIWebViewModel: ObservableObject` classe. Adicione a seguinte chamada para lidar com a exibição da Web:
 
 ```swift
 // Handle web view
@@ -63,12 +63,12 @@ A variável [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe
 
 Você pode saber mais sobre o `Identity.getUrlVariables` API no [Guia de referência de API de extensão de identidade para rede de borda](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validação
+## Validar 
 
 Para executar o código:
 
 1. Vá para a **[!UICONTROL Configurações]** no aplicativo
-1. Toque no **[!UICONTROL Exibir...]** botão para mostrar a **[!UICONTROL Termos de uso]**.
+1. Toque no **[!DNL View...]** botão para mostrar a **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ Para executar o código:
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+Infelizmente, a depuração da sessão da Web é limitada; você não pode usar o Adobe Experience Platform Debugger no seu navegador, por exemplo, para continuar a depurar a sessão do webview.
 
 >[!NOTE]
 >
