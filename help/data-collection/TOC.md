@@ -5,10 +5,10 @@ user-guide-description: Vídeos e tutoriais explicativos para torná-lo um usuá
 solution: Data Collection,Experience Platform
 doc-type: video
 role: Developer, Data Engineer
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 40%
+source-wordcount: '242'
+ht-degree: 39%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 40%
    + [Configurar um fluxo de dados](event-forwarding/set-up-a-datastream.md)
    + [Adicionar uma extensão](event-forwarding/add-an-extension.md)
    + [Criar uma regra](event-forwarding/create-a-rule.md)
+   + [Workflows de início rápido](event-forwarding/quick-start-workflows.md)
    + [Monitorar o encaminhamento de eventos](event-forwarding/monitor.md)
    + [Mover tags do lado do cliente](event-forwarding/consider-moving-tags.md)
    + [Configurar conversões aprimoradas do Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
