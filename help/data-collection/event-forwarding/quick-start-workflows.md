@@ -6,10 +6,10 @@ level: Intermediate
 doc-type: Technical Video
 last-substantial-update: 2023-09-21T00:00:00Z
 jira: KT-13957
-source-git-commit: 3e01d4789c73686dde50ee65a46e705095fcb7fa
+source-git-commit: fd9ef1bfeea139dbb83d00f6ad4538524a7d00bc
 workflow-type: tm+mt
-source-wordcount: '103'
-ht-degree: 11%
+source-wordcount: '99'
+ht-degree: 12%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 11%
 
 Este vídeo orienta os usuários sobre dois casos de uso avançados para aproveitar ao máximo os fluxos de trabalho de início rápido do Facebook/Meta na Coleção de dados:
 
-1. Uso do workflow para criar contas de referência. 
-1. Ser capaz de copiar o novo conteúdo em uma implementação existente.
+1. Uso do workflow para criar objetos de referência. 
+1. Copiar os objetos de referência em uma implementação existente.
 
 Para obter mais informações sobre o fluxo de trabalho de início rápido da API de meta conversões, visite [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=pt-BR#quick-start).
 
