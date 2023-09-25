@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 3%
@@ -153,7 +153,7 @@ Para que seu aplicativo funcione com a Journey Optimizer, é necessário atualiz
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### Adicionar recursos de notificação por push ao seu aplicativo
+## Adicionar recursos de notificação por push ao seu aplicativo
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Agora você deve ter uma extensão de notificação por push adicionada ao seu a
 ![Extensão de notificações por push](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### Implementar o Journey Optimizer no aplicativo
+## Implementar o Journey Optimizer no aplicativo
 
 Conforme discutido nas lições anteriores, a instalação de uma extensão de tag móvel fornece apenas a configuração. Em seguida, você deve instalar e registrar o SDK de mensagens. Se essas etapas não estiverem claras, revise o [Instalar SDKs](install-sdks.md) seção.
 
@@ -205,7 +205,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    ]
    ```
 
-### Registrar token de dispositivo para notificações por push
+## Registrar token de dispositivo para notificações por push
 
 1. Adicione o [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API para o `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` função.
 
@@ -318,7 +318,7 @@ A próxima etapa é criar a jornada que aciona o envio da notificação por push
    ![Jornada concluída](assets/ajo-journey-finished.png)
 
 
-## Acionamento da notificação por push
+## Acionar a notificação por push
 
 Você tem todos os ingredientes em vigor para enviar uma notificação por push. O que resta é como acionar essa notificação por push. Em essência, é o mesmo que você viu antes: basta enviar um evento de experiência com a carga útil adequada (como em [Eventos](events.md)).
 
