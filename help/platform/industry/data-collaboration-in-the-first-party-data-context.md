@@ -8,10 +8,10 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 27%
+ht-degree: 34%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 27%
 
 Cumprindo a promessa da experiência, com acesso a menos dados. Seja você um anunciante, editor ou uma agência, este webinário ajudará a desbloquear as oportunidades de colaboração de dados em um futuro sem cookies de terceiros.
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
 ## Principais aprendizados:
 
@@ -33,4 +33,4 @@ Cumprindo a promessa da experiência, com acesso a menos dados. Seja você um an
 
 [Audience Marketplace para compradores de dados](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
-[Destinos com base em pessoas](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=en)
+[Destinos com base em pessoas](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=pt-BR)

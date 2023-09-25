@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2707
 thumbnail: 28167.jpg
 exl-id: 9a4fbd95-74e3-4e10-8663-8fafefe324a8
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 72%
@@ -18,5 +18,4 @@ ht-degree: 72%
 
 Saiba como rotular campos de dados como identidades, assimilar dados de identidade e verificar os dados no gráfico privado do serviço de identidade da Adobe Experience Platform. Para obter mais informações, visite o [documentação do serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
 
-
->[!VIDEO](https://video.tv.adobe.com/v/28167?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on)

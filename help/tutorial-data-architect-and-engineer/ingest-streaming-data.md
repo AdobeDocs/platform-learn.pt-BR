@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '3344'
 ht-degree: 2%
@@ -31,9 +31,9 @@ Há duas tarefas principais que devem ser concluídas na interface da Coleção 
 
 Antes de começar os exercícios, assista a estes dois pequenos vídeos para saber mais sobre a assimilação de dados por transmissão e o SDK da Web:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ O Experience Platform Debugger é uma extensão disponível para os navegadores 
 
 Se você nunca usou o Debugger antes (e este é diferente do Adobe Experience Cloud Debugger mais antigo), assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ### Abra o site Luma
 
@@ -332,7 +332,7 @@ Você também pode confirmar que o novo perfil está aparecendo:
 1. Agora vá para **[!UICONTROL Elementos de dados]** na navegação à esquerda
 1. Selecione o **[!UICONTROL Criar novo elemento de dados]** botão
 
-   ![Criar um novo elemento de dados](assets/websdk-property-createNewDataElement.png)
+   ![Crie um novo elemento de dados](assets/websdk-property-createNewDataElement.png)
 1. Como a variável **[!UICONTROL Nome]**, insira `Page Name`
 1. Como a variável **[!UICONTROL Tipo de elemento de dados]**, selecione `JavaScript Variable`
 1. Como a variável **[!UICONTROL Nome da variável JavaScript]**, insira `digitalData.page.pageInfo.pageName`
@@ -352,7 +352,7 @@ Agora mapearemos nosso nome de página para o SDK da Web.
 
 No **[!UICONTROL Elementos de dados]** página:
 
-1. Criar um novo elemento de dados
+1. Crie um novo elemento de dados
 1. Como a variável **[!UICONTROL Nome]**, insira `XDM Object`
 1. Como a variável **[!UICONTROL Extensão]**, selecione `Adobe Experience Platform Web SDK`
 1. Como a variável **[!UICONTROL Tipo de elemento de dados]**, selecione `XDM object`

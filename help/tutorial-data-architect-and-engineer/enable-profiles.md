@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1103'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Há importantes [medidas de proteção para dados de perfil do cliente em tempo 
 **Arquitetos de dados** precisará ativar o Perfil de cliente em tempo real fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre o Perfil do cliente em tempo real:
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Permissões necessárias
 

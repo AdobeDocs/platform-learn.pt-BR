@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3139
 thumbnail: 29795.jpg
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 10%
@@ -16,8 +16,6 @@ ht-degree: 10%
 
 # Visão geral do Serviço de consulta
 
-Saiba como o Serviço de consulta na Adobe Experience Platform pode ajudar você a entender o comportamento do cliente e gerar insights de impacto.
+Saiba como o Serviço de consulta na Adobe Experience Platform pode ajudar você a entender o comportamento do cliente e gerar insights de impacto. Para obter mais informações, visite o [Documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
-
-Para obter mais informações, visite o [Documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)

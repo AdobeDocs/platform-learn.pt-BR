@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10246
 thumbnail: 342211.jpeg
 exl-id: bf3c7297-ea60-45fc-a784-5c576e7935cf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 45%
@@ -16,8 +16,6 @@ ht-degree: 45%
 
 # Configuração da conexão de Correspondência de segmentos
 
-Neste vídeo, saiba como configurar a conexão entre você e um parceiro para compartilhar públicos. Depois de configurar esse recurso de correspondência de segmentos, você poderá compartilhar dados com seu parceiro de dados.
+Neste vídeo, saiba como configurar a conexão entre você e um parceiro para compartilhar públicos. Depois de configurar esse recurso de correspondência de segmentos, você poderá compartilhar dados com seu parceiro de dados. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?quality=12&learn=on)
-
-Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=pt-BR).
+>[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on)

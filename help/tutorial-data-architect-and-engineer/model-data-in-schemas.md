@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 5%
@@ -43,7 +43,7 @@ Key terms:
 **Arquitetos de dados** precisará criar esquemas fora deste tutorial, mas **Engenheiros de dados** O funcionará em conjunto com os esquemas criados pelo Arquiteto de dados.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre esquemas e o Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >

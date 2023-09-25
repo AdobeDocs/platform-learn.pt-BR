@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 73%
@@ -16,8 +16,6 @@ ht-degree: 73%
 
 # Visão geral do Perfil do cliente em tempo real
 
-Este vídeo explica como a Adobe Experience Platform monta e atualiza Perfis de clientes em tempo real e como você pode acessar e usar esses perfis.
+Este vídeo explica como a Adobe Experience Platform monta e atualiza Perfis de clientes em tempo real e como você pode acessar e usar esses perfis. Para obter mais informações, visite o [Documentação de Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
-
-Para obter mais informações, visite o [Documentação de Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR).
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)

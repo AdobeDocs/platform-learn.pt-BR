@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Depois de ter Perfis de clientes em tempo real, você pode criar segmentos de in
 **Arquitetos de dados** O precisará criar segmentos fora deste tutorial e apoiar seus colegas nesta tarefa.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre a criação de segmentos:
->[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
 
 
 ## Permissões necessárias
@@ -115,7 +115,7 @@ Clique em **[!UICONTROL Segmentos]** no painel de navegação esquerdo, vamos an
 
 ## Recursos adicionais
 
-* [Documentação do Serviço de segmentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
+* [Documentação do Serviço de segmentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=pt-BR)
 * [Referência da API do serviço de segmentação](https://www.adobe.io/experience-platform-apis/references/segmentation/)
 
 Há mais a segmentar, especialmente com a ativação de segmentos. Esses tópicos serão abordados em outro tutorial.

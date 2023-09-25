@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-10249
 thumbnail: 342378.jpeg
 exl-id: 0ea3c648-7366-462a-b6ed-dc911186e1f6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 79%
@@ -16,8 +16,6 @@ ht-degree: 79%
 
 # Insights de pré-compartilhamento da correspondência de segmentos
 
-Ao decidir sobre um parceiro estratégico para compartilhar dados, é importante saber como seus clientes se relacionam, para que você saiba o quão útil será esse compartilhamento de dados. A correspondência de segmentos permite que você veja a sobreposição com possíveis parceiros de dados antes de compartilhar quaisquer dados.
+Ao decidir sobre um parceiro estratégico para compartilhar dados, é importante saber como seus clientes se relacionam, para que você saiba o quão útil será esse compartilhamento de dados. A correspondência de segmentos permite que você veja a sobreposição com possíveis parceiros de dados antes de compartilhar quaisquer dados. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?quality=12&learn=on)
-
-Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=pt-BR).
+>[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on)

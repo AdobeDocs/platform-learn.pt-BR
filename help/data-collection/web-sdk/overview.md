@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 41%
@@ -20,7 +20,7 @@ ht-degree: 41%
 
 Saiba como o SDK da Web da Adobe Experience Platform e a rede de borda permitem que os clientes usem uma biblioteca JavaScript e um beacon para enviar dados para aplicativos da Adobe e destinos de terceiros.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >

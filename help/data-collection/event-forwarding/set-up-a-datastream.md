@@ -6,16 +6,17 @@ level: Intermediate
 jira: KT-6421
 thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 17%
 
 ---
 
 # Configurar uma sequência de dados para o encaminhamento de eventos
 
-Saiba como configurar um fluxo de dados para o encaminhamento de eventos.
+Saiba como configurar um fluxo de dados para o encaminhamento de eventos. Para obter mais informações, visite [a documentação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+
 
 >[!NOTE]
 >
@@ -25,6 +26,4 @@ Saiba como configurar um fluxo de dados para o encaminhamento de eventos.
 > * O Platform launch Server Side agora é **[!DNL event forwarding]**
 > * As configurações de borda agora são **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?quality=12&learn=on)
-
-Para obter mais informações, visite [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on)

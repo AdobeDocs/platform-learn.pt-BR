@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 38%
@@ -16,8 +16,6 @@ ht-degree: 38%
 
 # Visão geral das fontes
 
-Saiba como usar fontes ou conectores de origem na interface do Adobe Experience Platform. As fontes são integrações facilmente configuráveis que permitem assimilar dados de aplicativos próprios, de terceiros e do Adobe no Perfil do cliente em tempo real da plataforma e no data lake.
+Saiba como usar fontes ou conectores de origem na interface do Adobe Experience Platform. As fontes são integrações facilmente configuráveis que permitem assimilar dados de aplicativos próprios, de terceiros e do Adobe no Perfil do cliente em tempo real da plataforma e no data lake. Para obter mais informações, consulte [documentação de origens](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?quality=12&learn=on)
-
-Para obter mais informações, consulte [documentação de origens](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR).
+>[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on)

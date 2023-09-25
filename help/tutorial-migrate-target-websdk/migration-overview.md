@@ -1,7 +1,8 @@
 ---
-title: Visão geral da migração | Migrar o Target da at.js 2.x para o SDK da Web
-description: Saiba mais sobre as principais diferenças entre o at.js e o SDK da Web da plataforma e como planejar seu esforço de migração.
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+title: Visão geral da migração | Migração do Target da at.js 2.x para o SDK da Web
+description: Saiba mais sobre as principais diferenças entre a at.js e o SDK da Web da plataforma e como planejar seu esforço de migração.
+exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 1%
@@ -10,55 +11,55 @@ ht-degree: 1%
 
 # Visão geral da migração do at.js para o SDK da Web da plataforma
 
-O nível de esforço para migrar da at.js para o SDK da Web da plataforma depende da complexidade de sua implementação atual e dos recursos de produto usados.
+O nível de esforço para migrar do at.js para o SDK da Web da plataforma depende da complexidade da implementação atual e dos recursos de produto usados.
 
-Não importa o quão simples ou complexa sua implementação seja, é importante entender totalmente seu estado atual antes de migrar. Este guia ajuda você a detalhar os componentes da implementação atual e desenvolver um plano gerenciável para migrar cada parte.
+Independentemente da simplicidade ou complexidade de sua implementação, é importante entender totalmente seu estado atual antes de migrar. Este guia ajuda a detalhar os componentes da implementação atual e desenvolver um plano gerenciável para migrar cada parte.
 
 O processo de migração envolve as seguintes etapas principais:
 
-1. Avaliar sua implementação atual e determinar uma abordagem de migração
-1. Configure os componentes iniciais para se conectar à rede de borda da Adobe Experience Platform
-1. Atualize a implementação fundamental para substituir at.js pelo SDK da Web da plataforma
-1. Aprimore a implementação do SDK da Web da plataforma para seus casos de uso específicos. Isso pode envolver a transmissão de parâmetros adicionais, contabilização de alterações de visualização de aplicativo de página única (SPA), uso de tokens de resposta e muito mais.
+1. Avalie sua implementação atual e determine uma abordagem de migração
+1. Configurar os componentes iniciais para se conectar à Rede de borda da Adobe Experience Platform
+1. Atualize a implementação básica para substituir a at.js pelo SDK da Web da plataforma
+1. Aprimore a implementação do SDK da Web da plataforma para seus casos de uso específicos. Isso pode envolver a transmissão de parâmetros adicionais, a contabilização de alterações de exibição de aplicativo de página única (SPA), o uso de tokens de resposta e muito mais.
 1. Atualizar objetos na interface do Target, como scripts de perfil, atividades e definições de público-alvo
 1. Valide a implementação final antes de fazer o switch no ambiente de produção
 
-## Principais diferenças entre o at.js e o SDK da Web da plataforma
+## Principais diferenças entre a at.js e o SDK da Web da plataforma
 
-Antes de iniciar o processo de migração, é importante entender as diferenças entre o at.js e o SDK da Web da plataforma.
+Antes de iniciar o processo de migração, é importante entender as diferenças entre a at.js e o SDK da Web da plataforma.
 
 ### Diferenças operacionais
 
-O SDK da Web da plataforma combina a funcionalidade de vários aplicativos Adobe em uma única biblioteca. Essa abordagem unificada significa que você deve considerar as responsabilidades e os processos entre equipes para garantir uma implementação saudável.
+O SDK da Web da Platform combina a funcionalidade de vários aplicativos Adobe em uma única biblioteca. Essa abordagem unificada significa que você deve considerar as responsabilidades e os processos entre equipes para garantir uma implementação saudável.
 
-|  | Target at.js 2.x | SDK da Web da Platform |
+| | at.js 2.x do Target | SDK da Web da Platform |
 |---|---|---|
-| Propriedade | A biblioteca at.js é independente de outras bibliotecas de aplicativos. As personalizações e a propriedade dessas bibliotecas diferentes podem se alinhar a equipes diferentes na organização. | A biblioteca do SDK da Web da plataforma e os dados transmitidos são unificados para todos os aplicativos do Adobe. A propriedade da implementação do SDK da Web da plataforma deve representar os participantes de todos os aplicativos downstream. |
-| Manutenção | Equipes separadas podem trabalhar nos aprimoramentos de implementação para cada aplicativo do Adobe, como Target e Analytics. | Idealmente, uma única equipe deve ser responsável por aprimoramentos que afetam a implementação do SDK da Web da plataforma. |
-| Processo | As alterações em uma implementação do Target podem seguir um processo que tem uma cadência diferente ou requisitos de controle de qualidade em comparação a outros aplicativos como o Analytics. | As alterações em uma implementação do SDK da Web da plataforma devem considerar todos os aplicativos downstream e o processo de QA e publicação deve ser ajustado adequadamente. |
-| Colaboração | Os dados específicos do Target podem ser transmitidos diretamente nas chamadas do Target. Dependendo da implementação, pode haver chamadas adicionais do Target. Isso não tem impacto direto nos dados do Adobe Analytics e a coordenação com a equipe de análise não é tão crítica. | Os dados transmitidos nas chamadas do SDK da Web da plataforma podem ser encaminhados para o Target e o Analytics. A coordenação entre equipes é necessária para garantir que as alterações não tenham um impacto negativo em um aplicativo específico. |
+| Propriedade | A biblioteca da at.js é independente de outras bibliotecas de aplicativos. As personalizações e a propriedade dessas bibliotecas diferentes podem se alinhar a equipes diferentes na organização. | A biblioteca de SDK da Web da Platform e os dados transmitidos são unificados para todos os aplicativos Adobe. A propriedade da implementação do SDK da Web da Platform deve representar as partes interessadas de todos os aplicativos downstream. |
+| Manutenção | Equipes separadas podem trabalhar nos aprimoramentos de implementação para cada aplicativo do Adobe, como Target e Analytics. | Idealmente, uma única equipe deve ser responsável pelos aprimoramentos que afetam a implementação do SDK da Web da plataforma. |
+| Processo | As alterações em uma implementação do Target podem seguir um processo que tem uma cadência ou requisitos de controle de qualidade diferentes em comparação a outros aplicativos, como o Analytics. | As alterações na implementação do SDK da Web de uma plataforma devem considerar todos os aplicativos downstream e o processo de controle de qualidade e publicação deve ser ajustado de acordo. |
+| Colaboração | Os dados específicos do Target podem ser transmitidos diretamente nas chamadas do Target. Dependendo da implementação, pode haver chamadas adicionais do Target. Isso não tem impacto direto nos dados do Adobe Analytics e a coordenação com a equipe de análise não é tão crítica. | Os dados transmitidos em chamadas de SDK da Web da plataforma podem ser encaminhados para o Target e para o Analytics. É necessária coordenação entre as equipes para garantir que as alterações não afetem negativamente um aplicativo específico. |
 
 ### Diferenças técnicas
 
-O SDK da Web da plataforma não é uma evolução da biblioteca at.js do Target. É uma abordagem nova e unificada para implementar todos os aplicativos Adobe para o canal da Web. Há várias diferenças técnicas a serem observadas.
+O SDK da Web da Platform não é uma evolução da biblioteca at.js do Target. É uma abordagem nova e unificada para implementar todos os aplicativos Adobe para o canal da Web. Há várias diferenças técnicas que devem ser consideradas.
 
-|  | Target at.js 2.x | SDK da Web da Platform |
+| | at.js 2.x do Target | SDK da Web da Platform |
 |---|---|---|
-| Funcionalidade da biblioteca | Funcionalidade do Target fornecida pela at.js. Integrações com outros aplicativos fornecidos por Visitor.js e AppMeasurement.js | Funcionalidade para todos os aplicativos Adobe fornecidos por uma única biblioteca do SDK da Web da plataforma: alloy.js |
-| Desempenho | A at.js é uma das várias bibliotecas que devem ser carregadas para a integração correta entre aplicativos. Isso resulta em menos do que o tempo de carregamento ideal. | O SDK da Web da plataforma é uma única biblioteca leve que remove a necessidade de várias bibliotecas específicas do aplicativo, resultando em melhor desempenho de carregamento de página. |
-| Solicitações | Chamadas separadas para cada aplicativo do Adobe. As chamadas do Target são em grande parte independentes de outras chamadas de rede. | Uma única chamada para todos os aplicativos Adobe. As alterações nos dados transmitidos nessas chamadas podem afetar vários aplicativos downstream. |
-| Pedido de carregamento | A integração adequada com outros aplicativos Adobe requer uma ordem de carregamento específica de bibliotecas e chamadas de rede. | A integração adequada não depende da combinação de dados de chamadas de rede específicas de aplicativos diferentes, portanto, a ordem de carregamento não é uma preocupação. |
-| Rede Edge | Usa a Rede de borda da Adobe Experience Cloud (tt.omtrdc.net), opcionalmente com um CNAME específico para o Target. | Usa a Rede de borda da Adobe Experience Platform (edge.adobedc.net), opcionalmente com um único CNAME. |
-| Terminologia básica | Nomeação da at.js: <br> - `mbox` <br> - `pageLoad` event (mbox global) <br> - `offer` | Equivalente ao SDK da Web da plataforma: <br> - `decisionScope` <br> - `__view__` decisionScope <br> - `proposition` |
+| Funcionalidade de biblioteca | A funcionalidade do Target fornecida pela at.js. Integrações com outros aplicativos fornecidos pelo Visitor.js e AppMeasurement.js | Funcionalidade para todos os aplicativos Adobe fornecidos por uma única biblioteca de SDK da Web da plataforma: alloy.js |
+| Desempenho | A at.js é uma das várias bibliotecas que devem ser carregadas para a integração adequada entre os aplicativos. Isso resulta em tempo de carregamento inferior ao ideal. | O SDK da Web da Platform é uma única biblioteca leve que elimina a necessidade de várias bibliotecas específicas do aplicativo, resultando em um melhor desempenho do carregamento da página. |
+| Solicitações | Chamadas separadas para cada aplicativo Adobe. As chamadas do Target são em grande parte independentes das outras chamadas de rede. | Uma única chamada para todos os aplicativos Adobe. As alterações nos dados transmitidos nessas chamadas podem afetar vários aplicativos downstream. |
+| Pedido de carregamento | A integração adequada com outros aplicativos Adobe requer uma ordem de carregamento específica de bibliotecas e chamadas de rede. | A integração adequada não depende da compilação de dados de chamadas de rede diferentes específicas do aplicativo, portanto, a ordem de carregamento não é uma preocupação. |
+| Rede de borda | Usa a Rede de borda da Adobe Experience Cloud (tt.omtrdc.net), opcionalmente com um CNAME específico do Target. | Usa a Rede de borda da Adobe Experience Platform (edge.adobedc.net), opcionalmente com um único CNAME. |
+| Terminologia básica | Nomeação do at.js: <br> - `mbox` <br> - `pageLoad` evento (mbox global) <br> - `offer` | Equivalente ao SDK da Web da plataforma: <br> - `decisionScope` <br> - `__view__` decisionScope <br> - `proposition` |
 
-### Vídeo de visão geral
+### Vídeo da visão geral
 
-O vídeo a seguir fornece uma visão geral do SDK da Web da Adobe Experience Platform e da Rede de borda da Adobe Experience Platform.
+O vídeo a seguir fornece uma visão geral do Adobe Experience Platform Web SDK e da Adobe Experience Platform Edge Network.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on)
 
-Agora que você entende as diferenças de alto nível entre o at.js e o SDK da Web da plataforma, é possível [planejar a migração](plan-migration.md).
+Agora que você entende as diferenças de alto nível entre a at.js e o SDK da Web da plataforma, é possível [planejar a migração](plan-migration.md).
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que informações críticas estão faltando neste guia, entre em contato conosco [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

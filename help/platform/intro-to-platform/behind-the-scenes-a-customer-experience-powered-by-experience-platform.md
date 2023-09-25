@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-4340
 thumbnail: 28144.jpg
 exl-id: 5ae7707d-799d-4979-9e53-b882e74324ad
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -17,5 +17,5 @@ ht-degree: 0%
 
 No vídeo anterior, vimos como uma marca de exemplo, a Luma, conseguiu criar uma experiência do cliente avançada, recompensadora e relevante. Este vídeo mostra como o Adobe Experience Platform é usado para fazer essa jornada.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on)
 

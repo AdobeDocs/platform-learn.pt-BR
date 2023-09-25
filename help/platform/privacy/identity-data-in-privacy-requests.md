@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-7717
 thumbnail: 336076.png
 exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 9%
@@ -16,8 +16,6 @@ ht-degree: 9%
 
 # Auditoria de dados pessoais armazenados
 
-Saiba mais sobre os principais conceitos e decisões relacionados à auditoria de dados pessoais e preparação de acordo com as necessidades de privacidade da empresa.
+Saiba mais sobre os principais conceitos e decisões relacionados à auditoria de dados pessoais e preparação de acordo com as necessidades de privacidade da empresa. Para obter mais informações, visite o [Documentação do Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?quality=12&learn=on)
-
-Para obter mais informações, visite o [Documentação do Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR)
+>[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on)

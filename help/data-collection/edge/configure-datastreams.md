@@ -6,17 +6,15 @@ level: Beginner
 jira: KT-9762
 thumbnail: 340825.jpeg
 exl-id: 890a2129-1c17-43d1-9568-ce8025470306
-source-git-commit: d4d5433c2a975d5ac0011d7bdc7f590bf8146cc6
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '38'
-ht-degree: 81%
+source-wordcount: '39'
+ht-degree: 79%
 
 ---
 
 # Configurar datastreams
 
-Saiba como criar e configurar datastreams para implementações de SDK da Web e móvel.
+Saiba como criar e configurar datastreams para implementações de SDK da Web e móvel. Para obter mais informações, visite [a documentação dos fluxos de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/340825?quality=12&learn=on)
-
-Para obter mais informações, visite [a documentação](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR).
+>[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on)
