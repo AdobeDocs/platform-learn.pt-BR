@@ -1,6 +1,6 @@
 ---
-title: Visão geral do suporte a dados de parceiros na Real-Time CDP
-description: Saiba como a  [!DNL Real-Time Customer Data Platform]  é compatível com marketing de funil completo usando dados de parceiros para enriquecer dados primários e conheça casos de uso de prospecção, à medida que os cookies de terceiros seguem sendo descontinuados. 
+title: Visão geral do suporte a dados de parceiros no Real-Time CDP
+description: Saiba como [!DNL Real-Time Customer Data Platform] O é compatível com marketing de funil completo usando dados de parceiros para enriquecimento de dados primários e casos de uso de prospecção, pois os cookies de terceiros continuam sendo descontinuados. 
 feature: Integrations
 topic: Integrations
 role: User
@@ -8,15 +8,15 @@ level: Beginner
 jira: KT-13805
 thumbnail: 3422855.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 7c471d9da851c594c33e00473a04996fd247bb84
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 90%
+source-wordcount: '58'
+ht-degree: 0%
 
 ---
 
 # Visão geral do suporte a dados de parceiros no [!DNL Real-Time CDP]
 
-Saiba como a [!DNL Real-Time Customer Data Platform] é compatível com marketing de funil completo usando dados de parceiros para enriquecer dados primários e conheça casos de uso de prospecção, à medida que os cookies de terceiros seguem sendo descontinuados. 
+Saiba como [!DNL Real-Time Customer Data Platform] O é compatível com marketing de funil completo usando dados de parceiros para enriquecimento de dados primários e casos de uso de prospecção, pois os cookies de terceiros continuam sendo descontinuados. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)
