@@ -5,10 +5,10 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
+source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 34%
+source-wordcount: '998'
+ht-degree: 35%
 
 ---
 
@@ -38,7 +38,8 @@ ht-degree: 34%
 + [Importar dados de amostra para a Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administração {#admin}
    + [Usar alertas](/help/platform/admin/use-alerts.md)
-   + [Usar sandboxes](/help/platform/admin/use-sandboxes.md)
+   + [Usar sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [Copiar objetos entre sandboxes](/help/platform/admin/use-sandboxes.md)
    + [Configurar o controle de acesso baseado em atributos](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [Gerenciar perfis de produto](/help/platform/admin/managing-product-profiles.md)
@@ -113,7 +114,7 @@ ht-degree: 34%
    + [Conexão com destinos](/help/platform/destinations/connecting-to-destinations.md)
    + [Criar destinos e ativar dados](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Ativar perfis e segmentos para um destino](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
-   + [Configurar um destino de exportação do conjunto de dados](/help/platform/destinations/configure-dataset-export-destination.md)
+   + [Configurar um destino de exportação para o conjunto de dados](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integrar ao Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configurar o destino do Azure Blob](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Configurar o destino do Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
