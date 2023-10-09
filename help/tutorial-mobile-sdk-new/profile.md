@@ -2,9 +2,10 @@
 title: Coletar dados de perfil
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -64,7 +65,7 @@ Seria útil para direcionamento e/ou personalização no aplicativo saber rapida
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ A documentação adicional pode ser encontrada [aqui](https://developer.adobe.co
 
 ## Validar com garantia
 
-1. Revise o [instruções de configuração](assurance.md) seção.
-1. Instale o aplicativo.
-1. Inicie o aplicativo usando o URL gerado pelo Assurance.
+1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
 1. Execute o aplicativo para fazer logon e interagir com um produto.
 
    1. Mova o ícone do Assurance para a esquerda.
@@ -132,4 +131,4 @@ A documentação adicional pode ser encontrada [aqui](https://developer.adobe.co
 >
 >Agora você configurou o aplicativo para atualizar atributos de perfis na Rede de borda e (quando configurado) com o Adobe Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Próximo: **[Usar serviços de geolocalização](places.md)**
+Próximo: **[Usar locais](places.md)**

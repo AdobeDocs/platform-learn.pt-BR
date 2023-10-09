@@ -2,9 +2,10 @@
 title: Coletar dados do ciclo de vida
 description: Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -66,13 +67,11 @@ Agora você pode atualizar seu projeto para registrar os eventos de ciclo de vid
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## Validar com garantia
 
-1. Revise o [instruções de configuração](assurance.md) e conecte seu simulador ou dispositivo ao Assurance.
-1. Inicie o aplicativo.
+1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
 1. Envie o aplicativo para o plano de fundo. Verificar **[!UICONTROL LifecyclePause]** eventos na interface do usuário do Assurance.
 1. Coloque o aplicativo em primeiro plano. Verificar **[!UICONTROL LifecycleResume]** eventos na interface do usuário do Assurance.
    ![validar ciclo de vida](assets/lifecycle-lifecycle-assurance.png)
@@ -82,7 +81,7 @@ Agora você pode atualizar seu projeto para registrar os eventos de ciclo de vid
 
 O exercício anterior despacha os eventos em primeiro e segundo plano para o SDK do Adobe Experience Platform Mobile. Para encaminhar esses eventos à Rede de borda da Platform:
 
-1. Selecionar **[!UICONTROL Regras]** na interface da Coleção de dados.
+1. Selecionar **[!UICONTROL Regras]** na propriedade Tags.
    ![Criar regra](assets/rule-create.png)
 1. Selecionar **[!UICONTROL Build inicial]** como a biblioteca a ser usada.
 1. Selecione **[!UICONTROL Criar nova regra]**.

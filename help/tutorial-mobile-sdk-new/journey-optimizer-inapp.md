@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 4%
 
 ---
@@ -136,9 +137,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
 ## Validar configuração com o Assurance
 
-1. Revise o [instruções de configuração](assurance.md) seção.
-1. Instale o aplicativo no dispositivo físico ou no simulador.
-1. Inicie o aplicativo usando o URL gerado pelo Assurance.
+1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
 1. Na interface do usuário do Assurance, selecione **[!UICONTROL Configurar]**.
    ![configurar clique](assets/push-validate-config.png)
 1. Selecione o ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) botão ao lado de **[!UICONTROL Mensagens no aplicativo]**.
@@ -159,7 +158,8 @@ Para criar sua própria mensagem no aplicativo, você deve definir uma campanha 
 * eventos do ciclo de vida do aplicativo, como iniciar, instalar, atualizar, fechar ou falhar,
 * eventos de geolocalização, como entrar ou sair de um ponto de interesse.
 
-Neste tutorial, você usará as APIs do Mobile Core genéricas e independentes de extensão (consulte [APIs genéricas principais para dispositivos móveis](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar o rastreamento de eventos de telas de usuários, ações e dados de PII. Os eventos gerados por essas APIs são publicados no hub de eventos do SDK e estão disponíveis para uso por extensões. O hub de eventos do SDK fornece a estrutura de dados principal vinculada a todas as extensões do SDK do AEP Mobile, mantendo uma lista de extensões registradas e módulos internos, uma lista de ouvintes de eventos registrados e um banco de dados de estado compartilhado.
+Neste tutorial, você usará as APIs do Mobile Core genéricas e independentes de extensão (consulte [APIs genéricas principais para dispositivos móveis](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)) para facilitar o rastreamento de eventos de telas de usuários, ações e dados de PII. Os eventos gerados por essas APIs são publicados no hub de eventos do SDK e estão disponíveis para uso por extensões. O hub de eventos do SDK fornece a estrutura de dados principal vinculada a todas as extensões do SDK da plataforma móvel, mantendo uma lista de extensões registradas e módulos internos, uma lista de ouvintes de eventos registrados e um banco de dados de estado compartilhado.
+
 O hub de eventos do SDK publica e recebe dados de eventos de extensões registradas para simplificar as integrações com o Adobe e soluções de terceiros. Por exemplo, quando a extensão Otimize é instalada, todas as solicitações e interações com o mecanismo de oferta da Journey Optimizer - Gestão de decisões são tratadas pelo hub de eventos.
 
 1. Na interface do Journey Optimizer, selecione **[!UICONTROL Campanhas]** do painel esquerdo.
@@ -219,7 +219,7 @@ Você tem todos os ingredientes em vigor para enviar uma mensagem no aplicativo.
 
 ## Validar usando seu aplicativo
 
-1. Abra o aplicativo em um dispositivo ou no simulador.
+1. Recrie e execute o aplicativo no simulador ou em um dispositivo físico do Xcode, usando ![Reproduzir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Vá para a **[!UICONTROL Configurações]** guia.
 
@@ -232,6 +232,7 @@ Você tem todos os ingredientes em vigor para enviar uma mensagem no aplicativo.
 
 Você pode validar as mensagens no aplicativo na interface do usuário do Assurance.
 
+1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
 1. Selecionar **[!UICONTROL Mensagens no aplicativo]**.
 1. Selecionar **[!UICONTROL Lista de Eventos]**.
 1. Selecione um **[!UICONTROL Exibir mensagem]** entrada.

@@ -5,14 +5,15 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2618'
 ht-degree: 3%
 
 ---
 
-# Criar e exibir ofertas
+# Criar e exibir ofertas com o Gerenciamento de decisão
 
 Saiba como mostrar ofertas da Gestão de decisões da Journey Optimizer em seus aplicativos móveis com o SDK móvel do Experience Platform.
 
@@ -101,6 +102,27 @@ Para validar sua configuração no Assurance:
 1. Selecione **[!UICONTROL Salvar]**.
 1. Selecionar **[!UICONTROL Validar configuração]** no painel esquerdo. A configuração da sequência de dados e a configuração do SDK em seu aplicativo são validadas.
    ![Validação da decisão do AJO](assets/ajo-decisioning-validation.png)
+
+
+## Criar posicionamento
+
+Antes de realmente criar ofertas, é necessário definir como e onde essas ofertas podem ser colocadas no aplicativo móvel. Na Gestão de decisões, você define disposições para essa finalidade e uma disposição para o canal móvel que oferece suporte a uma carga JSON:
+
+1. Na interface do Journey Optimizer, selecione ![Componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Componentes]** de **[!UICONTROL GERENCIAMENTO DE DECISÃO]** no painel esquerdo.
+
+1. Selecionar **[!UICONTROL Posicionamentos]** na barra superior.
+
+1. Se nenhum posicionamento com o nome **[!UICONTROL JSON móvel]**,  **[!UICONTROL Dispositivo móvel]** as **[!UICONTROL Tipo de canal]** e **[!UICONTROL JSON]** as **[!UICONTROL Tipo de conteúdo]** estiver listado, é necessário criar uma disposição. Caso contrário, continue para [Criar ofertas](#create-offers).
+
+Para criar a disposição JSON para dispositivos móveis:
+
+1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Criar posicionamento.
+
+   1. no **[!UICONTROL Detalhes]** , insira `Mobile JSON` como o **[!UICONTROL Nome]**, selecione **[!UICONTROL Dispositivo móvel]** de **[!UICONTROL Tipo de canal]** e **[!UICONTROL JSON]** de **[!UICONTROL Tipo de conteúdo]**.
+   1. Selecionar **[!UICONTROL Salvar]** para salvar o posicionamento.
+
+   ![Criar posicionamento](assets/ajo-create-placement.png)
+
 
 
 ## Criar ofertas
@@ -354,7 +376,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
 ## Validar usando o aplicativo
 
-1. Abra o aplicativo em um dispositivo ou no simulador.
+1. Recrie e execute o aplicativo no simulador ou em um dispositivo físico do Xcode, usando ![Reproduzir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Vá até a guia **[!DNL Personalisation]**.
 
@@ -371,7 +393,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
 Para validar a implementação das ofertas no Assurance:
 
-1. Vá para a interface do usuário do Assurance.
+1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
 1. Selecionar **[!UICONTROL Configurar]** no painel esquerdo e selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado de **[!UICONTROL Revisar e simular]** abaixo **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Selecione **[!UICONTROL Salvar]**.
 1. Selecionar **[!UICONTROL Revisar e simular]** no painel esquerdo. A configuração da sequência de dados é validada e a configuração do SDK em seu aplicativo.

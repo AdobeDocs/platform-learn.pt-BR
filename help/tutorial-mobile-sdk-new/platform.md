@@ -4,9 +4,10 @@ description: Saiba como enviar dados para o Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 5%
 
 ---
@@ -94,11 +95,11 @@ Para enviar seus dados XDM da rede de borda para a Adobe Experience Platform, co
 
 ## Validar dados no conjunto de dados
 
-Agora que você criou um conjunto de dados e atualizou seu fluxo de dados para enviar dados para o Experience Platform, todos os dados XDM enviados para a Rede de borda da Platform são encaminhados para a Platform e chegam ao conjunto de dados.
+Agora que você criou um conjunto de dados e atualizou seu fluxo de dados para enviar dados para o Experience Platform, todos os dados XDM enviados para a Rede de borda da plataforma são encaminhados para a Platform e chegam ao conjunto de dados.
 
 Abra o aplicativo e navegue até as telas onde você está rastreando eventos. Você também pode acionar medições de ciclo de vida.
 
-Abra o conjunto de dados na interface da Platform. Você deve ver os dados que chegam em lotes ao conjunto de dados
+Abra o conjunto de dados na interface da Platform. Você deve ver os dados que chegam em lotes ao conjunto de dados. Normalmente, os dados chegam em microlotes a cada 15 minutos, portanto, talvez você não veja os dados imediatamente.
 
 ![validar lotes de conjuntos de dados da plataforma de aterrissagem de dados](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Os profissionais de marketing e análise podem fazer muito mais com dados captur
 >
 >Agora você configurou o aplicativo para enviar dados não apenas para a Rede de borda, mas também para a Adobe Experience Platform.<br>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Próximo: **[Criar e notificações por push](journey-optimizer-push.md)**
+Próximo: **[Criar e enviar notificações por push](journey-optimizer-push.md)**

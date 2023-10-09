@@ -3,13 +3,13 @@ title: Configurar uma sequência de dados
 description: Saiba como criar um fluxo de dados no Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 10%
+source-wordcount: '459'
+ht-degree: 9%
 
 ---
-
 
 # Criar um fluxo de dados
 
@@ -55,45 +55,49 @@ As sequências de dados podem ser criadas no [!UICONTROL Coleta de dados] usando
 
 ## Adicionar serviços
 
-Quando você estiver passando pelo (opcional) [Analytics](analytics.md) e [Experience Platform](platform.md) lições neste tutorial, você está adicionando serviços à sua sequência de dados para garantir que, quando o SDK do Platform Mobile enviar dados para a rede de borda, a sequência de dados encaminhe esses dados para os serviços configurados.
+Quando você estiver passando pelo (opcional) [Analytics](analytics.md) e [Experience Platform](platform.md) lições neste tutorial, você está adicionando serviços à sua sequência de dados para garantir que, quando o SDK do Platform Mobile enviar dados para a rede de borda, a sequência de dados encaminhará esses dados para os serviços configurados.
+
+<!--
 
 ### Adobe Analytics
 
-1. Selecione **[!UICONTROL Adicionar serviço]**.
+1. Select **[!UICONTROL Add Service]**.
 
-1. Adicionar **[!UICONTROL Adobe Analytics]** do [!UICONTROL Serviço] lista,
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. Informe o nome do site de relatório que deseja usar no **[!UICONTROL ID do conjunto de relatórios]**.
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. Habilitar o serviço alternando **[!UICONTROL Ativado]** em.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Selecione **[!UICONTROL Salvar]**.
+1. Select **[!UICONTROL Save]**.
 
-   ![Adicionar o Adobe Analytics como serviço de sequência de dados](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
 
-Talvez você também queira ativar o serviço Adobe Experience Platform.
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->Você só pode ativar o serviço Adobe Experience Platform ao criar um conjunto de dados de evento. Se você ainda não tiver um conjunto de dados de evento criado, siga as instruções [aqui](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. Clique em ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar serviço]** para adicionar outro serviço.
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. Selecione **[!UICONTROL Adobe Experience Platform]** na lista [!UICONTROL Serviço].
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. Habilitar o serviço alternando **[!UICONTROL Ativado]** em.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Selecione o **[!UICONTROL Conjunto de dados do evento]** que você criou como parte da [Criar um conjunto de dados](platform.md#create-a-dataset) instruções, por exemplo **Conjunto de dados de evento do aplicativo móvel Luma**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. Selecione **[!UICONTROL Salvar]**.
+1. Select **[!UICONTROL Save]**.
 
-   ![Adicionar o Adobe Experience Platform como um serviço de sequência de dados](assets/datastream-service-aep.png)
-1. A configuração final deve ser semelhante a esta.
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![configurações de sequência de dados](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]

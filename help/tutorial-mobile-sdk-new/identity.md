@@ -3,9 +3,10 @@ title: Coletar dados de identidade
 description: Saiba como coletar dados de identidade em um aplicativo móvel.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '860'
 ht-degree: 5%
 
 ---
@@ -103,7 +104,7 @@ Você deseja atualizar a identidade padrão (email) e a identidade personalizada
 1. Navegue até **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** no navegador do Projeto Xcode e localize o código a ser executado ao selecionar o **[!UICONTROL Logon]** botão. Adicione o seguinte código:
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ Você deseja atualizar a identidade padrão (email) e a identidade personalizada
 
 Você pode usar o [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API para remover a identidade do mapa de identidade armazenado do lado do cliente. A extensão Identity interrompe o envio do identificador para a Rede de borda. O uso dessa API não remove o identificador do gráfico de identidade do lado do servidor. Consulte [Visualização de gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) para obter mais informações sobre gráficos de identidade.
 
-1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e adicione o seguinte código à `func removeIdentities(emailAddress: String, crmId: String)` função:
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e adicione o seguinte código à `func removeIdentities(emailAddress: String, crmId: String)` função:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ Você pode usar o [`Identity.removeIdentity`](https://developer.adobe.com/client
 
 ## Validar com garantia
 
-1. Revise o [instruções de configuração](assurance.md) e conecte seu simulador ou dispositivo ao Assurance.
+1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
 1. No aplicativo Luma
-   1. Selecione o **[!UICONTROL Início]** guia.
+   1. Selecione o **[!UICONTROL Início]** e mova o ícone Assurance para a esquerda.
    1. Selecione o <img src="assets/login.png" width="15" /> ícone na parte superior direita.
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ Depois de concluir as etapas no [lição do Experience Platform](platform.md), v
 1. Você vê a **[!UICONTROL Identidades]** listado.
 
    ![validar gráfico de identidade](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>Não há código no aplicativo para redefinir a ECID, o que significa que você só pode redefinir a ECID (e efetivamente criar um novo perfil com uma nova ECID no dispositivo) por meio de uma desinstalação e uma reinstalação do aplicativo. Para implementar a redefinição de identificadores, consulte a [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) e [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) Chamadas de API. Entretanto, esteja ciente de que, ao usar um identificador de notificação por push (consulte [Enviando notificações por push](journey-optimizer-push.md)), esse identificador se torna outro identificador de perfil &quot;adesivo&quot; no dispositivo.
 
 
 >[!SUCCESS]

@@ -1,19 +1,20 @@
 ---
-title: Usar serviços de geolocalização
+title: Usar locais
 description: Saiba como usar o serviço de geolocalização do Places no aplicativo móvel.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 3%
 
 ---
 
-# Usar serviços de geolocalização
+# Usar locais
 
-Saiba como usar o serviço de localização geográfica no aplicativo.
+Saiba como usar o serviço de geolocalização do Places em seu aplicativo.
 
-O Serviço de locais de coleta de dados da Adobe Experience Platform é um serviço de localização geográfica que permite que aplicativos móveis com detecção de localização compreendam o contexto de localização. O serviço está usando interfaces SDK avançadas e fáceis de usar acompanhadas por um banco de dados flexível de pontos de interesse (POIs).
+O Serviço de locais de coleta de dados da Adobe Experience Platform é um serviço de geolocalização que permite que aplicativos móveis com percepção de localização compreendam o contexto de localização. O serviço está usando interfaces SDK avançadas e fáceis de usar acompanhadas por um banco de dados flexível de pontos de interesse (POIs).
 
 ## Pré-requisitos
 
@@ -81,7 +82,7 @@ Você define alguns pontos de interesse no serviço Places.
    1. Selecionar **[!UICONTROL Salvar na biblioteca e criar]** de **[!UICONTROL Salvar na biblioteca]**.
       ![Instalar a extensão Places](assets/places-install-extension.png).
 
-1. A biblioteca foi recriada.
+1. Sua biblioteca foi recriada.
 
 
 ### Verifique seu esquema
@@ -96,7 +97,7 @@ Verifique se o esquema, conforme definido em [Criar esquema](create-schema.md)O,
    ![Locais do esquema](assets/schema-places-context.png).
 
 
-### Atualizar a tag
+### Atualizar a propriedade da tag
 
 A extensão Places para tags fornece funcionalidade para monitorar eventos de geolocalização e permite acionar ações com base nesses eventos. Você pode usar essa funcionalidade para minimizar a codificação da API que deve ser implementada no aplicativo.
 
@@ -132,7 +133,7 @@ Primeiro, você cria vários elementos de dados.
 
 Em seguida, você definirá regras para trabalhar com esses elementos de dados.
 
-1. Na propriedade da tag. selecionar **[!UICONTROL Regras]** do painel esquerdo.
+1. Na propriedade da tag, selecione **[!UICONTROL Regras]** do painel esquerdo.
 1. Selecionar **[!UICONTROL Adicionar regra]**.
 1. No **[!UICONTROL Criar regra]** insira um nome para a regra, por exemplo `POI - Entry`.
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo **[!UICONTROL EVENTOS]**.
@@ -215,6 +216,10 @@ Vamos criar outra regra
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado da **[!UICONTROL Núcleo móvel - Anexar dados]** ação.
    1. Selecionar **[!UICONTROL Rede de borda Adobe Experience Platform]** do **[!UICONTROL Extensão]** e selecione **[!UICONTROL Encaminhar evento para a rede de borda]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
+
+1. Para salvar a regra, selecione **[!UICONTROL Salvar na biblioteca]**.
+
+   ![Regra](assets/tags-rule-poi-exit.png)
 
 
 Para garantir que todas as alterações em sua tag sejam publicadas
@@ -302,18 +307,15 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    }
    ```
 
-Está além do assunto desta lição explicar os detalhes sobre a implementação do gerenciador de local no iOS.
-
-
 ## Validar usando seu aplicativo
 
 1. Abra o aplicativo em um dispositivo ou no simulador.
 
 1. Vá para a **[!UICONTROL Localização]** guia.
 
-1. Mova o mapa para garantir que o círculo azul no meio esteja em cima de um dos POIs, por exemplo, Londres.
+1. Mova (arraste) o mapa para garantir que o círculo central azul esteja acima de um dos POIs, por exemplo, Londres.
 
-1. Toque <img src="assets/geobutton.png" width="20" /> repetidamente até que você veja a categoria e o nome na parte inferior direita.
+1. Toque <img src="assets/geobutton.png" width="20" /> até que você veja a categoria e o nome aparecerem no rótulo no local vermelho com o pino.
 
 1. Toque no rótulo do POI, que abre o **[!UICONTROL POI próximo]** planilha.
 
