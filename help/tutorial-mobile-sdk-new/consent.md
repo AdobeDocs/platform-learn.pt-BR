@@ -4,10 +4,10 @@ description: Saiba como implementar o consentimento em um aplicativo móvel.
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 1%
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -96,28 +96,10 @@ No exemplo acima, você está simplesmente registrando o status de consentimento
 
 ## Validar com garantia
 
+1. Exclua o aplicativo do seu dispositivo ou simulador, pois queremos redefinir e inicializar corretamente o rastreamento e o consentimento.
 1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
-1. Se você adicionou o código acima corretamente, será solicitado a fornecer consentimento.
-
-   Selecionar **[!UICONTROL Continuar...]** e selecione **[!UICONTROL Permitir]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. Você deve ver um **[!UICONTROL Obter resposta de consentimento]** evento na interface do usuário do Assurance.
+1. Ao mover no aplicativo de **[!UICONTROL Início]** tela para **[!UICONTROL Produtos]** e voltar para **[!UICONTROL Início]** , você deverá ver um **[!UICONTROL Obter resposta de consentimento]** evento na interface do usuário do Assurance.
    ![validar consentimento](assets/consent-update.png)
-
-
-## Redefinir consentimento
-
-Se desejar redefinir o consentimento:
-
-1. Ir para **[!UICONTROL Configurações]** no aplicativo.
-
-1. Selecionar **[!UICONTROL Configurações do aplicativo...]** Isso abrirá as configurações do aplicativo Luma no aplicativo Configurações do iOS.
-
-1. Alternar **[!UICONTROL Permitir rastreamento]** desativado.
-
 
 
 >[!SUCCESS]

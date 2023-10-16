@@ -3,9 +3,9 @@ title: Usar locais
 description: Saiba como usar o serviço de geolocalização do Places no aplicativo móvel.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 3%
 
 ---
@@ -239,7 +239,10 @@ Para validar sua configuração no Assurance:
 1. Se ainda não estiver disponível no painel à esquerda, selecione **[!UICONTROL Configurar]** no painel esquerdo e selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado de **[!UICONTROL Eventos]** e **[!UICONTROL Mapear e simular]** abaixo **[!UICONTROL SERVIÇO DO PLACES]**.
 1. Selecione **[!UICONTROL Salvar]**.
 1. Selecionar **[!UICONTROL Mapear e simular]** no painel esquerdo.
-1. Selecione um dos POIs definidos no serviço Places e, na janela pop-up, selecione ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simular Evento de Entrada]**.
+1. Mova o mapa para um local de um de seus POIs.
+1. Selecionar ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simular POIs de carga.  Seu POI é identificado usando um círculo e um pino.
+1. Selecione seu POI.
+1. Na janela pop-up, selecione ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simular Evento de Entrada]**.
    ![Simular Evento de Entrada](assets/places-simulate.png)
 1. Selecionar **[!UICONTROL Eventos]** no painel esquerdo, e você deverá ver os eventos que simulou.
    ![Validação da decisão do AJO](assets/places-events.png)
@@ -258,7 +261,9 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** no navegador do Projeto Xcode.
 1. Assegurar `AEPPlaces` faz parte da lista de importações.
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. Assegurar `Places.self` O faz parte da matriz de extensões que você está registrando.
 

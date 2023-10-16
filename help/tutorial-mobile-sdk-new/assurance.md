@@ -4,9 +4,9 @@ description: Saiba como implementar a extensão Assurance em um aplicativo móve
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '976'
 ht-degree: 7%
 
 ---
@@ -57,22 +57,28 @@ Para além do quadro [Instalação do SDK](install-sdks.md), que você concluiu 
 
 Mais informações podem ser encontradas [aqui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-## Assinatura
+<!-- not initially required
 
-Antes de executar o aplicativo pela primeira vez no Xcode, atualize a assinatura.
+## Signing
 
-1. Abra o projeto no Xcode.
-1. Selecionar **[!DNL Luma]** no Navegador de projetos.
-1. Selecione o **[!DNL Luma]** público-alvo.
-1. Selecione o **Assinatura e recursos** guia.
-1. Configurar **[!UICONTROL Gerenciar assinatura automaticamente]**, **[!UICONTROL Equipe]**, e **[!UICONTROL Identificador do pacote]** ou use seus detalhes específicos de provisionamento de desenvolvimento do Apple.
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
 
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
    >[!IMPORTANT]
    >
-   >Certifique-se de usar um _único_ identificador do pacote e substitua o `Luma` identificador de pacote, pois cada identificador de pacote precisa ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`. A versão Concluída deste tutorial, por exemplo, usa `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png){zoom=&quot;yes&quot;}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## Configurar um URL de base
 
@@ -81,9 +87,13 @@ Antes de executar o aplicativo pela primeira vez no Xcode, atualize a assinatura
 1. Selecione o **[!DNL Luma]** público-alvo.
 1. Selecione o **Informações** guia.
 1. Para adicionar um URL base, role para baixo até **Tipos de URL** e selecione o **+** botão.
-1. Definir **Identificador** ao Identificador de pacote que você configurou em [Assinatura](#signing) (por exemplo `com.adobe.luma.tutorial.swiftui`) e defina um **Esquemas de URL**, por exemplo `lumatutorialswiftui`.
+1. Definir **Identificador** ao Identificador de pacote de sua escolha e defina um **Esquemas de URL** de sua escolha.
 
    ![url de garantia](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote precisa ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`.<br/>Da mesma forma, use um esquema de URL exclusivo e substitua o já fornecido `lumatutorialswiftui` com seu esquema de URL exclusivo.
 
 Para saber mais sobre Esquemas de URL no iOS, revise [Documentação da Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -92,8 +102,31 @@ O Assurance funciona abrindo um URL, seja via navegador ou código QR. Esse URL 
 
 ## Conectar-se a uma sessão
 
-1. Recrie e execute o aplicativo no simulador ou em um dispositivo físico do Xcode, usando ![Reproduzir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. Selecionar **[!UICONTROL Assurance]** no painel esquerdo da interface da Coleção de dados.
+No Xcode:
+
+1. Crie ou recrie e execute o aplicativo no simulador ou em um dispositivo físico do Xcode, usando ![Reproduzir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. No **[!UICONTROL Permitir que o &quot;Aplicativo Luma&quot; use sua localização]** , selecione **[!UICONTROL Permitir ao usar o aplicativo]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. No **[!UICONTROL &quot;Aplicativo Luma&quot; Deseja Enviar Notificações]** , selecione **[!UICONTROL Permitir]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. Selecionar **[!UICONTROL Continuar...]** para permitir que o aplicativo acompanhe sua atividade.
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. No **[!UICONTROL Permitir que o &quot;Aplicativo Luma&quot; rastreie sua atividade no aplicativo e nos sites de outras empresas]** , selecione **[!UICONTROL Permitir]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+No navegador:
+
+1. Vá para a interface da Coleção de dados.
+1. Selecionar **[!UICONTROL Assurance]** do painel esquerdo.
 1. Selecionar **[!UICONTROL Criar sessão]**.
 1. Selecionar **[!UICONTROL Início]**.
 1. Forneça um **[!UICONTROL Nome da sessão]** como `Luma Mobile App Session` e a variável **[!UICONTROL URL base]**, que são os Esquemas de URL inseridos no Xcode, seguidos por `://` Por exemplo: `lumatutorialswiftui://`

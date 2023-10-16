@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 3%
+source-wordcount: '2734'
+ht-degree: 2%
 
 ---
 
@@ -155,6 +155,26 @@ Para que seu aplicativo funcione com a Journey Optimizer, é necessário atualiz
 1. Você deve ver a notificação por push de teste aparecer no aplicativo.
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## Assinatura
+
+A assinatura do aplicativo Luma é necessária somente para o [Criar e enviar notificações por push](journey-optimizer-push.md) e a variável [Criar e enviar mensagens no aplicativo](journey-optimizer-inapp.md) lições neste tutorial. Essas lições exigem um perfil de provisionamento do Apple que **requer uma conta paga de desenvolvedor do Apple**.
+
+Para atualizar a assinatura do seu aplicativo:
+
+1. Acesse seu aplicativo no Xcode.
+1. Selecionar **[!DNL Luma]** no Navegador de projetos.
+1. Selecione o **[!DNL Luma]** público-alvo.
+1. Selecione o **Assinatura e recursos** guia.
+1. Configurar **[!UICONTROL Gerenciar assinatura automaticamente]**, **[!UICONTROL Equipe]**, e **[!UICONTROL Identificador do pacote]** ou use seus detalhes específicos de provisionamento de desenvolvimento do Apple.
+
+   >[!IMPORTANT]
+   >
+   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote precisa ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`. A versão Concluída deste tutorial, por exemplo, usa `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png){zoom=&quot;yes&quot;}
 
 
 ## Adicionar recursos de notificação por push ao seu aplicativo
