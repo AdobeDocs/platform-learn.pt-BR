@@ -1,16 +1,16 @@
 ---
-title: Tutoriais da Coleção de dados
+title: Tutorials de Coleção de dados
 description: Vídeos e tutoriais explicativos para torná-lo um usuário avançado da Coleção de dados
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 40%
 
 ---
 
-# Tutoriais da Coleção de dados
+# Tutorials de Coleção de dados
 
 A Coleção de dados é a próxima geração de recursos de Tag Management de site e de SDKs móveis do Adobe. A Coleção de dados oferece aos clientes uma forma simples de implantar e gerenciar as soluções de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Use estes vídeos e tutoriais para ajudá-lo a conhecer esta tecnologia crítica.
 
@@ -62,6 +62,19 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     </div>
     <p>
     <em>Usar tags para implementar o SDK móvel da Platform</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=pt-BR" target="_blank">
+      <img alt="Migrar o Target para o SDK da Web" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=pt-BR" target="_blank">
+    <strong>Migrar do Adobe Target para o SDK da Web</strong>
+    </a>
+    </div>
+    <p>
+    <em>Migração da at.js para o SDK da Web</em>
     <p>
   </td>
 </tr>
