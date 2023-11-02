@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Quando vários esquemas estiverem ativados para perfil, uma variável [!UICONTRO
 
 Observe que não há um esquema de união para a classe ExperienceEvent. Embora os dados do ExperienceEvent ainda caiam no perfil, como são baseados em séries de tempo, cada evento inclui um carimbo de data e hora e as colisões não são um problema.
 
-E se você não gostar dessa política de mesclagem padrão? E se a Luma decidir que seu sistema de CRM deve ser a fonte da verdade quando há um conflito? Para isso, criaremos uma política de mesclagem.
+E se você não gostar dessa política de mesclagem padrão? E se a Luma decidir que seu sistema de fidelidade deve ser a fonte da verdade quando há um conflito? Para isso, criaremos uma política de mesclagem.
 
 ## Criar uma política de mesclagem na interface
 
