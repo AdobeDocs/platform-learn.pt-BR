@@ -4,9 +4,9 @@ description: Saiba como coletar dados de identidade em um aplicativo móvel.
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ Os namespaces de identidade são componentes de [Serviço de identidade](https:/
 
 >[!NOTE]
 >
->O SDK móvel gera uma identidade exclusiva em seu próprio namespace, chamada de ID de Experience Cloud (ECID) quando o aplicativo é instalado. Essa ECID é armazenada na memória persistente no dispositivo móvel e é enviada com cada ocorrência. A ECID é removida quando o usuário desinstala o aplicativo ou define o status de privacidade global do SDK móvel como recusa. No aplicativo Luma de amostra, você deve remover e reinstalar o aplicativo para criar um novo perfil com sua própria ECID exclusiva.
+>O SDK móvel gera uma identidade exclusiva em seu próprio namespace, chamada de ID de Experience Cloud (ECID) quando o aplicativo é instalado. Essa ECID é armazenada na memória persistente no dispositivo móvel e é enviada com cada ocorrência. A ECID é removida quando o usuário desinstala o aplicativo ou quando o usuário define o status de privacidade global do SDK móvel como recusa. No aplicativo Luma de amostra, você deve remover e reinstalar o aplicativo para criar um novo perfil com sua própria ECID exclusiva.
 
 
 Para criar um novo namespace de identidade:
@@ -101,10 +101,10 @@ Você deseja atualizar a identidade padrão (email) e a identidade personalizada
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. Navegue até **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** no navegador do Projeto Xcode e localize o código a ser executado ao selecionar o **[!UICONTROL Logon]** botão. Adicione o seguinte código:
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** no navegador do Projeto Xcode e localize o código a ser executado ao selecionar o **[!UICONTROL Logon]** botão. Adicione o seguinte código:
 
    ```swift
-   // Call updateIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -169,11 +169,13 @@ Depois de concluir as etapas no [lição do Experience Platform](platform.md), v
 
 >[!INFO]
 >
->Não há código no aplicativo para redefinir a ECID, o que significa que você só pode redefinir a ECID (e efetivamente criar um novo perfil com uma nova ECID no dispositivo) por meio de uma desinstalação e uma reinstalação do aplicativo. Para implementar a redefinição de identificadores, consulte a [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) e [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) Chamadas de API. Entretanto, esteja ciente de que, ao usar um identificador de notificação por push (consulte [Enviando notificações por push](journey-optimizer-push.md)), esse identificador se torna outro identificador de perfil &quot;adesivo&quot; no dispositivo.
+>Não há código no aplicativo para redefinir a ECID, o que significa que você só pode redefinir a ECID (e efetivamente criar um novo perfil com uma nova ECID) por meio de uma desinstalação e uma reinstalação do aplicativo. Para implementar a redefinição de identificadores, consulte a [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) e [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) Chamadas de API. Entretanto, esteja ciente de que, ao usar um identificador de notificação por push (consulte [Enviando notificações por push](journey-optimizer-push.md)), esse identificador se torna outro identificador de perfil &quot;adesivo&quot; no dispositivo.
 
 
 >[!SUCCESS]
 >
->Agora você configurou o aplicativo para atualizar identidades na Rede de borda e (quando configurado) com o Adobe Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Agora você configurou o aplicativo para atualizar identidades na Rede de borda e (quando configurado) com o Adobe Experience Platform.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Próximo: **[Coletar dados de perfil](profile.md)**

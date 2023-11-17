@@ -3,10 +3,11 @@ title: Configurar uma propriedade de tag
 description: Saiba como configurar uma propriedade de tag no [!UICONTROL Coleta de dados] interface.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 8%
+source-wordcount: '1090'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +46,7 @@ Nesta lição, você vai:
 
       >[!NOTE]
       >
-      > As configurações de consentimento padrão para as implementações do sdk móvel baseado em borda, como a que você está fazendo nesta lição, vêm do [!UICONTROL Extensão de consentimento] e não o [!UICONTROL Privacidade] na configuração da propriedade tag. Você adiciona e configura a Extensão de consentimento posteriormente nesta lição. Para obter mais informações, consulte [a documentação](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > As configurações de consentimento padrão para as implementações do sdk móvel baseado em borda, como a que você está fazendo nesta lição, vêm do [!UICONTROL Extensão de consentimento] e não o [!UICONTROL Privacidade] na configuração da propriedade tag. Você adiciona e configura a Extensão de consentimento posteriormente nesta lição. Para obter mais informações, consulte [a documentação](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Abra a nova propriedade.
@@ -131,7 +132,7 @@ Sua biblioteca foi criada para as novas extensões e configurações. Uma build 
 
 1. No **[!UICONTROL Instruções de instalação em dispositivos móveis]** , selecione a **[!UICONTROL iOS]** guia.
 
-1. Você pode copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) as instruções para configurar seu projeto usando o CocoaPods. Os CocoaPods são usados para gerenciar versões e downloads do SDK. Para saber mais, reveja o [Documentação do Cocoapods](https://cocoapods.org/). Se estiver usando o Android como plataforma de desenvolvimento, o Gradle é a ferramenta para gerenciar a versão, os downloads e as dependências do SDK. Para saber mais, reveja o [Documentação do Gradle](https://gradle.org/)
+1. Você pode copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) as instruções para configurar seu projeto usando o CocoaPods. Os CocoaPods são usados para gerenciar versões e downloads do SDK. Para saber mais, reveja o [Documentação do CocoaPods](https://cocoapods.org/). Se estiver usando o Android™ como plataforma de desenvolvimento, o Gradle é a ferramenta para gerenciar a versão, os downloads e as dependências do SDK. Para saber mais, reveja o [Documentação do Gradle](https://gradle.org/)
 
    As instruções de instalação fornecem um bom ponto de partida para a implementação. Você pode encontrar informações adicionais [aqui](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -140,7 +141,7 @@ Sua biblioteca foi criada para as novas extensões e configurações. Uma build 
    >No restante deste tutorial, você **não** use as instruções do CocoaPods, mas use uma configuração nativa baseada no Swift Package Manager (SPM).
    >
 
-1. Selecione o **[!UICONTROL Swift]** guia abaixo **[!UICONTROL Adicionar código de inicialização]**. Este bloco de código mostra como importar os SDKs necessários e registrar as extensões no lançamento. Esta questão será abordada em mais detalhes no [Instalar SDKs](install-sdks.md).
+1. Selecione o **[!UICONTROL Swift]** guia abaixo **[!UICONTROL Adicionar código de inicialização]**. Este bloco de código mostra como importar os SDKs necessários e registrar as extensões no lançamento. Isso é abordado com mais detalhes na seção [Instalar SDKs](install-sdks.md).
 
 1. Copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) o **[!UICONTROL ID do arquivo de ambiente]** e guarde-o no local necessário posteriormente. Essa ID exclusiva aponta para o ambiente de desenvolvimento. Cada ambiente (Produção, Armazenamento temporário, Desenvolvimento) tem seu próprio valor de ID exclusivo.
 
@@ -148,7 +149,7 @@ Sua biblioteca foi criada para as novas extensões e configurações. Uma build 
 
 >[!NOTE]
 >
->As instruções de instalação devem ser consideradas um ponto de partida e não uma documentação definitiva. As versões mais recentes do SDK e amostras de código podem ser encontradas no [documentação](https://developer.adobe.com/client-sdks/documentation/).
+>As instruções de instalação devem ser consideradas um ponto de partida e não uma documentação definitiva. As versões mais recentes do SDK e amostras de código podem ser encontradas no [documentação](https://developer.adobe.com/client-sdks/home/).
 
 ## Arquitetura de tags móveis
 
@@ -156,10 +157,12 @@ Se você estiver familiarizado com a versão da Web de Tags, antes chamada de La
 
 * Na Web, uma propriedade de tag é renderizada no JavaScript, que é então (geralmente) hospedado na nuvem. Esse arquivo JavaScript é referenciado diretamente no site.
 
-* Em uma propriedade de tag móvel, as regras e configurações são renderizadas em arquivos JSON que são hospedados na nuvem. Os arquivos JSON são baixados e lidos pela extensão Mobile Core no aplicativo móvel. As extensões são SDKs separados que funcionam juntos. Se você adicionar uma extensão à propriedade da tag, também deverá atualizar o aplicativo. Se você alterar uma configuração de extensão ou criar uma regra, essas alterações serão refletidas no aplicativo depois de publicar a biblioteca de tags atualizada. Essa flexibilidade permite modificar configurações (como a id do conjunto de relatórios do Adobe Analyrics) ou até mesmo alterar o comportamento do seu aplicativo (usando elementos de dados e regras, como você verá em lições posteriores) sem precisar alterar o código no seu aplicativo e ter que reenviar o aplicativo para a loja de aplicativos.
+* Em uma propriedade de tag móvel, as regras e configurações são renderizadas em arquivos JSON que são hospedados na nuvem. Os arquivos JSON são baixados e lidos pela extensão Mobile Core no aplicativo móvel. As extensões são SDKs separados que funcionam juntos. Se você adicionar uma extensão à propriedade da tag, também deverá atualizar o aplicativo. Se você alterar uma configuração de extensão ou criar uma regra, essas alterações serão refletidas no aplicativo depois de publicar a biblioteca de tags atualizada. Essa flexibilidade permite modificar configurações (como a id do conjunto de relatórios do Adobe Analytics) ou até mesmo alterar o comportamento do seu aplicativo (usando elementos de dados e regras, como você verá em lições posteriores) sem precisar alterar o código no aplicativo e reenviar a loja de aplicativos.
 
 >[!SUCCESS]
 >
->Agora você tem uma propriedade de tag móvel para usar no restante deste tutorial.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Agora você tem uma propriedade de tag móvel para usar no restante deste tutorial.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Próximo: **[Instalar SDKs](install-sdks.md)**

@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
 exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ Todos os dados assimilados com sucesso na Adobe Experience Platform são mantido
 
 ## Adicionar serviço de sequência de dados do Adobe Experience Platform
 
-Para enviar seus dados XDM da rede de borda para a Adobe Experience Platform, configure o serviço da Adobe Experience Platform para o fluxo de dados configurado como parte da [Criar um fluxo de dados](create-datastream.md).
+Para enviar seus dados XDM da rede de borda para a Adobe Experience Platform, adicione o serviço da Adobe Experience Platform ao fluxo de dados configurado como parte da [Criar um fluxo de dados](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -169,6 +169,6 @@ Os profissionais de marketing e análise podem fazer muito mais com dados captur
 
 >[!SUCCESS]
 >
->Agora você configurou o aplicativo para enviar dados não apenas para a Rede de borda, mas também para a Adobe Experience Platform.<br>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Agora você configurou o aplicativo para enviar dados não apenas para a Rede de borda, mas também para a Adobe Experience Platform.<br>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Criar e enviar notificações por push](journey-optimizer-push.md)**

@@ -3,9 +3,9 @@ title: Usar locais
 description: Saiba como usar o serviço de geolocalização do Places no aplicativo móvel.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Você define alguns pontos de interesse no serviço Places.
    ![Criar biblioteca](assets/places-create-library.png)
 1. Para fechar o **[!UICONTROL Gerenciar bibliotecas]** , selecione **[!UICONTROL Fechar]**.
 1. Voltar para **[!UICONTROL Gerenciamento de POI]**, selecione **[!UICONTROL Importar POIs]**.
-1. Selecionar **[!UICONTROL Início]** em t**[!UICONTROL Importar locais]**.
+1. Selecionar **[!UICONTROL Início]** no **[!UICONTROL Importar locais]** diálogo.
 1. Selecionar **[!DNL Luma]** na lista de bibliotecas,
 1. Selecione **[!UICONTROL Próximo]**.
    ![Selecionar biblioteca](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Em seguida, você definirá regras para trabalhar com esses elementos de dados.
       ![Ação de tags](assets/tags-action-mobile-core.png)
 
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado da **[!UICONTROL Núcleo móvel - Anexar dados]** ação.
-   1. Selecionar **[!UICONTROL Rede de borda Adobe Experience Platform]** do **[!UICONTROL Extensão]** e selecione **[!UICONTROL Encaminhar evento para a rede de borda]**. Essa ação garante que o evento e os dados de carga adicionais sejam encaminhados para a Rede de borda.
+   1. Selecionar **[!UICONTROL Rede de borda Adobe Experience Platform]** do **[!UICONTROL Extensão]** e selecione **[!UICONTROL Encaminhar evento para a rede de borda]**. Essa ação garante que o evento e os dados de payload adicionais sejam encaminhados para a Rede de borda da plataforma.
    1. Selecione **[!UICONTROL Manter alterações]**.
 
 1. Para salvar a regra, selecione **[!UICONTROL Salvar na biblioteca]**.
@@ -240,9 +240,9 @@ Para validar sua configuração no Assurance:
 1. Selecione **[!UICONTROL Salvar]**.
 1. Selecionar **[!UICONTROL Mapear e simular]** no painel esquerdo.
 1. Mova o mapa para um local de um de seus POIs.
-1. Selecionar ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simular POIs de carga.  Seu POI é identificado usando um círculo e um pino.
+1. Selecionar ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simular POIs de carga. Seu POI é identificado usando um círculo e um pino.
 1. Selecione seu POI.
-1. Na janela pop-up, selecione ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simular Evento de Entrada]**.
+1. No pop-up, selecione ![Engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simular Evento de Entrada]**.
    ![Simular Evento de Entrada](assets/places-simulate.png)
 1. Selecionar **[!UICONTROL Eventos]** no painel esquerdo, e você deverá ver os eventos que simulou.
    ![Validação da decisão do AJO](assets/places-events.png)
@@ -283,7 +283,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
    ]
    ```
 
-1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e localize o `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Adicione o seguinte código:
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e localize o `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` função. Adicione o seguinte código:
 
    ```swift
    // Process geolocation event
@@ -318,7 +318,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
 1. Vá para a **[!UICONTROL Localização]** guia.
 
-1. Mova (arraste) o mapa para garantir que o círculo central azul esteja acima de um dos POIs, por exemplo, Londres.
+1. Mova (arraste) o mapa ao redor para garantir que o círculo central azul esteja acima de um dos POIs, por exemplo, Londres.
 
 1. Toque <img src="assets/geobutton.png" width="20" /> até que você veja a categoria e o nome aparecerem no rótulo no local vermelho com o pino.
 
@@ -344,6 +344,8 @@ Você viu uma implementação da funcionalidade para seu aplicativo, orientada p
 
 >[!SUCCESS]
 >
->Agora você habilitou o aplicativo para serviços de geolocalização usando a extensão Places no SDK móvel do Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Agora você habilitou o aplicativo para serviços de geolocalização usando a extensão Places no SDK móvel do Experience Platform.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Mapear dados para o Adobe Analytics](analytics.md)**

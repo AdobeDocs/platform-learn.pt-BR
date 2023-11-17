@@ -4,9 +4,9 @@ description: Saiba como implementar a extensão Assurance em um aplicativo móve
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 7%
 
 ---
@@ -53,7 +53,7 @@ Para além do quadro [Instalação do SDK](install-sdks.md), que você concluiu 
    }
    ```
 
-   Esse código inicia uma sessão de garantia quando o aplicativo está em segundo plano e é aberto usando um deep link.
+   Esse código inicia uma sessão de controle quando o aplicativo é colocado em segundo plano e aberto usando um deep link.
 
 Mais informações podem ser encontradas [aqui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
@@ -93,7 +93,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote precisa ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`.<br/>Da mesma forma, use um esquema de URL exclusivo e substitua o já fornecido `lumatutorialswiftui` com seu esquema de URL exclusivo.
+   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote deve ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`.<br/>Da mesma forma, use um esquema de URL exclusivo e substitua o já fornecido `lumatutorialswiftui` com seu esquema de URL exclusivo.
 
 Para saber mais sobre Esquemas de URL no iOS, revise [Documentação da Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -111,7 +111,7 @@ No Xcode:
    >Como opção, você pode querer &quot;limpar&quot; sua build, especialmente quando vir resultados inesperados. Para fazer isso, selecione **[!UICONTROL Limpar pasta de compilação...]** do Xcode **[!UICONTROL Produto]** menu.
 
 
-1. No **[!UICONTROL Permitir que o &quot;Aplicativo Luma&quot; use sua localização]** , selecione **[!UICONTROL Permitir ao usar o aplicativo]**.
+1. No **[!UICONTROL Permitir que &quot;Aplicativo Luma&quot; use sua localização]** , selecione **[!UICONTROL Permitir ao usar o aplicativo]**.
 
    <img src="assets/geolocation-permissions.png" width="300">
 
@@ -123,7 +123,7 @@ No Xcode:
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. No **[!UICONTROL Permitir que o &quot;Aplicativo Luma&quot; rastreie sua atividade no aplicativo e nos sites de outras empresas]** , selecione **[!UICONTROL Permitir]**.
+1. No **[!UICONTROL Permitir que o &quot;Aplicativo Luma&quot; rastreie sua atividade nos aplicativos e sites de outras empresas]** , selecione **[!UICONTROL Permitir]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -141,7 +141,7 @@ No navegador:
 
    Se você estiver usando um dispositivo físico:
 
-   * Selecionar **[!UICONTROL Digitalizar código QR]**. Use sua câmera em seu dispositivo físico para digitalizar o código QR e toque no link para abrir o aplicativo.
+   * Selecionar **[!UICONTROL Digitalizar código QR]**. Para abrir o aplicativo, use a câmera do dispositivo físico para digitalizar o código QR e toque no link.
 
      ![código de controle de qualidade do assurance](assets/assurance-qr-code.png)
 
@@ -186,16 +186,16 @@ Para verificar se seu aplicativo está usando as extensões mais atualizadas:
 
    ![Configurar versões de extensão](assets/assurance-configure-extension-versions.png)
 
-1. Selecionar ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versões de extensão]**. Você verá uma visão geral das extensões mais recentes disponíveis e das extensões usadas na sua versão do aplicativo.
+1. Selecionar ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Versões de extensão]** para ter uma visão geral das extensões mais recentes disponíveis e das extensões usadas na sua versão do aplicativo.
 
    ![Versões de extensão](assets/assurance-extension-versions.png)
 
-1. Para atualizar suas versões de extensão (por exemplo, **[!UICONTROL Mensagens]** e **[!UICONTROL Otimizar]**), no Xcode, para as extensões específicas que precisam de atualização, selecione o pacote (extensão) em **[!UICONTROL Dependências de pacote]** (por exemplo, **[!UICONTROL AEPMessaging]**) e, no menu de contexto, selecione **[!UICONTROL Atualizar pacote]**. O Xcode atualizará as dependências do pacote.
+1. Para atualizar suas versões de extensão (por exemplo, **[!UICONTROL Mensagens]** e **[!UICONTROL Otimizar]**) selecionar o pacote (extensão) de **[!UICONTROL Dependências de pacote]** (por exemplo, **[!UICONTROL AEPMessaging]**) e, no menu de contexto, selecione **[!UICONTROL Atualizar pacote]**. O Xcode atualizará as dependências do pacote.
 
 
 >[!NOTE]
 >
->Ao atualizar suas extensões (pacotes) no Xcode, é necessário fechar e excluir a sessão atual e repetir todas as etapas de [Conectar-se a uma sessão](#connecting-to-a-session) e [Verificar extensões](#verify-extensions) para garantir que o Assurance relate corretamente as extensões corretas em uma nova sessão do Assurance.
+>Depois de atualizar suas extensões (pacotes) no Xcode, feche e exclua sua sessão atual e repita todas as etapas de [Conectar-se a uma sessão](#connecting-to-a-session) e [Verificar extensões](#verify-extensions) para garantir que o Assurance relate corretamente as extensões corretas em uma nova sessão do Assurance.
 
 
 
@@ -203,7 +203,9 @@ Para verificar se seu aplicativo está usando as extensões mais atualizadas:
 
 >[!SUCCESS]
 >
->Agora você configurou seu aplicativo para usar o Assurance para o restante do tutorial.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Agora você configurou seu aplicativo para usar o Assurance para o restante do tutorial.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Próximo: **[Implementar consentimento](consent.md)**

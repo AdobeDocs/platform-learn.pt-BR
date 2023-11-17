@@ -4,9 +4,9 @@ description: Saiba como criar um esquema XDM para eventos de aplicativos móveis
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 8%
 
 ---
@@ -134,7 +134,7 @@ Para fins de aprendizado, você usa grupos de campos pré-criados e personalizad
 
 >[!NOTE]
 >
->Lembre-se de que não é necessário usar todos os campos em um grupo. Também é possível remover campos se isso ajudar a manter o esquema conciso e compreensível. Se for útil, você pode considerar um esquema como uma camada de dados vazia. No aplicativo, você preenche os valores relevantes no momento apropriado.
+>Lembre-se de que não é necessário usar todos os campos em um grupo. Também é possível remover campos para ajudar a manter o esquema conciso e compreensível. Se for útil, você pode considerar um esquema como uma camada de dados vazia. No aplicativo, você preenche os valores relevantes no momento apropriado.
 
 A variável [!UICONTROL Evento de experiência do consumidor] o grupo de campos tem um tipo de dados chamado [!UICONTROL Informações da Web], que descreve eventos como exibição de página e cliques em links. No momento da escrita, não há uma paridade de aplicativo móvel para este recurso, portanto, você vai criar o seu próprio.
 
@@ -163,7 +163,7 @@ Você começa criando um tipo de dados personalizado que descreve os dois evento
 1. Para adicionar um campo, selecione a variável ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) botão.
 
 
-1. Este campo é um objeto de contêiner para interação com o aplicativo. Portanto, forneça um caso de camelo **[!UICONTROL Nome do campo]** `appInteraction`, **[!UICONTROL Nome de exibição]** `App Interaction`e selecione `Object` do **[!UICONTROL Tipo]** lista.
+1. Este campo é um objeto de contêiner para interação com o aplicativo, portanto, forneça um caso de camelo **[!UICONTROL Nome do campo]** `appInteraction`, **[!UICONTROL Nome de exibição]** `App Interaction`e selecione `Object` do **[!UICONTROL Tipo]** lista.
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
@@ -234,6 +234,8 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 
 >[!SUCCESS]
 >
->Agora você tem um esquema para usar no restante do tutorial.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Agora você tem um esquema para usar no restante do tutorial.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Criar um [!UICONTROL sequência de dados]](create-datastream.md)**

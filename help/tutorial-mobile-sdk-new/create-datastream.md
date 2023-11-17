@@ -4,10 +4,10 @@ description: Saiba como criar um fluxo de dados no Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: true
 exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 9%
+source-wordcount: '444'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 Saiba como criar um fluxo de dados no Experience Platform.
 
-Uma sequência de dados é uma configuração do lado do servidor na Platform Edge Network. A sequência de dados garante que os dados recebidos na Platform Edge Network sejam roteados adequadamente para aplicativos e serviços da Adobe Experience Cloud. Para obter mais informações, consulte [documentação](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR) ou esta [vídeo](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=pt-BR).
+Uma sequência de dados é uma configuração do lado do servidor na Platform Edge Network. A sequência de dados garante que os dados recebidos na Platform Edge Network sejam roteados adequadamente para aplicativos e serviços da Adobe Experience Cloud. Para obter mais informações, consulte [documentação](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) ou esta [vídeo](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=pt-BR).
 
 ![Arquitetura](assets/architecture.png)
 
@@ -55,7 +55,7 @@ As sequências de dados podem ser criadas no [!UICONTROL Coleta de dados] usando
 
 ## Adicionar serviços
 
-Quando você estiver passando pelo (opcional) [Analytics](analytics.md) e [Experience Platform](platform.md) lições neste tutorial, você está adicionando serviços à sua sequência de dados para garantir que, quando o SDK do Platform Mobile enviar dados para a rede de borda, a sequência de dados encaminhará esses dados para os serviços configurados.
+Ao acessar o (opcional) [Analytics](analytics.md) e [Experience Platform](platform.md) lições neste tutorial, você adiciona serviços ao seu fluxo de dados para que os dados enviados para a Platform Edge Network sejam encaminhados para esses aplicativos.
 
 <!--
 
@@ -102,12 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Habilitar cada um dos serviços que sua organização usa garante que os dados coletados no aplicativo móvel possam ser usados em qualquer lugar. Para obter mais informações sobre configurações de sequência de dados, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>Habilitar cada um dos serviços que sua organização usa garante que os dados coletados no aplicativo móvel possam ser usados em qualquer lugar. Para obter mais informações sobre configurações de sequência de dados, consulte a documentação [aqui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR).
 
 Ao implementar o SDK móvel da Platform em seu próprio aplicativo, você deve criar três fluxos de dados para mapear para seus três ambientes de tag (desenvolvimento, preparo e produção). Se você estiver usando o SDK móvel da Platform com aplicativos baseados na plataforma, como Adobe Real-time Customer Data Platform ou Adobe Journey Optimizer, certifique-se de criar esses fluxos de dados nas sandboxes apropriadas.
 
 >[!SUCCESS]
 >
->Agora você tem um fluxo de dados para usar no restante do tutorial.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Agora você tem um fluxo de dados para usar no restante do tutorial.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Próximo: **[Configurar uma propriedade de tag](configure-tags.md)**

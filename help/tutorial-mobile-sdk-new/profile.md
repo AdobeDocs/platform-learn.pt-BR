@@ -3,9 +3,9 @@ title: Coletar dados de perfil
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Nesta lição, você vai:
 
 Seria útil para direcionamento e/ou personalização no aplicativo saber rapidamente se um usuário fez uma compra no passado ou recentemente. Vamos configurar isso no aplicativo Luma.
 
-1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** no navegador do Projeto Xcode e localize o `func updateUserAttribute(attributeName: String, attributeValue: String)` função. Adicione o seguinte código:
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** no navegador do Projeto Xcode e localize o `func updateUserAttributes(attributeName: String, attributeValue: String)` função. Adicione o seguinte código:
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ Seria útil para direcionamento e/ou personalização no aplicativo saber rapida
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -115,7 +115,7 @@ A documentação adicional pode ser encontrada [aqui](https://developer.adobe.co
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. Retornar para **[!UICONTROL Início]** tela. Você deve ver uma medalha adicionada <img src="assets/person-badge-icon.png" width="15" />.
+   1. Retornar para **[!UICONTROL Início]** tela. Você verá que uma medalha foi adicionada <img src="assets/person-badge-icon.png" width="15" />.
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ A documentação adicional pode ser encontrada [aqui](https://developer.adobe.co
 
 >[!SUCCESS]
 >
->Agora você configurou o aplicativo para atualizar atributos de perfis na Rede de borda e (quando configurado) com o Adobe Experience Platform.<br/>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Agora você configurou o aplicativo para atualizar atributos de perfis na Rede de borda e (quando configurado) com o Adobe Experience Platform.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Usar locais](places.md)**
