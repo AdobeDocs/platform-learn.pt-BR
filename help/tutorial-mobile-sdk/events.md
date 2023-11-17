@@ -2,9 +2,9 @@
 title: Eventos
 description: Saiba como coletar dados do evento em um aplicativo móvel.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 1%
 # Eventos
 
 Saiba como rastrear eventos em um aplicativo móvel.
+
+>[!INFO]
+>
+> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
 
 A extensão Edge Network fornece uma API para enviar eventos de experiência para a Platform Edge Network. Um Evento de experiência é um objeto que contém dados em conformidade com a definição do esquema XDM ExperienceEvent. De maneira mais simples, eles capturam o que as pessoas fazem no seu aplicativo móvel. Depois que os dados forem recebidos pela Platform Edge Network, poderão ser encaminhados para aplicativos e serviços configurados no fluxo de dados, como Adobe Analytics e Experience Platform. Saiba mais sobre o [Eventos de experiência](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) na documentação do produto.
 

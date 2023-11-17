@@ -3,9 +3,9 @@ title: Mapeamento do Analytics
 description: Saiba como coletar dados para o Adobe Analytics em um aplicativo móvel.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
@@ -13,6 +13,11 @@ ht-degree: 2%
 # Mapeamento do Analytics
 
 Saiba como mapear dados móveis para o Adobe Analytics.
+
+>[!INFO]
+>
+> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
+
 
 A variável [evento](events.md) Os dados coletados e enviados para a Platform Edge Network em lições anteriores são encaminhados para os serviços configurados na sua sequência de dados, incluindo o Adobe Analytics. Você só precisa mapear os dados para as variáveis corretas no conjunto de relatórios.
 

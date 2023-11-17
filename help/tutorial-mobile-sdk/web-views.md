@@ -3,9 +3,9 @@ title: Manipular WebViews
 description: Saiba como lidar com a coleta de dados com WebViews em um aplicativo móvel.
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '415'
 ht-degree: 1%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 1%
 # Manipular WebViews
 
 Saiba como lidar com a coleta de dados com WebViews em um aplicativo móvel.
+
+>[!INFO]
+>
+> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
 
 ## Pré-requisitos
 

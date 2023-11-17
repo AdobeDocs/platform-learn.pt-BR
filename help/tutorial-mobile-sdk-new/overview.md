@@ -3,9 +3,10 @@ title: Visão geral do tutorial Implementar o Adobe Experience Cloud em aplicati
 description: Saiba como implementar os aplicativos móveis do Adobe Experience Cloud. Este tutorial o orienta por uma implementação de aplicativos Experience Cloud em um aplicativo Swift de amostra.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '874'
 ht-degree: 9%
 
 ---
@@ -86,11 +87,11 @@ Todos os clientes do Experience Cloud devem ter acesso aos recursos necessários
 
 ## Baixe o aplicativo Luma
 
-Duas versões do aplicativo de amostra estão disponíveis para download. Ambas as versões podem ser baixadas/clonadas de [Github](https://git.corp.adobe.com/rmaur/Luma). Você encontrará duas pastas:
+Duas versões do aplicativo de amostra estão disponíveis para download. Ambas as versões podem ser baixadas/clonadas de [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Você encontrará duas pastas:
 
 
-1. [Início](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: um projeto sem código ou com código de espaço reservado para a maioria do código do SDK do Experience Platform Mobile que você precisa usar para concluir os exercícios práticos neste tutorial.
-1. [Concluir](https://git.corp.adobe.com/Luma){target="_blank"}: uma versão com a implementação completa para referência.
+1. [Início](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: um projeto sem código ou com código de espaço reservado para a maioria do código do SDK do Experience Platform Mobile que você precisa usar para concluir os exercícios práticos neste tutorial.
+1. [Concluir](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: uma versão com a implementação completa para referência.
 
 >[!NOTE]
 >

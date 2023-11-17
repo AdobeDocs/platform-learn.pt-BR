@@ -2,16 +2,20 @@
 title: Dados do ciclo de vida
 description: Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
 # Dados do ciclo de vida
 
 Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
+
+>[!INFO]
+>
+> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
 
 A extensão de ciclo de vida do SDK do Adobe Experience Platform Mobile habilita a coleta de dados do ciclo de vida do seu aplicativo móvel. A extensão de rede de borda da Adobe Experience Platform envia esses dados do ciclo de vida para a rede de borda da Platform, onde são encaminhados para outros aplicativos e serviços de acordo com a configuração da sequência de dados. Saiba mais sobre o [Extensão de ciclo de vida](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) na documentação do produto.
 
@@ -21,9 +25,9 @@ A extensão de ciclo de vida do SDK do Adobe Experience Platform Mobile habilita
 * O aplicativo com SDKs instalados e configurados foi criado e executado com sucesso.
 * Importado o SDK do Assurance.
 
-   ```swift
-   import AEPAssurance
-   ```
+  ```swift
+  import AEPAssurance
+  ```
 
 * Registrada a extensão do Assurance conforme descrito no [lição anterior](install-sdks.md).
 

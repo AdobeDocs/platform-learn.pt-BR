@@ -2,16 +2,20 @@
 title: Instalar SDKs do Adobe Experience Platform Mobile
 description: Saiba como implementar o Adobe Experience Platform Mobile SDK em um aplicativo móvel.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 1%
+source-wordcount: '591'
+ht-degree: 2%
 
 ---
 
 # Instalar SDKs do Adobe Experience Platform Mobile
 
 Saiba como implementar o Adobe Experience Platform Mobile SDK em um aplicativo móvel.
+
+>[!INFO]
+>
+> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
 
 ## Pré-requisitos
 
@@ -146,6 +150,7 @@ O código acima faz o seguinte:
 
 >[!IMPORTANT]
 >Em um aplicativo de produção, você deve alternar a AppId com base no ambiente atual (dev/stag/prod).
+>
 
 Próximo: **[Configurar o Assurance](assurance.md)**
 
