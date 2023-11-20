@@ -3,7 +3,7 @@ title: Adicionar o Adobe Target com tags
 description: Saiba como implementar o Adobe Target usando tags com at.js, uma solicitação de carregamento de página, parâmetros, uma solicitação de pedido e código personalizado do cabeçalho/rodapé. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 75%
@@ -303,7 +303,7 @@ A coleta de IDs do cliente com o Adobe Experience Platform Identity Service faci
 
 * A ID do cliente deve estar disponível na página antes do código incorporado das tags
 * A extensão do Adobe Experience Platform Identity Service deve ser instalada
-* Você deve usar a ação `Set Customer IDs` em uma regra que é acionada no evento “Biblioteca carregada (Início da página)”
+* Você deve usar a ação `Set Customer IDs` em uma regra que é acionada no evento “Biblioteca carregada (parte superior da página)”
 * Use a ação `Fire Page Load Request` em uma regra que é acionada *depois* da ação “Definir IDs de cliente”
 
 Na lição anterior, [Adicionar o Adobe Experience Platform Identity Service](id-service.md), você criou a regra `All Pages - Library Loaded - Authenticated - 10` para acionar a ação &quot;Definir ID do cliente&quot;. Como essa regra tem uma configuração `Order` de `10`, as IDs do cliente são definidas antes que nossa solicitação de carregamento de página seja acionada a partir da regra `All Pages - Library Loaded` com sua configuração `Order` de `50`. Assim, você já implementou a coleção de IDs de cliente do Target!
@@ -486,7 +486,7 @@ Agora precisamos criar uma regra para acionar a solicitação de confirmação d
 1. Clique em **[!UICONTROL Adicionar regra]**
 1. Atribua um nome à regra `Order Confirmation Page - Library Loaded - 60`
 1. Clique em **[!UICONTROL Eventos > Adicionar]**
-   1. Selecione **[!UICONTROL Tipo de evento > Biblioteca carregada (início da página)]**
+   1. Selecione **[!UICONTROL Tipo de evento > Biblioteca carregada (parte superior da página)]**
    1. Em **[!UICONTROL Opções avançadas]**, altere o `Order` para `60` para que seja acionado depois que o `Load Target` ação (que está em nosso `All Pages - Library Loaded` regra em que `Order` está definida como `50`)
    1. Clique em **[!UICONTROL Manter alterações]**
 1. Clique em **[!UICONTROL Condições > Adicionar]**
@@ -571,7 +571,7 @@ de confirmação de pedido](#order-confirmation-request), mas você usará um no
 ## Cabeçalho da biblioteca e Rodapé da biblioteca
 
 A tela Editar at.js na interface do usuário do Target possui locais em que você pode colar o JavaScript personalizado que será executado imediatamente antes ou depois do arquivo at.js. O cabeçalho da biblioteca às vezes é usado para substituir configurações do at.js por meio da função
-[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) ou para transmitir dados de terceiros usando o recurso [Provedores de dados](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). Às vezes, o rodapé da biblioteca é usado para adicionar ouvintes de eventos [personalizados at.js](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html).
+[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) ou para transmitir dados de terceiros usando o recurso [Provedores de dados](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). Às vezes, o rodapé da biblioteca é usado para adicionar ouvintes de eventos [personalizados at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html).
 
 Para replicar esse recurso em tags, use a ação Código personalizado na extensão principal e sequencie a ação antes (Cabeçalho da biblioteca) ou depois (Rodapé da biblioteca) da ação Carregar meta. Isso pode ser feito na mesma regra da ação `Load Target` (como mostrado abaixo) ou em regras separadas, com eventos ou configurações de pedido que são acionados de maneira confiável antes ou depois da regra que contém `Load Target`:
 

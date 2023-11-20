@@ -3,10 +3,10 @@ title: Implementar o Experience Cloud em sites com tags
 description: Implementar o Experience Cloud em sites com tags é o ponto de partida perfeito para desenvolvedores front-end ou profissionais de marketing técnicos que desejam aprender como implementar as soluções da Adobe Experience Cloud no site.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 41%
+source-wordcount: '896'
+ht-degree: 39%
 
 ---
 
@@ -80,7 +80,7 @@ Nessas lições, você implementará a Adobe Experience Cloud em um site de vare
 ## Obter as ferramentas
 
 1. Como você estará usando algumas extensões específicas do navegador, recomendamos concluir o tutorial usando o [navegador web Chrome](https://www.google.com/chrome/)
-1. Adicione a extensão [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) ao navegador Chrome.
+1. Adicione o [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) extensão para o navegador Chrome
 1. Copie o exemplo de código de página html
 
    +++Exemplo de código de página html

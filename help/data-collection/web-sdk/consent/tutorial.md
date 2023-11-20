@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3320'
 ht-degree: 2%
 
 ---
@@ -138,7 +138,7 @@ Em seguida, selecione Regras, depois o botão azul Adicionar regra e insira o no
 
 ![](./images/2-0-form.png)
 
-Para revisar este exemplo de ação, estamos chamando Definir consentimento da extensão SDK da Web da Platform e transmitindo o Padrão e a Versão do formulário, enquanto transmitem os valores para coletar e cronometrar do elemento de dados criado anteriormente.
+Para revisar este exemplo de ação, estamos chamando Definir consentimento da extensão SDK da Web da Platform e transmitindo o Padrão e a Versão do formulário, enquanto transmitem os valores para coletar e tempo do elemento de dados criado anteriormente.
 
 Selecione o botão azul Salvar e novamente para salvar a regra.
 
@@ -236,7 +236,7 @@ Se você estiver usando o [biblioteca de trabalho](https://experienceleague.adob
 
 ### Etapa 4: Inspect e validar a coleta de dados
 
-No nosso site, atualizamos a página e confirmamos o build da biblioteca no [Depurador](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Extensão do Chrome, na seção de menu de tags:
+No nosso site, atualizamos a página e confirmamos o build da biblioteca no [Depurador](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Extensão do Chrome, na seção de menu de tags:
 
 ![](./images/build-date.png)
 
