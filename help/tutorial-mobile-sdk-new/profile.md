@@ -3,7 +3,7 @@ title: Coletar dados de perfil
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -96,8 +96,8 @@ A documentação adicional pode ser encontrada [aqui](https://developer.adobe.co
 1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
 1. Execute o aplicativo para fazer logon e interagir com um produto.
 
-   1. Mova o ícone do Assurance para a esquerda.
    1. Selecionar **[!UICONTROL Início]** na barra de guias.
+   1. Mova o ícone do Assurance para a esquerda.
    1. Para abrir a planilha de Logon, selecione o <img src="assets/login.png" width="15" /> botão.
 
       <img src="./assets/mobile-app-events-1.png" width="300">

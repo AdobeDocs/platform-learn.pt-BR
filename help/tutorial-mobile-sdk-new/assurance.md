@@ -4,9 +4,9 @@ description: Saiba como implementar a extensão Assurance em um aplicativo móve
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 7%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. Selecionar **[!DNL Luma]** no Navegador de projetos.
 1. Selecione o **[!DNL Luma]** público-alvo.
 1. Selecione o **Informações** guia.
-1. Para adicionar um URL base, role para baixo até **Tipos de URL** e selecione o **+** botão.
+1. Role para baixo até **Tipos de URL (1)** e abra a seção usando a divisa (>) se ainda não estiver aberta.
 1. Definir **Identificador** ao Identificador de pacote de sua escolha e defina um **Esquemas de URL** de sua escolha.
 
    ![url de garantia](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote deve ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`.<br/>Da mesma forma, use um esquema de URL exclusivo e substitua o já fornecido `lumatutorialswiftui` com seu esquema de URL exclusivo.
+   >Certifique-se de usar um _único_ identificador do pacote, substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote deve ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`.<br/>Da mesma forma, use um esquema de URL exclusivo, para substituir o já fornecido `lumatutorialswiftui` com seu esquema de URL exclusivo.
 
 Para saber mais sobre Esquemas de URL no iOS, revise [Documentação da Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
