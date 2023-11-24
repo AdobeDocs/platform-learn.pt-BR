@@ -4,9 +4,9 @@ description: Saiba como implementar os aplicativos móveis do Adobe Experience C
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
+source-git-commit: 8810829ec80b38afafbd4384005f5e145c5b5999
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 6%
 
 ---
@@ -82,6 +82,10 @@ Nessas lições, presume-se que você tenha uma ID de Adobe e as permissões de 
 >
 >Como parte deste tutorial, você cria esquemas, conjuntos de dados, identidades e assim por diante. Se várias pessoas estiverem assistindo a este tutorial em uma única sandbox, considere anexar ou anexar uma identificação como parte de suas convenções de nomenclatura ao criar esses objetos. Por exemplo, adicione ` - <your name or initials>` ao nome do objeto que você foi instruído a criar.
 
+>[!NOTE]
+>
+>Use o iOS como plataforma, [!DNL Swift] como a linguagem de programação, [!DNL SwiftUI] como a estrutura da interface e [!DNL Xcode] como o ambiente de desenvolvimento integrado (IDE). No entanto, muitos dos conceitos de implementação explicados são semelhantes para outras plataformas de desenvolvimento. Muitos já concluíram com sucesso este tutorial com pouca ou nenhuma experiência anterior de iOS/Swift(UI). Não é necessário ser um especialista para concluir as lições, mas você aprenderá mais com elas se ler e entender o código confortavelmente.
+
 
 ## Baixe o aplicativo Luma
 
@@ -91,15 +95,9 @@ Duas versões do aplicativo de amostra estão disponíveis para download. Ambas 
 1. [Início](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: um projeto sem código ou com código de espaço reservado para a maioria do código do SDK do Experience Platform Mobile que você precisa usar para concluir os exercícios práticos neste tutorial.
 1. [Concluir](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: uma versão com a implementação completa para referência.
 
->[!NOTE]
->
->Use o iOS como plataforma, [!DNL Swift] como a linguagem de programação, [!DNL SwiftUI] como a estrutura da interface e [!DNL Xcode] como o ambiente de desenvolvimento integrado (IDE). No entanto, muitos dos conceitos de implementação explicados são semelhantes para outras plataformas de desenvolvimento. Muitos já concluíram com sucesso este tutorial com pouca ou nenhuma experiência anterior de iOS/Swift(UI). Não é necessário ser um especialista para concluir as lições, mas você aprenderá mais com elas se ler e entender o código confortavelmente.
+Se você quiser apenas experimentar o aplicativo final, também poderá baixá-lo diretamente da Apple App Store.
 
->[!INFO]
->
->Se você quiser apenas experimentar o aplicativo final, também poderá baixá-lo diretamente da Apple App Store.
->[![Baixar](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
-
+[<img src="assets/download-app.svg">](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 Vamos começar!
 
