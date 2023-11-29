@@ -1,12 +1,12 @@
 ---
-title: Configurar uma propriedade de tag
+title: Configurar uma propriedade de tag para implementações do SDK móvel da Platform
 description: Saiba como configurar uma propriedade de tag no [!UICONTROL Coleta de dados] interface.
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 11%
+source-wordcount: '1095'
+ht-degree: 7%
 
 ---
 
@@ -14,11 +14,7 @@ ht-degree: 11%
 
 Saiba como configurar uma propriedade de tag no [!UICONTROL Coleta de dados] interface.
 
->[!INFO]
->
-> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
-
-As tags no Adobe Experience Platform são a última palavra em gerenciamento de tags da Adobe. As tags oferecem aos clientes uma forma simples de implantar e gerenciar todas as tags de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Saiba mais sobre [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) na documentação do produto.
+As tags no Adobe Experience Platform são a última palavra em gerenciamento de tags da Adobe. As tags oferecem aos clientes uma forma simples de implantar e gerenciar tags de análise, marketing e anúncios necessárias para potencializar experiências de cliente relevantes. Saiba mais sobre [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) na documentação do produto.
 
 ## Pré-requisitos
 
@@ -26,7 +22,7 @@ Para concluir a lição, você deve ter permissão para criar uma propriedade de
 
 >[!NOTE]
 >
-> O Platform launch (lado do cliente) agora é [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)
+> O Platform launch (lado do cliente) agora é [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)
 
 ## Objetivos de aprendizagem
 
@@ -37,102 +33,135 @@ Nesta lição, você vai:
 
 ## Configuração inicial
 
-1. Criar uma nova propriedade de tag móvel:
-   1. No [Interface da coleção de dados](https://experience.adobe.com/br/data-collection/){target="_blank"}, selecione **[!UICONTROL Tags]** na navegação à esquerda
+1. Crie uma nova propriedade de tag móvel na Interface da coleção de dados:
+   1. Selecionar **[!UICONTROL Tags]** no painel de navegação esquerdo.
    1. Selecione **[!UICONTROL Nova propriedade]**
-      ![criar uma propriedade de tag](assets/mobile-tags-new-property.png).
-   1. Para o **[!UICONTROL Nome]**, insira `Mobile SDK Course`.
+      ![criar uma propriedade de tag](assets/tags-new-property.png).
+   1. Para o **[!UICONTROL Nome]**, insira `Luma Mobile App Tutorial`.
    1. Para o **[!UICONTROL Platform]**, selecione **[!UICONTROL Dispositivo móvel]**.
    1. Selecione **[!UICONTROL Salvar]**.
 
-      ![configurar a propriedade da tag](assets/mobile-tags-property-config.png)
+      ![configurar a propriedade da tag](assets/tags-property-config.png)
 
       >[!NOTE]
       >
-      > As configurações de consentimento padrão para as implementações do sdk móvel baseado em borda, como a que você está fazendo neste tutorial, vêm do [!UICONTROL Extensão de consentimento] e não o [!UICONTROL Privacidade] na configuração da propriedade tag. Você adicionará e configurará a Extensão de consentimento posteriormente nesta lição. Para obter mais informações, consulte [a documentação](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > As configurações de consentimento padrão para as implementações do sdk móvel baseado em borda, como a que você está fazendo nesta lição, vêm do [!UICONTROL Extensão de consentimento] e não o [!UICONTROL Privacidade] na configuração da propriedade tag. Você adiciona e configura a Extensão de consentimento posteriormente nesta lição. Para obter mais informações, consulte [a documentação](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
-1. Abrir a nova propriedade
+1. Abra a nova propriedade.
 1. Criar uma biblioteca:
 
    1. Ir para **[!UICONTROL Fluxo de publicação]** no painel de navegação esquerdo.
    1. Selecionar **[!UICONTROL Adicionar biblioteca]**.
 
-      ![Selecione Adicionar biblioteca](assets/mobile-tags-create-library.png)
+      ![Selecione Adicionar biblioteca](assets/tags-create-library.png)
 
    1. Para o **[!UICONTROL Nome]**, insira `Initial Build`.
-   1. Para o **[!UICONTROL Ambiente]**, selecione **[!UICONTROL Desenvolvimento]**.
-   1. Selecionar  **[!UICONTROL Adicionar todos os recursos alterados]**.
+   1. Para o **[!UICONTROL Ambiente]**, selecione **[!UICONTROL Desenvolvimento (desenvolvimento)]**.
+   1. Selecionar  ![Botão Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar todos os recursos alterados]**.
    1. Selecionar **[!UICONTROL Salvar e criar no desenvolvimento]**.
 
-      ![Criar a biblioteca](assets/mobile-tags-save-library.png)
+      ![Criar a biblioteca](assets/tags-save-library.png)
 
-   1. Por fim, defina-o como seu **[!UICONTROL Biblioteca de trabalho]**.
-      ![Selecionar como a biblioteca de trabalho](assets/mobile-tags-working-library.png)
-1. Selecionar **[!UICONTROL Extensões]**.
+   1. Finalmente, selecione **[!UICONTROL Build inicial]** como sua biblioteca de trabalho no **[!UICONTROL Selecionar uma biblioteca de trabalho]** menu.
+      ![Selecionar como a biblioteca de trabalho](assets/tags-working-library.png)
+1. Verificar extensões:
 
-   As extensões Mobile Core e Profile devem ser pré-instaladas.
+   1. Assegure que **[!UICONTROL Build inicial]** está selecionada como biblioteca padrão.
 
-1. Selecionar **[!UICONTROL Catálogo]**.
+   1. Selecione **[!UICONTROL Extensões]** no painel esquerdo.
 
-   ![configuração inicial](assets/mobile-tags-starting.png)
+   1. Selecione o **[!UICONTROL Instalado]** guia.
 
-1. Use o [!UICONTROL Pesquisar] recurso para localizar e instalar as seguintes extensões. Nenhuma dessas extensões requer qualquer configuração:
-   * Identidade
-   * AEP Assurance
+      A variável [!UICONTROL Núcleo móvel] e [!UICONTROL Perfil] As extensões do devem ser pré-instaladas.
+
+      ![Tags instaladas](assets/tags-installed.png)
 
 ## Configuração de extensão
 
-1. Instale o **Consentimento** extensão.
+1. Verifique se você está em **[!UICONTROL Extensões]** na propriedade do aplicativo móvel.
 
-   Para os fins deste tutorial, selecione **[!UICONTROL Pending]**. Saiba mais sobre a Extensão de consentimento em [a documentação](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
+1. Selecionar **[!UICONTROL Catálogo]**.
 
-   ![configurações de consentimento](assets/mobile-tags-extension-consent.png)
+   ![configuração inicial](assets/tags-starting.png)
 
-1. Instale o **Rede de borda Adobe Experience Platform** extensão.
+1. Use o ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Pesquisar]** o campo localizar o **Identidade** extensão.
 
-   No **[!UICONTROL Configuração de borda]** selecione o fluxo de dados criado na lista suspensa [etapa anterior](create-datastream.md).
+   1. Pesquisar por `Identity`.
 
-1. Selecionar **[!UICONTROL Salvar na biblioteca e criar]**.
+   2. Selecione o **[!UICONTROL Identidade]** extensão.
 
-   ![configurações de rede de borda](assets/mobile-tags-extension-edge.png)
+   3. Selecionar **[!UICONTROL Instalar]**.
+
+      ![Instalação de identidade](assets/tags-identity-install.png)
+
+   Essa extensão não requer nenhuma configuração adicional.
+
+1. Use o ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Pesquisar]** para localizar e instalar o **AEP Assurance** extensão.
+
+   Essa extensão não requer nenhuma configuração adicional.
+
+1. Use o ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Pesquisar]** para localizar e instalar o **Consentimento** extensão. Na tela de configuração:
+
+   1. Selecionar **[!UICONTROL Pending]**. Neste tutorial, você gerencia o consentimento ainda mais no aplicativo. Saiba mais sobre a Extensão de consentimento em [a documentação](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
+   1. Selecionar **[!UICONTROL Salvar na biblioteca]**.
+
+      ![configurações de consentimento](assets/tags-extension-consent.png)
+
+1. Use o ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Pesquisar]** para localizar e instalar o **Rede de borda Adobe Experience Platform** extensão.
+
+   1. Entrada **[!UICONTROL Datastreams]** selecione o **[!UICONTROL Sequência de dados]** que você criou na [etapa anterior](create-datastream.md) para cada ambiente, por exemplo **[!DNL Luma Mobile App]**.
+
+   1. Se ainda não estiver preenchido, especifique o **[!UICONTROL Domínio da rede de borda]** no prazo de **[!UICONTROL Configuração de domínio]**. O domínio da Rede de borda é o nome da sua organização, seguido por `data.adobedc.net`, por exemplo `techmarketingdemos.data.adobedc.net`.
+
+   1. No **[!UICONTROL Salvar na biblioteca]** selecione **[!UICONTROL Salvar na biblioteca e criar]**.
+
+      ![configurações de rede de borda](assets/tags-extension-edge.png)
+
+Sua biblioteca foi criada para as novas extensões e configurações. Uma build bem-sucedida é indicada por um <span style="color:green">●</span> no **[!UICONTROL Build inicial]** botão.
 
 
 ## Gerar instruções de instalação do SDK
 
-1. Selecionar **[!UICONTROL Ambientes]**.
+1. Selecionar **[!UICONTROL Ambientes]** do painel esquerdo.
 
-1. Selecione o **[!UICONTROL Desenvolvimento]** ícone de instalação.
+1. Selecione o **[!UICONTROL Desenvolvimento]** ícone de instalação ![Caixa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) .
 
-   ![tela inicial dos ambientes](assets/mobile-tags-environments.png)
+   ![tela inicial dos ambientes](assets/tags-environments.png)
 
-1. Selecionar **[!UICONTROL iOS]**.
+1. No **[!UICONTROL Instruções de instalação em dispositivos móveis]** , selecione a **[!UICONTROL iOS]** guia.
 
-1. Selecionar **[!UICONTROL Swift]**.
+1. Você pode copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) as instruções para configurar seu projeto usando o CocoaPods. Os CocoaPods são usados para gerenciar versões e downloads do SDK. Para saber mais, reveja o [Documentação do CocoaPods](https://cocoapods.org/). Se estiver usando o Android™ como plataforma de desenvolvimento, o Gradle é a ferramenta para gerenciar a versão, os downloads e as dependências do SDK. Para saber mais, reveja o [Documentação do Gradle](https://gradle.org/)
 
-   ![instruções de instalação](assets/mobile-tags-install-instructions.png)
+   As instruções de instalação fornecem um bom ponto de partida para a implementação. Você pode encontrar informações adicionais [aqui](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. As instruções de instalação fornecem um bom ponto de partida para a implementação.
+   >[!INFO]
+   >
+   >No restante deste tutorial, você **não** use as instruções do CocoaPods, mas use uma configuração nativa baseada no Swift Package Manager (SPM).
+   >
 
-   Você pode encontrar informações adicionais [aqui](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
+1. Selecione o **[!UICONTROL Swift]** guia abaixo **[!UICONTROL Adicionar código de inicialização]**. Este bloco de código mostra como importar os SDKs necessários e registrar as extensões no lançamento. Isso é abordado com mais detalhes na seção [Instalar SDKs](install-sdks.md).
 
-   * **[!UICONTROL ID do arquivo de ambiente]**: Essa ID exclusiva aponta para o ambiente de desenvolvimento, anote esse valor. Produção/Preparo/Desenvolvimento terão valores de ID diferentes.
-   * **[!UICONTROL Podfile]**: os CocoaPods são usados para gerenciar versões e downloads do SDK. Para saber mais, reveja o [documentação](https://cocoapods.org/).
-   * **[!UICONTROL Código de inicialização]**: este bloco de código mostra como importar os SDKs necessários e registrar as extensões na inicialização.
+1. Copiar ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) o **[!UICONTROL ID do arquivo de ambiente]** e guarde-o no local necessário posteriormente. Essa ID exclusiva aponta para o ambiente de desenvolvimento. Cada ambiente (Produção, Armazenamento temporário, Desenvolvimento) tem seu próprio valor de ID exclusivo.
 
->[!NOTE]
->As instruções de instalação devem ser consideradas um ponto de partida e não uma documentação definitiva. As versões mais recentes do SDK e amostras de código podem ser encontradas no [documentação](https://developer.adobe.com/client-sdks/documentation/).
-
-## Arquitetura de tags móveis
-
-Se você estiver familiarizado com a versão da Web das tags, antigo Launch, é importante entender as diferenças nos dispositivos móveis.
-
-Na Web, uma propriedade de tag é renderizada no JavaScript, que é então (geralmente) hospedado na nuvem. Esse arquivo JS é referenciado diretamente no site.
-
-Em uma propriedade de tag móvel, as regras e configurações são renderizadas em arquivos JSON que são hospedados na nuvem. Os arquivos JSON são baixados e lidos pela extensão Mobile Core no aplicativo móvel. As extensões são SDKs separados que funcionam juntos. Se você adicionar uma extensão à propriedade da tag, também deverá atualizar o aplicativo. Se você alterar uma configuração de extensão ou criar uma regra, essas alterações serão refletidas no aplicativo depois de publicar a biblioteca de tags atualizada.
-
-Próximo: **[Instalar SDKs](install-sdks.md)**
+   ![instruções de instalação](assets/tags-install-instructions.png)
 
 >[!NOTE]
 >
+>As instruções de instalação devem ser consideradas um ponto de partida e não uma documentação definitiva. As versões mais recentes do SDK e amostras de código podem ser encontradas no [documentação](https://developer.adobe.com/client-sdks/home/).
+
+## Arquitetura de tags móveis
+
+Se você estiver familiarizado com a versão da Web de Tags, antes chamada de Launch, é importante entender as diferenças nos dispositivos móveis.
+
+* Na Web, uma propriedade de tag é renderizada no JavaScript, que é então (geralmente) hospedado na nuvem. Esse arquivo JavaScript é referenciado diretamente no site.
+
+* Em uma propriedade de tag móvel, as regras e configurações são renderizadas em arquivos JSON que são hospedados na nuvem. Os arquivos JSON são baixados e lidos pela extensão Mobile Core no aplicativo móvel. As extensões são SDKs separados que funcionam juntos. Se você adicionar uma extensão à propriedade da tag, também deverá atualizar o aplicativo. Se você alterar uma configuração de extensão ou criar uma regra, essas alterações serão refletidas no aplicativo depois de publicar a biblioteca de tags atualizada. Essa flexibilidade permite modificar configurações (como a id do conjunto de relatórios do Adobe Analytics) ou até mesmo alterar o comportamento do seu aplicativo (usando elementos de dados e regras, como você verá em lições posteriores) sem precisar alterar o código no aplicativo e reenviar a loja de aplicativos.
+
+>[!SUCCESS]
+>
+>Agora você tem uma propriedade de tag móvel para usar no restante deste tutorial.
+>
 >Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Próximo: **[Instalar SDKs](install-sdks.md)**

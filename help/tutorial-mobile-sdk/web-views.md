@@ -1,11 +1,11 @@
 ---
-title: Manipular WebViews
+title: Lidar com WebViews com o SDK móvel da plataforma
 description: Saiba como lidar com a coleta de dados com WebViews em um aplicativo móvel.
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '493'
 ht-degree: 1%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 1%
 # Manipular WebViews
 
 Saiba como lidar com a coleta de dados com WebViews em um aplicativo móvel.
-
->[!INFO]
->
-> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
 
 ## Pré-requisitos
 
@@ -26,85 +22,86 @@ Saiba como lidar com a coleta de dados com WebViews em um aplicativo móvel.
 
 Nesta lição, você vai:
 
-* Entenda por que você deve considerar especialmente as WebViews.
+* Entenda por que você deve considerar especialmente os WebViews no aplicativo.
 * Entenda o código necessário para evitar problemas de rastreamento.
 
 ## Possíveis problemas de rastreamento
 
-Se você enviar dados da parte nativa do aplicativo e um WebView, cada um gera sua própria ID de Experience Cloud (ECID). Isso resulta em ocorrências desconectadas e dados de visita/visitante aumentados. Mais informações sobre a ECID podem ser encontradas na [Visão geral da ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+Se você enviar dados da parte nativa do aplicativo e de um WebView dentro do aplicativo, cada um gera sua própria ID de Experience Cloud (ECID), o que resulta em ocorrências desconectadas e dados inflacionados de visitas/visitantes. Mais informações sobre a ECID podem ser encontradas na [Visão geral da ECID](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
-Para resolver essa situação indesejável, é importante transmitir a ECID do usuário da parte nativa para o WebView.
+Para resolver essa situação indesejável, é importante transmitir a ECID do usuário da parte nativa do aplicativo para um WebView que você possa desejar usar no aplicativo.
 
-A extensão JavaScript do serviço de ID do Experience Cloud no WebView extrai a ECID do URL em vez de enviar uma solicitação ao Adobe para obter uma nova ID. O serviço de ID usa essa ECID para rastrear o visitante.
+A extensão de identidade de borda da AEP usada no WebView coleta a ECID atual e a adiciona ao URL em vez de enviar uma solicitação ao Adobe para uma nova ID. A implementação usa essa ECID para solicitar o URL.
 
 ## Implementação
 
-No aplicativo de amostra Luma, localize o `TermsOfService.swift` (no campo `Intro-Login_SignUp` e localize o seguinte código:
+Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]** e localize o `func loadUrl()` na caixa `final class SwiftUIWebViewModel: ObservableObject` classe. Adicione a seguinte chamada para lidar com a exibição da Web:
 
 ```swift
-// Show tou.html
-let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-let myRequest = URLRequest(url: url!)
-self.webView.load(myRequest)
-```
-
-Essa é uma maneira simples de carregar um WebView. Nesse caso, é um arquivo local, mas os mesmos conceitos se aplicam a páginas remotas.
-
-Refatore o código de visualização da web conforme mostrado abaixo:
-
-```swift
-let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-if var urlString = url?.absoluteString {
-    // Adobe Experience Platform - Handle Web View
-    AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
-        if let error = error {
-            self.simpleAlert("\(error.localizedDescription)")
-            return;
-        }
-
-        if let urlVariables: String = urlVariables {
-            urlString.append("?" + urlVariables)
-        }
-
-        DispatchQueue.main.async {
-            self.webView.load(URLRequest(url: URL(string: urlString)!))
-        }
-        print("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
+// Handle web view
+AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
+    if let error = error {
+        print("Error with Webview", error)
+        return;
     }
-} else {
-    self.simpleAlert("Failed to create URL for webView")
+    
+    if let urlVariables: String = urlVariables {
+        urlString.append("?" + urlVariables)
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.webView.load(URLRequest(url: url))
+        }
+    }
+    Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
 }
 ```
 
+A variável [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) A API configura as variáveis para que o URL contenha todas as informações relevantes, como ECID e muito mais. No exemplo, você está usando um arquivo local, mas os mesmos conceitos se aplicam a páginas remotas.
+
 Você pode saber mais sobre o `Identity.getUrlVariables` API no [Guia de referência de API de extensão de identidade para rede de borda](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validação
+## Validar 
 
-Depois de revisar o [instruções de configuração](assurance.md) e conectando seu simulador ou dispositivo ao Assurance, carregue o WebView e procure o `Edge Identity Response URL Variables` evento do `com.adobe.griffon.mobile` fornecedor.
+Para executar o código:
 
-Para carregar o WebView, vá para a tela inicial do aplicativo Luma, selecione o ícone &quot;conta&quot;, seguido pelos &quot;Termos de uso&quot; no rodapé.
+1. Revise o [instruções de configuração](assurance.md#connecting-to-a-session) seção para conectar seu simulador ou dispositivo ao Assurance.
+1. Vá para a **[!UICONTROL Configurações]** no aplicativo
+1. Toque no **[!DNL View...]** botão para mostrar a **[!DNL Terms of Use]**.
 
-Depois de carregar o WebView, selecione o evento e revise o `urlvariables` no campo `ACPExtensionEventData` , confirmando se os seguintes parâmetros estão presentes no URL: `adobe_mc`, `mcmid`, e `mcorgid`.
+   <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
-![validação de webview](assets/mobile-webview-validation.png)
+1. Na interface do usuário do Assurance, procure pela variável **[!UICONTROL Variáveis de URL de resposta da Identidade de borda]** evento do **[!UICONTROL com.adobe.griffon.mobile]** fornecedor.
+1. Selecione o evento e revise a **[!UICONTROL urlvariable]** no campo **[!UICONTROL ACPExtensionEventData]** , confirmando se os seguintes parâmetros estão presentes no URL: `adobe_mc`, `mcmid`, e `mcorgid`.
 
-Uma amostra `urvariables` O campo pode ser visto abaixo:
+   ![validação de webview](assets/webview-validation.png)
 
-```html
-// Original (with escaped characters)
-adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
+   Uma amostra `urvariables` O campo pode ser visto abaixo:
 
-// Beautified
-adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
-```
+   * Original (com caracteres de escape)
+
+     ```html
+     adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
+     ```
+
+   * Embelado
+
+     ```html
+     adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
+     ```
+
+Infelizmente, a depuração da sessão da Web é limitada. Por exemplo, você não pode usar o Adobe Experience Platform Debugger no navegador para continuar a depurar a sessão do webview.
 
 >[!NOTE]
 >
->No momento, a compilação de visitantes por meio desses parâmetros de URL é compatível com o SDK da Web da plataforma (versões 2.11.0 ou posteriores) e `VisitorAPI.js`.
+>A compilação de visitantes por meio desses parâmetros de URL é compatível com o SDK da Web da plataforma (versões 2.11.0 ou posterior) e ao usar `VisitorAPI.js`.
 
 
-Próximo: **[Identidade](identity.md)**
-
->[!NOTE]
+>[!SUCCESS]
+>
+>Agora você configurou o aplicativo para mostrar conteúdo com base em um URL em uma visualização da Web usando a mesma ECID que a ECID já emitida pelo SDK do Adobe Experience Platform Mobile.
 >
 >Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Próximo: **[Identidade](identity.md)**

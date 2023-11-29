@@ -1,12 +1,12 @@
 ---
-title: Criar um esquema do XDM
+title: Criar um esquema XDM para implementações do SDK móvel da Platform
 description: Saiba como criar um esquema XDM para eventos de aplicativos móveis.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 7%
+source-wordcount: '1510'
+ht-degree: 8%
 
 ---
 
@@ -14,15 +14,11 @@ ht-degree: 7%
 
 Saiba como criar um esquema XDM para eventos de aplicativos móveis.
 
->[!INFO]
->
-> Este tutorial será substituído por um novo tutorial usando um novo aplicativo móvel de amostra no final de novembro de 2023
-
 A padronização e a interoperabilidade são os principais conceitos por trás da Adobe Experience Platform. O Experience Data Model (XDM), orientado pelo Adobe, é um esforço para padronizar os dados de experiência do cliente e definir esquemas para o gerenciamento da experiência do cliente.
 
 ## O que são esquemas XDM?
 
-O XDM é uma especificação documentada publicamente projetada para melhorar o potencial das experiências digitais. Ela fornece estruturas e definições comuns que permitem que qualquer aplicativo se comunique com os serviços da plataforma. Seguindo os padrões XDM, todos os dados de experiência do cliente podem ser incorporados a uma representação comum que pode fornecer insights de maneira mais rápida e integrada. Você pode obter insights valiosos das ações do cliente, definir públicos-alvo do cliente por meio de segmentos e expressar atributos do cliente para fins de personalização.
+O XDM é uma especificação documentada publicamente projetada para melhorar o potencial das experiências digitais. Ela fornece estruturas e definições comuns que permitem que qualquer aplicativo se comunique com os serviços da plataforma. Seguindo os padrões XDM, todos os dados de experiência do cliente podem ser incorporados a uma representação comum que pode fornecer insights de maneira mais rápida e integrada. Você obtém insights valiosos das ações do cliente, define públicos do cliente por meio de segmentos e usa atributos do cliente para fins de personalização.
 
 A Experience Platform utiliza esquemas para descrever a estrutura dos dados de forma consistente e reutilizável. Ao definir os dados de forma consistente em todos os sistemas, fica mais fácil manter o significado e, portanto, obter valor dos dados.
 
@@ -32,7 +28,7 @@ Para obter mais informações sobre o modelo de composição do schema, incluind
 
 >[!TIP]
 >
->Se você estiver familiarizado com a Referência de design de solução (SDRs) do Analytics, poderá considerar um esquema como um SDR mais robusto.
+>Se você estiver familiarizado com a Referência de design de solução (SDRs) do Analytics, poderá considerar um esquema como um SDR mais robusto. Consulte [Criação e manutenção de um documento de Referência de design de solução (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=pt-BR) para obter mais informações.
 
 ## Pré-requisitos
 
@@ -50,20 +46,22 @@ Nesta lição, você vai:
 
 1. Faça logon na Adobe Experience Cloud.
 
-1. Abra o alternador de aplicativos e selecione **[!UICONTROL Coleta de dados]**
-
-   ![Lista suspensa 3x3](assets/mobile-schema-navigate1.png)
-
 1. Verifique se você está na sandbox do Experience Platform que está usando para este tutorial.
+
+1. Abra o seletor de aplicativos ![Alternador de aplicativos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)  (na parte superior direita),
+
+1. Selecionar **[!UICONTROL Coleta de dados]** no menu.
+
+   ![Fazer logon no Experience Cloud](assets/experiencecloud-login.png)
 
    >[!NOTE]
    >
-   > Os clientes de aplicativos baseados em plataforma, como o Real-Time CDP, devem usar uma sandbox de desenvolvimento para este tutorial. Outros clientes usarão a sandbox de produção padrão.
+   > Os clientes de aplicativos baseados em plataforma, como o Real-Time CDP, devem usar uma sandbox de desenvolvimento para este tutorial. Outros clientes usam a sandbox de produção padrão.
 
 
-1. Selecionar **[!UICONTROL Esquemas]** em **[!UICONTROL Gerenciamento de dados]**.
+1. Selecionar **[!UICONTROL Esquemas]** em **[!UICONTROL Gerenciamento de dados]** no painel esquerdo.
 
-   ![tela inicial das tags](assets/mobile-schema-navigate3.png)
+   ![tela inicial das tags](assets/mobile-schema-navigate.png)
 
 Agora você está na página principal de esquemas e uma lista dos esquemas existentes é apresentada a você. Você também pode ver guias correspondentes aos blocos de construção principais de um schema:
 
@@ -87,7 +85,7 @@ Em um cenário real, o processo de design do schema pode ser semelhante a:
 * Localize grupos de campos pré-criados para atender ao máximo de requisitos possível.
 * Crie grupos de campos personalizados para qualquer lacuna.
 
-Para fins de aprendizado, você usará grupos de campos pré-criados e personalizados.
+Para fins de aprendizado, você usa grupos de campos pré-criados e personalizados.
 
 * **Evento de experiência do consumidor**: grupo de campos pré-criado que tem muitos campos comuns.
 * **Informações do aplicativo**: grupo de campos personalizado criado para imitar os conceitos do TrackState/TrackAction Analytics.
@@ -96,31 +94,48 @@ Para fins de aprendizado, você usará grupos de campos pré-criados e personali
 
 ## Criar um esquema
 
-1. Selecionar **[!UICONTROL Criar esquema]** para abrir o menu suspenso de opções, selecione **[!UICONTROL XDM ExperienceEvent]**.
+1. Selecionar **[!UICONTROL Criar esquema]**.
 
-   ![Seleção de ExperienceEvent no menu suspenso](assets/mobile-schema-create.png)
+1. No **[!UICONTROL Selecionar uma classe]** etapa do **[!UICONTROL Criar esquema]** assistente, selecione **[!UICONTROL Evento de experiência]** abaixo **[!UICONTROL Selecione uma classe base para este esquema]**.
+
+1. Selecione **[!UICONTROL Próximo]**.
+
+   ![Classe base do Assistente de esquema](assets/schema-wizard-base-class.png)
+
+1. No **[!UICONTROL Nome e revisão]** etapa do **[!UICONTROL Criar esquema]** assistente, insira um **[!UICONTROL Nome de exibição do esquema]**, por exemplo `Luma Mobile Event Schema` e uma [!UICONTROL Descrição], por exemplo `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >Se você estiver assistindo a este tutorial com várias pessoas em uma única sandbox ou se estiver usando uma conta compartilhada, considere anexar ou anexar uma identificação como parte de suas convenções de nomenclatura. Por exemplo, em vez de `Luma Mobile App Event Schema`, use `Luma Mobile App Event Schema - Joe Smith`. Consulte também a nota em [Visão geral](overview.md).
+
+1. Selecionar **[!UICONTROL Concluir]** para concluir o assistente.
+
+   ![Nome e revisão do esquema](assets/schema-wizard-name-and-review.png)
+
+
+1. Selecionar ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Adicionar** ao lado de **[!UICONTROL Grupos de campos]**.
+
+   ![Adicione um grupo de campos](assets/add-field-group.png)
 
 1. Pesquisar por `Consumer Experience Event`.
 
-1. Você pode visualizar os campos e/ou ler a descrição para obter mais detalhes antes de selecionar.
+1. Selecionar ![Visualizar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Preview_18_N.svg) para visualizar os campos e/ou ler a descrição para obter mais detalhes antes de selecionar um grupo de campos.
 
-1. Marque a caixa de seleção e **[!UICONTROL Adicionar grupos de campos]**.
+1. Selecionar **Evento de experiência do consumidor**.
 
-   ![Seleção de grupo de campos](assets/mobile-schema-select-field-groups.png)
+1. Selecione **[!UICONTROL Adicionar grupos de campos]**.
+
+   ![Seleção de grupo de campos](assets/schema-select-field-groups.png)
 
    Você é redirecionado à tela principal de composição do esquema, onde é possível ver todos os campos disponíveis.
 
-1. Nomeie seu esquema selecionando **[!UICONTROL Esquema sem título]** no canto superior esquerdo e, em seguida, **[!UICONTROL Nome de exibição]** &amp; **[!UICONTROL Descrição]**, por exemplo `Luma Tutorial Mobile` e `"Luma App" schema for Adobe Tutorial`
-
 1. Selecione **[!UICONTROL Salvar]**.
-
-   ![Selecionar aplicar](assets/mobile-schema-name-save.png)
 
 >[!NOTE]
 >
->Lembre-se de que não é necessário usar todos os campos em um grupo. Se for útil, você pode considerar um esquema como uma camada de dados vazia. No aplicativo, você preenche os valores relevantes no momento apropriado.
->
->A variável `Consumer Experience Event` tem um tipo de dados chamado `Web information`, que descreve eventos como exibição de página e cliques em links. No momento da escrita, não há uma paridade de aplicativo móvel para este recurso, portanto, você vai criar o seu próprio.
+>Lembre-se de que não é necessário usar todos os campos em um grupo. Também é possível remover campos para ajudar a manter o esquema conciso e compreensível. Se for útil, você pode considerar um esquema como uma camada de dados vazia. No aplicativo, você preenche os valores relevantes no momento apropriado.
+
+A variável [!UICONTROL Evento de experiência do consumidor] o grupo de campos tem um tipo de dados chamado [!UICONTROL Informações da Web], que descreve eventos como exibição de página e cliques em links. No momento da escrita, não há uma paridade de aplicativo móvel para este recurso, portanto, você vai criar o seu próprio.
 
 ## Criar um tipo de dados personalizado
 
@@ -129,52 +144,55 @@ Você começa criando um tipo de dados personalizado que descreve os dois evento
 * Exibição de tela
 * Interação do aplicativo
 
-1. Selecione o **[!UICONTROL Tipos de dados]** e selecione **[!UICONTROL Criar tipo de dados]**.
+1. Selecione o **[!UICONTROL Tipos de dados]** guia.
 
-   ![Seleção do menu de tipo de dados](assets/mobile-schema-datatype-create.png)
+1. Selecionar **[!UICONTROL Criar tipo de dados]**.
 
-1. Dê a ele um **[!UICONTROL Nome de exibição]** e **[!UICONTROL Descrição]**, por exemplo `App Information` e `Custom data type describing "Screen Views" & "App Actions"`
+   ![Seleção do menu de tipo de dados](assets/schema-datatype-create.png)
 
-   ![Fornecimento de nome e descrição](assets/mobile-schema-datatype-name.png)
+1. Forneça um **[!UICONTROL Nome de exibição]** e **[!UICONTROL Descrição]**, por exemplo `App Information` e `Custom data type describing "Screen Views" & "App Actions"`
+
+   ![Fornecimento de nome e descrição](assets/schema-datatype-name.png)
 
    >[!TIP]
    >
    > Sempre use descritivo e legível [!UICONTROL nomes para exibição] para campos personalizados, conforme essa prática os torna mais acessíveis aos profissionais de marketing quando os campos são exibidos em serviços downstream, como o construtor de segmentos.
 
 
-1. Para adicionar um campo, selecione o botão (+).
+1. Para adicionar um campo, selecione a variável ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) botão.
 
-   Este campo é um objeto container para interação com o aplicativo. Dê a ele uma vitrine **[!UICONTROL Nome do campo]** `appInteraction`, **[!UICONTROL nome de exibição]** `App Interaction`, e **[!UICONTROL type]** `Object`.
+
+1. Este campo é um objeto de contêiner para interação com o aplicativo, portanto, forneça um caso de camelo **[!UICONTROL Nome do campo]** `appInteraction`, **[!UICONTROL Nome de exibição]** `App Interaction`e selecione `Object` do **[!UICONTROL Tipo]** lista.
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
-   ![Adicionar novo evento de ação do aplicativo](assets/mobile-schema-datatype-app-action.png)
+   ![Adicionar novo evento de ação do aplicativo](assets/schema-datatype-app-action.png)
 
-1. Para medir a frequência com que uma ação ocorreu, adicione um campo selecionando o botão (+) ao lado da variável `appInteraction` objeto criado.
+1. Para medir a frequência com que uma ação ocorreu, adicione um campo selecionando o ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado do botão **[!UICONTROL appInteraction]** objeto criado.
 
-1. Dê a ele uma vitrine **[!UICONTROL Nome do campo]** `appAction`, **[!UICONTROL nome de exibição]** de `App Action` e **[!UICONTROL type]** `Measure`.
+1. Dê a ele uma vitrine **[!UICONTROL Nome do campo]** `appAction`, **[!UICONTROL Nome de exibição]** de `App Action` e **[!UICONTROL Tipo]** `Measure`.
 
    Esta etapa seria equivalente a um evento bem-sucedido no Adobe Analytics.
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
-   ![Adição do campo de nome da ação](assets/mobile-schema-datatype-action-name.png)
+   ![Adição do campo de nome da ação](assets/schema-datatype-action-name.png)
 
-1. Adicione um campo descrevendo o tipo de interação ao selecionar o botão (+) ao lado da variável `appInteraction` objeto.
+1. Adicione um campo descrevendo o tipo de interação selecionando o ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado do botão **[!UICONTROL appInteraction]** objeto.
 
-1. Dê a ele um **[!UICONTROL Nome do campo]** `name`, **[!UICONTROL nome de exibição]** de `Name` e **[!UICONTROL type]** `String`.
+1. Dê a ele um **[!UICONTROL Nome do campo]** `name`, **[!UICONTROL Nome de exibição]** de `Name` e **[!UICONTROL Tipo]** `String`.
 
    Esta etapa é equivalente a uma dimensão no Adobe Analytics.
 
-   ![Selecionar aplicar](assets/mobile-schema-datatype-apply.png)
+   ![Selecionar aplicar](assets/schema-datatype-apply.png)
 
 1. Role até a parte inferior do painel direito e selecione **[!UICONTROL Aplicar]**.
 
-1. Siga o mesmo padrão para criar uma `appStateDetails` objeto que contém um campo Measure chamado `screenView` e duas strings chamadas `screenName` e `screenType`.
+1. Para criar uma `appStateDetails` objeto que contém um **[!UICONTROL Medir]** campo chamado `screenView` e dois **[!UICONTROL String]** campos chamados `screenName` e `screenType`, siga as mesmas etapas usadas ao criar a variável **[!UICONTROL appInteraction]** objeto.
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-   ![Estado final do tipo de dados](assets/mobile-schema-datatype-final.png)
+   ![Estado final do tipo de dados](assets/schema-datatype-final.png)
 
 ## Adicionar um grupo de campos personalizado
 
@@ -182,36 +200,41 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 
 1. Abra o schema criado anteriormente nesta lição.
 
-1. Selecionar **[!UICONTROL Adicionar]** ao lado de **[!UICONTROL Grupos de campos]**.
+1. Selecionar ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** ao lado de **[!UICONTROL Grupos de campos]**.
 
-   ![Adição de novo grupo de campos](assets/mobile-schema-fieldgroup-add.png)
+   ![Adição de novo grupo de campos](assets/schema-fieldgroup-add.png)
 
-1. Desta vez, você cria um grupo de campos personalizados selecionando o **[!UICONTROL Criar novo grupo de campos]** botão de opção próximo à parte superior e, em seguida, forneça um nome e uma descrição, por exemplo, `App Interactions` e `Fields for app interactions`.
+1. Selecione **[!UICONTROL Criar novo grupo de campos]**.
 
-   ![Fornecimento de nome e descrição](assets/mobile-schema-fieldgroup-name.png)
+1. Forneça um **[!UICONTROL Nome de exibição]** e **[!UICONTROL Descrição]**, por exemplo, `App Interactions` e `Fields for app interactions`.
 
-1. Na tela principal de composição, adicione um campo à raiz do esquema.
+1. Selecione **Adicionar grupos de campos**.
 
-1. Selecione o sinal de mais (+) ao lado do nome do schema.
+   ![Fornecimento de nome e descrição](assets/schema-fieldgroup-name.png)
 
-1. No painel direito, forneça uma **[!UICONTROL Nome do campo]** de `appInformation`, um nome de exibição de `App Information`.
+1. Na tela de composição principal, selecione **[!UICONTROL Interações do aplicativo**].
 
-1. Selecionar `App Information` do **[!UICONTROL Tipo]** , o tipo de dados criado no exercício anterior.
+1. Adicione um campo à raiz do esquema selecionando a variável ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado do nome do schema.
+
+1. No painel direito, forneça uma **[!UICONTROL Nome do campo]** de `appInformation`, um **[!UICONTROL Nome de exibição]** de `App Information`, e uma **[!UICONTROL Tipo]** de `App Information`.
+
+1. Selecionar **[!UICONTROL Interações do aplicativo]** do **[!UICONTROL Grupo de campos]** para atribuir os campos ao novo grupo de campos.
 
 1. Selecione **[!UICONTROL Aplicar]**.
 
-   ![Selecionar aplicar](assets/mobile-schema-fieldgroup-apply.png)
+1. Selecione **[!UICONTROL Salvar]**.
+
+   ![Selecionar aplicar](assets/schema-fieldgroup-apply.png)
 
 >[!NOTE]
 >
 >Os grupos de campos personalizados são sempre colocados em seu identificador de Experience Cloud Org.
->
->`_techmarketingdemos` é substituído pelo valor único da sua organização.
 
-Agora você tem um esquema para usar no restante do tutorial.
+
+>[!SUCCESS]
+>
+>Agora você tem um esquema para usar no restante do tutorial.
+>
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Criar um [!UICONTROL sequência de dados]](create-datastream.md)**
-
->[!NOTE]
->
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

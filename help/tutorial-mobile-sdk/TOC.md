@@ -4,14 +4,14 @@ breadcrumb-title: Tutorial sobre Aplicativos para dispositivos móveis
 user-guide-description: Saiba como implementar aplicativos da Adobe Experience Cloud em aplicativos para dispositivos móveis com o SDK móvel da Experience Platform.
 solution: Data Collection
 feature: Mobile SDK
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 779ce60b8e89520231d4d9cbaecfe09a8cabc38f
 workflow-type: tm+mt
-source-wordcount: '69'
-ht-degree: 81%
+source-wordcount: '75'
+ht-degree: 82%
 
 ---
 
@@ -32,8 +32,14 @@ ht-degree: 81%
    + [WebViews](web-views.md)
    + [Identidade](identity.md)
    + [Perfil](profile.md)
+   + [Places](places.md)
 + Experience Cloud {#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
-   + [Journey Optimizer mensagens por push](journey-optimizer-push.md)
+   + Otimizador de Jornada{#journey-optimizer}
+      + [Notificações por push](journey-optimizer-push.md)
+      + [Mensagens no aplicativo](journey-optimizer-inapp.md)
+      + [Gestão de decisões](journey-optimizer-offers.md)
+   + [Target](target.md)
 + [Conclusão](conclusion.md)
+
