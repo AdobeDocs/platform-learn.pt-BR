@@ -3,9 +3,9 @@ title: Visão geral do tutorial Implementar o Adobe Experience Cloud em aplicati
 description: Saiba como implementar os aplicativos móveis do Adobe Experience Cloud. Este tutorial o orienta por uma implementação de aplicativos Experience Cloud em um aplicativo Swift de amostra.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '844'
 ht-degree: 6%
 
 ---
@@ -81,6 +81,10 @@ Nessas lições, presume-se que você tenha uma ID de Adobe e as permissões de 
 >
 >Como parte deste tutorial, você cria esquemas, conjuntos de dados, identidades e assim por diante. Se várias pessoas estiverem assistindo a este tutorial em uma única sandbox, considere anexar ou anexar uma identificação como parte de suas convenções de nomenclatura ao criar esses objetos. Por exemplo, adicione ` - <your name or initials>` ao nome do objeto que você foi instruído a criar.
 
+## Histórico de versão
+
+* 29 de novembro de 2023: grande revisão com novos aplicativos de amostra e novas lições para mensagens no aplicativo, gestão de decisões e Adobe Target.
+* 9 de março de 2022: Primeira publicação
 
 ## Baixe o aplicativo Luma
 
