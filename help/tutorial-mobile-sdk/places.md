@@ -2,7 +2,7 @@
 title: Usar o Places com o SDK móvel da plataforma
 description: Saiba como usar o serviço de geolocalização do Places no aplicativo móvel.
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 3%
@@ -182,7 +182,7 @@ Vamos criar outra regra
 
 1. No **[!UICONTROL Criar regra]** insira um nome para a regra, por exemplo `POI - Exit`.
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo **[!UICONTROL EVENTOS]**.
-   1. Selecionar **[!UICONTROL Places]** do **[!UICONTROL Extensão]** e selecione **[!UICONTROL Inserir POI]** do **[!UICONTROL Tipo de evento]** lista.
+   1. Selecionar **[!UICONTROL Places]** do **[!UICONTROL Extensão]** e selecione **[!UICONTROL POI de saída]** do **[!UICONTROL Tipo de evento]** lista.
    1. Selecione **[!UICONTROL Manter alterações]**.
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo **[!UICONTROL AÇÕES]**.
    1. Selecionar **[!UICONTROL Núcleo móvel]** de **[!UICONTROL Extensão]** selecione **[!UICONTROL Anexar dados]** de **[!UICONTROL Tipo de ação]** lista.
