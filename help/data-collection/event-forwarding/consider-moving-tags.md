@@ -6,7 +6,7 @@ role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
 jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Os fornecedores de navegador estão alterando a maneira como tratam cookies de t
 
 ## Casos de uso e dados {#use-cases-data}
 
-A primeira etapa é definir os casos de uso implementados com a tag de fornecedor do lado do cliente. Por exemplo, considere o pixel (Meta) do Facebook. Movê-lo do nosso site para o [API de conversões do facebook](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) com a extensão de encaminhamento de eventos significa documentar primeiro os casos de uso específicos.
+A primeira etapa é definir os casos de uso implementados com a tag de fornecedor do lado do cliente. Por exemplo, considere o pixel (Meta) do Facebook. Movê-lo do nosso site para o [API de meta conversões](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) com a extensão de encaminhamento de eventos significa documentar primeiro os casos de uso específicos.
 
 Para o código de fornecedor atual do lado do cliente:
 
