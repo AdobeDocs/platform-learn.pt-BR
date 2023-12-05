@@ -2,11 +2,12 @@
 title: Configurar uma propriedade de tag para implementações do SDK móvel da Platform
 description: Saiba como configurar uma propriedade de tag no [!UICONTROL Coleta de dados] interface.
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 7%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +36,11 @@ Nesta lição, você vai:
 
 1. Crie uma nova propriedade de tag móvel na Interface da coleção de dados:
    1. Selecionar **[!UICONTROL Tags]** no painel de navegação esquerdo.
-   1. Selecione **[!UICONTROL Nova propriedade]**
+   1. Selecionar **[!UICONTROL Nova propriedade]**
       ![criar uma propriedade de tag](assets/tags-new-property.png).
    1. Para o **[!UICONTROL Nome]**, insira `Luma Mobile App Tutorial`.
    1. Para o **[!UICONTROL Platform]**, selecione **[!UICONTROL Dispositivo móvel]**.
-   1. Selecione **[!UICONTROL Salvar]**.
+   1. Selecionar  **[!UICONTROL Salvar]**.
 
       ![configurar a propriedade da tag](assets/tags-property-config.png)
 

@@ -4,11 +4,12 @@ description: Saiba como criar e exibir ofertas com o SDK móvel da plataforma e 
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
-ht-degree: 2%
+source-wordcount: '2470'
+ht-degree: 1%
 
 ---
 

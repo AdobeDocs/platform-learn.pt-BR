@@ -1,11 +1,12 @@
 ---
 title: Usar o Places com o SDK móvel da plataforma
 description: Saiba como usar o serviço de geolocalização do Places no aplicativo móvel.
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 3%
+source-wordcount: '1588'
+ht-degree: 2%
 
 ---
 

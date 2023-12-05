@@ -4,11 +4,12 @@ description: Saiba como criar e enviar mensagens no aplicativo para um aplicativ
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 5%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +57,7 @@ Nesta lição, você
 
 ### Adicionar uma superfície de aplicativo na Coleção de dados
 
-1. No [Interface da coleção de dados](https://experience.adobe.com/br/data-collection/), selecione **[!UICONTROL Superfícies do aplicativo]** no painel esquerdo.
+1. No [Interface da coleção de dados](https://experience.adobe.com/data-collection/), selecione **[!UICONTROL Superfícies do aplicativo]** no painel esquerdo.
 1. Para criar uma configuração, selecione **[!UICONTROL Criar superfície do aplicativo]**.
    ![página inicial da superfície de aplicativo](assets/push-app-surface.png)
 1. Insira um **[!UICONTROL Nome]** para a configuração do, por exemplo `Luma App Tutorial`  .
@@ -166,7 +167,7 @@ O hub de eventos do SDK publica e recebe dados de eventos de extensões registra
 1. Selecionar **[!UICONTROL Criar campanha]**.
 1. No **[!UICONTROL Criar campanha]** tela:
    1. Selecionar **[!UICONTROL Mensagem no aplicativo]** e selecione uma superfície de aplicativo na **[!UICONTROL Superfície do aplicativo]** lista, por exemplo **[!DNL Luma Mobile App]**.
-   1. Selecione **[!UICONTROL Criar]**
+   1. Selecionar **[!UICONTROL Criar]**
       ![Propriedades da campanha](assets/ajo-campaign-properties.png)
 1. Na tela Campaign definition, em **[!UICONTROL Propriedades]**, insira um **[!UICONTROL Nome]** para a campanha, por exemplo `Luma - In-App Messaging Campaign`, e uma **[!UICONTROL Descrição]**, por exemplo `In-app messaging campaign for Luma app`.
    ![Nome da campanha](assets/ajo-campaign-properties-name.png)

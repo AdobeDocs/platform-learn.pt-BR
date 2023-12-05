@@ -2,11 +2,12 @@
 title: Criar um esquema XDM para implementações do SDK móvel da Platform
 description: Saiba como criar um esquema XDM para eventos de aplicativos móveis.
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 4%
 
 ---
 
