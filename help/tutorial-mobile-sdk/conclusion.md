@@ -2,11 +2,12 @@
 title: Conclusão e próximas etapas após concluir o tutorial do SDK móvel da Platform
 description: O que fazer em seguida após concluir o tutorial
 recommendations: display,noCatalog
+jira: KT-14642
 exl-id: 69db6cf3-0d5d-4864-aac2-e5e1aea4c02e
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 8%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +40,7 @@ Você está pronto para começar a próxima fase da sua jornada: implementar o A
 
 E há sempre mais a aprender! Para aproveitar sua implementação, veja a seguir algumas sugestões de outro conteúdo a ser explorado:
 
-* **Ativar o encaminhamento de eventos**. O encaminhamento de eventos pode ser facilmente ativado no fluxo de dados. Aqui está [uma lição prática para configurar o encaminhamento de eventos](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) no tutorial do SDK da Web. Use os recursos criados para sua implementação móvel e escolha campos XDM que você implementou no aplicativo.
+* **Habilitar encaminhamento de eventos**. O encaminhamento de eventos pode ser facilmente ativado no fluxo de dados. Aqui está [uma lição prática para configurar o encaminhamento de eventos](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) no tutorial do SDK da Web. Use os recursos criados para sua implementação móvel e escolha campos XDM que você implementou no aplicativo.
 * **Conectar Customer Journey Analytics**. Se você criou a variável [Conjunto de dados da plataforma](platform.md), você pode conectar o conjunto de dados ao Customer Journey Analytics. Saiba mais nesta página [tutorial em vídeo](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=pt-BR)
 * **Habilitar o Audience Manager no seu fluxo de dados**. Envie seus eventos de experiência XDM para o Audience Manager e comece a criar segmentos com base no Audience Manager de engajamento do aplicativo móvel.
 * **Criar um segmento na Platform**. Se você ativou seu [esquema e conjunto de dados para o Perfil do cliente em tempo real](platform.md), você pode criar segmentos com base nos eventos do aplicativo móvel, combiná-los com dados de outras fontes e enviar esses segmentos para destinos no Real-time Customer Data Platform. Saiba mais sobre o construtor de segmentos nesta [tutorial em vídeo](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html).
