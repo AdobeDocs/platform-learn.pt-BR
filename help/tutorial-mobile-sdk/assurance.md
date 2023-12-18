@@ -4,10 +4,10 @@ description: Saiba como implementar a extensão Assurance em um aplicativo móve
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 6%
+source-wordcount: '1021'
+ht-degree: 5%
 
 ---
 
@@ -57,28 +57,25 @@ Para além do quadro [Instalação do SDK](install-sdks.md), que você concluiu 
 
 Mais informações podem ser encontradas [aqui](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-<!-- not initially required
 
-## Signing
 
-Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+## Definir identificador do conjunto
 
-To update the signing for the lessons that require that you sign the application:
+É necessário fornecer um identificador de pacote exclusivo para seu aplicativo.
 
-1. Open the project in Xcode.
-1. Select **[!DNL Luma]** in the Project navigator.
-1. Select the **[!DNL Luma]** target.
-1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
- 
+1. Abra o projeto no Xcode.
+1. Selecionar **[!DNL Luma]** no Navegador de projetos.
+1. Selecione o **[!DNL Luma]** público-alvo.
+1. Selecione o **Assinatura e recursos** guia.
+1. Definir um **[!UICONTROL Identificador do pacote]**.
+
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote precisa ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`. A versão Concluída deste tutorial, por exemplo, usa `com.adobe.luma.tutorial.swiftui`.
 
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+   ![Recursos de assinatura do Xcode](assets/xcode-signing-capabilities.png){zoom=&quot;yes&quot;}
 
--->
 
 ## Configurar um URL de base
 
@@ -93,7 +90,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote deve ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`.<br/>Da mesma forma, use um esquema de URL exclusivo e substitua o já fornecido `lumatutorialswiftui` com seu esquema de URL exclusivo.
+   >Certifique-se de usar um _único_ identificador do pacote e substitua o `com.adobe.luma.tutorial.swiftui` identificador de pacote, pois cada identificador de pacote deve ser exclusivo. Normalmente, você usa um formato de DNS reverso para sequências de ID de pacote, como `com.organization.brand.uniqueidentifier`. Você pode usar o mesmo identificador de conjunto usado em [Definir identificador do conjunto](#define-bundle-identifier).<br/>Da mesma forma, use um esquema de URL exclusivo e substitua o já fornecido `lumatutorialswiftui` com seu esquema de URL exclusivo.
 
 Para saber mais sobre Esquemas de URL no iOS, revise [Documentação da Apple](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
