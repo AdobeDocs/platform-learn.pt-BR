@@ -4,14 +4,14 @@ description: Saiba como implementar os aplicativos móveis do Adobe Experience C
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
+source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 6%
+source-wordcount: '826'
+ht-degree: 3%
 
 ---
 
-# Tutorial Implementar a Adobe Experience Cloud em aplicativos para dispositivos móveis
+# Tutorial Implementar o Adobe Experience Cloud em aplicativos para dispositivos móveis
 
 Saiba como implementar aplicativos da Adobe Experience Cloud em seu aplicativo para dispositivos móveis usando o SDK móvel da Adobe Experience Platform.
 
@@ -95,10 +95,14 @@ Duas versões do aplicativo de amostra estão disponíveis para download. Ambas 
 1. [Início](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: um projeto sem código ou com código de espaço reservado para a maioria do código do SDK do Experience Platform Mobile que você precisa usar para concluir os exercícios práticos neste tutorial.
 1. [Concluir](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: uma versão com a implementação completa para referência.
 
-
 >[!NOTE]
 >
 >Use o iOS como plataforma, [!DNL Swift] como a linguagem de programação, [!DNL SwiftUI] como a estrutura da interface e [!DNL Xcode] como o ambiente de desenvolvimento integrado (IDE). No entanto, muitos dos conceitos de implementação explicados são semelhantes para outras plataformas de desenvolvimento. Muitos já concluíram com sucesso este tutorial com pouca ou nenhuma experiência anterior de iOS/Swift(UI). Não é necessário ser um especialista para concluir as lições, mas você aprenderá mais com elas se ler e entender o código confortavelmente.
+
+
+Você pode baixar a versão final produzida do aplicativo na App Store.
+
+[![Baixar](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 Vamos começar!
