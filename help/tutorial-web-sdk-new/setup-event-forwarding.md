@@ -2,9 +2,9 @@
 title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 3%
 
 ---
@@ -59,6 +59,7 @@ Neste final desta lição, você poderá:
 
       * [Instalação da extensão do SDK da Web](install-web-sdk.md)
       * [Criar elementos de dados](create-data-elements.md)
+      * [Criar identidades](create-identities.md)
       * [Criar uma regra de tag](create-tag-rule.md)
       * [Validar com o Adobe Experience Platform Debugger](validate-with-debugger.md)
 
@@ -320,4 +321,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
-Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

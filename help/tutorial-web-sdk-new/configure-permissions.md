@@ -2,9 +2,9 @@
 title: Configurar permissões para o tutorial
 description: Saiba como solicitar acesso ao SDK da Web do Experience Platform e configurar a permissão necessária para concluir o tutorial Implementar o Adobe Experience Cloud com SDK da Web.
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -23,9 +23,9 @@ Saiba como solicitar acesso ao SDK da Web do Experience Platform e configurar a 
 Esses recursos devem estar disponíveis para todos os clientes do Experience Cloud, mesmo se você não for um cliente de um aplicativo baseado na plataforma, como o Real-Time CDP.
 
 * O acesso à **produção padrão**, **&quot;Prod&quot;** sandbox.
-* Acesso a **[!UICONTROL Gerenciar esquemas]** e **[!UICONTROL Exibir esquemas]** em **[!UICONTROL Modelagem de dados]**
-* Acesso a **[!UICONTROL Gerenciar namespaces de identidade]** e **[!UICONTROL Exibir namespaces de identidade]** em **[!UICONTROL Identity Management]**
-* Acesso a **[!UICONTROL Gerenciar fluxos de dados]** e **[!UICONTROL Exibir fluxos de dados]** em **[!UICONTROL Coleta de dados]**
+* Acesso a **[!UICONTROL Gerenciar esquemas]** e **[!UICONTROL Exibir esquemas]** em **[!UICONTROL Modelagem de dados]**.
+* Acesso a **[!UICONTROL Gerenciar namespaces de identidade]** e **[!UICONTROL Exibir namespaces de identidade]** em **[!UICONTROL Identity Management]**.
+* Acesso a **[!UICONTROL Gerenciar fluxos de dados]** e **[!UICONTROL Exibir fluxos de dados]** em **[!UICONTROL Coleta de dados]**.
 * Se você for um cliente de um aplicativo baseado em plataforma e estiver concluindo o [Configurar Experience Platform](setup-experience-platform.md) você também deve ter:
    * Acesso a um **desenvolvimento** sandbox.
    * Todos os itens de permissão em **[!UICONTROL Gerenciamento de dados]**, e **[!UICONTROL Gerenciamento de perfis]**:
@@ -51,4 +51,4 @@ Agora você está pronto para iniciar as etapas de configuração iniciais.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

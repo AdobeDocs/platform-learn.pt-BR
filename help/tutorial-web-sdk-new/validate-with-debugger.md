@@ -2,10 +2,10 @@
 title: Validar implementações do SDK da Web com o Experience Platform Debugger
 description: Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Debugger
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 2%
+source-wordcount: '1465'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Se você nunca usou o depurador antes (e este é diferente do Adobe Experience C
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-Nesta lição, você usará o [extensão do Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para substituir a propriedade de tag codificada na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) com sua própria propriedade.
+Nesta lição, você usa o [Extensão do Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) para substituir a propriedade de tag codificada na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) com sua própria propriedade.
 
 Essa técnica é chamada de alternação de ambiente e será útil posteriormente, ao trabalhar com tags em seu próprio site. Você pode carregar seu site em produção em seu navegador, mas com seus *desenvolvimento* ambiente de tags. Essa capacidade permite fazer e validar de forma segura as alterações nas tags independentemente das suas versões de código normais. Afinal, essa separação das versões de tag de marketing das versões regulares de código é um dos principais motivos pelos quais os clientes usam tags!
 
@@ -31,20 +31,21 @@ Essa técnica é chamada de alternação de ambiente e será útil posteriorment
 No final desta lição, você poderá usar o depurador para:
 
 * Carregar uma biblioteca de tags alternativa
-* Validar se o objeto XDM está capturando e enviando dados conforme esperado pela Rede de borda
+* Validar se o evento XDM do lado do cliente está capturando e enviando dados conforme esperado para a Rede de borda da plataforma
+* Habilitar o Edge Trace para exibir solicitações do lado do servidor enviadas pela Platform Edge Network
+* Inicie uma sessão do Adobe Experience Platform Assurance para exibir uma ID de Experience Cloud gerada pela Platform Edge Network
 
 ## Pré-requisitos
 
 Você está familiarizado com as tags de Coleção de dados e a [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e concluíram as seguintes lições anteriores no tutorial:
 
-* [Configurar permissões](configure-permissions.md)
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
 * [Configurar uma sequência de dados](configure-datastream.md)
 * [Extensão SDK da Web instalada na propriedade da tag](install-web-sdk.md)
 * [Criar elementos de dados](create-data-elements.md)
+* [Criar identidades](create-identities.md)
 * [Criar uma regra de tag](create-tag-rule.md)
-
 
 ## Carregar bibliotecas de tags alternativas com o Debugger
 
@@ -67,38 +68,46 @@ O depurador de Experience Platform tem um recurso interessante que permite subst
 
    ![Selecione Ações > Substituir](assets/validate-switch-environment.png)
 
-1. Como você está autenticado, o Debugger extrairá suas propriedades e ambientes de tag disponíveis. Selecione o `Web SDK Course` propriedade
+1. Como você está autenticado, o Debugger extrairá suas propriedades e ambientes de tag disponíveis. Selecione sua propriedade; nesse caso, `Web SDK Course 3`
 1. Selecione o `Development` ambiente
 1. Selecione o **[!UICONTROL Aplicar]** botão
 
    ![Selecionar a propriedade de tag alternativa](assets/validate-switch-selection.png)
 
-1. O site Luma será recarregado agora _com a propriedade da tag_.
+1. O site Luma será recarregado agora _com sua própria propriedade de tag_.
 
    ![propriedade de tag substituída](assets/validate-switch-success.png)
 
-À medida que você continua o tutorial, usará essa técnica de mapear o site Luma para sua própria propriedade de tag para validar a implementação do SDK da Web da Platform. Ao começar a usar tags no site de produção, você pode usar essa mesma técnica para validar as alterações.
+À medida que você prossegue no tutorial, usa essa técnica de mapear o site Luma para sua própria propriedade de tag para validar a implementação do SDK da Web da Platform. Ao começar a usar tags no site de produção, você pode usar essa mesma técnica para validar as alterações.
 
-## Validar sua implementação no Experience Platform Debugger
+## Validar solicitações de rede do lado do cliente com o Experience Platform Debugger
 
-Você pode usar o Debugger para validar a implementação do SDK da Web da Platform e exibir os dados enviados para a Rede de borda da Platform:
+Você pode usar o Debugger para validar beacons do lado do cliente acionados a partir da implementação do SDK da Web da Platform para exibir os dados enviados para a Rede de borda da Platform:
 
 1. Ir para **[!UICONTROL Resumo]** na navegação à esquerda, para ver os detalhes da propriedade da tag
 
    ![Guia Resumo](assets/validate-summary.png)
 
 1. Agora vá para **[!UICONTROL Experience Platform Web SDK]** na navegação à esquerda para ver o **[!UICONTROL Solicitações de rede]**
-1. Abra o **[!UICONTROL events]** row (não se preocupe se esta captura de tela mostrar mais solicitações do que a sua, ela inclui solicitações de lições futuras e você pode ignorar por enquanto)
+1. Abra o **[!UICONTROL events]** linha
 
    ![Solicitação do SDK da Web do Adobe Experience Platform](assets/validate-aep-screen.png)
 
-1. Observe como podemos ver a `web.webpagedetails.pageView` tipo de evento que especificamos em [!UICONTROL Enviar evento] e outras variáveis prontas para uso que seguem a `AEP Web SDK ExperienceEvent Mixin` formato
+1. Observe como você pode ver a `web.webpagedetails.pageView` tipo de evento que você especificou em seu [!UICONTROL Atualizar variável] e outras variáveis prontas para uso que seguem a `AEP Web SDK ExperienceEvent` grupo de campos
 
    ![Detalhes do evento](assets/validate-event-pageViews.png)
 
-1. Role para baixo até `web` objeto, selecione para abri-lo e inspecionar o `webPageDetails.name`, `webPageDetails.server`, e `webPageDetails.siteSection`. Eles devem corresponder às variáveis de camada de dados digitais correspondentes na página inicial
+1. Role para baixo até `web` objeto, selecione para abri-lo e inspecionar o `webPageDetails.name`, `webPageDetails.server`, e `webPageDetails.siteSection`. Eles devem corresponder aos `digitalData` variáveis de camada de dados na página inicial
 
-   ![Guia Rede](assets/validate-xdm-content.png)
+>[!TIP]
+>
+> Para visualizar e comparar as `digitalData` camada de dados na página inicial:
+>
+> 1. Na página inicial do Luma, abra as ferramentas de desenvolvedor do navegador. No caso do Chrome, selecione o botão `F12` no teclado
+> 1. Selecione o **[!UICONTROL Console]** guia
+> 1. Enter `digitalData` e selecione `Enter` no teclado para exibir os valores da camada de dados
+
+![Guia Rede](assets/validate-xdm-content.png)
 
 Também é possível validar os detalhes do Mapa de identidade:
 
@@ -117,8 +126,7 @@ Também é possível validar os detalhes do Mapa de identidade:
 1. Procure por **identityMap** na janela pop-up. Aqui você deve ver `lumaCrmId` com três chaves de authenticatedState, id e primary:
    ![SDK da Web no Debugger](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
-
-## Validar com ferramentas de desenvolvimento do navegador
+### Validar solicitações do lado do cliente com ferramentas de desenvolvimento do navegador
 
 Esses tipos de detalhes da solicitação também estão visíveis nas ferramentas do desenvolvedor da Web do navegador **Rede** (supondo que o site esteja carregando a biblioteca de tags).
 
@@ -130,9 +138,59 @@ Esses tipos de detalhes da solicitação também estão visíveis nas ferramenta
 
    ![Guia Rede](assets/validate-dev-console-ecid.png)
 
-   >[!NOTE]
+
+## Validar solicitações de rede do lado do servidor com o Experience Platform Debugger
+
+Como você aprendeu na [Configurar um fluxo de dados](configure-datastream.md) lição, o SDK da Web da Platform envia primeiro os dados de sua propriedade digital para a Rede de borda da Platform. Em seguida, a Platform Edge Network faz solicitações adicionais do lado do servidor para os serviços correspondentes ativados no fluxo de dados.
+
+Você pode validar solicitações do lado do servidor ativando o Rastreamento de borda no Debugger. Além disso, você também pode validar a carga útil totalmente processada depois que ela atingir um aplicativo Adobe usando [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+
+Nos próximos dois exercícios, ative o Edge Trace e visualize a ID de Experience Cloud gerada pela Platform Edge Network usando o Assurance.
+
+### Ativar o Edge Trace
+
+Para ativar o Edge Trace
+
+1. Na navegação à esquerda de **[!UICONTROL Experience Platform Debugger]** selecionar **[!UICONTROL Logs]**
+1. Selecione o **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]**
+
+   ![Connect Edge Trace](assets/analytics-debugger-edgeTrace.png)
+
+1. Está vazio por enquanto
+
+   ![Rastreamento de Borda Conectado](assets/analytics-debugger-edge-connected.png)
+
+1. Atualize o [Página inicial da Luma](https://luma.enablementadobe.com/) e verificar **[!UICONTROL Experience Platform Debugger]** novamente, para ver os dados aparecerem.
+
+   ![Rastreamento de borda de beacon do Analytics](assets/validate-edge-trace.png)
+
+Nesse ponto, não é possível exibir solicitações da Platform Edge Network em um aplicativo Adobe porque você não ativou nenhuma no fluxo de dados. Em lições futuras, você usará o Edge Trace para exibir as solicitações de saída do lado do servidor para aplicativos Adobe. No entanto, usando o Assurance, ainda é possível exibir a ID de Experience Cloud gerada pela Platform Edge Network.
+
+### Iniciar uma sessão do Assurance
+
+O Adobe Experience Platform Assurance é um produto da Adobe Experience Cloud que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou fornece experiências.
+
+Leia mais sobre [Adobe Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+
+Toda vez que você ativa o Edge Trace, uma sessão do Assurance é iniciada em segundo plano.
+
+Para exibir a sessão do Assurance,
+
+1. Com o Edge Trace ativado, você pode ver um ícone de link de saída na parte superior. Selecione o ícone para abrir o Assurance. Uma nova guia no navegador é aberta.
+
+   ![Iniciar sessão do Assurance](assets/validate-debugger-start-assurnance.png)
+
+1. Selecione a linha com o evento chamado Identificador de Resposta Adobe.
+1. Um menu é exibido à direita. Selecione o `+` assinar ao lado de `[!UICONTROL ACPExtensionEvent]`
+1. Fazer drill-down selecionando `[!UICONTROL payload > 0 > payload > 0 > namespace]`. A ID mostrada nos últimos `0` corresponde ao `ECID`. Você sabe que pelo valor que aparece em `namespace` correspondência `ECID`
+
+   ![Garantia para validar a ECID](assets/validate-assurance-ecid.png)
+
+   >[!CAUTION]
    >
-   >    Talvez você não veja a mesma quantidade de solicitações de carga que a captura de tela acima. Esta disparidade deve-se ao fato de as [configurar o Target](setup-target.md) foram concluídas no momento em que a captura de tela foi feita. Você pode ignorar essa diferença por enquanto.
+   >Você pode ver um valor de ECID truncado devido à largura da janela. Basta selecionar a barra de alças na interface e arrastar para a esquerda para visualizar toda a ECID.
+
+Nas lições futuras, você usa o Assurance para validar cargas totalmente processadas que chegam a um aplicativo Adobe habilitado no seu fluxo de dados.
 
 Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua coleção de dados, você estará pronto para configurar os aplicativos de Adobe individuais usando o SDK da Web da Platform.
 
@@ -140,4 +198,4 @@ Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
