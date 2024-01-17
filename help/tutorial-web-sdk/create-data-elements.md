@@ -3,10 +3,10 @@ title: Criar elementos de dados
 description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 5%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
@@ -70,11 +70,11 @@ Antes de começar a criar o objeto XDM, crie o seguinte conjunto de elementos de
 1. Nomeie o elemento de dados `page.pageInfo.pageName`
 1. Use o **[!UICONTROL Variável JavaScript]** **[!UICONTROL Tipo de elemento de dados]** para apontar para um valor na camada de dados do Luma: `digitalData.page.pageInfo.pageName`
 
-1. Marque as caixas **[!UICONTROL Forçar valor minúsculo]** e **[!UICONTROL Texto limpo]** para padronizar o caso e remover espaços irrelevantes
+1. Marque as caixas para **[!UICONTROL Forçar valor de minúsculas]** e **[!UICONTROL Texto limpo]** para padronizar o caso e remover espaços irrelevantes
 
 1. Sair `None` como o **[!UICONTROL Duração do armazenamento]** já que esse valor é diferente em cada página
 
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Elemento de dados do nome da página](assets/data-element-pageName.jpg)
 
@@ -133,7 +133,7 @@ Em seguida, você pode criar o elemento de dados Mapa de identidade:
 1. Como a variável **[!UICONTROL Estado autenticado]**, selecione **[!UICONTROL Autenticado]**
 1. Selecionar **[!UICONTROL Principal]**
 
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Interface da coleção de dados](assets/identity-id-namespace.png)
 
@@ -171,8 +171,8 @@ Há diferentes maneiras de mapear elementos de dados para campos de objeto XDM. 
 Crie um objeto XDM para capturar dados de conteúdo:
 
 1. Na navegação à esquerda, selecione **[!UICONTROL Elementos de dados]**
-1. Selecione **[!UICONTROL Adicionar elemento de dados]**
-1. **** Nomeie o elemento de dados **`xdm.content`**
+1. Selecionar **[!UICONTROL Adicionar elemento de dados]**
+1. **[!UICONTROL Nome]** o elemento de dados **`xdm.content`**
 1. Como a variável **[!UICONTROL Extensão]** selecionar `Adobe Experience Platform Web SDK`
 1. Como a variável **[!UICONTROL Tipo de elemento de dados]** selecionar `XDM object`
 1. Selecione a plataforma **[!UICONTROL Sandbox]** no qual você criou o esquema XDM no durante o [Configurar um esquema XDM](configure-schemas.md) lição, neste exemplo `DEVELOPMENT Mobile and Web SDK Courses`
@@ -202,7 +202,7 @@ Crie um objeto XDM para capturar dados de conteúdo:
 
 1. Mapear para o `identityMap.loginID` elemento de dados
 
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Interface da coleção de dados](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
 
