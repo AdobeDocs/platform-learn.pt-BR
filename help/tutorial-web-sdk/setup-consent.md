@@ -3,9 +3,9 @@ title: Configurar consentimento com o SDK da Web da plataforma
 description: Saiba como definir as configurações de privacidade da extensão de tag do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Saiba como definir as configurações de privacidade da extensão de tag do SDK 
 
 >[!NOTE]
 > 
->Para fins de demonstração, este tutorial usa [Klaro](https://heyklaro.com/) como um CMP. Você pode seguir o Klaro ou o CMP usado com seu site.
+>Para fins de demonstração, este tutorial usa [Klaro](https://heyklaro.com/){target="_blank"} como um CMP. Você pode seguir o Klaro ou o CMP usado com seu site.
 
 
 ## Objetivos de aprendizagem
