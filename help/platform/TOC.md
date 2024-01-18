@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '855'
 ht-degree: 16%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 16%
    + [Usar sandboxes](/help/platform/admin/use-sandboxes.md)
    + [Copiar objetos entre sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Adicionar usuários](/help/platform/admin/add-users.md)
+   + [Adicionar usuários à coleção de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Adicionar desenvolvedores](/help/platform/admin/add-developers.md)
    + [Adicionar administradores de produto](/help/platform/admin/add-product-administrators.md)
    + [Configurar o controle de acesso baseado em atributos](/help/platform/admin/configure-attribute-based-access-control.md)

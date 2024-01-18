@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 42%
+source-wordcount: '185'
+ht-degree: 28%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 42%
 # Tutoriais da Coleção de dados{#data-collection}
 
 + [Tutorials de Coleção de dados](overview.md)
++ [Usuários e permissões](admin/users-and-permissions.md)
 + Tags{#tags}
    + [Visão geral e criar uma propriedade](tags/create-a-property.md)
    + [Escolha uma opção de hospedagem](tags/choose-a-hosting-option.md)
@@ -25,11 +26,10 @@ ht-degree: 42%
    + [Criar elementos de dados](tags/create-data-elements.md)
    + [Criar regras](tags/build-rules.md)
    + [Criar e publicar uma biblioteca](tags/build-and-publish-a-library.md)
-   + [Usuários e permissões](tags/users-and-permissions.md)
    + [Implementar em sites com o SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
    + [Implementar em sites com SDKs de soluções](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target="_blank"}
-+ Web SDK{#web-sdk}
++ SDK da Web{#web-sdk}
    + [Visão geral](web-sdk/overview.md)
    + [Demonstração](web-sdk/demo.md)
    + [Tutorial de implementação (com tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
@@ -48,7 +48,7 @@ ht-degree: 42%
 + API do servidor{#server-api}
    + [Visão geral](server-api/overview.md)
    + [Noções básicas das APIs](server-api/introduction.md)
-+ Encaminhamento de eventos{#event-forwarding}
++ Encaminhamento de evento{#event-forwarding}
    + [Visão geral](event-forwarding/overview.md)
    + [Criar uma propriedade](event-forwarding/create-a-property.md)
    + [Configurar um fluxo de dados](event-forwarding/set-up-a-datastream.md)
@@ -64,5 +64,5 @@ ht-degree: 42%
    + [Preparação de dados](edge/data-prep.md)
    + [Gerenciar dados confidenciais](edge/manage-sensitive-data-in-datastreams.md)
    + [IDs de dispositivo próprio](edge/generate-first-party-device-ids.md)
-+ Debugger{#debugger}
++ Depurador{#debugger}
    + [Visão geral](debugger/overview.md)
