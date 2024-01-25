@@ -3,10 +3,10 @@ title: Configurar o Adobe Target com o SDK da Web da plataforma
 description: Saiba como implementar o Adobe Target usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
 workflow-type: tm+mt
-source-wordcount: '3800'
-ht-degree: 2%
+source-wordcount: '3582'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,7 @@ Este trecho já está presente no site Luma, mas vamos examinar mais de perto pa
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -128,11 +128,11 @@ Para configurar o Target na sequência de dados:
 
    ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
 
-1. Selecione **[!UICONTROL Adicionar serviço]**
+1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/target-datastream-addService.png)
 1. Selecionar **[!UICONTROL Adobe Target]** como o **[!UICONTROL Serviço]**
 1. Insira os detalhes opcionais sobre a implementação do Target, se desejado, seguindo as orientações abaixo.
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Configuração da sequência de dados de destino](assets/target-datastream.png)
 
@@ -151,7 +151,7 @@ Para configurar ou localizar tokens de propriedade, navegue até **Adobe Target*
 
 ### ID do ambiente de destino
 
-Os [](https://experienceleague.adobe.com/docs/target/using/administer/environments.html)ambientes do Target ajudam você a gerenciar a implementação em todos os estágios de desenvolvimento. Essa configuração opcional especifica qual ambiente do Target você usará com cada fluxo de dados.
+[Ambientes](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) no Target ajudam a gerenciar a implementação em todos os estágios de desenvolvimento. Essa configuração opcional especifica qual ambiente do Target você usará com cada fluxo de dados.
 
 A Adobe recomenda definir a ID de ambiente do Target de forma diferente para cada um dos fluxos de dados de desenvolvimento, preparo e produção para simplificar as coisas.
 
