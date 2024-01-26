@@ -4,9 +4,9 @@ description: Saiba como implementar a Gestão de decisões usando o SDK da Web d
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 Saiba como implementar a Gestão de decisões usando o SDK da Web da plataforma. Este guia aborda os pré-requisitos básicos da Gestão de decisões, as etapas detalhadas de configuração e um aprofundamento em um caso de uso centrado no status de fidelidade.
 
-Ao seguir essa documentação, os usuários do Journey Optimizer estão equipados para aplicar efetivamente os recursos do offer decisioning, aprimorando a personalização e a relevância das interações com os clientes.
+Ao seguir este tutorial, os usuários do Journey Optimizer estão equipados para aplicar efetivamente os recursos do offer decisioning, aprimorando a personalização e a relevância das interações com os clientes.
 
 ## Objetivos de aprendizagem
 
@@ -24,7 +24,7 @@ No final desta lição, você poderá:
 
 * Entenda os conceitos principais da Gestão de decisões na Adobe Journey Optimizer e sua integração com o SDK da Web da Adobe Experience Platform.
 
-* Saiba mais sobre o processo passo a passo de configuração do SDK da Web para o Offer Decisioning, garantindo uma integração perfeita com o AJO.
+* Saiba mais sobre o processo passo a passo de configuração do SDK da Web para o Offer Decisioning, garantindo uma integração perfeita com o Journey Optimizer.
 
 * Explore um caso de uso detalhado centrado em ofertas de status de fidelidade, obtendo insights sobre como criar e gerenciar ofertas, decisões e disposições de maneira eficaz.
 
@@ -38,13 +38,11 @@ No final desta lição, você poderá:
 
 Para concluir as lições desta seção, primeiro você deve:
 
-* Certifique-se de que sua organização tenha acesso ao Adobe Journey Optimizer Ultimate (AJO e Offer Decisioning) ou ao Adobe Experience Platform e ao complemento de serviço de aplicativo do Offer Decisioning.
+* Certifique-se de que sua organização tenha acesso ao Adobe Journey Optimizer Ultimate (Journey Optimizer e Offer Decisioning) ou ao Adobe Experience Platform e ao complemento de serviço de aplicativo do Offer Decisioning.
 
 * Concluir todas as lições para a configuração inicial do SDK da Web da Platform.
 
 * Ative sua organização para o Edge Decisioning.
-
-* Publique sua sequência de dados.
 
 * Entenda como configurar um posicionamento e instanciar IDs de posicionamento e atividade no Escopo de decisão JSON.
 
@@ -64,7 +62,7 @@ O offer decisioning deve ser ativado na variável **sequência de dados** antes 
 
 Para configurar o Offer Decisioning no fluxo de dados:
 
-1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection) interface.
+1. Vá para a [Coleta de dados](https://experience.adobe.com/#/data-collection) interface.
 
 1. Na navegação à esquerda, selecione **Datastreams**.
 
@@ -143,7 +141,7 @@ Esse caso de uso permite entender melhor como o Journey Optimizer pode ajudar a 
 
 >[!NOTE]
 >
-> Como este tutorial é destinado a implementadores, vale a pena observar que esta lição envolve trabalho substancial na interface do usuário no AJO. Embora essas tarefas de interface do usuário sejam normalmente tratadas pelos profissionais de marketing, pode ser benéfico para os implementadores obterem insights sobre o processo, mesmo que não sejam responsáveis pela criação de campanhas de gestão de decisões a longo prazo.
+> Como este tutorial é destinado aos implementadores, vale a pena observar que esta lição envolve um trabalho de interface substancial no Journey Optimizer. Embora essas tarefas de interface sejam normalmente tratadas por profissionais de marketing, pode ser benéfico para os implementadores obterem insights sobre o processo, mesmo que não sejam responsáveis pela criação de campanhas de gestão de decisões a longo prazo.
 
 ## Componentes
 
@@ -173,7 +171,7 @@ Para criar a disposição, siga estas etapas:
 
 1. Clique em **Salvar**.
 1. Depois que a disposição é criada, ela é exibida na lista de disposições.
-1. Anote a ID de posicionamento, pois ela pode ser necessária para a configuração no Escopo da decisão.
+1. Selecione a linha que contém a nova disposição e anote a ID de disposição, pois isso pode ser necessário para configuração dentro do Escopo da decisão.
 
    ![Consulte ID de posicionamento ](../assets/decisioning-placement-id.png)
 
