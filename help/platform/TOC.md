@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 16%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 16%
    + [Atualizar esquemas](/help/platform/schemas/update-schemas.md)
    + [Criar um esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Fontes {#sources}
-   + [Visão geral das fontes](/help/platform/sources/overview.md)
+   + [Visão geral](/help/platform/sources/overview.md)
    + [Assimilar dados do Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Assimilar dados do Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
    + [Assimilar dados do Marketo](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 16%
    + [Transmitir dados com a API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Dados de fluxo usando Conectores de origem](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Solução de problemas: Conector SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
++ Manuais de estratégia de casos de uso {#use-case-playbooks}
+   + [Visão geral](/help/platform/use-case-playbooks/overview.md)
+   + [Configurar uma sandbox de manuais](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [Criar e publicar uma instância de manual](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Integrações do Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
