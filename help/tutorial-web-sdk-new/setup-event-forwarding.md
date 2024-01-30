@@ -2,9 +2,9 @@
 title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 3%
 Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform.
 
 O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam de Adobe diretamente da Adobe Experience Platform Edge Network, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos no [Visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagrama do SDK da Web e do encaminhamento de eventos](assets/dc-websdk-eventforwarding.png)
 
 Para usar o encaminhamento de eventos na Adobe Experience Platform, os dados devem ser enviados para a Rede de borda da Adobe Experience Platform primeiro usando uma ou mais das três opções a seguir:
 
@@ -50,7 +53,6 @@ Neste final desta lição, você poderá:
 
    * Configuração inicial
 
-      * [Configurar permissões](configure-permissions.md)
       * [Configurar um esquema XDM](configure-schemas.md)
       * [Configurar um namespace de identidade](configure-identities.md)
       * [Configurar uma sequência de dados](configure-datastream.md)

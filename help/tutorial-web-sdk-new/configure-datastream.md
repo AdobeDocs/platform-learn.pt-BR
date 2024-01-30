@@ -2,9 +2,9 @@
 title: Configurar uma sequência de dados
 description: Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 4%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 4%
 Saiba como habilitar um fluxo de dados e configurar aplicativos Experience Cloud.
 
 As sequências de dados informam à Adobe Experience Platform Edge Network para onde enviar os dados coletados pelo SDK da Web da plataforma. Na configuração dos datastreams, você habilita os aplicativos Experience Cloud, a conta Experience Platform e o encaminhamento de eventos. Consulte a [Princípios básicos da configuração de um fluxo de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=br) para obter informações mais detalhadas.
+
+
+![SDK da Web, fluxos de dados e diagrama de rede de borda](assets/dc-websdk-datastreams.png)
 
 ## Objetivos de aprendizagem
 

@@ -1,9 +1,9 @@
 ---
 title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1608'
 ht-degree: 5%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 5%
 Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web da plataforma.
 
 O Experience Platform é o backbone de todos os novos aplicativos Experience Cloud, como o Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics e Adobe Journey Optimizer. Esses aplicativos foram projetados para usar o SDK da Web da Platform como o método ideal de coleta de dados da Web.
+
+
+![Diagrama do SDK da Web e Adobe Experience Platform](assets/dc-websdk-aep.png)
 
 O Experience Platform usa o mesmo esquema XDM criado anteriormente para capturar dados do evento do site da Luma. Quando esses dados são enviados para a Platform Edge Network, a configuração da sequência de dados pode encaminhá-los para o Experience Platform.
 
