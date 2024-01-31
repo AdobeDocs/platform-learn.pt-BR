@@ -2,9 +2,9 @@
 title: Configurar o Adobe Target com o SDK da Web da plataforma
 description: Saiba como implementar o Adobe Target usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Target
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -394,22 +394,9 @@ Há alguns pontos de dados que podem ser úteis para o Target que não são mape
 * [Parâmetros reservados do Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * Valores de categoria para [afinidade de categorias](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Criar elementos de dados para parâmetros do Target
+### Criar elemento de dados para parâmetros de Target especiais
 
-Primeiro, você configurará alguns elementos de dados adicionais para um atributo de perfil, atributo de entidade, valor de categoria e, em seguida, construirá o `data` objeto usado para transmitir dados não XDM:
-
-* **`target.entity.id`** mapeado para `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** mapeado para `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** usar o seguinte código personalizado para analisar o URL do site para a categoria de nível superior:
-
-  ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
-  ```
+Primeiro, use os elementos de dados criados no [Criar elementos de dados](create-data-elements.md) lição para construir a `data` objeto usado para transmitir dados não XDM:
 
 * **`data.content`** usando o seguinte código personalizado:
 
@@ -417,10 +404,10 @@ Primeiro, você configurará alguns elementos de dados adicionais para um atribu
   var data = {
      __adobe: {
         target: {
-           "entity.id": _satellite.getVar("target.entity.id"),
-           "entity.name": _satellite.getVar("target.entity.name"),
+           "entity.id": _satellite.getVar("product.productInfo.sku"),
+           "entity.name": _satellite.getVar("product.productInfo.title"),
            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("target.user.categoryId")
+           "user.categoryId": _satellite.getVar("product.category")
         }
      }
   }

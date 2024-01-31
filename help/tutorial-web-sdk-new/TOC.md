@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 26%
+source-wordcount: '97'
+ht-degree: 23%
 
 ---
 
@@ -21,7 +21,6 @@ ht-degree: 26%
 
 + [Visão geral do tutorial](overview.md)
 + Configuração inicial {#initial-configuration}
-   + [Configurar permissões](configure-permissions.md)
    + [Configurar um esquema XDM](configure-schemas.md)
    + [Configurar um namespace de identidade](configure-identities.md)
    + [Configurar uma sequência de dados](configure-datastream.md)
@@ -32,6 +31,7 @@ ht-degree: 26%
    + [Criar identidades](create-identities.md)
    + [Criar uma regra de tag](create-tag-rule.md)
    + [Validar com o Debugger](validate-with-debugger.md)
+   + [Validar com garantia](validate-with-assurance.md)
 
 + Configuração de aplicativos {#applications-setup}
    + [Configurar Experience Platform](setup-experience-platform.md)

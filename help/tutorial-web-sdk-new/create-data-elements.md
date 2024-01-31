@@ -2,43 +2,22 @@
 title: Criar elementos de dados
 description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1212'
 ht-degree: 1%
 
 ---
 
 # Criar elementos de dados
 
-Saiba como criar os elementos de dados essenciais necessários para capturar dados com o SDK da Web do Experience Platform. Capturar dados de conteúdo e de identidade no [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Saiba como usar o esquema XDM criado anteriormente para coletar dados usando o tipo de elemento de dados do SDK da Web da plataforma chamado Variável.
+Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, e preencha os campos no esquema XDM usando o tipo de elemento de dados Variável.
 
->[!NOTE]
->
-> Para fins de demonstração, os exercícios desta lição baseiam-se no exemplo usado durante [Configurar um esquema](configure-schemas.md) etapa; criação de objetos XDM de exemplo que capturam o conteúdo visualizado e as identidades dos usuários na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
 >Os dados para esta lição vêm do `[!UICONTROL digitalData]` camada de dados no site Luma. Para visualizar a camada de dados, abra o console do desenvolvedor e digite `[!UICONTROL digitalData]` para ver a camada de dados completa disponível.![camada de dados digitalData](assets/data-element-data-layer.png)
 
-
-Independentemente do SDK da Web da Platform, você deve continuar criando elementos de dados dentro da propriedade de tags, que mapeiam para variáveis de coleção de dados do seu site, como uma camada de dados, atributo HTML ou outros. Depois de criar esses elementos de dados, você deve mapeá-los para o esquema XDM criado durante o [configurar schemas](configure-schemas.md) lição. Portanto, a criação de elementos de dados consiste em duas ações:
-
-1. Mapear variáveis de site para elementos de dados e
-1. Mapeamento desses elementos de dados para um objeto XDM
-
-Para a etapa 1, você continua a mapear a camada de dados para elementos de dados da maneira que faz no momento, usando qualquer um dos tipos de elementos de dados da extensão de tag principal. Para a etapa 2, a extensão SDK da Web da Platform tem os seguintes tipos de elementos de dados disponíveis:
-
-* ID de mesclagem de eventos
-* Mapa de identidade
-* Variable
-* Objeto XDM
-
-Esta lição se concentra no tipo de elemento de dados Variável. Crie um elemento de dados para capturar a atividade dos visitantes do Luma com base na camada de dados disponível no site Luma. Na próxima lição, você aprenderá sobre o Mapa de identidade.
-
->[!NOTE]
->
-> A ID de mesclagem de eventos e os tipos de elemento de dados de objeto XDM raramente são usados para casos de borda.
 
 ## Objetivos de aprendizagem
 
@@ -51,18 +30,14 @@ No final desta lição, você poderá:
 
 ## Pré-requisitos
 
-Você entende o que é uma camada de dados, familiarizado com o [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} camada de dados e saiba como fazer referência a elementos de dados em tags. Você deve ter concluído as seguintes etapas anteriores no tutorial.
+Você entende o que é uma camada de dados e concluiu as seguintes lições anteriores no tutorial:
 
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
 * [Configurar uma sequência de dados](configure-datastream.md)
 * [Extensão SDK da Web instalada na propriedade da tag](install-web-sdk.md)
 
->[!IMPORTANT]
->
->A variável [Extensão do Experience Cloud ID Service](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) não é necessário ao implementar o SDK da Web da Adobe Experience Platform, pois a funcionalidade do Serviço de ID é incorporada no SDK da Web da plataforma.
-
-## Abordagens da Camada de dados
+## Abordagens da camada de dados
 
 Há várias maneiras de mapear dados da camada de dados para o XDM usando a funcionalidade de tags do Adobe Experience Platform. Abaixo estão alguns prós e contras de três abordagens diferentes:
 
@@ -192,7 +167,7 @@ Antes de criar o objeto XDM, crie o seguinte conjunto de elementos de dados para
 
    ![Elemento de dados do nome da página](assets/data-element-pageName.jpg)
 
-Crie esses quatro elementos de dados adicionais seguindo as mesmas etapas:
+Crie esses elementos de dados adicionais seguindo as mesmas etapas:
 
 * **`page.pageInfo.server`**  mapeado para
   `digitalData.page.pageInfo.server`
@@ -206,7 +181,70 @@ Crie esses quatro elementos de dados adicionais seguindo as mesmas etapas:
 * **`user.profile.attributes.loggedIn`** mapeado para
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** mapeado para `digitalData.cart.orderId` (você usa isso durante o [Configurar o Analytics](setup-analytics.md) lição)
+* **`product.productInfo.sku`** mapeado para `digitalData.product.0.productInfo.sku`
+<!--digitalData.product.0.productInfo.sku
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.sku;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.productInfo.title`** mapeado para `digitalData.product.0.productInfo.title`
+* **`cart.orderId`** mapeado para `digitalData.cart.orderId`
+<!--
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.title;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.category`** usando o **[!UICONTROL Custom Code]** **[!UICONTROL Tipo de elemento de dados]** e o seguinte código personalizado para analisar o URL do site para a categoria de nível superior:
+
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
+
+* **`cart.productInfo`** usando o seguinte código personalizado:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  cartItem.push({
+  "SKU": item.sku
+  });
+  });
+  return cartItem; 
+  ```
+
+* **`cart.productInfo.purchase`** usando o seguinte código personalizado:
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "quantity": qty,
+  "priceTotal": price
+  });
+  });
+  return cartItem; 
+  ```
+
 
 
 >[!CAUTION]
@@ -229,59 +267,21 @@ Para criar o elemento de dados Variable:
 
    ![Elemento de dados variável](assets/analytics-tags-data-element-xdm-variable.png)
 
-<!-- There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
-
-Create an XDM object to capture content data:
-
-1. In the left navigation, select **[!UICONTROL Data Elements]**
-1. Select **[!UICONTROL Add Data Element]**
-1. **[!UICONTROL Name]** the data element **`xdm.content`**
-1. As the **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
-1. As the **[!UICONTROL Data Element Type]** select `XDM object`
-1. Select the Platform **[!UICONTROL Sandbox]** in which you created the XDM schema in during the [Configure an XDM Schema](configure-schemas.md) lesson, in this example `DEVELOPMENT Mobile and Web SDK Courses`
-1. As the **[!UICONTROL Schema]**, select your `Luma Web Event Data` schema:
-
-    ![XDM object](assets/data-element-xdm.content-fields.png)
-
-    >[!NOTE]
-    >
-    >The sandbox corresponds to the Experience Platform sandbox in which you created the schema. There can be multiple sandboxes available in your Experience Platform instance, so make sure to select the right one. Always work in development first, then production.
-
-1. Scroll down until you reach the **`web`** object
-1. Select to open it
-
-    ![Web Object](assets/data-element-pageviews-xdm-object.png)
-
-
-1. Map the following web XDM variables to data elements
-
-    * **`web.webPageDetials.name`** to `%page.pageInfo.pageName%`
-    * **`web.webPageDetials.server`** to `%page.pageInfo.server%`
-    * **`web.webPageDetials.siteSection`** to `%page.pageInfo.hierarchie1%`
-
-    ![XDM object](assets/data-element-xdm.content.png)
-
-1. Next, find the `identityMap` object in the schema and select it
- 
-1. Map to the `identityMap.loginID` data element
-
-1. Select **[!UICONTROL Save]**
-
-   ![Data Collection interface](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
-
--->
 
 Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
 | Elementos de dados da extensão CORE | Elementos de dados do SDK da Web da plataforma |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
+| `cart.productInfo` | |
+| `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
-
 
 >[!TIP]
 >
