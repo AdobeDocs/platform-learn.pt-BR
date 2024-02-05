@@ -2,7 +2,7 @@
 title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 3%
@@ -88,9 +88,9 @@ Para configurar o Target na sequência de dados:
 
 1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**
-1. Selecione o criado anteriormente `Luma Web SDK` sequência de dados
+1. Selecione o criado anteriormente `Luma Web SDK: Development Environment` sequência de dados
 
-   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
+   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/event-forwarding-datastream-addService.png)

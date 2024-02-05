@@ -1,7 +1,7 @@
 ---
 title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -84,7 +84,7 @@ Agora você pode configurar suas [!UICONTROL sequência de dados] para enviar da
 1. Selecionar **[!UICONTROL Datastreams]** na navegação à esquerda
 1. Abra o fluxo de dados criado na [Configurar um fluxo de dados](configure-datastream.md) lição, `Luma Web SDK`
 
-   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
+   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/experience-platform-addService.png)
