@@ -2,9 +2,9 @@
 title: Configurar uma sequência de dados
 description: Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ Agora é possível criar uma sequência de dados para informar à Platform Edge 
 
    >[!NOTE]
    >
-   >Se você for o cliente de um aplicativo baseado em plataforma como o Real-Time CDP, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso não esteja, use o **[!UICONTROL Prod]** sandbox.
+   >Se você for o cliente de um aplicativo baseado em plataforma, como o Real-Time CDP ou o Journey Optimizer, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso não esteja, use o **[!UICONTROL Prod]** sandbox.
 
 1. Ir para **[!UICONTROL Datastreams]** na navegação à esquerda
 1. Selecionar **[!UICONTROL Nova sequência de dados]** no lado direito da tela.
@@ -52,13 +52,6 @@ Agora é possível criar uma sequência de dados para informar à Platform Edge 
 1. Selecionar **[!UICONTROL Salvar]**
 
    ![Criar a sequência de dados](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >O recurso de mapeamento será incorporado a este tutorial posteriormente.
-
-
-
 
 Na próxima tela, você poderá adicionar serviços, como aplicativos Adobe, ao fluxo de dados. No entanto, você não adicionará serviços neste ponto do tutorial. Você fará isso mais tarde nas lições [Configurar Experience Platform](setup-experience-platform.md), [Configurar o Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar o Target](setup-target.md)ou [Encaminhamento de evento](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ A substituição da configuração da sequência de dados é um processo de duas
 1. Primeiro, você define as substituições do fluxo de dados na configuração do fluxo de dados. Isso deve ser feito por aplicativo Adobe que você deseja substituir.
 1. Em seguida, você envia as substituições para a Rede de borda por uma Ação de evento de envio do SDK da Web ou por uma configuração na extensão de tag do SDK da Web.
 
-Consulte a [documentação de substituições de configuração de sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) para obter instruções detalhadas sobre como substituir configurações de sequência de dados.
+No [Configurar o Adobe Analytics](setup-analytics.md) lição, é possível substituir o conjunto de relatórios de uma página usando a ação enviar evento do SDK da Web da plataforma.
 
-Na lição Configurar o Adobe Analytics, [substituir o conjunto de relatórios de uma página usando a ação enviar evento do SDK da Web da plataforma](setup-analytics.md).
+Consulte a [documentação de substituições de configuração de sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) para obter instruções detalhadas sobre como substituir configurações de sequência de dados.
 
 Agora você está pronto para instalar a extensão SDK da Web da Platform na sua propriedade de tag!
 

@@ -2,9 +2,9 @@
 title: Validar implementações do SDK da Web com o Experience Platform Debugger
 description: Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Debugger
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ No final desta lição, você poderá usar o depurador para:
 
 ## Pré-requisitos
 
-Você está familiarizado com as tags de Coleção de dados e a [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e concluíram as seguintes lições anteriores no tutorial:
+Você está familiarizado com as tags de Coleção de dados e a [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e concluíram as lições anteriores no tutorial:
 
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
@@ -49,14 +49,10 @@ Você está familiarizado com as tags de Coleção de dados e a [Site de demonst
 
 ## Carregar bibliotecas de tags alternativas com o Debugger
 
-Este tutorial usa uma versão hospedada publicamente do [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Abra a página inicial e marque-a como favorito.
-
-![Página inicial do Luma](assets/validate-luma-site.png)
-
 O depurador de Experience Platform tem um recurso interessante que permite substituir uma biblioteca de tags existente por outra. Essa técnica é útil para validação e permite ignorar muitas etapas de implementação neste tutorial.
 
-1. Verifique se o site Luma está aberto e selecione o ícone da extensão do Experience Platform Debugger
-1. O Debugger abrirá e mostrará alguns detalhes da implementação codificada, que não está relacionada a este tutorial (talvez seja necessário recarregar o site Luma depois de abrir o Debugger)
+1. Verifique se você tem o [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} abra e selecione o ícone da extensão do Experience Platform Debugger
+1. O Debugger abrirá e mostrará alguns detalhes da implementação codificada (talvez seja necessário recarregar o site Luma depois de abrir o Debugger)
 1. Confirme se o Debugger é &quot;**[!UICONTROL Conectado ao Luma]**&quot; como mostrado abaixo e selecione o &quot;**[!UICONTROL bloquear]**&quot; para bloquear o Debugger no site Luma.
 1. Selecione o **[!UICONTROL Conectar]** e faça logon no Adobe Experience Cloud usando sua ID de Adobe.
 1. Agora vá para **[!UICONTROL Tags do Experience Platform]** na navegação à esquerda
@@ -78,7 +74,7 @@ O depurador de Experience Platform tem um recurso interessante que permite subst
 
    ![propriedade de tag substituída](assets/validate-switch-success.png)
 
-À medida que você prossegue no tutorial, usa essa técnica de mapear o site Luma para sua própria propriedade de tag para validar a implementação do SDK da Web da Platform. Ao começar a usar tags no site de produção, você pode usar essa mesma técnica para validar as alterações.
+À medida que você prossegue no tutorial, usa essa técnica de mapear o site Luma para sua própria propriedade de tag para validar a implementação do SDK da Web da Platform. Ao começar a usar tags no site de produção, você pode usar essa mesma técnica para validar as alterações à medida que elas são feitas no ambiente de desenvolvimento de tags.
 
 ## Validar solicitações de rede do lado do cliente com o Experience Platform Debugger
 
@@ -138,18 +134,20 @@ Esses tipos de detalhes da solicitação também estão visíveis nas ferramenta
 
    ![Guia Rede](assets/validate-dev-console-ecid.png)
 
+   >[!NOTE]
+   >
+   > O valor da ECID está visível na resposta da rede. Ela não está incluída no `identityMap` parte da solicitação de rede, nem é armazenada nesse formato em um cookie.
 
 ## Validar solicitações de rede do lado do servidor com o Experience Platform Debugger
 
-Como você aprendeu na [Configurar um fluxo de dados](configure-datastream.md) lição, o SDK da Web da Platform envia primeiro os dados de sua propriedade digital para a Rede de borda da Platform. Em seguida, a Platform Edge Network faz solicitações adicionais do lado do servidor para os serviços correspondentes ativados no fluxo de dados.
+Como você aprendeu na [Configurar um fluxo de dados](configure-datastream.md) lição, o SDK da Web da Platform envia primeiro os dados de sua propriedade digital para a Rede de borda da Platform. Em seguida, a Platform Edge Network faz solicitações adicionais do lado do servidor para os serviços correspondentes ativados no fluxo de dados. Você pode validar as solicitações do lado do servidor feitas pela Platform Edge Network usando o Rastreamento de borda no Debugger.
 
-Você pode validar solicitações do lado do servidor ativando o Rastreamento de borda no Debugger. Além disso, você também pode validar a carga útil totalmente processada depois que ela atingir um aplicativo Adobe usando [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-Nos próximos dois exercícios, ative o Edge Trace e visualize a ID de Experience Cloud gerada pela Platform Edge Network usando o Assurance.
 
 ### Ativar o Edge Trace
 
-Para ativar o Edge Trace
+Para ativar o Edge Trace:
 
 1. Na navegação à esquerda de **[!UICONTROL Experience Platform Debugger]** selecionar **[!UICONTROL Logs]**
 1. Selecione o **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]**
@@ -164,37 +162,9 @@ Para ativar o Edge Trace
 
    ![Rastreamento de borda de beacon do Analytics](assets/validate-edge-trace.png)
 
-Nesse ponto, não é possível exibir solicitações da Platform Edge Network em um aplicativo Adobe porque você não ativou nenhuma no fluxo de dados. Em lições futuras, você usará o Edge Trace para exibir as solicitações de saída do lado do servidor para aplicativos Adobe. No entanto, usando o Assurance, ainda é possível exibir a ID de Experience Cloud gerada pela Platform Edge Network.
+Nesse ponto, não é possível exibir solicitações da Platform Edge Network indo para aplicativos Adobe porque você não habilitou nenhuma solicitação na sequência de dados. Em lições futuras, você usa o Edge Trace para visualizar as solicitações do lado do servidor de saída para aplicativos Adobe e encaminhamento de eventos. Mas, primeiro, conheça outra ferramenta que valida as solicitações do lado do servidor feitas pela Platform Edge Network — Adobe Experience Platform Assurance!
 
-### Iniciar uma sessão do Assurance
-
-O Adobe Experience Platform Assurance é um produto da Adobe Experience Cloud que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou fornece experiências.
-
-Leia mais sobre [Adobe Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
-
-Toda vez que você ativa o Edge Trace, uma sessão do Assurance é iniciada em segundo plano.
-
-Para exibir a sessão do Assurance,
-
-1. Com o Edge Trace ativado, você pode ver um ícone de link de saída na parte superior. Selecione o ícone para abrir o Assurance. Uma nova guia no navegador é aberta.
-
-   ![Iniciar sessão do Assurance](assets/validate-debugger-start-assurnance.png)
-
-1. Selecione a linha com o evento chamado Identificador de Resposta Adobe.
-1. Um menu é exibido à direita. Selecione o `+` assinar ao lado de `[!UICONTROL ACPExtensionEvent]`
-1. Fazer drill-down selecionando `[!UICONTROL payload > 0 > payload > 0 > namespace]`. A ID mostrada nos últimos `0` corresponde ao `ECID`. Você sabe que pelo valor que aparece em `namespace` correspondência `ECID`
-
-   ![Garantia para validar a ECID](assets/validate-assurance-ecid.png)
-
-   >[!CAUTION]
-   >
-   >Você pode ver um valor de ECID truncado devido à largura da janela. Basta selecionar a barra de alças na interface e arrastar para a esquerda para visualizar toda a ECID.
-
-Nas lições futuras, você usa o Assurance para validar cargas totalmente processadas que chegam a um aplicativo Adobe habilitado no seu fluxo de dados.
-
-Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua coleção de dados, você estará pronto para configurar os aplicativos de Adobe individuais usando o SDK da Web da Platform.
-
-[Próximo: ](setup-experience-platform.md)
+[Próximo: ](validate-with-assurance.md)
 
 >[!NOTE]
 >

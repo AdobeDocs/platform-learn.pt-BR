@@ -2,9 +2,9 @@
 title: Criar identidades
 description: Saiba como criar identidades no XDM e usar o elemento de dados do Mapa de identidade para capturar IDs de usuários. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Esta lição se concentra no elemento de dados do Mapa de identidade disponível
 
 No final desta lição, você poderá:
 
-* Entender a diferença entre a ID de Experience Cloud (ECID) e a ID de dispositivo primário
+* Entenda a relação entre a Experience Cloud ID (ECID) e a First Party Device ID (FPID)
 * Entender a diferença entre IDs não autenticadas e autenticadas
 * Criar um elemento de dados do mapa de identidade
 
 ## Pré-requisitos
 
-Você entende o que é uma camada de dados, familiarizado com o [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} camada de dados e saiba como fazer referência a elementos de dados em tags. Você deve ter concluído as seguintes lições anteriores no tutorial:
+Você entende o que é uma camada de dados, familiarizado com o [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} camada de dados e saiba como fazer referência a elementos de dados em tags. Você deve ter concluído as lições anteriores no tutorial:
 
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
@@ -55,11 +55,11 @@ As ECIDs são definidas usando uma combinação de cookies primários e Rede de 
 
 ## ID de dispositivo próprio (FPID)
 
-Os FPIDs são cookies primários _você define o usando seus próprios servidores da Web_ que o Adobe usa para definir a ECID, em vez de usar o cookie próprio definido pelo SDK da Web. Os cookies primários são mais eficazes quando são definidos usando um servidor que aproveita um registro DNS A (para IPv4) ou registro AAAA (para IPv6), em vez de um CNAME DNS ou código JavaScript.
+Os FPIDs são cookies primários _você define o usando seus próprios servidores da Web_ que o Adobe usa para criar a ECID, em vez de usar o cookie primário definido pelo SDK da Web. Embora o suporte ao navegador possa variar, os cookies primários tendem a ser mais duráveis quando são definidos por um servidor que aproveita um registro DNS A (para IPv4) ou registro AAAA (para IPv6), em vez de quando são definidos por um CNAME DNS ou código JavaScript.
 
 Depois que um cookie FPID é definido, seu valor pode ser buscado e enviado para o Adobe conforme os dados do evento são coletados. Os FPIDs coletados são usados como seeds para gerar ECIDs na Platform Edge Network, que continuam sendo os identificadores padrão nos aplicativos Adobe Experience Cloud.
 
-Leia mais sobre [IDs de dispositivo próprio no SDK da Web da plataforma](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=pt-BR)
+Embora os FPIDs não sejam usados neste tutorial, é recomendável usar os FPIDs na implementação do SDK da Web. Leia mais sobre [IDs de dispositivo próprio no SDK da Web da plataforma](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=pt-BR)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ Leia mais sobre [IDs de dispositivo próprio no SDK da Web da plataforma](https:
 
 Como observado acima, todos os visitantes das suas propriedades digitais recebem uma ECID por Adobe ao usar o SDK da Web da plataforma. Isso torna a ECID a identidade padrão para rastrear comportamentos digitais não autenticados.
 
-Você também pode enviar uma ID de usuário autenticada para que a Platform possa criar [Gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=pt-BR), o Target poderá definir seu Terceiro. Isso é feito usando o [!UICONTROL Mapa de identidade] tipo de elemento de dados.
+Você também pode enviar uma ID de usuário autenticada para que a Platform possa criar [Gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=pt-BR) e o Target podem definir suas [ID de terceiros](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). Isso é feito usando o [!UICONTROL Mapa de identidade] tipo de elemento de dados.
 
 Para criar o [!UICONTROL Mapa de identidade] elemento de dados:
 
@@ -133,12 +133,17 @@ Para criar o [!UICONTROL Mapa de identidade] elemento de dados:
 
 Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
-| Elementos de dados da extensão CORE | Elementos de dados do SDK da Web da plataforma |
+| Elementos de dados da extensão principal | Elementos de dados da extensão SDK da Web da plataforma |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
