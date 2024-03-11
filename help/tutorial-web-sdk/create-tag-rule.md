@@ -3,14 +3,19 @@ title: Criar uma regra de tag
 description: Saiba como enviar um evento para a Platform Edge Network com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 5%
+source-wordcount: '871'
+ht-degree: 3%
 
 ---
 
 # Criar uma regra de tag
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como enviar um evento para a Platform Edge Network com seu objeto XDM usando uma regra de tag. Uma regra de tag é uma combinação de eventos, condições e ações que instrui a propriedade de tag a fazer algo.
 
@@ -45,7 +50,7 @@ Para gerenciar melhor as regras nas tags, é recomendável seguir uma convençã
 
 * [localização] - [evento] - [ferramenta]
 
-em que;
+onde;
 
 1. local é a página ou páginas no site em que a regra é acionada
 1. evento é o acionador que aciona o sinal do
@@ -79,7 +84,7 @@ Para criar uma regra de tag:
    ![Adicionar condições](assets/rules-add-conditions.png)
 1. Selecionar **[!UICONTROL Tipo de lógica]** `Exception`, **[!UICONTROL Extensão]** `Core`, e **[!UICONTROL Tipo de condição]** `Path Without Query String`
 1. Insira o caminho do URL `/content/luma/us/en/user/cart.html` no **[!UICONTROL caminho igual a]** e **[!UICONTROL name]** it `Core - cart page`
-1. Selecione **[!UICONTROL Manter alterações]**
+1. Selecionar **[!UICONTROL Manter alterações]**
    ![Adicionar condições](assets/rule-condition-exception.png)
 1. Adicione mais três exceções para os seguintes caminhos de URL
 

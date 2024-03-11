@@ -3,14 +3,19 @@ title: Configurar uma sequência de dados
 description: Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 10%
+source-wordcount: '471'
+ht-degree: 5%
 
 ---
 
 # Configurar uma sequência de dados
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud.
 
@@ -47,9 +52,9 @@ Agora é possível criar uma sequência de dados para informar à Platform Edge 
 
 1. Ir para **[!UICONTROL Datastreams]** na navegação à esquerda
 1. Selecionar **[!UICONTROL Nova sequência de dados]** no lado direito da tela.
-1. Digite `Luma Web SDK` como o **[!UICONTROL nome]**. Esse nome é referenciado posteriormente ao configurar a extensão do SDK da Web na propriedade da tag.
+1. Enter `Luma Web SDK` como o **[!UICONTROL Nome]**. Esse nome é referenciado posteriormente ao configurar a extensão do SDK da Web na propriedade da tag.
 1. Selecione o `Luma Web Event Data` como o **[!UICONTROL Esquema de evento]**
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Criar a sequência de dados](assets/datastream-create-datastream.png)
 

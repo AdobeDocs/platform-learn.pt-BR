@@ -1,10 +1,10 @@
 ---
 title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 5%
+source-wordcount: '1587'
+ht-degree: 4%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 5%
 Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web da plataforma.
 
 O Experience Platform é o backbone de todos os novos aplicativos Experience Cloud, como o Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics e Adobe Journey Optimizer. Esses aplicativos foram projetados para usar o SDK da Web da Platform como o método ideal de coleta de dados da Web.
-
 
 ![Diagrama do SDK da Web e Adobe Experience Platform](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ No final desta lição, você poderá:
 
 ## Pré-requisitos
 
-É necessário que você tenha completado as seguintes lições:
+Para concluir esta lição, primeiro você deve:
 
-* A variável **Configuração inicial** lições:
-   * [Configurar um esquema XDM](configure-schemas.md)
-   * [Configurar uma sequência de dados](configure-datastream.md)
-   * [Configurar um namespace de identidade](configure-identities.md)
-
-* A variável **Configuração de tags** lições:
-   * [Instalação da extensão do SDK da Web](install-web-sdk.md)
-   * [Criar elementos de dados](create-data-elements.md)
-   * [Criar identidades](create-identities.md)
-   * [Criar regras de tag](create-tag-rule.md)
+* Ter acesso a um aplicativo do Adobe Experience Platform, como Real-time Customer Data Platform, Journey Optimizer ou Customer Journey Analytics
+* Conclua as lições anteriores nas seções Configuração inicial e Configuração de tags deste tutorial.
 
 
 ## Criar um conjunto de dados
 
 Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. A [conjunto de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
-Neste exercício, você cria um conjunto de dados para rastrear os detalhes de conteúdo e comércio eletrônico do [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->Você já deve ter criado o `Luma Web Event Data` schema, conforme instruído na lição anterior, [Configurar um esquema XDM](configure-schemas.md).
+Vamos configurar um conjunto de dados para seus dados de evento da Web do Luma:
 
 
 1. Vá para a [interface de Experience Platform](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Agora, o esquema também é ativado para o perfil.
 > * Primeiro, assimile alguns dados em seus conjuntos de dados.
 > * Resolva quaisquer problemas que surjam durante o processo de assimilação de dados (por exemplo, problemas de validação ou mapeamento de dados).
 > * Ativar seus conjuntos de dados e esquemas para o Perfil
-> * Assimilar novamente os dados
+> * Assimilar novamente os dados, se necessário
 
 
 ### Validar um perfil

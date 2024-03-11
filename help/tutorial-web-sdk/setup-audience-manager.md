@@ -3,14 +3,19 @@ title: Configurar o Audience Manager com o SDK da Web da plataforma
 description: Saiba como configurar o Adobe Audience Manager usando o SDK da Web da plataforma e validar a implementação usando um destino de cookie. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 1%
 
 ---
 
 # Configurar o Audience Manager com o SDK da Web da plataforma
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como configurar o Adobe Audience Manager usando o SDK da Web da plataforma e validar a implementação usando um destino de cookie.
 
@@ -42,11 +47,11 @@ A implementação do Audience Manager usando o SDK da Web da Platform é diferen
 
    ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
 
-1. Selecione **[!UICONTROL Adicionar serviço]**
+1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/aam-datastream-addService.png)
 1. Selecionar **[!UICONTROL Adobe Audience Manager]** como o **[!UICONTROL Serviço]**
 1. Confirme que **[!UICONTROL Destinos de cookies ativados]** e **[!UICONTROL Destinos do URL habilitados]** estão selecionados
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
    ![Confirme as configurações do fluxo de dados do Audience Manager e salve](assets/aam-datastream-save.png)
 
 ## Criar uma fonte de dados
@@ -144,7 +149,7 @@ Em seguida, crie um **Destino baseado em cookie** usando o **Construtor de desti
 
 1. Depois de adicionar o segmento, uma janela pop-up é aberta, onde você deve fornecer um valor esperado para o cookie. Para este exercício, insira o valor &quot;hpvisitor&quot;.
 
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
 1. Selecionar **[!UICONTROL Concluído]**
    ![Adicionar característica do Adobe Experience Platform Audience Manager](assets/luma-cookie-segment-dw.png)

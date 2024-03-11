@@ -2,9 +2,9 @@
 title: Criar regras de tag
 description: Saiba como enviar um evento para a Platform Edge Network com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -40,15 +40,16 @@ Você está familiarizado com as tags de Coleção de dados e a [Site de demonst
 
 ## Convenções de nomenclatura
 
-Para gerenciar melhor as regras nas tags, é recomendável seguir uma convenção de nomenclatura padrão. Este tutorial usa uma convenção de nomenclatura de três partes:
+Para gerenciar melhor as regras nas tags, é recomendável seguir uma convenção de nomenclatura padrão. Este tutorial usa uma convenção de nomenclatura de cinco partes:
 
-* [**localização**] - [**evento**] - [**ferramenta**] (**sequência**)
+* [**localização**] - [**evento**] - [**finalidade**] - [**ferramenta**] - [**pedido**]
 
 onde;
 
 1. **localização** é a página ou páginas no site em que a regra é acionada
 1. **evento** é o acionador da regra
-1. **ferramenta** é o aplicativo ou aplicativos específicos usados na etapa de ação dessa regra
+1. **finalidade** é a ação principal executada pela regra
+1. **ferramenta** é o aplicativo ou aplicativos específicos usados na etapa de ação dessa regra, que deve ser rara com o SDK da Web
 1. **sequência** é a ordem na qual a regra deve ser acionada em relação a outras regras
 <!-- minor update -->
 
@@ -59,19 +60,25 @@ Nas tags, as regras são usadas para executar ações (acionar chamadas) em vár
 * **[!UICONTROL Atualizar variável]** mapeia elementos de dados para campos XDM
 * **[!UICONTROL Enviar evento]** envia o objeto XDM para a Rede de borda do Experience Platform
 
-Primeiro, definimos uma &quot;configuração global&quot; de campos XDM que queremos enviar em cada página do site (por exemplo, o nome da página) usando o **[!UICONTROL Atualizar variável]** ação.
+No restante desta lição:
 
-Em seguida, definimos regras adicionais contendo **[!UICONTROL Atualizar variável]** para complementar a &quot;configuração global&quot; com campos XDM adicionais que só estão disponíveis em determinadas condições (por exemplo, adicionar detalhes do produto nas páginas do produto).
+1. Crie uma regra para definir uma &quot;configuração global&quot; de campos XDM (usando [!UICONTROL Atualizar variável] que queremos enviar em cada página do site (por exemplo, o nome da página) usando a variável **[!UICONTROL Atualizar variável]** ação.
 
-Por fim, usaremos outra regra com o **[!UICONTROL Enviar evento]** ação que enviará o objeto XDM completo para a Rede de borda da Adobe Experience Platform.
+1. Crie regras adicionais que substituam nossa &quot;configuração global&quot; ou contribuam com campos XDM adicionais (usando [!UICONTROL Atualizar variável] novamente) que só são relevantes em determinadas condições (por exemplo, adicionar detalhes do produto nas páginas do produto).
+
+1. Criar outra regra com o **[!UICONTROL Enviar evento]** ação que enviará o objeto XDM completo para a Rede de borda da Adobe Experience Platform.
 
 Todas essas regras serão sequenciadas corretamente usando o &quot;[!UICONTROL pedido]&quot;.
+
+Este vídeo fornece uma visão geral do processo:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
 ### Atualizar regras de variáveis
 
 #### Configuração global
 
-Para criar uma regra de tag para os campos XDM globais:
+Para criar regras de tag para os campos XDM globais:
 
 1. Abra a propriedade da tag que você está usando neste tutorial
 
@@ -81,24 +88,22 @@ Para criar uma regra de tag para os campos XDM globais:
 
    ![Criar uma regra](assets/rules-create.png)
 
-1. Atribua um nome à regra `all pages global content variables - library loaded - AA (order 1)`
+1. Atribua um nome à regra `all pages - library loaded - set global variables - 1`
 
 1. No **[!UICONTROL Eventos]** , selecione **[!UICONTROL Adicionar]**
 
    ![Nomear a regra e adicionar um evento](assets/rule-name-new.png)
 
-1. Use o **[!UICONTROL Extensão principal]** e selecione `Page Bottom` como o **[!UICONTROL Tipo de evento]**
+1. Use o **[!UICONTROL Extensão principal]** e selecione **[!UICONTROL Biblioteca carregada (início da página)]** como o **[!UICONTROL Tipo de evento]**
 
-1. No **[!UICONTROL Nome]** campo, nomeie-o `Core - Page Bottom - order 1`. Isso ajuda a descrever o acionador com um nome significativo.
-
-1. Selecionar **[!UICONTROL Avançado]** e insira `1` in **[!UICONTROL Pedido]**
+1. Selecionar **[!UICONTROL Avançado]** e insira `1` como o **[!UICONTROL Pedido]**
 
    >[!NOTE]
    >
    > Quanto menor o número do pedido, mais cedo ele será executado. Portanto, damos à nossa &quot;configuração global&quot; um número de ordem baixo.
 
 1. Selecionar **[!UICONTROL Manter alterações]** para retornar à tela principal da regra
-   ![Selecionar acionador final da página](assets/create-tag-rule-trigger-bottom.png)
+   ![Selecionar acionador da biblioteca carregada](assets/create-tag-rule-trigger-bottom.png)
 
 1. No **[!UICONTROL Ações]** , selecione **[!UICONTROL Adicionar]**
 
@@ -122,7 +127,7 @@ Agora mapeie seu [!UICONTROL elementos de dados] para o [!UICONTROL schema] usad
 
    >[!TIP]
    >
-   > Para entender quais valores devem ser preenchidos na variável `eventType` , você deve ir para a página do esquema e selecionar a `eventType` para exibir os valores sugeridos no painel direito.
+   > Para entender quais valores devem ser preenchidos na variável `eventType` , você deve ir para a página do esquema e selecionar a `eventType` para exibir os valores sugeridos no painel direito. Você também pode inserir um novo valor, se necessário.
    > ![Valores sugeridos de eventType na página esquemas](assets/create-tag-rule-eventType.png)
 
 1. Em seguida, localize o `identityMap` no esquema e selecione-o
@@ -160,7 +165,7 @@ Agora mapeie seu [!UICONTROL elementos de dados] para o [!UICONTROL schema] usad
 
 #### Campos da página do produto
 
-Agora, comece a usar **[!UICONTROL Atualizar variável]** em várias regras sequenciadas para enriquecer o objeto XDM antes de enviá-lo para o [!UICONTROL Rede de borda da plataforma].
+Agora, comece a usar **[!UICONTROL Atualizar variável]** em regras sequenciadas adicionais para enriquecer o objeto XDM antes de enviá-lo para o [!UICONTROL Rede de borda da plataforma].
 
 >[!TIP]
 >
@@ -171,12 +176,11 @@ Agora, comece a usar **[!UICONTROL Atualizar variável]** em várias regras sequ
 Comece rastreando as exibições do produto na página de detalhes do produto da Luma:
 
 1. Selecionar **[!UICONTROL Adicionar regra]**
-1. Nomear como  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
+1. Nomear como  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
 1. Selecione o ![+ símbolo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) em Evento para adicionar um novo acionador
 1. Em **[!UICONTROL Extensão]**, selecione **[!UICONTROL Núcleo]**
-1. Em **[!UICONTROL Tipo de evento]**, selecione **[!UICONTROL Page Bottom]**
-1. Nomear como `Core - Page Bottom - order 20`
-1. Selecione para abrir **[!UICONTROL Opções avançadas]**, digite `20`. Isso garante que a regra seja executada após a `all pages global content variables - library loaded - AA (order 1)` que define as variáveis de conteúdo globais.
+1. Em **[!UICONTROL Tipo de evento]**, selecione **[!UICONTROL Biblioteca carregada (início da página)]**
+1. Selecione para abrir **[!UICONTROL Opções avançadas]**, digite `20`. Isso garante que a regra seja executada após a `all pages - library loaded - set global variables - 1` que define a configuração global.
 
    ![Regras XDM do Analytics](assets/set-up-analytics-pdp.png)
 
@@ -246,11 +250,10 @@ Compare o elemento de dados com o `productListItems` estrutura (dica, deve corre
 Agora, vamos mapear nossa matriz para o objeto XDM:
 
 
-1. Crie uma nova regra chamada `ecommerce - cart library loaded - AA (order 20)`
+1. Crie uma nova regra chamada `ecommerce - library loaded - set shopping cart variables - 20`
 1. Selecione o ![+ símbolo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) em Evento para adicionar um novo acionador
 1. Em **[!UICONTROL Extensão]**, selecione **[!UICONTROL Núcleo]**
-1. Em **[!UICONTROL Tipo de evento]**, selecione **[!UICONTROL Page Bottom]**
-1. Nomear como `Core - Page Bottom - order 20`
+1. Em **[!UICONTROL Tipo de evento]**, selecione **[!UICONTROL Biblioteca carregada (início da página)]**
 1. Selecione para abrir **[!UICONTROL Opções avançadas]**, digite `20`
 1. Selecionar **[!UICONTROL Manter alterações]**
 
@@ -292,7 +295,7 @@ Agora, vamos mapear nossa matriz para o objeto XDM:
 
 Crie duas outras regras para finalização e compra seguindo o mesmo padrão, com as diferenças abaixo:
 
-**Nome da regra**: `ecommerce - checkout library loaded - AA (order 20)`
+**Nome da regra**: `ecommerce  - library loaded - set checkout variables - 20`
 
 1. **[!UICONTROL Condição]**: /content/luma/us/en/user/checkout.html
 1. Defina `eventType` como `commerce.checkouts`
@@ -303,7 +306,7 @@ Crie duas outras regras para finalização e compra seguindo o mesmo padrão, co
    >É equivalente à configuração `scCheckout` evento no Analytics
 
 
-**Nome da regra**: `ecommerce - purchase library loaded - AA (order 20)`
+**Nome da regra**: `ecommerce - library loaded - set purchase variables -  20`
 
 1. **[!UICONTROL Condição]**: /content/luma/us/en/user/checkout/order/thank-you.html
 1. Defina `eventType` como `commerce.purchases`
@@ -338,18 +341,16 @@ Agora que você definiu as variáveis, é possível criar a regra para enviar o 
 
 1. À direita, selecione **[!UICONTROL Adicionar regra]** para criar outra regra
 
-1. Atribua um nome à regra `all pages send event - library loaded - AA (order 50)`
+1. Atribua um nome à regra `all pages - library loaded - set send event - 50`
 
 1. No **[!UICONTROL Eventos]** , selecione **[!UICONTROL Adicionar]**
 
-1. Use o **[!UICONTROL Extensão principal]** e selecione `Page Bottom` como o **[!UICONTROL Tipo de evento]**
-
-1. No **[!UICONTROL Nome]** campo, nomeie-o `Core - Page Bottom - order 50`. Isso ajuda a descrever o acionador com um nome significativo.
+1. Use o **[!UICONTROL Extensão principal]** e selecione `Library Loaded (Page Top)` como o **[!UICONTROL Tipo de evento]**
 
 1. Selecionar **[!UICONTROL Avançado]** e insira `50` in **[!UICONTROL Pedido]**. Isso garantirá que a segunda regra seja acionada depois da primeira regra definida para acionar como `1`.
 
 1. Selecionar **[!UICONTROL Manter alterações]** para retornar à tela principal da regra
-   ![Selecionar acionador final da página](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Selecionar acionador da biblioteca carregada](assets/create-tag-rule-trigger-bottom-send.png)
 
 1. No **[!UICONTROL Ações]** , selecione **[!UICONTROL Adicionar]**
 
@@ -383,7 +384,7 @@ Para criar uma biblioteca:
 
    >[!NOTE]
    >
-   >    Além da extensão do SDK da Web da Adobe Experience Platform e da `all pages global content variables - library loaded - AA (order 50)` regra, você verá os componentes de tag criados nas lições anteriores. A extensão principal contém o JavaScript básico exigido por todas as propriedades de tag da Web.
+   >    Você deve ver todos os componentes de tag criados nas lições anteriores. A extensão principal contém o JavaScript básico exigido por todas as propriedades de tag da Web.
 
 1. Selecionar **[!UICONTROL Salvar e criar para desenvolvimento]**
 

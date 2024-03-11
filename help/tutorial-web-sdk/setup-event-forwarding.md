@@ -3,14 +3,19 @@ title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 5%
+source-wordcount: '1893'
+ht-degree: 3%
 
 ---
 
 # Configurar uma propriedade de encaminhamento de eventos
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform.
 
@@ -90,7 +95,7 @@ Para configurar o Target na sequência de dados:
 
    ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
 
-1. Selecione **[!UICONTROL Adicionar serviço]**
+1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/event-forwarding-datastream-addService.png)
 1. Selecionar **[!UICONTROL Encaminhamento de evento]** como o **[!UICONTROL Serviço]**
 
@@ -149,7 +154,7 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 
    ![Novo elemento de dados do encaminhamento de eventos](assets/event-forwarding-new-dataelement.png)
 
-1. **** Nomeie o elemento de dados `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL Nome]** o elemento de dados `environment.browserDetails.viewportHeight`
 
 1. Em **[!UICONTROL Extensão]**, sair `CORE`
 
@@ -157,14 +162,14 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 
 1. Digite o caminho do Objeto XDM que contém a Altura da janela de visualização do navegador `arc.event.xdm.environment.browserDetails.viewportHeight`
 
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Caminho ECID para encaminhamento de eventos](assets/event-forwarding-browser-viewpoirt-height.png)
 
 
 1. Criar outro elemento de dados
 
-1. **** Nomeie-a como `ecid`
+1. **[!UICONTROL Nome]** it `ecid`
 
 1. Em **[!UICONTROL Extensão]**, sair `CORE`
 
@@ -172,7 +177,7 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 
 1. Digite o caminho do objeto XDM que contém a ID do Experience Cloud `arc.event.xdm.identityMap.ECID.0.id`
 
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Caminho ECID para encaminhamento de eventos](assets/event-forwarding-ecid.png)
 
@@ -183,8 +188,8 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 
    >[!TIP]
    >
-   Ao trabalhar com seu próprio site, você pode encontrar o caminho do objeto XDM com as ferramentas de rede do navegador da Web, filtrando por `/ee` solicitações, abertura do sinal [!UICONTROL **Carga**] e detalhando a variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
-   ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
+   >Ao trabalhar com seu próprio site, você pode encontrar o caminho do objeto XDM com as ferramentas de rede do navegador da Web, filtrando por `/ee` solicitações, abertura do sinal [!UICONTROL **Carga**] e detalhando a variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
+   > ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
 
 ### Instalar a extensão Adobe Cloud Connector
 
@@ -215,7 +220,7 @@ Há algumas diferenças principais entre a configuração de regras em uma propr
 
    * **Encaminhamento de eventos**: os nomes dos elementos de dados são tokenizados com `{{` no início e `}}` no final do nome do elemento de dados, quando usado em uma regra. Por exemplo, `{{viewportHeight}}`.
 
-* **Sequência de ações de regras**:
+* **Sequência de ações de regra**:
 
    * A seção Ações de uma regra de encaminhamento de eventos é sempre executada sequencialmente. Certifique-se de que a ordem das ações esteja correta ao salvar uma regra. Essa sequência de execução não pode ser executada de forma assíncrona como com tags.
 
@@ -238,11 +243,11 @@ Para configurar uma regra para encaminhar dados para o seu webhook, primeiro obt
 
 1. Voltar **[!UICONTROL Coleta de dados]** > **[!UICONTROL Encaminhamento de evento]** > **[!UICONTROL Regras]** na navegação à esquerda
 
-1. Selecione **[!UICONTROL Criar nova regra]**
+1. Selecionar **[!UICONTROL Criar nova regra]**
 
    ![Nova regra para encaminhamento de eventos](assets/event-forwarding-new-rules.png)
 
-1. Nomeie-a como `all events - ad cloud connector - webhook`
+1. Nomear como `all events - ad cloud connector - webhook`
 
 1. Adicionar uma ação
 
@@ -262,13 +267,13 @@ Para configurar uma regra para encaminhar dados para o seu webhook, primeiro obt
 
 1. No **[!UICONTROL Chave]** tipo de coluna em `ecid`. Na coluna Valor, insira a variável `{{ecid}}` elemento de dados
 
-1. Selecione **[!UICONTROL Manter alterações]**
+1. Selecionar **[!UICONTROL Manter alterações]**
 
    ![Adicionar parâmetro de consulta](assets/event-forwarding-rule-query-parameter.png)
 
 1. Sua regra deve parecer com abaixo
 
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
    ![Salvar regra de encaminhamento de eventos](assets/event-forwarding-rule-save.png)
 
@@ -278,7 +283,7 @@ Crie uma biblioteca e crie todas as alterações no ambiente de desenvolvimento 
 
 >[!NOTE]
 >
-Se não tiver vinculado as propriedades de encaminhamento de eventos de Preparo e Produção à sequência de dados, você verá o ambiente de desenvolvimento como a única opção para criar uma biblioteca no.
+>Se não tiver vinculado as propriedades de encaminhamento de eventos de Preparo e Produção à sequência de dados, você verá o ambiente de desenvolvimento como a única opção para criar uma biblioteca no.
 
 ![Salvar regra de encaminhamento de eventos](assets/event-forwarding-initial-build.png)
 
@@ -321,4 +326,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
-Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

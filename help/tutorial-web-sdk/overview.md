@@ -1,24 +1,29 @@
 ---
 title: Implementar a Adobe Experience Cloud com o tutorial do SDK da web
-description: Saiba como implementar os aplicativos da Experience Cloud usando o SDK da Web da Adobe Experience Platform.
+description: Saiba como implementar aplicativos Experience Cloud usando o Adobe Experience Platform Web SDK.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 26%
+source-wordcount: '434'
+ht-degree: 11%
 
 ---
 
 # Implementar a Adobe Experience Cloud com o tutorial do SDK da web
 
-Saiba como implementar os aplicativos da Experience Cloud usando o SDK da Web da Adobe Experience Platform.
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+
+
+Saiba como implementar aplicativos Experience Cloud usando o Adobe Experience Platform Web SDK.
 
 O SDK da Web do Experience Platform é uma biblioteca JavaScript do lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com aplicativos Adobe e serviços de terceiros por meio da rede de borda da Adobe Experience Platform. Consulte [Visão geral do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) para obter informações mais detalhadas.
 
-Este tutorial o orienta pela implementação do SDK da Web da Platform em um site de vendas de exemplo chamado Luma. O site [](https://luma.enablementadobe.com/content/luma/us/en.html)Luma tem uma camada de dados avançada e uma funcionalidade que permite a construção de uma implementação realista. Após concluir este tutorial, você deve estar pronto para começar a implementar todas as suas soluções de marketing por meio do SDK da Web da Platform em seu próprio site.
+Este tutorial o orienta pela implementação do SDK da Web da Platform em um site de vendas de exemplo chamado Luma. A variável [Site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) O tem uma camada de dados avançada e uma funcionalidade que permite a criação de uma implementação realista. Após concluir este tutorial, você deve estar pronto para começar a implementar todas as suas soluções de marketing por meio do SDK da Web da Platform em seu próprio site.
 
-[![Site Luma](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html).
+[![Site Luma](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 
 ## Objetivos de aprendizagem

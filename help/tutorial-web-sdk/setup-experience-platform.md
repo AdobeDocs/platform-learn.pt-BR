@@ -2,14 +2,19 @@
 title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 8%
+source-wordcount: '1600'
+ht-degree: 5%
 
 ---
 
 # Transmitir dados para o Experience Platform com o SDK da Web
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web da plataforma.
 
@@ -56,7 +61,7 @@ Neste exercício, você cria um conjunto de dados para rastrear os detalhes de c
 1. Vá para a [interface de Experience Platform](https://experience.adobe.com/platform/)
 1. Confirme que você está na sandbox de desenvolvimento que está usando para este tutorial
 1. Abertura **[!UICONTROL Conjuntos de dados]** na navegação à esquerda
-1. Selecione **[!UICONTROL Criar conjunto de dados]**
+1. Selecionar **[!UICONTROL Criar conjunto de dados]**
 
    ![Criar esquema](assets/experience-platform-create-dataset.png)
 
@@ -84,7 +89,7 @@ Agora você pode configurar suas [!UICONTROL sequência de dados] para enviar da
 
    ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
 
-1. Selecione **[!UICONTROL Adicionar serviço]**
+1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/experience-platform-addService.png)
 1. Selecionar **[!UICONTROL Adobe Experience Platform]** como o **[!UICONTROL Serviço]**
 1. Selecionar `Luma Web Event Data` como o **[!UICONTROL Conjunto de dados do evento]**

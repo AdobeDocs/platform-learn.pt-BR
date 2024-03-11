@@ -3,14 +3,19 @@ title: Configurar um namespace de identidade
 description: Saiba como configurar namespaces de identidade para usar com o Adobe Experience Platform Web SDK. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 12%
+source-wordcount: '694'
+ht-degree: 7%
 
 ---
 
 # Configurar um namespace de identidade
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como configurar namespaces de identidade para usar com o Adobe Experience Platform Web SDK.
 
@@ -62,7 +67,7 @@ Agora, crie um namespace para a ID do CRM da Luma:
 
    Uma lista de namespaces de identidade é exibida na interface principal da página, mostrando seus nomes, símbolos de identidade, data da última atualização e se são namespaces padrão ou personalizados. O painel direito contém informações sobre a intensidade do gráfico de identidade.
 
-1. Selecione **[!UICONTROL Criar namespace de identidade]**
+1. Selecionar **[!UICONTROL Criar namespace de identidade]**
 
    ![Exibir identidades](assets/configure-identities-screen.png)
 
@@ -93,7 +98,7 @@ Devido a uma limitação atual na extensão SDK da Web, os namespaces de identid
 
 ## Recursos adicionais
 
-* Documentação do [Serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
+* [Documentação do Serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
 * [API do serviço de identidade](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 Agora que as identidades estão em vigor, o fluxo de dados pode ser configurado.

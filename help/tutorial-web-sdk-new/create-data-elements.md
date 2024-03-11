@@ -2,22 +2,16 @@
 title: Criar elementos de dados
 description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
 
 # Criar elementos de dados
 
-Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, e preencha os campos no esquema XDM usando o tipo de elemento de dados Variável.
-
-
->[!IMPORTANT]
->
->Os dados para esta lição vêm do `[!UICONTROL digitalData]` camada de dados no site Luma. Para visualizar a camada de dados, abra o console do desenvolvedor e digite `[!UICONTROL digitalData]` para ver a camada de dados completa disponível.![camada de dados digitalData](assets/data-element-data-layer.png)
-
+Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, preencha os campos no esquema XDM com o tipo de elemento de dados Variável da extensão SDK da Web da plataforma.
 
 ## Objetivos de aprendizagem
 
@@ -37,9 +31,15 @@ Você entende o que é uma camada de dados e concluiu as lições anteriores no 
 * [Configurar uma sequência de dados](configure-datastream.md)
 * [Extensão SDK da Web instalada na propriedade da tag](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>Os dados para esta lição vêm do `[!UICONTROL digitalData]` camada de dados no site Luma. Para visualizar a camada de dados, abra o console do desenvolvedor e digite `[!UICONTROL digitalData]` para ver a camada de dados completa disponível.![camada de dados digitalData](assets/data-element-data-layer.png)
+
+
 ## Abordagens da camada de dados
 
-Há várias maneiras de mapear dados da camada de dados para o XDM usando a funcionalidade de tags do Adobe Experience Platform. Abaixo estão alguns prós e contras de três abordagens diferentes:
+Há várias maneiras de mapear dados da camada de dados para o XDM usando a funcionalidade de tags do Adobe Experience Platform. Abaixo estão alguns prós e contras de três abordagens diferentes. É possível combinar abordagens, se desejado:
 
 1. Implementar o XDM na camada de dados
 1. Mapear para XDM em tags
@@ -104,7 +104,7 @@ Pontos negativos
 
 * Confiança total na equipe de desenvolvimento e no ciclo de desenvolvimento para atualizar quais dados vão para o XDM
 * Flexibilidade limitada, pois o XDM recebe a carga exata da camada de dados
-* Não é possível usar recursos integrados de tags, como raspagem, persistência e recursos para implantações rápidas
+* Não é possível usar recursos de tags incorporadas, como recursos de raspagem, persistência e implantação rápida
 * Não é possível usar a camada de dados para pixels de terceiros
 * Não há capacidade de transformar os dados entre a camada de dados e o XDM
 
@@ -289,7 +289,7 @@ Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
 >[!TIP]
 >
->Em um futuro [Criar uma regra de tag](create-tag-rule.md) lição, você aprenderá como a **[!UICONTROL Variável]** O elemento de dados permite empilhar várias regras em tags usando o **[!UICONTROL Atualizar tipo de ação variável]**.
+>Em um futuro [Criar regras de tag](create-tag-rule.md) lição, você aprenderá como a **[!UICONTROL Variável]** O elemento de dados permite empilhar várias regras em tags usando o **[!UICONTROL Atualizar tipo de ação variável]**.
 
 Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para a Rede de borda da Platform com uma regra de tags. Mas, primeiro, saiba mais sobre como coletar identidades com o SDK da Web.
 

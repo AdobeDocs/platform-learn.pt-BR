@@ -3,14 +3,19 @@ title: Criar um esquema XDM para dados da Web
 description: Saiba como criar um esquema XDM para dados da Web na interface da Coleção de dados. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 6%
+source-wordcount: '1093'
+ht-degree: 2%
 
 ---
 
 # Criar um esquema XDM para dados da Web
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como criar um esquema XDM para dados da Web na interface da Coleção de dados.
 
@@ -50,7 +55,7 @@ Neste exercício, você criará um esquema XDM usando os grupos de campos de lin
    >Se você for o cliente de um aplicativo baseado em plataforma como o Real-Time CDP, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso não esteja, use o **[!UICONTROL Prod]** sandbox.
 
 1. Ir para **[!UICONTROL Esquemas]** na navegação à esquerda
-1. Clique no botão **[!UICONTROL Criar esquema]** no canto superior direito
+1. Selecione o **[!UICONTROL Criar esquema]** botão na parte superior direita
 1. No menu suspenso, selecione **[!UICONTROL XDM ExperienceEvent]**
 
 ![Evento de experiência de esquema](assets/schema-XDM-experience-event.jpg)
@@ -70,7 +75,7 @@ Quando possível, é recomendável usar grupos de campo existentes e aderir a um
 1. Marque a caixa
 1. Pesquisar por [!UICONTROL `Consumer Experience Event`]
 1. Marque a caixa
-1. Selecione **[!UICONTROL Adicionar grupos de campos]**
+1. Selecionar **[!UICONTROL Adicionar grupos de campos]**
 
    ![Adicionar grupo de campos](assets/schema-add-field-group.jpg)
 
@@ -79,7 +84,7 @@ Com os grupos de campos selecionados, você está pronto para nomear seu esquema
 1. Na caixa de diálogo **[!UICONTROL Composição**] , selecione a `Untitled schema name`
 1. No **[!UICONTROL Propriedades do esquema]** , insira o **[!UICONTROL Nome de exibição]** `Luma Web Event Data`
 1. Selecione qualquer coisa fora do **[!UICONTROL Nome de exibição]** campo para ativar o **[!UICONTROL Salvar]** opção
-1. Selecione **[!UICONTROL Salvar]**
+1. Selecionar **[!UICONTROL Salvar]**
 
 ![Dados de evento da Web da Luma](assets/schema-luma-web-event-data.png)
 

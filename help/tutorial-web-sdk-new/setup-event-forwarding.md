@@ -2,9 +2,9 @@
 title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
@@ -62,7 +62,7 @@ Neste final desta lição, você poderá:
       * [Instalação da extensão do SDK da Web](install-web-sdk.md)
       * [Criar elementos de dados](create-data-elements.md)
       * [Criar identidades](create-identities.md)
-      * [Criar uma regra de tag](create-tag-rule.md)
+      * [Criar regras de tag](create-tag-rule.md)
       * [Validar com o Adobe Experience Platform Debugger](validate-with-debugger.md)
 
 
@@ -185,8 +185,8 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 
    >[!TIP]
    >
-   Ao trabalhar com seu próprio site, você pode encontrar o caminho do objeto XDM com as ferramentas de rede do navegador da Web, filtrando por `/ee` solicitações, abertura do sinal [!UICONTROL **Carga**] e detalhando a variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
-   ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
+   >Ao trabalhar com seu próprio site, você pode encontrar o caminho do objeto XDM com as ferramentas de rede do navegador da Web, filtrando por `/ee` solicitações, abertura do sinal [!UICONTROL **Carga**] e detalhando a variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
+   > ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
 
 ### Instalar a extensão Adobe Cloud Connector
 
@@ -280,7 +280,7 @@ Crie uma biblioteca e crie todas as alterações no ambiente de desenvolvimento 
 
 >[!NOTE]
 >
-Se não tiver vinculado as propriedades de encaminhamento de eventos de Preparo e Produção à sequência de dados, você verá o ambiente de desenvolvimento como a única opção para criar uma biblioteca no.
+>Se não tiver vinculado as propriedades de encaminhamento de eventos de Preparo e Produção à sequência de dados, você verá o ambiente de desenvolvimento como a única opção para criar uma biblioteca no.
 
 ![Salvar regra de encaminhamento de eventos](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
-Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

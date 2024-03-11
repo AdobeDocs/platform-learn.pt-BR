@@ -3,14 +3,19 @@ title: Configurar permissões para o tutorial
 description: Saiba como solicitar acesso ao SDK da Web do Experience Platform e configurar a permissão necessária para concluir o tutorial Implementar o Adobe Experience Cloud com SDK da Web.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 6%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # Configurar permissões para o tutorial
+
+
+>[!CAUTION]
+>
+>Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como solicitar acesso ao SDK da Web do Experience Platform e configurar a permissão necessária para concluir este tutorial. Para implementar o SDK da Web da Platform usando tags na interface da Coleção de dados, você deve ter as permissões de usuário apropriadas configuradas em [Admin Console](https://adminconsole.adobe.com).
 
