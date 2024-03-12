@@ -2,9 +2,9 @@
 title: Configurar o Adobe Analytics usando o SDK da Web do Experience Platform
 description: Saiba como configurar o Adobe Analytics usando o SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3024'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,12 @@ Saiba como configurar o Adobe Analytics usando o [Experience Platform Web SDK](h
 
 No final desta lição, você poderá:
 
-* Configurar um esquema XDM para o Adobe Analytics
-* Entender a diferença entre variáveis XDM mapeadas automaticamente e manualmente para o Analytics
 * Configurar um fluxo de dados para ativar o Adobe Analytics
-* Substituir uma sequência de dados para enviar dados a outro conjunto de relatórios do Adobe Analytics
-* Mapear elementos de dados de matriz individuais ou inteiros para o objeto XDM
-* Use o tipo de ação Atualizar regra variável para empilhar várias regras em um evento XDM
-* Capturar exibições de página no Adobe Analytics com o objeto XDM
-* Capturar dados de comércio eletrônico com o objeto XDM para a cadeia de caracteres do produto Adobe Analytics
+* Entender a diferença entre variáveis XDM mapeadas automaticamente e manualmente para o Analytics
+* Configurar um esquema XDM para variáveis específicas do Adobe Analytics
 * Definir um eVar de merchandising de sintaxe do produto usando o XDM
-* Valide se as variáveis do Adobe Analytics são definidas com o objeto XDM usando o Experience Platform Debugger
+* Substituir uma sequência de dados para enviar dados a outro conjunto de relatórios do Adobe Analytics
+* Validar variáveis do Adobe Analytics usando o Experience Platform Debugger
 * Usar as regras de processamento do Adobe Analytics para definir variáveis personalizadas
 * Validar dados capturados pela Adobe Analytics usando o Adobe Experience Platform Assurance
 * A validação de dados é capturada pelo Adobe Analytics usando Relatórios em tempo real
