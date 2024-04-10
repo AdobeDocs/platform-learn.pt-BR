@@ -1,21 +1,21 @@
 ---
-title: Bootcamp — CDP em tempo real — Criar um segmento e executar ações — Enviar seu segmento para a Adobe Target
-description: Bootcamp — CDP em tempo real — Criar um segmento e executar ações — Enviar seu segmento para a Adobe Target
+title: Bootcamp - CDP em tempo real - Criar um público-alvo e realizar ações - Enviar seu público-alvo para a Adobe Target
+description: Bootcamp - CDP em tempo real - Criar um público-alvo e realizar ações - Enviar seu público-alvo para a Adobe Target
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Segments, Integrations
+feature: Audiences, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
 
-# 1.4 Ação: enviar o segmento para o Adobe Target
+# 1.4 Ação: enviar o público-alvo para a Adobe Target
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
@@ -25,11 +25,11 @@ Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser se
 
 ![Assimilação de dados](./images/sb1.png)
 
-## 1.4.1 Ativar o segmento para o destino do Adobe Target
+## 1.4.1 Ativar o público-alvo para o destino do Adobe Target
 
 O Adobe Target está disponível como um destino no Real-Time CDP. Para configurar a integração do Adobe Target, acesse **Destinos**, para **Catálogo**.
 
-Clique em **Personalização** no **Categorias** menu. Você verá a **Adobe Target** cartão de destino. Clique em **Ativar segmentos**.
+Clique em **Personalização** no **Categorias** menu. Você verá a **Adobe Target** cartão de destino. Clique em **Ativar públicos**.
 
 ![EM](./images/atdest1.png)
 
@@ -37,7 +37,7 @@ Selecionar o destino ``Bootcamp Target`` e clique em **Próxima**.
 
 ![EM](./images/atdest3.png)
 
-Na lista de segmentos disponíveis, selecione o segmento que você criou no [1.3 Criar um segmento](./ex3.md), que se chama `yourLastName - Interest in Real-Time CDP`. Em seguida, clique em **Próxima**.
+Na lista de públicos disponíveis, selecione o público criado no [1.3 Criar um público-alvo](./ex3.md), que se chama `yourLastName - Interest in Real-Time CDP`. Em seguida, clique em **Próxima**.
 
 ![EM](./images/atdest8.png)
 
@@ -49,17 +49,17 @@ Clique em **Concluir**.
 
 ![EM](./images/atdest10.png)
 
-Seu segmento agora está ativado para o Adobe Target.
+Seu público-alvo agora está ativado para o Adobe Target.
 
 ![EM](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Quando você acaba de criar seu destino do Adobe Target no Real-Time CDP, pode levar até uma hora para o destino ficar ativo. Esse é um tempo de espera único, devido à definição da configuração de back-end. Quando a configuração inicial de 1 hora de tempo de espera e backend for concluída, os segmentos de borda recém-adicionados enviados para o destino do Adobe Target estarão disponíveis para direcionamento em tempo real.
+>Quando você acaba de criar seu destino do Adobe Target no Real-Time CDP, pode levar até uma hora para o destino ficar ativo. Esse é um tempo de espera único, devido à definição da configuração de back-end. Quando o tempo de espera inicial de uma hora e a configuração de backend forem concluídas, os públicos-alvo de borda recém-adicionados enviados para o destino do Adobe Target estarão disponíveis para direcionamento em tempo real.
 
 ## 1.4.2 Configurar a atividade do Adobe Target baseada em formulários
 
-Agora que seu segmento do Real-Time CDP está configurado para ser enviado para o Adobe Target, você pode configurar sua atividade de Direcionamento de experiência no Adobe Target. Neste exercício, você configurará uma atividade baseada no Visual Experience Composer.
+Agora que seu público-alvo do Real-Time CDP está configurado para ser enviado para o Adobe Target, você pode configurar sua atividade de Direcionamento de experiência no Adobe Target. Neste exercício, você configurará uma atividade baseada no Visual Experience Composer.
 
 Acesse a página inicial do Adobe Experience Cloud em [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abri-lo.
 
@@ -86,7 +86,7 @@ Selecionar **Visual** e defina o **URL da atividade** para `https://bootcamp.aep
 
 Selecione o espaço de trabalho **AT Bootcamp**.
 
-Clique em **Próximo**.
+Clique em **Avançar**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
@@ -98,11 +98,11 @@ O público-alvo padrão é atualmente **Todos os visitantes**. Clique no link **
 
 ![RTCDP](./images/atform3.png)
 
-Agora você está vendo a lista de públicos-alvo disponíveis, e o segmento do Adobe Experience Platform criado anteriormente e enviado para o Adobe Target agora faz parte dessa lista. Selecione o segmento criado anteriormente no Adobe Experience Platform. Clique em **Atribuir público-alvo**.
+Você está vendo a lista de públicos-alvo disponíveis, e o público-alvo da Adobe Experience Platform criado anteriormente e enviado para o Adobe Target agora faz parte dessa lista. Selecione o público criado anteriormente no Adobe Experience Platform. Clique em **Atribuir público-alvo**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Seu segmento do Adobe Experience Platform agora faz parte dessa atividade de direcionamento de experiência.
+Seu público-alvo do Adobe Experience Platform agora faz parte dessa atividade de direcionamento de experiência.
 
 ![RTCDP](./images/atform4.png)
 
@@ -140,11 +140,11 @@ Para o nome, use:
 
 - `yourLastName - RTCDP - XT (VEC)`
 
-Clique em **Próximo**.
+Clique em **Avançar**.
 
 ![RTCDP](./images/atform8.png)
 
-Clique em **Próximo**.
+Clique em **Avançar**.
 
 ![RTCDP](./images/atform8a.png)
 
@@ -170,7 +170,7 @@ Em seguida, você receberá uma confirmação visual de que sua atividade está 
 
 Sua atividade agora está online e pode ser testada no site de bootcamp.
 
-Se você voltar ao site de demonstração e visitar a página do produto para **Real-Time CDP**, você se qualificará instantaneamente para o segmento criado e verá a atividade do Adobe Target ser exibida na página inicial em tempo real.
+Se você voltar ao site de demonstração e visitar a página do produto para **Real-Time CDP**, você se qualificará instantaneamente para o público-alvo criado e verá a atividade do Adobe Target ser exibida na página inicial em tempo real.
 
 >[!IMPORTANT]
 >
@@ -182,7 +182,7 @@ Se você voltar ao site de demonstração e visitar a página do produto para **
 
 ![RTCDP](./images/atform12a.png)
 
-Próxima etapa: [1.5 Ação: enviar o segmento para o Facebook](./ex5.md)
+Próxima etapa: [1.5 Ação: enviar o público-alvo para a Facebook](./ex5.md)
 
 [Voltar para Fluxo de Usuário 1](./uc1.md)
 
