@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
+source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '874'
 ht-degree: 16%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 16%
    + [Integrar à Estrutura de transparência e consentimento 2.0 do IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Higiene de dados {#data-hygiene}
    + [Excluir conjuntos de dados](/help/platform/data-hygiene/delete-datasets.md)
+   + [Perfil pseudônimo e expiração de evento](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Assimilação de dados {#data-ingestion}
    + [Visão geral](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Visão geral da assimilação em lote](/help/platform/data-ingestion/batch-ingestion-overview.md)
@@ -189,7 +190,7 @@ ht-degree: 16%
    + [Analisar e visualizar dados](/help/platform/queries/analyze-and-visualize.md)
    + [Criar painéis usando ferramentas de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Recarregue os dados do cliente](/help/platform/queries/recharge-your-customer-data.md)
-   + [Conectar clientes ao Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [Conectar clientes ao Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=pt-BR){target="_blank"}
    + [Validar dados no datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Esquemas {#schemas}
    + [Visão geral](/help/platform/schemas/schemas-and-experience-data-model.md)
