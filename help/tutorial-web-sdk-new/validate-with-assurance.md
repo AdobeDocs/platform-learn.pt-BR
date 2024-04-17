@@ -2,9 +2,10 @@
 title: Validar implementações do SDK da Web com o Experience Platform Assurance
 description: Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Assurance. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -19,7 +20,7 @@ O Adobe Experience Platform Assurance é um produto da Adobe Experience Cloud qu
 No final desta lição, você poderá:
 
 * Iniciar uma sessão do Assurance
-* Exibir solicitações enviadas para e da Rede de borda da Platform
+* Exibir solicitações enviadas para e do Platform Edge Network
 
 ## Pré-requisitos
 
@@ -31,7 +32,7 @@ Você está familiarizado com as tags de Coleção de dados e a [Site de demonst
 * [Extensão SDK da Web instalada na propriedade da tag](install-web-sdk.md)
 * [Criar elementos de dados](create-data-elements.md)
 * [Criar identidades](create-identities.md)
-* [Criar regras de tag](create-tag-rule.md)
+* [Criar uma regra de tag](create-tag-rule.md)
 * [Validar com o Debugger](validate-with-debugger.md)
 
 
@@ -70,7 +71,7 @@ Analisar como fizemos isso na lição Debugger:
 
 ## Validar o estado atual da implementação do SDK da Web
 
-Há informações limitadas para exibir neste estágio da implementação. Um valor que podemos ver é a sua ID de Experience Cloud (ECID) gerada na Platform Edge Network:
+Há informações limitadas para exibir neste estágio da implementação. Um valor que podemos ver é a sua ID de Experience Cloud (ECID) gerada no Edge Network da plataforma:
 
 1. Selecione a linha com o evento chamado Identificador de Resposta Adobe.
 1. Um menu é exibido à direita. Selecione o `+` assinar ao lado de `[!UICONTROL ACPExtensionEvent]`
