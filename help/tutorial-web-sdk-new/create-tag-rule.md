@@ -1,8 +1,9 @@
 ---
 title: Criar regras de tag
-description: Saiba como enviar um evento para a Platform Edge Network com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como enviar um evento para o Edge Network da Platform com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # Criar regras de tag
 
-Saiba como enviar eventos para a Rede de borda da Platform com seu objeto XDM usando regras de tag. Uma regra de tag é uma combinação de eventos, condições e ações que instrui a propriedade de tag a fazer algo. Com o SDK da Web da Platform, as regras são usadas para enviar eventos para a Rede de borda da Platform com os campos XDM corretos.
+Saiba como enviar eventos para o Platform Edge Network com seu objeto XDM usando regras de tag. Uma regra de tag é uma combinação de eventos, condições e ações que instrui a propriedade de tag a fazer algo. Com o SDK da Web da Platform, as regras são usadas para enviar eventos para o Platform Edge Network com os campos XDM corretos.
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ onde;
 Nas tags, as regras são usadas para executar ações (acionar chamadas) em várias condições. A extensão de tags do SDK da Web da Platform inclui duas ações que serão usadas nesta lição:
 
 * **[!UICONTROL Atualizar variável]** mapeia elementos de dados para campos XDM
-* **[!UICONTROL Enviar evento]** envia o objeto XDM para a Rede de borda do Experience Platform
+* **[!UICONTROL Enviar evento]** envia o objeto XDM para o Edge Network Experience Platform
 
 No restante desta lição:
 
@@ -68,7 +69,7 @@ No restante desta lição:
 
 1. Crie regras adicionais que substituam nossa &quot;configuração global&quot; ou contribuam com campos XDM adicionais (usando [!UICONTROL Atualizar variável] novamente) que só são relevantes em determinadas condições (por exemplo, adicionar detalhes do produto nas páginas do produto).
 
-1. Criar outra regra com o **[!UICONTROL Enviar evento]** ação que enviará o objeto XDM completo para a Rede de borda da Adobe Experience Platform.
+1. Criar outra regra com o **[!UICONTROL Enviar evento]** ação que enviará o objeto XDM completo para o Edge Network do Adobe Experience Platform.
 
 Todas essas regras serão sequenciadas corretamente usando o &quot;[!UICONTROL pedido]&quot;.
 
@@ -105,7 +106,7 @@ Para criar regras de tag para os campos XDM globais:
    > Quanto menor o número do pedido, mais cedo ele será executado. Portanto, damos à nossa &quot;configuração global&quot; um número de ordem baixo.
 
 1. Selecionar **[!UICONTROL Manter alterações]** para retornar à tela principal da regra
-   ![Selecionar acionador da biblioteca carregada](assets/create-tag-rule-trigger-bottom.png)
+   ![Selecionar acionador da biblioteca carregada](assets/create-tag-rule-trigger-loaded.png)
 
 1. No **[!UICONTROL Ações]** , selecione **[!UICONTROL Adicionar]**
 
@@ -167,7 +168,7 @@ Agora mapeie seu [!UICONTROL elementos de dados] para o [!UICONTROL schema] usad
 
 #### Campos da página do produto
 
-Agora, comece a usar **[!UICONTROL Atualizar variável]** em regras sequenciadas adicionais para enriquecer o objeto XDM antes de enviá-lo para o [!UICONTROL Rede de borda da plataforma].
+Agora, comece a usar **[!UICONTROL Atualizar variável]** em regras sequenciadas adicionais para enriquecer o objeto XDM antes de enviá-lo para o [!UICONTROL Edge Network da plataforma].
 
 >[!TIP]
 >
@@ -339,7 +340,7 @@ Quando terminar, você deverá ver as seguintes regras criadas.
 
 ### Enviar regra de evento
 
-Agora que você definiu as variáveis, é possível criar a regra para enviar o objeto XDM completo para a Platform Edge Network com o **[!UICONTROL Enviar evento]** ação.
+Agora que você definiu as variáveis, é possível criar a regra para enviar o objeto XDM completo para o Platform Edge Network com o **[!UICONTROL Enviar evento]** ação.
 
 1. À direita, selecione **[!UICONTROL Adicionar regra]** para criar outra regra
 
@@ -352,7 +353,7 @@ Agora que você definiu as variáveis, é possível criar a regra para enviar o 
 1. Selecionar **[!UICONTROL Avançado]** e insira `50` in **[!UICONTROL Pedido]**. Isso garantirá que a segunda regra seja acionada depois da primeira regra definida para acionar como `1`.
 
 1. Selecionar **[!UICONTROL Manter alterações]** para retornar à tela principal da regra
-   ![Selecionar acionador da biblioteca carregada](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Selecionar acionador da biblioteca carregada](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. No **[!UICONTROL Ações]** , selecione **[!UICONTROL Adicionar]**
 

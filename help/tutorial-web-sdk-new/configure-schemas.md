@@ -2,7 +2,8 @@
 title: Criar um esquema XDM para dados da Web
 description: Saiba como criar um esquema XDM para dados da Web na interface da Coleção de dados. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -15,7 +16,7 @@ Saiba como criar um esquema XDM para dados da Web na interface da Coleção de d
 
 Os esquemas do Experience Data Model (XDM) são os blocos fundamentais, os princípios e as práticas recomendadas para coletar dados no Adobe Experience Platform.
 
-O SDK da Web da Platform usa o esquema para padronizar os dados de eventos da Web, enviá-los para a Rede de borda da Platform e, por fim, encaminhar os dados para qualquer aplicativo Experience Cloud configurado no fluxo de dados. Essa etapa é crítica, pois define um modelo de dados padrão necessário para assimilar dados de experiência do cliente no Experience Platform e habilita serviços e aplicativos downstream baseados nesses padrões.
+O SDK da Web da Platform usa o esquema para padronizar os dados de eventos da Web, enviá-los para o Edge Network da Platform e, por fim, encaminhar os dados para qualquer aplicativo Experience Cloud configurado no fluxo de dados. Essa etapa é crítica, pois define um modelo de dados padrão necessário para assimilar dados de experiência do cliente no Experience Platform e habilita serviços e aplicativos downstream baseados nesses padrões.
 
 ## Por que modelar os dados?
 
@@ -122,7 +123,7 @@ Quando possível, é recomendável usar grupos de campo existentes e aderir a um
 1. Marque a caixa
 1. Selecionar **[!UICONTROL Adicionar grupos de campos]**
 
-   ![Adicionar grupo de campos](assets/schema-add-field-group.jpg)
+   ![Adicionar grupo de campos](assets/schema-add-field-group.png)
 
 Com ambos os grupos de campos, observe que você tem acesso aos pares de valores chave mais usados, necessários para a coleta de dados na Web. A variável [!UICONTROL nome de exibição] de cada campo aparece para os profissionais de marketing na interface do construtor de segmentos dos aplicativos baseados em plataforma e você pode alterar o nome de exibição dos campos padrão para atender às suas necessidades. Também é possível remover campos indesejados. Ao clicar em qualquer nome de grupo de campos, a interface destaca quais agrupamentos de pares de valores chave pertencem a ele. No exemplo abaixo, você pode ver a quais grupos pertencem **[!UICONTROL Evento de experiência do consumidor]**.
 
