@@ -3,7 +3,7 @@ title: Validar implementações do SDK da Web com o Experience Platform Debugger
 description: Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger.
 
@@ -37,7 +37,7 @@ Essa técnica é chamada de alternação de ambiente e será útil posteriorment
 No final desta lição, você poderá usar o depurador para:
 
 * Carregar uma biblioteca de tags alternativa
-* Validar se o objeto XDM está capturando e enviando dados conforme esperado pela Rede de borda
+* Validar se o objeto XDM está capturando e enviando dados conforme o Edge Network esperado
 
 ## Pré-requisitos
 
@@ -87,7 +87,7 @@ O depurador de Experience Platform tem um recurso interessante que permite subst
 
 ## Validar sua implementação no Experience Platform Debugger
 
-Você pode usar o Debugger para validar a implementação do SDK da Web da Platform e exibir os dados enviados para a Rede de borda da Platform:
+Você pode usar o Debugger para validar a implementação do SDK da Web da Platform e visualizar os dados enviados para o Edge Network da Platform:
 
 1. Ir para **[!UICONTROL Resumo]** na navegação à esquerda, para ver os detalhes da propriedade da tag
 

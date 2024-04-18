@@ -3,7 +3,7 @@ title: Configurar uma sequência de dados
 description: Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 5%
@@ -15,11 +15,11 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud.
 
-As sequências de dados informam à Adobe Experience Platform Edge Network para onde enviar os dados coletados pelo SDK da Web da plataforma. Na configuração dos datastreams, você habilita os aplicativos Experience Cloud, a conta Experience Platform e o encaminhamento de eventos. Consulte a [Princípios básicos da configuração de um fluxo de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=br) para obter informações mais detalhadas.
+As sequências de dados informam ao Adobe Experience Platform Edge Network para onde enviar os dados coletados pelo SDK da Web da plataforma. Na configuração dos datastreams, você habilita os aplicativos Experience Cloud, a conta Experience Platform e o encaminhamento de eventos. Consulte a [Princípios básicos da configuração de um fluxo de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=br) para obter informações mais detalhadas.
 
 ## Objetivos de aprendizagem
 
@@ -39,7 +39,7 @@ Antes de configurar o fluxo de dados, você já deve ter concluído as seguintes
 
 ## Criar um fluxo de dados
 
-Agora é possível criar uma sequência de dados para informar à Platform Edge Network para onde enviar os dados coletados pelo SDK da Web.
+Agora é possível criar um fluxo de dados para informar ao Platform Edge Network para onde enviar os dados coletados pelo SDK da Web.
 
 **Para criar um fluxo de dados:**
 

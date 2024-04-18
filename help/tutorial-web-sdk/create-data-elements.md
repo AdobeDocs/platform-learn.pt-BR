@@ -3,7 +3,7 @@ title: Criar elementos de dados
 description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como criar os elementos de dados essenciais necessários para capturar dados com o SDK da Web do Experience Platform. Capturar dados de conteúdo e de identidade no [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Saiba como usar o esquema XDM criado anteriormente para coletar dados usando o SDK da Web da plataforma por meio de um novo elemento de dados chamado Objeto XDM.
 
@@ -225,7 +225,7 @@ Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para a Platform Edge Network por meio do objeto XDM criando uma regra nas tags.
+Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para o Platform Edge Network por meio do objeto XDM, criando uma regra nas tags.
 
 [Próximo: ](create-tag-rule.md)
 

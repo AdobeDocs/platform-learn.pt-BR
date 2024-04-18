@@ -3,7 +3,7 @@ title: Conclusão e próximas etapas
 description: O que fazer em seguida após concluir o tutorial
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Parabéns! Você concluiu o tutorial &quot;Implementar o Adobe Experience Cloud com o SDK da Web&quot;!
 
@@ -24,14 +24,14 @@ Vamos analisar rapidamente tudo o que você conseguiu. Você tem:
 * Um esquema foi criado usando grupos de campos padrão e personalizados.
 * Configuração de um fluxo de dados.
 * Criou uma propriedade de tag.
-* Campos capturados de uma camada de dados, transformados em XDM e enviados para a Rede de borda da Platform.
+* Campos capturados de uma camada de dados, transformados em XDM e enviados para o Platform Edge Network.
 * Consentimento capturado e identidades autenticadas.
 * Conectou a implementação do SDK da Web aos seguintes aplicativos Experience Cloud:
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Usado o encaminhamento de eventos para enviar dados da Platform Edge Network para um gancho da Web.
+* Usado o encaminhamento de eventos para enviar dados do Platform Edge Network para um gancho da Web.
 * Validação da implementação usando o Adobe Experience Platform Debugger.
 
 Você está pronto para começar a próxima fase da sua jornada: implementação do Adobe Experience Cloud em seu próprio site!

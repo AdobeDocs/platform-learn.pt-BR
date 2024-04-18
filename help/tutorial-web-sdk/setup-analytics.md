@@ -3,7 +3,7 @@ title: Configurar o Adobe Analytics usando o SDK da Web do Experience Platform
 description: Saiba como configurar o Adobe Analytics usando o SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '3473'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como configurar o Adobe Analytics usando o [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), crie regras de tag para enviar dados ao Adobe Analytics e valide se o Analytics está capturando dados conforme esperado.
 
@@ -94,7 +94,7 @@ O esquema criado na variável [Configurar um esquema](configure-schemas.md) A li
 
 ## Configurar o fluxo de dados
 
-O SDK da Web da Platform envia dados do seu site para a Rede de borda da Platform. Seu fluxo de dados informa à Platform Edge Network para onde encaminhar esses dados, neste caso, qual dos seus conjuntos de relatórios do Adobe Analytics.
+O SDK da Web da Platform envia dados do seu site para o Platform Edge Network. Seu fluxo de dados informa à Platform Edge Network para onde encaminhar esses dados, neste caso, qual dos seus conjuntos de relatórios do Adobe Analytics.
 
 1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**
@@ -121,7 +121,7 @@ O SDK da Web da Platform envia dados do seu site para a Rede de borda da Platfor
 
 ## Criar elementos de dados adicionais
 
-Em seguida, capture dados adicionais da camada de dados do Luma e envie-os para a Rede de borda da plataforma. Embora a lição se concentre em requisitos comuns do Adobe Analytics, todos os dados capturados podem ser facilmente enviados para outros destinos com base na configuração do fluxo de dados. Por exemplo, se você concluiu a lição do Adobe Experience Platform, os dados adicionais capturados nesta lição também serão enviados para a Platform.
+Em seguida, capture dados adicionais da camada de dados do Luma e envie-os para o Edge Network da plataforma. Embora a lição se concentre em requisitos comuns do Adobe Analytics, todos os dados capturados podem ser facilmente enviados para outros destinos com base na configuração do fluxo de dados. Por exemplo, se você concluiu a lição do Adobe Experience Platform, os dados adicionais capturados nesta lição também serão enviados para a Platform.
 
 ### Criar elementos de dados de comércio eletrônico
 
@@ -233,7 +233,7 @@ Antes de mapear para a string do produto, é importante entender que há dois ob
 1. A variável `commerce` conjuntos de objetos eventos do Analytics, como `prodView`, `scView`, e `purchase`
 1. A variável `productListItems` conjuntos de objetos dimensões do Analytics, como `productID`.
 
-Consulte [Coletar dados de comércio e produtos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) para obter mais detalhes.
+Consulte [Coletar dados do Commerce e de produtos](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) para obter mais detalhes.
 
 Também é importante entender que você pode **[!UICONTROL fornecer atributos individuais]** a campos XDM individuais ou **[!UICONTROL fornecer um array inteiro]** para um objeto XDM.
 
@@ -439,7 +439,7 @@ Adicione os novos elementos de dados e regras à `Luma Web SDK Tutorial` e recri
 
 No [Depurador](validate-with-debugger.md) lição, você aprendeu a inspecionar o beacon de objeto XDM do lado do cliente com o Platform Debugger e o console de desenvolvimento do navegador, que é semelhante à depuração de um `AppMeasurement.js` Implementação do Analytics. Para validar se o Analytics está capturando dados corretamente por meio do SDK da Web da plataforma, você deve seguir duas etapas adicionais para:
 
-1. Valide como os dados são processados pelo objeto XDM na Platform Edge Network, usando o recurso Edge Trace do depurador Experience Platform
+1. Validar como os dados são processados pelo objeto XDM no Edge Network da plataforma usando o recurso Edge Trace do depurador de Experience Platform
 1. Valide como os dados são processados pelo Analytics usando Regras de processamento e Relatórios em tempo real.
 
 ### Usar o Edge Trace
@@ -496,7 +496,7 @@ Use o mesmo sinal para validar se as exibições de página de conteúdo são ca
 
 ### Sequência de caracteres do produto e eventos de comércio eletrônico
 
-Como você já está em uma página de produto, este exercício continua a usar o mesmo Edge Trace para validar se os dados do produto foram capturados pelo Analytics. A sequência de caracteres do produto e os eventos de comércio eletrônico são variáveis XDM mapeadas automaticamente para o Analytics. Contanto que você tenha mapeado para o `productListItem` Variável XDM enquanto [configuração de um esquema XDM para o Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), a Platform Edge Network cuida do mapeamento dos dados para as variáveis de análise adequadas.
+Como você já está em uma página de produto, este exercício continua a usar o mesmo Edge Trace para validar se os dados do produto foram capturados pelo Analytics. A sequência de caracteres do produto e os eventos de comércio eletrônico são variáveis XDM mapeadas automaticamente para o Analytics. Contanto que você tenha mapeado para o `productListItem` Variável XDM enquanto [configuração de um esquema XDM para o Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), o Edge Network da Platform cuida do mapeamento dos dados para as variáveis de análise adequadas.
 
 1. Primeiro, valide se a variável `Product String` está definido
 1. Procure `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. A variável captura o valor do elemento de dados que você mapeou para o `productListItems.item1.sku` anteriormente nesta lição
@@ -505,7 +505,7 @@ Como você já está em uma página de produto, este exercício continua a usar 
 
    ![Sequência de produto do Analytics](assets/analytics-debugger-prodstring.png)
 
-O Edge Trace trata `commerce` eventos ligeiramente diferentes de `productList` dimensões. Você não vê uma variável de dados de contexto mapeada da mesma forma que vê o nome do produto mapeado para `[!UICONTROL c.a.x.productlistitem.[0].name]` acima. Em vez disso, o Edge Trace mostra o mapeamento automático do evento final no Analytics `event` variável. A Platform Edge Network a mapeia adequadamente, desde que você mapeie para o XDM adequado `commerce` enquanto [configuração do esquema para o Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); neste caso, o `commerce.productViews.value=1`.
+O Edge Trace trata `commerce` eventos ligeiramente diferentes de `productList` dimensões. Você não vê uma variável de dados de contexto mapeada da mesma forma que vê o nome do produto mapeado para `[!UICONTROL c.a.x.productlistitem.[0].name]` acima. Em vez disso, o Edge Trace mostra o mapeamento automático do evento final no Analytics `event` variável. O Platform Edge Network o mapeia adequadamente, desde que você o mapeie para o XDM correto `commerce` enquanto [configuração do esquema para o Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); neste caso, o `commerce.productViews.value=1`.
 
 1. De volta à janela Experience Platform Debugger, role para baixo até a `[!UICONTROL event]` , está definida como `[!UICONTROL prodView]`
 

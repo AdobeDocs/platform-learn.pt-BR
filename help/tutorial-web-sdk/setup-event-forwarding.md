@@ -3,7 +3,7 @@ title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform.
 
-O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam de Adobe diretamente da Adobe Experience Platform Edge Network, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos no [Visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam de Adobe diretamente do Edge Network Adobe Experience Platform, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos no [Visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
 Para usar o encaminhamento de eventos na Adobe Experience Platform, os dados devem ser enviados para a Rede de borda da Adobe Experience Platform primeiro usando uma ou mais das três opções a seguir:
 
@@ -31,7 +31,7 @@ Para usar o encaminhamento de eventos na Adobe Experience Platform, os dados dev
 >[!NOTE]
 >O SDK da Web da Platform e o SDK móvel da Platform não exigem implantação por meio de tags. No entanto, é recomendado usar tags para implantar esses SDKs.
 
-Depois de concluir as lições anteriores neste tutorial, você deve enviar dados para a Rede de borda da Platform usando o SDK da Web. Quando os dados estiverem na Platform Edge Network, você poderá ativar o encaminhamento de eventos e usar uma propriedade de encaminhamento de eventos para enviar dados a soluções que não sejam de Adobe.
+Depois de concluir as lições anteriores neste tutorial, você deve enviar dados para o Platform Edge Network usando o SDK da Web. Quando os dados estiverem no Platform Edge Network, você poderá ativar o encaminhamento de eventos e usar uma propriedade de encaminhamento de eventos para enviar dados a soluções que não sejam Adobe.
 
 ## Objetivos de aprendizagem
 
@@ -52,7 +52,7 @@ Neste final desta lição, você poderá:
 * Permissão de usuário para encaminhamento de eventos. (Em [Admin Console](https://adminconsole.adobe.com/), no produto Adobe Experience Platform Launch, itens de permissão para[!UICONTROL Plataformas] > [!UICONTROL Edge] e todos [!UICONTROL Direitos de propriedade]). Depois de concedido, você deve ver [!UICONTROL Encaminhamento de evento] na navegação à esquerda da interface da Coleção de dados:
   ![Propriedades do encaminhamento de eventos](assets/event-forwarding-menu.png)
 
-* SDK da Web ou móvel do Adobe Experience Platform configurado para enviar dados para a Rede de borda. Você deve ter concluído as seguintes lições deste tutorial:
+* Adobe Experience Platform Web ou SDK móvel configurado para enviar dados para o Edge Network. Você deve ter concluído as seguintes lições deste tutorial:
 
    * Configuração inicial
 
@@ -113,7 +113,7 @@ Para configurar o Target na sequência de dados:
 
 Repita essas etapas para fluxos de dados de preparo e produção quando estiver pronto para promover as alterações por meio do fluxo de publicação.
 
-## Encaminhar dados da Platform Edge Network para uma solução não-Adobe
+## Encaminhar dados do Edge Network da plataforma para uma solução não-Adobe
 
 Neste exercício, você aprenderá a configurar um elemento de dados de encaminhamento de eventos, configurar uma regra de encaminhamento de eventos e validar o usando uma ferramenta de terceiros chamada [Webhook.site](https://webhook.site/).
 
@@ -123,7 +123,7 @@ Neste exercício, você aprenderá a configurar um elemento de dados de encaminh
 
 >[!IMPORTANT]
 >
->Você já deve ter criado e mapeado elementos de dados para um objeto XDM, bem como configurado regras de tags e criado essas alterações em uma biblioteca para um ambiente de tags para continuar. Caso contrário, consulte **Configuração de tags** etapas no [pré-requisitos](setup-event-forwarding.md#prerequisites) seção. Essas etapas garantem que os dados sejam enviados para a Rede de borda da Platform e, a partir daí, você pode configurar uma propriedade de encaminhamento de eventos para encaminhar dados a uma solução que não seja de Adobe.
+>Você já deve ter criado e mapeado elementos de dados para um objeto XDM, bem como configurado regras de tags e criado essas alterações em uma biblioteca para um ambiente de tags para continuar. Caso contrário, consulte **Configuração de tags** etapas no [pré-requisitos](setup-event-forwarding.md#prerequisites) seção. Essas etapas garantem que os dados sejam enviados para o Edge Network da plataforma e, a partir daí, você pode configurar uma propriedade de encaminhamento de eventos para encaminhar dados a uma solução que não seja de Adobe.
 
 
 ### Criar um elemento de dados de encaminhamento de eventos
@@ -212,7 +212,7 @@ Há algumas diferenças principais entre a configuração de regras em uma propr
 * **[!UICONTROL Eventos] &amp; [!UICONTROL Condições]**:
 
    * **Tags**: todas as regras são acionadas por um Evento que deve ser especificado na regra, por exemplo, `Library Loaded - Page Top`. As condições são opcionais.
-   * **Encaminhamento de eventos**: presume-se que cada evento enviado à Platform Edge Network seja um acionador para encaminhar dados. Por conseguinte, não existem [!UICONTROL Eventos] que devem ser selecionadas nas regras de encaminhamento de eventos. Para gerenciar quais eventos acionam uma regra de encaminhamento de eventos, você deve configurar condições.
+   * **Encaminhamento de eventos**: presume-se que cada evento enviado para o Platform Edge Network seja um acionador para encaminhar dados. Por conseguinte, não existem [!UICONTROL Eventos] que devem ser selecionadas nas regras de encaminhamento de eventos. Para gerenciar quais eventos acionam uma regra de encaminhamento de eventos, você deve configurar condições.
 
 * **Tokenização do elemento de dados**:
 
@@ -295,13 +295,13 @@ Agora você pode validar sua propriedade de encaminhamento de eventos usando o P
 
 1. Antes de recarregar a página, no Experience Platform Debugger, abra **[!UICONTROL Logs]** na navegação à esquerda
 
-1. Selecione o **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]** para visualizar as solicitações da Platform Edge Network
+1. Selecione o **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]** para ver as solicitações do Platform Edge Network
 
    ![Sessão de rede de borda do encaminhamento de eventos](assets/event-forwarding-edge-session.png)
 
 1. Recarregar a página
 
-1. Você verá solicitações adicionais que dão visibilidade das solicitações do lado do servidor enviadas pela Platform Edge Network para o WebHook
+1. Você verá solicitações adicionais que dão visibilidade das solicitações do lado do servidor enviadas pelo Edge Network da plataforma para o WebHook
 
 1. A solicitação para focalizar a validação é aquela que mostra o URL totalmente construído sendo enviado pela rede de borda
 

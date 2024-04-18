@@ -3,7 +3,7 @@ title: Configurar o Audience Manager com o SDK da Web da plataforma
 description: Saiba como configurar o Adobe Audience Manager usando o SDK da Web da plataforma e validar a implementação usando um destino de cookie. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como configurar o Adobe Audience Manager usando o SDK da Web da plataforma e validar a implementação usando um destino de cookie.
 
@@ -39,7 +39,7 @@ Para concluir esta lição, primeiro você deve:
 
 ## Configurar o fluxo de dados
 
-A implementação do Audience Manager usando o SDK da Web da Platform é diferente da implementação usando [encaminhamento pelo lado do servidor (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=pt-BR). O encaminhamento pelo lado do servidor passa dados de solicitação Adobe Analytics para o Audience Manager. Uma implementação do SDK da Web da Platform passa dados XDM enviados para a Rede de borda da Platform para o Audience Manager. O Audience Manager está ativado na sequência de dados:
+A implementação do Audience Manager usando o SDK da Web da Platform é diferente da implementação usando [encaminhamento pelo lado do servidor (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=pt-BR). O encaminhamento pelo lado do servidor passa dados de solicitação Adobe Analytics para o Audience Manager. Uma implementação do SDK da Web da Platform passa dados XDM enviados para o Edge Network da plataforma para o Audience Manager. O Audience Manager está ativado na sequência de dados:
 
 1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**

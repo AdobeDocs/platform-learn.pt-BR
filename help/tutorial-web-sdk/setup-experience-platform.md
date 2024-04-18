@@ -2,7 +2,7 @@
 title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 5%
@@ -14,13 +14,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->Esperamos publicar alterações importantes neste tutorial na sexta-feira, 15 de março de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
+>Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web da plataforma.
 
 O Experience Platform é o backbone de todos os novos aplicativos Experience Cloud, como o Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics e Adobe Journey Optimizer. Esses aplicativos foram projetados para usar o SDK da Web da Platform como o método ideal de coleta de dados da Web.
 
-O Experience Platform usa o mesmo esquema XDM criado anteriormente para capturar dados do evento do site da Luma. Quando esses dados são enviados para a Platform Edge Network, a configuração da sequência de dados pode encaminhá-los para o Experience Platform.
+O Experience Platform usa o mesmo esquema XDM criado anteriormente para capturar dados do evento do site da Luma. Quando esses dados são enviados para o Edge Network da plataforma, a configuração do fluxo de dados pode encaminhá-los para o Experience Platform.
 
 ## Objetivos de aprendizagem
 
@@ -81,7 +81,7 @@ Um conjunto de dados agora está configurado para começar a coletar dados da im
 
 ## Configurar o fluxo de dados
 
-Agora você pode configurar suas [!UICONTROL sequência de dados] para enviar dados ao [!UICONTROL Adobe Experience Platform]. A sequência de dados é o link entre a propriedade da tag, a Platform Edge Network e o conjunto de dados Experience Platform.
+Agora você pode configurar suas [!UICONTROL sequência de dados] para enviar dados ao [!UICONTROL Adobe Experience Platform]. O fluxo de dados é o link entre a propriedade da tag, o Edge Network da plataforma e o conjunto de dados Experience Platform.
 
 1. Abra o [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Selecionar **[!UICONTROL Datastreams]** na navegação à esquerda
