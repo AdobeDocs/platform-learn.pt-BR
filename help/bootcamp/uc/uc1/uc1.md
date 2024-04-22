@@ -5,9 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-feature: Profiles, Audiences, Integrations, Destinations
+feature: Profiles, Segments, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: 0474808b42925bf95529e10a42a0563f0ecc43b8
+source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 2%
@@ -38,16 +38,16 @@ Neste exercício, você seguirá um script e navegará pelo site.
 
 Neste exercício, você fará logon no Adobe Experience Platform e visualizará seu próprio Perfil de cliente em tempo real na interface do usuário.
 
-[1.3 Criar um público-alvo - Interface do usuário](./ex3.md)
+[1.3 Criar um segmento - IU](./ex3.md)
 
-Neste exercício, você criará um público-alvo usando o Audience Builder da Adobe Experience Platform.
+Neste exercício, você criará um segmento usando o Construtor de segmentos da Adobe Experience Platform.
 
-[1.4 Ação: enviar o público-alvo para a Adobe Target](./ex4.md)
+[1.4 Ação: enviar o segmento para o Adobe Target](./ex4.md)
 
-Use o público-alvo que você criou no exercício 1.1 para configurar uma Atividade de direcionamento de experiência no Adobe Target.
+Use o segmento que você criou no exercício 1.1 para configurar uma Atividade de direcionamento de experiência no Adobe Target.
 
-[1.5 Ação: enviar o público-alvo para a Facebook](./ex5.md)
+[1.5 Ação: enviar o segmento para o Facebook](./ex5.md)
 
-Conecte o público-alvo que você criou no exercício 1.1 ao Facebook de destino.
+Conecte o segmento que você criou no exercício 1.1 ao Facebook de destino.
 
 [Voltar a todos os módulos](../../overview.md)

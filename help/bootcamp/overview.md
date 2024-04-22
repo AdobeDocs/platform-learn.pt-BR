@@ -3,9 +3,9 @@ title: Bootcamp de criadores de experiência
 description: Ponto de partida para participantes da Inicialização dos Criadores de experiências
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: 7ee17ab7d847b82dc56c91f552d79b24649a8c6a
+source-git-commit: 3a16967ead0bf86daaf69cf920586318a5866492
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---
@@ -14,61 +14,24 @@ ht-degree: 1%
 
 ## Visão geral
 
-Muitas organizações não estão cientes da fricção existente na jornada de seus clientes, que é a consequência de uma abordagem isolada e fragmentada na coordenação da comunicação com os clientes. Os dados, o perfil e o conteúdo precisam estar perfeitamente alinhados para projetar e fornecer experiências excepcionais para o cliente.
+Muitas organizações não estão cientes da fricção existente na jornada dos clientes, que é a consequência de uma abordagem isolada e fragmentada na coordenação da comunicação com os clientes. Os dados, o perfil e o conteúdo precisam estar perfeitamente alinhados para projetar e fornecer experiências excepcionais para o cliente.
 
 Junte-se a este bootcamp para saber como uma abordagem baseada em plataforma pode ajudar você a obter os insights necessários para identificar e remover pontos de atrito para melhorar a jornada do seu cliente.
 
-A personalização em escala começa com a compreensão do que pode ser melhorado, e uma visualização em tempo real do cliente é essencial para isso. Os insights levam à ação, o que resulta em mais insights. A abordagem exclusiva centrada na plataforma do Adobe fornece as ferramentas para não apenas impulsionar a mudança tecnológica, mas também afetar sua organização, sua equipe e sua capacidade de fornecer uma experiência holística ao cliente em vez de uma experiência específica do canal.
+A personalização em escala começa com a compreensão do que pode ser melhorado, e uma visualização em tempo real do cliente é essencial para isso. Os insights levam à ação, o que resulta em mais insights. A abordagem exclusiva centrada em plataformas do Adobe oferece ferramentas que impulsionam não apenas as mudanças tecnológicas, mas também o impacto em sua organização, sua equipe e sua capacidade de oferecer uma experiência holística ao cliente em vez de uma experiência específica de canal.
+
+>[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
 ## Agenda
 
 ### Dia 1
 
 
-9:30: Entrada
-
-10:00: Desafio de início/introdução e acampamento
-
-11:00: 1-1 personalização, caça por fricção, silos, PDV de Adobe (quadro de comunicações)
-
-12:00: Interrupção
-
-12:15: Detalhamento da arquitetura da solução (quadro de comunicações)
-
-13:00: Almoço
-
-14:00: Fluxo de usuário 1 - Apresentação e prática de &quot;Aquisição&quot;
-
-15:30: Interrupção
-
-16:00: Registro e integração do fluxo de usuário 2
-
-17:30: Golfclinic &amp; Borrel
-
-19:30: Jantar
+10:00: Início 10:30: Demonstração da Jornada do cliente: Arte do possível 11:00: 1-1 personalização, caça por fricção, silos, PDV de Adobe (quadro de comunicações) 11:45: Interrupção 12:00: Detalhamento da arquitetura da solução (quadro de comunicações) 13:00: Almoço 14:00: Registro e integração do fluxo de usuário 1 - apresentação (por que) 15:30: Interrupção 16:00: Fluxo de usuário 2 Mesclagem física e digital - passo a passo e prática / aprofundamento 18:00: Interrupção 18:30: Caminhe até o restaurante 19:00: Jantar
 
 ### Dia 2
 
-08:30: Sessão de café da manhã: Introdução à entrega baseada em Jornada do usuário, estrutura da equipe, backlog de entrega
-
-09.45: Noções básicas sobre o fluxo de dados da AEP por meio de cenários proativos
-
-10.15: Fortalecimento da privacidade: Insights sobre a governança de dados com a AEP
-
-10.45: Interrupção
-
-12:00: Fluxo de usuário 3 &quot;Mesclagem física e digital&quot;
-
-12h30: Almoço
-
-13,30: Customer Journey Analytics - aprofundamento
-
-14.15: Explorar as últimas inovações em torno da GenAI para AEP e além
-
-14.45: Conclusão e conclusão
-
-15:00: Bebidas e adiamento
-
+08:00: Café da manhã 08:30: Introdução ao usuário com base na Jornada Entrega, Estrutura da equipe, Backlog da entrega 09.45: Fluxo de usuário 3 Mesclagem física e digital - Apresentação com exercício prático 11.15: Interrupção 11.30: Fluxos de usuário encerrados - (o que, onde e quando) 12:00: Grupo Presentations 12.30: Almoço 13.30: Fluxo de usuário 4: Análise do cliente — aprofundamento 14.30: Conclusão, encerramento e próximas etapas 15.00: Bebidas e adiamento
 
 ## Pré-requisitos
 

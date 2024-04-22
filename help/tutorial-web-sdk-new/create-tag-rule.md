@@ -3,7 +3,7 @@ title: Criar regras de tag
 description: Saiba como enviar um evento para o Edge Network da Platform com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
 exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: 0220f5dbe8e34e92cf584380629ecc29a549dabd
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -344,7 +344,7 @@ Agora que você definiu as variáveis, é possível criar a regra para enviar o 
 
 1. À direita, selecione **[!UICONTROL Adicionar regra]** para criar outra regra
 
-1. Atribua um nome à regra `all pages - library loaded - set send event - 50`
+1. Atribua um nome à regra `all pages - library loaded - send event - 50`
 
 1. No **[!UICONTROL Eventos]** , selecione **[!UICONTROL Adicionar]**
 
