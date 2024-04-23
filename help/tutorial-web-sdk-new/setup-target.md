@@ -2,9 +2,10 @@
 title: Configurar o Adobe Target com o SDK da Web da plataforma
 description: Saiba como implementar o Adobe Target usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Saiba como implementar o Adobe Target usando o SDK da Web da plataforma. Saiba c
 
 ## Objetivos de aprendizagem
 
-No final desta lição, você poderá:
+No final desta lição, você poderá fazer o seguinte com uma implementação do SDK da Web do Target:
 
-* Entenda como adicionar o trecho pré-ocultação do SDK da Web da Platform para evitar cintilação ao usar o Target com códigos incorporados de tag assíncrona
+* Adicionar o trecho pré-ocultação para evitar cintilação
 * Configurar um fluxo de dados para habilitar a funcionalidade do Target
 * Renderizar atividades do visual experience composer
 * Renderizar atividades do compositor de formulários
 * Envio de dados XDM para o Target e compreensão do mapeamento para parâmetros do Target
 * Enviar dados personalizados para o Target, como parâmetros de perfil e entidade
-* Validar uma implementação do Target com o SDK da Web da plataforma
-* Enviar solicitações de apresentação do Target separadas das solicitações do Adobe Analytics e resolver seus eventos de exibição posteriormente
+* Validar uma implementação do Target
+* Separar solicitações de personalização de solicitações de análise
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Para concluir as lições desta seção, primeiro você deve:
    * [Usar o Experience Composer baseado em formulário](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [Criar atividades de direcionamento de experiência](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## Adicionar mitigação de cintilação
+## Adicionar tratamento de cintilação
 
 Antes de iniciar, determine se é necessária uma solução extra de tratamento de cintilação, dependendo de como a biblioteca de tags é carregada.
 
@@ -59,7 +60,7 @@ Antes de iniciar, determine se é necessária uma solução extra de tratamento 
 
 ### Implementação assíncrona
 
-Quando uma biblioteca de tags é carregada de forma assíncrona, a página pode terminar a renderização antes do Target realizar uma troca de conteúdo. Esse comportamento pode levar ao que é conhecido como &quot;oscilação&quot;, onde o conteúdo padrão é exibido brevemente antes de ser substituído pelo conteúdo personalizado especificado pelo Target. Caso deseje evitar essa oscilação, o Adobe recomenda adicionar um trecho especial de pré-ocultação imediatamente antes do código incorporado da tag assíncrona.
+Quando uma biblioteca de tags é carregada de forma assíncrona, a página pode terminar a renderização antes que o Target substitua o conteúdo padrão pelo conteúdo personalizado. Esse comportamento pode levar ao que é conhecido como &quot;oscilação&quot;, onde o conteúdo padrão é exibido brevemente antes de ser substituído pelo conteúdo personalizado especificado pelo Target. Caso deseje evitar essa oscilação, o Adobe recomenda adicionar um trecho especial de pré-ocultação imediatamente antes do código incorporado da tag assíncrona.
 
 Este trecho já está presente no site Luma, mas vamos examinar mais de perto para entender o que esse código faz:
 
@@ -181,7 +182,7 @@ Para os propósitos deste tutorial usando o site Luma, use o Símbolo de identid
 
 ## Renderizar decisões de personalização visual
 
-Primeiro, você deve entender a terminologia usada nas interfaces do Target e das tags.
+As decisões de personalização visual se referem às experiências criadas no Visual Experience Composer do Adobe Target. Primeiro, você deve entender a terminologia usada nas interfaces do Target e das tags:
 
 * **Atividade**: um conjunto de experiências direcionadas para um ou mais públicos. Por exemplo, um teste A/B simples pode ser uma atividade com duas experiências.
 * **Experiência**: um conjunto de ações direcionadas a um ou mais locais ou escopos de decisão.
