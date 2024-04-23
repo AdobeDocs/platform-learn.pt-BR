@@ -3,7 +3,7 @@ title: Instalar e configurar a extensão de tag do SDK da Web da Adobe Experienc
 description: Saiba como instalar e configurar a extensão de tag do SDK da Web da Platform na interface da Coleção de dados. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK
 exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: e0046b8c233e8831f4f354b32d059ffe33880f36
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # Instalar a extensão de tag do SDK da Web da Adobe Experience Platform
 
-Saiba como instalar e configurar a extensão de tag do SDK da Web da Platform. A maneira mais fácil de implementar o SDK da Web é usar o gerenciador de tags Adobe, tags (conhecido anteriormente como Launch). A extensão de tag do SDK da Web da Platform é a _somente extensão de tag_ necessário para enviar dados para _todos os aplicativos Adobe Experience Cloud_, incluindo [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), REAL-TIME CUSTOMER DATA PLATFORM e [Journey Optimizer](journey-optimizer/setup-web-channel.md)!
+Saiba como instalar e configurar a extensão de tag do SDK da Web da Platform. A maneira mais fácil de implementar o SDK da Web é usar o gerenciador de tags Adobe, tags (conhecido anteriormente como Launch). A extensão de tag do SDK da Web da Platform é a _somente extensão de tag_ necessário para enviar dados para _todos os aplicativos Adobe Experience Cloud_, incluindo [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), REAL-TIME CUSTOMER DATA PLATFORM e [Journey Optimizer](setup-web-channel.md)!
 
 ## Objetivos de aprendizagem
 
