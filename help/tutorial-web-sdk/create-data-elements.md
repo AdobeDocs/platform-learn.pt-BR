@@ -3,7 +3,7 @@ title: Criar elementos de dados
 description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Há várias maneiras de mapear dados da camada de dados para o XDM usando a func
 
 ### Implementar o XDM na camada de dados
 
-Essa abordagem envolve o uso do objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um elemento de dados de objeto XDM nas tags. Se sua implementação não estiver usando um gerenciador de tags, essa abordagem poderá ser ideal, pois você pode enviar dados para o XDM diretamente do aplicativo usando o [Comando sendEvent do XDM](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
+Essa abordagem envolve o uso do objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um elemento de dados de objeto XDM nas tags. Se sua implementação não estiver usando um gerenciador de tags, essa abordagem poderá ser ideal, pois você pode enviar dados para o XDM diretamente do aplicativo usando o [Comando sendEvent do XDM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
 
 Veja abaixo um exemplo de como seria a camada de dados usando o formato da Camada de dados do cliente Adobe:
 
@@ -128,16 +128,16 @@ Essa abordagem envolve o mapeamento de variáveis de camada de dados individuais
 >
 > Camada de dados Google
 > 
-> Se sua organização já usa o Google Analytics e tem o objeto tradicional dataLayer do Google em seu site, você pode usar o [Extensão da camada de dados do Google](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) nas tags. Isso permite que você implante a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
+> Se sua organização já usa o Google Analytics e tem o objeto tradicional dataLayer do Google em seu site, você pode usar o [Extensão da camada de dados do Google](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nas tags. Isso permite que você implante a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
 
 ### Mapear para XDM no fluxo de dados
 
-Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) O e o ignoram o mapeamento de variáveis de camada de dados para o XDM nas tags.
+Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) O e o ignoram o mapeamento de variáveis de camada de dados para o XDM nas tags.
 
 #### Pontos positivos
 
 * Flexível, pois é possível mapear variáveis individuais para o XDM
-* Capacidade para [calcular novos valores](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html?lang=pt-BR) ou [transformar tipos de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) de uma camada de dados antes de ela ir para o XDM
+* Capacidade para [calcular novos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) de uma camada de dados antes de ela ir para o XDM
 * Aproveitar um [Mapeamento da interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) para mapear campos nos dados de origem para o XDM com uma interface de apontar e clicar
 
 #### Pontos negativos

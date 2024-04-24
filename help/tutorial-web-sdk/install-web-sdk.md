@@ -3,7 +3,7 @@ title: Instalar e configurar a extensão de tag do SDK da Web da Adobe Experienc
 description: Saiba como instalar e configurar a extensão de tag do SDK da Web da Platform na interface da Coleção de dados. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -81,7 +81,7 @@ Agora que você instalou o SDK da Web da Platform e o associou à sequência de 
 >
 >Embora você não tenha configurado um CNAME no [!UICONTROL Domínio de borda] nesta lição, a Adobe recomenda usar um CNAME ao implementar o SDK da Web da Platform em seu próprio site. Embora uma implementação CNAME não forneça benefícios em termos de duração do cookie, ela pode oferecer outros benefícios. Esses benefícios incluem bloqueadores de anúncios e navegadores menos comuns que impedem o envio de dados para domínios que eles classificam como rastreadores. Nesses casos, o uso de um CNAME pode impedir que a coleção de dados seja interrompida para usuários que utilizam essas ferramentas.
 
-Para obter mais informações sobre cada seção da extensão, consulte [Configurar a extensão SDK da Web do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=pt-BR)
+Para obter mais informações sobre cada seção da extensão, consulte [Configurar a extensão SDK da Web do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
 
 
 

@@ -3,7 +3,7 @@ title: Configurar uma sequência de dados
 description: Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Saiba como habilitar um fluxo de dados e configurar aplicativos Experience Cloud.
 
-As sequências de dados informam ao Adobe Experience Platform Edge Network para onde enviar os dados coletados pelo SDK da Web da plataforma. Na configuração dos datastreams, você habilita os aplicativos Experience Cloud, a conta Experience Platform e o encaminhamento de eventos. Consulte a [Princípios básicos da configuração de um fluxo de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=br) para obter informações mais detalhadas.
+As sequências de dados informam ao Adobe Experience Platform Edge Network para onde enviar os dados coletados pelo SDK da Web da plataforma. Na configuração dos datastreams, você habilita os aplicativos Experience Cloud, a conta Experience Platform e o encaminhamento de eventos. Consulte a [Princípios básicos da configuração de um fluxo de dados](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) para obter informações mais detalhadas.
 
 
 ![SDK da Web, fluxos de dados e diagrama de Edge Network](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ A substituição da configuração da sequência de dados é um processo de duas
 
 No [Configurar o Adobe Analytics](setup-analytics.md) lição, é possível substituir o conjunto de relatórios de uma página usando a ação enviar evento do SDK da Web da plataforma.
 
-Consulte a [documentação de substituições de configuração de sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) para obter instruções detalhadas sobre como substituir configurações de sequência de dados.
+Consulte a [documentação de substituições de configuração de sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) para obter instruções detalhadas sobre como substituir configurações de sequência de dados.
 
 Agora você está pronto para instalar a extensão SDK da Web da Platform na sua propriedade de tag!
 
