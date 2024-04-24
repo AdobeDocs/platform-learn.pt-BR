@@ -3,23 +3,21 @@ title: Configurar uma propriedade de encaminhamento de eventos
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 3%
 
 ---
 
 # Configurar uma propriedade de encaminhamento de eventos
 
-
->[!CAUTION]
->
->Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
-
 Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform.
 
 O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam de Adobe diretamente do Edge Network Adobe Experience Platform, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos no [Visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Diagrama do SDK da Web e do encaminhamento de eventos](assets/dc-websdk-eventforwarding.png)
 
 Para usar o encaminhamento de eventos na Adobe Experience Platform, os dados devem ser enviados para a Rede de borda da Adobe Experience Platform primeiro usando uma ou mais das três opções a seguir:
 
@@ -56,7 +54,6 @@ Neste final desta lição, você poderá:
 
    * Configuração inicial
 
-      * [Configurar permissões](configure-permissions.md)
       * [Configurar um esquema XDM](configure-schemas.md)
       * [Configurar um namespace de identidade](configure-identities.md)
       * [Configurar uma sequência de dados](configure-datastream.md)
@@ -65,7 +62,8 @@ Neste final desta lição, você poderá:
 
       * [Instalação da extensão do SDK da Web](install-web-sdk.md)
       * [Criar elementos de dados](create-data-elements.md)
-      * [Criar uma regra de tag](create-tag-rule.md)
+      * [Criar identidades](create-identities.md)
+      * [Criar regras de tag](create-tag-rule.md)
       * [Validar com o Adobe Experience Platform Debugger](validate-with-debugger.md)
 
 
@@ -91,9 +89,9 @@ Para configurar o Target na sequência de dados:
 
 1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**
-1. Selecione o criado anteriormente `Luma Web SDK` sequência de dados
+1. Selecione o criado anteriormente `Luma Web SDK: Development Environment` sequência de dados
 
-   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
+   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/event-forwarding-datastream-addService.png)
@@ -326,4 +324,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

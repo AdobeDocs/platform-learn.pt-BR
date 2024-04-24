@@ -3,24 +3,20 @@ title: Configurar o Audience Manager com o SDK da Web da plataforma
 description: Saiba como configurar o Adobe Audience Manager usando o SDK da Web da plataforma e validar a implementação usando um destino de cookie. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
 
 # Configurar o Audience Manager com o SDK da Web da plataforma
 
-
->[!CAUTION]
->
->Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
-
 Saiba como configurar o Adobe Audience Manager usando o SDK da Web da plataforma e validar a implementação usando um destino de cookie.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=pt-BR) O é a solução da Adobe Experience Cloud que fornece tudo o que é necessário para coletar informações comercialmente relevantes sobre os visitantes do site, criar segmentos comercializáveis e veicular publicidade e conteúdo direcionados ao público certo.
 
+![Diagrama do SDK da Web e Adobe Audience Manager](assets/dc-websdk-aam.png)
 
 ## Objetivos de aprendizagem
 
@@ -43,9 +39,9 @@ A implementação do Audience Manager usando o SDK da Web da Platform é diferen
 
 1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**
-1. Selecione o criado anteriormente `Luma Web SDK` sequência de dados
+1. Selecione o criado anteriormente `Luma Web SDK: Development Environment` sequência de dados
 
-   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk.png)
+   ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk-development.png)
 
 1. Selecionar **[!UICONTROL Adicionar serviço]**
    ![Adicionar um serviço à sequência de dados](assets/aam-datastream-addService.png)
@@ -65,7 +61,7 @@ Em seguida, crie um [Fonte de dados](https://experienceleague.adobe.com/docs/aud
 
    ![Fontes de dados do Adobe Experience Platform Audience Manager](assets/data-sources-list.jpg)
 
-1. Dê um nome amigável e uma descrição à Fonte de Dados. Para a configuração inicial, você pode nomear este`Platform Web SDK tutorial`.
+1. Dê um nome amigável e uma descrição à Fonte de Dados. Para a configuração inicial, você pode nomear este `Platform Web SDK tutorial`.
 1. Definir **[!UICONTROL Tipo de ID]** para **[!UICONTROL Cookie]**
 1. No **[!UICONTROL Controles da exportação de dados]** , selecione **[!UICONTROL Sem restrição]**
 
@@ -91,7 +87,7 @@ Depois que a Fonte de dados for salva, configure uma [característica](https://e
 1. Selecione o **[!UICONTROL Fonte de dados]** você criou na seção anterior.
 1. **[!UICONTROL Selecionar uma pasta]** no qual salvar sua característica no painel à direita. Talvez você queira criar uma pasta ao **selecionar o ícone +** ao lado de uma pasta pai existente. Você pode nomear esta nova pasta `Platform Web SDK tutorial`.
 1. Expanda a **[!UICONTROL Expressão de característica]** acento circunflexo e selecione **[!UICONTROL Construtor de expressões]** Você deve fornecer um par de valores chave que signifique uma visita à página inicial.
-1. Abra o [Página inicial do Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (mapeado para a propriedade de tag ) e a variável **Depurador do SDK da Web da Platform** e atualiza a página.
+1. Abra o [Página inicial do Luma](https://luma.enablementadobe.com/content/luma/us/en.html) (mapeado para a propriedade de tag ) e a variável **Adobe Experience Platform Debugger** e atualiza a página.
 1. Examine as Solicitações de rede e os detalhes do evento do SDK da Web da plataforma para encontrar a chave e o valor de nome para a página inicial.
    ![Dados XDM do Audience Manager Adobe Experience Platform](assets/xdm-keyvalue.jpg)
 1. Retorne ao Construtor de expressões na interface do usuário do Audience Manager e insira a chave como **`web.webPageDetails.name`** e o valor de **`content:luma:us:en`**. Essa etapa garante que você acione uma característica sempre que carregar a página inicial.
@@ -106,7 +102,8 @@ A próxima etapa é criar um **segmento** e atribua sua característica recém-d
 1. Selecionar **[!UICONTROL Adicionar novo]** na parte superior esquerda da página para abrir o construtor de segmentos
 1. Dê um nome e uma descrição amigáveis ao seu segmento, como `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Selecionar uma pasta]** onde seu segmento será salvo no painel à direita. Talvez você queira criar uma pasta ao **selecionar o ícone +** ao lado de uma pasta pai existente. Você pode nomear esta nova pasta `Platform Web SDK tutorial`.
-1. Adicione um código de integração, que, nesse caso, é um conjunto aleatório de números. 1. No âmbito do **[!UICONTROL Fonte de dados]** , selecione **[!UICONTROL Audience Manager]** e a fonte de dados criada anteriormente
+1. Adicione um código de integração, que, nesse caso, é um conjunto aleatório de números.
+1. No **[!UICONTROL Fonte de dados]** , selecione **[!UICONTROL Audience Manager]** e a fonte de dados criada anteriormente
 1. Expanda a **[!UICONTROL Características]** e procure a característica que você criou
 1. Selecionar **[!UICONTROL Adicionar característica]**.
 1. Selecionar **[!UICONTROL Salvar]** na parte inferior da página
@@ -187,4 +184,4 @@ Agora que concluiu esta lição, você deve ser capaz de ver como o SDK da Web d
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,20 +2,14 @@
 title: Configurar permissões para o tutorial
 description: Saiba como solicitar acesso ao SDK da Web do Experience Platform e configurar a permissão necessária para concluir o tutorial Implementar o Adobe Experience Cloud com SDK da Web.
 feature: Web SDK,Tags,Access Control
-exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
 
 # Configurar permissões para o tutorial
-
-
->[!CAUTION]
->
->Esperamos publicar grandes alterações neste tutorial na terça-feira, 23 de abril de 2024. Depois desse ponto, muitos exercícios serão alterados e talvez seja necessário reiniciar o tutorial desde o início para concluir todas as lições.
 
 Saiba como solicitar acesso ao SDK da Web do Experience Platform e configurar a permissão necessária para concluir este tutorial. Para implementar o SDK da Web da Platform usando tags na interface da Coleção de dados, você deve ter as permissões de usuário apropriadas configuradas em [Admin Console](https://adminconsole.adobe.com).
 
@@ -29,9 +23,9 @@ Saiba como solicitar acesso ao SDK da Web do Experience Platform e configurar a 
 Esses recursos devem estar disponíveis para todos os clientes do Experience Cloud, mesmo se você não for um cliente de um aplicativo baseado na plataforma, como o Real-Time CDP.
 
 * O acesso à **produção padrão**, **&quot;Prod&quot;** sandbox.
-* Acesso a **[!UICONTROL Gerenciar esquemas]** e **[!UICONTROL Exibir esquemas]** em **[!UICONTROL Modelagem de dados]**
-* Acesso a **[!UICONTROL Gerenciar namespaces de identidade]** e **[!UICONTROL Exibir namespaces de identidade]** em **[!UICONTROL Identity Management]**
-* Acesso a **[!UICONTROL Gerenciar fluxos de dados]** e **[!UICONTROL Exibir fluxos de dados]** em **[!UICONTROL Coleta de dados]**
+* Acesso a **[!UICONTROL Gerenciar esquemas]** e **[!UICONTROL Exibir esquemas]** em **[!UICONTROL Modelagem de dados]**.
+* Acesso a **[!UICONTROL Gerenciar namespaces de identidade]** e **[!UICONTROL Exibir namespaces de identidade]** em **[!UICONTROL Identity Management]**.
+* Acesso a **[!UICONTROL Gerenciar fluxos de dados]** e **[!UICONTROL Exibir fluxos de dados]** em **[!UICONTROL Coleta de dados]**.
 * Se você for um cliente de um aplicativo baseado em plataforma e estiver concluindo o [Configurar Experience Platform](setup-experience-platform.md) você também deve ter:
    * Acesso a um **desenvolvimento** sandbox.
    * Todos os itens de permissão em **[!UICONTROL Gerenciamento de dados]**, e **[!UICONTROL Gerenciamento de perfis]**:
@@ -57,4 +51,4 @@ Agora você está pronto para iniciar as etapas de configuração iniciais.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
