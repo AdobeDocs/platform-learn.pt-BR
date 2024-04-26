@@ -2,9 +2,9 @@
 title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1591'
 ht-degree: 4%
 
 ---
@@ -230,7 +230,7 @@ Primeiro, você deve gerar mais dados de amostra. Repita as etapas das etapas an
 
    ![Perfil do cliente](assets/experience-platform-validate-dataset-custProfile.png)
 
-Agora você ativou o SDK da Web da plataforma para Experience Platform (E Real-Time CDP! E Journey Optimizer!)!
+Agora você ativou o SDK da Web da plataforma para Experience Platform (E Real-Time CDP! E o Journey Optimizer! E Customer Journey Analytics!).
 
 
 [Próximo: ](setup-analytics.md)

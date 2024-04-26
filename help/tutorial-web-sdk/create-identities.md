@@ -3,9 +3,9 @@ title: Criar identidades
 description: Saiba como criar identidades no XDM e usar o elemento de dados do Mapa de identidade para capturar IDs de usuários. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '890'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para o Platform Edge Network por meio do objeto XDM, criando uma regra nas tags.
+Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para o Platform Edge Network criando uma regra nas tags.
 
 [Próximo: ](create-tag-rule.md)
 
