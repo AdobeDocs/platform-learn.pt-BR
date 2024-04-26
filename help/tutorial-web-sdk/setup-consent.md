@@ -2,21 +2,22 @@
 title: Configurar consentimento com o SDK da Web da plataforma
 description: Saiba como definir as configurações de privacidade da extensão de tag do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # Configurar consentimento com o SDK da Web da plataforma
 
-Saiba como definir as configurações de privacidade da extensão de tag do SDK da Web do Experience Platform. Defina o consentimento com base na interação do visitante com um banner de uma Plataforma de gerenciamento de consentimento (CMP).
+Saiba como definir as configurações de privacidade da extensão de tag do Adobe Experience Platform Web SDK. Defina o consentimento com base na interação do visitante com um banner de uma Plataforma de gerenciamento de consentimento (CMP).
 
 >[!NOTE]
 > 
->Para fins de demonstração, este tutorial usa [Klaro](https://heyklaro.com/) como um CMP. Você pode seguir o Klaro ou o CMP usado com seu site.
+>Para fins de demonstração, este tutorial usa [Klaro](https://klaro.org/) como um CMP. Você pode seguir o Klaro ou o CMP usado com seu site.
 
 
 ## Objetivos de aprendizagem
@@ -32,6 +33,7 @@ No final desta lição, você poderá:
 Você deve estar familiarizado com as tags e as etapas para criar regras, elementos de dados, criar bibliotecas de tags para ambientes e alternar bibliotecas de tags usando o Depurador Experience Platform.
 
 Antes de começar a definir as configurações de privacidade e criar as regras para definir o consentimento, insira o script da plataforma de gerenciamento de consentimento no site e esteja funcionando corretamente. Uma CMP pode ser carregada diretamente no código-fonte com a ajuda de desenvolvedores de site ou carregada por meio de tags. Esta lição demonstra a última abordagem.
+
 >[!NOTE]
 > 
 >1. Uma Plataforma de gerenciamento de consentimento (ou CMP) é usada pelas organizações para documentar e gerenciar legalmente as opções de consentimento de um visitante antes de coletar, compartilhar ou vender dados do visitante de fontes online, como sites e aplicativos.
@@ -42,10 +44,10 @@ Antes de começar a definir as configurações de privacidade e criar as regras 
 
 Antes de entrar nas configurações de tag, saiba mais sobre a plataforma de gerenciamento de consentimento usada neste tutorial do Klaro.
 
-1. Visita [Klaro](https://heyklaro.com/) e configurar uma conta.
+1. Visita [Klaro](https://klaro.org/) e configurar uma conta.
 1. Ir para **Gerenciador de privacidade** e crie uma instância de acordo com as instruções.
 1. Use o **Código de integração** para injetar Klaro na propriedade da tag (as instruções estão no próximo exercício).
-1. Ignorar o **Digitalizando** seção, pois detectará a propriedade da tag, que está codificada no site de demonstração Luma e não aquela que você criou para este tutorial.
+1. Ignorar o **Digitalizando** seção, pois detecta a propriedade da tag codificada no site de demonstração Luma e não a que você criou para este tutorial.
 1. Adicione um serviço chamado `aep web sdk` e alterne no **Estado padrão do serviço**. Quando ativado, o valor de consentimento padrão é `true`, caso contrário, será `false`. Essa configuração é útil para decidir qual será o estado de consentimento padrão (antes do consentimento do visitante) para o seu aplicativo web. Por exemplo:
    * Para a CCPA, o consentimento padrão geralmente é definido como `true`. Você referenciará esse cenário como **Aceitação implícita** neste tutorial
    * Para o GDPR, o consentimento padrão geralmente é definido como `false`. Você referenciará esse cenário como **Recusa implícita** neste tutorial.
@@ -218,10 +220,10 @@ Depois que essa regra estiver em vigor, a coleção de eventos deverá começar 
 Para obter mais informações sobre consentimento no SDK da Web, consulte [Suporte às preferências de consentimento do cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Para obter mais informações sobre o [!UICONTROL Definir consentimento] ação, consulte [Definir consentimento](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+Para obter mais informações sobre o [!UICONTROL Definir consentimento] ação, consulte [Definir consentimento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Próximo: ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

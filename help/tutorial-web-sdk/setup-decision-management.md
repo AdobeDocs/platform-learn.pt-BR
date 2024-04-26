@@ -1,22 +1,23 @@
 ---
-title: Configurar o Gerenciamento de decisões com o SDK da Web da plataforma
+title: Configurar o Gerenciamento de decisões da Journey Optimizer com o SDK da Web da plataforma
 description: Saiba como implementar a Gestão de decisões usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
 
 # Configurar o Gerenciamento de decisões com o SDK da Web da plataforma
 
-Saiba como implementar a Gestão de decisões usando o SDK da Web da plataforma. Este guia aborda os pré-requisitos básicos da Gestão de decisões, as etapas detalhadas de configuração e um aprofundamento em um caso de uso centrado no status de fidelidade.
+Saiba como implementar o recurso de Gestão de decisões da Adobe Journey Optimizer usando o SDK da Web da plataforma. Este guia aborda os pré-requisitos básicos da Gestão de decisões, as etapas detalhadas de configuração e um aprofundamento em um caso de uso centrado no status de fidelidade.
 
-Ao seguir este tutorial, os usuários do Journey Optimizer estão equipados para aplicar efetivamente os recursos do offer decisioning, aprimorando a personalização e a relevância das interações com os clientes.
+Ao seguir este tutorial, os usuários do Journey Optimizer estão equipados para usar os recursos de Gestão de decisões, aprimorando a personalização e a relevância das interações com os clientes.
 
 
 ![Diagrama do SDK da Web e Adobe Analytics](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ Para concluir as lições desta seção, primeiro você deve:
 
 ## Limitações
 
-Anote a seguinte limitação:
-
-* No momento, as ofertas baseadas em eventos não são compatíveis com o Adobe Journey Optimizer. Se você criar uma regra de decisão com base em um evento, não poderá aplicá-la em uma oferta.
+No momento, as ofertas baseadas em eventos não são compatíveis com o Adobe Journey Optimizer. Se você criar uma regra de decisão com base em um evento, não poderá aplicá-la em uma oferta.
 
 ## Conceder acesso à Gestão de decisões
 
@@ -140,7 +139,7 @@ Primeiro, você deve entender a terminologia usada na interface da Gestão de de
 
 Nesta lição, você implementa um exemplo de caso de uso do Loyalty Rewards para entender a Gestão de decisões usando o SDK da Web.
 
-Esse caso de uso permite entender melhor como o Journey Optimizer pode ajudar a fornecer a melhor oferta aos seus clientes, utilizando a biblioteca de ofertas centralizada e o mecanismo de decisão de ofertas.
+Esse caso de uso permite entender melhor como a Journey Optimizer pode ajudar a fornecer a melhor oferta aos seus clientes, utilizando a biblioteca de ofertas centralizada e o mecanismo de decisão da Gestão de decisões.
 
 >[!NOTE]
 >
@@ -307,11 +306,11 @@ Para criar a decisão, siga estas etapas:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Agora você deve definir o **escopos de decisão**. Selecione primeiro uma disposição. Você pode usar o &#39; criado anteriormente *Banner da página inicial*&#39;.
+1. Agora, você deve definir o **escopos de decisão**. Selecione primeiro uma disposição. Você pode usar o &#39; criado anteriormente *Banner da página inicial*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Em seguida, você deve adicionar **critérios de avaliação** para o âmbito da decisão. Clique em **Adicionar** e escolha o &#39; criado anteriormente *Recompensas de fidelidade*&#39; **coleção** que contém todas as ofertas de fidelidade a serem consideradas.
+1. Em seguida, você deve adicionar **critérios de avaliação** para o âmbito da decisão. Clique em **Adicionar** e escolha o &#39; criado anteriormente *Recompensas de fidelidade*&#39; **coleção, que contém todas as ofertas de fidelidade a serem consideradas.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ Para criar a decisão, siga estas etapas:
 
 ## Simulações
 
-Como prática recomendada, você deve validar a lógica de decisão da Fidelidade Luma para garantir que as ofertas corretas sejam entregues aos públicos-alvo de fidelidade corretos. Você pode fazer isso usando **perfis de teste**. Também é uma boa ideia testar as alterações nas ofertas por meio de perfis de teste antes de enviar novas versões de oferta para produção.
+Como prática recomendada, você deve validar a lógica de decisão da Fidelidade Luma para garantir que as ofertas corretas sejam entregues aos públicos-alvo de fidelidade corretos. É possível fazer essa validação usando **perfis de teste**. Também é uma boa ideia testar as alterações nas ofertas por meio de perfis de teste antes de enviar novas versões de oferta para produção.
 
 Para iniciar o teste, selecione a variável **Simulações** na guia **Ofertas** menu.
 
@@ -370,7 +369,7 @@ Para iniciar o teste, selecione a variável **Simulações** na guia **Ofertas**
 
 A variável **Adobe Experience Platform Debugger** A extensão do, disponível para o Chrome e o Firefox, analisa as páginas da Web para identificar problemas na implementação das soluções da Adobe Experience Cloud.
 
-Você pode usar o depurador no site Luma para validar a lógica de decisão na produção. Esta é uma boa prática depois que o caso de uso de Recompensas de fidelidade estiver em execução, para garantir que tudo seja configurado corretamente.
+Você pode usar o depurador no site Luma para validar a lógica de decisão na produção. Essa validação é uma boa prática depois que o caso de uso de Fidelidade de recompensas está em execução, para garantir que tudo seja configurado corretamente.
 
 [Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ Para iniciar a validação usando o depurador:
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -4,20 +4,21 @@ description: Saiba como implementar o canal da Web da Journey Optimizer usando o
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
 
 
-# Configurar canal da Web do Journey Optimizer
+# Configurar o canal da Web do Journey Optimizer com o SDK da Web
 
-Saiba como implementar o Journey Optimizer [canal da web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) usando o SDK da Web da plataforma. Esta lição aborda os pré-requisitos básicos do canal da Web, as etapas detalhadas de configuração e um aprofundamento sobre um caso de uso centrado no status de fidelidade.
+Saiba como implementar o Adobe Journey Optimizer [canal da web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) usando o Adobe Experience Platform Web SDK. Esta lição aborda os pré-requisitos básicos do canal da Web, as etapas detalhadas de configuração e um aprofundamento sobre um caso de uso centrado no status de fidelidade.
 
-Ao seguir esta lição, os usuários do Journey Optimizer estão equipados para aplicar efetivamente o canal da Web para personalização online avançada usando o web designer do Journey Optimizer.
+Ao seguir esta lição, os usuários do Journey Optimizer estão equipados para usar o canal da Web para personalização online avançada usando o web designer do Journey Optimizer.
 
 ![Diagrama do SDK da Web e Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ Para concluir as lições desta seção, primeiro você deve:
   > 1. O site é incorporado em um iframe.
   > 1. O site de controle de qualidade ou preparo do cliente não está acessível externamente (é um site interno).
 
-* Ao criar experiências da Web e incluir conteúdo da biblioteca do Adobe Experience Manager Assets Essentials, é necessário [configurar o subdomínio para publicar este conteúdo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* Ao criar experiências da Web e incluir conteúdo da biblioteca do Adobe Experience Manager Assets Essentials, é necessário [configurar o subdomínio para publicar este conteúdo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Se estiver usando o recurso de experimentação de conteúdo, verifique se o conjunto de dados da Web também está incluído na configuração de relatórios.
 * Atualmente, há suporte para dois tipos de implementações para habilitar a criação e o delivery de campanhas de canal da Web nas propriedades da Web:
    * Somente no lado do cliente: para modificar seu site, você deve implementar o SDK da Web da Adobe Experience Platform.
@@ -245,7 +246,7 @@ Para criar o experimento de conteúdo:
 
 1. Ao configurar um experimento usando um canal da Web e escolhendo o **[!UICONTROL Cliques de entrada]**, **[!UICONTROL Cliques de entrada únicos]**, **[!UICONTROL Exibições de página]** ou **[!UICONTROL Visualizações únicas de página]** métricas, a variável **[!UICONTROL Ação do clique]** permite rastrear e monitorar com precisão os cliques e as exibições em páginas específicas.
 
-1. Opcionalmente, você pode designar um **[!UICONTROL Retenção]** que não recebe nenhum dos dois tratamentos. Deixe essa opção desmarcada por enquanto.
+1. Como opção, você pode designar um **[!UICONTROL Retenção]** que não recebe nenhum dos dois tratamentos. Deixe essa opção desmarcada por enquanto.
 
 1. Além disso, opcionalmente, escolha **[!UICONTROL Distribuir uniformemente]**. Marque esta opção para garantir que as divisões de tratamento sejam sempre divididas uniformemente.
 
@@ -253,13 +254,13 @@ Para criar o experimento de conteúdo:
 
 ### Editar conteúdo usando o Auxiliar visual
 
-Agora vamos criar a experiência de canal da Web. Para fazer isso, use o Adobe Experience Cloud **[!UICONTROL Auxiliar visual]**. Esta ferramenta é uma extensão de navegador compatível com o Google Chrome e Microsoft® Edge. Verifique se você baixou a extensão antes de tentar criar suas experiências. Além disso, verifique se a página da Web inclui o SDK da Web.
+Agora, vamos criar a experiência de canal da Web. Para fazer isso, use o Adobe Experience Cloud **[!UICONTROL Auxiliar visual]**. Esta ferramenta é uma extensão de navegador compatível com o Google Chrome e Microsoft® Edge. Verifique se você baixou a extensão antes de tentar criar suas experiências. Além disso, verifique se a página da Web inclui o SDK da Web.
 
 1. No prazo de **[!UICONTROL Ação]** da campanha, clique em **[!UICONTROL Editar conteúdo]**. Como você inseriu uma URL de página única como superfície, você deve estar pronto para começar a trabalhar no compositor.
 
    ![Editar conteúdo](assets/web-channel-edit-content.png)
 
-1. Agora clique em **[!UICONTROL Editar página da Web]** para começar a criar.
+1. Agora, clique em **[!UICONTROL Editar página da Web]** para começar a criar.
 
    ![Editar página da Web](assets/web-channel-edit-web-page.png)
 
@@ -296,7 +297,7 @@ No editor, adicione o HTML para a variável `Luma Loyalty Rewards – Gold Statu
 
 ![Validar HTML](assets/web-channel-add-custom-html-validate.png)
 
-Agora, revise o novo componente de HTML personalizado para adequação e funcionalidade.
+Agora, revise o novo componente de HTML personalizado para ajuste e comportamento.
 
 ![Revisar HTML personalizado](assets/web-channel-review-custom-html.png)
 
@@ -348,7 +349,7 @@ Como prática recomendada, monitore o **[!UICONTROL Web]** dos relatórios campa
 
 A extensão Adobe Experience Platform Debugger, disponível para Chrome e Firefox, analisa suas páginas da Web para identificar problemas na implementação das soluções da Adobe Experience Cloud.
 
-Você pode usar o depurador no site Luma para validar a experiência do canal da Web em produção. Esta é uma prática recomendada quando o caso de uso de Recompensas de fidelidade está em execução, para garantir que tudo seja configurado corretamente.
+Você pode usar o depurador no site Luma para validar a experiência do canal da Web em produção. Esta é uma prática recomendada depois que o caso de uso de Recompensas de fidelidade estiver em execução, para garantir que tudo seja configurado corretamente.
 
 [Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -387,4 +388,4 @@ Para iniciar a validação usando o depurador:
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

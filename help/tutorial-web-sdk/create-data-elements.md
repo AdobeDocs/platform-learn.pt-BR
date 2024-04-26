@@ -1,18 +1,19 @@
 ---
-title: Criar elementos de dados
+title: Criar elementos de dados para o SDK da Web da plataforma
 description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
 
 # Criar elementos de dados
 
-Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, preencha os campos no esquema XDM com o tipo de elemento de dados Variável da extensão SDK da Web da plataforma.
+Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, preencha os campos no esquema XDM com o tipo de elemento de dados Variável da extensão do SDK da Web da Adobe Experience Platform.
 
 ## Objetivos de aprendizagem
 
@@ -99,7 +100,7 @@ window.adobeDataLayer.push({
 Pontos positivos
 
 * Elimina etapas adicionais de remapeamento de variáveis de camada de dados para o XDM
-* Pode ser mais rápido de implantar se a sua equipe de desenvolvimento possuir a tag de comportamento digital
+* A implantação pode ser mais rápida se sua equipe de desenvolvimento tiver um comportamento digital de marcação
 
 Pontos negativos
 
@@ -138,7 +139,7 @@ Essa abordagem usa uma funcionalidade integrada à configuração de sequência 
 
 * Flexível, pois é possível mapear variáveis individuais para o XDM
 * Capacidade para [calcular novos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) de uma camada de dados antes de ela ir para o XDM
-* Aproveitar um [Mapeamento da interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) para mapear campos nos dados de origem para o XDM com uma interface de apontar e clicar
+* Aproveitar um [Mapeamento da interface do usuário](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) para mapear campos nos dados de origem para o XDM com uma interface de apontar e clicar
 
 #### Pontos negativos
 
@@ -298,4 +299,4 @@ Com esses elementos de dados implementados, você estará pronto para começar a
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

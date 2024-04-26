@@ -1,18 +1,19 @@
 ---
-title: Configurar uma propriedade de encaminhamento de eventos
+title: Configurar um encaminhamento de eventos com dados do SDK da Web da plataforma
 description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
-ht-degree: 3%
+source-wordcount: '1873'
+ht-degree: 2%
 
 ---
 
-# Configurar uma propriedade de encaminhamento de eventos
+# Configurar o encaminhamento de eventos com dados do SDK da Web da plataforma
 
-Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform.
+Saiba como usar o encaminhamento de eventos com dados do SDK da Web da Adobe Experience Platform.
 
 O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam de Adobe diretamente do Edge Network Adobe Experience Platform, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos no [Visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleç
 Para usar o encaminhamento de eventos na Adobe Experience Platform, os dados devem ser enviados para a Rede de borda da Adobe Experience Platform primeiro usando uma ou mais das três opções a seguir:
 
 * [SDK da Web da Adobe Experience Platform](overview.md)
-* [SDK móvel da Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/)
+* [SDK móvel da Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -45,12 +46,12 @@ Neste final desta lição, você poderá:
 
 ## Pré-requisitos
 
-* Uma licença de software que inclui encaminhamento de eventos. O encaminhamento de eventos é um recurso pago da Coleção de dados. Entre em contato com a equipe de conta do Adobe para obter mais detalhes.
-* Encaminhamento de eventos habilitado na sua organização Experience Cloud.
+* Uma licença de software que inclua encaminhamento de eventos. O encaminhamento de eventos é um recurso pago da Coleção de dados. Entre em contato com a equipe de conta do Adobe para obter mais detalhes.
+* O encaminhamento de eventos está habilitado em sua organização Experience Cloud.
 * Permissão de usuário para encaminhamento de eventos. (Em [Admin Console](https://adminconsole.adobe.com/), no produto Adobe Experience Platform Launch, itens de permissão para[!UICONTROL Plataformas] > [!UICONTROL Edge] e todos [!UICONTROL Direitos de propriedade]). Depois de concedido, você deve ver [!UICONTROL Encaminhamento de evento] na navegação à esquerda da interface da Coleção de dados:
   ![Propriedades do encaminhamento de eventos](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web ou SDK móvel configurado para enviar dados para o Edge Network. Você deve ter concluído as seguintes lições deste tutorial:
+* O SDK da Web ou móvel do Adobe Experience Platform está configurado para enviar dados para o Edge Network. Você deve ter concluído as seguintes lições deste tutorial:
 
    * Configuração inicial
 
@@ -76,14 +77,14 @@ Comece criando uma propriedade de encaminhamento de eventos:
 1. Selecione **[!UICONTROL Nova propriedade]**.
    ![Propriedades do encaminhamento de eventos](assets/event-forwarding-new.png)
 
-1. Nomeie a propriedade. Nesse caso `Server-Side - Web SDK Course`
+1. Nomeie a propriedade. Nesse caso, `Server-Side - Web SDK Course`
 
 1. Selecione **[!UICONTROL Salvar]**.
    ![salvar propriedade de encaminhamento de eventos](assets/event-forwarding-save.png)
 
 ## Configurar o fluxo de dados
 
-Para que o encaminhamento de eventos use os dados enviados para a rede de borda, você deve vincular a propriedade de encaminhamento de eventos recém-criada ao mesmo fluxo de dados usado para enviar dados para soluções Adobe.
+Para que o encaminhamento de eventos use os dados enviados para o Edge Network da plataforma, é necessário vincular a propriedade de encaminhamento de eventos recém-criada ao mesmo fluxo de dados usado para enviar dados para as soluções da Adobe.
 
 Para configurar o Target na sequência de dados:
 
@@ -220,7 +221,7 @@ Há algumas diferenças principais entre a configuração de regras em uma propr
 
 * **Sequência de ações de regra**:
 
-   * A seção Ações de uma regra de encaminhamento de eventos é sempre executada sequencialmente. Certifique-se de que a ordem das ações esteja correta ao salvar uma regra. Essa sequência de execução não pode ser executada de forma assíncrona como com tags.
+   * A seção Ações de uma regra de encaminhamento de eventos é sempre executada sequencialmente. Verifique se a ordem das ações está correta ao salvar uma regra. Essa sequência de execução não pode ser executada de forma assíncrona como com tags.
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -231,7 +232,7 @@ Para configurar uma regra para encaminhar dados para o seu webhook, primeiro obt
 
 1. Ir para [Webhook.site](https://webhook.site)
 
-1. Localizar **Seu URL exclusivo**, você usará isso como a solicitação de URL na regra de encaminhamento de eventos
+1. Localizar **Seu URL exclusivo**, você usa isso como a solicitação de URL em sua regra de encaminhamento de eventos
 
 1. Selecionar **[!UICONTROL Copiar para a área de transferência]**
 
@@ -324,4 +325,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

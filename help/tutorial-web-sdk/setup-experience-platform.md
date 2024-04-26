@@ -1,10 +1,11 @@
 ---
-title: Transmitir dados para o Adobe Experience Platform com o SDK da Web
+title: Transmitir dados para o Adobe Experience Platform com o SDK da Web da plataforma
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o SDK da Web. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1592'
 ht-degree: 4%
 
 ---
@@ -38,7 +39,7 @@ Para concluir esta lição, primeiro você deve:
 
 ## Criar um conjunto de dados
 
-Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. A [conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
+Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. A [conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
 Vamos configurar um conjunto de dados para seus dados de evento da Web do Luma:
 
@@ -83,7 +84,7 @@ Agora você pode configurar suas [!UICONTROL sequência de dados] para enviar da
 
    ![Configuração da sequência de dados](assets/experience-platform-datastream-config.png)
 
-À medida que você gera tráfego no [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en.html) mapeados para a propriedade da tag, os dados preencherão o conjunto de dados no Experience Platform.
+À medida que você gera tráfego no [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en.html) mapeados para a propriedade da tag, os dados preenchem o conjunto de dados no Experience Platform.
 
 ## Validar o conjunto de dados
 
@@ -114,7 +115,7 @@ Essas etapas são mais ou menos as mesmas do que você fez na [Lição do Debugg
 1. Procure o &quot;identityMap&quot; na janela pop-up. Aqui você deve ver lumaCrmId com três chaves de authenticatedState, id e primary
    ![SDK da Web no Debugger](assets/experience-platform-debugger-dev-idMap.png)
 
-Agora os dados devem ser preenchidos na variável `Luma Web Event Data` e pronto para a validação &quot;Visualizar conjunto de dados&quot;.
+Agora, os dados devem ser preenchidos na variável `Luma Web Event Data` e pronto para a validação &quot;Visualizar conjunto de dados&quot;.
 
 ### Visualizar o conjunto de dados
 
@@ -211,7 +212,7 @@ Primeiro, você deve gerar mais dados de amostra. Repita as etapas das etapas an
 1. No [Experience Platform](https://experience.adobe.com/platform/) , selecione **[!UICONTROL Perfis]** no painel de navegação esquerdo
 
 1. Como a variável **[!UICONTROL Namespace de identidade]** use `lumaCRMId`
-1. Copie e cole o valor de `lumaCRMId` passado na chamada inspecionada no Depurador Experience Platform, neste caso `112ca06ed53d3db37e4cea49cc45b71e`.
+1. Copie e cole o valor de `lumaCRMId` transmitido na chamada que você inspecionou no Depurador Experience Platform, neste caso `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![Perfil](assets/experience-platform-validate-dataset-profile.png)
 
@@ -237,4 +238,4 @@ Agora você ativou o SDK da Web da plataforma para Experience Platform (E Real-T
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,18 +1,19 @@
 ---
-title: Criar identidades
+title: Criar identidades para o SDK da Web da plataforma
 description: Saiba como criar identidades no XDM e usar o elemento de dados do Mapa de identidade para capturar IDs de usuários. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
-feature: Tags
+feature: Web SDK, Tags, Identities
+jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '875'
 ht-degree: 1%
 
 ---
 
 # Criar identidades
 
-Saiba como capturar identidades com o SDK da Web do Experience Platform. Capturar dados de identidade não autenticados e autenticados no [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Saiba como usar os elementos de dados criados anteriormente para coletar dados autenticados com um tipo de elemento de dados do SDK da Web da plataforma chamado de Mapa de identidade.
+Saiba como capturar identidades com o Adobe Experience Platform Web SDK. Capturar dados de identidade não autenticados e autenticados no [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Saiba como usar os elementos de dados criados anteriormente para coletar dados autenticados com um tipo de elemento de dados do SDK da Web da plataforma chamado de Mapa de identidade.
 
 Esta lição se concentra no elemento de dados do Mapa de identidade disponível com a extensão de tags do SDK da Web da Adobe Experience Platform. Você mapeia elementos de dados contendo uma ID de usuário autenticada e um status de autenticação para o XDM.
 
@@ -37,7 +38,7 @@ Você entende o que é uma camada de dados, familiarizado com o [Site de demonst
 
 ## Experience Cloud ID
 
-A variável [ID Experience Cloud (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/ecid) é um namespace de identidade compartilhada usado em aplicativos Adobe Experience Platform e Adobe Experience Cloud. A ECID fornece a base para a identidade do cliente e é a identidade padrão para propriedades digitais. Isso torna a ECID o identificador ideal para rastrear o comportamento não autenticado do usuário, pois ela está sempre presente
+A variável [ID Experience Cloud (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) é um namespace de identidade compartilhada usado em aplicativos Adobe Experience Platform e Adobe Experience Cloud. A ECID fornece a base para a identidade do cliente e é a identidade padrão para propriedades digitais. A ECID é o identificador ideal para rastrear comportamentos de usuários não autenticados, pois está sempre presente.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -48,15 +49,15 @@ A variável [ID Experience Cloud (ECID)](https://experienceleague.adobe.com/en/d
 
 Leia mais sobre como [As ECIDs são rastreadas usando o SDK da Web da plataforma](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
-As ECIDs são definidas usando uma combinação de cookies primários e Edge Network da plataforma. Por padrão, os cookies primários são definidos no lado do cliente pelo SDK da Web. Para levar em conta as restrições do navegador na duração do cookie, você pode optar por definir seus próprios cookies primários no lado do servidor. Elas são chamadas de IDs de dispositivos primários (FPIDs).
+As ECIDs são definidas usando uma combinação de cookies primários e Edge Network da plataforma. Por padrão, os cookies de identidade primários são definidos no lado do cliente pelo SDK da Web. Para levar em conta as restrições do navegador na duração do cookie, você pode optar por definir seus próprios cookies de identidade primários no lado do servidor. Esses cookies de identidade são chamados de IDs de dispositivo primário (FPIDs).
 
 >[!IMPORTANT]
 >
->A variável [Extensão do Experience Cloud ID Service](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) não é necessário ao implementar o SDK da Web da Adobe Experience Platform, pois a funcionalidade do Serviço de ID é incorporada no SDK da Web da plataforma.
+>A variável [Extensão do Experience Cloud ID Service](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) não é necessário ao implementar o SDK da Web da Adobe Experience Platform, pois a funcionalidade do Serviço de ID é incorporada no SDK da Web da plataforma.
 
 ## ID de dispositivo próprio (FPID)
 
-Os FPIDs são cookies primários _você define o usando seus próprios servidores da Web_ que o Adobe usa para criar a ECID, em vez de usar o cookie primário definido pelo SDK da Web. Embora o suporte ao navegador possa variar, os cookies primários tendem a ser mais duráveis quando são definidos por um servidor que aproveita um registro DNS A (para IPv4) ou registro AAAA (para IPv6), em vez de quando são definidos por um CNAME DNS ou código JavaScript.
+Os FPIDs são cookies primários _você define o usando seus próprios servidores da Web_ que o Adobe usa para criar a ECID, em vez de usar o cookie primário definido pelo SDK da Web. Embora o suporte ao navegador possa variar, os cookies primários tendem a ser mais duráveis quando definidos por um servidor que aproveita um registro DNS A (para IPv4) ou registro AAAA (para IPv6), em vez de quando definidos por um CNAME DNS ou código JavaScript.
 
 Depois que um cookie FPID é definido, seu valor pode ser buscado e enviado para o Adobe conforme os dados do evento são coletados. Os FPIDs coletados são usados como seeds para gerar ECIDs no Platform Edge Network, que continuam a ser os identificadores padrão nos aplicativos Adobe Experience Cloud.
 
@@ -68,9 +69,9 @@ Embora os FPIDs não sejam usados neste tutorial, é recomendável usar os FPIDs
 
 ## ID autenticada
 
-Como observado acima, todos os visitantes das suas propriedades digitais recebem uma ECID por Adobe ao usar o SDK da Web da plataforma. Isso torna a ECID a identidade padrão para rastrear comportamentos digitais não autenticados.
+Como observado acima, todos os visitantes das suas propriedades digitais recebem uma ECID por Adobe ao usar o SDK da Web da plataforma. A ECID é a identidade padrão para rastrear comportamentos digitais não autenticados.
 
-Você também pode enviar uma ID de usuário autenticada para que a Platform possa criar [Gráficos de identidade](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) e o Target podem definir suas [ID de terceiros](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). Isso é feito usando o [!UICONTROL Mapa de identidade] tipo de elemento de dados.
+Você também pode enviar uma ID de usuário autenticada para que a Platform possa criar [Gráficos de identidade](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) e o Target podem definir suas [ID de terceiros](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). A definição da ID autenticada é feita usando o [!UICONTROL Mapa de identidade] tipo de elemento de dados.
 
 Para criar o [!UICONTROL Mapa de identidade] elemento de dados:
 
@@ -86,11 +87,7 @@ Para criar o [!UICONTROL Mapa de identidade] elemento de dados:
 
    ![Interface da coleção de dados](assets/identity-identityMap-setup.png)
 
-1. Como a variável  **[!UICONTROL Namespace]**, selecione o `lumaCrmId` que você criou anteriormente na variável [Configurar identidades](configure-identities.md) lição.
-
-   >[!NOTE]
-   >
-   >    Se você não vir o seu `lumaCrmId` , verifique se você também o criou na sandbox de produção padrão. Atualmente, somente os namespaces criados na sandbox de produção padrão são exibidos na lista suspensa namespace.
+1. Como a variável  **[!UICONTROL Namespace]**, selecione o `lumaCrmId` que você criou anteriormente na variável [Configurar identidades](configure-identities.md) lição. Se não aparecer na lista suspensa, digite-o.
 
 1. Depois que a variável **[!UICONTROL Namespace]** for selecionada, uma ID deverá ser definida. Selecione o `user.profile.attributes.username` elemento de dados criado anteriormente no [Criar elementos de dados](create-data-elements.md#create-data-elements-to-capture-the-data-layer) lição, que captura uma ID quando os usuários estão conectados ao site Luma.
 
@@ -110,9 +107,9 @@ Para criar o [!UICONTROL Mapa de identidade] elemento de dados:
 
 >[!TIP]
 >
-> Adobe recomenda enviar identidades que representam uma pessoa, como `Luma CRM Id`, como a [!UICONTROL principal] identidade.
+> O Adobe recomenda enviar identidades que representem uma pessoa, como `Luma CRM Id`, como a [!UICONTROL principal] identidade.
 >
-> Se o mapa de identidade contiver o identificador de pessoa (por exemplo, `Luma CRM Id`), o identificador de pessoa se tornará o [!UICONTROL principal] identidade. Caso contrário, `ECID` torna-se o [!UICONTROL principal] identidade.
+> Se o mapa de identidade contiver o identificador de pessoa (por exemplo, `Luma CRM Id`), o identificador de pessoa se torna o [!UICONTROL principal] identidade. Caso contrário, `ECID` torna-se o [!UICONTROL principal] identidade.
 
 
 
@@ -154,4 +151,4 @@ Com esses elementos de dados implementados, você estará pronto para começar a
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

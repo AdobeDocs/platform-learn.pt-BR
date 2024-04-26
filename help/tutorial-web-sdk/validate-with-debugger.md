@@ -2,28 +2,29 @@
 title: Validar implementações do SDK da Web com o Experience Platform Debugger
 description: Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Tags,Debugger
+jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
 
 # Validar implementações do SDK da Web com o Experience Platform Debugger
 
-Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger.
+Saiba como validar a implementação do SDK da Web da Adobe Experience Platform com o Adobe Experience Platform Debugger.
 
 O Experience Platform Debugger é uma extensão disponível para os navegadores Chrome e Firefox, que ajuda a visualizar a tecnologia de Adobe implementada nas páginas da Web. Baixe a versão do seu navegador de preferência:
 
 * [Extensão do Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/adobe-experience-platform-dbg/)
-* [Extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Extensão do Chrome](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 Se você nunca usou o depurador antes, assista a este vídeo de visão geral de cinco minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-Nesta lição, você usa o [Extensão do Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) para substituir a propriedade de tag codificada na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) com sua própria propriedade.
+Nesta lição, você usa o [extensão do Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para substituir a propriedade de tag codificada na [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) com sua própria propriedade.
 
 Essa técnica é chamada de alternação de ambiente e será útil posteriormente, ao trabalhar com tags em seu próprio site. Ele permite carregar o site de produção em seu navegador, mas com seus *desenvolvimento* biblioteca de tags. Essa capacidade permite fazer e validar de forma segura as alterações nas tags independentemente das suas versões de código normais. Afinal, essa separação das versões de tag de marketing das versões regulares de código é um dos principais motivos pelos quais os clientes usam tags!
 
@@ -55,7 +56,7 @@ O depurador de Experience Platform tem um recurso interessante que permite subst
 1. O Debugger abrirá e mostrará alguns detalhes da implementação codificada (talvez seja necessário recarregar o site Luma depois de abrir o Debugger)
 1. Confirme se o Debugger é &quot;**[!UICONTROL Conectado ao Luma]**&quot; como mostrado abaixo e selecione o &quot;**[!UICONTROL bloquear]**&quot; para bloquear o Debugger no site Luma.
 1. Selecione o **[!UICONTROL Conectar]** e faça logon no Adobe Experience Cloud usando sua ID de Adobe.
-1. Agora vá para **[!UICONTROL Tags do Experience Platform]** na navegação à esquerda
+1. Agora, vá para **[!UICONTROL Tags do Experience Platform]** na navegação à esquerda
 
    ![Tela de tag do depurador](assets/validate-launch-screen.png)
 
@@ -84,7 +85,7 @@ Você pode usar o Debugger para validar beacons do lado do cliente acionados a p
 
    ![Guia Resumo](assets/validate-summary.png)
 
-1. Agora vá para **[!UICONTROL Experience Platform Web SDK]** na navegação à esquerda para ver o **[!UICONTROL Solicitações de rede]**
+1. Agora, vá para **[!UICONTROL Experience Platform Web SDK]** na navegação à esquerda para ver o **[!UICONTROL Solicitações de rede]**
 1. Abra o **[!UICONTROL events]** linha
 
    ![Solicitação do SDK da Web do Adobe Experience Platform](assets/validate-aep-screen.png)
@@ -162,10 +163,10 @@ Para ativar o Edge Trace:
 
    ![Rastreamento de borda de beacon do Analytics](assets/validate-edge-trace.png)
 
-Nesse ponto, não é possível visualizar solicitações de Edge Network da Platform indo para aplicativos de Adobe porque você não ativou nenhum no fluxo de dados. Em lições futuras, você usa o Edge Trace para visualizar as solicitações do lado do servidor de saída para aplicativos Adobe e encaminhamento de eventos. Mas, primeiro, conheça outra ferramenta para validar as solicitações do lado do servidor feitas pelo Platform Edge Network — Adobe Experience Platform Assurance!
+Nesse ponto, não é possível visualizar solicitações de Edge Network da Platform indo para aplicativos Adobe porque você não ativou nenhuma no fluxo de dados. Em lições futuras, você usa o Edge Trace para visualizar as solicitações do lado do servidor de saída para aplicativos Adobe e encaminhamento de eventos. Mas, primeiro, conheça outra ferramenta para validar as solicitações do lado do servidor feitas pelo Platform Edge Network — Adobe Experience Platform Assurance!
 
 [Próximo: ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

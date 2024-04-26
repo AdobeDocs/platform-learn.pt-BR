@@ -2,11 +2,12 @@
 title: Configurar um namespace de identidade
 description: Saiba como configurar namespaces de identidade para usar com o Adobe Experience Platform Web SDK. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
 feature: Web SDK,Identities
+jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 8%
 
 ---
 
@@ -38,9 +39,9 @@ Você já deve ter concluído as lições anteriores:
 
 >[!IMPORTANT]
 >
->A variável [Extensão do Experience Cloud ID](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) não é necessário ao implementar o Adobe Experience Platform Web SDK, pois a biblioteca JavaScript do SDK da Web contém a funcionalidade do serviço de ID de visitante.
+>A variável [Extensão do Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) não é necessário ao implementar o Adobe Experience Platform Web SDK, pois a biblioteca JavaScript do SDK da Web contém a funcionalidade do serviço de ID de visitante.
 >
-> Se o site já estiver usando o Serviço de ID do Experience Cloud no site (por meio da API de visitante ou da extensão de tag do Serviço de ID de Experience Cloud ) e você quiser continuar usando-o ao migrar para o SDK da Web da Adobe Experience Platform, será necessário usar a versão mais recente da API de visitante ou da extensão de tag do Serviço de ID do Experience Cloud. Consulte [Migração de ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) para obter mais informações.
+> Se o site já estiver usando o Serviço de ID de Experience Cloud em seu site (por meio da API de visitante ou da extensão de tag do Serviço de ID de Experience Cloud ) e você quiser continuar usando-o ao migrar para o SDK da Web da Adobe Experience Platform, será necessário usar a versão mais recente da API de visitante ou a extensão de tag do Serviço de ID de Experience Cloud. Consulte [Migração de ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) para obter mais informações.
 
 ## Criar um namespace de identidade
 
@@ -89,14 +90,10 @@ Agora, crie um namespace para a ID do CRM da Luma:
 >
 > No [Criar identidades](create-identities.md) lição, você aprenderá a usar esse namespace ao enviar identidades para o Platform Edge Network.
 
-## Criar o namespace de identidade em sua sandbox de produção
-
-Devido a uma limitação atual na extensão SDK da Web, os namespaces de identidade também devem ser criados na sandbox de produção para usar o namespace para enviar dados a uma sandbox de desenvolvimento. Portanto, se você estiver usando uma sandbox de desenvolvimento para este tutorial, crie também a `Luma CRM ID` namespace na sandbox de produção.
-
 Agora que as identidades estão em vigor, o fluxo de dados pode ser configurado.
 
 [Próximo: ](configure-datastream.md)
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
