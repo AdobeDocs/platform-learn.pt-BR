@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 1%
 
 ---
 
@@ -141,7 +141,7 @@ A variável **sendMessageToScreen** ação é uma ação personalizada que publi
 
 Agora é necessário definir os valores de cada parâmetro de ação. Siga esta tabela para entender quais valores são necessários e onde.
 
-| Parâmetro | Valor de  |
+| Parâmetro | value |
 |:-------------:| :---------------:|
 | ENTREGA | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
@@ -181,7 +181,7 @@ Role para cima e clique em **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no link **Propriedades** no lado superior direito da tela.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no link **Lápis** no lado superior esquerdo da tela.
 
 ![ACOP](./images/journeyname.png)
 
