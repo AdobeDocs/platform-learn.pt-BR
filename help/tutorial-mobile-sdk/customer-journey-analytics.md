@@ -4,9 +4,9 @@ description: Saiba como relatar e analisar as interações com seu aplicativo m�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 1%
 
 ---
@@ -85,9 +85,9 @@ Uma conexão no Customer Journey Analytics define os conjuntos de dados (e os da
          | Eventos de decisão ODE - *nome da sandbox* decisão | identityMap | carimbo de data e hora | Dados do aplicativo móvel | habilitar | habilitar |
          | Conjunto de dados do evento de experiência de rastreamento de push do AJO | identityMap | carimbo de data e hora | Dados do aplicativo móvel | habilitar | habilitar |
 
-         ![Conexões do CJA 3](assets/cja-connections-3.png)
-
       1. Selecionar **[!UICONTROL Adicionar conjuntos de dados]**.
+
+         ![Conexões do CJA 3](assets/cja-connections-3.png)
 
 1. De volta ao **[!UICONTROL Conexões]** > **[!UICONTROL Aplicativo Luma - Conexão do tutorial do SDK móvel da AEP]**, selecione **[!UICONTROL Salvar]** para salvar sua conexão.
 
@@ -156,8 +156,6 @@ Para criar a visualização de dados:
       ![Configurações do componente de Visualização de dados do CJA](assets/cja-dataview-component-settings.png)
 
    1. Agora que você entende como adicionar campos à sua visualização de dados e configurar o componente resultante, use as tabelas abaixo para obter uma lista de campos de esquema a serem adicionados como métrica ou dimensão. Use o **Caminho do esquema** valor da coluna da tabela abaixo para procurar ou percorrer o campo de esquema específico. Depois de arrastado e solto, marque a opção **Configurações do componente** valor da coluna na tabela se configurações específicas são necessárias para um componente, como modificar seu **[!UICONTROL Nome do componente]** ou definindo **[!UICONTROL INCLUIR/EXCLUIR VALORES]**.
-
-      ![Configurações do componente de Visualização de dados do CJA](assets/cja-dataview-component-settings.png)
 
       **MÉTRICAS**
 
@@ -232,9 +230,9 @@ Para criar seu projeto:
 
    1. Selecionar **[!UICONTROL Projeto em branco do Workspace]** da caixa de diálogo pop-up.
 
-      ![Projetos do CJA - 1](assets/cja-projects-1.png)
-
    1. Selecione **[!UICONTROL Criar]**.
+
+      ![Projetos do CJA - 1](assets/cja-projects-1.png)
 
 1. Você receberá a mensagem **[!UICONTROL Novo projeto]** interface. Nessa interface, você cria relatórios e visualizações.
 
@@ -357,8 +355,10 @@ Com base no relatório anterior, é desejável visualizar o fallout no funil de 
    ![Projetos do CJA 18](assets/cja-projects-18.png)
 Como alternativa, você pode arrastar e soltar a variável **[!UICONTROL Visualização de produtos]** dimensão abaixo do **[!UICONTROL Todas as pessoas]** dimensão no **[!UICONTROL Fallout]** visualização.
 
-1. Repita a etapa acima para **[!UICONTROL Adicionar produto a listas]** e **[!UICONTROL Compras]** dimensões. Seu **[!UICONTROL Fallout]** a visualização agora mostra uma representação visual do funil de conversão de seus produtos.
-   ![Projetos do CJA 19](assets/cja-projects-19.png)
+1. Repita a etapa acima para **[!UICONTROL Adicionar produto a listas]** e **[!UICONTROL Compras]** dimensões.
+
+Seu **[!UICONTROL Fallout]** a visualização agora mostra uma representação visual do funil de conversão de seus produtos.
+![Projetos do CJA 19](assets/cja-projects-19.png)
 
 Não se esqueça de salvar seu projeto!
 
