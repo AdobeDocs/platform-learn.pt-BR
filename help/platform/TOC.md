@@ -1,14 +1,14 @@
 ---
 user-guide-title: Tutoriais da Adobe Experience Platform
 breadcrumb-title: Tutoriais
-user-guide-description: Conheça os vários componentes da Experience Platform.
+user-guide-description: Conheça os vários componentes do Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 16%
+source-wordcount: '876'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 + [Plataforma Tutorials](/help/platform/overview.md)
 + Introdução à Platform {#intro-to-platform}
-   + [Uma experiência do cliente potencializada pelo Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Uma experiência do cliente viabilizada pela Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Nos bastidores: uma experiência do cliente viabilizada pelo Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Visão geral da Experience Platform](/help/platform/intro-to-platform/overview.md)
    + [Principais recursos](/help/platform/intro-to-platform/key-capabilities.md)
@@ -54,7 +54,7 @@ ht-degree: 16%
    + [Criar públicos de conversão](audiences/create-conversion-audiences.md)
    + [Criar públicos a partir de públicos existentes](audiences/create-audiences-from-existing-audiences.md)
    + [Criar públicos sequenciais](audiences/create-sequential-audiences.md)
-   + [Criar públicos dinâmicos](audiences/create-dynamic-audiences.md)
+   + [Criar públicos-alvo dinâmicos](audiences/create-dynamic-audiences.md)
    + [Criar públicos-alvo de várias entidades](audiences/create-multi-entity-audiences.md)
    + [Criar e ativar públicos-alvo da conta (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Demonstração da segmentação por transmissão](/help/platform/audiences/streaming-segmentation-demo.md)
@@ -78,24 +78,25 @@ ht-degree: 16%
    + [Impor consentimento](/help/platform/governance/enforce-consent.md)
    + [Integrar à Estrutura de transparência e consentimento 2.0 do IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Higiene de dados {#data-hygiene}
-   + [Excluir conjuntos de dados](/help/platform/data-hygiene/delete-datasets.md)
    + [Perfil pseudônimo e expiração de evento](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Assimilação de dados {#data-ingestion}
    + [Visão geral](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Visão geral da assimilação em lote](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Criar e preencher um conjunto de dados](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Mapear um arquivo CSV para XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=pt-BR){target="_blank"}
+   + [Mapear um arquivo CSV para XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Visão geral das fontes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Assimilar dados do Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
    + [Assimilar dados do Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Assimilar dados do armazenamento na nuvem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=pt-BR)
    + [Assimilar dados do CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=pt-BR)
    + [Assimilar dados de bancos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
-   + [Visão geral da assimilação de streaming](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
+   + [Visão geral da assimilação por transmissão](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Transmitir dados com a API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=pt-BR)
    + [Dados de fluxo usando Conectores de origem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=pt-BR)
    + [Tutoriais do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Tutoriais do SDK móvel](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Ciclo de vida dos dados {#data-lifecycle}
+   + [Expirar conjuntos de dados](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
    + [Visão geral](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [Arquitetura](data-science-workspace/architecture-overview.md)
@@ -127,7 +128,7 @@ ht-degree: 16%
    + Adobe Target e personalização personalizada{#target}
       + [Personalização de próxima ocorrência com o Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configurar o destino do Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
-      + [Ativação de segmentos e atributos de perfil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [Ativar segmentos e atributos de perfil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Usar segmentos do Real-Time CDP no Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Usar os atributos de perfil do Real-Time CDP no Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [Ativar dados para webinar de aplicativos que não sejam do Adobe](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
@@ -157,7 +158,7 @@ ht-degree: 16%
 + Perfis {#profiles}
    + [Compreensão do Perfil do cliente em tempo real](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagrama de visão geral do perfil](/help/platform/profiles/overview-diagram.md)
-   + [Trazer dados para o Perfil](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [Enviar dados para o perfil](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [Personalizar detalhes de exibição do perfil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Exibir perfis de conta](/help/platform/profiles/view-account-profiles.md)
    + [Criar políticas de mesclagem](/help/platform/profiles/create-merge-policies.md)
@@ -176,7 +177,7 @@ ht-degree: 16%
    + [Configurar chaves gerenciadas pelo cliente](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [Dez considerações para o gerenciamento responsável de dados do cliente](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [Elevar a função do profissional de marketing como administrador de dados](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
-+ Queries {#queries}
++ Consultas {#queries}
    + [Visão geral](/help/platform/queries/understanding-query-service.md)
    + [Interface do usuário do serviço de consulta](/help/platform/queries/query-service-ui.md)
    + [API do serviço de consulta](/help/platform/queries/query-service-api.md)
@@ -190,7 +191,7 @@ ht-degree: 16%
    + [Analisar e visualizar dados](/help/platform/queries/analyze-and-visualize.md)
    + [Criar painéis usando ferramentas de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Recarregue os dados do cliente](/help/platform/queries/recharge-your-customer-data.md)
-   + [Conectar clientes ao Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=pt-BR){target="_blank"}
+   + [Conectar clientes ao Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Validar dados no datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Esquemas {#schemas}
    + [Visão geral](/help/platform/schemas/schemas-and-experience-data-model.md)
