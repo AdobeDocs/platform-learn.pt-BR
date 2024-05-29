@@ -8,10 +8,10 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
+source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ _Introdução à Adobe Experience Platform para arquitetos e engenheiros de dado
 
 ## Objetivos de aprendizagem
 
-Os arquitetos de dados e os engenheiros de dados devem colaborar estreitamente para uma implantação bem-sucedida do Experience Platform. Este tutorial prático ensina as principais tarefas executadas pelo _ambas as funções_ assim, você sabe como começar a implementar o Platform para sua própria empresa. Você será orientado por exercícios que apresentarão a terminologia, os recursos, a interface e a API principais do Experience Platform. Os clientes de aplicativos da Adobe Experience Cloud, como Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer, também considerarão esse conteúdo útil, pois os serviços da plataforma são a base essencial desses aplicativos.
+Os arquitetos de dados e os engenheiros de dados devem colaborar estreitamente para uma implantação bem-sucedida do Experience Platform. Este tutorial prático ensina as principais tarefas executadas pelo _ambas as funções_ assim, você sabe como começar a implementar o Platform para sua própria empresa. Você será orientado por exercícios que apresentarão a terminologia, os recursos, a interface e as APIs principais do Experience Platform. Os clientes de aplicativos da Adobe Experience Cloud, como Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer, também considerarão esse conteúdo útil, pois os serviços da plataforma são a base essencial desses aplicativos.
 
 ![Adobe Experience Cloud marketecture destacando os serviços da Platform abordados neste tutorial — identidade, perfil, segmentação, assimilação, consulta e governança](assets/marketecture.png)
 
