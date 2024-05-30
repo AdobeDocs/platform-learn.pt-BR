@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes do Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '890'
 ht-degree: 15%
 
 ---
@@ -78,7 +78,10 @@ ht-degree: 15%
    + [Impor consentimento](/help/platform/governance/enforce-consent.md)
    + [Integrar à Estrutura de transparência e consentimento 2.0 do IAB](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Higiene de dados {#data-hygiene}
-   + [Perfil pseudônimo e expiração de evento](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Perfil pseudônimo e expiração de evento (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [Preparo de dados para higiene de dados](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [Expirar conjuntos de dados](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Atualizar um atributo de perfil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Assimilação de dados {#data-ingestion}
    + [Visão geral](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Visão geral da assimilação em lote](/help/platform/data-ingestion/batch-ingestion-overview.md)
