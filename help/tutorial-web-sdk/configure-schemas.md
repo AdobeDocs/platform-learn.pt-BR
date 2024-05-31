@@ -1,23 +1,27 @@
 ---
 title: Criar um esquema XDM para dados da Web
-description: Saiba como criar um esquema XDM para dados da Web na interface da Coleção de dados. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como criar um esquema XDM para dados da Web na interface da Coleção de dados. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
 # Criar um esquema XDM para dados da Web
 
-Saiba como criar um esquema XDM para dados da Web na interface da Coleção de dados da Adobe Experience Platform.
+Saiba como criar um esquema XDM para dados da web na interface da Coleção de dados da Adobe Experience Platform.
 
 Os esquemas do Experience Data Model (XDM) são os blocos fundamentais, os princípios e as práticas recomendadas para coletar dados no Adobe Experience Platform.
 
 O SDK da Web da Platform usa o esquema para padronizar os dados de eventos da Web, enviá-los para o Edge Network da Platform e, por fim, encaminhar os dados para qualquer aplicativo Experience Cloud configurado no fluxo de dados. Essa etapa é crítica, pois define um modelo de dados padrão necessário para assimilar dados de experiência do cliente no Experience Platform e habilita serviços e aplicativos downstream baseados nesses padrões.
+
+>[!NOTE]
+>
+>Um esquema XDM é _não obrigatório_ para implementar o Adobe Analytics, Adobe Target ou Adobe Audience Manager com o SDK da Web (os dados podem ser transmitidos no `data` em vez do `xdm` como você verá mais tarde). Um esquema XDM é necessário para as implementações mais eficientes de aplicativos nativos da plataforma, como Journey Optimizer, Real-time Customer Data Platform e Customer Journey Analytics. Embora você possa decidir não usar um esquema XDM em sua própria implementação, espera-se que faça isso como parte deste tutorial.
 
 ## Por que modelar os dados?
 
@@ -111,8 +115,7 @@ Quando possível, é recomendável usar grupos de campo existentes e aderir a um
 > 
 >Neste exercício, você adiciona os grupos de campos predefinidos recomendados para a coleta de dados da Web: _**[!UICONTROL ExperienceEvent do SDK da Web da AEP]**_ e _**[!UICONTROL Evento de experiência do consumidor]**_.
 >
->
-> Se você estiver apenas implementando **Adobe Analytics** com o SDK da Web e não enviando dados para o **Experience Platform**, use o [!UICONTROL Modelo de evento de experiência do Adobe Analytics] grupo de campos para definir o esquema XDM. Isso é usado no [Configurar o Analytics](setup-analytics.md) lição.
+
 
 1. No **[!UICONTROL Grupos de campos]** , selecione **[!UICONTROL Adicionar]**
 

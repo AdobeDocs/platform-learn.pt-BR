@@ -1,14 +1,14 @@
 ---
 title: Configurar o canal da Web do Journey Optimizer com o SDK da Web da plataforma
-description: Saiba como implementar o canal da Web da Journey Optimizer usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como implementar o canal da Web da Journey Optimizer usando o SDK da Web da plataforma. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -132,55 +132,6 @@ Nesta lição, um exemplo de caso de uso de Recompensas de fidelidade é usado p
 Esse caso de uso permite entender melhor como o Journey Optimizer pode ajudar a fornecer as melhores experiências de entrada aos seus clientes, utilizando campanhas do Journey Optimizer e o web designer.
 
 Como este tutorial é destinado aos implementadores, vale a pena observar que esta lição envolve um trabalho de interface substancial no Journey Optimizer. Embora essas tarefas de interface sejam normalmente tratadas por profissionais de marketing, pode ser benéfico para os implementadores obterem insights sobre o processo, mesmo que eles não sejam normalmente responsáveis pela criação de campanhas de canais da Web.
-
-### Criar um esquema de fidelidade e assimilar dados de amostra
-
-Quando os dados do SDK da Web são assimilados na Adobe Experience Platform, eles podem ser enriquecidos por outras fontes de dados assimiladas na Platform. Por exemplo, quando um usuário faz logon no site Luma, um gráfico de identidade é construído no Experience Platform e todos os outros conjuntos de dados habilitados para perfis podem ser unidos para criar Perfis de clientes em tempo real. Para ver isso em ação, crie rapidamente outro conjunto de dados no Adobe Experience Platform com alguns dados de fidelidade de exemplo, para que você possa usar Perfis de clientes em tempo real em campanhas da Web do Journey Optimizer. Como você já fez exercícios semelhantes, as instruções serão breves.
-
-Crie o esquema de fidelidade:
-
-1. Criar um novo esquema
-1. Escolher **[!UICONTROL Perfil individual]** como o [!UICONTROL classe base]
-1. Nomeie o esquema `Luma Loyalty Schema`
-1. Adicione o [!UICONTROL Detalhes de fidelidade] grupo de campos
-1. Adicione o [!UICONTROL Detalhes demográficos] grupo de campos
-1. Selecione o `Person ID` e marque-o como um [!UICONTROL Identidade] e [!UICONTROL Identidade principal] usando o `Luma CRM Id` [!UICONTROL Namespace de identidade].
-1. Ativar o esquema para [!UICONTROL Perfil]
-
-   ![Esquema de fidelidade](assets/web-channel-loyalty-schema.png)
-
-Para criar o conjunto de dados e assimilar os dados de amostra:
-
-1. Crie um novo conjunto de dados pela `Luma Loyalty Schema`
-1. Nomeie o conjunto de dados `Luma Loyalty Dataset`
-1. Ativar o conjunto de dados para [!UICONTROL Perfil]
-1. Baixe o arquivo de amostra [luma-fidelization-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. Arraste e solte o arquivo no seu conjunto de dados
-1. Confirme se os dados foram assimilados com êxito
-
-   ![Esquema de fidelidade](assets/web-channel-loyalty-dataset.png)
-
-### Criar um público-alvo
-
-Os públicos-alvo agrupam perfis em torno de características comuns. Crie um público-alvo rápido que você pode usar em sua campanha da Web:
-
-1. Na interface do Experience Platform, vá para **[!UICONTROL Públicos-alvo]** na navegação à esquerda
-1. Selecionar **[!UICONTROL Criar público]**
-1. Selecionar **[!UICONTROL Criar regra]**
-1. Selecionar **[!UICONTROL Criar]**
-
-   ![Criar um público-alvo](assets/web-campaign-create-audience.png)
-
-1. Selecionar **[!UICONTROL Atributos]**
-1. Localize o **[!UICONTROL Fidelidade]** > **[!UICONTROL Nível]** e arraste-o para a **[!UICONTROL Atributos]** seção
-1. Definir o público-alvo como usuários cujos `tier` é `gold`
-1. Nomear o público `Luma Loyalty Rewards – Gold Status`
-1. Selecionar **[!UICONTROL Edge]** como o **[!UICONTROL Método de avaliação]**
-1. Selecionar **[!UICONTROL Salvar]**
-
-   ![Definir o público-alvo](assets/web-campaign-define-audience.png)
-
-Como esse é um público-alvo muito simples, podemos usar o método de avaliação Edge. Os públicos-alvo da borda avaliam a borda, portanto, na mesma solicitação feita pelo SDK da Web para o Platform Edge Network, podemos avaliar a definição do público-alvo e confirmar imediatamente se o usuário se qualificará.
 
 ### Criar campanha de recompensas de fidelidade
 

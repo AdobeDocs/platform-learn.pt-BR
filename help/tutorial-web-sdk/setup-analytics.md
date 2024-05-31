@@ -1,13 +1,13 @@
 ---
 title: Configurar o Adobe Analytics usando o SDK da Web do Experience Platform
-description: Saiba como configurar o Adobe Analytics usando o SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como configurar o Adobe Analytics usando o SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2810'
-ht-degree: 0%
+source-wordcount: '2735'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ No final desta lição, você poderá:
 
 * Configurar um fluxo de dados para ativar o Adobe Analytics
 * Saber quais campos XDM padrão são mapeados automaticamente para variáveis do Analytics
-* Definir variáveis personalizadas do Analytics usando o grupo de campos Modelo de evento de experiência do Adobe Analytics ou regras de processamento
+* Definir variáveis do Analytics no objeto de dados
 * Enviar dados para outro conjunto de relatórios substituindo o fluxo de dados
 * Validar variáveis do Adobe Analytics usando o Debugger e o Assurance
 
@@ -65,38 +65,24 @@ O SDK da Web da Platform envia dados do seu site para o Platform Edge Network. S
 >
 >Neste tutorial, você só configura o conjunto de relatórios do Adobe Analytics para o seu ambiente de desenvolvimento. Ao criar fluxos de dados para seu próprio site, você deve criar fluxos de dados adicionais e conjuntos de relatórios para seus ambientes de preparo e produção.
 
-## Esquemas XDM e variáveis do Analytics
+## Definir variáveis do Analytics
 
-Parabéns! Você já configurou um esquema compatível com o Adobe Analytics no [Configurar um esquema](configure-schemas.md) lição!
+Há várias maneiras de definir variáveis do Analytics em uma implementação do SDK da Web:
 
-Mas você deve estar se perguntando, como defino todas as minhas propriedades, evars e eventos?
+1. Mapeamento automático de campos XDM para variáveis do Analytics (automático).
+1. Definir campos no `data` objeto (recomendado).
+1. Mapear campos XDM para variáveis do Analytics nas regras de processamento do Analytics (não é mais recomendado).
+1. Mapear para variáveis do Analytics diretamente no esquema XDM (não é mais recomendado).
 
-Há várias abordagens, que podem ser usadas simultaneamente:
-
-1. Defina campos XDM padrão e alguns serão mapeados automaticamente para variáveis do Analytics.
-1. Mapeie campos XDM adicionais para variáveis do Analytics nas regras de processamento do Analytics.
-1. Mapeie para variáveis do Analytics diretamente no esquema XDM.
-
-<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
-
-1. Automatically mapped variables using reserved XDM fields
-1. Manually mapped variables using Analytics Processing Rules
-
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). Any variable that is not auto-mapped must be manually mapped. 
-
- 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
-
-
- 1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
- 
-The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, because it skips the mapping step in the Adobe Analytics Processing Rules interface. The steps in this lesson use the **Analytics-specific XDM** approach.
--->
+A partir de maio de 2024, não será mais necessário criar um esquema XDM para implementar o Adobe Analytics com o SDK da Web da plataforma. A variável `data` objeto (e a variável `data.variable` elemento de dados que você criou neste tutorial) pode ser usado para definir todas as variáveis personalizadas do Analytics. Definir essas variáveis no objeto de dados será comum aos clientes existentes do Analytics, é mais eficiente do que usar a interface de regras de processamento e impede que dados desnecessários ocupem espaço nos Perfis de clientes em tempo real (importante se você tiver o Real-time Customer Data Platform ou o Journey Optimizer).
 
 ### Campos mapeados automaticamente
 
-Muitos campos XDM são mapeados automaticamente para variáveis do Analytics.
+Muitos campos XDM são mapeados automaticamente para variáveis do Analytics. Para obter a lista mais atualizada de mapeamentos, consulte [Mapeamento de variável do Analytics no Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-O esquema criado na variável [Configurar um esquema](configure-schemas.md) A lição contém algumas variáveis mapeadas automaticamente para o Analytics, conforme descrito nesta tabela:
+Isso ocorre se _mesmo que você não tenha definido um esquema personalizado_. O SDK da Web do Experience Platform coleta automaticamente alguns dados e os envia para o Edge Network da plataforma como campos XDM. Por exemplo, o SDK da Web lê o URL da página atual e o envia como `web.webPageDetails.URL`. Esse campo é encaminhado ao Adobe Analytics e preenche automaticamente os relatórios de URL da página no Adobe Analytics.
+
+Ao implementar o SDK da Web para aplicativos do Analytics e do Platform, você criará um esquema XDM personalizado, como neste tutorial da [Configurar um esquema](configure-schemas.md) lição. Alguns dos campos XDM implementados são mapeados automaticamente para variáveis do Analytics, conforme descrito nesta tabela:
 
 | Variáveis mapeadas automaticamente do XDM para o Analytics | variável do Adobe Analytics |
 |-------|---------|
@@ -116,71 +102,90 @@ O esquema criado na variável [Configurar um esquema](configure-schemas.md) A li
 | `productListItems[].priceTotal` | s.product=;;;preço do produto;; |
 
 As seções individuais da cadeia de caracteres do produto Analytics são definidas por meio de diferentes variáveis XDM na `productListItems` objeto.
+
 >Em 18 de agosto de 2022, `productListItems[].SKU` tem prioridade para mapear para o nome do produto na variável s.products.
 >O valor definido como `productListItems[].name` é mapeado para o nome do produto somente se `productListItems[].SKU` não existe. Caso contrário, ele não será mapeado e estará disponível nos dados de contexto.
 >Não defina uma cadeia de caracteres vazia ou nula como `productListItems[].SKU`. Isso tem o efeito indesejado de mapear para o nome do produto na variável s.products.
 
-Para obter a lista mais atualizada de mapeamentos, consulte [Mapeamento de variável do Analytics no Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+### Definir variáveis no objeto de dados
+
+Configuração de variáveis no `data` é a maneira recomendada de definir variáveis do Analytics com o SDK da Web. A configuração de variáveis no objeto de dados também pode substituir qualquer variável mapeada automaticamente.
+
+Em primeiro lugar, `data` objeto? Em qualquer evento do SDK da Web, você pode enviar dois objetos com dados personalizados, a variável `data` e o `xdm` objeto. Ambos são enviados para o Edge Network da plataforma, mas somente o `xdm` objeto é enviado para o conjunto de dados Experience Platform. Propriedades no `data` objeto pode ser mapeado no Edge para `xdm` Os campos que usam o recurso Preparo de dados para coleção de dados, mas não são enviados para o Experience Platform. Essa é uma maneira ideal de enviar dados para aplicativos como o Analytics, que não são criados nativamente no Experience Platform.
+
+Estes são os dois objetos em uma chamada de SDK da Web genérica:
+
+![objetos dados e xdm](assets/analytics-data-object-intro.png)
+
+O Adobe Analytics está configurado para procurar qualquer propriedade no `data.__adobe.analytics` e use-as para variáveis do Analytics.
+
+Agora vamos fazer isso.
+
+Usamos o `data.variable` elemento de dados t
 
 
-### Mapear para variáveis do Analytics com regras de processamento
-
-Todos os campos no esquema XDM se tornam disponíveis para o Adobe Analytics como Variáveis de dados de contexto com o seguinte prefixo `a.x.`. Por exemplo, `a.x.web.webinteraction.region`
-
-Neste exercício, você mapeia uma variável XDM para uma prop. Siga estas mesmas etapas para qualquer mapeamento personalizado que você deve fazer para qualquer `eVar`, `prop`, `event`ou variável acessível por meio das Regras de processamento.
-
-1. Ir para a interface do Analytics
-1. Ir para [!UICONTROL Admin] > [!UICONTROL Ferramentas administrativas] > [!UICONTROL Conjuntos de relatórios]
-1. Selecione o conjunto de relatórios de desenvolvimento/teste que você está usando no tutorial > [!UICONTROL Editar configurações] > [!UICONTROL Geral] > [!UICONTROL Regras de processamento]
-
-   ![Compra no Analytics](assets/analytics-process-rules.png)
-
-1. Criar uma regra para **[!UICONTROL Substituir valor de]** `[!UICONTROL Product SKU (prop1)]` para `a.x.productlistitems.0.sku`. Lembre-se de adicionar uma observação sobre por que você está criando a regra e nomear seu título de regra. Selecionar **[!UICONTROL Salvar]**
-
-   ![Compra no Analytics](assets/analytics-set-processing-rule.png)
-
-   >[!IMPORTANT]
-   >
-   >Na primeira vez que você mapeia para uma regra de processamento, a interface do usuário não mostra as variáveis de dados de contexto do objeto XDM. Para corrigir isso, selecione qualquer valor, Salve e volte para editar. Todas as variáveis XDM agora devem aparecer.
-
-### Mapear para variáveis do Analytics usando o grupo de campos do Adobe Analytics
-
-Uma alternativa às regras de processamento é mapear para variáveis do Analytics no esquema XDM usando o `Adobe Analytics ExperienceEvent Template` grupo de campos. Essa abordagem ganhou popularidade porque muitos usuários a acham mais simples do que configurar as regras de processamento. No entanto, ao aumentar o tamanho da carga XDM, ele poderia aumentar o tamanho do perfil em outros aplicativos, como o Real-Time CDP.
-
-Para adicionar o `Adobe Analytics ExperienceEvent Template` grupo de campos do esquema:
-
-1. Abra o [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
-1. Selecionar **[!UICONTROL Esquemas]** na navegação à esquerda
-1. Verifique se você está na sandbox que está usando no tutorial
-1. Abra o `Luma Web Event Data` schema
-1. No **[!UICONTROL Grupos de campos]** , selecione **[!UICONTROL Adicionar]**
-1. Localize o `Adobe Analytics ExperienceEvent Template` grupo de campos e adicione-o ao esquema
+<!--
 
 
-Agora, defina um eVar de merchandising na string do produto. Com o `Adobe Analytics ExperienceEvent Template` , é possível mapear variáveis para eVars de merchandising ou eventos na string do produto. Isso também é conhecido como configuração **Merchandising da sintaxe do produto**.
+### Map to Analytics variables with processing rules
 
-1. Voltar para a propriedade da tag
+All fields in the XDM schema become available to Adobe Analytics as Context Data Variables with the following prefix `a.x.`. For example, `a.x.web.webinteraction.region`
 
-1. Abra a regra `ecommerce - library loaded - set product details variables - 20`
+In this exercise, you map one XDM variable to a prop. Follow these same steps for any custom mapping that you must do for any `eVar`, `prop`, `event`, or variable accessible via Processing Rules.
 
-1. Abra o **[!UICONTROL Definir variável]** ação
+1. Go to the Analytics interface
+1. Go to [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites ]
+1. Select the dev/test report suite that you are using for the tutorial > [!UICONTROL Edit Settings] > [!UICONTROL General] > [!UICONTROL Processing Rules]
 
-1. Selecione para abrir `_experience > analytics > customDimensions > eVars > eVar1`
+    ![Analytics Purchase](assets/analytics-process-rules.png)   
 
-1. Defina o **[!UICONTROL Valor]** para `%product.productInfo.title%`
+1. Create a rule to **[!UICONTROL Overwrite value of]** `[!UICONTROL Product SKU (prop1)]` to `a.x.productlistitems.0.sku`. Remember to add a note about why you are creating the rule and name your rule title. Select **[!UICONTROL Save]**
 
-1. Selecionar **[!UICONTROL Manter alterações]**
+    ![Analytics Purchase](assets/analytics-set-processing-rule.png)   
 
-   ![Variável de objeto XDM do SKU do produto](assets/set-up-analytics-product-merchandising.png)
+    >[!IMPORTANT]
+    >
+    >The first time you map to a processing rule, the UI does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
-1. Selecionar **[!UICONTROL Salvar]** para salvar a regra
+### Map to Analytics variables using the Adobe Analytics field group
 
-Como você acabou de ver, basicamente todas as variáveis do Analytics podem ser definidas no `Adobe Analytics ExperienceEvent Template` grupo de campos.
+An alternative to processing rules is to map to Analytics variables in the XDM schema using the `Adobe Analytics ExperienceEvent Template` field group. This approach has gained popularity because many users find it simpler than configuring processing rules, however, by increasing the size of the XDM payload it could in turn increase the profile size in other applications like Real-Time CDP.
+
+To add the `Adobe Analytics ExperienceEvent Template` field group to your schema:
+
+1. Open the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
+1. Select **[!UICONTROL Schemas]** from the left navigation
+1. Make sure you are in the sandbox you are using from the tutorial
+1. Open your `Luma Web Event Data` schema
+1. In the **[!UICONTROL Field Groups]** section, select **[!UICONTROL Add]**
+1. Find the `Adobe Analytics ExperienceEvent Template` field group and add it to your schema
+
+
+Now, set a merchandising eVar in the product string. With the `Adobe Analytics ExperienceEvent Template` field group, you are able to map variables to merchandising eVars or events within the product string. This is also known as setting **Product Syntax Merchandising**. 
+
+1. Go back to your tag property
+
+1. Open the rule `ecommerce - library loaded - set product details variables - 20`
+
+1. Open the **[!UICONTROL Set Variable]** action
+
+1. Select to open `_experience > analytics > customDimensions > eVars > eVar1`
+
+1. Set the **[!UICONTROL Value]** to `%product.productInfo.title%`
+
+1. Select **[!UICONTROL Keep Changes]**
+
+    ![Product SKU XDM object Variable](assets/set-up-analytics-product-merchandising.png)
+
+1. Select **[!UICONTROL Save]** to save the rule
+
+As you just saw, basically all of the Analytics variables can be set in the `Adobe Analytics ExperienceEvent Template` field group.
 
 >[!NOTE]
 >
-> Observe a `_experience` objeto em `productListItems` > `Item 1`. Definir qualquer variável neste [!UICONTROL objeto] define eVars ou Eventos de sintaxe do produto.
+> Notice the `_experience` object under `productListItems` > `Item 1`. Setting any variable under this [!UICONTROL object] sets Product Syntax eVars or Events.
 
+-->
 
 ## Enviar dados para um conjunto de relatórios diferente
 

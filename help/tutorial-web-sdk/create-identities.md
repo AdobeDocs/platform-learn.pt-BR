@@ -1,19 +1,19 @@
 ---
 title: Criar identidades para o SDK da Web da plataforma
-description: Saiba como criar identidades no XDM e usar o elemento de dados do Mapa de identidade para capturar IDs de usuários. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como criar identidades no XDM e usar o elemento de dados do Mapa de identidade para capturar IDs de usuários. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 # Criar identidades
 
-Saiba como capturar identidades com o Adobe Experience Platform Web SDK. Capturar dados de identidade não autenticados e autenticados no [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Saiba como usar os elementos de dados criados anteriormente para coletar dados autenticados com um tipo de elemento de dados do SDK da Web da plataforma chamado de Mapa de identidade.
+Saiba como capturar identidades com o SDK da web da Adobe Experience Platform. Capturar dados de identidade não autenticados e autenticados no [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Saiba como usar os elementos de dados criados anteriormente para coletar dados autenticados com um tipo de elemento de dados do SDK da Web da plataforma chamado de Mapa de identidade.
 
 Esta lição se concentra no elemento de dados do Mapa de identidade disponível com a extensão de tags do SDK da Web da Adobe Experience Platform. Você mapeia elementos de dados contendo uma ID de usuário autenticada e um status de autenticação para o XDM.
 
@@ -133,9 +133,9 @@ Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
 | Elementos de dados da extensão principal | Elementos de dados da extensão SDK da Web da plataforma |
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `cart.productInfo` | `xdm.variable.content` |
-| `cart.productInfo.purchase` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `identityMap.loginID` |
+| `cart.productInfo.purchase` | `xdm.variable.content` |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |

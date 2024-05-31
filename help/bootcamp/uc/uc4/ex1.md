@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 solution: Customer Journey Analytics
 exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Objetivos
 
-- Entender o serviço de aplicativos do CJA
+- Entender o aplicativo do CJA
 - Saiba como posicionar o CJA
 - Entender o fluxo de trabalho do CJA: da conexão de dados aos insights
 
@@ -43,7 +43,7 @@ Os três principais benefícios para os clientes são:
 ## 4.1.3 Por que escolher o Customer Journey Analytics?
 
 O CJA não tem como objetivo substituir um aplicativo de BI atual, como Power BI, Microstrategy, Locker ou Tableau. Esses aplicativos de BI são destinados a visualizar dados para criar painéis corporativos, de modo que todos em uma organização possam observar rapidamente métricas importantes.\
-O objetivo do CJA é trazer o poder de análise para as equipes de marketing e negócios, tornando-o uma ferramenta de análise &quot;obrigatório&quot; para essas personalidades.
+O objetivo do CJA é trazer o poder de análise para as equipes de marketing e negócios, tornando-o uma ferramenta de análise &quot;obrigatório&quot; para essas personas.
 
 Tradicionalmente, os aplicativos de BI não eram capazes de ativar a verdadeira inteligência do cliente:
 

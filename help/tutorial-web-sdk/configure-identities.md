@@ -1,23 +1,27 @@
 ---
 title: Configurar um namespace de identidade
-description: Saiba como configurar namespaces de identidade para usar com o Adobe Experience Platform Web SDK. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como configurar namespaces de identidade para usar com o Adobe Experience Platform Web SDK. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # Configurar um namespace de identidade
 
-Saiba como configurar namespaces de identidade para usar com o Adobe Experience Platform Web SDK.
+Saiba como configurar namespaces de identidade para usar com o SDK da web da Adobe Experience Platform.
 
 A variável [Serviço de identidade da Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/id-service/using/home) define uma ID de visitante comum (a ECID) em aplicativos de Adobe baseados em SDK para potencializar recursos de Experience Cloud, como o compartilhamento de público-alvo entre aplicativos. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com outros sistemas, como o sistema de CRM (relacionamento com o cliente).
 
 A variável [Serviço de identidade da Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sim, há dois!) O usa as ECIDs e as IDs do cliente para gerar gráficos de identidade, permitindo mesclar atributos e comportamentos em Perfis de clientes em tempo real.
+
+>[!NOTE]
+>
+>Um namespace de identidade personalizado é _não obrigatório_ para implementar o Adobe Analytics, Adobe Target ou Adobe Audience Manager com o SDK da Web (identidades autenticadas podem ser passadas no `data` em vez do `xdm` como você verá mais tarde). Os namespaces de identidade são necessários para aplicativos nativos da plataforma, como Journey Optimizer, Real-time Customer Data Platform e Customer Journey Analytics. Embora você possa decidir não usar um namespace de identidade em sua própria implementação, espera-se que faça isso como parte deste tutorial.
 
 >[!NOTE]
 >

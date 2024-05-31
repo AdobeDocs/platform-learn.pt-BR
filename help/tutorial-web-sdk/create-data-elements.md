@@ -1,13 +1,13 @@
 ---
 title: Criar elementos de dados para o SDK da Web da plataforma
-description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
@@ -256,29 +256,41 @@ Crie esses elementos de dados adicionais seguindo as mesmas etapas:
 >
 >A variável [!UICONTROL Variável JavaScript] o tipo de elemento de dados trata as referências de matriz como pontos em vez de colchetes, de modo que fazer referência ao elemento de dados username como `digitalData.user[0].profile[0].attributes.username` **não funcionará**.
 
-## Criar elemento de dados Variable
+## Criar elementos de dados variáveis para XDM e objetos de dados
 
-Depois de criar os elementos de dados, mapeie-os para o XDM usando o **[!UICONTROL Variável]** elemento de dados que define o esquema usado para o objeto XDM. Esse objeto deve estar em conformidade com o esquema XDM criado durante o [Configurar um esquema](configure-schemas.md) lição.
+Os elementos de dados que você acabou de criar serão usados para criar um objeto XDM (para aplicativos da Platform) e um objeto de dados (para o Analytics, Target e Audience Manager). Esses objetos têm seus próprios elementos de dados especiais chamados **[!UICONTROL Variável]** elementos de dados que são muito fáceis de criar.
 
-Para criar o elemento de dados Variable:
+Para criar o elemento de dados Variável para XDM, vincule-o ao esquema criado na variável [Configurar um esquema](configure-schemas.md) lição:
 
 1. Selecionar **[!UICONTROL Adicionar elemento de dados]**
 1. Nomeie seu elemento de dados `xdm.variable.content`. Recomenda-se adicionar um prefixo &quot;xdm&quot; aos Elementos de dados específicos do XDM para organizar melhor a propriedade da tag
 1. Selecione o **[!UICONTROL Adobe Experience Platform Web SDK]** como o **[!UICONTROL Extensão]**
 1. Selecione o **[!UICONTROL Variável]** como o **[!UICONTROL Tipo de elemento de dados]**
+1. Selecionar **[!UICONTROL XDM]** como o **[!UICONTROL propriedade]**
 1. Selecione o Experience Platform apropriado **[!UICONTROL Sandbox]**
 1. Selecione o apropriado **[!UICONTROL Esquema]**, neste caso `Luma Web Event Data`
 1. Selecionar **[!UICONTROL Salvar]**
 
-   ![Elemento de dados variável](assets/analytics-tags-data-element-xdm-variable.png)
+   ![Elemento de dados variável para XDM](assets/analytics-tags-data-element-xdm-variable.png)
+
+Em seguida, crie o elemento de dados Variable para seu objeto de dados:
+
+1. Selecionar **[!UICONTROL Adicionar elemento de dados]**
+1. Nomeie seu elemento de dados `data.variable`. Recomenda-se usar o prefixo &quot;dados&quot; nos elementos de dados específicos do objeto de dados para organizar melhor a propriedade da tag
+1. Selecione o **[!UICONTROL Adobe Experience Platform Web SDK]** como o **[!UICONTROL Extensão]**
+1. Selecione o **[!UICONTROL Variável]** como o **[!UICONTROL Tipo de elemento de dados]**
+1. Selecionar **[!UICONTROL dados]** como o **[!UICONTROL propriedade]**
+1. Selecionar **[!UICONTROL Salvar]**
+
+   ![Elemento de dados variável para objeto de dados](assets/data-element-data-variable.png.png)
 
 
 Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
 | Elementos de dados da extensão principal | Elementos de dados da extensão SDK da Web da plataforma |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -291,7 +303,7 @@ Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
 >[!TIP]
 >
->Em um futuro [Criar regras de tag](create-tag-rule.md) lição, você aprenderá como a **[!UICONTROL Variável]** O elemento de dados permite empilhar várias regras em tags usando o **[!UICONTROL Atualizar tipo de ação variável]**.
+>Em um futuro [Criar regras de tag](create-tag-rule.md) lição, você aprenderá como a **[!UICONTROL Variável]** os elementos de dados permitem empilhar várias regras em tags usando o **[!UICONTROL Atualizar tipo de ação variável]**.
 
 Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para o Platform Edge Network com uma regra de tags. Mas, primeiro, saiba mais sobre como coletar identidades com o SDK da Web.
 
