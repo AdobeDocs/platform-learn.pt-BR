@@ -1,19 +1,19 @@
 ---
 title: Configurar um fluxo de dados para o SDK da Web da plataforma
-description: Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como habilitar um fluxo de dados e configurar soluções de Experience Cloud. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 4%
+source-wordcount: '536'
+ht-degree: 8%
 
 ---
 
 # Configurar uma sequência de dados
 
-Saiba como configurar uma sequência de dados para o Adobe Experience Platform Web SDK.
+Saiba como configurar uma sequência de dados para o SDK da web da Adobe Experience Platform.
 
 [Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) informe ao Adobe Experience Platform Edge Network para onde enviar os dados coletados pelo SDK da Web da plataforma. Na configuração dos datastreams, você habilita os aplicativos Experience Cloud, a conta Experience Platform e o encaminhamento de eventos.
 
@@ -55,9 +55,9 @@ Agora, você pode criar um fluxo de dados para informar ao Platform Edge Network
 
    >[!NOTE]
    >
-   >Você só precisará selecionar um esquema se estiver usando a variável [Preparação de dados para coleção de dados](/help/data-collection/edge/data-prep.md) recurso.
+   >Você não precisa selecionar um esquema. Uma seleção de esquema só será necessária se você estiver usando o [Preparação de dados para coleção de dados](/help/data-collection/edge/data-prep.md) recurso.
 
-Na próxima tela, você poderá adicionar serviços, como aplicativos Adobe, ao fluxo de dados. No entanto, você não adicionará serviços neste ponto do tutorial. Você fará isso mais tarde nas lições [Configurar Experience Platform](setup-experience-platform.md), [Configurar o Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar o Target](setup-target.md)ou [Encaminhamento de evento](setup-event-forwarding.md).
+Na próxima tela, você poderá adicionar serviços, como aplicativos Adobe, ao fluxo de dados. No entanto, você não adicionará serviços nesse momento. Você fará isso mais tarde nas lições [Configurar Experience Platform](setup-experience-platform.md), [Configurar o Analytics](setup-analytics.md), [Configurar Audience Manager](setup-audience-manager.md), [Configurar o Target](setup-target.md)ou [Encaminhamento de evento](setup-event-forwarding.md).
 
 >[!NOTE]
 >

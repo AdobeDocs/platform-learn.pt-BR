@@ -1,13 +1,13 @@
 ---
 title: Instalar e configurar a extensão de tag do SDK da Web da Adobe Experience Platform
-description: Saiba como instalar e configurar a extensão de tag do SDK da Web da Platform na interface da Coleção de dados. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como instalar e configurar a extensão de tag do SDK da Web da Platform na interface da Coleção de dados. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 11%
 
 ---
 
@@ -61,6 +61,7 @@ Com seu esquema XDM, sequência de dados e propriedade de tag criados, você est
 Deixe a maioria das configurações padrão e atualize-as posteriormente, conforme necessário. A única coisa que você deve fazer agora é vincular a extensão ao seu fluxo de dados:
 
 1. Em **[!UICONTROL Datastreams]**, selecione o **[!UICONTROL Escolher da lista]** método de entrada
+1. Selecione a sandbox em que você criou o esquema, o namespace de identidade e o fluxo de dados
 1. Selecione o fluxo de dados criado anteriormente, `Luma Web SDK`
 1. Selecionar **[!UICONTROL Salvar]**
 

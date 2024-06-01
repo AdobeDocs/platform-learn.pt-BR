@@ -1,13 +1,13 @@
 ---
 title: Criar regras de tag para o SDK da Web da Platform
-description: Saiba como enviar um evento para o Edge Network da Platform com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como enviar um evento para o Edge Network da Platform com seu objeto XDM usando uma regra de tag. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 1%
+source-wordcount: '1983'
+ht-degree: 2%
 
 ---
 
@@ -163,7 +163,6 @@ Agora, comece a usar **[!UICONTROL Atualizar variável]** em regras sequenciadas
 >
 >A ordem das regras determina qual regra é executada primeiro quando um evento é acionado. Se duas regras tiverem o mesmo tipo de evento, aquela com o número mais baixo será executada primeiro.
 > 
->![rule-order](assets/set-up-analytics-sequencing.png)
 
 Comece rastreando as exibições do produto na página de detalhes do produto da Luma:
 
@@ -172,7 +171,8 @@ Comece rastreando as exibições do produto na página de detalhes do produto da
 1. Selecione o ![+ símbolo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) em Evento para adicionar um novo acionador
 1. Em **[!UICONTROL Extensão]**, selecione **[!UICONTROL Núcleo]**
 1. Em **[!UICONTROL Tipo de evento]**, selecione **[!UICONTROL Biblioteca carregada (início da página)]**
-1. Selecione para abrir **[!UICONTROL Opções avançadas]**, digite `20`. Esse valor de pedido garante que a regra seja executada após o `all pages - library loaded - set global variables - 1` que define a configuração global.
+1. Selecione para abrir **[!UICONTROL Opções avançadas]**, digite `20`. Esse valor de pedido garante a execução da regra _após_ o `all pages - library loaded - set global variables - 1` que define a configuração global.
+1. Selecionar **[!UICONTROL Manter alterações]**
 
    ![Regras XDM do Analytics](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ Comece rastreando as exibições do produto na página de detalhes do produto da
 1. Em **[!UICONTROL Ações]** selecionar **[!UICONTROL Adicionar]**
 1. Selecionar **[!UICONTROL Adobe Experience Platform Web SDK]** extensão
 1. Selecionar **[!UICONTROL Tipo de ação]** as **[!UICONTROL Atualizar variável]**
+1. Selecionar `xdm.variable.content` como o **[!UICONTROL Elemento de dados]**
 1. Role para baixo até `commerce` objeto
 1. Abra o **[!UICONTROL productViews]** object e set **[!UICONTROL value]** para `1`
 
@@ -202,7 +203,7 @@ Comece rastreando as exibições do produto na página de detalhes do produto da
 
    >[!NOTE]
    >
-   >Como essa regra tem uma ordem maior, ela substituirá `eventType` definido na regra &quot;configuração global&quot;. `eventType` O só pode conter um valor, e recomendamos defini-lo com o evento de valor mais alto.
+   >Como essa regra tem uma ordem maior, ela substituirá `eventType` definido na regra &quot;configuração global&quot;. `eventType` O só pode conter um valor, e recomendamos configurá-lo com o evento mais valioso.
 
 1. Role para baixo e selecione `productListItems` matriz
 1. Selecionar **[!UICONTROL Fornecer itens individuais]**
@@ -215,7 +216,7 @@ Comece rastreando as exibições do produto na página de detalhes do produto da
    >A variável **`productListItems`** é um `array` tipo de dados para que espere que os dados entrem como uma coleção de elementos. Devido à estrutura da camada de dados do site de demonstração Luma e como é possível visualizar apenas um produto de cada vez no site Luma, você adiciona itens individualmente. Ao implementar o em seu próprio site, dependendo da estrutura da camada de dados, talvez você possa fornecer um storage inteiro.
 
 1. Selecione para abrir **[!UICONTROL Item 1]**
-1. Mapear **`productListItems.item1.SKU`** para `%product.productInfo.sku%`
+1. Mapa **`productListItems.item1.SKU`** para `%product.productInfo.sku%`
 
    ![Variável de objeto XDM do SKU do produto](assets/set-up-analytics-sku.png)
 
@@ -264,6 +265,7 @@ Agora, vamos mapear nossa matriz para o objeto XDM:
 1. Em **[!UICONTROL Ações]** selecionar **[!UICONTROL Adicionar]**
 1. Selecionar **[!UICONTROL Adobe Experience Platform Web SDK]** extensão
 1. Selecionar **[!UICONTROL Tipo de ação]** as **[!UICONTROL Atualizar variável]**
+1. Selecionar `xdm.variable.content` como o **[!UICONTROL Elemento de dados]**
 1. Role para baixo até `commerce` e selecione para abri-lo.
 1. Abra o **[!UICONTROL productListViews]** object e set **[!UICONTROL value]** para `1`
 
@@ -320,6 +322,7 @@ Crie duas outras regras para finalização e compra seguindo o mesmo padrão, co
 1. Role para baixo e selecione **[!UICONTROL productListItems]** matriz
 1. Selecionar **[!UICONTROL Fornecer todo o array]**
 1. Mapear para **`cart.productInfo.purchase`** elemento de dados
+1. Selecionar **[!UICONTROL Manter alterações]**
 1. Selecionar **[!UICONTROL Salvar]**
 
 Quando terminar, você deverá ver as seguintes regras criadas.
@@ -339,7 +342,7 @@ Agora que você definiu as variáveis, é possível criar a regra para enviar o 
 
 1. Use o **[!UICONTROL Extensão principal]** e selecione `Library Loaded (Page Top)` como o **[!UICONTROL Tipo de evento]**
 
-1. Selecionar **[!UICONTROL Avançado]** e insira `50` in **[!UICONTROL Pedido]**. Isso garantirá que a segunda regra seja acionada depois da primeira regra definida para acionar como `1`.
+1. Selecionar **[!UICONTROL Avançado]** e insira `50` in **[!UICONTROL Pedido]**. Isso garantirá que essa regra seja acionada depois de todas as outras regras configuradas (que tinham `1` ou `20` como seu [!UICONTROL Pedido]).
 
 1. Selecionar **[!UICONTROL Manter alterações]** para retornar à tela principal da regra
    ![Selecionar acionador da biblioteca carregada](assets/create-tag-rule-trigger-loaded-send.png)
@@ -390,7 +393,7 @@ Como você pode ver no [!UICONTROL Fluxo de publicação] há muito mais no proc
 
 Agora você está pronto para validar os dados na solicitação usando o Adobe Experience Platform Debugger.
 
-[Próxima ](validate-with-debugger.md)
+[Próximo ](validate-with-debugger.md)
 
 >[!NOTE]
 >

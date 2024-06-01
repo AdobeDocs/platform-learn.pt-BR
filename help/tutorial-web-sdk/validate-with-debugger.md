@@ -1,19 +1,19 @@
 ---
 title: Validar implementações do SDK da Web com o Experience Platform Debugger
-description: Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como validar a implementação do SDK da Web da sua plataforma com o Adobe Experience Platform Debugger. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # Validar implementações do SDK da Web com o Experience Platform Debugger
 
-Saiba como validar a implementação do SDK da Web da Adobe Experience Platform com o Adobe Experience Platform Debugger.
+Saiba como validar a implementação do SDK da web da Adobe Experience Platform com o Adobe Experience Platform Debugger.
 
 O Experience Platform Debugger é uma extensão disponível para os navegadores Chrome e Firefox, que ajuda a visualizar a tecnologia de Adobe implementada nas páginas da Web. Baixe a versão do seu navegador de preferência:
 
@@ -75,7 +75,7 @@ O depurador de Experience Platform tem um recurso interessante que permite subst
 
    ![propriedade de tag substituída](assets/validate-switch-success.png)
 
-À medida que você prossegue no tutorial, usa essa técnica de mapear o site Luma para sua própria propriedade de tag para validar a implementação do SDK da Web da Platform. Ao começar a usar tags no site de produção, você pode usar essa mesma técnica para validar as alterações à medida que elas são feitas no ambiente de desenvolvimento de tags.
+À medida que você prossegue no tutorial, usa essa técnica de mapear o site Luma para sua própria propriedade de tag para validar a implementação do SDK da Web da Platform. Ao usar tags em seu próprio site, você pode usar essa mesma técnica para validar bibliotecas de tags de desenvolvimento em seu site de produção.
 
 ## Validar solicitações de rede do lado do cliente com o Experience Platform Debugger
 
@@ -131,7 +131,7 @@ Esses tipos de detalhes da solicitação também estão visíveis nas ferramenta
 
    ![Guia Rede](assets/validate-dev-console.png)
 
-1. Vá para a **Resposta** e observe como o valor ECID é incluído na resposta. Copie esse valor como você o usará para validar as informações do perfil no próximo exercício
+1. Vá para a **Resposta** e observe como o valor ECID é incluído na resposta.
 
    ![Guia Rede](assets/validate-dev-console-ecid.png)
 
