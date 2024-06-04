@@ -4,9 +4,9 @@ description: Saiba como relatar e analisar as interações com seu aplicativo m�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
+source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
 workflow-type: tm+mt
-source-wordcount: '3410'
+source-wordcount: '3291'
 ht-degree: 1%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 1%
 
 Saiba como relatar e analisar as interações do aplicativo móvel com o Customer Journey Analytics.
 
-Os dados do evento de aplicativo móvel, que você coletou e enviou para o Platform Edge Network em lições anteriores, são encaminhados para os serviços configurados no fluxo de dados. Se você seguiu o [Enviar dados para o Experience Platform](platform.md) lição, esses dados agora são armazenados no data lake do Experience Platform como conjuntos de dados. E esses dados ficam disponíveis para o Customer Journey Analytics usar em relatórios e análises.
+Os dados do evento de aplicativo móvel, que você coletou e enviou para o Platform Edge Network em lições anteriores, são encaminhados para os serviços configurados no fluxo de dados. Se você seguiu o [Enviar dados para o Experience Platform](platform.md) lição, esses dados agora são armazenados no data lake do Experience Platform como conjuntos de dados. Nesse ponto, os dados agora estão disponíveis para o Customer Journey Analytics usar para relatórios e análise.
 
-Ao contrário do Adobe Analytics, o Customer Journey Analytics é um aplicativo que *usos* dados de conjuntos de dados criados no Experience Platform e para os quais seu aplicativo está enviando dados. Ao usar o SDK do Adobe Experience Platform Mobile, você não envia dados para o Customer Journey Analytics diretamente. Em vez disso, o Customer Journey Analytics usa os dados dos conjuntos de dados no Experience Platform.
+Ao contrário do Adobe Analytics, o Customer Journey Analytics *usos* dados de conjuntos de dados criados no Experience Platform. Os dados não são enviados diretamente para o Customer Journey Analytics usando o SDK móvel da Adobe Experience Platform, mas são enviados para conjuntos de dados. As conexões são configuradas no Customer Journey Analytics para selecionar os conjuntos de dados que você usará em seus projetos de relatórios e análises.
 
-Esta lição no tutorial foca em relatórios e analisar os dados capturados do aplicativo tutorial do Luma. Um dos recursos exclusivos do Customer Journey Analytics é combinar dados de várias fontes (CRM, ponto de venda, aplicativo de fidelidade, call center) e canais (Web, móvel, offline) para fornecer insights profundos sobre as jornadas do cliente. Esse recurso está fora do escopo desta lição. Consulte [visão geral do Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) para obter mais informações.
+Esta lição no tutorial foca em relatórios e analisar os dados capturados do aplicativo tutorial do Luma. Um dos recursos exclusivos do Customer Journey Analytics é a combinação de dados de várias fontes (CRM, ponto de venda, aplicativo de fidelidade, call center) e canais (Web, móvel, offline) para obter insights profundos sobre as jornadas do cliente. Esse recurso está fora do escopo desta lição. Consulte [visão geral do Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) para obter mais informações.
 
 
 ## Pré-requisitos
 
-Sua organização deve ser provisionada e a permissão concedida para o Customer Journey Analytics. Você deve ter acesso administrativo ao Customer Journey Analytics.
+Sua organização deve ser provisionada e a permissão concedida para o Customer Journey Analytics. Você deve ter acesso de administrador ao Customer Journey Analytics.
 
 
 ## Objetivos de aprendizagem
@@ -35,7 +35,7 @@ Nesta lição, você vai:
 - Criar uma visualização de dados para preparar os dados dos conjuntos de dados para seus relatórios e análises
 - Crie um projeto para criar relatórios e visualizações e analisar os dados do seu aplicativo móvel.
 
-Esta ordem está de propósito. No Customer Journey Analytics, um relatório no Analysis Workspace depende de uma visualização de dados. E uma visualização de dados depende de uma conexão.
+A sequência é intencional. As conexões usam conjuntos de dados e as visualizações de dados usam conexões.
 
 
 ## Criar uma conexão
@@ -66,7 +66,7 @@ Uma conexão no Customer Journey Analytics define os conjuntos de dados (e os da
 
    6. No **[!UICONTROL Adicionar conjuntos de dados]** assistente, **[!UICONTROL Selecionar conjuntos de dados]** etapa,
 
-      1. selecione os seguintes conjuntos de dados:
+      1. Selecione os seguintes conjuntos de dados:
 
          - **[!UICONTROL Conjunto de dados de evento do aplicativo móvel Luma]**, o conjunto de dados que você criou como parte da [Criar um conjunto de dados](platform.md#create-a-dataset) seção na lição Experience Platform.
          - **[!UICONTROL Eventos de decisão ODE - *nome da sandbox*] decisão**
@@ -112,7 +112,7 @@ No **[!UICONTROL Conexões]** > **[!UICONTROL Aplicativo Luma - Conexão do tuto
 
 Depois que os registros forem adicionados dos conjuntos de dados para o Customer Journey Analytics, você poderá criar uma visualização de dados para definir em quais componentes dos dados deseja criar relatórios.
 
-Uma visualização de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão. Você pode configurar campos padrão e de esquema a partir de qualquer conjunto de dados definido em sua conexão como componentes (dimensões, métricas) no Analysis Workspace.
+Uma visualização de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão. É possível configurar campos padrão e de esquema a partir de qualquer um dos conjuntos de dados definidos na Conexão como componentes (dimensões, métricas) no Analysis Workspace.
 
 Uma visualização de dados no Customer Journey Analytics oferece enorme flexibilidade na configuração e definição corretas dos dados de sua conexão. Neste tutorial, você usa somente a funcionalidade necessária para seus relatórios e análises. Consulte [Visualizações de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) para obter mais informações.
 
@@ -131,7 +131,7 @@ Para criar a visualização de dados:
 
       ![Visualização de dados 1 do CJA](assets/cja-dataview-1.png)
 
-1. No **[!UICONTROL Componentes]** guia do **[!UICONTROL Aplicativo Luma - Visualização de dados do tutorial do SDK móvel da AEP]**, você pode definir as métricas e a dimensão que deseja usar ao criar relatórios no aplicativo móvel. Por padrão, várias métricas e dimensões padrão (conjuntamente chamadas de componentes) já estão configuradas para a visualização de dados. Mas sua visualização de dados requer mais componentes. <br/>Para adicionar um campo de esquema, a partir do esquema definido anteriormente ou esquemas prontos para uso (consulte [Criar um esquema](create-schema.md) lição), como um componente (dimensão ou métrica):
+1. No **[!UICONTROL Componentes]** guia do **[!UICONTROL Aplicativo Luma - Visualização de dados do tutorial do SDK móvel da AEP]**, você pode definir as métricas e a dimensão que deseja usar ao criar relatórios no aplicativo móvel. Por padrão, várias métricas e dimensões padrão (conjuntamente chamadas de componentes) já estão configuradas para a visualização de dados. Mas sua visualização de dados requer mais componentes. <br/>Para adicionar um campo de esquema do esquema definido anteriormente ou esquemas prontos para uso (consulte [Criar um esquema](create-schema.md) lição), como um componente (dimensão ou métrica):
 
    1. Localize o campo de esquema:
 
@@ -155,7 +155,7 @@ Para criar a visualização de dados:
 
       ![Configurações do componente de Visualização de dados do CJA](assets/cja-dataview-component-settings.png)
 
-   1. Agora que você entende como adicionar campos à sua visualização de dados e configurar o componente resultante, use as tabelas abaixo para obter uma lista de campos de esquema a serem adicionados como métrica ou dimensão. Use o **Caminho do esquema** valor da coluna da tabela abaixo para procurar ou percorrer o campo de esquema específico. Depois de arrastado e solto, marque a opção **Configurações do componente** valor da coluna na tabela se configurações específicas são necessárias para um componente, como modificar seu **[!UICONTROL Nome do componente]** ou definindo **[!UICONTROL INCLUIR/EXCLUIR VALORES]**.
+   1. Agora que você entende como adicionar campos à sua visualização de dados e configurar o componente resultante, use as tabelas abaixo para obter uma lista de campos de esquema a serem adicionados como métricas ou dimensões. Use o **Caminho do esquema** valor da coluna da tabela abaixo para procurar ou percorrer o campo de esquema específico. Depois de adicionar métricas e dimensões, verifique a **Configurações do componente** na tabela se configurações específicas são necessárias para um componente, como sua **[!UICONTROL Nome do componente]** ou definindo **[!UICONTROL INCLUIR/EXCLUIR VALORES]**.
 
       **MÉTRICAS**
 
@@ -177,9 +177,12 @@ Para criar a visualização de dados:
 
       {style="table-layout:auto"}
 
-      Observe como o campo de esquema da métrica Eventos de localização está usando **[!UICONTROL INCLUIR/EXCLUIR VALORES]** para contar tipos de evento que contêm `location`.
+      >[!NOTE]
+      >
+      >Observe como o campo de esquema da métrica Eventos de localização está usando **[!UICONTROL INCLUIR/EXCLUIR VALORES]** para contar tipos de evento que contêm `location`.
 
-      Depois de ter adicionado todos os campos de esquema da tabela acima como um componente de métrica, sua configuração de visualização de dados para **[!UICONTROL MÉTRICAS]** deve ser semelhante a:
+
+      Sua configuração de visualização de dados para **[!UICONTROL MÉTRICAS]** deve corresponder abaixo após ter adicionado todos os campos de esquema da tabela acima como um componente de métrica:
 
       ![Visualização de dados 4 do CJA](assets/cja-dataview-4.png)
 
@@ -197,7 +200,7 @@ Para criar a visualização de dados:
 
       {style="table-layout:auto"}
 
-      Depois de ter adicionado todos os campos de esquema da tabela acima como um componente de dimensão, sua configuração de visualização de dados para **[!UICONTROL DIMENSION]** deve ser semelhante a:
+      Sua configuração de visualização de dados para **[!UICONTROL DIMENSION]** deve corresponder abaixo após ter adicionado todos os campos de esquema da tabela acima como um componente de dimensão:
 
       ![Visualização de dados 4 do CJA](assets/cja-dataview-5.png)
 
@@ -211,7 +214,7 @@ Você definiu a visualização de dados e tudo está pronto para começar a cria
 
 ## Criar um projeto
 
-Você usa projetos do Espaço de trabalho no Customer Journey Analytics para criar relatórios e visualizações. Há muitas possibilidades para criar relatórios abrangentes e visualizações envolventes, mas todas essas possibilidades estão fora do escopo deste tutorial. Consulte [Visão geral do Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) e [Criar um novo projeto](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) para obter mais informações.
+Os projetos do Workspace são usados no Customer Journey Analytics para criar relatórios e visualizações. Há muitas possibilidades para criar relatórios abrangentes e visualizações envolventes, mas isso está fora do escopo deste tutorial. Consulte [Visão geral do Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) e [Criar um novo projeto](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) para obter mais informações.
 
 Nesta seção da lição, você cria um projeto que mostra relatórios e visualizações sobre:
 
@@ -250,23 +253,22 @@ Para criar seu projeto:
 >
 >   Lembre-se de salvar o projeto regularmente; caso contrário, as alterações serão perdidas. Você pode salvar rapidamente seu projeto usando **[!UICONTROL ctrl+s]** (Windows) ou **[!UICONTROL ⌘ (cmd) + s]** (macOS)
 
-Agora você configurou o projeto. Você já tem um painel de Forma livre na tela principal, contendo uma tabela de Forma livre. Você adicionará componentes a essa tabela em breve, mas primeiro deve garantir que o painel de Forma livre esteja usando a visualização de dados e o período de tempo corretos.
-
+Agora você configurou o projeto. Uma tabela de forma livre é fornecida por padrão. Antes de adicionar componentes, verifique se o painel Forma livre está usando a visualização de dados e o período corretos.
 
 1. Selecione sua visualização de dados na lista suspensa. Por exemplo, **[!UICONTROL Aplicativo Luma - Visualização de dados do tutorial do SDK móvel da AEP]**. Se não conseguir ver sua visualização de dados na lista, selecione **[!UICONTROL Mostrar tudo]** na parte inferior da lista suspensa.
    ![Projeto CJA 5](assets/cja-projects-5.png)
 
-1. Para definir o período de tempo apropriado para o painel, selecione o padrão **[!UICONTROL Este mês]** e, no painel pop-up, defina as datas de início e término. Ou use um **[!UICONTROL Predefinição]**, como **[!UICONTROL Últimos 6 meses completos]** e selecione **[!UICONTROL Aplicar]**.
+1. Para definir o período apropriado para o painel, selecione a predefinição padrão **[!UICONTROL Este mês]** insira uma data de início e término personalizada ou use um **[!UICONTROL Predefinição]** (como **[!UICONTROL Últimos 6 meses completos]**) e selecione **[!UICONTROL Aplicar]**.
    ![Projeto 6 do CJA](assets/cja-projects-6.png)
 
 
 ### Uso do aplicativo
 
-Você deseja relatar como o aplicativo é usado. Você adicionou o código necessário no aplicativo para registrar as interações e quais telas são usadas no aplicativo (consulte [Rastrear eventos](events.md) lição) e agora deseja criar relatórios sobre esses dados.
+Agora você está pronto para relatar como o aplicativo é usado. Você adicionou o código necessário no aplicativo para registrar as interações e quais telas são usadas no aplicativo (consulte [Rastrear eventos](events.md) lição) e agora deseja criar relatórios sobre esses dados.
 
 #### Nomes de tela
 
-Primeiro, você quer relatar em quais telas foram exibidas no aplicativo.
+Para relatar nas telas exibidas no aplicativo:
 
 1. Renomeie seu **[!UICONTROL Forma livre]** painel para `App Usage`.
 
@@ -276,7 +278,7 @@ Primeiro, você quer relatar em quais telas foram exibidas no aplicativo.
 
 1. Arraste e solte a **[!UICONTROL Visualizações de tela]** componente ativado [!UICONTROL _Soltar um **métrica**aqui (ou qualquer outro componente)_)].
    ![Projetos do CJA 7](assets/cja-projects-7.png)
-Sua tabela de forma livre agora mostra exibições de tela para os dias do período selecionado. No entanto, você deseja mostrar exibições de tela para as diferentes telas usadas no aplicativo.
+A tabela de forma livre agora mostra exibições de tela para cada dia do período selecionado. No entanto, você deseja mostrar o número de exibições de tela para cada uma das diferentes telas usadas no aplicativo.
 
 1. Para mostrar a **[!UICONTROL DIMENSION]** lista de componentes, selecione ![Cruz](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) para remover o ![Evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Métricas]** do painel de componentes.
    ![Projeto do CJA 8](assets/cja-projects-8.png)
@@ -286,15 +288,18 @@ Sua tabela de forma livre agora mostra exibições de tela para os dias do perí
 1. Arraste e solte a **[!UICONTROL Nome da tela]** componente na **[!UICONTROL Dia]** cabeçalho. A operação mostra ![Alternar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Substituir]** para indicar a substituição da dimensão.
    ![Projetos do CJA 9](assets/cja-projects-9.png)
 
-Seu primeiro relatório está pronto, mostrando exibições de tela para os vários nomes de tela que você definiu no aplicativo.
+A primeira tabela de forma livre no relatório foi concluída.
 
 ![Projetos do CJA 10](assets/cja-projects-10.png)
 
-Não se esqueça de salvar seu projeto!
+>[!NOTE]
+>
+>Salve o projeto antes de continuar.
+
 
 #### Interações do aplicativo
 
-Você também quer relatar como os usuários interagiram com o aplicativo.
+Em seguida, você criará uma Tabela de forma livre para relatar como os usuários interagiram com o aplicativo.
 
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) e do pop-up ![Tabela de forma livre](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) para adicionar uma nova Tabela de forma livre.
    ![Projetos do CJA 11](assets/cja-projects-11.png)
@@ -310,7 +315,9 @@ Seu segundo relatório agora está pronto, mostrando as interações do aplicati
 
 As informações são limitadas principalmente porque você implementou o `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` Chamadas de API somente na tela de logon. Se você adicionar essa chamada de API em mais telas do aplicativo, esse relatório se tornará mais informativo.
 
-Não se esqueça de salvar seu projeto!
+>[!NOTE]
+>
+>Salve o projeto antes de continuar.
 
 
 ### Commerce
@@ -340,14 +347,17 @@ Agora você deseja relatar, em um painel separado, os eventos comerciais que oco
 
 1. Arraste e solte a **[!UICONTROL Month]** na parte superior da **[!UICONTROL Dia]** dimension para alterar o relatório de diário para mensal.
 
-Seu **[!UICONTROL Eventos da Commerce]** O relatório do está pronto, mostrando como os usuários visualizaram produtos, adicionaram produtos à lista de desejos, salvaram produtos para depois ou até compraram seus produtos.
+O relatório de Eventos da Commerce foi concluído.
+
 ![Projetos do CJA 16](assets/cja-projects-16.png)
 
-Não se esqueça de salvar seu projeto!
+>[!NOTE]
+>
+>Salve o projeto antes de continuar.
 
 #### Fallout
 
-Com base no relatório anterior, é desejável visualizar o fallout no funil de comércio: quantos usuários que visualizaram produtos também adicionaram produtos aos carrinhos. E quantos usuários adicionaram produtos aos carrinhos também salvaram esses produtos para depois. E assim por diante.
+Em seguida, você criará uma visualização de fallout para o funil de comércio que mostra quantos usuários visualizaram produtos adicionaram esses produtos ao carrinho e, a partir daí, para quantos usuários salvaram esses produtos posteriormente.
 
 1. Selecionar ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) no prazo de **[!UICONTROL Commerce]** e, no menu pop-up, selecione ![Fallout](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (representando a visualização Fallout ).
 
@@ -357,10 +367,12 @@ Como alternativa, você pode arrastar e soltar a variável **[!UICONTROL Visuali
 
 1. Repita a etapa acima para **[!UICONTROL Adicionar produto a listas]** e **[!UICONTROL Compras]** dimensões.
 
-Seu **[!UICONTROL Fallout]** a visualização agora mostra uma representação visual do funil de conversão de seus produtos.
+O relatório de visualização de Fallout foi concluído.
 ![Projetos do CJA 19](assets/cja-projects-19.png)
 
-Não se esqueça de salvar seu projeto!
+>[!NOTE]
+>
+>Salve o projeto antes de continuar.
 
 
 ### Ofertas
@@ -383,10 +395,13 @@ Você deseja relatar quantas ofertas e quais ofertas são exibidas para os usuá
 
 1. Arraste e solte a **[!UICONTROL Month]** dimensão na **[!UICONTROL Dia]** para substituir a dimensão.
 
-Agora você tem um relatório que mostra as ofertas mensais exibidas para os usuários no aplicativo.
+A Visão geral mensal das ofertas está concluída.
+
 ![Projetos do CJA 20](assets/cja-projects-20.png)
 
-Não se esqueça de salvar seu projeto!
+>[!NOTE]
+>
+>Salve o projeto antes de continuar.
 
 
 #### Ofertas para pessoas
@@ -406,10 +421,13 @@ Você também quer ter um relatório que mostra quais ofertas foram mostradas em
 1. No menu de contexto, selecione **[!UICONTROL Detalhamento]** > **[!UICONTROL Dimension]** > **[!UICONTROL Nome da oferta]**. Essa seleção detalhará a dimensão Nome da atividade em Nomes de ofertas.
    ![Projetos do CJA 20b](assets/cja-projects-20b.png)
 
-Agora você tem um relatório que mostra as ofertas individuais exibidas para esta decisão de oferta para o período selecionado para usuários do seu aplicativo.
+Seu relatório Ofertas para pessoas foi concluído.
+
 ![Projetos do CJA 21](assets/cja-projects-21.png)
 
-Não se esqueça de salvar seu projeto!
+>[!NOTE]
+>
+>Salve o projeto antes de continuar.
 
 
 ### Visitas da loja
@@ -438,7 +456,7 @@ Por fim, você deseja criar relatórios sobre visitas à loja.
 
 1. Selecione todas as linhas na tabela, clique com o botão direito do mouse e, no menu de contexto, selecione Detalhamento > Dimension > Tipos de evento.
 
-Agora há um relatório mostrando os usuários que estão dentro e fora das proximidades dos locais de loja (conforme você definiu esses locais na variável [Places](places.md) lição).
+O relatório de Visitas à loja foi concluído. Agora há um relatório mostrando os usuários que estão dentro e fora das proximidades dos locais de loja (conforme você definiu esses locais na variável [Places](places.md) lição).
 
 ![Projeto do CJA 23](assets/cja-projects-23.png)
 
