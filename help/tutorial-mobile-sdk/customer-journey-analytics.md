@@ -4,9 +4,10 @@ description: Saiba como relatar e analisar as interações com seu aplicativo m�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
+source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3282'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 Saiba como relatar e analisar as interações do aplicativo móvel com o Customer Journey Analytics.
 
-Os dados do evento de aplicativo móvel, que você coletou e enviou para o Platform Edge Network em lições anteriores, são encaminhados para os serviços configurados no fluxo de dados. Se você seguiu o [Enviar dados para o Experience Platform](platform.md) lição, esses dados agora são armazenados no data lake do Experience Platform como conjuntos de dados. Nesse ponto, os dados agora estão disponíveis para o Customer Journey Analytics usar para relatórios e análise.
+Os dados do evento de aplicativo móvel, que você coletou e enviou para o Platform Edge Network em lições anteriores, são encaminhados para os serviços configurados em sua sequência de dados. Se você seguiu o [Enviar dados para o Experience Platform](platform.md) lição, esses dados agora são armazenados em um conjunto de dados de Experience Platform e estão disponíveis para o Customer Journey Analytics usar em relatórios e análises.
 
 Ao contrário do Adobe Analytics, o Customer Journey Analytics *usos* dados de conjuntos de dados criados no Experience Platform. Os dados não são enviados diretamente para o Customer Journey Analytics usando o SDK móvel da Adobe Experience Platform, mas são enviados para conjuntos de dados. As conexões são configuradas no Customer Journey Analytics para selecionar os conjuntos de dados que você usará em seus projetos de relatórios e análises.
 
