@@ -2,10 +2,10 @@
 title: Comparação da at.js 2.x com o SDK da Web | Migração do Target da at.js 2.x para o SDK da Web
 description: Saiba mais sobre as diferenças entre a at.js 2.x e o SDK da Web da plataforma, incluindo recursos, funções, configurações e fluxo de dados.
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 78f0dcc0aa4674eb071c5fd091b5df04eb971326
+source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 8%
+source-wordcount: '2007'
+ht-degree: 3%
 
 ---
 
@@ -40,13 +40,13 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 | Aplicativos híbridos | Suportado | Suportado |
 | URLs de garantia da qualidade | Suportado | Suportado |
 | IDs de terceiros da mbox | Suportado | Suportado |
-| Atributos do cliente | Suportado | Compatível |
+| Atributos do cliente | Suportado | Suportado |
 | Ofertas remotas | Suportado | Suportado |
-| Ofertas de redirecionamento | Suportado | Suportado. No entanto, um redirecionamento de uma página com o SDK da Web da Platform para uma página com a at.js (e na direção oposta) não é compatível. |
+| Ofertas de redirecionamento | Suportado | Compatível. No entanto, um redirecionamento de uma página com o SDK da Web da Platform para uma página com a at.js (e na direção oposta) não é compatível. |
 | Decisão no dispositivo | Suportado | Não suportado no momento |
-| Buscar previamente mboxes | Compatível com escopos personalizados e VEC para SPA | No momento, não há suporte para o VEC regular |
-| Eventos Personalizados | Suportado | Não suportado. Consulte a [roteiro público](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) para o status atual. |
-| Tokens de resposta | Suportado | Suportado. Consulte a [documentação dedicada dos tokens de resposta](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) para obter exemplos de código e diferenças entre a at.js e o SDK da Web da plataforma |
+| Buscar previamente mboxes | Compatível com escopos personalizados e VEC para SPA | A busca prévia é o modo padrão do SDK da Web |
+| Eventos personalizados | Suportado | Não suportado. Consulte a [roteiro público](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) para o status atual. |
+| Tokens de resposta | Suportado | Compatível. Consulte a [documentação dedicada dos tokens de resposta](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) para obter exemplos de código e diferenças entre a at.js e o SDK da Web da plataforma |
 | Provedores de dados | Suportado | Não suportado. O código personalizado pode ser usado para acionar um SDK da Web da plataforma `sendEvent` depois que os dados forem recuperados de outro provedor. |
 
 
@@ -58,7 +58,7 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 | Renderizar conteúdo automaticamente no carregamento da página | Controlado com uma configuração global do Target. Ativado quando `pageLoadEnabled` está definida como `true`. | Especificado no SDK da Web da plataforma `sendEvent` comando. Habilitado ao configurar o `renderDecisions` opção para `true`. |
 | Renderização manual do conteúdo | A variável `applyOffer()` e `applyOffers()` funções suportam somente configuração de HTML | A variável `applyPropositions` comando suporta configuração, substituição ou HTML de acréscimo para maior flexibilidade |
 | Rastreamento de eventos personalizados | Compatível com `trackEvent()` e `sendNotifications()` funções. Essas funções são específicas do Target e não afetam as métricas do Adobe Analytics. | Todos os dados do SDK da Web da plataforma `sendEvent` As chamadas de são encaminhadas para o Target. Os dados suplementares necessários especificamente para o Target devem ser `sendEvent` com um eventType de `decisioning.propositionDisplay` ou `decisioning.propositionInteract` para garantir que as métricas do Adobe Analytics não sejam afetadas. |
-| CNAME de destino | Suportado. Isso é separado do CNAME usado para o Analytics e o Serviço de ID de Experience Cloud. | Não é mais relevante. Um único CNAME pode ser usado para todas as chamadas do SDK da Web da plataforma. |
+| CNAME de destino | Compatível. Isso é separado do CNAME usado para o Analytics e o Serviço de ID de Experience Cloud. | Não é mais relevante. Um único CNAME pode ser usado para todas as chamadas do SDK da Web da plataforma. |
 | Depuração | A variável `mboxDisable`, `mboxDebug`, e `mboxTrace` Parâmetros de URL podem ser usados para depuração com as ferramentas do desenvolvedor do seu navegador.<br><br>O Adobe Experience Platform Debugger também é uma ferramenta de depuração compatível. | A variável `mboxDisable`, `mboxDebug`, e `mboxTrace` Não há suporte para parâmetros de URL.<br><br>Você pode ativar a depuração do SDK da Web adicionando o `alloy_debug=true` à sua cadeia de caracteres de consulta ou em execução `alloy("setDebug", { "enabled": true });` no console do desenvolvedor.<br><br>A extensão do navegador Adobe Experience Platform Debugger pode ser usada para iniciar um rastreamento de borda para depuração.<br><br>Consulte a [depuração do SDK da Web da Platform](debugging.md) para obter mais informações. |
 | Analytics for Target (A4T) | Usa valores SDID para unir chamadas do Target e do Analytics | Suporte nativo sem a necessidade de compilação |
 
@@ -102,7 +102,7 @@ A biblioteca at.js pode ser configurada e baixada com várias configurações na
 | `globalMboxAutoCreate` | Defina o `renderDecisions` opção para `true` com o `sendEvent` para buscar e renderizar automaticamente experiências baseadas em VEC.<br><br>Solicitar um `decisionScope` para `__view__` se preferir renderizar manualmente as experiências baseadas em VEC. |
 | `imsOrgId` | Defina o `orgId` com o `configure` comando |
 | `optinEnabled` e `optoutEnabled` | Consulte o SDK da Web da Platform [opções de privacidade](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html). A variável `defaultConsent` A opção se aplica a todas as soluções de Adobe compatíveis com o SDK da Web da plataforma. |
-| `overrideMboxEdgeServer` e `overrideMboxEdgeServerTimeout` | Não aplicável. Todas as solicitações de SDK da Web da Platform usam a rede de borda da Adobe Experience Platform. |
+| `overrideMboxEdgeServer` e `overrideMboxEdgeServerTimeout` | Não aplicável. Todas as solicitações de SDK da Web da Platform usam a rede Edge da Adobe Experience Platform. |
 | `pageLoadEnabled` | Defina o `renderDecisions` opção para `true` com o `sendEvent` comando |
 | `secureOnly` | Não suportado. O SDK da Web da Platform define todos os cookies com o `secure` e `sameSite="none"` atributos. |
 | `selectorsPollingTimeout` | Não suportado. O SDK da Web da Platform usa um valor de 5 segundos. O código personalizado pode ser usado para renderizar conteúdo manualmente, se necessário. |
@@ -119,7 +119,7 @@ Os diagramas a seguir devem ajudar você a entender as diferenças de fluxo de d
 
 ### diagrama de sistema da at.js 2.x
 
-![Comportamento da at.js 2.0 no carregamento da página](assets/target-at-js-2x-diagram.png){zoom=&quot;yes&quot;}
+![Comportamento da at.js 2.0 no carregamento da página](assets/target-at-js-2x-diagram.png){zoomable="yes"}
 
 | Chame | Detalhes |
 | --- | --- |
@@ -130,11 +130,11 @@ Os diagramas a seguir devem ajudar você a entender as diferenças de fluxo de d
 | 5 | Com base no URL, parâmetros de solicitação e dados de perfil, o Target decide quais Atividades e Experiências retornarão ao visitante para a página atual e para as exibições futuras. |
 | 6 | O conteúdo direcionado é enviado de volta para a página, opcionalmente incluindo valores de perfil para personalização adicional.<br><br>O conteúdo direcionado na página atual é revelado o mais rápido possível sem cintilação do conteúdo padrão.<br><br>O conteúdo direcionado para exibições futuras de um aplicativo de página única é armazenado em cache no navegador para que possa ser aplicado instantaneamente, sem uma chamada de servidor extra, quando as exibições forem acionadas. |
 | 7 | Dados do Analytics enviados da página para os Servidores de coleta de dados. |
-| 8 | Os dados do Target são correspondidos aos dados do Analytics pela SDID, e processados no armazenamento de relatório do Analytics. Em seguida, os dados do Analytics podem ser visualizados no Analytics e no Target pelos relatórios do A4T. |
+| 8 | Os dados do Target são correspondidos aos dados do Analytics pela SDID, e processados no armazenamento de relatórios do Analytics. Em seguida, os dados do Analytics podem ser exibidos no Analytics e no Target pelos relatórios do A4T. |
 
 Consulte o guia do desenvolvedor para obter mais informações sobre como [implementar o Target usando a at.js para aplicativos de página única](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application/).
 
-### Diagrama de sistema do Web SDK do Platform
+### Diagrama de sistema do SDK da Web da Platform
 
 ![Diagrama da decisão de borda do Adobe Target com o SDK da Web da plataforma](assets/target-platform-web-sdk.png)
 
