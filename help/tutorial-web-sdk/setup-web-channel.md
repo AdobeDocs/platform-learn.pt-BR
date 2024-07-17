@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: 9cb56b739efde38d8e85358f45ee6a35a0394e27
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 # Configurar o canal da Web do Journey Optimizer com o SDK da Web
 
-Saiba como implementar o Adobe Journey Optimizer [canal da web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) usando o Adobe Experience Platform Web SDK. Esta lição aborda os pré-requisitos básicos do canal da Web, as etapas detalhadas de configuração e um aprofundamento sobre um caso de uso centrado no status de fidelidade.
+Saiba como implementar o [canal da Web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) do Adobe Journey Optimizer usando o SDK da Web da Adobe Experience Platform. Esta lição aborda os pré-requisitos básicos do canal da Web, as etapas detalhadas de configuração e um aprofundamento sobre um caso de uso centrado no status de fidelidade.
 
 Ao seguir esta lição, os usuários do Journey Optimizer estão equipados para usar o canal da Web para personalização online avançada usando o web designer do Journey Optimizer.
 
-![Diagrama do SDK da Web e Adobe Analytics](assets/dc-websdk-ajo.png)
+![SDK da Web e diagrama do Adobe Analytics](assets/dc-websdk-ajo.png)
 
 ## Objetivos de aprendizagem
 
@@ -41,7 +41,7 @@ Para concluir as lições desta seção, primeiro você deve:
 * Completar todas as lições para a configuração inicial do SDK da Web da Platform, incluindo a configuração de elementos de dados e regras.
 * Verifique se a versão da extensão de tags do SDK da Web da Adobe Experience Platform é 2.16 ou superior.
 * Se você estiver usando o web designer da Journey Optimizer para criar sua experiência de canal na Web, verifique se está usando os navegadores Google Chrome ou Microsoft® Edge.
-* Verifique também se você baixou e ativou o [Extensão de navegador da Adobe Experience Cloud Visual Editing Helper](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
+* Além disso, verifique se você baixou e habilitou a [extensão de navegador Auxiliar de edição visual do Adobe Experience Cloud](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * Verifique se os cookies de terceiros são permitidos em seu navegador. Talvez seja necessário desativar os bloqueadores de anúncios no navegador também.
 
   >[!CAUTION]
@@ -52,7 +52,7 @@ Para concluir as lições desta seção, primeiro você deve:
   > 1. O site é incorporado em um iframe.
   > 1. O site de controle de qualidade ou preparo do cliente não está acessível externamente (é um site interno).
 
-* Ao criar experiências da Web e incluir conteúdo da biblioteca do Adobe Experience Manager Assets Essentials, é necessário [configurar o subdomínio para publicar este conteúdo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
+* Ao criar experiências na Web e incluir conteúdo da biblioteca do Adobe Experience Manager Assets Essentials, é necessário [configurar o subdomínio para publicar este conteúdo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Se estiver usando o recurso de experimentação de conteúdo, verifique se o conjunto de dados da Web também está incluído na configuração de relatórios.
 * Atualmente, há suporte para dois tipos de implementações para habilitar a criação e o delivery de campanhas de canal da Web nas propriedades da Web:
    * Somente no lado do cliente: para modificar seu site, você deve implementar o SDK da Web da Adobe Experience Platform.
@@ -70,17 +70,17 @@ Para concluir as lições desta seção, primeiro você deve:
 Primeiro, você deve entender a terminologia usada nas campanhas de canal da Web.
 
 * **Canal da Web**: um meio de comunicação ou entrega de conteúdo pela Web. No contexto deste guia, ele se refere ao mecanismo pelo qual o conteúdo personalizado é entregue aos visitantes do site usando o SDK da Web da plataforma no Adobe Journey Optimizer.
-* **Superfície da Web**: refere-se a uma propriedade da Web identificada por um URL em que o conteúdo é entregue. Pode abranger uma ou várias páginas da Web.
-* **web designer do Journey Optimizer**: uma ferramenta ou interface específica na Journey Optimizer em que os usuários podem criar suas experiências de canal da Web.
-* **Adobe Experience Cloud Visual Editing Helper**: uma extensão do navegador que ajuda a editar visualmente e criar experiências de canal da Web.
-* **Sequência de dados**: uma configuração no serviço Adobe Experience Platform que garante que as experiências de canal da Web possam ser fornecidas.
-* **Política de mesclagem**: uma configuração que garante a ativação e a publicação precisas de campanhas de entrada.
-* **Público**: um segmento específico de usuários ou visitantes do site que atendem a determinados critérios.
-* **Designer da Web**: uma interface ou ferramenta que ajuda a editar visualmente e criar experiências na Web sem mergulhar no código.
-* **Editor de expressão**: uma ferramenta no web designer que permite aos usuários adicionar personalização ao conteúdo da Web, possivelmente com base em atributos de dados ou outros critérios.
-* **Componente da Offer Decision**: um componente no web designer que ajuda a decidir qual oferta é mais adequada para ser exibida a um visitante específico com base na gestão de decisões.
-* **Experimento de conteúdo**: um método para testar diferentes variações de conteúdo e descobrir qual delas tem o melhor desempenho em termos da métrica desejada, como cliques de entrada.
-* **Tratamento**: No contexto de experimentos de conteúdo, um tratamento se refere a uma variação específica de conteúdo que está sendo testado em relação a outra.
+* **Superfície da Web**: refere-se a uma propriedade da Web identificada por uma URL na qual o conteúdo é entregue. Pode abranger uma ou várias páginas da Web.
+* **Journey Optimizer web designer**: uma ferramenta ou interface específica dentro da Journey Optimizer na qual os usuários podem criar suas experiências de canal da Web.
+* **Auxiliar de edição visual do Adobe Experience Cloud**: uma extensão de navegador que ajuda a editar visualmente e criar experiências de canal da Web.
+* **Sequência de dados**: uma configuração no serviço Adobe Experience Platform que garante que as experiências do canal da Web possam ser entregues.
+* **Política de mesclagem**: uma configuração que garante a ativação precisa e a publicação de campanhas de entrada.
+* **Público-alvo**: um segmento específico de usuários ou visitantes do site que atendem a determinados critérios.
+* **Web Designer**: uma interface ou ferramenta que ajuda a editar visualmente e criar experiências na Web sem mergulhar no código.
+* **Editor de expressão**: uma ferramenta no designer da Web que permite aos usuários adicionar personalização ao conteúdo da Web, possivelmente com base em atributos de dados ou outros critérios.
+* **Componente do Offer Decision**: um componente no web designer que ajuda a decidir qual oferta é mais adequada para ser exibida a um visitante específico com base na gestão de decisões.
+* **Experimento de conteúdo**: um método para testar diferentes variações de conteúdo para descobrir qual tem o melhor desempenho em termos da métrica desejada, como cliques de entrada.
+* **Tratamento**: no contexto de experimentos de conteúdo, um tratamento se refere a uma variação específica do conteúdo que está sendo testado em relação a outro.
 * **Simulação**: um mecanismo de visualização para visualizar a experiência de canal da Web antes de ativá-la para públicos-alvo ao vivo.
 
 ## Configurar o fluxo de dados
@@ -89,19 +89,19 @@ Você já adicionou o serviço Adobe Experience Platform ao seu fluxo de dados. 
 
 Para configurar o Adobe Journey Optimizer na sequência de dados:
 
-1. Vá para a [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface.
+1. Vá para a interface [Coleção de Dados](https://experience.adobe.com/#/data-collection){target="blank"}.
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**.
 1. Selecione a sequência de dados do SDK da Web Luma criada anteriormente.
 
    ![Selecionar sequência de dados](assets/web-channel-select-datastream.png)
 
-1. Selecionar **[!UICONTROL Editar]** no serviço Adobe Experience Platform.
+1. Selecione **[!UICONTROL Editar]** no serviço Adobe Experience Platform.
 
    ![Editar sequência de dados](assets/web-channel-edit-datastream.png)
 
-1. Verifique a **[!UICONTROL Adobe Journey Optimizer]** caixa.
+1. Marque a caixa **[!UICONTROL Adobe Journey Optimizer]**.
 
-   ![Caixa Verificar AJO](assets/web-channel-check-ajo-box.png)
+   ![Marcar caixa AJO](assets/web-channel-check-ajo-box.png)
 
 1. Selecione **[!UICONTROL Salvar]**.
 
@@ -109,13 +109,13 @@ Isso garante que os eventos de entrada do Journey Optimizer sejam manipulados co
 
 ## Configurar a política de mesclagem
 
-Verifique se uma política de mesclagem está definida com o **[!UICONTROL Política de mesclagem ativa na borda]** opção ativada. Essa opção de política de mesclagem é empregada pelos canais de entrada do Journey Optimizer para garantir a ativação e a publicação precisas de campanhas de entrada na borda.
+Verifique se uma política de mesclagem está definida com a opção **[!UICONTROL Política de mesclagem Ative-On-Edge]** habilitada. Essa opção de política de mesclagem é empregada pelos canais de entrada do Journey Optimizer para garantir a ativação e a publicação precisas de campanhas de entrada na borda.
 
 Para configurar a opção na política de mesclagem:
 
-1. Vá para a **[!UICONTROL Cliente]** > **[!UICONTROL Perfis]** página na interface do Experience Platform ou Journey Optimizer.
-1. Selecione o **[!UICONTROL Políticas de mesclagem]** guia.
-1. Selecione sua política (geralmente é melhor usar a variável [!UICONTROL Timebased Padrão] política) e alterne a variável **[!UICONTROL Política de mesclagem ativa na borda]** opção no campo **[!UICONTROL Configurar]** etapa.
+1. Vá para a página **[!UICONTROL Cliente]** > **[!UICONTROL Perfis]** na interface do Experience Platform ou do Journey Optimizer.
+1. Selecione a guia **[!UICONTROL Políticas de mesclagem]**.
+1. Selecione sua política (geralmente é melhor usar a política [!UICONTROL Timebased] Padrão) e alterne a opção **[!UICONTROL Política de Mesclagem Ative-On-Edge]** na etapa **[!UICONTROL Configurar]**.
 
    ![Alternar política de mesclagem](assets/web-channel-active-on-edge-merge-policy.png)
 
@@ -123,7 +123,7 @@ Para configurar a opção na política de mesclagem:
 
 Para usar experimentos de conteúdo em campanhas de canal da Web, você deve garantir que o conjunto de dados da Web usado também seja incluído na configuração dos relatórios. O sistema de relatórios do Journey Optimizer usa o conjunto de dados somente leitura para preencher relatórios de experimentação de conteúdo prontos para uso.
 
-[A adição de conjuntos de dados para os relatórios de experimento de conteúdo é detalhada nesta seção](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets).
+[A adição de conjuntos de dados para os relatórios de experimento de conteúdo está detalhada nesta seção](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets).
 
 ## Visão geral do caso de uso - Recompensas de fidelidade
 
@@ -139,51 +139,51 @@ Agora que você assimilou nossos dados de fidelidade de amostra e criou nosso se
 
 Para criar a campanha de amostra:
 
-1. Abra o [Journey Optimizer](https://experience.adobe.com/journey-optimizer/home){target="_blank"} interface
+1. Abrir a interface [Journey Optimizer](https://experience.adobe.com/journey-optimizer/home){target="_blank"}
 
    >[!NOTE]
    >
    > Esquema, conjuntos de dados e públicos também podem ser criados na interface do Journey Optimizer, pois são construções de Experience Platform comuns.
 
-1. Navegue até **[!UICONTROL Gerenciamento de jornadas]** > **[!UICONTROL Campanhas]** na navegação à esquerda
+1. Navegue até **[!UICONTROL Gerenciamento de Jornadas]** > **[!UICONTROL Campanhas]** na navegação à esquerda
 1. Clique em **[!UICONTROL Criar campanha]** no canto superior direito.
-1. No **[!UICONTROL Propriedades]** especifique como deseja executar a campanha. Para o caso de uso do Loyalty Rewards, escolha **Agendado**.
+1. Na seção **[!UICONTROL Properties]**, especifique como deseja executar a campanha. Para o caso de uso do Loyalty Rewards, escolha **Agendado**.
 
-   ![Campanha programada](assets/web-channel-campaign-properties-scheduled.png)
+   ![Campanha agendada](assets/web-channel-campaign-properties-scheduled.png)
 
-1. No **[!UICONTROL Ações]** escolha a opção **[!UICONTROL Canal da Web]**. Como a variável  **[!UICONTROL Superfície da Web]**, selecione **[!UICONTROL URL da página]**.
+1. Na seção **[!UICONTROL Ações]**, escolha o **[!UICONTROL canal da Web]**. Como a **[!UICONTROL superfície da Web]**, selecione a **[!UICONTROL URL da Página]**.
 
    >[!NOTE]
    >
    >Uma superfície da Web se refere a uma propriedade da Web identificada por um URL em que o conteúdo é entregue. Ele pode corresponder a um único URL de página ou abranger várias páginas, permitindo aplicar modificações em uma ou várias páginas da Web.
 
-1. Escolha o **[!UICONTROL URL da página]** opção de superfície da web para implantar a experiência em uma página para esta campanha. Insira o URL da página Luma, `https://luma.enablementadobe.com/content/luma/us/en.html`
+1. Escolha a opção de superfície da Web **[!UICONTROL URL da Página]** para implantar a experiência em uma página para esta campanha. Insira a URL da página Luma, `https://luma.enablementadobe.com/content/luma/us/en.html`
 
 1. Depois que a superfície da web for definida, selecione **[!UICONTROL Criar]**.
 
    ![Selecionar superfície da Web](assets/web-channel-web-surface.png)
 
-1. Agora, adicione alguns detalhes adicionais à nova campanha de canal da Web. Primeiro, nomeie a campanha. Chame `Luma Loyalty Rewards – Gold Status`. Opcionalmente, é possível adicionar uma descrição à campanha. Também adicionar **[!UICONTROL Tags]** para melhorar a taxonomia geral da campanha.
+1. Agora, adicione alguns detalhes adicionais à nova campanha de canal da Web. Primeiro, nomeie a campanha. Chame de `Luma Loyalty Rewards – Gold Status`. Opcionalmente, é possível adicionar uma descrição à campanha. Adicione também **[!UICONTROL Tags]** para melhorar a taxonomia geral da campanha.
 
    ![Nomeie a campanha](assets/web-channel-campaign-name.png)
 
-1. Por padrão, a campanha está ativa para todos os visitantes do site. Para os fins deste caso de uso, somente os membros do prêmio gold status devem ver a experiência. Para habilitar isso, clique em **[!UICONTROL Selecionar público]** e escolha o `Luma Loyalty Rewards – Gold Status` público-alvo.
+1. Por padrão, a campanha está ativa para todos os visitantes do site. Para os fins deste caso de uso, somente os membros do prêmio gold status devem ver a experiência. Para habilitar isso, clique em **[!UICONTROL Selecionar público-alvo]** e escolha o público-alvo `Luma Loyalty Rewards – Gold Status`.
 
-1. No **[!UICONTROL Namespace de identidade]** selecione o namespace para identificar indivíduos dentro do segmento escolhido. Como você está implantando a campanha no site Luma, é possível escolher o namespace da ECID. Perfis dentro do `Luma Loyalty Rewards – Gold Status` O público-alvo que não tem o namespace ECID entre suas várias identidades não é direcionado pela campanha do canal da Web.
+1. No campo **[!UICONTROL Namespace de identidade]**, selecione o namespace para identificar indivíduos dentro do segmento escolhido. Como você está implantando a campanha no site Luma, é possível escolher o namespace da ECID. Os perfis no público-alvo `Luma Loyalty Rewards – Gold Status` que não têm o namespace ECID entre suas várias identidades não são direcionados pela campanha do canal da Web.
 
    ![Escolher tipo de identidade](assets/web-channel-indentity-type.png)
 
-1. Programe a campanha para começar na data de hoje usando o **[!UICONTROL Início da campanha]** e terminará em uma semana usando a opção **[!UICONTROL Fim da campanha]** opção.
+1. Agende a campanha para começar na data de hoje usando a opção **[!UICONTROL Início da campanha]** e terminar em uma semana usando a opção **[!UICONTROL Término da campanha]**.
 
    ![Programação de campanha](assets/web-channel-campaign-schedule.png)
 
 >[!NOTE]
 >
->Lembre-se de que, para campanhas de canal da Web, a experiência da Web é mostrada quando o visitante abre a página. Portanto, ao contrário de outros tipos de campanhas no Adobe Journey Optimizer, a **[!UICONTROL Acionadores de ação]** seção não configurável.
+>Lembre-se de que, para campanhas de canal da Web, a experiência da Web é mostrada quando o visitante abre a página. Portanto, ao contrário de outros tipos de campanhas no Adobe Journey Optimizer, a seção **[!UICONTROL Acionadores de ação]** não é configurável.
 
 ### Experimento com conteúdo de recompensas de fidelidade
 
-Se você rolar a tela de volta para cima, na janela **[!UICONTROL Ação]** é possível criar um experimento para testar qual conteúdo funciona melhor para a `Luma Loyalty Rewards – Gold Status` público-alvo. Vamos criar e testar dois tratamentos como um componente da configuração da campanha.
+Se você rolar a tela de volta para cima, na seção **[!UICONTROL Ação]**, poderá criar opcionalmente um experimento para testar qual conteúdo funciona melhor para o público-alvo `Luma Loyalty Rewards – Gold Status`. Vamos criar e testar dois tratamentos como um componente da configuração da campanha.
 
 Para criar o experimento de conteúdo:
 
@@ -191,27 +191,27 @@ Para criar o experimento de conteúdo:
 
    ![Criar experimento](assets/web-channel-create-content-experiment.png)
 
-1. Primeiro escolha um **[!UICONTROL Métrica de sucesso]**. Essa é a métrica para determinar a eficácia do conteúdo. Escolher **[!UICONTROL Cliques de entrada únicos]**, para ver qual tratamento de conteúdo gera mais cliques no CTA de experiência da Web.
+1. Escolha primeiro uma **[!UICONTROL métrica de sucesso]**. Essa é a métrica para determinar a eficácia do conteúdo. Escolha **[!UICONTROL Cliques de entrada únicos]**, para ver qual tratamento de conteúdo gera mais cliques no CTA de experiência online.
 
    ![Escolher métrica de sucesso](assets/web-channel-content-experiment-metric.png)
 
-1. Ao configurar um experimento usando um canal da Web e escolhendo o **[!UICONTROL Cliques de entrada]**, **[!UICONTROL Cliques de entrada únicos]**, **[!UICONTROL Exibições de página]** ou **[!UICONTROL Visualizações únicas de página]** métricas, a variável **[!UICONTROL Ação do clique]** permite rastrear e monitorar com precisão os cliques e as exibições em páginas específicas.
+1. Ao configurar um experimento usando o canal da Web e escolhendo as métricas **[!UICONTROL Cliques de Entrada]**, **[!UICONTROL Cliques de Entrada Exclusivos]**, **[!UICONTROL Exibições de Página]** ou **[!UICONTROL Exibições de Página Exclusivas]**, o menu suspenso **[!UICONTROL Ação de Clique]** permite que você rastreie e monitore precisamente os cliques e exibições em páginas específicas.
 
-1. Como opção, você pode designar um **[!UICONTROL Retenção]** que não recebe nenhum dos dois tratamentos. Deixe essa opção desmarcada por enquanto.
+1. Opcionalmente, você pode designar um **[!UICONTROL Holdout]** que não recebe nenhum dos dois tratamentos. Deixe essa opção desmarcada por enquanto.
 
-1. Além disso, opcionalmente, escolha **[!UICONTROL Distribuir uniformemente]**. Marque esta opção para garantir que as divisões de tratamento sejam sempre divididas uniformemente.
+1. Também é possível optar por **[!UICONTROL Distribuir uniformemente]**. Marque esta opção para garantir que as divisões de tratamento sejam sempre divididas uniformemente.
 
 [Saiba mais sobre experimentos de conteúdo no canal da Web do Adobe Journey Optimizer](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### Editar conteúdo usando o Auxiliar visual
 
-Agora, vamos criar a experiência de canal da Web. Para fazer isso, use o Adobe Experience Cloud **[!UICONTROL Auxiliar visual]**. Esta ferramenta é uma extensão de navegador compatível com o Google Chrome e Microsoft® Edge. Verifique se você baixou a extensão antes de tentar criar suas experiências. Além disso, verifique se a página da Web inclui o SDK da Web.
+Agora, vamos criar a experiência de canal da Web. Para fazer isso, use o **[!UICONTROL Auxiliar visual]** do Adobe Experience Cloud. Esta ferramenta é uma extensão de navegador compatível com o Google Chrome e Microsoft® Edge. Verifique se você baixou a extensão antes de tentar criar suas experiências. Além disso, verifique se a página da Web inclui o SDK da Web.
 
-1. No prazo de **[!UICONTROL Ação]** da campanha, clique em **[!UICONTROL Editar conteúdo]**. Como você inseriu uma URL de página única como superfície, você deve estar pronto para começar a trabalhar no compositor.
+1. Na guia **[!UICONTROL Ação]** da campanha, clique em **[!UICONTROL Editar conteúdo]**. Como você inseriu uma URL de página única como superfície, você deve estar pronto para começar a trabalhar no compositor.
 
    ![Editar conteúdo](assets/web-channel-edit-content.png)
 
-1. Agora, clique em **[!UICONTROL Editar página da Web]** para começar a criar.
+1. Agora, clique em **[!UICONTROL Editar página da Web]** para começar a criação.
 
    ![Editar página da Web](assets/web-channel-edit-web-page.png)
 
@@ -219,32 +219,32 @@ Agora, vamos criar a experiência de canal da Web. Para fazer isso, use o Adobe 
 
    ![Adicionar edições contextuais](assets/web-channel-some-contextual-edit.png)
 
-1. Além disso, adicione personalização ao contêiner usando o **[!UICONTROL Editor de expressão]**.
+1. Adicione também personalização ao contêiner usando o **[!UICONTROL Editor de expressão]**.
 
    ![Adicionar personalização](assets/web-channel-add-basic-personalization.png)
 
-1. Verifique se a experiência está sendo rastreada adequadamente para cliques. Escolher **[!UICONTROL Clicar no elemento de rastreamento]** no menu contextual.
+1. Verifique se a experiência está sendo rastreada adequadamente para cliques. Escolha **[!UICONTROL Clicar em rastrear elemento]** no menu contextual.
 
-   ![Rastrear cliques](assets/web-channel-click-tracking.png)
+   ![Clique na faixa](assets/web-channel-click-tracking.png)
 
-1. Use o **[!UICONTROL Componente da Offer Decision]** para inserir ofertas na página da Web. Este componente usa **[!UICONTROL Gerenciamento de decisão]** para escolher a melhor oferta para entregar aos visitantes da Luma.
+1. Use o **[!UICONTROL Componente da Offer Decision]** para inserir ofertas na página da Web. Este componente usa o **[!UICONTROL Gerenciamento de decisão]** para escolher a melhor oferta a ser entregue aos visitantes da Luma.
 
 
 ### Alterações no design do HTML
 
 Há alguns métodos disponíveis caso você queira fazer alterações mais avançadas ou personalizadas no site como um componente da campanha de Recompensas de Fidelidade.
 
-Use o **[!UICONTROL Componentes]** painel para adicionar HTML ou outro conteúdo diretamente ao site Luma.
+Use o painel **[!UICONTROL Componentes]** para adicionar HTML ou outro conteúdo diretamente ao site Luma.
 
 ![Explorar o painel de componentes](assets/web-channel-components-pane.png)
 
-Adicione um novo componente HTML na parte superior da página. Edite o HTML dentro do componente na interface de design ou **[!UICONTROL Contextual]** painel.
+Adicione um novo componente HTML na parte superior da página. Edite o HTML dentro do componente na interface de design ou no painel **[!UICONTROL Contextual]**.
 
 ![Adicionar HTML personalizado](assets/web-channel-add-html-component.png)
 
-Como alternativa, adicione edições de HTML do **[!UICONTROL Modificações]** painel. Esse painel permite selecionar um componente na página e editá-lo na interface do designer.
+Como alternativa, adicione edições de HTML do painel **[!UICONTROL Modificações]**. Esse painel permite selecionar um componente na página e editá-lo na interface do designer.
 
-No editor, adicione o HTML para a variável `Luma Loyalty Rewards – Gold Status` público-alvo. Selecionar **[!UICONTROL Validar]**.
+No editor, adicione o HTML para o público-alvo `Luma Loyalty Rewards – Gold Status`. Selecione **[!UICONTROL Validar]**.
 
 ![Validar HTML](assets/web-channel-add-custom-html-validate.png)
 
@@ -252,15 +252,15 @@ Agora, revise o novo componente de HTML personalizado para ajuste e comportament
 
 ![Revisar HTML personalizado](assets/web-channel-review-custom-html.png)
 
-Editar um componente específico usando o **[!UICONTROL Tipo de seletor de CSS]** modificação.
+Edite um componente específico usando a modificação **[!UICONTROL tipo de seletor de CSS]**.
 
 ![Modificar CSS](assets/web-channel-css-selector.png)
 
-Adicionar código personalizado usando o **Página `<head>` type** modificação.
+Adicione o código personalizado usando a modificação **Page `<head>` type**.
 
 ![Modificar cabeçalho](assets/web-channel-page-head-modification.png)
 
-As possibilidades são infinitas usando o **[!UICONTROL Auxiliar visual]**.
+As possibilidades são infinitas usando o **[!UICONTROL Auxiliar Visual]**.
 
 ### Simular conteúdo de prêmios de fidelidade
 
@@ -268,11 +268,11 @@ Visualize a página da Web modificada antes de ativar a campanha. Lembre-se de q
 
 Para simular a experiência:
 
-1. Selecionar **[!UICONTROL Simular conteúdo]** dentro da campanha.
+1. Selecione **[!UICONTROL Simular conteúdo]** dentro da campanha.
 
    ![Simular conteúdo](assets/web-channel-simulate-content.png)
 
-1. Escolha um perfil de teste para receber a simulação. Lembre-se de que o perfil de teste deve estar no estado `Luma Loyalty Rewards – Gold Status` público-alvo para receber o tratamento adequado.
+1. Escolha um perfil de teste para receber a simulação. Lembre-se de que o perfil de teste deve estar no público-alvo `Luma Loyalty Rewards – Gold Status` para receber o tratamento adequado.
 
 1. A visualização é exibida para o perfil de teste.
 
@@ -280,9 +280,9 @@ Para simular a experiência:
 
 Por fim, ative a campanha do canal Web.
 
-1. Selecionar **Revisar para ativar**.
+1. Selecione **Revisar para ativar**.
 
-1. Você será solicitado a confirmar os detalhes da campanha uma última vez. Selecionar **[!UICONTROL Ativar]**. Pode levar até 15 minutos para que a campanha seja ativada no site.
+1. Você será solicitado a confirmar os detalhes da campanha uma última vez. Selecione **[!UICONTROL Ativar]**. Pode levar até 15 minutos para que a campanha seja ativada no site.
 
 ### Garantia de qualidade das recompensas de fidelidade
 
@@ -292,13 +292,13 @@ Você pode usar alguns logons para simular usuários com o &quot;status gold&quo
 1. `leftybeagen@emailsim.io`/`test`
 1. `jenimartinho@emailsim.io`/`test`
 
-Como prática recomendada, monitore o **[!UICONTROL Web]** dos relatórios campaign live e global para os KPIs específicos da campanha. Para esta campanha, monitore as impressões da experiência e a taxa de cliques.
+Como prática recomendada, monitore a guia **[!UICONTROL Web]** dos relatórios global e em tempo real da campanha para os KPIs específicos da campanha. Para esta campanha, monitore as impressões da experiência e a taxa de cliques.
 
 ![Exibir relatório da Web](assets/web-channel-web-report.png)
 
 ### Validação de canal da Web usando Adobe Experience Platform Debugger
 
-A extensão Adobe Experience Platform Debugger, disponível para Chrome e Firefox, analisa suas páginas da Web para identificar problemas na implementação das soluções da Adobe Experience Cloud.
+A extensão Adobe Experience Platform Debugger, disponível para Chrome e Firefox, analisa suas páginas da Web para identificar problemas na implementação de soluções da Adobe Experience Cloud.
 
 Você pode usar o depurador no site Luma para validar a experiência do canal da Web em produção. Esta é uma prática recomendada depois que o caso de uso de Recompensas de fidelidade estiver em execução, para garantir que tudo seja configurado corretamente.
 
@@ -310,11 +310,11 @@ Para iniciar a validação usando o depurador:
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Na página da Web, abra **[!UICONTROL Adobe Experience Platform Debugger]**.
+1. Na página da Web, abra o **[!UICONTROL Adobe Experience Platform Debugger]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Navegue até **Resumo**. Verifique se **[!UICONTROL ID da sequência de dados]** corresponde ao **[!UICONTROL sequência de dados]** in **[!UICONTROL Coleta de dados Adobe]** para o qual você ativou o Adobe Journey Optimizer.
+1. Navegue até **Resumo**. Verifique se a **[!UICONTROL ID da sequência de dados]** corresponde à **[!UICONTROL sequência de dados]** da **[!UICONTROL Coleção de dados do Adobe]** para a qual você habilitou o Adobe Journey Optimizer.
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -322,15 +322,15 @@ Para iniciar a validação usando o depurador:
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Em **[!UICONTROL Soluções]** navegue até o **[!UICONTROL Experience Platform Web SDK]**.
+1. Em **[!UICONTROL Soluções]**, navegue até o **[!UICONTROL Experience Platform Web SDK]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. No prazo de **Configuração** guia, alternar em **[!UICONTROL Habilitar Depuração]**. Isso permite o registro da sessão em um **[!UICONTROL Adobe Experience Platform Assurance]** sessão.
+1. Na guia **Configuração**, ative **[!UICONTROL Habilitar Depuração]**. Isso habilita o registro para a sessão em uma sessão do **[!UICONTROL Adobe Experience Platform Assurance]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. Faça logon no site com várias contas de fidelidade Luma e use o depurador para validar as solicitações enviadas para o **[!UICONTROL Rede de borda Adobe Experience Platform]**. Todas essas solicitações devem ser capturadas no **[!UICONTROL Assurance]** para rastreamento de log.
+1. Faça logon no site com várias contas de fidelidade Luma e use o depurador para validar as solicitações enviadas para a **[!UICONTROL rede Edge do Adobe Experience Platform]**. Todas essas solicitações devem ser capturadas em **[!UICONTROL Assurance]** para rastreamento de log.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -339,4 +339,4 @@ Para iniciar a validação usando o depurador:
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
