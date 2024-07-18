@@ -1,6 +1,6 @@
 ---
 title: Criar e ativar públicos-alvo da conta para [!DNL B2B] e [!DNL B2P]
-description: Saiba mais sobre os recursos do Account-Based Marketing no [!DNL B2B] e [!DNL B2P] edições de [!DNL Real-Time Customer Data Platform], incluindo a criação e a ativação de públicos-alvo de conta.
+description: Saiba mais sobre os recursos do Account-Based Marketing nas [!DNL B2B] e [!DNL B2P] edições de [!DNL Real-Time Customer Data Platform], incluindo a criação e a ativação de públicos-alvo de conta.
 solution: Real-Time Customer Data Platform
 feature: Segments
 role: User
@@ -12,13 +12,13 @@ last-substantial-update: 2024-02-29T00:00:00Z
 source-git-commit: 4f363a3932ca3b2666c220c1e5c79d2d94242b96
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 12%
+ht-degree: 0%
 
 ---
 
-# Criar e ativar públicos-alvo da conta para [!DNL B2B] e [!DNL B2P]
+# Criar e ativar públicos da conta para [!DNL B2B] e [!DNL B2P]
 
-Saiba mais sobre os recursos do Account-Based Marketing no [!DNL B2B] e [!DNL B2P] edições de [!DNL Real-Time Customer Data Platform], incluindo a criação e a ativação de públicos-alvo de conta. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
+Saiba mais sobre os recursos do Account-Based Marketing nas edições [!DNL B2B] e [!DNL B2P] do [!DNL Real-Time Customer Data Platform], incluindo a criação e a ativação de públicos-alvo de conta. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on)
 

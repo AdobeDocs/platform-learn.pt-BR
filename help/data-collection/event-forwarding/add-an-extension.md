@@ -8,21 +8,21 @@ thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 18%
+source-wordcount: '91'
+ht-degree: 19%
 
 ---
 
 # Adicionar uma extensão de encaminhamento de eventos
 
-Saiba como adicionar uma extensão de encaminhamento de eventos na Coleção de dados. Para obter mais informações, visite o [documentação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Saiba como adicionar uma extensão de encaminhamento de eventos na Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
-> * O Platform launch (lado do cliente) agora é **[!DNL tags]**
-> * O Platform launch Server Side agora é **[!DNL event forwarding]**
-> * As configurações de borda agora são **[!DNL datastreams]**
+> * O Platform Launch (lado do cliente) agora é **[!DNL tags]**
+> * O Platform Launch Server Side agora é **[!DNL event forwarding]**
+> * As configurações do Edge agora são **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on)

@@ -11,7 +11,7 @@ feature: Events, Journeys, Profiles, Identities
 exl-id: c71f6789-25cd-4fac-b026-e981744dbe95
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '369'
 ht-degree: 2%
 
 ---
@@ -22,17 +22,17 @@ ht-degree: 2%
 
 A jornada do público ao conhecimento é um dos tópicos mais importantes para as atuais, assim a jornada do cliente, da cadeia à cadeia.
 
-A Adobe Experience Platform um papel importante na jornada. A plataforma é o gabinete da comunicação, o **sistema de registro de experiência**.
+A Adobe Experience Platform um papel importante na jornada. A plataforma é o documento da comunicação, o **sistema de experiência de registro**.
 
 Plataforma é um ambiente em que a palavra cliente engloba mais do que conhecidos. Um visitante desconhecido no local também é um cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um visitante compartilhado também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante eventualmente se torna um cliente conhecido, uma marca também pode mudar o que aconteceu antes. Isso ajuda a partir de uma perspectiva de gestão da experiência.
 
 ## Fluxo da jornada do cliente
 
-Acessado [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Permitir todos**. Com base no seu comportamento de navegação no fluxo de dados anterior, verá a personalização na página inicial do site.
+Acessar [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Permitir tudo**. Com base no seu comportamento de navegação no fluxo de dados anterior, verá a personalização na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-Clique no canto do anúncio da Adobe superior da tela para abrir o Visualizador de perfil. painel do Visualizador de perfil e no Perfil do cliente em tempo real com o **ID do Experience Cloud** como o identificador para este cliente que ainda é desconhecido.
+Clique no canto do anúncio da Adobe superior da tela para abrir o Visualizador de perfil. Mostrar o painel do visualizador de perfil e no Perfil do cliente em tempo real com o **Experience Cloud ID** como o identificador para este cliente que ainda é desconhecido.
 
 ![Demonstração](./images/pv1.png)
 
@@ -40,7 +40,7 @@ Você também pode ver todos os eventos de experiências com base no comportamen
 
 ![Demonstração](./images/pv3.png)
 
-Clique no ➡ **Perfil** nenhum canto superior direito da tela.
+Clique no ➡ **Perfil** sem canto superior direito da tela.
 
 ![Demonstração](./images/pv4.png)
 

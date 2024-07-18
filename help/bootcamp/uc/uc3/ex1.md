@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: c33c973b-db8a-49ce-bd6c-a6c4fbe579a0
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 0%
 
 ## Instalar o aplicativo móvel
 
-Antes de instalar o aplicativo, é necessário ativar **Rastreamento** no dispositivo iOS. Para fazer isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e garantir que a opção **Permitir que aplicativos solicitem o rastreamento**.
+Antes de instalar o aplicativo, é necessário habilitar o **Rastreamento** no dispositivo iOS. Para fazer isso, vá para **Configurações** > **Privacidade e Segurança** > **Rastreamento** e verifique se a opção **Permitir que os Aplicativos Solicitem o Rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse o Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
+Vá para o Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abertura**.
+Depois que o aplicativo for instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -42,7 +42,7 @@ Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir ao usar o aplicativo**.
+Clique Em **Permitir Ao Usar O Aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -64,7 +64,7 @@ Depois de criar sua conta nos exercícios anteriores, você viu isso no site. Ag
 
 ![Demonstração](./images/pv1.png)
 
-Insira o endereço de email que você usou no site aqui e clique em **Logon**.
+Digite aqui o email que você usou no site e clique em **Logon**.
 
 ![DSN](./images/app14.png)
 
@@ -76,11 +76,11 @@ Volte para a página inicial no aplicativo e você verá recursos adicionais apa
 
 ![DSN](./images/app17.png)
 
-Primeiro, vá para **Produtos**. Clique em qualquer produto, neste exemplo **Café para ir**.
+Primeiro, vá para **Produtos**. Clique em qualquer produto, neste exemplo **Café em andamento**.
 
 ![DSN](./images/app19.png)
 
-Você verá o **Café para ir** página do produto no aplicativo.
+Você verá a página de produto **Café da manhã** no aplicativo.
 
 ![DSN](./images/app20.png)
 
@@ -92,11 +92,11 @@ Você verá isto:
 
 ![DSN](./images/screen1.png)
 
-Em seguida, volte para a página inicial. Clique em **sinal** ícone.
+Em seguida, volte para a página inicial. Clique no ícone **beacon**.
 
 ![DSN](./images/app23.png)
 
-Você verá isso. Primeiro, selecione **Beacon de tela de bootcamp** e, em seguida, clique no link **entrada** botão. Isso permitirá simular uma entrada de sinal.
+Você verá isso. Primeiro, selecione **Beacon de Tela de Inicialização** e clique no botão **entrada**. Isso permitirá simular uma entrada de sinal.
 
 ![DSN](./images/app21.png)
 
@@ -104,15 +104,15 @@ Agora, dê uma olhada na tela da loja. O último produto exibido aparecerá lá 
 
 ![DSN](./images/screen2.png)
 
-Em seguida, volte para **Produtos**. Clique em qualquer produto, neste exemplo **Bandeja de praia**.
+Volte para **Produtos**. Clique em qualquer produto, neste exemplo **Beach blanket Tan**.
 
 ![DSN](./images/app22.png)
 
-Em seguida, volte para a página inicial. Clique em **sinal** ícone.
+Em seguida, volte para a página inicial. Clique no ícone **beacon**.
 
 ![DSN](./images/app23.png)
 
-Você verá isso. Primeiro, selecione **Beacon de tela de bootcamp** e, em seguida, clique no link **entrada** botão novamente. Isso permitirá simular uma entrada de sinal.
+Você verá isso. Primeiro, selecione **Beacon de Tela de Inicialização** e clique novamente no botão **entrada**. Isso permitirá simular uma entrada de sinal.
 
 ![DSN](./images/app21.png)
 
@@ -126,7 +126,7 @@ Agora também vamos dar uma olhada no seu Visualizador de perfil no site. Você 
 
 Nos próximos exercícios, você configurará e testará sua própria jornada de entrada de beacon.
 
-Próxima etapa: [3.2 Criar o evento](./ex2.md)
+Próxima Etapa: [3.2 Criar seu evento](./ex2.md)
 
 [Voltar para Fluxo de Usuário 3](./uc3.md)
 

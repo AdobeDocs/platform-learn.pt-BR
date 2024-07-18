@@ -24,55 +24,55 @@ Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depo
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar as opções [!UICONTROL sandbox], você verá a alteração de tela e agora estará em seu dedicado [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./images/sb1.png)
 
-No menu no lado esquerdo, acesse **Públicos-alvo**. Nesta página, você verá Painéis com informações essenciais sobre **Público** desempenho.
+No menu no lado esquerdo, vá para **Públicos-alvo**. Nesta página, você verá Painéis com informações essenciais sobre o desempenho do **Público**.
 
 ![Segmentação](./images/menuseg.png)
 
-Clique em **Procurar** para ter uma visão geral de todos os públicos-alvo existentes. Clique no link **+ Criar público-alvo** botão para começar a criar um novo público-alvo.
+Clique em **Procurar** para ter uma visão geral de todos os públicos existentes. Clique no botão **+ Criar público-alvo** para começar a criar um novo público-alvo.
 
 
 ![Segmentação](./images/segmentationui.png)
 
-Um pop-up será exibido perguntando se você deseja **&#39;Compor público-alvo&#39;** ou **&#39;Criar regra&#39;**. Escolher **&#39;Criar regra&#39;** para continuar e clique em **criar**.
+Será exibido um Pop-Ip perguntando se você deseja **&#39;Compor público-alvo&#39;** ou **&#39;Criar regra&#39;**. Escolha a **&#39;Regra de compilação&#39;** para continuar e clique em **criar**.
 
 ![Segmentação][def]
 
-Quando estiver no construtor de público-alvo, você notará imediatamente a **Atributos** e a opção de menu **Perfil individual XDM** referência.
+Quando estiver no construtor de público-alvo, você notará imediatamente a opção de menu **Atributos** e a referência ao **Perfil individual XDM**.
 
 
 Como o XDM é a linguagem que impulsiona os negócios da experiência, o XDM também é a base para o construtor de público-alvo. Todos os dados assimilados na Platform devem ser mapeados em relação ao XDM e, como tal, todos os dados se tornam parte do mesmo modelo de dados, independentemente de onde esses dados vêm. Isso oferece uma grande vantagem ao criar públicos-alvo, como nessa interface única do construtor de públicos-alvo, é possível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os públicos-alvo criados no Audience Builder podem ser enviados para soluções como Adobe Target, Adobe Campaign ou qualquer outro canal de ativação.
 
-Agora é necessário criar um público-alvo de todos os clientes que visualizaram o produto **Real-Time CDP**.
+Agora é necessário criar uma audiência de todos os clientes que visualizaram o produto **Real-Time CDP**.
 
-Para criar esse público-alvo, é necessário adicionar um Evento de experiência. Você pode encontrar todos os Eventos de experiência clicando no link **Eventos** ícone no **Campos** barra de menus.
+Para criar esse público-alvo, é necessário adicionar um Evento de experiência. Você pode encontrar todos os Eventos de Experiência clicando no ícone **Eventos** na barra de menus **Campos**.
 
 ![Segmentação](./images/findee.png)
 
-Em seguida, você verá o nível superior, **XDM ExperienceEvents** nó. Clique em **XDM ExperienceEvent**.
+Em seguida, você verá o nó **XDM ExperienceEvents** de nível superior. Clique em **XDM ExperienceEvent**.
 
 ![Segmentação](./images/see.png)
 
-Ir para **Itens da lista de produtos**.
+Vá para **Itens da Lista de Produtos**.
 
 ![Segmentação](./images/plitems.png)
 
-Selecionar **Nome** e arraste e solte o **Nome** do menu esquerdo para a tela do audience builder na janela **Eventos** seção. Você verá isto:
+Selecione **Nome** e arraste e solte o objeto **Nome** do menu esquerdo na tela do construtor de públicos-alvo na seção **Eventos**. Você verá isto:
 
 ![Segmentação](./images/eewebpdtlname.png)
 
-O parâmetro de comparação deve ser **igual a** e, no campo de entrada, digite **Real-time CDP**.
+O parâmetro de comparação deve ser **igual a** e, no campo de entrada, insira **CDP em tempo real**.
 
 ![Segmentação](./images/pv.png)
 
-Toda vez que você adiciona um elemento ao construtor de público-alvo, pode clicar no **Atualizar Estimativa** para obter uma nova estimativa da população no seu público-alvo.
+Toda vez que você adiciona um elemento ao construtor de público-alvo, você pode clicar no botão **Atualizar estimativa** para obter uma nova estimativa da população do público-alvo.
 
 ![Segmentação](./images/refreshest.png)
 
-Como **Método de avaliação**, selecione **Edge**.
+Como **Método de Avaliação**, selecione **Edge**.
 
 ![Segmentação](./images/evedge.png)
 
@@ -82,7 +82,7 @@ Como convenção de nomenclatura, use:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Em seguida, clique no link **Salvar e fechar** botão para salvar o público-alvo.
+Em seguida, clique no botão **Salvar e fechar** para salvar seu público-alvo.
 
 ![Segmentação](./images/segmentname.png)
 
@@ -92,7 +92,7 @@ Você será redirecionado para a página de visão geral do público-alvo agora,
 
 Agora você pode continuar com o próximo exercício e usar seu público com o Adobe Target.
 
-Próxima etapa: [1.4 Ação: enviar o público-alvo para a Adobe Target](./ex4.md)
+Próxima etapa: [1.4 Executar Ação: enviar seu público-alvo para a Adobe Target](./ex4.md)
 
 [Voltar para Fluxo de Usuário 1](./uc1.md)
 

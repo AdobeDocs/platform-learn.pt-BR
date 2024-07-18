@@ -11,7 +11,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 27%
+ht-degree: 17%
 
 ---
 
@@ -30,5 +30,5 @@ ht-degree: 27%
    + [Adicionar o Adobe Analytics](analytics.md)
    + [Adicionar o Adobe Audience Manager](audience-manager.md)
    + [Integrações da Experience Cloud](integrations.md)
-+ Publicar sua propriedade{#publish}
-   + [Publicar sua propriedade](publish.md)
++ Publish sua propriedade{#publish}
+   + [Publish sua propriedade](publish.md)

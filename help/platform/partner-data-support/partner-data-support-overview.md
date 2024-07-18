@@ -1,6 +1,6 @@
 ---
 title: Visão geral do suporte a dados de parceiros no Real-Time CDP
-description: Saiba como [!DNL Real-Time Customer Data Platform] O é compatível com marketing de funil completo usando dados de parceiros para enriquecimento de dados primários e casos de uso de prospecção, pois os cookies de terceiros continuam sendo descontinuados. 
+description: Saiba como o  [!DNL Real-Time Customer Data Platform] oferece suporte ao marketing de funil completo usando dados de parceiros para enriquecimento de dados primários e casos de uso de prospecção, pois os cookies de terceiros continuam sendo descontinuados. 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# Visão geral do suporte a dados de parceiros no [!DNL Real-Time CDP]
+# Visão geral do suporte a dados de parceiros em [!DNL Real-Time CDP]
 
-Saiba como [!DNL Real-Time Customer Data Platform] O é compatível com marketing de funil completo usando dados de parceiros para enriquecimento de dados primários e casos de uso de prospecção, pois os cookies de terceiros continuam sendo descontinuados. 
+Saiba como o [!DNL Real-Time Customer Data Platform] oferece suporte ao marketing de funil completo usando dados de parceiros para enriquecimento de dados primários e casos de uso de prospecção, já que os cookies de terceiros continuam sendo descontinuados. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

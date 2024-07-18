@@ -4,7 +4,7 @@ description: Saiba mais sobre as principais diferenças entre a at.js e o SDK da
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '796'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Independentemente da simplicidade ou complexidade de sua implementação, é imp
 O processo de migração envolve as seguintes etapas principais:
 
 1. Avalie sua implementação atual e determine uma abordagem de migração
-1. Configurar os componentes iniciais para se conectar à Rede de borda da Adobe Experience Platform
+1. Configure os componentes iniciais para conectar ao Edge Network Adobe Experience Platform
 1. Atualize a implementação básica para substituir a at.js pelo SDK da Web da plataforma
 1. Aprimore a implementação do SDK da Web da plataforma para seus casos de uso específicos. Isso pode envolver a transmissão de parâmetros adicionais, a contabilização de alterações de exibição de aplicativo de página única (SPA), o uso de tokens de resposta e muito mais.
 1. Atualizar objetos na interface do Target, como scripts de perfil, atividades e definições de público-alvo
@@ -49,17 +49,17 @@ O SDK da Web da Platform não é uma evolução da biblioteca at.js do Target. �
 | Desempenho | A at.js é uma das várias bibliotecas que devem ser carregadas para a integração adequada entre os aplicativos. Isso resulta em tempo de carregamento inferior ao ideal. | O SDK da Web da Platform é uma única biblioteca leve que elimina a necessidade de várias bibliotecas específicas do aplicativo, resultando em um melhor desempenho do carregamento da página. |
 | Solicitações | Chamadas separadas para cada aplicativo Adobe. As chamadas do Target são em grande parte independentes das outras chamadas de rede. | Uma única chamada para todos os aplicativos Adobe. As alterações nos dados transmitidos nessas chamadas podem afetar vários aplicativos downstream. |
 | Pedido de carregamento | A integração adequada com outros aplicativos Adobe requer uma ordem de carregamento específica de bibliotecas e chamadas de rede. | A integração adequada não depende da compilação de dados de chamadas de rede diferentes específicas do aplicativo, portanto, a ordem de carregamento não é uma preocupação. |
-| Rede de borda | Usa a Rede de borda da Adobe Experience Cloud (tt.omtrdc.net), opcionalmente com um CNAME específico do Target. | Usa a Rede de borda da Adobe Experience Platform (edge.adobedc.net), opcionalmente com um único CNAME. |
+| Edge Network | Usa o Edge Network Adobe Experience Cloud (tt.omtrdc.net), opcionalmente com um CNAME específico do Target. | Usa o Edge Network Adobe Experience Platform (edge.adobedc.net), opcionalmente com um único CNAME. |
 | Terminologia básica | Nomeação do at.js: <br> - `mbox` <br> - `pageLoad` evento (mbox global) <br> - `offer` | Equivalente ao SDK da Web da plataforma: <br> - `decisionScope` <br> - `__view__` decisionScope <br> - `proposition` |
 
-### Vídeo da visão geral
+### Visão geral do vídeo
 
-O vídeo a seguir fornece uma visão geral do Adobe Experience Platform Web SDK e da Adobe Experience Platform Edge Network.
+O vídeo a seguir fornece uma visão geral do SDK da Web da Adobe Experience Platform e do Edge Network Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on)
 
-Agora que você entende as diferenças de alto nível entre a at.js e o SDK da Web da plataforma, é possível [planejar a migração](plan-migration.md).
+Agora que você entende as diferenças de alto nível entre a at.js e o SDK da Web da Platform, é possível [planejar a migração](plan-migration.md).
 
 >[!NOTE]
 >
->Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que informações críticas estão faltando neste guia, entre em contato conosco [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

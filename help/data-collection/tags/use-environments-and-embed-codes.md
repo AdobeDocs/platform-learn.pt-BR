@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # Usar ambientes de tag e códigos incorporados
 
-Saiba como usar ambientes de desenvolvimento, preparo e produção e códigos incorporados para desenvolver e validar sua propriedade de tag. Para obter mais informações, consulte [ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html) documentação.
+Saiba como usar ambientes de desenvolvimento, preparo e produção e códigos incorporados para desenvolver e validar sua propriedade de tag. Para obter mais informações, consulte a documentação de [ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

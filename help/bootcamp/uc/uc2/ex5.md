@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -19,15 +19,15 @@ ht-degree: 1%
 
 ## Instalar o aplicativo móvel
 
-Antes de instalar o aplicativo, é necessário ativar **Rastreamento** no dispositivo iOS. Para fazer isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e garantir que a opção **Permitir que aplicativos solicitem o rastreamento**.
+Antes de instalar o aplicativo, é necessário habilitar o **Rastreamento** no dispositivo iOS. Para fazer isso, vá para **Configurações** > **Privacidade e Segurança** > **Rastreamento** e verifique se a opção **Permitir que os Aplicativos Solicitem o Rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse o Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
+Vá para o Apple App Store e pesquise por `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Abertura**.
+Depois que o aplicativo for instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -43,7 +43,7 @@ Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir ao usar o aplicativo**.
+Clique Em **Permitir Ao Usar O Aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -65,7 +65,7 @@ Depois de criar sua conta nos exercícios anteriores, você viu isso no site. Ag
 
 ![Demonstração](./../uc3/images/pv1.png)
 
-Insira o endereço de email que você usou no site aqui e clique em **Logon**.
+Digite aqui o email que você usou no site e clique em **Logon**.
 
 ![DSN](./../uc3/images/app14.png)
 
@@ -77,17 +77,17 @@ Volte para a página inicial no aplicativo e você verá recursos adicionais apa
 
 ![DSN](./../uc3/images/app17.png)
 
-Ir para **Produtos**. Clique em qualquer produto, neste exemplo **Café para ir**.
+Ir para **Produtos**. Clique em qualquer produto, neste exemplo **Café em andamento**.
 
 ![DSN](./images/app19.png)
 
-Você verá o **Café para ir** página do produto no aplicativo. Clique em **Comprar**.
+Você verá a página de produto **Café da manhã** no aplicativo. Clique em **Comprar**.
 
 ![DSN](./images/app20.png)
 
 Você já terminou este exercício e está pronto para os próximos exercícios.
 
-Próxima etapa: [2.6 Personalização na central de atendimento](./ex6.md)
+Próxima etapa: [2.6 Personalization na central de atendimento](./ex6.md)
 
 [Voltar para Fluxo de Usuário 2](./uc2.md)
 

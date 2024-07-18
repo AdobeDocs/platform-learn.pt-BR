@@ -12,14 +12,14 @@ thumbnail: 338248.jpg
 exl-id: 7e7e2647-0eb8-4f37-8a91-a506c9c2abb9
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '64'
 ht-degree: 1%
 
 ---
 
 # Configurar o destino do Marketo
 
-Saiba como configurar o destino do Marketo no Adobe Experience Platform para ativar os segmentos da Platform na instância do Marketo Engage. Para obter mais informações, consulte [Documentação de perfis](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
+Saiba como configurar o destino do Marketo no Adobe Experience Platform para ativar os segmentos da Platform na instância do Marketo Engage. Para obter mais informações, consulte a [documentação sobre perfis](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on)
 

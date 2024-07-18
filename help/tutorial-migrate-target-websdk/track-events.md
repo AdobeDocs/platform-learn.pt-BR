@@ -1,33 +1,33 @@
 ---
-title: Rastrear eventos | Migrar o Target da at.js 2.x para o SDK da Web
-description: Saiba como rastrear eventos de conversão do Adobe Target usando o Experience Platform Web SDK.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: Rastrear eventos | Migração do Target da at.js 2.x para o SDK da Web
+description: Saiba como rastrear eventos de conversão do Adobe Target usando o SDK da Web do Experience Platform.
+exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '635'
 ht-degree: 1%
 
 ---
 
-
 # Rastrear eventos de conversão do Target usando o SDK da Web da plataforma
 
-Os eventos de conversão do Target podem ser rastreados com o SDK da Web da plataforma semelhante à at.js. Os eventos de conversão geralmente se enquadram nas seguintes categorias:
+Os eventos de conversão do Target podem ser rastreados com o SDK da Web da plataforma semelhante à at.js. Os eventos de conversão normalmente se enquadram nas seguintes categorias:
 
-* Eventos rastreados automaticamente que não exigem configuração
-* Eventos de conversão de compra que devem ser ajustados para uma implementação de SDK da Web da plataforma de práticas recomendadas
-* Eventos de conversão que não são de compra que exigem atualizações de código
+* Eventos rastreados automaticamente que não exigem nenhuma configuração
+* Eventos de conversão de compra que devem ser ajustados para uma implementação do SDK da Web da plataforma de práticas recomendadas
+* Eventos de conversão que não são de compra e que exigem atualizações de código
 
-## Comparação de metas do rastreamento
+## Comparação do rastreamento de metas
 
-A tabela a seguir compara como o at.js e o SDK da Web da plataforma rastreiam eventos de conversão
+A tabela a seguir compara como a at.js e o SDK da Web da Platform rastreiam eventos de conversão
 
-| Objetivo da atividade | Target at.js 2.x | SDK da Web da Platform |
+| Objetivo da atividade | at.js 2.x do Target | SDK da Web da Platform |
 |---|---|---|
-| Conversão > Visualização de uma página | Rastreado automaticamente. Com base no valor de `context.address.url` na carga da solicitação da at.js. | Rastreado automaticamente. Com base no valor de `xdm.web.webPageDetails.URL` no `sendEvent` carga |
-| Conversão > Visualização de uma mbox | Rastreado com a solicitação de um local de mbox de exibição ou uma notificação usando `trackEvent()` ou `sendNotifications()` com um `type` valor de `display`. | Rastreado com um SDK da Web da plataforma `sendEvent` com a `eventType` de `decisioning.propositionDisplay`. |
-| Conversão > Clicou em um elemento | Rastreado automaticamente para atividades baseadas em VEC. Aparece como uma chamada de rede da at.js com um `notifications` no conteúdo da solicitação e em um `type` valor de `click`. | Rastreado automaticamente para atividades baseadas em VEC. Aparece como um SDK da Web da plataforma `sendEvent` com a `eventType` de `decisioning.propositionInteract`. |
-| Envolvimento > Visualizações de página | Rastreado automaticamente | Rastreado automaticamente |
-| Envolvimento > Tempo no site | Rastreado automaticamente | Rastreado automaticamente |
+| Conversão > Visualizou uma página | Rastreado automaticamente. Com base no valor de `context.address.url` na carga da solicitação de at.js. | Rastreado automaticamente. Baseado no valor de `xdm.web.webPageDetails.URL` na carga `sendEvent` |
+| Conversão > Visualizou uma mbox | Rastreado com a solicitação de um local de mbox de exibição ou uma notificação usando `trackEvent()` ou `sendNotifications()` com um valor `type` de `display`. | Rastreado com uma chamada `sendEvent` do SDK da Web da plataforma com o `eventType` de `decisioning.propositionDisplay`. |
+| Conversão > Clicou em um elemento | Rastreado automaticamente para atividades baseadas em VEC. Aparece como uma chamada de rede at.js com um objeto `notifications` na carga da solicitação in e um valor `type` de `click`. | Rastreado automaticamente para atividades baseadas em VEC. Aparece como uma chamada `sendEvent` do SDK da Web da Platform com o `eventType` de `decisioning.propositionInteract`. |
+| Engajamento > Exibições de página | Rastreado automaticamente | Rastreado automaticamente |
+| Engajamento > Tempo no site | Rastreado automaticamente | Rastreado automaticamente |
 
 <!--
 | Revenue > RPV, AOV, or Total Sales | Tracked based on the `orderTotal` parameter values for the specified mbox(es) | Tracked based on the `xdm.commerce.order.priceTotal` values. Its best to use the "any mbox" option in the goal setup. |
@@ -37,16 +37,16 @@ A tabela a seguir compara como o at.js e o SDK da Web da plataforma rastreiam ev
 
 ## Eventos rastreados automaticamente
 
-As seguintes metas de conversão não exigem ajustes específicos na implementação:
+As seguintes metas de conversão não exigem ajustes específicos na sua implementação:
 
-* Conversão > Visualização de uma página
+* Conversão > Visualizou uma página
 * Conversão > Clicou em um elemento
-* Envolvimento > Visualizações de página
-* Envolvimento > Tempo no site
+* Engajamento > Exibições de página
+* Engajamento > Tempo no site
 
 >[!NOTE]
 >
->O SDK da Web da plataforma permite maior controle sobre os valores transmitidos na carga da solicitação. Para garantir que os recursos do Target, como URLs de controle de qualidade e metas de conversão &quot;Visualizada uma página&quot; funcionem corretamente, verifique se a variável `xdm.web.webPageDetails.URL` contém o URL de página completo com o caractere correto maiúsculo.
+>O SDK da Web da Platform permite maior controle sobre os valores transmitidos na carga da solicitação. Para garantir que recursos do Target, como URLs de controle de qualidade e metas de conversão &quot;Visualizou uma página&quot;, funcionem corretamente, verifique se o valor `xdm.web.webPageDetails.URL` contém a URL da página inteira com a capitalização de caracteres adequada.
 
 <!--
 ## Purchase conversion events
@@ -65,22 +65,22 @@ The Platform Web SDK is a shared library for all Adobe applications and you may 
 For more information and an example, refer to the tutorial section about [sending purchase parameters to Target](send-parameters.md#purchase-parameters). 
 -->
 
-## Eventos rastreados pelo cliente
+## Eventos rastreados de forma personalizada
 
-As implementações do Target normalmente usam eventos de conversão personalizados para rastrear cliques em atividades baseadas em formulário, para significar uma conversão em um fluxo ou para transmitir parâmetros sem solicitar novo conteúdo.
+As implementações do Target geralmente usam eventos de conversão personalizados para rastrear cliques para atividades baseadas em formulário, para indicar uma conversão em um fluxo ou para transmitir parâmetros sem solicitar novo conteúdo.
 
-A tabela abaixo descreve a abordagem da at.js e o equivalente do SDK da Web da plataforma para alguns casos de uso comuns de rastreamento de conversão.
+A tabela abaixo descreve a abordagem da at.js e o equivalente do SDK da Web da Platform para alguns casos de uso comuns de rastreamento de conversão.
 
-| Caso de uso | Target at.js 2.x | SDK da Web da Platform |
+| Caso de uso | at.js 2.x do Target | SDK da Web da Platform |
 |---|---|---|
-| Rastrear um evento de conversão de cliques para um local de mbox (escopo) | Executar `trackEvent()` ou `sendNotifications()` com um `type` valor de `click` para um local de mbox específico | Executar um `sendEvent` com um tipo de evento de `decisioning.propositionInteract` |
-| Rastrear um evento de conversão personalizado que também possa incluir dados adicionais, como parâmetros de perfil do Target | Executar `trackEvent()` ou `sendNotifications()` com um `type` valor de `display` para um local de mbox específico | Executar um `sendEvent` com um tipo de evento de `decisioning.propositionDisplay` |
+| Rastrear um evento de conversão de cliques para um local da mbox (escopo) | Executar `trackEvent()` ou `sendNotifications()` com um valor `type` de `click` para um local de mbox específico | Executar um comando `sendEvent` com um tipo de evento de `decisioning.propositionInteract` |
+| Rastrear um evento de conversão personalizado que também pode incluir dados adicionais, como parâmetros do perfil do Target | Executar `trackEvent()` ou `sendNotifications()` com um valor `type` de `display` para um local de mbox específico | Executar um comando `sendEvent` com um tipo de evento de `decisioning.propositionDisplay` |
 
 >[!NOTE]
 >
->Embora `decisioning.propositionDisplay` O é usado com mais frequência para incrementar impressões para escopos específicos, também deve ser usado como uma substituição direta para a at.js `trackEvent()` geralmente. O `trackEvent()` O padrão da função é um tipo de `display` se não especificado. Verifique sua implementação para garantir que você use o tipo de evento correto para qualquer conversão personalizada que tenha sido definida.
+>Embora o `decisioning.propositionDisplay` seja usado com mais frequência para incrementar impressões para escopos específicos, ele também deve ser usado como um substituto direto do at.js `trackEvent()` normalmente. O padrão da função `trackEvent()` é um tipo de `display`, caso não seja especificado. Verifique sua implementação para garantir que você use o tipo de evento correto para quaisquer conversões personalizadas que possa ter definido.
 
-Consulte a documentação dedicada da at.js para obter mais informações sobre como usar o [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) e [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) para rastrear eventos do Target.
+Consulte a documentação dedicada da at.js para obter mais informações sobre como usar o [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) e o [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) para rastrear eventos do Target.
 
 Exemplo de at.js usando `trackEvent()` para rastrear um clique em um local da mbox:
 
@@ -91,12 +91,12 @@ adobe.target.trackEvent({
 });
 ```
 
-Com uma implementação do SDK da Web da plataforma, é possível rastrear eventos e ações do usuário ao chamar a função `sendEvent` , preenchendo o `_experience.decisioning.propositions` Grupo de campos XDM e definição do `eventType` para um de dois valores:
+Com uma implementação do SDK da Web da Platform, é possível rastrear eventos e ações do usuário chamando o comando `sendEvent`, preenchendo o grupo de campos XDM `_experience.decisioning.propositions` e definindo `eventType` como um destes dois valores:
 
 * `decisioning.propositionDisplay`: Sinaliza a renderização da atividade do Target.
 * `decisioning.propositionInteract`: Sinaliza uma interação do usuário com a atividade, como um clique do mouse.
 
-O `_experience.decisioning.propositions` O grupo de campos XDM é uma matriz de objetos. As propriedades de cada objeto são derivadas da variável `result.propositions` que é retornado no `sendEvent` comando: `{ id, scope, scopeDetails }`
+O grupo de campos XDM `_experience.decisioning.propositions` é uma matriz de objetos. As propriedades de cada objeto são derivadas do `result.propositions` que é retornado no comando `sendEvent`: `{ id, scope, scopeDetails }`
 
 ```JavaScript
 alloy("sendEvent", {
@@ -143,8 +143,8 @@ alloy("sendEvent", {
 });
 ```
 
-Em seguida, saiba como [habilitar o compartilhamento de ID entre domínios](cross-domain.md) para perfis de visitante consistentes.
+Em seguida, saiba como [habilitar o compartilhamento de ID entre domínios](cross-domain.md) para obter perfis de visitante consistentes.
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

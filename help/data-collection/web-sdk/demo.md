@@ -11,17 +11,17 @@ thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 78%
+source-wordcount: '164'
+ht-degree: 61%
 
 ---
 
 # Demonstração do SDK da Web da Adobe Experience Platform e da rede de borda
 
-Veja o SDK da Web da Adobe Experience Platform e a rede de borda em ação, com uma única chamada para a Adobe enviando dados para a Experience Platform, o Analytics, o Audience Manager e o Target. Para obter mais informações, visite o [Documentação do SDK da Web do Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR).
+Consulte o SDK da Web da Adobe Experience Platform e o Edge Network em ação, com uma única chamada para o Adobe enviando dados para o Experience Platform, Analytics, Audience Manager e Target. Para obter mais informações, consulte a [documentação do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on)
 
 >[!NOTE]
 >
->Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Conheça a Alloy.js e nunca mais adicione uma tag para um eVar ou mbox](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Meet Alloy.js e Nunca Marcar para um eVar ou Mbox Novamente](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.

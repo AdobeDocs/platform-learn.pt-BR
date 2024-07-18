@@ -21,37 +21,37 @@ Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depo
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar as opções [!UICONTROL sandbox], você verá a alteração de tela e agora estará em seu dedicado [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./images/sb1.png)
 
 ## 1.4.1 Ativar o público-alvo para o destino do Adobe Target
 
-O Adobe Target está disponível como um destino no Real-Time CDP. Para configurar a integração do Adobe Target, acesse **Destinos**, para **Catálogo**.
+O Adobe Target está disponível como um destino no Real-Time CDP. Para configurar sua integração com o Adobe Target, vá para **Destinos**, para **Catálogo**.
 
-Clique em **Personalização** no **Categorias** menu. Você verá a **Adobe Target** cartão de destino. Clique em **Ativar públicos**.
+Clique em **Personalization** no menu **Categorias**. Você verá o cartão de destino **Adobe Target**. Clique em **Ativar públicos**.
 
-![EM](./images/atdest1.png)
+![ÀS](./images/atdest1.png)
 
-Selecionar o destino ``Bootcamp Target`` e clique em **Próxima**.
+Selecione o destino ``Bootcamp Target`` e clique em **Avançar**.
 
-![EM](./images/atdest3.png)
+![ÀS](./images/atdest3.png)
 
-Na lista de públicos disponíveis, selecione o público criado no [1.3 Criar um público-alvo](./ex3.md), que se chama `yourLastName - Interest in Real-Time CDP`. Em seguida, clique em **Próxima**.
+Na lista de públicos disponíveis, selecione o público criado em [1.3 Crie um público](./ex3.md), que se chama `yourLastName - Interest in Real-Time CDP`. Em seguida, clique em **Avançar**.
 
-![EM](./images/atdest8.png)
+![ÀS](./images/atdest8.png)
 
-Na próxima página, clique em **Próxima**.
+Na próxima página, clique em **Avançar**.
 
-![EM](./images/atdest9.png)
+![ÀS](./images/atdest9.png)
 
 Clique em **Concluir**.
 
-![EM](./images/atdest10.png)
+![ÀS](./images/atdest10.png)
 
 Seu público-alvo agora está ativado para o Adobe Target.
 
-![EM](./images/atdest11.png)
+![ÀS](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
@@ -61,32 +61,32 @@ Seu público-alvo agora está ativado para o Adobe Target.
 
 Agora que seu público-alvo do Real-Time CDP está configurado para ser enviado para o Adobe Target, você pode configurar sua atividade de Direcionamento de experiência no Adobe Target. Neste exercício, você configurará uma atividade baseada no Visual Experience Composer.
 
-Acesse a página inicial do Adobe Experience Cloud em [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abri-lo.
+Vá para a página inicial do Adobe Experience Cloud em [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abri-lo.
 
 ![RTCDP](./images/excl.png)
 
-No **Adobe Target** home page, você verá todas as Atividades existentes.
+Na página inicial do **Adobe Target**, você verá todas as atividades existentes.
 Clique em **+ Criar atividade** para criar uma nova Atividade.
 
 ![RTCDP](./images/exclatov.png)
 
-Selecionar **Direcionamento de experiência**.
+Selecione **Direcionamento de experiência**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-Selecionar **Visual** e defina o **URL da atividade** para `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas antes disso, substitua XX por um número entre 01 e 30.
+Selecione **Visual** e defina a **URL da atividade** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas antes de fazer isso, substitua XX por um número entre 01 e 30.
 
 >[!IMPORTANT]
 >
->Todos os participantes da ativação devem usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. Você pode escolher uma página da Web e encontrar o URL acessando aqui: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Todos os participantes da ativação devem usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. Escolha uma página da Web e encontre a URL acessando aqui: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
 >Todas as páginas compartilham o mesmo URL base e terminam no número do participante.
 >
->Como exemplo, o participante 1 deve usar o URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar o URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por exemplo, o participante 1 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 Selecione o espaço de trabalho **AT Bootcamp**.
 
-Clique em **Avançar**.
+Clique em **Next**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
@@ -94,11 +94,11 @@ Você está agora no Visual Experience Composer. Pode levar de 20 a 30 segundos 
 
 ![RTCDP](./images/atform1.png)
 
-O público-alvo padrão é atualmente **Todos os visitantes**. Clique no link **3 pontos** ao lado de **Todos os visitantes** e clique em **Alterar público-alvo**.
+O público-alvo padrão é atualmente **Todos os visitantes**. Clique nos **3 pontos** ao lado de **Todos os visitantes** e clique em **Alterar público**.
 
 ![RTCDP](./images/atform3.png)
 
-Você está vendo a lista de públicos-alvo disponíveis, e o público-alvo da Adobe Experience Platform criado anteriormente e enviado para o Adobe Target agora faz parte dessa lista. Selecione o público criado anteriormente no Adobe Experience Platform. Clique em **Atribuir público-alvo**.
+Você está vendo a lista de públicos-alvo disponíveis, e o público-alvo da Adobe Experience Platform criado anteriormente e enviado para o Adobe Target agora faz parte dessa lista. Selecione o público criado anteriormente no Adobe Experience Platform. Clique em **Atribuir público**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
@@ -106,13 +106,13 @@ Seu público-alvo do Adobe Experience Platform agora faz parte dessa atividade d
 
 ![RTCDP](./images/atform4.png)
 
-Antes de alterar a imagem herói, clique em **Permitir todos** no banner de cookie.
+Antes de alterar a imagem herói, você precisará clicar em **Permitir tudo** no banner de cookie.
 
-Para fazer isso, acesse **Procurar**
+Para fazer isso, vá para **Procurar**
 
 ![RTCDP](./images/cook1.png)
 
-Clique em **Permitir todos**.
+Em seguida, clique em **Permitir tudo**.
 
 ![RTCDP](./images/cook2.png)
 
@@ -120,11 +120,11 @@ Em seguida, volte para **Compor**.
 
 ![RTCDP](./images/cook3.png)
 
-Agora vamos alterar a imagem herói na página inicial do site. Clique na imagem herói padrão no site e clique em **Substituir conteúdo** e selecione **Imagem**.
+Agora vamos alterar a imagem herói na página inicial do site. Clique na imagem herói padrão do site, clique em **Substituir conteúdo** e selecione **Imagem**.
 
 ![RTCDP](./images/atform5.png)
 
-Procure o arquivo de imagem **rtcdp.png**. Selecione-a e clique em **Salvar**.
+Procure o arquivo de imagem **rtcdp.png**. Selecione e clique em **Salvar**.
 
 ![RTCDP](./images/atform6.png)
 
@@ -140,23 +140,23 @@ Para o nome, use:
 
 - `yourLastName - RTCDP - XT (VEC)`
 
-Clique em **Avançar**.
+Clique em **Next**.
 
 ![RTCDP](./images/atform8.png)
 
-Clique em **Avançar**.
+Clique em **Next**.
 
 ![RTCDP](./images/atform8a.png)
 
-No **Metas e configurações** - página, vá para **Métricas de meta**.
+Na página **Metas e configurações** -, vá para **Métricas de meta**.
 
 ![RTCDP](./images/atform9.png)
 
-Defina a meta principal como **Envolvimento** - **Tempo no site**. Clique em **Salvar e fechar**.
+Defina a Meta primária como **Envolvimento** - **Tempo no site**. Clique em **Salvar e fechar**.
 
 ![RTCDP](./images/vec3.png)
 
-Agora você está no **Visão geral da atividade** página. Você ainda precisa ativar sua Atividade.
+Agora você está na página **Visão geral da atividade**. Você ainda precisa ativar sua Atividade.
 
 ![RTCDP](./images/atform10.png)
 
@@ -170,19 +170,19 @@ Em seguida, você receberá uma confirmação visual de que sua atividade está 
 
 Sua atividade agora está online e pode ser testada no site de bootcamp.
 
-Se você voltar ao site de demonstração e visitar a página do produto para **Real-Time CDP**, você se qualificará instantaneamente para o público-alvo criado e verá a atividade do Adobe Target ser exibida na página inicial em tempo real.
+Agora, ao voltar para o site de demonstração e visitar a página do produto do **Real-Time CDP**, você se qualificará instantaneamente para o público-alvo criado e verá a atividade do Adobe Target ser exibida na página inicial em tempo real.
 
 >[!IMPORTANT]
 >
->Todos os participantes da ativação devem usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. Você pode escolher uma página da Web e encontrar o URL acessando aqui: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Todos os participantes da ativação devem usar uma página da Web separada para evitar a colisão de várias experiências do Adobe Target. Escolha uma página da Web e encontre a URL acessando aqui: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
 >Todas as páginas compartilham o mesmo URL base e terminam no número do participante.
 >
->Como exemplo, o participante 1 deve usar o URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar o URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por exemplo, o participante 1 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar a URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 ![RTCDP](./images/atform12a.png)
 
-Próxima etapa: [1.5 Ação: enviar o público-alvo para a Facebook](./ex5.md)
+Próxima Etapa: [1.5 Realizar Ação: enviar seu público-alvo para a Facebook](./ex5.md)
 
 [Voltar para Fluxo de Usuário 1](./uc1.md)
 

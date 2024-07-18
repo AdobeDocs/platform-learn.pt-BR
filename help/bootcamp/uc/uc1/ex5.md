@@ -20,31 +20,31 @@ Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depo
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar as opções [!UICONTROL sandbox], você verá a alteração de tela e agora estará em seu dedicado [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./images/sb1.png)
 
-No menu esquerdo, vá para **Destinos**, em seguida, vá para **Catálogo**. Você verá a **Catálogo de destinos**. Entrada **Destinos**, clique em **Ativar públicos** no **Público-alvo personalizado do facebook** cartão.
+No menu esquerdo, vá para **Destinos** e, em seguida, vá para **Catálogo**. Você verá o **Catálogo de Destinos**. Em **Destinos**, clique em **Ativar públicos-alvo** no cartão **Público-alvo personalizado do Facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Selecionar o destino **bootcamp-facebook** e clique em **Próxima**.
+Selecione o destino **bootcamp-facebook** e clique em **Avançar**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de públicos disponíveis, selecione o público criado no exercício anterior. Clique em **Avançar**.
+Na lista de públicos disponíveis, selecione o público criado no exercício anterior. Clique em **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-No **Mapeamento** página, verifique se a variável **Aplicar transformação** está ativada. Clique em **Avançar**.
+Na página **Mapeamento**, verifique se a caixa de seleção **Aplicar Transformação** está habilitada. Clique em **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-No **Agenda de público-alvo** selecione a **Origem do seu público** e defina-o como **Diretamente dos clientes**. Clique em **Avançar**.
+Na página **Agenda de Público-alvo**, selecione a **Origem do seu público-alvo** e defina-a como **Diretamente dos clientes**. Clique em **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por último, no **Revisão** clique em **Concluir**.
+Finalmente, na página **Revisão**, clique em **Concluir**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

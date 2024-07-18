@@ -4,8 +4,8 @@ description: Saiba como obter os códigos incorporados da propriedade de tag e i
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 50%
+source-wordcount: '1037'
+ht-degree: 45%
 
 ---
 
@@ -17,9 +17,9 @@ Nesta lição, você implementará o código incorporado assíncrono do ambiente
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
-> * O Platform launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * As configurações de borda agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
+> * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
 
@@ -28,13 +28,13 @@ No final desta lição, você poderá:
 * Obter o código incorporado da propriedade de tag
 * Entender a diferença entre um ambiente de desenvolvimento, de armazenamento temporário e de produção
 * Adicionar um código incorporado de tag a um documento HTML
-* Explicar o local ideal do código incorporado da tag em relação a outro código no `<head>` de um documento html
+* Explicar o local ideal do código de inserção de tag em relação a outro código no `<head>` de um documento HTML
 
 ## Copiar o código incorporado
 
-O código incorporado é um `<script>` tag colocada nas páginas da Web para carregar e executar a lógica criada nas tags. Se você carregar a biblioteca de maneira assíncrona, o navegador continuará a carregar a página, recuperará a biblioteca de tags e a executará simultaneamente. Nesse caso, há apenas um código incorporado, que você insere no `<head>`. (Quando as tags são implantadas sincronicamente, há dois códigos incorporados, um que você insere no `<head>` e outra que você colocar diante do `</body>`).
+O código incorporado é uma tag `<script>` colocada nas páginas da Web para carregar e executar a lógica criada nas tags. Se você carregar a biblioteca de maneira assíncrona, o navegador continuará a carregar a página, recuperará a biblioteca de tags e a executará simultaneamente. Nesse caso, há apenas um código incorporado, que você insere no `<head>`. (Quando as marcas são implantadas sincronicamente, há dois códigos incorporados, um que você coloca no `<head>` e outro que você coloca antes do `</body>`).
 
-Na tela Visão geral da propriedade, clique em **[!UICONTROL Ambientes]** na navegação à esquerda, vá para a página ambientes. Observe que os ambientes de desenvolvimento, preparo e produção foram criados previamente para você.
+Na tela Visão geral da propriedade, clique em **[!UICONTROL Ambientes]** na navegação à esquerda para ir até a página de ambientes. Observe que os ambientes de desenvolvimento, preparo e produção foram criados previamente para você.
 
 ![Clique em Ambientes na navegação superior](images/launch-environments.png)
 
@@ -46,7 +46,7 @@ Esses são os únicos ambientes necessários para concluir o tutorial. Os ambien
 
 Agora vamos copiar o código incorporado:
 
-1. Na linha **[!UICONTROL Desenvolvimento]**, clique no ![ícone Instalar](images/launch-installIcon.png) para abrir a modal.
+1. Na linha **[!UICONTROL Desenvolvimento]**, clique no ícone Instalar ![ícone Instalar](images/launch-installIcon.png) para abrir a modal.
 
 1. Observe que as tags assumirão como padrão os códigos incorporados assíncronos
 
@@ -58,7 +58,7 @@ Agora vamos copiar o código incorporado:
 
 ## Implemente o código incorporado na `<head>` da página HTML de exemplo
 
-O código incorporado deve ser implementado no elemento `<head>` de todas as páginas HTML que compartilham a propriedade. Você pode ter um ou vários arquivos de modelo que controlam o `<head>` globalmente no site, tornando-o um processo simples de adicionar tags.
+O código incorporado deve ser implementado no elemento `<head>` de todas as páginas HTML que compartilham a propriedade. Você pode ter um ou vários arquivos de modelo que controlam o `<head>` globalmente em todo o site, tornando-o um processo simples de adicionar tags.
 
 Caso ainda não o tenha feito, copie o código de página html de exemplo e cole-o em um editor de código. O [Brackets](https://brackets.io/) é um editor gratuito e de código aberto, se necessário.
 
@@ -120,7 +120,7 @@ Substitua o código incorporado existente na linha 34 ou ao redor dessa linha po
 ```
 
 Abra as ferramentas de desenvolvedor do navegador da Web e acesse a guia Rede. Nesse momento, deve aparecer um erro 404 para o URL do ambiente de tag:
-![Erro 404](images/samplepage-404.png)
+![erro 404](images/samplepage-404.png)
 
 O erro 404 é esperado porque você ainda não criou uma biblioteca nesse ambiente de tags. Você fará isso na próxima aula. Se aparecer uma mensagem de &quot;falha&quot; em vez de um erro 404, você provavelmente esqueceu de adicionar o protocolo `https://` no código incorporado. Novamente, você só precisará especificar o protocolo `https://` se estiver carregando a página de exemplo usando o protocolo `file://`. Faça essa alteração e recarregue a página até que o erro 404 apareça.
 
@@ -130,17 +130,17 @@ Vamos consultar algumas das práticas recomendadas de implementação de tags de
 
 * **Camada de dados**:
 
-   * Recomendamos *fortemente* criar em seu site uma camada de dados contendo todos os atributos necessários para preencher variáveis no Analytics, no Target e em outras soluções de marketing. Essa página de exemplo contém apenas uma camada de dados muito simples, mas uma camada de dados real pode conter muitos mais detalhes sobre a página, como o visitante, os detalhes do carrinho de compras etc. Para obter mais informações sobre camadas de dados, consulte [Camada de dados digitais da experiência do cliente 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+   * *Recomendamos fortemente* criar em seu site uma camada de dados contendo todos os atributos necessários para preencher variáveis no Analytics, no Target e em outras soluções de marketing. Essa página de exemplo contém apenas uma camada de dados muito simples, mas uma camada de dados real pode conter muitos mais detalhes sobre a página, como o visitante, os detalhes do carrinho de compras etc. Para obter mais informações sobre camadas de dados, consulte [Camada de dados digitais da experiência do cliente 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
    * Defina sua camada de dados antes do código incorporado da tag, para maximizar o que você pode fazer com soluções em Experience Cloud.
 
-* **Bibliotecas do helper JavaScript**: Se você já tiver uma biblioteca como a JQuery implementada no `<head>` de suas páginas, carregue-a antes das tags para aproveitar a sintaxe nas tags e no Target
+* **Bibliotecas do JavaScript Helper**: se você já tiver uma biblioteca como a JQuery implementada no `<head>` de suas páginas, carregue-a antes das marcas para aproveitar a sintaxe nas marcas e no Target
 
 * **Tipo de documento HTML5**: o tipo de documento HTML5 é obrigatório no Target
 
 * **Preconnect (pré-conexão) e dns-prefetch (pré-busca de DNS)**: use o preconnect e o dns-prefetch para melhorar o tempo de carregamento da página. Consulte também: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **Ocultar previamente o trecho para implementações assíncronas do Target**: você aprenderá mais sobre isso na lição do Target, mas quando o Target for implantado por meio de códigos incorporados de tag assíncrona, você deverá codificar um trecho pré-ocultado em suas páginas antes dos códigos incorporados de tag para gerenciar a oscilação de conteúdo
+* **Ocultar previamente o trecho para implementações assíncronas do Target**: você aprenderá mais sobre isso na lição do Target, mas quando o Target for implantado por meio de códigos incorporados de tag assíncrona, você deverá codificar um trecho pré-ocultado em suas páginas antes dos códigos incorporados de tag para gerenciar oscilação de conteúdo
 
 Aqui está um resumo da aparência das práticas recomendadas na ordem sugerida. Observe que existem alguns espaços reservados para detalhes específicos da conta:
 

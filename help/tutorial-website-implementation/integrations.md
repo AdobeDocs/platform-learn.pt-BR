@@ -1,11 +1,11 @@
 ---
-title: Implementar integrações do Experience Cloud com tags
-description: Saiba como validar as integrações do Audiences, A4T e Atributos do cliente na implementação da Adobe Experience Cloud. Esta lição é parte do tutorial Implementar o Experience Cloud em sites da Web.
+title: Implementar integrações de Experience Cloud com tags
+description: Saiba como validar as integrações do Audiences, A4T e Atributos do cliente na implementação da Adobe Experience Cloud. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 91%
+source-wordcount: '1213'
+ht-degree: 86%
 
 ---
 
@@ -32,16 +32,15 @@ Você deve concluir todas as lições anteriores neste tutorial antes de seguir 
 >* Analisar os requisitos completos da [integração do Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
 >* Pedir que um administrador da organização da Experience Cloud [solicite o fornecimento dessas integrações](https://www.adobe.com/go/audiences)
 
-
 ## Audiences
 
-O [Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=pt-BR) faz parte do serviço principal de pessoas e permite compartilhar públicos-alvo entre soluções. Por exemplo, você pode criar um público-alvo no Audience Manager e usá-lo para fornecer conteúdo personalizado ao Target.
+O [Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) faz parte do serviço principal de pessoas e permite compartilhar públicos-alvo entre soluções. Por exemplo, você pode criar um público-alvo no Audience Manager e usá-lo para fornecer conteúdo personalizado ao Target.
 
 Os principais requisitos para implementar o A4T—que você já fez—são:
 
 1. Implementar o Serviço de identidade da Adobe Experience Platform
 1. Implementar o Audience Manager
-1. Implementar outras soluções que você deseja que recebam ou criem públicos, como o Target e o Analytics
+1. Implementar outras soluções que você deseja que recebam ou criem públicos-alvo, como o Target e o Analytics
 
 ### Validar a integração de públicos-alvo
 
@@ -51,9 +50,9 @@ Essas etapas de validação se concentrarão na parte crítica visível na imple
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *your* Ambiente de desenvolvimento, conforme descrito no [lição anterior](switch-environments.md)
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md)
 
-   ![Seu ambiente de desenvolvimento de tags mostrado no Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Acesse a guia Rede do Debugger
 
@@ -73,7 +72,7 @@ Essas etapas de validação se concentrarão na parte crítica visível na imple
 
 ## Analytics for Target (A4T)
 
-A integração do [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) permite aproveitar seus dados do Analytics como fonte para as métricas de relatório no Target.
+A integração do [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) permite aproveitar seus dados do Analytics como fonte para as métricas de relatório no Target.
 
 Os principais requisitos para implementar o A4T—que você já fez—são:
 
@@ -90,9 +89,9 @@ A melhor maneira de validar a integração do A4T é criar uma atividade do Targ
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *your* Ambiente de desenvolvimento, conforme descrito no [lição anterior](switch-environments.md)
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md)
 
-   ![Seu ambiente de desenvolvimento de tags mostrado no Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Acesse a guia Rede do Debugger
 
@@ -117,7 +116,7 @@ Os [atributos do cliente](https://experienceleague.adobe.com/docs/core-services/
 Os principais requisitos para implementar os Atributos do cliente—que você já fez—são:
 
 1. Implementar o Serviço de identidade da Adobe Experience Platform
-1. Definir as IDs do cliente por meio do Serviço de ID *before* O Target e o Analytics acionam suas solicitações (o que você conseguiu usando o recurso de ordenação de regra nas tags)
+1. Definir as IDs do cliente por meio do Serviço de ID *antes* do Target e do Analytics acionarem as próprias solicitações, (o que você conseguiu usando o recurso de ordenação de regra nas tags)
 
 ### Validar a implementação dos Atributos do cliente
 
@@ -151,4 +150,4 @@ No momento, a ID do cliente é um dos poucos parâmetros que não aparecem no Ex
 
    ![Validação da ID do cliente do Analytics](images/integrations-analyticsCustomerIDValidation.png)
 
-[Próximo: &quot;Publique sua propriedade&quot; >](publish.md)
+[Próximo: &quot;Publish sua propriedade&quot; >](publish.md)

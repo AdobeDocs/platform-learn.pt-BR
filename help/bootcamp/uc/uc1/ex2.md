@@ -28,7 +28,7 @@ Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depo
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar as opções [!UICONTROL sandbox], você verá a alteração de tela e agora estará em seu dedicado [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 
 
@@ -45,27 +45,27 @@ No painel Visualizador de perfis do seu site, você pode encontrar a visão gera
 
 Com o Adobe Experience Platform, todas as IDs são igualmente importantes. Anteriormente, a ECID era a ID mais importante no contexto do Adobe e todas as outras IDs estavam vinculadas à ECID em uma relação hierárquica. Com o Adobe Experience Platform, esse não é mais o caso e cada ID pode ser considerada um identificador principal.
 
-Normalmente, o identificador principal depende do contexto. Se você perguntar à central de atendimento, **Qual é a ID mais importante?** eles provavelmente responderão, **o número de telefone!** Mas se você perguntar à sua equipe de CRM, eles responderão: **O endereço de e-mail!**  A Adobe Experience Platform entende essa complexidade e a gerencia para você. Todos os aplicativos, sejam eles de Adobe ou não Adobe, falarão com a Adobe Experience Platform referindo-se à ID que eles consideram primária. E simplesmente funciona.
+Normalmente, o identificador principal depende do contexto. Se você perguntar à Central de Atendimento, **Qual é a ID mais importante?** eles provavelmente responderão, **o número do telefone!** Mas se você perguntar à sua equipe de CRM, ela responderá: **O endereço de email!O** Adobe Experience Platform entende essa complexidade e a gerencia para você. Todos os aplicativos, sejam eles de Adobe ou não Adobe, falarão com a Adobe Experience Platform referindo-se à ID que eles consideram primária. E simplesmente funciona.
 
-Para o campo **Namespace de identidade**, selecione **ECID** e para o campo **Valor de identidade** Insira a ECID que você pode encontrar no painel Visualizador de perfil do site de bootcamp. Clique em **Exibir**. Você verá seu perfil na lista. Clique em **ID do perfil** para abrir seu perfil.
+Para o campo **Namespace de identidade**, selecione **ECID** e, para o campo **Valor de identidade**, insira a ECID que você pode encontrar no painel Visualizador de Perfis do site de bootcamp. Clique em **Exibir**. Você verá seu perfil na lista. Clique na **ID do Perfil** para abrir seu perfil.
 
 ![Perfil do cliente](./images/popupecid.png)
 
-Agora você tem uma visão geral de alguns **Atributos do perfil** do seu perfil de cliente.
+Você agora está vendo uma visão geral de alguns **Atributos do perfil** importantes do seu perfil de cliente.
 
 ![Perfil do cliente](./images/profile.png)
 
-Ir para **Eventos**, em que você pode ver entradas para cada evento de experiência vinculado ao seu Perfil.
+Vá para **Eventos**, onde você pode ver entradas para cada evento de experiência vinculado ao seu Perfil.
 
 ![Perfil do cliente](./images/profileee.png)
 
-Finalmente, vá para a opção de menu **associação de público**. Agora você verá todos os públicos-alvo qualificados para este perfil.
+Finalmente, vá para a opção de menu **Audience association**. Agora você verá todos os públicos-alvo qualificados para este perfil.
 
 ![Perfil do cliente](./images/profileseg.png)
 
 Agora vamos criar um novo público-alvo que permitirá personalizar a experiência do cliente para um cliente anônimo ou conhecido.
 
-Próxima etapa: [1.3 Criar um público-alvo - Interface do usuário](./ex3.md)
+Próxima Etapa: [1.3 Criar um público-alvo - Interface do Usuário](./ex3.md)
 
 [Voltar para Fluxo de Usuário 1](./uc1.md)
 

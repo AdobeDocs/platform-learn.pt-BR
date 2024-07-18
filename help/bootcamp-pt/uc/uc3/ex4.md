@@ -11,7 +11,7 @@ feature: Events
 exl-id: 04e2877f-8672-4584-8204-4489a7025c63
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ Para testar sua jornada, você deve usar o eventoID criado no exercício 3.2, qu
 O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. Exemplo, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Abra o móvel e vá para a página inicial. Clique no ➡ de **µ**.
+Abra o móvel e vá para a página inicial. Clique em não corrigir de ****.
 
 ![DSN](./images/appsett.png)
 
-Cole seu eventID no campo **EventID de sinal** e clique em **Salvar**.
+Cole seu eventID no campo **Beacon EventID** e clique em **Salvar**.
 
 ![DSN](./images/beacon1.png)
 
@@ -39,11 +39,11 @@ Em seguida, será exibido a tela:
 
 ![DSN](./images/screen1.png)
 
-Retorno para a página inicial. Clique no ➡ do **sinal**.
+Retorno para a página inicial. Clique no ícone do **sinal**.
 
 ![DSN](./images/app23.png)
 
-Primeiro, **Beacon de tela de bootcamp** e clique no botão de **entrada** botão. Isso que você simule uma entrada.
+Primeiro, ➡ **Botão de Beacon de Tela de Bootcamp** e clique no botão **entrada**. Isso que você simule uma entrada.
 
 ![DSN](./images/app21.png)
 

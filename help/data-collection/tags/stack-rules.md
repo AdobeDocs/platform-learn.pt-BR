@@ -1,21 +1,22 @@
 ---
 title: Empilhamento de regras em tags
-description: Saiba como empilhar regras em uma propriedade de tag. O empilhamento de regras usa o recurso de ordem nos eventos de regra de tag para sequenciar regras, de modo que você possa gerenciar implementações de tag escaláveis.
+description: Saiba como empilhar regras em uma propriedade de tag. O empilhamento de regras usa o recurso de ordenação em eventos de regras de tags para sequenciar regras, permitindo o gerenciamento de implementações de tags escaláveis.
 feature: Tags
 role: Developer
 level: Beginner
 duration: 807
 last-substantial-update: 2024-03-06T00:00:00Z
 jira: KT-14949
-source-git-commit: e2ede5dcaf57671485ca3b0d3eeb93b3bd5a00fe
+exl-id: 7a6de70c-adb5-442c-9270-ee0fee38721c
+source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
 workflow-type: tm+mt
 source-wordcount: '98'
-ht-degree: 0%
+ht-degree: 36%
 
 ---
 
 # Regras de tag de pilha
 
-Saiba como empilhar regras em uma propriedade de tag. O empilhamento de regras usa o `order` recurso em eventos de regras de tags para sequenciar regras, de modo que você possa gerenciar implementações de tags escaláveis. Defina algumas variáveis em uma regra global, adicione e substitua variáveis em uma regra específica da página e envie os dados para o aplicativo de marketing desejado. Para obter mais informações sobre a ordenação de regras, consulte a [regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering) documentação.
+Saiba como empilhar regras em uma propriedade de tag. O empilhamento de regras usa o recurso `order` nos eventos de regras de marcas para sequenciar regras de modo que você possa gerenciar implementações de marcas escalonáveis. Defina algumas variáveis em uma regra global, adicione e substitua variáveis em uma regra específica da página e envie os dados para o aplicativo de marketing desejado. Para obter mais informações sobre a ordenação de regras, consulte a documentação de [regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)

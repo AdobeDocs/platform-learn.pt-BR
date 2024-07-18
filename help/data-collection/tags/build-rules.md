@@ -10,12 +10,12 @@ exl-id: 789ce4d8-4c20-4690-9907-57e924a0c586
 source-git-commit: a72fd41c9673d06585dc787ffe8086e5c9ba23a0
 workflow-type: tm+mt
 source-wordcount: '66'
-ht-degree: 1%
+ht-degree: 37%
 
 ---
 
 # Criar regras de tag
 
-Saiba como criar regras para poder executar comandos em tags. Eventos e condições determinam *quando* fazer coisas enquanto as ações determinam *o que* fazer. Para obter mais informações, consulte [regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=pt-BR) documentação.
+Saiba como criar regras para poder executar comandos em tags. Eventos e condições determinam *quando* fazer coisas, enquanto as ações determinam *o que* fazer. Para obter mais informações, consulte a documentação de [regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on)

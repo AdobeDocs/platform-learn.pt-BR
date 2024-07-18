@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,12 @@ Antes de migrar o movimento, é necessário habilitar Rastreamento no seu toque 
 
 ![DSN](./../uc3/images/app4.png)
 
-Acessar um App Store da Apple e pesquise `aepmobile-bootcamp`.\
-Clique em **Instalar** ou **Baixar**.
+Acessar um App Store da Apple e pesquise `aepmobile-bootcamp`.\
+Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o conjunto da arquitetura instalada, clique em **Abrir**.
+Depois que o lançamento da clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -40,11 +40,11 @@ Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clique em **Concordo**.
+Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitir enquanto o uso o app**.
+Clique em **Permitir uso o app**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -66,7 +66,7 @@ Depois de criar sua conta nos relatórios, isso é alterado no site. Agora é ne
 
 ![Demonstração](./../uc3/images/pv1.png)
 
-publicar o endereço de e-mail que você usou no site e clique em **Logon**.
+Mostrar o endereço de e-mail que você usou no site e clique em **Login**.
 
 ![DSN](./../uc3/images/app14.png)
 
@@ -78,17 +78,17 @@ Retorno para a página do movimento e os recursos.
 
 ![DSN](./../uc3/images/app17.png)
 
-Acessado **Produtos**. Clique em qualquer produto, exemplo: **Café para ir**.
+Acessar **Produtos**. Clique em qualquer produto, exemplo: **Café em andamento**.
 
 ![DSN](./images/app19.png)
 
-Você verá a página do produto **Café para ir** nenhum ➡. Clique em **Comprar**.
+Você verá a página do produto **Café a consumir** não usado. Clique em **Comprar**.
 
 ![DSN](./images/app20.png)
 
 Agora terminou este exercício e está pronto para as atividades.
 
-Próxima etapa: [ 2.6 Personalização sem central de atendimento](./ex6.md)
+Próxima etapa: [ 2.6 Personalização sem central de atendimento](./ex6.md)
 
 [Retorno para Fluxo de monitoramento 2](./uc2.md)
 

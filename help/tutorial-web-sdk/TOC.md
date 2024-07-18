@@ -23,7 +23,7 @@ ht-degree: 24%
    + [Configurar um namespace de identidade](configure-identities.md)
    + [Configurar uma sequência de dados](configure-datastream.md)
 
-+ Configuração de tags {#tags-configuration}
++ Configuração de Marcas {#tags-configuration}
    + [Instalação da extensão do SDK da Web](install-web-sdk.md)
    + [Criar elementos de dados](create-data-elements.md)
    + [Criar identidades](create-identities.md)
@@ -31,7 +31,7 @@ ht-degree: 24%
    + [Validar com o Debugger](validate-with-debugger.md)
    + [Validar com garantia](validate-with-assurance.md)
 
-+ Configuração de aplicativos {#applications-setup}
++ Instalação de Aplicativos {#applications-setup}
    + [Configurar Experience Platform](setup-experience-platform.md)
    + [Configurar o Adobe Analytics](setup-analytics.md)
    + [Configurar Audience Manager](setup-audience-manager.md)
@@ -42,7 +42,7 @@ ht-degree: 24%
 + Gerenciamento de consentimento {#consent-management}
    + [Configurar consentimento](setup-consent.md)
 
-+ Encaminhamento de evento {#event-forwarding}
++ Encaminhamento de eventos {#event-forwarding}
    + [Configurar encaminhamento de eventos](setup-event-forwarding.md)
 
 + [Conclusão](conclusion.md)

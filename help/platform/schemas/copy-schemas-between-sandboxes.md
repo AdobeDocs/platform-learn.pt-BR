@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Copiar esquemas entre sandboxes
 
-Este vídeo mostra como copiar um esquema de uma sandbox para outra no Adobe Experience Platform usando a API Exportar/Importar esquema. Crie e teste seus esquemas em sandboxes de desenvolvimento e, em seguida, copie-os para produção. Para obter mais informações, visite o [documentação de schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
+Este vídeo mostra como copiar um esquema de uma sandbox para outra no Adobe Experience Platform usando a API Exportar/Importar esquema. Crie e teste seus esquemas em sandboxes de desenvolvimento e, em seguida, copie-os para produção. Para obter mais informações, visite a [documentação sobre esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
 
 >[!TIP]
 >

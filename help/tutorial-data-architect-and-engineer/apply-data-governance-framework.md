@@ -10,8 +10,8 @@ thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 2%
+source-wordcount: '621'
+ht-degree: 1%
 
 ---
 
@@ -48,23 +48,23 @@ A Luma faz uma promessa aos membros de seu programa de Fidelidade, de que os dad
 A primeira etapa do processo de governança de dados é aplicar rótulos de governança aos seus dados. Antes de fazer isso, vejamos rapidamente quais rótulos estão disponíveis:
 
 1. Na interface do usuário da Platform, selecione **[!UICONTROL Políticas]** na navegação à esquerda
-1. Vá para a **[!UICONTROL Rótulos]** para ver todos os rótulos na conta.
+1. Vá para a guia **[!UICONTROL Rótulos]** para ver todos os rótulos na conta.
 
-Há muitos rótulos prontos para uso, além de você poder criar os seus próprios por meio da [!UICONTROL Criar rótulo] botão. Há três tipos principais: [!UICONTROL Rótulos de contrato], [!UICONTROL Rótulos de identidade], e [!UICONTROL Rótulos sensíveis] que correspondem a motivos comuns para a restrição dos dados. Cada um dos rótulos tem um [!UICONTROL Nome amigável] e uma curta [!UICONTROL Nome] que é apenas uma abreviação do tipo e um número. Por exemplo, a variável [!DNL C1] O rótulo é para &quot;Nenhuma exportação de terceiros&quot;, que é o que precisamos para nossa política de fidelidade.
+Há muitos rótulos prontos para uso, além de você poder criar os seus por meio do botão [!UICONTROL Criar rótulo]. Há três tipos principais: [!UICONTROL Rótulos de contrato], [!UICONTROL Rótulos de identidade] e [!UICONTROL Rótulos sensíveis] que correspondem a motivos comuns pelos quais os dados podem ser restritos. Cada um dos rótulos tem um [!UICONTROL Nome Amigável] e um [!UICONTROL Nome] curto, que é apenas uma abreviação do tipo e um número. Por exemplo, o rótulo [!DNL C1] é para &quot;Nenhuma exportação de terceiros&quot;, que é o que precisamos para nossa política de Fidelidade.
 
-![Rótulo de governança de dados](assets/governance-policies.png)
+![Rótulo de Governança de Dados](assets/governance-policies.png)
 
 Agora é hora de rotular os dados cujo uso queremos restringir:
 
-1. Na interface do usuário da Platform, selecione **[!UICONTROL Conjuntos de dados]** na navegação à esquerda
-1. Abra o `Luma Loyalty Dataset`
-1. Vá para a **[!UICONTROL Governança de dados]** guia
+1. Na interface da Platform, selecione **[!UICONTROL Conjuntos de dados]** na navegação à esquerda
+1. Abrir o `Luma Loyalty Dataset`
+1. Acesse a guia **[!UICONTROL Governança de dados]**
 1. Você pode aplicar rótulos a campos individuais ou aplicá-los ao conjunto de dados inteiro. Aplicaremos o rótulo a todo o conjunto de dados. Clique no ícone de lápis. Se você não vir o ícone, tente aumentar o tamanho do navegador ou rolar o painel do meio para a direita.
    ![Governança de dados](assets/governance-dataset.png)
-1. No modal, expanda a variável **[!UICONTROL Rótulos do contrato]** e verifique a **[!UICONTROL C2]** rótulo
-1. Selecione o **[!UICONTROL Salvar alterações]** botão
+1. No modal, expanda a seção **[!UICONTROL Rótulos do Contrato]** e verifique o rótulo **[!UICONTROL C2]**
+1. Selecione o botão **[!UICONTROL Salvar alterações]**
    ![Governança de dados](assets/governance-applyLabel.png)
-1. Retornar ao principal [!UICONTROL Governança de dados] tela, com a tag **[!UICONTROL Mostrar rótulos herdados]** você pode ver como o rótulo foi aplicado a todos os campos no conjunto de dados.
+1. Retornando à tela principal [!UICONTROL Governança de dados], com a opção **[!UICONTROL Mostrar rótulos herdados]** ativada, você pode ver como o rótulo foi aplicado a todos os campos no conjunto de dados.
    ![Governança de dados](assets/governance-labelsAdded.png)
 
 
@@ -76,11 +76,11 @@ Agora é hora de rotular os dados cujo uso queremos restringir:
 Agora que nossos dados estão rotulados, podemos criar uma política.
 
 1. Na interface do usuário da Platform, selecione **[!UICONTROL Políticas]** na navegação à esquerda
-1. Na guia Navegar, já existe uma política pronta para uso chamada &quot;Restrição de exportação de terceiros&quot; que associa o rótulo C2 à ação de marketing [!UICONTROL Exportar para terceiros]- exatamente o que precisamos!
-1. Selecione a política e ative-a por meio da **[!UICONTROL Status da política]** alternar
+1. Na guia Procurar, já existe uma política predefinida chamada &quot;Restrição de exportação de terceiros&quot; que associa o rótulo C2 à ação de marketing [!UICONTROL Exportar para terceiros]—exatamente o que é necessário!
+1. Selecione a política e habilite-a usando a opção **[!UICONTROL Status da política]**
    ![Governança de dados](assets/governance-enablePolicy.png)
 
-Você pode criar suas próprias políticas selecionando o **[!UICONTROL Criar política]** botão. Isso abre um assistente que permite combinar vários rótulos e restrições de ação de marketing.
+Você pode criar suas próprias políticas selecionando o botão **[!UICONTROL Criar política]**. Isso abre um assistente que permite combinar vários rótulos e restrições de ação de marketing.
 
 ## Aplicar políticas de governança
 
@@ -93,6 +93,6 @@ A aplicação das políticas de governação é, obviamente, uma componente esse
 
 * [Documentação de governança de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR)
 * [Referência da API do serviço de conjunto de dados](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
-* [Referência da API do serviço de política de governança](https://www.adobe.io/experience-platform-apis/references/policy-service/)
+* [Referência da API do Serviço de Política de Governança](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
-Agora vamos prosseguir para [serviço de consulta](run-queries.md).
+Agora vamos para o [serviço de consulta](run-queries.md).

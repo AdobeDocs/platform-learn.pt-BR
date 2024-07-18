@@ -11,8 +11,8 @@ feature: Connections
 exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 1%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 3%
 
 ## 4.2.1 Conexão
 
-Ir para [analytics.adobe.com](https://analytics.adobe.com) para acessar o Customer Journey Analytics.
+Acesse [analytics.adobe.com](https://analytics.adobe.com) para acessar o Customer Journey Analytics.
 
-Na página inicial do Customer Journey Analytics, acesse **Conexões**.
+Na página inicial do Customer Journey Analytics, vá para **Conexões**.
 
 ![demonstração](./images/cja2.png)
 
@@ -39,7 +39,7 @@ Vamos criar sua primeira conexão. Clique em **Criar nova conexão**.
 
 ![demonstração](./images/cja4.png)
 
-Você verá a **Criar conexão** IU.
+Você verá a interface do usuário **Criar conexão**.
 
 ![demonstração](./images/cja5.png)
 
@@ -49,7 +49,7 @@ Use esta convenção de nomenclatura: `yourLastName – Omnichannel Data Connect
 
 Exemplo: `vangeluw - Omnichannel Data Connection`
 
-Você também precisa selecionar a sandbox correta para usar. No menu sandbox, selecione sua sandbox, que deve ser `Bootcamp`. Neste exemplo, a sandbox a ser usada é **Bootcamp**. E você também precisa definir a variável **Número médio de eventos diários** para **menos de 1 milhão**.
+Você também precisa selecionar a sandbox correta para usar. No menu da sandbox, selecione sua sandbox, que deve ser `Bootcamp`. Neste exemplo, a sandbox a ser usada é **Bootcamp**. E você também precisa definir o **número médio de eventos diários** para **menos de 1 milhão**.
 
 ![demonstração](./images/cjasb.png)
 
@@ -63,9 +63,9 @@ Pesquisar o conjunto de dados `Demo System - Event Dataset for Website (Global v
 
 ![demonstração](./images/cja7.png)
 
-Agora, pesquise e marque as caixas de seleção para `Demo System - Profile Dataset for Loyalty (Global v1.1)` e `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Agora pesquise e marque as caixas de seleção de `Demo System - Profile Dataset for Loyalty (Global v1.1)` e `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-Então você terá isto. Clique em **Próximo**.
+Então você terá isto. Clique em **Next**.
 
 ![demonstração](./images/cja9.png)
 
@@ -77,7 +77,7 @@ A meta agora é unir esses conjuntos de dados. Para cada conjunto de dados selec
 
 ![demonstração](./images/cja11.png)
 
-Como você pode ver, a maioria deles tem a ID de pessoa selecionada automaticamente. Isso ocorre porque um Identificador primário é selecionado em cada esquema no Adobe Experience Platform. Como exemplo, este é o esquema para `Demo System - Event Schema for Call Center (Global v1.1)`, em que é possível ver que o Identificador principal está definido como `phoneNumber`.
+Como você pode ver, a maioria deles tem a ID de pessoa selecionada automaticamente. Isso ocorre porque um Identificador primário é selecionado em cada esquema no Adobe Experience Platform. Como exemplo, aqui está o esquema para `Demo System - Event Schema for Call Center (Global v1.1)`, no qual você pode ver que o Identificador Principal está definido como `phoneNumber`.
 
 ![demonstração](./images/cja13.png)
 
@@ -87,9 +87,9 @@ No entanto, você ainda pode influenciar qual identificador será usado para com
 
 Como mencionado, você pode definir IDs de pessoa diferentes para cada conjunto de dados. Isso permite reunir diferentes conjuntos de dados de várias origens no CJA. Imagine trazer o NPS ou dados de pesquisa que seriam muito interessantes e úteis para entender o contexto e por que algo aconteceu.
 
-O nome do campo ID de pessoa não é importante, desde que o valor nos campos ID de pessoa corresponda. Por exemplo, se a ID de pessoa for `email` em um conjunto de dados e `emailAddress` noutro, e `dnb-bootcamp@adobe.com` for o mesmo valor para o campo ID de pessoa em ambos os conjuntos de dados, o CJA poderá compilar os dados.
+O nome do campo ID de pessoa não é importante, desde que o valor nos campos ID de pessoa corresponda. Por exemplo, se a ID de pessoa for `email` em um conjunto de dados e `emailAddress` em outro, e `dnb-bootcamp@adobe.com` for o mesmo valor para o campo de ID de pessoa em ambos os conjuntos de dados, o CJA poderá compilar os dados.
 
-Atualmente, existem algumas outras limitações, como compilar o comportamento anônimo para conhecido. Leia as perguntas frequentes aqui: [Perguntas frequentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR).
+Atualmente, existem algumas outras limitações, como compilar o comportamento anônimo para conhecido. Revise as Perguntas Frequentes aqui: [Perguntas Frequentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Costura de dados usando a ID de pessoa
 
@@ -123,11 +123,11 @@ Clique em **Adicionar conjuntos de dados**.
 ![demonstração](./images/cja16.png)
 
 Clique em **Salvar** e vá para o próximo exercício.
-Depois de criar o seu **Conexão** pode levar algumas horas até que seus dados estejam disponíveis no CJA.
+Após criar sua **Conexão**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
 
 ![demonstração](./images/cja20.png)
 
-Próxima etapa: [4.3 Criar uma visualização de dados](./ex3.md)
+Próxima Etapa: [4.3 Criar uma Exibição de Dados](./ex3.md)
 
 [Voltar para Fluxo de Usuário 4](./uc4.md)
 

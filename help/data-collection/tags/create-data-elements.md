@@ -10,12 +10,12 @@ exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
 source-git-commit: a72fd41c9673d06585dc787ffe8086e5c9ba23a0
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 1%
+ht-degree: 38%
 
 ---
 
 # Criar elementos de dados
 
-Saiba como criar elementos de dados para armazenar valores extraídos da camada de dados e disponibilizá-los para regras e extensões na propriedade da tag. Para obter mais informações, consulte [elementos de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=pt-BR) documentação.
+Saiba como criar elementos de dados para armazenar valores extraídos da camada de dados e disponibilizá-los para regras e extensões na propriedade da tag. Para obter mais informações, consulte a documentação de [elementos de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on)

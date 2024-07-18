@@ -5,20 +5,20 @@ recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 39%
+source-wordcount: '851'
+ht-degree: 37%
 
 ---
 
 # Visão geral
 
-_Implementar o Experience Cloud em sites com tags_ O é o ponto de partida perfeito para desenvolvedores front-end ou profissionais técnicos que desejam aprender como implementar as soluções da Adobe Experience Cloud no site.
+_Implementar o Experience Cloud em sites com tags_ é o ponto de partida perfeito para desenvolvedores front-end ou profissionais de marketing técnicos que desejam aprender como implementar as soluções da Adobe Experience Cloud no site.
 
 Cada lição contém exercícios práticos e informações essenciais para ajudar você a implementar a Experience Cloud e compreender seu valor.  Os sites de demonstração são fornecidos para que você complete o tutorial e possa aprender as técnicas subjacentes em um ambiente seguro. Após concluir este tutorial, você deve estar pronto para começar a implementar todas as suas soluções de marketing por meio de tags em seu próprio site.
 
 >[!INFO]
 >
->Este tutorial usa extensões e bibliotecas específicas do aplicativo (AppMeasurement.js para Adobe Analytics, at.js para Adobe Target). Se estiver querendo implementar o Adobe Experience Platform Web SDK, consulte a [Implementar o Adobe Experience Cloud com o SDK da Web](/help/tutorial-web-sdk/overview.md) tutorial.
+>Este tutorial usa extensões e bibliotecas específicas do aplicativo (AppMeasurement.js para Adobe Analytics, at.js para Adobe Target). Se você deseja implementar o Adobe Experience Platform Web SDK, consulte o tutorial [Implementar o Adobe Experience Cloud com o Web SDK](/help/tutorial-web-sdk/overview.md).
 
 
 Depois de concluir este, você poderá:
@@ -28,7 +28,7 @@ Depois de concluir este, você poderá:
 * Instalar uma propriedade de tag em um site
 
 * Adicione as seguintes soluções da Adobe Experience Cloud:
-   * **[Adobe Experience Platform Identity Service](id-service.md)**
+   * **[Serviço de identidade da Adobe Experience Platform](id-service.md)**
    * **[Adobe Target](target.md)**
    * **[Adobe Analytics](analytics.md)**
    * **[Adobe Audience Manager](audience-manager.md)**
@@ -37,25 +37,25 @@ Depois de concluir este, você poderá:
 
 * Valide a implementação usando o Adobe Experience Cloud Debugger
 
-* Publicar alterações por meio de ambientes de desenvolvimento, de armazenamento temporário e de produção
+* Alterações no Publish por meio de ambientes de desenvolvimento, preparo e produção
 
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
-> * O Platform launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * As configurações de borda agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
+> * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 >[!NOTE]
 >
->Tutoriais de várias soluções semelhantes também estão disponíveis para [SDK da Web](../tutorial-web-sdk/overview.md) e [SDK móvel](../tutorial-mobile-sdk/overview.md).
+>Tutoriais de várias soluções semelhantes também estão disponíveis para o [SDK da Web](../tutorial-web-sdk/overview.md) e o [SDK móvel](../tutorial-mobile-sdk/overview.md).
 
 ## Pré-requisitos
 
 Nessas lições, presume-se que você tenha uma Adobe ID e as permissões necessárias para concluir os exercícios. Caso contrário, pode ser necessário entrar em contato com o administrador da Experience Cloud para solicitar acesso.
 
-* Para tags, você deve ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes. Para obter mais informações sobre permissões de usuário de tags, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Para tags, você deve ter permissão para desenvolver, aprovar, Publish, gerenciar extensões e gerenciar ambientes. Para obter mais informações sobre permissões de usuário de marca, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * No Adobe Analytics, você deve conhecer o servidor de rastreamento e quais conjuntos de relatórios você usará para concluir este tutorial
 * Para o Audience Manager, você deve conhecer seu subdomínio do Audience Manager (também conhecido como &quot;Nome do parceiro&quot;, &quot;ID do parceiro&quot; ou &quot;Subdomínio do parceiro&quot;)
 
@@ -65,7 +65,7 @@ Além disso, pressupõe-se que você esteja familiarizado com linguagens de dese
 
 O recurso de tags da Adobe Experience Platform é a próxima geração de recursos de gerenciamento de tags de site e de SDKs móveis da Adobe. As tags oferecem aos clientes uma forma simples de implantar e gerenciar todas as soluções de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Não há custo adicional para Tags. Ele está disponível para qualquer cliente da Adobe Experience Cloud.
 
-As tags para sites permitem gerenciar centralmente todas as soluções JavaScript relacionadas a análises, marketing e publicidade usadas em seu desktop e sites móveis. Por exemplo, se você implantar o Adobe Analytics, as tags gerenciarão a biblioteca JavaScript do AppMeasurement, preencherão variáveis e acionarão solicitações.
+As tags para sites permitem gerenciar centralmente todas as JavaScript relacionadas às soluções de análise, marketing e publicidade usadas em seu desktop e sites móveis. Por exemplo, se você implantar o Adobe Analytics, as tags gerenciarão a biblioteca JavaScript do AppMeasurement, preencherão variáveis e acionarão solicitações.
 
 O conteúdo do container é minimizado, incluindo o código personalizado. Tudo é modular. Se você não precisar de um item, ele não será incluído na biblioteca. O resultado é uma implementação rápida e compacta.
 
@@ -75,12 +75,12 @@ Tags também é uma plataforma que permite que fornecedores de terceiros criem e
 
 Nessas lições, você implementará a Adobe Experience Cloud em um site de varejo falso chamado Luma. O [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html) tem uma camada de dados avançada e uma funcionalidade que permitirá a criação de uma implementação realista. Você criará sua própria propriedade de tag, em sua própria organização da Experience Cloud, e a mapeará para o nosso site hospedado do Luma usando a Experience Cloud Debugger.
 
-[![Site Luma](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html).
+[![Site da Luma](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## Obter as ferramentas
 
 1. Como você estará usando algumas extensões específicas do navegador, recomendamos concluir o tutorial usando o [navegador web Chrome](https://www.google.com/chrome/)
-1. Adicione o [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) extensão para o navegador Chrome
+1. Adicione a extensão [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) ao navegador Chrome
 1. Copie o exemplo de código de página html
 
    +++Exemplo de código de página html

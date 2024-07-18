@@ -9,8 +9,8 @@ feature: Profiles
 exl-id: 4eebb080-77fd-4162-aa64-d599f1274c93
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 2%
+source-wordcount: '540'
+ht-degree: 1%
 
 ---
 
@@ -28,11 +28,11 @@ Acessado [Adobe Experience Platform](https://experience.adobe.com/platform). Dep
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, você precisa atualizar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. painel de navegação o sandbox, você é a tela e agora está você em seu [!UICONTROL sandbox] Comparar.
+Antes de continuar, você seleciona **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso no texto **[!UICONTROL Produção Prod]** na linha azul na parte superior da tela. Depois de pegar a sandbox, você verá a tela e agora você está em seu [!UICONTROL sandbox].
 
 ![Assimilação de dados](./images/sb1.png)
 
-Sem menu à esquerda, acesso **Perfis** e **Procurar**.
+Nenhum menu à esquerda, acessado **Perfis** e **Procurar**.
 
 ![Perfil do cliente](./images/homemenu.png)
 
@@ -40,35 +40,35 @@ No painel Visualizador de perfil no seu site, você pode encontrar a visão gera
 
 ![Perfil do cliente](./images/identities.png)
 
-Não há painel Visualizador de perfil, agora você pode ver uma identidade a seguir:
+No painel Visualizador de perfil, agora você pode ver uma identidade próxima a seguinte:
 
 | Namespace | Identidade |
 |:-------------:| :---------------:|
-| Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
+| ID Experience Cloud (ECID) | 19428085896177382402834560825640259081 |
 
 Com a Adobe Experience Platform IDs de todos os são importantes. Anµ, o ECID era o ID mais importante no contexto da Adobe e todos os outros IDs estavam vinculados ECID em uma relação hierárquica. Com a Adobe Experience Platform, isso mudou e cada ID pode ser considerado um identificador exclusivo.
 
-, o identificador dependente do contexto. Com você alternará com seu call center: **Qual é o ID mais importante?** Eles provavelmente responderão: **o número de telefone!** Mas se você alternará à sua equipe de CRM, eles responderão: **o endereço de e-mail!** Uma Adobe Experience Platform que acompanha a experiência e gerencia isso. Um movimento ativo, um movimento ativo da Adobe ou não, se comunicará com a Adobe Experience Platform referindo-se ao ID que o principal. E simples funciona.
+, o identificador dependente do contexto. Se você alternar com seu Call Center: **Qual é o ID mais Importante?** Provavelmente responderão: **o número de telefone!** Mas se você tem a sua equipe de CRM, eles responderão: **o endereço de e-mail!** A Adobe Experience Platform pega essa mudança e gerencia isso para. Um movimento ativo, um movimento ativo da Adobe ou não, se comunicará com a Adobe Experience Platform referindo-se ao ID que o principal. E simples funciona.
 
-Pará o campo **Namespace de identidade**, **ECID** e para o campo **Valor de identidade** insira o ECID que você pode encontrar no painel Visualizador de perfil do site do Bootcamp. Clique em **Exibir**. Você verá seu perfil na lista. Clique em não **ID do perfil** para abrir seu perfil.
+Para o campo **Namespace de identidade**, **ECID** e para o campo **Valor de identidade** dentro do ECID que você pode encontrar no painel Visualizador de perfil do site do Bootcamp. Clique em **Exibir**. Você verá seu perfil na lista. Clique em **ID do Perfil** para abrir seu perfil.
 
 ![Perfil do cliente](./images/popupecid.png)
 
-Agora você tem uma visão geral de alguns **Atributos de perfil** principais do seu perfil de cliente.
+Agora você uma visão geral de alguns **Atributos de perfil** principais do seu perfil de cliente.
 
 ![Perfil do cliente](./images/profile.png)
 
-Acessado **Eventos**, onde você pode ver as entradas de cada evento de experiência ao perfil.
+Acessado **Eventos**, onde você pode ver as entradas de cada evento de experiência vinculado ao seu Perfil.
 
 ![Perfil do cliente](./images/profileee.png)
 
-Por fim, acesse a opção de menu **Associação de segmento**. Agora você verá todos os segmentos que se qualifica para este perfil.
+Por fim, acesse a opção de menu **Segmento de afiliação**. Agora você verá todos os segmentos que se qualifica para este perfil.
 
 ![Perfil do cliente](./images/profileseg.png)
 
 Agora vamos criar um novo segmento que muda que você personaliza a experiência do cliente para um cliente anônimo ou conhecido.
 
-Próxima etapa: [1.3 Segmento do crime - IU](./ex3.md)
+Próxima etapa: [1.3 Segmento de um crime - IU](./ex3.md)
 
 [Retorno para Fluxo de monitoramento 1](./uc1.md)
 

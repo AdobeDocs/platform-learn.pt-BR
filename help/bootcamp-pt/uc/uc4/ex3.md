@@ -11,7 +11,7 @@ feature: Data Views
 exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1655'
+source-wordcount: '1667'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Será necessário, no mínimo, uma Visualização de Dados por conexão. Não é
 - Use os exemplos para KPIs e métricas para o Google Analytics e para o Customer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma.
 - Visualização de dados filtrada para mostrar, por exemplo, dados para apenas um mercado, ou uma marca, ou apenas para Dispositivos móveis.
 
-Na tela de **Conexões** marque a caixa de seleção da conexão que você acabou de criar. Clique em  **Criar visualização de dados**.
+Na tela de **Conexões** marque a caixa de seleção da conexão que você acabou de criar. Clique em **Criar visualização de dados**.
 
 ![demonstração](./images/exta.png)
 
@@ -50,13 +50,13 @@ Arquivado do original em 12 de julho de 2012 &quot;Agora você pode mudar como o
 
 ![demonstração](./images/0-v2.png)
 
-A **Conexão** que você criou no exercício anterior já está selecionado. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
+Uma **Conexão** que você criou no exercício anterior já está selecionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
 
 ![demonstração](./images/ext5.png)
 
-Em seguida, dê um nome à sua Visualização de Dados em conformidade com este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
+Em seguida, dê um nome à sua Visualização de Administração este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
 
-Responsabilidade do mesmo valor para a descrição: `yourLastName – Omnichannel Data View`.
+Descrição do jogo: `yourLastName – Omnichannel Data View`.
 
 | Nome | Descrição |
 | ----------------- |-------------| 
@@ -64,7 +64,7 @@ Responsabilidade do mesmo valor para a descrição: `yourLastName – Omnichan
 
 ![demonstração](./images/1-v2.png)
 
-Parágrafo **Fuso Horário**, ➡ o fuso horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, Amsterdã GMT+01:00**. Este é um mundo realmente interessante, pois algumas empresas relacionadas em países e geografias. Alocar o fuso horário para o momento para país evitará os típicos de dados, como, por exemplo, µ a maioria das pessoas compradas camisetas às 4h no Peru.
+Para **Fuso Horário**, fuso horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, GMT+01:00**. Este é um mundo realmente interessante, pois algumas empresas relacionadas em países e geografias. Alocar o fuso horário para o momento para país evitará os típicos de dados, como, por exemplo, µ a maioria das pessoas compradas camisetas às 4h no Peru.
 
 ![demonstração](./images/ext7.png)
 
@@ -74,7 +74,7 @@ Agora você deve ter como modificar:
 
 ![demonstração](./images/1-v2.png)
 
-Clique em **Salvar e continuar**.
+Clique em **Salvar e Continuar**.
 
 ![demonstração](./images/12-v2.png)
 
@@ -90,7 +90,7 @@ Neste exercício, você irá modificar os requisitos para os dados e visualizá-
 
 >[!IMPORTANT]
 >
->Se você não encontrar uma mudança ou mudança de perspectiva, muda o campo `Contains data` foi publicado o seu pedido de dados. Caso contrário, exclua esse campo.
+>Se você não consegue encontrar uma mudança ou mudança, a mudança se o campo foi mudado de sua migrada. `Contains data` Caso contrário, exclua esse campo.
 >
 >![demonstração](./images/2-v2a.png)
 
@@ -100,39 +100,39 @@ Vamos começar com o primeiro componente: **Nome (web.webPageDetails.name)**. Pe
 
 ![demonstração](./images/3-v2.png)
 
-Isso é componente o nome da página, como você pode derivar da leitura do campo do schema `(web.webPageDetails.name)`.
+Esse componente é o nome da página, como você pode derivar da leitura do campo do esquema `(web.webPageDetails.name)`.
 
-Não usar, no entanto **Nome** como o nome não a melhor navegação de comunicação para um contato e eventos multifuncionais essa dimensão.
+Não, usar **Nome** como o nome não é a melhor combinação de notificação para um cliente ➡ essa dimensão.
 
-Vamos mudar o nome para **Nome da página**. Clique no componente e o renomeie na área **Configurações do componente**.
+Vamos mudar o nome para **Nome da página**. Clique em no componente o renomeie na área **Configurações de componente**.
 
 ![demonstração](./images/3-0-v2.png)
 
-As configurações de persistência são **Configurações de persistência**. Os conceitos de eVars e prop não tem nenhum CJA, mas as configurações de Persistência possibilitam um comportamento compartilhado.
+As Configurações de persistência são **configurações de persistência**. Os conceitos de eVars e prop não tem nenhum CJA, mas as configurações de Persistência possibilitam um comportamento compartilhado.
 
 ![demonstração](./images/3-0-v21.png)
 
-Se você não quer mudar as configurações, o CJA irá interpretar a mudança como um **Prop** (de acordo). Além disso, você pode uma Persistência para tornar a uma dimensão **eVar** (persistir o valor ao longo da jornada).
+Se você não quer as configurações, o CJA irá interpretar a transformação como um **Prop** (nível de manipulação). Além disso, podemos escolher uma Persistência para tornar a realidade a uma dimensão **eVar** (persistir o valor ao longo da jornada).
 
-Se não estiver familiarizado com eVars e Props, [leia mais sobre isso na solução](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
+Se você não está familiarizado com eVars e Props, [leia mais sobre isso na verdade](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
-Vamos deixar o Nome da Página como Prop. Dessa forma, você não precisa nada **Configurações de persistência**.
+Vamos deixar o Nome da Página como Prop. Dessa forma, você não precisa realizar nenhuma **Configurações de persistência**.
 
-| Nome do componente a ser pesquisado | Novo nome | Configurações de persistência |
+| Component Name to Search | Novo nome | Configurações de persistência |
 | ----------------- |-------------| --------------------| 
 | Nome (web.webPageDetails.name) | Nome da página |          |
 
-Em vez disso, em vez de uma alteração **phoneNumber** e solte-a na tela. O novo nome deve ser **Número de telefone**.
+Em seguida, a opção a opção **phoneNumber** e solte-a na tela. O novo nome deve ser **Número de Telefone**.
 
 ![demonstração](./images/3-1-v2.png)
 
-Por fim, vamos atrás como Configurações de persistência, o Número do Celular deve persistir no do usuário.
+Por fim, vamos alterar as Configurações de persistência, pois o Número do Celular deve persistir no nível do usuário.
 
-Para mudar a Persistência, papel para baixo no menu à direita e abra a aba **Persistência**:
+Para mudar a Persistência, role para baixo no menu à direita e abra a aba **Persistência**:
 
 ![demonstração](./images/5-v2.png)
 
-Marque a caixa de seleção para modificar as configurações de persistência. µ **Mais recente** e o escopo **Pessoa (janela Relatórios)**, pois nos apenas com o último número de células da pessoa. Se o cliente não deve o cliente em acompanhante, você ainda verá esse valor exibido.
+Marque a caixa de seleção para modificar as configurações de persistência. **Mais recente** e o escopo **Pessoa (Janela de relatórios)**, pois nos preocupamos apenas com o último número de celular da pessoa. Se o cliente não deve o cliente em acompanhante, você ainda verá esse valor exibido.
 
 ![demonstração](./images/6-v2.png)
 
@@ -140,11 +140,11 @@ Marque a caixa de seleção para modificar as configurações de persistência. 
 | ----------------- |-------------| --------------------| 
 | phoneNumber | Número de telefone | Mais recente, Pessoa (janela de relatórios) |
 
-O próximo componente é `web.webPageDetails.pageViews.value`.
+O componente é `web.webPageDetails.pageViews.value`.
 
-Sem menu à esquerda, pesquise `web.webPageDetails.pageViews.value`. Arraste e solte a essa na tela.
+Nenhum menu à esquerda, pesquise `web.webPageDetails.pageViews.value`. Arraste e solte a essa na tela.
 
-Altere o nome para **Exibições de página** no **Configurações do componente**.
+Alterar o nome para **Exibições de página** em **Configurações de componente**.
 
 | Nome do componente a ser pesquisado | Novo nome | Configurações de atribuição |
 | ----------------- |-------------| --------------------| 
@@ -171,7 +171,7 @@ Em seguida, você tem que mudar as dimensões dimensões e tricas, na tabela aba
 | Tipo de pagamento | Tipo de pagamento |          |
 | Método de adição de produto | Método de adição de produto | Mais recente, Sessão |
 | Tipo de evento | Tipo de evento |         |
-| Nome (productListItems.name) | Nome do produto |         |
+| Name (productListItems.name) | Nome do produto |         |
 | SKU | SKU (Sessão) | Mais recente, Sessão |
 | ID da transação | ID da transação |         |
 | URL (web.webPageDetails.URL) | URL |         |
@@ -196,15 +196,15 @@ Não se Salvar de Salvar sua Visualização de Dados Então clique em **Salvar**
 
 consultado em 28 de novembro de 2012 &quot;µ todos os componentes na Visualização de dados, ainda há dois anos atrás para que os usuários dos testes para analisar seus dados&quot; .
 
-Se você tiver encontrado, não demonstrações disponibilizadas Métricas como Adicionar ao Carinho, Visualização do produto ou Compras para a Visualização de dados. No domínio público, em uma dimensão reduzida: **Tipo de evento**. Então, vamos derivar esses eventos de manipulação 3 métricas calculadas.
+Se você tiver encontrado, não demonstrações disponibilizadas Métricas como Adicionar ao Carinho, Visualização do produto ou Compras para a Visualização de dados. Não há nenhum processo, é preciso uma dimensão musical: **Tipo de evento**. Então, vamos derivar esses eventos de manipulação 3 métricas calculadas.
 
-Vamos começar com a primeira Métrica: **Exibições do produto**.
+Vamos começar com a primeira Métrica: **Visualizações do produto**.
 
-Não lado esquerdo, pesquise **Tipo de evento** e mudam. Em acompanhamento, em acompanhamento-o-solte **Componentes incluídos**.
+Sem lado esquerdo, pesquise **Tipo de evento** e ➡ a dimensão. Em combinação, componente-o-solte na tela **Incluído**.
 
 ![demonstração](./images/calcmetr1.png)
 
-Clique para analisar uma nova ➡ **Tipo de evento**.
+Clique para consolidar uma nova ➡ **Tipo de evento**.
 
 ![demonstração](./images/calcmetr2.png)
 
@@ -216,21 +216,21 @@ Agora altere o nome e a descrição do componente para os domínios valores:
 
 ![demonstração](./images/calcmetr3.png)
 
-Agora contar apenas eventos de **Exibições do produto**. Para fazer isso, papel para baixo em **Configurações do componente** até ver Valores de **Incluir/Excluir valores**. µ-se de habilitar a opção **Definir a inclusão/exclusão de valores**.
+Agora vamos contar apenas eventos de **Exibições do produto**. Para fazer isso, role para baixo em **Configurações de componente** até ver Valores de **Incluir valores de exclusão**. µ-se de habilitar a opção **Definir valores de inclusão/exclusão**.
 
 ![demonstração](./images/calcmetr4.png)
 
-Como corrigir apenas **Exibições do produto**, **commerce.productViews** nos.
+Como visualizações somente **Exibições do produto**, **commerce.productViews** nos.
 
 ![demonstração](./images/calcmetr5.png)
 
 Agora a sua mudança está pronta!
 
-Em seguida, repita o mesmo processador para os eventos **Adicionar ao carrinho** e **Comprar**.
+Em seguida, repita o mesmo processador para os eventos **Adicionar ao carrinho** e **Comprar**.
 
 ### Adicionar ao carrinho
 
-Primeiro, parti e solte a inclinar **Tipo de evento**.
+Primeiro, participantes e solte a ➡ **Tipo de evento**.
 
 ![demonstração](./images/calcmetr1.png)
 
@@ -240,7 +240,7 @@ Você verá um alerta pop-up de um Campo Duplicado, pois usando um equipamento d
 
 Agora, siga o mesmo processo que muda para a visualização da produção:
 - Primeiro altere o nome e a descrição.
-- Por fim, **commerce.productListAdds** como exibido para exibir apenas Adicionar ao carrinho
+- Por fim, **commerce.productListAdds** como exibido para contar apenas Adicionar ao carrinho
 
 | Nome | Descrição | Critérios |
 | ----------------- |-------------| -------------|
@@ -250,7 +250,7 @@ Agora, siga o mesmo processo que muda para a visualização da produção:
 
 ### Compras
 
-Primeiro, parti e solte a inclinar **Tipo de evento** como exibido para as duas métricas anteriores.
+Primeiro, competie e solte a ➡ **Tipo de evento** como exibido para as duas métricas anteriores.
 
 ![demonstração](./images/calcmetr1.png)
 
@@ -258,9 +258,9 @@ Você verá um alerta pop-up de um Campo Duplicado, pois usando um equipamento d
 
 ![demonstração](./images/calcmetr7.png)
 
-Agora, siga o mesmo processo que PERGUNTAS PARA métricas Visualizações do produto e Adicionar ao carrinho:
+Agora, siga o mesmo processo que fizemos para as métricas Product Views e Add to cart:
 - Primeiro altere o nome e a descrição.
-- Por fim, **commerce.purchases** como pesquisas para contabilizar apenas como Compras
+- Por fim, **compras** como compras para contas apenas como Compras
 
 | Nome | Descrição | Critérios |
 | ----------------- |-------------| -------------|
@@ -278,7 +278,7 @@ Você deve ser redirecionado para esta tela:
 
 ![demonstração](./images/8-v2.png)
 
-Nesta aba, você pode modificar como as alterações para a forma processados. Vamos começar definindo o **Tempo limite da sessão** como 30 min. Graças ao registro de dados e hora de cada evento de experiência, você pode estender o desenvolvimento de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente para o call center Depois de visitar o site? Tempos Limite de Sessão expandida, você tem capacidade para movimentar o que é uma sessão e como essa sessão mesclar os dados.
+Nesta aba, você pode modificar como as alterações para a forma processados. Vamos começar definindo o **Tempo limite da sessão** como 30 min. Graças ao registro de dados e hora de cada evento de experiência, você pode estender o desenvolvimento de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente para o call center Depois de visitar o site? Tempos Limite de Sessão expandida, você tem capacidade para movimentar o que é uma sessão e como essa sessão mesclar os dados.
 
 ![demonstração](./images/ext8.png)
 
@@ -286,7 +286,7 @@ Nesta aba você pode as coisas como filtrar os dados usando um segmento/filtro. 
 
 ![demonstração](./images/10-v2.png)
 
-Quando, clique em **Salvar e concluir**.
+Quando, clique em **Salvar e finalizar**.
 
 ![demonstração](./images/13-v2.png)
 

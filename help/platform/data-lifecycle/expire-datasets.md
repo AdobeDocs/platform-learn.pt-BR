@@ -19,11 +19,11 @@ ht-degree: 1%
 
 Saiba como agendar exclusões de conjunto de dados usando o recurso de higiene de dados da Adobe Experience Platform.
 
-A exclusão do conjunto de dados permite que os administradores e engenheiros de dados definam uma data de expiração para um conjunto de dados. Para obter mais informações, visite o [documentação de higiene de dados](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=pt-BR).
+A exclusão do conjunto de dados permite que os administradores e engenheiros de dados definam uma data de expiração para um conjunto de dados. Para obter mais informações, consulte a [documentação sobre higiene de dados](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=pt-BR).
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
 
 >[!NOTE]
 >
-> Todos os clientes da Platform podem [excluir conjuntos de dados por demanda](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). No momento, a programação de exclusões do conjunto de dados está disponível apenas para clientes do Healthcare Shield ou do Privacy and Security Shield.
+> Todos os clientes da Platform podem [excluir conjuntos de dados sob demanda](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). No momento, a programação de exclusões do conjunto de dados está disponível apenas para clientes do Healthcare Shield ou do Privacy and Security Shield.

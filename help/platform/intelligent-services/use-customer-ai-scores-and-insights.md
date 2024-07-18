@@ -17,7 +17,7 @@ ht-degree: 51%
 
 # Usar pontuações e insights do Customer AI
 
-Saiba como usar as pontuações de propensão e insights do Customer AI para converter e reter clientes. Para obter mais informações, visite o [Documentação da IA do cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
+Saiba como usar as pontuações de propensão e insights do Customer AI para converter e reter clientes. Para obter mais informações, visite a [documentação da IA do cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on)
 

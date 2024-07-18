@@ -10,16 +10,16 @@ thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 10%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 
-# Configuração baseada em arquivo [!UICONTROL armazenamento na nuvem] ou [!UICONTROL marketing por email] destinos
+# Configurando destinos de [!UICONTROL marketing por email] ou [!UICONTROL armazenamento na nuvem] baseado em arquivo
 
-Obtenha dicas durante uma apresentação da configuração de um destino baseado em arquivo no Adobe Real-time Customer Data Platform (CDP). Isso se aplica a [!UICONTROL armazenamento na nuvem] destinos (por exemplo, S3 ou SFTP) e também [!UICONTROL marketing por email] destinos. Para obter a documentação mais detalhada do produto, consulte:
+Obtenha dicas durante uma apresentação da configuração de um destino baseado em arquivo no Adobe Real-time Customer Data Platform (CDP). Isso se aplica aos destinos do [!UICONTROL armazenamento na nuvem] (por exemplo, S3 ou SFTP) e também aos destinos do [!UICONTROL marketing por email]. Para obter a documentação mais detalhada do produto, consulte:
 
-* [Ativar dados do público-alvo para destinos de exportação de perfil em lote](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=pt-BR) para obter instruções sobre como ativar dados para destinos de marketing em lote ou por email usando a interface do Experience Platform
-* [Conectar-se a destinos em lote e ativar dados usando a API do Serviço de fluxo](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) para obter instruções sobre como ativar dados para destinos de marketing em lote ou por email usando a API do Serviço de fluxo
+* [Ativar dados de público-alvo para destinos de exportação de perfil em lote](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) para obter instruções sobre como ativar dados para destinos de marketing em lote ou email usando a interface do Experience Platform
+* [Conecte-se aos destinos em lote e ative os dados usando a API de Serviço de Fluxo](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) para obter instruções sobre como ativar dados para destinos de marketing em lote ou por email usando a API de Serviço de Fluxo
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on)

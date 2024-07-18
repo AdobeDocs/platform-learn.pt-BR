@@ -10,7 +10,7 @@ feature: Segments, Integrations
 exl-id: 862afd4c-1b6c-48fe-bc1f-967c065642e0
 source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -21,37 +21,37 @@ Acessado [Adobe Experience Platform](https://experience.adobe.com/platform). Dep
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, você precisa atualizar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. painel de navegação o sandbox, você é a tela e agora está você em seu [!UICONTROL sandbox] Comparar.
+Antes de continuar, você seleciona **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso no texto **[!UICONTROL Produção Prod]** na linha azul na parte superior da tela. Depois de pegar a sandbox, você verá a tela e agora você está em seu [!UICONTROL sandbox].
 
 ![Assimilação de dados](./images/sb1.png)
 
 ## 1.4.1 Ativo seu segmento para o destino do Adobe Target
 
-O Adobe Target está disponível como um destino do CDP em tempo real. Para inferir sua integração com o Adobe Target, acesse **Destinos** e **Catálogo**.
+O Adobe Target está disponível como um destino do CDP em tempo real. Para contaminsua integração com o Adobe Target, acesse **Destinos** e **Catálogo**.
 
-Clique em **Personalização** nenhum menu **Categorias**. Você verá o cartão de destino do **Adobe Target**. Clique em **Ativar segmentos**.
+Clique em **Personalization** sem menu **Categorias**. Você verá o cartão de destino do **Adobe Target**. Clique em **Ativar segmentos**.
 
-![EM](./images/atdest1.png)
+![ÀS](./images/atdest1.png)
 
-o destino ``Bootcamp Target`` e clique **Próxima**.
+ou destino ``Bootcamp Target`` e clique **Próximo**.
 
-![EM](./images/atdest3.png)
+![ÀS](./images/atdest3.png)
 
-Na lista de conjuntos, o segmento que você criou em [1.3 Segmento de crime](./ex3.md), com o nome `yourLastName - Interest in Real-Time CDP`. Em seguida, clique em **Próxima**.
+Na lista de segmentos, o segmento que você criou em [1.3 ócio um segmento](./ex3.md), com o nome `yourLastName - Interest in Real-Time CDP`. Em seguida, clique em **Próximo**.
 
-![EM](./images/atdest8.png)
+![ÀS](./images/atdest8.png)
 
-Na próxima página, clique em **Próxima**.
+Na próxima página, clique em **Próximo**.
 
-![EM](./images/atdest9.png)
+![ÀS](./images/atdest9.png)
 
 Clique em **Concluir**.
 
-![EM](./images/atdest10.png)
+![ÀS](./images/atdest10.png)
 
 Seu segmento agora está ocupado para o Adobe Target.
 
-![EM](./images/atdest11.png)
+![ÀS](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
@@ -61,12 +61,12 @@ Seu segmento agora está ocupado para o Adobe Target.
 
 que seu segmento Real-Time CDP está configurado para ser enviado ao Adobe Target, é possível acompanhar sua atividade de segmentação por experiência no Adobe Target. Neste exercício, você irá modificar uma base baseada no Visual Experience Composer.
 
-Acessar a página inicial da Adobe Experience Cloud acessando [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abrir.
+Acessar a página inicial da Adobe Experience Cloud [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Clique em **Target** para abrir.
 
 ![RTCDP](./images/excl.png)
 
-Na página inicial do **Adobe Target**, você verá todas as atividades existentes.
-Clique em **+ Criar atividade** para criar uma nova atividade.
+Na página inicial do **Adobe Target**, você verá todas as como atividades existentes.
+Clique em **+ Criar atividade** para criar uma nova atividade.
 
 ![RTCDP](./images/exclatov.png)
 
@@ -74,19 +74,19 @@ Clique em **+ Criar atividade** para criar uma nova atividade.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-µ **Visual** e ➡ a **URL da atividade** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso, substitua XX por um número entre 01 e 60.
+µ {0 Visual **e ➡ a** Atividade URL **como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso, substitua XX por um número entre 01 e 60.**
 
 >[!IMPORTANT]
 >
->Cada participante da capacitação deve usar uma página da Web para evitar a colisão de experiências do Adobe Target. É possível escolher uma página da Web e encontrar um URL acessando: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Cada participante da capacitação deve usar uma página da Web para evitar a colisão de experiências do Adobe Target. É possível escolher uma página da Web e encontrar um URL acessando: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
 >Todas as partes do participante a mesma URL base e terminam com o número do participante.
 >
 >Por exemplo, o participante 1 deve usar um URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar um URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
-o espaço de trabalho **AT Bootcamp**.
+ou espaço de trabalho **AT Bootcamp**.
 
-Clique em **Próxima**.
+Clique em **Próximo**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
@@ -94,11 +94,11 @@ Agora você não está no Visual Experience Composer. Pode de levar 20 a 30 segu
 
 ![RTCDP](./images/atform1.png)
 
-público padrão são **Todos os visitantes**. Clique soe **3 pontos** ao lado de **Todos os visitantes** e clique em **Alterar público-alvo**.
+Documentação, o público padrão são **Todos os visitantes**. Clique nos **3 pontos** ao lado de **Todos os visitantes** e clique em **Alterar público**.
 
 ![RTCDP](./images/atform3.png)
 
-Agora você está vendo a lista de compromissos, e o segmento da Adobe Experience Platform pré-enviada e enviada ao Adobe Target agora faz parte da dessa lista. o segmento que você precedeu na Adobe Experience Platform. Clique em **Atribuir público-alvo**.
+Agora você está vendo a lista de compromissos, e o segmento da Adobe Experience Platform pré-enviada e enviada ao Adobe Target agora faz parte da dessa lista. o segmento que você precedeu na Adobe Experience Platform. Clique em **Atribuir público**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
@@ -106,13 +106,13 @@ Seu segmento da Adobe Experience Platform agora parte dessa Atividade de segment
 
 ![RTCDP](./images/atform4.png)
 
-Antes de mudar a imagem principal, você deve mudar em **Permitir todos** nenhum banner de cookies.
+Antes de mudar a imagem principal, você deve mudar em **Permitir tudo** sem banner de cookies.
 
-Para isso, vá para **Procurar**
+Isso, vá para **Procurar**
 
 ![RTCDP](./images/cook1.png)
 
-Em seguida, clique em **Permitir todos**.
+Em seguida, clique em **Permitir tudo**.
 
 ![RTCDP](./images/cook2.png)
 
@@ -120,11 +120,11 @@ Em seguida, representante para **Compor**.
 
 ![RTCDP](./images/cook3.png)
 
-Agora vamos mudar a imagem principal na página inicial do site. Clique na imagem principal padrão sem site, clique em **Substituir conteúdo** e **Imagem**.
+Agora vamos mudar a imagem principal na página inicial do site. Clique na imagem principal padrão no site, clique em **Substituir conteúdo** e **Imagem**.
 
 ![RTCDP](./images/atform5.png)
 
-Pesquisa o arquivo de imagem **rtcdp.png**. e clique em **Salvar**.
+Pesquisa o arquivo de imagem **rtcdp.png**. e clique em **Salvar**.
 
 ![RTCDP](./images/atform6.png)
 
@@ -140,19 +140,19 @@ Para o nome, use:
 
 - `seuSobrenome - RTCDP - XT (VEC)`
 
-Clique em **Próxima**.
+Clique em **Próximo**.
 
 ![RTCDP](./images/atform8.png)
 
-Clique em **Próxima**.
+Clique em **Próximo**.
 
 ![RTCDP](./images/atform8a.png)
 
-Na página **Metas e configurações**, acesso **Métricas de meta**.
+Na página **Metas e configurações**, acessada **Métricas de meta**.
 
 ![RTCDP](./images/atform9.png)
 
-Definir uma meta principal como **Envolvimento** - **Tempo no site**. Clique em **Salvar e fechar**.
+Defina uma Meta principal como **Envolvimento** - **Tempo no Site**. Clique em **Salvar e fechar**.
 
 ![RTCDP](./images/vec3.png)
 
@@ -160,7 +160,7 @@ Agora você está na página **Visão geral da atividade**. Você ainda precisa 
 
 ![RTCDP](./images/atform10.png)
 
-Clique no campo **Inativo** e **Ativar**.
+Clique no campo **Inativo** e **Ativar**.
 
 ![RTCDP](./images/atform11.png)
 
@@ -170,7 +170,7 @@ Você controla uma visão de que sua atividade está ativa.
 
 Agora sua atividade está ativa e pode ser testada no site do bootcamp.
 
-Veja agora você ao seu site de documentação e visitar a página do produto para **Real-Time CDP**, você se qualifica classificados para o segmento que criou e verá a atividade do Adobe Target na página inicial em tempo real.
+Se agora você vai ao seu site de navegação e visitar a página do produto para **Real-Time CDP**, você se qualifica para o segmento que criou e verá a Adobe Target na página inicial em tempo real.
 
 >[!IMPORTANT]
 >
@@ -178,11 +178,11 @@ Veja agora você ao seu site de documentação e visitar a página do produto pa
 >
 >Todas as partes do participante a mesma URL base e terminam com o número do participante.
 >
->Por exemplo, o participante 1 deve usar a `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar um URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por exemplo, o participante 1 deve usar um `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, o participante 30 deve usar um URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 ![RTCDP](./images/atform12a.png)
 
-Próxima etapa: [1.5 Ação: Desejo seu segmento para o Facebook](./ex5.md)
+Próxima etapa: [1.5 Ação: desejada seu segmento para o Facebook](./ex5.md)
 
 [Retorno para Fluxo de monitoramento 1](./uc1.md)
 

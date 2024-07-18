@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: 14bfbebe-6df3-4a0e-875c-b4c0d016f8da
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -18,15 +18,15 @@ ht-degree: 0%
 
 ## Instalação o móvel
 
-Antes de mexer o movimento, é necessário habilitar **Rastreamento** sem seu iOS. Pará, acessos **Configurações** > **Privacidade e segurança** > **Rastreamento** e mudar a opção **Permitir que os aplicativos solicitem o rastreamento**.
+Antes de mexer o movimento, é necessário habilitar o **Rastreamento** não tem seu iOS. Isso, acessado **Configurações** > **Privacidade e segurança** > **Rastamento** e µ a **Permitir que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acessar um App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
+Acessar um App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Baixar**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o conjunto da arquitetura instalada, clique em **Abrir**.
+Depois que o lançamento da clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -42,7 +42,7 @@ Clique em **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Ler conjunto dos eua o migratório**.
+Clique em **Permitir usa o migrado**.
 
 ![DSN](./../uc3/images/app8.png)
 
@@ -64,7 +64,7 @@ Depois de criar sua conta nos relatórios, isso é alterado no site. Agora é ne
 
 ![Demonstração](./images/pv1.png)
 
-publicar o endereço de e-mail que você usou no site e clique em **Logon**.
+Mostrar o endereço de e-mail que você usou no site e clique em **Login**.
 
 ![DSN](./images/app14.png)
 
@@ -76,11 +76,11 @@ Retorno para a página do movimento e os recursos.
 
 ![DSN](./images/app17.png)
 
-Primeiro, acesso **Produtos**. Clique em qualquer produto, exemplo: **Café para ir**.
+Primeiro, acesse **Produtos**. Clique em qualquer produto, exemplo: **Café em andamento**.
 
 ![DSN](./images/app19.png)
 
-Você verá a página do produto **Café para ir** nenhum ➡.
+Você verá a página do produto **Café a consumir** não usado.
 
 ![DSN](./images/app20.png)
 
@@ -92,11 +92,11 @@ Em seguida, a tela abaixo é apresentada:
 
 ![DSN](./images/screen1.png)
 
-Em seguida, reitor para a página inicial. Clique no ➡ do **sinal**.
+Em seguida, reitor para a página inicial. Clique no ícone do **sinal**.
 
 ![DSN](./images/app23.png)
 
-Após essa etapa, o seguinte é apresentado. Primeiro, **Beacon de tela de bootcamp** e clique no botão de **entrada**. Isso que você simula uma entrada de contato com.
+Após essa etapa, o seguinte é apresentado. Primeiro, exibido **Beacon de tela de inicialização** e clique no botão de **entrada**. Isso que você simula uma entrada de contato com.
 
 ![DSN](./images/app21.png)
 
@@ -104,15 +104,15 @@ Agora confira a tela da loja. Você verá o produto visualizado nessa tela em 5 
 
 ![DSN](./images/screen2.png)
 
-Em seguida, representante para **Produtos**. Clique em qualquer produto, exemplo: **Bandeja de praia**.
+Em seguida, representante para **Produtos**. Clique em qualquer produto, exemplo: **Chapéu de praia**.
 
 ![DSN](./images/app22.png)
 
-Em seguida, reitor para a página inicial. Clique no ➡ do **sinal**.
+Em seguida, reitor para a página inicial. Clique no ícone do **sinal**.
 
 ![DSN](./images/app23.png)
 
-Em seguida, **Beacon de tela de bootcamp** e clique no botão de **Entrada** novamente. Isso que você simula uma entrada.
+Em sequência, Operação Tela **Bootcamp e clique no botão de** Novamente **.** Isso que você simula uma entrada.
 
 ![DSN](./images/app21.png)
 
@@ -126,7 +126,7 @@ Agora, vamos verificar o Perfil de seu Visualizador no site. Você verá muitos 
 
 Nos próximos, você muda e tem sua própria jornada de entrada do beacon.
 
-Próxima etapa: [3.2 Crise do evento](./ex2.md)
+Próxima etapa: [3.2 Criar seu evento](./ex2.md)
 
 [Retorno para Fluxo de monitoramento 3](./uc3.md)
 

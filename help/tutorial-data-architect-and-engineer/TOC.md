@@ -8,8 +8,8 @@ doc-type: multipage
 recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 46%
+source-wordcount: '104'
+ht-degree: 39%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 + [Tutorial do arquiteto e engenheiro de dados](overview.md)
 + [1. Configurar permissões](configure-permissions.md)
 + [2. Criar uma sandbox](create-a-sandbox.md)
-+ [3. Configurar o Console do desenvolvedor e o Postman](set-up-developer-console-and-postman.md)
++ [3. Configurar o Developer Console e o Postman](set-up-developer-console-and-postman.md)
 + [4. Dados do modelo em esquemas](model-data-in-schemas.md)
 + [5. Mapear identidades](map-identities.md)
 + [6. Criar conjuntos de dados](create-datasets.md)

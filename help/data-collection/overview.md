@@ -6,7 +6,7 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
@@ -37,7 +37,7 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     </a>
     </div>
     <p>
-    <em>Usar tags para implementar o SDK da Web da Platform</em>
+    <em>Usar marcas para implementar o SDK da Web da Platform</em>
     <p>
   </td>
   <td>
@@ -46,24 +46,24 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR" target="_blank">
-    <strong>Implementar o Experience Cloud em aplicativos para dispositivos móveis</strong>
+    <strong>Implementar o Experience Cloud em aplicativos móveis</strong>
     </a>
     </div>
     <p>
-    <em>Usar tags para implementar o SDK móvel da Platform</em>
+    <em>Usar marcas para implementar o SDK Móvel da Platform</em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=pt-BR" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
       <img alt="Migrar o Target para o SDK da Web" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=pt-BR" target="_blank">
-    <strong>Migrar do Adobe Target para o SDK da Web</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Migrar Adobe Target para o SDK da Web</strong>
     </a>
     </div>
     <p>
-    <em>Migração da at.js para o SDK da Web</em>
+    <em>Migrar do at.js para o SDK da Web</em>
     <p>
   </td>
 </tr>

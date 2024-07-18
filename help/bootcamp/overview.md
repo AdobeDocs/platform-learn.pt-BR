@@ -24,31 +24,31 @@ A personalização em escala começa com a compreensão do que pode ser melhorad
 
 ### Dia 1
 
-9:30: Entrada
+Apresentação de 9:30:
 
-10:00: Desafio de início/introdução e acampamento
+10:00: Desafio de Início / Introdução &amp; Bootcamp
 
-11:00: 1-1 personalização, caça por fricção, silos, PDV de Adobe (quadro de comunicações)
+11:00: 1-1 personalização, caça à fricção, silos, PDV de Adobe (quadro de comunicações)
 
-12:00: Interrupção
+Interrupção de 12:00:
 
 12:15: Detalhamento da arquitetura da solução (quadro de comunicações)
 
-13:00: Almoço
+Almoço :00:
 
-14:00: Fluxo de usuário 1 - Apresentação e prática de &quot;Aquisição&quot;
+14:00: Fluxo de usuário 1 - Aquisição de detalhamento prático e passo a passo
 
-15:30: Interrupção
+Interrupção de 15:30:
 
-16:00: Registro e integração do fluxo de usuário 2
+16:00: Fluxo de usuário 2 Registro e integração
 
 17:30: Golfclinic &amp; Borrel
 
-19:30: Jantar
+Jantar 19:30:
 
 ### Dia 2
 
-08:30: Sessão de café da manhã: Introdução à entrega baseada em Jornada do usuário, estrutura da equipe, backlog de entrega
+Sessão de café da manhã de 08:30:: Introdução à entrega com base na Jornada do usuário, estrutura da equipe, lista de pendências de entrega
 
 09.45: Noções básicas sobre o fluxo de dados da AEP por meio de cenários proativos
 
@@ -56,7 +56,7 @@ A personalização em escala começa com a compreensão do que pode ser melhorad
 
 10.45: Interrupção
 
-12:00: Fluxo de usuário 3 &quot;Mesclagem física e digital&quot;
+Fluxo de usuário 12:00: 3 &quot; Mesclando físico e digital&quot;
 
 12h30: Almoço
 
@@ -72,8 +72,8 @@ A personalização em escala começa com a compreensão do que pode ser melhorad
 ## Pré-requisitos
 
 - Acesso ao Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleção de dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acesso ao site do bootcamp em [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Acesso à Coleção de Dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de inicialização em [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
@@ -93,7 +93,7 @@ O principal objetivo da nossa Inicialização de Criadores de experiências é a
 
 Vários outros vídeos foram criados para mostrar elementos da campanha de bootcamp e integrações poderosas entre aplicativos Adobe Experience Platform e não-Adobe. Clique no link abaixo para obter uma visão geral desses vídeos.
 
-Ir para [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Vá para [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
 
 ## YouTube
 
@@ -105,11 +105,11 @@ Você pode encontrar vídeos interessantes adicionais [em nosso canal do YouTube
 
 Nesse fluxo de usuários, você entenderá todos os elementos necessários para implementar casos de uso focados na aquisição para usuários desconhecidos e não autenticados, juntamente com usuários conhecidos e autenticados usando o Real-Time CDP.
 
-[2. Registro e integração](./uc/uc2/uc2.md)
+[2. Inscrição e integração](./uc/uc2/uc2.md)
 
 Nesse fluxo de usuários, você entenderá todos os elementos necessários para implementar casos de uso de registro e integração usando o Real-Time CDP e o Adobe Journey Optimizer.
 
-[3. Combinação física e digital](./uc/uc3/uc3.md)
+[3. Mesclando físico e digital](./uc/uc3/uc3.md)
 
 Nesse fluxo de usuário, você personalizará a experiência do cliente em canais online e offline de maneira consistente, usando o Real-Time CDP e o Adobe Journey Optimizer.
 

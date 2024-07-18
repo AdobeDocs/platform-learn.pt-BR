@@ -20,13 +20,13 @@ ht-degree: 1%
 
 A jornada do desconhecido para o conhecido é um dos tópicos mais importantes entre as marcas atualmente, assim como a jornada do cliente, desde a aquisição até a retenção.
 
-O Adobe Experience Platform desempenha um papel importante nessa jornada. Plataforma são os cérebros para a comunicação, a **sistema de registro de experiência**.
+O Adobe Experience Platform desempenha um papel importante nessa jornada. A plataforma é o cérebro da comunicação, o **sistema de experiência do record**.
 
 Plataforma é um ambiente no qual a palavra cliente é mais ampla do que apenas os clientes conhecidos. Um visitante desconhecido no site também é um cliente da perspectiva da Platform e, como tal, todo o comportamento como um visitante desconhecido também é enviado para a Platform. Graças a essa abordagem, quando esse visitante eventualmente se torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes desse momento. Isso ajuda de uma perspectiva de atribuição e otimização de experiência.
 
 ## Fluxo de jornada do cliente
 
-Ir para [https://bootcamp.aepdemo.net](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). Clique em **Permitir todos**.
+Ir para [https://bootcamp.aepdemo.net](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). Clique em **Permitir tudo**.
 
 ![DSN](./images/web8.png)
 
@@ -34,7 +34,7 @@ Clique no ícone do logotipo do Adobe no canto superior esquerdo da tela para ab
 
 ![Demonstração](./images/pv1.png)
 
-Dê uma olhada no painel Visualizador de perfis e no Perfil do cliente em tempo real com o **ID do Experience Cloud** como o identificador principal deste cliente atualmente desconhecido.
+Consulte o painel Visualizador de perfis e o Perfil do cliente em tempo real com a **ID de Experience Cloud** como o identificador principal para este cliente atualmente desconhecido.
 
 ![Demonstração](./images/pv2.png)
 
@@ -42,25 +42,25 @@ Você também pode ver todos os Eventos de experiência que foram coletados com 
 
 ![Demonstração](./images/pv3.png)
 
-Vá para a **Serviços de aplicativos** e clique no produto **Real-Time CDP**.
+Vá para a opção de menu **Serviços de Aplicativos** e clique no produto **Real-Time CDP**.
 
 ![Demonstração](./images/pv4.png)
 
-Você verá a página de detalhes do produto. Um Evento de experiência do tipo **Exibição do produto** agora foi enviado para a Adobe Experience Platform usando a implementação do SDK da Web que você analisou no Módulo 1. Abra o painel Visualizador de perfis e consulte sua **Eventos de experiência**.
+Você verá a página de detalhes do produto. Um Evento de Experiência do tipo **Exibição do Produto** foi enviado ao Adobe Experience Platform usando a implementação do SDK da Web que você analisou no Módulo 1. Abra o painel Visualizador de perfis e veja seus **Eventos de experiência**.
 
 ![Demonstração](./images/pv5.png)
 
-Vá para a **Serviços de aplicativos** e clique no produto **Adobe Journey Optimizer**. Outro evento de experiência foi enviado para o Adobe Experience Platform.
+Vá para a opção de menu **Serviços de Aplicativos** e clique no produto **Adobe Journey Optimizer**. Outro evento de experiência foi enviado para o Adobe Experience Platform.
 
 ![Demonstração](./images/pv7.png)
 
-Abra o painel Visualizador de perfis. Agora você verá dois Eventos de experiência do tipo **Exibição do produto**. Embora o comportamento seja anônimo, cada clique é rastreado e armazenado no Adobe Experience Platform. Assim que o cliente anônimo se tornar conhecido, poderemos unir todos os comportamentos anônimos automaticamente ao perfil conhecido.
+Abra o painel Visualizador de perfis. Você verá dois Eventos de Experiência do tipo **Exibição do Produto**. Embora o comportamento seja anônimo, cada clique é rastreado e armazenado no Adobe Experience Platform. Assim que o cliente anônimo se tornar conhecido, poderemos unir todos os comportamentos anônimos automaticamente ao perfil conhecido.
 
 ![Demonstração](./images/pv8.png)
 
 Agora vamos analisar o perfil do cliente e usar seu comportamento para personalizar sua experiência com o cliente no site.
 
-Próxima etapa: [1.2 Visualizar seu próprio perfil de cliente em tempo real - Interface do usuário](./ex2.md)
+Próxima Etapa: [1.2 Visualizar seu próprio perfil de cliente em tempo real - Interface do Usuário](./ex2.md)
 
 [Voltar para Fluxo de Usuário 1](./uc1.md)
 

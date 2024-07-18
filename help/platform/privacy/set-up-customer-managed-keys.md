@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Configurar chaves gerenciadas pelo cliente (CMK)
 
-Gerencie a criptografia de dados em repouso usando suas próprias chaves de criptografia. Para obter mais informações, visite o [documentação de chaves gerenciadas pelo cliente](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+Gerencie a criptografia de dados em repouso usando suas próprias chaves de criptografia. Para obter mais informações, consulte a [documentação sobre chaves gerenciadas pelo cliente](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 

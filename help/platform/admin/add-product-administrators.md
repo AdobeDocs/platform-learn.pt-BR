@@ -17,10 +17,10 @@ ht-degree: 0%
 
 # Adicionar administradores de produto
 
-Saiba como adicionar administradores de produto ao Adobe Experience Platform. Os administradores de produto gerenciam o controle de acesso para aplicativos baseados em plataforma como o Real-time Customer Data Platform e o Journey Optimizer. Eles podem criar usuários, desenvolvedores e administradores adicionais no Admin Console e, em seguida, conceder a eles (e credenciais de API) permissões na plataforma ou na interface do Journey Optimizer. Para obter mais informações, visite o [Documentação de controle de acesso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=pt-BR).
+Saiba como adicionar administradores de produto ao Adobe Experience Platform. Os administradores de produto gerenciam o controle de acesso para aplicativos baseados em plataforma como o Real-time Customer Data Platform e o Journey Optimizer. Eles podem criar usuários, desenvolvedores e administradores adicionais no Admin Console e, em seguida, conceder a eles (e credenciais de API) permissões na plataforma ou na interface do Journey Optimizer. Para obter mais informações, visite a [Documentação de controle de acesso](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
 
 >[!TIP]
 >
->Recomendamos adicionar também o administrador do produto como **usuário** para o `AEP-Default-All-Users` perfil de produto no Admin Console e, em seguida, adicione-os a uma função na tela de permissões na interface da Platform. Consulte [Adicionar usuários](add-users.md) para obter mais detalhes.
+>Recomendamos que você também adicione o administrador do produto como um **usuário** ao perfil de produto `AEP-Default-All-Users` no Admin Console e, em seguida, adicione-o a uma função na tela de permissões na interface da Platform. Consulte [Adicionar usuários](add-users.md) para obter mais detalhes.

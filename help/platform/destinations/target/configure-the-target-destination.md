@@ -15,12 +15,12 @@ exl-id: afcbdfcc-cd98-42bc-a3a1-2f040e5bdf58
 source-git-commit: 630c96eb70725e8437058e61ba22750ab5702a14
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
 # Configurar o destino do Adobe Target no Real-time Customer Data Platform
 
-Saiba como integrar o Adobe Target e o Real-time Customer Data Platform para começar a enviar segmentos e atributos de perfil do Real-Time CDP para o Target. Para obter mais informações, consulte [Documentação de conexão do Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=pt-BR).
+Saiba como integrar o Adobe Target e o Real-time Customer Data Platform para começar a enviar segmentos e atributos de perfil do Real-Time CDP para o Target. Para obter mais informações, consulte a [documentação de conexão do Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on)

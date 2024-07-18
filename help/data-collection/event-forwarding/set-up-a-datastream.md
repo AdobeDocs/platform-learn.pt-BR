@@ -8,8 +8,8 @@ thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 17%
+source-wordcount: '97'
+ht-degree: 18%
 
 ---
 
@@ -22,8 +22,8 @@ Saiba como configurar um fluxo de dados para o encaminhamento de eventos. Para o
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 > 
-> * O Platform launch (lado do cliente) agora é **[!DNL tags]**
-> * O Platform launch Server Side agora é **[!DNL event forwarding]**
-> * As configurações de borda agora são **[!DNL datastreams]**
+> * O Platform Launch (lado do cliente) agora é **[!DNL tags]**
+> * O Platform Launch Server Side agora é **[!DNL event forwarding]**
+> * As configurações do Edge agora são **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on)

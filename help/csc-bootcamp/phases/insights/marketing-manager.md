@@ -1,105 +1,106 @@
 ---
-title: Bootcamp CSC - Insights para um gerente de marketing
-description: Bootcamp CSC - Insights para um gerente de marketing
+title: Bootcamp do CSC - Insights para um gerente de marketing
+description: Bootcamp do CSC - Insights para um gerente de marketing
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
 
 # Insights para um Gerente de marketing
 
-## Exibição semanal do líder do projeto
+## Exibição Semanal do Líder do Projeto
 
-Na coluna à esquerda, clique em &quot;Exibição semanal do líder do projeto&quot;:
+Na coluna da esquerda, clique em &#39;Exibição semanal do líder do projeto&#39;:
 
-![exibição semanal dos líderes do projeto](./images/weekly-view.png)
+![visão semanal dos líderes do projeto](./images/weekly-view.png)
 
 Isso abrange uma grande variedade de relatórios, sempre clicáveis/acionáveis para obter mais detalhes:
 
-- O **Tarefas Vencidas Esta Semana Por Projeto**
+- As **tarefas Com Vencimento Esta Semana Pelo Projeto**
 
-![deverá estar concluído esta semana](./images/tasks-due.png)
+![com vencimento nesta semana](./images/tasks-due.png)
 
-- O **Marcos futuros do Gerenciamento de projetos** :
+- As próximas Etapas do **Gerenciamento de Projetos**:
 
 ![marcos futuros](./images/upcoming-milestones.png)
 
-- O **Problemas em aberto por prioridade**
+- Os **Problemas em Aberto por Prioridade**
 
 ![problemas por prioridade](./images/open-issues.png)
 
-- O **Tarefas atrasadas por Departamento**
+- As **Tarefas Atrasadas por Departamento**
 
 ![tarefas atrasadas](./images/late-tasks.png)
 
-- O **Tarefas atrasadas por indivíduo**
+- As **Tarefas Atrasadas por Indivíduo**
 
-![tarefas atrasadas individuais](./images/individual-late-tasks.png)
+![tarefas individuais atrasadas](./images/individual-late-tasks.png)
 
-## insights relacionados ao SCRUM
+## Insights relacionados ao SCRUM
 
-Na coluna à esquerda, clique em &quot;Status de iteração&quot;
+Na coluna da esquerda, clique em &#39;Status da iteração&#39;
 
-![status da iteração de clique](./images/iteration-status.png)
+![status da iteração do clique](./images/iteration-status.png)
 
-Se suas equipes trabalham com a metodologia SCRUM, este é um conjunto interessante de relatórios de Gerenciamento:
+Se suas equipes trabalham com a metodologia SCRUM, este é um conjunto de relatórios de gerenciamento interessante:
 
 - **Velocidade por iteração**
 
-![velocidade](./images/velocity.png)
+![velocity](./images/velocity.png)
 
 - **Velocidade média por equipe**
 
 ![velocidade média](./images/average-velocity.png)
 
-- **Iterações Atuais Totais de Hora Concluídos por Destinatário**
+- **Totais de Horas Concluídas das Iterações Atuais pelo Destinatário**
 
-![totais de hora concluídos](./images/iteration-status.png)
+![horas totais concluídas](./images/iteration-status.png)
 
 - **Iterações por equipe**
 
 ![iterações por equipes](./images/iterations-by-team.png)
 
-## Relatórios de eficiência
+## Emissão de relatórios de eficiência
 
-Ainda na coluna à esquerda, clique em &quot;Eficiência&quot;
+Ainda na coluna à esquerda, clique em &#39;Eficiência&#39;
 
-![eficiência do clique](./images/efficiency.png)
+![eficiência de clique](./images/efficiency.png)
 
-- **Proporção Planejada/Não Planejada** (do trabalho realizado)
+- **Taxa Planejada/Não Planejada** (do trabalho concluído)
 
-![relação planejada/não planejada](./images/planned-unplanned.png)
+![taxa planejada/não planejada](./images/planned-unplanned.png)
 
 - **Solicitações concluídas por semana**
 
 ![solicitações concluídas](./images/completed-requests.png)
 
-## Insights do projeto em voo
+## Insights do projeto em andamento
 
 Ainda na coluna à esquerda, clique em &quot;Marketing - Projetos em andamento&quot;
 
-- **Estatuto dos Projetos de Voo**
+- **Status dos projetos em andamento**
 
-![Projetos em voo](./images/inflight-projects.png)
+![projetos em andamento](./images/inflight-projects.png)
 
-- **Projetos por condição por mês**
+- **Projetos Por Condição Por Mês**
 
 ![projetos por condição](./images/project-by-condition.png)
 
-- Lista, andamento e detalhes financeiros da **Projetos em Voo**
+- Lista, andamento e detalhes financeiros dos **Projetos em andamento**
 
 ![detalhes financeiros](./images/inflights-projects.png)
 
 ## Visualizar dependências (entre projetos)
 
-De volta à linha &quot;PIN&quot;, clique em &quot;Portfolio Gant View&quot;:
+De volta à linha &#39;PIN&#39;, clique em &#39;Portfolio Gant View&#39;:
 
-![visualização de gant de portfólio de cliques](./images/gant-view.png)
+![clique na exibição de concessão do portfólio](./images/gant-view.png)
 
-Aqui você tem um **Gráfico de concessão de um grupo de projetos** com possíveis dependências (antecessores) entre projetos
+Aqui você tem uma **exibição de Gráfico de Gant de um grupo de projetos** com possíveis dependências (predecessores) entre projetos
 
 ![dependências entre projetos](./images/gant-chart.png)
 
@@ -107,7 +108,7 @@ Aqui você tem um **Gráfico de concessão de um grupo de projetos** com possív
 
 >[!NOTE]
 >
-> Este é um exemplo de integração com um software de terceiros. Esta é uma integração com o Adobe Campaign como ilustração. Ele importa os resultados das campanhas concluídas no Adobe Campaigns.
+> Este é um exemplo de integração com um software de terceiros. Esta é uma integração com o Adobe Campaign como ilustração. Ela importa os resultados das campanhas concluídas no Adobe Campaigns.
 
 Na linha &quot;PIN&quot;, clique em &quot;Resumo da campanha&quot;:
 
@@ -115,16 +116,16 @@ Na linha &quot;PIN&quot;, clique em &quot;Resumo da campanha&quot;:
 
 ![resumo](./images/campaign-summary.png)
 
-- **Adobe Campaign enviado para aberturas**
+- **Adobe Campaign Enviado para Aberturas**
 
-![enviado para abrir](./images/sent-to-open.png)
+![enviado para aberto](./images/sent-to-open.png)
 
-- **Adobe Campaign abre para cliques**
+- **O Adobe Campaign abre com cliques**
 
 ![abrir para clicar](./images/open-to-click.png)
 
-Próxima etapa: [Conclusão](../../conclusion.md)
+Próxima Etapa: [Conclusão](../../conclusion.md)
 
-[Retorne à Fase 4 - Informações de um gerente de projeto](./project-manager.md)
+[Retorne à Fase 4 - Insights para um gerente de projeto](./project-manager.md)
 
-[Voltar para todos os módulos](../../overview.md)
+[Voltar a todos os módulos](../../overview.md)

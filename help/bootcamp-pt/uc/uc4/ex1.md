@@ -1,6 +1,6 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101 - Brasil
-description: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101 - Brasil
+description: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101 - Brazil
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 exl-id: 63933d9e-b774-483f-b547-188c77440595
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -38,22 +38,22 @@ Os três únicos para os clientes são:
 
 - A melhoria de insights para todos (ou seja, democratizar o acesso aos dados).
 - A capacidade de ver o o cliente em uma jornada contextual (ou seja, os dados podem ser visualizados sequenciados, endo multiplicado on-line e off-line).
-- A capacidade de aproveitar o poder dos dados sem que haja um migrante (ou seja, permitir que o usuário compartilhado para desbloquear insights e dados para de marketing).
+- A capacidade de aproveitar o poder dos dados sem que haja a necessidade (ou seja, permite que indivíduos usem dados para desbloquear insights e análises profundas para ativação de marketing).
 
 ## 4.1.3 ## 4.1.3 Por que escolher o Customer Journey Analytics?
 
-O CJA não se destina a estudar a Power BI de BI verdade, como microestratégia, Locker ou Tableau. O destino de todos os aplicativos de BI é exibido para mudar corporativos para que ele possa controlar tudo relacionado em grandes sequências. O objetivo do CECo é tupiniquim de análise para as equipes de Marketing e Negócios, tornando-o uma visão de análise para essas pessoas
+O CJA não se destina a estudar a Power BI de BI verdade, como microestratégia, Locker ou Tableau. O objetivo desses aplicativos de BI é visualizar dados para criar painéis corporativos para que todos em uma organização possam ver métricas importantes rapidamente. O objetivo do CECo é tupiniquim de análise para as equipes de Marketing e Negócios, tornando-o uma visão de análise para essas pessoas
 
 
 
 Traduzir, os aplicativos de BI tem sido incompatíveis de permitir a mudança do cliente:
 
 - Eles não podem fazer nada e não analisar a jornada do cliente.
-- Os aplicativos de BI prescreve a pergunta com
+- Os aplicativos de BI precisam saber a pergunta com antecedência
 - As consultas interativas são limitadas pela estrutura do banco de dados
-- Habilidades de SQL são competitivas.
-- Os modelos de motivo BI não DAR a impressão de que você é capaz de identificar o que aconteceu.
-- Os aplicativos de BI não ampliam o contato exclusivo com os pontos de contato do cliente.
+- Habilidades de SQL são necessárias.
+- Os aplicativos de BI não permitem que você pergunte o motivo de um acontecimento.
+- Os aplicativos de BI não têm conexão direta com os pontos de contato do cliente.
 
 PERGUNTAS FREQUENTES, empresas de negócios e analistas subordinados a becos sem saída, tornando a análise cara, inflexível e desconectada dos sistemas de sistemas.
 
@@ -69,17 +69,17 @@ Antes de iniciar os visualizá-los, é responsabilidade de lidar com os dados pa
 
 Antes de iniciar como consequência, não se deve rever a etapa 0, que é alterado os dados que estão disponíveis na Adobe Experience Platform.
 
-**Lixo entra, lixo sai.** Você deve ter uma ideia de quais dados estão disponíveis na Adobe Experience Platform como os esquemas na são configurados. Compreender os dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexões de dados, mas também na hora de exercícios visualizações e fazer.
+**Lixo entra, lixo sai.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são configurados. Compreender os dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexões de dados, mas também na hora de exercícios visualizações e fazer.
 
 ## 4.1.5 Etapa 0: Compreender esquemas e conjuntos de dados da Adobe Experience Platform
 
-Faça logon no Adobe Experience Platform acessando um URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+[](https://experience.adobe.com/platform)
 
 Depois de fazer logon, você acessará a página inicial da Adobe Experience Platform.
 
 ![Assimilação de dados](../uc1/images/home.png)
 
-Antes de continuar, você precisa atualizar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso, não tem nada a ver **[!UICONTROL Prod]** nenhum canto superior direito da tela. Depois de pegar o sandbox, você verá a tela e agora você está em seu sandbox exclusivo.
+Antes de continuar, você seleciona **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. Você pode fazer isso no momento **[!UICONTROL Prod]** nenhum canto superior direito da tela. Depois de pegar o sandbox, você verá a tela e agora você está em seu sandbox exclusivo.
 
 ![Assimilação de dados](../uc1/images/sb1.png)
 
@@ -93,9 +93,9 @@ Escolhe esquemas e conjuntos de dados na Adobe Experience Platform.
 
 pasta-se de ter verificado ao menos:
 
-- Identidades: CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores monitorados?
+- Identidades: CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores secundários?
 
-Você pode encontrar os identificadores abrindo um esquema e observando o objeto `_experienceplatform.identification.core`. esquema do objeto [Sistema de demonstração - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
+Você pode encontrar os identificadores abrindo um schema e observando o objeto `_experienceplatform.identification.core`. Sistema de demonstração [do esquema do ou do esquema do evento - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demonstração](./images/identity.png)
 
@@ -103,12 +103,12 @@ Você pode encontrar os identificadores abrindo um esquema e observando o objeto
 
 ![demonstração](./images/commerce.png)
 
-- Visualizar todos os [conjuntos de dados](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e dos dados
+- Visualize todos os [datasets](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
 
-Agora você está pronto para começar a usar uma interface do usuário do Customer Journey Analytics.
+Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-Próxima etapa: [4.2 Conectar conjuntos de dados da Adobe Experience Platform sem Customer Journey Analytics](./ex2.md)
+Próxima etapa: [4.2 Conecte datasets da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
-[Retorno para Fluxo de monitoramento 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Retorno para Todos os compartilhados](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

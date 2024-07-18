@@ -6,14 +6,14 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 33%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
 # Tutoriais da Adobe Experience Platform
 
-A Adobe Experience Platform é o sistema mais poderoso, flexível e aberto do mercado para criar e gerenciar soluções completas que impulsionam a experiência do cliente. A Experience Platform permite que as organizações centralizem e padronizem dados e conteúdo de clientes de qualquer sistema e apliquem a ciência de dados e o aprendizado de máquina para melhorar o design e o delivery de experiências personalizadas. Use estes vídeos e tutoriais para saber mais sobre os vários componentes do Experience Platform.
+A Adobe Experience Platform é o sistema mais poderoso, flexível e aberto do mercado para criar e gerenciar soluções completas que impulsionam a experiência do cliente. O Experience Platform permite que as organizações centralizem e padronizem dados e conteúdo de clientes de qualquer sistema e apliquem a ciência de dados e o aprendizado de máquina para melhorar o design e o delivery de experiências personalizadas. Use estes vídeos e tutoriais para saber mais sobre os vários componentes do Experience Platform.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -34,7 +34,7 @@ A Adobe Experience Platform é o sistema mais poderoso, flexível e aberto do me
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>Uma experiência do cliente potencializada pelo Experience Platform</strong>
+    <strong>Uma experiência do cliente baseada no Experience Platform</strong>
     </a>
     </div>
     <p>

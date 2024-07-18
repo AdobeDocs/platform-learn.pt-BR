@@ -8,8 +8,8 @@ jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
 source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 3%
+source-wordcount: '1279'
+ht-degree: 2%
 
 ---
 
@@ -17,21 +17,21 @@ ht-degree: 3%
 
 Há vários motivos convincentes para considerar a mudança das tags de fornecedor do lado do cliente dos navegadores e dispositivos para um servidor. Neste artigo, discutimos como avaliar uma tag de fornecedor do lado do cliente para a possibilidade de movê-la para uma propriedade de encaminhamento de eventos.
 
-Essa avaliação só será necessária se você estiver considerando remover uma tag de fornecedor do lado do cliente e substituí-la pela distribuição de dados do lado do servidor em uma propriedade de encaminhamento de eventos. Este artigo supõe que você esteja familiarizado com as noções básicas do [coleção de dados](https://experienceleague.adobe.com/docs/data-collection.html), e [encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Essa avaliação só será necessária se você estiver considerando remover uma tag de fornecedor do lado do cliente e substituí-la pela distribuição de dados do lado do servidor em uma propriedade de encaminhamento de eventos. Este artigo supõe que você esteja familiarizado com as noções básicas da [coleta de dados](https://experienceleague.adobe.com/docs/data-collection.html) e do [encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch foi reformulado como um conjunto de tecnologias de coleção de dados na Adobe Experience Platform. Como resultado, várias alterações de terminologia foram implementadas na documentação do produto. Consulte o seguinte [documento](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) para obter uma referência consolidada das alterações de terminologia.
 
-Os fornecedores de navegador estão alterando a maneira como tratam cookies de terceiros. Fornecedores e tecnologias de publicidade e marketing geralmente exigem o uso de muitas tags do lado do cliente. Esses desafios são apenas dois motivos convincentes pelos quais nossos clientes estão adicionando distribuição de dados do lado do servidor.
+Os fornecedores de navegador estão alterando a maneira como tratam cookies de terceiros. Fornecedores e tecnologias de Advertising e marketing geralmente exigem o uso de muitas tags do lado do cliente. Esses desafios são apenas dois motivos convincentes pelos quais nossos clientes estão adicionando distribuição de dados do lado do servidor.
 
 >[!NOTE]
 >
->`Tag` neste artigo, significa código do lado do cliente, normalmente JavaScript de um fornecedor usado para a coleta de dados no navegador ou dispositivo enquanto um visitante interage com o site ou aplicativo. `Website` ou `site` aqui se refere a um site, um aplicativo web ou um aplicativo para um dispositivo móvel. Uma &quot;tag&quot; para esses propósitos também é frequentemente chamada de pixel.
+>`Tag` neste artigo significa código do lado do cliente, normalmente JavaScript de um fornecedor usado para coleta de dados no navegador ou dispositivo enquanto um visitante interage com o site ou aplicativo. `Website` ou `site` aqui refere-se a um site, um aplicativo Web ou um aplicativo para um dispositivo móvel. Uma &quot;tag&quot; para esses propósitos também é frequentemente chamada de pixel.
 
 ## Casos de uso e dados {#use-cases-data}
 
-A primeira etapa é definir os casos de uso implementados com a tag de fornecedor do lado do cliente. Por exemplo, considere o pixel (Meta) do Facebook. Movê-lo do nosso site para o [API de meta conversões](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) com a extensão de encaminhamento de eventos significa documentar primeiro os casos de uso específicos.
+A primeira etapa é definir os casos de uso implementados com a tag de fornecedor do lado do cliente. Por exemplo, considere o pixel (Meta) do Facebook. Movê-lo do nosso site para a [API de Meta Conversões](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) com a extensão de encaminhamento de eventos significa documentar os casos de uso específicos primeiro.
 
 Para o código de fornecedor atual do lado do cliente:
 
@@ -44,7 +44,7 @@ Em nosso exemplo, estamos rastreando conversões com o pixel do Facebook quando 
 
 ### Dados {#data}
 
-Com a tag existente do lado do cliente, quando ela é executada ou executada em nosso site, o que acontece com os dados do nosso caso de uso? Podemos capturar os dados necessários no cliente, sem a tag do fornecedor, para que possamos enviá-los para o encaminhamento de eventos? Ao usar [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) Para outros sistemas de gerenciamento de tags, a maioria dos dados de interação do visitante está disponível para coleta e distribuição. Mas os dados necessários para nosso caso de uso estão disponíveis quando e onde precisamos deles, no formato necessário, sem a etiqueta do fornecedor do lado do cliente? Estas são algumas perguntas adicionais sobre dados a serem consideradas:
+Com a tag existente do lado do cliente, quando ela é executada ou executada em nosso site, o que acontece com os dados do nosso caso de uso? Podemos capturar os dados necessários no cliente, sem a tag do fornecedor, para que possamos enviá-los para o encaminhamento de eventos? Ao usar [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) ou outros sistemas de gerenciamento de tags, a maioria dos dados de interação do visitante está disponível para coleta e distribuição. Mas os dados necessários para nosso caso de uso estão disponíveis quando e onde precisamos deles, no formato necessário, sem a etiqueta do fornecedor do lado do cliente? Estas são algumas perguntas adicionais sobre dados a serem consideradas:
 
 - Há uma ID de usuário fornecedor necessária para cada evento?
 - Em caso afirmativo, como ele pode ser coletado ou gerado sem a tag do lado do cliente?
@@ -69,7 +69,7 @@ O fornecedor tem APIs projetadas para transferência de dados de eventos de serv
 
 - Os endpoints da API existem para enviar os dados necessários? Para encontrar os endpoints compatíveis com seus casos de uso, consulte a documentação do desenvolvedor ou da API do fornecedor.
 - Eles permitem a transmissão de dados do evento ou somente de dados em lote?
-- A quais métodos de autenticação eles dão suporte? Token, HTTP, versão de credenciais de cliente OAuth ou outro? Consulte [aqui](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) para métodos compatíveis com o encaminhamento de eventos.
+- A quais métodos de autenticação eles dão suporte? Token, HTTP, versão de credenciais de cliente OAuth ou outro? Consulte [aqui](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) para obter os métodos compatíveis com o encaminhamento de eventos.
 - Qual é o deslocamento de atualização da API? Essa limitação é compatível com os mínimos de encaminhamento de eventos? Detalhes [aqui](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - Quais dados são necessários para os endpoints relevantes?
 - Eles exigem um identificador de usuário específico do fornecedor com cada chamada para o endpoint?
@@ -87,15 +87,15 @@ Se o fornecedor não tiver os endpoints de API para dar suporte a nossos casos d
 
 E se eles tiverem APIs, mas também exigirem algum visitante único ou ID de usuário em cada chamada de API? Como podemos acessar essa ID se não tivermos o código do lado do cliente do fornecedor (tag) em execução no site?
 
-Alguns fornecedores estão alterando seus sistemas para o novo mundo sem cookies de terceiros. Essas alterações incluem o uso de identificadores exclusivos alternativos, como um [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) ou outro [ID gerada pelo cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Se o fornecedor permitir uma ID gerada pelo cliente, podemos enviá-la do cliente para a Platform Edge Network com o SDK da Web ou móvel ou possivelmente obtê-la de uma chamada de API no encaminhamento de eventos. Quando enviamos dados para esse fornecedor em uma regra de encaminhamento de eventos, simplesmente incluímos esse identificador conforme necessário.
+Alguns fornecedores estão alterando seus sistemas para o novo mundo sem cookies de terceiros. Essas alterações incluem o uso de identificadores exclusivos alternativos, como uma [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) ou outra [ID gerada pelo cliente](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). Se o fornecedor permitir uma ID gerada pelo cliente, podemos enviá-la do cliente para o Platform Edge Network com SDK da Web ou móvel ou possivelmente recebê-la de uma chamada de API no encaminhamento de eventos. Quando enviamos dados para esse fornecedor em uma regra de encaminhamento de eventos, simplesmente incluímos esse identificador conforme necessário.
 
-Se o fornecedor exigir dados (como uma ID exclusiva específica do fornecedor, por exemplo) que só possam ser gerados ou acessados pela própria tag do lado do cliente, essa tag do fornecedor provavelmente não será uma boa candidata para ser movida. _Não é recomendado tentar fazer engenharia reversa de uma tag do lado do cliente com a ideia de mover essa coleção de dados para o encaminhamento de eventos sem as APIs apropriadas._
+Se o fornecedor exigir dados (como uma ID exclusiva específica do fornecedor, por exemplo) que só possam ser gerados ou acessados pela própria tag do lado do cliente, essa tag do fornecedor provavelmente não será uma boa candidata para ser movida. _Não é recomendável tentar reverter a engenharia de uma marca do lado do cliente com a ideia de mover essa coleção de dados para o encaminhamento de eventos sem as APIs apropriadas._
 
-A variável [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) A extensão do pode fazer solicitações HTTP, conforme necessário, com fornecedores que têm as APIs apropriadas para transferência de dados de eventos de servidor para servidor. Embora as extensões específicas do fornecedor sejam ideais e mais extensões estejam em desenvolvimento ativo no momento, podemos implementar regras de encaminhamento de eventos hoje usando a extensão Cloud Connector, sem esperar por extensões adicionais do fornecedor.
+A extensão [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) pode fazer solicitações HTTP conforme necessário com fornecedores que tenham as APIs apropriadas para transferência de dados de evento de servidor para servidor. Embora as extensões específicas do fornecedor sejam ideais e mais extensões estejam em desenvolvimento ativo no momento, podemos implementar regras de encaminhamento de eventos hoje usando a extensão Cloud Connector, sem esperar por extensões adicionais do fornecedor.
 
 ## Ferramentas {#tools}
 
-Investigar e testar endpoints da API do fornecedor é mais fácil com ferramentas como [Postman](https://www.postman.com/), ou extensões do editor de texto como Visual Studio Code [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)ou [Cliente HTTP](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
+Investigar e testar os pontos de extremidade da API do fornecedor é mais fácil com ferramentas como o [Postman](https://www.postman.com/) ou extensões do editor de texto como o Visual Studio Code [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client) ou o [HTTP Client](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
 
 ## Próximas etapas {#next-steps}
 
@@ -103,4 +103,4 @@ Este artigo forneceu uma sequência de etapas para avaliar uma tag do lado do cl
 
 - [Tag Management](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR) no Adobe Experience Platform
 - [Encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) para processamento no lado do servidor
-- [Atualizações de terminologia](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) na coleta de dados
+- [Atualizações de terminologia](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) na coleção de dados

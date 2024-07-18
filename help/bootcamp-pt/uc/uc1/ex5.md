@@ -20,31 +20,31 @@ Acessado [Adobe Experience Platform](https://experience.adobe.com/platform). Dep
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, você precisa atualizar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. painel de navegação o sandbox, você é a tela e agora está você em seu [!UICONTROL sandbox] Comparar.
+Antes de continuar, você seleciona **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso no texto **[!UICONTROL Produção Prod]** na linha azul na parte superior da tela. Depois de pegar a sandbox, você verá a tela e agora você está em seu [!UICONTROL sandbox].
 
 ![Assimilação de dados](./images/sb1.png)
 
-Sem menu à esquerda, vá para **Destinos** e, em seguida, vá para **Catálogo**. Você verá o **Catálogo de destinos**. Em **Destinos**, clique em **Ativar segmentos** sem cartão **Público-alvo personalizado do facebook**.
+Nenhum menu à esquerda, vá para **Destinos** e, em seguida, vá para **Catálogo**. Você verá o **Catálogo de destinos**. Em **Destinos**, clique em **Ativar Segmentos** no cartão **Público-alvo personalizado do Facebook**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-o **bootcamp-facebook** e clique em **Próxima**.
+o **bootcamp-facebook** e clique em **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de conjuntos, o segmento que criou no exercício anterior. Clique em **Próxima**.
+Na lista de conjuntos, o segmento que criou no exercício anterior. Clique em **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Na página **Mapeamento**, se a seleção de seleção **Aplicar transformação** está alterado. Clique em **Próxima**.
+Na página **Mapeamento**, se a caixa de seleção **Aplicar transformação** está. Clique em **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-Na página **Agendamento do segmento**, a **Origem do seu público** e ➡ como **Diretamente dos clientes**. Clique em **Próxima**.
+Na página **Agendamento de segmento**, uma **Origem do seu público-alvo** e como **Diretamente dos clientes**. Clique em **Próximo**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Por fim, na página **Revisão**, clique em **Concluir**.
+Por fim, na página **Avaliação**, clique em **Concluir**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 

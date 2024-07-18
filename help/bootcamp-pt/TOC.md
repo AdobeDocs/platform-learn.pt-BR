@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
@@ -32,9 +32,9 @@ ht-degree: 3%
    + [2.1 Visite o site e crime sua conta](/help/bootcamp-pt/uc/uc2/ex1.md)
    + [2.2 Criar seu evento](/help/bootcamp-pt/uc/uc2/ex2.md)
    + [2.3 Criar sua jornada e mensagem de e-mail](/help/bootcamp-pt/uc/uc2/ex3.md)
-   + [2.4 Testa sua jornada](/help/bootcamp-pt/uc/uc2/ex4.md)
-   + [2.Instale e use o móvel móvel 5](/help/bootcamp-pt/uc/uc2/ex5.md)
-   + [2.6 Personalização sem central de atendimento](/help/bootcamp-pt/uc/uc2/ex6.md)
+   + [2.4 Teste sua jornada](/help/bootcamp-pt/uc/uc2/ex4.md)
+   + A Instalação do [2.5 usa o móvel](/help/bootcamp-pt/uc/uc2/ex5.md)
+   + [2.6 Personalização sem call center](/help/bootcamp-pt/uc/uc2/ex6.md)
 + 3 - Consolidando o físico e o digital {#uc3}
    + [Visão geral](/help/bootcamp-pt/uc/uc3/uc3.md)
    + [3.1 Utilização de o móvel e acione um beacon](/help/bootcamp-pt/uc/uc3/ex1.md)

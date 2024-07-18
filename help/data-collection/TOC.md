@@ -9,7 +9,7 @@ role: Developer, Data Engineer
 source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 27%
+ht-degree: 25%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 27%
 
 + [Tutorials de Coleção de dados](overview.md)
 + [Usuários e permissões](admin/users-and-permissions.md)
-+ Tags{#tags}
++ Marcas{#tags}
    + [Visão geral e criar uma propriedade](tags/create-a-property.md)
    + [Escolha uma opção de hospedagem](tags/choose-a-hosting-option.md)
    + [Usar ambientes e códigos integrados](tags/use-environments-and-embed-codes.md)
@@ -28,13 +28,13 @@ ht-degree: 27%
    + [Regras de pilha](tags/stack-rules.md)
    + [Criar e publicar uma biblioteca](tags/build-and-publish-a-library.md)
    + [Implementar em sites com o SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
-   + [Implementar em sites com SDKs de soluções](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [Implementar em sites com SDKs de solução](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target="_blank"}
 + SDK da Web{#web-sdk}
    + [Visão geral](web-sdk/overview.md)
    + [Demonstração](web-sdk/demo.md)
-   + [Tutorial de implementação (com tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
-   + [Tutorial de migração do Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=pt-BR){target="_blank"}
+   + [Tutorial de implementação (com marcas)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
+   + [Tutorial de migração do Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + Consentimento{#consent}
       + [Visão geral](web-sdk/consent/overview.md)
       + [Definir valores de consentimento usando o padrão Adobe](web-sdk/consent/set-consent-adobe.md)
@@ -46,10 +46,10 @@ ht-degree: 27%
    + [Criar propriedades móveis](mobile-sdk/create-mobile-properties.md)
    + [Usar gerenciadores de dependências](mobile-sdk/use-dependency-managers.md)
    + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target="_blank"}
-+ API do servidor{#server-api}
++ API do servidor {#server-api}
    + [Visão geral](server-api/overview.md)
    + [Noções básicas das APIs](server-api/introduction.md)
-+ Encaminhamento de evento{#event-forwarding}
++ Encaminhamento de Eventos{#event-forwarding}
    + [Visão geral](event-forwarding/overview.md)
    + [Criar uma propriedade](event-forwarding/create-a-property.md)
    + [Configurar um fluxo de dados](event-forwarding/set-up-a-datastream.md)
@@ -60,7 +60,7 @@ ht-degree: 27%
    + [Mover tags do lado do cliente](event-forwarding/consider-moving-tags.md)
    + [Configurar conversões aprimoradas do Google Ads](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Extensão Adobe para o Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
-+ Sequências de dados e rede de borda{#edge-network}
++ Sequências de dados &amp; Edge Network{#edge-network}
    + [Configurar datastreams](edge/configure-datastreams.md)
    + [Preparação de dados](edge/data-prep.md)
    + [Gerenciar dados confidenciais](edge/manage-sensitive-data-in-datastreams.md)

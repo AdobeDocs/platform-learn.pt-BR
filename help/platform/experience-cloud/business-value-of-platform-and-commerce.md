@@ -1,5 +1,5 @@
 ---
-title: Valor comercial da Platform e do Commerce
+title: Valor comercial da Platform e da Commerce
 description: Este vídeo mostra que o Adobe Experience Platform pode ser usado com o Magento Commerce para criar uma única visualização de clientes e personalizar experiências de forma inteligente em uma vitrine digital e em vários canais.
 solution: Experience Platform, Commerce
 feature: Integrations
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ---
 
-# Valor comercial da Platform e do Commerce
+# Valor comercial da Platform e da Commerce
 
 Este vídeo mostra que o Adobe Experience Platform pode ser usado com o Adobe Commerce para criar uma única visualização de clientes e personalizar experiências de forma inteligente em uma vitrine digital e em vários canais.
 

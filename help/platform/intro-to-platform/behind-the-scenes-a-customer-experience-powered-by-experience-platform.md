@@ -1,5 +1,5 @@
 ---
-title: 'Em segundo plano: uma experiência do cliente viabilizada pelo Adobe Experience Platform'
+title: Nos bastidores&#58; Uma experiência do cliente viabilizada pelo Adobe Experience Platform
 description: No vídeo anterior, vimos como uma marca de exemplo, a Luma, conseguiu criar uma experiência do cliente avançada, recompensadora e relevante. Este vídeo mostra como o Adobe Experience Platform é usado para fazer essa jornada.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner

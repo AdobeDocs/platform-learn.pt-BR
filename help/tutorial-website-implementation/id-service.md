@@ -1,29 +1,28 @@
 ---
 title: Adicionar o serviço de identidade da Adobe Experience Platform com tags
-description: Saiba como adicionar a extensão Identity Service da Adobe Experience Platform e usar a ação Definir IDs do cliente para coletar IDs do cliente. Esta lição é parte do tutorial Implementar o Experience Cloud em sites da Web.
+description: Saiba como adicionar a extensão do Serviço de identidade da Adobe Experience Platform e usar a ação Definir IDs do cliente para coletar IDs do cliente. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 81%
+source-wordcount: '1945'
+ht-degree: 65%
 
 ---
 
-# Adicionar o Identity Service da Adobe Experience Platform
+# Adicionar o Serviço de identidade da Adobe Experience Platform
 
-Esta lição guiará você pelas etapas necessárias para implementar a extensão [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=pt-BR) e enviar as IDs do cliente.
+Esta lição guiará você pelas etapas necessárias para implementar a extensão [Serviço de identidade da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) e enviar as IDs do cliente.
 
-O [Identity Service da Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR) define uma ID de visitante comum em todas as soluções da Adobe para potencializar recursos da Experience Cloud como o compartilhamento de público-alvo entre as soluções. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com os sistemas de CRM (relacionamento com o cliente).
+O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR) define uma ID de visitante comum em todas as soluções de Adobe para potencializar recursos de Experience Cloud, como o compartilhamento de público-alvo entre soluções. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com os sistemas de CRM (relacionamento com o cliente).
 
 >[!NOTE]
 >
->O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface de que você deve estar ciente ao usar este conteúdo:
+>O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
-> * O Platform launch (lado do cliente) agora está **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * Agora o lado do servidor do Platform launch **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * As configurações de borda agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
-
+> * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
 
@@ -36,7 +35,7 @@ No final desta lição, você poderá:
 
 ## Pré-requisitos
 
-Você já deveria ter concluído as lições na [Configurar tags](create-a-property.md) seção.
+É necessário que você tenha completado as lições na seção [Configurar tags](create-a-property.md).
 
 ## Adicionar a extensão Serviço de identidade
 
@@ -46,7 +45,7 @@ Como esta é a primeira extensão que você está adicionando, esta é uma rápi
 
 1. Na navegação à esquerda, clique em **[!UICONTROL Extensões]**
 
-1. Clique em **[!UICONTROL Catálogo]** para acessar a página Catálogo de extensões
+1. Clique em **[!UICONTROL Catálogo]** para ir para a página Catálogo de extensões
 
 1. Observe a variedade de extensões disponíveis no Catálogo
 
@@ -58,7 +57,7 @@ Como esta é a primeira extensão que você está adicionando, esta é uma rápi
 
 1. Observe que a sua ID da organização na Experience Cloud foi detectada automaticamente para você
 
-1. Deixe todas as configurações padrão e clique em **[!UICONTROL Salvar na biblioteca e na criar]**
+1. Deixe todas as configurações padrão e clique em **[!UICONTROL Salvar na Biblioteca e na Build]**
 
    ![Salvar a extensão](images/idservice-save.png)
 
@@ -74,13 +73,13 @@ A extensão do Serviço de identidade é uma das poucas extensões de tag que fa
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *your* Ambiente de desenvolvimento, conforme descrito no [lição anterior](switch-environments.md).
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md).
 
-1. Na guia Resumo do Debugger, a seção de tags deve indicar que a extensão do Adobe Experience Platform Identity Service está implementada.
+1. Na guia Resumo do Debugger, a seção de tags deve indicar que a extensão Adobe Experience Platform Identity Service está implementada.
 
-1. Além disso, na guia Resumo, a seção Serviço de identidade deve ser preenchida com a mesma ID de organização mostrada na tela de configuração de extensão na interface da Coleta de dados:
+1. Além disso, na guia Resumo, a seção Serviço de identidade deve se preenchida com a mesma ID de organização mostrada na tela de configuração de extensões na interface da Coleção de dados:
 
-   ![Verifique se a extensão Adobe Experience Platform Identity Service está implementada](images/idservice-debugger-summary.png)
+   ![Verifique se a extensão Serviço de identidade da Adobe Experience Platform está implementada](images/idservice-debugger-summary.png)
 
 1. A solicitação inicial para recuperar a ID do visitante pode aparecer na guia Serviço de identidade do Debugger. Contudo, ela já pode ter sido solicitada, portanto, não se preocupe se você não vê-la:
    ![Verifique se há uma solicitação para o Serviço de identidade com sua ID da organização](images/idservice-idRequest.png)
@@ -97,7 +96,7 @@ Pronto! Você adicionou sua primeira extensão! Para obter mais detalhes sobre a
 
 ## Enviar IDs do cliente
 
-Em seguida, você enviará uma [ID do cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=pt-BR) ao Serviço de identidade. Isso permite que você [integre seu CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) à Experience Cloud e rastreie os visitantes em todos os dispositivos.
+Em seguida, você enviará uma [ID do cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) ao Serviço de identidade. Isso permite que você [integre seu CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) à Experience Cloud e rastreie os visitantes em todos os dispositivos.
 
 Na lição anterior, [Adicionar elementos de dados, regras e bibliotecas](add-data-elements-rules.md), você criou um elemento de dados e o usou em uma regra. Agora, você usará as mesmas técnicas para enviar uma ID do cliente quando o visitante é autenticado.
 
@@ -117,7 +116,7 @@ Comece criando dois elementos de dados:
 
 1. Nomeie o elemento de dados `Authentication State`
 1. Para o **[!UICONTROL Tipo de elemento de dados]**, selecione **[!UICONTROL Código personalizado]**
-1. Clique no botão **[!UICONTROL Abrir editor]**
+1. Clique no botão **[!UICONTROL Abrir Editor]**
 
    ![Abra o Editor para adicionar o Código personalizado do elemento de dados](images/idservice-authenticationState.png)
 
@@ -135,7 +134,7 @@ Comece criando dois elementos de dados:
    ![Salve o código personalizado](images/idservice-authenticationCode.png)
 
 1. Deixe todas as outras configurações em seus valores padrão
-1. Clique em **[!UICONTROL Salvar na biblioteca]** para salvar o elemento de dados e retornar à página de elementos de dados. Não precisaremos fazer uma &quot;Criação&quot; até que todas as alterações sejam feitas e estejamos prontas para validação.
+1. Clique em **[!UICONTROL Salvar na Biblioteca]** para salvar o elemento de dados e retornar à página de elementos de dados. Não precisaremos fazer um &quot;Build&quot; até que todas as alterações sejam feitas e que estejamos prontos para validar.
 
    ![Salve o elemento de dados](images/idservice-authenticationStateFinalSave.png)
 
@@ -148,8 +147,8 @@ Ao conhecer o estado de autenticação do usuário, você sabe quando uma ID do 
    ![Adicionar um elemento de dados](images/idservice-addDataElement2.png)
 
 1. Nomeie o elemento de dados `Email (Hashed)`
-1. Para o **[!UICONTROL Tipo de elemento de dados]**, selecione **[!UICONTROL Variável JavaScript]**
-1. Como o **[!UICONTROL nome da variável JavaScript]**, use o seguinte ponteiro para obter uma variável na camada de dados do site Luma: `digitalData.user.0.profile.0.attributes.username`
+1. Para o **[!UICONTROL Tipo de Elemento de Dados]**, selecione **[!UICONTROL Variável JavaScript]**
+1. Como o **[!UICONTROL nome da variável do JavaScript]**, use o seguinte ponteiro para obter uma variável na camada de dados do site Luma: `digitalData.user.0.profile.0.attributes.username`
 1. Deixe todas as outras configurações em seus valores padrão
 1. Clique em **[!UICONTROL Salvar na biblioteca]** para salvar o elemento de dados
 
@@ -157,7 +156,7 @@ Ao conhecer o estado de autenticação do usuário, você sabe quando uma ID do 
 
 ### Adicionar uma regra para enviar as IDs do cliente
 
-O Adobe Experience Platform Identity Service transmite as IDs do cliente em regras usando uma ação chamada &quot;Definir IDs do cliente&quot;.  Agora você criará uma regra para acionar essa ação quando o visitante for autenticado.
+O Serviço de identidade da Adobe Experience Platform transmite as IDs do cliente em regras usando uma ação chamada &quot;Definir IDs do cliente&quot;.  Agora você criará uma regra para acionar essa ação quando o visitante for autenticado.
 
 **Para criar uma regra para enviar as IDs do cliente**
 
@@ -170,14 +169,14 @@ O Adobe Experience Platform Identity Service transmite as IDs do cliente em regr
 
    >[!TIP]
    >
-   >Essa convenção de nomenclatura indica que você está acionando essa regra na parte superior de todas as páginas quando o usuário é autenticado e terá uma ordem de “10”. Usar uma convenção de nomenclatura como essa (em vez de nomeá-la para as soluções acionadas nas ações) permitirá minimizar o número geral de regras necessárias para sua implementação.
+   >Essa convenção de nomenclatura indica que você está acionando essa regra na parte superior de todas as páginas quando o usuário é autenticado e terá uma ordem de &quot;10&quot;. Usar uma convenção de nomenclatura como essa (em vez de nomeá-la para as soluções acionadas nas ações) permitirá minimizar o número geral de regras necessárias para sua implementação.
 
 1. Em **[!UICONTROL Eventos]**, clique em **[!UICONTROL Adicionar]**
 
    ![Adicionar um evento](images/idservice-customerId-addEvent.png)
 
-   1. Para o **[!UICONTROL Tipo de evento]**, selecione **[!UICONTROL Biblioteca carregada (Parte superior da página)]**
-   1. Expanda o **[!UICONTROL Opções avançadas]** e para o  **[!UICONTROL Pedido]** enter `10`. A ordem controla a sequência de regras acionadas pelo mesmo evento. Regras com uma ordem menor serão acionadas antes de regras com uma ordem maior. Nesse caso, é necessário definir a ID do cliente antes de acionar a solicitação do Target, o que você fará na próxima lição com uma regra com ordem de `50`
+   1. Para o **[!UICONTROL Tipo de Evento]**, selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]**
+   1. Expanda a seção **[!UICONTROL Opções Avançadas]** e, para o **[!UICONTROL Pedido]**, digite `10`. A ordem controla a sequência de regras acionadas pelo mesmo evento. Regras com uma ordem menor serão acionadas antes de regras com uma ordem maior. Nesse caso, é necessário definir a ID do cliente antes de acionar a solicitação do Target, o que você fará na próxima lição com uma regra com ordem de `50`
    1. Clique no botão **[!UICONTROL Manter alterações]** para retornar ao Construtor de regras
 
    ![Salvar o evento](images/idservice-customerId-saveEvent.png)
@@ -186,12 +185,12 @@ O Adobe Experience Platform Identity Service transmite as IDs do cliente em regr
 
    ![Adicionar uma condição à regra](images/idservice-customerId-addCondition.png)
 
-   1. Em **[!UICONTROL Tipo de condição]**, selecione **[!UICONTROL Comparação de valores]**
+   1. Para o **[!UICONTROL Tipo de Condição]**, selecione **[!UICONTROL Comparação de Valores]**
    1. Clique no ![ícone Elementos de dados](images/icon-dataElement.png) para abrir o modal do Elemento de dados
 
       ![abrir o modal do elemento de dados](images/idservice-customerId-valueComparison.png)
 
-   1. No Modal do elemento de dados, clique em **[!UICONTROL Estado de autenticação]** e, em seguida, clique em **[!UICONTROL Selecionar]**
+   1. No Modal do elemento de dados, clique em **[!UICONTROL Estado de autenticação]** e em **[!UICONTROL Selecionar]**
 
       ![definir o estado de autenticação](images/idservice-customerId-authStateCondition.png)
 
@@ -206,16 +205,16 @@ O Adobe Experience Platform Identity Service transmite as IDs do cliente em regr
 
    ![Adicionar uma nova ação](images/idservice-customerId-addAction.png)
 
-   1. Para o **[!UICONTROL Extensão]** select **[!UICONTROL Serviço de ID de Experience Cloud]**
+   1. Para a **[!UICONTROL Extensão]**, selecione o **[!UICONTROL Serviço de ID de Experience Cloud]**
    1. No **[!UICONTROL Tipo de ação]**, selecione **[!UICONTROL Definir IDs do cliente]**
-   1. No **[!UICONTROL Código de integração]**, digite `crm_id`
-   1. No **[!UICONTROL Valor]**, insira Abrir o seletor de Elemento de dados e selecione o `Email (Hashed)`
-   1. No **[!UICONTROL Estado de autenticação]**, selecione **[!UICONTROL Autenticado]**
+   1. Para o **[!UICONTROL Código de integração]**, digite `crm_id`
+   1. Para o **[!UICONTROL Valor]**, insira Abrir o seletor de Elemento de Dados e selecione o `Email (Hashed)`
+   1. Para o **[!UICONTROL Estado de autenticação]**, selecione **[!UICONTROL Autenticado]**
    1. Clique no botão **[!UICONTROL Manter alterações]** para salvar a ação e retornar ao Construtor de regras
 
       ![Configurar a ação e salvar as alterações](images/idservice-customerId-action.png)
 
-1. Clique no botão **[!UICONTROL Salvar na biblioteca e criar]** para salvar a regra
+1. Clique no botão **[!UICONTROL Salvar na Biblioteca e na Build]** para salvar a regra
 
    ![Salvar a regra](images/idservice-customerId-saveRule.png)
 
@@ -229,9 +228,9 @@ Para validar seu trabalho, você fará logon no site Luma para confirmar o compo
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *your* Ambiente de desenvolvimento, conforme descrito no [lição anterior](switch-environments.md)
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md)
 
-   ![Seu ambiente de desenvolvimento de tags mostrado no Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Clique no link **[!UICONTROL LOGON]** no canto superior direito do site Luma
 
@@ -250,7 +249,7 @@ Agora, confirme se a ID do cliente foi enviada para o Serviço usando a extensã
 **Para validar se o serviço de identidade está transmitindo a ID do cliente**
 
 1. Verifique se a guia com o site Luma está em foco
-1. No Debugger, acesse a guia Adobe Experience Platform Identity Service
+1. No Debugger, acesse a guia Serviço de identidade da Adobe Experience Platform
 1. Expanda a ID da organização
 1. Clique na célula com o valor `Customer ID - crm_id`
 1. No modal, observe o valor da ID do cliente e que o estado `AUTHENTICATED` foi refletido:
@@ -263,9 +262,9 @@ Agora, confirme se a ID do cliente foi enviada para o Serviço usando a extensã
 
 ### Dicas adicionais de validação
 
-As tags também têm recursos avançados de registro no console. Para ativá-los, acesse **[!UICONTROL Ferramentas]** no Debugger e ative o **[!UICONTROL Registro do console de tags]** alternar.
+As tags também têm recursos avançados de registro no console. Para ativá-las, vá para a guia **[!UICONTROL Ferramentas]** no Debugger e ative a opção **[!UICONTROL Logon do Console de tags]**.
 
-![Alternar no registro do console das tags](images/idservice-debugger-logging.png)
+![Alternar no log de console das marcas](images/idservice-debugger-logging.png)
 
 Isso ativa o logon do console, tanto no console do navegador quanto na guia Logs do Debugger. Você deve ver o registro de todas as regras criadas até agora! Observe que as novas entradas de log são adicionadas à parte superior da lista; portanto, a regra &quot;Todas as páginas - Biblioteca carregada - 10&quot; deve ser acionada antes da regra “Todas as páginas - Biblioteca carregada” e aparecer abaixo dele no registro do console do Debugger:
 

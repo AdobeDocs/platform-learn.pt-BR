@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 31f2bbcc-3fd5-4448-a9aa-b79a82e13809
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 1%
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 ## Pré-requisitos
 
 - Acesso ao Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acesso à coleção de dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso à Coleção de Dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Acesso ao site de demonstração
 
 >[!IMPORTANT]
@@ -52,7 +52,7 @@ Neste exercício, você testará a jornada que acabou de criar.
 
 Neste exercício, você instalará o aplicativo móvel.
 
-[2.6 Personalização na central de atendimento](./ex6.md)
+[2.6 Personalization na central de atendimento](./ex6.md)
 
 Neste exercício, você verá como uma experiência da central de atendimento pode ser otimizada com base na inteligência do Adobe Experience Platform.
 

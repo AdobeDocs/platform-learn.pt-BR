@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Customer Journey Analytics - Conectar conjuntos de dados Adobe Experience Platform no Customer Journey Analytics - Brasil
-description: Bootcamp - Customer Journey Analytics - Conectar conjuntos de dados Adobe Experience Platform no Customer Journey Analytics - Brasil
+title: Bootcamp - Customer Journey Analytics - Conectar conjuntos de dados Adobe Experience Platform em Customer Journey Analytics – Brasil
+description: Bootcamp - Customer Journey Analytics - Conectar conjuntos de dados Adobe Experience Platform em Customer Journey Analytics – Brasil
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,8 +11,8 @@ feature: Connections
 exl-id: 51078fca-f234-4e50-96ba-ee7f5e286869
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 2%
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
@@ -20,16 +20,16 @@ ht-degree: 2%
 
 ## Objetivos
 
-- Compreenda uma interface da conexão de dados
+- Compreenda um interface da conexão de dados
 - Traga os dados da Adobe Experience Platform para o CJA
-- Entenda a ID da pessoa e a compilação de dados
-- Aprenda o desenvolvimento de streaming de dados no Customer Jornada
+- Entenda uma ID da pessoa e uma compilação de dados
+- Aprenda o conceito de transmissão de dados sem jornada do cliente
 
 ## 4.2.1 Conexão
 
-Acessado [analytics.adobe.com](https://analytics.adobe.com) para acesso ao Customer Journey Analytics.
+Acesse [analytics.adobe.com](https://analytics.adobe.com) para acessar o Customer Journey Analytics.
 
-Na página inicial do Customer Journey Analytics, acessos **Conexões**.
+Na página inicial do Customer Journey Analytics, acesse **Conexões**.
 
 ![demonstração](./images/cja2.png)
 
@@ -39,33 +39,33 @@ Vamos criar sua conexão. Clique em **Criar nova conexão**.
 
 ![demonstração](./images/cja4.png)
 
-Você verá uma interface **Criar conexão** IU.
+Você verá uma interface do usuário **Criar conexão**.
 
 ![demonstração](./images/cja5.png)
 
-Agora você pode dar um nome à conexão.
+Agora você pode dar um nome à sua conexão.
 
-Usar este modelo de nomenclatura: `yourLastName – Omnichannel Data Connection`.
+Use este modelo de nomenclatura: `yourLastName – Omnichannel Data Connection`.
 
 Exemplo: `vangeluw - Omnichannel Data Connection`
 
-Você também deve o pedido da sandbox correta para usar. Nenhuma sandbox de menu, sua sandbox, que deve ser `Bootcamp`. Exemplo, o sandbox a ser usado é o **Bootcamp**. E também você deve o **Número médio de eventos diários** para **menos de 1 milhão**.
+Você também deve o pedido da sandbox correta para usar. Nenhuma sandbox de menu, sua sandbox, que deve ser `Bootcamp`. Exemplo, o sandbox a ser usado é o **Bootcamp**. E também você deve o **Número médio de eventos diários** a **menos de 1 milhão**.
 
-![demonstração](./images/cjasb.png)
+![demo](./images/cjasb.png)
 
-Seleção do seu sandbox, você pode começar a navegação datasets a esta conexão. Clique em **Adicionar conjuntos de dados**.
+Após selecionar sua sandbox, você pode começar a adicionar conjuntos de dados a esta conexão. Clique em **Adicionar conjuntos** de dados.
 
-![demonstração](./images/cjasb1.png)
+![demo](./images/cjasb1.png)
 
-## 4.2.2 conjuntos de dados da Adobe Experience Platform
+## 4.2.2 Selecione conjuntos de dados da Adobe Experience Platform
 
-Consulta ao conjunto de dados `Demo System - Event Dataset for Website (Global v1.1)`. Clique em **+** para o conjunto de dados a esta conexão.
+Pesquise o conjunto de dados `Demo System - Event Dataset for Website (Global v1.1)`. Clique em **+** para adicionar o conjunto de dados a esta conexão.
 
 ![demonstração](./images/cja7.png)
 
 Agora pesquise e marque as caixas de seleção `Demo System - Event Dataset for Voice Assistants (Global v1.1)` e `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-Em seguida, você verá a tela abaixo. Clique em **Próxima**.
+Em seguida, você verá a tela abaixo. Clique em **Próximo**.
 
 ![demonstração](./images/cja9.png)
 
@@ -85,16 +85,16 @@ Não é possível, você ainda pode mudar o identificador será usado para compi
 
 ![demonstração](./images/cja14.png)
 
-Dados de pessoa para cada, você pode definir IDs. Isso permite reunir diferentes conjuntos de dados de responsabilidade no CJA. Imagine as pessoas que usam PS que mantêm e têm acesso para pesquisa o contexto e o motivo de um.
+Dados de pessoa para cada, você pode definir IDs. Essa permite reunir conjuntos de dados diferentes de múltiplas origens no CJA. Imagine as pessoas que usam PS que mantêm e têm acesso para pesquisa o contexto e o motivo de um.
 
-O nome do campo ID da pessoa não é importante, desde que o valor nos campos ID da pessoa correspondente. Digamos que temos `email` conjunto de dados em um e `emailAddress` em outro dataset definido como ID da pessoa. Se `delaigle@adobe.com` tiver o mesmo valor para o campo ID da pessoa em ambos os datasets, o CJA pode compilar os dados.
+O nome do campo ID da pessoa não é importante, desde que o valor nos campos ID da pessoa correspondente. Digamos que temos `email` em um dataset e `emailAddress` em outro dataset definido como ID da pessoa. Se `delaigle@adobe.com` tiver o mesmo valor para o campo ID da pessoa em ambos os os conjuntos de dados, o CJA pode compilar os dados.
 
-Compilação, compilação, comparação, comparação, comparação, anônimo para conhecido. Controlar como participantes: [Perguntas frequentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR).
+Compilação, compilação, comparação, comparação, comparação, anônimo para conhecido. Perguntas frequentes sobre as perguntas frequentes: [1}.](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)
 
 
 ### Compilando os dados usando o ID da pessoa
 
-Agora que você seleciona o desenvolvedor datasets usando o ID da pessoa, selecionar `email` como ID da pessoa para cada conjunto de dados.
+Agora que você escolheu o desenvolvedor de dados conjuntos usando o ID da pessoa, selecionar `email` como ID da pessoa para cada conjunto de dados.
 
 ![demonstração](./images/cja15.png)
 
@@ -102,19 +102,19 @@ Acessar cada conjunto de dados para corrigir o ID da pessoa.
 
 ![demonstração](./images/cja12a.png)
 
-Agora a o campo ID da pessoa encarregando o `email` na lista suspensa.
+Agora a o campo ID da pessoa encarregando o `email` na lista suspensa.
 
-![demonstração](./images/cja17.png)
+![demo](./images/cja17.png)
 
-Depois de compilar os três conjuntos de dados, disponíveis para continuar.
+Depois de compilar os três conjuntos de dados, estamos prontos para continuar.
 
 | conjunto de dados | ID de pessoa |
 | ----------------- |-------------| 
-| Sistema de demonstração - Conjunto de dados de evento para site (Global v1.1) | email |
-| Sistema de demonstração - Conjunto de dados de evento para assistentes de voz (Global v1.1) | email |
-| Sistema de demonstração - Conjunto de dados de evento para call center (Global v1.1) | email |
+| Sistema de demonstração - Conjunto de dados do evento para site (Global v1.1) | email |
+| Sistema de demonstração - Conjunto de dados do evento para assistentes de voz (Global v1.1) | email |
+| Sistema de demonstração - Conjunto de dados do evento para call center (global v1.1) | email |
 
-Você também garante que, para cada, essas habilitadas:
+Você também precisa garantir que, para cada conjunto de dados, essas opções estão habilitadas:
 
 - Importar todos os novos dados
 - Preencher todos os dados existentes
@@ -125,11 +125,11 @@ Clique em **Adicionar conjuntos de dados**.
 
 ![demonstração](./images/cja16.png)
 
-Clique em **Salvar** e vá para o próximo exercício. Depois de criar sua **Conexão**, pode levar algumas vezes até que seus dados tenham obtido nenhum CJA.
+Clique em **Salvar** e vá para o próximo exercício. Depois de criar sua **, pode levar algumas horas até que seus dados não no CJA.**
 
 ![demonstração](./images/cja20.png)
 
-Próxima etapa: [4.3 Crime uma Visualização de Dados](./ex3.md)
+Próxima etapa: [4.3 Criar uma Visualização de Dados](./ex3.md)
 
 [Retorno para Fluxo de monitoramento 4](./uc4.md)
 

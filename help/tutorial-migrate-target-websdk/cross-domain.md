@@ -1,46 +1,47 @@
 ---
-title: Habilitar suporte entre domínios | Migrar o Target da at.js 2.x para o SDK da Web
-description: Saiba como configurar o Adobe Target para domínios cruzados e aplicativos móveis em cenários de navegador da Web usando o SDK da Web do Experience Platform.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: Habilitar suporte entre domínios | Migração do Target da at.js 2.x para o SDK da Web
+description: Saiba como configurar o Adobe Target para aplicativos móveis e entre domínios em cenários de navegador da Web usando o SDK da Web do Experience Platform.
+exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 1%
+source-wordcount: '455'
+ht-degree: 0%
 
 ---
 
-# Ativar perfis de visitante entre domínios
+# Ativar perfis de visitantes entre domínios
 
-O SDK da Web da plataforma é compatível com os recursos de compartilhamento de ID de visitante que permitem que os clientes entreguem experiências personalizadas com mais precisão em todos os domínios. Esse recurso permite fornecer personalização consistente entre domínios e melhora a precisão dos relatórios de atividade do visitante, sem depender de cookies de terceiros.
+O SDK da Web da Platform oferece suporte a recursos de compartilhamento de ID de visitante que permitem aos clientes fornecer experiências personalizadas com mais precisão em seus domínios. Esse recurso permite fornecer personalização consistente em domínios e melhora a precisão do relatório de atividades do visitante, sem depender de cookies de terceiros.
 
 ## Pré-requisitos
 
-Para usar o compartilhamento de ID entre domínios, você deve usar o SDK da Web da plataforma versão 2.11.0 ou posterior. Esse recurso também é compatível com a versão 1.7.0 ou posterior de VisitorAPI.js.
+Para usar o compartilhamento de ID entre domínios, você deve usar o SDK da Web da plataforma versão 2.11.0 ou posterior. Esse recurso também é compatível com o VisitorAPI.js versão 1.7.0 ou posterior.
 
-O compartilhamento de ID entre domínios funciona ao anexar um `adobe_mc` parâmetro da string de consulta para o URL do domínio de destino. Esse parâmetro é usado para especificar a ID de visitante em vez de gerar uma nova ID ou usar uma ID existente.
+O compartilhamento de ID entre domínios funciona ao anexar um parâmetro de cadeia de caracteres de consulta `adobe_mc` especial à URL do domínio de destino. Esse parâmetro é usado para especificar a ID do visitante em vez de gerar uma nova ID ou usar uma ID existente.
 
-O domínio de destino deve usar qualquer uma dessas bibliotecas para o compartilhamento de ID entre domínios para processar a variável `adobe_mc` e compartilhar a ID do visitante corretamente.
+O domínio de destino deve usar qualquer uma dessas bibliotecas para o compartilhamento de ID entre domínios para processar o parâmetro `adobe_mc` e compartilhar a ID do visitante corretamente.
 
 ## Comparação de abordagens
 
-Antes de implementar, determine primeiro se sua implementação existente usa a variável `visitor.appendVisitorIDsTo()` . Qualquer código personalizado que use essa função deve ser atualizado para usar o novo `appendIdentityToUrl` comando SDK da Web.
+Antes de implementar, determine primeiro se sua implementação existente usa a função `visitor.appendVisitorIDsTo()`. Qualquer código personalizado que use essa função deve ser atualizado para usar o novo comando do SDK da Web `appendIdentityToUrl`.
 
 | VisitorAPI.js | SDK da Web da Platform |
 | --- | --- |
 | `visitor.appendVisitorIDsTo(*url*)` | `alloy("appendIdentityToUrl", { url: *url* })` |
 
-## Usar o `appendIdentityToURL` comando
+## Usando o comando `appendIdentityToURL`
 
-Para compartilhamento de ID entre domínios, o SDK da Web versão 2.11.0 adiciona suporte para a variável `appendIdentityToUrl` comando. Quando usado, esse comando gera a variável `adobe_mc` parâmetro da string de consulta.
+Para compartilhamento de ID entre domínios, o SDK da Web versão 2.11.0 adiciona suporte para o comando `appendIdentityToUrl`. Quando usado, este comando gera o parâmetro da cadeia de caracteres de consulta `adobe_mc`.
 
-O comando aceita um objeto com uma propriedade, `url`e retorna um objeto com o url da propriedade.
+O comando aceita um objeto com uma propriedade, `url`, e retorna um objeto com a url da propriedade.
 
-Este comando não espera por nenhuma atualização de consentimento. Se o consentimento não tiver sido fornecido, o URL retornará inalterado.
+Esse comando não aguarda por nenhuma atualização de consentimento. Se o consentimento não foi fornecido, o URL é retornado inalterado.
 
-Se uma ECID não for fornecida, a variável `/acquire` endpoint é chamado para gerar uma ECID.
+Se uma ECID não for fornecida, o ponto de extremidade `/acquire` será chamado para gerar uma ECID.
 
-Abaixo está um exemplo de como você pode implementar o compartilhamento de ID entre domínios.
+Veja abaixo um exemplo de como implementar o compartilhamento de ID entre domínios.
 
-Esse código adiciona um ouvinte de evento para todos os cliques na página. Se o clique estava em um link para um domínio correspondente, neste caso adobe.com ou behance.com, ele adiciona a identidade ao URL e redireciona o usuário lá.
+Esse código adiciona um ouvinte de eventos para todos os cliques na página. Se o clique estava em um link para um domínio correspondente, neste caso adobe.com ou behance.com, ele adiciona a identidade ao URL e redireciona o usuário para lá.
 
 ```Javascript
 document.addEventListener("click", event => {
@@ -61,14 +62,14 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->Ao usar o recurso de tags (antigo Launch) para implementar o SDK da Web, o compartilhamento de ID entre domínios pode ser feito sem código personalizado. Consulte a [documentação dedicada](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) para obter mais detalhes.
+>Ao usar o recurso de tags (antigo Launch) para implementar o SDK da Web, o compartilhamento de ID entre domínios pode ser realizado sem o código personalizado. Consulte a [documentação dedicada](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) para obter mais detalhes.
 
 >[!NOTE]
 >
->O SDK da Web da plataforma também oferece suporte ao compartilhamento de IDs da Web para dispositivos móveis em casos de uso de aplicativos móveis nativos. Para obter mais informações, consulte a documentação dedicada sobre [compartilhamento de IDs entre domínios e dispositivos móveis para a Web](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
+>O SDK da Web da Platform também oferece suporte ao compartilhamento de ID móvel para Web para casos de uso de aplicativos móveis nativos. Para obter mais informações, consulte a documentação dedicada sobre o [compartilhamento de ID móvel para a Web e entre domínios](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
 
-Em seguida, saiba como [atualizar públicos-alvo e scripts de perfil](update-audiences.md) para garantir a compatibilidade com o SDK da Web da plataforma.
+Em seguida, saiba como [atualizar públicos-alvo e scripts de perfil](update-audiences.md) para garantir a compatibilidade com o SDK da Web da Platform.
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

@@ -11,8 +11,8 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 4%
+source-wordcount: '768'
+ht-degree: 1%
 
 ---
 
@@ -39,11 +39,11 @@ Se você não usou o Analysis Workspace antes, recomendamos assistir a este víd
 ### Criar seu projeto
 
 Agora é hora de criar seu primeiro projeto do CJA. Acesse a guia Projetos no CJA.
-clique em **Criar novo**.
+Clique em **Criar novo**.
 
 ![demonstração](./images/prmenu.png)
 
-Você verá isso. Selecionar **Projeto em branco** e clique em **Criar**.
+Você verá isso. Selecione **Projeto em branco** e clique em **Criar**.
 
 ![demonstração](./images/prmenu1.png)
 
@@ -51,11 +51,11 @@ Você verá um projeto vazio.
 
 ![demonstração](./images/premptyprojects.png)
 
-Primeiro, selecione a Visualização de dados correta no canto superior direito da tela. Neste exemplo, a Visualização de dados a ser selecionada é `CJA Bootcamp - Omnichannel Data View`.
+Primeiro, selecione a Visualização de dados correta no canto superior direito da tela. Neste exemplo, a Visualização de Dados a ser selecionada é `CJA Bootcamp - Omnichannel Data View`.
 
 Em seguida, salve seu projeto e dê um nome a ele. Você pode usar o seguinte comando para salvar:
 
-| OS | Atalho |
+| Sistema operacional | Atalho |
 | ----------------- |-------------| 
 | Windows | Ctrl+S |
 | Mac | Command+S |
@@ -70,7 +70,7 @@ Use esta convenção de nomenclatura:
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Clique em **Salvar**.
+Em seguida, clique em **Salvar**.
 
 ![demonstração](./images/prsave2.png)
 
@@ -78,27 +78,27 @@ Clique em **Salvar**.
 
 Embora tenhamos organizado todos os componentes na Visualização de dados, ainda é necessário adaptar alguns deles para que os usuários empresariais estejam prontos para iniciar sua análise. Além disso, durante qualquer análise, é possível criar métricas calculadas para aprofundar a descoberta de insights.
 
-Como exemplo, criaremos uma variável calculada **Índice de conversão** usando o **Compras** métrica/evento definido na Visualização de dados.
+Como exemplo, criaremos uma **Taxa de conversão** calculada usando a métrica/evento **Compras** que definimos na Exibição de dados.
 
-### Taxa de conversão
+### Índice de conversão
 
-Vamos abrir o construtor de métricas calculadas. Clique no link **+** para criar sua primeira métrica calculada no Analysis Workspace.
+Vamos abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada no Analysis Workspace.
 
 ![demonstração](./images/pradd.png)
 
-A variável **Criador de métricas calculada** aparecerá:
+O **Construtor de Métricas Calculadas** será exibido:
 
 ![demonstração](./images/prbuilder.png)
 
-Localize o **Compras** na lista de Métricas no menu do lado esquerdo. Em **Métricas** click **Mostrar tudo**
+Localize as **Compras** na lista de Métricas no menu do lado esquerdo. Em **Métricas**, clique em **Mostrar tudo**
 
 ![demonstração](./images/calcbuildercr1.png)
 
-Agora arraste e solte a **Compras** para a definição de métrica calculada.
+Agora arraste e solte a métrica **Compras** na definição da métrica calculada.
 
 ![demonstração](./images/calcbuildercr2.png)
 
-Normalmente, a taxa de conversão significa **Conversões/sessões**. Vamos fazer o mesmo cálculo na tela de definição Métrica calculada. Localize o **Sessões** métrica e arraste-a e solte-a no construtor de definições, na guia **Compras** evento.
+Normalmente, o índice de conversão significa **Conversões/Sessões**. Vamos fazer o mesmo cálculo na tela de definição Métrica calculada. Localize a métrica **Sessões** e arraste-a e solte-a no construtor de definições, no evento **Compras**.
 
 ![demonstração](./images/calcbuildercr3.png)
 
@@ -120,7 +120,7 @@ Você terá algo assim na tela:
 
 ![demonstração](./images/calcbuildercr6.png)
 
-Não se esqueça de **Salvar** a Métrica calculada.
+Não esqueça de **Salvar** a Métrica calculada.
 
 ![demonstração](./images/pr9.png)
 
@@ -128,7 +128,7 @@ Não se esqueça de **Salvar** a Métrica calculada.
 
 ### Filtros: Dimension calculadas
 
-Os cálculos não devem ser feitos apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar algumas **Dimension calculado**. Isso basicamente significava **segmentos** no Adobe Analytics. No Customer Journey Analytics, esses segmentos são chamados de **Filtros**.
+Os cálculos não devem ser feitos apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar alguns **Dimension calculados**. Isso basicamente significava **segmentos** de volta ao Adobe Analytics. No Customer Journey Analytics, esses segmentos são chamados de **Filtros**.
 
 ![demonstração](./images/prfilters.png)
 
@@ -154,7 +154,7 @@ Esses Dimension de Tempo calculado ajudarão os analistas e usuários empresaria
 
 Agora você concluiu o exercício de preparação de dados usando o CJA Analysis Workspace.
 
-Próxima etapa: [4.5 Visualização usando o Customer Journey Analytics](./ex5.md)
+Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
 [Voltar para Fluxo de Usuário 4](./uc4.md)
 

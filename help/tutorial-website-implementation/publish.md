@@ -1,15 +1,15 @@
 ---
-title: Publicar a propriedade da tag
+title: Publish sua propriedade de tag
 description: Saiba como publicar sua propriedade de tag do ambiente de desenvolvimento para os ambientes de preparo e produção. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 69%
+source-wordcount: '571'
+ht-degree: 58%
 
 ---
 
-# Publicar a propriedade da tag
+# Publish sua propriedade de tag
 
 Depois de implementar algumas das soluções principais da Adobe Experience Cloud no ambiente de desenvolvimento, é hora de aprender o fluxo de trabalho de publicação.
 
@@ -17,9 +17,9 @@ Depois de implementar algumas das soluções principais da Adobe Experience Clou
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
-> * O Platform launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * As configurações de borda agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
+> * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
 
@@ -33,7 +33,7 @@ No final desta lição, você poderá:
 
 Agora que você criou e validou sua biblioteca no ambiente de desenvolvimento, é hora de publicá-la no ambiente de preparo.
 
-1. Vá para a **[!UICONTROL Fluxo de publicação]** página
+1. Vá para a página **[!UICONTROL Fluxo de Publicação]**
 
 1. Abra a lista suspensa ao lado da biblioteca e selecione **[!UICONTROL Enviar para aprovação]**
 
@@ -45,7 +45,7 @@ Agora que você criou e validou sua biblioteca no ambiente de desenvolvimento, �
 
 1. Sua biblioteca agora aparecerá na coluna [!UICONTROL Enviado] em um estado não construído:
 
-1. Abra a lista suspensa e selecione **[!UICONTROL Criar para Preparo]**:
+1. Abra a lista suspensa e selecione **[!UICONTROL Compilação para Preparo]**:
 
    ![Criar para preparo](images/publishing-buildForStaging.png)
 
@@ -55,7 +55,7 @@ Em um cenário da vida real, a próxima etapa do processo normalmente deve ser a
 
 **Para validar as alterações na biblioteca de Preparo**
 
-1. Na propriedade da tag, abra [!UICONTROL Ambientes] página
+1. Na propriedade da tag, abra a página [!UICONTROL Ambientes]
 
 1. Na linha [!UICONTROL Armazenamento], clique no ![ícone Instalar](images/launch-installIcon.png) para abrir o modal
 
@@ -69,22 +69,22 @@ Em um cenário da vida real, a próxima etapa do processo normalmente deve ser a
 
 1. Abra o [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) no navegador Chrome
 
-1. Abra o [Extensão do Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) clicando no link ![Ícone do Debugger](images/icon-debugger.png) ícone
+1. Abra a [Extensão do depurador do Experience Platform](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) clicando no ícone ![Ícone do depurador](images/icon-debugger.png)
 
    ![Clique no ícone Depurador](images/switchEnvironments-openDebugger.png)
 
 1. Acesse a guia Ferramentas
 
-1. No **[!UICONTROL Adobe Launch > Substituir código incorporado do Launch]** seção cole o código incorporado de armazenamento temporário que está na área de transferência
-1. Ativar o **[!UICONTROL Aplicar em luma.enablementadobe.com]** alternar
+1. Adobe Na seção **[!UICONTROL Iniciar > Substituir código incorporado do Launch]**, cole o código incorporado de armazenamento temporário que está na área de transferência
+1. Ative a opção **[!UICONTROL Aplicar através da luma.enablementadobe.com]**
 
 1. Clique no ícone do disco para salvar
 
-   ![ambiente de tag mostrado no Debugger](images/switchEnvironments-debugger-save.png)
+   ![ambiente de tag mostrado no Depurador](images/switchEnvironments-debugger-save.png)
 
 1. Recarregue e verifique a guia Resumo do Debugger. Na seção Launch, você pode ver que sua propriedade de armazenamento temporário está implementada, mostrando o nome da propriedade (por exemplo, &quot;Tutorial de tags&quot; ou o nome que você tenha dado à propriedade)!
 
-   ![ambiente de tag mostrado no Debugger](images/publishing-debugger-staging.png)
+   ![ambiente de tag mostrado no Depurador](images/publishing-debugger-staging.png)
 
 Na vida real, uma vez que a sua equipe de controle de qualidade tenha se desconectado após analisar as alterações no ambiente de preparo, é hora de publicar na produção.
 
@@ -102,11 +102,11 @@ Na vida real, uma vez que a sua equipe de controle de qualidade tenha se descone
 
 1. A biblioteca agora aparecerá na coluna [!UICONTROL Aprovado] no estado não criado (ponto amarelo):
 
-1. Abra a lista suspensa e selecione **[!UICONTROL Criar e publicar na produção]**:
+1. Abra a lista suspensa e selecione **[!UICONTROL Build e Publish para produção]**:
 
    ![Clique em Criar e publicar na produção](images/publishing-buildAndPublishToProduction.png)
 
-1. Clique em **[!UICONTROL Publicar]** na caixa de diálogo:
+1. Clique no **[!UICONTROL Publish]** na caixa de diálogo:
 
    ![Clique em Publicar](images/publishing-publish.png)
 

@@ -9,7 +9,7 @@ feature: Segments
 exl-id: 9b8d93b5-5bed-4600-8602-b438a0893612
 source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -24,15 +24,15 @@ Acessado [Adobe Experience Platform](https://experience.adobe.com/platform). Dep
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, você precisa atualizar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. É possível fazer isso no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. painel de navegação o sandbox, você é a tela e agora está você em seu [!UICONTROL sandbox] Comparar.
+Antes de continuar, você seleciona **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. É possível fazer isso no texto **[!UICONTROL Produção Prod]** na linha azul na parte superior da tela. Depois de pegar a sandbox, você verá a tela e agora você está em seu [!UICONTROL sandbox].
 
 ![Assimilação de dados](./images/sb1.png)
 
-Sem menu à esquerda, acesso **Segmentos**. Nesta página, você uma visão geral de todos os segmentos existentes. Clique no botão + Criar segmento para iniciar um novo segmento.
+Nenhum menu à esquerda, acessado **Segmentos**. Nesta página, você uma visão geral de todos os segmentos existentes. Clique no botão + Criar segmento para iniciar um novo segmento.
 
 ![Segmentação](./images/menuseg.png)
 
-Desde que não há novo em que o responsável de, você irá transformar a opção menu de seleção **Atributos** e a referência do **Perfil individual XDM**.
+Quando não há nenhum novo criador de segmentos, você vai mudar a opção de menu **Atributos** e a referência do **Perfil Individual XDM**.
 
 ![Segmentação](./images/segmentationui.png)
 
@@ -40,7 +40,7 @@ Como o XDM é a linguagem que alimenta o setor de experiência, o XDM também é
 
 Agora você pode criar um segmento de todos os clientes que visualizaram o produto **Real-Time CDP**.
 
-Para a investigação do segmento, você acompanha um evento de experiência. Você pode encontrar todos os eventos de no **Eventos** na barra de menu **Campos**.
+Para a investigação do segmento, você acompanha um evento de experiência. Você pode encontrar todos os Eventos de alteração no **Eventos** na barra de menu **Campos**.
 
 ![Segmentação](./images/findee.png)
 
@@ -48,23 +48,23 @@ Em seguida, você verá o nó **XDM ExperienceEvents** do nível superior. Cliqu
 
 ![Segmentação](./images/see.png)
 
-Acessado **Itens da lista de produtos**.
+Acessar **Itens da Lista de Produtos**.
 
 ![Segmentação](./images/plitems.png)
 
-µ **Nome** e provas e solte o objeto **Nome** fazer menu à esquerda na tela do construtor de na **Eventos**. Em seguida, o seguinte é apresentado:
+**Nome** e conduta solte o objeto **Nome** do menu à esquerda na tela do construtor de na **Eventos**. Em seguida, o seguinte é apresentado:
 
 ![Segmentação](./images/eewebpdtlname.png)
 
-O ➡ de análise deve ser **igual a** e, no campo de entrada, insira **Real-time CDP**.
+O mistura de usar deve **equals** e, no campo de entrada, insira **CDP em tempo real**.
 
 ![Segmentação](./images/pv.png)
 
-Sempre que interferência um elemento ao construtor de, você pode mudar no botão **Atualizar Estimativa** para obter uma nova doença da população em seu segmento.
+Sempre que basear um elemento ao construtor de segmentos, você pode mudar no botão **Atualizar Estimativa** para obter uma nova entidade da população em seu segmento.
 
 ![Segmentação](./images/refreshest.png)
 
-Parágrafo **Método de avaliação**, **Edge**.
+Para **Método De Avaliação**, **Edge**.
 
 ![Segmentação](./images/evedge.png)
 
@@ -74,7 +74,7 @@ Como modelo de nomenclatura, uso:
 
 - `seuSobrenome - Interest in Real-Time CDP`
 
-Em seguida, clique no botão **Salvar e fechar** para salvar seu segmento.
+Em seguida, clique no botão **Salvar e fechar** para salvar seu segmento.
 
 ![Segmentação](./images/segmentname.png)
 
@@ -84,7 +84,7 @@ Agora você irá mudar à página de visão geral segmento, onde verá uma aula 
 
 Agora você pode continuar no próximo exercício e usar seu segmento com o Adobe Target.
 
-Próxima etapa: [1.4 Ação: Desejo seu segmento para o Adobe Target](./ex4.md)
+Próxima etapa: [1.4 Ação: desejada seu segmento para o Adobe Target](./ex4.md)
 
 [Retorno para Fluxo de monitoramento 1](./uc1.md)
 

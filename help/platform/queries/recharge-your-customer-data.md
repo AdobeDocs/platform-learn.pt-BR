@@ -9,15 +9,15 @@ thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 3%
+source-wordcount: '163'
+ht-degree: 0%
 
 ---
 
 # Recarregue os dados do cliente para fornecer experiências eletrizantes
 
 Os dados omnichannel são um ingrediente essencial para potencializar perfis acionáveis do cliente usados por profissionais de marketing para orquestrar a ativação e medir as jornadas resultantes do cliente. No entanto, as organizações enfrentam desafios para gerenciar a qualidade, a escala e a variedade desses dados. Elas exigem soluções simplificadas para reduzir o impacto de dados de baixa qualidade, o tempo de implantação e o ROI, usando os mesmos dados para uma grande variedade de casos de uso.
-Para obter mais informações, visite o [Documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
+Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
 
 Este vídeo aborda:
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Recarregando dados omnicanal para experiências de eletrificação](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Recarregando Dados Omnichannel para Experiências de Eletrificação](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

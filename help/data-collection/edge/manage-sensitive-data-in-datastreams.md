@@ -10,13 +10,13 @@ last-substantial-update: 2022-09-28T00:00:00Z
 exl-id: a10c72a2-8ed3-40da-bfdc-b1dc4492f8c4
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 82%
+source-wordcount: '34'
+ht-degree: 26%
 
 ---
 
 # Gerenciar dados sigilosos em sequências de dados
 
-Saiba como gerenciar dados sigilosos em sequências de dados.  Para obter mais informações, consulte [a documentação dos fluxos de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=pt-BR).
+Saiba como gerenciar dados confidenciais em sequências de dados.  Para obter mais informações, consulte [a documentação dos fluxos de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on)

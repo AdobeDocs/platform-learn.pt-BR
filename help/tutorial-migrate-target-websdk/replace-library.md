@@ -1,70 +1,71 @@
 ---
-title: Substituir a biblioteca | Migrar o Target da at.js 2.x para o SDK da Web
+title: Substituir a biblioteca | Migração do Target da at.js 2.x para o SDK da Web
 description: Saiba como migrar uma implementação do Adobe Target da at.js 2.x para o Adobe Experience Platform Web SDK. Os tópicos incluem visão geral da biblioteca, diferenças de implementação e outras chamadas importantes.
-source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
+exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '1654'
+source-wordcount: '1594'
 ht-degree: 1%
 
 ---
 
-# Substitua a biblioteca at.js pelo SDK da Web da plataforma
+# Substituir a biblioteca da at.js pelo SDK da Web da plataforma
 
-Saiba como substituir sua implementação na página do Adobe Target para migrar da at.js para o SDK da Web da plataforma. Uma substituição básica consiste nas seguintes etapas:
+Saiba como substituir sua implementação do Adobe Target na página para migrar da at.js para o SDK da Web da plataforma. Uma substituição básica consiste nas seguintes etapas:
 
-* Revise as configurações de administração do Target e anote a IMS Organization ID
-* Substitua a biblioteca at.js pelo SDK da Web da plataforma
-* Atualizar o trecho pré-ocultação para implementações de biblioteca síncrona
+* Revise suas configurações de administração do Target e anote a ID da organização de IMS
+* Substituir a biblioteca at.js pelo SDK da Web da plataforma
+* Atualizar o trecho pré-ocultação para implementações de biblioteca síncronas
 * Configurar o SDK da Web da plataforma
 
 >[!NOTE]
 >
->Os exemplos fornecidos são para fins ilustrativos e sua implementação real do Target pode variar. Se sua implementação existente do Target usar o gerenciador de tags da Coleta de dados do Adobe, você também poderá consultar [Tutorial de implementação do Platform Web SDK do Target](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) para obter mais informações.
+>Os exemplos fornecidos são para fins ilustrativos e a implementação real do Target pode variar. Se sua implementação do Target existente usar o gerenciador de tags da Coleção de dados do Adobe, você também pode consultar o [tutorial de implementação do Target do SDK da Web da plataforma](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html) para obter mais informações.
 
 
-## Revisar as configurações de administração do Target
+## Revisar configurações de administração do Target
 
-A primeira etapa para migrar o Target para o SDK da Web da plataforma é revisar suas configurações no **[!UICONTROL Administração]** seção.
+A primeira etapa para migrar do Target para o SDK da Web da Platform é revisar suas configurações na seção **[!UICONTROL Administração]** da interface do Target.
 
 ### [!UICONTROL Implementação]
 
 #### [!UICONTROL Detalhes da conta]
 
-* **[!UICONTROL ID da organização IMS]** - Anote esse valor, pois é necessário configurar o SDK da Web da plataforma.
-* **[!UICONTROL Decisão no dispositivo]** - Esse recurso não é compatível com o SDK da Web da plataforma. Essa configuração pode ser desativada após a migração e se não usar mais a at.js em nenhum de seus sites da Web ou se tiver nenhum caso de uso do lado do servidor para o On-Device Decisioning.
+* **[!UICONTROL IMS Organization Id]** - Anote esse valor, pois ele é necessário para configurar o SDK da Web da Platform.
+* **[!UICONTROL Decisão no dispositivo]** - este recurso não tem suporte do SDK da Web da plataforma. Essa configuração pode ser desativada após a migração e se você não usar mais a at.js em nenhum de seus sites ou se não tiver casos de uso do lado do servidor para a Decisão no dispositivo.
 
 #### [!UICONTROL Métodos de implementação]
 
-Todas as configurações editáveis no **[!UICONTROL Métodos de implementação]** aplicar somente a at.js. Essas configurações são usadas para gerar uma biblioteca at.js personalizada para sua implementação. Revise essas configurações para verificar se você tem algum código personalizado ou está configurando cookies próprios e de terceiros para casos de uso entre domínios.
+Todas as configurações editáveis na seção **[!UICONTROL Métodos de implementação]** se aplicam somente à at.js. Essas configurações são usadas para gerar uma biblioteca at.js personalizada para sua implementação. Revise essas configurações para verificar se você tem algum código personalizado ou está configurando cookies próprios e de terceiros para casos de uso entre domínios.
 
-O **[!UICONTROL Duração do perfil]** só pode ser alterada pelo Adobe Customer Care. A duração do perfil do visitante do Target não é afetada pela sua abordagem de implementação. A at.js e o SDK da Web da plataforma usam a mesma duração do perfil do visitante.
+A configuração **[!UICONTROL Duração do Perfil]** só pode ser alterada pelo Atendimento ao cliente do Adobe. A duração do perfil do visitante do Target não é afetada pela sua abordagem de implementação. A at.js e o SDK da Web da Platform usam a mesma duração do perfil do visitante.
 
 #### [!UICONTROL Privacidade]
 
-* **[!UICONTROL Ofuscar endereços IP do visitante]** - Essa configuração afeta os recursos de geolocalização. A at.js e o SDK da Web da plataforma usam as mesmas configurações de ofuscação de IP de backend para fins de geolocalização.
+* **[!UICONTROL Ofuscar endereços IP de visitantes]** - Essa configuração afeta os recursos de geolocalização. A at.js e o SDK da Web da Platform usam as mesmas configurações de ofuscação de IP de back-end para fins de geolocalização.
 
 ### [!UICONTROL Ambientes]
 
-O SDK da Web da plataforma usa uma configuração de conjunto de dados que permite definir explicitamente um [!UICONTROL ID do ambiente] para desenvolvimento, armazenamento temporário e produção separados. O principal caso de uso dessa configuração é para implementações de aplicativos móveis em que URLs não existem para distinguir ambientes facilmente. A configuração é opcional, mas pode ser usada para garantir que todas as solicitações estejam associadas corretamente ao ambiente especificado. Isso é diferente de uma implementação da at.js, na qual você deve atribuir ambientes Target com base em domínios e regras de grupo de hosts.
+O SDK da Web da Platform usa uma configuração de sequência de dados que permite definir explicitamente uma [!UICONTROL ID de Ambiente] para sequências de dados separadas de desenvolvimento, preparo e produção. O principal caso de uso dessa configuração é para implementações de aplicativos móveis em que os URLs não existem para distinguir ambientes facilmente. A configuração é opcional, mas pode ser usada para garantir que todas as solicitações sejam associadas corretamente ao ambiente especificado. Isso é diferente de uma implementação da at.js na qual você deve atribuir ambientes do Target com base em domínios e regras de grupo de hosts.
 
 >[!NOTE]
 >
->Se uma ID de ambiente não for especificada na configuração do conjunto de dados, o Target usará o mapeamento de domínio para ambiente conforme especificado na variável **Hosts** seção.
+>Se uma ID de ambiente não for especificada na configuração da sequência de dados, o Target usará o mapeamento de domínio para ambiente conforme especificado na seção **Hosts**.
 
-Para obter mais informações, consulte [configuração do datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) guia e Target [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html) documentação.
+Para obter mais informações, consulte o guia [configuração da sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) e a documentação dos [Hosts](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=pt-BR) do Target.
 
 ## Implantar o SDK da Web da plataforma
 
-A funcionalidade do Target é fornecida pela at.js e pelo SDK da Web da plataforma. Se ambas as bibliotecas forem usadas ao mesmo tempo, você poderá enfrentar problemas de renderização e rastreamento. Para migrar com êxito para o SDK da Web da plataforma, a primeira etapa é remover a at.js e substituí-la pelo SDK da Web da plataforma (alloy.js).
+A funcionalidade do Target é fornecida pela at.js e pelo SDK da Web da plataforma. Se ambas as bibliotecas forem usadas ao mesmo tempo, você poderá enfrentar problemas de renderização e rastreamento. Para migrar com sucesso para o SDK da Web da Platform, a primeira etapa é remover a at.js e substituí-la pelo SDK da Web da Platform (alloy.js).
 
-Considere uma implementação simples do Target com a at.js:
+Assuma uma implementação simples do Target com a at.js:
 
 * Uma camada de dados próxima à parte superior da página fornece informações para o Target e outros aplicativos
 * Uma ou mais bibliotecas auxiliares de terceiros cujos recursos podem ser usados em atividades do Target (por exemplo, jQuery)
-* Um trecho pré-ocultado para atenuar a cintilação
-* A biblioteca at.js do Target é carregada de forma assíncrona com as configurações padrão para solicitar e renderizar atividades automaticamente:
+* Um trecho pré-ocultação para atenuar a cintilação
+* A biblioteca at.js do Target é carregada de forma assíncrona com configurações padrão para solicitar e renderizar atividades automaticamente:
 
-Implementação de exemplo de +++at.js em uma página HTML
++++at.js exemplo de implementação em uma página de HTML
 
 ```HTML
 <!doctype html>
@@ -131,14 +132,14 @@ Implementação de exemplo de +++at.js em uma página HTML
 
 +++
 
-Para atualizar o Target para usar o SDK da Web da plataforma, primeiro remova a at.js:
+Para atualizar o Target para usar o SDK da Web da plataforma, remova primeiro a at.js:
 
 ```HTML
 <!--Target at.js library loaded asynchonously-->
 <script src="/libraries/at.js" async></script>
 ```
 
-E substitua por uma biblioteca JavsScript liga ou seu código incorporado de tags e a extensão Adobe Experience Platform Web SDK:
+E substitua pela biblioteca JavaScript ligada ou pelo código incorporado das tags e pela extensão SDK da Web da Adobe Experience Platform:
 
 >[!BEGINTABS]
 
@@ -163,25 +164,25 @@ E substitua por uma biblioteca JavsScript liga ou seu código incorporado de tag
 <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
 ```
 
-Na propriedade da tag , adicione a extensão SDK da Web da Adobe Experience Platform:
+Na propriedade da tag, adicione a extensão SDK da Web da Adobe Experience Platform:
 
-![Adicionar a extensão Adobe Experience Platform Web SDK](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+![Adicionar a extensão SDK da Web da Adobe Experience Platform](assets/library-tags-addExtension.png){zoomable="yes"}
 
 
 >[!ENDTABS]
 
-A versão independente pré-criada requer um &quot;código base&quot; adicionado diretamente à página, o que cria uma função global chamada liga. Use essa função para interagir com o SDK. Se quiser nomear a função global como outra coisa, altere a variável `alloy` nome.
+A versão independente pré-criada requer um &quot;código base&quot; adicionado diretamente à página que cria uma função global chamada liga. Use esta função para interagir com o SDK. Se você quiser nomear a função global como algo diferente, altere o nome `alloy`.
 
-Consulte a [Instalação do SDK da Web da plataforma](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=pt-BR) documentação para obter detalhes adicionais e opções de implantação.
+Consulte a documentação [Instalação do SDK da Web da Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) para obter detalhes adicionais e opções de implantação.
 
 
 ## Atualizar a abordagem de pré-ocultação de conteúdo
 
-A implementação do SDK da Web da plataforma pode exigir uma pré-ocultação do trecho, dependendo se a biblioteca é carregada de forma assíncrona ou síncrona.
+A implementação do SDK da Web da Platform pode exigir um trecho pré-ocultado, dependendo se a biblioteca é carregada de forma assíncrona ou síncrona.
 
 ### Implementação assíncrona
 
-Assim como com a at.js, se a biblioteca do SDK da Web da plataforma carregar de forma assíncrona, a página poderá terminar a renderização antes que o Target tenha realizado uma troca de conteúdo. Esse comportamento pode levar ao que é conhecido como &quot;oscilação&quot;, onde o conteúdo padrão é exibido brevemente antes de ser substituído pelo conteúdo personalizado especificado pelo Target. Se quiser evitar essa oscilação, o Adobe recomenda adicionar um trecho pré-ocultação especial imediatamente antes da referência do script assíncrono do SDK da Web da Plataforma ou do código incorporado das tags.
+Assim como na at.js, se a biblioteca do SDK da Web da Platform for carregada de forma assíncrona, a página poderá terminar a renderização antes que o Target tenha realizado uma troca de conteúdo. Esse comportamento pode levar ao que é conhecido como &quot;oscilação&quot;, onde o conteúdo padrão é exibido brevemente antes de ser substituído pelo conteúdo personalizado especificado pelo Target. Caso deseje evitar essa oscilação, o Adobe recomenda adicionar um trecho pré-ocultação especial imediatamente antes da referência de script do SDK da Web da plataforma assíncrona ou do código incorporado das tags.
 
 Se sua implementação for assíncrona como os exemplos acima, substitua o trecho pré-ocultação da at.js pela versão abaixo compatível com o SDK da Web da plataforma:
 
@@ -196,35 +197,35 @@ Se sua implementação for assíncrona como os exemplos acima, substitua o trech
 </script>
 ```
 
-O trecho pré-ocultação cria uma tag de estilo no cabeçalho da página com a definição de CSS de sua escolha. Essa tag de estilo é removida quando uma resposta do Target é recebida ou o tempo limite é atingido.
+O trecho pré-ocultação cria uma tag de estilo no cabeçalho da página com a definição CSS de sua escolha. Essa tag de estilo é removida quando uma resposta do Target é recebida ou o tempo limite é atingido.
 
 O comportamento de pré-ocultação é controlado por duas configurações no final do trecho.
 
-* `body { opacity: 0 !important }` especifica a definição de CSS a ser usada para a pré-ocultação até o Target ser carregado. Por padrão, a página inteira está oculta. Você pode atualizar essa definição para os seletores que deseja visualizar junto com como deseja ocultá-los. É possível incluir várias definições, pois esse valor é simplesmente o que é inserido na tag de estilo de pré-ocultação. Se você tiver um elemento de contêiner de fácil identificação que abranja o conteúdo sob sua navegação, poderá usar essa configuração para limitar a pré-ocultação a esse elemento do contêiner.
+* `body { opacity: 0 !important }` especifica a definição de CSS a ser usada para a pré-ocultação até o Target ser carregado. Por padrão, a página inteira fica oculta. É possível atualizar essa definição para os seletores que você deseja pré-ocultar junto com a forma como deseja ocultá-los. É possível incluir várias definições, pois esse valor é simplesmente o que está inserido na tag de estilo pré-ocultação. Se você tiver um elemento de contêiner de fácil identificação que abranja o conteúdo abaixo de sua navegação, poderá usar essa configuração para limitar a pré-ocultação a esse elemento do contêiner.
 
-* `3000` especifica o tempo limite em milissegundos para a pré-ocultação. Se uma resposta do Target não for recebida antes do tempo limite, a tag de estilo de pré-ocultação será removida. Atingir este tempo limite deve ser raro.
+* `3000` especifica o tempo limite em milissegundos para a pré-ocultação. Se uma resposta do Target não for recebida antes do tempo limite, a tag de estilo pré-ocultação será removida. Atingir esse tempo limite deve ser raro.
 
 >[!IMPORTANT]
 >
->Certifique-se de usar o trecho correto para o SDK da Web da plataforma, pois ele usa uma ID de estilo diferente de `alloy-prehiding`. Se o trecho pré-ocultação para at.js for usado, talvez não funcione corretamente.
+>Certifique-se de usar o trecho correto para o SDK da Web da Platform, pois ele usa uma ID de estilo diferente de `alloy-prehiding`. Se o trecho pré-ocultação para at.js for usado, talvez ele não funcione corretamente.
 
 ### Implementação síncrona
 
-O Adobe recomenda implementar o SDK da Web da plataforma de forma assíncrona para obter o melhor desempenho geral da página. No entanto, se a biblioteca ou código incorporado de tags do alloy.js for carregado de forma síncrona, o trecho pré-ocultação não será necessário. Em vez disso, o estilo de pré-ocultação é especificado na configuração do SDK da Web da plataforma.
+A Adobe recomenda implementar o SDK da Web da Platform de forma assíncrona para obter o melhor desempenho geral da página. No entanto, se a biblioteca alloy.js ou o código incorporado das tags for carregado de forma síncrona, o trecho pré-ocultação não será necessário. Em vez disso, o estilo pré-ocultação é especificado na configuração do SDK da Web da Platform.
 
-O estilo de pré-ocultação para implementações síncronas pode ser configurado usando o [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) opção. A configuração do SDK da Web da plataforma é abordada na próxima seção.
+O estilo pré-ocultação para implementações síncronas pode ser configurado usando a opção [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle). A configuração do SDK da Web da Platform é abordada na próxima seção.
 
-Para saber mais sobre como o SDK da Web da plataforma pode gerenciar a cintilação, consulte a seção do guia :  [gerenciamento de cintilação para experiências personalizadas](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
+Para saber mais sobre como o SDK da Web da Platform pode gerenciar a cintilação, consulte a seção do guia: [gerenciamento de cintilação para experiências personalizadas](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Configurar o SDK da Web da plataforma
 
-O SDK da Web da plataforma deve ser configurado em cada carregamento de página. O exemplo a seguir parte do princípio que todo o site está sendo atualizado para o SDK da Web da plataforma em uma única implantação:
+O SDK da Web da Platform deve ser configurado em cada carregamento de página. O exemplo a seguir presume que todo o site está sendo atualizado para o SDK da Web da plataforma em uma única implantação:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-O `configure` deve ser sempre o primeiro comando do SDK chamado. O `edgeConfigId` é [!UICONTROL ID do fluxo de dados]
+O comando `configure` deve ser sempre o primeiro comando do SDK chamado. O `edgeConfigId` é a [!UICONTROL ID da sequência de dados]
 
 ```JavaScript
 alloy("configure", {
@@ -235,12 +236,12 @@ alloy("configure", {
 
 >[!TAB Tags]
 
-Em implementações de tags, muitos campos são preenchidos automaticamente ou podem ser selecionados em menus suspensos. Observe que diferentes plataformas [!UICONTROL sandboxes] e [!UICONTROL datastreams] pode ser selecionado para cada ambiente. O armazenamento de dados será alterado com base no estado da biblioteca de tags no processo de publicação.
+Em implementações de tags, muitos campos são preenchidos automaticamente ou podem ser selecionados em menus suspensos. Observe que diferentes [!UICONTROL sandboxes] e [!UICONTROL datastreams] da Platform podem ser selecionadas para cada ambiente. O fluxo de dados será alterado com base no estado da biblioteca de tags no processo de publicação.
 
-![configuração da extensão de tag do SDK da Web](assets/tags-config.png){zoomable=&quot;yes&quot;}
+![configurando a extensão de tag do SDK da Web](assets/tags-config.png){zoomable="yes"}
 >[!ENDTABS]
 
-Se você planeja migrar da at.js para o SDK da Web da plataforma página por página, as seguintes opções de configuração são necessárias:
+Se você planeja migrar do at.js para o SDK da Web da Platform página por página, as seguintes opções de configuração são necessárias:
 
 
 >[!BEGINTABS]
@@ -258,26 +259,26 @@ alloy("configure", {
 
 >[!TAB Tags]
 
-![configuração das opções de migração da extensão de tag do SDK da Web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+![configurando as opções de migração da extensão de tag do SDK da Web](assets/tags-config-migration.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-As opções de configuração importantes relacionadas ao Target são descritas abaixo:
+As opções de configuração notáveis relacionadas ao Target são descritas abaixo:
 
-| Opção | Descrição | Valor de exemplo |
+| Opção | Descrição | Exemplo de valor |
 | --- | --- | --- |
-| `edgeConfigId` | A ID do datastream | `ebebf826-a01f-4458-8cec-ef61de241c93` |
+| `edgeConfigId` | A ID do fluxo de dados | `ebebf826-a01f-4458-8cec-ef61de241c93` |
 | `orgId` | ID da organização da Adobe Experience Cloud | `ADB3LETTERSANDNUMBERS@AdobeOrg` |
-| `targetMigrationEnabled` | Use esta opção para permitir que o SDK da Web leia e grave os cookies herdados de mbox e mboxEdgeCluster usados pela at.js. Isso ajuda a manter o perfil do visitante ao mover de uma página que usa o SDK da Web para uma página que usa a biblioteca at.js e do modo oposto. | `true` |
-| `idMigrationEnabled` | Se verdadeiro, o SDK lê e define cookies AMCV antigos. Essa opção ajuda na transição para o uso do SDK da Web da plataforma, enquanto algumas partes do site ainda podem usar o Visitor.js. | `true` |
-| `thirdPartyCookiesEnabled` | Ativa a configuração de cookies de terceiros do Adobe. O SDK pode manter a ID de visitante em um contexto de terceiros para permitir que a mesma ID de visitante seja usada em sites. Use essa opção se você tiver vários sites; no entanto, às vezes, essa opção não é desejada por motivos de privacidade. | `true` |
-| `prehidingStyle` | Usado para criar uma definição de estilo CSS que oculta as áreas de conteúdo da página da Web, enquanto o conteúdo personalizado é carregado do servidor. Isso é usado somente com implantações síncronas do SDK. | `body { opacity: 0 !important }` |
+| `targetMigrationEnabled` | Use essa opção para permitir que o SDK da Web leia e grave os cookies mbox e mboxEdgeCluster herdados usados pela at.js. Isso ajuda a manter o perfil do visitante ao mover de uma página que usa o SDK da Web para uma página que usa a biblioteca at.js e o oposto. | `true` |
+| `idMigrationEnabled` | Se verdadeiro, o SDK lê e define cookies AMCV antigos. Essa opção ajuda na transição para o uso do SDK da Web da Platform, enquanto algumas partes do site ainda podem usar Visitor.js. | `true` |
+| `thirdPartyCookiesEnabled` | Ativa a configuração de cookies de terceiros do Adobe. O SDK pode manter a ID de visitante em um contexto de terceiros para permitir que a mesma ID de visitante seja usada em todos os sites. Use essa opção se você tiver vários sites; no entanto, às vezes essa opção não é desejada por motivos de privacidade. | `true` |
+| `prehidingStyle` | Usado para criar uma definição de estilo CSS que oculta as áreas de conteúdo da sua página da Web enquanto o conteúdo personalizado é carregado do servidor. Isso só é usado com implantações síncronas do SDK. | `body { opacity: 0 !important }` |
 
-Para obter uma lista completa de opções, consulte [configuração do SDK da Web da plataforma](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=pt-BR) guia.
+Para obter uma lista completa de opções, consulte o guia [configurando o SDK da Web da plataforma](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html).
 
 ## Exemplo de implementação
 
-Quando o SDK da Web da plataforma estiver corretamente no lugar, a página de exemplo terá esta aparência.
+Depois que o SDK da Web da Platform estiver corretamente em vigor, a página de exemplo terá esta aparência.
 
 >[!BEGINTABS]
 
@@ -381,22 +382,22 @@ Código da página:
 </html>
 ```
 
-Em tags, adicione a extensão SDK da Web da Adobe Experience Platform:
+Nas tags, adicione a extensão SDK da Web da Adobe Experience Platform:
 
-![Adicionar a extensão Adobe Experience Platform Web SDK](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+![Adicionar a extensão SDK da Web da Adobe Experience Platform](assets/library-tags-addExtension.png){zoomable="yes"}
 
 E adicione as configurações desejadas:
-![configuração das opções de migração da extensão de tag do SDK da Web](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+![configurando as opções de migração da extensão de tag do SDK da Web](assets/tags-config-migration.png){zoomable="yes"}
 
 
 >[!ENDTABS]
 
 
 
-É importante observar que a simples inclusão e configuração da biblioteca do SDK da Web da plataforma, conforme mostrado acima, não executa chamadas de rede para a Rede da Adobe Edge.
+É importante observar que simplesmente incluir e configurar a biblioteca do SDK da Web da plataforma, como mostrado acima, não executa nenhuma chamada de rede para a rede da Adobe Edge.
 
-Em seguida, saiba como [solicitar e aplicar atividades baseadas em VEC](render-vec-activities.md) à página.
+Em seguida, saiba como [solicitar e aplicar atividades com base em VEC](render-vec-activities.md) à página.
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ser bem-sucedido com sua migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, informe-nos ao publicar em [este debate comunitário](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

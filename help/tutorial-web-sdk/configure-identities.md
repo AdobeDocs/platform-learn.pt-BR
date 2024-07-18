@@ -15,17 +15,17 @@ ht-degree: 12%
 
 Saiba como configurar namespaces de identidade para usar com o SDK da web da Adobe Experience Platform.
 
-A variável [Serviço de identidade da Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/id-service/using/home) define uma ID de visitante comum (a ECID) em aplicativos de Adobe baseados em SDK para potencializar recursos de Experience Cloud, como o compartilhamento de público-alvo entre aplicativos. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com outros sistemas, como o sistema de CRM (relacionamento com o cliente).
+O [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home) define uma ID de visitante comum (a ECID) entre aplicativos de Adobe baseados em SDK para potencializar recursos de Experience Cloud, como o compartilhamento de público-alvo entre aplicativos. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com outros sistemas, como o sistema de CRM (relacionamento com o cliente).
 
-A variável [Serviço de identidade da Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sim, há dois!) O usa as ECIDs e as IDs do cliente para gerar gráficos de identidade, permitindo mesclar atributos e comportamentos em Perfis de clientes em tempo real.
-
->[!NOTE]
->
->Um namespace de identidade personalizado é _não obrigatório_ para implementar o Adobe Analytics, Adobe Target ou Adobe Audience Manager com o SDK da Web (identidades autenticadas podem ser passadas no `data` em vez do `xdm` como você verá mais tarde). Os namespaces de identidade são necessários para aplicativos nativos da plataforma, como Journey Optimizer, Real-time Customer Data Platform e Customer Journey Analytics. Embora você possa decidir não usar um namespace de identidade em sua própria implementação, espera-se que faça isso como parte deste tutorial.
+O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sim, há dois!) O usa as ECIDs e as IDs do cliente para gerar gráficos de identidade, permitindo mesclar atributos e comportamentos em Perfis de clientes em tempo real.
 
 >[!NOTE]
 >
-> Para fins de demonstração, os exercícios desta lição permitem capturar os detalhes de identidade de um cliente fictício conectado ao [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en.html) usando as credenciais, **usuário: `test@adobe.com` / password: test**.
+>Um namespace de identidade personalizado _não é necessário_ para implementar o Adobe Analytics, o Adobe Target ou o Adobe Audience Manager com o SDK da Web (identidades autenticadas podem ser passadas no objeto `data` em vez do objeto `xdm`, como você verá mais tarde). Os namespaces de identidade são necessários para aplicativos nativos da plataforma, como Journey Optimizer, Real-time Customer Data Platform e Customer Journey Analytics. Embora você possa decidir não usar um namespace de identidade em sua própria implementação, espera-se que faça isso como parte deste tutorial.
+
+>[!NOTE]
+>
+> Para fins de demonstração, os exercícios desta lição ensinam a capturar os detalhes de identidade de um cliente fictício conectado ao [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en.html) usando as credenciais, **usuário: `test@adobe.com` / senha: teste**.
 
 ## Objetivos de aprendizagem
 
@@ -43,7 +43,7 @@ Você já deve ter concluído as lições anteriores:
 
 >[!IMPORTANT]
 >
->A variável [Extensão do Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) não é necessário ao implementar o Adobe Experience Platform Web SDK, pois a biblioteca JavaScript do SDK da Web contém a funcionalidade do serviço de ID de visitante.
+>A [Extensão da ID do Experience Cloud](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) não é necessária ao implementar o SDK da Web da Adobe Experience Platform, pois a biblioteca JavaScript do SDK da Web contém a funcionalidade do serviço de ID de visitante.
 >
 > Se o site já estiver usando o Serviço de ID de Experience Cloud em seu site (por meio da API de visitante ou da extensão de tag do Serviço de ID de Experience Cloud ) e você quiser continuar usando-o ao migrar para o SDK da Web da Adobe Experience Platform, será necessário usar a versão mais recente da API de visitante ou a extensão de tag do Serviço de ID de Experience Cloud. Consulte [Migração de ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) para obter mais informações.
 
@@ -57,19 +57,19 @@ Antes de começar os exercícios, assista a este vídeo curto para saber mais so
 
 Agora, crie um namespace para a ID do CRM da Luma:
 
-1. Abra o [Interface da coleção de dados](https://launch.adobe.com/){target="_blank"}
+1. Abrir a [interface de Coleção de Dados](https://launch.adobe.com/){target="_blank"}
 1. Selecione a sandbox que você está usando para o tutorial
 
    >[!NOTE]
    >
-   >Se você for o cliente de um aplicativo baseado em plataforma, como o Real-Time CDP ou o Journey Optimizer, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso não esteja, use o **[!UICONTROL Prod]** sandbox.
+   >Se você for o cliente de um aplicativo baseado em plataforma, como o Real-Time CDP ou o Journey Optimizer, recomendamos usar uma sandbox de desenvolvimento para este tutorial. Caso contrário, use a sandbox **[!UICONTROL Prod]**.
 
-1. Selecionar **[!UICONTROL Identidades]** na navegação à esquerda
+1. Selecione **[!UICONTROL Identidades]** na navegação à esquerda
 1. Selecionar **[!UICONTROL Procurar]**
 
    Uma lista de namespaces de identidade é exibida na interface principal da página, mostrando seus nomes, símbolos de identidade, data da última atualização e se são namespaces padrão ou personalizados. O painel direito contém informações sobre [!UICONTROL Fortaleza do gráfico de identidade].
 
-1. Selecionar **[!UICONTROL Criar namespace de identidade]**
+1. Selecione **[!UICONTROL Criar namespace de identidade]**
 
    ![Exibir identidades](assets/configure-identities-screen.png)
 
@@ -85,14 +85,14 @@ Agora, crie um namespace para a ID do CRM da Luma:
    ![Criar namespaces](assets/identities-create-namespace.png)
 
 
-   O namespace de identidade é preenchido no campo **[!UICONTROL Identidades]** tela.
+   O namespace de identidade é preenchido na tela **[!UICONTROL Identidades]**.
 
    ![Criar namespaces](assets/configure-identities-namespace-lumaCrmId.png)
 
 
 >[!NOTE]
 >
-> No [Criar identidades](create-identities.md) lição, você aprenderá a usar esse namespace ao enviar identidades para o Platform Edge Network.
+> Na lição [Criar identidades](create-identities.md), você aprenderá a usar esse namespace ao enviar identidades para o Platform Edge Network.
 
 Agora que as identidades estão em vigor, o fluxo de dados pode ser configurado.
 
@@ -100,4 +100,4 @@ Agora que as identidades estão em vigor, o fluxo de dados pode ser configurado.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

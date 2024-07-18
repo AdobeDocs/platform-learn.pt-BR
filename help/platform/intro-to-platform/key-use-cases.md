@@ -1,6 +1,6 @@
 ---
 title: Principais casos de uso
-description: Obtenha uma visão geral dos cinco principais casos de uso de Experience Platform&mdash;Reengajamento inteligente, Campanhas do Don't Lose, Otimização de conversão de clientes, Reconhecimento contextual e Valor único para o valor da vida útil.
+description: Obtenha uma visão geral dos cinco principais casos de uso do Experience Platform&mdash;Reengajamento inteligente, Não perca campanhas, Otimização de conversão do cliente, Reconhecimento contextual e Valor único para o valor da vida útil.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z

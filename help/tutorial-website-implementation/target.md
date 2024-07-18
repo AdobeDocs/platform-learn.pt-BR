@@ -5,14 +5,14 @@ solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '4445'
-ht-degree: 75%
+source-wordcount: '4252'
+ht-degree: 68%
 
 ---
 
 # Adicionar o Adobe Target
 
-Nesta lição, implementaremos a extensão [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=pt-BR) com uma solicitação de carregamento de página e parâmetros personalizados.
+Nesta lição, implementaremos a extensão [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html) com uma solicitação de carregamento de página e parâmetros personalizados.
 
 O [Adobe Target](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html) é a solução da Adobe Experience Cloud que oferece tudo o que você precisa para ajustar e personalizar a experiência do cliente e maximizar a receita em sites da Web e para dispositivos móveis, aplicativos, redes sociais e outros canais digitais.
 
@@ -20,9 +20,9 @@ O [Adobe Target](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
-> * O Platform launch (lado do cliente) agora é **[!DNL tags]**
-> * O Platform launch Server Side agora é **[!DNL event forwarding]**
-> * As configurações de borda agora são **[!DNL datastreams]**
+> * O Platform Launch (lado do cliente) agora é **[!DNL tags]**
+> * O Platform Launch Server Side agora é **[!DNL event forwarding]**
+> * As configurações do Edge agora são **[!DNL datastreams]**
 
 ## Objetivos de aprendizagem
 
@@ -39,7 +39,7 @@ No final desta lição, você poderá:
 
 ## Pré-requisitos
 
-Para concluir as lições desta seção, primeiro complete as lições em [Configurar tags](create-a-property.md) e [Adicionar o Identity Service](id-service.md).
+Para concluir as lições nesta seção, primeiro conclua as lições em [Configurar tags](create-a-property.md) e [Adicionar o Serviço de Identidade](id-service.md).
 
 ## Adicionar o trecho de pré-ocultação do Target
 
@@ -95,7 +95,7 @@ Para obter mais detalhes e obter o trecho de pré-ocultação unificado, consult
 
 ## Adicionar a extensão do Target
 
-A extensão do Adobe Target suporta implementações do lado do cliente usando o SDK JavaScript do Target para a Web moderna, o at.js. Os clientes que ainda usam a biblioteca antiga do Target, o mbox.js, [deve atualizar para a at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) para usar tags.
+A extensão do Adobe Target suporta implementações do lado do cliente usando o SDK JavaScript do Target para a Web moderna, o at.js. Os clientes que ainda usam a biblioteca antiga do Target, o mbox.js, [devem atualizar para o at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) para usar as tags.
 
 A extensão do Target v2 consiste em duas partes principais:
 
@@ -110,7 +110,7 @@ Neste primeiro exercício, adicionaremos a extensão e observaremos as configura
 
 **Para adicionar a extensão**
 
-1. Acesse **[!UICONTROL Extensões > Catálogo]**
+1. Ir para **[!UICONTROL Extensões > Catálogo]**
 1. Digite `target` no filtro para localizar rapidamente as extensões do Adobe Target. Há duas extensões: Adobe Target e Adobe Target v2. Este tutorial usará a versão v2 da extensão que usa a versão mais recente do at.js (atualmente 2.x), ideal para sites tradicionais e aplicativos de página única (SPA).
 1. Clique em **[!UICONTROL Instalar]**
 
@@ -136,7 +136,7 @@ Use a regra `All Pages - Library Loaded` criada na lição &quot;[Adicionar elem
 
 **Para carregar o Target**
 
-1. Vá para a **[!UICONTROL Regras]** no painel de navegação esquerdo e, em seguida, clique em `All Pages - Library Loaded` para abrir o editor de regras
+1. Vá para as **[!UICONTROL Regras]** na navegação à esquerda e clique em `All Pages - Library Loaded` para abrir o editor de regras
 
    ![Abrir todas as páginas - Regra de biblioteca carregada](images/target-editRule.png)
 
@@ -144,9 +144,9 @@ Use a regra `All Pages - Library Loaded` criada na lição &quot;[Adicionar elem
 
    ![Clique no ícone de adição para adicionar uma nova ação](images/target-addLoadTargetAction.png)
 
-1. Selecione **[!UICONTROL Extensão > Adobe Target v2]**
+1. Selecionar **[!UICONTROL Extensão > Adobe Target v2]**
 
-1. Selecione **[!UICONTROL Tipo de ação > Carregar o Target]**
+1. Selecione **[!UICONTROL Tipo de ação > Carregar destino]**
 
 1. Clique em **[!UICONTROL Manter alterações]**
 
@@ -160,7 +160,7 @@ Com a ação `Load Target` adicionada, o at.js será carregado na página. No en
 
    ![Clique no ícone de adição para adicionar outra ação](images/target-addGlobalMboxAction.png)
 
-1. Selecione **[!UICONTROL Extensão > Adobe Target v2]**
+1. Selecionar **[!UICONTROL Extensão > Adobe Target v2]**
 
 1. Selecione **[!UICONTROL Tipo de ação > Solicitação de carregamento de página de acionamento]**
 
@@ -172,13 +172,13 @@ Com a ação `Load Target` adicionada, o at.js será carregado na página. No en
 
 1. A nova ação é adicionada em sequência após a ação `Load Target` e as ações serão executadas nessa ordem. Você pode arrastar e soltar as ações para reorganizar a ordem, mas nesse cenário, `Load Target` precisa estar antes de `Fire Page Load Request`.
 
-1. Clique em **[!UICONTROL Salvar na biblioteca e Criar]**
+1. Clique em **[!UICONTROL Salvar na biblioteca e na build]**
 
    ![Salvar e criar](images/target-fireGlobalMbox-saveAndBuild.png)
 
 ### Validar a solicitação de carregamento de página
 
-Agora que você adicionou a extensão Target v2 e acionou o `Load Target` e `Fire Page Load Request` Para ações do, deve haver uma solicitação de carregamento de página feita em todas as páginas em que a propriedade da tag é usada.
+Agora que você adicionou a extensão Target v2 e acionou as ações `Load Target` e `Fire Page Load Request`, deve haver uma solicitação de carregamento de página feita em todas as páginas em que a propriedade da tag é usada.
 
 **Para validar as ações Carregar Target e Acionar solicitação de carregamento de página**
 
@@ -186,9 +186,9 @@ Agora que você adicionou a extensão Target v2 e acionou o `Load Target` e `Fir
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *seu* Ambiente de desenvolvimento, conforme descrito na seção [lição anterior](switch-environments.md)
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md)
 
-   ![Seu ambiente de desenvolvimento de tags mostrado no Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Vá para a guia Resumo do Debugger
 
@@ -215,7 +215,7 @@ Transmitir parâmetros na solicitação do Target adiciona recursos avançados a
 Essas ações podem ser usadas *antes* da ação `Load Target` e podem definir diferentes parâmetros em páginas diferentes com base nas configurações de regras. Use o recurso de ordenação de regras usado ao definir IDs do cliente com o Serviço de identidade para definir parâmetros adicionais no evento `Library Loaded` antes da regra disparar a solicitação de carregamento de página.
 >[!TIP]
 >
-> Como a maioria das implementações usa a solicitação de carregamento de página para a entrega da atividade, geralmente é suficiente apenas usar a ação `Add Params to Page Load Requests`.
+>Como a maioria das implementações usa a solicitação de carregamento de página para a entrega da atividade, geralmente é suficiente apenas usar a ação `Add Params to Page Load Requests`.
 
 ### Parâmetros de solicitação (mbox)
 
@@ -225,7 +225,7 @@ Vamos adicionar o elemento de dados `Page Name` criado anteriormente na lição 
 
 **Para adicionar o parâmetro de solicitação**
 
-1. Vá para a **[!UICONTROL Regras]** no painel de navegação esquerdo e, em seguida, clique em `All Pages - Library Loaded` para abrir o editor de regras.
+1. Vá para as **[!UICONTROL Regras]** na navegação à esquerda e clique em `All Pages - Library Loaded` para abrir o editor de regras.
 
    ![Abrir todas as páginas - Regra de biblioteca carregada](images/target-editRule.png)
 
@@ -233,11 +233,11 @@ Vamos adicionar o elemento de dados `Page Name` criado anteriormente na lição 
 
    ![Clique no ícone de adição para adicionar uma nova ação](images/target-addParamsAction.png)
 
-1. Selecione **[!UICONTROL Extensão > Adobe Target v2]**
+1. Selecionar **[!UICONTROL Extensão > Adobe Target v2]**
 
 1. Selecione **[!UICONTROL Tipo de ação > Adicionar parâmetros à solicitação de carregamento de página]**
 
-1. Digite `pageName` como o **[!UICONTROL nome]**
+1. Digite `pageName` como **[!UICONTROL Nome]**
 
 1. Clique no ![ícone de elemento de dados](images/icon-dataElement.png) para abrir a modal do elemento de dados
 
@@ -253,7 +253,7 @@ Vamos adicionar o elemento de dados `Page Name` criado anteriormente na lição 
 
 1. Clique e arraste na borda esquerda da ação `Add Params to Page Load Request` para reorganizar as ações antes da ação `Fire Page Load Request` (pode ser antes ou depois de `Load Target`)
 
-1. Clique em **[!UICONTROL Salvar na biblioteca e Criar]**
+1. Clique em **[!UICONTROL Salvar na biblioteca e na build]**
 
    ![Clique em Salvar na biblioteca e Criar](images/target-rearrangeActions.png)
 
@@ -291,22 +291,22 @@ Parâmetros de entidade são parâmetros especiais usados em [implementações d
 1. Para coletar o comportamento do visitante e incrementar os algoritmos de recomendações, como &quot;Produtos visualizados recentemente&quot; ou &quot;Produtos mais visualizados&quot;
 1. Para preencher o catálogo de Recomendações. As Recomendações contêm um banco de dados de todos os produtos ou artigos do site para que possam ser oferecidos na oferta de recomendação. Por exemplo, ao recomendar produtos, normalmente deseja-se exibir atributos como o nome do produto (`entity.name`) e a imagem (`entity.thumbnailUrl`). Alguns clientes preenchem o catálogo usando feeds de backend, mas também podem ser preenchidos usando parâmetros de entidade em solicitações do Target.
 
-Você não precisa transmitir nenhum parâmetro de entidade neste tutorial, mas o fluxo de trabalho é idêntico ao que você fez anteriormente ao transmitir a variável `pageName` parâmetro de solicitação — basta dar ao parâmetro um nome com prefixo &quot;entity&quot;. e mapeá-lo para o elemento de dados relevante. Observe que algumas entidades comuns têm nomes reservados que devem ser usados (por exemplo, entity.id para o SKU do produto). Esta é a aparência ao definir parâmetros de entidade na ação `Add Params to Page Load Request`:
+Você não precisa transmitir nenhum parâmetro de entidade neste tutorial, mas o fluxo de trabalho é idêntico ao que você fez anteriormente ao transmitir o parâmetro de solicitação `pageName`, basta dar ao parâmetro um nome com prefixo &quot;entity&quot;. e mapeá-lo para o elemento de dados relevante. Observe que algumas entidades comuns têm nomes reservados que devem ser usados (por exemplo, entity.id para o SKU do produto). Esta é a aparência ao definir parâmetros de entidade na ação `Add Params to Page Load Request`:
 
 ![Adicionar Parâmetros de entidade](images/target-entityParameters.png)
 
 ### Adicionar parâmetros de ID do cliente
 
-A coleta de IDs do cliente com o Adobe Experience Platform Identity Service facilita a importação de dados do CRM para o Target usando o recurso [Atributos do cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=pt-BR) da Adobe Experience Cloud. Ela também permite a identificação de [visitantes em vários dispositivos](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), permitindo manter uma experiência de usuário consistente à medida que seus clientes alternam entre um laptop e um dispositivo móvel.
+A coleta de IDs do cliente com o Serviço de identidade da Adobe Experience Platform facilita a importação de dados do CRM para o Target usando o recurso [Atributos do cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) da Adobe Experience Cloud. Ela também permite a identificação de [visitantes em vários dispositivos](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), permitindo manter uma experiência de usuário consistente à medida que seus clientes alternam entre um laptop e um dispositivo móvel.
 
 É imperativo definir a ID do cliente na ação `Set Customer IDs` do Serviço de identidade antes de acionar a solicitação de carregamento de página. Para esse fim, verifique se você tem os recursos a seguir no site:
 
 * A ID do cliente deve estar disponível na página antes do código incorporado das tags
-* A extensão do Adobe Experience Platform Identity Service deve ser instalada
+* A extensão do Serviço de identidade da Adobe Experience Platform deve ser instalada
 * Você deve usar a ação `Set Customer IDs` em uma regra que é acionada no evento “Biblioteca carregada (parte superior da página)”
 * Use a ação `Fire Page Load Request` em uma regra que é acionada *depois* da ação “Definir IDs de cliente”
 
-Na lição anterior, [Adicionar o Adobe Experience Platform Identity Service](id-service.md), você criou a regra `All Pages - Library Loaded - Authenticated - 10` para acionar a ação &quot;Definir ID do cliente&quot;. Como essa regra tem uma configuração `Order` de `10`, as IDs do cliente são definidas antes que nossa solicitação de carregamento de página seja acionada a partir da regra `All Pages - Library Loaded` com sua configuração `Order` de `50`. Assim, você já implementou a coleção de IDs de cliente do Target!
+Na lição anterior, [Adicionar o Serviço de identidade da Adobe Experience Platform](id-service.md), você criou a regra `All Pages - Library Loaded - Authenticated - 10` para acionar a ação &quot;Definir ID do cliente&quot;. Como essa regra tem uma configuração `Order` de `10`, as IDs do cliente são definidas antes que nossa solicitação de carregamento de página seja acionada a partir da regra `All Pages - Library Loaded` com sua configuração `Order` de `50`. Assim, você já implementou a coleção de IDs de cliente do Target!
 
 #### Validar as IDs do cliente
 
@@ -316,9 +316,9 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *seu* Ambiente de desenvolvimento, conforme descrito na seção [lição anterior](switch-environments.md)
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md)
 
-   ![Seu ambiente de desenvolvimento de tags mostrado no Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Faça logon no site Luma usando as credenciais `test@adobe.com`/`test`
 1. Retorne à [página inicial do Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
@@ -341,7 +341,7 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 
 >[!WARNING]
 >
->O Adobe Experience Platform Identity Service permitirá o envio de várias IDs para o Serviço. No entanto, somente a primeira será enviada para o Target.
+>O Serviço de identidade da Adobe Experience Platform permitirá o envio de várias IDs para o Serviço. No entanto, somente a primeira será enviada para o Target.
 
 ### Adicionar o parâmetro de Token de propriedade
 
@@ -349,12 +349,12 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 >
 >Isso é um exercício opcional para clientes do Target Premium.
 
-O token de propriedade é um parâmetro reservado usado com o recurso [Permissões de usuário empresarial](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=pt-BR) do Target Premium. É usado para definir diferentes propriedades digitais que membros distintos de uma organização da Experience Cloud possam receber diferentes permissões para cada propriedade. Por exemplo, você pode querer que um grupo de usuários possa configurar atividades do Target em seu site, mas não em seu aplicativo móvel.
+O token de propriedade é um parâmetro reservado usado com o recurso [Permissões de usuário empresarial](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) do Target Premium. É usado para definir diferentes propriedades digitais que membros distintos de uma organização da Experience Cloud possam receber diferentes permissões para cada propriedade. Por exemplo, você pode querer que um grupo de usuários possa configurar atividades do Target em seu site, mas não em seu aplicativo móvel.
 
 As propriedades do Target são análogas às propriedades de tags e aos conjuntos de relatórios do Analytics. Uma empresa com várias marcas, sites e equipes de marketing pode usar uma propriedade do Target, de tag e um conjunto de relatórios do Analytics diferentes para cada site ou aplicativo móvel. As propriedades das tags são diferenciadas por seus códigos incorporados, os conjuntos de relatórios do Analytics são diferenciados por sua ID do conjunto de relatórios e as propriedades do Target são diferenciadas pelo parâmetro de token de propriedade.
 
 
-O token de propriedade deve ser implementado usando uma ação de código personalizado nas tags com o `targetPageParams()` função. Se estiver implementando vários sites com diferentes valores de at_property usando diferentes valores de at_property com uma única propriedade de tag, você poderá gerenciar o valor de at_property por meio de um elemento de dados.
+O token de propriedade deve ser implementado usando uma ação de código personalizado nas marcas com a função `targetPageParams()`. Se estiver implementando vários sites com diferentes valores de at_property usando diferentes valores de at_property com uma única propriedade de tag, você poderá gerenciar o valor de at_property por meio de um elemento de dados.
 
 Este é um exercício opcional, caso seja um cliente do Target Premium e deseje implementar um token de propriedade na sua propriedade Tutorial:
 
@@ -362,13 +362,13 @@ Este é um exercício opcional, caso seja um cliente do Target Premium e deseje 
 
 1. Ir para **[!UICONTROL Administração > Propriedades]**
 
-1. Identifique a Propriedade que deseja usar e clique no link **[!UICONTROL &lt;/>]** (ou crie uma nova propriedade)
+1. Identifique a Propriedade que deseja usar e clique em **[!UICONTROL &lt;/>]** (ou crie uma nova propriedade)
 
-1. Copie o trecho de código na `<script></script>` para a área de transferência
+1. Copie o trecho de código dentro de `<script></script>` para a área de transferência
 
    ![Obter o token de propriedade a partir da interface do Adobe Target](images/target-addATProperty-targetProperties.png)
 
-1. Na guia tags, acesse a guia **[!UICONTROL Regras]** no painel de navegação esquerdo e, em seguida, clique em `All Pages - Library Loaded` para abrir o editor de regras.
+1. Na guia Marcas, vá para as **[!UICONTROL Regras]** na navegação à esquerda e clique em `All Pages - Library Loaded` para abrir o editor de regras.
 
    ![Abrir todas as páginas - Regra de biblioteca carregada](images/target-editRule.png)
 
@@ -376,22 +376,22 @@ Este é um exercício opcional, caso seja um cliente do Target Premium e deseje 
 
    ![Abrir a ação Adicionar parâmetros à solicitação de carregamento de página](images/target-openCustomCodeAction.png)
 
-1. Abra o editor de código e cole o código da interface do Target que contém o `targetPageParams()` função
-1. Clique na guia **[!UICONTROL Salvar]** botão
+1. Abra o editor de código e cole o código da interface do Target que contém a função `targetPageParams()`
+1. Clique no botão **[!UICONTROL Salvar]**
 
    ![Abrir a ação Adicionar parâmetros à solicitação de carregamento de página](images/target-addATProperty.png)
 
-1. Verifique a **[!UICONTROL Executar globalmente]** caixa so `targetPageParams()` é declarado no escopo global
+1. Marque a caixa **[!UICONTROL Executar globalmente]** para que `targetPageParams()` seja declarado no escopo global
 1. Clique em **[!UICONTROL Manter alterações]**
 
    ![Clique em Manter alterações](images/target-addATProperty-keepChanges.png)
 
-1. Clique em **[!UICONTROL Salvar na biblioteca e Criar]**
+1. Clique em **[!UICONTROL Salvar na biblioteca e na build]**
    ![Clique em Salvar e criar na biblioteca](images/target-addATProperty-save.png)
 
 >[!WARNING]
 >
->Se você tentar adicionar a variável `at_property` por meio da variável **[!UICONTROL Adicionar params à solicitação de carregamento de página]** , o parâmetro será preenchido na solicitação de rede, mas o Visual Experience Composer (VEC) do Target não poderá detectá-lo automaticamente ao carregar a página. Sempre preencher `at_property` usando o `targetPageParams()` em uma ação Custom Code.
+>Se você tentar adicionar o parâmetro `at_property` por meio da ação **[!UICONTROL Adicionar parâmetros à solicitação de carregamento de página]**, o parâmetro será preenchido na solicitação de rede, mas o Visual Experience Composer (VEC) do Target não poderá detectá-lo automaticamente ao carregar a página. Sempre preencha `at_property` usando a função `targetPageParams()` em uma ação de Código personalizado.
 
 #### Validar o token de propriedade
 
@@ -400,9 +400,9 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 **Para validar o parâmetro do token de propriedade**
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *seu* Ambiente de desenvolvimento, conforme descrito na seção [lição anterior](switch-environments.md)
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md)
 
-   ![Seu ambiente de desenvolvimento de tags mostrado no Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Abra as ferramentas do desenvolvedor do seu navegador.
 1. Clique na guia Rede
@@ -430,7 +430,7 @@ A solicitação de confirmação do pedido é um tipo especial de solicitação 
 
 A prática recomendada é usar uma solicitação de confirmação de pedido em todos os funis de pedido, mesmo em sites que não sejam de varejo. Por exemplo, os sites de geração de leads geralmente possuem funis de leads com uma “id de lead” exclusiva gerada no fim. Esses sites devem implementar uma solicitação de pedido, usando um valor estático (como &quot;1&quot;) para o orderTotal.
 
-Os clientes que usam a integração Analytics for Target (A4T) para a maioria de seus relatórios também podem querer implementar a solicitação de pedido se estiverem usando atividades do Automated Personalization, que não são compatíveis com o A4T. Além disso, a solicitação de pedido é um elemento essencial em implementações de recomendações, alimentando algoritmos com base no comportamento de compra. Para obter as informações mais recentes sobre o suporte ao A4T, consulte [a documentação](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+Os clientes que usam a integração Analytics for Target (A4T) para a maioria de seus relatórios também podem querer implementar a solicitação de pedido se estiverem usando atividades do Automated Personalization, que não são compatíveis com o A4T. Além disso, a solicitação de pedido é um elemento essencial em implementações do Recommendations, alimentando algoritmos com base no comportamento de compra. Para obter as informações mais recentes sobre o suporte ao A4T, consulte [a documentação](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 A solicitação de confirmação de pedido deve ser acionada a partir de uma regra que é acionada somente na página ou evento de confirmação do pedido. Geralmente, pode ser combinado com uma regra que define o evento de compra do Adobe Analytics. Ela deve ser configurada usando a ação Código personalizado da extensão principal, usando os elementos de dados apropriados para definir os parâmetros orderId, orderTotal e productPurchasedId.
 
@@ -486,11 +486,11 @@ Agora precisamos criar uma regra para acionar a solicitação de confirmação d
 1. Clique em **[!UICONTROL Adicionar regra]**
 1. Atribua um nome à regra `Order Confirmation Page - Library Loaded - 60`
 1. Clique em **[!UICONTROL Eventos > Adicionar]**
-   1. Selecione **[!UICONTROL Tipo de evento > Biblioteca carregada (parte superior da página)]**
-   1. Em **[!UICONTROL Opções avançadas]**, altere o `Order` para `60` para que seja acionado depois que o `Load Target` ação (que está em nosso `All Pages - Library Loaded` regra em que `Order` está definida como `50`)
+   1. Selecione **[!UICONTROL Tipo de evento > Biblioteca carregada (Parte superior da página)]**
+   1. Em **[!UICONTROL Opções Avançadas]**, altere `Order` para `60` para que seja acionado após a ação `Load Target` (que está em nossa regra `All Pages - Library Loaded`, em que `Order` está definido como `50`)
    1. Clique em **[!UICONTROL Manter alterações]**
 1. Clique em **[!UICONTROL Condições > Adicionar]**
-   1. Selecione **[!UICONTROL Tipo de condição > Caminho sem string de consulta]**
+   1. Selecione **[!UICONTROL Tipo De Condição > Caminho Sem Cadeia De Caracteres De Consulta]**
    1. Para `Path equals` insira `thank-you.html`
    1. Alterne a opção Regex para alterar a lógica de `equals` para `contains` (você pode usar o recurso `Test` para confirmar se o teste será aprovado com o URL `https://luma.enablementadobe.com/content/luma/us/en/user/checkout/order/thank-you.html`
 
@@ -524,7 +524,7 @@ Agora precisamos criar uma regra para acionar a solicitação de confirmação d
 
    1. Clique em **[!UICONTROL Salvar]** para salvar o código personalizado
    1. Clique em **[!UICONTROL Manter alterações]** para manter a ação
-1. Clique em **[!UICONTROL Salvar na biblioteca e Criar]**
+1. Clique em **[!UICONTROL Salvar na biblioteca e na build]**
 
 #### Validar a solicitação de confirmação do pedido
 
@@ -532,9 +532,9 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 
 1. Abra o [site Luma](https://luma.enablementadobe.com/content/luma/us/en.html).
 
-1. Certifique-se de que o Debugger esteja mapeando a propriedade da tag para *seu* Ambiente de desenvolvimento, conforme descrito na seção [lição anterior](switch-environments.md)
+1. Certifique-se de que o Depurador está mapeando a propriedade da tag para o *seu* ambiente de desenvolvimento, conforme descrito na [lição anterior](switch-environments.md)
 
-   ![Seu ambiente de desenvolvimento de tags mostrado no Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Navegue pelo site e adicione vários produtos ao carrinho
 1. Prossiga para o check-out
@@ -564,9 +564,7 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 
 Há raras ocasiões em que você precisa fazer solicitações do Target diferentes das solicitações de carregamento de página e de confirmação de pedido. Por exemplo, às vezes, os dados importantes que você gostaria de usar na personalização não são definidos na página antes dos códigos incorporados da tag. Eles podem ser codificados na parte inferior da página ou retornados de uma solicitação assíncrona de API. Esses dados podem ser enviados para o Target usando uma solicitação adicional, embora não seja ideal usar essa solicitação para entrega de conteúdo, já que a página já está visível. Esses dados podem ser usados para aprimorar o perfil do visitante para uso posterior (usando parâmetros de perfil) ou para preencher o catálogo do Recommendations.
 
-Nessas circunstâncias, use a ação Código personalizado na extensão principal para acionar uma solicitação usando os métodos
-[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) and [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html). Isso é muito semelhante ao que você fez no exercício [Solicitação
-de confirmação de pedido](#order-confirmation-request), mas você usará um nome de solicitação diferente e não usará os parâmetros de pedido especiais. Certifique-se de usar a ação **[!UICONTROL Carregar o Target]** antes de fazer solicitações do Target a partir do código personalizado.
+Nessas circunstâncias, use a ação Código personalizado na extensão principal para acionar uma solicitação usando os métodos [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) e [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html). Isso é muito semelhante ao que você fez na [Solicitação de confirmação de pedido](#order-confirmation-request) exercício, mas você usará um nome de solicitação diferente e não usará os parâmetros de pedido especiais. Certifique-se de usar a ação **[!UICONTROL Carregar Target]** antes de fazer solicitações do Target a partir do código personalizado.
 
 ## Cabeçalho da biblioteca e Rodapé da biblioteca
 
@@ -583,4 +581,4 @@ Para saber mais sobre os casos de uso para cabeçalhos e rodapés personalizados
 * [Implementar de dataProviders para integrar dados de terceiros ao Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
 * [Usar Tokens de resposta e Eventos personalizados do at.js com o Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
-[Próximo: &quot;Adicionar Adobe Analytics&quot; >](analytics.md)
+[Próximo: &quot;Adicionar o Adobe Analytics&quot; >](analytics.md)

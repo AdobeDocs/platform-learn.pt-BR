@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 3%
+source-wordcount: '172'
+ht-degree: 2%
 
 ---
 
@@ -27,15 +27,15 @@ ht-degree: 3%
    + [1.3 Criar um segmento - IU](/help/bootcamp/uc/uc1/ex3.md)
    + [1.4 Ação: enviar o segmento para o Adobe Target](/help/bootcamp/uc/uc1/ex4.md)
    + [1.5 Ação: enviar o segmento para o Facebook](/help/bootcamp/uc/uc1/ex5.md)
-+ 2 - Registro e integração {#uc2}
++ 2 - Inscrição e integração {#uc2}
    + [Visão geral](/help/bootcamp/uc/uc2/uc2.md)
    + [2.1 Visite o site e crie sua conta](/help/bootcamp/uc/uc2/ex1.md)
    + [2.2 Criar o evento](/help/bootcamp/uc/uc2/ex2.md)
    + [2.3 Criar a jornada e a mensagem de email](/help/bootcamp/uc/uc2/ex3.md)
-   + [2.4 Testar a jornada](/help/bootcamp/uc/uc2/ex4.md)
+   + [2.4 Teste sua jornada](/help/bootcamp/uc/uc2/ex4.md)
    + [2.5 Instalar e usar o aplicativo móvel](/help/bootcamp/uc/uc2/ex5.md)
-   + [2.6 Personalização na central de atendimento](/help/bootcamp/uc/uc2/ex6.md)
-+ 3 - Mesclagem física e digital {#uc3}
+   + [2.6 Personalization na central de atendimento](/help/bootcamp/uc/uc2/ex6.md)
++ 3 - Combinando {#uc3} físico e digital
    + [Visão geral](/help/bootcamp/uc/uc3/uc3.md)
    + [3.1 Use o aplicativo móvel e acione uma entrada de sinal](/help/bootcamp/uc/uc3/ex1.md)
    + [3.2 Criar o evento](/help/bootcamp/uc/uc3/ex2.md)

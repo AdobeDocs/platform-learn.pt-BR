@@ -1,14 +1,14 @@
 ---
 user-guide-title: Tutoriais da Adobe Experience Platform
 breadcrumb-title: Tutoriais
-user-guide-description: Conheça os vários componentes do Experience Platform.
+user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
 source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
 source-wordcount: '912'
-ht-degree: 14%
+ht-degree: 15%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 14%
 # Tutoriais da Adobe Experience Platform {#tutorials}
 
 + [Plataforma Tutorials](/help/platform/overview.md)
-+ Introdução à Platform {#intro-to-platform}
++ Introdução à plataforma {#intro-to-platform}
    + [Uma experiência do cliente viabilizada pela Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Nos bastidores: uma experiência do cliente viabilizada pelo Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Visão geral da Experience Platform](/help/platform/intro-to-platform/overview.md)
@@ -33,7 +33,7 @@ ht-degree: 14%
    + [Fluxo de trabalho](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Visão geral da B2B Edition](/help/platform/rtcdp/b2b-overview.md)
    + [Orquestrar campanhas com o Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [Introdução: arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=pt-BR){target="_blank"}
++ [Introdução: Arquitetos de dados e Engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=pt-BR){target="_blank"}
 + [Autenticar para APIs Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importar dados de amostra para o Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administração {#admin}
@@ -42,11 +42,11 @@ ht-degree: 14%
    + [Usar sandboxes](/help/platform/admin/use-sandboxes.md)
    + [Copiar objetos entre sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [Adicionar usuários](/help/platform/admin/add-users.md)
-   + [Adicionar usuários à coleção de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [Adicionar usuários à Coleção de Dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [Adicionar desenvolvedores](/help/platform/admin/add-developers.md)
    + [Adicionar administradores de produto](/help/platform/admin/add-product-administrators.md)
    + [Configurar o controle de acesso baseado em atributos](/help/platform/admin/configure-attribute-based-access-control.md)
-+ Públicos-alvo e segmentação {#audiences}
++ Públicos e segmentação {#audiences}
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
    + [Fazer upload de públicos](audiences/upload-audiences.md)
    + [Visão geral do Construtor de regras de público-alvo](audiences/audience-rule-builder-overview.md)
@@ -60,7 +60,7 @@ ht-degree: 14%
    + [Criar e ativar públicos-alvo da conta (B2B)](audiences/create-audiences-with-b2b-data.md)
    + [Demonstração da segmentação por transmissão](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Avaliar uma regra de público-alvo](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [Criar um conjunto de dados para exportar dados](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [Criar um conjunto de dados para exportar os dados](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Configuração da conexão de Correspondência de segmentos](/help/platform/segments/segment-match-connection-setup.md)
    + [Governança de dados da Correspondência de segmentos](/help/platform/segments/segment-match-data-governance.md)
    + [Fluxo de configuração da Correspondência de segmentos](/help/platform/segments/segment-match-configuration-flow.md)
@@ -132,7 +132,7 @@ ht-degree: 14%
    + [Configurar o armazenamento na nuvem baseado em arquivo ou destinos de marketing por email](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Configurar um destino social](/help/platform/destinations/configure-a-social-destination.md)
    + [Ativar por meio de destinos do LiveRamp](/help/platform/destinations/liveramp-destinations.md)
-   + Adobe Target e personalização personalizada{#target}
+   + Adobe Target e Personalization Personalizado{#target}
       + [Personalização de próxima ocorrência com o Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configurar o destino do Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Ativar segmentos e atributos de perfil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
@@ -157,7 +157,7 @@ ht-degree: 14%
    + [Monitorar assimilação de dados](/help/platform/monitoring/monitoring-dashboard.md)
    + [Monitorar ativação de segmento](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Monitorar fluxos de dados](/help/platform/monitoring/data-monitoring.md)
-+ Suporte a dados de parceiros {#partner-data-support}
++ Suporte a dados de parceiro {#partner-data-support}
    + [Visão geral do suporte a dados de parceiros](/help/platform/partner-data-support/partner-data-support-overview.md)
    + [Suporte à prospecção externa](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [Adicionar atributos do parceiro aos perfis](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
@@ -166,7 +166,7 @@ ht-degree: 14%
    + [Compreensão do Perfil do cliente em tempo real](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagrama de visão geral do perfil](/help/platform/profiles/overview-diagram.md)
    + [Enviar dados para o perfil](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [Personalizar detalhes de exibição do perfil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+   + [Personalizar detalhes de exibição de perfil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [Exibir perfis de conta](/help/platform/profiles/view-account-profiles.md)
    + [Criar políticas de mesclagem](/help/platform/profiles/create-merge-policies.md)
    + [Visão geral dos esquemas de união](/help/platform/profiles/union-schemas-overview.md)
@@ -177,7 +177,7 @@ ht-degree: 14%
 + Privacidade e segurança {#privacy}
    + [Introdução ao Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
    + [Dados de identidade em solicitações de privacidade](/help/platform/privacy/identity-data-in-privacy-requests.md)
-   + [Biblioteca JavaScript de privacidade](/help/platform/privacy/using-privacy-javascript-library.md)
+   + [Biblioteca de privacidade do JavaScript](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Rótulos de privacidade no Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Introdução à API Privacy Service](/help/platform/privacy/getting-started-with-privacy-services-api.md)
    + [IU DO PRIVACY SERVICE](/help/platform/privacy/using-privacy-services-ui.md)
@@ -186,7 +186,7 @@ ht-degree: 14%
    + [Configurar chaves gerenciadas pelo cliente](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [Dez considerações para o gerenciamento responsável de dados do cliente](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [Elevar a função do profissional de marketing como administrador de dados](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
-+ Consultas {#queries}
++ Queries {#queries}
    + [Visão geral](/help/platform/queries/understanding-query-service.md)
    + [Interface do usuário do serviço de consulta](/help/platform/queries/query-service-ui.md)
    + [API do serviço de consulta](/help/platform/queries/query-service-api.md)
@@ -200,7 +200,7 @@ ht-degree: 14%
    + [Analisar e visualizar dados](/help/platform/queries/analyze-and-visualize.md)
    + [Criar painéis usando ferramentas de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Recarregue os dados do cliente](/help/platform/queries/recharge-your-customer-data.md)
-   + [Conectar clientes ao Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [Conectar clientes ao Serviço de Consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [Validar dados no datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Esquemas {#schemas}
    + [Visão geral](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -226,13 +226,13 @@ ht-degree: 14%
    + [Assimilar dados do CRM](/help/platform/sources/ingest-data-from-crm.md)
    + [Assimilar dados de bancos de dados](/help/platform/sources/ingest-data-from-databases.md)
    + [Transmitir dados com a API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
-   + [Dados de fluxo usando Conectores de origem](/help/platform/sources/streaming-ingestion-source-connector.md)
+   + [Dados de fluxo usando Conectores do Source](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Solução de problemas: Conector SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Manuais de estratégia de casos de uso {#use-case-playbooks}
    + [Visão geral](/help/platform/use-case-playbooks/overview.md)
    + [Configurar uma sandbox do manual](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Criar e publicar uma instância de manual](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Integrações do Experience Cloud {#experience-cloud}
++ Integrações Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
@@ -243,4 +243,4 @@ ht-degree: 14%
    + [Os dois lados da moeda - marcas e consumidores](/help/platform/industry/brands-vs-consumers.md)
    + [Evolução do seu centro de excelência de público](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [Criar melhores experiências com perfis de clientes](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [Colaboração de dados no contexto de dados próprios](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
+   + [Collaboration de dados no contexto de dados próprios](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)

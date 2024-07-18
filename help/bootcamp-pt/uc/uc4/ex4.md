@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Customer Journey Analytics - Preparação de dados em Analysis Workspace - Brasil
-description: Bootcamp - Customer Journey Analytics - Preparação de dados em Analysis Workspace - Brasil
+title: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace - Brazil
+description: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace - Brazil
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -11,8 +11,8 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 1%
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ## 4.4.1 Interface do Analysis Workspace no CJA
 
-O O Analysis Workspace remove todas as tags típicas de um serviço público do Analytics. Ele consegue uma tela robusta e flexível para criar projetos de análise voltados. Arraste e solte qualquer documento de habilidades de dados, visualizações e componentes (dimensões, segmentos cas, segmentos e granularidades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de análises para análise, criação de análises, indicadores de tarefas, análise de fluxo e de mudança e relatórios de curadoria e de acompanhamento para com qualquer pessoa em seu soluções.
+O Analysis Workspace remove todas as limitações típicas de um único relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
 O Customer Journey Analytics solução alternativa dos dados da plataforma. É muitíssimo recomendado para acompanhar este vídeo de visão geral de quatro minutos:
 
@@ -40,9 +40,9 @@ Se você nunca usou o Analysis Workspace antes, recomamos este vídeo:
 
 Agora é hora de criar primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Clique em **Criar novo**.
 
-![demonstração](./images/prmenu.png)
+![](./images/prmenu.png)
 
-Em seguida, você verá a tela abaixo. µ **Projeto em branco** então clique em **Criar**.
+Em seguida, você verá a tela abaixo. **Projeto em branco** então clique em **Criar**.
 
 ![demonstração](./images/prmenu1.png)
 
@@ -50,13 +50,13 @@ Você verá um projeto e esperança.
 
 ![demonstração](./images/premptyprojects.png)
 
-Primeiro,-se de escolha a Visualização de dados em vez de direito superior da tela. Exemplo, a Visualização de dados a ser selecionado `vangeluwe - Omnichannel Data View`.
+Primeiro,-se de escolha a Visualização de dados em vez de direito superior da tela. Exemplo, uma Visualização de dados a ser selecionado é `vangeluwe - Omnichannel Data View`.
 
 ![demonstração](./images/prdv.png)
 
 Em seguida, você vai salvar seu projeto e dar um nome a ele. Você pode usar o comando para salvar:
 
-| OS | Atalho |
+| Sistema operacional | Atalho |
 | ----------------- |-------------| 
 | Windows | Ctrl+S |
 | Mac | Command+S |
@@ -83,23 +83,23 @@ Como exemplo, crioulo Taxa de transformação que definem a navegação/Compras 
 
 ## Taxa de ➡
 
-Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica comparada no Analysis Workspace.
+Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada no Analysis Workspace.
 
 ![demonstração](./images/pradd.png)
 
-O **Criador de métricas calculada** irá:
+O **Construtor De Métrica Calculada** irá:
 
 ![demonstração](./images/prbuilder.png)
 
-acionar **Compras** na lista de métricas no menu do lado. Em **Métricas** clique em **Mostrar tudo**
+**Compras** na lista de métricas no menu do lado esquerdo. Em **Métricas** clique em **Mostrar tudo**
 
 ![demonstração](./images/calcbuildercr1.png)
 
-Agora poderosa e solte a ➡ **Compras** na definição da estratégia.
+Agora destinada e sola a **Compras** na resolução da.
 
 ![demonstração](./images/calcbuildercr2.png)
 
-, taxa de março **Conversões/sessões**. Então, vamos fazer o mesmo que analisar a tela de definição de. a ➡ **Sessões** e transmitidos e solte-a no comunicado de definição, no evento **Compras**.
+, taxa de conversão **Conversões / Sessões**. Então, vamos fazer o mesmo que analisar a tela de definição de. a ➡ **Sessões** e garantie solte-a no de definição, no evento **Compras**.
 
 ![demonstração](./images/calcbuildercr3.png)
 
@@ -111,25 +111,25 @@ A taxa de evolução é dada em mudança. Então, vamos mudar o formato para ana
 
 ![demonstração](./images/calcbuildercr5.png)
 
-Por fim, altere o nome e a descrição da métrica calculada:
+Finally, Change the name and description of the calculated metric:
 
 | Título | Descrição |
 | ----------------- |-------------| 
-| Taxa de conversão | Taxa de conversão |
+| Conversion Rate | Conversion Rate |
 
 Por fim, altere o nome e a descrição da:
 
 ![demonstração](./images/calcbuildercr6.png)
 
-Não se esforçar de **Salvar** a Métrica paga.
+Não se livrar de **Salvar** a Métrica ➡.
 
 ![demonstração](./images/pr9.png)
 
-## 4.4.3 Dimensões calculadas: Filtros (segmentação) e de dados
+## 4.4.3 Dimensões calculadas: Filtros (segmentação) e intervalos de datas
 
 ### Filtros: Dimensões calculadas
 
-Os riscos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante algumas **Dimension calculado**. Isso muda, muda, **segmentos** sem Adobe Analytics. Sem Customer Journey Analytics, esses são migrados de são de acordo **Filtros**.
+Os riscos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é criar algumas **Dimension calculados**. Isso limita, ➡, **sem Adobe Analytics.** Nenhum Customer Journey Analytics, esses segmentos são classificados de **Filtros**.
 
 ![demonstração](./images/prfilters.png)
 
@@ -155,7 +155,7 @@ Estas considerações de tempo compartilhado ajudarão analistas e usuários de 
 
 Agora você pode o buscado de dados usando o Analysis Workspace do CJA.
 
-Próxima etapa: [4.5 Visualização usando o Customer Journey Analytics](./ex5.md)
+Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
 [Retorno para Fluxo de monitoramento 4](./uc4.md)
 

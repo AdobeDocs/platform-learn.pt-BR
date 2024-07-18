@@ -1,26 +1,26 @@
 ---
 title: Configurar um encaminhamento de eventos com dados do SDK da Web da plataforma
-description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar o Adobe Experience Cloud com o SDK da Web.
+description: Saiba como usar a propriedade de encaminhamento de eventos usando dados do SDK da Web do Experience Platform. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
 source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '1873'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 # Configurar o encaminhamento de eventos com dados do SDK da Web da plataforma
 
-Saiba como usar o encaminhamento de eventos com dados do SDK da Web da Adobe Experience Platform.
+Saiba como usar o encaminhamento de eventos com dados do SDK da web da Adobe Experience Platform.
 
-O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam de Adobe diretamente do Edge Network Adobe Experience Platform, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos no [Visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
+O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam de Adobe diretamente do Edge Network Adobe Experience Platform, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos na [visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
-![Diagrama do SDK da Web e do encaminhamento de eventos](assets/dc-websdk-eventforwarding.png)
+![SDK da Web e diagrama de encaminhamento de eventos](assets/dc-websdk-eventforwarding.png)
 
-Para usar o encaminhamento de eventos na Adobe Experience Platform, os dados devem ser enviados para a Rede de borda da Adobe Experience Platform primeiro usando uma ou mais das três opções a seguir:
+Para usar o encaminhamento de eventos no Adobe Experience Platform, os dados devem ser enviados para o Edge Network da Adobe Experience Platform primeiro usando uma ou mais das três opções a seguir:
 
 * [SDK da Web da Adobe Experience Platform](overview.md)
 * [SDK móvel da Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
@@ -48,7 +48,7 @@ Neste final desta lição, você poderá:
 
 * Uma licença de software que inclua encaminhamento de eventos. O encaminhamento de eventos é um recurso pago da Coleção de dados. Entre em contato com a equipe de conta do Adobe para obter mais detalhes.
 * O encaminhamento de eventos está habilitado em sua organização Experience Cloud.
-* Permissão de usuário para encaminhamento de eventos. (Em [Admin Console](https://adminconsole.adobe.com/), no produto Adobe Experience Platform Launch, itens de permissão para[!UICONTROL Plataformas] > [!UICONTROL Edge] e todos [!UICONTROL Direitos de propriedade]). Depois de concedido, você deve ver [!UICONTROL Encaminhamento de evento] na navegação à esquerda da interface da Coleção de dados:
+* Permissão de usuário para encaminhamento de eventos. (Em [Admin Console](https://adminconsole.adobe.com/), sob o produto Adobe Experience Platform Launch, itens de permissão para [!UICONTROL Plataformas] > [!UICONTROL Edge] e todos os [!UICONTROL Direitos de Propriedade]). Depois de concedido, você deve ver [!UICONTROL Encaminhamento de Eventos] na navegação à esquerda da interface da Coleção de Dados:
   ![Propriedades do encaminhamento de eventos](assets/event-forwarding-menu.png)
 
 * O SDK da Web ou móvel do Adobe Experience Platform está configurado para enviar dados para o Edge Network. Você deve ter concluído as seguintes lições deste tutorial:
@@ -72,12 +72,12 @@ Neste final desta lição, você poderá:
 
 Comece criando uma propriedade de encaminhamento de eventos:
 
-1. Abra o [Interface da coleção de dados](https://experience.adobe.com/#/data-collection)
-1. Selecionar **[!UICONTROL Encaminhamento de evento]** na navegação à esquerda
+1. Abra a [interface da Coleção de Dados](https://experience.adobe.com/#/data-collection)
+1. Selecione **[!UICONTROL Encaminhamento de eventos]** na navegação à esquerda
 1. Selecione **[!UICONTROL Nova propriedade]**.
    ![Propriedades do encaminhamento de eventos](assets/event-forwarding-new.png)
 
-1. Nomeie a propriedade. Nesse caso, `Server-Side - Web SDK Course`
+1. Nomeie a propriedade. Neste caso, `Server-Side - Web SDK Course`
 
 1. Selecione **[!UICONTROL Salvar]**.
    ![salvar propriedade de encaminhamento de eventos](assets/event-forwarding-save.png)
@@ -88,27 +88,27 @@ Para que o encaminhamento de eventos use os dados enviados para o Edge Network d
 
 Para configurar o Target na sequência de dados:
 
-1. Ir para [Coleta de dados](https://experience.adobe.com/#/data-collection){target="blank"} interface
+1. Ir para a interface [Coleção de Dados](https://experience.adobe.com/#/data-collection){target="blank"}
 1. Na navegação à esquerda, selecione **[!UICONTROL Datastreams]**
-1. Selecione o criado anteriormente `Luma Web SDK: Development Environment` sequência de dados
+1. Selecionar a sequência de dados `Luma Web SDK: Development Environment` criada anteriormente
 
    ![Selecione a sequência de dados do SDK da Web Luma](assets/datastream-luma-web-sdk-development.png)
 
-1. Selecionar **[!UICONTROL Adicionar serviço]**
+1. Selecione **[!UICONTROL Adicionar Serviço]**
    ![Adicionar um serviço à sequência de dados](assets/event-forwarding-datastream-addService.png)
-1. Selecionar **[!UICONTROL Encaminhamento de evento]** como o **[!UICONTROL Serviço]**
+1. Selecione **[!UICONTROL Encaminhamento de Eventos]** como o **[!UICONTROL Serviço]**
 
-1. No **[!UICONTROL ID da propriedade]** selecione o nome que você deu à propriedade de encaminhamento de eventos, nesse caso, `Server-Side - Web SDK Course`
+1. Na lista suspensa **[!UICONTROL ID de Propriedade]**, selecione o nome atribuído à propriedade de encaminhamento de eventos, neste caso `Server-Side - Web SDK Course`
 
-1. No **[!UICONTROL ID do ambiente]** selecione o ambiente de tag ao qual você está vinculando o ambiente de encaminhamento de eventos, nesse caso `Development`
+1. Na lista suspensa **[!UICONTROL ID de Ambiente]**, selecione o ambiente de marcas ao qual você está vinculando o ambiente de encaminhamento de eventos, neste caso `Development`
 
    >[!TIP]
    >
-   >    Para enviar dados a um ambiente de encaminhamento de eventos fora da organização do Adobe, selecione **[!UICONTROL Inserir IDs manualmente]** e cole em uma ID. A ID é fornecida quando você cria uma propriedade de encaminhamento de eventos.
+   >    Para enviar dados a um ambiente de encaminhamento de eventos fora da organização do Adobe, selecione **[!UICONTROL Inserir IDs]** manualmente e cole uma ID. A ID é fornecida quando você cria uma propriedade de encaminhamento de eventos.
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-   ![Ativação da sequência de dados de encaminhamento de eventos](assets/event-forwarding-datastream-enable.png)
+   ![Habilitação de Sequência de Dados para Encaminhamento de Eventos](assets/event-forwarding-datastream-enable.png)
 
 Repita essas etapas para fluxos de dados de preparo e produção quando estiver pronto para promover as alterações por meio do fluxo de publicação.
 
@@ -118,11 +118,11 @@ Neste exercício, você aprenderá a configurar um elemento de dados de encaminh
 
 >[!NOTE]
 >
->Um webhook é uma maneira de integrar sistemas diferentes em tempo semirreal. [Webhook.site](https://webhook.site/) O é uma ferramenta de terceiros que permite inspecionar, testar e automatizar facilmente (com o construtor visual de Ações personalizadas ou WebhookScript) qualquer solicitação HTTP ou email de entrada.
+>Um webhook é uma maneira de integrar sistemas diferentes em tempo semirreal. [Webhook.site](https://webhook.site/) é uma ferramenta de terceiros que permite inspecionar, testar e automatizar facilmente (com o construtor de Ações Personalizadas visuais ou WebhookScript) qualquer solicitação HTTP ou email de entrada.
 
 >[!IMPORTANT]
 >
->Você já deve ter criado e mapeado elementos de dados para um objeto XDM, bem como configurado regras de tags e criado essas alterações em uma biblioteca para um ambiente de tags para continuar. Caso contrário, consulte **Configuração de tags** etapas no [pré-requisitos](setup-event-forwarding.md#prerequisites) seção. Essas etapas garantem que os dados sejam enviados para o Edge Network da plataforma e, a partir daí, você pode configurar uma propriedade de encaminhamento de eventos para encaminhar dados a uma solução que não seja de Adobe.
+>Você já deve ter criado e mapeado elementos de dados para um objeto XDM, bem como configurado regras de tags e criado essas alterações em uma biblioteca para um ambiente de tags para continuar. Caso contrário, consulte as etapas da **Configuração de tags** na seção [pré-requisitos](setup-event-forwarding.md#prerequisites). Essas etapas garantem que os dados sejam enviados para o Edge Network da plataforma e, a partir daí, você pode configurar uma propriedade de encaminhamento de eventos para encaminhar dados a uma solução que não seja de Adobe.
 
 
 ### Criar um elemento de dados de encaminhamento de eventos
@@ -131,76 +131,76 @@ O objeto XDM configurado anteriormente usando a extensão de tag do SDK da Web d
 
 >[!IMPORTANT]
 >
->Há uma diferença importante na sintaxe ao referenciar campos XDM no encaminhamento de eventos em comparação a outros contextos. Para referenciar dados em uma propriedade de encaminhamento de eventos, o caminho do elemento de dados deve incluir o `arc.event` prefixo:
+>Há uma diferença importante na sintaxe ao referenciar campos XDM no encaminhamento de eventos em comparação a outros contextos. Para referenciar dados em uma propriedade de encaminhamento de eventos, o caminho do elemento de dados deve incluir o prefixo `arc.event`:
 >
 > * `arc` significa Contexto de resposta da Adobe.
 > * Por exemplo: `arc.event.xdm.web.webPageDetails.URL`
 >
 >Se esse caminho for especificado incorretamente, os dados não serão coletados.
 
-Neste exercício, você encaminhará a altura da janela de visualização do navegador e a ID do Experience Cloud do objeto XDM para um webhook. O caminho do campo XDM é determinado pelo esquema XDM criado durante o [Configurar um esquema XDM](configure-schemas.md) lição.
+Neste exercício, você encaminhará a altura da janela de visualização do navegador e a ID do Experience Cloud do objeto XDM para um webhook. O caminho do campo XDM é determinado pelo esquema XDM criado durante a lição [Configurar um esquema XDM](configure-schemas.md).
 
 >[!TIP]
 >
->Você também pode encontrar o caminho do objeto XDM usando as ferramentas de rede do navegador da Web, filtrando para `/ee` solicitações, abertura do sinal [!UICONTROL **Carga**] e detalhando a variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
+>Você também pode encontrar o caminho do objeto XDM usando as ferramentas de rede do navegador da Web, filtrando solicitações de `/ee`, abrindo o sinal [!UICONTROL **Carga**] e aprofundando na variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
 > ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
 
-1. Vá para a **[!UICONTROL Encaminhamento de evento]** propriedade que você criou recentemente
+1. Vá para a propriedade **[!UICONTROL Encaminhamento de Eventos]** criada recentemente
 
-1. Na navegação à esquerda, selecione **[!UICONTROL Elementos de dados]**
+1. Na navegação à esquerda, selecione **[!UICONTROL Elementos de Dados]**
 
 1. Selecione para **[!UICONTROL Criar novo elemento de dados]**
 
-   ![Novo elemento de dados do encaminhamento de eventos](assets/event-forwarding-new-dataelement.png)
+   ![Novo Elemento de Dados para Encaminhamento de Eventos](assets/event-forwarding-new-dataelement.png)
 
-1. **[!UICONTROL Nome]** o elemento de dados `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL Nomeie]** o elemento de dados `environment.browserDetails.viewportHeight`
 
-1. Em **[!UICONTROL Extensão]**, sair `CORE`
+1. Em **[!UICONTROL Extensão]**, saia de `CORE`
 
-1. Em **[!UICONTROL Tipo de elemento de dados]**, selecione `Path`
+1. Em **[!UICONTROL Tipo de Elemento de Dados]**, selecione `Path`
 
-1. Digite o caminho do Objeto XDM que contém a Altura da janela de visualização do navegador `arc.event.xdm.environment.browserDetails.viewportHeight`
+1. Digite o caminho do Objeto XDM que contém a Altura da Porta de Visualização de Navegador `arc.event.xdm.environment.browserDetails.viewportHeight`
 
-1. Selecionar **[!UICONTROL Salvar]**
+1. Selecione **[!UICONTROL Salvar]**
 
-   ![Caminho ECID para encaminhamento de eventos](assets/event-forwarding-browser-viewpoirt-height.png)
+   ![Caminho da ECID para encaminhamento de eventos](assets/event-forwarding-browser-viewpoirt-height.png)
 
 
 1. Criar outro elemento de dados
 
-1. **[!UICONTROL Nome]** it `ecid`
+1. **[!UICONTROL Nomeie]** `ecid`
 
-1. Em **[!UICONTROL Extensão]**, sair `CORE`
+1. Em **[!UICONTROL Extensão]**, saia de `CORE`
 
-1. Em **[!UICONTROL Tipo de elemento de dados]**, selecione `Path`
+1. Em **[!UICONTROL Tipo de Elemento de Dados]**, selecione `Path`
 
-1. Digite o caminho do objeto XDM que contém a ID do Experience Cloud `arc.event.xdm.identityMap.ECID.0.id`
+1. Digite o caminho do objeto XDM que contém a ID de Experience Cloud `arc.event.xdm.identityMap.ECID.0.id`
 
-1. Selecionar **[!UICONTROL Salvar]**
+1. Selecione **[!UICONTROL Salvar]**
 
-   ![Caminho ECID para encaminhamento de eventos](assets/event-forwarding-ecid.png)
+   ![Caminho da ECID para encaminhamento de eventos](assets/event-forwarding-ecid.png)
 
    >[!CAUTION]
    >
-   > Certifique-se de incluir o `arc.event.` prefixo no caminho. Além disso, siga o caso exato como o nome do campo Objeto XDM — o namespace da ECID deve estar em maiúsculas.
+   > Certifique-se de incluir o prefixo `arc.event.` no caminho. Além disso, siga o caso exato como o nome do campo Objeto XDM — o namespace da ECID deve estar em maiúsculas.
 
 
    >[!TIP]
    >
-   >Ao trabalhar com seu próprio site, você pode encontrar o caminho do objeto XDM com as ferramentas de rede do navegador da Web, filtrando por `/ee` solicitações, abertura do sinal [!UICONTROL **Carga**] e detalhando a variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
+   >Ao trabalhar com seu próprio site, você pode encontrar o caminho do objeto XDM com as ferramentas de rede do navegador da Web, filtrando por `/ee` solicitações, abrindo o sinal [!UICONTROL **Carga**] e aprofundando na variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
    > ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
 
 ### Instalar a extensão Adobe Cloud Connector
 
-Para enviar dados para locais de terceiros, primeiro instale o [!UICONTROL Adobe Cloud Connector] extensão.
+Para enviar dados a locais de terceiros, instale primeiro a extensão [!UICONTROL Adobe Cloud Connector].
 
-1. Selecionar **[!UICONTROL Extensões]** na navegação à esquerda
+1. Selecione **[!UICONTROL Extensões]** na navegação à esquerda
 
-1. Selecione o **[!UICONTROL Catálogo]** guia
+1. Selecione a guia **[!UICONTROL Catálogo]**
 
-1. Procure por **[!UICONTROL Adobe Cloud Connector]**, selecione **[!UICONTROL Instalar]**
+1. Procure o **[!UICONTROL Conector de nuvem do Adobe]**, selecione **[!UICONTROL Instalar]**
 
-   ![Caminho ECID para encaminhamento de eventos](assets/event-forwarding-adobe-cloud-connector.png)
+   ![Caminho da ECID para encaminhamento de eventos](assets/event-forwarding-adobe-cloud-connector.png)
 
 Não há configuração de extensão necessária. Com essa extensão, agora é possível encaminhar dados para uma solução não Adobe!
 
@@ -208,16 +208,16 @@ Não há configuração de extensão necessária. Com essa extensão, agora é p
 
 Há algumas diferenças principais entre a configuração de regras em uma propriedade de tag e uma regra em uma propriedade de encaminhamento de eventos:
 
-* **[!UICONTROL Eventos] &amp; [!UICONTROL Condições]**:
+* **[!UICONTROL Eventos] e [!UICONTROL Condições]**:
 
-   * **Tags**: todas as regras são acionadas por um Evento que deve ser especificado na regra, por exemplo, `Library Loaded - Page Top`. As condições são opcionais.
-   * **Encaminhamento de eventos**: presume-se que cada evento enviado para o Platform Edge Network seja um acionador para encaminhar dados. Por conseguinte, não existem [!UICONTROL Eventos] que devem ser selecionadas nas regras de encaminhamento de eventos. Para gerenciar quais eventos acionam uma regra de encaminhamento de eventos, você deve configurar condições.
+   * **Marcas**: todas as regras são acionadas por um Evento que deve ser especificado na regra, por exemplo, `Library Loaded - Page Top`. As condições são opcionais.
+   * **Encaminhamento de eventos**: presume-se que cada evento enviado ao Platform Edge Network seja um acionador para encaminhar dados. Portanto, não há [!UICONTROL Eventos] que devam ser selecionados nas regras de encaminhamento de eventos. Para gerenciar quais eventos acionam uma regra de encaminhamento de eventos, você deve configurar condições.
 
-* **Tokenização do elemento de dados**:
+* **Tokenização de elemento de dados**:
 
-   * **Tags**: os nomes dos elementos de dados são tokenizados com um `%` no início e no fim do nome do elemento de dados quando usado em uma regra. Por exemplo, `%viewportHeight%`.
+   * **Marcas**: os nomes de elementos de dados são tokenizados com um `%` no início e no fim do nome do elemento de dados quando usados em uma regra. Por exemplo, `%viewportHeight%`.
 
-   * **Encaminhamento de eventos**: os nomes dos elementos de dados são tokenizados com `{{` no início e `}}` no final do nome do elemento de dados, quando usado em uma regra. Por exemplo, `{{viewportHeight}}`.
+   * **Encaminhamento de eventos**: os nomes dos elementos de dados são tokenizados com `{{` no início e `}}` no fim do nome do elemento de dados quando usados em uma regra. Por exemplo, `{{viewportHeight}}`.
 
 * **Sequência de ações de regra**:
 
@@ -232,7 +232,7 @@ Para configurar uma regra para encaminhar dados para o seu webhook, primeiro obt
 
 1. Ir para [Webhook.site](https://webhook.site)
 
-1. Localizar **Seu URL exclusivo**, você usa isso como a solicitação de URL em sua regra de encaminhamento de eventos
+1. Localizar **Seu URL exclusivo**. Use-o como solicitação de URL em sua regra de encaminhamento de eventos
 
 1. Selecionar **[!UICONTROL Copiar para a área de transferência]**
 
@@ -240,39 +240,39 @@ Para configurar uma regra para encaminhar dados para o seu webhook, primeiro obt
 
    ![Copiar URL do Webhook](assets/event-forwarding-webhook.png)
 
-1. Voltar **[!UICONTROL Coleta de dados]** > **[!UICONTROL Encaminhamento de evento]** > **[!UICONTROL Regras]** na navegação à esquerda
+1. Retorne **[!UICONTROL Coleção de dados]** > **[!UICONTROL Encaminhamento de eventos]** > **[!UICONTROL Regras]** da navegação à esquerda
 
-1. Selecionar **[!UICONTROL Criar nova regra]**
+1. Selecione **[!UICONTROL Criar nova regra]**
 
-   ![Nova regra para encaminhamento de eventos](assets/event-forwarding-new-rules.png)
+   ![Nova regra de encaminhamento de eventos](assets/event-forwarding-new-rules.png)
 
-1. Nomear como `all events - ad cloud connector - webhook`
+1. Nomeie como `all events - ad cloud connector - webhook`
 
 1. Adicionar uma ação
 
-1. Em **[!UICONTROL Extensão]**, selecione **[!UICONTROL Adobe Cloud Connector]**
+1. Em **[!UICONTROL Extension]**, selecione **[!UICONTROL Adobe Cloud Connector]**
 
 1. Em **[!UICONTROL Tipo de ação]**, selecione **[!UICONTROL Fazer chamada de busca]**
 
-1. Cole o URL do Webhook no **[!UICONTROL URL]** campo
+1. Cole a URL do seu Webhook no campo **[!UICONTROL URL]**
 
    ![Copiar URL do Webhook](assets/event-forwarding-rule.png)
 
 1. Em **[Parâmetros de consulta]**, você adicionará ambos os elementos de dados criados anteriormente.
 
-1. No **[!UICONTROL Chave]** tipo de coluna em `viewPortHeight`. No **[!UICONTROL Valor]** , insira o `{{environment.browserDetails.viewportHeight}}` elemento de dados ao digitá-lo ou selecioná-lo no ícone seletor de elemento de dados
+1. No tipo de coluna **[!UICONTROL Chave]** em `viewPortHeight`. Na coluna **[!UICONTROL Value]**, insira o elemento de dados `{{environment.browserDetails.viewportHeight}}`, digitando-o ou selecionando-o no ícone seletor de elemento de dados
 
-1. Selecionar [!UICONTROL **+ Adicionar outro**] para adicionar outro parâmetro de consulta
+1. Selecione [!UICONTROL **+ Adicionar Outro**] para adicionar outro parâmetro de consulta
 
-1. No **[!UICONTROL Chave]** tipo de coluna em `ecid`. Na coluna Valor, insira a variável `{{ecid}}` elemento de dados
+1. No tipo de coluna **[!UICONTROL Chave]** em `ecid`. Na coluna Value, insira o elemento de dados `{{ecid}}`
 
-1. Selecionar **[!UICONTROL Manter alterações]**
+1. Selecione **[!UICONTROL Manter alterações]**
 
    ![Adicionar parâmetro de consulta](assets/event-forwarding-rule-query-parameter.png)
 
 1. Sua regra deve parecer com abaixo
 
-1. Selecionar **[!UICONTROL Salvar]**
+1. Selecione **[!UICONTROL Salvar]**
 
    ![Salvar regra de encaminhamento de eventos](assets/event-forwarding-rule-save.png)
 
@@ -290,11 +290,11 @@ Crie uma biblioteca e crie todas as alterações no ambiente de desenvolvimento 
 
 Agora você pode validar sua propriedade de encaminhamento de eventos usando o Platform Debugger e o Webhook.site:
 
-1. Siga as etapas para [alternar a biblioteca de tags](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) no [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) à propriedade de tag do SDK da Web para a qual você mapeou sua propriedade de encaminhamento de eventos na sequência de dados.
+1. Siga as etapas para [alternar a biblioteca de marcas](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) no [site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en/men.html) para a propriedade de marca do SDK da Web para a qual você mapeou sua propriedade de encaminhamento de eventos na sequência de dados.
 
 1. Antes de recarregar a página, no Experience Platform Debugger, abra **[!UICONTROL Logs]** na navegação à esquerda
 
-1. Selecione o **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]** para ver as solicitações do Platform Edge Network
+1. Selecione a guia **[!UICONTROL Edge]** e **[!UICONTROL Connect]** para exibir as solicitações de Edge Network da plataforma
 
    ![Sessão de rede de borda do encaminhamento de eventos](assets/event-forwarding-edge-session.png)
 
@@ -302,20 +302,20 @@ Agora você pode validar sua propriedade de encaminhamento de eventos usando o P
 
 1. Você verá solicitações adicionais que dão visibilidade das solicitações do lado do servidor enviadas pelo Edge Network da plataforma para o WebHook
 
-1. A solicitação para focalizar a validação é aquela que mostra o URL totalmente construído sendo enviado pela rede de borda
+1. A solicitação para focalizar a validação é aquela que mostra o URL totalmente construído que está sendo enviado pela rede Edge
 
    ![Depurador de encaminhamento de eventos](assets/event-forwarding-debugger.png)
 
 
 1. Observe os parâmetros de cadeia de caracteres de consulta viewPortHeight e ecid
 
-   ![Cadeias de caracteres de consulta de validação do encaminhamento de eventos](assets/event-forwarding-validate-data.png)
+   ![Cadeias de consulta de validação do encaminhamento de eventos](assets/event-forwarding-validate-data.png)
 
 1. Eles correspondem aos dados vistos no objeto XDM
 
-   ![Dados correspondentes do encaminhamento de eventos](assets/event-forwarding-matching-data.png)
+   ![Dados correspondentes ao encaminhamento de eventos](assets/event-forwarding-matching-data.png)
 
-1. Por último, valide as correspondências de dados no [Webhook.site](https://webhook.site) e também visualizando a janela aberta do Webhook
+1. Por fim, valide as correspondências de dados no [Webhook.site](https://webhook.site) e exiba a janela do Webhook aberta
 
    ![Dados do site do webhook de encaminhamento de eventos](assets/event-forwarding-webhook-data.png)
 
@@ -325,4 +325,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar feedback geral ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [Publicação de discussão da comunidade do Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

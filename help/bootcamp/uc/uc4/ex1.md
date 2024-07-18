@@ -68,17 +68,17 @@ Antes de iniciar os próximos exercícios, é fundamental entender quais etapas 
 
 Antes de iniciar as etapas acima, não se esqueça da etapa 0, que é entender os dados disponíveis no Adobe Experience Platform.
 
-**Lixo entra, lixo sai.** Lembra? Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas no Adobe Experience Platform são configurados. Entender os dados que estão no Adobe Experience Platform facilitará as coisas, não apenas na parte da conexão de dados, mas também ao criar visualizações e fazer análises.
+**Lixo entra, lixo sai.** Lembrar? Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas no Adobe Experience Platform são configurados. Entender os dados que estão no Adobe Experience Platform facilitará as coisas, não apenas na parte da conexão de dados, mas também ao criar visualizações e fazer análises.
 
 ## 4.1.5 Etapa 0: Noções básicas sobre esquemas e conjuntos de dados do Adobe Experience Platform
 
-Faça logon no Adobe Experience Platform acessando este URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Faça logon no Adobe Experience Platform acessando esta URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
 ![Assimilação de dados](../uc1/images/home.png)
 
-Antes de continuar, é necessário selecionar um **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Prod]** no canto superior direito da tela. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``Bootcamp``. Você pode fazer isso clicando no texto **[!UICONTROL Prod]** no canto superior direito da tela. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
 ![Assimilação de dados](../uc1/images/sb1.png)
 
@@ -93,19 +93,19 @@ Consulte esses esquemas e conjuntos de dados na Adobe Experience Platform.
 Verifique pelo menos itens como:
 
 - Identidades: CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores principais, quais são os identificadores secundários?
-É possível encontrar os identificadores abrindo um esquema e observando o objeto `_experienceplatform.identification.core`. Dê uma olhada no esquema [Sistema de demonstração - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
+Você pode encontrar os identificadores abrindo um esquema e observando o objeto `_experienceplatform.identification.core`. Consulte o esquema [Sistema de demonstração - Esquema de evento para o site (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demonstração](./images/identity.png)
 
-- Explorar o objeto de comércio dentro do esquema [Sistema de demonstração - Esquema de evento para site (Global v1.1)](https://experience.adobe.com/platform/schema).
+- Explore o objeto de comércio dentro do esquema [Sistema de demonstração - Esquema de evento para o site (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demonstração](./images/commerce.png)
 
-- Visualizar todas as [conjuntos de dados](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e veja os dados
+- Visualize todos os [conjuntos de dados](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e examine os dados
 
 Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-Próxima etapa: [4.2 Conectar conjuntos de dados do Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
+Próxima etapa: [4.2 Conectar Conjuntos de Dados do Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
 [Voltar para Fluxo de Usuário 4](./uc4.md)
 

@@ -9,13 +9,13 @@ thumbnail: 28167.jpg
 exl-id: 9a4fbd95-74e3-4e10-8663-8fafefe324a8
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 72%
+source-wordcount: '70'
+ht-degree: 35%
 
 ---
 
 # Rotular, assimilar e verificar dados de identidade
 
-Saiba como rotular campos de dados como identidades, assimilar dados de identidade e verificar os dados no gráfico privado do serviço de identidade da Adobe Experience Platform. Para obter mais informações, visite o [documentação do serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
+Saiba como rotular campos de dados como identidades, assimilar dados de identidade e verificar os dados no gráfico privado do Serviço de identidade da Adobe Experience Platform. Para obter mais informações, visite a [documentação do serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on)

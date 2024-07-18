@@ -20,17 +20,17 @@ ht-degree: 1%
 
 Neste exercício, você configurará a jornada e a mensagem que precisam ser acionadas quando alguém entrar em um beacon usando o aplicativo móvel.
 
-Faça logon no Adobe Journey Optimizer acessando [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
+Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para a **Início**  exibir no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `Bootcamp`. Para alterar de uma sandbox para outra, clique em **Prod** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **Bootcamp**. Você estará no **Início** exibição da sua sandbox `Bootcamp`.
+Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `Bootcamp`. Para alterar a sandbox, clique em **Prod** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada **Bootcamp**. Você estará na exibição **Página inicial** da sua sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
 ## 3.3.1 Criar sua jornada
 
-No menu esquerdo, clique em **Jornadas**. Clique em **Criar Jornada** para criar uma nova jornada.
+No menu esquerdo, clique em **Jornadas**. Em seguida, clique em **Criar Jornada** para criar uma nova jornada.
 
 ![ACOP](./images/createjourney.png)
 
@@ -38,7 +38,7 @@ Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-No exercício anterior, você criou um novo **Evento**. Você a nomeou assim `yourLastNameBeaconEntryEvent` e substituiu `yourLastName` com seu sobrenome. Este foi o resultado da criação do Evento:
+No exercício anterior, você criou um novo **Evento**. Você o nomeou desta forma `yourLastNameBeaconEntryEvent` e substituiu `yourLastName` pelo seu sobrenome. Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -46,17 +46,17 @@ Agora, é necessário tomar este evento como o início desta Jornada. Você pode
 
 ![ACOP](./images/eventlist.png)
 
-Selecione o evento, arraste e solte-o na tela de jornada. Sua jornada agora está assim. Clique em **Ok** para salvar as alterações.
+Selecione o evento, arraste e solte-o na tela de jornada. Sua jornada agora está assim. Clique em **Ok** para salvar suas alterações.
 
 ![ACOP](./images/journeyevent.png)
 
-Como a segunda etapa da jornada, é necessário adicionar um **Push** ação. Vá para o lado esquerdo da tela para **Ações**, selecione o **Push** e, em seguida, arraste e solte-a no segundo nó na jornada.
+Como segunda etapa da jornada, você precisa adicionar uma ação **Push**. Vá para o lado esquerdo da tela para **Ações**, selecione a ação **Push** e arraste-a e solte-a no segundo nó da jornada.
 
 ![ACOP](./images/journeyactions.png)
 
 No lado direito da tela, agora é necessário criar a notificação por push.
 
-Defina o **Categoria** para **Marketing** e selecione uma superfície de push que permita enviar notificações por push. Nesse caso, a superfície de push a ser selecionada é **meeewis-app-mobile-bootcamp**.
+Defina a **Categoria** como **Marketing** e selecione uma superfície de push que permita enviar notificações por push. Nesse caso, a superfície de push a ser selecionada é **meeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -72,15 +72,15 @@ Você verá isto:
 
 Vamos definir o conteúdo da notificação por push.
 
-Clique em **Título** campo de texto.
+Clique no campo de texto **Título**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-Na área de texto, comece a escrever **Oi**. Clique no ícone de personalização.
+Na área de texto comece a gravar **Olá**. Clique no ícone de personalização.
 
 ![Journey Optimizer](./images/msg6.png)
 
-Agora é necessário trazer o token de personalização para o campo **Nome** que é armazenado em `profile.person.name.firstName`. No menu esquerdo, selecione **Atributos do perfil**, role para baixo/navegue até encontrar o **Person** e clique na seta para ir um nível mais fundo até chegar ao campo `profile.person.name.firstName`. Clique em **+** ícone para adicionar o campo à tela. Clique em **Salvar**.
+Agora é necessário trazer o token de personalização para o campo **Nome**, que está armazenado em `profile.person.name.firstName`. No menu esquerdo, selecione **Atributos do Perfil**, role para baixo/navegue até encontrar o elemento **Pessoa** e clique na seta para ir um nível mais fundo até chegar ao campo `profile.person.name.firstName`. Clique no ícone **+** para adicionar o campo à tela. Clique em **Salvar**.
 
 ![Journey Optimizer](./images/msg7.png)
 
@@ -92,7 +92,7 @@ Na área de texto, escreva `Welcome at the `.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Clique em **Atributos contextuais** e depois **Journey Orchestration**.
+Em seguida, clique em **Atributos Contextuais** e depois em **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -100,11 +100,11 @@ Clique em **Eventos**.
 
 ![ACOP](./images/jomsg4.png)
 
-Clique no nome do evento, que deve ter esta aparência: **yourLastNameBeaconEntryEvent**.
+Clique no nome do evento, que deve ser semelhante a: **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
-Clique em **Contexto do local**.
+Clique em **Inserir contexto**.
 
 ![ACOP](./images/jomsg6.png)
 
@@ -116,7 +116,7 @@ Clique em **Detalhes do POI**.
 
 ![ACOP](./images/jomsg8.png)
 
-Clique em **+** ícone em **Nome do POI**.
+Clique no ícone **+** em **Nome do POI**.
 Você verá isso. Clique em **Salvar**.
 
 ![ACOP](./images/jomsg9.png)
@@ -131,17 +131,17 @@ Clique em **Ok**.
 
 ## 3.3.2 Enviar uma mensagem para uma tela
 
-Como a terceira etapa da jornada, é necessário adicionar um **sendMessageToScreen** ação. Vá para o lado esquerdo da tela para **Ações**, selecione o **sendMessageToScreen** e, em seguida, arraste e solte-a no terceiro nó na jornada. Você verá isso.
+Como terceira etapa da jornada, é necessário adicionar uma ação **sendMessageToScreen**. Vá para o lado esquerdo da tela para **Actions**, selecione a ação **sendMessageToScreen** e arraste e solte-a no terceiro nó da jornada. Você verá isso.
 
 ![ACOP](./images/jomsg15.png)
 
-A variável **sendMessageToScreen** ação é uma ação personalizada que publicará uma mensagem no endpoint usado pela exibição na loja. A variável **sendMessageToScreen** A ação espera que várias variáveis sejam definidas. É possível ver essas variáveis ao rolar para baixo até ver **Parâmetros de ação**.
+A ação **sendMessageToScreen** é uma ação personalizada que publicará uma mensagem no ponto de extremidade usado pela exibição na loja. A ação **sendMessageToScreen** espera que várias variáveis sejam definidas. Você pode ver essas variáveis rolando para baixo até ver **Parâmetros de ação**.
 
 ![ACOP](./images/jomsg16.png)
 
 Agora é necessário definir os valores de cada parâmetro de ação. Siga esta tabela para entender quais valores são necessários e onde.
 
-| Parâmetro | value |
+| Parâmetro | valor |
 |:-------------:| :---------------:|
 | ENTREGA | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
@@ -155,11 +155,11 @@ Agora é necessário definir os valores de cada parâmetro de ação. Siga esta 
 
 {style="table-layout:auto"}
 
-Para definir esses valores, clique no link **Editar** ícone.
+Para definir esses valores, clique no ícone **Editar**.
 
 ![ACOP](./images/jomsg17.png)
 
-Em seguida, selecione **Modo avançado**.
+Em seguida, selecione **Modo Avançado**.
 
 ![ACOP](./images/jomsg18.png)
 
@@ -181,11 +181,11 @@ Role para cima e clique em **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no link **Lápis** no lado superior esquerdo da tela.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone **Lápis** na parte superior esquerda da tela.
 
 ![ACOP](./images/journeyname.png)
 
-Em seguida, você pode inserir o nome da jornada aqui. Use `yourLastName - Beacon Entry Journey`. Clique em **OK** para salvar as alterações.
+Em seguida, você pode inserir o nome da jornada aqui. Use `yourLastName - Beacon Entry Journey`. Clique em **OK** para salvar suas alterações.
 
 ![ACOP](./images/journeyname1.png)
 
@@ -193,7 +193,7 @@ Agora você pode publicar sua jornada clicando em **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-Clique em **Publish** novamente.
+Clique novamente em **Publish**.
 
 ![ACOP](./images/publish1.png)
 
@@ -205,7 +205,7 @@ Sua jornada agora está ativa e pode ser acionada.
 
 Você terminou este exercício agora.
 
-Próxima etapa: [3.4 Testar a jornada](./ex4.md)
+Próxima etapa: [3.4 Testar sua jornada](./ex4.md)
 
 [Voltar para Fluxo de Usuário 3](./uc3.md)
 
