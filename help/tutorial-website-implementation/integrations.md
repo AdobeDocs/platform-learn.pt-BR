@@ -2,10 +2,10 @@
 title: Implementar integrações de Experience Cloud com tags
 description: Saiba como validar as integrações do Audiences, A4T e Atributos do cliente na implementação da Adobe Experience Cloud. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ Você deve concluir todas as lições anteriores neste tutorial antes de seguir 
 >
 >Muitos requisitos de permissões de usuário, configurações de conta e etapas de provisionamento que estão além do escopo deste tutorial são necessários para usar essas integrações. Se você ainda não estiver usando essas integrações na implementação atual da Experience Cloud, considere:
 >
->* Analisar todos os requisitos das [integrações dos serviços principais](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=pt-BR)
->* Analisar os requisitos completos da [integração do Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
->* Pedir que um administrador da organização da Experience Cloud [solicite o fornecimento dessas integrações](https://www.adobe.com/go/audiences)
+>* Analisar todos os requisitos das [integrações dos serviços principais](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Analisar os requisitos completos da [integração do Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
 ## Audiences
 
-O [Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) faz parte do serviço principal de pessoas e permite compartilhar públicos-alvo entre soluções. Por exemplo, você pode criar um público-alvo no Audience Manager e usá-lo para fornecer conteúdo personalizado ao Target.
+O [Audiences](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/overview) faz parte do serviço principal de pessoas e permite compartilhar públicos-alvo entre soluções. Por exemplo, você pode criar um público-alvo no Audience Manager e usá-lo para fornecer conteúdo personalizado ao Target.
 
 Os principais requisitos para implementar o A4T—que você já fez—são:
 
