@@ -5,10 +5,10 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
+source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 15%
+source-wordcount: '917'
+ht-degree: 16%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 15%
 + Públicos e segmentação {#audiences}
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
    + [Fazer upload de públicos](audiences/upload-audiences.md)
+   + [Visão geral da composição do Federated Audience](audiences/overview-of-federated-audience-composition.md)
    + [Visão geral do Construtor de regras de público-alvo](audiences/audience-rule-builder-overview.md)
    + [Criar públicos-alvo](audiences/create-audiences.md)
    + [Criar públicos-alvo com base em conteúdo](audiences/create-content-based-audiences.md)
@@ -83,13 +84,13 @@ ht-degree: 15%
    + [Excluir conjuntos de dados e lotes](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [Expirar conjuntos de dados](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Perfil pseudônimo e expiração de evento (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [Excluir perfis](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [Excluir perfis](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [Atualizar um atributo de perfil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Assimilação de dados {#data-ingestion}
    + [Visão geral](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Visão geral da assimilação em lote](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Criar e preencher um conjunto de dados](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [Excluir conjuntos de dados e lotes](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
+   + [Excluir conjuntos de dados e lotes](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [Mapear um arquivo CSV para XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [Visão geral das fontes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Assimilar dados do Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
