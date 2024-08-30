@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
+source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '931'
 ht-degree: 16%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 16%
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
    + [Fazer upload de públicos](audiences/upload-audiences.md)
    + [Visão geral da composição do Federated Audience](audiences/overview-of-federated-audience-composition.md)
+   + [Conectar e configurar a Composição de Público-Alvo Federado](audiences/connect-and-configure-federated-audience-composition.md)
+   + [Criar uma composição de público-alvo federado](audiences/create-a-federated-audience-composition.md)
    + [Visão geral do Construtor de regras de público-alvo](audiences/audience-rule-builder-overview.md)
    + [Criar públicos-alvo](audiences/create-audiences.md)
    + [Usar restrições de tempo](audiences/time-constraints.md)
