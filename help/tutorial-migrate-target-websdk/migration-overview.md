@@ -1,8 +1,8 @@
 ---
-title: Visão geral da migração | Migração do Target da at.js 2.x para o SDK da Web
+title: Visão geral da migração - Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba mais sobre as principais diferenças entre a at.js e o SDK da Web da plataforma e como planejar seu esforço de migração.
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 1%

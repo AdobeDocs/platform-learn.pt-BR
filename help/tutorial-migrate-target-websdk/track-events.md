@@ -1,8 +1,8 @@
 ---
-title: Rastrear eventos | Migração do Target da at.js 2.x para o SDK da Web
+title: Rastrear eventos - Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como rastrear eventos de conversão do Adobe Target usando o SDK da Web do Experience Platform.
 exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%

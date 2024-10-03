@@ -1,8 +1,8 @@
 ---
-title: Atividades de VEC de renderização | Migração do Target da at.js 2.x para o SDK da Web
+title: Renderizar atividades do VEC - Migrar o Target da at.js 2.x para o SDK da Web
 description: Saiba como recuperar e aplicar atividades do Visual Experience Composer com uma implementação de SDK da Web do Adobe Target.
 exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
