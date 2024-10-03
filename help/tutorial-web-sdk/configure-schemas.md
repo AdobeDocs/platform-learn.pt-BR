@@ -4,7 +4,7 @@ description: Saiba como criar um esquema XDM para dados da Web na interface da C
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Esta é a meta do [Modelo de Dados de Experiência](https://business.adobe.com/p
 >
 > Para fins de demonstração, os exercícios nesta lição criam um esquema de exemplo para capturar o conteúdo exibido e os produtos comprados pelos clientes no [Site de demonstração da Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Embora você possa usar essas etapas para criar um esquema diferente para suas próprias finalidades, recomenda-se seguir primeiro juntamente com a criação do esquema de exemplo para saber mais sobre os recursos do editor de esquema.
 
-Para saber mais sobre esquemas XDM, faça o curso [Modelar os dados de experiência do cliente com XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm&amp;lang=pt-BR) ou consulte a [visão geral do sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
+Para saber mais sobre esquemas XDM, assista à lista de reprodução [Modelar seus dados de experiência do cliente com XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm) ou consulte a [visão geral do sistema XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Objetivos de aprendizagem
 
