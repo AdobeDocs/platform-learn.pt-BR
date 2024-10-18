@@ -1,9 +1,9 @@
 ---
-title: Configuração inicial - Migrar o Target da at.js 2.x para o SDK da Web
+title: Configuração inicial - Migrar do Adobe Target para o Adobe Journey Optimizer - Extensão móvel de decisão
 description: Saiba mais sobre e configure os elementos fundamentais importantes necessários para a implementação do SDK da Web da sua plataforma
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ Em seguida, saiba como [substituir a biblioteca at.js e configurar uma implement
 
 >[!NOTE]
 >
->Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Otimize. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

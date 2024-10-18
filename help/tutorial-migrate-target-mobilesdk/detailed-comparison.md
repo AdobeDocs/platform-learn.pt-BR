@@ -1,14 +1,14 @@
 ---
-title: Comparação da extensão do Target com a extensão Otimize
+title: Comparação da extensão do Target com a extensão do Decisioning
 description: Saiba mais sobre as diferenças entre a at.js 2.x e o SDK da Web da plataforma, incluindo recursos, funções, configurações e fluxo de dados.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 4%
 
 ---
 
-# Comparação da extensão do Target com a extensão Otimize
+# Comparação da extensão do Target com a extensão do Decisioning
 
 A biblioteca at.js independente do Adobe Target é significativamente diferente do SDK da Web da plataforma. As tabelas a seguir são uma referência para ajudar a avaliar as áreas da sua implementação nas quais talvez seja necessário se concentrar durante o processo de migração.
 
@@ -23,7 +23,7 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 
 ## Comparação de recursos
 
-| | Extensão do Target | Extensão Otimize (Target via Edge) | Experiências baseadas em código do AJO (SDK de mensagens) |
+| | Extensão do Target | Extensão de decisão (Target via Edge) | Experiências baseadas em código do AJO (SDK de mensagens) |
 |---|---|---|---|
 | Modo de busca prévia | Suportado | Suportado | Suportado |
 | Modo de execução | Suportado | Não suportado | Não suportado |
@@ -47,19 +47,19 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 >
 > É possível migrar sua implementação at.js (e AppMeasurement.js) para o SDK da Web da plataforma uma página por vez. Se você seguir esta abordagem, é melhor definir as opções [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) e [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) como `true` com o comando `configure`.
 
-## Funções de extensão do Target e equivalentes da extensão do Otimize
+## Funções de extensão do Target e equivalentes da extensão do Decisioning
 
-Muitas funções de extensão do Target têm uma abordagem equivalente usando a extensão Otimize descrita na tabela abaixo. Para obter mais detalhes sobre as [funções](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/), consulte o Guia do Desenvolvedor do Adobe Target.
+Muitas funções de extensão do Target têm uma abordagem equivalente usando a extensão do Decisioning descrita na tabela abaixo. Para obter mais detalhes sobre as [funções](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/), consulte o Guia do Desenvolvedor do Adobe Target.
 
-| Extensão do Target | Otimizar extensão |
+| Extensão do Target | Extensão de decisão |
 | --- | --- | 
 | |  |
 
-## Configurações de extensão do Target e equivalentes da extensão Otimizar
+## Configurações de extensão do Target e equivalentes da extensão do Decisioning
 
 A extensão do Target pode ser configurada e baixada com várias configurações no ...
 
-| Extensão do Target | Otimizar extensão |
+| Extensão do Target | Extensão de decisão |
 | --- | --- | 
 | |  |
 
@@ -72,11 +72,11 @@ Os diagramas a seguir devem ajudar você a entender as diferenças de fluxo de d
 
 
 
-### Otimizar o diagrama de sistema da extensão
+### Diagrama do sistema de extensão de decisão
 
 
 
 
 >[!NOTE]
 >
->Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Otimize. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

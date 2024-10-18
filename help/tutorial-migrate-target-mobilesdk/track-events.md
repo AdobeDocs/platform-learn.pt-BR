@@ -1,14 +1,14 @@
 ---
-title: Rastrear eventos - Migrar o Target da at.js 2.x para o SDK da Web
-description: Saiba como rastrear eventos de conversão do Adobe Target usando o SDK da Web do Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: Rastrear eventos - Migrar do Adobe Target para o Adobe Journey Optimizer - Extensão móvel da decisão
+description: Saiba como rastrear eventos de conversão do Adobe Target usando a extensão móvel do Adobe Journey Optimizer - Decisioning
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '193'
 ht-degree: 1%
 
 ---
 
-# Rastrear eventos de conversão do Target usando o SDK da Web da plataforma
+# Rastrear eventos de conversão do Target usando a extensão para dispositivos móveis do Adobe Journey Optimizer - Decisão
 
 Os eventos de conversão do Target podem ser rastreados com... Os eventos de conversão normalmente se enquadram nas seguintes categorias:
 
@@ -35,4 +35,4 @@ Em seguida, saiba como [habilitar o compartilhamento de ID entre domínios](cros
 
 >[!NOTE]
 >
->Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Otimize. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

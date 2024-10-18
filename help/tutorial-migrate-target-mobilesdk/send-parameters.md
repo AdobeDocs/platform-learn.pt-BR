@@ -1,14 +1,14 @@
 ---
-title: Enviar parâmetros - Migrar o Target da at.js 2.x para o SDK da Web
+title: Enviar parâmetros - Migrar do Adobe Target para o Adobe Journey Optimizer - Extensão móvel de decisão
 description: Saiba como enviar parâmetros de mbox, perfil e entidade para o Adobe Target usando o SDK da Web do Experience Platform.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-# Enviar parâmetros para o Target usando o SDK da Web da plataforma
+# Enviar parâmetros para o Target usando a extensão móvel do Adobe Journey Optimizer - Decisioning
 
 As implementações do Target diferem entre os sites devido à arquitetura do site, aos requisitos comerciais e aos recursos usados. A maioria das implementações do Target inclui transmitir vários parâmetros para informações contextuais, públicos-alvo e recomendações de conteúdo.
 
@@ -53,7 +53,7 @@ Os parâmetros de entidade para um item específico devem ter o prefixo `entity.
 
 ## Parâmetros de compra
 
-Os parâmetros de compra são passados em uma página de confirmação de pedido após um pedido bem-sucedido e são usados para metas de conversão e otimização do Target. Com uma implementação do SDK móvel da Platform usando a extensão Otimize, esses parâmetros e são mapeados automaticamente a partir de dados XDM transmitidos como parte do grupo de campos `commerce`.
+Os parâmetros de compra são passados em uma página de confirmação de pedido após um pedido bem-sucedido e são usados para metas de conversão e otimização do Target. Com uma implementação do SDK móvel da Platform usando a extensão de decisão, esses parâmetros e são mapeados automaticamente a partir de dados XDM transmitidos como parte do grupo de campos `commerce`.
 
 
 As informações de compra são passadas para o Target quando o grupo de campos `commerce` tem `purchases.value` definido como `1`. A ID do pedido e o total do pedido são mapeados automaticamente a partir do objeto `order`. Se a matriz `productListItems` estiver presente, os valores `SKU` serão usados para `productPurchasedId`.
@@ -69,4 +69,4 @@ Em seguida, saiba como [rastrear eventos de conversão do Target](track-events.m
 
 >[!NOTE]
 >
->Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Otimize. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
