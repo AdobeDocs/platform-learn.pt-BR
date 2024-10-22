@@ -1,10 +1,10 @@
 ---
 title: Comparação da extensão do Target com a extensão do Decisioning
 description: Saiba mais sobre as diferenças entre a extensão do Target e a extensão do Decisioning, incluindo recursos, funções, configurações e fluxo de dados.
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 3%
+source-wordcount: '469'
+ht-degree: 4%
 
 ---
 
@@ -23,8 +23,8 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 
 ## Comparação de recursos
 
-| | Extensão do Target | Extensão de decisão (Target via Edge) |
-|---|---|---|---|
+| Recurso | Extensão do Target | Extensão de decisão (Target via Edge) |
+|---|---|---|
 | Modo de busca prévia | Suportado | Suportado |
 | Modo de execução | Suportado | Não suportado |
 | Parâmetros personalizados | Suportado | Não há suporte para parâmetros por mbox |
