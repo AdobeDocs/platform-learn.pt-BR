@@ -5,10 +5,10 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 16%
+source-wordcount: '934'
+ht-degree: 17%
 
 ---
 
@@ -31,13 +31,12 @@ ht-degree: 16%
    + [Visão geral](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [Demonstração completa](/help/platform/rtcdp/demo.md)
    + [Fluxo de trabalho](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [Visão geral da B2B Edition](/help/platform/rtcdp/b2b-overview.md)
+   + [Visão geral do B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Orquestrar campanhas com o Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Introdução: Arquitetos de dados e Engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=pt-BR){target="_blank"}
 + [Autenticar para APIs Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importar dados de amostra para o Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administração {#admin}
-   + [Usar o assistente de IA](/help/platform/admin/ai-assistant.md)
    + [Usar alertas](/help/platform/admin/use-alerts.md)
    + [Usar sandboxes](/help/platform/admin/use-sandboxes.md)
    + [Copiar objetos entre sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 16%
    + [Adicionar desenvolvedores](/help/platform/admin/add-developers.md)
    + [Adicionar administradores de produto](/help/platform/admin/add-product-administrators.md)
    + [Configurar o controle de acesso baseado em atributos](/help/platform/admin/configure-attribute-based-access-control.md)
++ Assistente de IA {#ai-assistant}
+   + [Visão geral](/help/platform/ai-assistant/overview.md)
+   + [Limpar públicos](/help/platform/ai-assistant/find-unused-audiences.md)
 + Públicos e segmentação {#audiences}
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
    + [Fazer upload de públicos](audiences/upload-audiences.md)

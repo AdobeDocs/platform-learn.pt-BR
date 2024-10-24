@@ -1,9 +1,9 @@
 ---
 title: Comparação da extensão do Target com a extensão do Decisioning
 description: Saiba mais sobre as diferenças entre a extensão do Target e a extensão do Decisioning, incluindo recursos, funções, configurações e fluxo de dados.
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 4%
 
 ---
@@ -30,7 +30,7 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 | Parâmetros personalizados | Suportado | Não há suporte para parâmetros por mbox |
 | Audiências de entrada | Suportado | Suportado |
 | Segmentação de público usando métricas móveis de ciclo de vida | Suportado | Compatível com as regras de Coleção de dados |
-| thirdPartyId (mbox3rdPartyId) | Compatível com o Mapa de identidade e a configuração de namespace na sequência de dados |
+| thirdPartyId (mbox3rdPartyId) | Suportado | Compatível com o Mapa de identidade e a configuração de namespace na sequência de dados |
 | Notificações (exibir, clicar) | Suportado | Suportado |
 | Tokens de resposta | Suportado | Suportado |
 | Ofertas dinâmicas | Suportado | Suportado |
