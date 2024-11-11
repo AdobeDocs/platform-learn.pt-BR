@@ -1,10 +1,11 @@
 ---
 title: Comparação da extensão do Target com a extensão do Decisioning
 description: Saiba mais sobre as diferenças entre a extensão do Target e a extensão do Decisioning, incluindo recursos, funções, configurações e fluxo de dados.
-source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
+exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
+source-git-commit: 05b0146256c6f8644e42f851498a0f49ff44bf68
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 4%
+source-wordcount: '829'
+ht-degree: 3%
 
 ---
 
@@ -27,15 +28,22 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 |---|---|---|
 | Modo de busca prévia | Suportado | Suportado |
 | Modo de execução | Suportado | Não suportado |
-| Parâmetros personalizados | Suportado | Não há suporte para parâmetros por mbox |
-| Audiências de entrada | Suportado | Suportado |
-| Segmentação de público usando métricas móveis de ciclo de vida | Suportado | Compatível com as regras de Coleção de dados |
+| Parâmetros personalizados | Suportado | Compatível* |
+| Parâmetros do perfil | Suportado | Compatível* |
+| Parâmetros de entidade | Suportado | Compatível* |
+| Públicos-alvo | Suportado | Suportado |
+| Públicos da Real-Time CDP | ??? | Suportado |
+| Atributos do Real-Time CDP | ??? | Suportado |
+| Medições de ciclo de vida | Suportado | Compatível com as regras de Coleção de dados |
 | thirdPartyId (mbox3rdPartyId) | Suportado | Compatível com o Mapa de identidade e a configuração de namespace na sequência de dados |
 | Notificações (exibir, clicar) | Suportado | Suportado |
 | Tokens de resposta | Suportado | Suportado |
-| Ofertas dinâmicas | Suportado | Suportado |
 | Analytics for Target (A4T) | Somente no lado do cliente | Lado do cliente e lado do servidor |
-| Visualizações móveis (modo de QA) | Suportado | Suporte limitado |
+| Visualizações móveis (modo de QA) | Suportado | Suporte limitado com o Assurance |
+
+>[!IMPORTANT]
+>
+> \* Os parâmetros enviados em uma solicitação se aplicam a todos os escopos na solicitação. Se você precisar definir parâmetros diferentes para escopos diferentes, faça solicitações adicionais.
 
 
 
@@ -51,9 +59,24 @@ Se você não estiver familiarizado com o SDK da Web da Platform, não se preocu
 
 Muitas funções de extensão do Target têm uma abordagem equivalente usando a extensão do Decisioning descrita na tabela abaixo. Para obter mais detalhes sobre as [funções](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/), consulte o Guia do Desenvolvedor do Adobe Target.
 
-| Extensão do Target | Extensão de decisão |
-| --- | --- | 
-| |  |
+| Extensão do Target | Extensão de decisão | Notas |
+| --- | --- | --- | 
+| `prefetchContent` | `updatePropositions` |  |
+| `retrieveLocationContent` | `getPropositions` | Ao usar a API `getPropositions`, não é feita nenhuma chamada remota para buscar escopos não armazenados em cache no SDK. |
+| `displayedLocations` | Oferta -> `displayed()` | Além disso, o método de oferta `generateDisplayInteractionXdm` pode ser usado para gerar o XDM para exibição de item. Posteriormente, a API sendEvent do SDK de rede da Edge pode ser usada para anexar dados XDM adicionais e de formato livre, e enviar um Evento de experiência ao remoto. |
+| `clickedLocation` | Oferta -> `tapped()` | Além disso, o método de oferta `generateTapInteractionXdm` pode ser usado para gerar o XDM para toque de item. Posteriormente, a API sendEvent do SDK de rede da Edge pode ser usada para anexar dados XDM adicionais e de formato livre, e enviar um Evento de experiência ao remoto. |
+| `clearPrefetchCache` | `clearCachedPropositions` |  |
+| `resetExperience` |  | Use a API `removeIdentity` da identidade para a extensão Edge Network para o SDK parar de enviar o identificador de visitante para a rede Edge. Para obter mais detalhes, consulte [a documentação da API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Observação: a API `resetIdentities` do Mobile Core apaga todas as identidades armazenadas no SDK, incluindo a Experience Cloud ID (ECID), e ela deve ser usada com moderação! |
+| `getSessionId` |  | O identificador de resposta `state:store` carrega informações relacionadas à sessão. A extensão de rede do Edge ajuda a gerenciá-la anexando itens de armazenamento de estado não expirados a solicitações subsequentes. |
+| `setSessionId` |  | O identificador de resposta `state:store` carrega informações relacionadas à sessão. A extensão de rede do Edge ajuda a gerenciá-la anexando itens de armazenamento de estado não expirados a solicitações subsequentes. |
+| `getThirdPartyId` | n/d | Use a API updateIdentities da extensão Identity for Edge Network para fornecer o valor da ID de terceiros. Em seguida, configure o namespace da ID de terceiros no fluxo de dados. Para obter mais detalhes, consulte [a documentação móvel da ID de terceiros do Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
+| `setThirdPartyId` | n/d | Use a API updateIdentities da extensão Identity for Edge Network para fornecer o valor da ID de terceiros. Em seguida, configure o namespace da ID de terceiros no fluxo de dados. Para obter mais detalhes, consulte [a documentação móvel da ID de terceiros do Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
+| `getTntId` |  | O identificador de resposta `locationHint:result` carrega as informações de dica de localização do Target. Presume-se que a borda do Target esteja co-localizada com a Experience Edge. <br> <br>A extensão de rede do Edge usa a dica de local do EdgeNetwork para determinar o cluster de rede da Edge para o qual enviar solicitações. Para compartilhar a dica de local de rede do Edge entre SDKs (aplicativos híbridos), use as APIs do `getLocationHint` e do `setLocationHint` da extensão Edge Network. Para obter mais detalhes, consulte [a `getLocationHint` documentação da API](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
+| `setTntId` |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 ## Configurações de extensão do Target e equivalentes da extensão do Decisioning
 
