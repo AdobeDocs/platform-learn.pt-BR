@@ -5,10 +5,10 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
+source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 17%
+source-wordcount: '942'
+ht-degree: 16%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 17%
    + [Configurar o controle de acesso baseado em atributos](/help/platform/admin/configure-attribute-based-access-control.md)
 + Assistente de IA {#ai-assistant}
    + [Visão geral](/help/platform/ai-assistant/overview.md)
+   + [Configurar acesso](/help/platform/ai-assistant/access.md)
    + [Limpar públicos](/help/platform/ai-assistant/find-unused-audiences.md)
 + Públicos e segmentação {#audiences}
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
