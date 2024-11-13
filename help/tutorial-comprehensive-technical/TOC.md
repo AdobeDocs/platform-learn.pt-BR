@@ -5,7 +5,7 @@ user-guide-description: Um tutorial prático que cobre muitos aspectos do Adobe 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 3%
@@ -20,11 +20,11 @@ ht-degree: 3%
 + 0 Introdução {#gettingstarted}
    + 0.1 Introdução {#gettingstarted}
       + [Visão geral](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.0.1 Instale a extensão Chrome para a documentação do Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.0.2 Usar o sistema de demonstração ao lado para configurar a propriedade do cliente da coleção de dados do Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.0.3 Criar a sequência de dados](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.0.4 Usar o site](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.0.5 Usar o aplicativo móvel](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [0.1.1 Instale a extensão Chrome para a documentação do Experience League](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [0.1.2 Use o Sistema de demonstração ao lado para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [0.1.3 Criar fluxo de dados](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [0.1.4 Usar o site](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [0.1.5 Usar o aplicativo móvel](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Coleção de Dados {#datacollection}
    + 1.1 Coleta de Dados do Adobe Experience Platform e extensão do SDK da Web {#module11}
