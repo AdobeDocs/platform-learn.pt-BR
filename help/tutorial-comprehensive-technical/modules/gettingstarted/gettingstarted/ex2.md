@@ -3,40 +3,37 @@ title: Introdução - Usar o sistema de demonstração ao lado para configurar a
 description: Introdução - Usar o sistema de demonstração ao lado para configurar a propriedade do Launch
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# 0.2 Use o Sistema de demonstração ao lado para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform
+# Use o Sistema de demonstração ao lado para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform
 
-Depois de se inscrever no Tutorial técnico completo do Adobe Experience Platform, há um processo automatizado que fornecerá acesso ao Sistema de demonstração, para que você possa acessar e executar a configuração abaixo.
+Para visualizar os aprendizados neste tutorial e possibilitar que você teste sua configuração em um ambiente seguro, este tutorial está usando as ferramentas Avançar do sistema de demonstração do Adobe. Para aproveitar ao máximo esse tutorial, a instância da AEP precisa ser configurada para ser integrada ao Sistema de demonstração em seguida.
 
-Depois de ter acesso ao Sistema de demonstração, continue com as etapas abaixo.
+Depois de ter acesso ao Sistema de demonstração em seguida, continue com as etapas abaixo.
 
-Ir para [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/). Selecione sua sandbox e clique em **Instalação rápida**.
+Vá para [https://dsn.adobe.com/](https://dsn.adobe.com/) e navegue até **Instalação**.
+
+![DSN](./images/dsnsetup.png)
+
+Na lista suspensa **Ambiente**, selecione a instância da AEP e a sandbox.
 
 ![DSN](./images/dsnh1.png)
 
-Você verá isto:
+Em seguida, selecione o **Usuário do tutorial da AEP**.
 
 ![DSN](./images/dsnhome.png)
 
-Em **Geral** - **Ambiente**, selecione a instância do Adobe Experience Platform e a sandbox, neste caso:
-
-- **Experience Platform Internacional**
-- **aepenablementfy22**
-- Configuração: selecione **Global v2.0**
-
-![DSN](./images/dsn1.png)
-
-Em seguida, selecione a predefinição **Usuário de ativação** e clique em **Iniciar**.
+Em seguida, clique em **Iniciar**.
 
 ![DSN](./images/dsn2.png)
 
-No pop-up, digite um nome para a propriedade Coleção de dados. Use esta convenção de nomenclatura: **Sistema de demonstração (DD/MM/AAAA)**. INFO: seu LDAP será anexado automaticamente. Não é necessário adicioná-lo você mesmo.
+Na janela pop-up, digite um nome para as propriedades da Coleção de dados e os projetos do Experience Builder. Use esta convenção de nomenclatura: **Sistema de demonstração (DD/MM/AAAA)**. INFO: seu LDAP será anexado automaticamente. Não é necessário adicioná-lo você mesmo.
 
 Clique em **Start**.
 
@@ -48,9 +45,9 @@ Você verá este pop-up, que mostra o progresso ao criar projetos de site e apli
 
 Depois que o processo de configuração rápida for concluído, você terá:
 
-- 1 projeto Web Retail, que permite usar um site de demonstração com a marca de demonstração Luma
-- 1 projeto Mobile Retail, que permite usar um aplicativo móvel de demonstração com a marca de demonstração Luma
-- 1 projeto CX App Retail, que permite usar uma central de atendimento e um aplicativo de clientela com a marca de demonstração Luma
+- 1 projeto da web, que possibilita o uso de um site de demonstração com uma marca de demonstração telco
+- 1 projeto de aplicativo móvel, que possibilita o uso de um aplicativo móvel de demonstração com uma marca de demonstração telco
+- 1 projeto de aplicativo CX, que possibilita o uso de um aplicativo da central de atendimento com uma marca de demonstração telco
 - 1 Propriedade de coleção de dados para a Web, que você usará para coletar dados do site
 - 1 Propriedade de coleção de dados para dispositivos móveis, que você usará para coletar dados do aplicativo móvel
 
@@ -58,8 +55,8 @@ Depois que o processo de configuração rápida for concluído, você terá:
 
 Mantenha essa tela aberta como você precisará dela nas próximas etapas.
 
-Próxima Etapa: [0.3 Criar Sequência de Dados](./ex3.md)
+Próxima etapa: [Criar sequência de dados](./ex3.md)
 
-[Voltar ao módulo 0](./getting-started.md)
+[Voltar para a Introdução](./getting-started.md)
 
 [Voltar a todos os módulos](./../../../overview.md)

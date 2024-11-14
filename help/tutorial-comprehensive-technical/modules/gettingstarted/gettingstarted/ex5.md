@@ -3,16 +3,17 @@ title: Introdução - Uso do aplicativo móvel
 description: Introdução - Uso do aplicativo móvel
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# 0.5 Usar o aplicativo móvel
+# Usar o aplicativo móvel
 
-## 0.5.1 Baixar o aplicativo
+## Baixar o aplicativo
 
 Vá para [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) no computador. Você verá isso.
 
@@ -22,7 +23,7 @@ Use o aplicativo **Câmera** no smartphone para instalar o aplicativo móvel par
 
 >[!NOTE]
 >
->Depois de instalar o aplicativo pela primeira vez em um dispositivo iOS, você poderá receber uma mensagem de erro ao tentar abrir o aplicativo que diz: **Desenvolvedor corporativo não confiável**. Para corrigir isso, você precisa ir para **Configurações > Geral > Gerenciamento de Dispositivo > Adobe Systems Inc.** e clicar em **Confiar na Adobe Systems Inc.**.
+>Depois de instalar o aplicativo pela primeira vez em um dispositivo iOS, você poderá receber uma mensagem de erro ao tentar abrir o aplicativo que diz: **Desenvolvedor corporativo não confiável**. Para corrigir isso, você precisa ir para **Configurações > Geral > VPN &amp; Device Management > Adobe Systems Inc.** e clicar em **Confiar na Adobe Systems Inc.**.
 
 Depois que o aplicativo for instalado, você o encontrará na tela inicial do dispositivo. Clique no ícone para abrir o aplicativo.
 
@@ -48,21 +49,25 @@ Agora você pode carregar um projeto personalizado. Clique no código QR para ca
 
 ![DSN](./images/mobileappn6.png)
 
-Após o exercício 0.1, você teve esse resultado. Clique para abrir o **projeto do Mobile Retail** criado para você.
+Após o exercício anterior, você teve esse resultado. Clique para abrir o **projeto Telco do Mobile Edge** que foi criado para você.
 
 ![DSN](./images/dsn5b.png)
 
-Caso tenha fechado acidentalmente a janela do navegador ou para futuras sessões de demonstração ou capacitação, você também pode acessar o projeto do seu site em [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do aplicativo móvel para abri-lo.
+Caso tenha fechado acidentalmente a janela do navegador ou para futuras sessões de demonstração ou capacitação, você também pode acessar o projeto do seu site em [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos três pontos **...** no projeto de aplicativo móvel e clique em **Editar**.
 
 ![DSN](./images/web8a.png)
 
-Você verá isso. Clique em **Integrações**.
+Na página **Integrações**, é necessário selecionar a propriedade Coleção de dados criada no exercício anterior. Para fazer isso, clique em **Selecionar ambiente**.
 
 ![DSN](./images/web8aa.png)
 
-É necessário selecionar a propriedade Data Collection para dispositivos móveis que foi criada no exercício 0.1. Em seguida, clique em **Executar**.
+Clique em **Selecionar** na propriedade de Coleção de Dados criada na etapa anterior, chamada `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. Em seguida, clique em **Salvar**.
 
 ![DSN](./images/web8b.png)
+
+Você verá isso. Em seguida, clique em **Executar**.
+
+![DSN](./images/web8bb.png)
 
 Você verá este pop-up, que contém um código QR. Digitalize este código QR de dentro do aplicativo móvel.
 
@@ -76,8 +81,8 @@ Agora, volte para a **Página inicial** no aplicativo. Seu aplicativo está pron
 
 ![DSN](./images/mobileappn8.png)
 
-Você concluiu o módulo 0.
+Agora você concluiu o módulo Introdução e está pronto para começar com os próximos exercícios.
 
-[Voltar ao módulo 0](./getting-started.md)
+[Voltar para a Introdução](./getting-started.md)
 
 [Voltar a todos os módulos](./../../../overview.md)

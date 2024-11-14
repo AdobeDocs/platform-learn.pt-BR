@@ -4,14 +4,14 @@ description: Introdução - Instale a extensão Chrome para a documentação do 
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1 Instale a extensão Chrome para a documentação do Experience League
+# Instale a extensão Chrome para a documentação do Experience League
 
 ## Sobre a extensão do Chrome
 
@@ -35,7 +35,7 @@ Depois que a extensão for instalada, esse mesmo texto será alterado automatica
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1 Instalar a extensão do Chrome
+## Instalar a extensão do Chrome
 
 Para instalar essa extensão do Chrome, abra o navegador Chrome e vá para: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Você verá isso.
 
@@ -55,7 +55,7 @@ No menu **extensões**, clique no ícone de **peça do quebra-cabeça** e fixe a
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2 Configurar a extensão do Chrome
+## Configurar a extensão do Chrome
 
 Vá para [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) e clique no ícone de extensão para abri-lo.
 
@@ -133,7 +133,7 @@ Depois de ativar sua configuração, você verá um ponto verde ao lado das inic
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3 Verificar o conteúdo do tutorial
+## Verificar conteúdo do tutorial
 
 Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
@@ -141,10 +141,10 @@ Agora você deve ver que todas as **Variáveis de ambiente** foram substituídas
 
 Agora você deve ter uma exibição semelhante à mostrada abaixo, onde a variável de ambiente `aepTenantId` foi substituída pela sua ID de locatário real da AEP, que neste caso é **_experienceplatform**.
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-Próxima etapa: [0.2 Use o Sistema de demonstração Próximo para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform](./ex2.md)
+Próxima etapa: [Use o Sistema de demonstração Próximo para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform](./ex2.md)
 
-[Voltar ao módulo 0](./getting-started.md)
+[Voltar para a Introdução](./getting-started.md)
 
 [Voltar a todos os módulos](./../../../overview.md)
