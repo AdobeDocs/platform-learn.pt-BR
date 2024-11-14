@@ -4,9 +4,9 @@ description: Saiba como coletar e mapear dados para o Adobe Analytics em um apli
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -127,11 +127,11 @@ resulta em:
 s.events = "scAdd:321435"
 ```
 
-## Validar com garantia
+## Validar com o Assurance
 
-Usando a [Garantia](assurance.md), você pode confirmar que está enviando um evento de experiência, os dados XDM estão corretos e o mapeamento do Analytics está acontecendo conforme esperado.
+Usando o [Assurance](assurance.md), você pode confirmar que está enviando um evento de experiência, os dados XDM estão corretos e o mapeamento do Analytics está acontecendo conforme esperado.
 
-1. Revise a seção [instruções de configuração](assurance.md#connecting-to-a-session) para conectar seu simulador ou dispositivo ao Assurance.
+1. Revise a seção [instruções de instalação](assurance.md#connecting-to-a-session) para conectar seu simulador ou dispositivo ao Assurance.
 
 1. Enviar um evento **[!UICONTROL productListAdds]** (adicionar um produto à cesta).
 
@@ -306,6 +306,17 @@ Informações adicionais sobre regras de processamento e dados de contexto podem
 >[!TIP]
 >
 >Ao contrário de implementações anteriores do aplicativo móvel, não há distinção entre exibições de página/tela e outros eventos. Em vez disso, você pode incrementar a métrica **[!UICONTROL Exibição de página]** definindo a dimensão **[!UICONTROL Nome de página]** em uma regra de processamento. Como você está coletando o campo personalizado `screenName` no tutorial, é altamente recomendável mapear o nome da tela como **[!UICONTROL Nome da Página]** em uma regra de processamento.
+
+## Migrar da extensão móvel do Analytics
+
+Se você desenvolveu seu aplicativo móvel usando a [extensão para dispositivos móveis do Adobe Analytics](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application), provavelmente usou as chamadas de API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) e [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate).
+
+Se você decidir migrar para usar o Edge Network recomendado, terá opções:
+
+* Implemente a [extensão do Edge Network](configure-tags.md#extension-configuration) e use as [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) APIs, conforme ilustrado na lição sobre como [Rastrear dados do evento](events.md). Este tutorial foca nesta implementação.
+* Implemente a [extensão do Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) e continue usando suas chamadas de API [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) e [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate). Consulte [Implementar a extensão do Edge Bridge](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) para obter mais detalhes e um tutorial separado.
+
+
 
 
 >[!SUCCESS]

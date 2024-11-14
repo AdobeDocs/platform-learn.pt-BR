@@ -3,7 +3,7 @@ title: Rastrear dados do evento em aplicativos para dispositivos móveis com o S
 description: Saiba como rastrear dados do evento em um aplicativo móvel.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: afb15c561179386e7846e8cd8963f67820af09f1
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Nesta lição, você
 * Enviar um evento XDM com base em um grupo de campos padrão.
 * Enviar um evento XDM com base em um grupo de campos personalizado.
 * Envie um evento de compra XDM.
-* Validar com garantia.
+* Valide com o Assurance.
 
 ## Construção de um evento de experiência
 
@@ -121,9 +121,9 @@ Agora, você implementará realmente esse código em seu projeto Xcode.
 Você tem diferentes ações relacionadas a produtos de comércio em seu aplicativo e deseja enviar eventos, com base nessas ações conforme executadas pelo usuário:
 
 * exibir: ocorre quando um usuário exibe um produto específico,
-* adicionar ao carrinho: quando um usuário toca <img src="assets/addtocart.png" width="20" /> em uma tela de detalhes do produto,
-* salvar para mais tarde: quando um usuário tocar <img src="assets/saveforlater.png" width="15" /> em uma tela de detalhes do produto,
-* compra: quando um usuário toca <img src="assets/purchase.png" width="20" /> em uma tela de detalhes do produto.
+* adicionar ao carrinho: quando um usuário toca <img src="assets/addtocart.png" width="20"/> em uma tela de detalhes do produto,
+* salvar para mais tarde: quando um usuário tocar <img src="assets/saveforlater.png" width="15"/> em uma tela de detalhes do produto,
+* compra: quando um usuário toca <img src="assets/purchase.png" width="20"/> em uma tela de detalhes do produto.
 
 Para implementar o envio de eventos de experiência relacionados ao comércio de maneira reutilizável, use uma função dedicada:
 
@@ -166,23 +166,23 @@ Para implementar o envio de eventos de experiência relacionados ao comércio de
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. Para cada um dos botões (<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> e <img src="assets/purchase.png" width="20" />) na barra de ferramentas, adicione a chamada relevante dentro do fechamento `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
+   1. Para cada um dos botões (<img src="assets/saveforlater.png" width="15"/>, <img src="assets/addtocart.png" width="20"/> e <img src="assets/purchase.png" width="20"/>) na barra de ferramentas, adicione a chamada relevante dentro do fechamento `ATTrackingManager.trackingAuthorizationStatus == .authorized`:
 
-      1. Para <img src="assets/saveforlater.png" width="15" />
+      1. Para <img src="assets/saveforlater.png" width="15"/>
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. Para <img src="assets/addtocart.png" width="20" />
+      1. Para <img src="assets/addtocart.png" width="20"/>
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. Para <img src="assets/purchase.png" width="20" />
+      1. Para <img src="assets/purchase.png" width="20"/>
 
          ```swift
          // Send purchase commerce experience event
@@ -338,15 +338,15 @@ Novamente, vamos implementar esse código no seu projeto Xcode.
 
 ## Validação
 
-1. Revise a seção [instruções de configuração](assurance.md#connecting-to-a-session) para conectar seu simulador ou dispositivo com o Assurance.
+1. Revise a seção [instruções de instalação](assurance.md#connecting-to-a-session) para conectar seu simulador ou dispositivo ao Assurance.
 
    1. Mova o ícone do Assurance para a esquerda.
    1. Selecione **[!UICONTROL Página inicial]** na barra de guias e verifique se você vê um **[!UICONTROL ECID]**, **[!UICONTROL Email]** e **[!UICONTROL CRM ID]** na tela inicial.
    1. Selecione **[!DNL Products]** na barra de guias.
    1. Selecione um produto.
-   1. Selecionar <img src="assets/saveforlater.png" width="15" />.
-   1. Selecionar <img src="assets/addtocart.png" width="20" />.
-   1. Selecionar <img src="assets/purchase.png" width="15" />.
+   1. Selecionar <img src="assets/saveforlater.png" width="15"/>.
+   1. Selecionar <img src="assets/addtocart.png" width="20"/>.
+   1. Selecionar <img src="assets/purchase.png" width="15"/>.
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
