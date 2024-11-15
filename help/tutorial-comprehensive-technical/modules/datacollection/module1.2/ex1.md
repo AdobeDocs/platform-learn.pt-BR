@@ -3,9 +3,10 @@ title: Foundation - Assimilação de dados - De desconhecido para conhecido no s
 description: Foundation - Assimilação de dados - De desconhecido para conhecido no site
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -29,10 +30,6 @@ Agora, você assimilará dados na Adobe Experience Platform e esses dados serão
 Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Na página **Screens**, clique em **Executar**.
-
-![DSN](../module1.1/images/web2.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 

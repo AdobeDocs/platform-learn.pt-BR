@@ -3,9 +3,10 @@ title: Foundation - Configuração da coleção de dados do Adobe Experience Pla
 description: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web - Explicação da coleção de dados do Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 2%
 
 ---
@@ -42,7 +43,12 @@ Agora, olhe para o painel esquerdo.
 - **[!UICONTROL Marcas]** fornece uma visão geral de todas as propriedades do lado do cliente
 - **[!UICONTROL Superfícies do Aplicativo]** fornece uma visão geral de todas as Configurações de Aplicativo para habilitar Notificações por Push (que é usada/habilitada em combinação com o Project Sierra)
 - **[!UICONTROL As sequências de dados]** são exploradas no [próximo exercício](./ex2.md)
-- **[!UICONTROL Encaminhamento de Eventos]** fornece uma visão geral de todas as propriedades do lado do servidor que são exploradas no [Módulo 14 - Conexões Real-Time CDP: Encaminhamento de Eventos](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Encaminhamento de Eventos]** fornece uma visão geral de todas as propriedades do lado do servidor exploradas no [Módulo 2.5 - Conexões Real-Time CDP: Encaminhamento de Eventos](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Monitoramento]** fornece uma visão geral do tráfego de eventos de entrada e saída por meio do Encaminhamento de Eventos
+- O **[!UICONTROL Assurance]** fornece acesso para depurar uma implementação usando o Adobe Debugger
+- **[!UICONTROL Places]** fornecem acesso ao gerenciamento de POIs que se tornam acessíveis para personalização baseada em localização em aplicativos móveis
+- **[!UICONTROL Esquemas]** fornece acesso ao editor de esquema da Adobe Experience Platform
+- **[!UICONTROL Identidades]** fornece acesso à configuração do Gráfico de identidade da Adobe Experience Platform
 
 ## Informações adicionais
 

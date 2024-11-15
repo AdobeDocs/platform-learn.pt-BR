@@ -3,10 +3,11 @@ title: Foundation - Configuração da coleta de dados do Adobe Experience Platfo
 description: Foundation - Configuração da coleta de dados do Adobe Experience Platform e da extensão SDK da Web - Implementação do Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Você verá isso. Para habilitar o Adobe Target, clique em **+Adicionar Serviço
 
 ![Depurador da AEP](./images/aa2.png)
 
-Você verá isso. Selecione o serviço **Adobe Target**, após o qual você pode fornecer informações adicionais. No momento, não há necessidade de salvar, então clique em **Cancelar**.
+Você verá isso. Selecione o serviço **Adobe Target**, após o qual você pode fornecer informações adicionais. Clique em **Salvar**.
 
 ![Depurador da AEP](./images/at1.png)
 

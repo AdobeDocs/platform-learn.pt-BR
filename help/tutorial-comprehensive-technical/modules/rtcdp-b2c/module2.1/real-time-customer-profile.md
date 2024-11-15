@@ -4,9 +4,10 @@ description: Foundation - Perfil do cliente em tempo real
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ Neste módulo, analisaremos em detalhes os recursos de Perfil e identidade do cl
 
 >[!NOTE]
 >
->Não se esqueça de instalar, configurar e usar a Extensão do Chrome, conforme referenciado em [0.1 - Instalar a extensão do Chrome para a documentação do Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Não se esqueça de instalar, configurar e usar a Extensão do Chrome, conforme referenciado em [Instalar a extensão do Chrome para a documentação do Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercícios
 

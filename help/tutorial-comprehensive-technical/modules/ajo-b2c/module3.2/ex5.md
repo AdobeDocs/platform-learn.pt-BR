@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - API de clima externa, ação de SMS e muito mai
 description: Adobe Journey Optimizer - API de clima externa, ação de SMS e muito mais - Acione a Jornada orquestrada do cliente
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -73,10 +74,6 @@ Clique em **Adicionar todos os recursos alterados** e em **Salvar e criar no des
 Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Na página **Screens**, clique em **Executar**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 

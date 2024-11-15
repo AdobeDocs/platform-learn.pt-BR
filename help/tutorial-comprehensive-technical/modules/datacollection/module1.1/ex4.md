@@ -3,9 +3,10 @@ title: Foundation - Configuração da coleção de dados da Adobe Experience Pla
 description: Foundation - Configuração da coleção de dados da Adobe Experience Platform e da extensão SDK da Web - Coleção de dados da Web do cliente
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### Instale o Adobe Experience Platform Debugger
 
-O Experience Platform Debugger é uma extensão disponível para os navegadores Chrome e Firefox que ajuda a visualizar a tecnologia de Adobe implementada nas páginas da Web. Baixe a versão do seu navegador de preferência:
+O Experience Platform Debugger é uma extensão disponível para os navegadores Chrome e Firefox que ajuda a visualizar a tecnologia de Adobe implementada nas páginas da Web. Instale a versão do seu navegador preferido:
 
 - [Extensão do Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Verifique se essas duas configurações estão ativadas:
 
 ### Abrir o site de demonstração
 
-Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
+Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Executar** para abri-lo.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-Na página **Screens**, clique em **Executar**.
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 
@@ -77,15 +74,19 @@ Clique no botão **[!UICONTROL Entrar]** na parte superior direita para autentic
 
 ![Depurador da AEP](./images/validate2.png)
 
+Você fará logon no Debugger.
+
+![Depurador da AEP](./images/validate2ab.png)
+
 Clique no botão Recarregar no site de demonstração para conectar o depurador a essa guia específica.
 
 ![Depurador da AEP](./images/validate2a.png)
 
-Confirme se o Depurador está **[!UICONTROL Conectado à Página Inicial]**, como mostrado acima, e clique no ícone **[!UICONTROL bloquear]** para bloquear o Depurador para o site de demonstração. Se você não fizer isso, o Debugger continuará alternando para expor os detalhes de implementação de qualquer guia do navegador em foco, o que pode ser confuso.
+Confirme se o Depurador está **[!UICONTROL Conectado à Página Inicial]**, como mostrado acima, e clique no ícone **[!UICONTROL bloquear]** para bloquear o Depurador para o site de demonstração. Se você não fizer isso, o Debugger continuará alternando para expor os detalhes de implementação de qualquer guia do navegador em foco, o que pode ser confuso. Depois que o depurador for bloqueado, o ícone será alterado para **Desbloquear**.
 
 ![Depurador da AEP](./images/validate3.png)
 
-Em seguida, vá para qualquer página no site de demonstração como, por exemplo, a página de categoria **Homens**.
+Em seguida, vá para qualquer página no site de demonstração como, por exemplo, a página de categoria **Planos**.
 
 ![Extensão AEP Web SDK do Depurador da AEP](./images/validate4.png)
 
@@ -95,11 +96,11 @@ Cada solicitação contém uma linha **[!UICONTROL events]**.
 
 ![Extensão AEP Web SDK do Depurador da AEP](./images/validate5.png)
 
-Clique para abrir a linha **[!UICONTROL eventos]**. Observe como você pode ver o evento **web.webpagedetails.pageViews**, bem como outras variáveis prontas para uso que seguem o formato **ExperienceEvent XDM do SDK da Web**.
+Clique para abrir uma linha **[!UICONTROL events]**. Observe como você pode ver o evento **web.webpagedetails.pageViews**, bem como outras variáveis prontas para uso que seguem o formato **ExperienceEvent XDM do SDK da Web**.
 
 ![Valor dos eventos](./images/validate8.png)
 
-Esses tipos de detalhes de solicitação também estão visíveis na guia Rede. Filtre solicitações com **interaja** para localizar as solicitações enviadas pelo SDK da Web. Você pode encontrar todos os detalhes da carga XDM nos Cabeçalhos da carga de solicitação:
+Esses tipos de detalhes de solicitação também estão visíveis na guia Rede. Filtre solicitações com **interaja** para localizar as solicitações enviadas pelo SDK da Web. Você pode encontrar todos os detalhes da carga XDM na seção Carga:
 
 ![Guia Rede](./images/validate9.png)
 

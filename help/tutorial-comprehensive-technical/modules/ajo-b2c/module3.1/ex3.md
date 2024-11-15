@@ -3,9 +3,10 @@ title: Atualizar a ID de configuração e testar a Jornada
 description: Atualizar a ID de configuração e testar a Jornada
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ Sua biblioteca será atualizada e, após 1 a 2 minutos, você poderá testar sua
 Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Na página **Screens**, clique em **Executar**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 

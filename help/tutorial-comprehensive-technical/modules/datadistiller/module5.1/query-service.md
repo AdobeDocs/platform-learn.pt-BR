@@ -3,9 +3,10 @@ title: Query Service
 description: Query Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -40,7 +41,7 @@ Usaremos dados que foram inseridos na plataforma usando dados de interação na 
 
 >[!NOTE]
 >
->Não se esqueça de instalar, configurar e usar a Extensão do Chrome, conforme referenciado em [0.1 - Instalar a extensão do Chrome para a documentação do Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Não se esqueça de instalar, configurar e usar a Extensão do Chrome, conforme referenciado em [Instalar a extensão do Chrome para a documentação do Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercícios
 

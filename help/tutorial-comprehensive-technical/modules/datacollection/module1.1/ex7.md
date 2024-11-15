@@ -3,9 +3,10 @@ title: Foundation - Configuração da coleta de dados do Adobe Experience Platfo
 description: Foundation - Configuração da coleta de dados do Adobe Experience Platform e da extensão SDK da Web - Requisitos do esquema XDM no Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ No menu esquerdo, vá para **Esquemas** e abra o **Sistema de Demonstração - E
 
 ![Depurador da AEP](./images/exp3.png)
 
-Nesse Esquema, você verá que o grupo de campos **AEP Web SDK ExperienceEvent Mixin** foi adicionado. Este grupo de campos adiciona todos os campos mínimos obrigatórios ao esquema. Cada esquema de evento de experiência no Adobe Experience Platform que será usado pelo SDK da Web sempre exigirá que esse grupo de campos faça parte do esquema.
+Nesse esquema, você verá que o grupo de campos **ExperienceEvent do SDK da Web da AEP** foi adicionado. Este grupo de campos adiciona todos os campos mínimos obrigatórios ao esquema. Cada esquema de evento de experiência no Adobe Experience Platform que será usado pelo SDK da Web sempre exigirá que esse grupo de campos faça parte do esquema.
 
 ![Depurador da AEP](./images/exp4.png)
 

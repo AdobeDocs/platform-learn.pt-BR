@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Configurar uma jornada com base em acionador - 
 description: Nesta seção, você configurará uma jornada baseada em acionador - Confirmação de pedido
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -404,10 +405,6 @@ Vamos testar a jornada atualizada comprando um produto no site de demonstração
 Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-Na página **Screens**, clique em **Executar**.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 

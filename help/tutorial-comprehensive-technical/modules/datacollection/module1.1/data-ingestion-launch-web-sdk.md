@@ -3,16 +3,15 @@ title: 1.1 Configuração da coleção de dados do Adobe Experience Platform e d
 description: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web
-
-**Autor: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Este módulo fundamental apresenta a você a visão de coleta de dados do Adobe e explica como obter dados de um site e aplicativo móvel no Adobe Experience Platform e em outros aplicativos por meio da Coleta de dados do Adobe Experience Platform, dos SDKs da Adobe Experience Platform e do Edge Network da Adobe Experience Platform. Este módulo apresenta alguns conceitos e tecnologias que têm um impacto além do escopo de um tutorial técnico do Adobe Experience Platform. Deve ficar claro quais partes desses exercícios são fundamentais para o restante do tutorial abrangente, quais ensinam mais sobre o Experience Edge e seus recursos e onde obter mais informações e tutoriais.
 
@@ -35,7 +34,7 @@ Este módulo fundamental apresenta a você a visão de coleta de dados do Adobe 
 
 >[!NOTE]
 >
->Não se esqueça de instalar, configurar e usar a Extensão do Chrome, conforme referenciado em [0.1 - Instalar a extensão do Chrome para a documentação do Experience League](../../gettingstarted/gettingstarted/ex1.md)
+>Não se esqueça de instalar, configurar e usar a Extensão do Chrome, conforme referenciado em [Instalar a extensão do Chrome para a documentação do Experience League](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercícios
 
