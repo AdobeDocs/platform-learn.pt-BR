@@ -4,16 +4,16 @@ description: Foundation - Configuração da coleta de dados do Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
 
 # 1.1.6 Implementação do Adobe Target
 
-## 1.1.6.1 Atualizar a sequência de dados para usar o Adobe Target
+## Atualizar sua sequência de dados para usar o Adobe Target
 
 Caso queira enviar dados coletados pelo SDK da Web para a Adobe Target e obter uma resposta do Adobe Target com uma experiência personalizada para cada cliente, siga estas etapas.
 

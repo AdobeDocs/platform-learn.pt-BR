@@ -4,16 +4,16 @@ description: Foundation - Configuração da coleção de dados da Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Coleta de dados da Web no lado do cliente
 
-## 1.1.4.1 Validar os dados na solicitação
+## Validar os dados na solicitação
 
 ### Instale o Adobe Experience Platform Debugger
 
@@ -40,7 +40,7 @@ Verifique se essas duas configurações estão ativadas:
 
 Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Executar** para abri-lo.
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 

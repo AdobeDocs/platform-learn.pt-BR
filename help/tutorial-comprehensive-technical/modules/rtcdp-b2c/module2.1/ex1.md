@@ -3,9 +3,10 @@ title: Foundation - Perfil do cliente em tempo real - De desconhecido para conhe
 description: Foundation - Perfil do cliente em tempo real - De desconhecido para conhecido no site
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -22,13 +23,9 @@ Plataforma é um ambiente no qual a palavra cliente é mais ampla do que apenas 
 
 ## Fluxo de jornada do cliente
 
-Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
+Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Executar** para abri-lo.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Na página **Screens**, clique em **Executar**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 
@@ -62,7 +59,7 @@ Você também pode ver todos os Eventos de experiência que foram coletados com 
 
 ![Demonstração](../../datacollection/module1.2/images/pv3.png)
 
-Vá para a categoria de produto **Homens**. Em seguida, clique no produto **Jaqueta corta-vento Montana**.
+Vá para a categoria de produto **Celulares e dispositivos**. Em seguida, clique no produto **iPhone 15 Pro**.
 
 ![Demonstração](../../datacollection/module1.2/images/pv4.png)
 
@@ -74,15 +71,15 @@ Abra o painel Visualizador de Provedores e veja seus **Eventos de experiência**
 
 ![Demonstração](../../datacollection/module1.2/images/pv6.png)
 
-Volte para a página de categoria **Mulheres** e clique em outro produto. Outro evento de experiência foi enviado para o Adobe Experience Platform.
+Volte para a página de categoria **Telefones e dispositivos** e clique em outro produto. Outro evento de experiência foi enviado para o Adobe Experience Platform. Abra o painel Visualizador de perfis. Você verá dois Eventos de Experiência do tipo **Exibição do Produto**. Embora o comportamento seja anônimo, com o consentimento adequado em vigor, você pode rastrear cada clique e armazená-lo no Adobe Experience Platform. Assim que o cliente anônimo se tornar conhecido, poderemos unir todos os comportamentos anônimos automaticamente ao perfil conhecido.
 
 ![Demonstração](../../datacollection/module1.2/images/pv7.png)
 
-Abra o painel Visualizador de perfis. Você verá dois Eventos de Experiência do tipo **Exibição do Produto**. Embora o comportamento seja anônimo, podemos rastrear cada clique e armazená-lo no Adobe Experience Platform. Assim que o cliente anônimo se tornar conhecido, poderemos unir todos os comportamentos anônimos automaticamente ao perfil conhecido.
+Vá para a página Registro/Logon. Clique em **Fazer logon**.
 
 ![Demonstração](../../datacollection/module1.2/images/pv8.png)
 
-Vá para a página Registro/Logon. Clique em **CRIAR UMA CONTA**.
+Clique em **Criar uma conta**.
 
 ![Demonstração](../../datacollection/module1.2/images/pv9.png)
 
@@ -104,11 +101,11 @@ Agora você assimilou dados na Adobe Experience Platform e vinculou esses dados 
 
 Depois de se tornar um cliente conhecido, é hora de começar a usar o aplicativo móvel. Abra o aplicativo móvel no iPhone e faça logon no aplicativo.
 
-Se você não tiver mais o aplicativo instalado ou se não conseguir lembrar como instalá-lo, confira aqui: [0.5 Use o aplicativo móvel](../../gettingstarted/gettingstarted/ex5.md)
+Se você não tiver mais o aplicativo instalado ou se não conseguir lembrar como instalá-lo, confira aqui: [Usar o aplicativo móvel](../../gettingstarted/gettingstarted/ex5.md)
 
-Depois de instalar o aplicativo conforme instruído, você verá a página de aterrissagem do aplicativo com a marca Luma carregada. Clique no ícone de conta na parte superior esquerda da tela.
+Depois de instalar o aplicativo conforme instruído, você verá a página de aterrissagem do aplicativo com a marca Citi Signal carregada. Clique no ícone de conta na parte superior esquerda da tela.
 
-![Demonstração](./images/app_hp.png)
+![Demonstração](./images/app_hp1.png)
 
 Na tela de Login, faça login com o endereço de e-mail usado no site da área de trabalho. Clique em **Logon**.
 
@@ -120,15 +117,23 @@ Vá para a tela inicial do aplicativo e clique para abrir qualquer produto.
 
 Você verá a página de detalhes do produto.
 
-![Demonstração](./images/app_carst.png)
+![Demonstração](./images/app_galaxy.png)
 
 Vá para a tela inicial no aplicativo e deslize o dedo para a esquerda na tela para exibir o painel Visualizador de perfil. Você verá o produto que acabou de visualizar na seção **Eventos de experiência**, juntamente com todas as visualizações de produto da sessão de site anterior.
 
-![Demonstração](./images/app_after_carst.png)
+>[!NOTE]
+>
+>Pode levar alguns minutos para que você veja a exibição consolidada no aplicativo e no site.
+
+![Demonstração](./images/app_after_galaxy.png)
 
 Agora, volte para o computador desktop e atualize a página inicial, onde o produto também aparecerá.
 
-![Demonstração](./images/lb_x_aftermobile.png)
+>[!NOTE]
+>
+>Pode levar alguns minutos para que você veja a exibição consolidada no aplicativo e no site.
+
+![Demonstração](./images/web_x_aftermobile.png)
 
 Agora você assimilou dados na Adobe Experience Platform e vinculou esses dados a identificadores como ECIDs e endereços de email. O objetivo desse exercício era entender o contexto de negócios do que você está prestes a fazer. Agora você criou efetivamente um perfil de cliente em tempo real entre dispositivos. No próximo exercício, você visualizará seu perfil no Adobe Experience Platform.
 

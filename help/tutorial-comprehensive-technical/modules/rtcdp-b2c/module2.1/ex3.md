@@ -3,9 +3,10 @@ title: Foundation - Perfil do cliente em tempo real - Visualizar seu próprio pe
 description: Foundation - Perfil do cliente em tempo real - Visualizar seu próprio perfil do cliente em tempo real - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '2637'
+source-wordcount: '2295'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 Neste exercício, você usará o Postman e o Adobe I/O para consultar as APIs da Adobe Experience Platform e visualizar seu próprio perfil do cliente em tempo real.
 
-## Story
+## Contexto
 
 No Perfil do cliente em tempo real, todos os dados do perfil são mostrados junto com os dados do evento, bem como com as associações de segmento existentes. Os dados mostrados podem vir de qualquer lugar, de aplicativos Adobe e soluções externas. Essa é a visualização mais eficiente no Adobe Experience Platform, o sistema de experiência de registro.
 
 O Perfil do cliente em tempo real pode ser consumido por todos os aplicativos Adobe, mas também por soluções externas, como call centers ou aplicativos de clientela na loja. A maneira de fazer isso é conectar essas soluções externas às APIs do Adobe Experience Platform.
 
-## 2.1.3.1 Seus identificadores
+## Seus identificadores
 
 No painel Visualizador de perfis no site, você pode encontrar várias identidades. Cada identidade está vinculada a um namespace.
 
@@ -30,15 +31,14 @@ No painel Raio X, podemos ver quatro combinações diferentes de IDs e Namespace
 
 | Identidade | Namespace |
 |:-------------:| :---------------:|
-| ID Experience Cloud (ECID) | 12507560687324495704459439363261812234 |
-| ID de e-mail | woutervangeluwe+06022022-01@gmail.com |
-| ID do número de celular | +32473622044+06022022-01 |
+| ID Experience Cloud (ECID) | 79943948563923140522865572770524243489 |
+| ID Experience Cloud (ECID) | 70559351147248820114888181867542007989 |
+| ID de e-mail | woutervangeluwe+18112024-01@gmail.com |
+| ID do número de celular | +32473622044+18112024-01 |
 
 Lembrar desses identificadores na próxima etapa.
 
-Com essas IDs em mente, acesse o Postman.
-
-## 2.1.3.2 Configurar o projeto Adobe I/O
+## Configurar o projeto do Adobe I/O
 
 Neste exercício, você usará o Adobe I/O de forma bastante intensa para consultar as APIs da plataforma. Siga as etapas abaixo para configurar o Adobe I/O.
 
@@ -46,14 +46,9 @@ Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/c
 
 ![Adobe I/O Nova integração](./images/iohome.png)
 
-Selecione a instância correta do Adobe Experience Platform no canto superior direito da tela. Sua instância é `--envName--`.
+Selecione a instância correta do Adobe Experience Platform no canto superior direito da tela. Sua instância é `--aepImsOrgName--`. Clique em **Criar novo projeto**.
 
 ![Adobe I/O Nova integração](./images/iocomp.png)
-
-Clique em **Criar novo projeto**.
-
-![Adobe I/O Nova integração](./images/adobe_io_new_integration.png) ou
-![Adobe I/O Nova integração](./images/adobe_io_new_integration1.png)
 
 Selecione **+ Adicionar ao Projeto** e selecione **API**.
 
@@ -66,74 +61,35 @@ Você verá isto:
 Clique no ícone **Adobe Experience Platform**.
 /images/api2.png)
 
-Clique em **Experience Platform API**.
+Selecione **API de Experience Platform** e clique em **Avançar**.
 
 ![Adobe I/O Nova integração](./images/api3.png)
 
-Clique em **Next**.
-
-![Adobe I/O Nova integração](./images/next.png)
-
-Agora você pode optar por fazer com que o Adobe I/O gere seu par de chaves de segurança ou fazer upload de um existente.
-
-Escolha **Opção 1 - Gerar um par de chaves**.
+Agora vocês verão isto. Forneça um nome para a credencial: `--aepUserLdap-- - OAuth credential`. Clique em **Next**.
 
 ![Adobe I/O Nova integração](./images/api4.png)
 
-Clique em **Gerar par de chaves**.
-
-![Adobe I/O Nova integração](./images/generate.png)
-
-Você verá um ponteiro por cerca de 30 segundos.
-
-![Adobe I/O Nova integração](./images/spin.png)
-
-Você verá isso e seu par de chaves gerado será baixado como um arquivo zip: **config.zip**.
-
-Descompacte o arquivo **config.zip** na sua área de trabalho. Você verá que ele contém 2 arquivos:
-
-![Adobe I/O Nova integração](./images/zip.png)
-
-- **certificate_pub.crt** é seu certificado de chave pública. De uma perspectiva de segurança, esse é o certificado usado livremente para configurar integrações com aplicativos online.
-- **private.key** é sua Chave privada. Isso nunca deve ser compartilhado com ninguém. A chave privada é o que você usa para autenticar para a implementação da API e deve ser um segredo. Se você compartilhar sua chave privada com qualquer pessoa, ela poderá acessar sua implementação e abusar da API para assimilar dados mal-intencionados na Platform e extrair todos os dados contidos na Platform.
-
-![Adobe I/O Nova integração](./images/config.png)
-
-Salve o arquivo **config.zip** em um local seguro, pois ele será necessário para as próximas etapas e para acesso futuro às APIs do Adobe I/O e do Adobe Experience Platform.
-
-Clique em **Next**.
-
-![Adobe I/O Nova integração](./images/next.png)
-
-Agora é necessário selecionar o(s) **Perfil(is) de Produto** para sua integração.
+Em seguida, é necessário selecionar um perfil de produto que definirá quais permissões estão disponíveis para essa integração.
 
 Selecione os Perfis de produto necessários.
 
-**INFO**: em sua instância do Adobe Experience Platform, os Perfis de Produto terão um nome diferente. Você precisa selecionar pelo menos um perfil de produto com os direitos de acesso adequados, que são configurados no Adobe Admin Console.
-
-![Adobe I/O Nova integração](./images/api9.png)
+>[!NOTE]
+>
+> Os nomes de perfis de produtos variam na instância do Adobe Experience Platform, pois são específicos da instância. É necessário selecionar pelo menos um perfil de produto com os direitos de acesso adequados, que são configurados na Adobe Admin Console e na interface de permissões da AEP.
 
 Clique em **Salvar API configurada**.
 
-![Adobe I/O Nova integração](./images/saveconfig.png)
+![Adobe I/O Nova integração](./images/api9.png)
 
-Você verá um ponteiro por alguns segundos.
-
-![Adobe I/O Nova integração](./images/api10.png)
-
-E, em seguida, você verá sua integração.
+Sua integração de Adobe I/O está pronta.
 
 ![Adobe I/O Nova integração](./images/api11.png)
 
-Clique no botão **Baixar para Postman** e em **Conta de Serviço (JWT)** para baixar um ambiente do Postman (aguarde até que o ambiente seja baixado, isso pode levar alguns segundos).
+Clique no botão **Baixar para Postman** e em **OAuth Server-to-Server** para baixar um ambiente do Postman (aguarde até que o ambiente seja baixado, isso pode levar alguns segundos).
 
 ![Adobe I/O Nova integração](./images/iopm.png)
 
-Role para baixo até ver **Conta de Serviço (JWT)**, que é onde você pode encontrar todos os detalhes de integração usados para configurar a integração com o Adobe Experience Platform.
-
-![Adobe I/O Nova integração](./images/api12.png)
-
-Seu projeto IO atualmente tem um nome genérico. É necessário dar um nome amigável à integração. Clique no **Projeto 1** (ou nome semelhante) conforme indicado
+Seu projeto IO atualmente tem um nome genérico. É necessário dar um nome amigável à integração. Clique em **Projeto X** (ou nome semelhante) conforme indicado
 
 ![Adobe I/O Nova integração](./images/api13.png)
 
@@ -141,10 +97,9 @@ Clique em **Editar projeto**.
 
 ![Adobe I/O Nova integração](./images/api14.png)
 
-Insira um Nome e uma Descrição para sua integração. Como convenção de nomenclatura, usaremos `AEP API --aepUserLdap--`. Substitua o ldap pelo seu ldap.
-Por exemplo, se o ldap for vangeluw, o nome e a descrição da integração se tornarão API vangeluw da AEP.
+Insira um Nome e uma Descrição para sua integração: `--aepUserLdap-- AEP Tutorial`.
 
-Insira `AEP API --aepUserLdap--` como o **Título do projeto**. Clique em **Salvar**.
+Clique em **Salvar**.
 
 ![Adobe I/O Nova integração](./images/api15.png)
 
@@ -152,23 +107,47 @@ A integração com o Adobe I/O foi concluída.
 
 ![Adobe I/O Nova integração](./images/api16.png)
 
-## 2.1.3.3 Autenticação Postman para Adobe I/O
+>[!NOTE]
+>
+>Há uma etapa adicional para garantir que esse projeto de Adobe I/O tenha acesso às configurações de permissão do Adobe Experience Platform. A credencial da API do seu projeto precisa ser adicionada à interface de permissões do Adobe Experience Platform, para a qual são necessários direitos de acesso de administrador do sistema. As etapas estão documentadas abaixo, mas talvez seja necessário entrar em contato com o administrador do sistema para que isso seja processado, caso você não tenha os direitos de acesso necessários.
 
-Ir para [https://www.getpostman.com/](https://www.getpostman.com/).
+## Permissões da AEP para credencial de API
 
-Clique em **Introdução**.
+Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
+
+Vá para **Permissões**, para **Funções** e clique no perfil de produto relevante.
+
+>[!NOTE]
+>
+> Os nomes de perfis de produtos variam na instância do Adobe Experience Platform, pois são específicos da instância. É necessário selecionar pelo menos um perfil de produto com os direitos de acesso adequados, que são configurados na Adobe Admin Console e na interface de permissões da AEP.
+
+![Permissões](./images/perm1.png)
+
+Clique em **Credenciais da API**.
+
+![Permissões](./images/perm2.png)
+
+Clique em **+ Adicionar credenciais de API**.
+
+![Permissões](./images/perm3.png)
+
+Selecione o projeto de Adobe I/O recém-criado e clique em **Salvar**.
+
+![Permissões](./images/perm4.png)
+
+## Autenticação Postman para Adobe I/O
+
+Ir para [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
+
+Baixe e instale a versão relevante do Postman para seu sistema operacional.
 
 ![Adobe I/O Nova integração](./images/getstarted.png)
-
-Em seguida, baixe e instale o Postman.
-
-![Adobe I/O Nova integração](./images/downloadpostman.png)
 
 Após a instalação do Postman, inicie o aplicativo.
 
 No Postman, há dois conceitos: Ambientes e Coleções.
 
-- O Ambiente contém todas as variáveis de ambiente mais ou menos consistentes. No Ambiente, você encontrará informações como o IMSOrg do nosso ambiente de plataforma, além de credenciais de segurança como a sua Chave privada e outras. O arquivo de ambiente é o que você baixou durante a configuração do Adobe I/O no exercício anterior. Seu nome é assim: **service.postman_environment.json**.
+- O Ambiente contém todas as variáveis de ambiente mais ou menos consistentes. No Ambiente, você encontrará informações como o IMSOrg do nosso ambiente de plataforma, além de credenciais de segurança como a sua Chave privada e outras. O arquivo de ambiente é o que você baixou durante a configuração do Adobe I/O no exercício anterior, seu nome é assim: **`oauth_server_to_server.postman_environment.json`**.
 
 - A coleção contém várias solicitações de API que podem ser usadas. Usaremos 2 coleções
    - 1 coleção para autenticação para Adobe I/0
@@ -179,8 +158,8 @@ Baixe o arquivo [postman.zip](./../../../assets/postman/postman_profile.zip) no 
 
 Neste arquivo **postman.zip**, você encontrará os seguintes arquivos:
 
-- `_Adobe I-O - Token.postman_collection.json`
-- `_Adobe Experience Platform Enablement.postman_collection.json`
+- `Adobe IO - OAuth.postman_collection.json`
+- `AEP Tutorial.postman_collection.json`
 - `Destination_Authoring_API.json`
 
 Descompacte o arquivo **postman.zip** e armazene esses 3 arquivos em uma pasta no seu desktop, juntamente com o ambiente Postman baixado do Adobe I/O. Você precisa ter estes 4 arquivos nessa pasta:
@@ -191,7 +170,7 @@ Volte para o Postman. Clique em **Importar**.
 
 ![Adobe I/O Nova integração](./images/postmanui.png)
 
-Clique em **Carregar arquivos**.
+Clique em **arquivos**.
 
 ![Adobe I/O Nova integração](./images/choosefiles.png)
 
@@ -209,53 +188,17 @@ A primeira coisa a fazer é verificar se você está autenticado corretamente. P
 
 Verifique se você selecionou o ambiente correto antes de executar qualquer solicitação. Você pode verificar o Ambiente selecionado no momento verificando a lista suspensa Ambiente no canto superior direito.
 
-O ambiente selecionado deve ter um nome semelhante a este:
+O Ambiente selecionado deve ter um nome semelhante a este, `--aepUserLdap-- OAuth Credential`.
 
 ![Postman](./images/envselemea.png)
 
-Clique no ícone **olho** e em **Editar** para atualizar a Chave privada no arquivo de ambiente.
-
-![Postman](./images/gear.png)
-
-Você verá isso. Todos os campos são preenchidos previamente, exceto o campo **PRIVATE_KEY**.
-
-![Postman](./images/pk2.png)
-
-A chave privada foi gerada quando você criou o Projeto Adobe I/O. Ele foi baixado como um arquivo zip chamado **config.zip**. Extraia esse arquivo zip para o desktop.
-
-![Postman](./images/pk3.png)
-
-Abra a pasta **config** e abra o arquivo **private.key** com seu editor de texto preferido.
-
-![Postman](./images/pk4.png)
-
-Você verá algo parecido com isso, copiará todo o texto para a área de transferência.
-
-![Postman](./images/pk5.png)
-
-Retorne ao Postman e cole a chave privada nos campos ao lado da variável **PRIVATE_KEY**, para as colunas **INITIAL VALUE** e **CURRENT VALUE**. Clique em **Salvar**.
-
-![Postman](./images/pk6.png)
-
 O ambiente e as coleções do Postman agora estão configurados e funcionando. Agora você pode autenticar do Postman para o Adobe I/O.
 
-Para fazer isso, você precisa carregar uma biblioteca externa que irá cuidar da criptografia e descriptografia da comunicação. Para carregar essa biblioteca, você precisa executar a solicitação com o nome **INIT: Carregar Biblioteca de Criptografia para RS256**. Selecione esta solicitação na **_Adobe I/O - Coleção de tokens** e você a verá exibida no meio da tela.
-
-![Postman](./images/iocoll.png)
-
-![Postman](./images/cryptolib.png)
-
-Clique no botão azul **Enviar**. Após alguns segundos, você deve ver uma resposta exibida na seção **Body** do Postman:
-
-![Postman](./images/cryptoresponse.png)
-
-Com a biblioteca de criptografia carregada, podemos autenticar no Adobe I/O.
-
-Em **\_Adobe I/O - Token collection**, selecione a solicitação com o nome **IMS: JWT Generate + Auth**. Novamente, você verá os detalhes da solicitação exibidos no meio da tela.
+Na coleção **Adobe IO - OAuth**, selecione a solicitação com o nome **POST - Obter Token de Acesso**. Clique em **Enviar**.
 
 ![Postman](./images/ioauth.png)
 
-Clique no botão azul **Enviar**. Após alguns segundos, você deve ver uma resposta exibida na seção **Body** do Postman:
+Após alguns segundos, você deve ver uma resposta exibida na seção **Body** do Postman:
 
 ![Postman](./images/ioauthresp.png)
 
@@ -264,22 +207,22 @@ Se a configuração tiver sido bem-sucedida, você verá uma resposta semelhante
 | Chave | Valor |
 |:-------------:| :---------------:| 
 | token_type | **portador** |
-| access_token | **eyJ4NXUiOiJpbXNfbmEx...QT7mqZkumN1tdsPEioOEl4087Dg** |
-| expires_in | **86399973** |
+| access_token | **eyJhbGciOiJSU...jrNZ6mdaQ** |
+| expires_in | **86399** |
 
-O Adobe I/O deu a você um **bearer**-token, com um valor específico (esse access_token muito longo) e uma janela de expiração.
+O Adobe I/O deu a você um **bearer**-token, com um valor específico (o access_token muito longo) e uma janela de expiração.
 
 O token que recebemos agora é válido por 24 horas. Isso significa que, após 24 horas, se você quiser usar o Postman para autenticar no Adobe I/O, precisará gerar um novo token executando essa solicitação novamente.
 
-## 2.1.3.4 API de perfil do cliente em tempo real, esquema: perfil
+## API de perfil do cliente em tempo real, esquema: perfil
 
 Agora você pode enviar sua primeira solicitação para as APIs de perfil do cliente em tempo real da plataforma.
 
-No Postman, localize a coleção **_Habilitação do Adobe Experience Platform**.
+No Postman, localize a coleção **Tutorial da AEP**.
 
 ![Postman](./images/coll_enablement.png)
 
-Em **1. Serviço de Perfil Unificado**, selecione a primeira solicitação com o nome **UPS - Perfil do GET por ID de Entidade &amp; NS**.
+Em **1. Serviço de Perfil Unificado**, clique na primeira solicitação com o nome **UPS - Perfil de GET por ID de Entidade &amp; NS**.
 
 ![Postman](./images/upscall.png)
 
@@ -305,15 +248,17 @@ Você também deve verificar os campos **Cabeçalho** - da sua solicitação. Ir
 
 ![Postman](./images/callecidheaders.png)
 
-| Chave | Valor |
-| ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxName--` |
-
 >[!NOTE]
 >
 >É necessário especificar o nome da sandbox da Adobe Experience Platform que você está usando. Seu x-sandbox-name deve ser `--aepSandboxName--`.
 
-Clique em **Enviar** para enviar sua solicitação à Platform.
+| Chave | Valor |
+| ----------- | ----------- |
+| x-sandbox-name | `--aepSandboxName--` |
+
+
+
+Depois de verificar o nome da sandbox, clique em **Enviar** para enviar sua solicitação à Platform.
 
 Você deve obter uma resposta imediata da Platform, mostrando algo como isto:
 
@@ -323,78 +268,77 @@ Esta é a resposta completa da Platform:
 
 ```javascript
 {
-    "A28iM3aJBJRbEQpOnUh5HOM9": {
-        "entityId": "A28iM3aJBJRbEQpOnUh5HOM9",
+    "A2_ETHkJxMvxbiEmIZlAj8Qn": {
+        "entityId": "A2_ETHkJxMvxbiEmIZlAj8Qn",
         "mergePolicy": {
-            "id": "e632ccb8-882a-4b5e-8375-96a1ba3df1aa"
+            "id": "64e4b0ed-dfc3-4084-8e67-643e977168d7"
         },
         "sources": [
-            "61fe23c5be4b5f19485dc379",
-            "profile-streaming-segment",
-            "61fe23cfa07c1219489b3ba4"
+            "672a10cdb015162aefedfc0f",
+            "672a10b1a05e282aee19737c"
         ],
         "tags": [
-            "1644130566774:1542:232:va7",
-            "0a1e9dd4-940a-46ec-9114-7e371cf5c4d0",
-            "aep_ups_partitioned_profile_cdc_low_lag_sla_0:106:1090888313",
-            "a6fed09e-2c56-403e-8692-4e99e4779dfa:IRL1",
-            "1644419616318:2989:31:va7",
-            "aep_ups_profile_change_event_prod_va7:71:7946633524-8361f22c-c09e-4364-b24b-b57435c4d14f"
+            "0938B898-469A-4513-8E86-87464307120F:va7",
+            "3ba34930-405e-4b31-aafa-bac22d35203e:va7"
         ],
         "identityGraph": [
-            "BUF9zMKLrXq72p4HpbsHv1SSBnr0LTAxQGdtYWlsLmNvbQ",
-            "GkicrkFjgmCjUg",
-            "GtCbrkFjgkSOFg",
-            "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "BkFuK4QcJpSPByuSBnr0LTAx",
-            "A28jSB484ziuECF3fEoXmFlF",
-            "A28iM3aJBJRbEQpOnUh5HOM9"
+            "G7z3JAFBY4I6Rzg",
+            "A2_ETHkJxMvxbiEmIZlAj8Qn",
+            "BkFvK4QcJpSPByuDGF4UAS0wMQ",
+            "BUF9zMKLrXq72p4HpbsHv1SDGF4UAS0wMUBnbWFpbC5jb20",
+            "A29btmFXmrfrYbXQWISCT9ZD"
         ],
         "entity": {
             "_experienceplatform": {
-                "individualCharacteristics": {},
-                "loyaltyDetails": {
-                    "level": "Basic",
-                    "points": 0
-                },
                 "identification": {
                     "core": {
-                        "phoneNumber": "+32473622044+06022022-01",
-                        "email": "woutervangeluwe+06022022-01@gmail.com",
-                        "loyaltyId": "5415776",
-                        "ecid": "12019606991718502754997192487345616673",
-                        "crmId": "1478212"
+                        "ecid": "79943948563923140522865572770524243489",
+                        "phoneNumber": "+32473622044+18112024-01",
+                        "email": "woutervangeluwe+18112024-01@gmail.com"
                     }
                 }
             },
+            "userAccount": {
+                "ID": "3688250"
+            },
+            "pushNotificationDetails": [
+                {
+                    "denylisted": false,
+                    "token": "2E0945F186CE5ED8CBFD1EB519A8CF38BA2B28A67FB381D45AA15EE37D289214",
+                    "identity": {
+                        "namespace": {
+                            "code": "ECID"
+                        },
+                        "id": "70559351147248820114888181867542007989"
+                    },
+                    "platform": "apns",
+                    "appID": "com.adobe.demosystem.dxdemo"
+                }
+            ],
             "personalEmail": {
-                "address": "woutervangeluwe+06022022-01@gmail.com"
+                "address": "woutervangeluwe+18112024-01@gmail.com"
             },
             "_repo": {
-                "createDate": "2022-02-06T06:56:06.424Z"
+                "createDate": "2024-11-18T10:39:12.296Z"
+            },
+            "extSourceSystemAudit": {
+                "lastUpdatedDate": "2024-11-19T07:46:52.001Z"
             },
             "testProfile": true,
-            "homeAddress": {
-                "postalCode": "1831",
-                "city": "Diegem",
-                "street1": "Culliganlaan 2F"
-            },
             "mobilePhone": {
-                "number": "+32473622044+06022022-01"
+                "number": "+32473622044"
             },
-            "segmentMembership": {
-                "ups": {
-                    "bc999ded-b6d7-40d4-87a7-d3a280b950e3": {
-                        "lastQualificationTime": "2022-02-09T20:38:33Z",
-                        "status": "exited"
-                    },
-                    "23b1cd4e-d62f-44bd-8392-3095a33109c4": {
-                        "lastQualificationTime": "2022-02-09T20:38:33Z",
-                        "status": "exited"
-                    },
-                    "f0807704-a1c8-4ac4-85dd-60db2fbf18f1": {
-                        "lastQualificationTime": "2022-02-09T20:38:33Z",
-                        "status": "existing"
+            "consents": {
+                "metadata": {
+                    "time": "2024-11-19T07:46:52.001Z"
+                },
+                "idSpecific": {
+                    "ECID": {
+                        "70559351147248820114888181867542007989": {
+                            "collect": {
+                                "val": "y"
+                            }
+                        }
                     }
                 }
             },
@@ -402,50 +346,40 @@ Esta é a resposta completa da Platform:
                 "name": {
                     "lastName": "Van Geluwe",
                     "firstName": "Wouter"
-                },
-                "gender": "female",
-                "birthDate": "1982-07-08"
+                }
             },
             "userActivityRegions": {
                 "IRL1": {
-                    "captureTimestamp": "2022-02-09T15:21:11Z"
+                    "captureTimestamp": "2024-11-19T07:46:51.239Z"
                 }
             },
             "identityMap": {
-                "email": [
-                    {
-                        "id": "woutervangeluwe+06022022-01@gmail.com"
-                    }
-                ],
-                "crmid": [
-                    {
-                        "id": "1478212"
-                    }
-                ],
                 "ecid": [
                     {
-                        "id": "12507560687324495704459439363261812234"
+                        "id": "70559351147248820114888181867542007989"
                     },
                     {
-                        "id": "12019606991718502754997192487345616673"
-                    },
+                        "id": "79943948563923140522865572770524243489"
+                    }
+                ],
+                "email": [
                     {
-                        "id": "38335942889672702722192106363935964471"
+                        "id": "woutervangeluwe+18112024-01@gmail.com"
                     }
                 ],
                 "phone": [
                     {
-                        "id": "+32473622044+06022022-01"
+                        "id": "+32473622044+18112024-01"
                     }
                 ],
-                "loyaltyid": [
+                "userid": [
                     {
-                        "id": "5415776"
+                        "id": "3688250"
                     }
                 ]
             }
         },
-        "lastModifiedAt": "2022-02-09T20:38:36Z"
+        "lastModifiedAt": "2024-11-19T07:47:23Z"
     }
 }
 ```
@@ -476,15 +410,16 @@ Você também deve verificar os campos **Cabeçalho** - da sua solicitação. Ir
 
 ![Postman](./images/callecidheaders.png)
 
-| Chave | Valor |
-| ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxName--` |
-
 >[!NOTE]
 >
 >É necessário especificar o nome da sandbox da Adobe Experience Platform que você está usando. Seu x-sandbox-name deve ser `--aepSandboxName--`.
 
-Clique no botão azul **Enviar** e verifique a resposta.
+| Chave | Valor |
+| ----------- | ----------- |
+| x-sandbox-name | `--aepSandboxName--` |
+
+
+Clique em **Enviar** e verifique a resposta. Você verá que é a mesma de antes quando estava usando a ECID como identidade.
 
 ![Postman](./images/callmobilenrresponse.png)
 
@@ -508,17 +443,17 @@ Você terá isto:
 
 Você também deve verificar os campos **Cabeçalho** - da sua solicitação. Ir para **Cabeçalhos**. Você verá isto:
 
+>[!NOTE]
+>
+>É necessário especificar o nome da sandbox da Adobe Experience Platform que você está usando. Seu x-sandbox-name deve ser `--aepSandboxName--`.
+
 ![Postman](./images/callecidheaders.png)
 
 | Chave | Valor |
 | ----------- | ----------- |
 | x-sandbox-name | `--aepSandboxName--` |
 
->[!NOTE]
->
->É necessário especificar o nome da sandbox da Adobe Experience Platform que você está usando. Seu x-sandbox-name deve ser `--aepSandboxName--`.
-
-Clique no botão azul **Enviar** e verifique a resposta.
+Clique em **Enviar** e verifique a resposta. Você verá novamente que é o mesmo de antes com ECID e número de telefone.
 
 ![Postman](./images/callemailresponse.png)
 
@@ -526,17 +461,17 @@ Esse é um tipo muito importante de flexibilidade oferecida às marcas. Isso sig
 
 Como exemplo:
 
-- a Central de Atendimento solicitará dados da Plataforma usando o namespace **telefone**
-- o Sistema de Fidelidade solicitará dados da Platform usando o namespace **email**
-- aplicativos online podem usar o namespace **ecid**
+- a Central de Atendimento pode solicitar dados da Plataforma usando o namespace **telefone**
+- o Sistema de Fidelidade pode solicitar dados da Platform usando o namespace **email**
+- os aplicativos online podem usar o namespace **ecid**
 
 A central de atendimento não sabe necessariamente que tipo de identificador é usado no Sistema de fidelidade e o Sistema de fidelidade não sabe necessariamente que tipo de identificador é usado por aplicativos online. Cada sistema individual pode usar as informações que tem e que entende para obter as informações de que precisa, quando precisa.
 
-## 2.1.3.5 API de perfil do cliente em tempo real, esquema: Profile e ExperienceEvent
+## API de perfil do cliente em tempo real, esquema: Profile e ExperienceEvent
 
 Depois de consultar com êxito as APIs da plataforma para obter dados de perfil, vamos fazer o mesmo com os dados do ExperienceEvent.
 
-No Postman, localize a coleção **_Habilitação do Adobe Experience Platform**.
+No Postman, localize a coleção **Tutorial da AEP**.
 
 ![Postman](./images/coll_enablement.png)
 
@@ -568,13 +503,13 @@ Você também deve verificar os campos **Cabeçalho** - da sua solicitação. Ir
 
 ![Postman](./images/eecallecidheaders.png)
 
-| Chave | Valor |
-| ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxName--` |
-
 >[!NOTE]
 >
 >É necessário especificar o nome da sandbox da Adobe Experience Platform que você está usando. Seu x-sandbox-name deve ser `--aepSandboxName--`.
+
+| Chave | Valor |
+| ----------- | ----------- |
+| x-sandbox-name | `--aepSandboxName--` |
 
 Clique em **Enviar** para enviar sua solicitação à Platform.
 
@@ -590,35 +525,55 @@ Além disso, quando o painel Raio X mostra informações do ExperienceEvent, ele
 {
     "_page": {
         "orderby": "timestamp",
-        "start": "d686ab8a-2d0c-4722-9ff5-bfc1020b0b55-0",
-        "count": 31,
+        "start": "b1325606-9b96-4e51-b7dd-73aacf527c72-0",
+        "count": 14,
         "next": ""
     },
     "children": [
         {
-            "relatedEntityId": "A28iM3aJBJRbEQpOnUh5HOM9",
-            "entityId": "d686ab8a-2d0c-4722-9ff5-bfc1020b0b55-0",
-            "timestamp": 1644127126596,
+            "relatedEntityId": "A2_ETHkJxMvxbiEmIZlAj8Qn",
+            "entityId": "b1325606-9b96-4e51-b7dd-73aacf527c72-0",
+            "sourceId": "672a10b1074ceb2af0aa7034",
+            "timestamp": 1731923802848,
             "entity": {
                 "environment": {
-                    "ipV4": "213.118.129.117",
+                    "ipV4": "141.134.241.99",
                     "type": "browser",
                     "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+                        "userAgentClientHints": {
+                            "mobile": false,
+                            "platform": "macOS",
+                            "brands": [
+                                {
+                                    "brand": "Chromium",
+                                    "version": "130"
+                                },
+                                {
+                                    "brand": "Google Chrome",
+                                    "version": "130"
+                                },
+                                {
+                                    "brand": "Not?A_Brand",
+                                    "version": "99"
+                                }
+                            ]
+                        },
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+                        "viewportHeight": 992,
+                        "viewportWidth": 1920
                     }
                 },
                 "web": {
                     "webPageDetails": {
+                        "name": "Home",
+                        "viewName": "Home",
                         "pageViews": {
                             "value": 1
                         },
-                        "name": "vangeluw-OCUC",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
+                        "URL": "https://dsn.adobe.com/web/vangeluw-QIMU"
                     },
                     "webReferrer": {
-                        "URL": "https://adobe.okta.com/"
+                        "URL": "https://auth.services.adobe.com/"
                     }
                 },
                 "_experienceplatform": {
@@ -628,32 +583,32 @@ Além disso, quando o painel Raio X mostra informações do ExperienceEvent, ele
                         }
                     },
                     "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
+                        "brandName": "vangeluw-QIMU"
                     },
                     "identification": {
                         "core": {
-                            "ecid": "12507560687324495704459439363261812234"
+                            "ecid": "79943948563923140522865572770524243489"
                         }
                     }
                 },
                 "implementationDetails": {
                     "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
+                    "version": "2.24.0+2.27.0",
                     "environment": "browser"
                 },
                 "identityMap": {
                     "ECID": [
                         {
-                            "id": "12507560687324495704459439363261812234",
+                            "id": "79943948563923140522865572770524243489",
                             "authenticatedState": "ambiguous",
                             "primary": true
                         }
                     ]
                 },
                 "eventType": "web.webpagedetails.pageViews",
-                "_id": "d686ab8a-2d0c-4722-9ff5-bfc1020b0b55-0",
+                "_id": "b1325606-9b96-4e51-b7dd-73aacf527c72-0",
                 "placeContext": {
-                    "localTime": "2022-02-06T06:58:46.596+01:00",
+                    "localTime": "2024-11-18T10:56:42.848+01:00",
                     "localTimezoneOffset": -60
                 },
                 "device": {
@@ -661,743 +616,10 @@ Além disso, quando o painel Raio X mostra informações do ExperienceEvent, ele
                     "screenWidth": 1920,
                     "screenHeight": 1080
                 },
-                "timestamp": "2022-02-06T05:58:46.596Z"
+                "timestamp": "2024-11-18T09:56:42.848Z"
             },
-            "lastModifiedAt": "2022-02-06T05:59:48Z"
+            "lastModifiedAt": "2024-11-18T09:56:45Z"
         },
-        {
-            "relatedEntityId": "A28iM3aJBJRbEQpOnUh5HOM9",
-            "entityId": "919a46bf-a591-4c32-9201-b72250d5f5d9-0",
-            "timestamp": 1644127129876,
-            "entity": {
-                "environment": {
-                    "ipV4": "213.118.129.117",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "vangeluw-OCUC#",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC#"
-                    },
-                    "webReferrer": {
-                        "URL": "https://adobe.okta.com/"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "12507560687324495704459439363261812234"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "12507560687324495704459439363261812234",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "919a46bf-a591-4c32-9201-b72250d5f5d9-0",
-                "placeContext": {
-                    "localTime": "2022-02-06T06:58:49.876+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-06T05:58:49.876Z"
-            },
-            "lastModifiedAt": "2022-02-06T05:59:48Z"
-        },
-        {
-            "relatedEntityId": "A28iM3aJBJRbEQpOnUh5HOM9",
-            "entityId": "41a80489-00d4-446c-b456-8cb19c3f309a-0",
-            "timestamp": 1644130597134,
-            "entity": {
-                "environment": {
-                    "ipV4": "213.118.129.117",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 1001,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "login",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/login"
-                    },
-                    "webReferrer": {
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/login"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "12507560687324495704459439363261812234"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "12507560687324495704459439363261812234",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "41a80489-00d4-446c-b456-8cb19c3f309a-0",
-                "placeContext": {
-                    "localTime": "2022-02-06T07:56:37.134+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-06T06:56:37.134Z"
-            },
-            "lastModifiedAt": "2022-02-06T06:56:38Z"
-        },
-        {
-            "relatedEntityId": "A28jSB484ziuECF3fEoXmFlF",
-            "entityId": "8ACC7B6C-2320-4865-B414-3B0CFA01F628",
-            "timestamp": 1644419615000,
-            "entity": {
-                "environment": {
-                    "ipV4": "213.118.129.117",
-                    "browserDetails": {
-                        "userAgent": "Mozilla/5.0 (iPhone; CPU OS 15_3 like Mac OS X; en_BE)"
-                    }
-                },
-                "eventType": "application.login",
-                "_id": "8ACC7B6C-2320-4865-B414-3B0CFA01F628",
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "mobile"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-2L6V"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "12019606991718502754997192487345616673",
-                            "email": "woutervangeluwe+06022022-01@gmail.com"
-                        }
-                    }
-                },
-                "timestamp": "2022-02-09T15:13:35Z",
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "12019606991718502754997192487345616673",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                }
-            },
-            "lastModifiedAt": "2022-02-09T15:13:38Z"
-        },
-        {
-            "relatedEntityId": "A28jSB484ziuECF3fEoXmFlF",
-            "entityId": "54F68CE5-E9E1-4AD0-91B1-7B607A9285C4",
-            "timestamp": 1644419658000,
-            "entity": {
-                "environment": {
-                    "ipV4": "213.118.129.117",
-                    "browserDetails": {
-                        "userAgent": "Mozilla/5.0 (iPhone; CPU OS 15_3 like Mac OS X; en_BE)"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "mobile"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-2L6V"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "12019606991718502754997192487345616673"
-                        }
-                    }
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "12019606991718502754997192487345616673",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "commerce.productViews",
-                "_id": "54F68CE5-E9E1-4AD0-91B1-7B607A9285C4",
-                "commerce": {
-                    "productViews": {
-                        "value": 1
-                    }
-                },
-                "productListItems": [
-                    {
-                        "quantity": 1,
-                        "productAddMethod": "Mobile",
-                        "_experienceplatform": {
-                            "core": {
-                                "mainCategory": "Women",
-                                "productURL": "product1",
-                                "imageURL": "https://contentviewer.s3.amazonaws.com/helium/wh08-white_main.jpg"
-                            }
-                        },
-                        "priceTotal": 42,
-                        "name": "Cassia Funnel Sweatshirt",
-                        "SKU": "product1",
-                        "currencyCode": "USD"
-                    }
-                ],
-                "timestamp": "2022-02-09T15:14:18Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:14:21Z"
-        },
-        {
-            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "entityId": "bfe26684-bc3b-40c5-9fe5-5aba854c3227-0",
-            "timestamp": 1644420036035,
-            "entity": {
-                "environment": {
-                    "ipV4": "193.105.139.131",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "vangeluw-OCUC",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
-                    },
-                    "webReferrer": {
-                        "URL": "https://adobe.okta.com/"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "38335942889672702722192106363935964471"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "38335942889672702722192106363935964471",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "bfe26684-bc3b-40c5-9fe5-5aba854c3227-0",
-                "placeContext": {
-                    "localTime": "2022-02-09T16:20:36.035+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-09T15:20:36.035Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:20:39Z"
-        },
-        {
-            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "entityId": "0480c434-8fcd-4a80-b298-c561276ac989-0",
-            "timestamp": 1644420037078,
-            "entity": {
-                "environment": {
-                    "ipV4": "193.105.139.131",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "vangeluw-OCUC#",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC#"
-                    },
-                    "webReferrer": {
-                        "URL": "https://adobe.okta.com/"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "38335942889672702722192106363935964471"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "38335942889672702722192106363935964471",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "0480c434-8fcd-4a80-b298-c561276ac989-0",
-                "placeContext": {
-                    "localTime": "2022-02-09T16:20:37.078+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-09T15:20:37.078Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:20:39Z"
-        },
-        {
-            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "entityId": "6b1b3983-6966-4551-a711-6b6e410fd819-0",
-            "timestamp": 1644420045993,
-            "entity": {
-                "environment": {
-                    "ipV4": "193.105.139.131",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "login",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/login"
-                    },
-                    "webReferrer": {
-                        "URL": "https://adobe.okta.com/"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "38335942889672702722192106363935964471"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "38335942889672702722192106363935964471",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "6b1b3983-6966-4551-a711-6b6e410fd819-0",
-                "placeContext": {
-                    "localTime": "2022-02-09T16:20:45.993+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-09T15:20:45.993Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:20:47Z"
-        },
-        {
-            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "entityId": "ae0f3551-7753-4467-8547-8fdbb66c2214-0",
-            "timestamp": 1644420058565,
-            "entity": {
-                "environment": {
-                    "ipV4": "193.105.139.131",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
-                    },
-                    "webReferrer": {
-                        "URL": "https://adobe.okta.com/"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "38335942889672702722192106363935964471",
-                            "email": "woutervangeluwe+06022022-01@gmail.com"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "38335942889672702722192106363935964471",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.login",
-                "_id": "ae0f3551-7753-4467-8547-8fdbb66c2214-0",
-                "placeContext": {
-                    "localTime": "2022-02-09T16:20:58.565+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-09T15:20:58.565Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:20:59Z"
-        },
-        {
-            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "entityId": "5e67a9c9-b201-4e21-bd3a-4d10475f6156-0",
-            "timestamp": 1644420058653,
-            "entity": {
-                "environment": {
-                    "ipV4": "193.105.139.131",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "home",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
-                    },
-                    "webReferrer": {
-                        "URL": "https://adobe.okta.com/"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "38335942889672702722192106363935964471"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "38335942889672702722192106363935964471",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "5e67a9c9-b201-4e21-bd3a-4d10475f6156-0",
-                "placeContext": {
-                    "localTime": "2022-02-09T16:20:58.653+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-09T15:20:58.653Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:21:00Z"
-        },
-        {
-            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "entityId": "33253c5a-6a7e-4858-a7d2-4e6d4a1c7901-0",
-            "timestamp": 1644420061804,
-            "entity": {
-                "environment": {
-                    "ipV4": "193.105.139.131",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "vangeluw-OCUC",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
-                    },
-                    "webReferrer": {
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "38335942889672702722192106363935964471"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "38335942889672702722192106363935964471",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "33253c5a-6a7e-4858-a7d2-4e6d4a1c7901-0",
-                "placeContext": {
-                    "localTime": "2022-02-09T16:21:01.804+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-09T15:21:01.804Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:21:03Z"
-        },
-        {
-            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
-            "entityId": "d8e81fb7-6de9-44c1-b9c6-60d93b520209-0",
-            "timestamp": 1644420071737,
-            "entity": {
-                "environment": {
-                    "ipV4": "193.105.139.131",
-                    "type": "browser",
-                    "browserDetails": {
-                        "viewportHeight": 969,
-                        "viewportWidth": 1920,
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
-                    }
-                },
-                "web": {
-                    "webPageDetails": {
-                        "pageViews": {
-                            "value": 1
-                        },
-                        "name": "vangeluw-OCUC",
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
-                    },
-                    "webReferrer": {
-                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
-                    }
-                },
-                "_experienceplatform": {
-                    "interactionDetails": {
-                        "core": {
-                            "channel": "web"
-                        }
-                    },
-                    "demoEnvironment": {
-                        "brandName": "vangeluw-OCUC"
-                    },
-                    "identification": {
-                        "core": {
-                            "ecid": "38335942889672702722192106363935964471"
-                        }
-                    }
-                },
-                "implementationDetails": {
-                    "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.8.0+2.9.0",
-                    "environment": "browser"
-                },
-                "identityMap": {
-                    "ECID": [
-                        {
-                            "id": "38335942889672702722192106363935964471",
-                            "authenticatedState": "ambiguous",
-                            "primary": true
-                        }
-                    ]
-                },
-                "eventType": "web.webpagedetails.pageViews",
-                "_id": "d8e81fb7-6de9-44c1-b9c6-60d93b520209-0",
-                "placeContext": {
-                    "localTime": "2022-02-09T16:21:11.737+01:00",
-                    "localTimezoneOffset": -60
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920,
-                    "screenHeight": 1080
-                },
-                "timestamp": "2022-02-09T15:21:11.737Z"
-            },
-            "lastModifiedAt": "2022-02-09T15:21:14Z"
-        }
-    ],
     "_links": {
         "next": {
             "href": ""

@@ -1,18 +1,19 @@
 ---
-title: Coleta de dados - FAC - Introdução ao FAC
-description: Foundation - FAC - Introdução ao FAC
+title: Coleta de dados - FAC - Configure sua conta Snowflake
+description: Foundation - FAC - Configure sua conta Snowflake
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: fb8a70d9-9789-4fca-90e4-771be2cfc3dc
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '30'
+source-wordcount: '39'
 ht-degree: 0%
 
 ---
 
-# 1.3.1 Introdução ao FAC
+# 1.3.1 Configurar a conta Snowflake
 
-Próxima etapa: [Resumo e benefícios](./summary.md)
+Próxima Etapa: [1.3.2 Criar esquemas, modelo de dados e links](./ex2.md)
 
 [Voltar ao módulo 1.3](./fac.md)
 

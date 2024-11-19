@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - De desconhecido para conhecid
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Agora, você assimilará dados na Adobe Experience Platform e esses dados serão
 
 ### Fluxo de Jornada do cliente
 
-Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Editar**.
+Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Executar** para abri-lo.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 
@@ -79,7 +79,7 @@ Clique em **Entrar** para ir para a página de Registro/Logon.
 
 ![Demonstração](./images/pv8.png)
 
-Clique em **CRIAR UMA CONTA**.
+Clique em **Criar uma conta**.
 
 ![Demonstração](./images/pv9.png)
 

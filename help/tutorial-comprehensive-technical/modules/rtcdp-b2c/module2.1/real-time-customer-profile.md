@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 Foundation - Perfil do cliente em tempo real
 
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-Neste módulo, analisaremos em detalhes os recursos de Perfil e identidade do cliente em tempo real do Adobe Experience Platform. Você aprenderá como os públicos-alvo podem ser definidos, a função do Serviço de identidade e da ID de Experience Cloud e como definir consultas do construtor de segmentos para definir seus próprios segmentos.
+Neste módulo, você detalhará os recursos de Perfil e identidade do cliente em tempo real do Adobe Experience Platform. Você aprenderá como os públicos-alvo podem ser definidos, a função do Serviço de identidade e da ID de Experience Cloud e como definir consultas do construtor de segmentos para definir seus próprios segmentos.
 
 ## Objetivos de aprendizagem
 
 - Saiba como visualizar o Perfil de cliente em tempo real de um cliente por meio da interface do usuário do Adobe Experience Platform
 - Saiba como criar um segmento usando o Construtor de segmentos da Adobe Experience Platform
-- Saiba como criar um segmento e armazenar os resultados do segmento em um conjunto de dados usando APIs do Adobe Experience Platform
 - Saiba mais sobre o impacto do acesso a um perfil completo do cliente, incluindo comportamento em tempo real, em ambientes offline
 
 ## Pré-requisitos
@@ -54,11 +51,7 @@ Neste exercício, você usará o Postman e o Adobe I/O para exibir seu próprio 
 
 Neste exercício, você criará um segmento usando o Construtor de segmentos da Adobe Experience Platform.
 
-[2.1.5 Criar um segmento - API](./ex5.md)
-
-Neste exercício, você usará o Postman e o Adobe I/O para criar um segmento e armazenar os resultados dele como um conjunto de dados, utilizando as APIs da Adobe Experience Platform.
-
-[2.1.6 Veja seu Perfil de cliente em tempo real em ação na central de atendimento](./ex6.md)
+[2.1.5 Veja seu Perfil de cliente em tempo real em ação na central de atendimento](./ex5.md)
 
 Neste exercício, você representará um funcionário da central de atendimento que recebe uma chamada de um cliente. Para realmente causar um impacto na experiência desse cliente, você precisará acessar todas as informações disponíveis em tempo real.
 

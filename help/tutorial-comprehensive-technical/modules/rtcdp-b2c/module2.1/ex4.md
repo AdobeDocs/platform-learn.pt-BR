@@ -3,9 +3,10 @@ title: Foundation - Perfil do cliente em tempo real - Criar um segmento - Interf
 description: Foundation - Perfil do cliente em tempo real - Criar um segmento - Interface do usuário
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: db1d744d-c4ff-4131-b104-98bb70269140
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '694'
 ht-degree: 3%
 
 ---
@@ -14,27 +15,29 @@ ht-degree: 3%
 
 Neste exercício, você criará um segmento usando o Construtor de segmentos da Adobe Experience Platform.
 
-## Story
-
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-No menu no lado esquerdo, vá para **Segmentos**. Nesta página, você pode ter uma visão geral de todos os segmentos existentes. Clique no botão **+ Criar segmento** para começar a criar um novo segmento.
+No menu no lado esquerdo, vá para **Públicos-alvo**. Nesta página, você pode ter uma visão geral de todos os segmentos existentes. Clique no botão **+ Criar público-alvo** para começar a criar um novo segmento.
 
 ![Segmentação](./images/menuseg.png)
+
+Selecione **Regra de compilação** e clique em **Criar**.
+
+![Segmentação](./images/menusegbr.png)
 
 Quando estiver no novo construtor de segmentos, você notará imediatamente a opção de menu **Atributos** e a referência ao **Perfil individual XDM**.
 
 ![Segmentação](./images/segmentationui.png)
 
-Como o XDM é a linguagem que impulsiona os negócios da experiência, o XDM também é a base para o construtor de segmentos. Todos os dados assimilados na Platform devem ser mapeados em relação ao XDM e, como tal, todos os dados se tornam parte do mesmo modelo de dados, independentemente de onde esses dados vêm. Isso oferece uma grande vantagem ao criar segmentos. A partir dessa interface do construtor de segmentos, é possível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os segmentos criados no Construtor de segmentos podem ser enviados para soluções como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
+Como o XDM é a linguagem que impulsiona os negócios da experiência, o XDM também é a base para o construtor de público-alvo. Todos os dados assimilados na Platform devem ser mapeados em relação ao XDM e, como tal, todos os dados se tornam parte do mesmo modelo de dados, independentemente de onde esses dados vêm. Isso oferece uma grande vantagem ao criar públicos-alvo, como nessa interface única do construtor de públicos-alvo, é possível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os públicos-alvo criados no construtor de públicos-alvo podem ser enviados para soluções como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-Vamos criar um segmento que inclua todos os clientes **homens**.
+Vamos criar um público que inclua todos os clientes **homens**.
 
 Para chegar ao atributo de gênero, você precisa entender e conhecer o XDM.
 
@@ -42,7 +45,7 @@ Sexo é um atributo de Pessoa, que pode ser encontrado em Atributos. Para chegar
 
 ![Segmentação](./images/person.png)
 
-Você verá isso. Em **Pessoa**, você pode encontrar o atributo **Gênero**. Arraste o atributo Gender para o construtor de segmentos.
+Você verá isso. Em **Pessoa**, você pode encontrar o atributo **Gênero**. Arraste o atributo Gênero para o construtor de público-alvo.
 
 ![Segmentação](./images/gender.png)
 
@@ -50,7 +53,7 @@ Agora é possível escolher o gênero específico entre as opções pré-preench
 
 ![Segmentação](./images/genderselection.png)
 
-Após selecionar **Masculino**, você pode obter uma estimativa da população do segmento pressionando o botão **Atualizar Estimativa**. Isso é muito útil para um usuário empresarial, para que ele possa ver o impacto de determinados atributos no tamanho do segmento resultante.
+Depois de selecionar **Masculino**, você pode obter uma estimativa da população do público pressionando o botão **Atualizar estimativa**. Isso é muito útil para um usuário empresarial, para que ele possa ver o impacto de determinados atributos no tamanho do público resultante.
 
 ![Segmentação](./images/segmentpreview.png)
 
@@ -58,21 +61,17 @@ Você verá uma estimativa como a abaixo:
 
 ![Segmentação](./images/segmentpreviewest.png)
 
-Em seguida, você deve refinar um pouco seu segmento. Você precisa criar um segmento de todos os clientes do sexo masculino que visualizaram o produto **Proteus Fitness Jackshirt (Orange)**.
+Em seguida, você deve refinar um pouco o seu público-alvo. Você precisa criar um público-alvo de todos os clientes do sexo masculino que visualizaram o produto **iPhone 15 Pro**.
 
-Para criar esse segmento, é necessário adicionar um Evento de experiência. Você pode encontrar todos os Eventos de Experiência clicando no ícone **Eventos** na barra de menus **Campos**.
+Para criar esse público-alvo, é necessário adicionar um Evento de experiência. Você pode encontrar todos os Eventos de Experiência clicando no ícone **Eventos** na barra de menus **Campos**. Em seguida, você verá o nó **XDM ExperienceEvents** de nível superior. Clique em **XDM ExperienceEvent**.
 
 ![Segmentação](./images/findee.png)
-
-Em seguida, você verá o nó **XDM ExperienceEvents** de nível superior. Clique em **XDM ExperienceEvent**.
-
-![Segmentação](./images/see.png)
 
 Vá para **Itens da Lista de Produtos**.
 
 ![Segmentação](./images/plitems.png)
 
-Selecione **Nome** e arraste e solte o objeto **Nome** do menu esquerdo na tela do construtor de segmentos na seção **Eventos**.
+Selecione **Nome** e arraste e solte o objeto **Nome** do menu esquerdo na tela do construtor de públicos-alvo na seção **Eventos**.
 
 ![Segmentação](./images/eeweb.png)
 
@@ -80,45 +79,42 @@ Você verá isto:
 
 ![Segmentação](./images/eewebpdtlname.png)
 
-O parâmetro de comparação deve ser **igual** e, no campo de entrada, insira **MONTANA WIND JACKET**.
+O parâmetro de comparação deve ser **igual** e, no campo de entrada, digite **iPhone 15 Pro**.
 
 ![Segmentação](./images/pv.png)
 
-Toda vez que você adiciona um elemento ao construtor de segmentos, é possível clicar no botão **Atualizar estimativa** para obter uma nova estimativa da população do seu segmento.
+Toda vez que você adiciona um elemento ao construtor de público-alvo, você pode clicar no botão **Atualizar estimativa** para obter uma nova estimativa da população do público-alvo.
 
-Até o momento, você só usou a interface do para criar seu segmento, mas também há uma opção de código para criar um segmento.
+Até o momento, você só usou a interface do para criar seu público-alvo, mas também há uma opção de código para criar um público-alvo.
 
-Ao criar um segmento, você está compondo uma consulta do Profile Query Language (PQL). Para visualizar o código PQL, você pode clicar no alternador da **Visualização de código** no canto superior direito do construtor de segmentos.
+Ao criar um público-alvo, você está compondo uma consulta do Profile Query Language (PQL). Para visualizar o código PQL, você pode clicar no alternador da **Exibição de código**, no canto superior direito do construtor de público-alvo.
 
 ![Segmentação](./images/codeview.png)
 
 Agora você pode ver a declaração completa do PQL:
 
 ```sql
-person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItems.exists(name.equals("MONTANA WIND JACKET", false)))])
+person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItems.exists(name.equals("iPhone 15 Pro", false)))])
 ```
 
-Você também pode visualizar uma amostra dos perfis de clientes que fazem parte deste segmento clicando em **Exibir perfis**.
-
-![Segmentação](./images/previewprofiles.png)
+Você também pode visualizar uma amostra dos perfis de clientes que fazem parte deste público-alvo clicando em **Exibir perfis**.
 
 ![Segmentação](./images/previewprofilesdtl.png)
 
-Por fim, vamos dar um nome ao seu segmento e salvá-lo.
+Por fim, vamos dar um nome ao seu público-alvo,
+defina o **Método de avaliação** como **Streaming** e clique em **Publish**.
 
 Como convenção de nomenclatura, use:
 
-- `--aepUserLdap-- - Male customers with interest in Montana Wind Jacket`
+- `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`
 
 ![Segmentação](./images/segmentname.png)
 
-Em seguida, clique no botão **Salvar e fechar** para salvar seu segmento. Depois disso, você será direcionado de volta à página de visão geral do segmento.
+Você será direcionado de volta à página Visão geral do público-alvo.
 
 ![Segmentação](./images/savedsegment.png)
 
-Agora você pode continuar com o próximo exercício e criar um segmento por meio da API.
-
-Próxima Etapa: [2.1.5 Criar um segmento - API](./ex5.md)
+Próxima Etapa: [2.1.5 Veja seu Perfil de Cliente em Tempo Real em ação na Central de Atendimento](./ex5.md)
 
 [Voltar ao módulo 2.1](./real-time-customer-profile.md)
 
