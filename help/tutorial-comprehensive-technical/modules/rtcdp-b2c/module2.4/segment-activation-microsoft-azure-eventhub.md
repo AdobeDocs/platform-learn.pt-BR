@@ -1,23 +1,21 @@
 ---
-title: Ativação de segmento para o Hub de eventos do Microsoft Azure
-description: Ativação de segmento para o Hub de eventos do Microsoft Azure
+title: Audience Activation para o Hub de Eventos do Microsoft Azure
+description: Audience Activation para o Hub de Eventos do Microsoft Azure
 kt: 5342
 doc-type: tutorial
 exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
 
-# 2.4 Real-Time CDP: Ativação de segmentos para o Hub de eventos do Microsoft Azure
+# 2.4 Real-Time CDP: Audience Activation para o Hub de eventos do Microsoft Azure
 
-**Autores: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+Neste módulo, você configurará um destino do Microsoft Azure EventHub como destino em tempo real para a CDP em tempo real do Adobe Experience Platform. Você também configurará e implantará uma função do Azure que será acionada em tempo real sempre que a Adobe Experience Platform fornecer uma carga de público-alvo para seu destino do Azure EventHub. A Azure Function que você acionará mostrará o mecanismo dos recursos de ativação da Adobe Experience Platform Real-time CDP.
 
-Neste módulo, você configurará um destino do Microsoft Azure EventHub como destino em tempo real para a CDP em tempo real do Adobe Experience Platform. Você também configurará e implantará uma função do Azure que será acionada em tempo real sempre que a Adobe Experience Platform entregar uma carga de segmento para seu destino do Azure EventHub. A Azure Function que você acionará mostrará o mecanismo dos recursos de ativação da Adobe Experience Platform Real-time CDP.
-
-Como parte desse módulo, você também compreenderá o que aciona a Real-time CDP para realmente fornecer uma carga útil a um destino especificado. Também discutiremos o status de uma qualificação de segmento e como ela está relacionada à ativação.
+Como parte desse módulo, você também compreenderá o que aciona a Real-time CDP para realmente fornecer uma carga útil a um destino especificado. Também discutiremos o status de uma qualificação de público-alvo e como ela está relacionada à ativação.
 
 A CDP em tempo real da Adobe Experience Platform é compatível com a ativação de dados para destinos de armazenamento na nuvem de transmissão, permitindo exportar dados e eventos de público-alvo em tempo real para esses destinos no formato JSON. Em seguida, você pode descrever a lógica de negócios sobre esses eventos em seus destinos
 
@@ -29,13 +27,12 @@ Os Hubs de eventos do Microsoft Azure são um serviço de assimilação de dados
 - Configure um destino RTCDP para seu Hub de Eventos do Microsoft Azure
 - Entenda quando a Real-time CDP é ativada e como é a carga de ativação
 - Configure o Visual Studio Code para desenvolver, testar e implantar seu projeto do Azure
-- Criar e implantar uma função do Azure que consome qualificações de segmentos entregues em tempo real pela RTCDP
+- Criar e implantar uma função do Azure que consuma qualificações de público-alvo entregues em tempo real pela RTCDP
 
 ## Pré-requisitos
 
 - Acesso ao [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Familiaridade com o ambiente do site de demonstração da AEP
-- Entenda como definir, usar e ativar segmentos de transmissão no Adobe Experience Platform
+- Entenda como definir, usar e ativar públicos no Adobe Experience Platform
 
 >[!NOTE]
 >
@@ -43,33 +40,33 @@ Os Hubs de eventos do Microsoft Azure são um serviço de assimilação de dados
 
 ## Exercícios
 
-[2.4.0 Configurar o ambiente](./ex0.md)
+[2.4.1 Configurar o ambiente](./ex1.md)
 
 Neste exercício, você configurará seu ambiente do Microsoft Azure.
 
-[2.4.1 Configurar o ambiente do Microsoft Azure EventHub](./ex1.md)
+[2.4.2 Configurar o ambiente do Microsoft Azure EventHub](./ex2.md)
 
 Neste exercício, você configurará seu ambiente do Microsoft Azure EventHub.
 
-[2.4.2 Configurar o destino do Hub de eventos do Azure no Adobe Experience Platform](./ex2.md)
+[2.4.3 Configurar o destino do Hub de eventos do Azure no Adobe Experience Platform](./ex3.md)
 
-Neste exercício, você configurará sua conexão de destino da Real-time CDP que fornecerá segmentos em tempo real ao EventHub configurado no exercício anterior.
+Neste exercício, você configurará sua conexão de destino da Real-time CDP que fornecerá públicos-alvo em tempo real para a instância do Hub de eventos configurada no exercício anterior.
 
-[2.4.3 Criar um segmento](./ex3.md)
+[2.4.4 Criar um público-alvo](./ex4.md)
 
-Neste exercício, você criará um segmento de transmissão no Adobe Experience Platform
+Neste exercício, você criará um público-alvo no Adobe Experience Platform
 
-[2.4.4 Ativar segmento](./ex4.md)
+[2.4.5 Ativar o público-alvo](./ex5.md)
 
-Neste exercício, você ativará o segmento de transmissão para o destino do Real-time CDP EventHub.
+Neste exercício, você ativará o público-alvo para o destino do EventHub.
 
-[2.4.5 Criar seu projeto do Microsoft Azure](./ex5.md)
+[2.4.6 Criar seu projeto do Microsoft Azure](./ex6.md)
 
-Neste exercício, você criará uma função do Azure que será acionada em tempo real quando a Adobe Experience Platform ativar qualificações de segmento para o destino do Hub de eventos do Azure correspondente.
+Neste exercício, você criará uma função do Azure que será acionada em tempo real quando a Adobe Experience Platform fornecer qualificações de público-alvo para o destino do Hub de Eventos do Azure correspondente.
 
-[2.4.6 Cenário completo](./ex6.md)
+[2.4.7 Cenário completo](./ex7.md)
 
-Neste ponto, tudo está configurado. Agora você pode navegar pelo seu site de demonstração da AEP e obter qualificações de segmento entregues à sua função de Acionador do EventHub do Microsoft Azure.
+Neste ponto, tudo está configurado. Agora você pode navegar pelo site de demonstração e obter qualificações de público-alvo entregues à função de Acionador do Hub de Eventos do Microsoft Azure.
 
 [Resumo e benefícios](./summary.md)
 
