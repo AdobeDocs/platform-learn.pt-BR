@@ -1,19 +1,19 @@
 ---
-title: Foundation - Perfil do cliente em tempo real - Criar um segmento - Interface do usuário
-description: Foundation - Perfil do cliente em tempo real - Criar um segmento - Interface do usuário
+title: Foundation - Perfil do cliente em tempo real - Criar um público-alvo - Interface do usuário
+description: Foundation - Perfil do cliente em tempo real - Criar um público-alvo - Interface do usuário
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4 Criar um segmento - IU
+# 2.1.4 Criar um público-alvo - interface
 
-Neste exercício, você criará um segmento usando o Construtor de segmentos da Adobe Experience Platform.
+Neste exercício, você criará um público-alvo usando o Audience Builder da Adobe Experience Platform.
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
@@ -23,7 +23,7 @@ Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser se
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-No menu no lado esquerdo, vá para **Públicos-alvo**. Nesta página, você pode ter uma visão geral de todos os segmentos existentes. Clique no botão **+ Criar público-alvo** para começar a criar um novo segmento.
+No menu no lado esquerdo, vá para **Públicos-alvo**. Nesta página, você pode ter uma visão geral de todos os públicos-alvo existentes. Clique no botão **+ Criar público-alvo** para começar a criar um novo público-alvo.
 
 ![Segmentação](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ Selecione **Regra de compilação** e clique em **Criar**.
 
 ![Segmentação](./images/menusegbr.png)
 
-Quando estiver no novo construtor de segmentos, você notará imediatamente a opção de menu **Atributos** e a referência ao **Perfil individual XDM**.
+Quando estiver no novo construtor de público-alvo, você notará imediatamente a opção de menu **Atributos** e a referência ao **Perfil individual XDM**.
 
 ![Segmentação](./images/segmentationui.png)
 

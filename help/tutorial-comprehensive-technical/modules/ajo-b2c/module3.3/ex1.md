@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -92,9 +93,9 @@ Agora você verá todos os campos do Posicionamento:
 
 ## 3.3.1.4 Regras de decisão
 
-Uma Regra (também chamada de regra de elegibilidade) é equivalente a um **Segmento**. Uma regra é, na verdade, um segmento em si, com a única diferença de que uma regra pode ser usada com uma oferta para fornecer a melhor oferta a um perfil no Adobe Experience Platform.
+Uma Regra (também chamada de regra de elegibilidade) é equivalente a um **público-alvo**. Uma regra é, na verdade, um público-alvo com a única diferença de que uma regra pode ser usada com uma oferta para fornecer a melhor oferta a um perfil no Adobe Experience Platform.
 
-Como você já sabe como definir Segmentos com base nos módulos de ativação anteriores, vamos rever rapidamente o Ambiente de segmentação:
+Como você já sabe definir públicos-alvo com base nos módulos de ativação anteriores, vamos rever rapidamente o Ambiente de segmentação:
 
 Vá para **Regras**. Clique em **+ Criar regra**.
 
@@ -106,7 +107,7 @@ Em seguida, você verá o ambiente de Segmentação do Adobe Experience Platform
 
 Agora é possível acessar todos os campos que fazem parte do Esquema de união para o Perfil do cliente em tempo real e criar qualquer regra.
 
-Também é interessante saber que você pode simplesmente reutilizar segmentos já definidos no Adobe Experience Platform acessando **Públicos-alvo** > ``--aepTenantId--``.
+Também é interessante saber que você pode simplesmente reutilizar públicos já definidos no Adobe Experience Platform acessando **Públicos-alvo** > ``--aepTenantId--``.
 
 ![Regra de decisão](./images/decisionruleaud.png)
 

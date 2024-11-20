@@ -4,10 +4,10 @@ description: Veja seu Perfil de cliente em tempo real em ação na central de at
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ Em seguida, selecione uma de suas identidades e o namespace correspondente e cli
 | ID de e-mail | woutervangeluwe+18112024-01@gmail.com |
 | ID do número de celular | +32473622044+18112024-01 |
 
-Quando o cliente liga para a central de atendimento, o número de telefone pode ser usado para identificar o cliente. Portanto, neste exercício, você usará o número de telefone para recuperar o perfil do cliente no aplicativo CX.
-
 ![Demonstração](./images/19.png)
 
-Agora você verá as informações que seriam exibidas na central de atendimento, para que os funcionários da central de atendimento tenham todas as informações relevantes disponíveis imediatamente ao conversar com um cliente.
+Agora você verá as informações que seriam exibidas na central de atendimento, para que os agentes da central de atendimento tenham todas as informações relevantes disponíveis imediatamente ao conversar com um cliente.
 
 ![Demonstração](./images/20.png)
 

@@ -4,7 +4,7 @@ description: Foundation - Perfil do cliente em tempo real - De desconhecido para
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Selecione o tipo de conta e conclua o processo de logon.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Em seguida, você verá seu site carregado em uma janela incógnita do navegador. Para cada demonstração, será necessário usar uma janela do navegador nova e incógnita para carregar o URL do site de demonstração.
+Em seguida, você verá seu site carregado em uma janela incógnita do navegador. Para cada exercício, será necessário usar uma janela do navegador nova e incógnita para carregar o URL do site de demonstração.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

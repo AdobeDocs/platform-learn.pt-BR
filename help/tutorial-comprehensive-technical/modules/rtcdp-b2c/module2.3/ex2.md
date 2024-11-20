@@ -1,11 +1,12 @@
 ---
-title: Real-time CDP - Criar um segmento e executar ações - Configurar um destino do Advertising como o Google DV360
-description: Real-time CDP - Criar um segmento e executar ações - Configurar um destino do Advertising como o Google DV360
+title: Real-time CDP - Crie um público-alvo e tome medidas - Configure um destino do Advertising como o Google DV360
+description: Real-time CDP - Crie um público-alvo e tome medidas - Configure um destino do Advertising como o Google DV360
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->O conteúdo abaixo é intencional como informação - Você **NÃO** precisa configurar um novo destino para DV360. O destino já foi criado e você pode usá-lo no próximo exercício.
+>O conteúdo abaixo é parcialmente destinado a informações - Se esse destino já existir em sua instância, **NÃO** precisará configurar um novo destino para DV360. O destino já foi criado nesse caso e você pode usá-lo no próximo exercício.
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ Depois de criar o destino, você verá isso. Opcionalmente, é possível selecio
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 Você verá uma lista de destinos disponíveis.
-No próximo exercício, você conectará o segmento criado no exercício anterior ao destino do Google DV360.
+No próximo exercício, você conectará o público-alvo criado no exercício anterior ao destino do Google DV360.
 
-Próxima Etapa: [2.3.3 Realizar Ação: enviar seu segmento para DV360](./ex3.md)
+Próxima Etapa: [2.3.3 Realizar Ação: enviar o público-alvo para DV360](./ex3.md)
 
 [Voltar ao módulo 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

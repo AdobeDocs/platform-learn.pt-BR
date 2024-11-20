@@ -4,10 +4,10 @@ description: Real-time CDP - SDK de destinos
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 6%
+source-wordcount: '1098'
+ht-degree: 5%
 
 ---
 
@@ -23,11 +23,13 @@ Neste exercício, você usará o Postman novamente para consultar as APIs da Ado
 
 ## Definir ponto de extremidade e formato
 
-Para este exercício, será necessário configurar um endpoint para que, quando um segmento se qualificar, o evento de qualificação possa ser transmitido para esse endpoint. Neste exercício, você usará um terminal de exemplo usando [https://webhook.site/](https://webhook.site/). Vá para [https://webhook.site/](https://webhook.site/), onde você verá algo semelhante a isto. Clique em **Copiar para a área de transferência** para copiar a url. Você precisará especificar esse url no próximo exercício. A URL neste exemplo é `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`.
+Para este exercício, será necessário configurar um endpoint para que, quando um público-alvo se qualificar, o evento de qualificação possa ser transmitido para esse endpoint. Neste exercício, você usará um terminal de exemplo usando [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Vá para [https://pipedream.com/requestbin](https://pipedream.com/requestbin), crie uma conta e um espaço de trabalho. Depois que o espaço de trabalho for criado, você verá algo semelhante a isso.
+
+Clique em **copiar** para copiar a url. Você precisará especificar esse url no próximo exercício. A URL neste exemplo é `https://eodts05snjmjz67.m.pipedream.net`.
 
 ![Assimilação de dados](./images/webhook1.png)
 
-Quanto ao formato, usaremos um modelo padrão que transmitirá as qualificações ou não qualificações do segmento junto com metadados como identificadores de clientes. Os modelos podem ser personalizados para atender às expectativas de endpoints específicos, mas neste exercício reutilizaremos um modelo padrão, o que resultará em uma carga como essa que será transmitida para o endpoint.
+Quanto ao formato, usaremos um modelo padrão que transmitirá as qualificações ou não qualificações do público-alvo junto com metadados como identificadores de clientes. Os modelos podem ser personalizados para atender às expectativas de endpoints específicos, mas neste exercício reutilizaremos um modelo padrão, o que resultará em uma carga como essa que será transmitida para o endpoint.
 
 ```json
 {
@@ -52,9 +54,15 @@ Quanto ao formato, usaremos um modelo padrão que transmitirá as qualificaçõe
 
 ## Criar uma configuração de servidor e modelo
 
-A primeira etapa para criar seu próprio Destino no Adobe Experience Platform é criar uma configuração de servidor e modelo.
+A primeira etapa para criar seu próprio Destino no Adobe Experience Platform é criar uma configuração de servidor e modelo usando o Postman.
 
-Para fazer isso, vá para **API de criação de destino**, para **Servidores e modelos de destino** e clique para abrir a solicitação **POST - Criar uma configuração de servidor de destino**. Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}**.
+Para fazer isso, abra o aplicativo Postman e vá para **API de Criação de Destino**, para **Servidores e modelos de destino** e clique para abrir a solicitação **POST - Criar uma configuração de servidor de destino**.
+
+>[!NOTE]
+>
+>Se você não tiver essa coleção do Postman, volte para o [Exercício 3 no Módulo 2.1](../module2.1/ex3.md) e siga as instruções para configurar o Postman com as coleções do Postman fornecidas.
+
+Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}**.
 
 ![Assimilação de dados](./images/sdkpm1.png)
 
@@ -89,7 +97,7 @@ Agora é necessário substituir o espaço reservado **{{body}}** pelo código ab
 }
 ```
 
-Depois de colar o código acima, você precisa atualizar manualmente o campo **urlBasedDestination.url.value** e defini-lo para a url do webhook criado na etapa anterior, que era `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a` neste exemplo.
+Depois de colar o código acima, você precisa atualizar manualmente o campo **urlBasedDestination.url.value** e defini-lo para a url do webhook criado na etapa anterior, que era `https://eodts05snjmjz67.m.pipedream.net` neste exemplo.
 
 ![Assimilação de dados](./images/sdkpm4.png)
 
@@ -97,20 +105,20 @@ Depois de atualizar o campo **urlBasedDestination.url.value**, ele deverá ter e
 
 ![Assimilação de dados](./images/sdkpm5.png)
 
+>[!NOTE]
+>
+>Não esqueça que, antes de enviar uma solicitação para o Adobe I/O, você precisa ter um `access_token` válido. Para obter um `access_token` válido, execute a solicitação **POST - Obter Token de Acesso** na coleção **Adobe IO - OAuth**.
+
 Depois de clicar em **Enviar**, seu modelo de servidor será criado e, como parte da resposta, você verá um campo chamado **instanceId**. Anote-o, como você precisará dele na próxima etapa. Neste exemplo, a **instanceId** é
-`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`.
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
 
 ![Assimilação de dados](./images/sdkpm6.png)
 
 ## Criar sua configuração de destino
 
-No Postman, em **API de criação de destino**, vá para **Configurações de destino** e clique para abrir a solicitação **POST - Criar uma configuração de destino**. Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}**.
+No Postman, em **API de criação de destino**, vá para **Configurações de destino** e clique para abrir a solicitação **POST - Criar uma configuração de destino**. Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}** e substitua-o por `--aepSandboxName--`.
 
 ![Assimilação de dados](./images/sdkpm7.png)
-
-Substituir por `--aepSandboxName--`.
-
-![Assimilação de dados](./images/sdkpm8.png)
 
 Em seguida, vá para **Corpo**. selecione o espaço reservado **{{body}}**.
 
@@ -183,7 +191,7 @@ Agora é necessário substituir o espaço reservado **{{body}}** pelo código ab
 
 ![Assimilação de dados](./images/sdkpm11.png)
 
-Depois de colar o código acima, é necessário atualizar manualmente o campo **destinationDelivery. destinationServerId**, e você precisa defini-lo como **instanceId** do modelo de servidor de destino que você criou na etapa anterior, que era `eb0f436f-dcf5-4993-a82d-0fcc09a6b36c` neste exemplo. Em seguida, clique em **Enviar**.
+Depois de colar o código acima, é necessário atualizar manualmente o campo **destinationDelivery. destinationServerId**, e você precisa defini-lo como **instanceId** do modelo de servidor de destino que você criou na etapa anterior, que era `52482c90-8a1e-42fc-b729-7f0252e5cebd` neste exemplo. Em seguida, clique em **Enviar**.
 
 ![Assimilação de dados](./images/sdkpm10.png)
 
@@ -197,7 +205,7 @@ Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depo
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -205,13 +213,13 @@ No menu esquerdo, vá para **Destinos**, clique em **Catálogo** e role para bai
 
 ![Assimilação de dados](./images/destsdk1.png)
 
-## Vincular o segmento ao destino
+## Vincular o público ao destino
 
-Em **Destinos** > **Catálogo**, clique em **Configurar** no seu destino para começar a adicionar segmentos ao seu novo destino.
+Em **Destinos** > **Catálogo**, clique em **Configurar** no seu destino para começar a adicionar públicos ao novo destino.
 
 ![Assimilação de dados](./images/destsdk2.png)
 
-Insira um token de portador fictício, como **1234**. Clique em **Conectar ao destino**.
+Insira um valor aleatório para o **token do portador**, como **1234**. Clique em **Conectar ao destino**.
 
 ![Assimilação de dados](./images/destsdk3.png)
 
@@ -223,7 +231,7 @@ Opcionalmente, é possível selecionar uma política de governança de dados. Cl
 
 ![Assimilação de dados](./images/destsdk5.png)
 
-Selecione o segmento criado anteriormente, chamado `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Clique em **Next**.
+Selecione o público-alvo criado anteriormente, chamado `--aepUserLdap-- - Interest in Galaxy S24`. Clique em **Next**.
 
 ![Assimilação de dados](./images/destsdk6.png)
 
@@ -235,23 +243,15 @@ Clique em **Concluir**.
 
 ![Assimilação de dados](./images/destsdk8.png)
 
-Seu destino agora está ativo, as novas qualificações de segmento serão transmitidas para seu webhook personalizado agora.
+Seu destino agora está ativo, as novas qualificações de público-alvo serão transmitidas para seu webhook personalizado agora.
 
 ![Assimilação de dados](./images/destsdk9.png)
 
-## Testar a ativação do segmento
+## Testar a ativação do público
 
-Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
+Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Executar** para abri-lo.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Agora você pode seguir o fluxo abaixo para acessar o site. Clique em **Integrações**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-Na página **Integrações**, é necessário selecionar a propriedade Coleção de dados criada no exercício 0.1.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 
@@ -269,23 +269,24 @@ Selecione o tipo de conta e conclua o processo de logon.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Em seguida, você verá seu site carregado em uma janela incógnita do navegador. Para cada demonstração, será necessário usar uma janela do navegador nova e incógnita para carregar o URL do site de demonstração.
+Em seguida, você verá seu site carregado em uma janela incógnita do navegador. Para cada exercício, será necessário usar uma janela do navegador nova e incógnita para carregar o URL do site de demonstração.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-Na página inicial do **Luma**, vá para **Men** e clique no produto **PROTEUS FITNESS JACKSHIRT**.
+Neste exemplo, você deseja responder a um cliente específico que exibe um produto específico.
+Na página inicial do **Citi Signal**, vá para **Telefones e dispositivos** e clique no produto **Galaxy S24**.
 
-![Assimilação de dados](./images/homenadia.png)
+![Assimilação de dados](./images/homegalaxy.png)
 
-Você agora visitou a página de produto do **PROTEUS FITNESS JACKSHIRT**, o que significa que agora você se qualificará para o segmento criado anteriormente neste exercício.
+A página do produto do Galaxy S24 foi visualizada, portanto, seu público se qualificará para o seu perfil nos minutos seguintes.
 
-![Assimilação de dados](./images/homenadiapp.png)
+![Assimilação de dados](./images/homegalaxy1.png)
 
-Ao abrir o Visualizador de perfis e acessar **Segmentos**, você verá o segmento se qualificar.
+Ao abrir o Visualizador de Perfis e acessar **Públicos-alvo**, você verá o público-alvo qualificado.
 
-![Assimilação de dados](./images/homenadiapppb.png)
+![Assimilação de dados](./images/homegalaxydsdk.png)
 
-Agora volte para o webhook aberto em [https://webhook.site/](https://webhook.site/), em que você deve ver uma nova solicitação de entrada, originada no Adobe Experience Platform e que contém o evento de qualificação de segmento.
+Agora volte para o webhook aberto em [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net), em que você deve ver uma nova solicitação de entrada, originada no Adobe Experience Platform e que contém o evento de qualificação de público-alvo.
 
 ![Assimilação de dados](./images/destsdk10.png)
 

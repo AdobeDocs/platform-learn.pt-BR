@@ -3,9 +3,10 @@ title: Ativação de segmento para o Hub de eventos do Microsoft Azure - Criar u
 description: Ativação de segmento para o Hub de eventos do Microsoft Azure - Criar um segmento de transmissão
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Depois de fazer logon, você chegará à página inicial do Adobe Experience Pla
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 

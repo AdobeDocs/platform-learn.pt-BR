@@ -3,9 +3,10 @@ title: Serviço de consulta - Introdução
 description: Serviço de consulta - Introdução
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depo
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--module7sandbox--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 

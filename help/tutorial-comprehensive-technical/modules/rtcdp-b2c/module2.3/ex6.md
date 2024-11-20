@@ -3,27 +3,28 @@ title: Real-time CDP - Públicos-alvo externos
 description: Real-time CDP - Públicos-alvo externos
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1950'
 ht-degree: 1%
 
 ---
 
 # 2.3.6 Públicos-alvo externos
 
-Em muitos casos, sua empresa pode querer usar segmentos existentes de outros aplicativos para aprimorar o perfil do cliente no Adobe Experience Platform.
+Em muitos casos, sua empresa pode querer usar públicos-alvo existentes de outros aplicativos para aprimorar o perfil do cliente no Adobe Experience Platform.
 Esses públicos-alvo externos podem ter sido definidos com base em um modelo de ciência de dados ou usando plataformas de dados externas.
 
-O recurso de públicos-alvo externos do Adobe Experience Platform permite que você se concentre na assimilação dos públicos-alvo externos e sua ativação sem precisar redefinir a definição de segmento correspondente em detalhes no Adobe Experience Platform.
+O recurso de públicos-alvo externos do Adobe Experience Platform permite que você se concentre na assimilação dos públicos-alvo externos e sua ativação sem precisar redefinir a definição de público-alvo correspondente em detalhes no Adobe Experience Platform.
 
 O processo global divide-se em três etapas principais:
 
 - Importar os metadados do público-alvo externo: esta etapa destina-se a assimilar os metadados do público-alvo externo, como o nome do público-alvo, na Adobe Experience Platform.
-- Atribuir a associação de público-alvo externo ao perfil do cliente: essa etapa destina-se a enriquecer o perfil do cliente com o atributo de associação de segmento externo.
-- Criar os segmentos no Adobe Experience Platform: esta etapa destina-se a criar segmentos acionáveis com base na associação de públicos externos.
+- Atribuir a associação de público-alvo externo ao perfil do cliente: essa etapa destina-se a enriquecer o perfil do cliente com o atributo de associação de públicos-alvo externos.
+- Criar os públicos no Adobe Experience Platform: esta etapa destina-se a criar públicos acionáveis com base na associação de públicos externos.
 
-## 2.3.6.1 Metadados
+## Metadados
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
@@ -31,13 +32,13 @@ Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depo
 
 >[!IMPORTANT]
 >
->A sandbox a ser usada para este exercício é ``--module2sandbox--``!
+>A sandbox a ser usada para este exercício é ``--aepSandboxName--``!
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--module2sandbox--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./images/sb1.png)
 
-Embora os dados do segmento definam a condição para que um perfil faça parte de um segmento, os metadados do segmento são informações sobre o segmento, como o nome, a descrição e o status do segmento. Como os metadados dos públicos externos serão armazenados no Adobe Experience Platform, é necessário usar um namespace de identidade para assimilar os metadados no Adobe Experience Platform.
+Embora os dados do público-alvo definam a condição para que um perfil faça parte de um público-alvo, os metadados do público-alvo são informações sobre o público-alvo, como o nome, a descrição e o status do público-alvo. Como os metadados dos públicos externos serão armazenados no Adobe Experience Platform, é necessário usar um namespace de identidade para assimilar os metadados no Adobe Experience Platform.
 
 ## 2.3.6.1.1 Namespace de identidade para públicos-alvo externos
 
@@ -47,19 +48,19 @@ Para exibir a identidade já criada, vá para **Identidades** e pesquise por **E
 Observe que:
 
 - O símbolo de identidade **externalaudiences** será usado nas próximas etapas para fazer referência à identidade dos públicos externos.
-- O tipo **Identificador não pessoal** é usado para este namespace de identidade, pois ele não se destina a identificar perfis de clientes, mas segmentos.
+- O tipo **Identificador não pessoal** é usado para este namespace de identidade, pois ele não se destina a identificar perfis de clientes, mas públicos.
 
 ![Identidade de Públicos Externos](images/extAudIdNS.png)
 
 ## 2.3.6.1.2 Criar o esquema de metadados de públicos externos
 
-Os metadados dos públicos externos são baseados no **Esquema de definição de segmento**. Você pode encontrar mais detalhes no [repositório GitHub XDM](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+Os metadados dos públicos externos são baseados no **Esquema de definição de público**. Você pode encontrar mais detalhes no [repositório GitHub XDM](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
 
 No menu esquerdo, vá para Schemas. Clique em **+ Criar Esquema** e em **Procurar**.
 
 ![Esquema de metadados de públicos-alvo externos 1](images/extAudMDXDM1.png)
 
-Para atribuir uma classe, procure por **definição de segmento**. Selecione a classe **Definição de segmento** e clique em **Atribuir classe**.
+Para atribuir uma classe, procure por **definição de público-alvo**. Selecione a classe **Definição de público** e clique em **Atribuir classe**.
 
 ![Esquema de metadados de públicos-alvo externos 2](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ Nos resultados da consulta, você verá os metadados do público-alvo externo qu
 
 ![Metadados de públicos externos str 5](images/extAudMDstr5.png)
 
-## 2.3.6.2 Associação de segmentos
+## Associação de público
 
-Com os metadados do público-alvo externo disponíveis, agora é possível assimilar a associação do segmento para um perfil de cliente específico.
+Com os metadados de público-alvo externo disponíveis, agora é possível assimilar a associação de público-alvo de um perfil de cliente específico.
 
-Agora é necessário preparar um conjunto de dados de perfil enriquecido com o esquema de associação de Segmento. Você pode encontrar mais detalhes no [repositório GitHub XDM](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
+Agora é necessário preparar um conjunto de dados de perfil enriquecido com o esquema de associação de público-alvo. Você pode encontrar mais detalhes no [repositório GitHub XDM](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
 
-## 2.3.6.2.1 Criar o esquema de associação de públicos externos
+### Criar o esquema de associação de públicos externos
 
 No menu direito, vá para **Esquemas**. Clique em **Criar esquema** e em **Perfil Individual XDM**.
 
@@ -237,7 +238,7 @@ Em seguida, habilite a opção de alternância **Perfil** e confirme. Clique em 
 
 ![Esquema 5](images/extAudPrXDM5.png) do Perfil de Públicos Externos
 
-## 2.3.6.2.2 Criar o conjunto de dados de associação de públicos externos
+### Criar o conjunto de dados de associação de públicos externos
 
 Em **Esquemas**, vá para **Procurar**. Pesquise e clique no esquema `--aepUserLdap-- - External Audiences Membership` criado na etapa anterior. Em seguida, clique em **Criar conjunto de dados a partir do esquema**.
 
@@ -251,7 +252,7 @@ Você verá isso. Não esqueça de habilitar a opção de alternância **Perfil*
 
 ![Metadados de Públicos Externos DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3 Criar uma conexão HTTP API Source
+### Criar uma conexão HTTP API Source
 
 
 Em seguida, é necessário configurar o HTTP API Source Connector, que será usado para assimilar os metadados no conjunto de dados.
@@ -294,7 +295,7 @@ Você verá isso.
 
 ![Metadados de Públicos Externos http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4 Assimilação de dados de associação de públicos externos
+### Assimilação de dados de associação de públicos externos
 
 Na guia de visão geral do Source Connector, clique em **...** e em **Copiar carga do esquema**.
 
@@ -346,7 +347,7 @@ Atualize a tela do conector HTTP API Source, onde, após alguns minutos, você v
 
 ![Metadados de públicos externos str 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5 Validar assimilação de associação de públicos externos
+### Validar assimilação de associação de públicos externos
 
 Quando o processamento estiver concluído, você poderá verificar a disponibilidade dos dados no conjunto de dados usando o Serviço de consulta.
 
@@ -368,7 +369,7 @@ Nos resultados da consulta, você verá os metadados do público-alvo externo qu
 
 ![Metadados de públicos externos str 5](images/extAudPrstr5.png)
 
-## 2.3.6.3 Criar um segmento
+## Criar um segmento
 
 Agora você está pronto para executar ações nos públicos externos.
 No Adobe Experience Platform, a ação é alcançada por meio da criação de segmentos, preenchimento dos respectivos públicos e compartilhamento desses públicos para os destinos.
@@ -396,7 +397,7 @@ Você verá isso. Você também observará que o perfil para o qual você assimi
 
 Seu segmento está pronto agora e pode ser enviado para um destino para ativação.
 
-## 2.3.6.4 Visualizar o perfil do cliente
+## Visualizar seu perfil de cliente
 
 Agora, você também pode visualizar a qualificação do segmento no perfil do cliente. Vá para **Perfis**, use o namespace de identidade **Sistema de demonstração - CRMID** e forneça a identidade `--aepUserLdap---profile-test-01`, que você usou como parte do exercício 6.6.2.4, e clique em **Exibir**. Em seguida, clique em **ID do Perfil** para abrir o perfil.
 

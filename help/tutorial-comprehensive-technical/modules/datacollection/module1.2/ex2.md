@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - Configurar esquemas e definir
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3127'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ Depois de fazer logon, você chegará à página inicial do Adobe Experience Pla
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
 ![Assimilação de dados](./images/sb1.png)
 
@@ -301,7 +301,7 @@ Depois de fazer logon, você chegará à página inicial do Adobe Experience Pla
 
 ![Assimilação de dados](./images/home.png)
 
-Antes de continuar, você precisa selecionar uma **[!UICONTROL sandbox]**. A [!UICONTROL sandbox] a ser selecionada chama-se ``--module2sandbox--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
+Antes de continuar, você precisa selecionar uma **[!UICONTROL sandbox]**. A [!UICONTROL sandbox] a ser selecionada chama-se ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
 ![Assimilação de dados](./images/sb1.png)
 

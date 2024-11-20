@@ -4,7 +4,7 @@ description: Foundation - Configuração da coleção de dados da Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Para esta sequência de dados...
 - Todos os dados do Evento de experiência são coletados por padrão no conjunto de dados **Sistema de demonstração - Conjunto de dados do evento para o site (Global v1.1)**
 - Todos os dados do perfil serão coletados por padrão no conjunto de dados **Sistema de demonstração - Conjunto de dados do perfil para site (Global v1.1)** (a assimilação de dados do perfil nativamente com o SDK da Web atualmente ainda não é suportada pelo SDK da Web)
 - Se você quiser usar o serviço de aplicativo **Offer decisioning** para essa sequência de dados, será necessário marcar a caixa Offer decisioning. (Isso fará parte do [Módulo 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
-- A **Segmentação do Edge** está habilitada por padrão, o que significa que os segmentos qualificados serão avaliados na borda após a assimilação do tráfego de entrada
+- A **Segmentação do Edge** está habilitada por padrão, o que significa que os públicos qualificados serão avaliados na borda após a assimilação do tráfego de entrada
 - Se você quiser usar os **Destinos do Personalization**, será necessário marcar a caixa para Destinos do Personalization.
 - 
    - Se você quiser usar os recursos do **Adobe Journey Optimizer** nesta sequência de dados, será necessário marcar a caixa Adobe Journey Optimizer.

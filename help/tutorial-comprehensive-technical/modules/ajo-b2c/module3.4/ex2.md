@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Configurar uma jornada baseada em lote
 description: Nesta seção, você configurará uma jornada de email em lote para enviar um informativo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -22,7 +23,7 @@ Você será redirecionado para a exibição **Página inicial** no Journey Optim
 
 ## 3.4.2.1 Criar jornada de informativo
 
-Agora você criará uma jornada baseada em lote. Ao contrário da jornada baseada em eventos do exercício anterior, que depende de eventos de experiência de entrada, entradas de segmentos ou saídas para acionar uma jornada para um cliente específico, as jornadas baseadas em lote têm como alvo um segmento inteiro uma vez com conteúdo exclusivo, como boletins informativos, promoções únicas ou informações genéricas ou periodicamente com conteúdo semelhante enviado regularmente, como por exemplo campanhas de aniversário e lembretes.
+Agora você criará uma jornada baseada em lote. Ao contrário da jornada baseada em eventos do exercício anterior, que depende de eventos de experiência de entrada, entradas de público-alvo ou saídas para acionar uma jornada para um cliente específico, as jornadas baseadas em lote têm como alvo um público-alvo inteiro, uma vez com conteúdo exclusivo, como boletins informativos, promoções únicas ou informações genéricas ou periodicamente com conteúdo semelhante enviado regularmente, como por exemplo campanhas de aniversário e lembretes.
 
 No menu, vá para **Jornadas** e clique em **Criar Jornada**.
 
@@ -37,11 +38,11 @@ Clique em **Ok**.
 
 ![Journey Optimizer](./images/batchj2.png)
 
-Em **Orquestração**, arraste e solte **Segmento de Leitura** na tela. Isso significa que, uma vez publicada, a jornada começará recuperando todo o público do segmento, que se tornará o público-alvo da jornada e da mensagem. Clique em **Selecionar um segmento**.
+Em **Orquestração**, arraste e solte **Ler público-alvo** na tela. Isso significa que, uma vez publicada, a jornada começará recuperando todo o público-alvo, que se tornará o público-alvo da jornada e da mensagem. Clique em **Selecionar uma audiência**.
 
 ![Journey Optimizer](./images/batchj3.png)
 
-No pop-up **Escolher um segmento**, pesquise pelo seu ldap e selecione o segmento criado no [Módulo 2.3 - CDP em tempo real - Criar um segmento e executar a ação](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) chamada `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. por exemplo: vangeluw - Interesse na PROTEUS FITNESS JACKSHIRT. Clique em **Salvar**.
+No pop-up **Escolher um público-alvo**, pesquise pelo seu ldap e selecione o público-alvo criado no [Módulo 2.3 - CDP em tempo real - Criar um público-alvo e executar a ação](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) chamada `--aepUserLdap-- - Interest in Galaxy S24`. Clique em **Salvar**.
 
 ![Journey Optimizer](./images/batchj5.png)
 

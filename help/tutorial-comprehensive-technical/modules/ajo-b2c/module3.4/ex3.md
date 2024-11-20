@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Aplicar personalização em uma mensagem de ema
 description: Este exercício explica como usar a personalização de segmentos em um conteúdo de email
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ Faça login no Adobe Experience Cloud em [Adobe Experience Cloud](https://experi
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepTenantId--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela.
+Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepTenantId--``.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 

@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 CDP em tempo real - Criar um segmento e executar ações
-
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Alberto De Caro](https://www.linkedin.com/in/albertodecaro/), [Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 Neste módulo, você configurará um segmento de transmissão e ativará o segmento para vários destinos.
 
@@ -38,25 +36,25 @@ Neste módulo, você configurará um segmento de transmissão e ativará o segme
 
 ## Exercícios
 
-[2.3.1 Criar um segmento](./ex1.md)
+[2.3.1 Criar um público-alvo](./ex1.md)
 
-Saiba como criar um segmento.
+Saiba como criar um público-alvo.
 
 [2.3.2 Analisar como configurar o Destino DV360 usando Destinos](./ex2.md)
 
 Saiba como configurar um destino de publicidade usando a interface do usuário do Real-Time CDP.
 
-[2.3.3 Realizar ação: enviar seu segmento para o DV360](./ex3.md)
+[2.3.3 Ação: enviar o público-alvo para o DV360](./ex3.md)
 
-Conecte o segmento que você criou no exercício 6.1 ao DV360 de destino.
+Conecte o público-alvo criado ao destino DV360.
 
-[2.3.4 Realizar ação: enviar seu segmento para um destino S3](./ex4.md)
+[2.3.4 Realizar ação: enviar o público-alvo para um destino S3](./ex4.md)
 
-Use o segmento que você criou no exercício 6.1 e envie-o para um destino S3, normalmente usado para destinos de marketing por email.
+Use o público-alvo criado e envie-o para um destino S3, normalmente usado para destinos de marketing por email.
 
-[2.3.5 Realizar ação: enviar seu segmento para o Adobe Target](./ex5.md)
+[2.3.5 Realizar ação: enviar o público-alvo para a Adobe Target](./ex5.md)
 
-Use o segmento que você criou no exercício 6.1 para configurar uma Atividade de direcionamento de experiência no Adobe Target.
+Use o público-alvo criado para configurar uma Atividade de direcionamento de experiência no Adobe Target.
 
 [2.3.6 Públicos-alvo externos](./ex6.md)
 

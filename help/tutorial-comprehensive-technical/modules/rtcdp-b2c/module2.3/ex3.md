@@ -1,42 +1,35 @@
 ---
-title: Real-time CDP - Criar um segmento e executar ações - Enviar o segmento para DV360
-description: Real-time CDP - Criar um segmento e executar ações - Enviar o segmento para DV360
+title: Real-time CDP - Criar um público-alvo e realizar ações - Enviar o público-alvo para DV360
+description: Real-time CDP - Criar um público-alvo e realizar ações - Enviar o público-alvo para DV360
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bb76524e-52c1-4c2c-8bcd-33cd39d12741
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '206'
 ht-degree: 2%
 
 ---
 
-# 2.3.3 Realizar ação: enviar seu segmento para o DV360
+# 2.3.3 Ação: enviar o público-alvo para o DV360
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Você pode fazer isso clicando no texto **[!UICONTROL Produção]** na linha azul na parte superior da tela. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-No menu esquerdo, vá para **Destinos** e, em seguida, vá para **Catálogo**. Você verá o **Catálogo de Destinos**.
+No menu esquerdo, vá para **Destinos** e vá para **Procurar**. Você verá o destino **DV360**. Clique nos 3 pontos **...** e clique em **Ativar públicos-alvo**.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
-Em **Destinos**, clique em **Ativar Segmentos** no cartão **Google Display &amp; Video 360**.
-
-![RTCDP](./images/rtcdpgoogleseg.png)
-
-Selecione seu destino e clique em **Avançar**.
-
-![RTCDP](./images/rtcdpcreatedest2.png)
-
-Na lista de segmentos disponíveis, selecione o segmento criado no exercício anterior. Clique em **Next**.
+Na lista de públicos disponíveis, selecione o público criado no exercício anterior. Clique em **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-Na página **Agendamento de segmento**, clique em **Avançar**.
+Na página **Agenda de Público-alvo**, clique em **Avançar**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
@@ -44,9 +37,9 @@ Finalmente, na página **Revisão**, clique em **Concluir**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Seu segmento agora está vinculado ao Google DV360. Toda vez que um cliente se qualifica para esse segmento, um sinal é enviado ao Google DV360 para incluí-lo no Público-alvo no Google DV360.
+Seu público-alvo agora está vinculado ao Google DV360. Toda vez que um cliente se qualifica para esse público-alvo, um sinal é enviado ao Google DV360 para incluí-lo no público-alvo do Google DV360.
 
-Próxima etapa: [2.3.4 Executar ação: enviar seu segmento para um destino S3](./ex4.md)
+Próxima etapa: [2.3.4 Realizar ação: enviar o público-alvo para um destino S3](./ex4.md)
 
 [Voltar ao módulo 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

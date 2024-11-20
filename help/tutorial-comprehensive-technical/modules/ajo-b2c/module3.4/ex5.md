@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Eventos comerciais
 description: Esta seção explica como usar o recurso de eventos comerciais para executar um caso de uso de "item de volta no estoque"
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -98,14 +99,14 @@ No menu esquerdo, em **Eventos**, pesquise por seu ldap. Você encontrará o eve
 
 ![Journey Optimizer](./images/bej12.png)
 
-Como você pode ver, uma atividade **Ler segmento** foi automaticamente adicionada à tela. Isso ocorre porque os eventos comerciais só enviam um acionador para a jornada ler um segmento específico, que recuperará a lista de perfis dessa jornada.
+Como você pode ver, uma atividade **Ler público-alvo** foi automaticamente adicionada à tela. Isso ocorre porque os eventos comerciais só enviam um acionador para a jornada ler um público específico, que recuperará a lista de perfis dessa jornada.
 
-Clique na atividade **Ler segmento**.
-A configuração **Ler Segmento** espera que você selecione o segmento que deseja notificar sobre o evento comercial que acabou de ocorrer. Clique no campo **Selecionar um segmento**.
+Clique na atividade **Ler público**.
+A configuração **Ler Público** espera que você selecione o público que deseja notificar sobre o evento comercial que acabou de acontecer. Clique no campo **Selecionar um público-alvo**.
 
 ![Journey Optimizer](./images/bej13.png)
 
-No pop-up **Escolher um segmento**, pesquise pelo seu ldap e selecione o segmento criado no [Módulo 2.3 - CDP em tempo real - Criar um segmento e executar a ação](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) chamada `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. por exemplo: vangeluw - Interesse na PROTEUS FITNESS JACKSHIRT. Clique em **Salvar**.
+No pop-up **Escolher um público-alvo**, pesquise pelo seu ldap e selecione o público-alvo criado no [Módulo 2.3 - CDP em tempo real - Criar um público-alvo e executar a ação](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) chamada `--aepUserLdap-- - Interest in Galaxy S24`. Clique em **Salvar**.
 
 ![Journey Optimizer](./images/bej14.png)
 
