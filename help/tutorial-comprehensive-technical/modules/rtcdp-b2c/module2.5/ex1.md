@@ -3,36 +3,37 @@ title: Coleta de dados do Adobe Experience Platform e encaminhamento lateral de 
 description: Criar uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 9c64e57d-c91c-4d4c-923f-91a02edeb2ac
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '737'
 ht-degree: 1%
 
 ---
 
 # 2.5.1 Criar uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform
 
->[!NOTE]
->
->No momento, a extensão para dispositivos móveis do Adobe Experience Platform Edge está no BETA. O uso desta extensão é somente por convite. Entre em contato com o Gerente de sucesso do cliente do Adobe para obter mais informações e acesso aos materiais deste tutorial.
+## O que é uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform?
 
-## 2.5.1.1 O que é uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform?
-
-Normalmente, quando os dados são coletados usando a Coleção de dados da Adobe Experience Platform, eles são coletados no **Client Side**. O **Client Side** é um ambiente como um site ou um aplicativo para dispositivos móveis. No Módulo 0 e no Módulo 1, a configuração de uma propriedade do Adobe Experience Platform Data Collection Client foi discutida em profundidade e você implementou essa propriedade do Adobe Experience Platform Data Collection Client em seu site e aplicativo móvel, para que os dados pudessem ser coletados lá quando um cliente estivesse interagindo com o site e o aplicativo móvel.
+Normalmente, quando os dados são coletados usando a Coleção de dados da Adobe Experience Platform, eles são coletados no **lado do cliente**. O **lado do cliente** é um ambiente como um site ou um aplicativo móvel. Em Introdução e Coleção de dados, a configuração de uma propriedade do Cliente de coleção de dados da Adobe Experience Platform foi discutida detalhadamente e você implementou essa propriedade do Cliente de coleção de dados da Adobe Experience Platform em seu site e aplicativo móvel, para que os dados pudessem ser coletados lá quando um cliente estivesse interagindo com o site e o aplicativo móvel.
 
 Quando os dados de interação são coletados pela propriedade do Cliente de coleta de dados da Adobe Experience Platform, uma solicitação é enviada pelo site ou aplicativo móvel para o Adobe Edge. O Edge é um ambiente de coleta de dados de Adobe e é o ponto de entrada para dados de sequência de cliques no ecossistema de Adobe. Na Edge, esses dados coletados são enviados para aplicativos como Adobe Experience Platform, Adobe Analytics, Adobe Audience Manager ou Adobe Target.
 
 Com a adição de uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform, agora é possível configurar uma propriedade de coleção de dados do Adobe Experience Platform que ouve dados recebidos na Edge. Quando a propriedade Encaminhamento de eventos de coleta de dados do Adobe Experience Platform que está em execução no Edge vê dados recebidos, ela pode usar esses dados e encaminhá-los para outro lugar. Esse outro lugar agora também pode ser um webhook externo não Adobe, o que torna possível enviar esses dados para, por exemplo, o data lake de escolha, um aplicativo de decisão ou qualquer outro aplicativo que tenha a capacidade de abrir um webhook.
 
-A configuração de uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform parece familiar a uma propriedade do cliente, com a capacidade de configurar elementos de dados e regras como no passado com as propriedades do cliente de coleta de dados do Adobe Experience Platform. No entanto, a maneira como os dados serão acessados e usados será um pouco diferente, dependendo do caso de uso.
+A configuração de uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform parece familiar a uma propriedade do lado do cliente, com a capacidade de configurar elementos de dados e regras como no passado com as propriedades do cliente de coleta de dados do Adobe Experience Platform. No entanto, a maneira como os dados serão acessados e usados será um pouco diferente, dependendo do caso de uso.
 
 Vamos começar criando a propriedade de Encaminhamento de eventos da coleção de dados do Adobe Experience Platform.
 
-## 2.5.1.2 Criar uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform
+## Criar uma propriedade de encaminhamento de eventos de coleta de dados do Adobe Experience Platform
 
-Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). No menu esquerdo, clique em **Encaminhamento de Eventos**. Você verá uma visão geral de todas as propriedades disponíveis do Encaminhamento de eventos da coleção de dados da Adobe Experience Platform. Clique no botão **Nova propriedade**.
+Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). No menu esquerdo, clique em **Encaminhamento de Eventos**. Você verá uma visão geral de todas as propriedades disponíveis do Encaminhamento de eventos da coleção de dados da Adobe Experience Platform. Clique no botão **Criar Propriedade**.
 
 ![SSF da Coleção de Dados do Adobe Experience Platform](./images/launchhome.png)
+
+Como alternativa, se outras propriedades do Encaminhamento de eventos já tiverem sido criadas, a interface do usuário parecerá um pouco diferente. Nesse caso, clique em **Nova propriedade**.
+
+![SSF da Coleção de Dados do Adobe Experience Platform](./images/launchhomea.png)
 
 Agora é necessário inserir um nome para a propriedade de encaminhamento de eventos da coleção de dados da Adobe Experience Platform. Como uma convenção de nomenclatura, use `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`. Por exemplo, neste exemplo, o nome é **vangeluw - Sistema de demonstração (22/02/2022) (Edge)**. Clique em **Salvar**.
 
@@ -42,13 +43,13 @@ Você voltará à lista de propriedades de Encaminhamento de eventos de coleta d
 
 ![SSF da Coleção de Dados do Adobe Experience Platform](./images/ssf2.png)
 
-## 2.5.1.2 Configurar a extensão do Adobe Cloud Connector
+## Configurar a extensão do Adobe Cloud Connector
 
 No menu esquerdo, vá para **Extensões**. Você verá que a extensão **Core** já está configurada.
 
 ![SSF da Coleção de Dados do Adobe Experience Platform](./images/ssf3.png)
 
-Ir para **Catálogo**. Você verá a extensão **Adobe Cloud Connector**. Clique em **Instalar** para instalá-lo.
+Ir para **Catálogo**. Você verá a extensão **Adobe Cloud Connector**, juntamente com muitas outras. Clique em **Instalar** para instalá-lo.
 
 ![SSF da Coleção de Dados do Adobe Experience Platform](./images/ssf4.png)
 
@@ -71,10 +72,6 @@ Você verá isso. Clique em **Salvar e criar para desenvolvimento**.
 ![SSF da Coleção de Dados do Adobe Experience Platform](./images/ssf8.png)
 
 Sua biblioteca será criada, o que pode levar de 1 a 2 minutos.
-
-![SSF da Coleção de Dados do Adobe Experience Platform](./images/ssf9.png)
-
-Por fim, sua biblioteca será criada e estará pronta.
 
 ![SSF da Coleção de Dados do Adobe Experience Platform](./images/ssf10.png)
 

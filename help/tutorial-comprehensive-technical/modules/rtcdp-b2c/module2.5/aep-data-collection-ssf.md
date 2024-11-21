@@ -4,16 +4,14 @@ description: Neste módulo, você usará os conjuntos de dados, esquemas e a pro
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Conexões do Real-Time CDP: encaminhamento de eventos
-
-**Autor: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 Neste módulo, você usará os conjuntos de dados, esquemas e a propriedade do Cliente de coleta de dados da Adobe Experience Platform configurados anteriormente para coletar dados e, em seguida, encaminhará esses dados do lado do servidor para um endpoint de escolha.
 
@@ -23,10 +21,6 @@ Neste módulo, você irá:
 - Instale e use a extensão Adobe Cloud Connector na Coleção de dados da Adobe Experience Platform
 - Criar um ponto de extremidade de função do Google e transmitir dados para ele
 - Criar um terminal do AWS e transmitir dados para ele
-
-Assista a este vídeo para entender o valor, a jornada do cliente e o processo de configuração:
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## Objetivos de aprendizagem
 

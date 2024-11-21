@@ -4,7 +4,7 @@ description: Audience Activation para o Hub de eventos do Microsoft Azure - Ativ
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 ## Adicionar público ao Destino do Hub de Eventos do Azure
 
-Neste exercício, você adicionará seu público-alvo `--aepUserLdap-- - Interest in Equipment` ao seu destino do Hub de Eventos do Azure `--aepUserLdap---aep-enablement`.
+Neste exercício, você adicionará seu público-alvo `--aepUserLdap-- - Interest in Plans` ao seu destino do Hub de Eventos do Azure `--aepUserLdap---aep-enablement`.
 
 Faça logon no Adobe Experience Platform acessando esta URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 

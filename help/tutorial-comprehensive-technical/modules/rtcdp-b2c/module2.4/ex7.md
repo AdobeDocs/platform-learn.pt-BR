@@ -3,7 +3,8 @@ title: Audience Activation para o Hub de eventos do Microsoft Azure - Ação
 description: Audience Activation para o Hub de eventos do Microsoft Azure - Ação
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ Para verificar, abra o painel Visualizador de perfis. Agora você deve ser membr
 
 Retorne ao Visual Studio Code e observe a guia **TERMINAL**. Você deve ver uma lista de públicos-alvo para a sua **ECID** específica. Essa carga de ativação é entregue ao hub de eventos assim que você se qualifica para o público-alvo do `--aepUserLdap-- - Interest in Plans`.
 
+![6-06-vsc-ativation-performed.png](./images/cs3.png)
+
 Ao analisar mais de perto a carga do público, você pode ver que `--aepUserLdap-- - Interest in Plans` está no status **realizado**.
 
-Um status de público-alvo de **realizado** significa que seu perfil faz parte do público-alvo, enquanto o status **encerrado** significa que seu perfil foi removido do público-alvo.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-ativation-performed.png](./images/cs3.png)
+Um status de público-alvo de **realizado** significa que seu perfil faz parte do público-alvo, enquanto o status **encerrado** significa que seu perfil foi removido do público-alvo.
 
 Próxima etapa: [Resumo e benefícios](./summary.md)
 

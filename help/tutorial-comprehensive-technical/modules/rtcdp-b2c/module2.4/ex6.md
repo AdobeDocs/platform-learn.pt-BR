@@ -4,9 +4,9 @@ description: Audience Activation para o Hub de eventos do Microsoft Azure - defi
 kt: 5342
 doc-type: tutorial
 exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Clique em **Criar projeto de função...**:
 
 ![3-05-vsc-create-project.png](./images/vsc2.png)
 
-Selecione uma pasta local de sua escolha para salvar o projeto e clique em **Selecionar**:
+Selecione ou crie uma pasta local de sua escolha para salvar o projeto e clique em **Selecionar**:
 
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 
@@ -104,66 +104,73 @@ Você pode então receber uma mensagem como esta. Nesse caso, clique em **Sim, e
 
 ![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
 
-Após criar o projeto, clique em **index.js** para abrir o arquivo no editor:
+Após criar o projeto, abra o arquivo `--aepUserLdap---aep-event-hub-trigger.js` no editor:
 
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 
-A carga enviada pelo Adobe Experience Platform para o seu Hub de eventos incluirá as IDs de público-alvo:
+A carga enviada pelo Adobe Experience Platform para o Hub de eventos será semelhante a:
 
 ```json
-[{
-"segmentMembership": {
-"ups": {
-"ca114007-4122-4ef6-a730-4d98e56dce45": {
-"lastQualificationTime": "2020-08-31T10:59:43Z",
-"status": "realized"
-},
-"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
-},
-"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
 }
-}
-},
-"identityMap": {
-"ecid": [{
-"id": "08130494355355215032117568021714632048"
-}]
-}
-}]
 ```
 
-Substitua o código no index.js do Visual Studio Code pelo código abaixo. Esse código será executado sempre que a Real-time CDP enviar qualificações de público-alvo para o destino do Hub de eventos. No nosso exemplo, o código é apenas sobre exibição e aprimoramento da carga útil recebida. Mas você pode imaginar qualquer tipo de função para processar qualificações de público em tempo real.
+Atualize o código em seu `--aepUserLdap---aep-event-hub-trigger.js` do Visual Studio Code com o código abaixo. Esse código será executado sempre que a Real-time CDP enviar qualificações de público-alvo para o destino do Hub de eventos. Neste exemplo, o código é apenas para exibir a carga útil recebida, mas você pode imaginar qualquer tipo de função adicional para processar as qualificações do público-alvo em tempo real e usar o ecossistema do pipeline de dados.
+
+A linha 11 no seu arquivo `--aepUserLdap---aep-event-hub-trigger.js` atualmente mostra isto:
 
 ```javascript
-// Marc Meewis - Solution Consultant Adobe - 2020
-// Adobe Experience Platform Enablement - Module 2.4
-
-// Main function
-// -------------
-// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
-// Eventhub destination
-// This function enriched the received audience payload with the name of the audience. 
-// You can replace this function with any logic that is require to process and deliver
-// Adobe Experience Platform audiences in real-time to any application or platform that 
-// would need to act upon an AEP audience qualification.
-// 
-
-module.exports = async function (context, eventHubMessages) {
-
-    return new Promise (function (resolve, reject) {
-
-        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
-
-        resolve();
-
-    });    
-
-};
+context.log('Event hub message:', message);
 ```
+
+Altere a linha 11 em `--aepUserLdap---aep-event-hub-trigger.js` para que tenha esta aparência:
+
+```javascript
+context.log('Event hub message:', JSON.stringify(message));
+```
+
+A carga útil total deve ser desta forma:
+
+```javascript
+const { app } = require('@azure/functions');
+
+app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
+    connection: '--aepUserLdap--aepenablement_RootManageSharedAccessKey_EVENTHUB',
+    eventHubName: '--aepUserLdap---aep-enablement-event-hub',
+    cardinality: 'many',
+    handler: (messages, context) => {
+        if (Array.isArray(messages)) {
+            context.log(`Event hub function processed ${messages.length} messages`);
+            for (const message of messages) {
+                context.log('Event hub message:', message);
+            }
+        } else {
+            context.log('Event hub function processed message:', messages);
+        }
+    }
+});
+```
+
 
 O resultado deve ficar assim:
 
@@ -175,7 +182,13 @@ Agora é hora de executar o projeto. Nesta etapa, não implantaremos o projeto n
 
 ![3-17-vsc-run-project.png](./images/vsc14.png)
 
-Na primeira vez que você executar o projeto no modo de depuração, precisará anexar uma conta de armazenamento do Azure, clicar em **Selecionar conta de armazenamento** e selecionar a conta de armazenamento criada anteriormente, chamada de `--aepUserLdap--aepstorage`.
+Na primeira vez que você executar seu projeto no modo de depuração, precisará anexar uma conta de armazenamento do Azure, clique em **Selecionar conta de armazenamento**.
+
+![3-17-vsc-run-project.png](./images/vsc14a.png)
+
+e selecione a conta de armazenamento criada anteriormente, chamada `--aepUserLdap--aepstorage`.
+
+![3-17-vsc-run-project.png](./images/vsc14b.png)
 
 Seu projeto está em execução e está listando eventos no Hub de eventos. No próximo exercício, você demonstrará o comportamento no site de demonstração do CitiSignal que o qualificará para públicos-alvo. Como resultado, você receberá uma carga de qualificação de público-alvo no terminal da função de acionador do Hub de eventos.
 

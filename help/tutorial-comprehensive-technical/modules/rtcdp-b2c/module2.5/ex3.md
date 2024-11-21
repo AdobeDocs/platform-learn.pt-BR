@@ -3,26 +3,29 @@ title: Coleta de dados da Adobe Experience Platform e encaminhamento pelo lado d
 description: Criar e configurar um webhook personalizado
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
 
 # 2.5.3 Criar e configurar um webhook personalizado
 
-## 2.5.3.1 Criar seu webhook personalizado
+## Criar seu webhook personalizado
 
-Ir para [https://webhook.site/](https://webhook.site/). Você verá algo assim:
+Ir para [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Você já usou este aplicativo no [SDK de Destinos do Exercício 2.3.7](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+
+Se você ainda não tiver usado esse serviço, crie uma conta e um espaço de trabalho. Depois que o espaço de trabalho for criado, você verá algo semelhante a isso.
+
+Clique em **copiar** para copiar a url. Você precisará especificar esse url no próximo exercício. A URL neste exemplo é `https://eodts05snjmjz67.m.pipedream.net`.
 
 ![demonstração](./images/webhook1.png)
 
-Você verá sua URL exclusiva, que tem esta aparência: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`.
-
 Este site criou este webhook para você e você poderá configurar este webhook no **[!DNL Event Forwarding property]** para começar a testar o encaminhamento de eventos.
 
-## 2.5.3.2 Atualize sua propriedade de encaminhamento de eventos: Criar um elemento de dados
+## Atualizar a propriedade de encaminhamento de eventos: Criar um elemento de dados
 
 Vá para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) e vá para **Encaminhamento de Eventos**. Pesquise na propriedade de encaminhamento de eventos e clique nela para abri-la.
 
@@ -41,11 +44,13 @@ Faça a seguinte seleção:
 - Como o **Nome**, digite **Evento XDM**.
 - Como a **Extensão**, selecione **Principal**.
 - Como o **Tipo de Elemento de Dados**, selecione **Caminho**.
-- Como o **Caminho**, digite **arc.event.xdm**. Ao inserir este caminho, você filtrará a seção **XDM** da carga do evento enviada pelo site ou aplicativo móvel para a Adobe Edge.
+- Como o **Caminho**, selecione **Ler dados do XDM (arc.event.xdm)**. Ao selecionar este caminho, você filtrará a seção **XDM** da carga do evento enviada pelo site ou aplicativo móvel para a Adobe Edge.
+
+![SSF da Coleção de Dados do Adobe Experience Platform](./images/de3.png)
 
 Agora você terá isto. Clique em **Salvar**.
 
-![SSF da Coleção de Dados do Adobe Experience Platform](./images/de3.png)
+![SSF da Coleção de Dados do Adobe Experience Platform](./images/de3a.png)
 
 >[!NOTE]
 >
@@ -53,7 +58,7 @@ Agora você terá isto. Clique em **Salvar**.
 >
 >No caminho acima, é feita uma referência ao **evento**. **event** significa um evento exclusivo e o Adobe Experience Platform Data Collection Server sempre avaliará cada evento individualmente. Às vezes, você pode ver uma referência a **eventos** na carga enviada pelo lado do cliente do SDK da Web, mas no Adobe Experience Platform Data Collection Server, cada evento é avaliado individualmente.
 
-## 2.5.3.3 Atualize sua propriedade do Servidor de coleta de dados da Adobe Experience Platform: Criar uma regra
+## Atualizar a propriedade do Servidor de coleta de dados da Adobe Experience Platform: Criar uma regra
 
 No menu esquerdo, vá para **Regras**. Clique em **Criar nova regra**.
 
@@ -75,7 +80,7 @@ Isso deve fornecer a você este **Nome**: **Conector de Nuvem Adobe - Fazer Cham
 Em seguida, configure o seguinte:
 
 - Altere o método de solicitação de GET para **POST**
-- Digite a URL do webhook personalizado que você criou em uma das etapas anteriores no site [https://webhook.site/](https://webhook.site/), que tem esta aparência: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
+- Insira a URL do webhook personalizado que você criou em uma das etapas anteriores, com esta aparência: `https://eodts05snjmjz67.m.pipedream.net`
 
 Agora você deve ter isso. Em seguida, vá para **Corpo**.
 
@@ -110,19 +115,11 @@ Após alguns minutos, você verá que a implantação foi concluída e está pro
 
 ![SSF da Coleção de Dados do Adobe Experience Platform](./images/rl14.png)
 
-## 2.5.3.4 Testar a configuração
+## Testar sua configuração
 
-Ir para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
+Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Executar** para abri-lo.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-Agora você pode seguir o fluxo abaixo para acessar o site. Clique em **Integrações**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-Na página **Integrações**, é necessário selecionar a propriedade Coleção de dados criada no exercício 0.1.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 Você verá seu site de demonstração aberto. Selecione o URL e copie-o para a área de transferência.
 
@@ -140,7 +137,7 @@ Selecione o tipo de conta e conclua o processo de logon.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-Em seguida, você verá seu site carregado em uma janela incógnita do navegador. Para cada demonstração, será necessário usar uma janela do navegador nova e incógnita para carregar o URL do site de demonstração.
+Em seguida, você verá seu site carregado em uma janela incógnita do navegador. Para cada exercício, será necessário usar uma janela do navegador nova e incógnita para carregar o URL do site de demonstração.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
@@ -148,15 +145,15 @@ Ao abrir a Exibição do desenvolvedor do seu navegador, você pode inspecionar 
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook1.png)
 
-Se você selecionar a carga bruta, vá para [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) e cole a carga. Clique em **Tornar Bonito**. Você verá a carga JSON, o objeto **events** e o objeto **xdm**. Em uma das etapas anteriores, ao definir o Elemento de dados, você usou a referência **arc.event.xdm**, que resultará na análise do objeto **xdm** desta carga.
+Se você selecionar a carga bruta, vá para [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) e cole a carga. Clique em **Minificar/Embelhar**. Você verá a carga JSON, o objeto **events** e o objeto **xdm**. Em uma das etapas anteriores, ao definir o Elemento de dados, você usou a referência **arc.event.xdm**, que resultará na análise do objeto **xdm** desta carga.
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook2.png)
 
-Mude sua exibição para o site [https://webhook.site/](https://webhook.site/), que você usou em uma das etapas anteriores. Agora você deve ter uma visualização semelhante a esta, com solicitações de rede sendo mostradas no menu esquerdo. Você está vendo a carga **xdm** que foi filtrada para fora da solicitação de rede mostrada acima.
+Mude sua exibição para o webhook personalizado [https://webhook.site/](https://webhook.site/) que você usou em uma das etapas anteriores. Agora você deve ter uma visualização semelhante a esta, com solicitações de rede sendo mostradas no menu esquerdo. Você está vendo a carga **xdm** que foi filtrada para fora da solicitação de rede mostrada acima.
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook3.png)
 
-Role para baixo na carga para encontrar o nome da página, que neste caso é **vangeluw-OCUC** (que é o nome do projeto do seu site de demonstração).
+Role para baixo na carga para encontrar o nome da página, que neste caso é **inicial**.
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook4.png)
 
@@ -164,7 +161,7 @@ Agora, ao navegar pelo site, você verá solicitações de rede adicionais torna
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook5.png)
 
-Agora você configurou o encaminhamento pelo lado do servidor de cargas SDK da Web/XDM para um webhook personalizado externo. Nos próximos exercícios, você configurará uma abordagem semelhante e enviará esses mesmos dados para os ambientes do Google e do AWS.
+Agora você configurou o encaminhamento de eventos do lado do servidor de cargas SDK da Web/XDM para um webhook personalizado externo. Nos próximos exercícios, você configurará uma abordagem semelhante e enviará esses mesmos dados para os ambientes do Google e do AWS.
 
 Próxima etapa: [2.5.4 Criar e configurar uma Função de Nuvem do Google](./ex4.md)
 
