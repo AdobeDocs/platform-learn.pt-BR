@@ -4,7 +4,7 @@ description: Criar e configurar um webhook personalizado
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Se você selecionar a carga bruta, vá para [https://jsonformatter.org/json-pret
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook2.png)
 
-Mude sua exibição para o webhook personalizado [https://webhook.site/](https://webhook.site/) que você usou em uma das etapas anteriores. Agora você deve ter uma visualização semelhante a esta, com solicitações de rede sendo mostradas no menu esquerdo. Você está vendo a carga **xdm** que foi filtrada para fora da solicitação de rede mostrada acima.
+Mude sua exibição para o webhook personalizado [https://pipedream.com/requestbin](https://pipedream.com/requestbin) que você usou em uma das etapas anteriores. Agora você deve ter uma visualização semelhante a esta, com solicitações de rede sendo mostradas no menu esquerdo. Você está vendo a carga **xdm** que foi filtrada para fora da solicitação de rede mostrada acima.
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook3.png)
 
@@ -161,9 +161,9 @@ Agora, ao navegar pelo site, você verá solicitações de rede adicionais torna
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook5.png)
 
-Agora você configurou o encaminhamento de eventos do lado do servidor de cargas SDK da Web/XDM para um webhook personalizado externo. Nos próximos exercícios, você configurará uma abordagem semelhante e enviará esses mesmos dados para os ambientes do Google e do AWS.
+Agora você configurou o encaminhamento de eventos do lado do servidor de cargas SDK da Web/XDM para um webhook personalizado externo. Nos próximos exercícios, você configurará uma abordagem semelhante e enviará esses mesmos dados para a Google Cloud Platform e a AWS.
 
-Próxima etapa: [2.5.4 Criar e configurar uma Função de Nuvem do Google](./ex4.md)
+Próxima Etapa: [2.5.4 Encaminhar eventos para GCP Pub/Sub](./ex4.md)
 
 [Voltar ao módulo 2.5](./aep-data-collection-ssf.md)
 
