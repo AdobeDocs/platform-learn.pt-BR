@@ -4,7 +4,7 @@ description: Encaminhar eventos para o ecossistema do AWS
 kt: 5342
 doc-type: tutorial
 exl-id: 87c2c85d-f624-4972-a9c6-32ddf8a39570
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: c0537545e4a5d1f1ca21a13d934eb965a4f3aa66
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 3%
@@ -348,3 +348,4 @@ Próxima etapa: [Resumo e benefícios](./summary.md)
 [Voltar ao módulo 2.5](./aep-data-collection-ssf.md)
 
 [Voltar a todos os módulos](./../../../overview.md)
+

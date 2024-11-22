@@ -4,7 +4,7 @@ description: Criar e configurar uma função de nuvem do Google
 kt: 5342
 doc-type: tutorial
 exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: c0537545e4a5d1f1ca21a13d934eb965a4f3aa66
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 1%
@@ -230,3 +230,4 @@ Próxima etapa: [2.5.5 Encaminhar eventos para o AWS Kinesis e AWS S3](./ex5.md)
 [Voltar ao módulo 2.5](./aep-data-collection-ssf.md)
 
 [Voltar a todos os módulos](./../../../overview.md)
+
