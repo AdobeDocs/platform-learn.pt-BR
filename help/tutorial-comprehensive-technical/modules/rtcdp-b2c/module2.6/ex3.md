@@ -4,10 +4,10 @@ description: Configurar o endpoint da API HTTP no Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 8%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser se
 
 ![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-No menu esquerdo, vá para **Fontes** e role para baixo no **Catálogo de Fontes** até ver **API HTTP**. Clique em **Adicionar dados**.
+No menu esquerdo, vá para **Fontes** e role para baixo no **Catálogo de Fontes** até ver **API HTTP**. Clique em **Instalação**.
 
 ![Assimilação de dados](./images/kaep1.png)
 
@@ -39,15 +39,9 @@ Você verá isso, clique em **Avançar**.
 
 Selecione **Conjunto de dados existente**, abra o menu suspenso. Pesquise e selecione o conjunto de dados **Sistema de demonstração - Conjunto de dados de evento para Call Center (Global v1.1)**.
 
+Clique em **Next**.
+
 ![Assimilação de dados](./images/kaep4.png)
-
-Clique em **Next**.
-
-![Assimilação de dados](./images/kaep6.png)
-
-Clique em **Next**.
-
-![Assimilação de dados](./images/kaep7.png)
 
 Clique em **Concluir**.
 
@@ -55,11 +49,11 @@ Clique em **Concluir**.
 
 Em seguida, você verá uma visão geral do HTTP API Source Connector que acabou de criar.
 
-![Assimilação de dados](./images/kaep9.png)
-
 Você precisará copiar a URL do **endpoint de transmissão**, que se parece com a abaixo, como você precisará dela no próximo exercício.
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![Assimilação de dados](./images/kaep9.png)
 
 Você concluiu este exercício.
 

@@ -6,24 +6,20 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: be5a7dec47a83a14d74024015a15a9c24d04cd95
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
 # 2.6.2 Instalar e configurar o cluster Kafka
 
-## 2.6.2.1 Baixar o Apache Kafka
+## Baixar Apache Kafka
 
-Acesse [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) e baixe a versão mais recente lançada. Selecione a versão binária mais recente, neste caso a **Scala 2.13**.
+Acesse [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) e baixe a versão mais recente lançada. Selecione a versão binária mais recente, neste caso **3.9.0**. O download será iniciado.
 
 ![Kafka](./images/kafka1.png)
-
-Então você é levado a um espelho. Clique no link sugerido para baixar o Kafka.
-
-![Kafka](./images/kafka2.png)
 
 Crie uma pasta na área de trabalho chamada **Kafka_AEP** e coloque o arquivo baixado nesse diretório.
 
@@ -35,7 +31,7 @@ Abra uma janela do **Terminal** clicando com o botão direito do mouse em sua pa
 
 Execute este comando na janela Terminal para descompactar o arquivo baixado:
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ E nesse diretório, você verá estes subdiretórios:
 
 Volte para a janela do Terminal. Digite o seguinte comando:
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -69,15 +65,15 @@ Em seguida, insira o comando `bin/kafka-topics.sh`.
 
 ![Kafka](./images/kafka10a.png)
 
-Você deverá ver essa resposta. Isso significa que o Kafka está instalado corretamente e que o Java está funcionando bem. (Lembrete: você precisa do JDK do Java 8 ou JDK do Java 11 instalado para que isso funcione!) Você pode ver qual versão do Java foi instalada usando o comando `java -version`.)
+Você deverá ver essa resposta. Isso significa que o Kafka está instalado corretamente e que o Java está funcionando bem. (Lembrete: você precisa do JDK Java 23 instalado para que isso funcione!). Você pode ver qual versão do Java foi instalada usando o comando `java -version`.)
 
 ![Kafka](./images/kafka10.png)
 
-## 2.6.2.2 Iniciar o Kafka
+## Iniciar o Kafka
 
 Para iniciar o Kafka, você precisará iniciar o Kafka Zookeeper e o Kafka, nesta ordem.
 
-Abra uma janela do **Terminal** clicando com o botão direito do mouse na sua pasta **kafka_2.13-3.1.0** e clicando em **Novo Terminal na Pasta**.
+Abra uma janela do **Terminal** clicando com o botão direito do mouse na sua pasta **kafka_2.13-3.9.0** e clicando em **Novo Terminal na Pasta**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -93,7 +89,7 @@ Você verá isto:
 
 Mantenha essa janela aberta enquanto você passa por esses exercícios!
 
-Abra outra nova janela do **Terminal** clicando com o botão direito do mouse na sua pasta **kafka_2.13-3.1.0** e clicando em **Novo Terminal na Pasta**.
+Abra outra nova janela do **Terminal** clicando com o botão direito do mouse na sua pasta **kafka_2.13-3.9.0** e clicando em **Novo Terminal na Pasta**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -109,9 +105,9 @@ Você verá isto:
 
 Mantenha essa janela aberta enquanto você passa por esses exercícios!
 
-## 2.6.2.3 Criar um tópico Kafka
+## Criar um tópico do Kafka
 
-Abra uma janela do **Terminal** clicando com o botão direito do mouse na sua pasta **kafka_2.13-3.1.0** e clicando em **Novo Terminal na Pasta**.
+Abra uma janela do **Terminal** clicando com o botão direito do mouse na sua pasta **kafka_2.13-3.9.0** e clicando em **Novo Terminal na Pasta**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -119,9 +115,7 @@ Digite este comando para criar um novo tópico do Kafka com o nome **aeptest**. 
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16a.png)
-
-Você verá uma confirmação semelhante:
+Você verá uma confirmação:
 
 ![Kafka](./images/kafka17a.png)
 
@@ -129,13 +123,11 @@ Digite este comando para criar um novo tópico do Kafka com o nome **aep**. Este
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16.png)
-
 Você verá uma confirmação semelhante:
 
 ![Kafka](./images/kafka17.png)
 
-## 2.6.2.4 Produzir eventos
+## Produzir eventos
 
 Volte para a janela Terminal na qual você criou seu primeiro tópico do Kafka e digite o seguinte comando:
 
@@ -163,7 +155,7 @@ No teclado, clique em `Control` e `C` ao mesmo tempo para fechar o produtor.
 
 ![Kafka](./images/kafka22.png)
 
-## 2.6.2.4 Eventos de consumo
+## Eventos de consumo
 
 Na mesma janela Terminal que você usou para produzir eventos, digite o seguinte comando:
 

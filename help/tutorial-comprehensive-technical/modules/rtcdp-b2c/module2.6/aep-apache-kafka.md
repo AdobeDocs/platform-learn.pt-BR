@@ -4,16 +4,14 @@ description: Neste módulo, você aprenderá a configurar seu próprio cluster d
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 # 2.6 Transmitir dados do Apache Kafka para o Adobe Experience Platform
-
-**Autores: [Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/), [Nipun Nair](https://www.linkedin.com/in/nipunnair/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Neste módulo, você aprenderá a configurar seu próprio cluster do Apache Kafka, definir tópicos, produtores e consumidores e transmitir dados para o Adobe Experience Platform usando o Conector de dissipador do Adobe Experience Platform pelo Kafka Connect.
 
@@ -27,7 +25,7 @@ Neste módulo, você aprenderá a configurar seu próprio cluster do Apache Kafk
 
 ## Pré-requisitos
 
-- O Java JDK11 ou superior precisa ser instalado no computador. Você pode baixar esse JDK aqui: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- O Java JDK23 ou superior precisa ser instalado no computador. Você pode baixar esse JDK aqui: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Acesso ao Adobe Experience Platform
 
 >[!NOTE]
