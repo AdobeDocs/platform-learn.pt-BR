@@ -4,9 +4,9 @@ description: IA do cliente - Preparação de dados (assimilação)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -53,33 +53,20 @@ Você verá isso. Clique em **+ Adicionar** em Grupos de campos.
 Pesquise e selecione os **Grupos de Campos** a seguir para adicionar a este Esquema:
 
 - Evento de experiência do consumidor
-- Detalhes da ID do usuário final
+
+![Novo esquema CEE](./images/cee1.png)
+
+- IdentityMap
 
 Clique em **Adicionar grupos de campos**.
 
-![Novo esquema CEE](./images/cee.png)
+![Novo esquema CEE](./images/cee2.png)
 
-Você verá isso. Clique no **Detalhes da ID do Usuário Final** do Grupo de Campos.
-
-![Criar novo esquema](./images/eui1.png)
-
-Navegue até o campo **endUserIDs._experience.emailid.id**.
-
-![Criar novo esquema](./images/eui2.png)
-
-No menu direito do campo **endUserIDs._experience.emailid.id**, role para baixo e marque a caixa de seleção de **Identidade**, marque a caixa de seleção de **Identidade Primária** e selecione o **Namespace de identidade** de **Email**. Clique em **Aplicar**.
-
-![Criar novo esquema](./images/eui3.png)
-
-Navegue até o campo **endUserIDs._experience.mcid.id**. Marque a caixa de seleção de **Identidade** e selecione o **Namespace de identidade** de **ECID**. Clique em **Aplicar**.
-
-![Criar novo esquema](./images/eui4.png)
-
-Então você terá isto. Em seguida, selecione o nome do schema. Agora você deve habilitar seu esquema para o **Perfil**, clicando na opção **Perfil**.
+Você verá isso. Em seguida, selecione o nome do schema. Agora você deve habilitar seu esquema para o **Perfil**, clicando na opção **Perfil**.
 
 ![Criar novo esquema](./images/xdmee3.png)
 
-Você verá isso. Clique em **Habilitar**.
+Você verá isso. Marque a caixa de seleção de **Os dados deste esquema conterão uma identidade primária no campo identityMap.**. Clique em **Habilitar**.
 
 ![Criar novo esquema](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ Agora você está pronto para começar a assimilar dados do Evento de experiênc
 
 ## Baixar dados de teste do Evento de experiência
 
-Depois que o **Esquema** e o **Conjunto de dados** estiverem configurados, você estará pronto para assimilar dados do Evento de Experiência. Como a IA do cliente requer dados em **2 trimestres pelo menos**, será necessário assimilar dados preparados externamente.
+Depois que o **Esquema** e o **Conjunto de dados** estiverem configurados, você estará pronto para assimilar dados do Evento de Experiência. Como a IA do cliente exige que o tenha requisitos de dados específicos, você precisará assimilar dados preparados externamente.
 
-Os dados preparados para os eventos de experiência devem estar em conformidade com os requisitos e o esquema do [Mixin do XDM do Evento de Experiência do Consumidor](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
+Os dados preparados para os eventos de experiência neste exercício devem estar em conformidade com os requisitos e o esquema do [Grupo de Campos XDM de Evento de Experiência do Consumidor](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Baixe o arquivo que contém dados de exemplo deste local: [https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data). Clique no botão **Baixar**.
+Baixe o arquivo zip com dados de demonstração deste local: [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![Conjunto de dados](./images/dsn1.png)
-
-Como alternativa, se você não puder acessar o link acima, também poderá baixar o arquivo deste local: [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
-
-Você baixou um arquivo chamado **retail-v1-dec2020-xl.json.zip**. Coloque o arquivo na área de trabalho do seu computador e descompacte-o, e você verá um arquivo chamado **retail-v1.json**. Você precisará desse arquivo no próximo exercício.
+Você baixou um arquivo chamado **CUSTOM-CAI-EVENTS-WEB.zip**. Coloque o arquivo na área de trabalho do seu computador e descompacte-o, e você verá uma pasta chamada **CUSTOM-CAI-EVENTS-WEB**.
 
 ![Conjunto de dados](./images/ingest.png)
+
+Nessa pasta, você encontrará vários arquivos json sequenciados, que precisam ser assimilados no próximo exercício.
+
+![Conjunto de dados](./images/ingest1a.png)
 
 ## Assimilar dados de teste do Evento de experiência
 
@@ -145,9 +132,11 @@ No seu conjunto de dados, clique em **Escolher arquivos** para adicionar dados.
 
 ![Conjunto de dados](./images/ingest2.png)
 
-No pop-up, selecione o arquivo **retail-v1.json** e clique em **Abrir**.
+Na janela pop-up, selecione os arquivos **WEBSITE-EE-1.json** até **WEBSITE-EE-5.json** e clique em **Abrir**.
 
 ![Conjunto de dados](./images/ingest3.png)
+
+Repita esse processo de assimilação para os arquivos **WEBSITE-EE-6.json** e **WEBSITE-EE-7.json**.
 
 Você verá os dados sendo importados e um novo lote será criado no estado **Carregando**. Não saia desta página até que o arquivo seja carregado.
 
@@ -159,11 +148,9 @@ Após carregar o arquivo, você verá a alteração do status do lote de **Carre
 
 A assimilação e o processamento de dados podem levar de 10 a 20 minutos.
 
-Quando a assimilação de dados for bem-sucedida, o status do lote será alterado para **Sucesso**.
+Quando a assimilação de dados for bem-sucedida, o status do lote dos vários uploads será alterado para **Sucesso**.
 
 ![Conjunto de dados](./images/ingest7.png)
-
-![Conjunto de dados](./images/ingest8.png)
 
 Próxima etapa: [2.2.2 IA do cliente - Criar uma nova instância (Configurar)](./ex2.md)
 

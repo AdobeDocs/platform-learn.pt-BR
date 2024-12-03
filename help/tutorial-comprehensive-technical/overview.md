@@ -2,11 +2,9 @@
 title: Visão geral
 description: Ponto de partida para engenheiros de dados, analistas de dados, arquitetos de dados, cientistas de dados, engenheiros de orquestração e profissionais de marketing para obter uma compreensão completa do valor comercial da Adobe Experience Platform e de todos os seus serviços de aplicativos.
 doc-type: multipage-overview
-hide: false
-exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
+source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1207'
 ht-degree: 2%
 
 ---
@@ -51,6 +49,8 @@ Após concluir os exercícios neste tutorial, você será capaz de:
 
 ## Pré-requisitos
 
+Se você quiser usar este tutorial usando sua própria instância do Adobe Experience Platform, siga as instruções [aqui](./setup.md) para preparar sua organização para o tutorial.
+
 - Acesso ao Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à Coleção de Dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Acesso ao sistema de demonstração: [https://dsn.adobe.com/](https://dsn.adobe.com/)
@@ -59,147 +59,123 @@ Após concluir os exercícios neste tutorial, você será capaz de:
 
 Você pode encontrar muitos vídeos interessantes dos nossos webinários da Tech Academy, de acampamentos e muito mais no nosso [canal do Experience Makers Community YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
+## Conclusão e certificação
+
+Este tutorial faz parte de um curso de certificação Adobe. Você pode se inscrever no curso junto com este tutorial acessando [https://certification.adobe.com](https://certification.adobe.com).
+
+Para cada módulo que você concluir usando o tutorial abaixo, você precisa enviar uma prova de conclusão como indicado [aqui](./completion.md).
+
 ## Conteúdo
 
 [0. Introdução](./modules/gettingstarted/gettingstarted/getting-started.md)
 
-- **Público-alvo:** todos os participantes do Tutorial Técnico Abrangente do Adobe Experience Platform
-- **Pré-requisitos:** Acesso ao Sistema de Demonstração Seguinte, Adobe Experience Platform e Coleção de Dados do Adobe Experience Platform.
-- **Descrição:** Neste módulo fundamental, você configurará tudo para poder acessar e usar o ambiente de demonstração.
-- **Investimento de tempo:** 30 minutos
+Neste módulo fundamental, você configurará tudo para poder acessar e usar o ambiente de demonstração.
+
+**Investimento de tempo:** 30 minutos
 
 ### 1. Coleta de dados
 
 [1.1 Foundation - Configuração da coleção de dados da Adobe Experience Platform e do SDK da Web](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
 
-- **Público-alvo:** Engenheiro de dados, Arquiteto de dados
-- **Pré-requisitos:** Acesso à Coleção de Dados da Adobe Experience Platform e da Adobe Experience Platform.
-- **Descrição:** Neste módulo fundamental, você aprenderá sobre a Coleção de dados da Adobe Experience Platform e a nova extensão SDK da Web.
-- **Investimento de tempo:** 30 minutos
+Neste módulo fundamental, você aprenderá sobre a Coleção de dados do Adobe Experience Platform e a nova extensão SDK da Web.
+
+**Investimento de tempo:** 30 minutos
 
 [1.2 Foundation - Assimilação de dados](./modules/datacollection/module1.2/data-ingestion.md)
 
-- **Público-alvo:** Engenheiro de dados, Arquiteto de dados
-- **Pré-requisitos:** Acesso à Coleção de Dados da Adobe Experience Platform e da Adobe Experience Platform.
-- **Descrição:** Neste módulo fundamental, você assimilará dados do site na Plataforma
-- **Investimento de tempo:** 120 minutos
+Neste módulo fundamental, você assimilará dados de várias fontes na Adobe Experience Platform
+
+**Investimento de tempo:** 120 minutos
 
 [1.3 Composição de público-alvo federado](./modules/datacollection/module1.3/fac.md)
 
-- **Público-Alvo:** Analista De Dados, Engenheiro De Dados, Arquiteto De Dados
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform
-- **Descrição:** Neste módulo, você aprenderá a configurar seu próprio cluster do Apache Kafka, definir tópicos, produtores e consumidores e transmitir dados para a Adobe Experience Platform usando o Adobe Experience Platform Sink Connector for Kafka Connect.
-- **Investimento de tempo:** 90 minutos
+Neste módulo, você aprenderá a configurar um modelo de Federated Audiences e gerar públicos usando dados federados.
+
+**Investimento de tempo:** 90 minutos
 
 ### 2. Real-Time CDP B2C
 
 [2.1 Foundation - Perfil do cliente em tempo real](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Profissional De Marketing
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform e ao Postman
-- **Descrição:** Neste módulo fundamental, você explorará o Perfil do Cliente em Tempo Real no Adobe Experience Platform utilizando a interface e a API.
-- **Investimento de tempo:** 90 minutos
-- **Baixar estes ativos**:
-   - [coleções do Postman](./assets/postman/postman_profile.zip)
+Neste módulo fundamental, você explorará o Perfil do cliente em tempo real no Adobe Experience Platform usando a interface e a API.
+
+**Investimento de tempo:** 90 minutos
 
 [2.2 Serviços inteligentes](./modules/rtcdp-b2c/module2.2/intelligent-services.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Cientista De Dados
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform, Serviços inteligentes
-- **Descrição:** Neste módulo, você aprenderá a instalar, configurar e usar os Serviços Inteligentes da Adobe Experience Platform.
-- **Investimento de tempo:** 60 minutos
+Neste módulo, você aprenderá a configurar, configurar e usar os Serviços inteligentes da Adobe Experience Platform.
+
+**Investimento de tempo:** 60 minutos
 
 [2.3 Real-Time CDP - Criar um público-alvo e realizar ações](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
-- **Público-Alvo:** Arquiteto De Dados, Engenheiro De Orquestração, Profissional De Marketing
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3
-- **Descrição:** Neste módulo, você configurará um público-alvo e o ativará para vários destinos, incluindo Google DV360, Adobe Target e AWS S3.
-- **Investimento de tempo:** 90 minutos
+Neste módulo, você configurará um público-alvo e o ativará para vários destinos, incluindo Google DV360, Adobe Target e AWS S3.
+
+**Investimento de tempo:** 90 minutos
 
 [2.4 Real-Time CDP: Audience Activation para o Hub de eventos do Microsoft Azure](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Analista De Dados
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform, Real-time CDP e Microsoft Azure
-- **Descrição:** Neste módulo, você configurará um destino do Microsoft Azure EventHub como um destino em tempo real para o Adobe Experience Platform Real-time CDP. Você também configurará e implantará uma função do Azure que será acionada em tempo real sempre que a Adobe Experience Platform fornecer uma carga de público-alvo para seu destino do Azure EventHub. A Azure Function que você acionará mostrará o mecanismo dos recursos de ativação da Adobe Experience Platform Real-time CDP.
+Neste módulo, você configurará um destino do Microsoft Azure EventHub como destino em tempo real para a CDP em tempo real do Adobe Experience Platform. Você também configurará e implantará uma função do Azure que será acionada em tempo real sempre que a Adobe Experience Platform fornecer uma carga de público-alvo para seu destino do Azure EventHub. A Azure Function que você acionará mostrará o mecanismo dos recursos de ativação da Adobe Experience Platform Real-time CDP.
 Como parte desse módulo, você também compreenderá o que aciona a Real-time CDP para realmente fornecer uma carga útil a um destino especificado. Também discutiremos o status de uma qualificação de público-alvo e como ela está relacionada à ativação.
-- **Investimento de tempo:** 90 minutos
+
+**Investimento de tempo:** 90 minutos
 
 [2.5 Conexões do Real-Time CDP: encaminhamento de eventos](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Analista De Dados
-- **Pré-requisitos:** Acesso às propriedades de Conexões, Marcas e Encaminhamento de Eventos da Real-Time CDP
-- **Descrição:** Neste módulo, você usará os conjuntos de dados, esquemas e a propriedade de Coleção de dados da Adobe Experience Platform previamente configurados para coletar dados e, em seguida, encaminhará esses dados do lado do servidor para um ponto de extremidade de escolha.
-- **Investimento de tempo:** 90 minutos
+Neste módulo, você usará os conjuntos de dados, esquemas e a propriedade de Coleção de dados da Adobe Experience Platform configurados anteriormente para coletar dados e, em seguida, encaminhará esses dados do lado do servidor para vários endpoints, como o Google Cloud Platform Pub/Sub e o AWS Kinesis.
+
+**Investimento de tempo:** 90 minutos
 
 [2.6 Transmitir dados do Apache Kafka para o Real-Time CDP](./modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)
 
-- **Público-Alvo:** Analista De Dados, Engenheiro De Dados, Arquiteto De Dados
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform
-- **Descrição:** Neste módulo, você aprenderá a configurar seu próprio cluster do Apache Kafka, definir tópicos, produtores e consumidores e transmitir dados para a Adobe Experience Platform usando o Adobe Experience Platform Sink Connector for Kafka Connect.
-- **Investimento de tempo:** 90 minutos
+Neste módulo, você aprenderá a configurar seu próprio cluster do Apache Kafka, definir tópicos, produtores e consumidores e transmitir dados para o Adobe Experience Platform usando o Conector de coletor do Adobe Experience Platform para Kafka Connect.
+
+**Investimento de tempo:** 90 minutos
 
 ### 3. Adobe Journey Optimizer B2C
 
 [3.1 Adobe Journey Optimizer: Orquestração](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
 
-- **Público-alvo:** Engenheiro de Dados, Arquiteto de Dados, Engenheiro de Orquestração
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform e ao Adobe Journey Optimizer
-- **Descrição:** Neste módulo, você usará o Adobe Journey Optimizer para criar uma jornada baseada em gatilho.
-- **Investimento de tempo:** 60 minutos
+Neste módulo, você usará o Adobe Journey Optimizer para criar uma jornada baseada em acionador.
+
+**Investimento de tempo:** 60 minutos
 
 [3.2 Adobe Journey Optimizer: fontes de dados externas e ações personalizadas](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Engenheiro De Orquestração, Profissional De Marketing
-- **Pré-requisitos:** Acesso a Adobe Experience Platform, Adobe Journey Optimizer, API de Tempo Aberto, Twilio
-- **Descrição:** Neste módulo, você usará o Adobe Journey Optimizer para ouvir o comportamento do cliente, tanto online quanto offline, e responder a ele de forma inteligente, contextual e em tempo real através de vários canais.
-- **Investimento de tempo:** 90 minutos
+Neste módulo, você usará o Adobe Journey Optimizer para ouvir o comportamento do cliente, online e offline, e responder a ele de forma inteligente, contextual e em tempo real por vários canais.
+
+**Investimento de tempo:** 90 minutos
 
 [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Engenheiro De Orquestração, Profissional De Marketing
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform e ao Offer Decisioning
-- **Descrição:** Neste módulo, você usará o serviço de aplicativos Adobe Experience Platform - Ofertas/Decisão de forma prática para configurar Ofertas Personalizadas e sua própria Atividade de Oferta.
-- **Investimento de tempo:** 120 minutos
+Neste módulo, você usará o serviço de aplicativos Adobe Experience Platform - Offers/Decisioning de forma prática para configurar as Ofertas personalizadas e sua própria Atividade de oferta.
+
+**Investimento de tempo:** 120 minutos
 
 [3.4 Adobe Journey Optimizer: Jornadas baseadas em eventos](./modules/ajo-b2c/module3.4/journeyoptimizer.md)
 
-- **Público-Alvo:** Profissional De Marketing Por Email, Especialista Em Orquestração, Engenheiro De Dados, Arquiteto De Dados, Analista De Dados
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform e ao Journey Optimizer
-- **Descrição:** Neste módulo, você aprenderá tudo o que há para saber sobre o Journey Optimizer, que ajuda as empresas a projetar e entregar experiências conectadas, contextuais e personalizadas aos seus clientes.
-- **Investimento de tempo:** 120 minutos
+Neste módulo, você aprenderá tudo o que há para saber sobre o Journey Optimizer, que ajuda as empresas a projetar e entregar experiências conectadas, contextuais e personalizadas aos clientes.
+
+**Investimento de tempo:** 120 minutos
 
 ### 4. Adobe Customer Journey Analytics
 
 [Customer Journey Analytics 4.1: Criar um painel usando o Analysis Workspace sobre o Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Analista De Dados
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform e Customer Journey Analytics
-- **Descrição:** Neste módulo, você acessará insights online offline configurando um painel contendo dados omnicanal, como Interações de Site, Interações de Aplicativo Móvel, Interações da Central de Atendimento, Interações na Loja e muito mais.
-- **Investimento de tempo:** 120 minutos
+Neste módulo, você obterá insights online e offline configurando um painel contendo dados omnicanal como Interações de Site, Interações de Aplicativo Móvel, Interações da Central de Atendimento, Interações na Loja e muito mais.
+
+**Investimento de tempo:** 120 minutos
 
 [4.2 Customer Journey Analytics: Assimilar e analise dados de Google Analytics no Adobe Experience Platform com o conector de Source do BigQuery](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
 
-- **Público-Alvo:** Engenheiro De Dados, Arquiteto De Dados, Analista De Dados
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform, Customer Journey Analytics, Google Cloud Platform, Google BigQuery
-- **Descrição:** Neste módulo, você configurará sua própria instância da Google Cloud Platform, carregará dados de demonstração na Google Cloud Platform e usará o BigQuery Source Connector para assimilar esses dados da Google Cloud Platform na Adobe Experience Platform. Por fim, você usará o Customer Journey Analytics para visualizar esses dados.
-- **Investimento de tempo:** 120 minutos
-- **Baixar estes ativos**:
-   - [JSON - Dados de amostra: Demonstração - Dados de fidelidade](./assets/json/bqLoyalty.json)
+Neste módulo, você configurará sua própria instância da Google Cloud Platform, carregará dados de demonstração na Google Cloud Platform e usará o BigQuery Source Connector para assimilar esses dados da Google Cloud Platform na Adobe Experience Platform. Por fim, você usará o Customer Journey Analytics para visualizar esses dados.
+
+**Investimento de tempo:** 120 minutos
 
 ### 5. Data Distiller
 
 [5.1 Serviço de consulta](./modules/datadistiller/module5.1/query-service.md)
 
-- **Público-alvo:** engenheiro de dados, arquiteto de dados, analista de dados, especialista em BI
-- **Pré-requisitos:** Acesso ao Adobe Experience Platform, Serviço de Consulta, Power BI Tableau
-- **Descrição:** Neste módulo, você aprenderá a usar o Serviço de Consulta da Adobe Experience Platform.
-- **Investimento de tempo:** 90 minutos
-- **Baixar estes ativos**:
-   - [JSON - Dados de amostra: Sistema de demonstração - Conjunto de dados de evento para site](./assets/json/ee.json)
-   - [JSON - Dados de amostra: Sistema de demonstração - Conjunto de dados de evento para Call Center](./assets/json/callcenter.json)
-   - [JSON - Dados de amostra: Sistema de demonstração - Conjunto de dados do perfil para fidelidade](./assets/json/loyalty.json)
+Neste módulo, você aprenderá a usar o Adobe Experience Platform Query Service.
 
-
-
-
-
+**Investimento de tempo:** 90 minutos

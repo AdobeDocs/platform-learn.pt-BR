@@ -1,76 +1,85 @@
 ---
-title: Serviço de consulta - Explorar o conjunto de dados com o Power BI
-description: Serviço de consulta - Explorar o conjunto de dados com o Power BI
+title: Serviço de consulta - Power BI/Tableau
+description: Serviço de consulta - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 5.1.5 Serviço de consulta e Power BI
+# 5.1.5 Gerar um conjunto de dados a partir de um query
 
-Abra o Microsoft Power BI Desktop.
+## Objetivo
 
-![início-power-bi.png](./images/start-power-bi.png)
+Saiba como gerar conjuntos de dados a partir dos resultados da consulta
+Conectar o Microsoft Power BI Desktop/Tableau diretamente ao Serviço de consulta
+Criação de um relatório no Microsoft Power BI Desktop/Tableau Desktop
 
-Clique em **Obter Dados**.
+## Contexto da lição
 
-![power-bi-get-data.png](./images/power-bi-get-data.png)
+Uma interface de linha de comando para consultar dados é empolgante, mas não apresenta uma boa situação. Nesta lição, guiaremos você em um fluxo de trabalho recomendado sobre como usar o Microsoft Power BI Desktop/Tableau diretamente no Serviço de consulta para criar relatórios visuais para as partes interessadas.
 
-Pesquise por **postgres** (1), selecione **Postgres** (2) na lista e **Connect** (3).
+## Criar um conjunto de dados a partir de uma consulta SQL
 
-![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
+A complexidade da consulta afetará quanto tempo o Serviço de consulta leva para retornar resultados. E ao consultar diretamente a partir da linha de comando ou de outras soluções, como o Microsoft Power BI/Tableau, o Serviço de consulta é configurado com um tempo limite de 5 minutos (600 segundos). E, em certos casos, essas soluções serão configuradas com tempos limite mais curtos. Para executar consultas maiores e carregar com antecedência o tempo necessário para retornar resultados, oferecemos um recurso para gerar um conjunto de dados a partir dos resultados da consulta. Esse recurso utiliza o recurso SQL padrão conhecido como Criar tabela como seleção (CTAS). Ela está disponível na interface do usuário da Platform na Lista de consultas e também está disponível para ser executada diretamente na linha de comando com PSQL.
 
-Vá para o Adobe Experience Platform, para **Consultas** e para **Credenciais**.
+No anterior, você substituiu **digite seu nome** pelo seu próprio ldap antes de executá-lo em PSQL.
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+```sql
+select /* enter your name */
+       e.--aepTenantId--.identification.core.ecid as ecid,
+       e.placeContext.geo.city as city,
+       e.placeContext.geo._schema.latitude latitude,
+       e.placeContext.geo._schema.longitude longitude,
+       e.placeContext.geo.countryCode as countrycode,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
+       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
+       l.--aepTenantId--.identification.core.loyaltyId as crmid
+from   demo_system_event_dataset_for_website_global_v1_1 e
+      ,demo_system_event_dataset_for_call_center_global_v1_1 c
+      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
+and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+```
 
-Na página **Credenciais** do Adobe Experience Platform, copie o **Host** e cole-o no campo **Servidor**, copie o **Banco de Dados** e cole-o no campo **Banco de Dados** do Power BI e clique em OK (2).
+Navegue até a interface do Adobe Experience Platform - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
->[!IMPORTANT]
->
->Certifique-se de incluir a porta **:80** no final do valor Server porque o Serviço de Consulta não usa atualmente a porta PostgreSQL padrão de 5432.
+Pesquise a instrução executada na interface do Adobe Experience Platform Query inserindo o ldap no campo de pesquisa:
 
-![power-bi-connect-server.png](./images/power-bi-connect-server.png)
+Selecione **Consultas**, vá para **Log** e insira seu ldap no campo de pesquisa.
 
-Na próxima caixa de diálogo, preencha o Nome de usuário e a Senha com o Nome de usuário e a Senha encontrados nas **Credenciais** de Consultas no Adobe Experience Platform.
+![search-query-for-ctas.png](./images/search-query-for-ctas.png)
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+Selecione sua consulta e clique em **Conjunto de Dados de Saída**.
 
-Na caixa de diálogo Navegador, coloque seu **LDAP** no campo de pesquisa (1) para localizar seus conjuntos de dados CTAS e marque a caixa ao lado de cada (2). Em seguida, clique em Carregar (3).
+![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
+Insira `--aepUserLdap-- Callcenter Interaction Analysis` como nome e descrição para o conjunto de dados e pressione o botão **Executar consulta**
 
-Verifique se a guia (1) **Relatório** está selecionada.
+![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 
-![power-bi-report-tab.png](./images/power-bi-report-tab.png)
+Como resultado, você verá uma nova consulta com o status **Enviada**.
 
-Selecione o mapa (1) e, depois de adicioná-lo à tela de relatórios, aumente o mapa (2).
+![ctas-query-submit.png](./images/ctas-query-submitted.png)
 
-![power-bi-select-map.png](./images/power-bi-select-map.png)
+Após a conclusão, você verá uma nova entrada para **Conjunto de dados criado** (talvez seja necessário atualizar a página).
 
-Em seguida, precisamos definir as medidas e as dimensões. Para isso, arraste os campos da seção **campos** para os espaços reservados correspondentes (localizados em **visualizações**), conforme indicado abaixo:
+![ctas-dataset-created.png](./images/ctas-dataset-created.png)
 
-![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
+Assim que o conjunto de dados for criado (o que pode levar de 5 a 10 minutos), você pode continuar o exercício.
 
-Como medida, usaremos uma contagem de **customerId**. Arraste o campo **crmid** da seção **fields** para o espaço reservado **Size**:
+Próxima Etapa - Opção A: [5.1.6 Serviço de Consulta e Power BI](./ex6.md)
 
-![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
-
-Finalmente, para fazer uma análise de **callTopic**, vamos arrastar o campo **callTopic** para o espaço reservado de **filtros de nível de página** (talvez seja necessário rolar a tela na seção **visualizações**);
-
-![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
-
-Selecione/desmarque **callTopics** para investigar:
-
-![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
-
-Você terminou este exercício agora.
-
-Próxima Etapa: [5.1.7 API de Serviço de Consulta](./ex7.md)
+Próxima Etapa - Opção B: [5.1.7 Serviço de Consulta e Tableau](./ex7.md)
 
 [Voltar ao módulo 5.1](./query-service.md)
 

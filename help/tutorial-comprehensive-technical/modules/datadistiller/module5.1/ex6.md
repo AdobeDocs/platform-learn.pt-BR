@@ -1,62 +1,77 @@
 ---
-title: Serviço de consulta - Explorar o conjunto de dados com o Tableau
-description: Serviço de consulta - Explorar o conjunto de dados com o Tableau
+title: Serviço de consulta - Explorar o conjunto de dados com o Power BI
+description: Serviço de consulta - Explorar o conjunto de dados com o Power BI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# 5.1.6 Serviço de consulta e Tableau
+# 5.1.6 Serviço de consulta e Power BI
 
-Abra o Tableau.
+Abra o Microsoft Power BI Desktop.
 
-![start-tableau.png](./images/start-tableau.png)
+![início-power-bi.png](./images/start-power-bi.png)
 
-Em **Conectar-se a um Servidor**, selecione **PostgreSQL**:
+Clique em **Obter Dados**.
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![power-bi-get-data.png](./images/power-bi-get-data.png)
+
+Pesquise por **postgres** (1), selecione **Postgres** (2) na lista e **Connect** (3).
+
+![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
 
 Vá para o Adobe Experience Platform, para **Consultas** e para **Credenciais**.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-Na página **Credenciais** do Adobe Experience Platform, copie o **Host** e cole-o no campo **Servidor**, copie o **Banco de Dados** e cole-o no campo **Banco de Dados** do Tableau, copie a **Porta** e cole no campo **Porta** no Tableau. Faça o mesmo para **Nome de Usuário** e **Senha**. Em seguida, clique em **Entrar**.
+Na página **Credenciais** do Adobe Experience Platform, copie o **Host** e cole-o no campo **Servidor**, copie o **Banco de Dados** e cole-o no campo **Banco de Dados** do Power BI e clique em OK (2).
 
-Entrar:
+>[!IMPORTANT]
+>
+>Certifique-se de incluir a porta **:80** no final do valor Server porque o Serviço de Consulta não usa atualmente a porta PostgreSQL padrão de 5432.
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 
-Clique em pesquisar (1) e insira seu **ldap** no campo de pesquisa, identifique sua tabela do conjunto de resultados e arraste-a (3) para o local chamado **Arraste tabelas aqui**. Quando terminar, clique em **Planilha 1** (3).
+Na próxima caixa de diálogo, preencha o Nome de usuário e a Senha com o Nome de usuário e a Senha encontrados nas **Credenciais** de Consultas no Adobe Experience Platform.
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
-Para visualizar nossos dados no mapa, precisamos converter longitude e latitude em dimensões. Em **Medidas**, selecione **Latitude** (1), abra a lista suspensa do campo e selecione **Converter em Dimension** (2). Faça o mesmo para a medida **Longitude**.
+Na caixa de diálogo Navegador, coloque seu **LDAP** no campo de pesquisa (1) para localizar seus conjuntos de dados CTAS e marque a caixa ao lado de cada (2). Em seguida, clique em Carregar (3).
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
 
-Arraste a medida **Longitude** para as **Colunas** e a medida **Latitude** para **Linhas**. Automaticamente, o mapa de **Bélgica** aparecerá com pequenos pontos representando as cidades em todo o conjunto de dados.
+Verifique se a guia (1) **Relatório** está selecionada.
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![power-bi-report-tab.png](./images/power-bi-report-tab.png)
 
-Selecione **Nomes de Medidas** (1), abra a lista suspensa e selecione **Adicionar à Planilha** (2):
+Selecione o mapa (1) e, depois de adicioná-lo à tela de relatórios, aumente o mapa (2).
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![power-bi-select-map.png](./images/power-bi-select-map.png)
 
-Agora você terá um mapa, com pontos de vários tamanhos. O tamanho indica o número de interações da central de atendimento para essa cidade específica. Para variar o tamanho dos pontos, navegue até o painel direito e abra **Valores de Medida** (usando o ícone suspenso). Na lista suspensa, selecione **Editar Tamanhos**. Brinque com tamanhos diferentes.
+Em seguida, precisamos definir as medidas e as dimensões. Para isso, arraste os campos da seção **campos** para os espaços reservados correspondentes (localizados em **visualizações**), conforme indicado abaixo:
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
 
-Para exibir ainda mais os dados por **Tópico de Chamada**, arraste (1) a dimensão **Tópico de Chamada** para **Páginas**. Navegue pelos **Tópicos de chamada** diferentes usando o **Tópico de chamada** (2) no lado direito da tela:
+Como medida, usaremos uma contagem de **customerId**. Arraste o campo **crmid** da seção **fields** para o espaço reservado **Size**:
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
+
+Finalmente, para fazer uma análise de **callTopic**, vamos arrastar o campo **callTopic** para o espaço reservado de **filtros de nível de página** (talvez seja necessário rolar a tela na seção **visualizações**);
+
+![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
+
+Selecione/desmarque **callTopics** para investigar:
+
+![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
 Você terminou este exercício agora.
 
-Próxima Etapa: [5.1.7 API de Serviço de Consulta](./ex7.md)
+Próxima Etapa: [5.1.8 API de Serviço de Consulta](./ex8.md)
 
 [Voltar ao módulo 5.1](./query-service.md)
 

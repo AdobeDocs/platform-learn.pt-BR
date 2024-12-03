@@ -1,177 +1,112 @@
 ---
-title: Serviço de consulta - Uso do Serviço de consulta
-description: Serviço de consulta - Uso do Serviço de consulta
+title: Serviço de consulta - Introdução
+description: Serviço de consulta - Introdução
 kt: 5342
-audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# 5.1.2 Uso do Serviço de consulta
+# 5.1.2 Introdução
 
-## Objetivo
+## Conhecimento da interface do usuário do Adobe Experience Platform
 
-- Encontrar e explorar conjuntos de dados
-- Saiba como abordar objetos e atributos do Experience Data Models em suas consultas
+Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-## Contexto
+![Assimilação de dados](./../../../modules/datacollection/module1.2/images/home.png)
 
-Com isso, você aprenderá a usar o PSQL para recuperar informações sobre os conjuntos de dados disponíveis, como gravar uma consulta para o Experience Data Model (XDM) e gravar suas primeiras consultas de relatórios simples usando o Serviço de consulta e os conjuntos de dados do Citi Signal.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
-## 5.1.2.1 Consultas básicas
+![Assimilação de dados](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Nesta seção, você aprenderá sobre os métodos para recuperar informações sobre os conjuntos de dados disponíveis e como recuperar dados corretamente com uma consulta de um conjunto de dados XDM.
 
-Todos os conjuntos de dados que exploramos por meio do Adobe Experience Platform no início do 1 também estão disponíveis para acesso por meio de uma interface SQL como tabelas. Para listar essas tabelas, você pode usar o comando **show tables;**.
+## Explorar dados na plataforma
 
-Execute **show tables;** em sua **interface de linha de comando PSQL**. (não se esqueça de terminar o comando com um ponto e vírgula).
+Trazer dados de diferentes canais é uma tarefa difícil para qualquer marca. E neste exercício, os clientes do Citi Signal estão se envolvendo com o Citi Signal em seu site, em seu aplicativo móvel, os dados de compra são coletados pelo sistema de ponto de venda do Citi Signal, e eles têm dados de CRM e Fidelidade. O Citi Signal está usando o Adobe Analytics e o Adobe Launch para capturar dados em seu site, no aplicativo móvel e no sistema POS. Portanto, esses dados já estão fluindo para o Adobe Experience Platform. Vamos começar explorando todos os dados para o Citi Signal que já existe no Adobe Experience Platform.
 
-Copie o comando **show tables;** e cole-o no prompt:
+No menu esquerdo, vá para **Conjuntos de dados**.
 
-![command-prompt-show-tables.png](./images/command-prompt-show-tables.png)
+![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-Você verá o seguinte resultado:
+O Citi Signal está transmitindo dados para a Adobe Experience Platform e esses dados estão disponíveis no conjunto de dados `Demo System - Event Dataset for Website (Global v1.1)`. Pesquisar por `Demo System - Event Dataset for Website`.
 
-```text
-aepenablementfy21:all=> show tables;
-                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
-------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
- demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
- demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
- demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
- demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
- demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
- demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
- demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
- demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
- journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
-```
+![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-No sinal de dois pontos, pressione a barra de espaço para ver a próxima página do conjunto de resultados, ou digite `q` para reverter para o prompt de comando.
+Os dados de Interação do Callcenter do Citi Signal são capturados no conjunto de dados `Demo System - Event Dataset for Call Center (Global v1.1)`. Pesquisar dados de `Demo System - Event Dataset for Call Center` na caixa de pesquisa. Clique no nome do conjunto de dados para abri-lo.
 
-Cada conjunto de dados na Platform tem sua tabela de Serviço de consulta correspondente. Você pode encontrar a tabela de um conjunto de dados por meio da interface do usuário de conjuntos de dados:
+![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 
-![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
+Depois de clicar no conjunto de dados, você terá uma visão geral da atividade do conjunto de dados, como lotes assimilados e com falha.
 
-A tabela `demo_system_event_dataset_for_website_global_v1_1` é a tabela do Serviço de Consulta que corresponde ao conjunto de dados `Demo System - Event Schema for Website (Global v1.1)`.
+![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
 
-Para consultar algumas informações sobre onde um produto foi exibido, selecionaremos as informações **geo**.
+Clique em **Visualizar Conjunto de Dados** para ver uma amostra dos dados armazenados no conjunto de dados `Demo System - Event Dataset for Call Center (Global v1.1)`. O painel esquerdo mostra a estrutura do esquema para esse conjunto de dados.
 
-Copie a instrução abaixo e cole-a no prompt em sua **interface de linha de comando do PSQL** e pressione Enter:
+![explorar-interação-dataset.png](./images/explore-interaction-dataset.png)
 
-```sql
-select placecontext.geo
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Clique no botão **Fechar** para fechar a janela **Visualizar Conjunto de Dados**.
 
-No resultado da query, você observará que as colunas no Experience Data Model (XDM) podem ser tipos complexos e não apenas tipos escalares. Na consulta acima, gostaríamos de identificar localizações geográficas em que um **commerce.productViews** ocorreu. Para identificar um **commerce.productViews**, precisamos navegar pelo modelo XDM usando o **.Notação** (ponto).
+## Introdução ao Serviço de consulta
 
-```text
-aepenablementfy21:all=> select placecontext.geo
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
-                  geo                   
-----------------------------------------
- ("(57.4694803,-3.1269422)",Tullich,GB)
-(1 row)
-```
+O Serviço de consulta do Adobe Experience Platform é acessado clicando em **Consultas** no menu esquerdo.
 
-Observe que o resultado é um objeto plano em vez de um valor único? O objeto **placecontext.geo** contém quatro atributos: esquema, país e cidade. E quando um objeto é declarado como uma coluna, ele retornará o objeto inteiro como uma string. O esquema XDM pode ser mais complexo do que o que você conhece, mas é muito eficiente e foi projetado para oferecer suporte a muitas soluções, canais e casos de uso.
+![select-queries.png](./images/select-queries.png)
 
-Para selecionar as propriedades individuais de um objeto, use o **.Notação** (ponto).
+Ao acessar o **Log**, você verá a página Lista de Consultas, que fornece uma lista de todas as consultas executadas nesta organização, com as mais recentes no topo.
 
-Copie a instrução abaixo e cole-a no prompt em sua **interface de linha de comando do PSQL**:
+![lista-consulta.png](./images/query-list.png)
 
-```sql
-select placecontext.geo._schema.longitude
-      ,placecontext.geo._schema.latitude
-      ,placecontext.geo.city
-      ,placecontext.geo.countryCode
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Clique em qualquer consulta SQL na lista e observe os detalhes fornecidos no painel direito.
 
-O resultado da consulta acima deve ter esta aparência.
-O resultado agora é um conjunto de valores simples:
+![click-sql-query.png](./images/click-sql-query.png)
 
-```text
-aepenablementfy21:all=> select placecontext.geo._schema.longitude
-aepenablementfy21:all->       ,placecontext.geo._schema.latitude
-aepenablementfy21:all->       ,placecontext.geo.city
-aepenablementfy21:all->       ,placecontext.geo.countryCode
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  |  latitude  |  city   | countrycode 
-------------+------------+---------+-------------
- -3.1269422 | 57.4694803 | Tullich | GB
-(1 row)
-```
+Você pode rolar a janela para ver a consulta inteira ou clicar no ícone destacado abaixo para copiar a consulta inteira para o bloco de notas. Não é necessário copiar a consulta neste momento.
 
-Não se preocupe, há uma maneira fácil de obter o caminho em direção a uma propriedade específica. Na parte a seguir, você aprenderá como.
+![click-copy-query.png](./images/click-copy-query.png)
 
-Você precisará editar uma consulta, portanto, primeiro vamos abrir um editor.
+Não é possível ver apenas as consultas que foram executadas, essa interface do usuário permite criar novos conjuntos de dados a partir de consultas. Esses conjuntos de dados podem ser vinculados ao Perfil do cliente em tempo real da Adobe Experience Platform ou podem ser usados como entrada para o Adobe Experience Platform Data Science Workspace.
 
-No Windows
+## Conectar o cliente PSQL ao serviço de consulta
 
-Clique no ícone **pesquisar** na barra de ferramentas do Windows, digite **notepad** no campo **pesquisar** e clique no resultado **notepad**:
+O Serviço de consulta oferece suporte a clientes com um driver para PostgreSQL. Nesta etapa, usaremos o PSQL, uma interface de linha de comando, e o Power BI Tableau. Vamos nos conectar ao PSQL.
 
-![windows-start-notepad.png](./images/windows-start-notepad.png)
+Clique em **Credenciais**.
 
-No Mac
+![queries-select-configuration.png](./images/queries-select-configuration.png)
 
-Instale os [Colchetes](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) ou use outro Editor de texto de sua escolha se não o tiver instalado e siga as instruções. Após a instalação, pesquise por **Colchetes** através da pesquisa em destaque da Mac e abra-a.
+Você verá a tela abaixo. A tela Configuração fornece informações do servidor e credenciais para autenticação no Serviço de consulta. Por enquanto, nos concentraremos no lado direito da tela que contém um comando connect para PSQL. Clique no botão Copiar para copiar o comando para a área de transferência.
 
-Copie a seguinte instrução no bloco de notas ou colchetes:
+![copy-psql-connection.png](./images/copy-psql-connection.png)
 
-```sql
-select your_attribute_path_here
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Para Windows: abra a linha de comando pressionando a tecla Windows e digitando cmd e clicando no resultado do Prompt de comando.
 
-Volte para a interface do usuário do Adobe Experience Platform (deve ser aberta no navegador) ou navegue até [https://platform.adobe.com](https://platform.adobe.com).
+![open-command-prompt.png](./images/open-command-prompt.png)
 
-Selecione **Esquemas**, digite `Demo System - Event Schema for Website (Global v1.1)` no campo **pesquisa** e selecione `Demo System - Event Schema for Website (Global v1.1) Schema` na lista.
+Para o macOS: abra o terminal.app por meio da pesquisa em destaque:
 
-![browse-schema.png](./images/browse-schema.png)
+![open-terminal-osx.png](./images/open-terminal-osx.png)
 
-Explore o modelo XDM do **Sistema de demonstração - Esquema de evento do site (Global v1.1)** clicando em um objeto. Expanda a árvore para **placecontext**, **geo** e **schema**. Ao selecionar o atributo real **longitude**, você verá o caminho completo na caixa vermelha destacada. Para copiar o caminho do atributo, clique no ícone de caminho de cópia.
+Cole o comando connect que você copiou da interface do usuário do Serviço de consulta e pressione Enter na janela de prompt de comando:
 
-![explorar-esquema-para-caminho.png](./images/explore-schema-for-path.png)
+Windows:
 
-Alterne para o bloco de notas/colchetes e remova **seu_caminho_de_atributo_aqui** da primeira linha. Posicione o cursor depois de **selecionar** na primeira linha e cole (CTRL-V).
+![comando-prompt-connected.png](./images/command-prompt-connected.png)
 
-Copie a instrução modificada do bloco de notas/colchetes e cole-a no prompt na **interface de linha de comando do PSQL** e pressione Enter.
+MacOS:
 
-O resultado deve ser semelhante a:
+![comando-prompt-cole-osx.png](./images/command-prompt-paste-osx.png)
 
-```text
-aepenablementfy21:all=> select placeContext.geo._schema.longitude
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  
-------------
- -3.1269422
-```
+Agora você está conectado ao Serviço de consulta usando PSQL.
 
-Próxima Etapa: [5.1.3 Consultas, consultas, consultas... e análise de churn](./ex3.md)
+Nos próximos exercícios, haverá bastante interação com essa janela. Nos referiremos a ele como sua **interface de linha de comando PSQL**.
+
+Agora você está pronto para começar a enviar consultas.
+
+Próxima Etapa: [5.1.3 Usando o Serviço de Consulta](./ex3.md)
 
 [Voltar ao módulo 5.1](./query-service.md)
 
