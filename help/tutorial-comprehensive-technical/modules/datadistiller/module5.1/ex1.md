@@ -4,9 +4,9 @@ description: Serviço de consulta - Pré-requisitos
 kt: 5342
 doc-type: tutorial
 exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 Siga as instruções descritas na documentação do Adobe Experience Platform para instalar o cliente psql:
 [Guia de Instalação do PSQL](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+
+Depois de instalar o PSQL, talvez seja necessário atualizar o **PATH** executando o comando abaixo em uma janela de terminal:
+
+Para o macOS (substitua XX no comando abaixo pelo número da versão do PSQL que você instalou):
+
+`export PATH=/Library/PostgreSQL/XX/bin:$PATH`
 
 ## Instalar o Power BI
 

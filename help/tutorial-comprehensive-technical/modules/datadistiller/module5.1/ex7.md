@@ -4,9 +4,9 @@ description: Serviço de consulta - Explorar o conjunto de dados com o Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: 29525740-fe1f-4770-bcc9-f2ad499a2cb5
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -15,45 +15,67 @@ ht-degree: 0%
 
 Abra o Tableau.
 
-![start-tableau.png](./images/start-tableau.png)
+![start-tableau.png](./images/starttableau.png)
 
-Em **Conectar-se a um Servidor**, selecione **PostgreSQL**:
+Em **Conectar a um Servidor**, clique em **Mais** e em **PostgreSQL**.
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![tableau-connect-postgress.png](./images/tableauconnectpostgress.png)
+
+Se você ainda não tiver usado o PostgeSQL com o Tableau, poderá ver isso. Clique em **Baixar driver**.
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress1.png)
+
+Siga as instruções para baixar e instalar o driver PostgreSQL.
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress2.png)
+
+Quando terminar de instalar o driver, encerre e reinicie o Tableau Desktop. Depois da reinicialização, vá para **Conectar a um Servidor** novamente, clique em **Mais** e em **PostgreSQL** novamente.
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress.png)
+
+Você verá isso.
+
+![tableau-connect-postgress.png](./images/tableauconnectpostgress3.png)
 
 Vá para o Adobe Experience Platform, para **Consultas** e para **Credenciais**.
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+![query-service-credentials.png](./images/queryservicecredentials.png)
 
 Na página **Credenciais** do Adobe Experience Platform, copie o **Host** e cole-o no campo **Servidor**, copie o **Banco de Dados** e cole-o no campo **Banco de Dados** do Tableau, copie a **Porta** e cole no campo **Porta** no Tableau. Faça o mesmo para **Nome de Usuário** e **Senha**. Em seguida, clique em **Entrar**.
 
-Entrar:
+![tableau-connection-dialog.png](./images/tableauconnectiondialog.png)
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+Na lista de tabelas disponíveis, localize a tabela que você criou no exercício anterior, que se chama `--aepUserLdap--_callcenter_interaction_analysis`. Arraste-o para a tela.
 
-Clique em pesquisar (1) e insira seu **ldap** no campo de pesquisa, identifique sua tabela do conjunto de resultados e arraste-a (3) para o local chamado **Arraste tabelas aqui**. Quando terminar, clique em **Planilha 1** (3).
+![tableau-drag-table.png](./images/tableaudragtable.png)
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+Você verá isso. Clique em **Atualizar Agora**.
 
-Para visualizar nossos dados no mapa, precisamos converter longitude e latitude em dimensões. Em **Medidas**, selecione **Latitude** (1), abra a lista suspensa do campo e selecione **Converter em Dimension** (2). Faça o mesmo para a medida **Longitude**.
+![tableau-drag-table.png](./images/tableaudragtable1.png)
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+Você verá os dados da AEP se tornando disponíveis no Tableau. Clique em **Planilha 1** para começar a trabalhar com os dados.
+
+![tableau-drag-table.png](./images/tableaudragtable2.png)
+
+Para visualizar seus dados no mapa, você precisa converter longitude e latitude em dimensões. Em **Measures**, clique com o botão direito do mouse em **Latitude**, selecione **Converter em Dimension** no menu. Faça o mesmo para a medida **Longitude**.
+
+![tableau-convert-dimension.png](./images/tableauconvertdimension.png)
 
 Arraste a medida **Longitude** para as **Colunas** e a medida **Latitude** para **Linhas**. Automaticamente, o mapa de **Bélgica** aparecerá com pequenos pontos representando as cidades em todo o conjunto de dados.
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![tableau-drag-lon-lat.png](./images/tableaudraglonlat.png)
 
-Selecione **Nomes de Medidas** (1), abra a lista suspensa e selecione **Adicionar à Planilha** (2):
+Selecione **Nomes de Medidas**, clique em **Adicionar à Planilha**.
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![tableau-select-measure-names.png](./images/selectmeasurenames.png)
 
 Agora você terá um mapa, com pontos de vários tamanhos. O tamanho indica o número de interações da central de atendimento para essa cidade específica. Para variar o tamanho dos pontos, navegue até o painel direito e abra **Valores de Medida** (usando o ícone suspenso). Na lista suspensa, selecione **Editar Tamanhos**. Brinque com tamanhos diferentes.
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![tableau-vary-size-dots.png](./images/tableauvarysizedots.png)
 
-Para exibir ainda mais os dados por **Tópico de Chamada**, arraste (1) a dimensão **Tópico de Chamada** para **Páginas**. Navegue pelos **Tópicos de chamada** diferentes usando o **Tópico de chamada** (2) no lado direito da tela:
+Para exibir ainda mais os dados por **Tópico de Chamada**, arraste a dimensão **Tópico de Chamada** para **Páginas**. Navegue pelos **Tópicos de chamada** diferentes usando o **Tópico de chamada** no lado direito da tela:
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![tableau-call-topic-navigation.png](./images/tableaucalltopicnavigation.png)
 
 Você terminou este exercício agora.
 

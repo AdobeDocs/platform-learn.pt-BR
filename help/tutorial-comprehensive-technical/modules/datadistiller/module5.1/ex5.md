@@ -4,9 +4,9 @@ description: Serviço de consulta - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Saiba como gerar conjuntos de dados a partir dos resultados da consulta
 Conectar o Microsoft Power BI Desktop/Tableau diretamente ao Serviço de consulta
 Criação de um relatório no Microsoft Power BI Desktop/Tableau Desktop
 
-## Contexto da lição
+## Contexto
 
 Uma interface de linha de comando para consultar dados é empolgante, mas não apresenta uma boa situação. Nesta lição, guiaremos você em um fluxo de trabalho recomendado sobre como usar o Microsoft Power BI Desktop/Tableau diretamente no Serviço de consulta para criar relatórios visuais para as partes interessadas.
 
@@ -41,11 +41,11 @@ select /* enter your name */
        c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
        l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
        l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
+       l.--aepTenantId--.identification.core.crmId as crmid
 from   demo_system_event_dataset_for_website_global_v1_1 e
       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+      ,demo_system_profile_dataset_for_crm_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
@@ -57,23 +57,23 @@ Pesquise a instrução executada na interface do Adobe Experience Platform Query
 
 Selecione **Consultas**, vá para **Log** e insira seu ldap no campo de pesquisa.
 
-![search-query-for-ctas.png](./images/search-query-for-ctas.png)
+![search-query-for-ctas.png](./images/searchqueryforctas.png)
 
-Selecione sua consulta e clique em **Conjunto de Dados de Saída**.
+Selecione sua consulta e clique em **Executar como CTAS**.
 
-![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
+![search-query-for-ctas.png](./images/searchqueryforctasa.png)
 
-Insira `--aepUserLdap-- Callcenter Interaction Analysis` como nome e descrição para o conjunto de dados e pressione o botão **Executar consulta**
+Insira `--aepUserLdap-- Callcenter Interaction Analysis` como nome e descrição para o conjunto de dados e clique em **Executar como CTAS**.
 
-![create-ctas-dataset.png](./images/create-ctas-dataset.png)
+![create-ctas-dataset.png](./images/createctasdataset.png)
 
 Como resultado, você verá uma nova consulta com o status **Enviada**.
 
-![ctas-query-submit.png](./images/ctas-query-submitted.png)
+![ctas-query-submit.png](./images/ctasquerysubmitted.png)
 
 Após a conclusão, você verá uma nova entrada para **Conjunto de dados criado** (talvez seja necessário atualizar a página).
 
-![ctas-dataset-created.png](./images/ctas-dataset-created.png)
+![ctas-dataset-created.png](./images/ctasdatasetcreated.png)
 
 Assim que o conjunto de dados for criado (o que pode levar de 5 a 10 minutos), você pode continuar o exercício.
 
