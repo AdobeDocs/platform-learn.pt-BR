@@ -2,10 +2,11 @@
 title: Migrar do Adobe Target para o Adobe Journey Optimizer - Extensão móvel de decisão
 description: Saiba como migrar sua implementação de aplicativo móvel do Adobe Target para o Adobe Journey Optimizer - Extensão de decisão
 last-substantial-update: 2023-02-23T00:00:00Z
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
+source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 7%
+source-wordcount: '393'
+ht-degree: 3%
 
 ---
 
@@ -13,14 +14,18 @@ ht-degree: 7%
 
 Este guia é para implementadores experientes do Adobe Target que aprendem a migrar implementações existentes do SDK móvel da Adobe Platform da extensão do Adobe Target para a extensão do Adobe Journey Optimizer - Decisioning.
 
-O SDK do Adobe Experience Platform Mobile é um... A extensão do Target é... A extensão do Decisioning é...
+O SDK móvel da Adobe Experience Platform capacita o engajamento completo em seus aplicativos móveis. A extensão do Target se baseia no SDK móvel para ajudar você a personalizar as experiências do aplicativo com o Adobe Target. A extensão Decisioning é uma abordagem mais recente para implementar o Adobe Target em aplicativos móveis que usa recursos de Edge Network do Adobe Experience Platform que ajudam a integrar o Target a aplicativos baseados em plataforma, como Real-Time CDP e Journey Optimizer.
 
 ## Principais benefícios
 
 Alguns dos benefícios da extensão do Decisioning incluem:
 
-* Marcador 1
-* Marcador 2
+* Compartilhamento mais rápido de públicos do [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=pt-BR)
+* Integração do Target ao Journey Optimizer para oferecer suporte à [entrega de Offer decisioning](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* Uma integração mais estreita com o Adobe Analytics, que não depende da compilação de informações de chamadas de rede separadas
+* Flexibilidade adicional na implementação para desenvolvedores
+
+Indiscutivelmente, o maior benefício para os clientes do Target da migração é a integração com o Real-time Customer Data Platform. A Real-Time CDP oferece excelentes recursos de criação de público com base na gama completa de dados assimilados no Experience Platform e em seu recurso de Perfil do cliente em tempo real. Uma estrutura de governança de dados integrada automatiza o uso responsável desses dados. A IA do cliente permite usar facilmente modelos de aprendizado de máquina para criar modelos de propensão e churn cuja saída pode ser compartilhada de volta com a Adobe Target. E, por fim, os clientes dos complementos opcionais de Assistência médica, Privacidade e segurança podem usar o recurso de aplicação de consentimento para aplicar facilmente as preferências de consentimento de clientes individuais. O SDK da Web da Platform é um requisito para usar esses recursos do Real-Time CDP no canal da Web.
 
 ## Objetivos de aprendizagem
 
