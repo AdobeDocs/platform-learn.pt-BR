@@ -5,9 +5,9 @@ user-guide-description: Um tutorial prático que cobre muitos aspectos do Adobe 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
+source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
       + [Usar o aplicativo móvel](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Coleção de Dados {#datacollection}
-   + 1.1 Coleta de dados do Adobe Experience Platform e SDK da Web {#module11}
+   + 1.1 Coleta de dados do Adobe Experience Platform e Web SDK {#module11}
       + [Visão geral](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Noções básicas sobre a coleta de dados do Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2 Edge Network, fluxos de dados e coleção de dados do lado do servidor](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -108,8 +108,9 @@ ht-degree: 4%
    + 3.1 Adobe Journey Optimizer: Orquestração {#module31}
       + [Visão geral](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
       + [3.1.1 Criar o evento](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-      + [3.1.2 Criar a jornada e a mensagem de email](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-      + [3.1.3 Atualize a propriedade Coleção de dados e teste a Jornada](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.2 Criar fragmentos a serem usados na mensagem](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+      + [3.1.3 Criar a jornada e a mensagem de email](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.4 Atualize a propriedade Coleção de dados e teste a Jornada](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
       + [Resumo e benefícios](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer: Fontes de dados externas e ações personalizadas {#module32}
       + [Visão geral](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
@@ -123,7 +124,7 @@ ht-degree: 4%
       + [Visão geral](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/offer-decisioning.md)
       + [3.3.1 Offer decisioning 101](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex1.md)
       + [3.3.2 Configurar as ofertas e a decisão](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex2.md)
-      + [3.3.3 Preparar a propriedade do Cliente de coleta de dados da Adobe Experience Platform e a configuração do SDK da Web para o Offer Decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
+      + [3.3.3 Preparar a propriedade do Cliente de coleta de dados da Adobe Experience Platform e a configuração do Web SDK para o Offer Decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex3.md)
       + [3.3.4 Combinar Adobe Target e Offer Decisioning](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex4.md)
       + [3.3.5 Use sua decisão em um email](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex5.md)
       + [3.3.6 Testar sua decisão usando a API](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.3/ex6.md)
