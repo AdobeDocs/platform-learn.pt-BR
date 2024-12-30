@@ -4,7 +4,7 @@ description: Este exercício explica como usar a personalização de segmentos e
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 1%
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Faça login no Adobe Experience Cloud em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Adobe Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepTenantId--``.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.3.1 Personalização baseada em segmentos
 

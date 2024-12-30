@@ -4,7 +4,7 @@ description: Nesta seção, você configurará uma jornada de email em lote para
 kt: 5342
 doc-type: tutorial
 exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 1%
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Para alterar a sandbox, clique em **Produção (VA7)** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **AEP Enablement FY22**. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.2.1 Criar jornada de informativo
 

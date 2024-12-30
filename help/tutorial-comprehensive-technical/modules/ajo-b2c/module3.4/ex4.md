@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - Configurar e usar notificações por push para 
 description: Configurar e usar notificações por push para iOS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a49fa91c-5235-4814-94c1-8dcdec6358c5
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1802'
 ht-degree: 1%
 
 ---
@@ -26,11 +27,11 @@ Vamos analisar um por um.
 
 Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Para alterar a sandbox, clique em **Produção (VA7)** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **AEP Enablement FY22**. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
+Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.4.1 Enviar conjuntos de dados
 

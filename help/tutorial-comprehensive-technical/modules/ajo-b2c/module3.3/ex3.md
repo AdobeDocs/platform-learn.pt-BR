@@ -3,14 +3,15 @@ title: Offer Decisioning - Teste sua decisão
 description: Offer Decisioning - Teste sua decisão
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
 
-# 3.3.3 Preparar a propriedade do Cliente de coleta de dados da Adobe Experience Platform e a configuração do SDK da Web para o Offer Decisioning
+# 3.3.3 Preparar a propriedade do Cliente de coleta de dados da Adobe Experience Platform e a configuração do Web SDK para o Offer Decisioning
 
 ## 3.3.3.1 Atualizar a sequência de dados
 
@@ -50,7 +51,7 @@ Na propriedade, vá para **[!UICONTROL Regras]** e abra a regra **[!UICONTROL Ex
 
 ![SDKdaWeb](./images/launch2.png)
 
-Clique para abrir o [!UICONTROL Action] **[!UICONTROL AEP Web SDK - Enviar evento]**.
+Clique para abrir a [!UICONTROL Ação] **[!UICONTROL AEP Web SDK - Enviar evento]**.
 
 ![SDKdaWeb](./images/launch3.png)
 
@@ -77,11 +78,11 @@ A [!UICONTROL ID de Posicionamento] identifica a localização e o tipo do ativo
 
 Para localizar a [!UICONTROL ID de Posicionamento] para [!UICONTROL Web - Imagem], vá para a Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Para alterar a sandbox, clique em **Produção (VA7)** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **AEP Enablement FY22**. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
+Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Em seguida, vá para [!UICONTROL Componentes] e depois para [!UICONTROL Posicionamentos]. Clique no posicionamento [!UICONTROL Web - Imagem] para ver seus detalhes.
 
@@ -225,7 +226,7 @@ Na Coleta de Dados do Adobe Experience Platform, vá para **[!UICONTROL Fluxo de
 
 ![SDKdaWeb](./images/decrec9.png)
 
-Com essa alteração, essa regra na Coleção de dados da Adobe Experience Platform agora escutará a resposta do Offer Decisioning, que faz parte da resposta do SDK da Web, e quando a resposta for recebida, a imagem da oferta será exibida na página inicial.
+Com essa alteração, essa regra na Coleção de dados da Adobe Experience Platform agora escutará a resposta do Offer Decisioning, que faz parte da resposta do Web SDK, e quando a resposta for recebida, a imagem da oferta será exibida na página inicial.
 
 No site de demonstração, você verá que essa imagem será substituída agora:
 

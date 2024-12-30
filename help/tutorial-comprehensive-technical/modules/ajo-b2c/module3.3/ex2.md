@@ -3,7 +3,8 @@ title: Offer Decisioning - Configurar as ofertas e a ID de decisão
 description: Offer Decisioning - Configurar as ofertas e a ID de decisão
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 3%
@@ -27,11 +28,11 @@ Neste exercício, você criará quatro **Ofertas personalizadas**. Estes são os
 
 Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Para alterar a sandbox, clique em **Produção (VA7)** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **AEP Enablement FY22**. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 No menu esquerdo, clique em **Ofertas** e vá para **Ofertas**. Clique em **+ Criar oferta**.
 
@@ -356,7 +357,7 @@ E, finalmente, você verá sua decisão na visão geral:
 
 Você configurou sua decisão com êxito. Sua decisão agora está ativa e pode ser usada para fornecer ofertas otimizadas e personalizadas aos seus clientes, em tempo real.
 
-Próxima Etapa: [3.3.3 Prepare a propriedade do Cliente da Coleção de Dados e a configuração do SDK da Web para o Offer Decisioning](./ex3.md)
+Próxima Etapa: [3.3.3 Prepare a propriedade do Cliente da Coleção de Dados e a configuração do Web SDK para o Offer Decisioning](./ex3.md)
 
 [Voltar ao módulo 3.3](./offer-decisioning.md)
 

@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - API de clima externa, ação de SMS e muito mai
 description: Adobe Journey Optimizer - API de clima externa, ação de SMS e muito mais
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: d4e37338-bde2-41b9-948c-11d9216b8cf3
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://exper
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Para alterar a sandbox, clique em **Produção (VA7)** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **AEP Enablement FY22**. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
+Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -29,18 +30,13 @@ Você verá uma visão geral de todos os eventos disponíveis. Clique em **Criar
 ![ACOP](./images/emptyevent.png)
 
 Uma nova janela de evento vazia será exibida.
-
-![ACOP](./images/emptyevent1.png)
-
-Como Nome do Evento, use `--aepUserLdap--GeofenceEntry`. Neste exemplo, o Nome do Evento é `vangeluwGeofenceEntry`.
+Como nome do Evento, use `--aepUserLdap--GeofenceEntry`.
 
 Defina a Descrição como: `Geofence Entry Event`.
 
+Verifique se o **Tipo** está definido como **Unitário** e, para a seleção do **Tipo de ID de Evento**, selecione **Gerado pelo Sistema**
+
 ![Demonstração](./images/evname.png)
-
-Em seguida, verifique se o **Tipo** está definido como **Unitário** e, para a seleção do **Tipo de ID de Evento**, selecione **Sistema Gerado**
-
-![ACOP](./images/eventidtype.png)
 
 Em seguida, é necessário selecionar um schema. Todos os esquemas mostrados aqui são Esquemas do Adobe Experience Platform.
 
@@ -83,7 +79,7 @@ Em seguida, você verá uma janela pop-up com uma hierarquia de esquema que perm
 
 Campos como ECID e a Orchestration eventID são obrigatórios e, como tal, pré-selecionados.
 
-No entanto, um profissional de marketing precisa ter acesso flexível a todos os pontos de dados que fornecem contexto a uma Jornada. Portanto, vamos selecionar os seguintes campos no mínimo (encontrados no nó de contexto Local ):
+No entanto, um profissional de marketing precisa ter acesso flexível a todos os pontos de dados que fornecem contexto a uma jornada. Portanto, vamos selecionar os seguintes campos no mínimo (encontrados no nó de contexto Local ):
 
 - Cidade
 
@@ -92,13 +88,9 @@ Quando terminar, clique em **OK**.
 ![Demonstração](./images/popupok.png)
 
 O Adobe Journey Optimizer também precisa de um Identificador para identificar o cliente. Como o Adobe Journey Optimizer é vinculado ao Adobe Experience Platform, o Identificador principal de um Esquema é tomado automaticamente como o Identificador da Jornada.
-O identificador principal também levará em conta automaticamente o Gráfico de identidade completo do Adobe Experience Platform e vinculará todos os comportamentos em todas as identidades, dispositivos e canais disponíveis ao mesmo perfil, para que o Adobe Journey Optimizer seja contextual, relevante e consistente.
+O identificador principal também levará em conta automaticamente o Gráfico de identidade completo do Adobe Experience Platform e vinculará todos os comportamentos em todas as identidades, dispositivos e canais disponíveis ao mesmo perfil, para que o Adobe Journey Optimizer seja contextual, relevante e consistente. Clique em **Salvar**.
 
 ![Demonstração](./images/eventidentifier.png)
-
-Clique em **Salvar** para salvar seu evento personalizado.
-
-![Demonstração](./images/save.png)
 
 Seu evento fará parte da lista de eventos disponíveis.
 
@@ -109,23 +101,19 @@ Finalmente, você precisa recuperar o `Orchestration eventID` para seu evento pe
 Abra o evento novamente clicando nele na lista de eventos.
 No seu Evento, clique no ícone **Exibir carga** ao lado de **Campos**.
 
-![Demonstração](./images/eventlist1.png)
-
-Clicar no ícone **Exibir carga** abre uma amostra de carga XDM para este evento.
-
 ![Demonstração](./images/fieldseyepayload.png)
 
-Role para baixo na **Carga** até ver a linha `eventID`.
+Clicar no ícone **Exibir carga** abre uma amostra de carga XDM para este evento. Role para baixo na **Carga** até ver a linha `eventID`.
 
 ![Demonstração](./images/fieldseyepayloadev.png)
 
 Anote o `eventID` como você vai precisar dele na última vez para testar sua configuração.
 
-Neste exemplo, o `eventID` é `fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934`.
+Neste exemplo, o `eventID` é `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
 
 Agora você definiu o evento que acionará a jornada que estamos criando. Quando a jornada for acionada, os campos de geofence como Cidade e quaisquer outros que você tenha escolhido (como País, Latitude e Longitude) serão disponibilizados para a jornada.
 
-Conforme discutido na descrição do caso de uso, precisamos fornecer promoções contextuais que dependam do tempo. Para obter informações sobre o clima, precisaremos definir uma fonte de dados externa que nos fornecerá as informações sobre o clima desse local. Você usará o serviço **OpenWeather** para nos fornecer quais informações, como parte do 2.
+Conforme discutido na descrição do caso de uso, precisamos fornecer promoções contextuais que dependam do tempo. Para obter informações sobre o clima, precisaremos definir uma fonte de dados externa que nos fornecerá as informações sobre o clima desse local. Você usará o serviço **API do OpenWeather** para nos fornecer essas informações.
 
 Próxima Etapa: [3.2.2 Definir uma fonte de dados externa](./ex2.md)
 
