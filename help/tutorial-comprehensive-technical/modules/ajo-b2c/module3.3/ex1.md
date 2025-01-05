@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ No menu esquerdo, clique em **Ofertas**. Agora você verá o menu Ofertas, que c
 
 ![Posicionamentos](./images/homedec.png)
 
-Clique em **Componentes**. Agora você verá o menu Ofertas, que contém itens como Posicionamentos, Tags, Regras e Classificações.
+Clique em **Componentes**. Agora você verá coisas como Disposições, Qualificador de coleção, Regras e Classificações.
 
 ![Posicionamentos](./images/components.png)
 
@@ -61,7 +61,7 @@ Vá para **Posicionamentos**.
 
 Na guia **Posicionamentos**, é possível definir seus posicionamentos para as ofertas. Ao definir uma decisão, o posicionamento define onde a oferta resultante será exibida (Tipo de canal) e em que forma ou formulário (Tipo de conteúdo).
 
-Se você não vir nenhum posicionamento na instância do Adobe Experience Platform, crie-os conforme indicado abaixo e na captura de tela.
+Se você não vir nenhuma disposição em seu ambiente, crie-as conforme indicado abaixo e na captura de tela.
 
 | Nome | Tipo de canal | Tipo de conteúdo |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ Vá para **Regras**. Clique em **+ Criar regra**.
 
 ![Regras de decisão](./images/rules.png)
 
-Em seguida, você verá o ambiente de Segmentação do Adobe Experience Platform.
+Em seguida, você verá a interface de Criação de público-alvo do Adobe Experience Platform.
 
 ![Regras de decisão](./images/createrule1.png)
 
 Agora é possível acessar todos os campos que fazem parte do Esquema de união para o Perfil do cliente em tempo real e criar qualquer regra.
 
-Também é interessante saber que você pode simplesmente reutilizar públicos já definidos no Adobe Experience Platform acessando **Públicos-alvo** > ``--aepTenantId--``.
-
-![Regra de decisão](./images/decisionruleaud.png)
+Também é bom saber que você pode simplesmente reutilizar públicos já definidos no Adobe Experience Platform acessando **Públicos-alvo** > ``--aepTenantId--``.
 
 Você verá isto:
 
-![Regra de decisão](./images/decisionruleaud1.png)
+![Regra de decisão](./images/decisionruleaud.png)
 
 Se desejar, agora é possível configurar suas próprias Regras. Para este exercício, você precisará de duas regras:
 

@@ -2,9 +2,10 @@
 title: Visão geral
 description: Ponto de partida para engenheiros de dados, analistas de dados, arquitetos de dados, cientistas de dados, engenheiros de orquestração e profissionais de marketing para obter uma compreensão completa do valor comercial da Adobe Experience Platform e de todos os seus serviços de aplicativos.
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ Este tutorial não se concentra apenas em aplicativos Adobe, mas leva em conta o
 Após concluir os exercícios neste tutorial, você será capaz de:
 
 - Configurar esquemas, grupos de campos, conjuntos de dados e identidades
-- Configure uma propriedade de Coleção de dados da Adobe Experience Platform e a nova extensão SDK da Web na Coleção de dados da Adobe Experience Platform
+- Configure uma propriedade de Coleção de dados do Adobe Experience Platform e a nova extensão do Web SDK na Coleção de dados do Adobe Experience Platform
 - Transmita dados para o Adobe Experience Platform em tempo real usando a Coleção de dados da Adobe Experience Platform
 - Assimilação de dados em lote no Adobe Experience Platform usando um fluxo de trabalho ou usando um aplicativo de extração, transformação e carregamento (ETL)
 - Visualizar e usar o Perfil do cliente em tempo real no Adobe Experience Platform
@@ -67,6 +68,8 @@ Para cada módulo que você concluir usando o tutorial abaixo, você precisa env
 
 ## Conteúdo
 
+Para verificar o status do conteúdo abaixo, vá para a [página de status](./status.md).
+
 [0. Introdução](./modules/gettingstarted/gettingstarted/getting-started.md)
 
 Neste módulo fundamental, você configurará tudo para poder acessar e usar o ambiente de demonstração.
@@ -75,9 +78,9 @@ Neste módulo fundamental, você configurará tudo para poder acessar e usar o a
 
 ### 1. Coleta de dados
 
-[1.1 Foundation - Configuração da coleção de dados da Adobe Experience Platform e do SDK da Web](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
+[1.1 Foundation - Configuração da coleção de dados da Adobe Experience Platform e do Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
 
-Neste módulo fundamental, você aprenderá sobre a Coleção de dados do Adobe Experience Platform e a nova extensão SDK da Web.
+Neste módulo fundamental, você aprenderá sobre a Coleção de dados do Adobe Experience Platform e a nova extensão do Web SDK.
 
 **Investimento de tempo:** 30 minutos
 
