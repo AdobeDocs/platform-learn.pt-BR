@@ -4,16 +4,14 @@ description: Neste módulo, você aprenderá tudo o que há para saber sobre o J
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '285'
 ht-degree: 2%
 
 ---
 
 # 3.4 Adobe Journey Optimizer
-
-**Autores: [Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Neste módulo, você aprenderá tudo o que há para saber sobre o Adobe Journey Optimizer, que ajuda as empresas a projetar e entregar experiências conectadas, contextuais e personalizadas aos clientes.
 
@@ -28,7 +26,7 @@ Neste módulo, você aprenderá tudo o que há para saber sobre o Adobe Journey 
 
 - Acesso ao Adobe Journey Optimizer
 - **Baixar estes ativos**:
-   - [Ativos](./../../../assets/ajo/ajo_assets.zip)
+   - [Ativos](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
@@ -40,21 +38,17 @@ Neste módulo, você aprenderá tudo o que há para saber sobre o Adobe Journey 
 
 Neste exercício, você configurará uma jornada baseada em acionador para enviar a mensagem de email criada no exercício anterior.
 
-[3.4.2 Configurar uma jornada de boletim informativo baseada em lote](./ex2.md)
+[3.4.2 Configurar uma campanha](./ex2.md)
 
-Neste exercício, você configurará uma jornada baseada em lote para enviar a mensagem de email criada no exercício anterior.
+Neste exercício, você configurará uma campanha de email tradicional.
 
-[3.4.3 Aplicar personalização em uma mensagem de email](./ex3.md)
+[3.4.3 Aplicar personalização baseada em segmentos em uma mensagem de email](./ex3.md)
 
 Neste exercício, você usará associações de segmento para definir qual conteúdo será exibido em um email.
 
 [3.4.4 Configurar e usar notificações por push](./ex4.md)
 
 Neste exercício, você instalará um aplicativo para dispositivos móveis no dispositivo iOS e configurará e enviará uma notificação por push ao seu dispositivo.
-
-[3.4.5 Criar uma jornada de eventos comerciais](./ex5.md)
-
-Neste exercício, você definirá um evento comercial que fornecerá uma mensagem de devolução no estoque por SMS para clientes que anteriormente demonstraram interesse nesse produto, mas não puderam comprá-lo porque o produto estava esgotado.
 
 [Resumo e benefícios](./summary.md)
 

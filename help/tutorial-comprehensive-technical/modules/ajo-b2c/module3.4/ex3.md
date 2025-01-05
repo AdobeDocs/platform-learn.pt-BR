@@ -4,14 +4,14 @@ description: Este exercício explica como usar a personalização de segmentos e
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
 
-# 3.4.3 Aplicar personalização em uma mensagem de email
+# 3.4.3 Aplicar personalização baseada em segmentos em uma mensagem de email
 
 Faça login no Adobe Experience Cloud em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Adobe Journey Optimizer**.
 
@@ -23,25 +23,25 @@ Você será redirecionado para a exibição **Página inicial** no Journey Optim
 
 ## 3.4.3.1 Personalização baseada em segmentos
 
-Neste exercício, você melhorará a mensagem de email do seu informativo com um texto personalizado com base na associação do segmento.
+Neste exercício, você melhorará a mensagem de email do informativo criada no exercício anterior com um texto personalizado com base na associação do segmento.
 
-Vá para **Jornada**. Localize a jornada do informativo criada no exercício anterior. Pesquisar por `--aepUserLdap-- - Newsletter`. Clique na jornada para abri-la.
+Vá para **Campanhas**. Localize a jornada do informativo criada no exercício anterior. Pesquisar por `--aepUserLdap-- - CitiSignal Newsletter`. Clique com o botão direito do mouse nos 3 pontos **...** e clique em **Duplicar**.
 
 ![Journey Optimizer](./images/sbp1.png)
 
-Você verá isso. Clique em **Duplicate**.
+Você verá isso. Use isso para o **Título**: `--aepUserLdap-- - CitiSignal Newsletter (SBP)`. Clique em **Duplicate**.
 
 ![Journey Optimizer](./images/sbp2.png)
 
-Clique em **Duplicate**.
+Clique na campanha duplicada para abri-la.
 
 ![Journey Optimizer](./images/sbp3.png)
 
-Selecione sua ação **Email** e clique em **Editar conteúdo**.
+Clique em **Editar** para alterar o conteúdo.
 
 ![Journey Optimizer](./images/sbp3a.png)
 
-Clique em **Designer de email**.
+Clique em **Editar corpo do email**.
 
 ![Journey Optimizer](./images/sbp4.png)
 
@@ -49,88 +49,58 @@ Você verá isso.
 
 ![Journey Optimizer](./images/sbp5.png)
 
-Abra os **Componentes do Conteúdo** e arraste um componente **Texto** abaixo do conteúdo do informativo atual.
+Abra o **Content Components** e arraste uma **coluna 1:1** acima da oferta do AirPods.
 
 ![Journey Optimizer](./images/sbp6.png)
+
+Arraste e solte um componente **Texto** nessa coluna 1:1.
+
+![Journey Optimizer](./images/sbp6a.png)
 
 Selecione todo o texto padrão e exclua. Em seguida, clique no botão **Adicionar personalização** na barra de ferramentas.
 
 ![Journey Optimizer](./images/sbp7.png)
 
-Você verá isto:
+Você verá isso. No menu esquerdo, clique em **Públicos-alvo**.
 
 ![Journey Optimizer](./images/seg1.png)
 
-No menu esquerdo, clique em **Associações de segmento**.
-
-![Journey Optimizer](./images/seg2.png)
-
->[!NOTE]
->
->Se você não conseguir encontrar o segmento nessa lista, role para baixo um pouco para encontrar instruções sobre como recuperar a ID do segmento manualmente.
-
-Selecione o segmento `Luma - Women's Category Interest` e clique no ícone **+**, que deve ter esta aparência:
+Selecione o segmento `--aepUserLdap-- - Interest in Plans` e clique no ícone **+** para adicioná-lo à tela.
 
 ![Journey Optimizer](./images/seg3.png)
 
 Em seguida, você deve deixar a primeira linha como está e substituir as linhas 2 e 3 por este código:
 
 ``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
+    PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
+    PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
 ``
 
-Você terá isto:
+Então você terá isto. Clique em **Salvar**.
 
 ![Journey Optimizer](./images/seg4.png)
 
-Clique em **Validar** para verificar se o código está correto. Clique em **Salvar**.
-
-![Journey Optimizer](./images/sbp8.png)
-
-Agora você pode salvar esta mensagem clicando no botão **Salvar** no canto superior direito. Em seguida, clique em **Simular conteúdo**.
+Altere o alinhamento do texto para **Alinhamento central**.
 
 ![Journey Optimizer](./images/sbp9.png)
 
-Selecione um dos perfis que você criou como parte deste tutorial e clique em **Visualizar**. Você verá o resultado da sua configuração.
+Agora você pode salvar esta mensagem clicando no botão **Salvar** no canto superior direito. Em seguida, clique em **seta** ao lado do texto da linha de assunto no canto superior esquerdo.
 
-![Journey Optimizer](./images/sbp10.png)
+![Journey Optimizer](./images/sbp9a.png)
 
-Você verá isso. Em seguida, clique em **Fechar**.
-
-![Journey Optimizer](./images/sbp10fff.png)
-
-Volte para o painel da mensagem clicando na **seta** ao lado do texto da linha de assunto no canto superior esquerdo.
-
-![Journey Optimizer](./images/sbp11.png)
-
-Clique na seta no canto superior esquerdo para voltar à jornada.
+Clique em **Revisar para ativar**.
 
 ![Journey Optimizer](./images/oc79afff.png)
 
-Clique em **Ok** para fechar sua ação de email.
+Clique em **Ativar**.
 
 ![Journey Optimizer](./images/oc79bfff.png)
 
-Altere seu **Calendário** para **Uma Vez** e defina uma **Data/Hora**. Clique em **Ok**.
+Seu informativo com personalização baseada em segmentos foi publicado. A mensagem de email do informativo será enviada de acordo com a sua programação. A jornada será interrompida assim que o último email for enviado.
 
->[!NOTE]
->
->A data e a hora de envio da mensagem devem estar dentro de mais de uma hora.
-
-![Journey Optimizer](./images/sbp18.png)
-
-Clique no botão **Publish** na jornada.
-
-![Journey Optimizer](./images/sbp19.png)
-
-Na janela pop-up, clique novamente em **Publish**.
-
-![Journey Optimizer](./images/sbp20.png)
-
-A jornada básica do informativo agora está publicada. A mensagem de email do informativo será enviada de acordo com a sua programação. A jornada será interrompida assim que o último email for enviado.
+Se você se qualificar para o segmento que foi usado, verá isso no email que receberá:
 
 ![Journey Optimizer](./images/sbp20fff.png)
 

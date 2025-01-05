@@ -4,9 +4,9 @@ description: Nesta seção, você configurará uma jornada baseada em acionador 
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1919'
 ht-degree: 1%
 
 ---
@@ -136,7 +136,7 @@ Arraste e solte 8 vezes uma **coluna 1:1** na tela, o que deve fornecer a você:
 
 ![Journey Optimizer](./images/oc9.png)
 
-No menu esquerdo, vá para **Fragmentos**. Arraste o cabeçalho criado anteriormente no exercício 3.2.2 até o primeiro componente na tela. Arraste o rodapé criado anteriormente no exercício 3.2.2 até o último componente na tela.
+No menu esquerdo, vá para **Fragmentos**. Arraste o cabeçalho criado anteriormente no [exercício 3.1.2.1](./../module3.1/ex2.md) até o primeiro componente na tela. Arraste o rodapé criado anteriormente no [exercício 3.1.2.2](./../module3.1/ex2.md) até o último componente na tela.
 
 ![Journey Optimizer](./images/fragm1.png)
 

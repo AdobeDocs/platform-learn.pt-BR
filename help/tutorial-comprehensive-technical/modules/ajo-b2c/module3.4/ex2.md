@@ -4,151 +4,191 @@ description: Nesta seção, você configurará uma jornada de email em lote para
 kt: 5342
 doc-type: tutorial
 exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '878'
+ht-degree: 0%
 
 ---
 
-# 3.4.2 Configurar uma jornada de boletim informativo baseada em lote
+# 3.4.2 Configurar uma campanha
 
 Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Para alterar a sandbox, clique em **Produção (VA7)** e selecione a sandbox na lista. Neste exemplo, a sandbox é chamada de **AEP Enablement FY22**. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
+Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-## 3.4.2.1 Criar jornada de informativo
 
-Agora você criará uma jornada baseada em lote. Ao contrário da jornada baseada em eventos do exercício anterior, que depende de eventos de experiência de entrada, entradas de público-alvo ou saídas para acionar uma jornada para um cliente específico, as jornadas baseadas em lote têm como alvo um público-alvo inteiro, uma vez com conteúdo exclusivo, como boletins informativos, promoções únicas ou informações genéricas ou periodicamente com conteúdo semelhante enviado regularmente, como por exemplo campanhas de aniversário e lembretes.
+## 3.4.2.1 Criar público-alvo
 
-No menu, vá para **Jornadas** e clique em **Criar Jornada**.
+Antes de criar a campanha, você deve definir o público-alvo que deve receber a campanha. Para criar um público-alvo, vá para **Públicos-alvo** no menu esquerdo. Você verá todo o público-alvo criado anteriormente aqui.
+
+Clique em **+ Criar público-alvo**.
+
+![Journey Optimizer](./images/audcampaign1.png)
+
+Selecione **Regra de compilação** e clique em **Criar**.
+
+![Journey Optimizer](./images/audcampaign2.png)
+
+Selecione o campo **Perfil Individual XDM > Email Pessoal > Endereço** e adicione-o à tela. Defina a condição da regra para **existe**.
+
+Para evitar o envio de emails para outros usuários em seu ambiente de treinamento compartilhado, você também pode adicionar um filtro, como **Nome igual a -seu nome-**.
+
+Defina o nome do público-alvo como `--aepUserLdap-- - All customers with email` e clique em **Publish**.
+
+![Journey Optimizer](./images/audcampaign3.png)
+
+Seu público-alvo agora está publicado e pode ser usado em uma campanha.
+
+## 3.4.2.2 Criar campanha de informativo
+
+Agora você criará uma campanha. Ao contrário da jornada baseada em eventos do exercício anterior, que depende de eventos de experiência de entrada, entradas de público-alvo ou saídas para acionar uma jornada para um cliente específico, as campanhas direcionam todo um público-alvo uma vez com conteúdo exclusivo, como boletins informativos, promoções únicas ou informações genéricas ou periodicamente com conteúdo semelhante enviado regularmente, como por exemplo campanhas de aniversário e lembretes.
+
+No menu, vá para **Campanhas** e clique em **Criar campanha**.
 
 ![Journey Optimizer](./images/oc43.png)
 
-No lado direito, você verá um formulário em que precisa especificar o nome e a descrição da jornada. Insira os seguintes valores:
+Selecione **Agendado - Marketing** e clique em **Criar**.
 
-- **Nome**: `--aepUserLdap-- - Newsletter Journey`. Por exemplo: **vangeluw - Jornada do informativo**.
+![Journey Optimizer](./images/campaign1.png)
+
+Na tela de criação da campanha, configure o seguinte:
+
+- **Nome**: `--aepUserLdap-- - CitiSignal Newsletter`.
 - **Descrição**: informativo mensal
+- **Tipo de identidade**: alterar para Email
 
-Clique em **Ok**.
+Clique em **Selecionar audiência**.
 
-![Journey Optimizer](./images/batchj2.png)
+![Journey Optimizer](./images/campaign2.png)
 
-Em **Orquestração**, arraste e solte **Ler público-alvo** na tela. Isso significa que, uma vez publicada, a jornada começará recuperando todo o público-alvo, que se tornará o público-alvo da jornada e da mensagem. Clique em **Selecionar uma audiência**.
+Para o **Público-alvo**, selecione o público criado na etapa anterior, `--aepUserLdap-- - All customers with email`. Clique em **Salvar**.
 
-![Journey Optimizer](./images/batchj3.png)
+![Journey Optimizer](./images/campaign2a.png)
 
-No pop-up **Escolher um público-alvo**, pesquise pelo seu ldap e selecione o público-alvo criado no [Módulo 2.3 - CDP em tempo real - Criar um público-alvo e executar a ação](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) chamada `--aepUserLdap-- - Interest in Galaxy S24`. Clique em **Salvar**.
+Para a **Ação**, selecione **Email** e selecione uma **Configuração de email** existente. Você editará o conteúdo em alguns minutos.
 
-![Journey Optimizer](./images/batchj5.png)
+![Journey Optimizer](./images/campaign3.png)
 
-Clique em **Ok**.
+Para o **Agendamento**, escolha **Em uma data e hora específicas** e defina uma hora de escolha.
 
-![Journey Optimizer](./images/batchj6.png)
+![Journey Optimizer](./images/campaign4.png)
 
-No menu esquerdo, localize a seção **Ações** e arraste e solte na tela uma ação de **Email**.
+Agora você pode começar a criar a própria mensagem de email. Role para cima um pouco e clique em **Editar conteúdo**.
 
-![Journey Optimizer](./images/batchj7.png)
+![Journey Optimizer](./images/campaign5.png)
 
-Defina a **Categoria** como **Marketing** e selecione uma superfície de email que permita o envio de emails. Nesse caso, a superfície de email a ser selecionada é **Email**. Verifique se as caixas de seleção para **Cliques no email** e **aberturas de email** estão habilitadas.
+Você verá isso. Para a **Linha de assunto**, use este: `Your monthly CitiSignal update has arrived.`. Em seguida, clique em **Editar corpo do email**.
 
-![ACOP](./images/journeyactions1eee.png)
+![Journey Optimizer](./images/campaign6.png)
 
-A próxima etapa é criar a mensagem. Para fazer isso, clique em **Editar conteúdo**.
+Escolha **Design do zero**.
 
-![ACOP](./images/journeyactions2.png)
+![Journey Optimizer](./images/campaign7.png)
 
-Agora vocês podem ver isso. Clique no campo de texto **Linha de assunto**.
+Você verá isso. No menu esquerdo, você encontrará os componentes de estrutura que podem ser usados para definir a estrutura do email (linhas e colunas).
 
-![Journey Optimizer](./images/batch4.png)
+Arraste e solte 3 vezes uma **coluna 1:1** na tela, 1 vez uma coluna 1:2 à esquerda e 1 vez uma coluna 2:1 à direita, o que deve fornecer esta estrutura:
 
-Digite este texto para a linha de assunto: `Luma Newsletter - your monthly update has arrived.`. Clique em **Salvar**.
+![Journey Optimizer](./images/campaign8.png)
 
-![Journey Optimizer](./images/batch5.png)
+No menu esquerdo, vá para **Fragmentos**. Arraste o cabeçalho criado anteriormente no [exercício 3.1.2.1](./../module3.1/ex2.md) até o primeiro componente na tela. Arraste o rodapé criado anteriormente no [exercício 3.1.2.2](./../module3.1/ex2.md) até o último componente na tela.
 
-Você estará de volta aqui. Clique em **Enviar Designer por email** para começar a criar o conteúdo do email.
+![Journey Optimizer](./images/campaign9.png)
 
-![Journey Optimizer](./images/batch6.png)
+Clique no ícone **+** no menu esquerdo. Vá para **Conteúdo** para começar a adicionar conteúdo à tela.
 
-Você verá isso. Clique em **Importar HTML**.
+![Journey Optimizer](./images/campaign10.png)
 
-![Journey Optimizer](./images/batch7.png)
+Arraste e solte um componente **Texto** na segunda linha.
 
-Na tela pop-up, será necessário arrastar e soltar o arquivo HTML do email. Você pode encontrar o modelo de HTML [aqui](./../../../assets/html/ajo-newsletter.html.zip). Baixe o arquivo zip com o modelo de HTML para o computador local e descompacte em seu desktop.
+![Journey Optimizer](./images/campaign11.png)
 
-![Journey Optimizer](./images/html1.png)
+Selecione o texto padrão nesse componente **Digite o texto aqui.** e substitua-o pelo texto abaixo. Altere o alinhamento para **Alinhamento central**.
 
-Arraste e solte o arquivo **ajo-newsletter.html** para carregá-lo no Journey Optimizer. Clique em **Importar**.
+```javascript
+Hi {{profile.person.name.firstName}}
 
-![Journey Optimizer](./images/batch8.png)
+As a CitiSignal member, you're part of a dynamic community that's constantly evolving to meet your needs. We're committed to delivering innovative solutions that enhance your digital lifestyle and keep you ahead of the curve.
 
-Esse conteúdo de email está pronto para ser enviado, pois tem toda a personalização, imagens e texto esperados. Somente o espaço reservado da oferta fica vazio.
+Stay connected.
+```
 
-Você pode receber uma mensagem de erro: **Erro ao tentar buscar ativos**. Isso é vinculado à imagem no email.
+![Journey Optimizer](./images/campaign12.png)
 
-![Journey Optimizer](./images/errorfetch.png)
+Arraste e solte um componente **Imagem** na 3ª e 4ª linhas. Clique em **Procurar** na 3ª linha.
 
-Se você receber este erro, selecione a imagem e clique no botão **Editar imagem**.
+![Journey Optimizer](./images/campaign13.png)
 
-![Journey Optimizer](./images/errorfetch1.png)
+Abra a pasta **citi-signal-images**, clique para selecionar a imagem **Offer_AirPods.jpg** e clique em **Selecionar**.
 
-Clique em **Assets Essentials** para voltar para a biblioteca do AEM Assets Essentials.
+![Journey Optimizer](./images/campaign14.png)
 
-![Journey Optimizer](./images/errorfetch2.png)
+Clique em **Procurar** no espaço reservado para imagem na quarta linha.
 
-Você então verá esse pop-up. Navegue até a pasta **enablement-assets** e selecione a imagem **luma-newsletterContent.png**. Clique em **Selecionar**.
+![Journey Optimizer](./images/campaign15.png)
 
-![Journey Optimizer](./images/errorfetch3.png)
+Abra a pasta **citi-signal-images**, clique para selecionar a imagem **Offer_Phone.jpg** e clique em **Selecionar**.
+
+![Journey Optimizer](./images/campaign16.png)
+
+Arraste e solte um componente **Texto** na 3ª e 4ª linhas.
+
+![Journey Optimizer](./images/campaign17.png)
+
+Selecione o texto padrão no componente na terceira linha **Digite seu texto aqui.** e substitua-o pelo texto abaixo.
+
+```javascript
+Get AirPods for free:
+
+Experience seamless connectivity like never before with CitiSignal. Sign up for select premium plans and receive a complimentary pair of Apple AirPods. Stay connected in style with our unbeatable offer.
+```
+
+Selecione o texto padrão no componente na quarta linha **Digite seu texto aqui.** e substitua-o pelo texto abaixo.
+
+```javascript
+We'll pay off your phone:
+
+Make the switch to CitiSignal and say goodbye to phone payments! Switching to CitiSignal has never been more rewarding. Say farewell to hefty phone bills as we help pay off your phone, up to 800$!
+```
+
+![Journey Optimizer](./images/campaign18.png)
 
 O email básico do informativo agora está pronto. Clique em **Salvar**.
 
 ![Journey Optimizer](./images/ready.png)
 
-Volte para o painel da mensagem clicando na **seta** ao lado do texto da linha de assunto no canto superior esquerdo.
+Volte para o painel de campanha clicando na **seta** ao lado do texto da linha de assunto no canto superior esquerdo.
 
-![Journey Optimizer](./images/batch9.png)
+![Journey Optimizer](./images/campaign19.png)
 
-Clique na seta no canto superior esquerdo para voltar à jornada.
+Clique em **Revisar para ativar**.
 
-![Journey Optimizer](./images/oc79aeee.png)
+![Journey Optimizer](./images/campaign20.png)
 
-Clique em **Ok** para fechar sua ação de email.
+Você poderá então receber esse erro. Se esse for o caso, talvez seja necessário aguardar até 24 horas até que o público-alvo seja avaliado e, em seguida, tentar ativar a campanha novamente. Talvez também seja necessário atualizar a programação da campanha para executá-la posteriormente.
 
-![Journey Optimizer](./images/oc79beee.png)
+Clique em **Ativar**.
 
-A jornada do informativo agora está pronta para ser publicada. Antes de fazer isso, observe a seção **Agenda**, na qual você pode alternar essa jornada de campanha única para recorrente. Clique no botão **Agendar**.
+![Journey Optimizer](./images/campaign21.png)
 
-![Journey Optimizer](./images/batchj12.png)
+Depois de ativada, sua campanha será agendada para execução.
 
-Você verá isso. Selecione **Uma Vez**.
+![Journey Optimizer](./images/campaign22.png)
 
-![Journey Optimizer](./images/sch1.png)
+Sua campanha agora está ativada. Sua mensagem de email do informativo será enviada conforme você a definiu em sua programação, e sua campanha será interrompida assim que o último email for enviado.
 
-Selecione uma data e hora na próxima hora para testar a jornada. Clique em **Ok**.
+Você também deve receber o email no endereço de email usado para o perfil de demonstração criado anteriormente.
 
->[!NOTE]
->
->A data e a hora de envio da mensagem devem estar dentro de mais de uma hora.
-
-Clique em **Publish**.
-
-![Journey Optimizer](./images/batchj13.png)
-
-Clique novamente em **Publish**.
-
-![Journey Optimizer](./images/batchj14.png)
-
-A jornada básica do informativo agora está publicada. A mensagem de email do informativo será enviada conforme você a definiu na programação, e a jornada será interrompida assim que o último email for enviado.
-
-![Journey Optimizer](./images/batchj14eee.png)
+![Journey Optimizer](./images/campaign23.png)
 
 Você concluiu este exercício.
 
-Próxima Etapa: [3.4.3 Aplicar personalização em uma mensagem de email](./ex3.md)
+Próxima Etapa: [3.4.3 Aplicar personalização baseada em segmento em uma mensagem de email](./ex3.md)
 
 [Voltar ao módulo 3.4](./journeyoptimizer.md)
 
