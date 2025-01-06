@@ -2,10 +2,11 @@
 title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
-source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
+exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 9%
+source-wordcount: '220'
+ht-degree: 10%
 
 ---
 
@@ -27,7 +28,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [2.6 Transmitir dados do Apache Kafka para o Real-Time CDP](./modules/rtcdp-b2c/module2.6/aep-apache-kafka.md) | 11/25/2024 | Sim | - |
 | [3.1 Adobe Journey Optimizer: Orquestração](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md) | 12/30/2024 | Sim | - |
 | [3.2 Adobe Journey Optimizer: fontes de dados externas e ações personalizadas](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 12/30/2024 | Sim | - |
-| [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 01/05/2025 | Ainda não | Atualização pendente de conteúdo |
+| [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 01/06/2025 | Sim | - |
 | [3.4 Adobe Journey Optimizer: Jornadas baseadas em eventos](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 01/05/2025 | Sim | - |
 | [4.1 Customer Journey Analytics: Criar um painel usando o Analysis Workspace sobre o Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | - | Não | Atualização pendente de conteúdo |
 | [4.2 Customer Journey Analytics: Assimilar e analise dados do Google Analytics no Adobe Experience Platform com o BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | - | Não | Atualização pendente de conteúdo |

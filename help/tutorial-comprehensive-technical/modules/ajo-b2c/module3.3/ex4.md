@@ -3,10 +3,11 @@ title: Offer Decisioning - Teste sua decisão usando o site de demonstração
 description: Teste sua decisão usando o site de demonstração
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5cc9f134-1434-4e76-9d26-9d73dbf6c0be
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 3%
+source-wordcount: '377'
+ht-degree: 2%
 
 ---
 
@@ -16,21 +17,21 @@ ht-degree: 3%
 
 Para carregar o projeto do site de demonstração no Adobe Target, primeiro é necessário coletar um link especial que permitirá à Adobe Target carregar o projeto do site de demonstração.
 
-Para fazer isso, vá para [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
+Para fazer isso, vá para [https://dsn.adobe.com/projects](https://builder.adobedemo.com/projects). Depois de fazer logon com sua Adobe ID, você verá isso. Clique no projeto do site para abri-lo.
 
 ![RTCDP](./images/builder1.png)
 
-Agora vocês verão isto. Clique em **Compartilhar**.
+Agora vocês verão isto. Ir para **Compartilhar**. Clique em **Gerar link** e copie o link para a área de transferência.
 
 ![RTCDP](./images/builder2.png)
 
-Clique em **Gerar link** e copie o link para a área de transferência.
-
-![RTCDP](./images/builder3.png)
-
-Vá para [https://bitly.com](https://bitly.com), cole o link copiado e clique em **Encurtar**. Agora você receberá um link encurtado, que tem esta aparência: `https://bit.ly/3JxN7aG`. Você precisará desse link no próximo exercício.
+Vá para [https://bitly.com](https://bitly.com), cole o link copiado e clique em **Criar seu link**.
 
 ![RTCDP](./images/builder4.png)
+
+Agora você receberá um link encurtado, que tem esta aparência: `https://adobe.ly/3PpGcFk`. Você precisará desse link no próximo exercício.
+
+![RTCDP](./images/builder5.png)
 
 ## 3.3.4.2 Coletar
 
@@ -38,31 +39,23 @@ Agora vá para a página inicial do Adobe Experience Cloud em [https://experienc
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/excl.png)
 
-Na página inicial do **Adobe Target**, você verá todas as atividades existentes.
+Na página inicial do **Adobe Target**, você verá todas as atividades existentes. Clique em **Criar atividade** e em **Direcionamento de experiência**.
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatov.png)
 
-Clique em **+ Criar atividade** para criar uma nova Atividade.
-
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatcr.png)
-
-Selecione **Direcionamento de experiência**.
-
-![RTCDP](./images/exclatcrxt.png)
-
-Agora selecione **Visual** e cole seu link encurtado no campo **Inserir URL da Atividade**. Clique em **Next**.
+Agora selecione **Visual** e cole seu link encurtado no campo **Inserir URL da Atividade**. Clique em **Criar**.
 
 ![RTCDP](./images/exclatcrxt1.png)
 
 Você verá seu projeto de site de demonstração ser carregado no Visual Experience Composer.
 
+>[!NOTE]
+>
+>Caso seu site não esteja carregando corretamente, instale e habilite esta extensão do Chrome: **Adobe Target VEC Helper** da Chrome Web Store e tente novamente.
+
 ![RTCDP](./images/vec1.png)
 
-Vá para o modo **Procurar** e clique em **Permitir tudo** no pop-up de consentimento do cookie.
-
-![RTCDP](./images/vec2.png)
-
-Clique na área que contém o texto **Categorias em destaque**. Clique em **Inserir antes** e selecione **Decisão de Oferta**.
+Clique na área que contém a oferta do Disney+. Selecione o **Contêiner** completo. Clique em **Inserir antes** e selecione **Decisão de Oferta**.
 
 ![RTCDP](./images/vec3.png)
 
@@ -70,11 +63,15 @@ Você então verá esse pop-up. Selecione sua sandbox `--aepSandboxName--` e sel
 
 ![RTCDP](./images/vec4.png)
 
-Em seguida, selecione sua decisão `--aepUserLdap-- - Luma Decision`. Clique em **Salvar**.
+Em seguida, selecione sua decisão `--aepUserLdap-- - CitiSignal Decision`. Clique em **Salvar**.
 
 ![RTCDP](./images/vec5.png)
 
-Você verá isso. Certifique-se de adicionar uma regra de modelo adicional **URL** **contém** **nome-do-seu-projeto**. Clique em **Salvar**.
+Você verá isso. Clique em **Regra de revisão**.
+
+![RTCDP](./images/vec5a.png)
+
+Certifique-se de adicionar uma regra de modelo adicional **URL** **contém** **nome-do-seu-projeto**. Clique em **Salvar**.
 
 ![RTCDP](./images/vec6.png)
 
@@ -90,11 +87,9 @@ Você verá isso. Defina sua **Métrica de meta** conforme indicado. Clique em *
 
 ![RTCDP](./images/vec9.png)
 
-Sua oferta foi criada e está sendo publicada.
+Sua oferta foi criada e está sendo publicada. Depois que a oferta for publicada, você poderá ativá-la.
 
-![RTCDP](./images/vec10.png)
-
-Depois que a oferta for publicada, você poderá habilitá-la.
+![RTCDP](./images/vec11.png)
 
 Próxima Etapa: [3.3.5 Use sua decisão em um email e sms](./ex5.md)
 

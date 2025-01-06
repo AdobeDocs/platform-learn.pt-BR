@@ -4,9 +4,9 @@ description: Neste módulo, você aprenderá tudo o que há para saber sobre o J
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '286'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Neste módulo, você aprenderá tudo o que há para saber sobre o Adobe Journey 
 
 - Acesso ao Adobe Journey Optimizer
 - **Baixar estes ativos**:
-   - [Ativos](./../../../assets/ajo/CitiSignal-images.zip)
+   - [Imagens do CitiSignal](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
