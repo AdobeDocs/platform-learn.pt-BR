@@ -4,16 +4,14 @@ description: Coleção de dados - Composição de público-alvo federado
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3 Composição de público-alvo federado
-
-**Autor: [Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Neste módulo, o objetivo é saber tudo sobre como criar públicos-alvo usando a Composição de público-alvo federado.
 
@@ -38,7 +36,7 @@ A Federated Audience Composition oferece aos clientes da Real-Time CDP e da Jour
 
 ## Exercícios
 
-[1.3.1 Configurar a conta Snowflake](./ex1.md)
+[1.3.1 Configurar o ambiente Snowflake](./ex1.md)
 
 Neste exercício, você configurará sua conta de avaliação do Snowflake e a conectará ao Adobe Experience Platform
 

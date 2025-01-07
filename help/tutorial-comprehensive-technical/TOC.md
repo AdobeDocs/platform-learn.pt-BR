@@ -5,7 +5,7 @@ user-guide-description: Um tutorial prático que cobre muitos aspectos do Adobe 
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
+source-git-commit: 7532eed1074062451d6ac171629742dbdc9c3fdc
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ht-degree: 4%
       + [Resumo e benefícios](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3 Composição de Público Federado {#module13}
       + [Visão geral](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1 Configurar a conta Snowflake](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1 Configurar o ambiente Snowflake](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 Criar esquemas, modelo de dados e links](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
       + [1.3.3 Criar uma composição federada](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [Resumo e benefícios](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)

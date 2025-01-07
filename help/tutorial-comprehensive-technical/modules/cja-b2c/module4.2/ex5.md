@@ -4,9 +4,9 @@ description: Assimilar e analisar dados do Google Analytics no Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ Clique em **Salvar e continuar**.
 
 ![demonstração](./images/22.png)
 
+Clique em **Salvar**.
+
+![demonstração](./images/22a.png)
+
 Agora é possível adicionar componentes à visualização de dados. Como você pode ver, algumas métricas e dimensões são adicionadas automaticamente.
 
 ![demonstração](./images/24.png)
 
-Adicione os seguintes componentes à visualização de dados:
+Adicione os componentes abaixo à visualização de dados. Atualize também os nomes de campo para nomes amigáveis. Para fazer isso, selecione a métrica ou a dimensão e atualize o campo **Nome do componente** no menu direito.
 
-| Nome do componente | Tipo de componente | Caminho do componente |
-| -----------------|-----------------|-----------------|
-| nível | Dimensão | _experienceplatform.altyDetails.level |
-| pontos | Métrica | _experienceplatform.fidelisationDetails.points |
-| commerce.checkouts.value | Métrica | commerce.checkouts.value |
-| commerce.productListRemovals.value | Métrica | commerce.productListRemovals.value |
-| commerce.productListAdds | Métrica | commerce.productListAdds |
-| commerce.productViews.value | Métrica | commerce.productViews.value |
-| commerce.purchases.value | Métrica | commerce.purchases.value |
-| web.webPageDetails.pageViews | Métrica | web.webPageDetails.pageViews |
-| ID da transação | Dimensão | commerce.order.payments.transactionID |
-| channel.mediaType | Dimensão | channel.mediaType |
-| channel.typeAtSource | Dimensão | channel.typeAtSource |
-| Código de rastreamento | Dimensão | marketing.trackingCode |
-| gaid | Dimensão | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | Dimensão | web.webPageDetails.name |
-| Tipo de evento | Dimensão | eventType |
-| Fornecedor | Dimensão | environment.browserDetails.vendor |
-| Identificador | Dimensão | _id |
-| Carimbo de data e hora | Dimensão | carimbo de data e hora |
-| Tipo | Dimensão | device.type |
-| fidelisd | Dimensão | _experienceplatform.identification.core.fidelizaçãoId |
-
-Você terá isto:
-
-![demonstração](./images/25.png)
-
-Em seguida, é necessário alterar o nome amigável de algumas das métricas e dimensões acima para que você possa usá-las facilmente ao criar a análise. Para fazer isso, selecione a métrica ou a dimensão e atualize o campo **Nome** conforme indicado na imagem abaixo.
-
-![demonstração](./images/25a.png)
-
-| Nome original do componente | Nome de exibição |
-| -----------------|-----------------|
-| nível | Nível de fidelidade |
-| pontos | Pontos de fidelidade |
-| commerce.checkouts.value | Check-outs |
-| commerce.productListRemovals.value | Remoções do carrinho |
-| commerce.productListAdds | Adições ao carrinho |
-| commerce.productViews.value | Visualizações de produto |
-| commerce.purchases.value | Compras |
-| web.webPageDetails.pageViews | Page Views |
-| channel.mediaType | Tráfego Medium |
-| channel.typeAtSource | Traffic Source |
-| Código de rastreamento | Canal de marketing |
-| gaid | ID do Google Analytics |
-| Nome | Título da página |
-| Fornecedor | Navegador |
-| Tipo | Device Type |
-| fidelisd | ID de fidelidade |
+| Tipo de componente | Nome original do componente | Nome de exibição | Caminho do componente |
+| -----------------| -----------------|-----------------|-----------------|
+| Métrica | commerce.checkouts.value | Check-outs | `commerce.checkouts.value` |
+| Métrica | commerce.productListRemovals.value | Remoções do carrinho | `commerce.productListRemovals.value` |
+| Métrica | commerce.productListAdds | Adições ao carrinho | `commerce.productListAdds` |
+| Métrica | commerce.productViews.value | Visualizações de produto | `commerce.productViews.value` |
+| Métrica | commerce.purchases.value | Compras | `commerce.purchases.value` |
+| Métrica | web.webPageDetails.pageViews | Page Views | `web.webPageDetails.pageViews` |
+| Métrica | pontos | Pontos de fidelidade | `_experienceplatform.loyaltyDetails.points` |
+| Dimensão | nível | Nível de fidelidade | `_experienceplatform.loyaltyDetails.level` |
+| Dimensão | channel.mediaType | Tráfego Medium | `channel.mediaType` |
+| Dimensão | channel.typeAtSource | Traffic Source | `channel.typeAtSource` |
+| Dimensão | Código de rastreamento | Canal de marketing | `marketing.trackingCode` |
+| Dimensão | gaid | ID do Google Analytics | `_experienceplatform.identification.core.gaid` |
+| Dimensão | web.webPageDetails.name | Título da página | `web.webPageDetails.name` |
+| Dimensão | Fornecedor | Navegador | `environment.browserDetails.vendor` |
+| Dimensão | Tipo | Device Type | `device.type` |
+| Dimensão | fidelisd | ID de fidelidade | `_experienceplatform.identification.core.loyaltyId` |
+| Dimensão | commerce.order.payments.transactionID | ID da transação | `commerce.order.payments.transactionID` |
+| Dimensão | eventType | Tipo de evento | `eventType` |
+| Dimensão | carimbo de data e hora | Carimbo de data e hora | `timestamp` |
+| Dimensão | `_id` | Identificador | `_id` |
 
 Você terá algo assim:
 
 ![demonstração](./images/25b.png)
 
-Em seguida, você precisa fazer algumas alterações no contexto de Pessoa e Sessão para alguns desses componentes alterando as **Configurações de Atribuição**.
-
-![demonstração](./images/25c.png)
+Em seguida, você precisa fazer algumas alterações no contexto de Pessoa e Sessão para alguns desses componentes alterando as **Configurações de Atribuição ou Persistência**.
 
 Altere as **Configurações de atribuição** dos componentes abaixo:
 
@@ -193,39 +168,32 @@ Altere as **Configurações de atribuição** dos componentes abaixo:
 | Tráfego Medium |
 | Device Type |
 | ID do Google Analytics |
-| ID de fidelidade |
-| Nível de fidelidade |
-| Pontos de fidelidade |
 
-Para fazer isso, selecione o componente, clique em **Usar modelo de atribuição personalizado** e defina o **Modelo** como **Último contato** e a **Expiração** como **Pessoa (Janela de relatórios)**. Repita isso para todos os componentes mencionados acima.
+Para fazer isso, selecione o componente, clique em **Usar modelo de atribuição personalizado** e defina o **Modelo** como **Mais recente**, e a **Expiração** como **Janela de Relatório de Pessoa**. Repita isso para todos os componentes mencionados acima.
 
 ![demonstração](./images/27a.png)
 
-Depois de fazer as alterações nas configurações de atribuição para todos os componentes mencionados acima, você deve ter esta visualização:
+Depois de fazer as alterações nas configurações de atribuição para todos os componentes mencionados acima, você deve ter essa visualização. Clique em **Salvar e continuar**.
 
 ![demonstração](./images/27.png)
 
-A visualização de dados agora está configurada. Clique em **Salvar**.
+Na tela **Configurações**, nenhuma alteração é necessária. Clique em **Salvar e concluir**.
 
-![demonstração](./images/30.png)
+![demonstração](./images/27b.png)
 
 Agora você está pronto para analisar dados do Google Analytics no Adobe Analytics Analysis Workspace. Vamos passar para o próximo exercício.
 
 ## 4.2.5.3 Criar o projeto
 
-No Customer Journey Analytics, vá para **Projetos**.
+No Customer Journey Analytics, vá para **Workspace**. Clique em **Criar projeto**
 
 ![demonstração](./images/pro1.png)
 
-Você verá isto:
+Selecione **Projeto do Workspace em branco** e clique em **Criar**.
 
 ![demonstração](./images/pro2.png)
 
-Crie um Projeto clicando em **Criar Novo Projeto**.
-
-![demonstração](./images/pro3.png)
-
-Agora você tem um Projeto em branco:
+Agora você tem um projeto em branco:
 
 ![demonstração](./images/pro4.png)
 
@@ -236,27 +204,21 @@ Primeiro, salve o projeto e dê um nome a ele. Você pode usar o seguinte comand
 | Windows | Ctrl+S |
 | Mac | Command+S |
 
-Você verá este pop-up:
-
-![demonstração](./images/prsave.png)
-
-Use esta convenção de nomenclatura:
+Vocês verão esse popup. Use esta convenção de nomenclatura:
 
 | Nome | Descrição |
 | ----------------- |-------------| 
-| ldap - GA + Loyalty Workspace | ldap - GA + Loyalty Workspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-Em seguida, clique em **Salvar projeto**.
+Em seguida, clique em **Salvar**.
 
-![demonstração](./images/prsave2.png)
+![demonstração](./images/prsave.png)
 
-Em seguida, selecione a visualização de dados correta no canto superior direito da tela. Esta é a visualização de dados criada no exercício anterior, com a convenção de nomenclatura `ldap - GA + Loyalty Data View`. Neste exemplo, a Visualização de Dados a ser selecionada é `ldap - GA + Loyalty Data View`.
+Em seguida, selecione a visualização de dados correta no canto superior direito da tela. Esta é a visualização de dados criada no exercício anterior, com a convenção de nomenclatura `--aepUserLdap-- - GA + Loyalty Data View`.
 
 ![demonstração](./images/prdvlist.png)
 
-![demonstração](./images/prdv.png)
-
-### 12.5.3.1 Tabelas de forma livre
+### 4.2.5.3.1 Tabelas de forma livre
 
 As tabelas de forma livre funcionam, mais ou menos, como tabelas dinâmicas no Excel. Você escolhe algo na barra esquerda, arrasta e solta na Forma livre e obtém um relatório de tabela.
 
@@ -270,17 +232,13 @@ Veja dois exemplos em que você precisa usar o SQL, o BigQuery e algum tempo par
 
 Vamos responder a essas perguntas e a outras mais com o Analysis Workspace no CJA.
 
-Primeiro, selecione o intervalo de datas correto (**Últimas 53 semanas completas**) no lado direito do painel.
+Primeiro, selecione o intervalo de datas correto (**Hoje**) no lado direito do painel. Clique em **Aplicar**.
 
 ![demonstração](./images/pro11.png)
 
-Em seguida, clique em **Aplicar** para aplicar o intervalo de datas. Lembre-se desta etapa para os próximos exercícios.
-
-![demonstração](./images/apply.png)
-
 >[!NOTE]
 >
->Se você acabou de criar a **Conexão de dados** e a **Visualização de dados**, talvez precise aguardar algumas horas. O CJA precisa de algum tempo para preencher retroativamente dados históricos quando há uma enorme quantidade de registros de dados.
+>Se você acabou de criar a **Conexão de dados** e a **Visualização de dados**, talvez precise aguardar algumas horas. O CJA precisa de algum tempo para preencher dados históricos quando há uma grande quantidade de registros de dados.
 
 Vamos arrastar e soltar algumas dimensões e métricas para analisar os canais de marketing. Primeiro use a dimensão **Canal de marketing** e arraste e solte-a na tela da **Tabela de forma livre**. (Clique em **Mostrar tudo** caso não veja a métrica imediatamente no menu Métricas)
 
@@ -296,9 +254,13 @@ Antes de fazer isso, é necessário criar a Métrica calculada **Taxa de convers
 
 ![demonstração](./images/procalc1.png)
 
-Como nome da Métrica Calculada, use **Taxa de Conversão**. Em seguida, arraste as Métricas **compra** e **Sessões** para a tela. Definir **Formato** a **Percentual** e **Casas Decimais** a **2**. Finalmente, clique em **Salvar**.
+Como nome da Métrica Calculada, use **Taxa de Conversão** e **conversionRate** para **ID Externa**. Em seguida, arraste as Métricas **compra** e **Sessões** para a tela. Definir **Formato** a **Percentual** e **Casas Decimais** a **2**. Finalmente, clique em **Salvar**.
 
 ![demonstração](./images/procalc2.png)
+
+Clique em **Salvar**.
+
+![demonstração](./images/procalc2a.png)
 
 Em seguida, para usar todas essas Métricas na **Tabela de forma livre**, arraste e solte-as uma por uma na **Tabela de forma livre**. Veja o exemplo abaixo.
 

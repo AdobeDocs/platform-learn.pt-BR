@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Visualização usando Customer Journey
 kt: 5342
 doc-type: tutorial
 exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1502'
 ht-degree: 0%
 
 ---
@@ -49,15 +49,15 @@ Automaticamente, a dimensão **Dia** será adicionada para criar sua primeira ta
 
 ![demonstração](./images/pro3.png)
 
-Em seguida, clique com o botão direito do mouse no resumo da métrica.
+Em seguida, clique com o botão direito do mouse no resumo da métrica. Clique em **Visualizar**.
 
 ![demonstração](./images/pro4.png)
 
-Clique em **Visualizar** e selecione **Linha** como visualização.
+Clique em **Linha**.
 
 ![demonstração](./images/pro5.png)
 
-Você verá suas visualizações de produtos por dia.
+Você verá suas visualizações de produtos por hora.
 
 ![demonstração](./images/pro6.png)
 
@@ -90,7 +90,7 @@ Vamos começar a encontrar os 5 principais produtos visualizados. No menu à esq
 
 Agora arraste e solte o **Nome do Produto** para substituir a dimensão **Dia**:
 
-Este será o resultado
+Esse será o resultado. Selecione os 4 nomes de produtos e você verá a atualização da visualização.
 
 ![demonstração](./images/pro10a.png)
 
@@ -110,13 +110,9 @@ Por fim, você pode adicionar mais visualizações. No lado esquerdo, em visuali
 
 ![demonstração](./images/pro18.png)
 
-Em seguida, na Tabela, selecione as primeiras 5 **linhas de Agente do Usuário** do detalhamento que fizemos em **Smartphone Google Pixel XL 32GB Preto** > **Citi Signal**. Ao selecionar as 3 linhas, pressione o botão **CTRL** (no Windows) ou o botão **Command** (no Mac).
+Em seguida, na Tabela, selecione as primeiras 5 **linhas de Agente do Usuário** do detalhamento que fizemos em **Smartphone Google Pixel XL 32GB Preto** > **Citi Signal**. Ao selecionar as 3 linhas, pressione o botão **CTRL** (no Windows) ou o botão **Command** (no Mac). Você verá o gráfico de rosca sendo atualizado.
 
 ![demonstração](./images/pro20.png)
-
-Você verá o gráfico de rosca alterado:
-
-![demonstração](./images/pro21.png)
 
 É possível até mesmo adaptar o design para torná-lo mais legível, tornando o gráfico de **Linha** e o gráfico de **Rosca** um pouco menor para que eles possam se ajustar próximos um do outro:
 
@@ -156,13 +152,9 @@ Você verá isso.
 
 ![demonstração](./images/prodatefa.png)
 
-Localize a dimensão **Tipo de Evento** abaixo dos componentes à esquerda:
+Localize a dimensão **Tipo de Evento** abaixo dos componentes à esquerda. Clique na seta para abrir a dimensão.
 
 ![demonstração](./images/pro26.png)
-
-Clique na seta para abrir a dimensão:
-
-![demonstração](./images/pro27.png)
 
 Você verá todos os Tipos de evento disponíveis.
 
@@ -176,7 +168,7 @@ Faça o mesmo com **commerce.productListAdds** e **commerce.purchases** e solte-
 
 ![demonstração](./images/props1.png)
 
-Você pode fazer muitas coisas aqui. Alguns exemplos: compare ao longo do tempo, compare cada etapa por dispositivo ou compare por fidelidade. No entanto, se queremos analisar coisas interessantes, como por que os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta no CJA: clicar com o botão direito do mouse.
+Você pode fazer muitas coisas aqui. Alguns exemplos: compare ao longo do tempo, compare cada etapa por dispositivo ou compare por fidelidade. No entanto, se você quiser analisar aspectos interessantes, como por que os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta no CJA: clicar com o botão direito do mouse.
 
 Clique com o botão direito no ponto de contato **commerce.productListAdds**. Em seguida, clique em **Fallout de detalhamento neste ponto de contato**.
 
@@ -194,36 +186,24 @@ Altere o **Tipo de Evento** por **Nome da Página**, na nova tabela de forma liv
 
 Novamente, há muitas maneiras de fazer essa análise. Vamos usar a análise de fluxo para iniciar a parte de descoberta.
 
-Feche o painel atual clicando aqui:
+Feche o painel atual clicando aqui e, em seguida, adicione um novo painel em branco clicando em **+ Adicionar painel em branco**.
 
 ![demonstração](./images/pro0.png)
-
-Agora adicione um novo painel em branco clicando em **+ Adicionar painel em branco**.
-
-![demonstração](./images/pro0a.png)
 
 Clique no **Fluxo** da visualização.
 
 ![demonstração](./images/pro35.png)
 
-Você verá isto:
-
-![demonstração](./images/pro351.png)
-
-Selecione o mesmo intervalo de datas do exercício anterior.
+Você verá isso. Selecione o mesmo intervalo de datas do exercício anterior. Clique em **Aplicar**.
 
 ![demonstração](./images/pro0b.png)
 
-Localize a dimensão **Nome da página** abaixo dos componentes à esquerda:
+Encontre a dimensão **Nome da página** sob os componentes no lado esquerdo e clique na seta para abrir a dimensão.
 
 ![demonstração](./images/pro36.png)
 
-Clique na seta para abrir a dimensão:
-
-![demonstração](./images/pro37.png)
-
 Você encontrará todas as páginas visualizadas. Localize o nome da página: **Cancelar Serviço**.
-Arraste e solte **Cancelar Serviço** na Visualização de Fluxo no campo intermediário:
+Arraste e solte **Cancelar Serviço** na Visualização de Fluxo no campo intermediário. Clique em **Build**.
 
 ![demonstração](./images/pro38.png)
 
@@ -274,23 +254,15 @@ Agora selecione **positivo** como valor para o filtro.
 
 ![demonstração](./images/pro49.png)
 
-Altere o escopo para o nível de **Pessoa**.
+Altere o escopo para o nível de **Pessoa**. Clique em **Salvar**.
 
 ![demonstração](./images/pro50.png)
 
-Para concluir, basta clicar em **Salvar**.
-
-![demonstração](./images/pro51.png)
-
-Você estará de volta aqui. Se ainda não tiver sido feito, feche o painel anterior.
+Você estará de volta aqui. Se ainda não tiver sido feito, feche o painel anterior e adicione um novo painel em branco clicando em **+ Adicionar painel em branco**.
 
 ![demonstração](./images/pro0c.png)
 
-Agora adicione um novo painel em branco clicando em **+ Adicionar painel em branco**.
-
-![demonstração](./images/pro24c.png)
-
-Selecione o mesmo intervalo de datas do exercício anterior.
+Selecione o mesmo intervalo de datas do exercício anterior. Clique em **Aplicar**.
 
 ![demonstração](./images/pro24d.png)
 
