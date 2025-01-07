@@ -3,20 +3,19 @@ title: Assimilar e analise dados do Google Analytics no Adobe Experience Platfor
 description: Assimilar e analise dados do Google Analytics no Adobe Experience Platform com o Conector de Source do BigQuery - Crie sua conta da Google Cloud Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6dbfb5a3-adc2-4818-8f79-bbb00e56fbdf
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 1%
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
-# 4.2.1 Criar sua conta da Google Cloud Platform
+# 4.2.1 Comece a usar a Google Cloud Platform
 
-## Objetivos
-
-- Criar sua conta da Google Cloud Platform
-- Familiarize-se com o Console da Google Cloud Platform
-- Criar e preparar seu projeto do BigQuery
+>[!NOTE]
+>
+>Para este exercício, você precisa acessar um ambiente da Google Cloud Platform. Se você ainda não tiver acesso ao GCP, crie uma nova conta usando seu endereço de email pessoal.
 
 ## 4.2.1.1 Por que conectar o Google BigQuery ao Adobe Experience Platform para obter dados do Google Analytics
 
@@ -33,98 +32,86 @@ O Conector GCP/BigQuery Source deve ser usado para...
 - rastreie todo o comportamento do cliente no site e carregue esses dados no Adobe Experience Platform para análise, ciência de dados e casos de uso de personalização que não exigem ativação em tempo real.
 - carregar dados históricos do Google Analytics no Adobe Experience Platform, novamente para análise e casos de uso de ciência de dados
 
-## 4.2.1.2 Criar sua conta da Google
+## 4.2.1.2 Sua conta da Google
 
-Para obter uma conta da Google Cloud Platform, você precisa de uma conta da Google.
+>[!NOTE]
+>
+>Para este exercício, você precisa acessar um ambiente da Google Cloud Platform. Se você ainda não tiver acesso ao GCP, crie uma nova conta usando seu endereço de email pessoal.
 
-## 4.2.1.3 Ativar a conta da Google Cloud Platform
+## 4.2.1.3 Selecionar ou criar um projeto
 
-Agora que você tem uma conta do Google, pode criar um ambiente da Google Cloud Platform. Para fazer isso, vá para [https://console.cloud.google.com/](https://console.cloud.google.com/).
+Ir para [https://console.cloud.google.com/](https://console.cloud.google.com/).
 
-Na próxima página, aceite os Termos e condições.
+Em seguida, clique em **Selecionar um projeto** ou clique em um projeto existente.
 
-![demonstração](./images/ex1/1.png)
+![demonstração](./images/ex12.png)
 
-Em seguida, clique em **Selecionar um projeto**.
+Se você ainda não tiver um projeto, clique em **NOVO PROJETO**. Se você já tiver um projeto, poderá optar por selecionar esse projeto e prosseguir para a próxima etapa.
 
-![demonstração](./images/ex1/2.png)
+![demonstração](./images/ex1createproject.png)
 
-Clique em **NEW PROJECT**.
+Nomeie o projeto seguindo esta convenção de nomenclatura. Clique em **CRIAR**.
 
-![demonstração](./images/ex1/createproject.png)
+| Convenção |
+| ----------------- |
+| `--aepUserLdap---googlecloud` |
 
-Nomeie o projeto seguindo esta convenção de nomenclatura:
+![demonstração](./images/ex13.png)
 
-| Convenção | Exemplo |
-| ----------------- |-------------| 
-| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
+Aguarde até que a notificação na parte superior direita da tela informe que a criação foi concluída. Em seguida, clique em **SELECIONAR PROJETO**.
 
-![demonstração](./images/ex1/3.png)
-
-Clique em **Criar**.
-
-![demonstração](./images/ex1/3-1.png)
-
-Aguarde até que a notificação na parte superior direita da tela informe que a criação foi concluída. Clique em **Exibir projeto**.
-
-![demonstração](./images/ex1/4.png)
+![demonstração](./images/ex14.png)
 
 Em seguida, vá para a barra de pesquisa na parte superior da tela e digite **BigQuery**. Selecione o primeiro resultado.
 
-![demonstração](./images/ex1/7.png)
+![demonstração](./images/ex17.png)
 
-Você será redirecionado para o Console do BigQuery e verá uma mensagem pop-up.
+O objetivo desse módulo é obter dados do Google Analytics no Adobe Experience Platform. Para fazer isso, você precisa começar com dados fictícios em um conjunto de dados Google Analytics.
 
-**Clique em Concluído**.
+Clique em **+ Adicionar** e, em seguida, clique em **Conjuntos de dados públicos** no menu direito.
 
-![demonstração](./images/ex1/5.png)
-
-O objetivo desse módulo é obter dados do Google Analytics no Adobe Experience Platform. Para fazer isso, precisamos de dados fictícios em um conjunto de dados Google Analytics para começar.
-
-Clique em **Adicionar Dados** no menu do lado esquerdo, seguido por um clique em **Explorar conjuntos de dados públicos**.
-
-![demonstração](./images/ex1/18.png)
+![demonstração](./images/ex118.png)
 
 Você verá esta janela:
 
-![demonstração](./images/ex1/19.png)
+![demonstração](./images/ex119.png)
 
-Insira o termo de pesquisa **Amostra de Google Analytics** na barra de pesquisa e selecione o primeiro resultado.
+Insira o termo de pesquisa **Amostra de Google Analytics** na barra de pesquisa e clique no primeiro resultado da pesquisa.
 
-![demonstração](./images/ex1/20.png)
+![demonstração](./images/ex120.png)
 
 Você verá a tela a seguir com uma descrição do conjunto de dados. Clique em **EXIBIR CONJUNTO DE DADOS**.
 
-![demonstração](./images/ex1/21.png)
+![demonstração](./images/ex121.png)
 
 Você será redirecionado para o BigQuery, onde verá este conjunto de dados **bigquery-public-data** no **Explorer**.
 
-![demonstração](./images/ex1/22a.png)
+![demonstração](./images/ex122a.png)
 
 No **Explorer**, você deve ver várias tabelas. Sinta-se à vontade para explorá-los. Vá para `google_analytics_sample`.
 
-![demonstração](./images/ex1/22.png)
+![demonstração](./images/ex122.png)
 
 Clique para abrir a tabela `ga_sessions`.
 
-![demonstração](./images/ex1/23.png)
+![demonstração](./images/ex123.png)
 
 Antes de continuar com o próximo exercício, anote os seguintes itens em um arquivo de texto separado no seu computador:
 
 | Credencial | Nomenclatura | Exemplo |
 | ----------------- |-------------| -------------|
 | Nome do projeto | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
-| ID do projeto | random | composto-tarefa-306413 |
+| ID do projeto | random | possible-bee-447102-h3 |
 
 Você pode encontrar seu Nome do Projeto e ID do Projeto clicando no **Nome do Projeto** na barra de menu superior:
 
-![demonstração](./images/ex1/projectMenu.png)
+![demonstração](./images/ex1projectMenu.png)
 
 Em seguida, você verá sua ID do projeto no lado direito:
 
-![demonstração](./images/ex1/projetcselection.png)
+![demonstração](./images/ex1projetcselection.png)
 
-Agora você pode migrar para o Exercício 12.2, no qual você suja as mãos consultando dados do Google Analytics.
+Agora você pode ir para o próximo exercício onde você sujará as mãos consultando dados do Google Analytics.
 
 Próxima etapa: [4.2.2 Crie sua primeira consulta no BigQuery](./ex2.md)
 

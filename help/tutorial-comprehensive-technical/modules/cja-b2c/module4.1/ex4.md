@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Preparação de dados no Analysis Workspace
 description: Customer Journey Analytics - Preparação de dados no Analysis Workspace
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -32,12 +33,12 @@ Se você não usou o Analysis Workspace antes, recomendamos assistir a este víd
 
 ### Criar seu projeto
 
-Agora é hora de criar seu primeiro projeto do CJA. Acesse a guia Projetos no CJA.
-Clique em **Criar novo**.
+Agora é hora de criar seu primeiro espaço de trabalho do CJA. Vá para a guia **Workspace** dentro do CJA.
+Clique em **Criar projeto**.
 
 ![demonstração](./images/prmenu.png)
 
-Você verá isso. Selecione **Projeto em branco** e clique em **Criar**.
+Você verá isso. Selecione **Projeto do Workspace em branco** e clique em **Criar**.
 
 ![demonstração](./images/prmenu1.png)
 
@@ -45,7 +46,7 @@ Você verá um projeto vazio.
 
 ![demonstração](./images/premptyprojects.png)
 
-Primeiro, selecione a Visualização de dados correta no canto superior direito da tela. Neste exemplo, a Visualização de Dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
+Primeiro, selecione a Visualização de dados correta no canto superior direito da tela. A Visualização de Dados a ser selecionada é `--aepUserLdap-- - Omnichannel Data View`.
 
 ![demonstração](./images/prdv.png)
 
@@ -108,17 +109,17 @@ A taxa de conversão geralmente é representada em porcentagem. Então, vamos al
 
 Por fim, altere o nome e a descrição da métrica calculada:
 
-| Título | Descrição |
-| ----------------- |-------------| 
-| Índice de conversão | Índice de conversão |
+| Título | Descrição | ID externa |
+| ----------------- |-------------| -------------| 
+| Índice de conversão | Índice de conversão | conversionRate |
 
-Você terá algo assim na tela:
+Então você terá isto. Clique em **Salvar**.
 
 ![demonstração](./images/calcbuildercr6.png)
 
-Não esqueça de **Salvar** a Métrica calculada.
+Clique em **Salvar** novamente.
 
-![demonstração](./images/pr9.png)
+![demonstração](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3 Dimension calculados: Filtros (segmentação) e intervalos de datas
 

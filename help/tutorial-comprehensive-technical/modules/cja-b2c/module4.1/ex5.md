@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Visualização usando Customer Journey Analy
 description: Customer Journey Analytics - Visualização usando Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -24,11 +25,11 @@ Neste exercício, você usará o Analysis Workspace no CJA para analisar visuali
 
 Abordaremos algumas das consultas feitas no Módulo 7 - Serviço de consulta para que você possa ver como é fácil executar as mesmas consultas e muito mais, mas sem usar o SQL e depender apenas da filosofia de arrastar e soltar do Analysis Workspace.
 
-Vamos usar o projeto que você criou em [11.4 Preparação de Dados no Analysis Workspace](./ex4.md), então vá para [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projeto que você criou em [4.1.4 Preparação de Dados no Analysis Workspace](./ex4.md), então vá para [https://analytics.adobe.com](https://analytics.adobe.com).
+
+Clique para abrir o projeto `--aepUserLdap-- - Omnichannel Analysis`.
 
 ![demonstração](./images/prohome.png)
-
-Abra o projeto `--aepUserLdap-- - Omnichannel Analysis`.
 
 Com seu projeto aberto e a Visualização de Dados `--aepUserLdap-- - Omnichannel Analysis` selecionada, você está pronto para começar a criar suas primeiras visualizações.
 
@@ -36,7 +37,7 @@ Com seu projeto aberto e a Visualização de Dados `--aepUserLdap-- - Omnichanne
 
 ## Quantas visualizações de produto temos diariamente
 
-Primeiro, precisamos selecionar as datas certas para analisar os dados. Vá para a lista suspensa de calendário no lado direito da tela. Clique nele e selecione o intervalo de datas aplicável.
+Primeiro, é necessário selecionar as datas certas para analisar os dados. Vá para a lista suspensa de calendário no lado direito da tela. Clique nele e selecione o intervalo de datas aplicável.
 
 ![demonstração](./images/pro1.png)
 

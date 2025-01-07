@@ -4,27 +4,18 @@ description: Customer Journey Analytics - Crie um painel usando o Analysis Works
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 # Customer Journey Analytics 4.1 - Crie um painel usando o Analysis Workspace sobre o Adobe Experience Platform
 
-**Autor: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 Neste módulo, você obterá experiência prática com o serviço de aplicativos Customer Journey Analytics.
 
 O Customer Journey Analytics fornece um kit de ferramentas para equipes de business intelligence e ciência de dados para compilação e análise de dados entre canais (online e offline). Os recursos do Customer Journey Analytics fornecem contexto e clareza para as complexas jornadas de clientes multicanais. O contexto fornecido gera um insight acionável sobre como remover pontos problemáticos do processo de conversão do cliente e fornecer experiências positivas nos momentos mais importantes.
-
-
-Assista a este vídeo para entender o valor, a jornada do cliente e o processo de configuração:
-
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
-
-Mais informações sobre o Customer Journey Analytics podem ser encontradas [aqui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Objetivos de aprendizagem
 

@@ -4,16 +4,14 @@ description: Assimilar e analise dados do Google Analytics no Adobe Experience P
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # 4.2 Assimilar e analisar dados do Google Analytics no Adobe Experience Platform com o conector Source do BigQuery
-
-**Autores: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 Neste módulo, você configurará sua própria instância da Google Cloud Platform, carregará dados de amostra na Google Cloud Platform e usará o BigQuery Source Connector para assimilar esses dados da Google Cloud Platform na Adobe Experience Platform. Por fim, você usará o Customer Journey Analytics para visualizar esses dados.
 
@@ -43,9 +41,9 @@ Além disso, podemos enriquecer esses dados do Google Analytics unindo-os a outr
 
 ## Exercícios
 
-[4.2.1 Criar sua conta da Google Cloud Platform](./ex1.md)
+[4.2.1 Comece a usar a Google Cloud Platform](./ex1.md)
 
-Crie sua conta da Google Cloud Platform.
+Comece a usar seu ambiente da Google Cloud Platform.
 
 [4.2.2 Crie sua primeira consulta no BigQuery](./ex2.md)
 

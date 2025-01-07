@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '214'
 ht-degree: 10%
 
 ---
@@ -30,8 +30,8 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [3.2 Adobe Journey Optimizer: fontes de dados externas e ações personalizadas](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 12/30/2024 | Sim | - |
 | [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 01/06/2025 | Sim | - |
 | [3.4 Adobe Journey Optimizer: Jornadas baseadas em eventos](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 01/05/2025 | Sim | - |
-| [4.1 Customer Journey Analytics: Criar um painel usando o Analysis Workspace sobre o Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | - | Não | Atualização pendente de conteúdo |
-| [4.2 Customer Journey Analytics: Assimilar e analise dados do Google Analytics no Adobe Experience Platform com o BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | - | Não | Atualização pendente de conteúdo |
+| [4.1 Customer Journey Analytics: Criar um painel usando o Analysis Workspace sobre o Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 01/06/2025 | Sim | - |
+| [4.2 Customer Journey Analytics: Assimilar e analise dados do Google Analytics no Adobe Experience Platform com o BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 01/07/2025 | Sim | - |
 | [Serviço de consulta](./modules/datadistiller/module5.1/query-service.md) do 5.1 | 12/04/2024 | Sim | - |
 
 {style="table-layout:auto"}
