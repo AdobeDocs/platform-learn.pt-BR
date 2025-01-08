@@ -4,9 +4,9 @@ description: Introdução aos serviços do Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Você verá uma bela imagem representando `horses in a field`.
 
 Fique à vontade para brincar com a solicitação da API antes de continuar com o próximo exercício.
 
-Próxima Etapa: [1.1.2 Solicitar imagens com especificações](./ex2.md)
+Próxima etapa: [1.1.2 Otimizar o processo de Firefly usando o Microsoft Azure e URLs pré-assinadas](./ex2.md)
 
 [Voltar ao módulo 1.1](./firefly-services.md)
 
