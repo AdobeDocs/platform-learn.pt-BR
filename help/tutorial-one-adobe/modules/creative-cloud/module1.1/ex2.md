@@ -4,9 +4,9 @@ description: Introdução aos serviços do Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1114'
 ht-degree: 1%
 
 ---
@@ -119,13 +119,13 @@ Abra **Contêineres de Blob** e clique no contêiner criado no exercício anteri
 
 ![Armazenamento do Azure](./images/az18.png)
 
-## 1.1.2.4 Upload manual do arquivo e uso de um arquivo de gradiente como referência de estilo
+## 1.1.2.4 Upload manual de arquivo e uso de um arquivo de imagem como referência de estilo
 
-Agora você deve carregar um arquivo de gradiente de sua escolha no seu container. Você pode usar qualquer arquivo de gradiente de sua escolha ou pode usar [este arquivo](./images/gradient.jpg) baixando-o em seu computador.
+Agora você deve carregar um arquivo de imagem de sua escolha no seu container. Você pode usar qualquer arquivo de imagem de sua escolha ou pode usar [este arquivo](./images/gradient.jpg) baixando-o em seu computador.
 
 ![Armazenamento do Azure](./images/gradient.jpg)
 
-Solte o arquivo de gradiente em seu container no Azure Storage Explorer.
+Solte o arquivo de imagem em seu container no Azure Storage Explorer.
 
 Depois de carregado, você verá em seu container:
 
@@ -147,7 +147,7 @@ Volte para o Postman. Abra a solicitação **POST - Firefly - T2I (styleref) V3*
 
 ![Armazenamento do Azure](./images/az23.png)
 
-Substitua a URL do espaço reservado pela URL pré-assinada do arquivo de gradiente que você copiou do Azure Storage Explorer. Então você terá isto. Clique em **Enviar**.
+Substitua a URL do espaço reservado pela URL pré-assinada do arquivo de imagem que você copiou do Azure Storage Explorer. Então você terá isto. Clique em **Enviar**.
 
 ![Armazenamento do Azure](./images/az24.png)
 
@@ -155,7 +155,7 @@ Em seguida, você obterá uma resposta do Firefly Services novamente, com uma no
 
 ![Armazenamento do Azure](./images/az25.png)
 
-Você verá outra imagem com `horses in a field`, mas dessa vez o estilo será semelhante ao arquivo de gradiente fornecido como referência de estilo.
+Você verá outra imagem com `horses in a field`, mas dessa vez o estilo será semelhante ao arquivo de imagem fornecido como referência de estilo.
 
 ![Armazenamento do Azure](./images/az26.png)
 
@@ -195,7 +195,7 @@ Em seguida, clique em **Corpo**.
 
 ![Armazenamento do Azure](./images/az31.png)
 
-Agora, será necessário selecionar um arquivo do computador local. Você pode usar um novo arquivo de imagem de sua escolha ou pode usar outro arquivo de gradiente que você pode encontrar [aqui](./images/gradient2-p.jpg).
+Agora, será necessário selecionar um arquivo do computador local. Você pode usar um novo arquivo de imagem de sua escolha, ou você pode usar outro arquivo de imagem que você pode encontrar [aqui](./images/gradient2-p.jpg).
 
 ![Arquivo de gradação](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ O nome de arquivo a ser usado é `gradient2-p.jpg`, o que significa que a URL pr
 
 Em seguida, vá para **Cabeçalhos**, onde você precisa adicionar um novo cabeçalho manualmente. Use isto:
 
-Blob de tipo x-ms-blob
+| Chave | Valor |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![Armazenamento do Azure](./images/az35.png)
 
@@ -238,6 +241,27 @@ Você verá essa resposta vazia no Postman, o que significa que o upload do arqu
 Se você voltar para o Azure Storage Explorer e atualizar o conteúdo de sua pasta, agora encontrará o arquivo recém-carregado lá.
 
 ![Armazenamento do Azure](./images/az38.png)
+
+## 1.1.2.5 Utilização programática de arquivos
+
+Para usar arquivos lidos programaticamente das Contas de Armazenamento do Azure, será necessário criar um novo token **SAS (Assinatura de Acesso Compartilhado)**, com permissões que permitam ler um arquivo. Você poderia usar tecnicamente o token SAS criado no exercício anterior, mas é uma prática recomendada ter um token separado com apenas permissões de **Leitura**.
+
+Para fazer isso, volte para o Azure Storage Explorer. Clique com o botão direito do mouse no contêiner e clique em **Obter Assinatura de Acesso Compartilhado**.
+
+![Armazenamento do Azure](./images/az27.png)
+
+Em **Permissões**, as seguintes permissões são necessárias:
+
+- **Leitura**
+- **Adicionar**
+- **Create**
+- **Write**
+- **Lista**
+
+Clique em **Criar**.
+
+![Armazenamento do Azure](./images/az28.png)
+
 
 Próxima Etapa: [1.1.3 ...](./ex3.md)
 
