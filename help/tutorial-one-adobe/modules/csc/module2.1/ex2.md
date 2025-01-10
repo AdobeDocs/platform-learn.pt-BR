@@ -3,9 +3,9 @@ title: Criar seu programa do Cloud Manager
 description: Criar seu programa do Cloud Manager
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -307,9 +307,38 @@ Seu site será aberto no **Editor Universal**.
 
 ![AEMCS](./images/aemcssetup45.png)
 
-Agora você também pode navegar em seu site acessando `main--citisignal--woutervangeluwe.aem.live/us/en`
+Agora você pode acessar seu site indo até `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
+Neste exemplo, o URL completo torna-se isto:
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
 
+Pode levar algum tempo até que todos os ativos sejam exibidos corretamente, pois precisam ser publicados primeiro.
+
+Você verá isto:
+
+![AEMCS](./images/aemcssetup46.png)
+
+Após alguns minutos, todos os ativos serão carregados corretamente.
+
+![AEMCS](./images/aemcssetup47.png)
+
+## 2.1.2.7 Desempenho da página de teste
+
+Ir para [https://pagespeed.web.dev/](https://pagespeed.web.dev/). Insira sua URL e clique em **Analisar**.
+
+![AEMCS](./images/aemcssetup48.png)
+
+Em seguida, você verá que seu site, em uma visualização para dispositivos móveis e desktop, obtém uma pontuação alta:
+
+**Celular**:
+
+![AEMCS](./images/aemcssetup49.png)
+
+**Área de Trabalho**:
+
+![AEMCS](./images/aemcssetup50.png)
+
+Próxima Etapa: [2.1.3 Configurar um bloco personalizado](./ex3.md)
 
 [Voltar ao módulo 2.1](./aemcs.md)
 
