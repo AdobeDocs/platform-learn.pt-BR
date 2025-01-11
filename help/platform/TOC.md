@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 17%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 17%
 + Assistente de IA {#ai-assistant}
    + [Visão geral](/help/platform/ai-assistant/overview.md)
    + [Configurar acesso](/help/platform/ai-assistant/access.md)
-   + [Limpar públicos](/help/platform/ai-assistant/find-unused-audiences.md)
    + [Integrar com um novo produto](/help/platform/ai-assistant/onboard.md)
+   + [Saiba mais sobre produtos](/help/platform/ai-assistant/product-knowledge.md)
+   + [Validar respostas](/help/platform/ai-assistant/validate-responses.md)
+   + [Painel de capacidade de descoberta](/help/platform/ai-assistant/discoverability-panel.md)
+   + [Encontrar públicos-alvo não utilizados](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [Análise de impacto](/help/platform/ai-assistant/impact-analysis.md)
+   + [Visão geral de segurança](/help/platform/ai-assistant/security-overview.md)
 + Públicos e segmentação {#audiences}
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
    + [Fazer upload de públicos](audiences/upload-audiences.md)
@@ -109,8 +114,8 @@ ht-degree: 17%
    + [Visão geral da assimilação por transmissão](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Transmitir dados com a API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=pt-BR)
    + [Dados de fluxo usando Conectores de origem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=pt-BR)
-   + [Tutoriais do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [Tutoriais do SDK móvel](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+   + [Tutoriais do Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Tutoriais do Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Ciclo de vida dos dados {#data-lifecycle}
    + [Expirar conjuntos de dados](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
