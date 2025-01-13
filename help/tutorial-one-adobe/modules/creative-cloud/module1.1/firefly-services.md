@@ -4,9 +4,9 @@ description: Serviços Adobe Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '156'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,10 @@ Neste exercício, explore os Serviços Firefly e entenda seus recursos.
 [1.1.2 Otimizar o processo de Firefly usando o Microsoft Azure e URLs pré-assinados](./ex2.md)
 
 Neste exercício, explore os Serviços Firefly e entenda seus recursos.
+
+[1.1.3 Adobe Firefly e Adobe Photoshop](./ex3.md)
+
+Neste exercício, você usará os Serviços Firefly juntamente com a Adobe Photoshop.
 
 [Resumo e benefícios](./summary.md)
 

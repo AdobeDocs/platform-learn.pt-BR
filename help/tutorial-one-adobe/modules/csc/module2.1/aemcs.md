@@ -4,9 +4,9 @@ description: Cloud Service Adobe Experience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: ce8e9f193765f362b3ea1396626d56b453e1d5ec
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -27,11 +27,15 @@ ht-degree: 2%
 
 Neste exercício, você criará seu Programa Cloud Manager, que criará os produtos Sites, Assets e Edge Delivery Services para você.
 
-[2.1.2 Configurar o ambiente AEM CS](./ex2.md)
+[2.1.2 Criar o site com base em documento](./ex2.md)
+
+Neste exercício de introdução, você configurará seu próprio site baseado em documentos copiando um modelo de site existente.
+
+[2.1.3 Configurar o ambiente AEM CS](./ex3.md)
 
 Neste exercício, você configurará seu ambiente AEM CS e acessará seu site CitiSignal.
 
-[2.1.3 Desenvolver um bloco personalizado](./ex3.md)
+[2.1.4 Desenvolver um bloco personalizado](./ex4.md)
 
 Neste exercício, você desenvolverá um componente de bloco personalizado para o seu site.
 
