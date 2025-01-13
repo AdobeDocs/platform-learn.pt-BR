@@ -1,26 +1,29 @@
 ---
-title: Resumo e benefícios
-description: Resumo e benefícios
+title: Foundation - FAC - Resumo
+description: Foundation - FAC - Resumo
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: 9681cceb-1d8b-48d0-b751-af98778b6acb
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
-source-wordcount: '21'
-ht-degree: 4%
+source-wordcount: '53'
+ht-degree: 1%
 
 ---
 
 # Resumo e benefícios
 
-Parabéns...
+Parabéns e obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform!
 
 ## Benefícios
 
-...
+Vamos destacar os benefícios dos recursos de assimilação de dados da Composição de público-alvo federado no Adobe Experience Platform:
+
+
 
 ## Veja isto
 
 
-[Voltar ao Módulo 3](./rtcdp.md)
+[Voltar ao módulo 1.3](./fac.md)
 
 [Voltar a todos os módulos](../../../overview.md)
