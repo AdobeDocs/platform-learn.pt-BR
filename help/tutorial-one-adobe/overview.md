@@ -3,16 +3,16 @@ title: Visão geral - Tutorial técnico abrangente - Um Adobe
 description: Tutorial técnico abrangente - Um Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 710c985a0fb9d2be3b1a991aeb2330f24e66abc0
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '467'
 ht-degree: 4%
 
 ---
 
 # Tutorial técnico abrangente - Um Adobe
 
-![Informantes técnicos](./assets/images/techinsiders.png)
+![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Visão geral
 
@@ -42,58 +42,60 @@ Este tutorial não se concentra apenas em aplicativos Adobe, mas leva em conta o
 
 Se você quiser fazer este tutorial usando sua própria instância do Adobe Experience Cloud, os seguintes aplicativos precisarão ser provisionados em sua instância e você precisará acessar:
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
+- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
 - Adobe Photoshop
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/)
-- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Coleção de dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Acesso ao sistema de demonstração: [https://dsn.adobe.com/](https://dsn.adobe.com/)
+- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
+- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
+- Coleta de Dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
+- Acesso ao sistema de demonstração: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## Conteúdo
 
-Para verificar o status do conteúdo abaixo, vá para a [página de status](./status.md).
+Para verificar o status do conteúdo abaixo, vá para a [página de status](./status.md){target="_blank"}.
 
 ### Introdução
 
-[Introdução](./modules/getting-started/gettingstarted/getting-started.md)
+[Introdução](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
 Neste módulo fundamental, você configurará tudo para poder acessar e usar o ambiente de demonstração.
 
 ### 1. Adobe Creative Cloud
 
-[Serviços de Adobe Firefly 1.1](./modules/creative-cloud/module1.1/firefly-services.md)
+[Serviços de Adobe Firefly 1.1](./modules/creative-cloud/module1.1/firefly-services.md){target="_blank"}
 
 Neste módulo, você usará APIs de Serviços Adobe Firefly, APIs Photoshop e Serviços de Armazenamento do Microsoft Azure para gerar imagens e armazená-las programaticamente.
 
-[1.2 Automação de fluxo de trabalho criativo com o Workfront Fusion](./modules/creative-cloud/module1.2/automation.md)
+[Automação do Fluxo de Trabalho de Criação com o Workfront Fusion](./modules/creative-cloud/module1.2/automation.md){target="_blank"}
 
 Neste módulo fundamental, você usará o Adobe Workfront Fusion para automatizar e dimensionar seus fluxos de trabalho de criação de conteúdo.
 
 ### 2. Cadeia de fornecimento de conteúdo
 
-[2.1 Cloud Service e Edge Delivery Services Adobe Experience Manager](./modules/csc/module2.1/aemcs.md)
+[2.1 Cloud Service e Edge Delivery Services do Adobe Experience Manager](./modules/csc/module2.1/aemcs.md){target="_blank"}
 
 Neste módulo fundamental, você configurará seu Programa Adobe Experience Manager Cloud Service, seu Site e seu repositório Assets.
 
-[2.2 Gerenciamento de fluxos de trabalho com o Adobe Workfront](./modules/csc/module2.2/workfront.md)
+[2.2 Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./modules/csc/module2.2/workfront.md){target="_blank"}
 
 Neste módulo fundamental, você configurará e usará o Adobe Workfront para gerenciar fluxos de aprovação e usará integrações com o Adobe Experience Manager Assets, Universal Editor, Photoshop e muito mais.
 
 ### 3. Experiência unificada do cliente
 
-[3.1 Composição de público-alvo federado](./modules/uce/module3.1/fac.md)
+[3.1 Composição de Público Federado](./modules/uce/module3.1/fac.md){target="_blank"}
 
 Neste módulo fundamental, você aprenderá sobre a Coleção de dados do Adobe Experience Platform e a nova extensão do Web SDK.
 
-[3.2 Adobe Journey Optimizer: Serviços de tradução](./modules/uce/module3.2/ajotranslationsvcs.md)
+[3.2 Adobe Journey Optimizer: serviços de tradução](./modules/uce/module3.2/ajotranslationsvcs.md){target="_blank"}
 
 Neste módulo, você usará o Adobe Journey Optimizer para configurar e usar os Serviços de tradução.
 
-[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/uce/module3.3/offer-decisioning.md)
+[3.3 Adobe Journey Optimizer: Offer decisioning](./modules/uce/module3.3/offer-decisioning.md){target="_blank"}
 
 Neste módulo, você usará o Adobe Journey Optimizer com serviços do offer decisioning de forma prática para configurar Ofertas personalizadas e sua própria decisão.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo tudo o que há para saber sobre o Adobe Experience Platform e seus aplicativos. Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
+>![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
+>
+>Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.

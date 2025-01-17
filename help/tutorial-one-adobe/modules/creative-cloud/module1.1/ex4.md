@@ -3,16 +3,17 @@ title: Trabalho com APIs do Photoshop
 description: Trabalho com APIs do Photoshop
 kt: 5342
 doc-type: tutorial
-source-git-commit: b7ee794e9611afc7bee35a0f471ec50caad10f85
+exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
+source-git-commit: 153b070ffeb21c7111f4b954c4ba2d7c9042db0d
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '128'
 ht-degree: 3%
 
 ---
 
 # Modelos personalizados de Firefly 1.1.4
 
-Ir para [https://firefly.adobe.com](https://firefly.adobe.com). Ir para **Modelos Personalizados**.
+Ir para [https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"}. Ir para **Modelos Personalizados**.
 
 ![Firefly](./images/ffcm1.png)
 
@@ -52,10 +53,18 @@ As imagens serão carregadas. Isso pode levar algum tempo.
 
 ![Firefly](./images/ffcm10.png)
 
+![Firefly](./images/ffcm11.png)
+
+![Firefly](./images/ffcm12.png)
+
+![Firefly](./images/ffcm13.png)
+
+![Firefly](./images/ffcm14.png)
+
 Você concluiu este exercício agora.
 
-Próxima etapa: [Resumo e benefícios](./summary.md)
+Próxima etapa: [Resumo e benefícios](./summary.md){target="_blank"}
 
-[Voltar ao módulo 1.1](./firefly-services.md)
+[Retornar ao Módulo 1.1](./firefly-services.md){target="_blank"}
 
-[Voltar a todos os módulos](./../../../overview.md)
+[Voltar para Todos os Módulos](./../../../overview.md){target="_blank"}

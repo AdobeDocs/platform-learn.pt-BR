@@ -4,10 +4,10 @@ description: CLOUD SERVICE e EDGE DELIVERY SERVICES ADOBE EXPERIENCE MANAGER
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 2%
 
 ---
 
@@ -23,28 +23,30 @@ ht-degree: 1%
 
 ## Exercícios
 
-[2.1.1 Criar seu programa Cloud Manager](./ex1.md)
+[2.1.1 Criar seu programa do Cloud Manager](./ex1.md){target="_blank"}
 
 Neste exercício, você criará seu Programa Cloud Manager, que criará os produtos Sites, Assets e Edge Delivery Services para você.
 
-[2.1.2 Criar o site com base em documento](./ex2.md)
+[2.1.2 Criar seu site baseado em documento](./ex2.md){target="_blank"}
 
 Neste exercício de introdução, você configurará seu próprio site baseado em documentos copiando um modelo de site existente.
 
-[2.1.3 Configurar o ambiente AEM CS](./ex3.md)
+[2.1.3 Configurar o ambiente AEM CS](./ex3.md){target="_blank"}
 
 Neste exercício, você configurará seu ambiente AEM CS e acessará seu site CitiSignal.
 
-[2.1.4 Desenvolver um bloco personalizado](./ex4.md)
+[2.1.4 Desenvolver um bloco personalizado](./ex4.md){target="_blank"}
 
 Neste exercício, você desenvolverá um componente de bloco personalizado para o seu site.
 
-[Resumo e benefícios](./summary.md)
+[Resumo e benefícios](./summary.md){target="_blank"}
 
 Resumo desse módulo e visão geral dos benefícios.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo tudo o que há para saber sobre o Adobe Experience Platform e seus aplicativos. Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
+>![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
+>Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
 
-[Voltar a todos os módulos](../../../overview.md)
+[Voltar para Todos os Módulos](../../../overview.md){target="_blank"}
