@@ -4,9 +4,9 @@ description: Automação de processos com o Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Exclua o texto **Clique aqui** e substitua-o selecionando a variável **Valor** 
 
 ![WF Fusion](./images/wffusion209.png)
 
-Você também precisa atualizar o nome de arquivo usado para gravar o arquivo em sua Conta de Armazenamento do Azure. Se o nome do arquivo for estático, cada nova iteração simplesmente substituirá o arquivo anterior e, como tal, você perderá os arquivos personalizados. O nome de arquivo estático atual é **sevoi-psd-changed-text.psd**, e você precisa atualizá-lo agora. Coloque o cursor atrás da palavra `text`.
+Você também precisa atualizar o nome de arquivo usado para gravar o arquivo em sua Conta de Armazenamento do Azure. Se o nome do arquivo for estático, cada nova iteração simplesmente substituirá o arquivo anterior e, como tal, você perderá os arquivos personalizados. O nome de arquivo estático atual é **citisignal-fiber-changed-text.psd**, e você precisa atualizá-lo agora. Coloque o cursor atrás da palavra `text`.
 
 ![WF Fusion](./images/wffusion210.png)
 
@@ -77,11 +77,11 @@ Depois que o cenário for executado, volte para o Azure Storage Explorer e atual
 
 ![WF Fusion](./images/wffusion213.png)
 
-Baixe e abra cada arquivo. Você deverá ver os vários textos nos botões. Este é o arquivo `sevoi-psd-changed-text-1.psd`.
+Baixe e abra cada arquivo. Você deverá ver os vários textos nos botões. Este é o arquivo `citisignal-fiber-changed-text-1.psd`.
 
 ![WF Fusion](./images/wffusion214.png)
 
-Este é o arquivo `sevoi-psd-changed-text-2.psd`.
+Este é o arquivo `citisignal-fiber-changed-text-2.psd`.
 
 ![WF Fusion](./images/wffusion215.png)
 
@@ -162,9 +162,31 @@ Seu cenário será executado novamente e criará os 2 arquivos como antes.
 
 ![WF Fusion](./images/wffusion232.png)
 
-Por fim, altere o nome da sua solicitação Postman para `POST - Send Request to Workfront Fusion Webhook`.
+Altere o nome da sua solicitação Postman para `POST - Send Request to Workfront Fusion Webhook`.
 
 ![WF Fusion](./images/wffusion233.png)
+
+Agora é necessário começar a usar a variável **psdTemplate**. Em vez de codificar o local do arquivo de entrada no nó **Texto de Alteração do Photoshop**, você usará a variável de entrada da solicitação do Postman.
+
+Abra o nó **Photoshop Change Text** e vá para **Solicitar conteúdo**. Selecione o nome de arquivo codificado **citisignal-fiber.psd** em **entradas** e exclua-o.
+
+![WF Fusion](./images/wffusion234.png)
+
+Selecione a variável **psdTemplate**. Clique em **OK** e salve seu cenário.
+
+![WF Fusion](./images/wffusion235.png)
+
+Clique em **LIGADO** para ativar seu cenário. Seu cenário agora será executado sem interrupções.
+
+![WF Fusion](./images/wffusion236.png)
+
+Volte para o Postman. Insira o nome de arquivo `citisignal-fiber.psd` como valor para a variável **psdTemplate** e clique em **Enviar** novamente para executar o cenário novamente.
+
+![WF Fusion](./images/wffusion237.png)
+
+Ao especificar o modelo de PSD como uma variável fornecida por um sistema externo, você criou um cenário reutilizável.
+
+Você terminou este exercício agora.
 
 Próxima etapa: [Resumo e benefícios](./summary.md)
 

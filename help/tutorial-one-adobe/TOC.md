@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico abrangente para aplicativos Adobe, de Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ad36efe6c3a590ddc79c39f6d7511e31b51f9dcb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '310'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 4%
       + [1.1.1 Introdução aos serviços Firefly](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Otimizar os processos do Firefly com o Microsoft Azure e URLs pré-assinados](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly e Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [Modelos personalizados de Firefly 1.1.4](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Automação do Creative Workflow com o Workfront Fusion {#module21}
       + [Visão geral](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
