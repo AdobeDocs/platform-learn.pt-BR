@@ -4,7 +4,7 @@ description: Criar seu programa do Cloud Manager
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 2.1.1 Criar seu programa Cloud Manager
 
-Ir para [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). A organização que você deve selecionar é `--aepImsOrgName--`. Então você verá algo assim. Clique em **Adicionar programa**.
+Ir para [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. A organização que você deve selecionar é `--aepImsOrgName--`. Então você verá algo assim. Clique em **Adicionar programa**.
 
 ![AEMCS](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ A criação de seus ambientes levará algum tempo, de 10 a 20 minutos.
 
 ![AEMCS](./images/aemcs4.png)
 
-Enquanto espera, você já pode começar com o exercício [2.1.2 Criar seu site baseado em documento](./ex2.md).
+Enquanto espera, você já pode começar com o exercício [2.1.2 Criar seu site baseado em documento](./ex2.md){target="_blank"}.
 
 Depois que os ambientes forem criados e estiverem prontos para uso, você receberá um email de confirmação, após o qual poderá voltar aqui.
 
 ![AEMCS](./images/aemcs5.png)
 
-Depois de receber sua confirmação por email, volte para [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Você verá que o status do seu programa mudou para **Pronto**. Clique no programa para abri-lo.
+Depois de receber sua confirmação por email, volte para [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Você verá que o status do seu programa mudou para **Pronto**. Clique no programa para abri-lo.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ Você verá os detalhes do seu ambiente, incluindo a URL do seu ambiente **Autho
 
 Depois que a execução do pipeline for concluída, você poderá continuar com o próximo exercício.
 
-Próxima Etapa: [2.1.2 Criar seu site baseado em documento](./ex2.md)
+Próxima Etapa: [2.1.2 Criar seu site baseado em documento](./ex2.md){target="_blank"}
 
-[Voltar ao módulo 2.1](./aemcs.md)
+[Retornar ao Módulo 2.1](./aemcs.md){target="_blank"}
 
-[Voltar a todos os módulos](./../../../overview.md)
+[Voltar para Todos os Módulos](./../../../overview.md){target="_blank"}

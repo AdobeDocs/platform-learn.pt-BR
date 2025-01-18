@@ -4,7 +4,7 @@ description: Introdução aos serviços do Firefly
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Neste exercício, você usará o Postman e o Adobe I/O para consultar APIs de se
 
 Neste exercício, você usará o Adobe I/O de forma bastante intensa para consultar as APIs de serviços do Firefly. Siga as etapas abaixo para configurar o Adobe I/O.
 
-Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
+Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}
 
 ![Adobe I/O Nova integração](./images/iohome.png)
 
@@ -79,7 +79,7 @@ A configuração da integração do Adobe I/O foi concluída.
 
 ## Autenticação Postman para Adobe I/O
 
-Ir para [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
+Ir para [https://www.postman.com/downloads/](https://www.postman.com/downloads/){target="_blank"}.
 
 Baixe e instale a versão relevante do Postman para seu sistema operacional.
 
@@ -178,8 +178,8 @@ Você verá uma bela imagem representando `horses in a field`.
 
 Fique à vontade para brincar com a solicitação da API antes de continuar com o próximo exercício.
 
-Próxima etapa: [1.1.2 Otimizar o processo de Firefly usando o Microsoft Azure e URLs pré-assinadas](./ex2.md)
+Próxima etapa: [1.1.2 Otimizar o processo de Firefly usando o Microsoft Azure e URLs pré-assinadas](./ex2.md){target="_blank"}
 
-[Voltar ao módulo 1.1](./firefly-services.md)
+[Retornar ao Módulo 1.1](./firefly-services.md){target="_blank"}
 
-[Voltar a todos os módulos](./../../../overview.md)
+[Voltar para Todos os Módulos](./../../../overview.md){target="_blank"}

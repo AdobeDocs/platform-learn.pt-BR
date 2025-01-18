@@ -3,7 +3,8 @@ title: Criar seu programa do Cloud Manager
 description: Criar seu programa do Cloud Manager
 kt: 5342
 doc-type: tutorial
-source-git-commit: 608fb56797336fe17f99c1c2bf940de01612a45c
+exl-id: 75abb23f-c19f-4b8a-97dd-58a015949c1e
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 1%
@@ -80,6 +81,6 @@ Volte para o Photoshop e você verá que o plug-in está pronto para ser usado e
 
 ![WF](./images/wf16.png)
 
-[Voltar ao módulo 2.2](./workfront.md)
+[Retornar ao Módulo 2.2](./workfront.md){target="_blank"}
 
-[Voltar a todos os módulos](./../../../overview.md)
+[Voltar para Todos os Módulos](./../../../overview.md){target="_blank"}

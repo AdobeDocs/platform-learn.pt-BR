@@ -4,7 +4,7 @@ description: Trabalho com APIs do Photoshop
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 1.1.3.1 Atualize a integração do Adobe I/O
 
-Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home).
+Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
 ![Adobe I/O Nova integração](./images/iohome.png)
 
@@ -49,7 +49,7 @@ Seu projeto Adobe I/O foi atualizado para funcionar com as APIs de serviços Pho
 
 ## 1.1.3.2 Interagir programaticamente com um arquivo PSD
 
-Baixe o arquivo Vá para [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd) na área de trabalho.
+Baixe o arquivo Vá para [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} na área de trabalho.
 
 Abra o arquivo **citisignal-fiber.psd** no Photoshop. Você deveria ficar com isso.
 
@@ -229,8 +229,8 @@ Por fim, você também verá esse arquivo em seu contêiner usando o explorador 
 
 Você concluiu este exercício agora.
 
-Próxima Etapa: [1.1.4 Modelos Personalizados de Firefly](./ex4.md)
+Próxima Etapa: [1.1.4 Modelos Personalizados de Firefly](./ex4.md){target="_blank"}
 
-[Voltar ao módulo 1.1](./firefly-services.md)
+[Retornar ao Módulo 1.1](./firefly-services.md){target="_blank"}
 
-[Voltar a todos os módulos](./../../../overview.md)
+[Voltar para Todos os Módulos](./../../../overview.md){target="_blank"}
