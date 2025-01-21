@@ -4,13 +4,13 @@ description: Neste exercício, você aprenderá a migrar uma regra de carregamen
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # Migrar sua regra de carregamento de página padrão
 
@@ -18,7 +18,7 @@ Neste exercício, você aprenderá a migrar uma regra de carregamento de página
 
 ## Visão geral
 
-Vamos voltar um pouco. É provável que você tenha uma regra em Tags (anteriormente conhecida como &quot;Launch&quot;) que é acionada em cada página - uma que define uma ou mais variáveis padrão e, em seguida, aciona um beacon ou uma ocorrência no Adobe Analytics. No momento, essa regra está usando &quot;ações&quot; na extensão do Adobe Analytics para fazer essas coisas. À medida que migramos nossa implementação para o Web SDK, precisamos remover todas as referências (como as ações) à extensão do Analytics e substituí-las por ações que pertençam ao Web SDK. Nas etapas abaixo, assumiremos o que foi descrito acima; ou seja, você tem uma regra padrão de carregamento de página que define variáveis e envia um beacon de rastreamento para o Analytics.
+Vamos voltar um pouco. É provável que você tenha uma regra em Tags acionada em cada página, uma que defina uma ou mais variáveis padrão e, em seguida, acione um beacon ou uma ocorrência no Adobe Analytics. No momento, essa regra está usando &quot;ações&quot; na extensão do Adobe Analytics para fazer essas coisas. À medida que migramos nossa implementação para o Web SDK, precisamos remover todas as referências (como as ações) à extensão do Analytics e substituí-las por ações que pertençam ao Web SDK. Nas etapas abaixo, assumiremos o que foi descrito acima; ou seja, você tem uma regra padrão de carregamento de página que define variáveis e envia um beacon de rastreamento para o Analytics.
 
 ## Migrar a ação Definir variáveis
 

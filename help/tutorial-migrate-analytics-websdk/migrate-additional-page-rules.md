@@ -4,13 +4,13 @@ description: Saiba como migrar regras adicionais baseadas em página para a exte
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # Migrar regras de página adicionais
 
@@ -20,7 +20,7 @@ Neste exercício, você aprenderá a migrar regras adicionais baseadas em págin
 
 Vamos fazer um backup um pouco, e falar sobre as implementações do Analytics como elas são com a extensão de tags da Adobe Analytics (também conhecida como implementação &quot;AppMeasurement&quot;, pois esse é o nome do arquivo da JavaScript).
 
-Não presumirei saber exatamente como você está implementado, mas em muitas implementações usando tags Experience Platform (antes conhecidas como &quot;Launch&quot;), há várias regras que são acionadas apenas condicionalmente, com base em algo na página ou no URL. Exemplos disso podem incluir:
+Eu não presumirei saber exatamente como você é implementado, mas em muitas implementações usando tags Experience Platform, há um número de regras que são acionadas apenas condicionalmente, com base em algo na página ou no URL. Exemplos disso podem incluir:
 
 * Regra de resultados da pesquisa, disparando somente quando uma pesquisa interna é executada e a página de resultados da pesquisa é exibida
 * Regra de página de aterrissagem de campanha, acionada somente quando há um código de rastreamento no URL
@@ -68,6 +68,3 @@ Este é um exemplo de migração de uma regra que é acionada condicionalmente. 
 >[!IMPORTANT]
 >
 >Como a regra de carregamento de página padrão, deixamos a ação **Definir variável** da extensão do Analytics na regra para que possamos comparar os dados à medida que validamos nossa migração. Não se esqueça de entrar novamente mais tarde e remover a ação da extensão do Analytics enquanto você faz a limpeza final.
-
-
-

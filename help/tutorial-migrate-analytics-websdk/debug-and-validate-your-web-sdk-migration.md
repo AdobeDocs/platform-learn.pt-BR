@@ -4,15 +4,15 @@ description: Saiba como depurar e validar seus dados ao migrar para o Web SDK
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
-
-# Depuração e validação da migração do Web SDK
+# Depurar e validar a migração do Web SDK
 
 Neste exercício, você aprenderá a depurar e validar seus dados ao migrar para o Web SDK. Queremos incentivar duas atividades de validação diferentes que podem ajudar você a garantir que tudo esteja funcionando corretamente:
 
@@ -70,7 +70,7 @@ Há possivelmente várias maneiras de configurar estas comparações, mas eu vou
 1. Criar um novo projeto no Analysis Workspace e adicionar dois painéis
 1. Defina o conjunto de relatórios no painel 1 para seu conjunto de relatórios de produção atual do Adobe Analytics
 1. Defina o conjunto de relatórios no painel 2 como seu novo conjunto de relatórios de desenvolvimento do Web SDK
-1. Coloque o mesmo relatório em ambos os painéis, usando um período no calendário quando os dados estavam fluindo para o Analytics usando ambas as extensões
+1. Coloque o mesmo relatório em ambos os painéis, usando um período que inclua dias completos apenas onde os dados foram enviados para ambos os conjuntos de relatórios
 1. Comparar os dados
 
 Isso pode ser semelhante a (entendendo que não há dados nesses conjuntos de relatórios de demonstração vazios):
