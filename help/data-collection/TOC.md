@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
+source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '195'
 ht-degree: 25%
 
 ---
@@ -27,14 +27,15 @@ ht-degree: 25%
    + [Criar regras](tags/build-rules.md)
    + [Regras de pilha](tags/stack-rules.md)
    + [Criar e publicar uma biblioteca](tags/build-and-publish-a-library.md)
-   + [Implementar em sites com o SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
+   + [Implementar em sites com o Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
    + [Implementar em sites com SDKs de solução](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR){target="_blank"}
-+ SDK da Web{#web-sdk}
++ Web SDK{#web-sdk}
    + [Visão geral](web-sdk/overview.md)
    + [Demonstração](web-sdk/demo.md)
    + [Tutorial de implementação (com marcas)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR){target="_blank"}
    + [Tutorial de migração do Target](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
+   + [Tutorial de migração do Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Consentimento{#consent}
       + [Visão geral](web-sdk/consent/overview.md)
       + [Definir valores de consentimento usando o padrão Adobe](web-sdk/consent/set-consent-adobe.md)
