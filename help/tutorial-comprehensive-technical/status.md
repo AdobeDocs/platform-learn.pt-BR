@@ -3,10 +3,10 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 9%
+source-wordcount: '228'
+ht-degree: 10%
 
 ---
 
@@ -19,7 +19,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [0. Introdução ](./modules/gettingstarted/gettingstarted/getting-started.md) | 11/14/2024 | Sim | - |
 | [1.1 Foundation - Configuração da Coleção de Dados da Adobe Experience Platform e da Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 11/18/2024 | Sim | - |
 | [1.2 Foundation - Assimilação de dados](./modules/datacollection/module1.2/data-ingestion.md) | 11/18/2024 | Sim | - |
-| [1.3 Composição de Público Federado](./modules/datacollection/module1.3/fac.md) | 01/07/2025 | Sim, 95% | Arquivos de dados de exemplo estão pendentes, o conteúdo está 95% concluído e testado |
+| [1.3 Composição de Público Federado](./modules/datacollection/module1.3/fac.md) | 01/07/2025 | Sim | - |
 | [2.1 Foundation - Perfil de Cliente em Tempo Real](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md) | 11/19/2024 | Sim | - |
 | [2.2 Serviços inteligentes](./modules/rtcdp-b2c/module2.2/intelligent-services.md) | 12/03/2024 | Sim | - |
 | [2.3 Real-Time CDP - Criar um público-alvo e executar uma ação](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) | 11/20/2024 | Sim | - |

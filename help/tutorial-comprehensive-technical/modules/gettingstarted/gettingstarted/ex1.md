@@ -4,9 +4,9 @@ description: Introdução - Instale a extensão Chrome para a documentação do 
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ Para tornar a documentação reutilizável, **As Variáveis de ambiente** foram 
 
 Um exemplo desses valores pode ser encontrado abaixo. Atualmente, esses valores ainda não podem ser usados, mas assim que você instalar e ativar a extensão do Chrome, verá essas variáveis mudarem para um texto normal que pode ser copiado e reutilizado.
 
-| Nome | Chave |
-|:-------------:| :---------------:|
-| ID da organização IMS da AEP | `--aepImsOrgId--` |
-| ID do locatário da AEP | `--aepTenantId--` |
-| Nome da sandbox da AEP | `--aepSandboxName--` |
-| LDAP do perfil do aluno | `--aepUserLdap--` |
+| Nome | Chave | Exemplo |
+|:-------------:| :---------------:| :---------------:|
+| ID da organização IMS da AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nome da organização IMS da AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| ID do locatário da AEP | `--aepTenantId--` | `_experienceplatform` |
+| Nome da sandbox da AEP | `--aepSandboxName--` | `tech-insiders` |
+| LDAP do perfil do aluno | `--aepUserLdap--` | `vangeluw` |
 
 Como exemplo, na captura de tela abaixo, você pode ver uma referência a `aepTenantId`.
 

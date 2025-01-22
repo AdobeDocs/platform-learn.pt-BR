@@ -3,9 +3,10 @@ title: Introdução - Criar sequência de dados
 description: Introdução - Criar sequência de dados
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ Ir para [https://experience.adobe.com/#/data-collection/](https://experience.ado
 
 ![DSN](./images/launchprop.png)
 
-No menu esquerdo, clique em **[!UICONTROL Marcas]**. Após o exercício anterior, você agora tem duas propriedades de Coleção de dados: uma para Web e outra para dispositivos móveis.
+No menu esquerdo, clique em **[!UICONTROL Marcas]**. Após o exercício anterior, você agora tem três propriedades de Coleção de dados: uma para Web, uma para dispositivos móveis e uma para o aplicativo CX.
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ Clique em **[!UICONTROL Nova sequência de dados]**.
 
 ![Clique no ícone Configuração do Edge na navegação à esquerda](./images/edgeconfig1.png)
 
-Para o **[!UICONTROL Nome]** e para a descrição opcional, digite `--aepUserLdap-- - Demo System Datastream`. Para **Esquema de Mapeamento**, selecione **Sistema de Demonstração - Esquema de Evento para Site (Global v1.1)**. Clique em **Salvar**.
+Para o **[!UICONTROL Nome]** e para a descrição opcional, digite `--aepUserLdap-- - One Adobe Datastream`. Para **Esquema de Mapeamento**, selecione **Sistema de Demonstração - Esquema de Evento para Site (Global v1.1)**. Clique em **Salvar**.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ Agora vocês verão isto.
 
 No menu esquerdo, clique em **[!UICONTROL Marcas]**.
 
-Filtre os resultados da pesquisa para ver suas duas propriedades da Coleção de dados. Abra a propriedade de **Web** clicando nela.
+Filtre os resultados da pesquisa para ver as propriedades da Coleção de dados. Abra a propriedade de **Web** clicando nela.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig10a.png)
 
@@ -70,7 +71,7 @@ Primeiro, clique na extensão Adobe Experience Platform Web SDK e em **Configura
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig12.png)
 
-Você verá isso. Faça uma simulação no menu **Datastreams** e verifique se a sandbox correta está selecionada, que no seu caso deve ser `--aepSandboxName--`.
+Você verá isso. Consulte o menu **Datastreams** e verifique se a sandbox correta está selecionada, que no seu caso deve ser `--aepSandboxName--`.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig12a.png)
 
@@ -114,7 +115,7 @@ Clique em **[!UICONTROL Nova sequência de dados]**.
 
 ![Clique no ícone Datastream na navegação à esquerda](./images/edgeconfig1.png)
 
-Para o **[!UICONTROL Nome Amigável]**, e para a descrição opcional, digite `--aepUserLdap-- - Demo System Datastream (Mobile)`. Para **Esquema de Mapeamento**, selecione **Sistema de Demonstração - Esquema de Evento para Aplicativo Móvel (Global v1.1)**. Clique em **Salvar**.
+Para o **[!UICONTROL Nome Amigável]**, e para a descrição opcional, digite `--aepUserLdap-- - One Adobe Datastream (Mobile)`. Para **Esquema de Mapeamento**, selecione **Sistema de Demonstração - Esquema de Evento para Aplicativo Móvel (Global v1.1)**. Clique em **Salvar**.
 
 Clique em **[!UICONTROL Salvar]**.
 

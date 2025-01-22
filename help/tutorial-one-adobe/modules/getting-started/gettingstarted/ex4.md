@@ -3,9 +3,10 @@ title: Introdução - Usar o site
 description: Introdução - Usar o site
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Na página **Integrações**, é necessário selecionar a propriedade Coleção 
 
 ![DSN](./images/web2.png)
 
-Clique em **Selecionar** na propriedade de Coleção de Dados criada na etapa anterior, chamada `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`.
+Clique em **Selecionar** na propriedade de Coleção de Dados criada na etapa anterior, chamada `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`. Clique em **Salvar**.
 
 ![DSN](./images/web2a.png)
 

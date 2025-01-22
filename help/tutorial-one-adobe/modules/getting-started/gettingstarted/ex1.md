@@ -3,9 +3,10 @@ title: Introdução - Instale a extensão Chrome para a documentação do Experi
 description: Introdução - Instale a extensão Chrome para a documentação do Experience League
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ Para tornar a documentação reutilizável, **As Variáveis de ambiente** foram 
 
 Um exemplo desses valores pode ser encontrado abaixo. Atualmente, esses valores ainda não podem ser usados, mas assim que você instalar e ativar a extensão do Chrome, verá essas variáveis mudarem para um texto normal que pode ser copiado e reutilizado.
 
-| Nome | Chave |
-|:-------------:| :---------------:|
-| ID da organização IMS da AEP | `--aepImsOrgId--` |
-| ID do locatário da AEP | `--aepTenantId--` |
-| Nome da sandbox da AEP | `--aepSandboxName--` |
-| LDAP do perfil do aluno | `--aepUserLdap--` |
+| Nome | Chave | Exemplo |
+|:-------------:| :---------------:| :---------------:|
+| ID da organização IMS da AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nome da organização IMS da AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| ID do locatário da AEP | `--aepTenantId--` | `_experienceplatform` |
+| Nome da sandbox da AEP | `--aepSandboxName--` | `one-adobe` |
+| LDAP do perfil do aluno | `--aepUserLdap--` | `vangeluw` |
 
-Como exemplo, na captura de tela abaixo, você pode ver uma referência a `aepTenantId`.
+Como exemplo, na captura de tela abaixo, você pode ver uma referência a `aepSandboxName`.
 
 ![DSN](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ Antes de pegar o nome da sandbox do URL, você deve se certificar de que está n
 
 ![DSN](./images/aepsandboxsw.png)
 
-Neste exemplo, o Nome da sandbox da AEP é **tech-insiders**.
+Neste exemplo, o Nome da sandbox da AEP é **one-adobe**.
 
 ![DSN](./images/aepsname.png)
 
@@ -118,11 +120,10 @@ Este é o nome de usuário que será usado como parte do tutorial. Neste exemplo
 
 O LDAP é usado para garantir que a configuração que você fará esteja vinculada a você e não entre em conflito com outros usuários que possam estar usando a mesma instância e sandbox que você está usando.
 
-Seus valores devem ser semelhantes a estes.
+Seus valores devem ser semelhantes a esses.
 Finalmente, clique em **Criar novo**.
 
 ![DSN](./images/c8a.png)
-
 
 No menu esquerdo da extensão, você verá um novo ícone com as iniciais do seu ambiente. Clique nele. Em seguida, você verá o mapeamento entre as **Variáveis de ambiente** e os valores específicos da instância do Adobe Experience Platform. Clique em **Ativar configuração**.
 
@@ -134,11 +135,11 @@ Depois de ativar sua configuração, você verá um ponto verde ao lado das inic
 
 ## Verificar conteúdo do tutorial
 
-Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
+Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
 
-Agora você deve ver que todas as **Variáveis de ambiente** foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
+Agora você deve ver que todas as **Variáveis de ambiente** desta página foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
 
-Agora você deve ter uma exibição semelhante à mostrada abaixo, onde a variável de ambiente `aepTenantId` foi substituída pela sua ID de locatário real da AEP, que neste caso é **_experienceplatform**.
+Agora você deve ter uma exibição semelhante à abaixo, onde a variável de ambiente `aepSandboxName` foi substituída pelo seu Nome de sandbox real da AEP, que neste caso é **one-adobe**.
 
 ![DSN](./images/mod7.png)
 

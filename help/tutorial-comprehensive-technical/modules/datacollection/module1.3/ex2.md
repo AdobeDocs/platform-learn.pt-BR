@@ -4,9 +4,9 @@ description: Foundation - FAC - Criar esquemas, modelo de dados e links
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb20.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `CK_MONTHLY_DATA_USAGE` e `CK_USERS`.
+Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_HOUSEHOLDS`
 
 ![FAC](./images/fdb23.png)
 
-Você estará de volta aqui. Clique em **Salvar**.
+Você estará de volta aqui. Clique em **Criar links** para criar outro link.
+
 ![FAC](./images/fdb24.png)
+
+Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_MOBILE_DATA_USAGE`.
+
+![FAC](./images/fdb25.png)
+
+Você deverá ver isso. Clique em **Salvar**.
+
+![FAC](./images/fdb26.png)
 
 A configuração no AEP está concluída. Agora você pode começar a usar seus dados federados em uma composição de público-alvo federado.
 

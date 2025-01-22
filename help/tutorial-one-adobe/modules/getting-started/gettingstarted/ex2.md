@@ -3,7 +3,8 @@ title: Introdução - Usar o sistema de demonstração ao lado para configurar a
 description: Introdução - Usar o sistema de demonstração ao lado para configurar a propriedade do Launch
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,7 +33,7 @@ Em seguida, clique em **Iniciar**.
 
 ![DSN](./images/dsn2.png)
 
-Na janela pop-up, digite um nome para as propriedades da Coleção de dados e os projetos do Experience Builder. Use esta convenção de nomenclatura: **Sistema de demonstração (DD/MM/AAAA)**. INFO: seu LDAP será anexado automaticamente. Não é necessário adicioná-lo você mesmo.
+Na janela pop-up, digite um nome para as propriedades da Coleção de dados e os projetos do Experience Builder. Use esta convenção de nomenclatura: **Um Adobe (DD/MM/AAAA)**. INFO: seu LDAP será anexado automaticamente. Não é necessário adicioná-lo você mesmo.
 
 Clique em **Start**.
 
