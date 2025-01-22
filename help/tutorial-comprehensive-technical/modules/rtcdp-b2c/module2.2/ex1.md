@@ -4,9 +4,9 @@ description: IA do cliente - Preparação de dados (assimilação)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ Clique em **Criar conjunto de dados do esquema**.
 
 ![Conjunto de dados](./images/createdatasetfromschema.png)
 
-Na próxima tela, selecione o conjunto de dados criado no exercício anterior, denominado **[!UICONTROL ldap - Sistema de demonstração - Evento de experiência do cliente]**. Clique em **Next**.
+Na próxima tela, selecione o conjunto de dados criado no exercício anterior, denominado `--aepUserLdap-- - Demo System - Customer Experience Event`. Clique em **Next**.
 
 ![Conjunto de dados](./images/createds1.png)
 

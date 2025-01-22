@@ -4,9 +4,9 @@ description: Introdução - Criar sequência de dados
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ Ir para [https://experience.adobe.com/#/data-collection/](https://experience.ado
 
 ![DSN](./images/launchprop.png)
 
-No menu esquerdo, clique em **[!UICONTROL Marcas]**. Após o exercício anterior, você agora tem duas propriedades de Coleção de dados: uma para Web e outra para dispositivos móveis.
+No menu esquerdo, clique em **[!UICONTROL Marcas]**. Após o exercício anterior, você agora tem três propriedades de Coleção de dados: uma para Web, uma para dispositivos móveis e uma para aplicativos CX.
 
 ![DSN](./images/launchprop1.png)
 
@@ -57,11 +57,11 @@ Agora vocês verão isto.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig5.png)
 
-Por enquanto, é isso. No [Módulo 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md), você aprenderá mais sobre o SDK da Web e como configurar todos os seus recursos.
+Por enquanto, é isso. No [Módulo 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md), você aprenderá mais sobre o Web SDK e como configurar todos os seus recursos.
 
 No menu esquerdo, clique em **[!UICONTROL Marcas]**.
 
-Filtre os resultados da pesquisa para ver suas duas propriedades da Coleção de dados. Abra a propriedade de **Web** clicando nela.
+Filtre os resultados da pesquisa para ver as propriedades da Coleção de dados. Abra a propriedade de **Web** clicando nela.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig10a.png)
 
@@ -69,7 +69,7 @@ Você verá isso. Clique em **Extensões**.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig11.png)
 
-Primeiro, clique na extensão SDK da Web da Adobe Experience Platform e em **Configurar**.
+Primeiro, clique na extensão Adobe Experience Platform Web SDK e em **Configurar**.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig12.png)
 
@@ -139,7 +139,7 @@ Você verá isso.
 
 A sequência de dados agora está pronta para ser usada na propriedade do Cliente da coleção de dados da Adobe Experience Platform para dispositivos móveis.
 
-Vá para **Tags** e filtre os resultados da pesquisa para ver suas duas propriedades de Coleção de dados. Abra a propriedade de **Celular** clicando nela.
+Vá para **Tags** e filtre os resultados da pesquisa para ver suas propriedades de Coleção de dados. Abra a propriedade de **Celular** clicando nela.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig10am.png)
 

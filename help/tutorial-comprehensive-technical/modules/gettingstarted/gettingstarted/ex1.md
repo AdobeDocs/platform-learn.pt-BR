@@ -4,9 +4,9 @@ description: Introdução - Instale a extensão Chrome para a documentação do 
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ A ID da organização IMS é o identificador exclusivo da instância do Adobe Ex
 
 A localização da ID organizacional IMS pode ser feita de várias maneiras. Caso não tenha certeza, consulte um dos administradores de sistema da sua instância para encontrar a ID.
 
-Talvez você possa encontrá-lo indo até [Admin Console](https://https://adminconsole.adobe.com/), onde você pode encontrá-lo como parte da URL.
+Talvez você possa encontrá-lo indo até [Admin Console](https://adminconsole.adobe.com/), onde você pode encontrá-lo como parte da URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ Sua ID de locatário é o identificador exclusivo da instância da AEP da sua or
 
 ![DSN](./images/aeptenantid.png)
 
-Ao inseri-lo na extensão do Chrome, você deve garantir que um sublinhado seja adicionado como prefixo. Portanto, neste exemplo, **experienceplatform** torna-se **_experienceplatform**.
+Ao inseri-lo na extensão do Chrome, você deve garantir que um sublinhado seja adicionado como prefixo. Portanto, neste exemplo, **experienceplatform** torna-se **_experienceplatform**. Além disso, remova o símbolo **@** ao copiar da URL.
 
 **Nome da sandbox da AEP**
 
