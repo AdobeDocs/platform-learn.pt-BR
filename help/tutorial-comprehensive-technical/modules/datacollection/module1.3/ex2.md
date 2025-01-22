@@ -4,7 +4,7 @@ description: Foundation - FAC - Criar esquemas, modelo de dados e links
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 2%
@@ -130,6 +130,8 @@ Selecione seus esquemas e clique em **Adicionar**.
 
 Você verá isso. Clique em **Salvar**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 Agora é possível começar a definir links entre esquemas. Para começar a definir um link, você precisa clicar em **Criar links**.
 
 ![FAC](./images/fdb16.png)
@@ -140,6 +142,9 @@ Clique em **Adicionar**.
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb17.png)
@@ -147,6 +152,8 @@ Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 Em seguida, vamos definir o vínculo entre a tabela `CK_HOUSEHOLDS` e `CK_PERSONS`.
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
@@ -156,6 +163,9 @@ Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_MONTHLY_DAT
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb22.png)
@@ -163,6 +173,8 @@ Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
