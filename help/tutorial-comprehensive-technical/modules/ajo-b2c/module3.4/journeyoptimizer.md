@@ -4,9 +4,9 @@ description: Neste módulo, você aprenderá tudo o que há para saber sobre o J
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -53,6 +53,8 @@ Neste exercício, você instalará um aplicativo para dispositivos móveis no di
 [Resumo e benefícios](./summary.md)
 
 Resumo desse módulo e visão geral dos benefícios.
+
+![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

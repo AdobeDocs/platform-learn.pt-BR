@@ -4,9 +4,9 @@ description: Neste módulo, você usará os conjuntos de dados, esquemas e a pro
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Neste módulo, você irá:
 ## Objetivos de aprendizagem
 
 - Familiarize-se com as propriedades do Adobe Experience Platform Data Collection Server e a nova extensão do Adobe Cloud Connector
-- Entenda como reutilizar dados do SDK da Web da Adobe Experience Platform em soluções de terceiros, como Google e AWS
+- Entenda como reutilizar dados do Adobe Experience Platform Web SDK em soluções de terceiros, como Google e AWS
 - Entenda a arquitetura por trás da Coleção de dados da Adobe Experience Platform e do encaminhamento pelo lado do servidor.
 
 ## Pré-requisitos
@@ -49,19 +49,21 @@ Neste exercício, você atualizará a sequência de dados existente para disponi
 
 [2.5.3 Criar e configurar um webhook personalizado](./ex3.md)
 
-Neste exercício, você criará e configurará um webhook personalizado e começará a encaminhar dados coletados pelo SDK da Web para esse webhook personalizado.
+Neste exercício, você criará e configurará um webhook personalizado e começará a encaminhar dados coletados pelo Web SDK para esse webhook personalizado.
 
 [2.5.4 Encaminhar eventos para GCP Pub/Sub](./ex4.md)
 
-Neste exercício, você criará e configurará uma Google Cloud Function e começará a encaminhar dados coletados pelo SDK da Web para a Google.
+Neste exercício, você criará e configurará uma Google Cloud Function e começará a encaminhar dados coletados pelo Web SDK para a Google.
 
 [2.5.5 Encaminhar eventos para o AWS Kinesis e o AWS S3](./ex5.md)
 
-Neste exercício, você configurará o ambiente do AWS usando o AWS IAM, o AWS Kinesis, o AWS Firehose e o AWS S3; depois disso, iniciará o encaminhamento dos dados do evento coletados pelo SDK da Web.
+Neste exercício, você configurará o ambiente do AWS usando o AWS IAM, o AWS Kinesis, o AWS Firehose e o AWS S3; depois disso, iniciará o encaminhamento dos dados do evento coletados pelo Web SDK.
 
 [Resumo e benefícios](./summary.md)
 
 Resumo desse módulo e visão geral dos benefícios.
+
+![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

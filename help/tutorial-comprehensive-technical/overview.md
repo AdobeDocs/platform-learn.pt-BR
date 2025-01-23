@@ -3,14 +3,16 @@ title: Visão geral
 description: Ponto de partida para engenheiros de dados, analistas de dados, arquitetos de dados, cientistas de dados, engenheiros de orquestração e profissionais de marketing para obter uma compreensão completa do valor comercial da Adobe Experience Platform e de todos os seus serviços de aplicativos.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Tutorial técnico completo da Adobe Experience Platform
+
+![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Visão geral
 
@@ -182,3 +184,9 @@ Neste módulo, você configurará sua própria instância da Google Cloud Platfo
 Neste módulo, você aprenderá a usar o Adobe Experience Platform Query Service.
 
 **Investimento de tempo:** 90 minutos
+
+![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.

@@ -1,17 +1,17 @@
 ---
-title: 1.1 Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web
-description: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web
+title: 1.1 Configuração da coleção de dados do Adobe Experience Platform e da extensão do Web SDK
+description: Foundation - Configuração da coleta de dados do Adobe Experience Platform e da extensão Web SDK
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
 
-# 1.1 Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web
+# 1.1 Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK
 
 Este módulo fundamental apresenta a você a visão de coleta de dados do Adobe e explica como obter dados de um site e aplicativo móvel no Adobe Experience Platform e em outros aplicativos por meio da Coleta de dados do Adobe Experience Platform, dos SDKs da Adobe Experience Platform e do Edge Network da Adobe Experience Platform. Este módulo apresenta alguns conceitos e tecnologias que têm um impacto além do escopo de um tutorial técnico do Adobe Experience Platform. Deve ficar claro quais partes desses exercícios são fundamentais para o restante do tutorial abrangente, quais ensinam mais sobre o Experience Edge e seus recursos e onde obter mais informações e tutoriais.
 
@@ -21,9 +21,9 @@ Este módulo fundamental apresenta a você a visão de coleta de dados do Adobe 
 - Saiba mais sobre os fluxos de dados usados por uma marca para assimilar dados para seus produtos Adobe.
 - Saiba como enviar dados para a Adobe Experience Platform e outros produtos por meio do Edge Network da Adobe Experience Platform.
 - Saiba como criar Elementos de dados e Regras que coletam dados da Web e de dispositivos móveis.
-- Saiba mais sobre os eventos de rastreamento do SDK da Web e como depurar seu conteúdo.
+- Saiba mais sobre os eventos de rastreamento do Web SDK e como depurar seu conteúdo.
 - Saiba o que é uma camada de dados e o que o Adobe recomenda ao implementar uma.
-- Saiba quais são as etapas para implementar o SDK da Web do zero.
+- Saiba quais são as etapas para implementar o Web SDK do zero.
 - Saiba mais sobre a diferença entre uma implementação da Web e móvel.
 
 ## Pré-requisitos
@@ -52,23 +52,25 @@ Neste exercício, você aprenderá a configurar uma extensão, criar elementos d
 
 [1.1.4 Coleta de dados da Web no lado do cliente](./ex4.md)
 
-Neste exercício, depure o SDK da Web que foi instalado para entender como ele funciona e quais dados serão usados em exercícios futuros.
+Neste exercício, depure o Web SDK que foi instalado para entender como ele funciona e quais dados serão usados em exercícios futuros.
 
 [1.1.5 Implementação do Adobe Analytics e do Adobe Audience Manager](./ex5.md)
 
-Neste exercício, consulte e use dados da Web coletados com o SDK da Web no Adobe Analytics e no Adobe Audience Manager.
+Neste exercício, consulte e use dados da Web coletados com o Web SDK no Adobe Analytics e no Adobe Audience Manager.
 
 [1.1.6 Implementação do Adobe Target](./ex6.md)
 
-Neste exercício, configure uma atividade no Adobe Target, implementada por meio do SDK da Web.
+Neste exercício, configure uma atividade no Adobe Target, implementada por meio da Web SDK.
 
 [Requisitos do esquema XDM 1.1.7 no Adobe Experience Platform](./ex7.md)
 
-Para garantir que o SDK da Web e o alloy.js possam assimilar dados no Adobe Experience Platform, há um requisito para que um Mixin XDM específico faça parte do Esquema XDM no Adobe Experience Platform.
+Para garantir que o Web SDK e o alloy.js possam assimilar dados no Adobe Experience Platform, há um requisito para que um Mixin XDM específico faça parte do Esquema XDM no Adobe Experience Platform.
 
 [Resumo e benefícios](./summary.md)
 
 Resumo desse módulo e visão geral dos benefícios.
+
+![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

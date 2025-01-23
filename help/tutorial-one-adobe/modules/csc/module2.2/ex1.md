@@ -4,10 +4,10 @@ description: Introdução ao Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 0%
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
@@ -21,10 +21,140 @@ Então você vê isso.
 
 ## 2.2.1.1 Configurar a integração do AEM Assets
 
-Clique em
-
+Clique no ícone de 9 pontos **hambúrguer** e selecione **Instalação**.
 
 ![WF](./images/wfb2.png)
+
+No menu esquerdo, role até **Documentos** e clique em **Experience Manager Assets**.
+
+![WF](./images/wfb3.png)
+
+Clique em **+ Adicionar integração de Experience Manager**.
+
+![WF](./images/wfb4.png)
+
+Para o nome da sua integração, use `--aepUserLdap-- - Citi Signal AEM`.
+
+Abra a lista suspensa **repositório de Experience Manager** e selecione sua instância AEM CS, que deve ser chamada de `--aepUserLdap-- - Citi Signal`.
+
+![WF](./images/wfb5.png)
+
+Em **Metadados**, configure o seguinte mapeamento:
+
+| Campo do Workfront | Campo do Experience Manager Assets |
+| --------------- | ------------------------------ | 
+| **Documento** > **Nome** | **wm:documentName** |
+| **Projeto** > **Descrição** | **wm:descriçãoDoProjeto** |
+| **Tarefa** > **Nome** | **wm:taskName** |
+| **Tarefa** > **Descrição** | **wm:taskDescription** |
+
+Habilite o comutador para **Sincronizar metadados do objeto**.
+
+Clique em **Salvar**.
+
+![WF](./images/wfb6.png)
+
+A integração entre o Workfront e o AEM Assets CS agora está configurada.
+
+![WF](./images/wfb7.png)
+
+## 2.2.1.2 Configurar a integração do AEM Sites
+
+>[!NOTE]
+>
+>Este plug-in está atualmente no modo **Acesso antecipado** e ainda não está disponível para o público geral.
+>
+>Este plug-in pode já estar instalado na instância do Workfront que você está usando. Se ele já estiver instalado, você poderá revisar as instruções abaixo, mas não será necessário alterar nada em sua configuração.
+
+Ir para [https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor](https://experience.adobe.com/#/@experienceplatform/aem/extension-manager/universal-editor){target="_blank"}.
+
+Verifique se a **alternância** deste plug-in está definida como **Habilitada**. Em seguida, clique no ícone de **engrenagem**.
+
+![WF](./images/wfb8.png)
+
+Você verá um pop-up de **Configuração de extensão**. Configure os campos a seguir para usar este plug-in.
+
+| Chave | Valor |
+| --------------- | ------------------------------ | 
+| **`IMS_ENV`** | **PRODUÇÃO** |
+| **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
+| **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;: true, &quot;publishUrl&quot;: true}&#39;** |
+
+Clique em **Salvar**.
+
+![WF](./images/wfb8.png)
+
+Volte para a interface do usuário do Workfront e clique no ícone de 9 pontos **hambúrguer**. Selecione **Instalação**.
+
+![WF](./images/wfb9.png)
+
+No menu esquerdo, vá para **Forms Personalizado** e selecione **Formulário**. Clique em **+ Novo formulário personalizado**.
+
+![WF](./images/wfb10.png)
+
+Selecione **Tarefa** e clique em **Continuar**.
+
+![WF](./images/wfb11.png)
+
+Você verá um formulário personalizado vazio. Insira o nome do formulário `Content Fragment & Integration ID`.
+
+![WF](./images/wfb12.png)
+
+Arraste e solte um novo campo **Texto de linha única** sobre a tela.
+
+![WF](./images/wfb13.png)
+
+Configure o novo campo da seguinte maneira:
+
+- **Rótulo**: **Fragmento do conteúdo**
+- **Nome**: **`aem_workfront_integration_content_fragment`**
+
+![WF](./images/wfb14.png)
+
+Adicione um novo campo **Texto de linha única** à tela e configure o novo campo desta forma:
+
+- **Rótulo**: **ID de Integração**
+- **Nome**: **`aem_workfront_integration_id`**
+
+Clique em **Aplicar**.
+
+![WF](./images/wfb15.png)
+
+Agora é necessário configurar um segundo formulário personalizado. Clique em **+ Novo formulário personalizado**.
+
+![WF](./images/wfb10.png)
+
+Selecione **Tarefa** e clique em **Continuar**.
+
+![WF](./images/wfb11.png)
+
+Você verá um formulário personalizado vazio. Insira o nome do formulário `Preview & Publish URL`.
+
+![WF](./images/wfb16.png)
+
+Arraste e solte um novo campo **Texto de linha única** sobre a tela.
+
+![WF](./images/wfb17.png)
+
+Configure o novo campo da seguinte maneira:
+
+- **Rótulo**: **Visualizar URL**
+- **Nome**: **`aem_workfront_integration_preview_url`**
+
+![WF](./images/wfb18.png)
+
+Adicione um novo campo **Texto de linha única** à tela e configure o novo campo desta forma:
+
+- **Rótulo**: **URL do Publish**
+- **Nome**: **`aem_workfront_integration_publish_url`**
+
+Clique em **Aplicar**.
+
+![WF](./images/wfb19.png)
+
+Em seguida, você deve ter dois formulários personalizados disponíveis.
+
+![WF](./images/wfb20.png)
 
 [Retornar ao Módulo 2.2](./workfront.md){target="_blank"}
 

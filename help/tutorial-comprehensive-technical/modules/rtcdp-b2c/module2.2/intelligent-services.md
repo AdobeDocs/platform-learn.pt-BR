@@ -4,9 +4,9 @@ description: Serviços inteligentes
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,8 @@ O analista de marketing configura as previsões desejadas especificando regras d
 [2.2.3 IA do cliente: painel de pontuação e segmentação (previsão e ação)](./ex3.md)
 
 Depois que os modelos terminarem o treinamento e a pontuação, as pontuações serão gravadas de volta na Platform. Você pode decidir quais ações executar com as previsões, como definir segmentos, criar painéis personalizados etc.
+
+![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
