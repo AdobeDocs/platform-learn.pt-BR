@@ -4,9 +4,9 @@ description: Introdução ao Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -54,9 +54,93 @@ Clique em **Salvar**.
 
 ![WF](./images/wfb6.png)
 
-A integração entre o Workfront e o AEM Assets CS agora está configurada.
+Sua integração do Workfront com o AEM Assets CS está configurada.
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2 Configurar a integração de metadados com o AEM Assets
+
+Em seguida, é necessário configurar o AEM Assets para que os campos de metadados do ativo no Workfront sejam compartilhados com o AEM.
+
+Para fazer isso, vá para [https://experience.adobe.com/](https://experience.adobe.com/). Clique em **Experience Manager Assets**.
+
+![WF](./images/wfbaem1.png)
+
+Clique para selecionar seu ambiente AEM Assets, que deve ser nomeado como `--aepUserLdap-- - Citi Signal dev`.
+
+![WF](./images/wfbaem2.png)
+
+Você deverá ver isso. No menu esquerdo, vá para **Assets** e clique em **Criar Pasta**.
+
+![WF](./images/wfbaem3.png)
+
+Nomeie sua pasta `--aepUserLdap-- - Workfront Assets` e clique em **Criar**.
+
+![WF](./images/wfbaem4.png)
+
+Em seguida, vá para **Metadata Forms** no menu esquerdo e clique em **Criar**.
+
+![WF](./images/wfbaem5.png)
+
+Use o nome `--aepUserLdap-- - Metadata Form` e clique em **Criar**.
+
+![WF](./images/wfbaem6.png)
+
+Adicione 3 novos campos **Texto de linha única** ao formulário e selecione o primeiro campo. Em seguida, clique no ícone **Esquema** ao lado do campo **Propriedade de metadados**.
+
+![WF](./images/wfbaem7.png)
+
+No campo de pesquisa, insira `wm:project` e selecione o campo **Descrição do Projeto**. Clique em **Selecionar**.
+
+![WF](./images/wfbaem8.png)
+
+Altere o rótulo do campo para **Descrição do Projeto**.
+
+![WF](./images/wfbaem9.png)
+
+Em seguida, selecione o campo 2ª **Texto de linha única** e clique novamente no ícone **Esquema** ao lado do campo **Propriedade de metadados**.
+
+![WF](./images/wfbaem10b.png)
+
+Você verá esse pop-up novamente. No campo de pesquisa, digite `wm:project` e selecione o campo **ID do Projeto**. Clique em **Selecionar**.
+
+![WF](./images/wfbaem10.png)
+
+Altere o rótulo do campo para **ID do projeto**.
+
+![WF](./images/wfbaem10a.png)
+
+Selecione o campo 3ª **Texto de linha única** e clique novamente no ícone **Esquema** ao lado do campo **Propriedade de metadados**.
+
+![WF](./images/wfbaem11a.png)
+
+Você verá esse pop-up novamente. No campo de pesquisa, digite `wm:project` e selecione o campo **Nome do Projeto**. Clique em **Selecionar**.
+
+![WF](./images/wfbaem11.png)
+
+Altere o rótulo do campo para **Nome do Projeto**. Clique em **Salvar**.
+
+![WF](./images/wfbaem12.png)
+
+Altere o **Nome da guia** no formulário para `--aepUserLdap-- - Workfront Metadata`. Clique em **Salvar** e **Fechar**.
+
+![WF](./images/wfbaem13.png)
+
+Seu **Formulário de Metadados** está configurado.
+
+![WF](./images/wfbaem14.png)
+
+Em seguida, é necessário atribuir o Formulário de metadados à pasta criada anteriormente. Marque a caixa de seleção do formulário de metadados e clique em **Atribuir às pastas**.
+
+![WF](./images/wfbaem15.png)
+
+Selecione sua pasta, que deve se chamar `--aepUserLdap-- - Workfront Assets`. Clique em **Atribuir**.
+
+![WF](./images/wfbaem16.png)
+
+O formulário de metadados agora está atribuído à sua pasta com sucesso.
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2 Configurar a integração do AEM Sites
 
@@ -155,6 +239,8 @@ Clique em **Aplicar**.
 Em seguida, você deve ter dois formulários personalizados disponíveis.
 
 ![WF](./images/wfb20.png)
+
+Próxima Etapa: [2.2.2 Revisão com o Workfront](./ex2.md){target="_blank"}
 
 [Retornar ao Módulo 2.2](./workfront.md){target="_blank"}
 
