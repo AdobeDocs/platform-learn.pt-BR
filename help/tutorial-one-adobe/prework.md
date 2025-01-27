@@ -2,9 +2,10 @@
 title: Trabalho prévio
 description: Trabalho prévio
 doc-type: multipage-overview
-source-git-commit: 5f079d0b6f74ccc6e2cde06b32e4fd2d1f3fbcdc
+exl-id: 1799a0d1-e432-45e2-a373-192d9a351423
+source-git-commit: 8c45215e4374d8a2c1a110f2d3069c5e866767ae
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -25,7 +26,11 @@ Abra o aplicativo **Adobe Creative Cloud**, vá para **Aplicativos**. Instale o 
 
 ![Adobe I/O Nova integração](./assets/images/psd.png)
 
-## 3. Postman
+## 3. API
+
+>[!NOTE]
+>
+>Se você for um funcionário da Adobe, siga as instruções aqui para baixar e instalar o [PostBuster](./postbuster.md)
 
 Ir para [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
 

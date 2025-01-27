@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico abrangente para aplicativos Adobe, de Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 + [Visão geral do tutorial](/help/tutorial-one-adobe/overview.md)
 + [Status do conteúdo](/help/tutorial-one-adobe/status.md)
-+ [Trabalho prévio](/help/tutorial-one-adobe/prework.md)
 
 + Introdução {#gettingstarted}
    + Introdução {#gettingstarted}
@@ -26,6 +25,8 @@ ht-degree: 4%
       + [Criar fluxo de dados](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [Usar o site](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [Usar o aplicativo móvel](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+   + [Trabalho prévio](/help/tutorial-one-adobe/prework.md)
+   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Adobe Creative Cloud {#creativecloud}
    + Serviços 1.1 Adobe Firefly {#module11}
