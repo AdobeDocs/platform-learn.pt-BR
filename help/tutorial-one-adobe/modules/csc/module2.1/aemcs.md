@@ -4,9 +4,9 @@ description: CLOUD SERVICE e EDGE DELIVERY SERVICES ADOBE EXPERIENCE MANAGER
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -35,9 +35,13 @@ Neste exercício de introdução, você configurará seu próprio site baseado e
 
 Neste exercício, você configurará seu ambiente AEM CS e acessará seu site CitiSignal.
 
-[2.1.4 Desenvolver um bloco personalizado](./ex4.md){target="_blank"}
+[2.1.4 Bloco Personalizado Básico](./ex4.md){target="_blank"}
 
-Neste exercício, você desenvolverá um componente de bloco personalizado para o seu site.
+Neste exercício, você desenvolverá um bloco personalizado básico para o seu site.
+
+[2.1.5 Bloco Personalizado Avançado](./ex5.md){target="_blank"}
+
+Neste exercício, você desenvolverá um bloco personalizado avançado para o seu site.
 
 [Resumo e benefícios](./summary.md){target="_blank"}
 
