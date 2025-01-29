@@ -1,42 +1,41 @@
 ---
 title: Automação do fluxo de trabalho de criação com o Workfront Fusion
-description: Automação do fluxo de trabalho de criação com o Workfront Fusion
-kt: 5342
-doc-type: tutorial
+description: Saiba como automatizar fluxos de trabalho criativos com o Workfront Fusion
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '152'
+ht-degree: 1%
 
 ---
 
-# 1.2 Automação de fluxo de trabalho criativo com o Workfront Fusion
+# Automação do fluxo de trabalho de criação com o Workfront Fusion
 
-## Objetivos de aprendizagem
-
-- Saiba como automatizar os Serviços Adobe Firefly de várias maneiras.
+Saiba como automatizar fluxos de trabalho criativos com o Workfront Fusion.
 
 ## Pré-requisitos
 
-- Acesso ao Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
-- Acesso ao Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
+- Acesso ao Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
 
 ## Exercícios
 
-[1.2.1 Introdução ao Workfront Fusion](./ex1.md)
+[Introdução ao Workfront Fusion](./ex1.md){target="_blank"}
 
 Neste exercício, explore o Workfront Fusion em combinação com o Firefly Services e entenda seus recursos.
 
-[1.2.2 Uso de APIs Adobe no Workfront Fusion](./ex2.md)
+[Usar APIs Adobe no Workfront Fusion](./ex2.md){target="_blank"}
 
-Neste exercício, você configura e usa APIs de Serviços Firefly e APIs Photoshop no Workfront Fusion, enquanto explora os recursos do Workfront Fusion.
+Neste exercício, saiba como configurar e usar APIs de serviços do Firefly e APIs do Photoshop no Workfront Fusion, ao explorar os recursos do Workfront Fusion.
 
-[1.2.3 Automação de processos com o Workfront Fusion](./ex3.md)
+[Automação de processos com o Workfront Fusion](./ex3.md){target="_blank"}
 
-Neste exercício, você continua refinando sua jornada para automatizar o processo de criação de imagem.
+Neste exercício, continue refinando sua jornada para automatizar o processo de criação de imagem.
 
-[Resumo e benefícios](./summary.md)
+[Resumo e benefícios](./summary.md){target="_blank"}
 
 Resumo desse módulo e visão geral dos benefícios.
 
@@ -46,4 +45,4 @@ Resumo desse módulo e visão geral dos benefícios.
 >
 >Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
 
-[Voltar a todos os módulos](../../../overview.md)
+Voltar para [Todos os Módulos](../../../overview.md){target="_blank"}

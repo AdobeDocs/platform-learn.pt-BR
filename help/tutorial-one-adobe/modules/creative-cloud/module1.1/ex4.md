@@ -1,22 +1,26 @@
 ---
-title: Trabalho com APIs do Photoshop
-description: Trabalho com APIs do Photoshop
-kt: 5342
-doc-type: tutorial
+title: API de modelos personalizados do Firefly
+description: Trabalho com a API de modelos personalizados do Firefly
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 56320edcdf2fe588fe644072fe442547b1836f86
+source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '44'
+ht-degree: 4%
 
 ---
 
-# API de modelos personalizados do Firefly 1.1.4
+# API de modelos personalizados do Firefly
 
 Esse conteúdo será lançado em um estágio posterior.
 
-Próxima etapa: [Resumo e benefícios](./summary.md){target="_blank"}
+## Próximas etapas
 
-[Retornar ao Módulo 1.1](./firefly-services.md){target="_blank"}
+Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
-[Voltar para Todos os Módulos](./../../../overview.md){target="_blank"}
+Volte para [Trabalhando com APIs Photoshop](./ex3.md){target="_blank"}
+
+Retorne para [Visão Geral dos Serviços Adobe Firefly](./firefly-services.md){target="_blank"}
