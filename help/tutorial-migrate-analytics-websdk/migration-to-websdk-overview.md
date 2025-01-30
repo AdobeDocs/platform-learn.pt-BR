@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # Migrar o Adobe Analytics para o Web SDK usando tags
 
 Saiba mais sobre as etapas para migrar uma implementação do Adobe Analytics usando a extensão do Analytics em Tags de Experience Platform (conhecida anteriormente como Launch) para o Web SDK, usando a extensão do Web SDK também em Tags. Quando a extensão do Adobe Analytics em tags é usada, nos bastidores o código &quot;AppMeasurement.js&quot; está sendo usado. Portanto, você pode pensar nisso como um tutorial que está migrando o AppMeasurement para o Web SDK, mas este tutorial está totalmente em Tags e NÃO abrange a movimentação para ou de uma implementação do JavaScript (com exceção do código JavaScript usado na interface do usuário de Tags). Para migração de implementações do JavaScript, consulte a [documentação](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+
+>[!NOTE]
+>
+>Tutoriais de migração semelhantes estão disponíveis para:
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Como o Platform Web SDK suporta várias aplicações Adobe, todas as bibliotecas de Adobe em uma determinada página devem ser migradas ao mesmo tempo. Por exemplo, uma implementação mista do Web SDK para Target e AppMeasurement para Analytics em uma única página _não é suportada_. No entanto, há suporte para uma implementação mista em páginas diferentes, por exemplo, Web SDK na página A e at.js com AppMeasurement na página B.
 
 ## O que você aprenderá com este tutorial
 
