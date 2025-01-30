@@ -4,16 +4,16 @@ description: Introdução - Usar o sistema de demonstração ao lado para config
 kt: 5342
 doc-type: tutorial
 exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # Use o Sistema de demonstração ao lado para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform
 
-Para visualizar os aprendizados neste tutorial e possibilitar que você teste sua configuração em um ambiente seguro, este tutorial está usando as ferramentas Avançar do sistema de demonstração do Adobe. Para aproveitar ao máximo esse tutorial, a instância da AEP precisa ser configurada para ser integrada ao Sistema de demonstração em seguida.
+Para visualizar os aprendizados neste tutorial e possibilitar que você teste sua configuração em um ambiente seguro, este tutorial está usando as ferramentas Avançar do sistema de demonstração do Adobe. Para aproveitar ao máximo esse tutorial, sua instância do Adobe Experience Platform precisa ser configurada para ser integrada ao Sistema de demonstração em seguida.
 
 Depois de ter acesso ao Sistema de demonstração em seguida, continue com as etapas abaixo.
 
@@ -21,7 +21,7 @@ Vá para [https://dsn.adobe.com/](https://dsn.adobe.com/) e navegue até **Insta
 
 ![DSN](./images/dsnsetup.png)
 
-Na lista suspensa **Ambiente**, selecione a instância da AEP e a sandbox.
+Na lista suspensa **Ambiente**, selecione sua instância e sandbox do Adobe Experience Platform.
 
 ![DSN](./images/dsnh1.png)
 

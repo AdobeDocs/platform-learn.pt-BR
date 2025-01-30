@@ -1,10 +1,10 @@
 ---
-title: Foundation - Configuração da coleta de dados do Adobe Experience Platform e da extensão SDK da Web - Implementação do Adobe Target
-description: Foundation - Configuração da coleta de dados do Adobe Experience Platform e da extensão SDK da Web - Implementação do Adobe Target
+title: Foundation - Configuração da coleta de dados do Adobe Experience Platform e da extensão Web SDK - Implementação do Adobe Target
+description: Foundation - Configuração da coleta de dados do Adobe Experience Platform e da extensão Web SDK - Implementação do Adobe Target
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Atualizar sua sequência de dados para usar o Adobe Target
 
-Caso queira enviar dados coletados pelo SDK da Web para a Adobe Target e obter uma resposta do Adobe Target com uma experiência personalizada para cada cliente, siga estas etapas.
+Caso deseje enviar dados coletados pelo Web SDK para o Adobe Target e obter uma resposta do Adobe Target com uma experiência personalizada para cada cliente, siga estas etapas.
 
 Vá para [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) e vá para **Datastreams**.
 
@@ -23,7 +23,7 @@ No canto superior direito da tela, selecione o nome da sandbox, que deve ser `--
 
 ![Clique no ícone Configuração do Edge na navegação à esquerda](./images/edgeconfig1b.png)
 
-Você verá isso. Para habilitar o Adobe Target, clique em **+Adicionar Serviço**.
+Você verá isso. Para habilitar o Adobe Target, clique em **Adicionar Serviço**.
 
 ![Depurador da AEP](./images/aa2.png)
 

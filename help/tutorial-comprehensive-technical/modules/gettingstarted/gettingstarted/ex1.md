@@ -4,9 +4,9 @@ description: Introdução - Instale a extensão Chrome para a documentação do 
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ Insira os valores, conforme indicado abaixo, que estão relacionados à sua inst
 
 Se você não tiver certeza de quais valores inserir para esses campos, siga a orientação abaixo.
 
-**Nome da Organização IMS da AEP**
+**Nome da Organização IMS do Adobe Experience Platform**
 
 Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará o nome da instância no canto superior direito da tela.
 
 ![DSN](./images/aepname.png)
 
-**ID da Organização IMS da AEP**
+**ID da Organização IMS do Adobe Experience Platform**
 
 A ID da organização IMS é o identificador exclusivo da instância do Adobe Experience Cloud e é referenciada em vários locais neste tutorial.
 
@@ -88,29 +88,29 @@ Talvez você possa encontrá-lo indo até [Admin Console](https://adminconsole.a
 
 ![DSN](./images/aepid1.png)
 
-Você também pode encontrá-las acessando **Gerenciamento de Dados > Consultas** no menu da AEP, onde você pode encontrá-las em **Nome de usuário**.
+Você também pode encontrá-los indo até **Gerenciamento de Dados > Consultas** no menu do Adobe Experience Platform, onde você pode encontrá-los em **Nome de Usuário**.
 
 ![DSN](./images/aepid2.png)
 
 Copie e cole a parte **@AdobeOrg** junto com a ID.
 
-**ID do locatário da AEP**
+**ID do locatário do Adobe Experience Platform**
 
-Sua ID de locatário é o identificador exclusivo da instância da AEP da sua organização. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
+Sua ID de locatário é o identificador exclusivo da instância do Adobe Experience Platform de sua organização. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
 
 ![DSN](./images/aeptenantid.png)
 
 Ao inseri-lo na extensão do Chrome, você deve garantir que um sublinhado seja adicionado como prefixo. Portanto, neste exemplo, **experienceplatform** torna-se **_experienceplatform**. Além disso, remova o símbolo **@** ao copiar da URL.
 
-**Nome da sandbox da AEP**
+**Nome da Sandbox da Adobe Experience Platform**
 
-O nome da sandbox é o nome do ambiente que você usará na instância da AEP. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
+O nome da sandbox é o nome do ambiente que você usará na instância do Adobe Experience Platform. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
 
 Antes de pegar o nome da sandbox do URL, você deve se certificar de que está na sandbox que deve ser usada para este tutorial. Você pode alternar para a sandbox direita clicando no menu do alternador de sandbox no canto superior direito da tela.
 
 ![DSN](./images/aepsandboxsw.png)
 
-Neste exemplo, o Nome da sandbox da AEP é **tech-insiders**.
+Neste exemplo, o Nome da sandbox da Adobe Experience Platform é **tech-insiders**.
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/p
 
 Agora você deve ver que todas as **Variáveis de ambiente** foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
 
-Agora você deve ter uma exibição semelhante à mostrada abaixo, onde a variável de ambiente `aepTenantId` foi substituída pela sua ID de locatário real da AEP, que neste caso é **_experienceplatform**.
+Agora você deve ter uma exibição semelhante à mostrada abaixo, onde a variável de ambiente `aepTenantId` foi substituída pela sua ID de locatário real do Adobe Experience Platform, que neste caso é **_experienceplatform**.
 
 ![DSN](./images/mod7.png)
 

@@ -4,16 +4,18 @@ description: Foundation - Configuração da coleta de dados do Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-# 1.1 Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK
+# 1.1 Foundation - Configuração da coleção de dados da Adobe Experience Platform e da extensão de tag da Web SDK
 
-Este módulo fundamental apresenta a você a visão de coleta de dados do Adobe e explica como obter dados de um site e aplicativo móvel no Adobe Experience Platform e em outros aplicativos por meio da Coleta de dados do Adobe Experience Platform, dos SDKs da Adobe Experience Platform e do Edge Network da Adobe Experience Platform. Este módulo apresenta alguns conceitos e tecnologias que têm um impacto além do escopo de um tutorial técnico do Adobe Experience Platform. Deve ficar claro quais partes desses exercícios são fundamentais para o restante do tutorial abrangente, quais ensinam mais sobre o Experience Edge e seus recursos e onde obter mais informações e tutoriais.
+Este módulo fundamental apresenta a você a visão de coleta de dados do Adobe e explica como obter dados de um site e aplicativo móvel no Adobe Experience Platform e em outros aplicativos por meio da Coleta de dados do Adobe Experience Platform, dos SDKs da Adobe Experience Platform e do Edge Network da Adobe Experience Platform.
+
+Este módulo apresenta alguns conceitos e tecnologias que têm um impacto além do escopo de um tutorial técnico do Adobe Experience Platform. Deve ficar claro quais partes desses exercícios são fundamentais para o restante do tutorial abrangente, que ensina mais sobre o Edge Network e seus recursos, e onde obter mais informações e tutoriais.
 
 ## Objetivos de aprendizagem
 
@@ -21,9 +23,9 @@ Este módulo fundamental apresenta a você a visão de coleta de dados do Adobe 
 - Saiba mais sobre os fluxos de dados usados por uma marca para assimilar dados para seus produtos Adobe.
 - Saiba como enviar dados para a Adobe Experience Platform e outros produtos por meio do Edge Network da Adobe Experience Platform.
 - Saiba como criar Elementos de dados e Regras que coletam dados da Web e de dispositivos móveis.
-- Saiba mais sobre os eventos de rastreamento do Web SDK e como depurar seu conteúdo.
+- Saiba mais sobre os eventos de rastreamento do [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) e como depurar seu conteúdo.
 - Saiba o que é uma camada de dados e o que o Adobe recomenda ao implementar uma.
-- Saiba quais são as etapas para implementar o Web SDK do zero.
+- Saiba quais são as etapas para implementar o [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) do zero.
 - Saiba mais sobre a diferença entre uma implementação da Web e móvel.
 
 ## Pré-requisitos
@@ -62,9 +64,9 @@ Neste exercício, consulte e use dados da Web coletados com o Web SDK no Adobe A
 
 Neste exercício, configure uma atividade no Adobe Target, implementada por meio da Web SDK.
 
-[Requisitos do esquema XDM 1.1.7 no Adobe Experience Platform](./ex7.md)
+[Requisitos do esquema XDM do 1.1.7 no Adobe Experience Platform](./ex7.md)
 
-Para garantir que o Web SDK e o alloy.js possam assimilar dados no Adobe Experience Platform, há um requisito para que um Mixin XDM específico faça parte do Esquema XDM no Adobe Experience Platform.
+Para garantir que o Web SDK possa assimilar dados na Adobe Experience Platform, há um requisito para que um mixin XDM específico faça parte do esquema XDM no Adobe Experience Platform.
 
 [Resumo e benefícios](./summary.md)
 

@@ -1,12 +1,12 @@
 ---
-title: Foundation - Configuração da coleção de dados da Adobe Experience Platform e da extensão SDK da Web - Edge Network, fluxos de dados e coleção de dados do lado do servidor
-description: Foundation - Configuração da coleção de dados da Adobe Experience Platform e da extensão SDK da Web - Edge Network, fluxos de dados e coleção de dados do lado do servidor
+title: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK - Edge Network, fluxos de dados e coleção de dados do lado do servidor
+description: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK - Edge Network, fluxos de dados e coleção de dados do lado do servidor
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -15,19 +15,21 @@ ht-degree: 0%
 
 ## Contexto
 
-Neste exercício, você criará um **Datastream**. Uma **sequência de dados** informa aos servidores da Adobe Edge para onde enviar os dados após serem coletados pelo SDK da Web. Por exemplo, deseja enviar os dados para o Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target?
+Neste exercício, você criará uma **sequência de dados**. Uma **sequência de dados** informa aos servidores de Rede da Adobe Edge para onde enviar os dados após serem coletados pelo Web SDK. Por exemplo, deseja enviar os dados para o Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
-As sequências de dados são sempre gerenciadas na interface do usuário da Coleção de dados da Adobe Experience Platform e são essenciais para a coleta de dados da Adobe Experience Platform com o SDK da Web. Mesmo ao implementar o SDK da Web com uma solução de gerenciamento de tags que não seja de Adobe, ainda será necessário criar a sequência de dados na interface da Coleção de dados da Adobe Experience Platform.
+As sequências de dados são sempre gerenciadas na interface do usuário da Coleção de dados de Experience Platform e são essenciais para a coleta de dados de Experience Platform com o [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home). Mesmo quando você implementa o Web SDK com uma solução de gerenciamento de tags não-Adobe, ainda é necessário criar um fluxo de dados.
 
-Você implementará o SDK da Web no navegador no próximo exercício. Dessa forma, você ficará mais claro sobre a aparência dos dados coletados. Por enquanto, estamos apenas informando ao fluxo de dados para onde encaminhar os dados.
+Você implementará o Web SDK no navegador no próximo exercício. Dessa forma, você ficará mais claro sobre a aparência dos dados coletados. Por enquanto, estamos apenas informando ao fluxo de dados para onde encaminhar os dados.
 
 ## Criar um fluxo de dados
 
-Em [Introdução](./../../../modules/gettingstarted/gettingstarted/ex2.md), você já criou uma sequência de dados, mas não discutimos o plano de fundo e o motivo para pertencer à sequência de dados.
+Em [Introdução](./../../../modules/gettingstarted/gettingstarted/ex2.md), você já criou uma sequência de dados, mas não discutimos o plano de fundo e o motivo da sua criação.
 
-Uma sequência de dados informa aos servidores da Adobe Edge para onde enviar os dados depois de coletados pelo SDK da Web. Por exemplo, deseja enviar os dados para o Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target? Os fluxos de dados são gerenciados na interface da Coleção de dados da Adobe Experience Platform e são essenciais para a coleta de dados com o SDK da Web, independentemente de você estar implementando ou não o SDK da Web por meio da Coleção de dados da Adobe Experience Platform.
+Um [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) informa aos servidores Edge Network para onde enviar os dados após serem coletados pelo Web SDK. Consulte a documentação de [adicionando serviços a uma sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) para obter detalhes completos sobre para onde enviar seus dados por meio da sequência de dados.
 
-Vamos revisar sua **[!UICONTROL Sequência de dados]**:
+Os fluxos de dados são gerenciados na interface do usuário da Coleta de dados do Experience Platform e são essenciais para a coleta de dados com o Web SDK, independentemente de você estar implementando o Web SDK por meio da Coleta de dados do Adobe Experience Platform.
+
+Vamos revisar sua **[!UICONTROL sequência de dados]**:
 
 Ir para [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/).
 
@@ -57,12 +59,11 @@ Para esta sequência de dados...
 
 - Todos os dados coletados serão armazenados na sandbox `--aepSandboxName--` no Adobe Experience Platform
 - Todos os dados do Evento de experiência são coletados por padrão no conjunto de dados **Sistema de demonstração - Conjunto de dados do evento para o site (Global v1.1)**
-- Todos os dados do perfil serão coletados por padrão no conjunto de dados **Sistema de demonstração - Conjunto de dados do perfil para site (Global v1.1)** (a assimilação de dados do perfil nativamente com o SDK da Web atualmente ainda não é suportada pelo SDK da Web)
+- Todos os dados do perfil serão coletados por padrão no conjunto de dados **Sistema de demonstração - Conjunto de dados do perfil para site (Global v1.1)** (a assimilação de dados do perfil nativamente com o Web SDK atualmente ainda não é compatível com o Web SDK)
 - Se você quiser usar o serviço de aplicativo **Offer decisioning** para essa sequência de dados, será necessário marcar a caixa Offer decisioning. (Isso fará parte do [Módulo 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
 - A **Segmentação do Edge** está habilitada por padrão, o que significa que os públicos qualificados serão avaliados na borda após a assimilação do tráfego de entrada
-- Se você quiser usar os **Destinos do Personalization**, será necessário marcar a caixa para Destinos do Personalization.
-- 
-   - Se você quiser usar os recursos do **Adobe Journey Optimizer** nesta sequência de dados, será necessário marcar a caixa Adobe Journey Optimizer.
+- Se quiser usar [destinos de personalização](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview), marque a caixa para **Destinos do Personalization**.
+- Se você quiser usar os recursos do **Adobe Journey Optimizer** nesta sequência de dados, será necessário marcar a caixa para **Adobe Journey Optimizer**.
 
 
 Por enquanto, nenhuma outra configuração é necessária para o fluxo de dados.

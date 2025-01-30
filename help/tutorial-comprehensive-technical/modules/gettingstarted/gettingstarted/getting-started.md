@@ -4,7 +4,7 @@ description: Introdução - Resumo
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '248'
 ht-degree: 2%
@@ -36,7 +36,7 @@ Neste exercício, você instalará e configurará a extensão do Chrome para us�
 
 Neste exercício, você usará o Sistema de demonstração ao lado para configurar as propriedades do Launch para Web e dispositivos móveis.
 
-[Criar fluxo de dados](./ex3.md)
+[Criar seu fluxo de dados](./ex3.md)
 
 Neste exercício, você usará o Sistema de demonstração ao lado para configurar as propriedades do Launch para Web e dispositivos móveis.
 

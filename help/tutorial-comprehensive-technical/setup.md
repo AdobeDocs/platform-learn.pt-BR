@@ -1,16 +1,17 @@
 ---
 title: Configurar
-description: Configurar sua instância da AEP
+description: Configurar sua instância do Adobe Experience Platform
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 4%
 
 ---
 
-# Configurar
+# Configurar sua instância do Adobe Experience Platform
 
 >[!IMPORTANT]
 >
@@ -29,9 +30,9 @@ Para utilizar todos esses tutoriais de forma prática, os seguintes aplicativos 
 
 Se um serviço de aplicativo específico não for provisionado para sua Organização IMS, você não poderá realizar esse exercício específico na prática.
 
-## Criar sandbox
+## Criar uma sandbox
 
-Para percorrer o tutorial em sua própria instância da AEP, é aconselhável primeiro configurar uma nova sandbox de desenvolvimento. Para criar uma nova sandbox, vá para [https://experience.adobe.com/platform](https://experience.adobe.com/platform), vá para Sandboxes e vá para **Procurar**. Clique em **Criar sandbox**.
+Para percorrer o tutorial em sua própria instância do Adobe Experience Platform, é aconselhável primeiro configurar uma nova sandbox de desenvolvimento. Para criar uma nova sandbox, vá para [https://experience.adobe.com/platform](https://experience.adobe.com/platform), vá para Sandboxes e vá para **Procurar**. Clique em **Criar sandbox**.
 
 ![Criar sandbox](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ Crie sua sandbox da seguinte maneira:
 
 - Tipo: **Desenvolvimento**
 - Nome: **aep-tutorial**
-- Título: **Tutorial da AEP**
+- Título: **Tutorial do Adobe Experience Platform**
 
 Clique em **Criar**.
 
@@ -57,7 +58,7 @@ Clique para abrir a **Função** específica que será usada pelos alunos que pa
 
 ![Criar sandbox](./assets/images/perm1.png)
 
-Dê um nome à sua função, como **Tutorial da AEP**, clique em **Confirmar**.
+Dê um nome à sua função, como **Tutorial do Adobe Experience Platform**, clique em **Confirmar**.
 
 ![Criar sandbox](./assets/images/perm2.png)
 
@@ -84,7 +85,7 @@ Ir para
 
 ![Criar sandbox](./assets/images/io1.png)
 
-Clique em **+ Adicionar ao Projeto** e em **API**.
+Clique em **Adicionar ao Projeto** e em **API**.
 
 ![Criar sandbox](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ Selecione um dos perfis de produto disponíveis. Este perfil de produto não det
 
 ![Criar sandbox](./assets/images/io5.png)
 
-Clique em **+ Adicionar ao Projeto** e em **API** novamente.
+Clique em **Adicionar ao Projeto** e em **API** novamente.
 
 ![Criar sandbox](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ Clique em **Editar projeto**.
 
 ![Criar sandbox](./assets/images/io11.png)
 
-Insira um novo **Título do projeto**, como o **Tutorial da DSN AEP**. Clique em **Salvar**.
+Insira um novo **Título do projeto**, como o **Tutorial do DSN Adobe Experience Platform**. Clique em **Salvar**.
 
 ![Criar sandbox](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ Você verá o progresso da instalação em andamento, que levará alguns minutos
 
 ![Criar sandbox](./assets/images/dsnorg15.png)
 
-Depois que tudo for concluído com sucesso, sua instância da AEP será configurada e estará pronta para os alunos seguirem o tutorial.
+Depois que tudo for concluído com sucesso, sua instância do Adobe Experience Platform será configurada e estará pronta para os alunos seguirem o tutorial.
 
 >[!NOTE]
 >

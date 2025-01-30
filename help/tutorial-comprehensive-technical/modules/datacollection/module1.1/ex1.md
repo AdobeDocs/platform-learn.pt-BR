@@ -1,10 +1,10 @@
 ---
-title: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web - Explicação da coleção de dados do Adobe Experience Platform
-description: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão SDK da Web - Explicação da coleção de dados do Adobe Experience Platform
+title: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK - Explicação da coleção de dados do Adobe Experience Platform
+description: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK - Explicação da coleção de dados do Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -20,16 +20,16 @@ A Coleção de dados da Adobe Experience Platform é usada pelas marcas para vá
 - Implemente os aplicativos da Adobe Experience Cloud e o Adobe Experience Platform.
 - Gerencie os diferentes requisitos de diferentes partes da organização fornecendo a cada uma sua própria **Propriedade** para gerenciar.
 - Permitir testes e gerenciamento do ciclo de vida.
-- Insira tags personalizadas do javascript e de terceiros, todas gerenciadas em um único local.
+- Insira tags personalizadas do JavaScript e de terceiros, todas gerenciadas em um único local.
 
 ## Explorar a interface
 
 Vá para [Coleção de dados do Adobe Experience Platform](https://experience.adobe.com/#/data-collection/).
 
-Ir para **Marcas**. Você está vendo a exibição **[!UICONTROL Propriedades]**. As propriedades listadas aqui são para gerenciamento de tutorial. Essas propriedades representam...
+Ir para **Marcas**. Você está vendo a exibição **[!UICONTROL Propriedades]**. As propriedades listadas aqui são para gerenciamento de tutorial. Essas propriedades representam:
 
 - Propriedades do aplicativo e da Web
-- Sites diferentes atendendo clientes de maneiras diferentes. Por exemplo, o Luma Retail teria uma propriedade, a Luma Travel teria outra
+- Sites diferentes atendendo clientes de maneiras diferentes. Por exemplo, o Luma Retail teria uma propriedade, a Luma Travel teria outra.
 - Sites herdados e atuais
 - Um design específico do Adobe Analytics comum a vários sites diferentes
 - Páginas da intranet interna ao lado de sites externos
