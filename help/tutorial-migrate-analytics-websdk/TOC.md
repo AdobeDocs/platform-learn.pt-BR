@@ -10,10 +10,10 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 477d1dc9d626f18b6b1c397202ab9ba0d9cc3521
+source-git-commit: deac800691c130033e1d4c5c7424a3a87fc40830
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '96'
+ht-degree: 5%
 
 ---
 
@@ -24,24 +24,24 @@ ht-degree: 1%
 
 + [Criar um conjunto de relatórios de validação](create-a-validation-report-suite.md)
 
-+ [Criar e configurar um fluxo de dados](create-and-configure-the-analytics-datastream.md)
++ [Criar um fluxo de dados](create-and-configure-the-analytics-datastream.md)
 
-+ [Adicionar e configurar a extensão do Web SDK](add-and-configure-the-web-sdk-extension.md)
++ [Adicionar a extensão Web SDK](add-and-configure-the-web-sdk-extension.md)
 
 + [Criar um elemento de dados Variable](create-a-variable-data-element.md)
 
 + [Migrar sua regra de carregamento de página padrão](migrate-your-default-page-load-rule.md)
 
-+ [Migrar código personalizado para o Web SDK](migrate-custom-code-to-the-web-sdk.md)
++ [Migrar código personalizado](migrate-custom-code-to-the-web-sdk.md)
 
-+ [Criar as alterações de implementação na biblioteca de desenvolvimento](build-the-implementation-changes.md)
++ [Criar uma biblioteca de desenvolvimento](build-the-implementation-changes.md)
 
-+ [Depurar e validar a migração do Web SDK](debug-and-validate-your-web-sdk-migration.md)
++ [Depurar e validar](debug-and-validate-your-web-sdk-migration.md)
 
 + [Migrar regras de página adicionais](migrate-additional-page-rules.md)
 
 + [Migrar regras de links personalizados](migrate-custom-link-rules.md)
 
-+ [Excluir os itens de extensão do Adobe Analytics](delete-analytics-extension-items.md)
++ [Excluir a extensão do Analytics](delete-analytics-extension-items.md)
 
-+ [Publish: a migração para preparo e produção](publish-the-migration.md)
++ [Publish para preparo e produção](publish-the-migration.md)
