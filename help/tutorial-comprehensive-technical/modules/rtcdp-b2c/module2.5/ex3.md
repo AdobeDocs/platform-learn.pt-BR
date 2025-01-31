@@ -4,7 +4,7 @@ description: Criar e configurar um webhook personalizado
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## Criar seu webhook personalizado
 
-Ir para [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Você já usou este aplicativo no [SDK de Destinos do Exercício 2.3.7](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+Ir para [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Você já usou este aplicativo no [Exercício 2.3.6 Destinos SDK](./../../../modules/rtcdp-b2c/module2.3/ex6.md)
 
 Se você ainda não tiver usado esse serviço, crie uma conta e um espaço de trabalho. Depois que o espaço de trabalho for criado, você verá algo semelhante a isso.
 
@@ -56,7 +56,7 @@ Agora você terá isto. Clique em **Salvar**.
 >
 >No caminho acima, é feita uma referência a **arc**. **arc** significa Contexto de Recurso de Adobe e **arc** sempre significa o maior objeto disponível no contexto do Servidor. Enriquecimentos e transformações podem ser adicionados a esse objeto **arc** usando as funções do Servidor de Coleta de Dados da Adobe Experience Platform.
 >
->No caminho acima, é feita uma referência ao **evento**. **event** significa um evento exclusivo e o Adobe Experience Platform Data Collection Server sempre avaliará cada evento individualmente. Às vezes, você pode ver uma referência a **eventos** na carga enviada pelo lado do cliente do SDK da Web, mas no Adobe Experience Platform Data Collection Server, cada evento é avaliado individualmente.
+>No caminho acima, é feita uma referência ao **evento**. **event** significa um evento exclusivo e o Adobe Experience Platform Data Collection Server sempre avaliará cada evento individualmente. Às vezes, você pode ver uma referência a **eventos** na carga enviada pelo Web SDK Client Side, mas no Adobe Experience Platform Data Collection Server, cada evento é avaliado individualmente.
 
 ## Atualizar a propriedade do Servidor de coleta de dados da Adobe Experience Platform: Criar uma regra
 
@@ -161,7 +161,7 @@ Agora, ao navegar pelo site, você verá solicitações de rede adicionais torna
 
 ![Configuração da Coleção de Dados do Adobe Experience Platform](./images/hook5.png)
 
-Agora você configurou o encaminhamento de eventos do lado do servidor de cargas SDK da Web/XDM para um webhook personalizado externo. Nos próximos exercícios, você configurará uma abordagem semelhante e enviará esses mesmos dados para a Google Cloud Platform e a AWS.
+Agora você configurou o encaminhamento de eventos do lado do servidor de cargas do Web SDK/XDM para um webhook personalizado externo. Nos próximos exercícios, você configurará uma abordagem semelhante e enviará esses mesmos dados para a Google Cloud Platform e a AWS.
 
 Próxima Etapa: [2.5.4 Encaminhar eventos para GCP Pub/Sub](./ex4.md)
 

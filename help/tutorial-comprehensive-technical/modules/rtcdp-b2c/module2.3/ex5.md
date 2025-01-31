@@ -4,7 +4,7 @@ description: Real-time CDP - Criar um público-alvo e realizar ações - Enviar 
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -199,7 +199,7 @@ Se agora você voltar para o site de demonstração e visitar a página do produ
 
 ![RTCDP](./images/atform13.png)
 
-Próxima Etapa: [2.3.6 Públicos-Alvo Externos](./ex6.md)
+Próxima Etapa: [2.3.6 Destinos SDK](./ex6.md)
 
 [Voltar ao módulo 2.3](./real-time-cdp-build-a-segment-take-action.md)
 
