@@ -4,10 +4,10 @@ description: CLOUD SERVICE e EDGE DELIVERY SERVICES ADOBE EXPERIENCE MANAGER
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ Neste exercício, você desenvolverá um bloco personalizado básico para o seu 
 [2.1.5 Bloco Personalizado Avançado](./ex5.md){target="_blank"}
 
 Neste exercício, você desenvolverá um bloco personalizado avançado para o seu site.
+
+[2.1.6 Plugin AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
+
+Neste exercício, você implementará o plug-in AEM MarTech. O plug-in AEM MarTech ajuda você a configurar rapidamente uma pilha completa de MarTech para seu projeto AEM.
 
 [Resumo e benefícios](./summary.md){target="_blank"}
 

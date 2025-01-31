@@ -4,7 +4,7 @@ description: Foundation - Assimilação de dados - Assimilação de dados de fon
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 2%
@@ -32,7 +32,7 @@ Para copiar blobs ou arquivos para a sua Zona de aterrissagem de dados da Adobe 
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- Baixe o arquivo de dados de amostra global-context-websiteinteractions.csv, que contém interações de site de exemplo e salve-o na pasta em que você descompactou o **azcopy**.
+- Baixe o arquivo de dados de exemplo [global-context-websiteinteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv), que contém interações de site de exemplo e salve-o na pasta em que você descompactou o **azcopy**.
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 
@@ -138,7 +138,7 @@ Selecione o campo ``--aepTenantId--``.identification.core.ecid na estrutura do e
 
 Você precisa mapear alguns outros campos, clique em **+ Novo tipo de campo** seguido de **Adicionar novo campo** e adicionar campos para este mapeamento
 
-| origem | público-alvo |
+| origem | destino |
 |---|---|
 | resource.info.pagename | web.webPageDetails.name |
 | carimbo de data e hora | carimbo de data e hora |

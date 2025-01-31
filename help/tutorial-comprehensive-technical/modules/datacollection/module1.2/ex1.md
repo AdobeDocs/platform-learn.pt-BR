@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - De desconhecido para conhecid
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -61,11 +61,15 @@ Vá para a categoria de produto **Celulares e dispositivos**. Em seguida, clique
 
 ![Demonstração](./images/pv4.png)
 
-Você verá a página de detalhes do produto. Um Evento de Experiência do tipo **Exibição do Produto** foi enviado ao Adobe Experience Platform usando a implementação do SDK da Web que você analisou no módulo anterior.
+Você verá a página de detalhes do produto. Um Evento de Experiência do tipo **Exibição do Produto** foi enviado ao Adobe Experience Platform usando a implementação do Web SDK que você analisou no módulo anterior.
 
 ![Demonstração](./images/pv5.png)
 
-Abra o painel Visualizador de Provedores e veja seus **Eventos de experiência**.
+Abra o painel Visualizador de perfis e veja seus **Eventos de experiência**.
+
+>[!NOTE]
+>
+>Se você não visualizar o evento imediatamente, atualize a página.
 
 ![Demonstração](./images/pv6.png)
 

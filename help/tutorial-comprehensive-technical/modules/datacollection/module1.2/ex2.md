@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - Configurar esquemas e definir
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3138'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Agora essa estrutura de esquema está em vigor.
 ![Assimilação de dados](./images/schemastructurem.png)
 
 Seu novo [!UICONTROL Grupo de Campos] ainda está vazio, portanto, agora você terá que adicionar campos a esse [!UICONTROL Grupo de Campos].
-Na lista do [!UICONTROL Grupo de campos], clique no [!UICONTROL Grupo de Campos] personalizado.
+Na lista do [!UICONTROL Grupo de campos], clique no [!UICONTROL Grupo de Campos] personalizado e em **Procurar**.
 
 ![Assimilação de dados](./images/schemastructurem.png)
 
@@ -289,7 +289,7 @@ De uma perspectiva de esquema, vemos isso como uma **[!UICONTROL Classe]**. A pe
 
 Portanto, ao criar um [!UICONTROL Esquema XDM] para capturar a resposta para **O que este cliente faz?**, primeiro, será necessário criar e definir 1 esquema que faça referência à classe **[!UICONTROL ExperienceEvent]**.
 
-Para especificar que tipo de respostas podem ser dadas a essa pergunta, você precisará definir o [!UICONTROL Grupo de Campos]. [!UICONTROL Grupos de Campos] são extensões da classe [!UICONTROL ExperienceEvent] e têm configurações muito específicas. Por exemplo, informações sobre que tipo de produtos um cliente visualizou ou adicionou ao carrinho fazem parte do [!UICONTROL Grupo de campos] **Detalhes do Commerce**.
+Para especificar que tipo de respostas podem ser dadas a essa pergunta, você precisará definir o [!UICONTROL Grupo de Campos]. [!UICONTROL Grupos de Campos] são extensões da Classe [!UICONTROL ExperienceEvent] e têm configurações muito específicas. Por exemplo, informações sobre que tipo de produtos um cliente visualizou ou adicionou ao carrinho fazem parte do [!UICONTROL Grupo de campos] **Detalhes do Commerce**.
 
 Em segundo lugar, sua organização precisa decidir como você identificará o comportamento desse cliente. Como estamos falando de interações em um site, é possível que sua organização conheça o cliente, mas é igualmente possível que um visitante desconhecido e anônimo esteja ativo no site. Portanto, não podemos usar um identificador como endereço de email. Nesse caso, sua organização provavelmente decidirá usar a [!UICONTROL Experience Cloud ID (ECID)] como o identificador principal.
 
@@ -305,7 +305,7 @@ Antes de continuar, você precisa selecionar uma **[!UICONTROL sandbox]**. A [!U
 
 ![Assimilação de dados](./images/sb1.png)
 
-No Adobe Experience Platform, clique em **[!UICONTROL Esquemas]** no menu à esquerda da tela.
+No Adobe Experience Platform, clique em **[!UICONTROL Esquemas]** no menu no lado esquerdo da tela e vá para **Procurar**.
 
 ![Assimilação de dados](./images/menuschemas.png)
 
@@ -341,14 +341,14 @@ Na introdução desse laboratório, observamos a necessidade dos seguintes atrib
 
 Para fazer com que essas informações façam parte do esquema, você precisa adicionar o seguinte [!UICONTROL Grupo de campos] ao esquema:
 
-- ExperienceEvent do SDK da Web da AEP
+- AEP Web SDK ExperienceEvent
 - a identificação de perfil personalizada da sua organização [!UICONTROL Grupo de campos]
 
 Clique em **+ Adicionar** em **Grupos de campos**.
 
 ![Assimilação de dados](./images/eeedfg.png)
 
-Na tela **[!UICONTROL Adicionar Grupo de Campos]**, selecione o [!UICONTROL Grupo de Campos] **[!UICONTROL ExperienceEvent do AEP Web SDK]**. Clique em **[!UICONTROL Adicionar grupos de campos]**.
+Na tela **[!UICONTROL Adicionar Grupo de Campos]**, selecione o [!UICONTROL Grupo de Campos] **[!UICONTROL AEP Web SDK ExperienceEvent]**. Clique em **[!UICONTROL Adicionar grupos de campos]**.
 
 ![Assimilação de dados](./images/eeed.png)
 
@@ -446,10 +446,10 @@ Clique em **[!UICONTROL Salvar]** para salvar as alterações.
 ![Assimilação de dados](./images/applyidenee.png)
 
 É importante observar que, ao assimilar dados em relação a esse esquema, alguns campos são obrigatórios.
-Por exemplo, os campos **[!UICONTROL _id]** e **[!UICONTROL timestamp]** são campos obrigatórios.
+Por exemplo, os campos **[!UICONTROL _id]** e **[!UICONTROL timestamp]** são campos obrigatórios, que é um requisito imposto pela Classe ExperienceEvent.
 
 - _id precisa conter uma id exclusiva para uma assimilação de dados específica
-- o carimbo de data/hora precisa ser o carimbo de data/hora desta ocorrência, no formato **[!UICONTROL &quot;AAAA-MM-DDTHH:MM:SSZ&quot;]**, como por exemplo: **[!UICONTROL &quot;2024-11-18T07:20:000Z&quot;]**
+- o carimbo de data/hora precisa ser o carimbo de data/hora desta ocorrência, no formato **`"YYYY-MM-DDTHH:MM:SSSZ"`**, como por exemplo: **`"2024-11-18T07:20:000Z"`**
 
 Agora você definiu um esquema, vinculou [!UICONTROL Grupos de Campos] existentes e recém-criados e definiu identificadores.
 

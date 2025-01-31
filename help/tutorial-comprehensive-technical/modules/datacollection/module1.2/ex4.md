@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - Assimilação de dados de fon
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1513'
 ht-degree: 5%
 
 ---
@@ -82,8 +82,11 @@ Você usará um conjunto de dados compartilhado. O conjunto de dados compartilha
 
 ![Assimilação de dados](./images/emeacrmoverview.png)
 
-
 Na tela de visão geral, você pode ver três informações principais.
+
+>[!NOTE]
+>
+>A visualização do conjunto de dados pode estar vazia, se nenhuma atividade tiver ocorrido nos últimos 7 dias.
 
 ![Assimilação de dados](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ Clique em **Next**.
 Agora é necessário mapear os cabeçalhos de coluna a partir do arquivo CSV com uma propriedade XDM no **[!UICONTROL Sistema de demonstração - Conjunto de dados de perfil para CRM]**.
 
 A Adobe Experience Platform já fez algumas propostas para você, tentando vincular os [!UICONTROL Atributos do Source] aos [!UICONTROL Campos de Esquema de Destino].
+
+>[!NOTE]
+>
+>Se você vir erros na tela de mapeamento, não se preocupe. Após seguir as instruções abaixo, esses erros serão resolvidos.
 
 ![Assimilação de dados](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Vamos restringir os dados de identidade para todo o conjunto de dados. Passe o m
 
 ![Assimilação de dados](./images/pencil.png)
 
-Vá para **[!UICONTROL Dados de Identidade]** e você verá que a opção **[!UICONTROL I2]** está marcada - isso presumirá que todas as informações neste conjunto de dados são pelo menos indiretamente identificáveis para a pessoa.
+Vá para **[!UICONTROL Rótulos de identidade]** e você verá que a opção **[!UICONTROL I2]** está marcada - isso presumirá que todas as informações neste conjunto de dados são pelo menos indiretamente identificáveis para a pessoa.
 
 Clique em **[!UICONTROL Salvar alterações]**.
 

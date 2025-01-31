@@ -3,9 +3,10 @@ title: AEM CS - Advanced Custom Block
 description: AEM CS - Advanced Custom Block
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ Salve as alterações.
 
 Agora você fez várias alterações em seu projeto que precisam ser enviadas de volta ao repositório do GitHub. Para fazer isso, abra o **GitHub Desktop**.
 
-Você deverá ver os 3 arquivos que acabou de editar em **Alterações**. Revise suas alterações.
+Você deverá ver os 2 arquivos que acabou de editar em **Alterações**. Revise suas alterações.
 
 Digite um nome para a sua PR, `js css`. Clique em **Confirmar para principal**.
 
@@ -344,7 +345,7 @@ Você deverá ver isso.
 
 ![Bloquear](./images/blockadv20.png)
 
-Próxima etapa: [Resumo e benefícios](./summary.md){target="_blank"}
+Próxima etapa: [2.1.6 Plugin AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
 
 [Retornar ao Módulo 2.1](./aemcs.md){target="_blank"}
 

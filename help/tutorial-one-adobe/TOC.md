@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico abrangente para aplicativos Adobe, de Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '330'
 ht-degree: 4%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 4%
       + [2.1.3 Configurar o ambiente AEM CS](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
       + [2.1.4 Bloco personalizado básico](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
       + [2.1.5 Bloco personalizado avançado](/help/tutorial-one-adobe/modules/csc/module2.1/ex5.md)
+      + [2.1.6 Plug-in AEM Edge Delivery Services MarTech](/help/tutorial-one-adobe/modules/csc/module2.1/ex6.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [Visão geral](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
