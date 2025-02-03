@@ -5,10 +5,10 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 17%
+source-wordcount: '873'
+ht-degree: 18%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 17%
    + [Tutoriais do Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Ciclo de vida dos dados {#data-lifecycle}
    + [Expirar conjuntos de dados](/help/platform/data-lifecycle/expire-datasets.md)
-+ Data Science Workspace {#data-science-workspace}
-   + [Visão geral](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [Arquitetura](data-science-workspace/architecture-overview.md)
-   + [Criar o esquema e o conjunto de dados do curso](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [Carregar dados em notebooks JupyterLab](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [Consultar e descobrir dados em notebooks JupyterLab](data-science-workspace/dsw-query-service.md)
-   + [Análise de dados exploratórios](data-science-workspace/eda.md)
-   + [Visão geral de receitas, modelos e serviços](data-science-workspace/recipes-models-services-overview.md)
-   + [Criar um modelo usando o modelo do construtor de fórmula](data-science-workspace/recipe-builder-template.md)
-   + [Analisar o desempenho do modelo](data-science-workspace/analyze-model-performance.md)
-   + [Criar e publicar um modelo treinado (UI)](data-science-workspace/create-model-ui.md)
-   + [Programar treinamento e pontuação automatizados para um serviço](data-science-workspace/schedule-training-scoring.md)
-   + [Enriqueça os perfis do cliente em tempo real com insights de aprendizado de máquina](data-science-workspace/dsw-profile-segmentation.md)
-   + [Compactar arquivos de origem em uma fórmula](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [Importar uma fórmula em pacote (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [Importar uma fórmula em pacote (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinos {#destinations}
    + [Visão geral dos destinos](/help/platform/destinations/understanding-destinations.md)
    + [Conexão com destinos](/help/platform/destinations/connecting-to-destinations.md)
