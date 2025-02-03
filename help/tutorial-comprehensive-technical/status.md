@@ -3,10 +3,10 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 10%
+source-wordcount: '256'
+ht-degree: 8%
 
 ---
 
@@ -35,5 +35,11 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [Serviço de consulta](./modules/datadistiller/module5.1/query-service.md) do 5.1 | 12/04/2024 | Sim | - |
 
 {style="table-layout:auto"}
+
+![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
 
 [Voltar a todos os módulos](./overview.md)

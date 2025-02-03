@@ -4,9 +4,9 @@ description: Configurar sua instância do Adobe Experience Platform
 doc-type: multipage-overview
 hide: false
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
-source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1076'
 ht-degree: 4%
 
 ---
@@ -253,5 +253,11 @@ Vá para [https://experience.adobe.com/platform](https://experience.adobe.com/pl
 >[!NOTE]
 >
 >Obrigado por investir seu tempo aprendendo tudo o que há para saber sobre o Adobe Experience Platform e seus aplicativos. Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
+
+![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
 
 [Voltar a todos os módulos](./overview.md)
