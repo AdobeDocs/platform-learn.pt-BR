@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico abrangente para aplicativos Adobe, de Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '331'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 
 + [Visão geral do tutorial](/help/tutorial-one-adobe/overview.md)
 + [Status do conteúdo](/help/tutorial-one-adobe/status.md)
++ [Conclusão](/help/tutorial-one-adobe/completion.md)
 
 + Introdução {#gettingstarted}
    + Introdução {#gettingstarted}

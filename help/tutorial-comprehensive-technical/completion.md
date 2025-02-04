@@ -3,7 +3,7 @@ title: Conclusão
 description: Como se mede a conclusão?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Abaixo estão as provas de conclusão esperadas para cada módulo.
 
 A prova de conclusão esperada para o módulo **Introdução** é a ID do projeto do Sistema de Demonstração para a Web que você criou.
 
-A ID do projeto do Sistema de Demonstração para o formato da Web é semelhante a: `--demoProfileLdap-- - QIMU`.
+A ID do projeto do Sistema de Demonstração para o formato da Web é semelhante a: `--aepUserLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ A ID do Federated Data Model tem esta aparência: **DMO5110** e pode ser obtida 
 
 ## 2.1 Perfil do cliente em tempo real
 
-A prova de conclusão esperada para o módulo **Perfil de Cliente em Tempo Real** é a **ID de Público-alvo** do público-alvo que você criou por meio da interface, `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`.
+A prova de conclusão esperada para o módulo **Perfil de Cliente em Tempo Real** é a **ID de Público-alvo** do público-alvo que você criou por meio da interface, `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`.
 
 A ID de Público-alvo é semelhante a: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -60,7 +60,7 @@ A ID de Público-alvo é semelhante a: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
 ## 2.2 Serviços inteligentes
 
-A prova de conclusão esperada para o módulo **Serviços inteligentes** é a **ID de público-alvo** do público-alvo que você criou por meio da interface do usuário, `--demoProfileLdap-- - Customer AI High Propensity`.
+A prova de conclusão esperada para o módulo **Serviços inteligentes** é a **ID de público-alvo** do público-alvo que você criou por meio da interface do usuário, `--aepUserLdap-- - Customer AI High Propensity`.
 
 A ID de Público-alvo é semelhante a: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -92,7 +92,7 @@ Você pode encontrar a **ID de Propriedade do Encaminhamento de Eventos**, que s
 
 ## 2.6 Transmitir dados do Apache Kafka para o Real-Time CDP
 
-A prova de conclusão esperada para o módulo **Dados de fluxo do Apache Kafka para o Real-Time CDP** é a identificação do conector de origem `--demoProfileLdap-- - Kafka`.
+A prova de conclusão esperada para o módulo **Dados de fluxo do Apache Kafka para o Real-Time CDP** é a identificação do conector de origem `--aepUserLdap-- - Kafka`.
 
 A ID é semelhante a este **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**, e você pode encontrá-la aqui:
 
@@ -132,7 +132,7 @@ A identificação da jornada é semelhante a: **5f5efc7e-49f7-44c1-85df-b23482b3
 
 ## Customer Journey Analytics 4.1: Criar um painel usando o Analysis Workspace
 
-A prova de conclusão esperada para o módulo **Customer Journey Analytics: Criar um painel usando o Analysis Workspace** é a identificação do seu projeto `--demoProfileLdap-- - Omnichannel Analysis`.
+A prova de conclusão esperada para o módulo **Customer Journey Analytics: Criar um painel usando o Analysis Workspace** é a identificação do seu projeto `--aepUserLdap-- - Omnichannel Analysis`.
 
 O formato tem esta aparência: **677bcb247064db3c7de2a0e4**, você poderá encontrá-lo na URL quando tiver aberto o projeto.
 
@@ -148,7 +148,7 @@ Você pode encontrar a **ID da Conexão do BigQuery**, que se parece com este **
 
 ## 5.1 Serviço de consulta
 
-A prova de conclusão esperada para o módulo **Serviço de Consulta** é a ID do conjunto de dados para seu `--demoProfileLdap--_callcenter_interaction_analysis` - conjunto de dados que você obtém depois de concluir o módulo.
+A prova de conclusão esperada para o módulo **Serviço de Consulta** é a ID do conjunto de dados para seu `--aepUserLdap--_callcenter_interaction_analysis` - conjunto de dados que você obtém depois de concluir o módulo.
 
 A ID é semelhante a: **675033c903fb3b2aefed8a0a**.
 
