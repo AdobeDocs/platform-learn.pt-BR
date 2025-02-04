@@ -4,9 +4,9 @@ description: Real-time CDP - Destinos SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1123'
 ht-degree: 5%
 
 ---
@@ -17,9 +17,17 @@ ht-degree: 5%
 
 Neste exercício, você usará o Adobe I/O novamente para consultar as APIs da Adobe Experience Platform. Se você ainda não tiver configurado o projeto Adobe I/O, volte para o [Exercício 3 no Módulo 2.1](../module2.1/ex3.md) e siga as instruções lá.
 
-## Autenticação Postman para Adobe I/O
+>[!IMPORTANT]
+>
+>Se você for um funcionário da Adobe, siga as instruções aqui para usar o [PostBuster](./../../../postbuster.md).
+
+## Autenticação para o Adobe I/O
 
 Neste exercício, você usará o Postman novamente para consultar as APIs da Adobe Experience Platform. Se você ainda não tiver configurado seu aplicativo Postman, volte para o [Exercício 3 no Módulo 2.1](../module2.1/ex3.md) e siga as instruções lá.
+
+>[!IMPORTANT]
+>
+>Se você for um funcionário da Adobe, siga as instruções aqui para usar o [PostBuster](./../../../postbuster.md).
 
 ## Definir ponto de extremidade e formato
 
@@ -101,7 +109,7 @@ Depois de colar o código acima, você precisa atualizar manualmente o campo **u
 
 ![Assimilação de dados](./images/sdkpm4.png)
 
-Depois de atualizar o campo **urlBasedDestination.url.value**, ele deverá ter esta aparência. Clique em **Enviar**.
+Depois de atualizar o campo **urlBasedDestination.url.value**, ele deve ficar assim. Clique em **Enviar**.
 
 ![Assimilação de dados](./images/sdkpm5.png)
 

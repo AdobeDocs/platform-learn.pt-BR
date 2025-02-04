@@ -4,7 +4,7 @@ description: Real-time CDP - Criar um público-alvo e realizar ações - Enviar 
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 3%
@@ -23,7 +23,7 @@ Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser se
 
 ## Verificar o fluxo de dados
 
-O destino do Adobe Target no Real-Time CDP é conectado ao fluxo de dados usado para assimilar dados na rede de Adobe. Se quiser configurar o destino do Adobe Target, primeiro verifique se o fluxo de dados já está ativado para o Adobe Target. Seu datastream foi configurado no [Exercício 0.2 Criar seu Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) e foi nomeado como `--aepUserLdap-- - Demo System Datastream`.
+O destino do Adobe Target no Real-Time CDP é conectado ao fluxo de dados usado para assimilar dados na rede do Adobe Edge. Se quiser configurar o destino do Adobe Target, primeiro verifique se o fluxo de dados já está ativado para o Adobe Target. Seu datastream foi configurado no [Exercício 0.2 Criar seu Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) e foi nomeado como `--aepUserLdap-- - Demo System Datastream`.
 
 No menu esquerdo, role para baixo e clique em **Datastreams**. Em Datastreams, pesquise por seu datastream chamado `--aepUserLdap-- - Demo System Datastream`. Clique na sequência de dados para abri-la.
 
@@ -71,7 +71,7 @@ Clique em **Next**.
 
 ![ÀS](./images/atdest5.png)
 
-Agora é possível selecionar uma política de governança de dados. Clique em **Next**.
+Agora, é possível selecionar uma política de governança de dados. Clique em **Next**.
 
 ![ÀS](./images/atdest2.png)
 
@@ -159,11 +159,16 @@ Em seguida, você precisa adicionar um token de personalização dos atributos d
 
 Antes de clicar no botão **Adicionar**, vá para a linha onde você vê `... > h1").innerHTML="Hi there ";` e coloque o cursor entre colchetes após a palavra `there`, desta forma:
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 Em seguida, clique no botão **Adicionar**, que deve então adicionar o token, que atualizará o código da seguinte maneira:
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 Clique em **Next**.
 

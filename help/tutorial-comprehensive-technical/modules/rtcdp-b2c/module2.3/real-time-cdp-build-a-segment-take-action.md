@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 CDP em tempo real - Criar um segmento e executar ações
+# 2.3 CDP em tempo real — crie um público-alvo e tome medidas
 
-Neste módulo, você configurará um segmento de transmissão e ativará o segmento para vários destinos.
+Neste módulo, você configurará um segmento de transmissão e ativará o público-alvo para vários destinos.
 
 ## Objetivos de aprendizagem
 
-- Saiba como criar um segmento e habilitá-lo para transmissão.
+- Saiba como criar um público-alvo e habilitá-lo para transmissão.
 - Saiba como configurar um destino de publicidade usando a interface do usuário do Adobe Experience Platform.
-- Saiba como conectar um segmento a um destino e ativá-lo.
-- Saiba como usar segmentos do Adobe Experience Platform no Adobe Audience Manager e como usar segmentos do Adobe Audience Manager no Adobe Experience Platform, graças ao compartilhamento bidirecional de segmentos.
+- Saiba como conectar um público-alvo a um destino e ativá-lo.
 
 ## Pré-requisitos
 
