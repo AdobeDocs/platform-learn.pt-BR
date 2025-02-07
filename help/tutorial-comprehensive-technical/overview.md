@@ -1,11 +1,11 @@
 ---
-title: Visão geral
+title: Visão geral - Tutorial técnico abrangente para aplicativos e AEP
 description: Ponto de partida para engenheiros de dados, analistas de dados, arquitetos de dados, cientistas de dados, engenheiros de orquestração e profissionais de marketing para obter uma compreensão completa do valor comercial da Adobe Experience Platform e de todos os seus serviços de aplicativos.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ Você pode encontrar muitos vídeos interessantes dos nossos webinários da Tech
 
 ## Conclusão e certificação
 
-Este tutorial faz parte de um curso de certificação Adobe. Você pode se inscrever no curso junto com este tutorial acessando [https://certification.adobe.com](https://certification.adobe.com).
+Este tutorial faz parte de um curso de certificação Adobe. Você pode se inscrever no curso junto com este tutorial acessando [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
 
 Para cada módulo que você concluir usando o tutorial abaixo, você precisa enviar uma prova de conclusão como indicado [aqui](./completion.md).
 

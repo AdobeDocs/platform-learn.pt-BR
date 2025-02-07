@@ -1,10 +1,11 @@
 ---
-title: Conclusão
+title: Conclusão - Tutorial de um Adobe
 description: Como se mede a conclusão?
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Abaixo estão as provas de conclusão esperadas para cada módulo.
 
 A prova de conclusão esperada para o módulo **Introdução** é a ID do projeto do Sistema de Demonstração para a Web que você criou.
 
-A ID do projeto do Sistema de Demonstração para o formato da Web é semelhante a: `--demoProfileLdap-- - 8ERG`.
+A ID do projeto do Sistema de Demonstração para o formato da Web é semelhante a: `--aepUserLdap-- - 8ERG`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -79,7 +80,7 @@ A prova de conclusão esperada para o módulo **Adobe Journey Optimizer: Serviç
 
 A prova de conclusão esperada para o módulo **Adobe Journey Optimizer: Offer Decisioning** é a identificação da **Decisão** que você criou.
 
-Você pode encontrar a **ID da Decisão**, que se parece com este **dps:offer-activity:1a08ba4b529b2fb2**, aqui:
+Você pode encontrar a **ID da Decisão**, que se parece com este **`dps:offer-activity:1a08ba4b529b2fb2`**, aqui:
 
 ![14](./assets/images/offers.png)
 

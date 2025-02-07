@@ -1,18 +1,20 @@
 ---
-title: Conclusão
+title: Conclusão - Tutorial técnico abrangente para Adobe Experience Platform
 description: Como se mede a conclusão?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # Como a conclusão é medida?
 
-Vá para [https://certification.adobe.com](https://certification.adobe.com) e navegue até o curso **XXX**.
+Ir para [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
+
+![3](./assets/images/certcourse.png)
 
 Para concluir um módulo, você deve fornecer uma prova de conclusão.
 
