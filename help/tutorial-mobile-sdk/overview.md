@@ -1,10 +1,10 @@
 ---
 title: Visão geral do tutorial Implementar o Adobe Experience Cloud em aplicativos para dispositivos móveis
-description: Saiba como implementar os aplicativos móveis do Adobe Experience Cloud. Este tutorial o orienta por uma implementação de aplicativos Experience Cloud em um aplicativo Swift de amostra.
+description: Saiba como implementar os aplicativos móveis do Adobe Experience Cloud. Este tutorial o orienta por uma implementação dos aplicativos Experience Cloud em um aplicativo Swift de amostra.
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 3%
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 Saiba como implementar aplicativos da Adobe Experience Cloud em seu aplicativo para dispositivos móveis usando o SDK móvel da Adobe Experience Platform.
 
-O SDK móvel do Experience Platform é um SDK do lado do cliente que permite que os clientes da Adobe Experience Cloud interajam com aplicativos Adobe e serviços de terceiros por meio do Edge Network do Adobe Experience Platform. Consulte a [documentação do SDK do Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/home/) para obter informações mais detalhadas.
+O Experience Platform Mobile SDK é um SDK do lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com aplicativos da Adobe e serviços de terceiros por meio do Adobe Experience Platform Edge Network. Consulte a [documentação do Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) para obter informações mais detalhadas.
 
 ![Arquitetura](assets/architecture.png)
 
 
-Este tutorial o orienta pela implementação do SDK móvel da Platform em um aplicativo de varejo de amostra chamado Luma. O [aplicativo Luma](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) tem uma funcionalidade que permite a criação de uma implementação realista. Após concluir este tutorial, você deve estar pronto para começar a implementar todas as suas soluções de marketing por meio do SDK do Experience Platform Mobile em seus próprios aplicativos móveis.
+Este tutorial o orienta pela implementação do Platform Mobile SDK em um aplicativo de varejo de amostra chamado Luma. O [aplicativo Luma](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) tem uma funcionalidade que permite a criação de uma implementação realista. Após concluir este tutorial, você deve estar pronto para começar a implementar todas as suas soluções de marketing pelo Experience Platform Mobile SDK em seus próprios aplicativos móveis.
 
 As lições foram projetadas para o iOS e escritas em Swift/SwiftUI, mas muitos dos conceitos também se aplicam ao Android™.
 
@@ -29,9 +29,9 @@ Após concluir este tutorial, você será capaz de:
 * Crie um esquema usando grupos de campos padrão e personalizados.
 * Configurar um fluxo de dados.
 * Configure uma propriedade de tag móvel.
-* Configurar um conjunto de dados de Experience Platform (opcional).
+* Configurar um conjunto de dados do Experience Platform (opcional).
 * Instale e implemente extensões de tag em um aplicativo.
-* Transmita corretamente os parâmetros de Experience Cloud para um [webview](web-views.md).
+* Passe corretamente os parâmetros Experience Cloud para uma [exibição da Web](web-views.md).
 * Valide a implementação usando o [Adobe Experience Platform Assurance](assurance.md).
 * Adicione os seguintes aplicativos/extensões do Adobe Experience Cloud:
    * [Adobe Experience Platform Edge (XDM)](events.md)
@@ -50,15 +50,15 @@ Após concluir este tutorial, você será capaz de:
 
 >[!NOTE]
 >
->Um tutorial de várias soluções semelhante está disponível para o [SDK da Web](../tutorial-web-sdk/overview.md).
+>Um tutorial de várias soluções semelhante está disponível para o [Web SDK](../tutorial-web-sdk/overview.md).
 
-## Pré-requisitos
+## Permissões
 
-Nessas lições, presume-se que você tenha uma ID de Adobe e as permissões de nível de usuário necessárias para concluir os exercícios. Caso contrário, entre em contato com o administrador do Adobe para solicitar acesso.
+Nessas lições, presume-se que você tenha uma Adobe ID e as permissões de nível de usuário necessárias para concluir os exercícios. Caso contrário, entre em contato com o administrador do Adobe para solicitar acesso.
 
 * Em Coleção de dados, você deve ter:
    * **[!UICONTROL Plataformas]**—item de permissão **[!UICONTROL Celular]**
-   * **[!UICONTROL Direitos de propriedade]**—itens de permissão para **[!UICONTROL Desenvolver]**, **[!UICONTROL Aprovar]**, **[!UICONTROL Publish]**, **[!UICONTROL Gerenciar extensões]** e **[!UICONTROL Gerenciar ambientes]**.
+   * **[!UICONTROL Direitos de propriedade]**—itens de permissão para **[!UICONTROL Desenvolver]**, **[!UICONTROL Aprovar]**, **[!UICONTROL Publicar]**, **[!UICONTROL Gerenciar extensões]** e **[!UICONTROL Gerenciar ambientes]**.
    * **[!UICONTROL Direitos da Empresa]**—itens de permissão para **[!UICONTROL Gerenciar Propriedades]** e, se estiver concluindo a lição opcional de mensagens por push, **[!UICONTROL Gerenciar Configurações do Aplicativo]**
 
      Para obter mais informações sobre permissões de marcas, consulte [Permissões de usuário para marcas](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR){target="_blank"} na documentação do produto.
@@ -92,7 +92,7 @@ Nessas lições, presume-se que você tenha uma ID de Adobe e as permissões de 
 Duas versões do aplicativo de amostra estão disponíveis para download. Ambas as versões podem ser baixadas/clonadas do [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). Você encontrará duas pastas:
 
 
-1. [Início](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: um projeto sem código ou com código de espaço reservado para a maioria do código SDK do Experience Platform Mobile que você precisa usar para concluir os exercícios práticos neste tutorial.
+1. [Início](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: um projeto sem código ou com código de espaço reservado para a maioria do código do Experience Platform Mobile SDK que você precisa usar para concluir os exercícios práticos neste tutorial.
 1. [Término](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: uma versão com implementação completa para referência.
 
 >[!NOTE]
@@ -109,6 +109,6 @@ Vamos começar!
 
 >[!SUCCESS]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Criar um esquema XDM](create-schema.md)**

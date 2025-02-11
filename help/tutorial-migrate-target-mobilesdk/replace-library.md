@@ -2,26 +2,36 @@
 title: Substitua o SDK - Migrar do Adobe Target para o Adobe Journey Optimizer - Extensão móvel de decisão
 description: Saiba como substituir o SDK ao migrar do Adobe Target para a extensão móvel do Adobe Journey Optimizer - Decisioning.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# Substituir a extensão do Target pela extensão de decisão
+# Substitua o SDK do Target pela opção Otimizar SDK
 
-Saiba como substituir sua implementação do Adobe Target na página para migrar da at.js para o Platform Web SDK. Uma substituição básica consiste nas seguintes etapas:
+Saiba como substituir os SDKs da Adobe Target pelos SDKs de otimização na implementação móvel. Uma substituição básica consiste nas seguintes etapas:
 
+* Atualizar dependências no Podfile ou arquivo `build.gradle`
+* Atualizar importações
+* Atualizar código de aplicativo
 
-## Integrar a extensão do Decisioning (Otimizar o SDK) no aplicativo móvel
+>[!INFO]
+>
+>No ecossistema do Adobe Experience Platform Mobile SDK, as extensões são implementadas pelos SDKs importados para seus aplicativos que podem ter nomes diferentes:
+>
+> * **Target SDK** implementa a **extensão do Adobe Target**
+> * **Otimizar o SDK** implementa a **Adobe Journey Optimizer - Extensão de decisão**
+
+## Atualizar dependências
 
 
 >[!BEGINTABS]
 
->[!TAB Dependências de aplicativo para a extensão de Decisão-Android]
+>[!TAB Dependências de aplicativo para Otimizar SDK-Android]
 
-`build.gradle` dependências
+`build.gradle` dependências após a migração
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -36,9 +46,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Dependências de aplicativo para a extensão de Decisão-iOS]
+>[!TAB Dependências de aplicativo para Otimizar SDK-iOS]
 
-`Podfile` dependências
+`Podfile` dependências após a migração
 
 ```Swift
 use_frameworks!
@@ -51,9 +61,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->[!TAB Dependências de aplicativo para a extensão do Target-Android]
+>[!TAB Dependências de aplicativo para SDK-Android de Destino]
 
-`build.gradle` dependências
+`build.gradle` dependências antes da migração
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -66,9 +76,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Dependências de aplicativo para a extensão do Target-iOS]
+>[!TAB Dependências de aplicativo para SDK-iOS de Destino]
 
-`Podfile` dependências
+`Podfile` dependências antes da migração
 
 ```Swift
 use_frameworks!
@@ -84,13 +94,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## Atualizar a abordagem de pré-ocultação de conteúdo
+## Atualizar importações e código
 
 >[!BEGINTABS]
 
->[!TAB Extensão de decisão-Android]
+>[!TAB Otimizar SDK-Android]
 
-Código de inicialização Java
+Código de inicialização Java após a migração
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -140,9 +150,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Extensão de decisão-iOS]
+>[!TAB Otimizar SDK-iOS]
 
-Código de inicialização Swift
+Código de inicialização Swift após a migração
 
 ```Swift
 import AEPCore
@@ -182,9 +192,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB Target extension-Android]
+>[!TAB SDK-Android de Destino]
 
-Código de inicialização Java
+Código de inicialização Java antes da migração
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -230,9 +240,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Target extension-iOS]
+>[!TAB SDK-iOS de Destino]
 
-Código de inicialização Swift
+Código de inicialização Swift antes da migração
 
 ```Swift
 import AEPCore
