@@ -3,15 +3,15 @@ title: Criar a campanha com os serviços de tradução da AJO
 description: Criar a campanha com os serviços de tradução da AJO
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
 
-# 3.2.2 Criar a campanha
+# 3.5.2 Criar a campanha
 
 Ir para [https://experience.adobe.com/](https://experience.adobe.com/). Clique em **Journey Optimizer**.
 
@@ -21,7 +21,11 @@ Você será redirecionado para a exibição **Página inicial** no Journey Optim
 
 ![ACOP](./images/ajolp2.png)
 
-## 3.2.2.1 Criar o fragmento de cabeçalho
+>[!NOTE]
+>
+>Caso já tenha criado os fragmentos de Cabeçalho e Rodapé como parte do exercício [exercício 3.1.2.1](./../module3.1/ex2.md) e do [exercício 3.1.2.2](./../module3.1/ex2.md), avance para o exercício 3.5.2.3 Criar campanha de Fibra. Não crie os fragmentos de Cabeçalho e Rodapé novamente.
+
+## 3.5.2.1 Criar o fragmento de cabeçalho
 
 No menu esquerdo, clique em **Fragmentos**. Um fragmento é um componente reutilizável no Journey Optimizer, o que evita a duplicação e facilita alterações futuras que devem afetar todas as mensagens, como alterações em um cabeçalho ou rodapé em uma mensagem de email.
 
@@ -76,7 +80,7 @@ Em seguida, você deve criar um novo fragmento para o rodapé das mensagens de e
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2 Criar o fragmento de Rodapé
+## 3.5.2.2 Criar o fragmento de Rodapé
 
 Clique em **Criar fragmento**.
 
@@ -230,7 +234,7 @@ Após alguns minutos, você verá que o status do seu rodapé mudou para **Live*
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 Criar campanha de fibra
+## 3.5.2.3 Criar campanha de fibra
 
 Agora você criará uma campanha. Ao contrário da jornada baseada em eventos do exercício anterior, que depende de eventos de experiência de entrada, entradas de público-alvo ou saídas para acionar uma jornada para um cliente específico, as campanhas direcionam todo um público-alvo uma vez com conteúdo exclusivo, como boletins informativos, promoções únicas ou informações genéricas ou periodicamente com conteúdo semelhante enviado regularmente, como por exemplo campanhas de aniversário e lembretes.
 
@@ -262,7 +266,7 @@ Role até **Público-alvo**. Clique em **Selecionar audiência**.
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-Para o **Público-alvo**, selecione o público criado na etapa anterior, `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Clique em **Salvar**.
+Para o **Público-alvo**, selecione o público-alvo criado em [1.3.3 Criar uma composição federada](./../../datacollection/module1.3/ex3.md), que se chama `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Clique em **Salvar**.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Você concluiu este exercício.
 
 ## Próximas etapas
 
-Ir para [3.2.3 Adicionar idiomas ao seu email](./ex3.md)
+Ir para [3.5.3 Adicionar idiomas ao seu email](./ex3.md)
 
-Voltar para [Módulo 3.2](./ajotranslationsvcs.md){target="_blank"}
+Voltar para [Módulo 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Voltar para [Todos os módulos](./../../../overview.md){target="_blank"}

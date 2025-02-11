@@ -4,7 +4,7 @@ description: AEM CS - Advanced Custom Block
 kt: 5342
 doc-type: tutorial
 exl-id: fa299668-c902-4775-a540-7555ca461d3e
-source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
+source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -17,7 +17,7 @@ No exercício anterior, você configurou um bloco personalizado básico chamado 
 
 Agora você pode continuar trabalhando neste bloco.
 
-![AEMCS](./images/nav7.png)
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
 ## 2.1.5.1 Estilo do bloco
 
@@ -25,23 +25,23 @@ Agora que você tem um bloco de trabalho **fiberoffer**, é possível aplicar um
 
 Retorne ao Visual Studio Code e abra a pasta **blocos**. Agora você deve ver várias pastas que fazem referência a um bloco específico. Para tornar seu bloco **fiberoffer** mais avançado, agora é necessário criar uma pasta para seu bloco personalizado.
 
-![AEMCS](./images/blockadv1.png)
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
 Selecione a pasta **blocos** e clique no ícone **Criar nova pasta**.
 
-![AEMCS](./images/blockadv2.png)
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
 Nomeie sua pasta `fiberoffer` e clique em **inserir**.
 
-![AEMCS](./images/blockadv3.png)
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
 Selecione a nova pasta **fiberoffer** e clique no ícone **Criar novo arquivo**.
 
-![AEMCS](./images/blockadv4.png)
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
 Um novo arquivo foi criado. Insira o nome **fiberoffer.js** e pressione enter.
 
-![AEMCS](./images/blockadv5.png)
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
 Agora é possível implementar a decoração de blocos adicionando a seguinte JavaScript ao arquivo **fiberoffer.js**.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![AEMCS](./images/blockadv6.png)
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
 Selecione a nova pasta **fiberoffer** e clique novamente no ícone **Criar novo arquivo**.
 
-![AEMCS](./images/blockadv7.png)
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
 Um novo arquivo foi criado. Insira o nome **fiberoffer.css** e pressione enter.
 
-![AEMCS](./images/blockadv8.png)
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
 Copie e cole o seguinte código CSS no arquivo recém-criado.
 
@@ -88,7 +88,7 @@ Copie e cole o seguinte código CSS no arquivo recém-criado.
 
 Salve as alterações.
 
-![AEMCS](./images/blockadv9.png)
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 Agora você fez várias alterações em seu projeto que precisam ser enviadas de volta ao repositório do GitHub. Para fazer isso, abra o **GitHub Desktop**.
 
@@ -96,15 +96,15 @@ Você deverá ver os 2 arquivos que acabou de editar em **Alterações**. Revise
 
 Digite um nome para a sua PR, `js css`. Clique em **Confirmar para principal**.
 
-![Bloquear](./images/blockadv10.png)
+![Bloquear](./images/blockadv10.png){zoomable="yes"}
 
 Você deverá ver isso. Clique em **Origem de push**.
 
-![Bloquear](./images/blockadv11.png)
+![Bloquear](./images/blockadv11.png){zoomable="yes"}
 
 No navegador, vá para a conta GitHub e para o repositório criado para o CitiSignal. Você deverá ver algo assim, mostrando que suas alterações foram recebidas.
 
-![Bloquear](./images/blockadv12.png)
+![Bloquear](./images/blockadv12.png){zoomable="yes"}
 
 Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
@@ -113,7 +113,7 @@ Neste exemplo, o URL completo torna-se isto:
 
 Você deverá ver isso, com o estilo aplicado à sua página.
 
-![Bloquear](./images/blockadv13.png)
+![Bloquear](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2 Adicionar lógica e carregar dados de um endpoint externo
 
@@ -156,11 +156,11 @@ No módulo **Introdução**, você já configurou uma sequência de dados, chama
 
 Você não precisa alterar o campo **edgeConfigId** neste momento. No próximo exercício, você poderá fazer isso usando o plug-in **MarTech**.
 
-![Bloquear](./images/blockadv15.png)
+![Bloquear](./images/blockadv15.png){zoomable="yes"}
 
 Agora você deve ter isso.
 
-![Bloquear](./images/blockadv14.png)
+![Bloquear](./images/blockadv14.png){zoomable="yes"}
 
 Em seguida, adicione este bloco abaixo do código anterior que você adicionou em.
 
@@ -185,7 +185,7 @@ Esse bloco de código é usado para recuperar o valor da ID de Experience Cloud 
 
 Como você pode ver no código acima, depois que a ECID é recuperada, outra função é chamada. Esta função é chamada **getOffer()**, que você adicionará a seguir.
 
-![Bloquear](./images/blockadv16.png)
+![Bloquear](./images/blockadv16.png){zoomable="yes"}
 
 Em seguida, adicione o código abaixo de
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 É muito importante que esse bloco de código seja colado abaixo do colchete de fechamento, que pode ser visto na linha 42 deste exemplo. O código que você acabou de colar é uma função separada que precisa de seu próprio local neste arquivo e não pode ser aninhada na **função padrão** acima.
 
-![Bloquear](./images/blockadv17.png)
+![Bloquear](./images/blockadv17.png){zoomable="yes"}
 
 O bloco de código que você acabou de colar simula uma solicitação que normalmente seria feita pela Web SDK/alloy.js. Neste exemplo, uma solicitação **fetch** será feita para **edge.adobedc.net**.
 
@@ -330,11 +330,11 @@ Lembre-se: essa abordagem é usada apenas para fins de ativação e não é a ma
 
 Salve as alterações. Em seguida, abra o **Github Desktop**, dê um nome à sua PR e clique em **Confirmar com principal**.
 
-![Bloquear](./images/blockadv18.png)
+![Bloquear](./images/blockadv18.png){zoomable="yes"}
 
 Em seguida, clique em **Origem de push**.
 
-![Bloquear](./images/blockadv19.png)
+![Bloquear](./images/blockadv19.png){zoomable="yes"}
 
 Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
@@ -343,7 +343,7 @@ Neste exemplo, o URL completo torna-se isto:
 
 Você deverá ver isso.
 
-![Bloquear](./images/blockadv20.png)
+![Bloquear](./images/blockadv20.png){zoomable="yes"}
 
 Próxima etapa: [2.1.6 Plugin AEM Edge Delivery Services MarTech](./ex6.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - Configurar esquemas e definir
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Agora essa estrutura de esquema está em vigor.
 ![Assimilação de dados](./images/schemastructurem.png)
 
 Seu novo [!UICONTROL Grupo de Campos] ainda está vazio, portanto, agora você terá que adicionar campos a esse [!UICONTROL Grupo de Campos].
-Na lista do [!UICONTROL Grupo de campos], clique no [!UICONTROL Grupo de Campos] personalizado e em **Procurar**.
+Na lista do [!UICONTROL Grupo de campos], clique no [!UICONTROL Grupo de Campos] personalizado.
 
 ![Assimilação de dados](./images/schemastructurem.png)
 
@@ -165,7 +165,7 @@ Clique em **Aplicar**.
 
 ![Assimilação de dados](./images/tenantfielddef.png)
 
-Agora você verá um novo objeto no esquema, que representa um **[!UICONTROL objeto]** personalizado no esquema e que é nomeado com base na sua ID de locatário do Adobe Experience Platform. Sua ID de locatário do Adobe Experience Platform é `--aepTenantId--` e é exclusiva de cada instância da AEP.
+Agora você verá um novo objeto no esquema, que representa um **[!UICONTROL objeto]** personalizado no esquema e que é nomeado com base na sua ID de locatário do Adobe Experience Platform. Sua ID de locatário do Adobe Experience Platform é `--aepTenantId--` e é exclusiva para cada instância da AEP.
 
 ![Assimilação de dados](./images/tenant.png)
 
@@ -176,26 +176,26 @@ Agora você adicionará um novo objeto de 3 campos sob esse locatário, no objet
 Use as informações abaixo para criar esses três novos campos no objeto **[!UICONTROL identification]**:
 
 - ecid:
-   - Nome do campo: **[!UICONTROL ecid]**
-   - Nome de exibição: **[!UICONTROL ecid]**
+   - Nome do campo: **`--aepUserLdap--_ecid`**
+   - Nome de exibição: **`--aepUserLdap--ecid`**
    - Tipo: **[!UICONTROL Cadeia de caracteres]**
    - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - Nome do campo: **[!UICONTROL emailId]**
-   - Nome de exibição: **[!UICONTROL emailId]**
+   - Nome do campo: **`--aepUserLdap--_emailId`**
+   - Nome de exibição: **`--aepUserLdap--_emailId`**
    - Tipo: **[!UICONTROL Cadeia de caracteres]**
    - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - mobilener
-   - Nome do campo: **[!UICONTROL mobilener]**
-   - Nome de exibição: **[!UICONTROL mobilener]**
+   - Nome do campo: **`--aepUserLdap--_mobilenr`**
+   - Nome de exibição: **`--aepUserLdap--_mobilenr`**
    - Tipo: **[!UICONTROL Cadeia de caracteres]**
    - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 Esta é a aparência de cada campo após a configuração inicial do campo.
 
-- mobilener
+- `--aepUserLdap--_mobilenr`
 
 ![Assimilação de dados](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ Para salvar seu campo, role para baixo nas **[!UICONTROL Propriedades do Campo]*
 
 ![Assimilação de dados](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![Assimilação de dados](./images/ecidfield.png)
 
 Não se esqueça de rolar para baixo e clicar em **Aplicar**.
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![Assimilação de dados](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ Seus 3 campos agora devem ser definidos como campos de **[!UICONTROL identidade]
 
 Para começar a definir esses campos como campos de **[!UICONTROL identidade]**, siga estas etapas:
 
-- Selecione o campo **[!UICONTROL emailId]**.
+- Selecione o campo **`--aepUserLdap--_emailId`**.
 - No lado direito, nas propriedades do campo, role para baixo até ver **[!UICONTROL Identidade]**. Marque a caixa de seleção de **[!UICONTROL Identidade]**.
 
 ![Assimilação de dados](./images/emailidid.png)
@@ -236,15 +236,15 @@ Para começar a definir esses campos como campos de **[!UICONTROL identidade]**,
 
 ![Assimilação de dados](./images/emailidprimidns.png)
 
-Em seguida, defina os outros campos para **[!UICONTROL ecid]** e **[!UICONTROL mobilener]** como identificadores padrão.
+Em seguida, você deve definir os outros campos para **`--aepUserLdap--_ecid`** e **`--aepUserLdap--_mobilenr`** como identificadores padrão.
 
-Selecione o campo **[!UICONTROL ecid]**. No lado direito, nas propriedades do campo, role para baixo até ver **[!UICONTROL Identidade]**. Marque a caixa de seleção de **[!UICONTROL Identidade]**.
+Selecione o campo **`--aepUserLdap--_ecid`**. No lado direito, nas propriedades do campo, role para baixo até ver **[!UICONTROL Identidade]**. Marque a caixa de seleção de **[!UICONTROL Identidade]**.
 Em seguida, selecione o namespace **[!UICONTROL ECID]** na lista de **[!UICONTROL Namespaces]**.
 Clique em **[!UICONTROL Aplicar]** para salvar as alterações.
 
 ![Assimilação de dados](./images/ecidid.png)
 
-Selecione o campo **[!UICONTROL mobilener]**. No lado direito, nas propriedades do campo, role para baixo até ver **[!UICONTROL Identidade]**. Marque a caixa de seleção de **[!UICONTROL Identidade]**.
+Selecione o campo **`--aepUserLdap--_mobilenr`**. No lado direito, nas propriedades do campo, role para baixo até ver **[!UICONTROL Identidade]**. Marque a caixa de seleção de **[!UICONTROL Identidade]**.
 Selecione o namespace **[!UICONTROL Telefone]** na lista de **[!UICONTROL Namespaces]**.
 Clique em **[!UICONTROL Aplicar]** para salvar as alterações.
 
@@ -415,12 +415,12 @@ Agora você tem um campo vazio. Você precisa configurar o campo acima conforme 
 
 - ecid:
 
-   - Nome do campo: **[!UICONTROL ecidweb]**
-   - Nome de exibição: **[!UICONTROL ecidweb]**
+   - Nome do campo: **`--aepUserLdap--_ecidweb`**
+   - Nome de exibição: **`--aepUserLdap--_ecidweb`**
    - Tipo: **[!UICONTROL Cadeia de caracteres]**
    - Grupo de campos: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-É assim que o campo [!UICONTROL ecid] deve parecer após a configuração inicial do campo:
+Esta é a aparência do campo `--aepUserLdap--_ecidweb` após a configuração inicial do campo:
 
 ![Assimilação de dados](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ Agora você tem um novo campo, mas esse campo ainda não foi definido como um ca
 
 ![Assimilação de dados](./images/3fieldsee.png)
 
-Para começar a definir esses campos como **[!UICONTROL Identidade]**-campos, selecione o campo **[!UICONTROL ecid]**.
+Para começar a definir esses campos como campos de **[!UICONTROL identidade]**, selecione o campo **`--aepUserLdap--_ecidweb`**.
 No lado direito, nas propriedades do campo, role para baixo até ver **[!UICONTROL Identidade]**. Marque a caixa de seleção de **[!UICONTROL Identidade]** e marque a caixa de seleção de **[!UICONTROL Identidade principal]**.
 Selecione o namespace **[!UICONTROL ECID]** na lista de **[!UICONTROL Namespaces]**.
 

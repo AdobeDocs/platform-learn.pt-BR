@@ -3,15 +3,15 @@ title: Serviços de tradução da Adobe Journey Optimizer
 description: Serviços de tradução da Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
-exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+exl-id: f518e1d9-2f5b-4ab3-b3dd-16f722f7177d
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
 
 ---
 
-# 3.2 Serviços de tradução da Adobe Journey Optimizer
+# 3.5 Adobe Journey Optimizer: serviços de tradução
 
 ## Objetivos de aprendizagem
 
@@ -24,15 +24,15 @@ ht-degree: 2%
 
 ## Exercícios
 
-[3.2.1 Provedor de traduções](./ex1.md)
+[3.5.1 Provedor de traduções](./ex1.md)
 
 Neste exercício, você configurará seu Provedor de traduções usando o Microsoft Translator e o configurará no Adobe Journey Optimizer.
 
-[3.2.2 Projeto de traduções](./ex2.md)
+[3.5.2 Projeto de traduções](./ex2.md)
 
 Neste exercício, você configurará seu Provedor de traduções usando o Microsoft Translator e o configurará no Adobe Journey Optimizer.
 
-[3.2.3 Adicionar idiomas ao email](./ex3.md)
+[3.5.3 Adicionar idiomas ao email](./ex3.md)
 
 Neste exercício, você adicionará idiomas ao email na campanha.
 

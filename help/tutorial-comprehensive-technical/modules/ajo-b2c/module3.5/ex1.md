@@ -1,19 +1,19 @@
 ---
-title: Provedor de traduções do AJO
-description: Provedor de traduções do AJO
+title: Introdução aos Serviços de tradução da AJO
+description: Introdução aos Serviços de tradução da AJO
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
-source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
 
-# 3.2.1 Provedor de traduções
+# 3.5.1 Provedor de traduções
 
-## 3.2.1.1 Configurar o Microsoft Azure Translator
+## 3.5.1.1 Configurar o Microsoft Azure Translator
 
 Ir para [https://portal.azure.com/#home](https://portal.azure.com/#home).
 
@@ -47,7 +47,7 @@ No menu esquerdo, vá para **Gerenciamento de Recursos** > **Chaves e Ponto de E
 
 ![Traduções](./images/transl7.png)
 
-## 3.2.1.2 Dicionário de localidade
+## 3.5.1.2 Dicionário de localidade
 
 Ir para [https://experience.adobe.com/](https://experience.adobe.com/). Clique em **Journey Optimizer**.
 
@@ -61,7 +61,7 @@ Você deverá ver isso.
 
 ![Traduções](./images/locale2.png)
 
-## 3.2.1.3 Configurar o provedor de traduções no AJO
+## 3.5.1.3 Configurar o provedor de traduções no AJO
 
 Ir para [https://experience.adobe.com/](https://experience.adobe.com/). Clique em **Journey Optimizer**.
 
@@ -91,7 +91,7 @@ Seu **Provedor de Traduções** está pronto para ser usado.
 
 ![Traduções](./images/transl13.png)
 
-## 3.2.1.4 Configurar projeto de traduções
+## 3.5.1.4 Configurar projeto de traduções
 
 Ir para [https://experience.adobe.com/](https://experience.adobe.com/). Clique em **Journey Optimizer**.
 
@@ -125,7 +125,7 @@ Seu projeto **Traduções** está pronto para ser usado.
 
 ![Traduções](./images/ajoprovider9.png)
 
-## 3.2.1.5 Definir configurações de idioma
+## 3.5.1.5 Definir configurações de idioma
 
 Vá para **Canais** > **Configurações Gerais** > **Configurações de Idioma**. Clique em **Criar configurações de idioma**.
 
@@ -171,8 +171,8 @@ Você concluiu este exercício.
 
 ## Próximas etapas
 
-Ir para [3.2.2 Criar sua campanha](./ex2.md)
+Ir para [3.5.2 Criar sua campanha](./ex2.md)
 
-Voltar para [Módulo 3.2](./ajotranslationsvcs.md){target="_blank"}
+Voltar para [Módulo 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Voltar para [Todos os módulos](./../../../overview.md){target="_blank"}
