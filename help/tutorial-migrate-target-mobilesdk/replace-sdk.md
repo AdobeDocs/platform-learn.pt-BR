@@ -1,0 +1,333 @@
+---
+title: Substitua o SDK - Migrar do Adobe Target para o Adobe Journey Optimizer - Extensão móvel de decisão
+description: Saiba como substituir o SDK ao migrar do Adobe Target para a extensão móvel do Adobe Journey Optimizer - Decisioning.
+exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
+source-git-commit: 62afd1f41b3d20c04782a2b18423683ed3b49d1f
+workflow-type: tm+mt
+source-wordcount: '677'
+ht-degree: 2%
+
+---
+
+# Substitua o SDK do Target pela opção Otimizar SDK
+
+Saiba como substituir os SDKs da Adobe Target pelos SDKs de otimização na implementação móvel. Uma substituição básica consiste nas seguintes etapas:
+
+* Atualizar dependências no Podfile ou arquivo `build.gradle`
+* Atualizar importações
+* Atualizar código de aplicativo
+
+>[!INFO]
+>
+>No ecossistema do Adobe Experience Platform Mobile SDK, as extensões são implementadas pelos SDKs importados para seus aplicativos que podem ter nomes diferentes:
+>
+> * **Target SDK** implementa a **extensão do Adobe Target**
+> * **Otimizar o SDK** implementa a **Adobe Journey Optimizer - Extensão de decisão**
+
+## Atualizar dependências
+
++++Exemplo de Android
+
+>[!BEGINTABS]
+
+>[!TAB Otimizar SDK]
+
+`build.gradle` dependências após a migração
+
+```Java
+implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
+implementation 'com.adobe.marketing.mobile:edgeconsent'
+implementation 'com.adobe.marketing.mobile:edgeidentity'
+implementation 'com.adobe.marketing.mobile:edge'
+implementation 'com.adobe.marketing.mobile:assurance'
+implementation 'com.adobe.marketing.mobile:core'
+implementation 'com.adobe.marketing.mobile:identity'
+implementation 'com.adobe.marketing.mobile:lifecycle'
+implementation 'com.adobe.marketing.mobile:signal'
+implementation 'com.adobe.marketing.mobile:userprofile'
+```
+
+
+>[!TAB SDK de Destino]
+
+`build.gradle` dependências antes da migração
+
+```Java
+implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
+implementation 'com.adobe.marketing.mobile:analytics'
+implementation 'com.adobe.marketing.mobile:target'
+implementation 'com.adobe.marketing.mobile:core'
+implementation 'com.adobe.marketing.mobile:identity'
+implementation 'com.adobe.marketing.mobile:lifecycle'
+implementation 'com.adobe.marketing.mobile:signal'
+implementation 'com.adobe.marketing.mobile:userprofile'
+```
+
+
+>[!ENDTABS]
+
++++
+
++++ Exemplo do iOS
+
+>[!BEGINTABS]
+
+
+>[!TAB Otimizar SDK]
+
+`Podfile` dependências após a migração
+
+```Swift
+use_frameworks!
+target 'YourAppTarget' do
+    pod 'AEPCore', '~> 5.0'
+    pod 'AEPEdge', '~> 5.0'
+    pod 'AEPEdgeIdentity', '~> 5.0'
+    pod 'AEPOptimize', '~> 5.0'
+end
+```
+
+>[!TAB SDK de Destino]
+
+`Podfile` dependências antes da migração
+
+```Swift
+use_frameworks!
+pod 'AEPAnalytics', '~> 5.0'
+pod 'AEPTarget', '~> 5.0'
+pod 'AEPCore', '~> 5.0'
+pod 'AEPIdentity', '~> 5.0'
+pod 'AEPSignal', '~>5.0'
+pod 'AEPLifecycle', '~>5.0'
+pod 'AEPUserProfile', '~> 5.0'
+```
+
+>[!ENDTABS]
+
++++
+
+## Atualizar importações e código
+
++++ Exemplo do Android
+
+>[!BEGINTABS]
+
+>[!TAB Otimizar SDK]
+
+Código de inicialização Java após a migração
+
+```Java
+import com.adobe.marketing.mobile.AdobeCallback;
+import com.adobe.marketing.mobile.Assurance;
+import com.adobe.marketing.mobile.Edge;
+import com.adobe.marketing.mobile.Extension;
+import com.adobe.marketing.mobile.Identity;
+import com.adobe.marketing.mobile.Lifecycle;
+import com.adobe.marketing.mobile.LoggingMode;
+import com.adobe.marketing.mobile.MobileCore;
+import com.adobe.marketing.mobile.Signal;
+import com.adobe.marketing.mobile.UserProfile;
+import com.adobe.marketing.mobile.edge.consent.Consent;
+import com.adobe.marketing.mobile.edge.identity.Identity;
+import java.util.Arrays;
+import java.util.List;
+...
+import android.app.Application;
+...
+public class MainApp extends Application {
+...
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        MobileCore.setApplication(this);
+        MobileCore.setLogLevel(LoggingMode.DEBUG);
+        ...
+        List<Class<? extends Extension>> extensions = Arrays.asList(
+            Consent.EXTENSION,
+            com.adobe.marketing.mobile.edge.identity.Identity.EXTENSION,
+            com.adobe.marketing.mobile.Identity.EXTENSION,
+            Edge.EXTENSION,
+            Assurance.EXTENSION,
+            Lifecycle.EXTENSION,
+            Signal.EXTENSION,
+            UserProfile.EXTENSION
+        );
+ 
+ 
+        MobileCore.registerExtensions(extensions, new AdobeCallback () {
+            @Override
+            public void call(Object o) {
+                MobileCore.configureWithAppID(<Environment File ID>);
+            }
+        });
+    }
+}
+```
+
+>[!TAB SDK de Destino]
+
+Código de inicialização Java antes da migração
+
+```Java
+import com.adobe.marketing.mobile.AdobeCallback;
+import com.adobe.marketing.mobile.Analytics;
+import com.adobe.marketing.mobile.Extension;
+import com.adobe.marketing.mobile.Identity;
+import com.adobe.marketing.mobile.Lifecycle;
+import com.adobe.marketing.mobile.LoggingMode;
+import com.adobe.marketing.mobile.MobileCore;
+import com.adobe.marketing.mobile.Signal;
+import com.adobe.marketing.mobile.Target;
+import com.adobe.marketing.mobile.UserProfile;
+import java.util.Arrays;
+import java.util.List;
+...
+import android.app.Application;
+...
+public class MainApp extends Application {
+...
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        MobileCore.setApplication(this);
+        MobileCore.setLogLevel(LoggingMode.DEBUG);
+        ...
+        List<Class<? extends Extension>> extensions = Arrays.asList(
+            Analytics.EXTENSION,
+            Target.EXTENSION,
+            Identity.EXTENSION,
+            Lifecycle.EXTENSION,
+            Signal.EXTENSION,
+            UserProfile.EXTENSION
+        );
+ 
+ 
+        MobileCore.registerExtensions(extensions, new AdobeCallback () {
+            @Override
+            public void call(Object o) {
+                MobileCore.configureWithAppID(<Environment File ID>);
+            }
+        });
+    }
+}
+```
+
+>[!ENDTABS]
+
++++
+
++++ iOS
+
+>[!BEGINTABS]
+
+>[!TAB Otimizar SDK]
+
+Código de inicialização Swift após a migração
+
+```Swift
+import AEPCore
+import AEPAnalytics
+import AEPTarget
+import AEPIdentity
+import AEPLifecycle
+import AEPSignal
+import AEPServices
+import AEPUserProfile
+...
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        MobileCore.setLogLevel(.debug)
+        let appState = application.applicationState
+        ...
+        let extensions = [
+            Consent.self,
+            AEPEdgeIdentity.Identity.self,
+            AEPIdentity.Identity.self,
+            Edge.self,
+            Assurance.self,
+            Lifecycle.self,
+            Signal.self,
+            UserProfile.self
+        ]
+        MobileCore.registerExtensions(extensions, {
+        MobileCore.configureWith(<Environment File ID>)
+        if appState != .background {
+            MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
+            }
+        })
+        ...
+        return true
+    }
+}
+```
+
+>[!TAB SDK de Destino]
+
+Código de inicialização Swift antes da migração
+
+```Swift
+import AEPCore
+import AEPAnalytics
+import AEPTarget
+import AEPIdentity
+import AEPLifecycle
+import AEPSignal
+import AEPServices
+import AEPUserProfile
+...
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        MobileCore.setLogLevel(.debug)
+        let appState = application.applicationState
+        ...
+        let extensions = [
+            Analytics.self,
+            Target.self,
+            Identity.self,
+            Lifecycle.self,
+            Signal.self,
+            UserProfile.self
+        ]
+        MobileCore.registerExtensions(extensions, {
+        MobileCore.configureWith(<Environment File ID>)
+        if appState != .background {
+            MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
+            }
+        })
+        ...
+        return true
+    }
+}
+```
+
+>[!ENDTABS]
+
++++
+
+## Comparação de funções
+
+Muitas funções de extensão do Target têm uma abordagem equivalente usando a extensão do Decisioning descrita na tabela abaixo. Para obter mais detalhes sobre as [funções](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/), consulte o Guia do Desenvolvedor do Adobe Target.
+
+| Extensão do Target | Extensão de decisão | Notas |
+| --- | --- | --- | 
+| `prefetchContent` | `updatePropositions` |  |
+| `retrieveLocationContent` | `getPropositions` | Ao usar a API `getPropositions`, não é feita nenhuma chamada remota para buscar escopos não armazenados em cache na SDK. |
+| `displayedLocations` | Oferta -> `displayed()` | Além disso, o método de oferta `generateDisplayInteractionXdm` pode ser usado para gerar o XDM para exibição de item. Posteriormente, a API sendEvent da SDK de rede da Edge pode ser usada para anexar dados XDM adicionais e de formato livre, e enviar um Evento de experiência ao remoto. |
+| `clickedLocation` | Oferta -> `tapped()` | Além disso, o método de oferta `generateTapInteractionXdm` pode ser usado para gerar o XDM para toque de item. Posteriormente, a API sendEvent da SDK de rede da Edge pode ser usada para anexar dados XDM adicionais e de formato livre, e enviar um Evento de experiência ao remoto. |
+| `clearPrefetchCache` | `clearCachedPropositions` |  |
+| `resetExperience` | n/d | Use a API `removeIdentity` da Identidade para a extensão do Edge Network para o SDK parar de enviar o identificador de visitante para a rede da Edge. Para obter mais detalhes, consulte [a documentação da API removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Observação: a API `resetIdentities` do Mobile Core apaga todas as identidades armazenadas na SDK, incluindo a Experience Cloud ID (ECID), e ela deve ser usada com moderação! |
+| `getSessionId` | n/d | O identificador de resposta `state:store` carrega informações relacionadas à sessão. A extensão de rede do Edge ajuda a gerenciá-la anexando itens de armazenamento de estado não expirados a solicitações subsequentes. |
+| `setSessionId` | n/d | O identificador de resposta `state:store` carrega informações relacionadas à sessão. A extensão de rede do Edge ajuda a gerenciá-la anexando itens de armazenamento de estado não expirados a solicitações subsequentes. |
+| `getThirdPartyId` | n/d | Use a API updateIdentities da extensão Identity for Edge Network para fornecer o valor da ID de terceiros. Em seguida, configure o namespace da ID de terceiros no fluxo de dados. Para obter mais detalhes, consulte [a documentação móvel da ID de terceiros do Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
+| `setThirdPartyId` | n/d | Use a API updateIdentities da extensão Identity for Edge Network para fornecer o valor da ID de terceiros. Em seguida, configure o namespace da ID de terceiros no fluxo de dados. Para obter mais detalhes, consulte [a documentação móvel da ID de terceiros do Target](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). |
+| `getTntId` | n/d | O identificador de resposta `locationHint:result` carrega as informações de dica de localização do Target. Presume-se que a borda do Target esteja co-localizada com a Experience Edge. <br> <br>A extensão de rede do Edge usa a dica de local do EdgeNetwork para determinar o cluster de rede da Edge para o qual enviar solicitações. Para compartilhar a dica de local de rede do Edge entre SDKs (aplicativos híbridos), use as APIs do `getLocationHint` e do `setLocationHint` da extensão do Edge Network. Para obter mais detalhes, consulte [a `getLocationHint` documentação da API](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
+| `setTntId` | n/d | O identificador de resposta `locationHint:result` carrega as informações de dica de localização do Target. Presume-se que a borda do Target esteja co-localizada com a Experience Edge. <br> <br>A extensão de rede do Edge usa a dica de local do EdgeNetwork para determinar o cluster de rede da Edge para o qual enviar solicitações. Para compartilhar a dica de local de rede do Edge entre SDKs (aplicativos híbridos), use as APIs do `getLocationHint` e do `setLocationHint` da extensão do Edge Network. Para obter mais detalhes, consulte [a `getLocationHint` documentação da API](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). |
+
+
+Em seguida, saiba como [solicitar e renderizar atividades](render-activities.md) para a página.
+
+>[!NOTE]
+>
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
