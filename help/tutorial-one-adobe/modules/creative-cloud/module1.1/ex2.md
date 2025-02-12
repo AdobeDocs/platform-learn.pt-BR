@@ -1,21 +1,21 @@
 ---
-title: Otimizar seu processo Firefly usando o Microsoft Azure e URLs pré-assinadas
-description: Saiba como otimizar seu processo de Firefly usando o Microsoft Azure e URLs pré-assinadas
+title: Otimizar seu processo do Firefly usando o Microsoft Azure e URLs pré-assinadas
+description: Saiba como otimizar seu processo do Firefly usando o Microsoft Azure e URLs pré-assinadas
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
 
 ---
 
-# 1.1.2 Otimizar o processo de Firefly usando o Microsoft Azure e URLs pré-assinados
+# 1.1.2 Otimizar o processo do Firefly usando o Microsoft Azure e URLs pré-assinados
 
-Saiba como otimizar seu processo de Firefly usando o Microsoft Azure e URLs pré-assinadas.
+Saiba como otimizar seu processo do Firefly usando o Microsoft Azure e URLs pré-assinadas.
 
 ## 1.1.2.1 Criar uma assinatura do Azure
 
@@ -77,7 +77,7 @@ Saiba como otimizar seu processo de Firefly usando o Microsoft Azure e URLs pré
 
    ![Armazenamento do Azure](./images/azs7.png){zoomable="yes"}
 
-1. Use `--aepUserLdap--`para o nome e selecione **Criar**.
+1. Use `--aepUserLdap--` para o nome e selecione **Criar**.
 
    ![Armazenamento do Azure](./images/azs8.png){zoomable="yes"}
 
@@ -158,7 +158,7 @@ Isto aparece no **Corpo**.
 
    ![Armazenamento do Azure](./images/az24.png){zoomable="yes"}
 
-1. Abra a nova imagem dos Serviços de Firefly de resposta em seu navegador.
+1. Abra a nova imagem de resposta dos Serviços da Firefly no navegador.
 
    ![Armazenamento do Azure](./images/az25.png){zoomable="yes"}
 
@@ -196,7 +196,7 @@ Para usar o carregamento de arquivo programático com as Contas de Armazenamento
 
    ![Armazenamento do Azure](./images/az30.png){zoomable="yes"}
 
-1. Altere o nome da solicitação vazia para **Carregar arquivo para a Conta de Armazenamento do Azure**, altere o **Tipo de Solicitação** para **PUT** e cole a URL do token SAS na seção URL e selecione **Corpo**.
+1. Altere o nome da solicitação vazia para **Fazer upload do arquivo para a Conta de Armazenamento do Azure**, altere o **Tipo de Solicitação** para **PUT** e cole a URL do token SAS na seção de URL e selecione **Corpo**.
 
    ![Armazenamento do Azure](./images/az31.png){zoomable="yes"}
 
@@ -373,6 +373,6 @@ Para interações futuras de API, o principal elemento que muda é o nome do ati
 
 Ir para [Trabalho com APIs do Photoshop](./ex3.md){target="_blank"}
 
-Retorne para [Visão Geral dos Serviços Adobe Firefly](./firefly-services.md){target="_blank"}
+Retorne para [Visão geral dos Serviços da Adobe Firefly](./firefly-services.md){target="_blank"}
 
 Voltar para [Todos os Módulos](./../../../overview.md){target="_blank"}

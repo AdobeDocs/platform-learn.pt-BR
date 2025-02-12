@@ -1,10 +1,10 @@
 ---
-title: AEM CS - plug-in MarTech
-description: AEM CS - plug-in MarTech
+title: AEM CS - Plug-in MarTech
+description: AEM CS - Plug-in MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.6 Plug-in AEM Edge Delivery Services MarTech
 
-O plug-in AEM MarTech ajuda você a configurar rapidamente uma pilha completa de MarTech para seu projeto AEM.
+O plug-in AEM MarTech ajuda a configurar rapidamente uma pilha completa do MarTech para seu projeto do AEM.
 
 >[!NOTE]
 >
->Este plug-in está atualmente disponível para clientes em colaboração com a engenharia AEM por meio de projetos de coinovação. Você pode encontrar mais informações em [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
+>Este plug-in está disponível atualmente para clientes em colaboração com a Engenharia da AEM por meio de projetos de coinovação. Você pode encontrar mais informações em [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
 ## 2.1.6.1 Adicionar o plug-in ao repositório
 
@@ -28,7 +28,7 @@ Navegue até a pasta que você está usando para o seu **citisignal** repositór
 Você verá isso. Cole o seguinte comando e pressione **enter**.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 Você deverá ver isso.
@@ -171,7 +171,7 @@ No menu esquerdo, vá para **Ambientes** e clique no ícone **Instalar** do ambi
 
 ![AEMCS](./images/scriptsvar4.png){zoomable="yes"}
 
-Você encontrará a URL necessária, mas ela estará dentro de uma tag HTML `<script></script>`. Você deve copiar apenas a parte que começa em `https` até `.min.js`.
+Você encontrará a URL necessária, mas ela estará dentro de uma tag do HTML `<script></script>`. Você deve copiar apenas a parte que começa em `https` até `.min.js`.
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 
@@ -317,13 +317,13 @@ Clique em **Origem de push** para enviar suas alterações para o repositório G
 
 ## 2.1.6.4 Extensão ACDL na propriedade Tags
 
-Para que o plug-in AEM Edge Delivery Services MarTech funcione corretamente, é necessário adicionar a extensão para
+Para que o plug-in AEM Edge Delivery Services MarTech funcione corretamente, é necessário adicionar a extensão do para
 
 Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Procure e abra a propriedade Tags para Web, que é chamada `--aepUserLdap-- - One Adobe (DD/MM/YYYY)`.
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-Ir para **Extensões**, para **Catálogo**. Clique na **Camada de Dados do Cliente Adobe** da extensão e em **Instalar**.
+Ir para **Extensões**, para **Catálogo**. Clique na extensão **Camada de Dados de Clientes Adobe** e em **Instalar**.
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 
