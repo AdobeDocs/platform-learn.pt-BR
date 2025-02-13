@@ -1,12 +1,12 @@
 ---
 title: Trabalho com APIs do Photoshop
-description: Saiba como trabalhar com as APIs da Photoshop e os Serviços de Firefly
+description: Saiba como trabalhar com as APIs do Photoshop e os serviços da Firefly
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 1.1.3 Trabalho com APIs do Photoshop
 
-Saiba como trabalhar com as APIs da Photoshop e os Serviços de Firefly.
+Saiba como trabalhar com as APIs do Photoshop e os Serviços da Firefly.
 
-## 1.1.3.1 Atualize a integração do Adobe I/O
+## 1.1.3.1 Atualizar a integração do Adobe I/O
 
 1. Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
-![Adobe I/O Nova integração](./images/iohome.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/iohome.png){zoomable="yes"}
 
 1. Vá para **Projetos** e selecione o projeto criado no exercício anterior, chamado `--aepUserLdap-- Firefly`.
 
@@ -41,17 +41,17 @@ Saiba como trabalhar com as APIs da Photoshop e os Serviços de Firefly.
 
 Em seguida, é necessário selecionar um perfil de produto que defina quais permissões estão disponíveis para essa integração.
 
-1. Selecione **Configuração padrão dos serviços de Firefly** e **Configuração padrão dos serviços de automação de Creative Cloud**.
+1. Selecione **Configuração Padrão dos Serviços Firefly** e **Configuração Padrão dos Serviços Creative Cloud Automation**.
 
 1. Selecione **Salvar API configurada**.
 
 ![Armazenamento do Azure](./images/ps5.png){zoomable="yes"}
 
-Seu projeto Adobe I/O foi atualizado para funcionar com as APIs de serviços Photoshop e Firefly.
+Seu projeto do Adobe I/O foi atualizado para funcionar com as APIs de serviços da Photoshop e da Firefly.
 
 ![Armazenamento do Azure](./images/ps6.png){zoomable="yes"}
 
-## 1.1.3.2 Interagir programaticamente com um arquivo PSD
+## 1.1.3.2 Interagir programaticamente com um arquivo do PSD
 
 >[!IMPORTANT]
 >
@@ -93,9 +93,9 @@ Você deve receber a resposta **Bem-vindo à API do Photoshop!**.
 
 ![Armazenamento do Azure](./images/ps11.png){zoomable="yes"}
 
-Em seguida, para interagir programaticamente com o arquivo PSD **citisignal-fiber.psd**, você precisa carregá-lo na sua conta de armazenamento. Você pode fazer isso manualmente — arrastando e soltando-o no contêiner usando o Azure Storage Explorer — mas dessa vez você deve fazer isso por meio da API.
+Em seguida, para interagir programaticamente com o arquivo do PSD **citisignal-fiber.psd**, você precisa carregá-lo na sua conta de armazenamento. Você pode fazer isso manualmente — arrastando e soltando-o no contêiner usando o Azure Storage Explorer — mas dessa vez você deve fazer isso por meio da API.
 
-### Carregar PSD para o Azure
+### Fazer upload do PSD para o Azure
 
 1. No Postman, abra a solicitação **Fazer upload do PSD para a conta de armazenamento do Azure**. No exercício anterior, você configurou essas variáveis de ambiente no Postman, que serão usadas agora:
 
@@ -104,7 +104,7 @@ Em seguida, para interagir programaticamente com o arquivo PSD **citisignal-fibe
 - `AZURE_STORAGE_SAS_READ`
 - `AZURE_STORAGE_SAS_WRITE`
 
-Como você pode ver na solicitação **Carregar PSD para a Conta de Armazenamento do Azure**, a URL está configurada para usar essas variáveis.
+Como você pode ver na solicitação **Fazer upload do PSD para a conta de armazenamento do Azure**, a URL está configurada para usar essas variáveis.
 
 ![Armazenamento do Azure](./images/ps12.png){zoomable="yes"}
 
@@ -126,9 +126,9 @@ Se você usar o Azure Storage Explorer para examinar seu arquivo, atualize sua p
 
 ### API do Photoshop - Obter manifesto
 
-Em seguida, é necessário obter o arquivo de manifesto do arquivo PSD.
+Em seguida, é necessário obter o arquivo de manifesto do arquivo do PSD.
 
-1. No Postman, abra a solicitação **Photoshop - Obter Manifesto de PSD**. Ir para **Corpo**.
+1. No Postman, abra a solicitação **Photoshop - Obter Manifesto do PSD**. Ir para **Corpo**.
 
 O corpo deve ter esta aparência:
 
@@ -154,7 +154,7 @@ Na resposta, agora você vê um link. Como as operações no Photoshop às vezes
 
 ![Armazenamento do Azure](./images/ps17.png){zoomable="yes"}
 
-1. Para ler o arquivo de status, abra a solicitação **Photoshop - Obter Status PS**. Você pode ver que esta solicitação está usando uma variável como URL, que é uma variável definida pela solicitação anterior enviada, **Photoshop - Obter Manifesto de PSD**. As variáveis estão definidas nos **Scripts** de cada solicitação. Selecione **Enviar**.
+1. Para ler o arquivo de status, abra a solicitação **Photoshop - Obter Status PS**. Você pode ver que esta solicitação está usando uma variável como URL, que é uma variável definida pela solicitação anterior enviada, **Photoshop - Obter Manifesto do PSD**. As variáveis estão definidas nos **Scripts** de cada solicitação. Selecione **Enviar**.
 
 ![Armazenamento do Azure](./images/ps18.png){zoomable="yes"}
 
@@ -239,8 +239,8 @@ Você também pode ver esse arquivo em seu contêiner usando o explorador do Arm
 
 ## Próximas etapas
 
-Ir para [API de Modelos Personalizados do Firefly](./ex4.md){target="_blank"}
+Ir para a [API de Modelos personalizados do Firefly](./ex4.md){target="_blank"}
 
-Retorne para [Visão Geral dos Serviços Adobe Firefly](./firefly-services.md){target="_blank"}
+Retorne para [Visão geral dos Serviços da Adobe Firefly](./firefly-services.md){target="_blank"}
 
 Voltar para [Todos os Módulos](./../../../overview.md){target="_blank"}
