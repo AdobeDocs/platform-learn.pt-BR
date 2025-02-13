@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - Assimilação de dados de fon
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1562'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ Neste exercício, o objetivo é integrar dados externos como dados do CRM na pla
 - Saiba como gerar dados de teste
 - Saiba como assimilar CSV
 - Saiba como usar a interface da Web para assimilação de dados por meio de fluxos de trabalho
-- Compreender os recursos de governança de dados do Experience Platform
+- Entender os recursos de governança de dados do Experience Platform
 
 ## Recursos
 
@@ -53,6 +53,10 @@ No modelo, você observará os seguintes campos:
 - country_code
 - city
 - país
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 Todos esses campos foram definidos para produzir dados compatíveis com a Platform.
 
@@ -68,7 +72,9 @@ Com seu arquivo CSV pronto, você pode prosseguir com a assimilação na AEP.
 
 ### Verificar o conjunto de dados
 
-Abra o [Adobe Experience Platform](https://experience.adobe.com/platform) e vá para **[!UICONTROL Conjuntos de Dados]**.
+Ir para [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+![Assimilação de dados](./images/home.png)
 
 Antes de continuar, você precisa selecionar uma **[!UICONTROL sandbox]**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``.
 
@@ -115,8 +121,6 @@ Todo esquema precisa ter um descritor primário personalizado definido. No caso 
 Você também pode ver que nossa identidade primária está localizada em `--aepTenantId--.identification.core.crmId`, vinculada ao [!UICONTROL namespace] do **[!UICONTROL Sistema de demonstração - CRMID]**.
 
 ![Assimilação de dados](./images/schema_descriptor.png)
-
-
 
 Todos os esquemas e conjuntos de dados que devem ser usados no [!UICONTROL Perfil de cliente em tempo real] devem ter um [!UICONTROL identificador principal]. Este [!UICONTROL Identificador Principal] é o identificador de usuário pela marca de um cliente nesse conjunto de dados. No caso de um conjunto de dados do CRM, pode ser o endereço de email ou a ID do CRM, no caso de um conjunto de dados da central de atendimento, pode ser o número de celular de um cliente.
 
@@ -229,6 +233,24 @@ O campo de Esquema do Source **id** deve ser vinculado ao campo de destino **_id
 O campo de Esquema do Source **last_name** deve estar vinculado ao campo de destino **person.name.lastName**.
 
 ![Assimilação de dados](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+O campo de Esquema do Source **last_name** deve estar vinculado ao campo de destino **consents.marketing.email.val**.
+
+![Assimilação de dados](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+O campo Esquema do Source **last_name** deve estar vinculado ao campo de destino **consents.marketing.CommercialEmail.val**.
+
+![Assimilação de dados](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+O campo de Esquema do Source **last_name** deve estar vinculado ao campo de destino **consents.marketing.any.val**.
+
+![Assimilação de dados](./images/cons3.png)
 
 Agora você deve ter isso. Clique em **Concluir**.
 
