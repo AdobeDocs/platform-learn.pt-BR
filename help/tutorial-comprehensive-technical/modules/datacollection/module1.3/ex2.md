@@ -4,9 +4,9 @@ description: Foundation - FAC - Criar esquemas, modelo de dados e links
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
+source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 2%
 
 ---
@@ -73,11 +73,11 @@ Selecione o banco de dados federado e clique em **+ Adicionar tabelas**.
 
 Você verá isso. Selecione as 5 tabelas criadas no Snowflake antes de:
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 Clique em **Adicionar**.
 
@@ -98,11 +98,11 @@ Clique em **Criar**.
 
 ![FAC](./images/fdb8.png)
 
-Você verá isso. Você pode clicar em qualquer schema e revisar as informações. Como exemplo, clique em **CK_PERSONS**.
+Você verá isso. Você pode clicar em qualquer schema e revisar as informações. Como exemplo, clique em **—aepUserLdap—_PERSONS**.
 
 ![FAC](./images/fdb9.png)
 
-Você verá isso, com a capacidade de editar a configuração. Clique em **Dados** para ver uma amostra dos dados que estão no banco de dados Snowflake.
+Você verá isso, com a capacidade de editar a configuração. Clique em **Dados** para ver uma amostra dos dados que estão no banco de dados do Snowflake.
 
 ![FAC](./images/fdb10.png)
 
@@ -130,57 +130,58 @@ Selecione seus esquemas e clique em **Adicionar**.
 
 Você verá isso. Clique em **Salvar**.
 
-### `CK_USERS` - `CK_PERSONS`
+![FAC](./images/fdb16.png)
+
+### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
 
 Agora é possível começar a definir links entre esquemas. Para começar a definir um link, você precisa clicar em **Criar links**.
 
 ![FAC](./images/fdb16.png)
 
-Primeiro, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_PERSONS`.
+Primeiro, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_PERSONS`.
 
 Clique em **Adicionar**.
 
 ![FAC](./images/fdb18.png)
 
-
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb17.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `CK_HOUSEHOLDS` e `CK_PERSONS`.
+Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_HOUSEHOLDS` e `--aepUserLdap--_PERSONS`.
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb20.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_MONTHLY_DATA_USAGE`.
+Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb22.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_HOUSEHOLDS`.
+Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb24.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `CK_USERS` e `CK_MOBILE_DATA_USAGE`.
+Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_MOBILE_DATA_USAGE`.
 
 ![FAC](./images/fdb25.png)
 
