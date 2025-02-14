@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados - Configurar esquemas e definir
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser se
 
 ![Assimilação de dados](./images/sb1.png)
 
-No Adobe Experience Platform, clique em **[!UICONTROL Esquemas]** no menu à esquerda da tela. Você verá a lista de [!UICONTROL Esquemas] disponíveis.
+No Adobe Experience Platform, clique em **[!UICONTROL Esquemas]** no menu à esquerda da tela. Você verá a lista de [!UICONTROL Esquemas] disponíveis. Você deve criar um novo schema. Para criar um novo esquema, clique em **[!UICONTROL + Criar esquema]**.
 
 ![Assimilação de dados](./images/menuschemas.png)
-
-Você deve criar um novo schema. Para criar um novo esquema, clique em **[!UICONTROL + Criar esquema]**.
-
-![Assimilação de dados](./images/createschema.png)
 
 Selecione **Manual** e clique em **Selecionar**.
 
@@ -156,8 +152,8 @@ Depois de clicar no botão **[!UICONTROL + Adicionar campo]**, você verá um no
 
 Agora você deve inserir as informações desse novo campo, usando estas definições de objeto:
 
-- Nome do campo: **[!UICONTROL identificação]**
-- Nome de exibição: **[!UICONTROL identificação]**
+- Nome do campo: **`--aepUserLdap--_identification`**
+- Nome de exibição: **`--aepUserLdap--_identification`**
 - Tipo: **[!UICONTROL objeto]**
 - Grupo de campos: **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Seu Esquema agora está configurado para fazer parte do [!UICONTROL Perfil de cl
 
 ![Assimilação de dados](./images/sureyps.png)
 
-### O que um cliente faz?
+## O que este cliente faz?
 
 Captura da resposta à pergunta **O que este cliente faz?O** da sua organização é feito por meio, por exemplo, de uma exibição de produto em uma página de produto.
 
@@ -305,13 +301,9 @@ Antes de continuar, você precisa selecionar uma **[!UICONTROL sandbox]**. A [!U
 
 ![Assimilação de dados](./images/sb1.png)
 
-No Adobe Experience Platform, clique em **[!UICONTROL Esquemas]** no menu no lado esquerdo da tela e vá para **Procurar**.
+No Adobe Experience Platform, clique em **[!UICONTROL Esquemas]** no menu no lado esquerdo da tela e vá para **Procurar**. Você deve criar um novo schema. Para criar um novo esquema, clique no botão **[!UICONTROL + Criar Esquema]**.
 
 ![Assimilação de dados](./images/menuschemas.png)
-
-Em [!UICONTROL Esquemas], você verá todos os esquemas existentes. Você deve criar um novo schema. Para criar um novo esquema, clique no botão **[!UICONTROL + Criar Esquema]**.
-
-![Assimilação de dados](./images/schemasee.png)
 
 Selecione **Manual** e clique em **Selecionar**.
 
@@ -390,8 +382,8 @@ Depois de clicar no botão **+**, você verá um novo campo sem título no esque
 
 Use esta opção para definir seu novo campo:
 
-- Nome do campo: **[!UICONTROL identificação]**
-- Nome de exibição: **[!UICONTROL identificação]**
+- Nome do campo: **`--aepUserLdap--_identification`**
+- Nome de exibição: **`--aepUserLdap--_identification`**
 - Tipo: **[!UICONTROL objeto]**
 - Grupo de campos: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 

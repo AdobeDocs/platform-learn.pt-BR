@@ -4,9 +4,9 @@ description: Foundation - FAC - Criar esquemas, modelo de dados e links
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '648'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ Selecione seus esquemas e clique em **Adicionar**.
 
 Você verá isso. Clique em **Salvar**.
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
+### USUÁRIOS - PESSOAS
 
 Agora é possível começar a definir links entre esquemas. Para começar a definir um link, você precisa clicar em **Criar links**.
 
@@ -143,7 +143,7 @@ Clique em **Adicionar**.
 ![FAC](./images/fdb18.png)
 
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### FAMÍLIAS - PESSOAS
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
@@ -153,7 +153,7 @@ Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_HOUSEHOLDS`
 
 ![FAC](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### USUÁRIOS - MONTHLY_DATA_USAGE
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
@@ -164,7 +164,7 @@ Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `-
 ![FAC](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### USUÁRIOS - FAMÍLIAS
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
@@ -174,7 +174,7 @@ Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `-
 
 ![FAC](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### USUÁRIOS - MOBILE_DATA_USAGE
 
 Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
