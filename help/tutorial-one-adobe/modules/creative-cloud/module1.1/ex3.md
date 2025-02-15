@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -17,65 +17,27 @@ ht-degree: 0%
 
 Saiba como trabalhar com as APIs do Photoshop e os Serviços da Firefly.
 
-## 1.1.3.1 Atualizar a integração do Adobe I/O
+## 1.1.3.1 Pré-requisitos
 
-1. Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
+Antes de continuar com este exercício, você precisa ter concluído a configuração do [seu projeto do Adobe I/O](./../../../modules/getting-started/gettingstarted/ex6.md) e também precisa ter configurado um aplicativo para interagir com APIs, como o [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) ou o [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-![Nova integração do Adobe I/O](./images/iohome.png){zoomable="yes"}
+## 1.1.3.2 Adobe I/O - access_token
 
-1. Vá para **Projetos** e selecione o projeto criado no exercício anterior, chamado `--aepUserLdap-- Firefly`.
+Na coleção **Adobe IO - OAuth**, selecione a solicitação denominada **POST - Obter Token de Acesso** e selecione **Enviar**. A resposta deve conter um novo **accestoken**.
 
-![Armazenamento do Azure](./images/ps1.png){zoomable="yes"}
+![Postman](./images/ioauthresp.png){zoomable="yes"}
 
-1. Selecione **+ Adicionar ao Projeto** e **API**.
+## 1.1.3.3 Interagir programaticamente com um arquivo do PSD
 
-![Armazenamento do Azure](./images/ps2.png){zoomable="yes"}
+Baixe o [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} na área de trabalho.
 
-1. Selecione **Creative Cloud** e escolha **Photoshop - Firefly Services**. Selecione **Próximo**.
-
-![Armazenamento do Azure](./images/ps3.png){zoomable="yes"}
-
-1. Selecione **Próximo**.
-
-![Armazenamento do Azure](./images/ps4.png){zoomable="yes"}
-
-Em seguida, é necessário selecionar um perfil de produto que defina quais permissões estão disponíveis para essa integração.
-
-1. Selecione **Configuração Padrão dos Serviços Firefly** e **Configuração Padrão dos Serviços Creative Cloud Automation**.
-
-1. Selecione **Salvar API configurada**.
-
-![Armazenamento do Azure](./images/ps5.png){zoomable="yes"}
-
-Seu projeto do Adobe I/O foi atualizado para funcionar com as APIs de serviços da Photoshop e da Firefly.
-
-![Armazenamento do Azure](./images/ps6.png){zoomable="yes"}
-
-## 1.1.3.2 Interagir programaticamente com um arquivo do PSD
-
-1. Baixe o [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} na área de trabalho.
-
-1. Abra **citisignal-fiber.psd** no Photoshop.
+Abra **citisignal-fiber.psd** no Photoshop.
 
 ![Armazenamento do Azure](./images/ps7.png){zoomable="yes"}
 
 No painel **Camadas**, o designer do arquivo deu um nome exclusivo a cada camada. Você pode ver as informações da camada abrindo o arquivo PSD no Photoshop, mas também pode fazer isso de forma programática.
 
 Vamos enviar sua primeira solicitação de API para APIs do Photoshop.
-
-1. No Postman, antes de enviar solicitações de API para o Photoshop, é necessário autenticar no Adobe I/O. Abra a solicitação anterior com o nome **POST - Obter Token de Acesso**.
-
-1. Vá para **Params** e verifique se o parâmetro **Scope** está definido corretamente. O **Valor** para **Escopo** deve ser semelhante a:
-
-`openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
-
-1. Selecione **Enviar**.
-
-![Armazenamento do Azure](./images/ps8.png){zoomable="yes"}
-
-Agora você tem um token de acesso válido para interagir com as APIs do Photoshop.
-
-![Armazenamento do Azure](./images/ps9.png){zoomable="yes"}
 
 ### API do Photoshop - Hello World
 

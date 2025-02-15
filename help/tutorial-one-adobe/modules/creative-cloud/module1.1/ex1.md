@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
+source-git-commit: 5ee9c3b7cde5444ecceca4b01cc275d6263d8a59
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -17,156 +17,25 @@ ht-degree: 0%
 
 Saiba como usar o Postman e o Adobe I/O para consultar APIs de serviços da Adobe Firefly.
 
-## 1.1.1.1 Configurar o projeto do Adobe I/O
+## 1.1.1.1 Pré-requisitos
 
-Neste exercício, o Adobe I/O é usado para consultar as APIs de serviços da Firefly. Siga estas etapas para configurar o Adobe I/O.
+Antes de continuar com este exercício, você precisa ter concluído a configuração do [seu projeto do Adobe I/O](./../../../modules/getting-started/gettingstarted/ex6.md) e também precisa ter configurado um aplicativo para interagir com APIs, como o [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) ou o [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-1. Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
+## 1.1.1.2 Adobe I/O - access_token
 
-![Nova integração do Adobe I/O](./images/iohome.png){zoomable="yes"}
-
-1. Selecione a instância correta no canto superior direito da tela. Sua instância é `--aepImsOrgName--`. Em seguida, selecione **Criar novo projeto**.
-
-![Nova integração do Adobe I/O](./images/iocomp.png){zoomable="yes"}
-
-1. Selecione **+ Adicionar ao Projeto** e escolha **API**.
-
-![Nova integração do Adobe I/O](./images/adobe_io_access_api.png){zoomable="yes"}
-
-Sua tela deve ter esta aparência.
-
-![Nova integração do Adobe I/O](./images/api1.png){zoomable="yes"}
-
-1. Selecione **Creative Cloud** e escolha **Firefly - Firefly Services**, depois selecione **Próximo**.
-
-![Nova integração do Adobe I/O](./images/api3.png){zoomable="yes"}
-
-1. Forneça um nome para a credencial: `--aepUserLdap-- - Firefly Services OAuth credential`e selecione **Avançar**.
-
-![Nova integração do Adobe I/O](./images/api4.png){zoomable="yes"}
-
-1. Selecione o perfil padrão **Configuração Padrão de Serviços da Firefly** e selecione **Salvar API Configurada**.
-
-![Nova integração do Adobe I/O](./images/api9.png){zoomable="yes"}
-
-A integração do Adobe I/O está pronta.
-
-![Nova integração do Adobe I/O](./images/api11.png){zoomable="yes"}
-
-## 1.1.1.2 Baixar o ambiente do Postman
-
-1. Selecione **Baixar para Postman** e escolha **Servidor para servidor OAuth** para baixar um ambiente do Postman.
-
-![Nova integração do Adobe I/O](./images/iopm.png){zoomable="yes"}
-
-1. Selecione o nome do projeto.
-
-![Nova integração do Adobe I/O](./images/api13.png){zoomable="yes"}
-
-1. Selecione **Editar Projeto**.
-
-![Nova integração do Adobe I/O](./images/api14.png){zoomable="yes"}
-
-1. Digite um nome amigável para a integração: `--aepUserLdap-- Firefly`e selecione **Salvar**.
-
-![Nova integração do Adobe I/O](./images/api15.png){zoomable="yes"}
-
-A configuração da integração do Adobe I/O foi concluída.
-
-![Nova integração do Adobe I/O](./images/api16.png){zoomable="yes"}
-
-## 1.1.1.3 Autenticação do Postman para o Adobe I/O
-
-1. Baixe e instale a versão relevante do Postman para seu sistema operacional em [Downloads da Postman](https://www.postman.com/downloads/){target="_blank"}.
-
-![Nova integração do Adobe I/O](./images/getstarted.png){zoomable="yes"}
-
-1. Inicie o aplicativo.
-
-No Postman, há dois conceitos: Ambientes e Coleções.
-
-- O arquivo de ambiente contém todas as variáveis de ambiente mais ou menos consistentes. No ambiente, você encontrará informações como o IMSOrg do seu ambiente do Adobe, além de credenciais de segurança como a ID do cliente e outras. Você baixou o arquivo de ambiente durante a configuração do Adobe I/O anteriormente e ele é nomeado como **`oauth_server_to_server.postman_environment.json`**.
-
-- A coleção contém várias solicitações de API que podem ser usadas. Usaremos 2 coleções
-   - 1 coleção para autenticação no Adobe I/O
-   - 1 Coleta para os exercícios neste módulo
-
-1. Baixe o [postman-ff.zip](./../../../assets/postman/postman-ff.zip) no desktop local.
-
-![Nova integração do Adobe I/O](./images/pmfolder.png){zoomable="yes"}
-
-No arquivo **postman.zip** estão os seguintes arquivos:
-
-    - &quot;Adobe IO - OAuth.postman_collection.json&quot;
-    - &quot;FF - Firefly Services Tech Insiders.postman_collection.json&quot;
-
-1. Descompacte o **postman-ff.zip** e armazene os 2 arquivos a seguir em uma pasta na sua área de trabalho:
-- Adobe IO - OAuth.postman_collection.json
-- FF - Insiders técnicos de serviços da Firefly.postman_collection.json
-- oauth_server_to_server.postman_environment.json
-
-![Nova integração do Adobe I/O](./images/pmfolder1.png){zoomable="yes"}
-
-1. No Postman, selecione **Importar**.
-
-![Nova integração do Adobe I/O](./images/postmanui.png){zoomable="yes"}
-
-1. Selecione **Arquivos**.
-
-![Nova integração do Adobe I/O](./images/choosefiles.png){zoomable="yes"}
-
-1. Escolha os três arquivos da pasta e selecione **Abrir** e **Importar**.
-
-![Nova integração do Adobe I/O](./images/selectfiles.png){zoomable="yes"}
-
-![Nova integração do Adobe I/O](./images/impconfirm.png){zoomable="yes"}
-
-Não, você tem tudo o que precisa no Postman para começar a interagir com os Serviços da Firefly por meio das APIs.
-
-## 1.1.1.4 Solicitar um token de acesso
-
-Em seguida, para garantir que você esteja autenticado corretamente, é necessário solicitar um token de acesso.
-
-1. Certifique-se de ter selecionado o ambiente correto antes de executar qualquer solicitação, verificando a lista suspensa Ambiente no canto superior direito. O Ambiente selecionado deve ter um nome semelhante a este, `--aepUserLdap-- Firefly Services OAuth Credential`.
-
-![Postman](./images/envselemea1.png){zoomable="yes"}
-
-O Ambiente selecionado deve ter um nome semelhante a este, `--aepUserLdap-- Firefly Services OAuth Credential`.
-
-![Postman](./images/envselemea.png){zoomable="yes"}
-
-Agora que o ambiente e as coleções do Postman estão configurados e funcionando, você pode autenticar do Postman para o Adobe I/O.
-
-1. Na coleção **Adobe IO - OAuth**, selecione a solicitação denominada **POST - Obter Token de Acesso** e selecione **Enviar**.
-
-Aviso em **Parâmetros de Consulta**, duas variáveis são referenciadas, `API_KEY` e `CLIENT_SECRET`. Essas variáveis foram obtidas do ambiente selecionado, `--aepUserLdap-- Firefly Services OAuth Credential`.
-
-![Postman](./images/ioauth.png){zoomable="yes"}
-
-Se for bem-sucedido, uma resposta contendo um token de portador, um token de acesso e uma janela de expiração será exibida na seção **Corpo** do Postman.
+Na coleção **Adobe IO - OAuth**, selecione a solicitação denominada **POST - Obter Token de Acesso** e selecione **Enviar**. A resposta deve conter um novo **accestoken**.
 
 ![Postman](./images/ioauthresp.png){zoomable="yes"}
 
+## 1.1.1.3 API de serviços do Firefly, imagem do texto 2
 
-Você deve ver uma resposta semelhante contendo as seguintes informações:
+Agora que você tem um access_token válido e atualizado, você está pronto para enviar sua primeira solicitação às APIs de serviços da Firefly.
 
-| Chave | Valor |
-|:-------------:| :---------------:| 
-| token_type | **portador** |
-| access_token | **keyJhbGciOiJSU...** |
-| expires_in | **86399** |
-
-O **bearer-token** do Adobe I/O tem um valor específico (o access_token muito longo) e uma janela de expiração, e agora é válido por 24 horas. Isso significa que, após 24 horas, se você quiser usar o Postman para autenticar no Adobe I/O, precisará gerar um novo token executando essa solicitação novamente.
-
-## 1.1.1.5 API de serviços do Firefly, imagem do texto 2
-
-Agora você está pronto para enviar sua primeira solicitação às APIs de serviços da Firefly.
-
-1. Selecione a solicitação denominada **POST - Firefly - T2I V3** da coleção **FF - Firefly Services Tech Insiders**.
+Selecione a solicitação denominada **POST - Firefly - T2I V3** da coleção **FF - Firefly Services Tech Insiders**.
 
 ![Firefly](./images/ff1.png){zoomable="yes"}
 
-1. Copie o URL da imagem da resposta e abra-o em seu navegador da Web para exibir a imagem.
+Copie o URL da imagem da resposta e abra-o em seu navegador da Web para exibir a imagem.
 
 ![Firefly](./images/ff2.png){zoomable="yes"}
 

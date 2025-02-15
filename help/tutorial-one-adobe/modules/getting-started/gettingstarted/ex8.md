@@ -3,10 +3,11 @@ title: Introdução - Configuração do Postman
 description: Introdução - Configuração do Postman
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 2%
+source-wordcount: '430'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Se você não for um funcionário da Adobe, siga as instruções para [instalar o Postman](./ex7.md). As instruções abaixo são destinadas apenas aos funcionários da Adobe. Se você já tiver configurado o Postman, ignore este exercício e vá para [Aplicativos para instalar](./ex9.md).
+>Se você não for um funcionário da Adobe, siga as instruções para [instalar o Postman](./ex7.md). As instruções abaixo são destinadas apenas aos funcionários da Adobe.
 
 ## Instalar PostBuster
 
