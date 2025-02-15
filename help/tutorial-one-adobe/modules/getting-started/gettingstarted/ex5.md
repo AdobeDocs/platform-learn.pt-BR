@@ -4,9 +4,9 @@ description: Introdução - Uso do aplicativo móvel
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -81,8 +81,10 @@ Agora, volte para a **Página inicial** no aplicativo. Seu aplicativo está pron
 
 ![DSN](./images/mobileappn8.png)
 
-Agora você concluiu o módulo Introdução e está pronto para começar com os próximos exercícios.
+## Próximas etapas
 
-[Voltar para a Introdução](./getting-started.md)
+Vá para [Configurar seu projeto do Adobe I/O](./ex6.md)
 
-[Voltar a todos os módulos](./../../../overview.md)
+Volte para [Introdução](./getting-started.md){target="_blank"}
+
+Voltar para [Todos os módulos](./../../../overview.md){target="_blank"}

@@ -4,16 +4,16 @@ description: Introdução - Usar o sistema de demonstração ao lado para config
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 1%
 
 ---
 
 # Use o Sistema de demonstração ao lado para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform
 
-Para visualizar os aprendizados neste tutorial e possibilitar que você teste sua configuração em um ambiente seguro, este tutorial está usando as ferramentas Avançar do sistema de demonstração do Adobe. Para aproveitar ao máximo esse tutorial, a instância da AEP precisa ser configurada para ser integrada ao Sistema de demonstração em seguida.
+Para visualizar os aprendizados neste tutorial e possibilitar que você teste sua configuração em um ambiente seguro, este tutorial está usando as ferramentas Demo System Next do Adobe. Para aproveitar ao máximo esse tutorial, a instância da AEP precisa ser configurada para ser integrada ao Sistema de demonstração em seguida.
 
 Depois de ter acesso ao Sistema de demonstração em seguida, continue com as etapas abaixo.
 
@@ -33,7 +33,7 @@ Em seguida, clique em **Iniciar**.
 
 ![DSN](./images/dsn2.png)
 
-Na janela pop-up, digite um nome para as propriedades da Coleção de dados e os projetos do Experience Builder. Use esta convenção de nomenclatura: **Um Adobe (DD/MM/AAAA)**. INFO: seu LDAP será anexado automaticamente. Não é necessário adicioná-lo você mesmo.
+Na janela pop-up, digite um nome para as propriedades da Coleção de dados e os projetos do Experience Builder. Use esta convenção de nomenclatura: **Uma Adobe (DD/MM/AAAA)**. INFO: seu LDAP será anexado automaticamente. Não é necessário adicioná-lo você mesmo.
 
 Clique em **Start**.
 
@@ -55,8 +55,10 @@ Depois que o processo de configuração rápida for concluído, você terá:
 
 Mantenha essa tela aberta como você precisará dela nas próximas etapas.
 
-Próxima etapa: [Criar sequência de dados](./ex3.md)
+## Próximas etapas
 
-[Voltar para a Introdução](./getting-started.md)
+Ir para [Criar sua Sequência de Dados](./ex3.md)
 
-[Voltar a todos os módulos](./../../../overview.md)
+Volte para [Introdução](./getting-started.md){target="_blank"}
+
+Voltar para [Todos os módulos](./../../../overview.md){target="_blank"}

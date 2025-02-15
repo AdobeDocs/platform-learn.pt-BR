@@ -4,9 +4,9 @@ description: Introdução - Criar sequência de dados
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -151,7 +151,7 @@ Clique na extensão **Adobe Experience Platform Edge Network** e em **Configurar
 
 Você verá isso. Agora é necessário selecionar a sandbox e a sequência de dados corretas que você acabou de configurar. A sandbox a ser usada é `--aepSandboxName--` e a sequência de dados é chamada `--aepUserLdap-- - Demo System Datastream (Mobile)`.
 
-Para o **domínio Edge Network**, use o domínio padrão.
+Para o **domínio do Edge Network**, use o domínio padrão.
 
 Clique em **Salvar** para salvar as alterações.
 
@@ -173,8 +173,10 @@ As alterações estão sendo publicadas e estarão prontas em alguns minutos, ap
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig17ma.png)
 
-Próxima Etapa: [Usar o site](./ex4.md)
+## Próximas etapas
 
-[Voltar para a Introdução](./getting-started.md)
+Ir para [Usar o site](./ex4.md)
 
-[Voltar a todos os módulos](./../../../overview.md)
+Volte para [Introdução](./getting-started.md){target="_blank"}
+
+Voltar para [Todos os módulos](./../../../overview.md){target="_blank"}

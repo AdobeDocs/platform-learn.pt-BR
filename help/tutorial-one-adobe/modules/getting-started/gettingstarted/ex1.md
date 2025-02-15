@@ -1,17 +1,17 @@
 ---
-title: Introdução - Instale a extensão Chrome para a documentação do Experience League
-description: Introdução - Instale a extensão Chrome para a documentação do Experience League
+title: Introdução - Instalar a extensão do Chrome para a documentação do Experience League
+description: Introdução - Instalar a extensão do Chrome para a documentação do Experience League
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Instale a extensão Chrome para a documentação do Experience League
+# Instalar a extensão Chrome para a documentação do Experience League
 
 ## Sobre a extensão do Chrome
 
@@ -143,8 +143,10 @@ Agora você deve ter uma exibição semelhante à abaixo, onde a variável de am
 
 ![DSN](./images/mod7.png)
 
-Próxima etapa: [Use o Sistema de demonstração Próximo para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform](./ex2.md)
+## Próximas etapas
 
-[Voltar para a Introdução](./getting-started.md)
+Vá para [Usar sistema de demonstração ao lado da configuração da propriedade de cliente da Coleção de dados da Adobe Experience Platform](./ex2.md)
 
-[Voltar a todos os módulos](./../../../overview.md)
+Volte para [Introdução](./getting-started.md){target="_blank"}
+
+Voltar para [Todos os módulos](./../../../overview.md){target="_blank"}
