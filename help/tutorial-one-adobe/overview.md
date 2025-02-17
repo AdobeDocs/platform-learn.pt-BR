@@ -1,16 +1,16 @@
 ---
-title: Visão geral - Tutorial técnico abrangente - Um Adobe
-description: Tutorial técnico abrangente - Um Adobe
+title: Visão geral - Tutorial técnico abrangente - Uma Adobe
+description: Tutorial técnico completo - Uma Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
 workflow-type: tm+mt
-source-wordcount: '528'
-ht-degree: 3%
+source-wordcount: '957'
+ht-degree: 2%
 
 ---
 
-# Tutorial técnico abrangente - Um Adobe
+# Tutorial técnico completo - Uma Adobe
 
 ![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
@@ -20,7 +20,7 @@ Este tutorial é o ponto de partida perfeito para
 
 Este tutorial é muito diverso e oferece insights claros nos seguintes aplicativos:
 
-- Serviços Adobe Firefly
+- Serviços da Adobe Firefly
 - Adobe Photoshop
 - Adobe Workfront e Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets e Edge Delivery Services
@@ -29,7 +29,7 @@ Este tutorial é muito diverso e oferece insights claros nos seguintes aplicativ
 - Adobe Journey Optimizer
 
 
-Este tutorial não se concentra apenas em aplicativos Adobe, mas leva em conta o ecossistema mais amplo em que as marcas operam. Para fazer isso, em algumas lições há um foco em como os aplicativos não-Adobe se integram aos aplicativos Adobe. Dessa forma, você compreenderá detalhadamente como os seguintes aplicativos funcionarão em conjunto com a Adobe Experience Platform:
+Este tutorial não se concentra apenas nos aplicativos da Adobe, mas leva em conta o ecossistema mais amplo em que as marcas operam. Para fazer isso, em algumas lições há um foco em como os aplicativos que não são da Adobe se integram aos aplicativos da Adobe. Dessa forma, você compreenderá detalhadamente como os seguintes aplicativos funcionarão em conjunto com a Adobe Experience Platform:
 
 - Amazon AWS
 - Google Cloud Platform
@@ -56,7 +56,7 @@ Verifique os aplicativos necessários que precisam ser instalados no computador 
 
 ## Conclusão e certificação
 
-Este tutorial faz parte de um curso de certificação Adobe. Você pode se inscrever no curso junto com este tutorial acessando [https://certification.adobe.com](https://certification.adobe.com).
+Este tutorial faz parte de um curso de certificação da Adobe. Você pode se inscrever no curso junto com este tutorial acessando [https://certification.adobe.com](https://certification.adobe.com).
 
 Para cada módulo que você concluir usando o tutorial abaixo, você precisa enviar uma prova de conclusão como indicado [aqui](./completion.md).
 
@@ -70,39 +70,109 @@ Para verificar o status do conteúdo abaixo, vá para a [página de status](./st
 
 Neste módulo fundamental, você configurará tudo para poder acessar e usar o ambiente de demonstração.
 
-### 1. Adobe Creative Cloud
+### 1. Fluxo de trabalho e planejamento
 
-[Serviços de Adobe Firefly 1.1](./modules/creative-cloud/module1.1/firefly-services.md){target="_blank"}
+### 2. Criação e produção
 
-Neste módulo, você usará APIs de Serviços Adobe Firefly, APIs Photoshop e Serviços de Armazenamento do Microsoft Azure para gerar imagens e armazená-las programaticamente.
+[1.1 Serviços da Adobe Firefly](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-[Automação do Fluxo de Trabalho de Criação com o Workfront Fusion](./modules/creative-cloud/module1.2/automation.md){target="_blank"}
+Neste módulo, você usará APIs de Serviços da Adobe Firefly, APIs do Photoshop e Serviços de Armazenamento do Microsoft Azure para gerar imagens e armazená-las programaticamente.
+
+[Automação do Fluxo de Trabalho de Criação com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 Neste módulo fundamental, você usará o Adobe Workfront Fusion para automatizar e dimensionar seus fluxos de trabalho de criação de conteúdo.
 
-### 2. Cadeia de fornecimento de conteúdo
+### 3. Gestão de ativos
 
-[2.1 Cloud Service e Edge Delivery Services do Adobe Experience Manager](./modules/csc/module2.1/aemcs.md){target="_blank"}
+[1.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
-Neste módulo fundamental, você configurará seu Programa Adobe Experience Manager Cloud Service, seu Site e seu repositório Assets.
+Neste módulo fundamental, você configurará seu Programa Adobe Experience Manager Cloud Service, o Site e o repositório do Assets.
 
-[2.2 Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./modules/csc/module2.2/workfront.md){target="_blank"}
+[Gerenciamento de Fluxo de Trabalho 1.2 com o Adobe Workfront](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
 
 Neste módulo fundamental, você configurará e usará o Adobe Workfront para gerenciar fluxos de aprovação e usará integrações com o Adobe Experience Manager Assets, Universal Editor, Photoshop e muito mais.
 
-### 3. Experiência unificada do cliente
+### 4. Entrega e ativação
 
-[3.1 Composição de Público Federado](./modules/uce/module3.1/fac.md){target="_blank"}
+#### Coleção de dados
+
+[1.1 Foundation - Configuração da coleção de dados da Adobe Experience Platform e do Web SDK](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
 
 Neste módulo fundamental, você aprenderá sobre a Coleção de dados do Adobe Experience Platform e a nova extensão do Web SDK.
 
-[3.2 Adobe Journey Optimizer: serviços de tradução](./modules/uce/module3.2/ajotranslationsvcs.md){target="_blank"}
+[1.2 Foundation - Assimilação de dados](./modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
 
-Neste módulo, você usará o Adobe Journey Optimizer para configurar e usar os Serviços de tradução.
+Neste módulo fundamental, você assimilará dados de várias fontes na Adobe Experience Platform
 
-[3.3 Adobe Journey Optimizer: Offer decisioning](./modules/uce/module3.3/offer-decisioning.md){target="_blank"}
+[1.3 Composição de público-alvo federado](./modules/delivery-activation/datacollection/dc1.3/fac.md)
 
-Neste módulo, você usará o Adobe Journey Optimizer com serviços do offer decisioning de forma prática para configurar Ofertas personalizadas e sua própria decisão.
+Neste módulo, você aprenderá a configurar um modelo de Federated Audiences e gerar públicos usando dados federados.
+
+#### Real-Time CDP B2C
+
+[2.1 Foundation - Perfil do cliente em tempo real](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
+
+Neste módulo fundamental, você explorará o Perfil do cliente em tempo real no Adobe Experience Platform usando a interface e a API.
+
+[2.2 Serviços inteligentes](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
+
+Neste módulo, você aprenderá a configurar, configurar e usar os Serviços inteligentes da Adobe Experience Platform.
+
+[2.3 Real-Time CDP - Criar um público-alvo e realizar ações](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
+
+Neste módulo, você configurará um público-alvo e o ativará para vários destinos, incluindo Google DV360, Adobe Target e AWS S3.
+
+[2.4 Real-Time CDP: Audience Activation para o Hub de eventos do Microsoft Azure](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
+
+Neste módulo, você configurará um destino do Microsoft Azure EventHub como destino em tempo real para a CDP em tempo real do Adobe Experience Platform.
+
+[2.5 Conexões do Real-Time CDP: encaminhamento de eventos](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
+
+Neste módulo, você encaminhará dados do lado do servidor para vários endpoints, como Google Cloud Platform Pub/Sub e AWS Kinesis.
+
+[2.6 Transmitir dados do Apache Kafka para o Real-Time CDP](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
+
+Neste módulo, você aprenderá a configurar seu próprio cluster do Apache Kafka e transmitir dados para o Adobe Experience Platform.
+
+#### Adobe Journey Optimizer B2C
+
+[3.1 Adobe Journey Optimizer: Orquestração](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
+
+Neste módulo, você usará o Adobe Journey Optimizer para criar uma jornada baseada em acionador.
+
+[3.2 Adobe Journey Optimizer: fontes de dados externas e ações personalizadas](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
+
+Neste módulo, você usará o Adobe Journey Optimizer para ouvir o comportamento do cliente, online e offline, e responder a ele de forma inteligente, contextual e em tempo real por vários canais.
+
+[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
+
+Neste módulo, você usará o Adobe Journey Optimizer para configurar Ofertas personalizadas e sua própria Decisão de oferta.
+
+[3.4 Adobe Journey Optimizer: Jornadas baseadas em eventos](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
+
+Neste módulo, você aprenderá tudo o que há para saber sobre o Journey Optimizer, que ajuda as empresas a projetar e entregar experiências conectadas, contextuais e personalizadas aos clientes.
+
+[3.5 Adobe Journey Optimizer: serviços de tradução](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
+
+Neste módulo, você aprenderá a configurar e usar os Serviços de tradução no Adobe Journey Optimizer para localizar suas mensagens para seus clientes.
+
+### 5. Relatórios e insights
+
+#### Adobe Customer Journey Analytics
+
+[1.1 Customer Journey Analytics: criar um painel usando o Analysis Workspace sobre o Adobe Experience Platform](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+
+Neste módulo, você obterá insights online e offline configurando um painel com dados omnicanal.
+
+[1.2 Customer Journey Analytics: Assimilar e analise dados do Google Analytics no Adobe Experience Platform com o BigQuery Source Connector](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
+
+Neste módulo, você configurará sua própria instância da Google Cloud Platform, carregará dados de demonstração na Google Cloud Platform e usará o BigQuery Source Connector para assimilar esses dados da Google Cloud Platform na Adobe Experience Platform.
+
+#### Destilador de dados
+
+[2.1 Serviço de consulta](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
+
+Neste módulo, você aprenderá a usar o Adobe Experience Platform Query Service.
 
 ![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
