@@ -3,9 +3,9 @@ title: Visão geral - Tutorial técnico abrangente - Uma Adobe
 description: Tutorial técnico completo - Uma Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Visão geral
-
-Este tutorial é o ponto de partida perfeito para
 
 Este tutorial é muito diverso e oferece insights claros nos seguintes aplicativos:
 
@@ -50,17 +48,13 @@ Se você quiser fazer este tutorial usando sua própria instância do Adobe Expe
 - Coleta de Dados do Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Acesso ao sistema de demonstração: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## Trabalho prévio
-
-Verifique os aplicativos necessários que precisam ser instalados no computador [aqui](./prework.md){target="_blank"}.
-
 ## Conclusão e certificação
 
 Este tutorial faz parte de um curso de certificação da Adobe. Você pode se inscrever no curso junto com este tutorial acessando [https://certification.adobe.com](https://certification.adobe.com).
 
 Para cada módulo que você concluir usando o tutorial abaixo, você precisa enviar uma prova de conclusão como indicado [aqui](./completion.md).
 
-## Conteúdo
+## Status do conteúdo
 
 Para verificar o status do conteúdo abaixo, vá para a [página de status](./status.md){target="_blank"}.
 
@@ -68,7 +62,7 @@ Para verificar o status do conteúdo abaixo, vá para a [página de status](./st
 
 [Introdução](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-Neste módulo fundamental, você configurará tudo para poder acessar e usar o ambiente de demonstração.
+Neste módulo fundamental, você preparará tudo para poder acessar e usar o ambiente de demonstração.
 
 ### 1. Fluxo de trabalho e planejamento
 
