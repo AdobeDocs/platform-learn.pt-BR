@@ -2,13 +2,13 @@
 title: Assimilar dados em lote
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Assimilar dados em lote
-description: Nesta lição, você assimilará dados em lote no Experience Platform usando vários métodos.
+description: Nesta lição, você assimilará dados em lote na Experience Platform usando vários métodos.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 # Assimilar dados em lote
 
 <!-- 1hr-->
-Nesta lição, você assimilará dados em lote no Experience Platform usando vários métodos.
+Nesta lição, você assimilará dados em lote na Experience Platform usando vários métodos.
 
 A assimilação de dados em lote permite assimilar uma grande quantidade de dados na Adobe Experience Platform de uma só vez. Você pode assimilar dados em lote em um upload único na interface da Platform ou usando a API. Você também pode configurar carregamentos em lote regularmente agendados de serviços de terceiros, como serviços de armazenamento na nuvem usando conectores do Source.
 
@@ -26,7 +26,7 @@ A assimilação de dados em lote permite assimilar uma grande quantidade de dado
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre a assimilação de dados:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Permissões necessárias
@@ -191,7 +191,7 @@ Para concluir o lote:
 1. Selecionar a solicitação **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]**
 1. Na guia **Params**, digite `COMPLETE` como a **ação**
 1. Na guia **Params**, insira a ID do lote. Não se preocupe com a id do conjunto de dados ou filePath, se eles estiverem presentes.
-1. Verifique se a URL do POST é `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` e se não há referências desnecessárias para `datasetId` ou `filePath`
+1. Verifique se a URL da PUBLICAÇÃO é `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` e se não há referências desnecessárias para `datasetId` ou `filePath`
 1. Selecione **Enviar** e você deverá receber uma resposta 200 OK com &#39;1&#39; no corpo da resposta
 
    ![Lote concluído](assets/ingestion-crm-complete.png)
@@ -332,7 +332,7 @@ Pesquise o perfil com valor `5625458` no namespace `loyaltyId` novamente para ve
 
 ## Ferramentas de ETL
 
-Adobe faz parceria com vários fornecedores ETL para oferecer suporte à assimilação de dados no Experience Platform. Devido à variedade de fornecedores de terceiros, o ETL não é abordado neste tutorial, embora você seja bem-vindo para analisar alguns destes recursos:
+A Adobe tem parcerias com vários fornecedores de ETL para oferecer suporte à assimilação de dados na Experience Platform. Devido à variedade de fornecedores de terceiros, o ETL não é abordado neste tutorial, embora você seja bem-vindo para analisar alguns destes recursos:
 
 * [Desenvolvendo integrações ETL para o Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Página do Conector Informatica Adobe Experience Platform no Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
@@ -344,4 +344,4 @@ Adobe faz parceria com vários fornecedores ETL para oferecer suporte à assimil
 * [Documentação de assimilação em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Referência da API de assimilação em lote](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-Agora vamos [transmitir dados usando o SDK da Web](ingest-streaming-data.md)
+Agora vamos [transmitir dados usando o Web SDK](ingest-streaming-data.md)

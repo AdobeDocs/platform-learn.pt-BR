@@ -8,7 +8,7 @@ jira: KT-3826, KT-13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -23,15 +23,15 @@ Saiba como assimilar facilmente dados em lote de fontes de CRM no Perfil do clie
 
 Saiba como configurar o conector de origem para o Salesforce CRM usando o fluxo de trabalho padrão. O fluxo de trabalho padrão requer a criação antecipada de esquemas e namespaces de identidade. Outros conectores de origem de CRM podem oferecer suporte apenas ao fluxo de trabalho padrão.
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
 
 ## Fluxo de trabalho do modelo (Salesforce)
 
 Saiba como configurar o conector de origem para o Salesforce CRM usando o fluxo de trabalho de modelo. Esse fluxo de trabalho gera automaticamente os ativos necessários para assimilar dados do Salesforce com base em modelos. Isso economiza tempo inicial e os ativos podem ser personalizados de acordo com suas necessidades. Não há suporte para este fluxo de trabalho em todos os conectores de origem do CRM.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 Para obter mais informações, consulte a seguinte documentação:
-* [O Salesforce cria uma documentação de conexão](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+* [Salesforce cria uma documentação de conexão](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
 * [Criar um fluxo de dados de fontes usando modelos na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
 

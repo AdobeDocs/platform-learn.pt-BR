@@ -1,13 +1,13 @@
 ---
 title: Uso da biblioteca JavaScript de privacidade
-description: Saiba como usar a biblioteca JavaScript de privacidade para coletar identidades de clientes em seu aplicativo antes de enviá-las para o Privacy Service. Por exemplo, saiba como configurar a extensão de tag em Coleção de dados (antigo Launch).
+description: Saiba como usar a biblioteca JavaScript de privacidade para coletar identidades de clientes em seu aplicativo antes de enviá-las para a Privacy Service. Por exemplo, saiba como configurar a extensão de tag em Coleção de dados (antigo Launch).
 feature: Privacy
 role: Data Engineer, Data Architect, Developer
 level: Beginner
 jira: KT-7716
 thumbnail: 336078.png
 exl-id: ed7f1e0d-eaf9-4912-9536-b16b6672b4ef
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%
@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # Uso da biblioteca JavaScript de privacidade
 
-Saiba como usar a biblioteca JavaScript de privacidade para coletar identidades de clientes em seu aplicativo antes de enviá-las para o Privacy Service. Por exemplo, saiba como configurar a extensão de tag em Coleção de dados (antigo Launch). Para obter mais informações, visite a [documentação do Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
+Saiba como usar a biblioteca JavaScript de privacidade para coletar identidades de clientes em seu aplicativo antes de enviá-las para a Privacy Service. Por exemplo, saiba como configurar a extensão de tag em Coleção de dados (antigo Launch). Para obter mais informações, consulte a [documentação do Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on&enablevpops)

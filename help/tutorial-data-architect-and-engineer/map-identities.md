@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 6%
@@ -26,7 +26,7 @@ O Serviço de identidade da Adobe Experience Platform ajuda você a obter uma me
 **Os Arquitetos de Dados** precisarão mapear identidades fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre identidade no Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Repita o processo para algum outro esquema:
 
 >[!NOTE]
 >
->Os dados coletados com o SDK da Web são uma exceção à prática típica de rotular campos de identidade no esquema. O SDK da Web usa o Mapa de Identidade para rotular identidades *no lado da implementação* e, portanto, determinaremos as identidades para o `Luma Web Events Schema` quando implementarmos o SDK da Web no site Luma. Nessa lição posterior, coletaremos a ID de visitante do Experience Cloud (ECID) como a ID primária e a crmId como uma ID secundária.
+>Os dados coletados com o Web SDK são uma exceção à prática típica de rotular campos de identidade no esquema. O Web SDK usa o Mapa de Identidade para rotular identidades *no lado da implementação* e, portanto, determinaremos as identidades para o `Luma Web Events Schema` quando implementarmos o Web SDK no site da Luma. Nessa lição posterior, coletaremos a ID de visitante da Experience Cloud (ECID) como a ID primária e a crmId como uma ID secundária.
 
 Com nossa seleção de identidades primárias, fica claro como o `Luma CRM Schema` pode se conectar ao `Luma Offline Purchase Events Schema`, já que ambos usam `loyaltyId` como identificador. Mas como podemos conectar nossas compras offline ao comportamento online? Como podemos classificar os produtos comprados com nosso catálogo de produtos? Usaremos campos de identidade e relações de esquema adicionais.
 

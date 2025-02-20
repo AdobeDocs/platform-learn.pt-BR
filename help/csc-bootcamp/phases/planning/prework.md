@@ -3,7 +3,7 @@ title: CSC Bootcamp - Outro pré-trabalho
 description: CSC Bootcamp - Outro pré-trabalho
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Conforme descrito no resumo criativo, há alguns recursos que serão necessário
 
 ![do experience-manager](./images/wf-from-aem.png)
 
-- Quando a hierarquia da pasta AEM for exibida, navegue até o seguinte caminho: experience-manager > Adobe Assets > Bike shots Selecione 5 ativos e clique em &#39;Link&#39;.
+- Quando a hierarquia de pastas do AEM for exibida, navegue até o seguinte caminho: experience-manager > Adobe Assets > Bike shots Selecione 5 ativos e clique em &#39;Link&#39;.
 
 ![ativos selecionados](./images/selected-assets.png)
 
@@ -43,7 +43,7 @@ O Adobe Commerce é um dos muitos produtos da Adobe Experience Cloud que podem a
 
 Este vídeo familiariza você com o Adobe Commerce e mostra o produto que criamos para usar durante a inicialização. Em um cenário real, você faria upload dos ativos da marca selecionada anteriormente para o Adobe Commerce na configuração do produto.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 Quando essa tarefa for concluída, você poderá marcar a tarefa 3 como 100% concluída no Workfront.
 

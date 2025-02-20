@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-4345
 thumbnail: 330433.jpg
 exl-id: a6bf84df-bfd9-4cc9-b741-e4d605adece6
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Este vídeo mostra como criar políticas de mesclagem no Adobe Experience Platform. As políticas de mesclagem são as regras que a Platform usa para determinar quais dados serão usados e priorizados ao combinar conjuntos de dados de fontes diferentes, a fim de criar perfis de clientes. Para obter mais informações, visite a [documentação de políticas de mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)

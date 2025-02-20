@@ -1,11 +1,11 @@
 ---
 title: Definir o consentimento usando o padrão IAB TCF 2.0
-description: Saiba como usar o SDK da Web da Adobe Experience Platform para definir valores de consentimento de acordo com o padrão TCF 2.0 do IAB.
+description: Saiba como usar o Adobe Experience Platform Web SDK para definir valores de consentimento de acordo com o padrão IAB TCF 2.0.
 feature: Web SDK, Tags
 level: Intermediate
 jira: KT-7572
 exl-id: 341a4e01-02a9-4e21-b3d6-b2657d75c233
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 
 # Definir o consentimento usando o padrão IAB TCF 2.0
 
-Saiba como usar o SDK da Web da Adobe Experience Platform para definir valores de consentimento de acordo com o padrão TCF 2.0 do IAB. Consulte a documentação sobre [Suporte ao IAB FCF 2.0 na Plataforma](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) para obter mais informações.
+Saiba como usar o Adobe Experience Platform Web SDK para definir valores de consentimento de acordo com o padrão IAB TCF 2.0. Consulte a documentação sobre [Suporte ao IAB FCF 2.0 na Plataforma](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) para obter mais informações.
 
 >[!NOTE]
 >
 > A inicialização agora é **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332695/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332695/?learn=on&enablevpops)

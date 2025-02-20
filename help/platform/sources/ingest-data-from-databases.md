@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Este vídeo mostra como assimilar dados em lote de uma fonte de banco de dados no Perfil do cliente em tempo real da Adobe Experience Platform e no Experience Data Lake, de forma contínua e escalável. Para obter a documentação mais detalhada do produto, consulte o [banco de dados](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#database) na página de visão geral dos Source Connectors ou na [documentação do conector de origem do Google Big Query](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)

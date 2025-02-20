@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 2%
@@ -21,12 +21,12 @@ ht-degree: 2%
 
 Nesta lição, você criará uma sandbox de ambiente de desenvolvimento que usará para o restante do tutorial.
 
-As sandboxes fornecem ambientes isolados em que você pode experimentar a funcionalidade sem misturar recursos e dados com seu ambiente de produção. Para obter mais detalhes, consulte a [documentação sobre sandboxes](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=pt-BR).
+As sandboxes fornecem ambientes isolados em que você pode experimentar a funcionalidade sem misturar recursos e dados com seu ambiente de produção. Para obter mais detalhes, consulte a [documentação sobre sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home).
 
 Os **Arquitetos de Dados** e **Engenheiros de Dados** precisarão criar sandboxes fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre sandboxes:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
 
 ## Permissões necessárias
 

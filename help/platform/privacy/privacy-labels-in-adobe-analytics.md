@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-7718
 thumbnail: 336077.png
 exl-id: a7662d99-d3c4-4cb1-8c72-afaa04b628a6
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 1%
@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Rotulação de dados do Analytics para solicitações de privacidade
 
-Saiba mais sobre o processo de adicionar rótulos de Privacidade de dados às variáveis do Analytics, incluindo um detalhamento do que cada tipo de rótulo significa e quando usá-los. Para obter mais informações, visite a [documentação do Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
+Saiba mais sobre o processo de adicionar rótulos de Privacidade de dados às variáveis do Analytics, incluindo um detalhamento do que cada tipo de rótulo significa e quando usá-los. Para obter mais informações, consulte a [documentação do Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)

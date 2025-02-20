@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 61%
@@ -18,9 +18,9 @@ ht-degree: 61%
 
 # Demonstração do SDK da Web da Adobe Experience Platform e da rede de borda
 
-Consulte o SDK da Web da Adobe Experience Platform e o Edge Network em ação, com uma única chamada para o Adobe enviando dados para o Experience Platform, Analytics, Audience Manager e Target. Para obter mais informações, consulte a [documentação do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
+Veja o Adobe Experience Platform Web SDK e o Edge Network em ação, com uma única chamada para o Adobe enviando dados para o Experience Platform, o Analytics, o Audience Manager e o Target. Para obter mais informações, visite a [documentação do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
 
 >[!NOTE]
 >

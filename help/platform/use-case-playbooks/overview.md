@@ -9,7 +9,7 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: f02bea4a92675e284be7ca86a0fcf7c17d296482
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 25%
@@ -20,7 +20,7 @@ ht-degree: 25%
 
 Saiba como os manuais de casos de uso podem ajudar clientes da Real-Time CDP e do Journey Optimizer a obter um tempo de retorno mais rápido. Os manuais de casos de uso são um catálogo de dezenas de modelos que abrangem vários setores e objetivos de marketing. Os manuais geram ativos técnicos, como públicos-alvo, jornadas e esquemas, que podem ser personalizados e publicados em outras sandboxes. Para obter mais informações, consulte a [documentação dos manuais de caso de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
 ## Introdução
 

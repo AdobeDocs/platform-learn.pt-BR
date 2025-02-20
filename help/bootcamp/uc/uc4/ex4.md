@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '768'
 ht-degree: 1%
@@ -28,13 +28,13 @@ ht-degree: 1%
 
 O Analysis Workspace remove todas as limitações típicas de um único relatório do Analytics. Ele fornece uma tela robusta e flexível para a criação de projetos de análise personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões, métricas, segmentos e granularidades de tempo) em um projeto. Crie detalhamentos e segmentos instantaneamente, coorte para análise, crie alertas, compare segmentos, faça análises de fluxo e fallout e prepare e programe relatórios para compartilhamento com qualquer pessoa em sua empresa.
 
-O Customer Journey Analytics traz essa solução sobre os dados da plataforma. Recomendamos assistir a este vídeo de visão geral de quatro minutos:
+A Customer Journey Analytics traz essa solução para os dados da plataforma. Recomendamos assistir a este vídeo de visão geral de quatro minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Se você não usou o Analysis Workspace antes, recomendamos assistir a este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Criar seu projeto
 
@@ -124,11 +124,11 @@ Não esqueça de **Salvar** a Métrica calculada.
 
 ![demonstração](./images/pr9.png)
 
-## 4.4.3 Dimension calculados: Filtros (segmentação) e intervalos de datas
+## 4.4.3 Dimensões calculadas: filtros (segmentação) e intervalos de datas
 
-### Filtros: Dimension calculadas
+### Filtros: Dimensões calculadas
 
-Os cálculos não devem ser feitos apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar alguns **Dimension calculados**. Isso basicamente significava **segmentos** de volta ao Adobe Analytics. No Customer Journey Analytics, esses segmentos são chamados de **Filtros**.
+Os cálculos não devem ser feitos apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar algumas **Dimensões calculadas**. Isso basicamente significava **segmentos** de volta ao Adobe Analytics. No Customer Journey Analytics, esses segmentos são chamados de **Filtros**.
 
 ![demonstração](./images/prfilters.png)
 
@@ -140,11 +140,11 @@ A criação de filtros ajudará os usuários empresariais a iniciar a análise c
 
 Esses filtros podem ser criados antes ou durante a parte de análise (o que você fará no próximo exercício).
 
-### Intervalos de datas: tempo calculado Dimension
+### Intervalos de datas: dimensões de tempo calculadas
 
-Os Dimension de tempo são outro tipo de dimensões calculadas. Alguns já foram criados, mas você também tem a capacidade de criar seus próprios Dimension de tempo personalizados na fase de preparação dos dados.
+Dimensões de tempo são outro tipo de dimensões calculadas. Algumas já foram criadas, mas você também tem a capacidade de criar suas próprias Dimensões de tempo personalizadas na fase de preparação dos dados.
 
-Esses Dimension de Tempo calculado ajudarão os analistas e usuários empresariais a lembrar datas importantes e usá-las para filtrar e alterar o tempo do relatório. Perguntas típicas e dúvidas que vêm à nossa mente quando fazemos análises:
+Essas Dimensões de tempo calculadas ajudarão os analistas e usuários empresariais a lembrar datas importantes e usá-las para filtrar e alterar o tempo do relatório. Perguntas típicas e dúvidas que vêm à nossa mente quando fazemos análises:
 
 - Quando foi Black Friday no ano passado? 21-29?
 - Quando fizemos aquela campanha de TV em dezembro?
@@ -154,7 +154,7 @@ Esses Dimension de Tempo calculado ajudarão os analistas e usuários empresaria
 
 Agora você concluiu o exercício de preparação de dados usando o CJA Analysis Workspace.
 
-Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
+Próxima Etapa: [4.5 Visualização usando o Customer Journey Analytics](./ex5.md)
 
 [Voltar para Fluxo de Usuário 4](./uc4.md)
 

@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Nesta lição, você aplicará a estrutura de governança de dados aos dados ass
 O Adobe Experience Platform Data Governance permite gerenciar dados de clientes e garantir conformidade com regulamentos, restrições e políticas aplicáveis ao uso de dados. Ele desempenha um papel fundamental no Experience Platform em vários níveis, incluindo o controle do uso de dados.
 
 Antes de começar os exercícios, assista a estes pequenos vídeos sobre governança de dados:
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required
@@ -84,9 +84,9 @@ Você pode criar suas próprias políticas selecionando o botão **[!UICONTROL C
 
 ## Aplicar políticas de governança
 
-A aplicação das políticas de governação é, obviamente, uma componente essencial do quadro. A imposição ocorre downstream quando os dados são ativados e enviados da Platform, especialmente com a Real-time Customer Data Platform, que você pode ou não estar licenciando. De qualquer forma, está fora do escopo deste tutorial. Mas você não é deixado na fila, você pode saber mais sobre como as políticas são aplicadas neste vídeo, que eu enfileirei para a parte relevante. Ele também mostrará o que acontece quando uma política é violada.
+A aplicação das políticas de governação é, obviamente, uma componente essencial do quadro. A imposição ocorre downstream quando os dados são ativados e enviados da Platform, especialmente com a Real-Time Customer Data Platform, que você pode ou não estar licenciando. De qualquer forma, está fora do escopo deste tutorial. Mas você não é deixado na fila, você pode saber mais sobre como as políticas são aplicadas neste vídeo, que eu enfileirei para a parte relevante. Ele também mostrará o que acontece quando uma política é violada.
 
->[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on&enablevpops)
 
 
 ## Recursos adicionais

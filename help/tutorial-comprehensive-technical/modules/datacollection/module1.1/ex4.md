@@ -1,10 +1,10 @@
 ---
-title: Foundation - Configuração da coleção de dados da Adobe Experience Platform e da extensão SDK da Web - Coleção de dados da Web do cliente
-description: Foundation - Configuração da coleção de dados da Adobe Experience Platform e da extensão SDK da Web - Coleção de dados da Web do cliente
+title: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK - Coleção de dados da Web do cliente
+description: Foundation - Configuração da coleção de dados do Adobe Experience Platform e da extensão Web SDK - Coleção de dados da Web do cliente
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 ## Validar os dados na solicitação
 
-### Instale o Adobe Experience Platform Debugger
+### Instalar o Adobe Experience Platform Debugger
 
-O Experience Platform Debugger é uma extensão disponível para os navegadores Chrome e Firefox que ajuda a visualizar a tecnologia de Adobe implementada nas páginas da Web. Instale a versão do seu navegador preferido:
+O Experience Platform Debugger é uma extensão disponível para os navegadores Chrome e Firefox que ajuda a visualizar a tecnologia do Adobe implementada nas páginas da Web. Instale a versão do seu navegador preferido:
 
 - [Extensão do Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -25,9 +25,9 @@ O Experience Platform Debugger é uma extensão disponível para os navegadores 
 
 Se você nunca tiver usado o Debugger antes (e este é diferente do Adobe Experience Cloud Debugger anterior), assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
 
-Como você carregará o site de demonstração no modo incógnito, é necessário garantir que o Experience Platform Debugger também esteja disponível no modo incógnito. Para fazer isso, vá para **chrome://extensions** em seu navegador e abra a extensão do Depurador Experience Platform.
+Como você carregará o site de demonstração no modo anônimo, é necessário garantir que o Experience Platform Debugger também esteja disponível no modo anônimo. Para fazer isso, vá para **chrome://extensions** em seu navegador e abra a extensão do Experience Platform Debugger.
 
 Verifique se essas duas configurações estão ativadas:
 
@@ -62,9 +62,9 @@ Em seguida, você verá seu site carregado em uma janela incógnita do navegador
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web7.png)
 
-### Use o Depurador de Experience Platform para ver as chamadas que vão para o Edge
+### Use o Experience Platform Debugger para ver as chamadas que vão para o Edge
 
-Certifique-se de abrir o site de demonstração e clique no ícone da extensão Experience Platform Debugger.
+Verifique se o site de demonstração está aberto e clique no ícone da extensão do Experience Platform Debugger.
 
 ![Página inicial do EXP News](./images/ext2.png)
 
@@ -88,19 +88,19 @@ Confirme se o Depurador está **[!UICONTROL Conectado à Página Inicial]**, com
 
 Em seguida, vá para qualquer página no site de demonstração como, por exemplo, a página de categoria **Planos**.
 
-![Extensão AEP Web SDK do Depurador da AEP](./images/validate4.png)
+![Extensão da AEP Web SDK do depurador da AEP](./images/validate4.png)
 
-Agora clique em **[!UICONTROL Experience Platform Web SDK]** na navegação à esquerda, para ver as **[!UICONTROL Solicitações de rede]**.
+Agora clique em **[!UICONTROL Experience Platform Web SDK]** na navegação à esquerda, para ver as **[!UICONTROL Solicitações de Rede]**.
 
 Cada solicitação contém uma linha **[!UICONTROL events]**.
 
-![Extensão AEP Web SDK do Depurador da AEP](./images/validate5.png)
+![Extensão da AEP Web SDK do depurador da AEP](./images/validate5.png)
 
-Clique para abrir uma linha **[!UICONTROL events]**. Observe como você pode ver o evento **web.webpagedetails.pageViews**, bem como outras variáveis prontas para uso que seguem o formato **ExperienceEvent XDM do SDK da Web**.
+Clique para abrir uma linha **[!UICONTROL events]**. Observe como você pode ver o evento **web.webpagedetails.pageViews**, bem como outras variáveis prontas para uso que seguem o formato **Web SDK ExperienceEvent XDM**.
 
 ![Valor dos eventos](./images/validate8.png)
 
-Esses tipos de detalhes de solicitação também estão visíveis na guia Rede. Filtre solicitações com **interaja** para localizar as solicitações enviadas pelo SDK da Web. Você pode encontrar todos os detalhes da carga XDM na seção Carga:
+Esses tipos de detalhes de solicitação também estão visíveis na guia Rede. Filtre solicitações com **interaja** para localizar as solicitações enviadas pelo Web SDK. Você pode encontrar todos os detalhes da carga XDM na seção Carga:
 
 ![Guia Rede](./images/validate9.png)
 

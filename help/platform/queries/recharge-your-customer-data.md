@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Este vídeo aborda:
 * Recursos de preparação de dados do Adobe Experience Platform que você pode aproveitar
 * Aumento do ROI da Adobe Real-Time CDP, Adobe Journey Optimizer e Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## Exemplo de SQL
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Recarregando Dados Omnichannel para Experiências de Eletrificação](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>Este vídeo é um trecho da sessão *[Recarregando Dados Omnichannel para Experiências de Eletrificação](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* do Adobe Summit 2020.
