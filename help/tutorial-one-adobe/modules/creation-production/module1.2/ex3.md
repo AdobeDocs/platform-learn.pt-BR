@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 # 1.2.3 Automação de processos com o Workfront Fusion
 
-Saiba como processar automação com o Workfront Fusion.
+Saiba como fazer automação de processos com o Workfront Fusion.
 
-## 1.2.3.1 Iteração em vários valores
+## 1.2.3.1 Iterando em vários valores
 
 Seu cenário deve ficar assim:
 
@@ -93,7 +93,7 @@ Até agora, você alterou o texto em um arquivo Photoshop por um valor estático
 
    ![WF Fusion](./images/wffusion215.png)
 
-## 1.2.3.2 Ativar o cenário usando um webhook
+## 1.2.3.2 Ativar seu cenário usando um webhook
 
 Até o momento, você executou o cenário manualmente para testar. Agora vamos atualizar seu cenário com um webhook, para que ele possa ser ativado de um ambiente externo.
 
@@ -200,7 +200,7 @@ Até o momento, você executou o cenário manualmente para testar. Agora vamos a
 
 ## Próximas etapas
 
-Ir para [Resumo e Benefícios da Automação de Serviços da Firefly](./summary.md){target="_blank"}
+Ir para Automação do [1.2.4 usando Conectores](./ex4.md){target="_blank"}
 
 Volte para [Automatização dos Serviços Adobe Firefly](./automation.md){target="_blank"}
 
