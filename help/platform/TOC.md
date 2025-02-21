@@ -5,7 +5,7 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -103,19 +103,19 @@ Campaigns
 + Públicos e segmentação {#audiences}
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
    + [Fazer upload de públicos](audiences/upload-audiences.md)
-   + [Visão geral da composição do Federated Audience](audiences/overview-of-federated-audience-composition.md)
-   + [Conectar e configurar a Composição de Público-Alvo Federado](audiences/connect-and-configure-federated-audience-composition.md)
-   + [Criar uma composição de público-alvo federado](audiences/create-a-federated-audience-composition.md)
-   + [Visão geral do Construtor de regras de público-alvo](audiences/audience-rule-builder-overview.md)
-   + [Criar públicos-alvo](audiences/create-audiences.md)
-   + [Usar restrições de tempo](audiences/time-constraints.md)
-   + [Criar públicos-alvo com base em conteúdo](audiences/create-content-based-audiences.md)
-   + [Criar públicos de conversão](audiences/create-conversion-audiences.md)
-   + [Criar públicos a partir de públicos existentes](audiences/create-audiences-from-existing-audiences.md)
-   + [Criar públicos sequenciais](audiences/create-sequential-audiences.md)
-   + [Criar públicos-alvo dinâmicos](audiences/create-dynamic-audiences.md)
-   + [Criar públicos-alvo de várias entidades](audiences/create-multi-entity-audiences.md)
-   + [Criar e ativar públicos-alvo da conta (B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [Visão geral da composição do Federated Audience](audiences/fac/overview-of-federated-audience-composition.md)
+   + [Conectar e configurar a Composição de Público-Alvo Federado](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [Criar uma composição de público-alvo federado](audiences/fac/create-a-federated-audience-composition.md)
+   + [Visão geral do Construtor de regras de público-alvo](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [Criar públicos-alvo](audiences/audience-builder/create-audiences.md)
+   + [Usar restrições de tempo](audiences/audience-builder/time-constraints.md)
+   + [Criar públicos-alvo com base em conteúdo](audiences/audience-builder/create-content-based-audiences.md)
+   + [Criar públicos de conversão](audiences/audience-builder/create-conversion-audiences.md)
+   + [Criar públicos a partir de públicos existentes](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [Criar públicos sequenciais](audiences/audience-builder/create-sequential-audiences.md)
+   + [Criar públicos-alvo dinâmicos](audiences/audience-builder/create-dynamic-audiences.md)
+   + [Criar públicos-alvo de várias entidades](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [Criar e ativar públicos-alvo da conta (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demonstração da segmentação por transmissão](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Avaliar uma regra de público-alvo](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Criar um conjunto de dados para exportar os dados](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
