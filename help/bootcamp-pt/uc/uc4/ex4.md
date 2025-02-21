@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
@@ -21,142 +21,142 @@ ht-degree: 0%
 ## Objetivos
 
 - Entenda a UO do Analysis Workspace no CJA
-- Entenda os problemas de mudança de dados no Analysis Workspace
-- Aprenda a corrigir de dados
+- Entenda os conceitos de preparação de dados no Analysis Workspace
+- Aprenda a fazer cálculos de dados
 
-## 4.4.1 Interface do Analysis Workspace no CJA
+## 4.4.1  UI do Analysis Workspace no CJA
 
 O Analysis Workspace remove todas as limitações típicas de um único relatório do Analytics. Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-O Customer Journey Analytics solução alternativa dos dados da plataforma. É muitíssimo recomendado para acompanhar este vídeo de visão geral de quatro minutos:
+O Customer Journey Analytics traz essa solução além dos dados da plataforma. É altamente recomendável assistir a este vídeo de visão geral de quatro minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
-Se você nunca usou o Analysis Workspace antes, recomamos este vídeo:
+Se você nunca usou o Analysis Workspace antes, recomendamos este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
-### Criar Seu Projeto
+### Crie Seu Projeto
 
-Agora é hora de criar primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Clique em **Criar novo**.
+Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. Clique em **Create new**.
 
-![](./images/prmenu.png)
+![demo](./images/prmenu.png)
 
-Em seguida, você verá a tela abaixo. **Projeto em branco** então clique em **Criar**.
+Em seguida, você verá a tela abaixo. Selecione **Blank project** então clique em **Create**.
 
-![demonstração](./images/prmenu1.png)
+![demo](./images/prmenu1.png)
 
-Você verá um projeto e esperança.
+Você verá um projeto vazio.
 
-![demonstração](./images/premptyprojects.png)
+![demo](./images/premptyprojects.png)
 
-Primeiro,-se de escolha a Visualização de dados em vez de direito superior da tela. Exemplo, uma Visualização de dados a ser selecionado é `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste exemplo, a Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
 
-![demonstração](./images/prdv.png)
+![demo](./images/prdv.png)
 
-Em seguida, você vai salvar seu projeto e dar um nome a ele. Você pode usar o comando para salvar:
+Em seguida, você irá salvar seu projeto e dar um nome a ele. Você pode usar o seguinte comando para salvar:
 
-| Sistema operacional | Atalho |
+| OS | Short cut |
 | ----------------- |-------------| 
-| Windows | Ctrl+S |
-| Mac | Command+S |
+| Windows | Control + S |
+| Mac | Command + S |
 
 Você verá este pop-up:
 
-![demonstração](./images/prsave.png)
+![demo](./images/prsave.png)
 
-Usar este modelo de nomenclatura:
+Use este modelo de nomenclatura:
 
-| Nome | Descrição |
+| Name | Description |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Em seguida, clique em **Salvar**.
+Em seguida, clique em **Save**.
 
-![demonstração](./images/prsave2.png)
+![demo](./images/prsave2.png)
 
 ## 4.4.2 Métricas calculadas
 
-consultado em 28 de novembro de 2012 &quot;µ todos os componentes na Visualização de dados, ainda há dois anos atrás para que os usuários dos testes para analisar seus dados&quot; . Além disso, qualquer processo de análise, você pode criar as calculadas para aprofundar a pesquisa de informações.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar alguns deles para que os usuários de negócios estejam prontos para iniciar suas análises. Além disso, durante qualquer processo de analytics, você pode criar métricas calculadas para aprofundar a descoberta de insights.
 
-Como exemplo, crioulo Taxa de transformação que definem a navegação/Compras na Visualização de dados.
+Como exemplo, criaremos uma Taxa de conversão calculada usando a métrica/evento Compras que definimos na Visualização de dados.
 
-## Taxa de ➡
+## Taxa de conversão
 
 Vamos começar a abrir o construtor de métricas calculadas. Clique em **+** para criar sua primeira Métrica calculada no Analysis Workspace.
 
-![demonstração](./images/pradd.png)
+![demo](./images/pradd.png)
 
-O **Construtor De Métrica Calculada** irá:
+O **Calculated Metric Builder** irá aparecer:
 
-![demonstração](./images/prbuilder.png)
+![demo](./images/prbuilder.png)
 
-**Compras** na lista de métricas no menu do lado esquerdo. Em **Métricas** clique em **Mostrar tudo**
+Encontre **Purchases** na lista de métricas no menu do lado esquerdo. Em **Metrics** clique em **Show all**
 
-![demonstração](./images/calcbuildercr1.png)
+![demo](./images/calcbuildercr1.png)
 
-Agora destinada e sola a **Compras** na resolução da.
+Agora arraste e solte a métrica **Purchases** na definição da métrica calculada.
 
-![demonstração](./images/calcbuildercr2.png)
+![demo](./images/calcbuildercr2.png)
 
-, taxa de conversão **Conversões / Sessões**. Então, vamos fazer o mesmo que analisar a tela de definição de. a ➡ **Sessões** e garantie solte-a no de definição, no evento **Compras**.
+Normalmente, taxa de conversão significa **Conversions / Sessions**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calculada. Encontre a métrica **Sessions** e arraste e solte-a no criador de definição, no evento **Purchases**.
 
-![demonstração](./images/calcbuildercr3.png)
+![demo](./images/calcbuildercr3.png)
 
-Observe que o operador de classificação é selecionado político.
+Observe que o operador de divisão é selecionado automaticamente.
 
-![demonstração](./images/calcbuildercr4.png)
+![demo](./images/calcbuildercr4.png)
 
-A taxa de evolução é dada em mudança. Então, vamos mudar o formato para analisar e escolher 2 casas decimais.
+A taxa de conversão é comumente representada em porcentagem. Então, vamos mudar o formato para porcentagem e selecionar 2 casas decimais.
 
-![demonstração](./images/calcbuildercr5.png)
+![demo](./images/calcbuildercr5.png)
 
 Finally, Change the name and description of the calculated metric:
 
-| Título | Descrição |
+| Title | Description |
 | ----------------- |-------------| 
 | Conversion Rate | Conversion Rate |
 
-Por fim, altere o nome e a descrição da:
+Por fim, altere o nome e a descrição da métrica calculada:
 
-![demonstração](./images/calcbuildercr6.png)
+![demo](./images/calcbuildercr6.png)
 
-Não se livrar de **Salvar** a Métrica ➡.
+Não se esqueça de **Salvar** a Métrica calculada.
 
-![demonstração](./images/pr9.png)
+![demo](./images/pr9.png)
 
 ## 4.4.3 Dimensões calculadas: Filtros (segmentação) e intervalos de datas
 
 ### Filtros: Dimensões calculadas
 
-Os riscos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é criar algumas **Dimension calculados**. Isso limita, ➡, **sem Adobe Analytics.** Nenhum Customer Journey Analytics, esses segmentos são classificados de **Filtros**.
+Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interessante criar algumas **Calculated Dimensions**. Isso significa, essencialmente, **segments** no Adobe Analytics. No Customer Journey Analytics, esses segmentos são chamados de **Filters**.
 
-![demonstração](./images/prfilters.png)
+![demo](./images/prfilters.png)
 
-A criação de eventos relacionados os usuários de a inicialização o analytics com algumas organizações calculadas valiosas. Isso irá automatizar é a responsabilidade, além de ajudar na parte de. Abaixo está compartilhado:
+A criação de filtros ajudará os usuários de negócios a iniciar o analytics com algumas dimensões calculadas valiosas. Isso irá automatizar algumas tarefas, além de ajudar na parte de adoção. Abaixo estão alguns exemplos:
 
 1. Mídia Própria, Mídia Paga,
-2. Visitas novas x recorentes
-3. Clientes com responsabilidade
+2. Visitas novas x recorrentes
+3. Clientes com carrinho abandonado
 
-filtros filtros podem ser analisados ou durante a parte de análise (o que você fará no próximo exercício).
+Esses filtros podem ser criados antes ou durante a parte de análise (o que você fará no próximo exercício).
 
-### Intervalos de dados: Dimensões de tempo calculadas
+### Intervalos de datas: Dimensões de tempo calculadas
 
-A organização de tempo são outro tipo de organizações calculadas. Alguns já existentes, mas você pode mudar as tendências de tempo compartilhado na fase falsa de dados.
+As dimensões de tempo são outro tipo de dimensões calculadas. Alguns já foram criados, mas você também pode criar suas próprias Dimensões de tempo personalizadas na fase de preparação de dados.
 
-Estas considerações de tempo compartilhado ajudarão analistas e usuários de negócios a notar questões importantes e usá-las para filtrar e o tempo de serviço. Perguntas e respostas quando as autoridades responsáveis:
+Essas Dimensões de tempo calculado ajudarão analistas e usuários de negócios a lembrar datas importantes e usá-las para filtrar e alterar o tempo de relatório. Perguntas e dúvidas típicas quando fazemos análises:
 
-- Quando foi uma Black Friday do ano passado? Entre os dias 21 e 29?
+- Quando foi a Black Friday do ano passado? Entre os dias 21 e 29?
 - Quando veiculamos aquela campanha de TV em dezembro?
-- De quando a situação é conhecida como as visitas de verão de 2018? Quero comparar com 2019. A propósito, você sabe os dias exatos em 2019?
+- De quando a quando fizemos as vendas de verão de 2018? Quero comparar com 2019. A propósito, você sabe os dias exatos em 2019?
 
-![demonstração](./images/timedimensions.png)
+![demo](./images/timedimensions.png)
 
-Agora você pode o buscado de dados usando o Analysis Workspace do CJA.
+Agora você concluiu o exercício de preparação de dados usando o Analysis Workspace do CJA.
 
 Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
-[Retorno para Fluxo de monitoramento 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Retorno para Todos os compartilhados](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)
