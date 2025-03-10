@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico abrangente para aplicativos Adobe, do Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1113'
 ht-degree: 2%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 2%
       + [1.2.2 Usar APIs do Adobe no Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Automação de processos com o Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4 Automação usando conectores](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.5 E/S de estrutura e Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
 
 + Gerenciamento de ativos {#assetmgmt}

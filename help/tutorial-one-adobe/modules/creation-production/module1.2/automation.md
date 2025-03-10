@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
 
-# 1.2 Automação de fluxo de trabalho criativo com o Workfront Fusion
+# 1.2 Automação de fluxo de trabalho do Creative com o Workfront Fusion
 
 Saiba como automatizar fluxos de trabalho criativos com o Workfront Fusion.
 
@@ -38,6 +38,10 @@ Neste exercício, continue refinando sua jornada para automatizar o processo de 
 [1.2.4 Automação usando Conectores](./ex4.md){target="_blank"}
 
 Neste exercício, continue refinando sua jornada para automatizar o processo de criação de imagem.
+
+[1.2.5 E/S de quadros e Workfront Fusion](./ex5.md){target="_blank"}
+
+Neste exercício, você conectará o Frame I/O ao seu cenário do Workfront Fusion.
 
 [Resumo e benefícios](./summary.md){target="_blank"}
 
