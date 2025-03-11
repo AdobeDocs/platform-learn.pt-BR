@@ -8,12 +8,12 @@ role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-jira: null
+jira: KT-17468
 hide: true
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 93ecc7ca815fc982697d432f316943dde12b62a5
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 3%
+source-wordcount: '72'
+ht-degree: 4%
 
 ---
 
@@ -28,16 +28,13 @@ ht-degree: 3%
 
 + [Substituir SDKs](replace-sdk.md)
 
-+ [Renderizar atividades](render-activities.md)
++ [Renderizar atividades](retrieve-activities.md)
 
 + [Enviar parâmetros](send-parameters.md)
 
 + [Rastrear eventos de conversão](track-events.md)
 
-+ [Habilitar suporte para WebView](webview.md)
-
 + [Atualizar públicos e scripts de perfil](update-audiences.md)
 
 + [Validar a implementação](validate.md)
 
-+ [Depurar Destino](debugging.md)

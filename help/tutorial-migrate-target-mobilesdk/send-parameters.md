@@ -1,17 +1,17 @@
 ---
-title: Enviar parâmetros - Migrar do Adobe Target para o Adobe Journey Optimizer - Extensão móvel de decisão
+title: Enviar parâmetros - Migrar a implementação do Adobe Target no aplicativo móvel para o Adobe Journey Optimizer - Extensão de decisão
 description: Saiba como enviar parâmetros de mbox, perfil e entidade para o Adobe Target usando o Experience Platform Web SDK.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
 
-# Enviar parâmetros para o Target usando a extensão móvel do Adobe Journey Optimizer - Decisioning
+# Enviar parâmetros para o Target usando a extensão do Decisioning
 
-As implementações do Target diferem entre os sites devido à arquitetura do site, aos requisitos comerciais e aos recursos usados. A maioria das implementações do Target inclui transmitir vários parâmetros para informações contextuais, públicos-alvo e recomendações de conteúdo.
+As implementações do Target diferem entre os aplicativos móveis devido à arquitetura do aplicativo, aos requisitos comerciais e aos recursos usados. A maioria das implementações do Target inclui transmitir vários parâmetros para informações contextuais, públicos-alvo e recomendações de conteúdo.
 
 Com a extensão Target, todos os parâmetros Target foram passados usando a função `TargetParameters`.
 
@@ -27,7 +27,7 @@ Com a extensão de decisão:
 
 ## Parâmetros personalizados
 
-Parâmetros de mbox personalizados são a maneira mais básica de enviar dados para o Target e podem ser passados nos objetos XDM ou `data.__adobe.target`.
+Parâmetros de mbox personalizados são a maneira mais básica de enviar dados para o Target e podem ser passados nos objetos `xdm` ou `data.__adobe.target`.
 
 ## Parâmetros do perfil
 
@@ -35,7 +35,7 @@ Os parâmetros de perfil armazenam dados por um longo período no perfil de Dest
 
 ## Parâmetros de entidade
 
-[Parâmetros de entidade](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) são usados para transmitir dados comportamentais e informações de catálogo complementares para Recomendações de Destino. Semelhante aos parâmetros de perfil, todos os parâmetros de entidade devem ser passados sob o objeto `data.__adobe.target`.
+[Parâmetros de entidade](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) são usados para transmitir dados comportamentais e informações de catálogo complementares para Recomendações de Destino. Semelhante aos parâmetros do perfil, a maioria dos parâmetros da entidade deve ser passada sob o objeto `data.__adobe.target`. A única exceção é que a matriz `xdm.productListItems` está presente, então o primeiro valor `SKU` é usado como `entity.id`.
 
 Os parâmetros de entidade para um item específico devem ter o prefixo `entity.` para a captura adequada de dados. Os parâmetros `cartIds` e `excludedIds` reservados para algoritmos de recomendações não devem ter o prefixo e o valor de cada um deles deve conter uma lista separada por vírgulas de IDs de entidade.
 
@@ -45,7 +45,7 @@ Os parâmetros de compra são passados em uma página de confirmação de pedido
 
 As informações de compra são passadas para o Target quando o grupo de campos `commerce` tem `purchases.value` definido como `1`. A ID do pedido e o total do pedido são mapeados automaticamente a partir do objeto `order`. Se a matriz `productListItems` estiver presente, os valores `SKU` serão usados para `productPurchasedId`.
 
-Se você não estiver passando `commerce` campos no objeto XDM, é possível passar os detalhes do pedido para o público alvo usando os campos `data.__adobe.target.orderId`, `data.__adobe.target.orderTotal` e `data.__adobe.target.productPurchasedId`.
+Se você não estiver passando `commerce` campos no objeto `xdm`, é possível passar os detalhes do pedido para o público alvo usando os campos `data.__adobe.target.orderId`, `data.__adobe.target.orderTotal` e `data.__adobe.target.productPurchasedId`.
 
 ## ID do cliente (mbox3rdPartyId)
 
@@ -56,7 +56,7 @@ O Target permite a sincronização de perfis entre dispositivos e sistemas usand
 | Exemplo de parâmetro at.js | Opção do Platform Web SDK | Notas |
 | --- | --- | --- |
 | `at_property` | N/D | Os tokens de propriedade estão configurados na [sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) e não podem ser definidos na chamada `sendEvent`. |
-| `pageName` | `xdm.web.webPageDetails.name` | Todos os parâmetros de mbox do Target devem ser passados como parte do objeto `xdm` e estar em conformidade com um esquema usando a classe XDM ExperienceEvent. Os parâmetros da mbox não podem ser passados como parte do objeto `data`. |
+| `pageName` | `xdm.web.webPageDetails.name` ou <br> `data.__adobe.target.pageName` | Os parâmetros da mbox de destino podem ser passados como parte do objeto `xdm` ou parte do objeto `data.__adobe.target`. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | Todos os parâmetros de perfil do Target devem ser passados como parte do objeto `data` e prefixados com `profile.` para serem mapeados adequadamente. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Parâmetro reservado usado para o recurso Afinidade de Categoria do Destino que deve ser passado como parte do objeto `data`. |
 | `entity.id` | `data.__adobe.target.entity.id` <br>OU<br> `xdm.productListItems[0].SKU` | As IDs de entidade são usadas para contadores comportamentais do Target Recommendations. Essas IDs de entidade podem ser passadas como parte do objeto `data` ou mapeadas automaticamente a partir do primeiro item na matriz `xdm.productListItems` se sua implementação usar esse grupo de campos. |
@@ -65,9 +65,9 @@ O Target permite a sincronização de perfis entre dispositivos e sistemas usand
 | `cartIds` | `data.__adobe.target.cartIds` | Usado para os algoritmos de recomendações baseadas no carrinho do Target. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | Usado para impedir que IDs de entidade específicas retornem em um design de recomendações. |
 | `mbox3rdPartyId` | Definir no objeto `xdm.identityMap` | Usado para sincronizar perfis do Target entre dispositivos e atributos do cliente. O namespace a ser usado para a ID do cliente deve ser especificado na [Configuração de destino da sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
-| `orderId` | `xdm.commerce.order.purchaseID`<br> (quando `commerce.purchases.value` está definido como `1`) | Usado para identificar um pedido exclusivo para o rastreamento de conversão do Target. |
-| `orderTotal` | `xdm.commerce.order.priceTotal`<br> (quando `commerce.purchases.value` está definido como `1`) | Usado para rastrear totais de ordem para metas de conversão e otimização de Target. |
-| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (quando `commerce.purchases.value` está definido como `1`) <br>OU<br> `data.__adobe.target.productPurchasedId` | Usado para rastreamento de conversão do Target e algoritmos de recomendações. Consulte a seção [parâmetros de entidade](#entity-parameters) abaixo para obter detalhes. |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> (quando `commerce.purchases.value` está definido como `1`)<br> ou<br> `data.__adobe.target.orderId` | Usado para identificar um pedido exclusivo para o rastreamento de conversão do Target. |
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> (quando `commerce.purchases.value` está definido como `1`)<br> ou<br> `data.__adobe.target.orderTotal` | Usado para rastrear totais de ordem para metas de conversão e otimização de Target. |
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (quando `commerce.purchases.value` está definido como `1`) <br>OU<br> `data.__adobe.target.productPurchasedId` | Usado para rastreamento de conversão do Target e algoritmos de recomendações. |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Usado para a meta de atividade [pontuação personalizada](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html). |
 
 {style="table-layout:auto"}
@@ -80,6 +80,42 @@ Vamos usar um exemplo simples para demonstrar as diferenças entre as extensões
 ### Android
 
 >[!BEGINTABS]
+
+>[!TAB Otimizar SDK]
+
+```Java
+final Map<String, Object> data = new HashMap<>();
+final Map<String, String> targetParameters = new HashMap<>();
+ 
+// Mbox parameters
+targetParameters.put("status", "platinum");
+ 
+// Profile parameters - prefix with profile.
+targetParameters.put("profile.gender", "male");
+ 
+// Product parameters
+targetParameters.put("productId", "pId1");
+targetParameters.put("categoryId", "cId1");
+ 
+// Order parameters
+targetParameters.put("orderId", "id1");
+targetParameters.put("orderTotal", "1.0");
+targetParameters.put("purchasedProductIds", "ppId1");
+ 
+data.put("__adobe", new HashMap<String, Object>() {
+  {
+    put("target", targetParameters);
+  }
+});
+ 
+// Target location (or mbox)
+final DecisionScope decisionScope = DecisionScope("myTargetLocation")
+ 
+final List<DecisionScope> decisionScopes = new ArrayList<>();
+decisionScopes.add(decisionScope);
+ 
+Optimize.updatePropositions(decisionScopes, null, data);
+```
 
 >[!TAB SDK de Destino]
 
@@ -109,6 +145,36 @@ TargetParameters targetParameters = new TargetParameters.Builder()
 ### iOS
 
 >[!BEGINTABS]
+
+>[!TAB Otimizar SDK]
+
+```Swift
+var data: [String: Any] = [:]
+var targetParameters: [String: String] = [:]
+ 
+// Mbox parameters
+targetParameters["status"] = "platinum"
+ 
+// Profile parameters - prefix with profile.
+targetParameters["profile.gender"] = "make"
+ 
+// Product parameters
+targetParameters["productId"] = "pId1"
+targetParameters["categoryId"] = "cId1"
+ 
+// Add order parameters
+targetParameters["orderId"] = "id1"
+targetParameters["orderTotal"] = "1.0"
+targetParameters["purchasedProductIds"] = "ppId1"
+ 
+data["__adobe"] = [
+  "target": targetParameters
+]
+ 
+// Target location (or mbox)
+let decisionScope = DecisionScope(name: "myTargetLocation")
+Optimize.updatePropositions(for: [decisionScope] withXdm: nil andData: data)
+```
 
 >[!TAB SDK de Destino]
 
