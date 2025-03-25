@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
+source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 18%
 
 ---
@@ -117,6 +117,7 @@ Campaigns
    + [Criar públicos-alvo de várias entidades](audiences/audience-builder/create-multi-entity-audiences.md)
    + [Criar e ativar públicos-alvo da conta (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demonstração da segmentação por transmissão](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [Avaliar públicos-alvo em lote sob demanda](/help/platform/audiences/evaluate-audiences-on-demand.md)
    + [Avaliar uma regra de público-alvo](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [Criar um conjunto de dados para exportar os dados](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [Configuração da conexão de Correspondência de segmentos](/help/platform/segments/segment-match-connection-setup.md)

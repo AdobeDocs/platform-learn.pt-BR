@@ -2,9 +2,9 @@
 title: Configuração inicial - Migrar a implementação do Adobe Target no aplicativo móvel para o Adobe Journey Optimizer - Extensão de decisão
 description: Saiba mais sobre e configure os elementos fundamentais importantes necessários para a implementação do Platform Web SDK
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 6%
 
 ---
@@ -61,7 +61,7 @@ A extensão de Destino tem [configurações configuráveis](https://developer.ad
 | Código do cliente | n/d | Definido automaticamente pela borda usando os detalhes da Organização IMS |
 | ID do ambiente | ID do ambiente de destino | Configurado na sequência de dados |
 | Propriedade do Workspace de destino | Token de propriedade | Configurado na sequência de dados |
-| Tempo limite | Não configurável | O tempo limite da extensão do Decisioning é de 10 segundos |
+| Tempo limite | Tempo limite | Configurável na extensão Decisioning e no Otimize SDK. O tempo limite padrão é de 10 segundos. |
 | Domínio do servidor | Domínio do Edge Network | Definido na extensão do Adobe Experience Platform Edge Network |
 
 Em seguida, saiba como [substituir o SDK do Target](replace-sdk.md).
