@@ -1,30 +1,22 @@
 ---
-title: Migrar a implementação do Adobe Target no aplicativo móvel para o Adobe Journey Optimizer - Extensão de decisão
+title: Migrar seu aplicativo móvel do Adobe Target para o Adobe Journey Optimizer - Extensão de decisão
 description: Saiba como migrar sua implementação de aplicativo móvel do Adobe Target para o Adobe Journey Optimizer - Extensão de decisão
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '650'
 ht-degree: 1%
 
 ---
 
-# Migrar a implementação do Adobe Target no aplicativo móvel para o Adobe Journey Optimizer - Extensão de decisão
+# Migrar seu aplicativo móvel do Adobe Target para o Adobe Journey Optimizer - Extensão de decisão
 
 Este guia é para implementadores experientes do Adobe Target que aprendem a migrar implementações existentes do Adobe Experience Platform Mobile SDK da extensão do Adobe Target para a extensão do Adobe Journey Optimizer - Decisioning.
 
 O Adobe Experience Platform Mobile SDK capacita o engajamento completo em seus aplicativos móveis. A extensão do Target se baseia no Mobile SDK para ajudar você a personalizar as experiências do aplicativo com o Adobe Target. A extensão Decisioning é uma abordagem mais recente para implementar o Adobe Target em aplicativos móveis que usa os recursos do Adobe Experience Platform Edge Network que ajudam a integrar o Target a aplicativos baseados em plataforma, como Real-Time CDP e Journey Optimizer.
 
 ![Diagrama mostrando o SDK móvel se conectando ao Target por meio da Edge Network com a extensão de Decisão](assets/datacollection.png)
-
->[!INFO]
->
->No ecossistema do Adobe Experience Platform Mobile SDK, as extensões são implementadas pelos SDKs importados para seus aplicativos que podem ter nomes diferentes:
->
-> * **Target SDK** implementa a **extensão do Adobe Target**
-> * **Otimizar o SDK** implementa a **Adobe Journey Optimizer - Extensão de decisão**
-
 
 ## Principais benefícios
 

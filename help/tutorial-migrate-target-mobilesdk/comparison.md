@@ -2,9 +2,9 @@
 title: Comparação da extensão do Target com a extensão do Decisioning
 description: Saiba mais sobre as diferenças entre a extensão do Target e a extensão do Decisioning, incluindo recursos, funções, configurações e fluxo de dados.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '791'
 ht-degree: 3%
 
 ---
@@ -57,7 +57,6 @@ Depois de analisar as informações abaixo e avaliar a implementação da extens
 | thirdPartyId (mbox3rdPartyId) | Suportado | Compatível com o Mapa de identidade e o Namespace de ID de terceiros no fluxo de dados |
 | Notificações (exibir, clicar) | Suportado | Suportado |
 | Tokens de resposta | Suportado | Suportado |
-| Analytics for Target (A4T) | Somente no lado do cliente | Lado do cliente e lado do servidor |
 | Visualizações móveis (modo de QA) | Suportado | Suporte limitado com o Assurance |
 
 >[!IMPORTANT]
