@@ -3,16 +3,16 @@ title: Tutorials de Coleção de dados
 description: Vídeos e tutoriais explicativos para torná-lo um usuário avançado da Coleção de dados
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 24%
+source-wordcount: '263'
+ht-degree: 22%
 
 ---
 
 # Tutorials de Coleção de dados
 
-A Coleção de dados é a próxima geração de recursos de Tag Management de site e SDK para dispositivos móveis do Adobe. A Coleção de dados oferece aos clientes uma forma simples de implantar e gerenciar as soluções de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Use estes vídeos e tutoriais para ajudá-lo a conhecer esta tecnologia crítica.
+A Coleção de dados é a próxima geração de recursos de gerenciamento de tags de site e SDK móveis da Adobe. A Coleção de dados oferece aos clientes uma forma simples de implantar e gerenciar as soluções de análise, de marketing e de anúncios necessárias para potencializar experiências de cliente relevantes. Use estes vídeos e tutoriais para ajudá-lo a conhecer esta tecnologia crítica.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -28,11 +28,11 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migração do Target para o Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrar Adobe Target para Web SDK</strong>
     </a>
     </div>
@@ -41,16 +41,16 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
       <img alt="Implementar a Adobe Experience Cloud com o SDK da Web" src="assets/thumb_analyticsWebSdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
     <strong>Migrar Adobe Analytics para Web SDK nas marcas</strong>
     </a>
     </div>
     <p>
-    <em>Substituir AppMeasurement.js pela Web SDK com marcas</em>
+    <em>Substituir AppMeasurement.js por Web SDK com marcas</em>
     <p>
   </td>
   <td>
@@ -64,6 +64,25 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     <p>
   </td>
 </tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <img alt="Migração do Target para o Mobile SDK no Edge Network" src="assets/thumb_targetMobileSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <strong>Migrar do Adobe Target para o Mobile SDK no Edge Network</strong>
+    </a>
+    </div>
+    <p>
+    <em>Substituir a extensão do Target pela Journey Optimizer - Extensão de decisão</em>
+    <p>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  </tr>
 </table>
 
 ## Guias de implementação
@@ -76,7 +95,7 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR" target="_blank">
-    <strong>Implementar o Experience Cloud com o Web SDK</strong>
+    <strong>Implementar a Experience Cloud com a Web SDK</strong>
     </a>
     </div>
     <p>
@@ -89,7 +108,7 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR" target="_blank">
-    <strong>Implementar o Experience Cloud em aplicativos móveis</strong>
+    <strong>Implementar a Experience Cloud em aplicativos móveis</strong>
     </a>
     </div>
     <p>
@@ -106,7 +125,7 @@ A Coleção de dados é a próxima geração de recursos de Tag Management de si
     </a>
     </div>
     <p>
-    <em>Usar marcas para implementar bibliotecas herdadas do Analytics, do Target e do Audience Manager</em>
+    <em>Usar marcas para implementar bibliotecas herdadas do Analytics, Target e Audience Manager</em>
     <p>
   </td>
 </tr>
