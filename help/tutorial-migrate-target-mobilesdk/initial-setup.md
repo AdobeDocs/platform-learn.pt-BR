@@ -1,19 +1,19 @@
 ---
 title: Configuração inicial - Migrar a implementação do Adobe Target no aplicativo móvel para o Adobe Journey Optimizer - Extensão de decisão
-description: Saiba mais sobre e configure os elementos fundamentais importantes necessários para a implementação do Platform Web SDK
+description: Aprenda e configure os elementos fundamentais importantes necessários para seus Platform SDK da Web implementação
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 6%
 
 ---
 
-# Executar a configuração inicial da Coleção de dados
+# Executar a configuração inicial da coleta de dados
 
-A migração do Target SDK para o Otimize SDK requer uma configuração inicial para habilitar a captura de dados, os recursos e as funções adequados do Otimize SDK. As etapas a seguir devem ser concluídas antes que qualquer alteração na implementação do site ocorra:
+A migração do Target SDK para o Optimize SDK requer uma configuração inicial para habilitar a captura de dados, os recursos e as funções adequados do SDK de otimização. As etapas a seguir devem ser concluídas antes de qualquer site implementação alterações ocorrerem:
 
-- [Configure as permissões apropriadas](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} no Adobe Admin Console para a Coleção de Dados
+- [Configurar as permissões apropriadas](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} no Adobe Admin Console para a coleta de dados
 - [Configurar um esquema XDM](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} para transmitir dados estruturados à Edge Network
 - [Configurar o esquema](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"} para receber dados do Adobe Target
 - [Configurar um namespace de identidade](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"} para personalização entre dispositivos e funcionalidade de mbox3rdPartyId
@@ -27,9 +27,9 @@ A migração do Target SDK para o Otimize SDK requer uma configuração inicial 
 
 >[!TAB Extensão de decisão]
 
-Extensões de tag instaladas ao usar a extensão do Decisioning:
+Extensões de tag instaladas ao usar a extensão Decisão:
 
-1. Adobe Journey Optimizer - Decisão
+1. Adobe Systems Otimizador de jornadas - Decisão
 1. Adobe Experience Platform Edge Network
 1. Mobile Core
 1. Perfil
@@ -60,7 +60,7 @@ A extensão de Destino tem [configurações configuráveis](https://developer.ad
 | --- | --- | --- | 
 | Código do cliente | n/d | Definido automaticamente pela borda usando os detalhes da Organização IMS |
 | ID do ambiente | ID do ambiente de destino | Configurado na sequência de dados |
-| Propriedade do Workspace de destino | Token de propriedade | Configurado na sequência de dados |
+| Propriedade Área de trabalho do Target de Target | Token de propriedade | Configurado na sequência de dados |
 | Tempo limite | Tempo limite | Configurável na extensão Decisioning e no Otimize SDK. O tempo limite padrão é de 10 segundos. |
 | Domínio do servidor | Domínio do Edge Network | Definido na extensão do Adobe Experience Platform Edge Network |
 
@@ -68,4 +68,4 @@ Em seguida, saiba como [substituir o SDK do Target](replace-sdk.md).
 
 >[!NOTE]
 >
->Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou sentir curtir há crítico informações ausentes neste guia, informe-nos postando [nesta discussão](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625) da Comunidade.
