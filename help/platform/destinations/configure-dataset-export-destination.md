@@ -1,23 +1,25 @@
 ---
-title: Configurar um destino de exportação do conjunto de dados em  [!DNL Experience Platform]
-description: Saiba mais sobre a configuração, o fluxo de trabalho e os casos de uso da exportação de conjuntos de dados da  [!DNL Adobe Experience Platform]  para um local de armazenamento na nuvem por meio de uma conexão com o destino.
+title: Exportar conjuntos de dados usando um destino de armazenamento na nuvem
+description: Saiba como configurar uma conexão e usar o fluxo de trabalho para exportações de conjunto de dados usando um destino do Cloud Service.
 solution: Real-Time Customer Data Platform, Experience Platform
 feature: Destinations
 role: User, Admin
 level: Beginner
 jira: KT-13945
 thumbnail: 3424392.jpg
-last-substantial-update: 2023-09-27T00:00:00Z
+last-substantial-update: 2025-04-09T00:00:00Z
 exl-id: 139fc1e5-8866-4be4-b921-85443036e506
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 33%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
-# Configurar um destino de exportação do conjunto de dados em [!DNL Experience Platform]
+# Exportar conjuntos de dados usando um destino de armazenamento na nuvem
 
-Saiba mais sobre a configuração, o fluxo de trabalho e os casos de uso para exportar conjuntos de dados do [!DNL Adobe Experience Platform] para um local de armazenamento na nuvem usando uma conexão de destino. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html).
+Saiba como configurar uma conexão e usar o fluxo de trabalho para exportações de conjunto de dados usando um destino do Cloud Service. Os benefícios e casos de uso para esse recurso também são abordados.
+
+Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

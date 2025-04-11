@@ -5,9 +5,9 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
+source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '904'
 ht-degree: 18%
 
 ---
@@ -175,7 +175,7 @@ Campaigns
    + [Conectar-se a destinos](/help/platform/destinations/connecting-to-destinations.md)
    + [Criar destinos e ativar dados](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [Ativar perfis e públicos-alvo para um destino](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
-   + [Configurar um destino de exportação para o conjunto de dados](/help/platform/destinations/configure-dataset-export-destination.md)
+   + [Exportar conjuntos de dados usando um destino de armazenamento na nuvem](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Integrar ao Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Configurar o destino do Azure Blob](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Configurar o destino do Marketo](/help/platform/destinations/configure-the-marketo-destination.md)
