@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
+source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1722'
 ht-degree: 1%
 
 ---
@@ -131,7 +132,7 @@ Clique em **Continuar**.
 
 ![WF Fusion](./images/wffc19.png)
 
-Para localizar sua **ID do Cliente** e seu **Segredo do Cliente**, vá para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} e abra seu projeto do Adobe I/O, denominado `--aepUserLdap-- One Adobe tutorial`. Vá para **OAuth Server-to-Server** para encontrar a ID do Cliente e o Segredo do Cliente. Copie esses valores e cole-os na configuração de conexão no Workfront Fusion.
+Para encontrar sua **ID do Cliente** e **Segredo do Cliente**, vá para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} e abra seu projeto do Adobe I/O, denominado `--aepUserLdap-- One Adobe tutorial`. Vá para **OAuth Server-to-Server** para encontrar a ID do Cliente e o Segredo do Cliente. Copie esses valores e cole-os na configuração de conexão no Workfront Fusion.
 
 ![WF Fusion](./images/wffc20.png)
 
@@ -346,8 +347,8 @@ E alguns minutos depois, um novo arquivo PSD foi gerado com um novo plano de fun
 
 ## Próximas etapas
 
-Ir para [Resumo e Benefícios da Automação de Serviços da Firefly](./summary.md){target="_blank"}
+Ir para [1.2.5 Frame.io e Workfront Fusion](./ex5.md){target="_blank"}
 
-Volte para [Automatização dos Serviços Adobe Firefly](./automation.md){target="_blank"}
+Retorne ao [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
 Voltar para [Todos os Módulos](./../../../overview.md){target="_blank"}

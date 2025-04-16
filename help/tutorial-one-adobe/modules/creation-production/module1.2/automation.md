@@ -1,15 +1,15 @@
 ---
-title: Automação do fluxo de trabalho de criação com o Workfront Fusion
+title: Automação de fluxo de trabalho do Creative com o Workfront Fusion
 description: Saiba como automatizar fluxos de trabalho criativos com o Workfront Fusion
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ Saiba como automatizar fluxos de trabalho criativos com o Workfront Fusion.
 
 [1.2.1 Introdução ao Workfront Fusion](./ex1.md){target="_blank"}
 
-Neste exercício, explore o Workfront Fusion em combinação com os Serviços da Firefly e entenda seus recursos.
+Neste exercício, explore o Workfront Fusion em combinação com o Firefly Services e obtenha uma compreensão de seus recursos.
 
 [1.2.2 Usar APIs do Adobe no Workfront Fusion](./ex2.md){target="_blank"}
 
@@ -39,9 +39,13 @@ Neste exercício, continue refinando sua jornada para automatizar o processo de 
 
 Neste exercício, continue refinando sua jornada para automatizar o processo de criação de imagem.
 
-[1.2.5 E/S de quadros e Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.5 Frame.io e Workfront Fusion](./ex5.md){target="_blank"}
 
-Neste exercício, você conectará o Frame I/O ao seu cenário do Workfront Fusion.
+Neste exercício, você conectará o Frame.io ao seu cenário do Workfront Fusion.
+
+[1.2.6 Frame.io para Workfront Fusion para AEM Assets](./ex6.md){target="_blank"}
+
+Neste exercício, você refinará ainda mais sua configuração, para que seu ativo aprovado no Frame.io use um cenário do Workfront Fusion para, em seguida, exportar uma representação PNG do ativo para o AEM Assets.
 
 [Resumo e benefícios](./summary.md){target="_blank"}
 
