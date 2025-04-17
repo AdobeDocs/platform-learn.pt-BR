@@ -4,7 +4,7 @@ description: Introdução - Instalar a extensão do Chrome para a documentação
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -22,9 +22,9 @@ Um exemplo desses valores pode ser encontrado abaixo. Atualmente, esses valores 
 
 | Nome | Chave | Exemplo |
 |:-------------:| :---------------:| :---------------:|
-| ID da organização IMS da AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nome da organização IMS da AEP | `--aepImsOrgName--` | `Experience Platform International` |
-| ID do locatário da AEP | `--aepTenantId--` | `_experienceplatform` |
+| ID da organização IMS do AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nome da organização IMS do AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| ID do locatário do AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nome da sandbox da AEP | `--aepSandboxName--` | `one-adobe` |
 | LDAP do perfil do aluno | `--aepUserLdap--` | `vangeluw` |
 
@@ -72,13 +72,13 @@ Insira os valores, conforme indicado abaixo, que estão relacionados à sua inst
 
 Se você não tiver certeza de quais valores inserir para esses campos, siga a orientação abaixo.
 
-**Nome da Organização IMS da AEP**
+**Nome da Organização IMS do AEP**
 
 Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará o nome da instância no canto superior direito da tela.
 
 ![DSN](./images/aepname.png)
 
-**ID da Organização IMS da AEP**
+**ID da Organização IMS do AEP**
 
 A ID da organização IMS é o identificador exclusivo da instância do Adobe Experience Cloud e é referenciada em vários locais neste tutorial.
 
@@ -88,29 +88,29 @@ Talvez você possa encontrá-lo indo até [Admin Console](https://https://adminc
 
 ![DSN](./images/aepid1.png)
 
-Você também pode encontrá-las acessando **Gerenciamento de Dados > Consultas** no menu da AEP, onde você pode encontrá-las em **Nome de usuário**.
+Você também pode encontrá-los indo até **Gerenciamento de Dados > Consultas** no menu do AEP, onde você pode encontrá-los em **Nome de Usuário**.
 
 ![DSN](./images/aepid2.png)
 
 Copie e cole a parte **@AdobeOrg** junto com a ID.
 
-**ID do locatário da AEP**
+**ID do locatário do AEP**
 
-Sua ID de locatário é o identificador exclusivo da instância da AEP da sua organização. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
+Sua ID de locatário é o identificador exclusivo da instância do AEP de sua organização. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
 
 ![DSN](./images/aeptenantid.png)
 
 Ao inseri-lo na extensão do Chrome, você deve garantir que um sublinhado seja adicionado como prefixo. Portanto, neste exemplo, **experienceplatform** torna-se **_experienceplatform**.
 
-**Nome da sandbox da AEP**
+**Nome da Sandbox da AEP**
 
-O nome da sandbox é o nome do ambiente que você usará na instância da AEP. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
+O nome da sandbox é o nome do ambiente que você usará na instância do AEP. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
 
 Antes de pegar o nome da sandbox do URL, você deve se certificar de que está na sandbox que deve ser usada para este tutorial. Você pode alternar para a sandbox direita clicando no menu do alternador de sandbox no canto superior direito da tela.
 
 ![DSN](./images/aepsandboxsw.png)
 
-Neste exemplo, o Nome da sandbox da AEP é **one-adobe**.
+Neste exemplo, o Nome da Sandbox da AEP é **one-adobe**.
 
 ![DSN](./images/aepsname.png)
 
@@ -135,11 +135,11 @@ Depois de ativar sua configuração, você verá um ponto verde ao lado das inic
 
 ## Verificar conteúdo do tutorial
 
-Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
+Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 Agora você deve ver que todas as **Variáveis de ambiente** desta página foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
 
-Agora você deve ter uma exibição semelhante à abaixo, onde a variável de ambiente `aepSandboxName` foi substituída pelo seu Nome de sandbox real da AEP, que neste caso é **one-adobe**.
+Agora você deve ter uma exibição semelhante à abaixo, onde a variável de ambiente `aepSandboxName` foi substituída pelo seu Nome de sandbox real do AEP, que neste caso é **one-adobe**.
 
 ![DSN](./images/mod7.png)
 
