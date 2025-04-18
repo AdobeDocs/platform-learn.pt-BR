@@ -4,7 +4,7 @@ description: Introdução - Criar sequência de dados
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -149,7 +149,7 @@ Clique na extensão **Adobe Experience Platform Edge Network** e em **Configurar
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig12m.png)
 
-Você verá isso. Agora é necessário selecionar a sandbox e a sequência de dados corretas que você acabou de configurar. A sandbox a ser usada é `--aepSandboxName--` e a sequência de dados é chamada `--aepUserLdap-- - Demo System Datastream (Mobile)`.
+Você verá isso. Agora é necessário selecionar a sandbox e a sequência de dados corretas que você acabou de configurar. A sandbox a ser usada é `--aepSandboxName--` e a sequência de dados é chamada `--aepUserLdap-- - One Adobe Datastream (Mobile)`.
 
 Para o **domínio do Edge Network**, use o domínio padrão.
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '2050'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Você deverá ver isso. Clique em **Salvar**.
 
 ![WF Fusion](./images/wffc5.png)
 
-Você deverá ver isso. Clique no nó **Webhook**.
+Você deverá ver isso. Clique no módulo **Webhook**.
 
 ![WF Fusion](./images/wffc6.png)
 
@@ -83,33 +83,81 @@ Depois de clicar em **Enviar**, a mensagem deverá mudar para **Determinado com 
 
 ![WF Fusion](./images/wffc12.png)
 
-## 1.2.4.2 Atualizar o nó Firefly T2I
+## 1.2.4.2 Atualizar o módulo Firefly T2I
 
-Clique no nó **Firefly T2I**. Você deverá ver isso. O prompt nesta solicitação foi previamente codificado para **cavalos em um campo**. Agora você removerá esse texto codificado e o substituirá por um campo proveniente do webhook.
+Clique com o botão direito no módulo **Firefly T2I** e selecione **Excluir módulo**.
 
-![WF Fusion](./images/wffcfft2i1.png)
+![WF Fusion](./images/wffcff1.png)
 
-Remova o texto **cavalos em um campo** e substitua-o pela variável **prompt** que pode ser encontrada nas variáveis **Webhook**. Clique em **OK** para salvar suas alterações.
+Clique no ícone **+**, insira o termo de pesquisa `firefly` e selecione **Adobe Firefly**.
 
-![WF Fusion](./images/wffcfft2i2.png)
+![WF Fusion](./images/wffcff2.png)
+
+Selecione **Gerar uma imagem**.
+
+![WF Fusion](./images/wffcff3.png)
+
+Arraste e solte o módulo **Adobe Firefly** para que ele se conecte ao módulo **Roteador**.
+
+![WF Fusion](./images/wffcff4.png)
+
+Clique no módulo **Adobe Firefly** para abri-lo e em **Adicionar** para criar uma nova conexão.
+
+![WF Fusion](./images/wffcff5.png)
+
+Preencha os seguintes campos:
+
+- **Nome da conexão**: use `--aepUserLdap-- - Firefly connection`.
+- **Ambiente**: usar **Produção**.
+- **Tipo**: usar **Conta pessoal**.
+- **ID do Cliente**: copie a **ID do Cliente** do seu projeto do Adobe I/O chamado `--aepUserLdap-- - One Adobe tutorial`.
+- **Segredo do Cliente**: copie o **Segredo do Cliente** do seu projeto do Adobe I/O chamado `--aepUserLdap-- - One Adobe tutorial`.
+
+Você pode encontrar a **ID do Cliente** e o **Segredo do Cliente** do seu projeto do Adobe I/O [aqui](https://developer.adobe.com/console/projects.).
+
+![WF Fusion](./images/wffc20.png)
+
+Depois de preencher todos os campos, clique em **Continuar**. Sua conexão será validada automaticamente.
+
+![WF Fusion](./images/wffcff6.png)
+
+Em seguida, selecione a variável **prompt** que é fornecida para o cenário pelo **webhook personalizado** de entrada. Clique em **OK**.
+
+![WF Fusion](./images/wffcff7.png)
+
+Antes de continuar, é necessário desativar a rota antiga no cenário como para este exercício. Você usará somente a nova rota que está configurando no momento. Para fazer isso, clique no ícone **chave inglesa** entre o módulo **Roteador** e o módulo **Iterador** e selecione **Desabilitar rota**.
+
+![WF Fusion](./images/wffcff7a.png)
+
+Clique em **Salvar** para salvar suas alterações e em **Executar uma vez** para testar sua configuração.
+
+![WF Fusion](./images/wffcff8.png)
+
+Vá para o Postman, verifique o prompt na sua solicitação e clique em **Enviar**.
+
+![WF Fusion](./images/wffcff8a.png)
+
+Depois de clicar em enviar, volte para o Workfront Fusion e clique no ícone de bolha no módulo **Adobe Firefly** para verificar os detalhes.
+
+![WF Fusion](./images/wffcff9.png)
+
+Acesse **OUTPUT** para **Details** > **url** para localizar o URL da imagem gerada pelo **Adobe Firefly**.
+
+![WF Fusion](./images/wffcff10.png)
+
+Agora você deve ver uma imagem que representa o prompt enviado pela solicitação do Postman, neste caso **misty meadows**.
+
+![WF Fusion](./images/wffcff11.png)
 
 ## 1.2.4.2 Alterar plano de fundo do arquivo PSD
 
-Agora você atualizará seu cenário para torná-lo mais inteligente usando conectores prontos para uso. Você também conectará a saída do Firefly ao Photoshop, para que a imagem de fundo do arquivo PSD seja alterada dinamicamente usando a saída da ação Gerar imagem do Firefly.
+Agora você atualizará seu cenário para torná-lo mais inteligente usando mais conectores prontos para uso. Você também conectará a saída do Firefly ao Photoshop, para que a imagem de fundo do arquivo PSD seja alterada dinamicamente usando a saída da ação Gerar imagem do Firefly.
 
-No exercício anterior, você desabilitou a rota **Firefly T2I**. Você deve desfazer isso agora. Clique no ícone **stop** para habilitar a rota novamente.
-
-![WF Fusion](./images/wffc13.png)
-
-Você verá que o ícone **parar** desaparece. Em seguida, clique no ícone **chave inglesa** na outra rota em direção à configuração do exercício anterior e selecione **Desabilitar rota**.
-
-![WF Fusion](./images/wffc14.png)
-
-Você deverá ver isso. Em seguida, passe o mouse sobre o nó **Firefly T2I** e clique no ícone **+**.
+Você deverá ver isso. Em seguida, passe o mouse sobre o módulo **Adobe Firefly** e clique no ícone **+**.
 
 ![WF Fusion](./images/wffc15.png)
 
-No menu de pesquisa, digite `Photoshop`e clique na ação **Adobe Photoshop**.
+No menu de pesquisa, digite `Photoshop` e clique na ação **Adobe Photoshop**.
 
 ![WF Fusion](./images/wffc16.png)
 
@@ -164,9 +212,9 @@ Cole o nome **2048x2048-background** na caixa de diálogo do Workfront Fusion.
 
 ![WF Fusion](./images/wffc27.png)
 
-Role para baixo até ver **Entrada**. Agora é necessário definir o que precisa ser inserido na camada de plano de fundo. Nesse caso, você precisa selecionar a saída do objeto Firefly T2I, que contém a imagem gerada dinamicamente.
+Role para baixo até ver **Entrada**. Agora é necessário definir o que precisa ser inserido na camada de plano de fundo. Nesse caso, você precisa selecionar a saída do módulo **Adobe Firefly**, que contém a imagem gerada dinamicamente.
 
-Para **Armazenamento**, selecione **Externo**. Para **Local do arquivo**, pesquise e localize a variável `data.outputs[].image.url` da saída da solicitação **Firefly T2I**.
+Para **Armazenamento**, selecione **Externo**. Para **Local do arquivo**, copie e cole a variável `{{XX.details[].url}}` da saída do módulo **Adobe Firefly**. Substitua **XX** na variável pelo número de sequência do módulo **Adobe Firefly**, que neste exemplo é **22**.
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -191,11 +239,27 @@ Você deveria ficar com isso. Clique em **OK**.
 
 ![WF Fusion](./images/wffc33.png)
 
+Clique em **Salvar** para salvar suas alterações e em **Executar uma vez** para testar sua configuração.
+
+![WF Fusion](./images/wffc33a.png)
+
+Vá para o Postman, verifique o prompt na sua solicitação e clique em **Enviar**.
+
+![WF Fusion](./images/wffcff8a.png)
+
+Você deverá ver isso. Clique na bolha no módulo **Adobe Photoshop - Aplicar edições do PSD**.
+
+![WF Fusion](./images/wffc33b.png)
+
+Agora você pode ver que um novo arquivo do PSD foi gerado com sucesso e armazenado em sua Conta de Armazenamento do Microsoft Azure.
+
+![WF Fusion](./images/wffc33c.png)
+
 ## 1.2.4.3 Alterar camadas de texto do arquivo PSD
 
 ### Texto do Plano de Ação
 
-Em seguida, passe o mouse sobre o nó **Adobe Photoshop - Aplicar edições do PSD** e clique no ícone **+**.
+Em seguida, passe o mouse sobre o módulo **Adobe Photoshop - Aplicar edições do PSD** e clique no ícone **+**.
 
 ![WF Fusion](./images/wffc34.png)
 
@@ -237,9 +301,13 @@ Role para baixo até ver **Saída**. Para **Armazenamento**, selecione **Azure**
 
 ### Texto do botão
 
-Clique com o botão direito do mouse no nó que acabou de criar e selecione **Clonar**. Isso criará um segundo objeto semelhante.
+Clique com o botão direito do mouse no módulo que acabou de criar e selecione **Clonar**. Isso criará um segundo módulo semelhante.
 
 ![WF Fusion](./images/wffc42.png)
+
+Conecte o módulo clonado ao módulo **Adobe Photoshop - Editar camadas de texto** anterior.
+
+![WF Fusion](./images/wffc42a.png)
 
 Você deverá ver isso. Primeiro, selecione a conexão do Adobe Photoshop já configurada anteriormente, que deve ser chamada de `--aepUserLdap-- Adobe IO`.
 
@@ -253,11 +321,11 @@ Abra o arquivo **citisignal-fiber.psd**. No arquivo, você observará que a cama
 
 ![WF Fusion](./images/wffc44.png)
 
-Insira o nome **2048x2048-cta** em **Nome** na caixa de diálogo.
+Digite o nome **2048x2048-button-text** em **Nome** na caixa de diálogo.
 
 ![WF Fusion](./images/wffc43.png)
 
-Role para baixo até ver **Texto** > **Conteúdo**. Selecione a variável **cta** na carga do Webhook.
+Role para baixo até ver **Texto** > **Conteúdo**. Selecione a variável **button** na carga do Webhook.
 
 ![WF Fusion](./images/wffc45.png)
 
@@ -275,11 +343,11 @@ Clique em **Salvar** para salvar as alterações.
 
 Depois de aplicar essas alterações ao arquivo do Photoshop, agora é necessário configurar uma **resposta do Webhook** que será enviada de volta para o aplicativo que tiver ativado esse cenário.
 
-Passe o mouse sobre o nó **Adobe Photoshop - Editar camadas de texto** e clique no ícone **+**.
+Passe o mouse sobre o módulo **Adobe Photoshop - Editar camadas de texto** e clique no ícone **+**.
 
 ![WF Fusion](./images/wffc48.png)
 
-Pesquise por **webhook** e selecione **Webhook**.
+Procure por `webhooks` e selecione **Webhook**.
 
 ![WF Fusion](./images/wffc49.png)
 
@@ -297,11 +365,11 @@ Você deverá ver isso. Cole a carga abaixo no **Corpo**.
 
 ![WF Fusion](./images/wffc51.png)
 
-Selecione o caminho `data[]._links.renditions[].href` na saída da solicitação anterior. Habilite a caixa de seleção para **Mostrar configurações avançadas** e clique em **Adicionar item**.
+Copie e cole a variável `{{XX.data[]._links.renditions[].href}}` e substitua **XX** pelo número de sequência do último módulo **Adobe Photoshop - Editar camadas de texto**, que neste caso é **25**. Habilite a caixa de seleção para **Mostrar configurações avançadas** e clique em **Adicionar item**.
 
 ![WF Fusion](./images/wffc52.png)
 
-No campo **Chave**, digite `Content-Type`. No campo **Valor**, digite `application/json`. Clique em **Salvar**.
+No campo **Chave**, digite `Content-Type`. No campo **Valor**, digite `application/json`. Clique em **Adicionar**.
 
 ![WF Fusion](./images/wffc52a.png)
 
@@ -313,7 +381,7 @@ Clique em **Alinhamento automático**.
 
 ![WF Fusion](./images/wffc54.png)
 
-Você deverá ver isso. Clique em **Executar uma vez**.
+Você deverá ver isso. Clique em **Salvar** para salvar suas alterações e em **Executar uma vez** para testar seu cenário.
 
 ![WF Fusion](./images/wffc55.png)
 
@@ -325,7 +393,7 @@ O cenário será ativado e, após algum tempo, uma resposta será mostrada no Po
 
 ![WF Fusion](./images/wffc58.png)
 
-Como lembrete: depois que o cenário for executado no Workfront Fusion, você poderá ver informações sobre cada nó clicando na bolha acima de cada nó.
+Como lembrete: depois que o cenário for executado no Workfront Fusion, você poderá ver informações sobre cada módulo clicando na bolha acima de cada módulo.
 
 ![WF Fusion](./images/wffc59.png)
 
