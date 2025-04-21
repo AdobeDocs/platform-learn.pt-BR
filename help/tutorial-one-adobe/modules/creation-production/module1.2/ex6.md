@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ As equipes de negócios, no entanto, não precisam de um arquivo PSD, precisam d
 
 ## 1.2.6.1 Criar um novo cenário
 
-Ir para [https://experience.adobe.com/](https://experience.adobe.com/). Abra o **Workfront Fusion**.
+Ir para [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra o **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ Você deverá ver isso. Clique em **Copiar endereço para a área de transferên
 
 ## 1.2.6.2 Configurar Webhook no Frame.io
 
-Ir para [https://developer.frame.io/](https://developer.frame.io/). Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Ações Personalizadas**.
+Ir para [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Ações Personalizadas**.
 
 ![E/S de Quadro](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ Você deverá ver isso.
 
 ![E/S de Quadro](./images/aemf11.png)
 
-Vá para [https://app.frame.io/projects](https://app.frame.io/projects) e vá para a pasta que você criou antes, a qual deve se chamar `--aepUserLdap--`. Clique duas vezes para abrir o ativo criado no exercício anterior.
+Vá para [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} e vá para a pasta que você criou antes, a qual deve se chamar `--aepUserLdap--`. Clique duas vezes para abrir o ativo criado no exercício anterior.
 
 ![E/S de Quadro](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ Sua conexão será validada e, quando bem-sucedida, sua conexão será seleciona
 
 ![E/S de Quadro](./images/aemf51.png)
 
-Para criar uma nova pasta dedicada, vá para [https://experience.adobe.com](https://experience.adobe.com/). Verifique se a instância correta do Experience Cloud está selecionada, que deve ser `--aepImsOrgName--`. Em seguida, clique em **Experience Manager Assets**.
+Para criar uma nova pasta dedicada, vá para [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}. Verifique se a instância correta do Experience Cloud está selecionada, que deve ser `--aepImsOrgName--`. Em seguida, clique em **Experience Manager Assets**.
 
 ![E/S de Quadro](./images/aemf52.png)
 

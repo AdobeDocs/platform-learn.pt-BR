@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ No exercício anterior, você configurou o cenário `--aepUserLdap-- - Firefly +
 
 ## 1.2.5.1 Acessando Frame.io
 
-Ir para [https://app.frame.io/projects](https://app.frame.io/projects).
+Ir para [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}.
 
 Clique no ícone **+** para criar seu próprio projeto no Frame.io.
 
@@ -42,7 +42,7 @@ Em um dos exercícios anteriores, você baixou o [citisignal-fiber.psd](./../../
 
 No exercício anterior, você criou o cenário `--aepUserLdap-- - Firefly + Photoshop`, que começou com um webhook personalizado e terminou com uma resposta de webhook. O uso dos webhooks foi testado usando o Postman, mas obviamente, o objetivo de tal cenário é ser chamado por um aplicativo externo. Como dito antes, o Frame.io será esse exercício, mas entre o Frame.io e o `--aepUserLdap-- - Firefly + Photoshop` é necessário outro cenário do Workfront Fusion. agora você configurará esse cenário.
 
-Ir para [https://experience.adobe.com/](https://experience.adobe.com/). Abra o **Workfront Fusion**.
+Ir para [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra o **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ Você deverá ver isso. Deixe essa tela aberta e intacta, pois você precisará 
 
 ![E/S de Quadro](./images/frame10.png)
 
-Ir para [https://developer.frame.io/](https://developer.frame.io/). Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Ações Personalizadas**.
+Ir para [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Ações Personalizadas**.
 
 ![E/S de Quadro](./images/frame11.png)
 
@@ -98,7 +98,7 @@ Você deverá ver isso.
 
 ![E/S de Quadro](./images/frame14.png)
 
-Volte para [https://app.frame.io/projects](https://app.frame.io/projects). Atualize a página.
+Volte para [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}. Atualize a página.
 
 ![E/S de Quadro](./images/frame16.png)
 
@@ -298,7 +298,7 @@ Selecione **Chave de API Frame.io** e insira o nome `--aepUserLdap-- - Frame.io 
 
 ![E/S de Quadro](./images/frame49.png)
 
-Para obter um token de API, acesse [https://developer.frame.io/](https://developer.frame.io/). Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Tokens**.
+Para obter um token de API, acesse [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Tokens**.
 
 ![E/S de Quadro](./images/frame50.png)
 

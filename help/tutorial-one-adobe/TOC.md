@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico abrangente para aplicativos Adobe, do Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1154'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,7 @@ ht-degree: 3%
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
       + [1.3.1 Introdução ao Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Animação e vídeo no Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3 Criação de Assets em massa no Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
 + Gerenciamento de ativos {#assetmgmt}
