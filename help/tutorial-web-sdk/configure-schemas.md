@@ -4,7 +4,7 @@ description: Saiba como criar um esquema XDM para dados da Web na interface da C
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -17,11 +17,11 @@ Saiba como criar um esquema XDM para dados da web na interface da Coleção de d
 
 Os esquemas do Experience Data Model (XDM) são os blocos fundamentais, os princípios e as práticas recomendadas para coletar dados no Adobe Experience Platform.
 
-O SDK da Web da Platform usa o esquema para padronizar os dados de eventos da Web, enviá-los para o Edge Network da Platform e, por fim, encaminhar os dados para qualquer aplicativo Experience Cloud configurado no fluxo de dados. Essa etapa é crítica, pois define um modelo de dados padrão necessário para assimilar dados de experiência do cliente no Experience Platform e habilita serviços e aplicativos downstream baseados nesses padrões.
+O Platform Web SDK usa seu esquema para padronizar os dados do evento da Web, enviá-los para o Platform Edge Network e, por fim, encaminhar os dados para qualquer aplicativo do Experience Cloud configurado no fluxo de dados. Essa etapa é crítica, pois define um modelo de dados padrão necessário para assimilar dados de experiência do cliente na Experience Platform e permite serviços e aplicativos downstream criados nesses padrões.
 
 >[!NOTE]
 >
->Um esquema XDM _não é necessário_ para implementar o Adobe Analytics, o Adobe Target ou o Adobe Audience Manager com o SDK da Web (os dados podem ser passados no objeto `data` em vez do objeto `xdm`, como você verá mais tarde). Um esquema XDM é necessário para as implementações mais eficientes de aplicativos nativos da plataforma, como Journey Optimizer, Real-time Customer Data Platform e Customer Journey Analytics. Embora você possa decidir não usar um esquema XDM em sua própria implementação, espera-se que faça isso como parte deste tutorial.
+>Um esquema XDM _não é necessário_ para implementar o Adobe Analytics, o Adobe Target ou o Adobe Audience Manager com o Web SDK (os dados podem ser passados no objeto `data` em vez do objeto `xdm`, como você verá mais tarde). Um esquema XDM é necessário para as implementações mais eficientes de aplicativos nativos da plataforma, como Journey Optimizer, Real-Time Customer Data Platform, Customer Journey Analytics. Embora você possa decidir não usar um esquema XDM em sua própria implementação, espera-se que faça isso como parte deste tutorial.
 
 ## Por que modelar os dados?
 
@@ -51,7 +51,7 @@ Por exemplo, muitas empresas lidam com pedidos. E se, coletivamente, essas empre
 
 Se todas as empresas que lidam com pedidos decidissem modelar seus dados de pedidos de maneira consistente para termos comuns no setor, coisas mágicas poderiam começar a acontecer. As informações poderiam ser trocadas de forma mais fluida dentro e fora da organização, em vez de interpretar e traduzir constantemente os dados (props e evars, alguém?). O aprendizado de máquina poderia entender mais facilmente o que seus dados _significam_ e fornecer insights acionáveis. As interfaces do usuário para encontrar dados relevantes podem se tornar mais intuitivas. Seus dados podem ser perfeitamente integrados a parceiros e fornecedores que estejam seguindo a mesma modelagem.
 
-Esta é a meta do [Modelo de Dados de Experiência](https://business.adobe.com/products/experience-platform/experience-data-model.html) do Adobe. O XDM fornece modelagem prescritiva para dados comuns no setor, além de permitir estender o modelo para suas necessidades específicas. O Adobe Experience Platform é construído com base no XDM e, como tal, os dados enviados para o Experience Platform precisam estar no XDM. Em vez de pensar em onde e como você pode transformar seus modelos de dados atuais em XDM antes de enviar os dados para o Experience Platform, considere adotar o XDM de forma mais abrangente em toda a organização para que a tradução raramente precise ocorrer.
+Esta é a meta do [Modelo de Dados de Experiência](https://business.adobe.com/products/experience-platform/experience-data-model.html) da Adobe. O XDM fornece modelagem prescritiva para dados comuns no setor, além de permitir estender o modelo para suas necessidades específicas. O Adobe Experience Platform é construído com base no XDM e, como tal, os dados enviados para o Experience Platform precisam estar no XDM. Em vez de pensar em onde e como você pode transformar seus modelos de dados atuais em XDM antes de enviar os dados para a Experience Platform, considere adotar o XDM de forma mais abrangente em sua organização para que a tradução raramente precise ocorrer.
 
 
 >[!NOTE]
@@ -78,7 +78,7 @@ Os esquemas XDM são a maneira padrão de descrever dados no Experience Platform
 
 Neste exercício, você criará um esquema XDM usando os grupos de campos de linha de base recomendados para capturar dados do evento da Web no [Site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
-1. Abrir a [interface de Coleção de Dados](https://launch.adobe.com/){target="_blank"}
+1. Abra a [interface da Coleção de Dados](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Verifique se você está na sandbox correta. Localize a sandbox no canto superior direito
 
    >[!NOTE]
@@ -113,7 +113,7 @@ Quando possível, é recomendável usar grupos de campo existentes e aderir a um
 
 >[!TIP]
 > 
->Neste exercício, você adiciona os grupos de campos predefinidos recomendados para a coleta de dados na Web: _**[!UICONTROL ExperienceEvent do SDK da Web da AEP]**_ e _**[!UICONTROL Evento de experiência do consumidor]**_.
+>Neste exercício, você adiciona os grupos de campos predefinidos recomendados para a coleta de dados na Web: _**[!UICONTROL ExperienceEvent do AEP Web SDK]**_ e _**[!UICONTROL Evento de Experiência do Consumidor]**_.
 >
 
 
@@ -142,7 +142,7 @@ Há um campo especial usado para identificar usuários da Web chamado `[!UICONTR
 
 ![Dados do Evento da Web Luma](assets/schema-identityMap.png)
 
-É um objeto obrigatório para qualquer coleta de dados relacionada à Web, pois abriga a ID de Experience Cloud necessária para identificar usuários na Web. Também é fundamental para definir IDs internas do cliente para usuários autenticados. `[!UICONTROL identityMap]` é discutido mais na lição [Configurar identidades](configure-identities.md). Ele é incluído automaticamente em todos os esquemas que usam a classe **[!UICONTROL XDM ExperienceEvent]**.
+É um objeto obrigatório para qualquer coleta de dados relacionada à Web, pois hospeda a Experience Cloud ID necessária para identificar usuários na Web. Também é fundamental para definir IDs internas do cliente para usuários autenticados. `[!UICONTROL identityMap]` é discutido mais na lição [Configurar identidades](configure-identities.md). Ele é incluído automaticamente em todos os esquemas que usam a classe **[!UICONTROL XDM ExperienceEvent]**.
 
 
 >[!IMPORTANT]
@@ -150,7 +150,7 @@ Há um campo especial usado para identificar usuários da Web chamado `[!UICONTR
 > É possível habilitar o **[!UICONTROL Perfil]** para um esquema antes de salvá-lo. **Não** habilite-o neste momento. Depois que um esquema é ativado para Perfil, ele não pode ser desativado ou excluído sem redefinir toda a sandbox. Os campos também não podem ser removidos de esquemas neste ponto, embora seja possível [Descontinuar Campos na interface](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). Essas implicações são importantes para ter em mente posteriormente quando você estiver trabalhando com seus próprios dados no ambiente de produção.
 >
 >
->Esta configuração é discutida mais detalhadamente durante a lição [Setup Experience Platform](setup-experience-platform.md).
+>Esta configuração é discutida mais detalhadamente durante a lição [Configurar Experience Platform](setup-experience-platform.md).
 >![Esquema de Perfil](assets/schema-profile.png)
 
 Para concluir esta lição, selecione **[!UICONTROL Salvar]** na parte superior direita.
@@ -158,11 +158,11 @@ Para concluir esta lição, selecione **[!UICONTROL Salvar]** na parte superior 
 ![Salvar Esquema](assets/schema-select-save.png)
 
 
-Agora, é possível fazer referência a esse esquema ao adicionar a extensão SDK da Web à propriedade da tag.
+Agora, é possível fazer referência a esse esquema ao adicionar a extensão Web SDK à propriedade da tag.
 
 
 [Próximo: ](configure-identities.md)
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

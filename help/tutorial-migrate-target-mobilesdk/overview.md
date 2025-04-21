@@ -3,7 +3,7 @@ title: Migrar seu aplicativo móvel do Adobe Target para o Adobe Journey Optimiz
 description: Saiba como migrar sua implementação de aplicativo móvel do Adobe Target para o Adobe Journey Optimizer - Extensão de decisão
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 1%
@@ -22,7 +22,7 @@ O Adobe Experience Platform Mobile SDK capacita o engajamento completo em seus a
 
 Alguns dos benefícios da extensão do Adobe Journey Optimizer Decisioning em comparação à extensão do Target incluem:
 
-* Compartilhamento mais rápido de públicos do [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization)
+* Compartilhamento mais rápido de públicos do [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 * Integração do Target ao Journey Optimizer para oferecer suporte à [entrega de Offer Decisioning](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
 * Uma integração mais estreita com o Adobe Analytics, que não depende da compilação de informações de chamadas de rede separadas
 * Flexibilidade adicional na implementação para desenvolvedores

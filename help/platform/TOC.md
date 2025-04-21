@@ -5,10 +5,10 @@ user-guide-description: Conheça os vários componentes da Experience Platform.
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 18%
+ht-degree: 19%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [Tutoriais da Platform](/help/platform/overview.md)
-+ Introdução à plataforma {#intro-to-platform}
++ Introdução à Platform {#intro-to-platform}
    + [Uma experiência do cliente viabilizada pela Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [Nos bastidores: uma experiência do cliente viabilizada pelo Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Visão geral da Experience Platform](/help/platform/intro-to-platform/overview.md)
@@ -75,7 +75,7 @@ Campaigns
    + [Fluxo de trabalho](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [Visão geral do B2B edition](/help/platform/rtcdp/b2b-overview.md)
    + [Orquestrar campanhas com o Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [Introdução: Arquitetos de dados e Engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=pt-BR){target="_blank"}
++ [Introdução: arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=pt-BR){target="_blank"}
 + [Autenticar para APIs do Experience Platform](/help/platform/authentication/platform-api-authentication.md)
 + [Importar dados de amostra para o Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administração {#admin}
@@ -100,7 +100,7 @@ Campaigns
    + [Insights operacionais](/help/platform/ai-assistant/operational-insights.md)
    + [Análise de impacto](/help/platform/ai-assistant/impact-analysis.md)
    + [Visão geral de segurança](/help/platform/ai-assistant/security-overview.md)
-+ Públicos e segmentação {#audiences}
++ Públicos-alvo e segmentação {#audiences}
    + [Introdução ao portal de público-alvo e composição](audiences/introduction-to-audience-portal-and-composition.md)
    + [Fazer upload de públicos](audiences/upload-audiences.md)
    + [Visão geral da composição do Federated Audience](audiences/fac/overview-of-federated-audience-composition.md)
@@ -127,7 +127,7 @@ Campaigns
    + [Correspondência de segmentos recebendo dados](/help/platform/segments/segment-match-receiving-data.md)
 + [Logs de auditoria](/help/platform/governance/audit-logs.md)
 + [Coleta de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ Colaboração {#collaboration}
    + [Visão geral do Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
    + [Definir permissões](collaboration/set-permissions-for-collaboration.md)
    + [Configurar uma conta do anunciante](collaboration/set-up-an-advertiser-account.md)
@@ -182,7 +182,7 @@ Campaigns
    + [Configurar o armazenamento na nuvem baseado em arquivo ou destinos de marketing por email](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [Configurar um destino social](/help/platform/destinations/configure-a-social-destination.md)
    + [Ativar por meio de destinos do LiveRamp](/help/platform/destinations/liveramp-destinations.md)
-   + Adobe Target e Personalization Personalizado{#target}
+   + Adobe Target e Personalization personalizado{#target}
       + [Personalização de próxima ocorrência com o Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
       + [Configurar o destino do Adobe Target](/help/platform/destinations/target/configure-the-target-destination.md)
       + [Ativar segmentos e atributos de perfil](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
@@ -210,7 +210,7 @@ Campaigns
    + [Monitorar assimilação de dados](/help/platform/monitoring/monitoring-dashboard.md)
    + [Monitorar ativação de segmento](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [Monitorar fluxos de dados](/help/platform/monitoring/data-monitoring.md)
-+ Suporte a dados de parceiro {#partner-data-support}
++ Suporte a dados de parceiros {#partner-data-support}
    + [Visão geral do suporte a dados de parceiros](/help/platform/partner-data-support/partner-data-support-overview.md)
    + [Suporte à prospecção externa](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [Adicionar atributos do parceiro aos perfis](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
@@ -239,7 +239,7 @@ Campaigns
    + [Configurar chaves gerenciadas pelo cliente](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [Dez considerações para o gerenciamento responsável de dados do cliente](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [Elevar a função do profissional de marketing como administrador de dados](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
-+ Queries {#queries}
++ Consultas {#queries}
    + [Visão geral](/help/platform/queries/understanding-query-service.md)
    + [Interface do usuário do serviço de consulta](/help/platform/queries/query-service-ui.md)
    + [API do serviço de consulta](/help/platform/queries/query-service-api.md)
@@ -270,7 +270,7 @@ Campaigns
    + [Copiar esquemas entre sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Atualizar esquemas](/help/platform/schemas/update-schemas.md)
    + [Criar um esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ Fontes {#sources}
++ Origens {#sources}
    + [Visão geral](/help/platform/sources/overview.md)
    + [Assimilar dados do Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Assimilar dados do Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
@@ -281,16 +281,16 @@ Campaigns
    + [Transmitir dados com a API HTTP](/help/platform/sources/streaming-ingestion-http-api.md)
    + [Dados de fluxo usando Conectores do Source](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Solução de problemas: Conector SFTP](/help/platform/sources/troubleshoot-sftp-connector.md)
-+ Manuais de estratégia de casos de uso {#use-case-playbooks}
++ Manuais de casos de uso  {#use-case-playbooks}
    + [Visão geral](/help/platform/use-case-playbooks/overview.md)
    + [Configurar uma sandbox do manual](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [Criar e publicar uma instância de manual](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Integrações do Experience Cloud {#experience-cloud}
++ Integrações da Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + Tendências do setor {#industry}
    + [O futuro do gerenciamento de dados e do ambiente em mudança](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Os dois lados da moeda - marcas e consumidores](/help/platform/industry/brands-vs-consumers.md)

@@ -4,7 +4,7 @@ description: Saiba como configurar namespaces de identidade para usar com o Adob
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -57,7 +57,7 @@ Antes de começar os exercícios, assista a este vídeo curto para saber mais so
 
 Agora, crie um namespace para a ID do CRM da Luma:
 
-1. Abrir a [interface de Coleção de Dados](https://launch.adobe.com/){target="_blank"}
+1. Abra a [interface da Coleção de Dados](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Selecione a sandbox que você está usando para o tutorial
 
    >[!NOTE]

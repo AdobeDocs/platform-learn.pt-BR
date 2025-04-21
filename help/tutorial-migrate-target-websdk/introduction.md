@@ -3,10 +3,10 @@ title: Migração do Target da at.js 2.x para o Web SDK
 description: Saiba como migrar uma implementação do Adobe Target da at.js 2.x para o Adobe Experience Platform Web SDK. Os tópicos incluem o carregamento da biblioteca do JavaScript, o envio de parâmetros, atividades de renderização e outras chamadas importantes.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '611'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Este guia é para implementadores experientes do Adobe Target que aprendem a migrar uma implementação do at.js para o Adobe Experience Platform Web SDK.
 
-O Adobe Experience Platform Web SDK é uma biblioteca JavaScript no lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com serviços Experience Cloud por meio do Edge Network Adobe Experience Platform. Esta nova biblioteca combina os recursos das bibliotecas de aplicativos Adobe separadas em um único pacote leve que pode aproveitar ao máximo os novos recursos do Adobe Experience Platform.
+O Adobe Experience Platform Web SDK é uma biblioteca JavaScript do lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com os serviços da Experience Cloud por meio do Adobe Experience Platform Edge Network. Esta nova biblioteca combina os recursos das bibliotecas de aplicativos Adobe separadas em um único pacote leve que pode aproveitar ao máximo os novos recursos do Adobe Experience Platform.
 
 
 >[!NOTE]
@@ -26,7 +26,7 @@ O Adobe Experience Platform Web SDK é uma biblioteca JavaScript no lado do clie
 
 >[!CAUTION]
 >
-> Como o Platform Web SDK suporta várias aplicações Adobe, todas as bibliotecas de Adobe em uma determinada página devem ser migradas ao mesmo tempo. Por exemplo, uma implementação mista do Web SDK para Target e AppMeasurement para Analytics em uma única página _não é suportada_. No entanto, há suporte para uma implementação mista em páginas diferentes, por exemplo, Web SDK na página A e at.js com AppMeasurement na página B.
+> Como o Platform Web SDK é compatível com várias aplicações Adobe, todas as bibliotecas Adobe em uma determinada página devem ser migradas ao mesmo tempo. Por exemplo, uma implementação mista do Web SDK para Target e AppMeasurement para Analytics em uma única página _não é suportada_. No entanto, há suporte para uma implementação mista em páginas diferentes, por exemplo, Web SDK na página A e at.js com AppMeasurement na página B.
 
 
 
@@ -34,13 +34,13 @@ O Adobe Experience Platform Web SDK é uma biblioteca JavaScript no lado do clie
 
 Alguns dos benefícios do Platform Web SDK em comparação à biblioteca at.js independente incluem:
 
-* Compartilhamento mais rápido de públicos do [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=pt-BR)
-* Integração do Target ao Journey Optimizer para oferecer suporte à [entrega de Offer decisioning](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
-* Capacidade de usar [ids primárias](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=pt-BR) para gerar a ECID para identificação de visitantes de maior duração
+* Compartilhamento mais rápido de públicos do [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+* Integração do Target ao Journey Optimizer para oferecer suporte à [entrega de Offer Decisioning](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
+* Capacidade de usar [ids primárias](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids) para gerar a ECID para identificação de visitantes de maior duração
 * Uma área menor para melhorar as métricas de velocidade da página
 * Flexibilidade adicional na implementação para desenvolvedores
 
-Indiscutivelmente, o maior benefício para os clientes do Target da migração é a integração com o Real-time Customer Data Platform. A Real-Time CDP oferece excelentes recursos de criação de público com base na gama completa de dados assimilados no Experience Platform e em seu recurso de Perfil do cliente em tempo real. Uma estrutura de governança de dados integrada automatiza o uso responsável desses dados. A IA do cliente permite usar facilmente modelos de aprendizado de máquina para criar modelos de propensão e churn cuja saída pode ser compartilhada de volta com a Adobe Target. E, por fim, os clientes dos complementos opcionais de Assistência médica, Privacidade e segurança podem usar o recurso de aplicação de consentimento para aplicar facilmente as preferências de consentimento de clientes individuais. O Platform Web SDK é um requisito para usar esses recursos do Real-Time CDP no canal da Web.
+Indiscutivelmente, o maior benefício para os clientes do Target da migração é a integração com o Real-Time Customer Data Platform. A Real-Time CDP oferece excelentes recursos de criação de público com base na ampla variedade de dados assimilados na Experience Platform e em seu recurso de Perfil do cliente em tempo real. Uma estrutura de governança de dados integrada automatiza o uso responsável desses dados. A IA do cliente permite usar facilmente modelos de aprendizado de máquina para criar modelos de propensão e churn cuja saída pode ser compartilhada de volta com a Adobe Target. E, por fim, os clientes dos complementos opcionais de Assistência médica, Privacidade e segurança podem usar o recurso de aplicação de consentimento para aplicar facilmente as preferências de consentimento de clientes individuais. O Platform Web SDK é um requisito para usar esses recursos do Real-Time CDP no canal da Web.
 
 ## Objetivos de aprendizagem
 
