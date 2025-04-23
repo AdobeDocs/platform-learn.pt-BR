@@ -4,7 +4,7 @@ description: Introdução - Criar sequência de dados
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Criar fluxo de dados
 
-Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ As alterações estão sendo publicadas e estarão prontas em alguns minutos, ap
 
 ## Criar a sequência de dados para dispositivos móveis
 
-Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 Clique em **[!UICONTROL Datastreams]**.
 
@@ -175,7 +175,7 @@ As alterações estão sendo publicadas e estarão prontas em alguns minutos, ap
 
 ## Próximas etapas
 
-Ir para [Usar o site](./ex4.md)
+Ir para [Usar o site](./ex4.md){target="_blank"}
 
 Volte para [Introdução](./getting-started.md){target="_blank"}
 

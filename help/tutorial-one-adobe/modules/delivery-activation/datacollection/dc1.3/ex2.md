@@ -4,9 +4,9 @@ description: Foundation - FAC - Criar esquemas, modelo de dados e links
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -21,11 +21,11 @@ Depois de fazer logon, você chegará à página inicial do Adobe Experience Pla
 
 ![Assimilação de dados](./../dc1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada `--aepSandboxName--`. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
 ![Assimilação de dados](./../dc1.2/images/sb1.png)
 
-## 1.3.2.1 Configurar um banco de dados federado na AEP
+## 1.3.2.1 Configurar um banco de dados federado no AEP
 
 Clique em **Federated databases** no menu esquerdo. Em seguida, clique em **Adicionar banco de dados federado**.
 
@@ -43,12 +43,12 @@ No Snowflake, vá para **Admin > Contas**. Clique no 3 **...** ao lado da sua co
 
 ![FAC](./images/fdburl1.png)
 
-Você verá isso. Copie a **URL atual** e cole-a no campo **Servidor** na AEP.
+Você verá isso. Copie a **URL Atual** e cole-a no campo **Servidor** do AEP.
 
 ![FAC](./images/fdburl2.png)
 
 **Usuário**: o nome de usuário criado anteriormente, no exercício 1.3.1.1
-**Senha**: a senha que você criou anteriormente, no exercício 1.3.1.1
+**Senha**: a senha criada anteriormente, no exercício 1.3.1.1
 **Banco de dados**: usar **CITISIGNAL**
 
 Então, finalmente, vocês deveriam ter isto. Clique em **Testar Conexão**. Se o teste for bem-sucedido, clique em **Implantar Funções**, o que criará funções no lado do Snowflake que são necessárias para o mecanismo de fluxo de trabalho.
@@ -61,7 +61,7 @@ Volte para o menu **Federated databases** e você verá sua conexão lá.
 
 ![FAC](./images/fdb4.png)
 
-## 1.3.2.2 Criar esquemas na AEP
+## 1.3.2.2 Criar esquemas no AEP
 
 No menu esquerdo, clique em **Modelos** e vá para **Esquemas**. Clique em **Criar esquema**.
 
@@ -98,7 +98,7 @@ Clique em **Criar**.
 
 ![FAC](./images/fdb8.png)
 
-Você verá isso. Você pode clicar em qualquer schema e revisar as informações. Como exemplo, clique em **—aepUserLdap—_PERSONS**.
+Você verá isso. Você pode clicar em qualquer schema e revisar as informações. Como exemplo, clique em **`--aepUserLdap--_PERSONS`**.
 
 ![FAC](./images/fdb9.png)
 
@@ -110,7 +110,7 @@ Você verá uma amostra dos dados.
 
 ![FAC](./images/fdb11.png)
 
-## 1.3.2.3 Criar um modelo na AEP
+## 1.3.2.3 Criar um modelo no AEP
 
 No menu esquerdo, vá para **Modelos** e, em seguida, vá para **Modelo de dados**. Clique em **Criar modelo de dados**.
 

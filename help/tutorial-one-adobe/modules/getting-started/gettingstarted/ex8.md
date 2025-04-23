@@ -4,7 +4,7 @@ description: Introdução - Configuração do Postman
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Se você não for um funcionário da Adobe, siga as instruções para [instalar o Postman](./ex7.md). As instruções abaixo são destinadas apenas aos funcionários da Adobe.
+>Se você não for um funcionário da Adobe, siga as instruções para [instalar o Postman](./ex7.md){target="_blank"}. As instruções abaixo são destinadas apenas aos funcionários da Adobe.
 
 ## Instalar PostBuster
 
-Ir para [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542).
+Ir para [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"}.
 
 Clique para baixar a versão mais recente do **PostBuster**.
 
@@ -33,7 +33,7 @@ Depois que o download for concluído e instalado, abra o PostBuster. Você dever
 
 ![PostBuster](./images/pb3.png)
 
-Baixe o [postbuster.json.zip](./../../../assets/postman/postbuster.json.zip) e extraia-o na sua área de trabalho.
+Baixe o [postbuster.json.zip](./../../../assets/postman/postbuster.json.zip){target="_blank"} e extraia-o na sua área de trabalho.
 
 ![PostBuster](./images/pbpb.png)
 

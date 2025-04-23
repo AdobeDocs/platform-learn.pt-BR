@@ -2,7 +2,8 @@
 title: Introdução - Aplicativos a serem instalados
 description: Introdução - Aplicativos a serem instalados
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 1%
@@ -15,7 +16,7 @@ Abaixo está uma visão geral do pré-trabalho necessário antes de participar d
 
 ## Adobe Creative Cloud
 
-Ir para [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud).
+Ir para [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}.
 
 ![Nova integração do Adobe I/O](./images/cc.png)
 
@@ -39,7 +40,7 @@ Se você não tiver um aplicativo Editor de Texto, acesse [https://www.sublimete
 
 ## Conta do GitHub
 
-Se você ainda não tiver uma conta do GitHub, vá para [https://github.com/](https://github.com/){target="_blank"} e clique em **Inscrever-se**. Use seu email pessoal e crie sua conta.
+Se você ainda não tiver uma conta do GitHub, acesse [https://github.com/](https://github.com/){target="_blank"} e clique em **Inscrever-se**. Use seu email pessoal e crie sua conta.
 
 ![Bloquear](./images/git.png)
 

@@ -4,7 +4,7 @@ description: Introdução - Instalar a extensão do Chrome para a documentação
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Depois que a extensão for instalada, esse mesmo texto será alterado automatica
 
 ## Instalar a extensão do Chrome
 
-Para instalar essa extensão do Chrome, abra o navegador Chrome e vá para: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). Você verá isso.
+Para instalar essa extensão do Chrome, abra o navegador Chrome e vá para: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. Você verá isso.
 
 Clique em **Adicionar ao Chrome**.
 
@@ -58,7 +58,7 @@ No menu **extensões**, clique no ícone de **peça do quebra-cabeça** e fixe a
 
 ## Configurar a extensão do Chrome
 
-Vá para [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) e clique no ícone de extensão para abri-lo.
+Vá para [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e clique no ícone de extensão para abri-lo.
 
 ![DSN](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ Se você não tiver certeza de quais valores inserir para esses campos, siga a o
 
 **Nome da Organização IMS do AEP**
 
-Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará o nome da instância no canto superior direito da tela.
+Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, você encontrará o nome da instância no canto superior direito da tela.
 
 ![DSN](./images/aepname.png)
 
@@ -84,7 +84,7 @@ A ID da organização IMS é o identificador exclusivo da instância do Adobe Ex
 
 A localização da ID organizacional IMS pode ser feita de várias maneiras. Caso não tenha certeza, consulte um dos administradores de sistema da sua instância para encontrar a ID.
 
-Talvez você possa encontrá-lo indo até [Admin Console](https://https://adminconsole.adobe.com/), onde você pode encontrá-lo como parte da URL.
+Talvez você possa encontrá-lo indo até [Admin Console](https://adminconsole.adobe.com/){target="_blank"}, onde você pode encontrá-lo como parte da URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ Copie e cole a parte **@AdobeOrg** junto com a ID.
 
 **ID do locatário do AEP**
 
-Sua ID de locatário é o identificador exclusivo da instância do AEP de sua organização. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
+Sua ID de locatário é o identificador exclusivo da instância do AEP de sua organização. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, você encontrará a ID do locatário na URL.
 
 ![DSN](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Ao inseri-lo na extensão do Chrome, você deve garantir que um sublinhado seja 
 
 **Nome da Sandbox da AEP**
 
-O nome da sandbox é o nome do ambiente que você usará na instância do AEP. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/), você encontrará a ID do locatário na URL.
+O nome da sandbox é o nome do ambiente que você usará na instância do AEP. Ao fazer logon na instância do Adobe Experience Platform em [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, você encontrará a ID do locatário na URL.
 
 Antes de pegar o nome da sandbox do URL, você deve se certificar de que está na sandbox que deve ser usada para este tutorial. Você pode alternar para a sandbox direita clicando no menu do alternador de sandbox no canto superior direito da tela.
 
@@ -135,7 +135,7 @@ Depois de ativar sua configuração, você verá um ponto verde ao lado das inic
 
 ## Verificar conteúdo do tutorial
 
-Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
+Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Agora você deve ver que todas as **Variáveis de ambiente** desta página foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
 
@@ -145,7 +145,7 @@ Agora você deve ter uma exibição semelhante à abaixo, onde a variável de am
 
 ## Próximas etapas
 
-Vá para [Usar sistema de demonstração ao lado da configuração da propriedade de cliente da Coleção de dados da Adobe Experience Platform](./ex2.md)
+Vá para [Usar sistema de demonstração ao lado da configuração da propriedade de cliente da Coleção de dados da Adobe Experience Platform](./ex2.md){target="_blank"}
 
 Volte para [Introdução](./getting-started.md){target="_blank"}
 

@@ -3,7 +3,8 @@ title: Introdução - Configuração do Postman
 description: Introdução - Configuração do Postman
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Se você for um funcionário da Adobe, siga as instruções para [instalar o PostBuster](./ex8.md)!
+>Se você for um funcionário da Adobe, siga as instruções para [instalar o PostBuster](./ex8.md){target="_blank"}!
 
 ## Download de ambiente do Postman
 
@@ -22,7 +23,7 @@ Vá para [https://developer.adobe.com/console/home](https://developer.adobe.com/
 
 ![Nova integração do Adobe I/O](./images/iopr.png){zoomable="yes"}
 
-Clique na API **Firefly - Serviços da Firefly**. Em seguida, clique em **Baixar para Postman** e escolha **Servidor a Servidor OAuth** para baixar um ambiente do Postman.
+Clique na API **Firefly - Firefly Services**. Em seguida, clique em **Baixar para Postman** e escolha **Servidor a Servidor OAuth** para baixar um ambiente do Postman.
 
 ![Nova integração do Adobe I/O](./images/iopm.png){zoomable="yes"}
 
@@ -43,7 +44,7 @@ A coleção contém várias solicitações de API que podem ser usadas. Usaremos
 - 1 coleção para autenticação no Adobe I/O
 - 1 Coleta para os exercícios neste módulo
 
-Baixe o [postman-ff.zip](./../../../assets/postman/postman-ff.zip) no desktop local.
+Baixe o [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} no desktop local.
 
 ![Nova integração do Adobe I/O](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Escolha os três arquivos da pasta e selecione **Abrir** e **Importar**.
 
 ![Nova integração do Adobe I/O](./images/impconfirm.png){zoomable="yes"}
 
-Agora você tem tudo o que precisa no Postman para começar a interagir com os Serviços da Firefly por meio das APIs.
+Agora você tem tudo o que precisa no Postman para começar a interagir com o Firefly Services por meio das APIs.
 
 ## Solicitar um token de acesso
 

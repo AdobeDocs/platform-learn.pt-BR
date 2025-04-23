@@ -4,16 +4,16 @@ description: Foundation - FAC - Criar uma composição federada
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
 
 # 1.3.3 Criar uma composição federada
 
-Agora você pode configurar a composição do público-alvo federado na AEP.
+Agora você pode configurar a composição do público-alvo federado no AEP.
 
 Faça logon no Adobe Experience Platform acessando esta URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -21,11 +21,11 @@ Depois de fazer logon, você chegará à página inicial do Adobe Experience Pla
 
 ![Assimilação de dados](./../dc1.2/images/home.png)
 
-Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
+Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada `--aepSandboxName--`. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
 ![Assimilação de dados](./../dc1.2/images/sb1.png)
 
-## 1.3.3.1 Criar seu público-alvo
+## 1.3.3.1 Crie seu público
 
 No menu esquerdo, vá para **Audiences** e depois vá para **Federated compositions**. Clique em **Criar composição**.
 
@@ -47,7 +47,7 @@ Você verá isso. Selecione **Criar audiência**. Clique no ícone **pesquisar**
 
 ![FAC](./images/fedcomp5.png)
 
-Selecione o esquema **—aepUserLdap—_HOUSEHOLDS**. Clique em **Confirmar**.
+Selecione o esquema **`--aepUserLdap--_HOUSEHOLDS`**. Clique em **Confirmar**.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ Em seguida, clique novamente no ícone **+** e clique novamente em **Condição 
 
 ![FAC](./images/fedcomp11.png)
 
-A segunda condição a ser adicionada é: `Is the user an existing CitiSignal Mobile subscriber?`. A maneira de responder a essa pergunta é usar a relação entre a família e o cliente principal na organização, que é definida em outra tabela, **—aepUserLdap—_PERSONS**. Você pode detalhar no menu de atributos usando o link **household2person**.
+A segunda condição a ser adicionada é: `Is the user an existing CitiSignal Mobile subscriber?`. A maneira de responder a essa pergunta é usar a relação entre a família e o cliente principal da organização, que é definida em outra tabela, **`--aepUserLdap--_PERSONS`**. Você pode detalhar no menu de atributos usando o link **household2person**.
 
 ![FAC](./images/fedcomp12.png)
 
@@ -139,9 +139,9 @@ Sua composição foi concluída. Clique em **Iniciar** para executá-lo.
 
 ![FAC](./images/fedcomp21a.png)
 
-A consulta agora será enviada para o Snowflake, que consultará os dados de origem lá. Os resultados serão enviados de volta para a AEP, mas os dados de origem permanecerão no Snowflake.
+A consulta agora será enviada para o Snowflake, que consultará os dados de origem lá. Os resultados serão enviados de volta para o AEP, mas os dados de origem permanecerão no Snowflake.
 
-O público-alvo agora é preenchido e pode ser direcionado de dentro do ecossistema da AEP.
+O público-alvo agora é preenchido e pode ser direcionado de dentro do ecossistema do AEP.
 
 ![FAC](./images/fedcomp22.png)
 

@@ -4,7 +4,7 @@ description: Introdução - Usar o sistema de demonstração ao lado para config
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 1%
@@ -13,19 +13,19 @@ ht-degree: 1%
 
 # Use o Sistema de demonstração ao lado para configurar a propriedade do cliente da Coleção de dados da Adobe Experience Platform
 
-Para visualizar os aprendizados neste tutorial e possibilitar que você teste sua configuração em um ambiente seguro, este tutorial está usando as ferramentas Demo System Next do Adobe. Para aproveitar ao máximo esse tutorial, a instância da AEP precisa ser configurada para ser integrada ao Sistema de demonstração em seguida.
+Para visualizar os aprendizados neste tutorial e possibilitar que você teste sua configuração em um ambiente seguro, este tutorial está usando as ferramentas Demo System Next do Adobe. Para aproveitar ao máximo esse tutorial, sua instância do AEP precisa ser configurada para ser integrada ao Sistema de demonstração em seguida.
 
 Depois de ter acesso ao Sistema de demonstração em seguida, continue com as etapas abaixo.
 
-Vá para [https://dsn.adobe.com/](https://dsn.adobe.com/) e navegue até **Instalação**.
+Vá para [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} e navegue até **Instalação**.
 
 ![DSN](./images/dsnsetup.png)
 
-Na lista suspensa **Ambiente**, selecione a instância da AEP e a sandbox.
+Na lista suspensa **Ambiente**, selecione a instância do AEP e a sandbox.
 
 ![DSN](./images/dsnh1.png)
 
-Em seguida, selecione o **Usuário do tutorial da AEP**.
+Em seguida, selecione a predefinição **Usuário do tutorial do AEP**.
 
 ![DSN](./images/dsnhome.png)
 
@@ -57,7 +57,7 @@ Mantenha essa tela aberta como você precisará dela nas próximas etapas.
 
 ## Próximas etapas
 
-Ir para [Criar sua Sequência de Dados](./ex3.md)
+Ir para [Criar sua Sequência de Dados](./ex3.md){target="_blank"}
 
 Volte para [Introdução](./getting-started.md){target="_blank"}
 
