@@ -1,21 +1,21 @@
 ---
 title: Trabalho com APIs do Photoshop
-description: Saiba como trabalhar com as APIs do Photoshop e os serviços da Firefly
+description: Saiba como trabalhar com as APIs do Photoshop e o Firefly Services
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # 1.1.3 Trabalho com APIs do Photoshop
 
-Saiba como trabalhar com as APIs do Photoshop e os Serviços da Firefly.
+Saiba como trabalhar com as APIs do Photoshop e o Firefly Services.
 
 ## 1.1.3.1 Pré-requisitos
 
@@ -43,7 +43,7 @@ Vamos enviar sua primeira solicitação de API para APIs do Photoshop.
 
 Em seguida, vamos dizer olá para as APIs do Photoshop para testar se todas as permissões e o acesso estão definidos corretamente.
 
-1. Na coleção **Photoshop**, abra a solicitação **Photoshop Hello (Test Auth.)**. Selecione **Enviar**.
+Na coleção **Photoshop**, abra a solicitação **Photoshop Hello (Test Auth.)**. Selecione **Enviar**.
 
 ![Armazenamento do Azure](./images/ps10.png){zoomable="yes"}
 
@@ -55,7 +55,7 @@ Em seguida, para interagir programaticamente com o arquivo do PSD **citisignal-f
 
 ### Fazer upload do PSD para o Azure
 
-1. No Postman, abra a solicitação **Fazer upload do PSD para a conta de armazenamento do Azure**. No exercício anterior, você configurou essas variáveis de ambiente no Postman, que serão usadas agora:
+No Postman, abra a solicitação **Fazer upload do PSD para a conta de armazenamento do Azure**. No exercício anterior, você configurou essas variáveis de ambiente no Postman, que serão usadas agora:
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -66,11 +66,11 @@ Como você pode ver na solicitação **Fazer upload do PSD para a conta de armaz
 
 ![Armazenamento do Azure](./images/ps12.png){zoomable="yes"}
 
-1. Em **Body**, selecione o arquivo **citisignal-fiber.psd**.
+Em **Body**, selecione o arquivo **citisignal-fiber.psd**.
 
 ![Armazenamento do Azure](./images/ps13.png){zoomable="yes"}
 
-1. Sua tela deve ter esta aparência. Selecione **Enviar**.
+Sua tela deve ter esta aparência. Selecione **Enviar**.
 
 ![Armazenamento do Azure](./images/ps14.png){zoomable="yes"}
 
@@ -86,33 +86,33 @@ Se você usar o Azure Storage Explorer para examinar seu arquivo, atualize sua p
 
 Em seguida, é necessário obter o arquivo de manifesto do arquivo do PSD.
 
-1. No Postman, abra a solicitação **Photoshop - Obter Manifesto do PSD**. Ir para **Corpo**.
+No Postman, abra a solicitação **Photoshop - Obter Manifesto do PSD**. Ir para **Corpo**.
 
 O corpo deve ter esta aparência:
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "thumbnails": {
-      "type": "image/jpeg"
+  {
+    "inputs": [
+      {
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "thumbnails": {
+        "type": "image/jpeg"
+      }
     }
   }
-}
 ```
 
-1. Selecione **Enviar**.
+Selecione **Enviar**.
 
 Na resposta, agora você vê um link. Como as operações no Photoshop às vezes podem levar algum tempo para serem concluídas, o Photoshop fornece um arquivo de status como resposta à maioria das solicitações recebidas. Para entender o que está acontecendo com sua solicitação, você precisa ler o arquivo de status.
 
 ![Armazenamento do Azure](./images/ps17.png){zoomable="yes"}
 
-1. Para ler o arquivo de status, abra a solicitação **Photoshop - Obter Status PS**. Você pode ver que esta solicitação está usando uma variável como URL, que é uma variável definida pela solicitação anterior enviada, **Photoshop - Obter Manifesto do PSD**. As variáveis estão definidas nos **Scripts** de cada solicitação. Selecione **Enviar**.
+Para ler o arquivo de status, abra a solicitação **Photoshop - Obter Status PS**. Você pode ver que esta solicitação está usando uma variável como URL, que é uma variável definida pela solicitação anterior enviada, **Photoshop - Obter Manifesto do PSD**. As variáveis estão definidas nos **Scripts** de cada solicitação. Selecione **Enviar**.
 
 ![Armazenamento do Azure](./images/ps18.png){zoomable="yes"}
 
@@ -120,7 +120,7 @@ Sua tela deve ter esta aparência. Atualmente, o status está definido como **pe
 
 ![Armazenamento do Azure](./images/ps19.png){zoomable="yes"}
 
-1. Selecione para enviar mais algumas vezes no **Photoshop - Obter Status PS**, até que o status seja alterado para **bem-sucedido**. Isso pode levar alguns minutos.
+Selecione para enviar mais algumas vezes no **Photoshop - Obter Status PS**, até que o status seja alterado para **bem-sucedido**. Isso pode levar alguns minutos.
 
 Quando a resposta estiver disponível, você poderá ver que o arquivo json contém informações sobre todas as camadas do arquivo PSD. Essas informações são úteis, pois é possível identificar o nome ou a ID da camada.
 
@@ -132,9 +132,9 @@ Como exemplo, pesquise pelo texto `2048x2048-cta`. Sua tela deve ter esta aparê
 
 ### API do Photoshop - Alterar texto
 
-Em seguida, é necessário alterar o texto da chamada para ação usando as APIs.
+Em seguida, é necessário alterar o texto para a call to action usando as APIs.
 
-1. No Postman, abra a solicitação **Photoshop - Alterar Texto** e vá para **Corpo**.
+No Postman, abra a solicitação **Photoshop - Alterar Texto** e vá para **Corpo**.
 
 Sua tela deve ter esta aparência:
 
@@ -143,37 +143,37 @@ Sua tela deve ter esta aparência:
 - terceiro, um arquivo de saída foi especificado: `citisignal-fiber-changed-text.psd`
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "layers": [
+  {
+    "inputs": [
       {
-        "name": "2048x2048-cta",
-        "text": {
-          "content": "Get Fiber now!"
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "layers": [
+        {
+          "name": "2048x2048-cta",
+          "text": {
+            "content": "Get Fiber now!"
+          }
         }
+      ]
+    },
+    "outputs": [
+      {
+        "storage": "azure",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
+        "type": "vnd.adobe.photoshop",
+        "overwrite": true
       }
     ]
-  },
-  "outputs": [
-    {
-      "storage": "azure",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-      "type": "vnd.adobe.photoshop",
-      "overwrite": true
-    }
-  ]
-}
+  }
 ```
 
 O arquivo de saída tem um nome diferente, porque você não deseja substituir o arquivo de entrada original.
 
-1. Selecione **Enviar**.
+Selecione **Enviar**.
 
 ![Armazenamento do Azure](./images/ps23.png){zoomable="yes"}
 
@@ -181,13 +181,13 @@ Assim como antes, a resposta contém um link que aponta para o arquivo de status
 
 ![Armazenamento do Azure](./images/ps22.png){zoomable="yes"}
 
-1. Para ler o arquivo de status, abra a solicitação **Photoshop - Obter Status PS** e selecione **Enviar**. Se o status não estiver definido como **êxito** imediatamente, aguarde alguns segundos e selecione **Enviar** novamente.
+Para ler o arquivo de status, abra a solicitação **Photoshop - Obter Status PS** e selecione **Enviar**. Se o status não estiver definido como **êxito** imediatamente, aguarde alguns segundos e selecione **Enviar** novamente.
 
-1. Selecione o URL para baixar o arquivo de saída.
+Selecione o URL para baixar o arquivo de saída.
 
 ![Armazenamento do Azure](./images/ps24.png){zoomable="yes"}
 
-1. Abra **citisignal-fiber-changed-text.psd** depois de baixar o arquivo no computador. Você deve ver que o espaço reservado para a chamada à ação foi substituído pelo texto **Obter fibra agora!**.
+Abra **citisignal-fiber-changed-text.psd** depois de baixar o arquivo no computador. Você deve ver que o espaço reservado para o call to action foi substituído pelo texto **Obter fibra agora!**.
 
 ![Armazenamento do Azure](./images/ps25.png){zoomable="yes"}
 
@@ -199,6 +199,6 @@ Você também pode ver esse arquivo em seu contêiner usando o explorador do Arm
 
 Ir para a [API de Modelos personalizados do Firefly](./ex4.md){target="_blank"}
 
-Retorne para [Visão geral dos Serviços da Adobe Firefly](./firefly-services.md){target="_blank"}
+Voltar para [Visão geral do Adobe Firefly Services](./firefly-services.md){target="_blank"}
 
 Voltar para [Todos os Módulos](./../../../overview.md){target="_blank"}
