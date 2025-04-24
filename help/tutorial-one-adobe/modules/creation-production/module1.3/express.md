@@ -6,20 +6,24 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: bfeb43ad8e4d8c994b03ebd7cb4b5ead89ca6e10
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
 # 1.3 Adobe Express e Adobe Experience Cloud
 
-Saiba como automatizar fluxos de trabalho criativos com o Workfront Fusion.
+Com uma cadeia de fornecimento de conteúdo bem oleada, as equipes de marketing podem acompanhar a demanda insaciável de conteúdo e manter as campanhas em execução sem problemas. Neste exercício, você aprenderá a usar o Adobe Express e o AEM Assets para capacitar equipes de marketing a criar campanhas destacadas na marca com facilidade e colaborar eficientemente entre equipes — tudo dentro do ecossistema de conteúdo integrado e conectado.
+
+Você aprenderá a
+
+- Aproveite os modelos bloqueados do Express e os Kits de marca para criar e iterar conteúdo aprovado pela marca em campanhas locais e sazonais- Use os Modelos personalizados do Firefly treinados para seu estilo de marca exclusivo para criar novos planos de fundo e conteúdo dinamicamente com o Adobe Express- Pesquise ativos aprovados do Adobe Experience Manager para editar e personalizar campanhas.
 
 ## Pré-requisitos
 
-- Acesso ao Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Acesso ao Adobe Express [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
 
 ## Exercícios
 
