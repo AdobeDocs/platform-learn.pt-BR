@@ -4,10 +4,10 @@ description: Saiba como implementar os aplicativos móveis do Adobe Experience C
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ Nessas lições, presume-se que você tenha uma Adobe ID e as permissões de ní
 * Em Coleção de dados, você deve ter:
    * **[!UICONTROL Plataformas]**—item de permissão **[!UICONTROL Celular]**
    * **[!UICONTROL Direitos de propriedade]**—itens de permissão para **[!UICONTROL Desenvolver]**, **[!UICONTROL Aprovar]**, **[!UICONTROL Publicar]**, **[!UICONTROL Gerenciar extensões]** e **[!UICONTROL Gerenciar ambientes]**.
-   * **[!UICONTROL Direitos da Empresa]**—itens de permissão para **[!UICONTROL Gerenciar Propriedades]** e, se estiver concluindo a lição opcional de mensagens por push, **[!UICONTROL Gerenciar Configurações do Aplicativo]**
+   * **[!UICONTROL Direitos da Empresa]**—itens de permissão para **[!UICONTROL Gerenciar Propriedades]**
 
      Para obter mais informações sobre permissões de marcas, consulte [Permissões de usuário para marcas](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR){target="_blank"} na documentação do produto.
 * No Experience Platform, você deve ter:
@@ -93,7 +93,7 @@ Duas versões do aplicativo de amostra estão disponíveis para download. Ambas 
 
 
 1. [Início](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: um projeto sem código ou com código de espaço reservado para a maioria do código do Experience Platform Mobile SDK que você precisa usar para concluir os exercícios práticos neste tutorial.
-1. [Término](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: uma versão com implementação completa para referência.
+1. [Término](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: uma versão com a implementação completa para referência.
 
 >[!NOTE]
 >
