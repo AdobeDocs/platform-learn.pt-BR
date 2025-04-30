@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ As etapas a seguir não são específicas do Adobe Experience Cloud e foram proj
 1. Selecione **[!UICONTROL Continuar]**.
    ![configurar nova chave](assets/mobile-push-apple-dev-config-key.png)
 1. Revise a configuração e selecione **[!UICONTROL Registrar]**.
-1. Baixe a chave privada `.p8`. Ele é usado na configuração do canal do Journey Optimizer no próximo exercício.
-1. Anote a **[!UICONTROL Key ID]**. É usado na configuração do canal do Journey Optimizer.
-1. Anote a **[!UICONTROL ID da Equipe]**. É usado na configuração do canal do Journey Optimizer.
+1. Baixe a chave privada `.p8`. Ele é usado no próximo exercício, quando você configura a credencial de push do Journey Optimizer.
+1. Anote a **[!UICONTROL Key ID]**. Ele é usado no próximo exercício, quando você configura a credencial de push do Journey Optimizer.
+1. Anote a **[!UICONTROL ID da Equipe]**. Ele é usado no próximo exercício, quando você configura a credencial de push do Journey Optimizer.
    ![Detalhes da Chave](assets/push-apple-dev-key-details.png)
 
 A documentação adicional pode ser [encontrada aqui](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -96,19 +96,17 @@ O registro da credencial de push do aplicativo móvel é necessário para autori
 
    ![Criar uma nova configuração de credencial de push no Journey Optimizer](assets/add-push-credential-ios.png)
 
-1. No menu suspenso **[!UICONTROL Plataforma]**, selecione o sistema operacional **iOS**:
+1. No menu suspenso **[!UICONTROL Plataforma]**, selecione o sistema operacional **iOS**.
 
+1. Insira a ID do pacote do aplicativo móvel no campo **[!UICONTROL ID do aplicativo]** (ID do pacote iOS). Por exemplo, com.adobe.luma.tutorial.swiftui
 
-   1. Insira a ID do pacote do aplicativo móvel no campo **[!UICONTROL ID do aplicativo]** (ID do pacote iOS). Por exemplo, com.adobe.luma.tutorial.swiftui
+1. Habilite a opção **[!UICONTROL Aplicar a todas as sandboxes]** para disponibilizar essas credenciais de push em todas as sandboxes. Se uma sandbox específica tiver suas próprias credenciais para o mesmo par de IDs da plataforma e do aplicativo, essas credenciais específicas da sandbox terão prioridade.
 
-   1. Habilite a opção **[!UICONTROL Aplicar a todas as sandboxes]** para disponibilizar essas credenciais de push em todas as sandboxes. Se uma sandbox específica tiver suas próprias credenciais para o mesmo par de IDs da plataforma e do aplicativo, essas credenciais específicas da sandbox terão prioridade.
+1. Arraste e solte seu arquivo .p8 **Chave de Autenticação de Notificação por Push do Apple**, obtido do exercício anterior.
 
+1. Forneça a **[!UICONTROL Key ID]**, uma cadeia de 10 caracteres atribuída durante a criação da chave de autenticação `p8`. Ele pode ser encontrado na guia **[!UICONTROL Chaves]** da página **Certificados, Identificadores e Perfis** das páginas do portal do Desenvolvedor do Apple. (Você deve ter observado durante o exercício anterior.)
 
-   1. Arraste e solte seu arquivo .p8 **Chave de Autenticação de Notificação por Push do Apple**, obtido do exercício anterior.
-
-   1. Forneça a **[!UICONTROL Key ID]**, uma cadeia de 10 caracteres atribuída durante a criação da chave de autenticação `p8`. Ele pode ser encontrado na guia **[!UICONTROL Chaves]** da página **Certificados, Identificadores e Perfis** das páginas do portal do Desenvolvedor do Apple. (Você deve ter observado durante o exercício anterior.)
-
-   1. Forneça a **[!UICONTROL ID da Equipe]**. A ID da equipe é um valor que pode ser encontrado na guia **Associação** ou na parte superior da página do portal Desenvolvedor do Apple. (Você deve ter observado durante o exercício anterior.)
+1. Forneça a **[!UICONTROL ID da Equipe]**. A ID da equipe é um valor que pode ser encontrado na guia **Associação** ou na parte superior da página do portal Desenvolvedor do Apple. (Você deve ter observado durante o exercício anterior.)
 
    ![Configuração da credencial de push no Journey Optimizer](assets/add-app-config-ios.png)
 
