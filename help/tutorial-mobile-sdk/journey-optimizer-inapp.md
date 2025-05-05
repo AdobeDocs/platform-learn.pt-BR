@@ -180,6 +180,7 @@ O hub de eventos da SDK publica e recebe dados de eventos de extensões registra
 1. Na tela **[!UICONTROL Criar campanha]**:
    1. Selecione **[!UICONTROL Mensagem no aplicativo]** e selecione uma superfície de aplicativo na lista **[!UICONTROL Superfície de aplicativo]**, por exemplo **[!DNL Luma Mobile App]**.
    1. Selecionar **[!UICONTROL Criar]**
+
       ![Propriedades da campanha](assets/ajo-campaign-properties.png)
 1. Na tela Definição de campanha, em **[!UICONTROL Propriedades]**, digite um **[!UICONTROL Nome]** para a campanha, por exemplo `Luma - In-App Messaging Campaign`, e uma **[!UICONTROL Descrição]**, por exemplo `In-app messaging campaign for Luma app`.
    ![Nome da campanha](assets/ajo-campaign-properties-name.png)
@@ -191,6 +192,7 @@ O hub de eventos da SDK publica e recebe dados de eventos de extensões registra
    4. Insira **[!UICONTROL Dispensar]** como o **[!UICONTROL Botão #1 texto (primário)]**.
    5. Observe como a visualização é atualizada.
    6. Selecione **[!UICONTROL Revisar para ativar]**.
+
       ![Editor no aplicativo](assets/ajo-in-app-editor.png)
 1. Na tela **[!UICONTROL Revisar para ativar (Luma - Campanha de Mensagens no Aplicativo)]**, selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) no bloco **[!UICONTROL Agendar]**.
    ![Verificar agendamento e selecionar Agendamento](assets/ajo-review-select-schedule.png)
@@ -199,6 +201,7 @@ O hub de eventos da SDK publica e recebe dados de eventos de extensões registra
    1. Para remover o **[!UICONTROL Evento de inicialização de aplicativo]**, selecione ![Fechar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg).
    1. Use ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar condição]** repetidamente para criar a seguinte lógica para **[!UICONTROL Mostrar mensagem se]**.
    1. Clique em **[!UICONTROL Concluído]**.
+
       ![Lógica de acionamento](assets/ajo-trigger-logic.png)
 
    Você definiu uma ação de rastreamento, onde **[!UICONTROL Ação]** é igual a `in-app` e os **[!UICONTROL Dados de contexto]** com a ação são um par de valores chave de `"showMessage" : "true"`.

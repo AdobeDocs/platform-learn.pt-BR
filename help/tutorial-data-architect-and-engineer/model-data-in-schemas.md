@@ -144,8 +144,10 @@ O novo grupo de campos vazio é adicionado ao esquema. Os botões **[!UICONTROL 
    1. **[!UICONTROL Nome de exibição]**: `System Identifier`
    1. **[!UICONTROL Tipo]**: **[!UICONTROL Objeto]**
    1. Na lista suspensa **[!UICONTROL Grupo de Campos]**, selecione o **grupo de campos do perfil de identidade Luma** que criamos.
+
       ![Adicionar um novo grupo de campos](assets/schemas-loyalty-addSystemIdentifier.png)
    1. Selecione **[!UICONTROL Aplicar]**
+
       ![Aplicar novas propriedades de campo](assets/schemas-loyalty-applySystemIdentifier.png)
 
 Agora adicione dois campos sob o objeto `systemIdentifier`:

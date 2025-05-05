@@ -29,10 +29,13 @@ A automação de conteúdo reúne o potencial do Adobe Creative Cloud com o Expe
 
 - Os seguintes itens são de seu interesse:
    - Banner escuro da Adobe: cria um banner da Adobe com uma sobreposição escura, com base no ativo selecionado
+
      ![banner escuro](./images/prod-banner-dark.jpg)
    - Luz do banner da Adobe: cria um banner da Adobe com uma sobreposição de luz, com base no ativo selecionado
+
      ![banner leve](./images/prod-banner-light.jpg)
    - Adobe Banner Green: cria um banner Adobe com uma sobreposição verde, com base no ativo selecionado
+
      ![banner verde](./images/prod-banner-green.jpg)
 
 - Depois de escolher o tipo de banner que deseja criar, selecione o perfil de processamento e clique em &quot;Aplicar perfil às pastas&quot;.

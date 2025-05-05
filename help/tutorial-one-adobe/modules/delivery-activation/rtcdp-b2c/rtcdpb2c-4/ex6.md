@@ -19,10 +19,12 @@ As Funções do Azure permitem executar pequenos pedaços de código (chamados *
 Uma função é **acionada** por um tipo específico de evento. Os acionadores compatíveis incluem responder a alterações nos dados, responder a mensagens (por exemplo, Hubs de Eventos), executadas em uma programação ou como o resultado de uma solicitação HTTP.
 As Funções do Azure são um serviço de computação sem servidor que permite executar código acionado por eventos sem precisar provisionar ou gerenciar explicitamente a infraestrutura.
 Os Hubs de Eventos do Azure se integram às Funções do Azure para uma arquitetura sem servidor.
+
 ## Abrir código do Visual Studio e fazer logon no Azure
 
 O Visual Studio Code facilita...
 - definir e vincular funções do Azure aos Hubs de Eventos- testar localmente- implantar no Azure- execução da função de log remoto
+
 ### Abrir Visual Studio Code
 
 ### Fazer logon no Azure
@@ -36,6 +38,7 @@ Ao ver a tela a seguir no navegador, você está conectado com o Visual Code Stu
 ![3-03-vsc-login-ok.png](./images/303vscloginok.png)
 Retorne ao Visual Code Studio (você verá o nome da sua assinatura do Azure, por exemplo **Assinatura do Azure 1**):
 ![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
 ## Criar um projeto do Azure
 
 Clique em **Criar projeto de função...**:
@@ -65,6 +68,7 @@ Você pode então receber uma mensagem como esta. Nesse caso, clique em **Sim, e
 Após criar o projeto, abra o arquivo `--aepUserLdap---aep-event-hub-trigger.js` no editor:
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 A carga enviada pelo Adobe Experience Platform para o Hub de eventos será semelhante a:
+
 ```json
 {
   "identityMap": {
@@ -92,16 +96,19 @@ A carga enviada pelo Adobe Experience Platform para o Hub de eventos será semel
 
 Atualize o código em seu `--aepUserLdap---aep-event-hub-trigger.js` do Visual Studio Code com o código abaixo. Esse código será executado sempre que a Real-time CDP enviar qualificações de público-alvo para o destino do Hub de eventos. Neste exemplo, o código é apenas para exibir a carga útil recebida, mas você pode imaginar qualquer tipo de função adicional para processar as qualificações do público-alvo em tempo real e usar o ecossistema do pipeline de dados.
 A linha 11 no seu arquivo `--aepUserLdap---aep-event-hub-trigger.js` atualmente mostra isto:
+
 ```javascript
 context.log('Event hub message:', message);
 ```
 
 Altere a linha 11 em `--aepUserLdap---aep-event-hub-trigger.js` para que tenha esta aparência:
+
 ```javascript
 context.log('Event hub message:', JSON.stringify(message));
 ```
 
 A carga útil total deve ser desta forma:
+
 ```javascript
 const { app } = require('@azure/functions');
 
@@ -125,6 +132,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 O resultado deve ficar assim:
 ![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
+
 ## Executar projeto do Azure
 
 Agora é hora de executar o projeto. Nesta etapa, não implantaremos o projeto no Azure. Vamos executá-lo localmente no modo de depuração. Selecione o ícone Executar e clique na seta verde.
@@ -135,10 +143,12 @@ e selecione a conta de armazenamento criada anteriormente, chamada `--aepUserLda
 ![3-17-vsc-run-project.png](./images/vsc14b.png)
 Seu projeto está em execução e está listando eventos no Hub de eventos. No próximo exercício, você demonstrará o comportamento no site de demonstração do CitiSignal que o qualificará para públicos-alvo. Como resultado, você receberá uma carga de qualificação de público-alvo no terminal da função de acionador do Hub de eventos.
 ![3-24-vsc-application-stop.png](./images/vsc18.png)
+
 ## Parar Projeto do Azure
 
 Para interromper o projeto, vá para a **PILHA DE CHAMADAS** no VSC, clique na seta do projeto em execução e clique em **Parar**.
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
+
 ## Próximas etapas
 
 Ir para [2.4.7 Cenário completo](./ex7.md){target="_blank"}

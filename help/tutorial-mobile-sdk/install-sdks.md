@@ -25,7 +25,7 @@ Saiba como implementar o SDK da Adobe Experience Platform para dispositivos móv
 * Biblioteca de marcas criada com êxito com as extensões descritas na [lição anterior](configure-tags.md).
 * ID do Arquivo de Ambiente de Desenvolvimento das [Instruções de Instalação Móvel](configure-tags.md#generate-sdk-install-instructions).
 * Baixe o [aplicativo de amostra](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} vazio.
-* Experiência com [Xcode](Https://developer.apple.com/xcode/){target="_blank"}.
+* Experiência com [Xcode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Objetivos de aprendizagem
 

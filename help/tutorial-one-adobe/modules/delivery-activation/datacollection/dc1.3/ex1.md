@@ -528,7 +528,7 @@ SELECT user_id,
    AND p.household_id = h.household_id;
 ```
 
-Você deverá ver isso. Clique para abrir a lista suspensa **1} e selecione** Executar tudo **para executar todas as consultas.**
+Você deverá ver isso. Clique para abrir a lista suspensa **1&rbrace; e selecione** Executar tudo **para executar todas as consultas.**
 
 ![FAC](./images/dataload3.png)
 

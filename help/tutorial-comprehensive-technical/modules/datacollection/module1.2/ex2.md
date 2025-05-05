@@ -100,7 +100,7 @@ Clique no botão **+Adicionar** em **Grupos de campos**.
 
 ![Assimilação de dados](./images/createschemad.png)
 
-Na tela **[!UICONTROL Adicionar Grupo de Campos]**, selecione os [!UICONTROL Detalhes Demográficos do Grupo de Campos]****, **[!UICONTROL Detalhes de Contatos Pessoais]** e **[!UICONTROL Detalhes de Consentimento e Preferência]**.
+Na tela **[!UICONTROL Adicionar Grupo de Campos]**, selecione os [!UICONTROL Detalhes Demográficos do Grupo de Campos]&#x200B;**&#x200B;**, **[!UICONTROL Detalhes de Contatos Pessoais]** e **[!UICONTROL Detalhes de Consentimento e Preferência]**.
 
 Clique no botão **[!UICONTROL Adicionar Grupos de Campos]** para adicionar o [!UICONTROL Grupo de Campos] ao esquema.
 

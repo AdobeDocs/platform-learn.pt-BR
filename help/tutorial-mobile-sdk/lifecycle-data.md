@@ -93,6 +93,7 @@ O exercício anterior despacha os eventos em primeiro e segundo plano para o SDK
    1. Selecione **[!UICONTROL Mobile Core]** como a **[!UICONTROL Extensão]**.
    1. Selecione **[!UICONTROL Primeiro Plano]** como o **[!UICONTROL Tipo de Evento]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
+
       ![Configuração de Evento de Regra](assets/rule-event-configuration.png)
 1. De volta à tela **[!UICONTROL Criar regra]**, selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** ao lado de **[!UICONTROL Núcleo do dispositivo móvel - Primeiro plano]**.
    ![Próxima configuração de evento](assets/rule-event-configuration-next.png)
@@ -100,6 +101,7 @@ O exercício anterior despacha os eventos em primeiro e segundo plano para o SDK
    1. Selecione **[!UICONTROL Mobile Core]** como a **[!UICONTROL Extensão]**.
    1. Selecione **[!UICONTROL Plano de Fundo]** como o **[!UICONTROL Tipo de Evento]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
+
       ![Configuração de Evento de Regra](assets/rule-event-configuration-background.png)
 1. De volta à tela **[!UICONTROL Criar regra]**, selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Adicionar]** abaixo de **[!UICONTROL AÇÕES]**.
    ![Adicionar ação à regra](assets/rule-action-button.png)
@@ -107,6 +109,7 @@ O exercício anterior despacha os eventos em primeiro e segundo plano para o SDK
    1. Selecione **[!UICONTROL Adobe Edge Network de Experiência]** como a **[!UICONTROL Extensão]**.
    1. Selecione **[!UICONTROL Encaminhar evento para Edge Network]** como o **[!UICONTROL Tipo de ação]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
+
       ![Configuração de Ação da Regra](assets/rule-action-configuration.png)
 1. Selecione **[!UICONTROL Salvar na biblioteca]**.
    ![Regra - Salvar na Biblioteca](assets/rule-save-to-library.png)

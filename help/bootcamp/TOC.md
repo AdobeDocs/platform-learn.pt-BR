@@ -35,7 +35,7 @@ ht-degree: 2%
    + [2.4 Teste sua jornada](/help/bootcamp/uc/uc2/ex4.md)
    + [2.5 Instalar e usar o aplicativo móvel](/help/bootcamp/uc/uc2/ex5.md)
    + [2.6 Personalization na central de atendimento](/help/bootcamp/uc/uc2/ex6.md)
-+ 3 - Combinando {#uc3} físico e digital
++ 3 - Combinando físico e digital {#uc3}
    + [Visão geral](/help/bootcamp/uc/uc3/uc3.md)
    + [3.1 Use o aplicativo móvel e acione uma entrada de sinal](/help/bootcamp/uc/uc3/ex1.md)
    + [3.2 Criar o evento](/help/bootcamp/uc/uc3/ex2.md)

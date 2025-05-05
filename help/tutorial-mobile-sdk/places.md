@@ -80,6 +80,7 @@ Você define alguns pontos de interesse no serviço Places.
    1. Selecione **[!DNL Luma]** na lista **[!UICONTROL Selecionar uma Biblioteca]**.
    1. Verifique se você escolheu sua biblioteca de trabalho, por exemplo **[!UICONTROL Compilação Inicial]**.
    1. Selecione **[!UICONTROL Salvar na Biblioteca e Criar]** em **[!UICONTROL Salvar na Biblioteca]**.
+
       ![Instalar extensão do Places](assets/places-install-extension.png).
 
 1. Sua biblioteca foi recriada.
@@ -139,6 +140,7 @@ Em seguida, você definirá regras para trabalhar com esses elementos de dados.
 1. Selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo de **[!UICONTROL EVENTS]**.
    1. Selecione **[!UICONTROL Places]** da lista **[!UICONTROL Extension]** e selecione **[!UICONTROL Enter POI]** da lista **[!UICONTROL Event Type]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
+
       ![Evento de marca](assets/tags-event-mobile-core.png).
 1. Selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo de **[!UICONTROL AÇÕES]**.
    1. Selecione **[!UICONTROL Mobile Core]** na lista **[!UICONTROL Extension]**, selecione **[!UICONTROL Attach Data]** no **[!UICONTROL Action Type]** da lista. Esta ação anexa dados de carga.
@@ -169,6 +171,7 @@ Em seguida, você definirá regras para trabalhar com esses elementos de dados.
       Você também pode inserir `{%% ... %%}` valores de espaço reservado do elemento de dados no JSON selecionando os ![Dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Uma caixa de diálogo pop-up permite que você escolha qualquer elemento de dados criado.
 
    1. Selecione **[!UICONTROL Manter alterações]**.
+
       ![Ação de marcas](assets/tags-action-mobile-core.png)
 
 1. Selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado da ação **[!UICONTROL Mobile Core - Anexar dados]**.

@@ -54,6 +54,7 @@ Se você não precisar de etapas definidas para você, faça isso e termine esta
    1. O **Tipo de Evento** pode estar Pronto para DOM, dependendo da implementação
    1. Expanda as **Opções Avançadas**
    1. Defina o **Pedido** com um número menor do que suas outras regras, para que ele seja executado primeiro.
+
       ![Configurar Evento De Variável Global](assets/configure-global-variable-event.jpg)
       >[!NOTE]
       >

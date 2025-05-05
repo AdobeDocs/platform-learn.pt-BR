@@ -117,7 +117,7 @@ Selecione **Salvar** para salvar suas alterações.
 
 ## 1.2.2.2 Usar a API do Photoshop com o Workfront Fusion
 
-Selecione **** a chave entre os nós **Set Bearer Token** e **Firefly T2I**. Selecione **Adicionar um roteador**.
+Selecione **&#x200B;**&#x200B;a chave entre os nós **Set Bearer Token** e **Firefly T2I**. Selecione **Adicionar um roteador**.
 
 ![WF Fusion](./images/wffusion63.png)
 

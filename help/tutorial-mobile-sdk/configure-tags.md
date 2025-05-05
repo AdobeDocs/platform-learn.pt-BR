@@ -37,6 +37,7 @@ Nesta lição, você vai:
 1. Crie uma nova propriedade de tag móvel na Interface da coleção de dados:
    1. Selecione **[!UICONTROL Tags]** na navegação à esquerda.
    1. Selecionar **[!UICONTROL Nova Propriedade]**
+
       ![criar uma propriedade de marca](assets/tags-new-property.png).
    1. Para o **[!UICONTROL Nome]**, digite `Luma Mobile App Tutorial`.
    1. Para a **[!UICONTROL Plataforma]**, selecione **[!UICONTROL Dispositivo móvel]**.
@@ -65,6 +66,7 @@ Nesta lição, você vai:
       ![Criar a Biblioteca](assets/tags-save-library.png)
 
    1. Finalmente, selecione **[!UICONTROL Build inicial]** como sua biblioteca de trabalho no menu **[!UICONTROL Selecionar uma biblioteca de trabalho]**.
+
       ![Selecionar como a biblioteca de trabalho](assets/tags-working-library.png)
 1. Verificar extensões:
 

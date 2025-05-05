@@ -84,6 +84,7 @@ Agora que temos uma ideia do que o conteúdo deve existir, podemos criar o fragm
 - No modal aberto, você verá que alguns campos ainda não são editáveis. É lógico: com base em onde criamos nosso fragmento, modelos diferentes estarão disponíveis.
   ![criar fragmento de conteúdo](./images/prod-app-create-cf-details.png)
    - Primeiro, selecione onde criaremos nosso fragmento clicando no ícone de pasta ao lado do campo &quot;Local&quot;. Expanda a árvore de conteúdo clicando nas pastas &quot;adobike&quot; \> &quot;en&quot; \> &quot;mobile-app&quot; e, em seguida, confirme a seleção clicando no botão &quot;Escolher&quot;.
+
      ![selecione o local correto](./images/prod-app-folder.png)
    - Você observará que o campo &quot;Modelo de fragmento de conteúdo&quot; agora é editável. Clique na seta ao lado do campo para abrir a lista suspensa e selecionar o modelo de conteúdo que visualizamos anteriormente: &quot;Página inicial do aplicativo móvel&quot;.
    - Em seguida, dê ao fragmento de conteúdo um título significativo (dica: inclua o número da equipe para encontrar o conteúdo facilmente). Observe que o campo &quot;Nome&quot; é preenchido automaticamente para facilitar a vida: é o nome que o sistema usa para identificar o fragmento e não deve ser tocado.
@@ -94,6 +95,7 @@ Agora que temos uma ideia do que o conteúdo deve existir, podemos criar o fragm
    - Para selecionar ativos de imagem, clique no ícone de pasta para procurar a imagem correta no AEM Assets.
    - Para o produto em destaque, clique no ícone de pesquisa do produto para selecionar facilmente nosso produto Commerce &quot;Adobe 1&quot;, de modo que os detalhes relacionados ao comércio sejam carregados no aplicativo.
    - Certifique-se de clicar no botão &quot;Salvar&quot; quando terminar de salvar todo o conteúdo criado e publicar suas alterações.
+
      ![publicar alterações](./images/prod-app-publish.png)
 
 Agora que prevemos o aplicativo móvel com algum conteúdo, estamos prontos para entregar nossa campanha.

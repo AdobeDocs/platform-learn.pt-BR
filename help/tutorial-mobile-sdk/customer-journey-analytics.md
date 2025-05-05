@@ -275,7 +275,7 @@ Para relatar nas telas exibidas no aplicativo:
 
 1. Selecione **[!UICONTROL Mostrar tudo]** abaixo da lista **[!UICONTROL MÉTRICAS]**.
 
-1. Arraste e solte o componente **[!UICONTROL Exibições de tela]** em [!UICONTROL _Solte uma **métrica**aqui (ou qualquer outro componente_)].
+1. Arraste e solte o componente **[!UICONTROL Exibições de tela]** em [!UICONTROL _Solte uma **métrica**&#x200B;aqui (ou qualquer outro componente_)].
    ![Projetos do CJA 7](assets/cja-projects-7.png)
 A tabela de forma livre agora mostra exibições de tela para cada dia do período selecionado. No entanto, você deseja mostrar o número de exibições de tela para cada uma das diferentes telas usadas no aplicativo.
 
@@ -305,7 +305,7 @@ Em seguida, você criará uma Tabela de forma livre para relatar como os usuári
 
 1. Renomear **[!UICONTROL tabela de forma livre (2)]** para `App Interactions`.
 
-1. Arraste e solte a métrica **[!UICONTROL Interações do aplicativo]** em [!UICONTROL _Solte uma **métrica**aqui (ou qualquer outro componente_)].
+1. Arraste e solte a métrica **[!UICONTROL Interações do aplicativo]** em [!UICONTROL _Solte uma **métrica**&#x200B;aqui (ou qualquer outro componente_)].
 
 1. Arraste e solte a dimensão **[!UICONTROL Nome da interação do aplicativo]** no cabeçalho **[!UICONTROL Dia]** para substituir essa dimensão.
 
@@ -337,7 +337,7 @@ Agora você deseja relatar, em um painel separado, os eventos comerciais que oco
 
 1. Renomeie a **[!UICONTROL tabela de forma livre]** para `Commerce Events`.
 
-1. Arraste e solte a métrica **[!UICONTROL Exibições do produto]** em [!UICONTROL _Solte uma **métrica**aqui (ou qualquer outro componente_)].
+1. Arraste e solte a métrica **[!UICONTROL Exibições do produto]** em [!UICONTROL _Solte uma **métrica**&#x200B;aqui (ou qualquer outro componente_)].
 
 1. Arraste e solte a métrica **[!UICONTROL Adicionar às listas]** de produtos à direita da coluna **[!UICONTROL Exibições de produtos]** para inserir esta coluna na tabela de forma livre. Verifique se Adicionar **[!UICONTROL +]** (em azul) é exibido ao inserir a coluna.
    ![Projetos do CJA 15](assets/cja-projects-15.png)
@@ -390,7 +390,7 @@ Você deseja relatar quantas ofertas e quais ofertas são exibidas para os usuá
 
 1. Renomeie a **[!UICONTROL Tabela de forma livre]** para `Monthly Overview`.
 
-1. Arraste e solte a métrica **[!UICONTROL Exibição]** em [!UICONTROL _Solte uma **métrica**aqui (ou qualquer outro componente_)].
+1. Arraste e solte a métrica **[!UICONTROL Exibição]** em [!UICONTROL _Solte uma **métrica**&#x200B;aqui (ou qualquer outro componente_)].
 
 1. Arraste e solte a dimensão **[!UICONTROL Mês]** na coluna **[!UICONTROL Dia]** para substituir a dimensão.
 
@@ -411,7 +411,7 @@ Você também quer ter um relatório que mostra quais ofertas foram mostradas em
 
 1. Renomear **[!UICONTROL tabela de forma livre (2)]** para `People`.
 
-1. Arraste e solte a métrica **[!UICONTROL Pessoas]** em [!UICONTROL _Solte uma **métrica**aqui (ou qualquer outro componente_)].
+1. Arraste e solte a métrica **[!UICONTROL Pessoas]** em [!UICONTROL _Solte uma **métrica**&#x200B;aqui (ou qualquer outro componente_)].
 
 1. Arraste e solte o **[!UICONTROL Nome da atividade]** na coluna **[!UICONTROL Dia]** para substituir a dimensão.
 
@@ -443,7 +443,7 @@ Por fim, você deseja criar relatórios sobre visitas à loja.
 
 1. Renomeie a **[!UICONTROL tabela de forma livre]** para `Store Entries / Exits Across Cities`.
 
-1. Arraste e solte a métrica **[!UICONTROL Eventos de localização]** em [!UICONTROL _Solte uma **métrica**aqui (ou qualquer outro componente_)]. O relatório agora mostra uma visão geral diária de todos os eventos de localização que ocorreram no aplicativo. Lembre-se de como você configurou especificamente esta dimensão como parte de sua [visualização de dados](#create-a-data-view).
+1. Arraste e solte a métrica **[!UICONTROL Eventos de localização]** em [!UICONTROL _Solte uma **métrica**&#x200B;aqui (ou qualquer outro componente_)]. O relatório agora mostra uma visão geral diária de todos os eventos de localização que ocorreram no aplicativo. Lembre-se de como você configurou especificamente esta dimensão como parte de sua [visualização de dados](#create-a-data-view).
 
 1. Arraste e solte a dimensão **[!UICONTROL Cidade]** no cabeçalho da coluna **[!UICONTROL Dia]** para substituir a dimensão. O relatório agora mostra as cidades para os eventos de localização.
 

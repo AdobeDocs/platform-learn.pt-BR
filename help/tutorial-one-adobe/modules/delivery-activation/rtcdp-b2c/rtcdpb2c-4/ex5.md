@@ -27,7 +27,7 @@ Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser se
 
 ![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
-Vá para **Destinos** e clique em **Procurar**. Em seguida, você verá todos os destinos disponíveis. Localize seu destino, clique nos 3 pontos**...** conforme indicado abaixo e clique em **Ativar públicos**.
+Vá para **Destinos** e clique em **Procurar**. Em seguida, você verá todos os destinos disponíveis. Localize seu destino, clique nos 3 pontos&#x200B;**...** conforme indicado abaixo e clique em **Ativar públicos**.
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 
