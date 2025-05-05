@@ -20,7 +20,7 @@ ht-degree: 25%
 
 Saiba como os manuais de casos de uso podem ajudar clientes da Real-Time CDP e do Journey Optimizer a obter um tempo de retorno mais rápido. Os manuais de casos de uso são um catálogo de dezenas de modelos que abrangem vários setores e objetivos de marketing. Os manuais geram ativos técnicos, como públicos-alvo, jornadas e esquemas, que podem ser personalizados e publicados em outras sandboxes. Para obter mais informações, consulte a [documentação dos manuais de caso de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441820/?learn=on&enablevpops&captions=por_br)
 
 ## Introdução
 
@@ -37,7 +37,7 @@ Saiba como configurar sua conta do Platform para manuais de casos de uso e, em s
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Configurar uma sandbox do manual" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Configurar uma sandbox do manual"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449831/?format=jpeg&nocache=1739379898120&captions=por_br" alt="Configurar uma sandbox do manual"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

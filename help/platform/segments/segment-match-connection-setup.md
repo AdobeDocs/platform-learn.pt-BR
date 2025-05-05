@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Neste vídeo, saiba como configurar a conexão entre você e um parceiro para compartilhar públicos. Depois de configurar esse recurso de Correspondência de segmentos, você poderá compartilhar dados com seu parceiro de dados. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346355/?learn=on&enablevpops&captions=por_br)

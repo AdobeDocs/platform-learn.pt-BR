@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Saiba como assumir o controle total de seus dados do momento em que são coletados nas fontes de dados até o momento em que são distribuídos para destinos fora do Adobe Experience Platform. A governança de dados é uma estrutura de fácil extensão profundamente incorporada nos fluxos de trabalho de uso de dados. A estrutura se baseia em três aspectos principais: rótulos, políticas e aplicação. Para obter mais informações, consulte a [documentação sobre governança de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32683?learn=on&enablevpops&captions=por_br)
 
 ## Demonstração
 
@@ -35,7 +35,7 @@ Veja uma demonstração completa do recurso de governança de dados no Adobe Exp
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Demonstração completa da governança de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Demonstração completa da governança de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41325?format=jpeg&nocache=1740179989077&captions=por_br" alt="Demonstração completa da governança de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -73,7 +73,7 @@ Saiba mais sobre como rótulos, políticas e ações de marketing se unem para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Classificar dados usando rótulos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Classificar dados usando rótulos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422793?format=jpeg&nocache=1740179989358&captions=por_br" alt="Classificar dados usando rótulos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +96,7 @@ Saiba mais sobre como rótulos, políticas e ações de marketing se unem para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Criar políticas de uso de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Criar políticas de uso de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37143?format=jpeg&nocache=1740179989347&captions=por_br" alt="Criar políticas de uso de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -156,7 +156,7 @@ Saiba mais sobre como o Experience Platform respeita o consentimento do cliente.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Integrar a Estrutura de transparência e consentimento 2.0 do IAB" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Integrar a Estrutura de transparência e consentimento 2.0 do IAB"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326481?format=jpeg&nocache=1740179989597&captions=por_br" alt="Integrar a Estrutura de transparência e consentimento 2.0 do IAB"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +179,7 @@ Saiba mais sobre como o Experience Platform respeita o consentimento do cliente.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Impor consentimento" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Impor consentimento"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413888?format=jpeg&nocache=1740179989584&captions=por_br" alt="Impor consentimento"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

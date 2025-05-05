@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Saiba como criar políticas para aplicar as preferências de consentimento do cliente. Para obter mais informações, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413888?learn=on&enablevpops&captions=por_br)
 
 >[!IMPORTANT]
 >

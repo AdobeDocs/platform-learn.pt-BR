@@ -18,4 +18,4 @@ ht-degree: 15%
 
 Saiba como adicionar sua camada de dados a uma nova sequência de dados em Coleção de dados. Além disso, saiba como executar funções básicas de mapeamento usando o recurso Preparação de dados para coleção de dados. Para obter mais informações, consulte a [documentação de Preparação de dados para coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR#data-prep).
 
->[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345568/?learn=on&enablevpops&captions=por_br)

@@ -57,7 +57,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="Adicionar desenvolvedores" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="Adicionar desenvolvedores"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446403?format=jpeg&nocache=1740173302176&captions=por_br" alt="Adicionar desenvolvedores"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +103,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="Configurar o controle de acesso baseado em atributos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="Configurar o controle de acesso baseado em atributos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451835?format=jpeg&nocache=1740173302190&captions=por_br" alt="Configurar o controle de acesso baseado em atributos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -126,7 +126,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions" title="Adicionar usuários à coleção de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="Adicionar usuários à coleção de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33395/?format=jpeg&nocache=1740173302543&captions=por_br" alt="Adicionar usuários à coleção de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="Usar sandboxes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="Usar sandboxes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430295/?format=jpeg&nocache=1740173302789&captions=por_br" alt="Usar sandboxes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="Copiar configurações entre sandboxes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="Copiar configurações entre sandboxes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446089/?format=jpeg&nocache=1740173302776&captions=por_br" alt="Copiar configurações entre sandboxes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="Compartilhar pacotes entre organizações IMS" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="Compartilhar pacotes entre organizações IMS"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443922/?format=jpeg&nocache=1740173302764&captions=por_br" alt="Compartilhar pacotes entre organizações IMS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

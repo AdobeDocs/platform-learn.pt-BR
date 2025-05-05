@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Saiba como a Real-Time Customer Data Platform da Adobe e os recursos de Correspondência de clientes da Google ajudam as marcas a se engajarem com clientes nas propriedades próprias e operadas da Google para dimensionar suas campanhas de alcance geral. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326489?learn=on&enablevpops&captions=por_br)

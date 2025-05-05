@@ -18,5 +18,5 @@ ht-degree: 9%
 
 Este vídeo mostra como criar conjuntos de dados e assimilar dados na interface do Adobe Experience Platform. Para obter a documentação mais detalhada do produto, consulte [assimilar dados em lote usando a interface](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=pt-BR) e [criar um conjunto de dados usando as APIs](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html?lang=pt-BR). Para obter mais informações, visite a [documentação de Assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34332?learn=on&enablevpops&captions=por_br)
 

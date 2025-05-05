@@ -26,7 +26,7 @@ O Serviço de identidade da Adobe Experience Platform ajuda você a obter uma me
 **Os Arquitetos de Dados** precisarão mapear identidades fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre identidade no Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422776?learn=on&enablevpops&captions=por_br)
 
 >[!NOTE]
 >

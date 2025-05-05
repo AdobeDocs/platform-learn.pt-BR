@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Este vídeo analisa o que fazer antes de começar a criar seus esquemas no Adobe Experience Platform. Documente os casos de uso de sua empresa, entenda sua licença da Platform, conheça as medidas de proteção do produto e identifique quais dados devem ser assimilados antes de finalizar seu modelo de dados. Para obter mais informações, visite a [documentação sobre esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413634?learn=on&enablevpops&captions=por_br)

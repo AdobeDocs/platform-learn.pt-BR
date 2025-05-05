@@ -18,4 +18,4 @@ ht-degree: 55%
 
 Saiba como monitorar e rastrear dados que são assimilados na Adobe Experience Platform usando o painel de monitoramento. Esse painel de monitoramento fornece uma exibição de cima para baixo do processamento de dados de origem por meio de data lake para serviços de Perfil e Identidade, com insights acionáveis. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=pt-BR)
 
->[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411991?learn=on&enablevpops&captions=por_br)

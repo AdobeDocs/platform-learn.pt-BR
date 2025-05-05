@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Obtenha uma visão geral dos cinco principais casos de uso do Experience Platform — reengajamento inteligente, campanhas &quot;não perca&quot;, otimização de conversão do cliente, reconhecimento contextual e valor único para a vida útil.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430461?learn=on&enablevpops&captions=por_br)
 

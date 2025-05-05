@@ -26,7 +26,7 @@ A assimilação de dados em lote permite assimilar uma grande quantidade de dado
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre a assimilação de dados:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346835?learn=on&enablevpops&captions=por_br)
 
 
 ## Permissões necessárias

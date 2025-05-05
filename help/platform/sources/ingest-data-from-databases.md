@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Este vídeo mostra como assimilar dados em lote de uma fonte de banco de dados no Perfil do cliente em tempo real da Adobe Experience Platform e no Experience Data Lake, de forma contínua e escalável. Para obter a documentação mais detalhada do produto, consulte o [banco de dados](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR#database) na página de visão geral dos Source Connectors ou na [documentação do conector de origem do Google Big Query](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413372?learn=on&enablevpops&captions=por_br)

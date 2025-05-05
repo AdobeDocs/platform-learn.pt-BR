@@ -20,4 +20,4 @@ Saiba como criar uma propriedade de tag móvel em Coleção de dados. Adicione o
 >
 > A inicialização agora é **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41124/?learn=on&enablevpops&captions=por_br)

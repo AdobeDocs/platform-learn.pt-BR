@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Saiba como criar esquemas para seus dados comerciais com o Real-Time Customer Data Platform e o B2B edition. Saiba mais sobre classes comerciais, grupos de campos e namespaces de identidade e como criá-los automaticamente em sua conta com o utilitário Postman. Para obter mais informações, visite a [documentação sobre esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453397?learn=on&enablevpops&captions=por_br)

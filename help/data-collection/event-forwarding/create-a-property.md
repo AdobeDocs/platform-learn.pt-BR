@@ -25,4 +25,4 @@ Saiba como criar uma propriedade de encaminhamento de eventos em Coleção de da
 > * O Platform Launch Server Side agora é **[!DNL event forwarding]**
 > * As configurações do Edge agora são **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3418853?learn=on&enablevpops&captions=por_br)

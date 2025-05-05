@@ -17,4 +17,4 @@ ht-degree: 36%
 
 Saiba como criar e configurar datastreams para implementações da Web e do Mobile SDK. Para obter mais informações, visite [a documentação dos fluxos de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344996?learn=on&enablevpops&captions=por_br)

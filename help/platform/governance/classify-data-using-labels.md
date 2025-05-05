@@ -19,4 +19,4 @@ ht-degree: 100%
 
 Saiba como aplicar rótulos a esquemas e conjuntos de dados. Os rótulos de uso de dados permitem marcar e classificar os dados para refletir as políticas corporativas, as obrigações contratuais, os requisitos de conformidade e os regulamentos regionais na Adobe Experience Platform.  Essa capacidade é essencial para diferenciar dados conhecidos e desconhecidos sobre os clientes, e aplicar controles apropriados no uso de dados com base na natureza dos dados. Para obter a documentação detalhada do produto, consulte [gerenciar rótulos de uso de dados na interface](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=pt-BR) e [gerenciar rótulos de uso de dados com a API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html?lang=pt-BR)
 
->[!VIDEO](https://video.tv.adobe.com/v/29709?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422793?learn=on&enablevpops&captions=por_br)

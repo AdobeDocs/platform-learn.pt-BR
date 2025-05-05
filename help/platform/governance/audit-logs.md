@@ -17,5 +17,5 @@ ht-degree: 42%
 
 Saiba como o recurso de logs de auditoria pode ajudar a atender aos requisitos de conformidade e solucionar problemas de implementação do Adobe Experience Platform. Para obter mais informações, visite a [documentação dos logs de auditoria](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=pt-BR) ou a [referência da API](https://developer.adobe.com/experience-platform-apis/references/audit-query/).
 
->[!VIDEO](https://video.tv.adobe.com/v/341450?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344653?learn=on&enablevpops&captions=por_br)
 

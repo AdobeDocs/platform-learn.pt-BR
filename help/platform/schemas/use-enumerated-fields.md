@@ -19,4 +19,4 @@ ht-degree: 33%
 
 Saiba como usar campos enumerados e valores sugeridos para criar menus suspensos práticos na interface do construtor de segmentos. Para obter mais informações, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3417877/?learn=on&enablevpops&captions=por_br)

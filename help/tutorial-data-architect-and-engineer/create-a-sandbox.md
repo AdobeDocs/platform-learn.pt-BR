@@ -26,7 +26,7 @@ As sandboxes fornecem ambientes isolados em que você pode experimentar a funcio
 Os **Arquitetos de Dados** e **Engenheiros de Dados** precisarão criar sandboxes fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre sandboxes:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430295/?learn=on&enablevpops&captions=por_br)
 
 ## Permissões necessárias
 

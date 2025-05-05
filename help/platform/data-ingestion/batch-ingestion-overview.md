@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Este vídeo fornece uma visão geral da assimilação de dados em lote no Adobe Experience Platform e mostra como assimilar dados em lote usando a API. Para obter mais informações, visite a [documentação de Assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345665?learn=on&enablevpops&captions=por_br)

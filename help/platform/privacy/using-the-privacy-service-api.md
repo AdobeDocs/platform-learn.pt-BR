@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Saiba como fazer chamadas para endpoints da API, incluindo listas e pesquisas, criação de uma solicitação de trabalho e criação de uma solicitação de consentimento. Para obter mais informações, consulte a [documentação do Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448878?learn=on&enablevpops&captions=por_br)

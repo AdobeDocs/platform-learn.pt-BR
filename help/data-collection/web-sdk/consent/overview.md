@@ -20,5 +20,5 @@ Saiba como o gerenciamento de consentimento no Adobe Experience Platform Web SDK
 >
 > A inicialização agora é **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437793/?learn=on&enablevpops&captions=por_br)
 

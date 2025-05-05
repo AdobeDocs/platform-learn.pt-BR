@@ -18,4 +18,4 @@ ht-degree: 34%
 
 Saiba como usar ambientes de desenvolvimento, preparo e produção e códigos incorporados para desenvolver e validar sua propriedade de tag. Para obter mais informações, consulte a documentação de [ambientes](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430489/?learn=on&enablevpops&captions=por_br)

@@ -17,5 +17,5 @@ ht-degree: 0%
 
 Saiba mais sobre as funções, as fases e os principais resultados envolvidos em um projeto bem-sucedido do Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430450?learn=on&enablevpops&captions=por_br)
 

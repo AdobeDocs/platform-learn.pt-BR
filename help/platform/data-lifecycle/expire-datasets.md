@@ -22,7 +22,7 @@ Saiba como agendar exclusões de conjunto de dados usando o recurso de higiene d
 A exclusão do conjunto de dados permite que os administradores e engenheiros de dados definam uma data de expiração para um conjunto de dados. Para obter mais informações, consulte a [documentação sobre higiene de dados](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=pt-BR).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430303?learn=on&enablevpops&captions=por_br)
 
 >[!NOTE]
 >

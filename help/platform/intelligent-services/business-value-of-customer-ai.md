@@ -19,5 +19,5 @@ ht-degree: 0%
 
 Este vídeo mostra como o Customer AI enriquece os perfis do cliente com propensões baseadas em IA e capacita os esforços de segmentação e direcionamento do cliente. Para obter mais informações, visite a [documentação da IA do cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328480?learn=on&enablevpops&captions=por_br)
 

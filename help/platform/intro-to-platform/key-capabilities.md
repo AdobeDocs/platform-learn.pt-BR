@@ -18,5 +18,5 @@ ht-degree: 80%
 
 Saiba como os principais recursos da Experience Platform agregam valor à sua empresa.
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428511?learn=on&enablevpops&captions=por_br)
 

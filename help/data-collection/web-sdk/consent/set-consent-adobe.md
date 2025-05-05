@@ -20,4 +20,4 @@ Saiba como usar o Adobe Experience Platform Web SDK para definir valores de cons
 >
 > A inicialização agora é **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332694/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448801/?learn=on&enablevpops&captions=por_br)

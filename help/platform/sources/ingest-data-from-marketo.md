@@ -26,13 +26,13 @@ Saiba como assimilar facilmente dados do Marketo Engage na Real-time Customer Da
 
 Saiba como configurar o conector de origem para o Marketo usando o fluxo de trabalho de modelo. Esse fluxo de trabalho gera automaticamente os ativos necessários para assimilar dados do Marketo com base em modelos. Isso economiza tempo inicial e os ativos podem ser personalizados de acordo com suas necessidades.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451865?learn=on&enablevpops&captions=por_br)
 
 ## Fluxo de trabalho padrão
 
 Saiba como configurar o conector de origem para o Marketo usando o fluxo de trabalho padrão. O fluxo de trabalho padrão requer a criação antecipada de esquemas e namespaces de identidade.
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452909?learn=on&enablevpops&captions=por_br)
 
 Para obter mais informações, consulte a seguinte documentação:
 * [Documentação do conector de origem do Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=pt-BR).

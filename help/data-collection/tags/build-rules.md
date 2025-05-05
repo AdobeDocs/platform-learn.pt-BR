@@ -18,4 +18,4 @@ ht-degree: 37%
 
 Saiba como criar regras para poder executar comandos em tags. Eventos e condições determinam *quando* fazer coisas, enquanto as ações determinam *o que* fazer. Para obter mais informações, consulte a documentação de [regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430500/?learn=on&enablevpops&captions=por_br)

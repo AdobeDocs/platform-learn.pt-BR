@@ -167,7 +167,7 @@ Para confirmar que os dados chegaram ao data lake da Platform, uma opção rápi
 
 Para clientes do Real-time Customer Data Platform e do Journey Optimizer, a próxima etapa é ativar o conjunto de dados e o esquema para o Perfil do cliente em tempo real. A transmissão de dados do SDK da Web será uma das muitas fontes de dados que fluem para a Platform e você deseja unir seus dados da Web a outras fontes de dados para criar perfis de clientes de 360 graus. Para saber mais sobre o Perfil do cliente em tempo real, assista a este vídeo curto:
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
+>[!VIDEO](https://video.tv.adobe.com/v/31686?learn=on&captions=por_br)
 
 >[!CAUTION]
 >

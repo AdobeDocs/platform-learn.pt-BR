@@ -18,4 +18,4 @@ ht-degree: 35%
 
 Saiba como rotular campos de dados como identidades, assimilar dados de identidade e verificar os dados no gráfico privado do Serviço de identidade da Adobe Experience Platform. Para obter mais informações, visite a [documentação do serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR)
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31684?learn=on&enablevpops&captions=por_br)

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Saiba como adicionar usuários e gerenciar permissões para recursos de Coleção de dados do Adobe Experience Platform para que os funcionários da sua empresa tenham o acesso necessário para realizar suas tarefas.
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33395/?learn=on&enablevpops&captions=por_br)

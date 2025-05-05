@@ -22,5 +22,5 @@ Os públicos dinâmicos são um recurso avançado de segmentação no Adobe Expe
 >
 > &quot;[!UICONTROL Segmentos]&quot; foram renomeados como &quot;[!UICONTROL Públicos-alvo]&quot; na interface da plataforma. Selecione **[!UICONTROL Criar público-alvo]** > **[!UICONTROL Criar regra]** para entrar no construtor de regras apresentado neste vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/27428?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34330?learn=on&enablevpops&captions=por_br)
 

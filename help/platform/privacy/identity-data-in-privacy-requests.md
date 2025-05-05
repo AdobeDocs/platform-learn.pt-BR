@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Saiba mais sobre os principais conceitos e decisões relacionados à auditoria de dados pessoais e preparação de acordo com as necessidades de privacidade da empresa. Para obter mais informações, consulte a [documentação do Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447653?learn=on&enablevpops&captions=por_br)

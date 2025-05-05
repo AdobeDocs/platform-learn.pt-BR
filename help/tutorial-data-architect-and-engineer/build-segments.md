@@ -25,7 +25,7 @@ Depois de ter Perfis de clientes em tempo real, você pode criar segmentos de in
 **Os Arquitetos de Dados** precisarão criar segmentos fora deste tutorial e dar suporte a seus colegas nessa tarefa.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre a criação de segmentos:
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31685?learn=on&enablevpops&captions=por_br)
 
 
 ## Permissões necessárias

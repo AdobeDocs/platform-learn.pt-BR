@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Veja como a Adobe está reimaginando públicos no Adobe Experience Platform, incluindo como você pode importar, criar e gerenciar públicos. Para obter mais informações, consulte a [documentação do Construtor de segmentos](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=pt-br).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423370/?learn=on&enablevpops&captions=por_br)

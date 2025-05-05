@@ -33,7 +33,7 @@ Há [medidas de proteção importantes para os dados de Perfil do cliente em tem
 Os **Arquitetos de dados** precisarão ativar o Perfil do cliente em tempo real fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre o Perfil do cliente em tempo real:
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31686?learn=on&enablevpops&captions=por_br)
 
 ## Permissões necessárias
 

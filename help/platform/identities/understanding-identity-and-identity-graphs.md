@@ -18,7 +18,7 @@ ht-degree: 9%
 
 Saiba mais sobre os principais recursos de resolução de identidades no Adobe Experience Platform: coleção de identidades, gráficos de identidade e APIs. Saiba como o Serviço de identidade vincula identidades desconectadas para fornecer uma experiência conectada consistente por meio da construção de um perfil unificado. Para obter mais informações, visite a [documentação do serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422776?learn=on&enablevpops&captions=por_br)
 
 ## Configuração de identidades
 
@@ -32,7 +32,7 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Rotular, assimilar e verificar dados de identidade" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Rotular, assimilar e verificar dados de identidade"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31684?format=jpeg&nocache=1740414775790&captions=por_br" alt="Rotular, assimilar e verificar dados de identidade"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -65,7 +65,7 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Regras de vinculação do gráfico de identidade - Simulação de gráfico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444048/?format=jpeg&nocache=1740414776009&captions=por_br" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

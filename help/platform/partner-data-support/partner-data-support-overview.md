@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba como o [!DNL Real-Time Customer Data Platform] oferece suporte ao marketing de funil completo usando dados de parceiros para enriquecimento de dados primários e casos de uso de prospecção, já que os cookies de terceiros continuam sendo descontinuados. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449694/?learn=on&enablevpops&captions=por_br)

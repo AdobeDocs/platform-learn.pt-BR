@@ -19,7 +19,7 @@ ht-degree: 2%
 Saiba como transmitir dados em tempo real de uma fonte de armazenamento na nuvem para a Platform e usar os dados em tempo real para o envolvimento do cliente.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3417770?learn=on&enablevpops&captions=por_br)
 
 ## Recursos adicionais
 

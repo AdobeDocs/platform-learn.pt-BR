@@ -22,4 +22,4 @@ Saiba como configurar uma conexão e usar o fluxo de trabalho para exportações
 
 Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448823/?learn=on&enablevpops&captions=por_br)

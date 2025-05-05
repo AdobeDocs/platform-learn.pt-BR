@@ -18,4 +18,4 @@ ht-degree: 16%
 
 Saiba como usar atributos calculados para somar os valores de compra feitos por um usuário em vários canais de vendas. Um único cliente pode comprar em seu site, em seu aplicativo móvel e em sua loja física. Com o recurso de atributos calculados, é possível somar os valores de compra feitos por um cliente nesses canais e usar essa soma para definir públicos e para outra personalização. Para obter mais informações, visite o [guia da interface do usuário de atributos computados](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?lang=pt-BR&).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443556?learn=on&enablevpops&captions=por_br)

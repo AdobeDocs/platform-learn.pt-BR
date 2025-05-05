@@ -31,9 +31,9 @@ Há duas tarefas principais que devem ser concluídas na interface da Coleção 
 
 Antes de começar os exercícios, assista a estes dois pequenos vídeos para saber mais sobre a assimilação de dados por transmissão e o Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31683?learn=on&enablevpops&captions=por_br)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37265?learn=on&enablevpops&captions=por_br)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ O Experience Platform Debugger é uma extensão disponível para os navegadores 
 
 Se você nunca usou o Debugger antes (e este é diferente do Adobe Experience Cloud Debugger mais antigo), assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36163?learn=on&enablevpops&captions=por_br)
 
 ### Abra o site Luma
 

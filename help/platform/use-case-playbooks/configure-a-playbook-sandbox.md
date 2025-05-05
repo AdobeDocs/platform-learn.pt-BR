@@ -26,4 +26,4 @@ Saiba como configurar uma sandbox para manuais de casos de uso. Para começar a 
 
 Para obter mais informações, consulte [Introdução aos manuais de casos de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449831/?learn=on&enablevpops&captions=por_br)

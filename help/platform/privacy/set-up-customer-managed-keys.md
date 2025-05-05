@@ -19,7 +19,7 @@ ht-degree: 8%
 
 Gerencie a criptografia de dados em repouso usando suas próprias chaves de criptografia. Para obter mais informações, consulte a [documentação sobre chaves gerenciadas pelo cliente](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3418967/?learn=on&enablevpops&captions=por_br)
 
 >[!IMPORTANT]
 >

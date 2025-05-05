@@ -26,7 +26,7 @@ Todos os dados assimilados com sucesso na Adobe Experience Platform são mantido
 **Os Arquitetos de Dados** precisarão criar conjuntos de dados fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre conjuntos de dados:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34332?learn=on&enablevpops&captions=por_br)
 
 ## Permissões necessárias
 

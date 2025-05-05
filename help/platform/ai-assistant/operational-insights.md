@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Saiba como usar o AI Assistant para descobrir insights operacionais sobre objetos comerciais, como públicos, conjuntos de dados, esquemas, destinos e jornadas no Adobe Experience Platform
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444037/?learn=on&enablevpops&captions=por_br)

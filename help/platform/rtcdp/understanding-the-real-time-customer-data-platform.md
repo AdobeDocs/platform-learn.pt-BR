@@ -19,4 +19,4 @@ ht-degree: 33%
 
 Saiba como a Adobe Real-Time Customer Data Platform (CDP) agrupa os dados conhecidos e desconhecidos do cliente para criar e ativar perfis confiáveis dos clientes. Para obter mais informações, visite a [documentação do Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/29705?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32685?learn=on&enablevpops&captions=por_br)

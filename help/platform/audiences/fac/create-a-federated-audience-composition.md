@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Saiba como criar uma composição de público-alvo federado e como criar a consulta na interface do usuário que acessará seu data warehouse e selecionará os dados corretos. Para obter mais informações, visite a [Documentação de composição de público-alvo federado](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448583/?learn=on&enablevpops&captions=por_br)

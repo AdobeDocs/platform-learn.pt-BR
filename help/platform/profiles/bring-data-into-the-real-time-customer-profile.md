@@ -18,4 +18,4 @@ ht-degree: 0%
 
 O Perfil do cliente em tempo real habilita a personalização entre canais em escala em cada fase da jornada do cliente. Os dados em lote ou de transmissão podem ser ativados para o Perfil do cliente em tempo real ao ativar o esquema e o conjunto de dados correspondente. Para obter a documentação detalhada do produto, consulte [adicionar dados ao Perfil de Cliente em Tempo Real](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html?lang=pt-BR) e [configurar um conjunto de dados para o Perfil com a API](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34331?learn=on&enablevpops&captions=por_br)

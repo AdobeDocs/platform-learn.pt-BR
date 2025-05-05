@@ -18,4 +18,4 @@ ht-degree: 14%
 
 Saiba como adicionar e configurar extensões na propriedade da tag. As extensões são &quot;aplicativos&quot; pré-empacotados que você instala no site para fornecer o rastreamento, a personalização ou outros recursos necessários. O mercado de extensões está sempre crescendo, à medida que a Adobe, seus parceiros e clientes criam extensões para casos de uso avançados. Para obter mais informações, consulte a documentação de [extensões](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428589/?learn=on&enablevpops&captions=por_br)

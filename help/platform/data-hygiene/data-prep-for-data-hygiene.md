@@ -20,4 +20,4 @@ ht-degree: 85%
 
 Saiba como oferecer suporte aos princípios de minimização de dados com o recurso de preparação de dados da Experience Platform. Saiba como assimilar somente os campos necessários e os dados de hash durante a assimilação.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449280/?learn=on&enablevpops&captions=por_br)

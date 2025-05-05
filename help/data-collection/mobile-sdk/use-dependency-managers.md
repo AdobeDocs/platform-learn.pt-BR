@@ -20,4 +20,4 @@ Saiba como usar CocoaPods e Gradle para gerenciar extensões e dependências do 
 >
 > A inicialização agora é **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26263/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41126/?learn=on&enablevpops&captions=por_br)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Saiba como identificar públicos não usados com o AI Assistant para que você possa excluí-los e tornar suas operações de marketing mais eficientes. Para obter mais informações sobre como consultar o Assistente de IA, consulte o [Guia de perguntas do Assistente de IA](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441992/?learn=on&enablevpops&captions=por_br)

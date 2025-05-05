@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba como copiar configurações entre sandboxes do Experience Platform usando pacotes. Replicar facilmente esquemas, conjuntos de dados, jornadas e muito mais em suas sandboxes para dar suporte a processos de lançamento e implantações de várias regiões/marcas. Para obter informações mais detalhadas, consulte a [documentação de ferramentas da sandbox](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446089/?learn=on&enablevpops&captions=por_br)

@@ -20,7 +20,7 @@ ht-degree: 41%
 
 Saiba como o SDK da Web da Adobe Experience Platform e a rede de borda permitem que os clientes usem uma biblioteca JavaScript e um beacon para enviar dados para aplicativos da Adobe e destinos de terceiros.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37265?learn=on&enablevpops&captions=por_br)
 
 >[!NOTE]
 >

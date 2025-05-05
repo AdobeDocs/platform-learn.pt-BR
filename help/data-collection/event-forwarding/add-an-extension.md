@@ -25,4 +25,4 @@ Saiba como adicionar uma extensão de encaminhamento de eventos na Coleção de 
 > * O Platform Launch Server Side agora é **[!DNL event forwarding]**
 > * As configurações do Edge agora são **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3418855?learn=on&enablevpops&captions=por_br)

@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Este vídeo mostra como criar grupos de campos de esquema no Adobe Experience Platform. Grupos de campos de esquema são componentes reutilizáveis que definem a maioria dos campos em esquemas do Experience Data Model (XDM). Para obter mais informações, visite a [documentação sobre esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/27013?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413605?learn=on&enablevpops&captions=por_br)

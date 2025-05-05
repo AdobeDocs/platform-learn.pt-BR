@@ -19,4 +19,4 @@ ht-degree: 26%
 
 Saiba como gerenciar dados confidenciais em sequências de dados.  Para obter mais informações, consulte [a documentação dos fluxos de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3415829/?learn=on&enablevpops&captions=por_br)

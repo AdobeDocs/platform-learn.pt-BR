@@ -23,4 +23,4 @@ ht-degree: 1%
 
 Saiba como integrar o Adobe Target e o Real-Time Customer Data Platform para começar a enviar segmentos e atributos de perfil do Real-Time CDP para o Target. Para obter mais informações, consulte a [documentação de conexão do Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449798/?learn=on&enablevpops&captions=por_br)

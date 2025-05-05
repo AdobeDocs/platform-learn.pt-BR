@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba como adicionar atributos do parceiro aos seus perfis primários para expandir o alcance por meio de canais adicionais no [!DNL Real-Time CDP]. Para obter mais informações, visite a documentação [Suplemente perfis primários com atributos fornecidos pelo parceiro](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452458/?learn=on&enablevpops&captions=por_br)

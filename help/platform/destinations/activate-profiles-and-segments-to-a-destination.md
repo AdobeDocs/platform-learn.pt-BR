@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Saiba como ativar perfis e públicos para destinos na Real-Time CDP.  Inicie esse fluxo de trabalho na interface do usuário de destinos ou públicos. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445815/?learn=on&enablevpops&captions=por_br)
 

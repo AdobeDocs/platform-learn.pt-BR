@@ -19,4 +19,4 @@ ht-degree: 37%
 
 Este vídeo mostra como o Real-Time CDP é usado para coletar dados de várias fontes, mesclar esses dados em um único perfil do cliente em tempo real e ativá-los para criar experiências do cliente personalizadas. Para obter mais informações, visite a [documentação do Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/34558?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38146?learn=on&enablevpops&captions=por_br)

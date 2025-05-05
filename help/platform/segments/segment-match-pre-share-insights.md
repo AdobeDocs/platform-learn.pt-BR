@@ -18,4 +18,4 @@ ht-degree: 53%
 
 Ao decidir sobre um parceiro estratégico para compartilhar dados, é importante saber como seus clientes se relacionam, para que você saiba o quão útil será esse compartilhamento de dados. A correspondência de segmentos permite que você veja a sobreposição com possíveis parceiros de dados antes de compartilhar quaisquer dados. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/342378/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346348/?learn=on&enablevpops&captions=por_br)

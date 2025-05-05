@@ -25,7 +25,7 @@ O Serviço de consulta da Adobe Experience Platform ajuda você a entender seus 
 Os **Arquitetos de Dados** e **Engenheiros de Dados** precisarão usar o serviço de consulta fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre o Serviço de consulta:
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33187?learn=on&enablevpops&captions=por_br)
 
 ## Permissões necessárias
 

@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Uma visão geral de alto nível de como os profissionais de marketing podem usar a IA do cliente para gerar previsões de clientes. Para obter mais informações, visite a [documentação da IA do cliente](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36529?learn=on&enablevpops&captions=por_br)

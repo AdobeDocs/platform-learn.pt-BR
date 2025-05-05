@@ -19,5 +19,5 @@ ht-degree: 21%
 
 Saiba como assinar eventos de privacidade para automatizar fluxos de trabalho baseados em status de trabalho. Para obter mais informações, consulte a [documentação do Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448177?learn=on&enablevpops&captions=por_br)
 

@@ -20,4 +20,4 @@ Saiba como validar se as configurações de consentimento foram aplicadas corret
 >
 > A inicialização agora é **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443790/?learn=on&enablevpops&captions=por_br)

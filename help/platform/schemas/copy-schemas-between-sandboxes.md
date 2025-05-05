@@ -22,4 +22,4 @@ Este vídeo mostra como copiar um esquema de uma sandbox para outra no Adobe Exp
 >
 >Um processo muito mais fácil e centrado em interface para mover esquemas e outros objetos entre sandboxes foi introduzido no final de 2023, que recomendamos usar. Consulte [Copiar objetos entre sandboxes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413599?learn=on&enablevpops&captions=por_br)

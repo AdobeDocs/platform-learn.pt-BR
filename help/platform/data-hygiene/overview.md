@@ -47,7 +47,7 @@ O recurso de preparação de dados ajuda a assimilar apenas os campos necessári
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Preparo de dados para higiene de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Preparo de dados para higiene de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449280/?format=jpeg&nocache=1740251397387&captions=por_br" alt="Preparo de dados para higiene de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Programar exclusões do conjunto de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Programar exclusões do conjunto de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430303?format=jpeg&nocache=1740251397716&captions=por_br" alt="Programar exclusões do conjunto de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +132,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Expirações de perfil pseudônimo e evento de experiência" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Expirações de perfil pseudônimo e evento de experiência"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449859?format=jpeg&nocache=1740251397705&captions=por_br" alt="Expirações de perfil pseudônimo e evento de experiência"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Introdução ao Privacy Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Introdução ao Privacy Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445716?format=jpeg&nocache=1740251397727&captions=por_br" alt="Introdução ao Privacy Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Atualizar atributos específicos do perfil usando &quot;upsert&quot;" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Atualizar atributos específicos do perfil usando &quot;upsert&quot;"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443446/?format=jpeg&nocache=1740251398874&captions=por_br" alt="Atualizar atributos específicos do perfil usando &quot;upsert&quot;"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

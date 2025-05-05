@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Conheça as práticas recomendadas para evitar problemas de conexão com o conector de origem SFTP. Revise pontos de verificação específicos para conectar com êxito o servidor SFTP à Adobe Experience Platform. Para obter mais informações, consulte a [documentação do conector de origem SFTP](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443475?learn=on&enablevpops&captions=por_br)

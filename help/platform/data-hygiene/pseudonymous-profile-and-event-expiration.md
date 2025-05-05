@@ -22,4 +22,4 @@ Saiba como definir configurações de expiração para perfis pseudônimos e eve
 Essas configurações permitem que os administradores de dados definam datas de expiração para perfis não autenticados e seus eventos associados. Isso ajuda a manter o [!DNL Profile Service] relevante para seus casos de uso de marketing e publicidade. Para obter mais informações, visite a documentação de [Expiração de evento de experiência](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/event-expirations) e [Expiração de dados de perfis pseudônimos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/event-expirations).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449859?learn=on&enablevpops&captions=por_br)

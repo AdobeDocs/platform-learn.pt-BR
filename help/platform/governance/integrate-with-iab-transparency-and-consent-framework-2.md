@@ -19,4 +19,4 @@ ht-degree: 50%
 
 Este vídeo mostra como o Real-Time Customer Data Platform da Adobe ajuda as marcas a honrar o consentimento dos consumidores ao se engajarem com propriedades digitais. Através do suporte à Estrutura de transparência e consentimento 2.0 do IAB, as marcas ganham maior flexibilidade na forma como podem interagir com os consumidores e oferecem aos consumidores maior controle do consentimento.
 
->[!VIDEO](https://video.tv.adobe.com/v/38346?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326481?learn=on&enablevpops&captions=por_br)

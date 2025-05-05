@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Saiba mais sobre o fluxo de trabalho usado para assimilar novos clientes potenciais de parceiros no [!DNL Real-Time CDP] para direcionamento pré-visita. Para obter mais informações, visite a [Documentação de casos de uso de prospecção](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html?lang=pt-BR) para envolver e adquirir novos clientes.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452862/?learn=on&enablevpops&captions=por_br)

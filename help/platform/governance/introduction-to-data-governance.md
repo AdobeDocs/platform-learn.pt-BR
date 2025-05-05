@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Saiba como os recursos de governança de dados da Adobe Experience Platform ajudam as marcas a fornecer experiências personalizadas aos clientes e, ao mesmo tempo, fornecem controle total sobre os dados do cliente. Para obter mais informações, consulte a [documentação sobre governança de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41325?learn=on&enablevpops&captions=por_br)

@@ -23,4 +23,4 @@ Saiba como criar um painel no Adobe Experience Platform. Para obter mais informa
 >
 >O recurso de painéis definido pelo usuário está na versão beta. Seus recursos e documentação estão sujeitos a alterações.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3417878/?learn=on&enablevpops&captions=por_br)

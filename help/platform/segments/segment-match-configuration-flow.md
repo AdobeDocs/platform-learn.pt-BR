@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Depois que um compartilhamento de segmento com um parceiro de dados for conectado, você poderá explorar e começar a compartilhar dados com parceiros. Este vídeo o orienta pelo processo de configuração de uma instância de correspondência de segmentos para um compartilhamento de dados. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3409149/?learn=on&enablevpops&captions=por_br)

@@ -16,4 +16,4 @@ ht-degree: 0%
 
 Saiba mais sobre os casos de uso e os recursos do encaminhamento de eventos no Adobe Experience Platform, como gerenciar chamadas de API de conversão para destinos de terceiros e enviar dados de eventos para o data warehouse. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3434936?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3456500?learn=on&enablevpops&captions=por_br)

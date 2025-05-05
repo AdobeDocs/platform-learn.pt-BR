@@ -20,4 +20,4 @@ ht-degree: 37%
 
 As forças de mercado voláteis e os diferentes requisitos de privacidade do consumidor podem apresentar cenários intimidantes para o profissional de marketing digital. Para manter as campanhas em conformidade com os regulamentos, as equipes de marketing precisam de seus parceiros de TI para terem um processo simplificado a fim de desenvolver um processo de governança de dados, que idealmente capacite todos a seguir e aplicar regras de uso responsável dos dados do consumidor. Ouça o que a Adobe e o Scotiabank Digital têm a dizer sobre as principais considerações para um gerenciamento responsável de dados.
 
->[!VIDEO](https://video.tv.adobe.com/v/332062/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457051/?learn=on&enablevpops&captions=por_br)
