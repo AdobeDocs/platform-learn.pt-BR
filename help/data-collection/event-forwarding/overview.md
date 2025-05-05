@@ -15,7 +15,7 @@ ht-degree: 41%
 
 # Visão geral do encaminhamento de eventos
 
-Saiba como o encaminhamento de eventos centraliza a coleta de dados, reduz a quantidade de código necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções que não são da Adobe por meio do Adobe Experience Platform Edge Network. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Saiba como o encaminhamento de eventos centraliza a coleta de dados, reduz a quantidade de código necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções que não são da Adobe por meio do Adobe Experience Platform Edge Network. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR).
 
 >[!NOTE]
 >

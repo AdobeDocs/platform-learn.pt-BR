@@ -108,7 +108,7 @@ Algo realmente importante são as **configurações de Persistência**. O concei
 
 Se você não alterar essas configurações, o CJA interpretará a dimensão como uma **Prop** (nível de ocorrência). Além disso, podemos alterar a Persistência para tornar a dimensão um **eVar** (manter o valor na jornada).
 
-Se você não estiver familiarizado com eVars e Props, poderá [ler mais sobre eles na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se você não estiver familiarizado com eVars e Props, poderá [ler mais sobre eles na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=pt-BR).
 
 Vamos deixar o Nome da página como uma propriedade. Dessa forma, você não precisa alterar nenhuma **Configuração de persistência**.
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Referencie públicos-alvo como um anunciante no Real-Time CDP Collaboration
 
-Como anunciante, saiba como fazer referência a públicos, trazendo-os para sua interface para que possam ser usados enquanto você colabora com parceiros. Para obter a documentação detalhada, consulte [Importar e gerenciar públicos](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
+Como anunciante, saiba como fazer referência a públicos, trazendo-os para sua interface para que possam ser usados enquanto você colabora com parceiros. Para obter a documentação detalhada, consulte [Importar e gerenciar públicos](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

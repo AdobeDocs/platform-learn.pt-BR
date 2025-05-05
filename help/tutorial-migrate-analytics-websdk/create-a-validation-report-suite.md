@@ -35,5 +35,5 @@ Dependendo do tamanho e da complexidade da implementação do Analytics, a migra
 
 >[!TIP]
 >
->Para assistir a uma apresentação em vídeo sobre como criar conjuntos de relatórios, consulte [Noções básicas e como criar conjuntos de relatórios](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
+>Para assistir a uma apresentação em vídeo sobre como criar conjuntos de relatórios, consulte [Noções básicas e como criar conjuntos de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
 

@@ -27,7 +27,7 @@ O recurso [Exportar Detalhes para Postman **do ](https://developer.adobe.com/con
 
 >[!IMPORTANT]
 >
->Para acessar o [Adobe Developer Console](https://developer.adobe.com/console/home), você deve ser um [Administrador do Sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html) ou um [Desenvolvedor](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) no [Adobe Admin Console](https://adminconsole.adobe.com).
+>Para acessar o [Adobe Developer Console](https://developer.adobe.com/console/home), você deve ser um [Administrador do Sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html) ou um [Desenvolvedor](https://helpx.adobe.com/br/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) no [Adobe Admin Console](https://adminconsole.adobe.com).
 >
 > Depois de criar a credencial da API, um Administrador do sistema deve associá-la a uma função no Experience Platform.
 

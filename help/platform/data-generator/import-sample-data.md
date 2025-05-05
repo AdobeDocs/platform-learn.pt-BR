@@ -33,7 +33,7 @@ Este tutorial se concentra em uma marca fictícia de varejo chamada Luma. Eles i
 
 * Você tem acesso às APIs do Experience Platform e sabe como realizar a autenticação. Caso contrário, confira este [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=pt-BR).
 * Você tem acesso a uma sandbox de desenvolvimento de Experience Platform.
-* Você sabe sua ID de locatário do Experience Platform. Você pode obtê-la fazendo uma [solicitação de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) autenticada
+* Você sabe sua ID de locatário do Experience Platform. Você pode obtê-la fazendo uma [solicitação de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=pt-BR#know-your-tenant_id) autenticada
 ou extraindo-o do URL ao fazer logon na sua conta da Platform. Por exemplo, na URL a seguir, o locatário é &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Usando o [!DNL Postman] {#postman}
@@ -187,7 +187,7 @@ Ao navegar pelos dados nas guias **[!UICONTROL Atributos]** e **[!UICONTROL Even
 
 Se você quiser saber mais sobre o Adobe Journey Optimizer, esta sandbox contém tudo o que você precisa para enfrentar os [desafios do Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=pt-BR)
 
-Se você quiser saber mais sobre políticas de mesclagem, governança de dados, serviço de consulta e o construtor de segmentos, vá para a [lição 11 do tutorial Introdução aos arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). As lições anteriores deste outro tutorial ensinaram a criar manualmente tudo o que acabou de ser preenchido por essas coleções do Postman — aproveite a vantagem inicial!
+Se você quiser saber mais sobre políticas de mesclagem, governança de dados, serviço de consulta e o construtor de segmentos, vá para a [lição 11 do tutorial Introdução aos arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=pt-BR). As lições anteriores deste outro tutorial ensinaram a criar manualmente tudo o que acabou de ser preenchido por essas coleções do Postman — aproveite a vantagem inicial!
 
 Se você quiser criar uma amostra de implementação do SDK da Web para vincular a esta sandbox, passe pelo
 [Implementar o Adobe Experience Cloud com o tutorial do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR). Depois de definir as lições de &quot;Configuração inicial&quot;, &quot;Configuração de tags&quot; e &quot;Configurar Experience Platform&quot; do tutorial do SDK da Web, faça logon no site da Luma usando os primeiros dez endereços de email no arquivo `luma-crm.json` usando a senha `test` para ver a mesclagem dos fragmentos de perfil com os dados carregados neste tutorial.
@@ -199,4 +199,4 @@ Se você quiser criar um exemplo de implementação do SDK móvel para vincular 
 
 A redefinição de uma sandbox de não produção exclui todos os recursos associados a essa sandbox (esquemas, conjuntos de dados e assim por diante), mantendo o nome da sandbox e as permissões associadas. Essa sandbox &quot;limpa&quot; continua disponível com o mesmo nome para os usuários que têm acesso a ela.
 
-Siga as etapas [aqui](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) para redefinir um ambiente de sandbox.
+Siga as etapas [aqui](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=pt-BR#reset-a-sandbox) para redefinir um ambiente de sandbox.

@@ -21,9 +21,9 @@ Com o Adobe Real-Time Customer Data Platform (CDP) Collaboration, você pode des
 
 Abaixo você encontrará vídeos e outros recursos para ajudá-lo a configurar, usar e obter valor do Real-Time CDP Collaboration. Ativos adicionais serão adicionados a esta página e site, portanto, verifique com frequência. Feliz aprendizagem!
 
-Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"} do Real-Time CDP Collaboration.
+Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/home){target="_blank"} do Real-Time CDP Collaboration.
 
-[![ExL LIVE 10 de abril de 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 10 de abril de 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/pt-br/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## Introdução
 

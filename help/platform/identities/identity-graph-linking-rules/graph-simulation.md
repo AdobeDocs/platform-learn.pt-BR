@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >As regras de vinculação do gráfico de identidade estão atualmente com Disponibilidade limitada. Entre em contato com a equipe de conta do Adobe para obter informações sobre como acessar o recurso em sandboxes de desenvolvimento.
 
-Saiba como usar o simulador de gráficos para testar as regras de vinculação de gráficos de identidade no Adobe Experience Platform. Faça experimentos com diferentes cenários e jogue com as configurações de prioridade e &quot;único por gráfico&quot; para verificar quais regras são necessárias para sua empresa evitar o colapso dos gráficos. Para obter mais informações, consulte o [Guia da Interface de Simulação de Gráfico](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
+Saiba como usar o simulador de gráficos para testar as regras de vinculação de gráficos de identidade no Adobe Experience Platform. Faça experimentos com diferentes cenários e jogue com as configurações de prioridade e &quot;único por gráfico&quot; para verificar quais regras são necessárias para sua empresa evitar o colapso dos gráficos. Para obter mais informações, consulte o [Guia da Interface de Simulação de Gráfico](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)
 

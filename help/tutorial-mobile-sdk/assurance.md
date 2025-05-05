@@ -17,7 +17,7 @@ Saiba como configurar o Adobe Experience Platform Assurance em um aplicativo mó
 
 O Assurance, formalmente conhecido como Projeto Griffon, foi projetado para ajudá-lo a inspecionar, testar, simular e validar a maneira como você coleta dados ou veicula experiências em seu aplicativo móvel.
 
-O Assurance ajuda a inspecionar eventos brutos de SDK gerados pelo SDK móvel da Adobe Experience Platform. Todos os eventos coletados pelo SDK estão disponíveis para inspeção. Os eventos do SDK são carregados em uma exibição de lista classificada por tempo. Cada evento tem uma exibição detalhada que fornece mais detalhes. Exibições adicionais para procurar a configuração do SDK, elementos de dados, Estados compartilhados e versões de extensão do SDK também são fornecidas. Saiba mais sobre a [Garantia](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) na documentação do produto.
+O Assurance ajuda a inspecionar eventos brutos de SDK gerados pelo SDK móvel da Adobe Experience Platform. Todos os eventos coletados pelo SDK estão disponíveis para inspeção. Os eventos do SDK são carregados em uma exibição de lista classificada por tempo. Cada evento tem uma exibição detalhada que fornece mais detalhes. Exibições adicionais para procurar a configuração do SDK, elementos de dados, Estados compartilhados e versões de extensão do SDK também são fornecidas. Saiba mais sobre a [Garantia](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=pt-BR) na documentação do produto.
 
 
 ## Pré-requisitos
@@ -35,7 +35,7 @@ Nesta lição, você vai:
 
 ## Confirmar acesso
 
-Confirme se sua organização tem acesso ao Assurance. Você, como usuário, deve ser adicionado ao perfil do Adobe Experience Platform. Consulte [Acesso de usuário](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) no Guia de garantia para obter mais informações.
+Confirme se sua organização tem acesso ao Assurance. Você, como usuário, deve ser adicionado ao perfil do Adobe Experience Platform. Consulte [Acesso de usuário](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=pt-BR) no Guia de garantia para obter mais informações.
 
 ## Implementação
 
@@ -169,7 +169,7 @@ No navegador:
 
          ![eventos de garantia](assets/assurance-events.png)
 
-Se você tiver desafios, confira a [documentação técnica](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} e a [documentação geral](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+Se você tiver desafios, confira a [documentação técnica](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} e a [documentação geral](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=pt-BR){target="_blank"}.
 
 
 ## Verificar extensões
@@ -203,7 +203,7 @@ Para verificar se seu aplicativo está usando as extensões mais atualizadas:
 >
 >Agora você configurou seu aplicativo para usar o Assurance para o restante do tutorial.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
 
 
 Próximo: **[Implementar Consentimento](consent.md)**

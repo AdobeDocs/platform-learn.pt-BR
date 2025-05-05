@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # Criar públicos-alvo
 
-Saiba como criar públicos-alvo no Adobe Experience Platform. Crie regras de público-alvo e aplique-as aos perfis do cliente em tempo real para produzir os públicos-alvo que potencializarão as experiências do cliente. Para obter a documentação detalhada do produto, consulte [criar um segmento na interface](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=pt-BR) e [criar um segmento com a API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html).
+Saiba como criar públicos-alvo no Adobe Experience Platform. Crie regras de público-alvo e aplique-as aos perfis do cliente em tempo real para produzir os públicos-alvo que potencializarão as experiências do cliente. Para obter a documentação detalhada do produto, consulte [criar um segmento na interface](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=pt-BR) e [criar um segmento com a API](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=pt-BR).
 
 >[!NOTE]
 >

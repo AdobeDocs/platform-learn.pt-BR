@@ -15,7 +15,7 @@ ht-degree: 18%
 
 # Configurar uma sequência de dados para o encaminhamento de eventos
 
-Saiba como configurar um fluxo de dados para o encaminhamento de eventos. Para obter mais informações, visite [a documentação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+Saiba como configurar um fluxo de dados para o encaminhamento de eventos. Para obter mais informações, visite [a documentação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=pt-BR#create-a-datastream)
 
 
 >[!NOTE]

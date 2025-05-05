@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Escolha uma opção de hospedagem
 
-Saiba como escolher a melhor opção de hospedagem para sua biblioteca de tags. Para obter mais informações, consulte a documentação de [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html).
+Saiba como escolher a melhor opção de hospedagem para sua biblioteca de tags. Para obter mais informações, consulte a documentação de [hosts](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on&enablevpops)

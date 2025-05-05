@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Neste exercício, você criará uma **sequência de dados**. Uma **sequência de dados** informa aos servidores de Rede da Adobe Edge para onde enviar os dados após serem coletados pelo Web SDK. Por exemplo, deseja enviar os dados para o Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
-As sequências de dados são sempre gerenciadas na interface do usuário da Coleção de dados de Experience Platform e são essenciais para a coleta de dados de Experience Platform com o [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home). Mesmo quando você implementa o Web SDK com uma solução de gerenciamento de tags não-Adobe, ainda é necessário criar um fluxo de dados.
+As sequências de dados são sempre gerenciadas na interface do usuário da Coleção de dados de Experience Platform e são essenciais para a coleta de dados de Experience Platform com o [Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home). Mesmo quando você implementa o Web SDK com uma solução de gerenciamento de tags não-Adobe, ainda é necessário criar um fluxo de dados.
 
 Você implementará o Web SDK no navegador no próximo exercício. Dessa forma, você ficará mais claro sobre a aparência dos dados coletados. Por enquanto, estamos apenas informando ao fluxo de dados para onde encaminhar os dados.
 
@@ -25,7 +25,7 @@ Você implementará o Web SDK no navegador no próximo exercício. Dessa forma, 
 
 Em [Introdução](./../../../modules/gettingstarted/gettingstarted/ex2.md), você já criou uma sequência de dados, mas não discutimos o plano de fundo e o motivo da sua criação.
 
-Um [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) informa aos servidores Edge Network para onde enviar os dados após serem coletados pelo Web SDK. Consulte a documentação de [adicionando serviços a uma sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) para obter detalhes completos sobre para onde enviar seus dados por meio da sequência de dados.
+Um [datastream](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overview) informa aos servidores Edge Network para onde enviar os dados após serem coletados pelo Web SDK. Consulte a documentação de [adicionando serviços a uma sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#add-services) para obter detalhes completos sobre para onde enviar seus dados por meio da sequência de dados.
 
 Os fluxos de dados são gerenciados na interface do usuário da Coleta de dados do Experience Platform e são essenciais para a coleta de dados com o Web SDK, independentemente de você estar implementando o Web SDK por meio da Coleta de dados do Adobe Experience Platform.
 
@@ -62,7 +62,7 @@ Para esta sequência de dados...
 - Todos os dados do perfil serão coletados por padrão no conjunto de dados **Sistema de demonstração - Conjunto de dados do perfil para site (Global v1.1)** (a assimilação de dados do perfil nativamente com o Web SDK atualmente ainda não é compatível com o Web SDK)
 - Se você quiser usar o serviço de aplicativo **Offer decisioning** para essa sequência de dados, será necessário marcar a caixa Offer decisioning. (Isso fará parte do [Módulo 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
 - A **Segmentação do Edge** está habilitada por padrão, o que significa que os públicos qualificados serão avaliados na borda após a assimilação do tráfego de entrada
-- Se quiser usar [destinos de personalização](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview), marque a caixa para **Destinos do Personalization**.
+- Se quiser usar [destinos de personalização](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/personalization/overview), marque a caixa para **Destinos do Personalization**.
 - Se você quiser usar os recursos do **Adobe Journey Optimizer** nesta sequência de dados, será necessário marcar a caixa para **Adobe Journey Optimizer**.
 
 

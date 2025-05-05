@@ -17,7 +17,7 @@ ht-degree: 43%
 
 # Introdução aos Serviços inteligentes
 
-Uma introdução geral aos Serviços inteligentes, que capacita analistas e profissionais de marketing a usar o potencial da inteligência artificial e do aprendizado de máquina em casos de uso de experiência do cliente, sem conhecimento especializado em ciência de dados. Para obter mais informações, consulte a [documentação dos Serviços inteligentes](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html).
+Uma introdução geral aos Serviços inteligentes, que capacita analistas e profissionais de marketing a usar o potencial da inteligência artificial e do aprendizado de máquina em casos de uso de experiência do cliente, sem conhecimento especializado em ciência de dados. Para obter mais informações, consulte a [documentação dos Serviços inteligentes](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 

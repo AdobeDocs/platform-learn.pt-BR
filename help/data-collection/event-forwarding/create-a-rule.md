@@ -15,7 +15,7 @@ ht-degree: 19%
 
 # Criar uma regra de encaminhamento de eventos
 
-Saiba como criar uma regra de encaminhamento de eventos em Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Saiba como criar uma regra de encaminhamento de eventos em Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR).
 
 >[!NOTE]
 >

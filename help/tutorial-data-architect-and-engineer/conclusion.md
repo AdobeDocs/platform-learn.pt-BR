@@ -47,8 +47,8 @@ Sugiro que você a mantenha e use para experimentos adicionais com a Platform. E
 
 Os principais recursos:
 
-* [Tutoriais da Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
+* [Tutoriais da Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=pt-BR)
 * [Documentação da Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=pt-BR)
-* [Experience League cursos](https://experienceleague.adobe.com/?lang=pt-BR#dashboard/learning)
+* [Experience League cursos](https://experienceleague.adobe.com/pt-br?lang=pt-BR#dashboard/learning)
 
 Obrigado por seus esforços e boa sorte na sua jornada com o Adobe Experience Platform!

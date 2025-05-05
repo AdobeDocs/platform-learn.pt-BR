@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Ativar para parceiros de publicidade por meio dos destinos do LiveRamp
 
-Saiba como configurar os destinos do LiveRamp no Real-Time CDP para enviar públicos-alvo para seus parceiros de ativação. Para obter a documentação detalhada, consulte [LiveRamp - Conexão de integração](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html) e [LiveRamp - Conexão de distribuição](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html).
+Saiba como configurar os destinos do LiveRamp no Real-Time CDP para enviar públicos-alvo para seus parceiros de ativação. Para obter a documentação detalhada, consulte [LiveRamp - Conexão de integração](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=pt-BR) e [LiveRamp - Conexão de distribuição](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)

@@ -179,7 +179,7 @@ A maior parte da lógica de negócios requer a coleta de pontos de contato para 
 
 ### Funções definidas pelo Adobe
 
-O Adobe adicionou um conjunto de **Funções definidas pelo Adobe** à sintaxe SQL padrão, que permite que você entenda melhor seus dados de experiência. Nas próximas consultas, você aprenderá sobre essas funções do ADF. Você pode encontrar mais informações e a lista completa [na documentação](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
+O Adobe adicionou um conjunto de **Funções definidas pelo Adobe** à sintaxe SQL padrão, que permite que você entenda melhor seus dados de experiência. Nas próximas consultas, você aprenderá sobre essas funções do ADF. Você pode encontrar mais informações e a lista completa [na documentação](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=pt-BR).
 
 ### O que as pessoas fazem no site antes de chegar à página &quot;Cancelar serviço&quot; como a terceira página em uma sessão?
 

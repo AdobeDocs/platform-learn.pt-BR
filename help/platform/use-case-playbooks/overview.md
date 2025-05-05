@@ -18,7 +18,7 @@ ht-degree: 25%
 
 # Visão geral dos manuais de caso de uso
 
-Saiba como os manuais de casos de uso podem ajudar clientes da Real-Time CDP e do Journey Optimizer a obter um tempo de retorno mais rápido. Os manuais de casos de uso são um catálogo de dezenas de modelos que abrangem vários setores e objetivos de marketing. Os manuais geram ativos técnicos, como públicos-alvo, jornadas e esquemas, que podem ser personalizados e publicados em outras sandboxes. Para obter mais informações, consulte a [documentação dos manuais de caso de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
+Saiba como os manuais de casos de uso podem ajudar clientes da Real-Time CDP e do Journey Optimizer a obter um tempo de retorno mais rápido. Os manuais de casos de uso são um catálogo de dezenas de modelos que abrangem vários setores e objetivos de marketing. Os manuais geram ativos técnicos, como públicos-alvo, jornadas e esquemas, que podem ser personalizados e publicados em outras sandboxes. Para obter mais informações, consulte a [documentação dos manuais de caso de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 

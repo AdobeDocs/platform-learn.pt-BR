@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Usar o painel capacidade de descoberta no Assistente de IA
 
-Saiba como usar o painel capacidade de descoberta no Assistente de IA. Para obter mais informações, consulte o [Guia da interface do usuário do Assistente de IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
+Saiba como usar o painel capacidade de descoberta no Assistente de IA. Para obter mais informações, consulte o [Guia da interface do usuário do Assistente de IA](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)

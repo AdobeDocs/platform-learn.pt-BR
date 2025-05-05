@@ -14,14 +14,14 @@ ht-degree: 0%
 
 # Migrar o Adobe Analytics para o Web SDK usando tags
 
-Saiba mais sobre as etapas para migrar uma implementação do Adobe Analytics usando a extensão do Analytics em Tags de Experience Platform (conhecida anteriormente como Launch) para o Web SDK, usando a extensão do Web SDK também em Tags. Quando a extensão do Adobe Analytics em tags é usada, nos bastidores o código &quot;AppMeasurement.js&quot; está sendo usado. Portanto, você pode pensar nisso como um tutorial que está migrando o AppMeasurement para o Web SDK, mas este tutorial está totalmente em Tags e NÃO abrange a movimentação para ou de uma implementação do JavaScript (com exceção do código JavaScript usado na interface do usuário de Tags). Para migração de implementações do JavaScript, consulte a [documentação](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
+Saiba mais sobre as etapas para migrar uma implementação do Adobe Analytics usando a extensão do Analytics em Tags de Experience Platform (conhecida anteriormente como Launch) para o Web SDK, usando a extensão do Web SDK também em Tags. Quando a extensão do Adobe Analytics em tags é usada, nos bastidores o código &quot;AppMeasurement.js&quot; está sendo usado. Portanto, você pode pensar nisso como um tutorial que está migrando o AppMeasurement para o Web SDK, mas este tutorial está totalmente em Tags e NÃO abrange a movimentação para ou de uma implementação do JavaScript (com exceção do código JavaScript usado na interface do usuário de Tags). Para migração de implementações do JavaScript, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
 
 >[!NOTE]
 >
 >Tutoriais de migração semelhantes estão disponíveis para:
 >
 > * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
-> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/pt-br/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
 
 >[!CAUTION]
 >
@@ -61,7 +61,7 @@ Provavelmente, há muitas maneiras de fazer esse processo de migração, mas pre
 À medida que você percorre as etapas, é importante compreender algumas limitações:
 
 1. Primeiro, você pode ou não precisar de todas essas etapas. Por exemplo, há uma lição sobre a migração de código personalizado. Se você tiver uma implementação de Tags que não usa código personalizado (incluindo o uso de Plug-ins), não será necessária esta lição. Tentamos incluir as lições que seriam necessárias para a maioria das pessoas, portanto, leia pelo menos as lições para ver se você precisa fazer ajustes no site durante a migração.
-1. Além disso, não há como criar um tutorial de migração que abrangerá 100% dos casos de uso que todos estão usando. Como dito no item anterior, tentamos incluir as lições que a maioria das pessoas precisará e que cobrirão a maioria dos principais casos de uso. No entanto, haverá, sem dúvida, casos de uso que não serão abordados neste tutorial. Nesse caso, veja se as lições incluídas fornecem uma boa ideia de como você deve migrar para o seu caso de uso. Você também pode solicitar que seus colegas da [Comunidade Experience League coletem dados](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community).
+1. Além disso, não há como criar um tutorial de migração que abrangerá 100% dos casos de uso que todos estão usando. Como dito no item anterior, tentamos incluir as lições que a maioria das pessoas precisará e que cobrirão a maioria dos principais casos de uso. No entanto, haverá, sem dúvida, casos de uso que não serão abordados neste tutorial. Nesse caso, veja se as lições incluídas fornecem uma boa ideia de como você deve migrar para o seu caso de uso. Você também pode solicitar que seus colegas da [Comunidade Experience League coletem dados](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=pt).
 
 O processo de migração envolve as seguintes etapas principais:
 
@@ -81,5 +81,5 @@ O processo de migração envolve as seguintes etapas principais:
 
 >[!NOTE]
 >
->Temos o compromisso de ajudar você a ter sucesso com a migração do Analytics para o Web SDK. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, fale conosco ao postar em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}.
+>Temos o compromisso de ajudar você a ter sucesso com a migração do Analytics para o Web SDK. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, fale conosco ao postar em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=pt#M604){target="_blank"}.
 

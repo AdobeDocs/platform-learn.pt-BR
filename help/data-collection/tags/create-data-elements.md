@@ -16,6 +16,6 @@ ht-degree: 38%
 
 # Criar elementos de dados
 
-Saiba como criar elementos de dados para armazenar valores extraídos da camada de dados e disponibilizá-los para regras e extensões na propriedade da tag. Para obter mais informações, consulte a documentação de [elementos de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html).
+Saiba como criar elementos de dados para armazenar valores extraídos da camada de dados e disponibilizá-los para regras e extensões na propriedade da tag. Para obter mais informações, consulte a documentação de [elementos de dados](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Usar o Assistente de IA para reduzir o tempo de integração
 
-Saiba como usar o Assistente de IA para aprimorar rapidamente novos recursos e reduzir o tempo de integração. Para obter mais informações, consulte o [Guia de perguntas do Assistente de IA](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
+Saiba como usar o Assistente de IA para aprimorar rapidamente novos recursos e reduzir o tempo de integração. Para obter mais informações, consulte o [Guia de perguntas do Assistente de IA](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ai-assistant/questions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)

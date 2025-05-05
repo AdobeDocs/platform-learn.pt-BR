@@ -126,6 +126,6 @@ Você deve ver eventos de **[!UICONTROL Fechamento de Aplicativo (Plano de Fundo
 >
 >Agora você configurou o aplicativo para enviar eventos de estado do aplicativo (primeiro plano, segundo plano) para o Edge Network Adobe Experience Platform e todos os serviços definidos no fluxo de dados.
 >
-> Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+> Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
 
 Próximo: **[Rastrear dados do evento](events.md)**

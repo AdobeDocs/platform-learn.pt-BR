@@ -36,7 +36,7 @@ Agora você pode:
 
 ## Veja isto
 
-- Central de ajuda: [Conectores do Source - Conector do Google BigQuery](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
+- Central de ajuda: [Conectores do Source - Conector do Google BigQuery](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=pt-BR)
 - Documentação do Experience Platform: [Customer Journey Analytics - Documentação do produto](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html)
 
 ## Próximas etapas

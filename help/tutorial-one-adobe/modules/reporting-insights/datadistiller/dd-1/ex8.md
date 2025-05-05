@@ -23,7 +23,7 @@ Neste exercício, você executará chamadas de API para gerenciar modelos de con
 
 ## Documentação
 
-- [Ajuda do Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
+- [Ajuda do Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=pt-BR)
 - [API de Serviço de Consulta](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## API do serviço de consulta

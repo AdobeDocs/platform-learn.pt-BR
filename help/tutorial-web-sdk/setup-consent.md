@@ -217,13 +217,13 @@ Depois que essa regra estiver em vigor, a coleção de eventos deverá começar 
 ![Opção de Visitante da Post de Consentimento](assets/consent-post-user-optin.png)
 
 
-Para obter mais informações sobre consentimento no SDK da Web, consulte [Suporte às preferências de consentimento do cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
+Para obter mais informações sobre consentimento no SDK da Web, consulte [Suporte às preferências de consentimento do cliente](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/consent/supporting-consent).
 
 
-Para obter mais informações sobre a ação [!UICONTROL Definir consentimento], consulte [Definir consentimento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Para obter mais informações sobre a ação [!UICONTROL Definir consentimento], consulte [Definir consentimento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Próximo: ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)

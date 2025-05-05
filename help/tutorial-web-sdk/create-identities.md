@@ -38,7 +38,7 @@ Você entende o que é uma camada de dados, familiarizou-se com a camada de dado
 
 ## Experience Cloud ID
 
-A [ID de Experience Cloud (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) é um namespace de identidade compartilhada usado em aplicativos Adobe Experience Platform e Adobe Experience Cloud. A ECID fornece a base para a identidade do cliente e é a identidade padrão para propriedades digitais. A ECID é o identificador ideal para rastrear comportamentos de usuários não autenticados, pois está sempre presente.
+A [ID de Experience Cloud (ECID)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/ecid) é um namespace de identidade compartilhada usado em aplicativos Adobe Experience Platform e Adobe Experience Cloud. A ECID fornece a base para a identidade do cliente e é a identidade padrão para propriedades digitais. A ECID é o identificador ideal para rastrear comportamentos de usuários não autenticados, pois está sempre presente.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -71,7 +71,7 @@ Embora os FPIDs não sejam usados neste tutorial, é recomendável usar os FPIDs
 
 Como observado acima, todos os visitantes das suas propriedades digitais recebem uma ECID por Adobe ao usar o SDK da Web da plataforma. A ECID é a identidade padrão para rastrear comportamentos digitais não autenticados.
 
-Você também pode enviar uma ID de usuário autenticada para que a Platform possa criar [Gráficos de identidade](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) e o Target possa definir sua [ID de terceiros](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). A definição da ID autenticada é feita usando o tipo de elemento de dados [!UICONTROL Mapa de Identidade].
+Você também pode enviar uma ID de usuário autenticada para que a Platform possa criar [Gráficos de identidade](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) e o Target possa definir sua [ID de terceiros](https://experienceleague.adobe.com/pt-br/docs/target/using/audiences/visitor-profiles/3rd-party-id). A definição da ID autenticada é feita usando o tipo de elemento de dados [!UICONTROL Mapa de Identidade].
 
 Para criar o elemento de dados [!UICONTROL Mapa de Identidade]:
 
@@ -151,4 +151,4 @@ Com esses elementos de dados implementados, você estará pronto para começar a
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)

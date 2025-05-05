@@ -83,7 +83,7 @@ Fluxo de usuário 12:00: 3 &quot; Mesclando físico e digital&quot;
 
 Antes de começar com os exercícios práticos, dê uma olhada na arquitetura por trás deste tutorial. Esta conferência de inicialização detalhará vários recursos e funcionalidades do Adobe Experience Platform e também discutirá várias integrações em uma variedade de fontes e destinos. Para que você entenda corretamente a arquitetura por trás deste tutorial e o posicionamento geral do Adobe Experience Platform no ecossistema da sua empresa, comece revisando o vídeo e o diagrama da arquitetura.
 
-Ir para [Arquitetura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Ir para [Arquitetura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=pt-BR).
 
 ## Vídeos
 
@@ -93,7 +93,7 @@ O principal objetivo da nossa Inicialização de Criadores de experiências é a
 
 Vários outros vídeos foram criados para mostrar elementos da campanha de bootcamp e integrações poderosas entre aplicativos Adobe Experience Platform e não-Adobe. Clique no link abaixo para obter uma visão geral desses vídeos.
 
-Vá para [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Vá para [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
 
 ## YouTube
 

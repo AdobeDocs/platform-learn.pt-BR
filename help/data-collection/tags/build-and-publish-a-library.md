@@ -16,6 +16,6 @@ ht-degree: 25%
 
 # Criar e publicar uma biblioteca de tags
 
-Saiba como criar uma biblioteca em sua propriedade de tag e enviar alterações por meio de ambientes de desenvolvimento, preparo e produção. Saiba como usar vários ambientes de desenvolvimento para ajudar várias equipes a atualizar a propriedade em fluxos de trabalho paralelos. Para obter mais informações, consulte a documentação de [publicação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html).
+Saiba como criar uma biblioteca em sua propriedade de tag e enviar alterações por meio de ambientes de desenvolvimento, preparo e produção. Saiba como usar vários ambientes de desenvolvimento para ajudar várias equipes a atualizar a propriedade em fluxos de trabalho paralelos. Para obter mais informações, consulte a documentação de [publicação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on&enablevpops)

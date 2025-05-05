@@ -25,11 +25,11 @@ O Experience Platform usa esquemas para descrever a estrutura dos dados de forma
 
 Antes que os dados possam ser assimilados na Platform, um esquema deve ser composto para descrever a estrutura dos dados e fornecer restrições ao tipo de dados que podem estar contidos em cada campo. Os esquemas consistem em uma classe base e zero ou mais grupos de campos de esquema.
 
-Para obter mais informações sobre o modelo de composição de esquema, incluindo princípios de design e práticas recomendadas, consulte as [noções básicas da composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) ou a lista de reprodução [Modelar os dados de experiência do cliente com o XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
+Para obter mais informações sobre o modelo de composição de esquema, incluindo princípios de design e práticas recomendadas, consulte as [noções básicas da composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR) ou a lista de reprodução [Modelar os dados de experiência do cliente com o XDM](https://experienceleague.adobe.com/pt-br/playlists/experience-platform-model-your-customer-experience-data-with-xdm).
 
 >[!TIP]
 >
->Se você estiver familiarizado com a Referência de design de solução (SDRs) do Analytics, poderá considerar um esquema como um SDR mais robusto. Consulte [Criar e manter um Documento de Referência de Design de Solução (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en) para obter mais informações.
+>Se você estiver familiarizado com a Referência de design de solução (SDRs) do Analytics, poderá considerar um esquema como um SDR mais robusto. Consulte [Criar e manter um Documento de Referência de Design de Solução (SDR)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=pt-BR) para obter mais informações.
 
 ## Pré-requisitos
 
@@ -70,7 +70,7 @@ Agora você está na página principal de esquemas e uma lista dos esquemas exis
 * **Classes** definem os aspectos comportamentais dos dados que o esquema contém. Por exemplo: `XDM ExperienceEvent` captura séries temporais, dados de evento e `XDM Individual Profile` captura dados de atributo sobre um indivíduo.
 * **Os tipos de dados** são usados como tipos de campo de referência em classes ou grupos de campos da mesma forma que os campos literais básicos.
 
-As descrições acima são uma visão geral de alto nível. Para obter mais detalhes, consulte o vídeo [Blocos de construção de esquema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=pt-BR) ou leia [Noções básicas sobre a composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) na documentação do produto.
+As descrições acima são uma visão geral de alto nível. Para obter mais detalhes, consulte o vídeo [Blocos de construção de esquema](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=pt-BR) ou leia [Noções básicas sobre a composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR) na documentação do produto.
 
 Neste tutorial, você usa o grupo de campos Evento de experiência do consumidor e cria um personalizado para demonstrar o processo.
 
@@ -236,6 +236,6 @@ Agora adicione um grupo de campos personalizados usando seu tipo de dados person
 >
 >Agora você tem um esquema para usar no restante do tutorial.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
 
 Próximo: **[Criar uma [!UICONTROL sequência de dados]](create-datastream.md)**

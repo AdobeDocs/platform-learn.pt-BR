@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Valor comercial do Attribution AI
 
-Este vídeo mostra como os profissionais de marketing podem medir e otimizar os gastos com marketing e publicidade, entendendo o impacto de cada interação individual com o cliente em cada fase das jornadas dos clientes com a IA de atribuição. Para obter mais informações, visite a [documentação da IA de atribuição](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Este vídeo mostra como os profissionais de marketing podem medir e otimizar os gastos com marketing e publicidade, entendendo o impacto de cada interação individual com o cliente em cada fase das jornadas dos clientes com a IA de atribuição. Para obter mais informações, visite a [documentação da IA de atribuição](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
 

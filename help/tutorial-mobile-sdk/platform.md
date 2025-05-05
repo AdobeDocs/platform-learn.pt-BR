@@ -169,6 +169,6 @@ Os profissionais de marketing e análise podem fazer muito mais com dados captur
 
 >[!SUCCESS]
 >
->Agora você configurou o aplicativo para enviar dados não apenas para o Edge Network, mas também para o Adobe Experience Platform.<br>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Agora você configurou o aplicativo para enviar dados não apenas para o Edge Network, mas também para o Adobe Experience Platform.<br>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
 
 Próximo: **[Criar e enviar notificações por push](journey-optimizer-push.md)**

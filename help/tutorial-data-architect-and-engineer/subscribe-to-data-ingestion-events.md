@@ -81,7 +81,7 @@ Pronto por enquanto, você aprenderá mais sobre essas notificações nas próxi
 ## Recursos adicionais
 
 * [Webhook.site](https://webhook.site/)
-* [Documentação de notificações de assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Documentação de notificações de assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=pt-BR)
 * [Introdução à documentação de Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, finalmente vamos começar [assimilando dados](ingest-batch-data.md)!

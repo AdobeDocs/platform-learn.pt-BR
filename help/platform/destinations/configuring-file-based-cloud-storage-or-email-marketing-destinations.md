@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Obtenha dicas durante uma apresentação da configuração de um destino baseado em arquivo no Real-Time Customer Data Platform (CDP) da Adobe. Isso se aplica aos destinos do [!UICONTROL armazenamento na nuvem] (por exemplo, S3 ou SFTP) e também aos destinos do [!UICONTROL marketing por email]. Para obter a documentação mais detalhada do produto, consulte:
 
-* [Ativar dados de público-alvo para destinos de exportação de perfil em lote](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) para obter instruções sobre como ativar dados para destinos de marketing em lote ou por email usando a interface do usuário do Experience Platform
-* [Conecte-se aos destinos em lote e ative os dados usando a API de Serviço de Fluxo](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) para obter instruções sobre como ativar dados para destinos de marketing em lote ou por email usando a API de Serviço de Fluxo
+* [Ativar dados de público-alvo para destinos de exportação de perfil em lote](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=pt-BR) para obter instruções sobre como ativar dados para destinos de marketing em lote ou por email usando a interface do usuário do Experience Platform
+* [Conecte-se aos destinos em lote e ative os dados usando a API de Serviço de Fluxo](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=pt-BR) para obter instruções sobre como ativar dados para destinos de marketing em lote ou por email usando a API de Serviço de Fluxo
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)

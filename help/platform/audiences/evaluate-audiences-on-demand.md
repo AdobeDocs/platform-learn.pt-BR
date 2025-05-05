@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Avaliar públicos-alvo em lote sob demanda
 
-Avalie públicos-alvo em lote sob demanda com o recurso flexível de avaliação de público-alvo do Adobe Experience Platform. Para obter mais informações e medidas de proteção, consulte [o guia de avaliação de público flexível](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
+Avalie públicos-alvo em lote sob demanda com o recurso flexível de avaliação de público-alvo do Adobe Experience Platform. Para obter mais informações e medidas de proteção, consulte [o guia de avaliação de público flexível](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)

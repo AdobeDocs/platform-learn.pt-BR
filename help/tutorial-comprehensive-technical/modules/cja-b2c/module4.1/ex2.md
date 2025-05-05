@@ -82,7 +82,7 @@ Como mencionado, você pode definir IDs de pessoa diferentes para cada conjunto 
 
 O nome do campo ID de pessoa não é importante, desde que o valor nos campos ID de pessoa corresponda. Digamos que temos `email` em um conjunto de dados e `emailAddress` em outro conjunto de dados definido como ID de pessoa. Se `delaigle@adobe.com` for o mesmo valor para o campo de ID de pessoa em ambos os conjuntos de dados, o CJA poderá compilar os dados.
 
-Revise as Perguntas frequentes do CJA aqui para entender as nuances da identificação: [Perguntas frequentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+Revise as Perguntas frequentes do CJA aqui para entender as nuances da identificação: [Perguntas frequentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR).
 
 ### Costura de dados usando a ID de pessoa
 

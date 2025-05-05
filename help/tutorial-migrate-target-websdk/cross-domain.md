@@ -62,14 +62,14 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->Ao usar o recurso de tags (antigo Launch) para implementar o SDK da Web, o compartilhamento de ID entre domínios pode ser realizado sem o código personalizado. Consulte a [documentação dedicada](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) para obter mais detalhes.
+>Ao usar o recurso de tags (antigo Launch) para implementar o SDK da Web, o compartilhamento de ID entre domínios pode ser realizado sem o código personalizado. Consulte a [documentação dedicada](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=pt-BR#tags-extension) para obter mais detalhes.
 
 >[!NOTE]
 >
->O SDK da Web da Platform também oferece suporte ao compartilhamento de ID móvel para Web para casos de uso de aplicativos móveis nativos. Para obter mais informações, consulte a documentação dedicada sobre o [compartilhamento de ID móvel para a Web e entre domínios](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
+>O SDK da Web da Platform também oferece suporte ao compartilhamento de ID móvel para Web para casos de uso de aplicativos móveis nativos. Para obter mais informações, consulte a documentação dedicada sobre o [compartilhamento de ID móvel para a Web e entre domínios](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=pt-BR).
 
 Em seguida, saiba como [atualizar públicos-alvo e scripts de perfil](update-audiences.md) para garantir a compatibilidade com o SDK da Web da Platform.
 
 >[!NOTE]
 >
->Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=pt#M463).

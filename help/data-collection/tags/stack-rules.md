@@ -17,6 +17,6 @@ ht-degree: 36%
 
 # Regras de tag de pilha
 
-Saiba como empilhar regras em uma propriedade de tag. O empilhamento de regras usa o recurso `order` nos eventos de regras de marcas para sequenciar regras de modo que você possa gerenciar implementações de marcas escalonáveis. Defina algumas variáveis em uma regra global, adicione e substitua variáveis em uma regra específica da página e envie os dados para o aplicativo de marketing desejado. Para obter mais informações sobre a ordenação de regras, consulte a documentação de [regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html#rule-ordering).
+Saiba como empilhar regras em uma propriedade de tag. O empilhamento de regras usa o recurso `order` nos eventos de regras de marcas para sequenciar regras de modo que você possa gerenciar implementações de marcas escalonáveis. Defina algumas variáveis em uma regra global, adicione e substitua variáveis em uma regra específica da página e envie os dados para o aplicativo de marketing desejado. Para obter mais informações sobre a ordenação de regras, consulte a documentação de [regras](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=pt-BR#rule-ordering).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)

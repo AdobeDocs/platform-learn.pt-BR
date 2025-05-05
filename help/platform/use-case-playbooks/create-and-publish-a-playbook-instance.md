@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Criar e publicar instâncias do manual
 
-Saiba como descobrir, criar, publicar e solucionar problemas de uma instância de um manual de casos de uso neste vídeo de demonstração completo. Para obter mais informações, consulte [Criar, compartilhar e reutilizar instâncias do manual](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+Saiba como descobrir, criar, publicar e solucionar problemas de uma instância de um manual de casos de uso neste vídeo de demonstração completo. Para obter mais informações, consulte [Criar, compartilhar e reutilizar instâncias do manual](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

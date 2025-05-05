@@ -17,7 +17,7 @@ ht-degree: 20%
 
 # Criar um painel
 
-Saiba como criar um painel no Adobe Experience Platform. Para obter mais informações, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html).
+Saiba como criar um painel no Adobe Experience Platform. Para obter mais informações, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=pt-BR).
 
 >[!IMPORTANT]
 >

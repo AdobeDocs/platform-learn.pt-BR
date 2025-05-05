@@ -18,6 +18,6 @@ ht-degree: 18%
 
 # Usar restrições de tempo nas definições de segmento
 
-Saiba como usar as várias opções de data e hora na interface do construtor de público-alvo do Adobe Experience Platform. Use datas em atributos de perfil para criar públicos-alvo para pessoas que fazem aniversário. Use datas em eventos para criar públicos-alvo para pessoas que fizeram várias compras em um determinado período ou que não realizaram uma ação em um determinado período. Para obter mais informações, consulte o [guia da interface do usuário do Construtor de segmentos](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder).
+Saiba como usar as várias opções de data e hora na interface do construtor de público-alvo do Adobe Experience Platform. Use datas em atributos de perfil para criar públicos-alvo para pessoas que fazem aniversário. Use datas em eventos para criar públicos-alvo para pessoas que fizeram várias compras em um determinado período ou que não realizaram uma ação em um determinado período. Para obter mais informações, consulte o [guia da interface do usuário do Construtor de segmentos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/segment-builder).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432259/?learn=on&enablevpops)

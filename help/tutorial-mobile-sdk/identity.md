@@ -116,7 +116,7 @@ Você deseja atualizar a identidade padrão (email) e a identidade personalizada
 
 ## Remover uma identidade
 
-Você pode usar a API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para remover a identidade do mapa de identidade armazenado do lado do cliente. A extensão Identity interrompe o envio do identificador para o Edge Network. O uso dessa API não remove o identificador do gráfico de identidade do lado do servidor. Consulte [Exibir gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) para obter mais informações sobre gráficos de identidade.
+Você pode usar a API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para remover a identidade do mapa de identidade armazenado do lado do cliente. A extensão Identity interrompe o envio do identificador para o Edge Network. O uso dessa API não remove o identificador do gráfico de identidade do lado do servidor. Consulte [Exibir gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=pt-BR) para obter mais informações sobre gráficos de identidade.
 
 1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e adicione o seguinte código à função `func removeIdentities(emailAddress: String, crmId: String)`:
 
@@ -176,6 +176,6 @@ Depois de concluir as etapas na [lição de Experience Platform](platform.md), v
 >
 >Agora você configurou o aplicativo para atualizar identidades no Edge Network e (quando configurado) com o Adobe Experience Platform.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
 
 Próximo: **[Coletar dados de perfil](profile.md)**

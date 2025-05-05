@@ -58,7 +58,7 @@ No menu **extensões**, clique no ícone de **peça do quebra-cabeça** e fixe a
 
 ## Configurar a extensão do Chrome
 
-Vá para [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e clique no ícone de extensão para abri-lo.
+Vá para [https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e clique no ícone de extensão para abri-lo.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +135,7 @@ Depois de ativar sua configuração, você verá um ponto verde ao lado das inic
 
 ## Verificar conteúdo do tutorial
 
-Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Como teste, vá para [esta página](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Agora você deve ver que todas as **Variáveis de ambiente** desta página foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
 

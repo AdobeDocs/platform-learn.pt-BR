@@ -15,6 +15,6 @@ ht-degree: 28%
 
 # Monitorar o encaminhamento de eventos
 
-Saiba como monitorar o encaminhamento de eventos na interface da Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Saiba como monitorar o encaminhamento de eventos na interface da Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)

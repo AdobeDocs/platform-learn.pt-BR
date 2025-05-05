@@ -15,7 +15,7 @@ ht-degree: 19%
 
 # Adicionar uma extensão de encaminhamento de eventos
 
-Saiba como adicionar uma extensão de encaminhamento de eventos na Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+Saiba como adicionar uma extensão de encaminhamento de eventos na Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR).
 
 >[!NOTE]
 >

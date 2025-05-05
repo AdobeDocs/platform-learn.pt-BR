@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Introdução à IA de atribuição
 
-Uma visão geral de alto nível de como profissionais de marketing e analistas podem usar a IA de atribuição para entender o impacto de seus canais e campanhas de marketing. Para obter mais informações, visite a [documentação da IA de atribuição](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
+Uma visão geral de alto nível de como profissionais de marketing e analistas podem usar a IA de atribuição para entender o impacto de seus canais e campanhas de marketing. Para obter mais informações, visite a [documentação da IA de atribuição](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)

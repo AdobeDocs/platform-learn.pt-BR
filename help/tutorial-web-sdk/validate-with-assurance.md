@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Validar implementações do SDK da Web com o Experience Platform Assurance
 
-O Adobe Experience Platform Assurance é um recurso que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou serve experiências. Leia mais sobre [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+O Adobe Experience Platform Assurance é um recurso que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou serve experiências. Leia mais sobre [Adobe Assurance](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home).
 
 
 ## Objetivos de aprendizagem
@@ -96,4 +96,4 @@ Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)

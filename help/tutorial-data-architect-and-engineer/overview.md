@@ -48,7 +48,7 @@ O Adobe Experience Platform é uma plataforma técnica projetada para ajudar voc
 
 ## Pré-requisitos
 
-* Você assistiu à [Introdução à lista de reprodução de Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) no Experience League e está familiarizado com os recursos da Platform
+* Você assistiu à [Introdução à lista de reprodução de Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/playlists/experience-platform-introduction) no Experience League e está familiarizado com os recursos da Platform
 * Você tem acesso a uma conta provisionada com a Adobe Experience Platform (ou um aplicativo baseado na plataforma, como o Real-Time CDP ou o Journey Optimizer) e a Coleção de dados (antigo Launch).
 * Você é um Administrador do Sistema dessa conta ou pode ter uma [configurar permissões de usuário](configure-permissions.md) para você.
 
@@ -58,7 +58,7 @@ Este tutorial combina tarefas para engenheiros de dados e arquitetos de dados. C
 
 À medida que você cria vários elementos da Platform durante este tutorial, tente manter os nomes que eu recomendo o máximo possível. No entanto, há alguns nomes de elementos de alto nível que você pode querer personalizar, caso haja várias pessoas em sua organização fazendo este tutorial simultaneamente. Por exemplo, talvez você queira nomear a sandbox da Platform como &quot;Plataforma do tutorial do Luma - Ignatius J Reilly&quot; em vez de apenas &quot;Plataforma do tutorial do Luma&quot;.
 
-Se você ficar preso, tente reler as instruções primeiro e depois use o link ![Registrar um problema](https://experienceleague.adobe.com/assets/img/feedback.svg) na barra lateral de cada página para entrar em contato comigo.
+Se você ficar preso, tente reler as instruções primeiro e depois use o link ![Registrar um problema](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=pt-BR) na barra lateral de cada página para entrar em contato comigo.
 
 ## Notas técnicas
 

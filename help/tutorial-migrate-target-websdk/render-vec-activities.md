@@ -32,11 +32,11 @@ A extensão de navegador Auxiliar de edição visual funciona com sites da Web q
 
 O Auxiliar de edição visual é ativado automaticamente quando um site é aberto no VEC do Target para permitir a criação. A extensão não tem configurações condicionais. A extensão lida com todas as configurações automaticamente, incluindo as configurações de cookies SameSite.
 
-Consulte a documentação dedicada para obter mais informações sobre a [extensão do Auxiliar de edição visual](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) e a [solução de problemas do Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+Consulte a documentação dedicada para obter mais informações sobre a [extensão do Auxiliar de edição visual](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=pt-BR) e a [solução de problemas do Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=pt-BR).
 
 >[!IMPORTANT]
 >
->A nova [extensão Auxiliar de Edição Visual](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) substitui a [extensão de navegador Auxiliar do VEC do Target](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) anterior. Se a extensão auxiliar do VEC mais antiga estiver instalada, ela deverá ser removida ou desativada antes de usar a extensão auxiliar de edição visual.
+>A nova [extensão Auxiliar de Edição Visual](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) substitui a [extensão de navegador Auxiliar do VEC do Target](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=pt-BR) anterior. Se a extensão auxiliar do VEC mais antiga estiver instalada, ela deverá ser removida ou desativada antes de usar a extensão auxiliar de edição visual.
 
 ## Solicitar e aplicar conteúdo automaticamente
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->É possível [renderizar manualmente as modificações](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) feitas no Visual Experience Composer. A renderização manual de modificações baseadas em VEC não é comum. Verifique se a implementação da at.js usa a função `getOffers()` para executar manualmente uma solicitação do Target `pageLoad` sem usar `applyOffers()` para aplicar o conteúdo à página.
+>É possível [renderizar manualmente as modificações](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=pt-BR#manually-rendering-content) feitas no Visual Experience Composer. A renderização manual de modificações baseadas em VEC não é comum. Verifique se a implementação da at.js usa a função `getOffers()` para executar manualmente uma solicitação do Target `pageLoad` sem usar `applyOffers()` para aplicar o conteúdo à página.
 
-O SDK da Web da Platform oferece aos desenvolvedores muita flexibilidade na solicitação e renderização de conteúdo. Consulte a [documentação dedicada sobre renderização de conteúdo personalizado](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) para obter opções e detalhes adicionais.
+O SDK da Web da Platform oferece aos desenvolvedores muita flexibilidade na solicitação e renderização de conteúdo. Consulte a [documentação dedicada sobre renderização de conteúdo personalizado](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=pt-BR) para obter opções e detalhes adicionais.
 
 ## Exemplo de implementação
 
@@ -263,4 +263,4 @@ Em seguida, saiba como solicitar e [renderizar atividades do Target com base em 
 
 >[!NOTE]
 >
->Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=pt#M463).

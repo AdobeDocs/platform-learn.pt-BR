@@ -21,7 +21,7 @@ Neste exercício, você aprenderá a depurar e validar seus dados ao migrar para
 
 ## O ADOBE EXPERIENCE PLATFORM DEBUGGER
 
-Esse depurador é uma extensão de navegador e está disponível na loja da Chrome. Há um [tutorial em vídeo](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview) que explica como baixar e usar o depurador, e é recomendável que você primeiro passe por isso para saber o uso básico.
+Esse depurador é uma extensão de navegador e está disponível na loja da Chrome. Há um [tutorial em vídeo](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/debugger/overview) que explica como baixar e usar o depurador, e é recomendável que você primeiro passe por isso para saber o uso básico.
 
 Depois que o depurador estiver ativo e em execução, você poderá usá-lo para garantir que os dados estejam fluindo do seu site e pelo Edge Network corretamente. Este tutorial continuará com o uso bastante básico, mas use o depurador com toda a capacidade para verificar seus dados.
 

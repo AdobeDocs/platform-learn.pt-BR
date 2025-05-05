@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Exibir perfis de conta
 
-Saiba como visualizar perfis de conta e oportunidades no Real-Time Customer Data Platform, B2B edition e Adobe Experience Platform. Para obter mais informações, consulte a [documentação sobre perfis](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
+Saiba como visualizar perfis de conta e oportunidades no Real-Time Customer Data Platform, B2B edition e Adobe Experience Platform. Para obter mais informações, consulte a [documentação sobre perfis](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338251?learn=on&enablevpops)
 

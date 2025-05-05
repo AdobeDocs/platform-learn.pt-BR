@@ -21,7 +21,7 @@ O [Adobe Audience Manager](https://docs.adobe.com/content/help/pt-BR/experience-
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -44,7 +44,7 @@ Para concluir esta lição, será necessário:
 
    ![Você pode usar o Debugger para localizar o Subdomínio do Audience Manager no seu site](images/aam-debugger-partner.png)
 
-Se ainda não tiver o Audience Manager implementado, siga estas instruções para [obter seu Subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
+Se ainda não tiver o Audience Manager implementado, siga estas instruções para [obter seu Subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=pt-BR).
 
 ## Opções de implementação
 
@@ -95,7 +95,7 @@ Há duas etapas principais para executar uma implementação do SSF:
 >
 >Como o SSF precisa ser ativado por conjunto de relatórios, repita esta etapa para seus conjuntos de relatórios reais quando implantar o SSF em seu conjunto de relatórios do site.
 >
->Além disso, se a opção SSF estiver acinzentada, será necessário &quot;mapear os conjuntos de relatórios para sua organização na Experience Cloud para ativar a opção. Isso é explicado [na documentação](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
+>Além disso, se a opção SSF estiver acinzentada, será necessário &quot;mapear os conjuntos de relatórios para sua organização na Experience Cloud para ativar a opção. Isso é explicado [na documentação](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=pt-BR).
 
 Uma vez concluída essa etapa, e se você tiver o Serviço de identidade da Adobe Experience Platform habilitado, os dados serão encaminhados do Analytics para o AAM. No entanto, para concluir o processo de forma que a resposta retorne corretamente do AAM à página (e também ao Analytics por meio do recurso Audience Analytics ), você deve concluir a etapa a seguir nas tags também. Não se preocupe, é super fácil.
 
@@ -117,7 +117,7 @@ Esta é a segunda de duas etapas para habilitar o SSF. Você já inverteu o swit
 
 1. Marque a caixa para **[!UICONTROL Compartilhar automaticamente dados do Analytics com o Audience Manager]**. Isso adicionará o &quot;Módulo&quot; (código) do Audience Manager à implementação `AppMeasurement.js` do Analytics.
 
-1. Adicione o &quot;Subdomínio do Audience Manager&quot; (também conhecido como &quot;Nome do parceiro&quot;, &quot;ID do parceiro&quot;, &quot;Subdomínio do parceiro&quot;). Siga estas instruções para [obter o subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
+1. Adicione o &quot;Subdomínio do Audience Manager&quot; (também conhecido como &quot;Nome do parceiro&quot;, &quot;ID do parceiro&quot;, &quot;Subdomínio do parceiro&quot;). Siga estas instruções para [obter o subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=pt-BR).
 
 1. Clique em **[!UICONTROL Salvar na biblioteca e na build]**
 

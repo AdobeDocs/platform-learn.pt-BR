@@ -35,7 +35,7 @@ Nesta lição, você aprenderá a criar e configurar o sistema para que seus dad
 
    >[!NOTE]
    >
-   >Você só precisa selecionar um esquema se estiver usando o recurso [Preparação de dados para a coleção de dados](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep), o que não faremos neste tutorial. Visite o link para saber mais.
+   >Você só precisa selecionar um esquema se estiver usando o recurso [Preparação de dados para a coleção de dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/edge-network/data-prep), o que não faremos neste tutorial. Visite o link para saber mais.
 
 1. Selecione **[!UICONTROL Salvar]**
 

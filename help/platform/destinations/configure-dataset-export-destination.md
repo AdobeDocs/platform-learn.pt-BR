@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Saiba como configurar uma conexão e usar o fluxo de trabalho para exportações de conjunto de dados usando um destino do Cloud Service. Os benefícios e casos de uso para esse recurso também são abordados.
 
-Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets).
+Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

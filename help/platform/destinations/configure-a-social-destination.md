@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Configurar um destino social
 
-Saiba como configurar um destino social no Adobe Experience Platform, incluindo autenticação, atribuição de segmento, mapeamento de ID etc. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html).
+Saiba como configurar um destino social no Adobe Experience Platform, incluindo autenticação, atribuição de segmento, mapeamento de ID etc. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 

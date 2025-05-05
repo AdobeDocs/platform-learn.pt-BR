@@ -38,7 +38,7 @@ Capacite os profissionais de marketing para começar a usar IA/ML imediatamente 
 
 ## Veja isto
 
-- Visão Geral dos Serviços Inteligentes: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Visão Geral dos Serviços Inteligentes: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=pt-BR](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=pt-BR)
 
 [Voltar ao módulo 2.2](./intelligent-services.md)
 

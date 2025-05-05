@@ -23,9 +23,9 @@ Este módulo apresenta alguns conceitos e tecnologias que têm um impacto além 
 - Saiba mais sobre os fluxos de dados usados por uma marca para assimilar dados para seus produtos da Adobe.
 - Saiba como enviar dados para a Adobe Experience Platform e outros produtos por meio do Adobe Experience Platform Edge Network.
 - Saiba como criar Elementos de dados e Regras que coletam dados da Web e de dispositivos móveis.
-- Saiba mais sobre os eventos de rastreamento do [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) e como depurar seu conteúdo.
+- Saiba mais sobre os eventos de rastreamento do [Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home) e como depurar seu conteúdo.
 - Saiba o que é uma camada de dados e o que a Adobe recomenda ao implementar uma.
-- Saiba quais são as etapas para implementar o [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) do zero.
+- Saiba quais são as etapas para implementar o [Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home) do zero.
 - Saiba mais sobre a diferença entre uma implementação da Web e móvel.
 
 ## Pré-requisitos

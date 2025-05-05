@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # Assimilar dados usando conectores de origem do Armazenamento na nuvem
 
-Este vídeo mostra como assimilar facilmente dados em lote de serviços de armazenamento na nuvem no Perfil do cliente em tempo real da Adobe Experience Platform e no data lake, de forma contínua e escalável. Para obter a documentação mais detalhada do produto, consulte [armazenamento na nuvem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage) na página de visão geral dos Conectores Source ou na [documentação do conector de origem do Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=pt-BR).
+Este vídeo mostra como assimilar facilmente dados em lote de serviços de armazenamento na nuvem no Perfil do cliente em tempo real da Adobe Experience Platform e no data lake, de forma contínua e escalável. Para obter a documentação mais detalhada do produto, consulte [armazenamento na nuvem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR#cloud-storage) na página de visão geral dos Conectores Source ou na [documentação do conector de origem do Amazon S3](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)

@@ -40,7 +40,7 @@ O Adobe Experience Platform Debugger pode ser instalado nos navegadores Google C
 
 Depois de instalar a extensão do Chrome ou o complemento do Firefox, um ícone (![](assets/start-icon.jpg)) é adicionado à barra de extensão. Selecione esse ícone para abrir a extensão.
 
-Consulte o guia dedicado para obter mais informações sobre a [extensão de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) e como depurar todos os aplicativos web de Adobe.
+Consulte o guia dedicado para obter mais informações sobre a [extensão de Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=pt-BR) e como depurar todos os aplicativos web de Adobe.
 
 ## Visualizar atividades do Target com URLs de controle de qualidade
 
@@ -52,7 +52,7 @@ URLs de controle de qualidade do Target que funcionam instruindo a at.js ou o SD
 >
 >A funcionalidade do modo de controle de qualidade do Target é compatível com o SDK da Web da plataforma versão 2.13.0 ou superior. O modo de controle de qualidade do Target está habilitado com base no valor `xdm.web.webPageDetails.URL` passado na chamada `sendEvent`. Quaisquer modificações nesse valor, como colocar todos os caracteres em minúsculas, podem impedir que o modo de controle de qualidade do Target funcione corretamente.
 
-Consulte o guia dedicado para obter mais informações sobre [Controle de qualidade da atividade do Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+Consulte o guia dedicado para obter mais informações sobre [Controle de qualidade da atividade do Target](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=pt-BR).
 
 ## Depurar implementação do Target
 
@@ -130,7 +130,7 @@ Depois de selecionar **[!UICONTROL Exibir]**, uma sobreposição será exibida, 
 - Detalhes da solicitação
 - Instantâneo do perfil
 
-Consulte o manual dedicado sobre [depuração da entrega de conteúdo do Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) para obter mais informações sobre rastreamentos do Target.
+Consulte o manual dedicado sobre [depuração da entrega de conteúdo do Target](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=pt-BR) para obter mais informações sobre rastreamentos do Target.
 
 ### Solução de problemas com o Assurance
 
@@ -181,4 +181,4 @@ Parabéns, você chegou ao fim do tutorial! Boa sorte ao migrar sua implementaç
 
 >[!NOTE]
 >
->Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=pt#M463).

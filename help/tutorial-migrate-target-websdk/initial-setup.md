@@ -13,11 +13,11 @@ ht-degree: 0%
 
 A migração da at.js para o SDK da Web da Platform requer uma configuração inicial para habilitar a captura de dados, os recursos e as funções adequados do SDK da Web da Platform. As seguintes etapas do [tutorial de implementação do SDK da Web da Platform](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR) devem ser concluídas antes que qualquer alteração na implementação do site ocorra:
 
-- [Configure as permissões apropriadas](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} no Adobe Admin Console para a Coleção de Dados
-- [Configurar um esquema XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"} para transmitir dados estruturados ao Edge Network
-- [Configurar um namespace de identidade](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"} para personalização entre dispositivos e funcionalidade de mbox3rdPartyId
-- [Criar uma sequência de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"} para habilitar o encaminhamento de dados do Edge Network
-- [Configurar a sequência de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"} para habilitar o encaminhamento de dados para a Adobe Target
+- [Configure as permissões apropriadas](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"} no Adobe Admin Console para a Coleção de Dados
+- [Configurar um esquema XDM](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html?lang=pt-BR){target="_blank"} para transmitir dados estruturados ao Edge Network
+- [Configurar um namespace de identidade](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html?lang=pt-BR){target="_blank"} para personalização entre dispositivos e funcionalidade de mbox3rdPartyId
+- [Criar uma sequência de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=pt-BR){target="_blank"} para habilitar o encaminhamento de dados do Edge Network
+- [Configurar a sequência de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=pt-BR#configure-the-datastream){target="_blank"} para habilitar o encaminhamento de dados para a Adobe Target
 
 >[!CAUTION]
 >
@@ -29,4 +29,4 @@ Em seguida, saiba como [substituir a biblioteca at.js e configurar uma implement
 
 >[!NOTE]
 >
->Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudar você a ter sucesso com a migração do Target da at.js para o SDK da Web. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=pt#M463).

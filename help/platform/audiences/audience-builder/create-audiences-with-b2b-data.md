@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Criar e ativar públicos da conta para [!DNL B2B] e [!DNL B2P]
 
-Saiba mais sobre os recursos do Account-Based Marketing nas edições [!DNL B2B] e [!DNL B2P] do [!DNL Real-Time Customer Data Platform], incluindo a criação e a ativação de públicos-alvo de conta. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
+Saiba mais sobre os recursos do Account-Based Marketing nas edições [!DNL B2B] e [!DNL B2P] do [!DNL Real-Time Customer Data Platform], incluindo a criação e a ativação de públicos-alvo de conta. Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Criar políticas de mesclagem
 
-Este vídeo mostra como criar políticas de mesclagem no Adobe Experience Platform. As políticas de mesclagem são as regras que a Platform usa para determinar quais dados serão usados e priorizados ao combinar conjuntos de dados de fontes diferentes, a fim de criar perfis de clientes. Para obter mais informações, visite a [documentação de políticas de mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html).
+Este vídeo mostra como criar políticas de mesclagem no Adobe Experience Platform. As políticas de mesclagem são as regras que a Platform usa para determinar quais dados serão usados e priorizados ao combinar conjuntos de dados de fontes diferentes, a fim de criar perfis de clientes. Para obter mais informações, visite a [documentação de políticas de mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
