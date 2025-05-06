@@ -4,9 +4,9 @@ description: Introdução - Instalar a extensão do Chrome para a documentação
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## Sobre a extensão do Chrome
 
-A documentação se tornou genérica para que possa ser facilmente reutilizada por qualquer pessoa, usando qualquer instância do Adobe Experience Platform.
-Para tornar a documentação reutilizável, **As Variáveis de ambiente** foram introduzidas na documentação, o que significa que você encontrará os **espaços reservados** abaixo na documentação. Cada espaço reservado é uma variável específica de um ambiente específico, e a extensão do Chrome alterará essa variável para que você possa copiar facilmente o código e o texto das páginas de tutorial e colá-los nas várias interfaces de usuário que você usará como parte do tutorial.
+Este tutorial foi tornado genérico para que possa ser facilmente reutilizado por qualquer pessoa, usando qualquer instância do Adobe Experience Cloud.
+
+Para tornar a documentação reutilizável, **As Variáveis de ambiente** foram introduzidas no tutorial, o que significa que você encontrará os **espaços reservados** abaixo na documentação. Cada espaço reservado é uma variável específica de um ambiente específico, e a extensão do Chrome alterará essa variável para que você possa copiar facilmente o código e o texto das páginas de tutorial e colá-los nas várias interfaces de usuário que você usará como parte do tutorial.
 
 Um exemplo desses valores pode ser encontrado abaixo. Atualmente, esses valores ainda não podem ser usados, mas assim que você instalar e ativar a extensão do Chrome, verá essas variáveis mudarem para um texto normal que pode ser copiado e reutilizado.
 
 | Nome | Chave | Exemplo |
 |:-------------:| :---------------:| :---------------:|
-| ID da organização IMS do AEP | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nome da organização IMS do AEP | `--aepImsOrgName--` | `Experience Platform International` |
+| ID organizacional IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| Nome da organização IMS | `--aepImsOrgName--` | `Experience Platform International` |
 | ID do locatário do AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nome da sandbox da AEP | `--aepSandboxName--` | `one-adobe` |
 | LDAP do perfil do aluno | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ No menu **extensões**, clique no ícone de **peça do quebra-cabeça** e fixe a
 
 ## Configurar a extensão do Chrome
 
-Vá para [https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e clique no ícone de extensão para abri-lo.
+Vá para [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e clique no ícone de extensão para abri-lo.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +136,7 @@ Depois de ativar sua configuração, você verá um ponto verde ao lado das inic
 
 ## Verificar conteúdo do tutorial
 
-Como teste, vá para [esta página](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
+Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 Agora você deve ver que todas as **Variáveis de ambiente** desta página foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
 

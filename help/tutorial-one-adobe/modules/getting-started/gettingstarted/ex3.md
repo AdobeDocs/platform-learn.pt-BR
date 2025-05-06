@@ -4,9 +4,9 @@ description: Introdução - Criar sequência de dados
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 1%
 Ir para [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}.
 
 ![DSN](./images/launchprop.png)
+
+Antes de continuar, verifique se você selecionou o ambiente correto usando o alternador de ambiente no canto superior direito da tela. O ambiente correto a ser usado é chamado `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> A captura de tela abaixo mostra uma organização específica sendo selecionada. Quando você estiver assistindo a este tutorial, é muito provável que sua organização tenha um nome diferente. Quando se inscreveu neste tutorial, você recebeu os detalhes do ambiente que devem ser usados. Siga estas instruções.
+
+
+![DSN](./images/org.png)
 
 No menu esquerdo, clique em **[!UICONTROL Marcas]**. Após o exercício anterior, você agora tem três propriedades de Coleção de dados: uma para Web, uma para dispositivos móveis e uma para o aplicativo CX.
 
@@ -33,13 +42,17 @@ Clique em **[!UICONTROL Datastreams]**.
 
 No canto superior direito da tela, selecione o nome da sandbox, que deve ser `--aepSandboxName--`.
 
+>[!NOTE]
+>
+> A captura de tela abaixo mostra uma sandbox específica que está sendo selecionada. Quando você estiver assistindo a este tutorial, é muito provável que sua sandbox tenha um nome diferente. Quando se inscreveu neste tutorial, você recebeu os detalhes do ambiente que devem ser usados. Siga estas instruções.
+
 ![Clique no ícone Configuração do Edge na navegação à esquerda](./images/edgeconfig1b.png)
 
 Clique em **[!UICONTROL Nova sequência de dados]**.
 
 ![Clique no ícone Configuração do Edge na navegação à esquerda](./images/edgeconfig1.png)
 
-Para o **[!UICONTROL Nome]** e para a descrição opcional, digite `--aepUserLdap-- - One Adobe Datastream`. Para **Esquema de Mapeamento**, selecione **Sistema de Demonstração - Esquema de Evento para Site (Global v1.1)**. Clique em **Salvar**.
+Para o **Nome** e para a descrição opcional, digite `--aepUserLdap-- - One Adobe Datastream`. Para **Esquema de Mapeamento**, selecione **Sistema de Demonstração - Esquema de Evento para Site (Global v1.1)**. Clique em **Salvar**.
 
 ![Nomear a Configuração do Edge e salvar](./images/edgeconfig2.png)
 
@@ -108,6 +121,10 @@ Clique em **[!UICONTROL Datastreams]**.
 ![Clique no ícone Datastream na navegação à esquerda](./images/edgeconfig1a.png)
 
 No canto superior direito da tela, selecione o nome da sandbox, que deve ser `--aepSandboxName--`.
+
+>[!NOTE]
+>
+> A captura de tela abaixo mostra uma sandbox específica que está sendo selecionada. Quando você estiver assistindo a este tutorial, é muito provável que sua sandbox tenha um nome diferente. Quando se inscreveu neste tutorial, você recebeu os detalhes do ambiente que devem ser usados. Siga estas instruções.
 
 ![Clique no ícone Configuração do Edge na navegação à esquerda](./images/edgeconfig1b.png)
 

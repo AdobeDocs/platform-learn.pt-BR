@@ -3,9 +3,10 @@ title: Introdução - Adobe I/O
 description: Introdução - Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,16 @@ Ir para [https://developer.adobe.com/console/home](https://developer.adobe.com/c
 ![Nova integração do Adobe I/O](./images/iohome.png){zoomable="yes"}
 
 Selecione a instância correta no canto superior direito da tela. Sua instância é `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> A captura de tela abaixo mostra uma organização específica sendo selecionada. Quando você estiver assistindo a este tutorial, é muito provável que sua organização tenha um nome diferente. Quando se inscreveu neste tutorial, você recebeu os detalhes do ambiente que devem ser usados. Siga estas instruções.
+
 Em seguida, selecione **Criar novo projeto**.
 
 ![Nova integração do Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
-### API de serviços da Firefly
+### API do Firefly Services
 
 Você deverá ver isso. Selecione **+ Adicionar ao Projeto** e escolha **API**.
 
@@ -43,7 +49,7 @@ Forneça um nome para a credencial: `--aepUserLdap-- - One Adobe OAuth credentia
 
 ![Nova integração do Adobe I/O](./images/api4.png){zoomable="yes"}
 
-Selecione o perfil padrão **Configuração Padrão de Serviços da Firefly** e selecione **Salvar API Configurada**.
+Selecione o perfil padrão **Configuração padrão do Firefly Services** e selecione **Salvar API configurada**.
 
 ![Nova integração do Adobe I/O](./images/api9.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ Selecione **Próximo**.
 
 Em seguida, é necessário selecionar um perfil de produto que defina quais permissões estão disponíveis para essa integração.
 
-Selecione **Configuração Padrão dos Serviços Firefly** e **Configuração Padrão dos Serviços Creative Cloud Automation**.
+Selecione **Configuração padrão do Firefly Services** e **Configuração padrão dos Serviços de Automação da Creative Cloud**.
 
 Selecione **Salvar API configurada**.
 
