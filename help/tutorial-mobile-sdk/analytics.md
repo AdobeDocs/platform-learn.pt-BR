@@ -171,7 +171,7 @@ Observe o seguinte no mapeamento do Analytics:
 
 ## Mapeamento com dados de contexto
 
-Os dados XDM encaminhados para o Analytics são convertidos em [dados de contexto](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en), incluindo campos padrão e personalizados.
+Os dados XDM encaminhados para o Analytics são convertidos em [dados de contexto](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=pt-BR), incluindo campos padrão e personalizados.
 
 A chave de dados de contexto é construída seguindo esta sintaxe:
 
