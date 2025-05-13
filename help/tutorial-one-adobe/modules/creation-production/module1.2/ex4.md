@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ Clique na seta para abrir o menu suspenso e selecione **Clonar**.
 ![WF Fusion](./images/wffc2.png)
 
 Defina o **Nome** do cenário clonado como `--aepUserLdap-- - Firefly + Photoshop` e selecione a **Equipe de Destino** apropriada. Clique em **Adicionar** para adicionar um novo webhook.
+
+>[!NOTE]
+>
+>Talvez você não veja a opção de selecionar uma **Equipe de Destino**. Essa opção só será exibida se você for um usuário em mais de 1 Equipe no Workfront Fusion. Se você não vir essa opção, ela significa apenas que você foi adicionado a uma Equipe, portanto, não é necessária nenhuma escolha.
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Cole o nome **2048x2048-background** na caixa de diálogo do Workfront Fusion.
 
 Role para baixo até ver **Entrada**. Agora é necessário definir o que precisa ser inserido na camada de plano de fundo. Nesse caso, você precisa selecionar a saída do módulo **Adobe Firefly**, que contém a imagem gerada dinamicamente.
 
-Para **Armazenamento**, selecione **Externo**. Para **Local do arquivo**, copie e cole a variável `{{XX.details[].url}}` da saída do módulo **Adobe Firefly**. Substitua **XX** na variável pelo número de sequência do módulo **Adobe Firefly**, que neste exemplo é **22**.
+Para **Armazenamento**, selecione **Externo**. Para **Local do arquivo**, será necessário copiar e colar a variável `{{XX.details[].url}}` da saída do módulo **Adobe Firefly**, mas será necessário substituir **XX** na variável pelo número de sequência do módulo **Adobe Firefly**, que neste exemplo é **22**.
 
 ![WF Fusion](./images/wffc28.png)
 

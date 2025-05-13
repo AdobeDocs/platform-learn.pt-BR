@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -250,7 +250,7 @@ Agora você deve ver um prompt dentro do Frame.io. Não preencha os campos ainda
 
 ![E/S de Quadro](./images/frame38.png)
 
-Volte para o Workfront Fusion e clique na bolha no módulo **resposta do Webhook**. Você verá que em **OUTPUT**, você verá o corpo que contém a carga JSON do formulário. Clique novamente em **Executar uma vez**.
+Volte para o Workfront Fusion e clique na bolha no módulo **resposta do Webhook**. Você verá que em **INPUT**, você verá o corpo que contém a carga JSON do formulário. Clique novamente em **Executar uma vez**.
 
 ![E/S de Quadro](./images/frame40.png)
 

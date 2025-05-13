@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Você deverá ver isso. Clique em **Copiar endereço para a área de transferên
 
 ## 1.2.6.2 Configurar Webhook no Frame.io
 
-Ir para [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Ações Personalizadas**.
+Ir para [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Clique em **FERRAMENTAS DO DESENVOLVEDOR** e escolha **Webhooks**.
 
 ![E/S de Quadro](./images/aemf7.png)
 
