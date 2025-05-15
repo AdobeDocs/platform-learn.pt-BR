@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -125,9 +125,13 @@ Depois de preencher todos os campos, clique em **Continuar**. Sua conexão será
 
 ![WF Fusion](./images/wffcff6.png)
 
-Em seguida, selecione a variável **prompt** que é fornecida para o cenário pelo **webhook personalizado** de entrada. Clique em **OK**.
+Em seguida, selecione a variável **prompt** que é fornecida para o cenário pelo **webhook personalizado** de entrada.
 
 ![WF Fusion](./images/wffcff7.png)
+
+Em seguida, defina a **Versão do modelo** **prompt** como **imagem4 padrão**. Clique em **OK**.
+
+![WF Fusion](./images/wffcff7b.png)
 
 Antes de continuar, é necessário desativar a rota antiga no cenário como para este exercício. Você usará somente a nova rota que está configurando no momento. Para fazer isso, clique no ícone **chave inglesa** entre o módulo **Roteador** e o módulo **Iterador** e selecione **Desabilitar rota**.
 
@@ -261,8 +265,6 @@ Agora você pode ver que um novo arquivo do PSD foi gerado com sucesso e armazen
 
 ## 1.2.4.3 Alterar camadas de texto do arquivo PSD
 
-### Texto do Plano de Ação
-
 Em seguida, passe o mouse sobre o módulo **Adobe Photoshop - Aplicar edições do PSD** e clique no ícone **+**.
 
 ![WF Fusion](./images/wffc34.png)
@@ -277,67 +279,59 @@ Selecione **Editar camadas de texto**.
 
 Você deverá ver isso. Primeiro, selecione a conexão do Adobe Photoshop já configurada anteriormente, que deve ser chamada de `--aepUserLdap-- Adobe IO`.
 
-Agora é necessário definir o local do **Arquivo de entrada**, que é a saída da etapa anterior e em **Camadas**, é necessário inserir o **Nome** da camada de texto que você deseja alterar.
+Agora é necessário definir o local do **Arquivo de entrada**, que é a saída da etapa anterior e em **Camadas**, você precisará clicar em **+ Adicionar item** para cada camada para a qual o texto precisa ser alterado.
 
 ![WF Fusion](./images/wffc37.png)
 
-Para o **Arquivo de entrada**, selecione **Azure** para **Armazenamento do arquivo de entrada** e certifique-se de selecionar a saída da solicitação anterior, **Adobe Photoshop - Aplicar edições do PSD**, que você pode usar aqui: `data[]._links.renditions[].href`
+Para o **Arquivo de entrada**, selecione **Azure** para **Armazenamento do arquivo de entrada** e certifique-se de selecionar a saída da solicitação anterior, **Adobe Photoshop - Aplicar edições do PSD**, que você pode definir da seguinte maneira: ``{{XX.data[].`_links`.renditions[].href}}`` (substitua XX pelo número de sequência do módulo anterior Adobe Photoshop - Aplicar edições do PSD).
+
+Em seguida, clique em **+Adicionar item** em **Camadas** para começar a adicionar as camadas de texto que precisam ser atualizadas.
 
 ![WF Fusion](./images/wffc37a.png)
 
-Abra o arquivo **citisignal-fiber.psd**. No arquivo, você observará que a camada que contém a chamada à ação é chamada **2048x2048-cta**.
+Há duas alterações a serem feitas, o texto do CTA e o texto do botão no arquivo **citisignal-fiber.psd** precisam ser atualizados.
+
+Para localizar os nomes das camadas, abra o arquivo **citisignal-fiber.psd**. No arquivo, você observará que a camada que contém a chamada à ação é chamada **2048x2048-cta**.
 
 ![WF Fusion](./images/wffc38.png)
 
-Insira o nome **2048x2048-cta** em **Nome** na caixa de diálogo.
+No arquivo **citisignal-fiber.psd**, você também observará que a camada que contém o call to action é chamada **2048x2048-button-text**.
+
+![WF Fusion](./images/wffc44.png)
+
+Primeiro, é necessário configurar as alterações que devem ocorrer na camada **2048x2048-cta**. Insira o nome **2048x2048-cta** em **Nome** na caixa de diálogo.
 
 ![WF Fusion](./images/wffc39.png)
 
-Role para baixo até ver **Texto** > **Conteúdo**. Selecione a variável **cta** na carga do Webhook.
+Role para baixo até ver **Texto** > **Conteúdo**. Selecione a variável **cta** na carga do Webhook. Clique em **Adicionar**.
 
 ![WF Fusion](./images/wffc40.png)
 
-Role para baixo até ver **Saída**. Para **Armazenamento**, selecione **Azure**. Para **Local do arquivo**, insira o local abaixo. Observe a adição da variável `{{timestamp}}` ao nome de arquivo, que é usada para garantir que cada arquivo gerado tenha um nome exclusivo. Além disso, defina o **Type** como **vnd.adobe.photoshop**. Clique em **OK**.
+Você deverá ver isso. Clique em **+Adicionar item** em **Camadas** para começar a adicionar as camadas de texto que precisam ser atualizadas.
+
+![WF Fusion](./images/wffc40a.png)
+
+Digite o nome **2048x2048-button-text** em **Nome** na caixa de diálogo.
+
+![WF Fusion](./images/wffc40b.png)
+
+Role para baixo até ver **Texto** > **Conteúdo**. Selecione a variável **button** na carga do Webhook. Clique em **Adicionar**.
+
+![WF Fusion](./images/wffc40c.png)
+
+Você deverá ver isso.
+
+![WF Fusion](./images/wffc40d.png)
+
+Role para baixo até ver **Saída**. Para **Armazenamento**, selecione **Azure**. Para **Local do arquivo**, insira o local abaixo. Observe a adição da variável `{{timestamp}}` ao nome de arquivo, que é usada para garantir que cada arquivo gerado tenha um nome exclusivo. Além disso, defina o **Type** como **vnd.adobe.photoshop**.
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### Texto do botão
+Defina **Type** como **vnd.adobe.photoshop**. Clique em **OK**.
 
-Clique com o botão direito do mouse no módulo que acabou de criar e selecione **Clonar**. Isso criará um segundo módulo semelhante.
-
-![WF Fusion](./images/wffc42.png)
-
-Conecte o módulo clonado ao módulo **Adobe Photoshop - Editar camadas de texto** anterior.
-
-![WF Fusion](./images/wffc42a.png)
-
-Você deverá ver isso. Primeiro, selecione a conexão do Adobe Photoshop já configurada anteriormente, que deve ser chamada de `--aepUserLdap-- Adobe IO`.
-
-Agora é necessário definir o local do **Arquivo de entrada**, que é a saída da etapa anterior e em **Camadas**, é necessário inserir o **Nome** da camada de texto que você deseja alterar.
-
-![WF Fusion](./images/wffc43.png)
-
-Para o **Arquivo de entrada**, selecione **Azure** para **Armazenamento do arquivo de entrada** e certifique-se de selecionar a saída da solicitação anterior, **Adobe Photoshop - Editar camadas de texto**, que você pode usar aqui: `data[]._links.renditions[].href`
-
-Abra o arquivo **citisignal-fiber.psd**. No arquivo, você observará que a camada que contém a chamada à ação é chamada **2048x2048-button-text**.
-
-![WF Fusion](./images/wffc44.png)
-
-Digite o nome **2048x2048-button-text** em **Nome** na caixa de diálogo.
-
-![WF Fusion](./images/wffc43.png)
-
-Role para baixo até ver **Texto** > **Conteúdo**. Selecione a variável **button** na carga do Webhook.
-
-![WF Fusion](./images/wffc45.png)
-
-Role para baixo até ver **Saída**. Para **Armazenamento**, selecione **Azure**. Para **Local do arquivo**, insira o local abaixo. Observe a adição da variável `{{timestamp}}` ao nome de arquivo, que é usada para garantir que cada arquivo gerado tenha um nome exclusivo. Além disso, defina o **Type** como **vnd.adobe.photoshop**. Clique em **OK**.
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 Clique em **Salvar** para salvar as alterações.
 
@@ -369,9 +363,13 @@ Você deverá ver isso. Cole a carga abaixo no **Corpo**.
 
 ![WF Fusion](./images/wffc51.png)
 
-Copie e cole a variável `{{XX.data[]._links.renditions[].href}}` e substitua **XX** pelo número de sequência do último módulo **Adobe Photoshop - Editar camadas de texto**, que neste caso é **25**. Habilite a caixa de seleção para **Mostrar configurações avançadas** e clique em **Adicionar item**.
+Copie e cole a variável `{{XX.data[]._links.renditions[].href}}` e substitua **XX** pelo número de sequência do último módulo **Adobe Photoshop - Editar camadas de texto**, que neste caso é **30**.
 
 ![WF Fusion](./images/wffc52.png)
+
+Habilite a caixa de seleção para **Mostrar configurações avançadas** e clique em **Adicionar item**.
+
+![WF Fusion](./images/wffc52b.png)
 
 No campo **Chave**, digite `Content-Type`. No campo **Valor**, digite `application/json`. Clique em **Adicionar**.
 
