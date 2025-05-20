@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1918'
 ht-degree: 1%
 
 ---
@@ -17,11 +17,47 @@ ht-degree: 1%
 
 Saiba como otimizar seu processo do Firefly usando o Microsoft Azure e URLs pré-assinadas.
 
-## 1.1.2.1 Criar uma Assinatura do Azure
+## 1.1.2.1 O que são URLs pré-assinadas?
+
+Um URL pré-assinado é um URL que concede acesso temporário a um objeto específico em um local de armazenamento. Usando o URL, um usuário pode, por exemplo, LER o objeto ou GRAVAR um objeto (ou atualizar um objeto existente). O URL contém parâmetros específicos que são definidos pelo aplicativo.
+
+No contexto da criação da automação da cadeia de fornecimento de conteúdo, geralmente há várias operações de arquivo que precisam ocorrer para um caso de uso específico. Como exemplo, talvez seja necessário alterar o plano de fundo de um arquivo, alterar o texto de várias camadas etc. Nem sempre é possível fazer todas as operações de arquivo ao mesmo tempo, o que cria a necessidade de uma abordagem de várias etapas. Após cada etapa intermediária, a saída é um arquivo temporário necessário para a próxima etapa ser executada. Depois que a próxima etapa é executada, o arquivo temporário perde rapidamente o valor e geralmente não é mais necessário, portanto, ele deve ser excluído.
+
+Atualmente, o Adobe Firefly Services oferece suporte a estes domínios:
+
+- Amazon AWS: *.amazonaws.com
+- Microsoft Azure: *.windows.net
+- Dropbox: *.dropboxusercontent.com
+
+O motivo pelo qual as soluções de armazenamento em nuvem são usadas com frequência é que os ativos intermediários que estão sendo criados perdem valor rapidamente. O problema que é resolvido por URLs pré-assinados geralmente é melhor resolvido com uma solução de armazenamento commodity, que normalmente é um dos serviços de nuvem acima.
+
+Dentro do ecossistema da Adobe também há soluções de armazenamento, como Frame.io, Workfront Fusion e ativos da Adobe Experience Manager. Essas soluções também oferecem suporte a URLs pré-assinados, de modo que geralmente se tornam uma escolha que precisa ser feita durante a implementação. A escolha é, então, frequentemente baseada em uma combinação de aplicativos já disponíveis e no custo do armazenamento.
+
+Sendo assim, URLs pré-assinados são usados em combinação com operações do Adobe Firefly Services porque:
+
+- as organizações geralmente precisam processar várias alterações na mesma imagem em etapas intermediárias, e o armazenamento intermediário é necessário para tornar isso possível.
+- o acesso à leitura e gravação de locais de armazenamento na nuvem deve ser seguro e, em um ambiente do lado do servidor, não é possível fazer logon manualmente, portanto, a segurança precisa ser revertida diretamente para o URL.
+
+Um URL pré-assinado usa três parâmetros para limitar o acesso ao usuário:
+
+- Local de armazenamento: pode ser um local de bucket do AWS S3, um local de conta de armazenamento do Microsoft Azure com contêiner
+- Nome do arquivo: o arquivo específico que precisa ser lido, atualizado, excluído.
+- Query string parameter: um parâmetro da string de consulta sempre começa com um ponto de interrogação e é seguido por uma série complexa de parâmetros
+
+Exemplo:
+
+- **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 Criar uma Assinatura do Azure
 
 >[!NOTE]
 >
 >Se você já tiver uma Assinatura do Azure existente, ignore esta etapa. Nesse caso, prossiga com o próximo exercício.
+
+>[!NOTE]
+>
+>Se estiver seguindo este tutorial como parte de um workshop guiado presencial ou de um treinamento guiado sob demanda, você provavelmente já terá acesso a uma Conta de Armazenamento do Microsoft Azure. Nesse caso, você não precisa criar sua própria conta. Use a conta fornecida a você como parte do treinamento.
 
 Acesse [https://portal.azure.com](https://portal.azure.com){target="_blank"} e faça logon com sua conta do Azure. Se você não tiver um, use seu endereço de email pessoal para criar sua conta do Azure.
 
@@ -43,7 +79,7 @@ Quando o processo de assinatura for concluído, você estará pronto para prosse
 
 ![Armazenamento do Azure](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Criar Conta de Armazenamento do Azure
+## 1.1.2.3 Criar Conta de Armazenamento do Azure
 
 Procure por `storage account` e selecione **Contas de armazenamento**.
 
@@ -85,7 +121,7 @@ Seu contêiner agora está pronto para ser usado.
 
 ![Armazenamento do Azure](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Instalar o Azure Storage Explorer
+## 1.1.2.4 Instalar o Azure Storage Explorer
 
 [Baixe o Microsoft Azure Storage Explorer para gerenciar seus arquivos](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Selecione a versão correta para seu sistema operacional específico, baixe-a e instale-a.
 
@@ -127,7 +163,7 @@ Abra **Contêineres de blob** e selecione o contêiner criado no exercício ante
 
 ![Armazenamento do Azure](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4 Carregamento manual de arquivo e uso de um arquivo de imagem como referência de estilo
+## 1.1.2.5 Carregamento manual de arquivo e uso de um arquivo de imagem como referência de estilo
 
 Carregue um arquivo de imagem de sua escolha ou [este arquivo](./images/gradient.jpg){target="_blank"} no container.
 
@@ -166,7 +202,7 @@ Outra imagem aparece com `horses in a field`, mas dessa vez o estilo é semelhan
 
 ![Armazenamento do Azure](./images/az26.png){zoomable="yes"}
 
-## Carregamento de arquivo programático 1.1.2.5
+## Carregamento de arquivo programático 1.1.2.6
 
 Para usar o carregamento de arquivo programático com as Contas de Armazenamento do Azure, é necessário criar um novo token **SAS (Assinatura de Acesso Compartilhado)** com permissões que permitam gravar um arquivo.
 
@@ -247,7 +283,7 @@ De volta ao Azure Storage Explorer, atualize o conteúdo de sua pasta e o arquiv
 
 ![Armazenamento do Azure](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 Uso do arquivo programático
+## 1.1.2.7 Uso do arquivo programático
 
 Para ler programaticamente os arquivos das Contas de Armazenamento do Azure a longo prazo, você precisa criar um novo token **SAS (Assinatura de Acesso Compartilhado)**, com permissões que permitam ler um arquivo. Tecnicamente, você pode usar o token SAS criado no exercício anterior, mas é prática recomendada ter um token separado com apenas permissões de **Leitura** e um token separado com apenas permissões de **Gravação**.
 
