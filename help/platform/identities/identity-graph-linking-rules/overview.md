@@ -18,7 +18,7 @@ ht-degree: 20%
 
 # Visão geral das regras de vinculação do gráfico de identidade
 
-Obtenha uma visão geral de como as regras de vinculação de gráficos de identidade ajudam os arquitetos de dados a manter perfis precisos do cliente e evitar o colapso de gráficos. Para obter mais informações, consulte a [documentação de regras de vinculação de gráfico de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Obtenha uma visão geral de como as regras de vinculação de gráficos de identidade ajudam os arquitetos de dados a manter perfis precisos do cliente e evitar o colapso de gráficos. Para obter mais informações, consulte a [documentação de regras de vinculação de gráfico de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
