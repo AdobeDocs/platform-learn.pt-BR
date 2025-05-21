@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1942'
 ht-degree: 1%
 
 ---
@@ -166,6 +166,13 @@ Abra **Contêineres de blob** e selecione o contêiner criado no exercício ante
 ## 1.1.2.5 Carregamento manual de arquivo e uso de um arquivo de imagem como referência de estilo
 
 Carregue um arquivo de imagem de sua escolha ou [este arquivo](./images/gradient.jpg){target="_blank"} no container.
+
+>[!NOTE]
+>
+>Ao usar imagens como referência de estilo, referência de composição ou como imagem de máscara, os seguintes tipos de imagem são aceitos:
+>- image/jpeg
+>- image/png
+>- image/webp
 
 ![Armazenamento do Azure](./images/gradient.jpg)
 

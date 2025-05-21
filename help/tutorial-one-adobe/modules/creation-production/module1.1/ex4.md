@@ -6,16 +6,53 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
+source-git-commit: 29a0f77f113daace66ffbba63fabac7237f7d5f3
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 API de modelos personalizados do Firefly
 
-## 1.1.4.1 Configurar seu modelo personalizado
+## 1.1.4.1 O que são Modelos personalizados do Firefly?
+
+Com os modelos personalizados do Firefly, você pode gerar variações de imagem que se alinham à sua marca usando o recurso Texto para imagem. Ao treinar esses modelos com suas próprias imagens, você pode gerar conteúdo que reflete a identidade da sua marca.
+Transforme seu estilo ou assunto para explorar novas ideias, visualizar diferentes ambientes, gerar conteúdo inovador e adaptar o conteúdo a segmentos específicos.
+
+Com os Modelos personalizados do Firefly você pode...
+
+- Criar ideias e conceitos na marca
+- Produzir temas de caracteres com estilos consistentes
+- Crie estilos de marca consistentes para expandir campanhas rapidamente
+
+Para isso, os Modelos personalizados do Firefly são compatíveis:
+
+- Modelos de assunto personalizados
+- Modelos de estilo personalizados
+
+### Modelos de assunto personalizados
+
+Ao treinar modelos personalizados em um assunto específico — sejam objetos ou caracteres — o objetivo é identificar os recursos essenciais do assunto e ajudar o modelo a replicá-los em vários contextos e posições.
+
+Procure imagens com as seguintes características ao treinar um modelo de assunto:
+
+- Consistência do objeto: forneça imagens da mesma marca e modelo que o assunto, garantindo que o assunto não pareça muito diferente entre as imagens. Evite misturar várias cores e garanta um tema ou padrão comum entre as imagens. No entanto, o assunto pode variar entre cenas, poses, roupas e fundo.
+- Foco do objeto: Use imagens do assunto em foco claro sem distrações desnecessárias. Mantenha o assunto próximo ao centro da imagem e certifique-se de que ele ocupe pelo menos 25% da área da imagem.
+- Contexto ambiental: Forneça imagens do assunto em diferentes pontos de vista e contextos, mostrando-o em uma variedade de condições de iluminação. Embora imagens com fundo branco ou transparente possam ser usadas, é melhor misturar com ambientes mais complexos também.
+- Evitar outros objetos: Evite itens grandes no plano de fundo ou associados ao caractere. Qualquer item grande exibido nas imagens é memorizado pelo modelo e aparecerá nas imagens geradas, de modo semelhante ao mesmo item no conjunto de dados de treinamento.
+
+### Modelos de estilo personalizados
+
+Modelos personalizados treinados em um estilo identificarão a aparência dos ativos para gerar imagens semelhantes quando solicitado.
+
+Para treinar um modelo de estilo efetivo:
+
+- Proporcionar estética semelhante: inclua imagens que mostrem várias cenas e objetos, mantendo a mesma aparência.
+- Usar várias imagens: use o máximo de imagens possível para impedir que o modelo se concentre muito em objetos ou assuntos indesejados.
+- Evite frases fixas: um padrão fixo tem um peso maior do que outras frases. Por exemplo, se cada legenda contiver &quot;O fundo é preto sólido&quot; ou &quot;estilos de desenhos animados fofos&quot;, o modelo dependerá dessa frase e qualquer prompt de teste sem ele não gerará os resultados desejados.
+
+## 1.1.4.2 Configurar seu modelo personalizado
 
 Ir para [https://firefly.adobe.com/](https://firefly.adobe.com/). Clique em **Modelos personalizados**.
 
@@ -86,7 +123,7 @@ Feche o pop-up **Compartilhar modelo personalizado**.
 
 ![Modelos personalizados do Firefly](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2 Usar seu modelo personalizado na interface
+## 1.1.4.3 Usar seu modelo personalizado na interface
 
 Ir para [https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train). Clique no modelo personalizado para abri-lo.
 
@@ -100,9 +137,9 @@ Você verá o prompt de amostra inserido antes de ser executado.
 
 ![Modelos personalizados do Firefly](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Habilitar seu Modelo personalizado para a API de Modelos personalizados do Firefly Services
+## 1.1.4.4 Habilitar seu Modelo personalizado para a API de Modelos personalizados do Firefly Services
 
-Depois que o modelo personalizado for treinado, ele também poderá ser usado por meio da API. No exercício 1.1.1, você já configurou o projeto do Adobe I/O para interação com os Serviços da Firefly por meio da API.
+Depois que o modelo personalizado for treinado, ele também poderá ser usado por meio da API. No exercício 1.1.1, você já configurou o projeto do Adobe I/O para interação com o Firefly Services por meio da API.
 
 Ir para [https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train). Clique no modelo personalizado para abri-lo.
 
@@ -134,9 +171,9 @@ O **Email da Conta Técnica** agora deve poder acessar o Modelo Personalizado.
 
 ![Modelos personalizados do Firefly](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4 Interaja com a API de Modelos personalizados do Firefly Services
+## 1.1.4.5 Interagir com a API de Modelos personalizados do Firefly Services
 
-No Exercício 1.1.1 Introdução aos Serviços da Firefly, você baixou este arquivo: [postman-ff.zip](./../../../assets/postman/postman-ff.zip) no desktop local e importou essa coleção no Postman.
+No Exercício 1.1.1 Introdução ao Firefly Services, você baixou este arquivo: [postman-ff.zip](./../../../assets/postman/postman-ff.zip) no desktop local e importou essa coleção no Postman.
 
 Abra o Postman e vá para a pasta **FF - API de Modelos Personalizados**.
 
@@ -184,4 +221,4 @@ Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Volte para [Trabalhando com APIs Photoshop](./ex3.md){target="_blank"}
 
-Retorne para [Visão geral dos Serviços da Adobe Firefly](./firefly-services.md){target="_blank"}
+Voltar para [Visão geral do Adobe Firefly Services](./firefly-services.md){target="_blank"}
