@@ -8,21 +8,16 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2025-02-04T00:00:00Z
 jira: KT-16287
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+exl-id: d10a811a-b67f-487c-9aa2-d005a5bd7b18
+source-git-commit: 837c9b4386fbca106db313ee4e27fc7b69ea54ff
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
-
 # Regras de vinculação do gráfico de identidade - Simulação de gráfico
 
->[!AVAILABILITY]
->
->As regras de vinculação do gráfico de identidade estão atualmente com Disponibilidade limitada. Entre em contato com a equipe de conta do Adobe para obter informações sobre como acessar o recurso em sandboxes de desenvolvimento.
+Saiba como usar o simulador de gráficos para testar as regras de vinculação de gráficos de identidade no Adobe Experience Platform. Faça experimentos com diferentes cenários e jogue com as configurações de prioridade e &quot;único por gráfico&quot; para verificar quais regras são necessárias para sua empresa evitar o colapso dos gráficos. Para obter mais informações, consulte o [Guia da Interface de Simulação de Gráfico](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
 
-Saiba como usar o simulador de gráficos para testar as regras de vinculação de gráficos de identidade no Adobe Experience Platform. Faça experimentos com diferentes cenários e jogue com as configurações de prioridade e &quot;único por gráfico&quot; para verificar quais regras são necessárias para sua empresa evitar o colapso dos gráficos. Para obter mais informações, consulte o [Guia da Interface de Simulação de Gráfico](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation).
-
->[!VIDEO](https://video.tv.adobe.com/v/3444048/?learn=on&enablevpops&captions=por_br)
-
+>[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)
