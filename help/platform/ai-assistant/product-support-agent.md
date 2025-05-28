@@ -20,4 +20,4 @@ ht-degree: 0%
 
 O Agente de suporte ao produto é um agente de IA sempre ativo que pode ajudar a resolver problemas do atendimento ao cliente, aproveitando uma grande variedade de fontes de conhecimento com curadoria das equipes de suporte especializadas da Adobe e até mesmo seus próprios dados, para permitir que você solucione problemas em seus fluxos de trabalho. Se você precisar de ajuda adicional, o Agente de suporte do produto poderá criar um caso de suporte com informações contextuais detalhadas, reduzindo bastante o tempo e o trabalho necessários para criar tíquetes de suporte. Para obter mais informações, consulte a [documentação do Agente de Suporte do Produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ai-assistant/new-features/customer-support).
 
->[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443188/?learn=on&enablevpops&captions=por_br)
