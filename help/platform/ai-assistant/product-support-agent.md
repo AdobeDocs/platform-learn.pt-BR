@@ -8,16 +8,16 @@ doc-type: Technical Video
 duration: 193
 last-substantial-update: 2025-05-28T00:00:00Z
 jira: KT-17231
-source-git-commit: f003a65188c0201030b8ecca0c0838088c814e47
+exl-id: bff0d5f3-197c-422e-8d21-56d631729b46
+source-git-commit: 1bc148d47b17dc5d02319c440b72681a9c530919
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---
 
-
 # Agente de suporte ao produto
 
-O Agente de suporte ao produto é um agente de IA sempre ativo que pode ajudar a resolver problemas do atendimento ao cliente, aproveitando uma grande variedade de fontes de conhecimento com curadoria das equipes de suporte especializadas da Adobe e até mesmo seus próprios dados, para permitir que você solucione problemas em seus fluxos de trabalho. Se você precisar de ajuda adicional, o Agente de suporte do produto poderá criar um caso de suporte com informações contextuais detalhadas, reduzindo bastante o tempo e o trabalho necessários para criar tíquetes de suporte.
+O Agente de suporte ao produto é um agente de IA sempre ativo que pode ajudar a resolver problemas do atendimento ao cliente, aproveitando uma grande variedade de fontes de conhecimento com curadoria das equipes de suporte especializadas da Adobe e até mesmo seus próprios dados, para permitir que você solucione problemas em seus fluxos de trabalho. Se você precisar de ajuda adicional, o Agente de suporte do produto poderá criar um caso de suporte com informações contextuais detalhadas, reduzindo bastante o tempo e o trabalho necessários para criar tíquetes de suporte. Para obter mais informações, consulte a [documentação do Agente de Suporte do Produto](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/new-features/customer-support).
 
->[!VIDEO](https://video.tv.adobe.com/v/3443188/?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
