@@ -4,9 +4,9 @@ description: Foundation - Perfil do cliente em tempo real - Criar um público-al
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -17,11 +17,11 @@ Neste exercício, você criará um público-alvo usando o Audience Builder da Ad
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 No menu no lado esquerdo, vá para **Públicos-alvo**. Nesta página, você pode ter uma visão geral de todos os públicos-alvo existentes. Clique no botão **+ Criar público-alvo** para começar a criar um novo público-alvo.
 
@@ -31,7 +31,7 @@ Selecione **Regra de compilação** e clique em **Criar**.
 
 ![Segmentação](./images/menusegbr.png)
 
-Quando estiver no novo construtor de público-alvo, você notará imediatamente a opção de menu **Atributos** e a referência ao **Perfil individual XDM**.
+Quando estiver no construtor de público-alvo, você notará imediatamente a opção de menu **Atributos** e a referência ao **Perfil individual XDM**.
 
 ![Segmentação](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ O parâmetro de comparação deve ser **igual** e, no campo de entrada, digite *
 
 ![Segmentação](./images/pv.png)
 
+Defina a condição de tempo no seu segmento para **Nas últimas 24 horas**.
+
+![Segmentação](./images/pv1.png)
+
 Toda vez que você adiciona um elemento ao construtor de público-alvo, você pode clicar no botão **Atualizar estimativa** para obter uma nova estimativa da população do público-alvo.
 
 Até o momento, você só usou a interface do para criar seu público-alvo, mas também há uma opção de código para criar um público-alvo.
@@ -102,7 +106,7 @@ Você também pode visualizar uma amostra dos perfis de clientes que fazem parte
 ![Segmentação](./images/previewprofilesdtl.png)
 
 Por fim, vamos dar um nome ao seu público-alvo,
-defina o **Método de avaliação** como **Streaming** e clique em **Publicar**.
+defina o **Método de avaliação** como **Edge** e clique em **Publicar**.
 
 Como convenção de nomenclatura, use:
 

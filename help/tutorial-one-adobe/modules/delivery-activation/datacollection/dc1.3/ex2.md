@@ -4,10 +4,10 @@ description: Foundation - FAC - Criar esquemas, modelo de dados e links
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -19,11 +19,11 @@ Faça logon no Adobe Experience Platform acessando esta URL: [https://experience
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./../dc1.2/images/home.png)
+![Ingestão de dados](./../dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada `--aepSandboxName--`. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
-![Assimilação de dados](./../dc1.2/images/sb1.png)
+![Ingestão de dados](./../dc1.2/images/sb1.png)
 
 ## 1.3.2.1 Configurar um banco de dados federado no AEP
 
@@ -67,7 +67,7 @@ No menu esquerdo, clique em **Modelos** e vá para **Esquemas**. Clique em **Cri
 
 ![FAC](./images/fdb5.png)
 
-Selecione o banco de dados federado e clique em **+ Adicionar tabelas**.
+Selecione o banco de dados federado e clique em **Próximo**.
 
 ![FAC](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Você verá isso. Selecione as 5 tabelas criadas no Snowflake antes de:
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-Clique em **Adicionar**.
+Clique em **Next**.
 
 ![FAC](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ Para cada tabela, é possível:
 
 Para este exercício, não são necessárias alterações.
 
-Clique em **Criar**.
+Clique em **Concluído**.
 
 ![FAC](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ Você verá isso, com a capacidade de editar a configuração. Clique em **Dados
 
 ![FAC](./images/fdb10.png)
 
-Você verá uma amostra dos dados.
+Você verá uma amostra dos dados. Esses dados são carregados diretamente do Snowflake e não são mantidos no AEP.
 
 ![FAC](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ Você verá isso. Clique em **Salvar**.
 
 Agora é possível começar a definir links entre esquemas. Para começar a definir um link, você precisa clicar em **Criar links**.
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-Primeiro, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_PERSONS`.
+Primeiro, você precisa definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_PERSONS`.
 
 Clique em **Adicionar**.
 
@@ -150,7 +150,9 @@ Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb17.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_HOUSEHOLDS` e `--aepUserLdap--_PERSONS`.
+Em seguida, você precisa definir o vínculo entre a tabela `--aepUserLdap--_HOUSEHOLDS` e `--aepUserLdap--_PERSONS`.
+
+Clique em **Adicionar**.
 
 ![FAC](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb20.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+Em seguida, você precisa definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+
+Clique em **Adicionar**.
 
 ![FAC](./images/fdb21.png)
-
 
 ### USUÁRIOS - FAMÍLIAS
 
@@ -171,7 +174,9 @@ Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb22.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_HOUSEHOLDS`.
+Em seguida, você precisa definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_HOUSEHOLDS`.
+
+Clique em **Adicionar**.
 
 ![FAC](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ Você estará de volta aqui. Clique em **Criar links** para criar outro link.
 
 ![FAC](./images/fdb24.png)
 
-Em seguida, vamos definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_MOBILE_DATA_USAGE`.
+Em seguida, você precisa definir o vínculo entre a tabela `--aepUserLdap--_USERS` e `--aepUserLdap--_MOBILE_DATA_USAGE`.
+
+Clique em **Adicionar**.
 
 ![FAC](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ Você deverá ver isso. Clique em **Salvar**.
 
 ![FAC](./images/fdb26.png)
 
-A configuração no AEP está concluída. Agora você pode começar a usar seus dados federados em uma composição de público-alvo federado.
+A configuração do Federated Database no Adobe Experience Platform está concluída. Agora você pode começar a usar seus dados federados em uma composição de público-alvo federado.
 
 ## Próximas etapas
 

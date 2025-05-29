@@ -4,9 +4,9 @@ description: Foundation - Configuração da coleção de dados do Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,13 @@ A Coleção de dados da Adobe Experience Platform é usada pelas marcas para vá
 
 ## Explorar a interface
 
-Vá para [Coleção de dados do Adobe Experience Platform](https://experience.adobe.com/#/data-collection/).
+Vá para [Coleção de dados do Adobe Experience Platform](https://experience.adobe.com/#/data-collection/). Verifique se você está usando o ambiente correto, que deveria ser `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+>Este tutorial é documentado usando o ambiente **Experience Platform International**. O nome do seu ambiente provavelmente é diferente, portanto, sempre que você vir o nome **Experience Platform International** em uma captura de tela, deverá substituí-lo pelo nome do seu próprio ambiente, que deve ser `--aepImsOrgName--`.
+
+![Exibir Propriedades da Inicialização](./images/launch0.png)
 
 Ir para **Marcas**. Você está vendo a exibição **[!UICONTROL Propriedades]**. As propriedades listadas aqui são para gerenciamento de tutorial. Essas propriedades representam:
 
@@ -57,7 +63,7 @@ Algumas leituras adicionais para os interessados em entender melhor a Coleção 
 
 - [Guia do Usuário da Coleção de Dados da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)
 - [Tutorial Implementar a Adobe Experience Cloud com o SDK da web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR)
-- [Configurar permissões de usuário](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR)
+- [Configurar permissões de usuário](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [Documentação da API](https://developer.adobelaunch.com/api/)
 
 ## Próximas etapas
