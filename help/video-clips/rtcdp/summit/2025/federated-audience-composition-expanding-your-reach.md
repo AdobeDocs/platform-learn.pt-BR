@@ -20,4 +20,4 @@ ht-degree: 0%
 Entenda como a Composição de público federado permite o marketing em tempo real ao integrar fontes de dados externas ao Real-Time CDP.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-your-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458250/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459906/?learn=on&enablevpops=true&captions=por_br)

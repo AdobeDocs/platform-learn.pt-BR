@@ -20,4 +20,4 @@ ht-degree: 0%
 Explore como a Adobe usa o AEP para impulsionar a retenção e o envolvimento aproveitando insights orientados por dados e jornadas personalizadas do cliente.
 
 <!-- 62_S655_3442541_61_adobes-internal-use-of-aep-driving-retention-with-datadriven-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458264/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459654/?learn=on&enablevpops=true&captions=por_br)

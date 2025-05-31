@@ -20,4 +20,4 @@ ht-degree: 0%
 Descubra como a Adobe Experience Platform habilita jornadas conectadas do cliente por meio de dados, conteúdo e ativação entre canais.
 
 <!-- 62_S655_3442541_51_adobe-experience-platform-building-connected-customer-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458326/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459631/?learn=on&enablevpops=true&captions=por_br)

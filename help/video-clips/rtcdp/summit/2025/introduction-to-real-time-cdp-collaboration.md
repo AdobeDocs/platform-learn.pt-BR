@@ -20,4 +20,4 @@ ht-degree: 0%
 Descubra como a Real-Time CDP Collaboration da Adobe simplifica as salas de limpeza de dados para profissionais de marketing, permitindo a descoberta, ativação e medição ininterruptas do público-alvo.
 
 <!-- 65_OS511_3442426_34_introduction-to-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458279/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459971/?learn=on&enablevpops=true&captions=por_br)

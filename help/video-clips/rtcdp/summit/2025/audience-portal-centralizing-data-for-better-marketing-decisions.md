@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba como o Portal de público-alvo no Adobe Real-Time CDP unifica os dados do cliente, permitindo o gerenciamento avançado de público-alvo e a ativação em tempo real.
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459687/?learn=on&enablevpops=true&captions=por_br)

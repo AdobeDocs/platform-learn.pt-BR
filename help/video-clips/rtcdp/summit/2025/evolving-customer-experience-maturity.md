@@ -20,4 +20,4 @@ ht-degree: 0%
 Explore o rastreamento, a caminhada, a estrutura de execução para promover a personalização de dados, público-alvo, jornada, medição e conteúdo.
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460175/?learn=on&enablevpops=true&captions=por_br)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba mais sobre o processo passo a passo de integração de públicos, colaboração com editores e ativação de campanhas usando o Real-Time CDP Collaboration da Adobe.
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459950/?learn=on&enablevpops=true&captions=por_br)

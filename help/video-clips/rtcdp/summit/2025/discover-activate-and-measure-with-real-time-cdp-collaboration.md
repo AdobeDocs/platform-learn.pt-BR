@@ -20,4 +20,4 @@ ht-degree: 0%
 Conheça os principais recursos do Real-Time CDP Collaboration da Adobe: descoberta de públicos-alvo, ativação segura e medição de desempenho.
 
 <!-- 72_OS511_3442426_179_discover-activate-and-measure-with-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458275/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460174/?learn=on&enablevpops=true&captions=por_br)

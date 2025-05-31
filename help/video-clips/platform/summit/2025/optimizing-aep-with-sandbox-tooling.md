@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba como usar ferramentas de sandbox para simplificar fluxos de trabalho e habilitar a colaboração entre equipes no Adobe Experience Platform.
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460557/?learn=on&enablevpops=true&captions=por_br)

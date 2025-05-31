@@ -20,4 +20,4 @@ ht-degree: 0%
 Explore como a Adobe usa insights orientados por dados e o AJO para aprimorar a integração de membros e a retenção de unidades.
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459643/?learn=on&enablevpops=true&captions=por_br)

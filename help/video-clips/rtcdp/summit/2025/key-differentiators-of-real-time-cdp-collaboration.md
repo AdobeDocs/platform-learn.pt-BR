@@ -20,4 +20,4 @@ ht-degree: 0%
 Explore os recursos exclusivos do Real-Time CDP Collaboration da Adobe, incluindo a interface amigável para o profissional de marketing, a interoperabilidade e o design centrado na privacidade.
 
 <!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460546/?learn=on&enablevpops=true&captions=por_br)

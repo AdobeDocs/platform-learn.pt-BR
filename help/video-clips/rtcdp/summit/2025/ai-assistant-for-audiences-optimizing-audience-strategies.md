@@ -20,4 +20,4 @@ ht-degree: 0%
 Veja como o Assistente de IA para públicos-alvo ajuda a identificar segmentos de alto valor, otimizar estratégias de público-alvo e economizar tempo.
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459665/?learn=on&enablevpops=true&captions=por_br)

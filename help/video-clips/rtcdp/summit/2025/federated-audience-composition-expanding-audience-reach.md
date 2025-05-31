@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba como a Composição de público-alvo federado permite conectar data warehouses externos à Real-Time CDP para marketing no momento.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459796/?learn=on&enablevpops=true&captions=por_br)

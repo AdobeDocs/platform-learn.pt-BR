@@ -20,4 +20,4 @@ ht-degree: 0%
 Entenda a importância de executar e operar estratégias, incluindo governança, monitoramento e medição de ROI, para dimensionar o AEP de forma eficaz.
 
 <!-- 62_S655_3442541_289_run-and-operate-strategies-for-aep-at-scale -->
->[!VIDEO](https://video.tv.adobe.com/v/3458330/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3461141/?learn=on&enablevpops=true&captions=por_br)

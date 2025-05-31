@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba como o Portal de público-alvo no Real-Time CDP ajuda a unificar os dados do cliente, gerenciar públicos-alvo e habilitar a ativação em tempo real.
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459742/?learn=on&enablevpops=true&captions=por_br)

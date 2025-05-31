@@ -20,4 +20,4 @@ ht-degree: 0%
 Descubra uma estrutura simples de três fases para criar, dimensionar e otimizar estratégias de público-alvo usando o Real-Time CDP.
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462995/?learn=on&enablevpops=true&captions=por_br)

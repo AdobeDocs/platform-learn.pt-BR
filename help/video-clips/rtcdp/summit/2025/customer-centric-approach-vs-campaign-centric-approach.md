@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba como fazer a transição de uma abordagem centrada em campanhas para uma centrada no cliente para impulsionar o crescimento sustentável e melhorar as experiências do cliente.
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460105/?learn=on&enablevpops=true&captions=por_br)

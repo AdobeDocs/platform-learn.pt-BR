@@ -20,4 +20,4 @@ ht-degree: 0%
 Explore as variações entre estratégias de sandbox única e múltipla para gerenciar dados e fluxos de trabalho no Adobe Experience Platform.
 
 <!-- 62_S601_3442532_179_single-vs-multisandbox-approach-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3458324/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462662/?learn=on&enablevpops=true&captions=por_br)
