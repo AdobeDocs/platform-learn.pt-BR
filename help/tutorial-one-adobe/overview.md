@@ -3,10 +3,10 @@ title: Visão geral - Tutorial técnico abrangente - Uma Adobe
 description: Tutorial técnico completo - Uma Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 3%
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
@@ -34,22 +34,16 @@ Este tutorial não se concentra apenas nos aplicativos da Adobe, mas leva em con
 - Snowflake
 - ...
 
-## Pré-requisitos
+## Mostre seu conhecimento
 
-Se você quiser fazer este tutorial usando sua própria instância do Adobe Experience Cloud, os seguintes aplicativos precisarão ser provisionados em sua instância e você precisará acessar:
+![Adobe Qualificado](./assets/images/badge.png){width="100px" align="left"}
 
-- Adobe Firefly
-- Adobe Photoshop, E/S de estrutura do Adobe, Preparo do Adobe Substance 3D
-- Adobe Workfront
-- Adobe Workfront Fusion
-- Adobe Experience Platform, Coleção de dados da Adobe Experience Platform
-- Acesso ao sistema de demonstração próximo: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+Depois de concluir alguns módulos neste tutorial, você pode fazer um exame de Credenciais da Adobe para receber uma medalha **Qualificada pela Adobe**.
 
-## Conclusão e certificação
-
-Este tutorial faz parte de um curso de certificação da Adobe. Você pode se inscrever no curso junto com este tutorial acessando [https://certification.adobe.com](https://certification.adobe.com).
-
-Para cada módulo que você concluir usando o tutorial abaixo, você precisa enviar uma prova de conclusão como indicado [aqui](./completion.md).
+- Ao concluir o módulo [Visão Geral do Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}, você estará pronto para passar no **Adobe Qualified** exame **AD2-E901**:
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
+- Ao concluir o módulo [Automação de Fluxo de Trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, você estará pronto para passar no **exame** XXX **do {Adobe Qualified**:
+  [TBC](https://certification.adobe.com/certification/services-qualified-credential).
 
 ## Status do conteúdo
 
@@ -61,11 +55,11 @@ Para verificar o status do conteúdo abaixo, vá para a [página de status](./st
 
 Neste módulo fundamental, você preparará tudo para poder acessar e usar o ambiente de demonstração.
 
-### 1. Fluxo de trabalho e planejamento
+### &#x200B;1. Fluxo de trabalho e planejamento
 
-### 2. Criação e produção
+### &#x200B;2. Criação e produção
 
-[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Visão geral do Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 Neste módulo, você usará APIs do Adobe Firefly Services, APIs do Photoshop e Serviços de Armazenamento do Microsoft Azure para gerar imagens e armazená-las de forma programática.
 
@@ -77,7 +71,7 @@ Neste módulo fundamental, você usará o Adobe Workfront Fusion para automatiza
 
 Neste módulo fundamental, você usará o Adobe Express para criar imagens e vídeos e compartilhará esses ativos em direção ao ecossistema mais amplo da Adobe Experience Cloud.
 
-### 3. Gestão de ativos
+### &#x200B;3. Gestão de ativos
 
 [1.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
@@ -87,7 +81,7 @@ Neste módulo fundamental, você configurará seu Programa Adobe Experience Mana
 
 Neste módulo fundamental, você configurará e usará o Adobe Workfront para gerenciar fluxos de aprovação e usará integrações com o Adobe Experience Manager Assets, Universal Editor, Photoshop e muito mais.
 
-### 4. Entrega e ativação
+### &#x200B;4. Entrega e ativação
 
 #### Coleção de dados
 
@@ -151,7 +145,7 @@ Neste módulo, você aprenderá tudo o que há para saber sobre o Journey Optimi
 
 Neste módulo, você aprenderá a configurar e usar os Serviços de tradução no Adobe Journey Optimizer para localizar suas mensagens para seus clientes.
 
-### 5. Relatórios e insights
+### &#x200B;5. Relatórios e insights
 
 #### Adobe Customer Journey Analytics
 

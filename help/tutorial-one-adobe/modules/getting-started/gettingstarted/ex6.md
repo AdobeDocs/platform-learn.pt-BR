@@ -4,9 +4,9 @@ description: Introdução - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ Em seguida, selecione **Criar novo projeto**.
 ![Nova integração do Adobe I/O](./images/iocomp.png){zoomable="yes"}
 
 ### API do Firefly Services
+
+>[!IMPORTANT]
+>
+>Dependendo do caminho de aprendizado selecionado, talvez você não tenha acesso à API do Firefly Services. Você só terá acesso à API do Firefly Services se estiver no Caminho de Aprendizado **Firefly**, **Workfront Fusion**, **ALL** ou quando estiver participando de um **workshop presencial**. Você pode pular esta etapa se não estiver em um desses caminhos de aprendizagem.
 
 Você deverá ver isso. Selecione **+ Adicionar ao Projeto** e escolha **API**.
 
@@ -59,6 +63,10 @@ Você deverá ver isso.
 
 ### API do Photoshop Services
 
+>[!IMPORTANT]
+>
+>Dependendo do caminho de aprendizado selecionado, talvez você não tenha acesso à API do Photoshop Services. Você só terá acesso à API do Photoshop Services se estiver no Caminho de Aprendizado **Firefly**, **Workfront Fusion**, **ALL** ou quando estiver participando de um **workshop presencial**. Você pode pular esta etapa se não estiver em um desses caminhos de aprendizagem.
+
 Selecione **+ Adicionar ao Projeto** e **API**.
 
 ![Armazenamento do Azure](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ Você deverá ver isso.
 ![Nova integração do Adobe I/O](./images/ps7.png){zoomable="yes"}
 
 ### API do Adobe Experience Platform
+
+>[!IMPORTANT]
+>
+>Dependendo do caminho de aprendizado selecionado, talvez você não tenha acesso à API do Adobe Experience Platform. Você só terá acesso à API do Adobe Experience Platform se estiver no caminho de aprendizado **AEP + Aplicativos**, **TODOS** ou quando estiver participando de um **workshop presencial**. Você pode pular esta etapa se não estiver em um desses caminhos de aprendizagem.
 
 Selecione **+ Adicionar ao Projeto** e **API**.
 
