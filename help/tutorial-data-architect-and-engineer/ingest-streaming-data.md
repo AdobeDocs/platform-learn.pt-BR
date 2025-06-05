@@ -176,7 +176,7 @@ Agora criaremos uma regra para enviar dados para a Platform. Uma regra é uma co
 1. Atribua um nome à regra `All Pages - Library Loaded`
 1. Em **[!UICONTROL Eventos]**, selecione o botão **[!UICONTROL Adicionar]**
    ![Nomear a regra e adicionar um evento](assets/websdk-property-nameRule.png)
-1. Use a **[!UICONTROL Extensão de****do {Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
+1. Use a **[!UICONTROL Extensão de**&#x200B;**do &lbrace;Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
 1. Selecione **[!UICONTROL Manter alterações]** para retornar à tela de regra principal
    ![Adicionar o evento de biblioteca carregada](assets/websdk-property-addEvent.png)
 1. Deixe **[!UICONTROL Condições]** em branco, pois queremos que esta regra seja acionada em todas as páginas, de acordo com o nome que demos a ela
@@ -348,7 +348,7 @@ Agora mapearemos nosso nome de página para o Web SDK.
 >[!IMPORTANT]
 >
 >Para concluir essa tarefa, precisamos garantir que seu usuário primeiro tenha acesso à sandbox de produção. Se você ainda não tiver acesso à sandbox de Produção de um perfil de produto diferente, abra rapidamente seu perfil do `Luma Tutorial Platform` e adicione o item de permissão **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]**. Depois de fazer isso, faça um SHIFT-Reload na página Elementos de dados para limpar seu cache
->>![Adicionar a sandbox de produção](assets/websdk-property-permissionToLoadSchema.png)
+>&#x200B;>![Adicionar a sandbox de produção](assets/websdk-property-permissionToLoadSchema.png)
 
 Na página **[!UICONTROL Elementos de Dados]**:
 
