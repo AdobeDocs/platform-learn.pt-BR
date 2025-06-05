@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: e26f2add184031fd95561bd560b24ad73bb73d01
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '3272'
 ht-degree: 0%
@@ -31,9 +31,9 @@ Há duas tarefas principais que devem ser concluídas na interface da Coleção 
 
 Antes de começar os exercícios, assista a estes dois pequenos vídeos para saber mais sobre a assimilação de dados por transmissão e o Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31683?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37265?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -176,7 +176,7 @@ Agora criaremos uma regra para enviar dados para a Platform. Uma regra é uma co
 1. Atribua um nome à regra `All Pages - Library Loaded`
 1. Em **[!UICONTROL Eventos]**, selecione o botão **[!UICONTROL Adicionar]**
    ![Nomear a regra e adicionar um evento](assets/websdk-property-nameRule.png)
-1. Use a **[!UICONTROL Extensão de**&#x200B;**do &lbrace;Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
+1. Use a **[!UICONTROL Extensão de****do {Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
 1. Selecione **[!UICONTROL Manter alterações]** para retornar à tela de regra principal
    ![Adicionar o evento de biblioteca carregada](assets/websdk-property-addEvent.png)
 1. Deixe **[!UICONTROL Condições]** em branco, pois queremos que esta regra seja acionada em todas as páginas, de acordo com o nome que demos a ela
@@ -255,7 +255,7 @@ O Experience Platform Debugger é uma extensão disponível para os navegadores 
 
 Se você nunca usou o Debugger antes (e este é diferente do Adobe Experience Cloud Debugger mais antigo), assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/36163?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra o site Luma
 
@@ -348,7 +348,7 @@ Agora mapearemos nosso nome de página para o Web SDK.
 >[!IMPORTANT]
 >
 >Para concluir essa tarefa, precisamos garantir que seu usuário primeiro tenha acesso à sandbox de produção. Se você ainda não tiver acesso à sandbox de Produção de um perfil de produto diferente, abra rapidamente seu perfil do `Luma Tutorial Platform` e adicione o item de permissão **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]**. Depois de fazer isso, faça um SHIFT-Reload na página Elementos de dados para limpar seu cache
->![Adicionar a sandbox de produção](assets/websdk-property-permissionToLoadSchema.png)
+>>![Adicionar a sandbox de produção](assets/websdk-property-permissionToLoadSchema.png)
 
 Na página **[!UICONTROL Elementos de Dados]**:
 
@@ -451,7 +451,7 @@ Para validar se a ID do CRM agora está sendo enviada pelo Web SDK:
 1. Abra o [site da Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. Mapeie-o para a propriedade de tag usando o Depurador, de acordo com as instruções anteriores
 1. Selecione o link **Logon** na parte superior direita do site Luma
-1. Fazer logon usando as credenciais `test@adobe.com`/`test`
+1. Fazer logon usando as credenciais `test@test.com`/`test`
 1. Depois de autenticada, inspecione a chamada do Experience Platform Web SDK no Depurador (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Solicitações de Rede]** > **[!UICONTROL eventos]** da solicitação mais recente) e você deverá ver o `lumaCrmId`:
    ![Validar a identidade no Depurador](assets/websdk-debugger-confirmIdentity.png)
 1. Procure o perfil de usuário usando o namespace e o valor da ECID novamente. No perfil, você verá a ID do CRM e também a ID de fidelidade, além dos detalhes do perfil, como o nome e o número de telefone. Todas as identidades e dados foram compilados em um único perfil do cliente em tempo real!

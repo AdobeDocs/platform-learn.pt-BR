@@ -1,9 +1,9 @@
 ---
 title: Adicionar o Adobe Target com tags
-description: Saiba como implementar o Adobe Target usando tags com at.js, uma solicitação de carregamento de página, parâmetros, uma solicitação de pedido e código personalizado do cabeçalho/rodapé. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
+description: Saiba como implementar o Adobe Target usando tags com at.js, uma solicitação de carregamento de página, parâmetros, uma solicitação de pedido e código personalizado do cabeçalho/rodapé. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '4252'
 ht-degree: 68%
@@ -12,7 +12,7 @@ ht-degree: 68%
 
 # Adicionar o Adobe Target
 
-Nesta lição, implementaremos a extensão [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=pt-BR) com uma solicitação de carregamento de página e parâmetros personalizados.
+Nesta lição, implementaremos a extensão [Adobe Target](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html) com uma solicitação de carregamento de página e parâmetros personalizados.
 
 O [Adobe Target](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html) é a solução da Adobe Experience Cloud que oferece tudo o que você precisa para ajustar e personalizar a experiência do cliente e maximizar a receita em sites da Web e para dispositivos móveis, aplicativos, redes sociais e outros canais digitais.
 
@@ -91,11 +91,11 @@ Recarregue sua página de exemplo. Você observará que a página ficará oculta
 * `body {opacity: 0 !important}` especifica a definição de CSS a ser usada para a pré-ocultação até o Target ser carregado. Por padrão, o corpo inteiro fica oculto. Se você tiver uma estrutura DOM consistente com um elemento de contêiner de fácil identificação que abranja todo o conteúdo em sua navegação, e se nunca quiser testar ou personalizar sua navegação, você poderá usar essa configuração para limitar a pré-ocultação a esse elemento do contêiner.
 * `3000` que especifica a configuração de tempo limite para a pré-ocultação. Por padrão, se o Target não tiver sido carregado em três segundos, a página será exibida. Esse cenário deverá ser extremamente raro.
 
-Para obter mais detalhes e obter o trecho de pré-ocultação unificado, consulte a [extensão do Adobe Target com uma implantação assíncrona](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=pt-BR#adobe-target-extension-with-an-asynchronous-deployment).
+Para obter mais detalhes e obter o trecho de pré-ocultação unificado, consulte a [extensão do Adobe Target com uma implantação assíncrona](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment).
 
 ## Adicionar a extensão do Target
 
-A extensão do Adobe Target suporta implementações do lado do cliente usando o SDK JavaScript do Target para a Web moderna, o at.js. Os clientes que ainda usam a biblioteca antiga do Target, o mbox.js, [devem atualizar para o at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html?lang=pt-BR) para usar as tags.
+A extensão do Adobe Target suporta implementações do lado do cliente usando o SDK JavaScript do Target para a Web moderna, o at.js. Os clientes que ainda usam a biblioteca antiga do Target, o mbox.js, [devem atualizar para o at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) para usar as tags.
 
 A extensão do Target v2 consiste em duas partes principais:
 
@@ -208,9 +208,9 @@ Parabéns! Você implementou o Target!
 
 Transmitir parâmetros na solicitação do Target adiciona recursos avançados as suas atividades de direcionamento, de testes e de personalização. A extensão de tag fornece duas ações para transmitir parâmetros:
 
-1. `Add Params to Page Load Request`, que adiciona parâmetros às solicitações de carregamento de página (equivalente ao método [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=pt-BR))
+1. `Add Params to Page Load Request`, que adiciona parâmetros às solicitações de carregamento de página (equivalente ao método [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html))
 
-1. `Add Params to All Requests`, que adiciona parâmetros em todas as solicitações do Target, por exemplo, a solicitação de carregamento de página mais solicitações adicionais feitas a partir de ações de Código personalizado ou codificadas no site (equivalente ao método [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=pt-BR))
+1. `Add Params to All Requests`, que adiciona parâmetros em todas as solicitações do Target, por exemplo, a solicitação de carregamento de página mais solicitações adicionais feitas a partir de ações de Código personalizado ou codificadas no site (equivalente ao método [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html))
 
 Essas ações podem ser usadas *antes* da ação `Load Target` e podem definir diferentes parâmetros em páginas diferentes com base nas configurações de regras. Use o recurso de ordenação de regras usado ao definir IDs do cliente com o Serviço de identidade para definir parâmetros adicionais no evento `Library Loaded` antes da regra disparar a solicitação de carregamento de página.
 >[!TIP]
@@ -277,7 +277,7 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 
 ### Parâmetros do perfil
 
-Semelhante aos parâmetros de solicitação, os parâmetros do perfil também são transmitidos por meio da solicitação do Target. No entanto, os parâmetros de perfil são armazenados no banco de dados de perfis de visitantes do Target e persistem pela [duração do perfil do visitante](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=pt-BR). É possível defini-los em uma página do seu site e usá-los em atividades do Target em outra página. Este é um exemplo de um site de automóveis. Quando um visitante acessa uma página de veículos, é possível transmitir um parâmetro de perfil &quot;profile.lastViewed=sportscar&quot; para registrar o interesse do cliente nesse veículo específico. Quando o visitante navega para outras páginas que não sejam de veículos, você pode direcionar o conteúdo com base no último veículo visualizado.  Parâmetros de perfil são ideais para atributos que raramente mudam ou que estão disponíveis apenas em determinadas páginas
+Semelhante aos parâmetros de solicitação, os parâmetros do perfil também são transmitidos por meio da solicitação do Target. No entanto, os parâmetros de perfil são armazenados no banco de dados de perfis de visitantes do Target e persistem pela [duração do perfil do visitante](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html). É possível defini-los em uma página do seu site e usá-los em atividades do Target em outra página. Este é um exemplo de um site de automóveis. Quando um visitante acessa uma página de veículos, é possível transmitir um parâmetro de perfil &quot;profile.lastViewed=sportscar&quot; para registrar o interesse do cliente nesse veículo específico. Quando o visitante navega para outras páginas que não sejam de veículos, você pode direcionar o conteúdo com base no último veículo visualizado.  Parâmetros de perfil são ideais para atributos que raramente mudam ou que estão disponíveis apenas em determinadas páginas
 
 Você não vai transmitir parâmetros de perfil neste tutorial, mas o fluxo de trabalho é quase idêntico ao que você fez ao transmitir o parâmetro `pageName`. A diferença é que você precisa dar nomes de perfil aos parâmetros de perfil com um prefixo `profile.`. É assim que um parâmetro de perfil chamado &quot;userType&quot; seria na ação `Add Params to Page Load Request`:
 
@@ -285,7 +285,7 @@ Você não vai transmitir parâmetros de perfil neste tutorial, mas o fluxo de t
 
 ### Parâmetros de entidade
 
-Parâmetros de entidade são parâmetros especiais usados em [implementações do Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=pt-BR) por três motivos principais:
+Parâmetros de entidade são parâmetros especiais usados em [implementações do Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html) por três motivos principais:
 
 1. Como uma chave para acionar as recomendações do produto. Por exemplo, ao usar um algoritmo de recomendações como o &quot;Pessoas que visualizaram o Produto X, também visualizaram Y&quot;, &quot;X&quot; é a &quot;chave&quot; da recomendação. Normalmente, é o SKU (`entity.id`) ou a categoria (`entity.categoryId`) do produto que o visitante está visualizando atualmente.
 1. Para coletar o comportamento do visitante e incrementar os algoritmos de recomendações, como &quot;Produtos visualizados recentemente&quot; ou &quot;Produtos mais visualizados&quot;
@@ -297,7 +297,7 @@ Você não precisa transmitir nenhum parâmetro de entidade neste tutorial, mas 
 
 ### Adicionar parâmetros de ID do cliente
 
-A coleta de IDs do cliente com o Serviço de identidade da Adobe Experience Platform facilita a importação de dados do CRM para o Target usando o recurso [Atributos do cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=pt-BR) da Adobe Experience Cloud. Ela também permite a identificação de [visitantes em vários dispositivos](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=pt-BR), permitindo manter uma experiência de usuário consistente à medida que seus clientes alternam entre um laptop e um dispositivo móvel.
+A coleta de IDs do cliente com o Serviço de identidade da Adobe Experience Platform facilita a importação de dados do CRM para o Target usando o recurso [Atributos do cliente](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) da Adobe Experience Cloud. Ela também permite a identificação de [visitantes em vários dispositivos](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html), permitindo manter uma experiência de usuário consistente à medida que seus clientes alternam entre um laptop e um dispositivo móvel.
 
 É imperativo definir a ID do cliente na ação `Set Customer IDs` do Serviço de identidade antes de acionar a solicitação de carregamento de página. Para esse fim, verifique se você tem os recursos a seguir no site:
 
@@ -320,7 +320,7 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 
    ![Seu ambiente de desenvolvimento de marcas mostrado no Depurador](images/switchEnvironments-debuggerOnWeRetail.png)
 
-1. Faça logon no site Luma usando as credenciais `test@adobe.com`/`test`
+1. Faça logon no site Luma usando as credenciais `test@test.com`/`test`
 1. Retorne à [página inicial do Luma](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Abra as ferramentas do desenvolvedor do seu navegador.
@@ -334,7 +334,7 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=pt-BR):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -349,7 +349,7 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 >
 >Isso é um exercício opcional para clientes do Target Premium.
 
-O token de propriedade é um parâmetro reservado usado com o recurso [Permissões de usuário empresarial](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=pt-BR) do Target Premium. É usado para definir diferentes propriedades digitais que membros distintos de uma organização da Experience Cloud possam receber diferentes permissões para cada propriedade. Por exemplo, você pode querer que um grupo de usuários possa configurar atividades do Target em seu site, mas não em seu aplicativo móvel.
+O token de propriedade é um parâmetro reservado usado com o recurso [Permissões de usuário empresarial](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) do Target Premium. É usado para definir diferentes propriedades digitais que membros distintos de uma organização da Experience Cloud possam receber diferentes permissões para cada propriedade. Por exemplo, você pode querer que um grupo de usuários possa configurar atividades do Target em seu site, mas não em seu aplicativo móvel.
 
 As propriedades do Target são análogas às propriedades de tags e aos conjuntos de relatórios do Analytics. Uma empresa com várias marcas, sites e equipes de marketing pode usar uma propriedade do Target, de tag e um conjunto de relatórios do Analytics diferentes para cada site ou aplicativo móvel. As propriedades das tags são diferenciadas por seus códigos incorporados, os conjuntos de relatórios do Analytics são diferenciados por sua ID do conjunto de relatórios e as propriedades do Target são diferenciadas pelo parâmetro de token de propriedade.
 
@@ -430,7 +430,7 @@ A solicitação de confirmação do pedido é um tipo especial de solicitação 
 
 A prática recomendada é usar uma solicitação de confirmação de pedido em todos os funis de pedido, mesmo em sites que não sejam de varejo. Por exemplo, os sites de geração de leads geralmente possuem funis de leads com uma “id de lead” exclusiva gerada no fim. Esses sites devem implementar uma solicitação de pedido, usando um valor estático (como &quot;1&quot;) para o orderTotal.
 
-Os clientes que usam a integração Analytics for Target (A4T) para a maioria de seus relatórios também podem querer implementar a solicitação de pedido se estiverem usando atividades do Automated Personalization, que não são compatíveis com o A4T. Além disso, a solicitação de pedido é um elemento essencial em implementações do Recommendations, alimentando algoritmos com base no comportamento de compra. Para obter as informações mais recentes sobre o suporte ao A4T, consulte [a documentação](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR#section_F487896214BF4803AF78C552EF1669AA).
+Os clientes que usam a integração Analytics for Target (A4T) para a maioria de seus relatórios também podem querer implementar a solicitação de pedido se estiverem usando atividades do Automated Personalization, que não são compatíveis com o A4T. Além disso, a solicitação de pedido é um elemento essencial em implementações do Recommendations, alimentando algoritmos com base no comportamento de compra. Para obter as informações mais recentes sobre o suporte ao A4T, consulte [a documentação](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 A solicitação de confirmação de pedido deve ser acionada a partir de uma regra que é acionada somente na página ou evento de confirmação do pedido. Geralmente, pode ser combinado com uma regra que define o evento de compra do Adobe Analytics. Ela deve ser configurada usando a ação Código personalizado da extensão principal, usando os elementos de dados apropriados para definir os parâmetros orderId, orderTotal e productPurchasedId.
 
@@ -562,14 +562,14 @@ Por enquanto, os parâmetros personalizados transmitidos com solicitações at.j
 
 ### Solicitações personalizadas
 
-Há raras ocasiões em que você precisa fazer solicitações do Target diferentes das solicitações de carregamento de página e de confirmação de pedido. Por exemplo, às vezes, os dados importantes que você gostaria de usar na personalização não são definidos na página antes dos códigos incorporados da tag. Eles podem ser codificados na parte inferior da página ou retornados de uma solicitação assíncrona de API. Esses dados podem ser enviados para o Target usando uma solicitação adicional, embora não seja ideal usar essa solicitação para entrega de conteúdo, já que a página já está visível. Esses dados podem ser usados para aprimorar o perfil do visitante para uso posterior (usando parâmetros de perfil) ou para preencher o catálogo do Recommendations.
+Há raras ocasiões em que você precisa fazer solicitações do Target diferentes das solicitações de carregamento de página e de confirmação de pedido. Por exemplo, às vezes, os dados importantes que você gostaria de usar na personalização não são definidos na página antes dos códigos incorporados da tag. Eles podem ser codificados na parte inferior da página ou retornados de uma solicitação assíncrona de API. Esses dados podem ser enviados para o Target usando uma solicitação adicional, embora não seja ideal usar essa solicitação para entrega de conteúdo, já que a página já está visível. Esses dados podem ser usados para aprimorar o perfil do visitante para uso posterior (usando parâmetros de perfil) ou para preencher o catálogo de recomendações.
 
-Nessas circunstâncias, use a ação Código personalizado na extensão principal para acionar uma solicitação usando os métodos [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=pt-BR)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=pt-BR) e [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=pt-BR). Isso é muito semelhante ao que você fez na [Solicitação de confirmação de pedido](#order-confirmation-request) exercício, mas você usará um nome de solicitação diferente e não usará os parâmetros de pedido especiais. Certifique-se de usar a ação **[!UICONTROL Carregar Target]** antes de fazer solicitações do Target a partir do código personalizado.
+Nessas circunstâncias, use a ação Código personalizado na extensão principal para acionar uma solicitação usando os métodos [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) e [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html). Isso é muito semelhante ao que você fez na [Solicitação de confirmação de pedido](#order-confirmation-request) exercício, mas você usará um nome de solicitação diferente e não usará os parâmetros de pedido especiais. Certifique-se de usar a ação **[!UICONTROL Carregar Target]** antes de fazer solicitações do Target a partir do código personalizado.
 
 ## Cabeçalho da biblioteca e Rodapé da biblioteca
 
 A tela Editar at.js na interface do usuário do Target possui locais em que você pode colar o JavaScript personalizado que será executado imediatamente antes ou depois do arquivo at.js. O cabeçalho da biblioteca às vezes é usado para substituir configurações do at.js por meio da função
-[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=pt-BR) ou para transmitir dados de terceiros usando o recurso [Provedores de dados](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=pt-BR). Às vezes, o rodapé da biblioteca é usado para adicionar ouvintes de eventos [personalizados at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=pt-BR).
+[targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) ou para transmitir dados de terceiros usando o recurso [Provedores de dados](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html). Às vezes, o rodapé da biblioteca é usado para adicionar ouvintes de eventos [personalizados at.js](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html).
 
 Para replicar esse recurso em tags, use a ação Código personalizado na extensão principal e sequencie a ação antes (Cabeçalho da biblioteca) ou depois (Rodapé da biblioteca) da ação Carregar meta. Isso pode ser feito na mesma regra da ação `Load Target` (como mostrado abaixo) ou em regras separadas, com eventos ou configurações de pedido que são acionados de maneira confiável antes ou depois da regra que contém `Load Target`:
 
@@ -577,8 +577,8 @@ Para replicar esse recurso em tags, use a ação Código personalizado na extens
 
 Para saber mais sobre os casos de uso para cabeçalhos e rodapés personalizados, consulte os seguintes recursos:
 
-* [Usar dataProviders para integrar dados de terceiros ao Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=pt-BR)
-* [Implementar de dataProviders para integrar dados de terceiros ao Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=pt-BR)
-* [Usar Tokens de resposta e Eventos personalizados do at.js com o Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=pt-BR)
+* [Usar dataProviders para integrar dados de terceiros ao Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
+* [Implementar de dataProviders para integrar dados de terceiros ao Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
+* [Usar Tokens de resposta e Eventos personalizados do at.js com o Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
 [Próximo: &quot;Adicionar o Adobe Analytics&quot; >](analytics.md)

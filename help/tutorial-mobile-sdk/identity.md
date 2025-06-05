@@ -1,10 +1,10 @@
 ---
-title: Coletar dados de identidade em um aplicativo móvel com SDK móvel
+title: Coletar dados de identidade em um aplicativo móvel com o Mobile SDK
 description: Saiba como coletar dados de identidade em um aplicativo móvel.
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Os namespaces de identidade são componentes do [Serviço de Identidade](https:/
 
 >[!NOTE]
 >
->O SDK móvel gera uma identidade exclusiva em seu próprio namespace, chamada de ID de Experience Cloud (ECID) quando o aplicativo é instalado. Essa ECID é armazenada na memória persistente no dispositivo móvel e é enviada com cada ocorrência. A ECID é removida quando o usuário desinstala o aplicativo ou quando o usuário define o status de privacidade global do SDK móvel como recusa. No aplicativo Luma de amostra, você deve remover e reinstalar o aplicativo para criar um novo perfil com sua própria ECID exclusiva.
+>O Mobile SDK gera uma identidade exclusiva em seu próprio namespace, chamada Experience Cloud ID (ECID) quando o aplicativo é instalado. Essa ECID é armazenada na memória persistente no dispositivo móvel e é enviada com cada ocorrência. A ECID é removida quando o usuário desinstala o aplicativo ou define o status de privacidade global do Mobile SDK como recusa. No aplicativo Luma de amostra, você deve remover e reinstalar o aplicativo para criar um novo perfil com sua própria ECID exclusiva.
 
 
 Para criar um novo namespace de identidade:
@@ -95,7 +95,7 @@ Você deseja atualizar a identidade padrão (email) e a identidade personalizada
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. Envia o objeto `IdentityItem` como parte da chamada de API `Identity.updateIdentities` para o Edge Network.
+   1. Envia o objeto `IdentityItem` como parte da chamada de API `Identity.updateIdentities` para a Edge Network.
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
@@ -116,7 +116,7 @@ Você deseja atualizar a identidade padrão (email) e a identidade personalizada
 
 ## Remover uma identidade
 
-Você pode usar a API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para remover a identidade do mapa de identidade armazenado do lado do cliente. A extensão Identity interrompe o envio do identificador para o Edge Network. O uso dessa API não remove o identificador do gráfico de identidade do lado do servidor. Consulte [Exibir gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=pt-BR) para obter mais informações sobre gráficos de identidade.
+Você pode usar a API [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) para remover a identidade do mapa de identidade armazenado do lado do cliente. A extensão Identity interrompe o envio do identificador para a Edge Network. O uso dessa API não remove o identificador do gráfico de identidade do lado do servidor. Consulte [Exibir gráficos de identidade](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) para obter mais informações sobre gráficos de identidade.
 
 1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** no navegador do Projeto Xcode e adicione o seguinte código à função `func removeIdentities(emailAddress: String, crmId: String)`:
 
@@ -125,7 +125,7 @@ Você pode usar a API [`Identity.removeIdentity`](https://developer.adobe.com/cl
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** no navegador do Projeto Xcode e localize o código a ser executado ao selecionar o botão **[!UICONTROL Logout]**. Adicione o seguinte código:
@@ -136,11 +136,11 @@ Você pode usar a API [`Identity.removeIdentity`](https://developer.adobe.com/cl
    ```
 
 
-## Validar com garantia
+## Validar com o Assurance
 
-1. Revise a seção [instruções de configuração](assurance.md#connecting-to-a-session) para conectar seu simulador ou dispositivo ao Assurance.
+1. Revise a seção [instruções de instalação](assurance.md#connecting-to-a-session) para conectar seu simulador ou dispositivo ao Assurance.
 1. No aplicativo Luma
-   1. Selecione a guia **[!UICONTROL Início]** e mova o ícone Garantia para a esquerda.
+   1. Selecione a guia **[!UICONTROL Início]** e mova o ícone do Assurance para a esquerda.
    1. Selecione o Ícone <img src="assets/login.png" width="15" /> na parte superior direita.
 
       <img src="./assets/identity1.png" width="300">
@@ -152,13 +152,13 @@ Você pode usar a API [`Identity.removeIdentity`](https://developer.adobe.com/cl
       <img src="./assets/identity2.png" width="300">
 
 
-1. Procure na interface da Web do Assurance o evento **[!UICONTROL Identidades de Atualização de Identidade da Edge]** do fornecedor **[!UICONTROL com.adobe.griffon.mobile]**.
+1. Procure na interface da Web do Assurance o evento **[!UICONTROL Identidades de Atualização de Identidade do Edge]** do fornecedor **[!UICONTROL com.adobe.griffon.mobile]**.
 1. Selecione o evento e examine os dados no objeto **[!UICONTROL ACPExtensionEventData]**. Você deve ver as identidades atualizadas.
    ![validar atualização de identidades](assets/identity-validate-assurance.png)
 
 ## Validar com gráfico de identidade
 
-Depois de concluir as etapas na [lição de Experience Platform](platform.md), você poderá confirmar a captura de identidade no visualizador de gráficos de identidade de Plataformas:
+Depois de concluir as etapas da [lição do Experience Platform](platform.md), você poderá confirmar a captura de identidade no visualizador de gráficos de identidade de Plataformas:
 
 1. Selecione **[!UICONTROL Identidades]** na interface da Coleção de Dados.
 1. Selecione **[!UICONTROL Gráfico de identidade]** na barra superior.
@@ -174,8 +174,8 @@ Depois de concluir as etapas na [lição de Experience Platform](platform.md), v
 
 >[!SUCCESS]
 >
->Agora você configurou o aplicativo para atualizar identidades no Edge Network e (quando configurado) com o Adobe Experience Platform.
+>Agora você configurou o aplicativo para atualizar identidades na Edge Network e (quando configurado) com o Adobe Experience Platform.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Próximo: **[Coletar dados de perfil](profile.md)**
