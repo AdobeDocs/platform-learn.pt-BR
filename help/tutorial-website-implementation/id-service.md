@@ -12,7 +12,7 @@ ht-degree: 65%
 
 # Adicionar o Serviço de identidade da Adobe Experience Platform
 
-Esta lição guiará você pelas etapas necessárias para implementar a extensão [Serviço de identidade da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) e enviar as IDs do cliente.
+Esta lição guiará você pelas etapas necessárias para implementar a extensão [Serviço de identidade da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=pt-BR) e enviar as IDs do cliente.
 
 O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR) define uma ID de visitante comum em todas as soluções da Adobe para potencializar recursos da Experience Cloud como o compartilhamento de público-alvo entre soluções. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com os sistemas de CRM (relacionamento com o cliente).
 
@@ -21,7 +21,7 @@ O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.co
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -93,11 +93,11 @@ A extensão do Serviço de identidade é uma das poucas extensões de tag que fa
 
       ![Verifique o cookie AMCV_](images/idservice-AMCVCookie.png)
 
-Pronto! Você adicionou sua primeira extensão! Para obter mais detalhes sobre as opções de configuração do Serviço de identidade, consulte [a documentação](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
+Pronto! Você adicionou sua primeira extensão! Para obter mais detalhes sobre as opções de configuração do Serviço de identidade, consulte [a documentação](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=pt-BR).
 
 ## Enviar IDs do cliente
 
-Em seguida, você enviará uma [ID do cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) ao Serviço de identidade. Isso permite que você [integre seu CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) à Experience Cloud e rastreie os visitantes em todos os dispositivos.
+Em seguida, você enviará uma [ID do cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=pt-BR) ao Serviço de identidade. Isso permite que você [integre seu CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) à Experience Cloud e rastreie os visitantes em todos os dispositivos.
 
 Na lição anterior, [Adicionar elementos de dados, regras e bibliotecas](add-data-elements-rules.md), você criou um elemento de dados e o usou em uma regra. Agora, você usará as mesmas técnicas para enviar uma ID do cliente quando o visitante é autenticado.
 
