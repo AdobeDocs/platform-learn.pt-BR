@@ -4,9 +4,9 @@ description: AEM CS - Bloco personalizado básico
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Salve as alterações.
 
 ![Bloquear](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Confirmar as alterações
+## 1.1.4.3 Confirme suas alterações
 
 Agora você fez várias alterações em seu projeto que precisam ser enviadas de volta ao repositório do GitHub. Para fazer isso, abra o **GitHub Desktop**.
 
@@ -169,7 +169,7 @@ No navegador, vá para a conta GitHub e para o repositório criado para o CitiSi
 
 ![Bloquear](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Adicionar o bloco a uma página
+## 1.1.4.4 Adicionar seu bloco a uma página
 
 Agora que seu bloco básico de cotações está definido e comprometido com o projeto CitiSignal, você pode adicionar um bloco **fiberoffer** a uma página existente.
 
@@ -249,7 +249,7 @@ Clique novamente em **Publicar**.
 
 Sua nova página foi publicada.
 
-## 1.1.4.5 Adicionar a nova página ao menu de navegação
+## 1.1.4.5 Adicionar sua nova página ao menu de navegação
 
 Na visão geral do AEM Sites, vá para **CitiSignal** > **Fragmentos** e marque a caixa de seleção para **Cabeçalho**. Clique em **Edit**.
 
@@ -259,7 +259,7 @@ Adicione uma opção de menu ao menu de navegação com o texto `Fiber`. Selecio
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-Digite isto para o **URL** `/us/en/citisignal-fiber` e clique no ícone **V** para confirmar.
+Digite isto para o **URL** `/us/en//citisignal-fiber` e clique no ícone **V** para confirmar.
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ Clique novamente em **Publicar**.
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
+Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en/` e/ou `main--citisignal--XXX.aem.live/us/en/`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
 Neste exemplo, o URL completo torna-se isto:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Você deverá ver isso. Clique em **Fibra**.
 

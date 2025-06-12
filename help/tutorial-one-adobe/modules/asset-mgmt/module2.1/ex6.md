@@ -4,9 +4,9 @@ description: AEM CS - Plug-in MarTech
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ O plug-in AEM MarTech ajuda a configurar rapidamente uma pilha completa do MarTe
 >
 >Este plug-in está disponível atualmente para clientes em colaboração com a Engenharia da AEM por meio de projetos de coinovação. Você pode encontrar mais informações em [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
-## 1.1.6.1 Adicionar o plug-in ao repositório
+## 1.1.6.1 Adicionar o plug-in ao seu repositório
 
 Navegue até a pasta que você está usando para o seu **citisignal** repositório GitHub. Clique com o botão direito no nome da pasta e selecione **Novo Terminal na Pasta**.
 
@@ -88,25 +88,25 @@ Em **const AUDIENCES = {...};**, cole o código abaixo:
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -315,7 +315,7 @@ Clique em **Origem de push** para enviar suas alterações para o repositório G
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## 1.1.6.4 Extensão ACDL na propriedade Tags
+## Extensão ACDL 1.1.6.4 na propriedade Tags
 
 Para que o plug-in AEM Edge Delivery Services MarTech funcione corretamente, é necessário adicionar a extensão do para
 
@@ -343,10 +343,10 @@ Suas alterações foram implantadas.
 
 ## 1.1.6.5 Enviar dados para o Adobe Experience Platform Edge Network
 
-Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
+Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en/` e/ou `main--citisignal--XXX.aem.live/us/en/`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
 Neste exemplo, o URL completo torna-se isto:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 >[!NOTE]
 >
@@ -366,17 +366,17 @@ Abra a carga e faça drill-down para o campo `events[0].xdm._experienceplatform.
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6 Exibir perfil do cliente na Adobe Experience Platform
+## 1.1.6.6 Exibir o perfil do cliente no Adobe Experience Platform
 
 Faça logon no Adobe Experience Platform acessando esta URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./images/home.png){zoomable="yes"}
+![Ingestão de dados](./images/home.png){zoomable="yes"}
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
-![Assimilação de dados](./images/sb1.png){zoomable="yes"}
+![Ingestão de dados](./images/sb1.png){zoomable="yes"}
 
 No menu esquerdo, vá para **Cliente** > **Perfis** > **Procurar**. Selecione o **Namespace de identidade** de **ECID** e depois a **ECID** que você copiou na etapa anterior. Clique em **Exibir**. Você deverá ver um perfil sendo exibido na lista. Clique para abri-lo.
 

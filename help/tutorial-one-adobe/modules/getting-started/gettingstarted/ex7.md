@@ -4,9 +4,9 @@ description: Introdução - Configuração do Postman
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 0%
 
 Vá para [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} e abra o projeto.
 
-![Nova integração do Adobe I/O](./images/iopr.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/iopr.png)
 
 Clique na API **Firefly - Firefly Services**. Em seguida, clique em **Baixar para Postman** e escolha **Servidor a Servidor OAuth** para baixar um ambiente do Postman.
 
-![Nova integração do Adobe I/O](./images/iopm.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/iopm.png)
 
 ## Autenticação do Postman para o Adobe I/O
 
 Baixe e instale a versão relevante do Postman para seu sistema operacional em [Downloads da Postman](https://www.postman.com/downloads/){target="_blank"}.
 
-![Nova integração do Adobe I/O](./images/getstarted.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/getstarted.png)
 
 Inicie o aplicativo.
 
@@ -39,41 +39,46 @@ No Postman, há dois conceitos: Ambientes e Coleções.
 
 O arquivo de ambiente contém todas as variáveis de ambiente mais ou menos consistentes. No ambiente, você encontrará informações como o IMSOrg do seu ambiente do Adobe, além de credenciais de segurança como a ID do cliente e outras. Você baixou o arquivo de ambiente durante a configuração do Adobe I/O anteriormente e ele é nomeado como **`oauth_server_to_server.postman_environment.json`**.
 
-A coleção contém várias solicitações de API que podem ser usadas. Usaremos 2 coleções
+A coleção contém várias solicitações de API que podem ser usadas. Você usará as coleções abaixo:
 
 - 1 coleção para autenticação no Adobe I/O
-- 1 Coleta para os exercícios neste módulo
+- 1 Coleta para os exercícios do Adobe Firefly Services neste módulo
+- 1 Coleção para os exercícios do Adobe Frame.io V4 neste módulo
 
 Baixe o [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} no desktop local.
 
-![Nova integração do Adobe I/O](./images/pmfolder.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/pmfolder.png)
 
 No arquivo **postman-ff.zip** estão os seguintes arquivos:
 
 - `Adobe IO - OAuth.postman_collection.json`
 - `FF - Firefly Services Tech Insiders.postman_collection.json`
+- `Frame.io V4 - Tech Insiders.postman_collection.json`
 
-Descompacte o **postman-ff.zip** e armazene os 2 arquivos a seguir em uma pasta na sua área de trabalho:
+Descompacte o **postman-ff.zip** e armazene os seguintes arquivos em uma pasta na sua área de trabalho:
 
 - `Adobe IO - OAuth.postman_collection.json`
 - `FF - Firefly Services Tech Insiders.postman_collection.json`
+- `Frame.io V4 - Tech Insiders.postman_collection.json`
 - `oauth_server_to_server.postman_environment.json`
 
-![Nova integração do Adobe I/O](./images/pmfolder1.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/pmfolder1.png)
 
 No Postman, selecione **Importar**.
 
-![Nova integração do Adobe I/O](./images/postmanui.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/postmanui.png)
 
 Selecione **Arquivos**.
 
-![Nova integração do Adobe I/O](./images/choosefiles.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/choosefiles.png)
 
-Escolha os três arquivos da pasta e selecione **Abrir** e **Importar**.
+Escolha todos os arquivos da pasta e selecione **Abrir** e **Importar**.
 
-![Nova integração do Adobe I/O](./images/selectfiles.png){zoomable="yes"}
+![Nova integração do Adobe I/O](./images/selectfiles.png)
 
-![Nova integração do Adobe I/O](./images/impconfirm.png){zoomable="yes"}
+Clique em **Importar**.
+
+![Nova integração do Adobe I/O](./images/impconfirm.png)
 
 Agora você tem tudo o que precisa no Postman para começar a interagir com o Firefly Services por meio das APIs.
 
@@ -83,11 +88,11 @@ Em seguida, para garantir que você esteja autenticado corretamente, é necessá
 
 Certifique-se de ter selecionado o ambiente correto antes de executar qualquer solicitação, verificando a lista suspensa Ambiente no canto superior direito. O Ambiente selecionado deve ter um nome semelhante a este, `--aepUserLdap-- One Adobe OAuth Credential`.
 
-![Postman](./images/envselemea1.png){zoomable="yes"}
+![Postman](./images/envselemea1.png)
 
 O Ambiente selecionado deve ter um nome semelhante a este, `--aepUserLdap-- One Adobe OAuth Credential`.
 
-![Postman](./images/envselemea.png){zoomable="yes"}
+![Postman](./images/envselemea.png)
 
 Agora que o ambiente e as coleções do Postman estão configurados e funcionando, você pode autenticar do Postman para o Adobe I/O.
 
@@ -95,11 +100,11 @@ Na coleção **Adobe IO - OAuth**, selecione a solicitação denominada **POST -
 
 Aviso em **Parâmetros de Consulta**, duas variáveis são referenciadas, `API_KEY` e `CLIENT_SECRET`. Essas variáveis foram obtidas do ambiente selecionado, `--aepUserLdap-- One Adobe OAuth Credential`.
 
-![Postman](./images/ioauth.png){zoomable="yes"}
+![Postman](./images/ioauth.png)
 
 Se for bem-sucedido, uma resposta contendo um token de portador, um token de acesso e uma janela de expiração será exibida na seção **Corpo** do Postman.
 
-![Postman](./images/ioauthresp.png){zoomable="yes"}
+![Postman](./images/ioauthresp.png)
 
 Você deve ver uma resposta semelhante contendo as seguintes informações:
 
@@ -111,7 +116,7 @@ Você deve ver uma resposta semelhante contendo as seguintes informações:
 
 O **bearer-token** do Adobe I/O tem um valor específico (o access_token muito longo) e uma janela de expiração, e agora é válido por 24 horas. Isso significa que, após 24 horas, se você quiser usar o Postman para interagir com as APIs do Adobe, precisará gerar um novo token executando essa solicitação novamente.
 
-Seu ambiente do Postman agora está configurado e funcionando.
+Agora o ambiente do Postman está configurado e funcionando.
 
 ## Próximas etapas
 

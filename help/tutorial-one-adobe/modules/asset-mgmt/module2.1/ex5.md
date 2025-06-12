@@ -4,9 +4,9 @@ description: AEM CS - Bloco personalizado avançado
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Agora você pode continuar trabalhando neste bloco.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1 Estilo do bloco
+## 1.1.5.1 Estilo do seu bloco
 
 Agora que você tem um bloco de trabalho **fiberoffer**, é possível aplicar um estilo a ele.
 
@@ -106,16 +106,16 @@ No navegador, vá para a conta GitHub e para o repositório criado para o CitiSi
 
 ![Bloquear](./images/blockadv12.png){zoomable="yes"}
 
-Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
+Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en/` e/ou `main--citisignal--XXX.aem.live/us/en/`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
 Neste exemplo, o URL completo torna-se isto:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Você deverá ver isso, com o estilo aplicado à sua página.
 
 ![Bloquear](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 Adicionar lógica e carregar dados de um endpoint externo
+## 1.1.5.2 Adicionar lógica e carregar dados de um ponto de extremidade externo
 
 Para este exercício, você fará uma configuração &quot;bruta&quot; do Web SDK do Adobe e solicitará a próxima melhor oferta do Adobe Journey Optimizer Offer Decisioning.
 
@@ -336,10 +336,10 @@ Em seguida, clique em **Origem de push**.
 
 ![Bloquear](./images/blockadv19.png){zoomable="yes"}
 
-Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
+Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en/` e/ou `main--citisignal--XXX.aem.live/us/en/`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
 Neste exemplo, o URL completo torna-se isto:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Você deverá ver isso.
 

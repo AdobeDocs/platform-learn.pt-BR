@@ -4,16 +4,16 @@ description: Configurar o ambiente do AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
 
 # 1.1.3 Configurar o ambiente do AEM CS
 
-## 1.1.3.1 Configurar o repositório GitHub
+## 1.1.3.1 Configurar seu repositório GitHub
 
 Ir para [https://github.com](https://github.com){target="_blank"}. Clique em **Fazer logon**.
 
@@ -55,7 +55,7 @@ Você receberá essa confirmação.
 
 ![AEMCS](./images/aemcssetup10.png){zoomable="yes"}
 
-## 1.1.3.2 Atualizar arquivo fstab.yaml
+## 1.1.3.2 Atualizar o arquivo fstab.yaml
 
 No repositório do GitHub, clique em para abrir o arquivo `fstab.yaml`.
 
@@ -123,7 +123,7 @@ Clique em **Confirmar alterações**.
 
 O arquivo `fstab.yaml` foi atualizado.
 
-## 1.1.3.3 Fazer upload de ativos do CitiSignal
+## 1.1.3.3 Carregar ativos do CitiSignal
 
 Ir para [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Clique no **Programa** para abri-lo.
 
@@ -308,10 +308,10 @@ Seu site será aberto no **Editor Universal**.
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-Agora você pode acessar seu site indo até `main--citisignal--XXX.aem.page/us/en` e/ou `main--citisignal--XXX.aem.live/us/en`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
+Agora você pode acessar seu site indo até `main--citisignal--XXX.aem.page/us/en/` e/ou `main--citisignal--XXX.aem.live/us/en/`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
 Neste exemplo, o URL completo torna-se isto:
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` e/ou `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 Pode levar algum tempo até que todos os ativos sejam exibidos corretamente, pois precisam ser publicados primeiro.
 
@@ -323,7 +323,7 @@ Após alguns minutos, todos os ativos serão carregados corretamente.
 
 ![AEMCS](./images/aemcssetup47.png){zoomable="yes"}
 
-## 1.1.3.7 Desempenho da página de teste
+## Desempenho da página de teste 1.1.3.7
 
 Ir para [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}. Insira sua URL e clique em **Analisar**.
 

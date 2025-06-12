@@ -3,9 +3,9 @@ title: Introdução - Aplicativos a serem instalados
 description: Introdução - Aplicativos a serem instalados
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '212'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,15 @@ Ir para [https://creativecloud.adobe.com/apps/download/creative-cloud](https://c
 
 ![Nova integração do Adobe I/O](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 Abra o aplicativo **Adobe Creative Cloud**, vá para **Aplicativos**. Instale o Photoshop no computador.
+
+![Nova integração do Adobe I/O](./images/psd.png)
+
+## Adobe Illustrator
+
+Abra o aplicativo **Adobe Creative Cloud**, vá para **Aplicativos**. Instale o Illustrator no computador.
 
 ![Nova integração do Adobe I/O](./images/psd.png)
 

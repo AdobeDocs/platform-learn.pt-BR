@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 1%
 
 ---
@@ -233,7 +233,7 @@ Depois de receber sua **Assinatura de Acesso Compartilhado**, selecione **Copiar
 
 ![Armazenamento do Azure](./images/az29.png){zoomable="yes"}
 
-Use o **token SAS** para carregar um arquivo na sua Conta de Armazenamento do Azure.
+Use a **URL do token SAS** para carregar um arquivo para sua Conta de Armazenamento do Azure.
 
 De volta ao Postman, selecione a pasta **FF - Firefly Services Tech Insiders**, em seguida, selecione **...** na pasta **Firefly** e selecione **Adicionar solicitação**.
 
@@ -345,7 +345,7 @@ Selecione **Criar**.
 
 ![Armazenamento do Azure](./images/az102.png){zoomable="yes"}
 
-Copie o URL e anote-o em um arquivo em seu computador para obter seu token SAS de longo prazo com permissões de leitura.
+Copie o URL e anote-o em um arquivo em seu computador para obter seu token SAS de longo prazo com permissões de leitura/gravação.
 
 ![Armazenamento do Azure](./images/az103.png){zoomable="yes"}
 
