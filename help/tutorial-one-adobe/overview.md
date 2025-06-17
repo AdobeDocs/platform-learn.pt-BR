@@ -3,9 +3,9 @@ title: Visão geral - Tutorial técnico abrangente - Uma Adobe
 description: Tutorial técnico completo - Uma Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ Depois de concluir alguns módulos neste tutorial, você pode fazer um exame de 
 
 - Ao concluir o módulo [Visão Geral do Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}, você estará pronto para passar no **Adobe Qualified** exame **AD2-E901**:
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
-- Ao concluir o módulo [Automação de Fluxo de Trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, você estará pronto para passar no **exame** XXX **do &lbrace;Adobe Qualified**:
+- Ao concluir o módulo [Automação de Fluxo de Trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, você estará pronto para passar no **exame** XXX **do {Adobe Qualified**:
   [TBC](https://certification.adobe.com/certification/services-qualified-credential).
 
 ## Status do conteúdo
@@ -65,9 +65,13 @@ Neste módulo, você usará APIs do Adobe Firefly Services, APIs do Photoshop e 
 
 [1.2 Automação de Fluxo de Trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-Neste módulo fundamental, você usará o Adobe Workfront Fusion para automatizar e dimensionar seus fluxos de trabalho de criação de conteúdo.
+Neste módulo, você usará o Adobe Workfront Fusion para automatizar e dimensionar seus fluxos de trabalho de criação de conteúdo.
 
-[1.3 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+Neste módulo, você usará o Adobe GenStudio for Performance Marketing, um aplicativo de fluxo de trabalho completo Gen AI para equipes de marketing e criativas para criar, ativar e otimizar conteúdo omnicanal com governança corporativa para campanhas de marketing digital.
+
+[1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 Neste módulo fundamental, você usará o Adobe Express para criar imagens e vídeos e compartilhará esses ativos em direção ao ecossistema mais amplo da Adobe Experience Cloud.
 

@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '367'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,8 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} | 06/04/2025 | Sim | - |
 | [1.2 Automação de Fluxo de Trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} | 06/04/2025 | Sim | - |
-| [1.3 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"} | 04/01/2025 | Sim | - |
+| [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 06/16/2025 | Sim | - |
+| [1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 04/01/2025 | Sim | - |
 
 
 ## &#x200B;3. Gestão de ativos
