@@ -22,4 +22,4 @@ Aprenda as noções básicas sobre a criação de projetos no Collaboration, inc
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
 
-Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
+Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}.
