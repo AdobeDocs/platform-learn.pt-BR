@@ -3,7 +3,7 @@ title: Tutorials de Coleção de dados
 description: Vídeos e tutoriais explicativos para torná-lo um usuário avançado da Coleção de dados
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 22%
@@ -23,16 +23,62 @@ A Coleção de dados é a próxima geração de recursos de gerenciamento de tag
 
 <div id="staff-picks-section">
 
+## Guias de implementação
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+      <img alt="Implementar a Adobe Experience Cloud com o SDK da Web" src="assets/thumb_websdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+    <strong>Implementar a Experience Cloud com a Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Usar marcas para implementar o Platform Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <img alt="Implementar em aplicativos móveis" src="assets/thumb_swift.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <strong>Implementar a Experience Cloud em aplicativos móveis</strong>
+    </a>
+    </div>
+    <p>
+    <em>Usar marcas para implementar o Platform Mobile SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <img alt="Migração do Target para o Web SDK" src="assets/thumb_legacy.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <strong>Implementar bibliotecas herdadas com tags</strong>
+    </a>
+    </div>
+    <p>
+    <em>Usar marcas para implementar bibliotecas herdadas do Analytics, Target e Audience Manager</em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## Guias de migração
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Migração do Target para o Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Migrar Adobe Target para Web SDK</strong>
     </a>
     </div>
@@ -60,7 +106,7 @@ A Coleção de dados é a próxima geração de recursos de gerenciamento de tag
       <strong>Migrar Adobe Audience Manager para Web SDK</strong>
     </div>
     <p>
-    <em>Substituir <a href="https://experienceleague.adobe.com/pt-br/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> ou <a href="https://experienceleague.adobe.com/pt-br/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">atualizar o encaminhamento pelo lado do servidor</a></em>
+    <em>Substituir <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> ou <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">atualizar o encaminhamento pelo lado do servidor</a></em>
     <p>
   </td>
 </tr>
@@ -83,52 +129,6 @@ A Coleção de dados é a próxima geração de recursos de gerenciamento de tag
   <td>
   </td>
   </tr>
-</table>
-
-## Guias de implementação
-
-<table>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-      <img alt="Implementar a Adobe Experience Cloud com o SDK da Web" src="assets/thumb_websdk.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-    <strong>Implementar a Experience Cloud com a Web SDK</strong>
-    </a>
-    </div>
-    <p>
-    <em>Usar marcas para implementar o Platform Web SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-      <img alt="Implementar em aplicativos móveis" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-    <strong>Implementar a Experience Cloud em aplicativos móveis</strong>
-    </a>
-    </div>
-    <p>
-    <em>Usar marcas para implementar o Platform Mobile SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="Migração do Target para o Web SDK" src="assets/thumb_legacy.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-    <strong>Implementar bibliotecas herdadas com tags</strong>
-    </a>
-    </div>
-    <p>
-    <em>Usar marcas para implementar bibliotecas herdadas do Analytics, Target e Audience Manager</em>
-    <p>
-  </td>
-</tr>
 </table>
 
 </div>

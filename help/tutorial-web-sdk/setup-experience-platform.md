@@ -3,10 +3,10 @@ title: Transmitir dados para o Adobe Experience Platform com o Platform Web SDK
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o Web SDK. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 5%
+source-wordcount: '2307'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Para concluir esta lição, primeiro você deve:
 
 ## Criar um conjunto de dados
 
-Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um [conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
+Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um [conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
 Vamos configurar um conjunto de dados para seus dados de evento da Web do Luma:
 
@@ -160,14 +160,14 @@ Para confirmar que os dados chegaram ao data lake da Platform, uma opção rápi
 
 >[!INFO]
 >
->  Para obter mais detalhes sobre o serviço de consulta da Adobe Experience Platform, consulte [Explorar dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/queries/explore-data) na seção de tutoriais da Platform.
+>  Para obter mais detalhes sobre o serviço de consulta da Adobe Experience Platform, consulte [Explorar dados](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) na seção de tutoriais da Platform.
 
 
 ## Ativar o conjunto de dados e o esquema para o Perfil do cliente em tempo real
 
 Para clientes do Real-Time Customer Data Platform e do Journey Optimizer, a próxima etapa é ativar o conjunto de dados e o esquema para o Perfil do cliente em tempo real. A transmissão de dados do Web SDK será uma das muitas fontes de dados que fluem para a Platform e você deseja unir seus dados da Web a outras fontes de dados para criar perfis de clientes de 360 graus. Para saber mais sobre o Perfil do cliente em tempo real, assista a este vídeo curto:
 
->[!VIDEO](https://video.tv.adobe.com/v/31686?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -252,11 +252,15 @@ Primeiro, você deve gerar mais dados de amostra. Repita as etapas das etapas an
 
 Agora você ativou o Platform Web SDK para Experience Platform (e o Real-Time CDP! E o Journey Optimizer! E Customer Journey Analytics!).
 
+## Criar um público avaliado pela Edge
+
+A conclusão deste exercício é recomendada para clientes do Real-Time Customer Data Platform e do Journey Optimizer.
+
+Quando os dados do Web SDK são assimilados na Adobe Experience Platform, eles podem ser enriquecidos por outras fontes de dados que você assimilou na Platform. Por exemplo, quando um usuário faz logon no site Luma, um gráfico de identidade é construído no Experience Platform e todos os outros conjuntos de dados habilitados para perfis podem potencialmente ser unidos para criar Perfis de clientes em tempo real. Para ver isso em ação, você criará rapidamente outro conjunto de dados na Adobe Experience Platform com alguns dados de fidelidade de exemplo, para que possa usar Perfis de clientes em tempo real com a Real-Time Customer Data Platform e a Journey Optimizer. Em seguida, você criará um público-alvo com base nesses dados.
+
 ### Criar um esquema de fidelidade e assimilar dados de amostra
 
-A conclusão deste exercício é esperada para clientes do Real-Time Customer Data Platform e do Journey Optimizer.
-
-Quando os dados do Web SDK são assimilados na Adobe Experience Platform, eles podem ser enriquecidos por outras fontes de dados que você assimilou na Platform. Por exemplo, quando um usuário faz logon no site Luma, um gráfico de identidade é construído no Experience Platform e todos os outros conjuntos de dados habilitados para perfis podem potencialmente ser unidos para criar Perfis de clientes em tempo real. Para ver isso em ação, crie rapidamente outro conjunto de dados no Adobe Experience Platform com alguns dados de fidelidade de exemplo, para que você possa usar os Perfis de clientes em tempo real com o Real-Time Customer Data Platform e o Journey Optimizer. Como você já fez exercícios semelhantes, as instruções serão breves.
+Como você já fez exercícios semelhantes, as instruções serão breves.
 
 Crie o esquema de fidelidade:
 
@@ -282,9 +286,33 @@ Para criar o conjunto de dados e assimilar os dados de amostra:
 
    ![Esquema de fidelidade](assets/web-channel-loyalty-dataset.png)
 
+
+### Definir uma política de mesclagem ativa no Edge
+
+Todos os públicos-alvo são criados com uma política de mesclagem. As políticas de mesclagem criam &quot;visualizações&quot; diferentes de um perfil, podem conter um subconjunto de conjuntos de dados e prescrevem uma ordem de prioridade quando conjuntos de dados diferentes contribuem com os mesmos atributos de perfil. Para ser avaliado na borda, um público-alvo deve usar uma política de mesclagem com a configuração **[!UICONTROL Política de mesclagem ativa no Edge]**.
+
+
+>[!IMPORTANT]
+>
+>Somente uma política de mesclagem por sandbox pode ter a configuração **[!UICONTROL Política de mesclagem ativa na Edge]**
+
+
+1. Abra a interface do Experience Platform ou do Journey Optimizer e verifique se você está no ambiente de desenvolvimento que está usando para o tutorial.
+1. Navegue até a página **[!UICONTROL Cliente]** > **[!UICONTROL Perfis]** > **[!UICONTROL Políticas de Mesclagem]**
+1. Abrir a **[!UICONTROL Política de mesclagem padrão]** (provavelmente denominada `Default Timebased`)
+   ![Criar um público-alvo](assets/merge-policy-open-default.png)
+1. Habilitar a configuração **[!UICONTROL Política de Mesclagem Ativa-na-Edge]**
+1. Selecionar **[!UICONTROL Próximo]**
+
+   ![Criar um público-alvo](assets/merge-policy-set-active-on-edge.png)
+1. Continue selecionando **[!UICONTROL Avançar]** para continuar pelas outras etapas do fluxo de trabalho e selecione **[!UICONTROL Concluir]** para salvar suas configurações
+   ![Criar um público-alvo](assets/merge-policy-finish.png)
+
+Agora é possível criar públicos-alvo que serão avaliados na Edge.
+
 ### Criar um público-alvo
 
-Os públicos-alvo agrupam perfis em torno de características comuns. Crie um público-alvo rápido que você pode usar em sua campanha da Web:
+Os públicos-alvo agrupam perfis em torno de características comuns. Crie um público-alvo simples que você possa usar no Real-Time CDP ou no Journey Optimizer:
 
 1. Na interface do Experience Platform ou da Journey Optimizer, vá para **[!UICONTROL Cliente]** > **[!UICONTROL Públicos-alvo]** na navegação à esquerda
 1. Selecione **[!UICONTROL Criar público-alvo]**
@@ -302,6 +330,11 @@ Os públicos-alvo agrupam perfis em torno de características comuns. Crie um p�
 
    ![Definir o público-alvo](assets/web-campaign-define-audience.png)
 
+>[!NOTE]
+>
+> Como definimos a política de mesclagem padrão como **[!UICONTROL Política de mesclagem ativa na Edge]**, o público-alvo criado é associado automaticamente a essa política de mesclagem.
+
+
 Como esse é um público-alvo muito simples, podemos usar o método de avaliação do Edge. Os públicos do Edge avaliam na borda, portanto, na mesma solicitação feita pelo Web SDK ao Platform Edge Network, podemos avaliar a definição do público e confirmar imediatamente se o usuário se qualificará.
 
 
@@ -309,4 +342,4 @@ Como esse é um público-alvo muito simples, podemos usar o método de avaliaç�
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

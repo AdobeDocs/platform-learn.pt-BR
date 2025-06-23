@@ -4,18 +4,18 @@ description: Saiba como configurar o Adobe Analytics usando o Experience Platfor
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # Configurar o Adobe Analytics com o Adobe Experience Platform Web SDK
 
-Saiba como configurar o Adobe Analytics usando o [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/web-sdk/overview), criar regras de tag para enviar dados ao Adobe Analytics e validar se o Analytics está capturando dados conforme esperado.
+Saiba como configurar o Adobe Analytics usando o [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), criar regras de tag para enviar dados ao Adobe Analytics e validar se o Analytics está capturando dados conforme esperado.
 
-O [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics?lang=pt-BR) é um aplicativo líder do setor que faz você ser capaz de entender seus clientes como pessoas e de orientar seus negócios com informações de inteligência de clientes.
+O [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics?lang=pt-BR) é um aplicativo líder do setor que faz você ser capaz de entender seus clientes como pessoas e de orientar seus negócios com informações de inteligência de clientes.
 
 ![Diagrama do Web SDK para Adobe Analytics](assets/dc-websdk-aa.png)
 
@@ -35,7 +35,7 @@ Para concluir esta lição, primeiro você deve:
 
 * Estar familiarizado com o Adobe Analytics e ter acesso a ele.
 
-* Ter pelo menos uma ID de conjunto de relatórios de teste/desenvolvimento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, [crie um](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Ter pelo menos uma ID de conjunto de relatórios de teste/desenvolvimento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, [crie um](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Conclua as lições anteriores nas seções Configuração inicial e Configuração de tags deste tutorial.
 
@@ -106,8 +106,8 @@ As seções individuais da cadeia de caracteres do produto Analytics são defini
 >[!NOTE]
 >
 >A partir de 18 de agosto de 2022, o `productListItems[].SKU` tem prioridade para mapear para o nome do produto na variável s.products.
->&#x200B;>O valor definido como `productListItems[].name` é mapeado para o nome do produto apenas se `productListItems[].SKU` não existir. Caso contrário, ele não será mapeado e estará disponível nos dados de contexto.
->&#x200B;>Não defina uma cadeia vazia ou nula como `productListItems[].SKU`. Isso tem o efeito indesejado de mapear para o nome do produto na variável s.products.
+>>O valor definido como `productListItems[].name` é mapeado para o nome do produto apenas se `productListItems[].SKU` não existir. Caso contrário, ele não será mapeado e estará disponível nos dados de contexto.
+>>Não defina uma cadeia vazia ou nula como `productListItems[].SKU`. Isso tem o efeito indesejado de mapear para o nome do produto na variável s.products.
 
 
 ### Definir variáveis no objeto de dados
@@ -366,6 +366,10 @@ Vá para uma página de produto como a [página de produto do Didi Sport Watch](
 1. Procure por `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Role para baixo para ver a variável `[!UICONTROL gn]`. É a sintaxe dinâmica do Analytics para a variável `[!UICONTROL s.pageName]`. Ele captura o nome da página da camada de dados.
 
+   >[!NOTE]
+   >
+   > O valor `gn` pode ser `test` se você substituiu o objeto `xdm` pelo objeto `data` no exercício anterior.
+
    ![Cadeia de caracteres de produto do Analytics](assets/analytics-debugger-edge-page-view.png)
 
 ### Validação de cadeia de caracteres do produto e eventos de comércio eletrônico
@@ -389,7 +393,7 @@ Como você já está em uma página de produto, este exercício continua a usar 
 
    >[!TIP]
    >
-   > A regra `ecommerce - pdp library loaded - AA (order 20)` está substituindo o valor de `eventType` definido pela regra `all pages global content variables - library loaded - AA (order 1)`, pois está definida para disparar posteriormente na sequência
+   > A regra `ecommerce - library loaded - set product details variables - 20` está substituindo o valor de `eventType` definido pela regra `all pages - library loaded - set global variables - 1`, pois está definida para disparar posteriormente na sequência
 
 
    ![Exibição de produto do Analytics](assets/analytics-debugger-prodView.png)
@@ -449,8 +453,14 @@ Em seguida, role para baixo até **[!UICONTROL mcvisId]** para validar se a ECID
 ### Validação de exibições de página de conteúdo
 
 Usando o mesmo sinal, valide se as exibições de página de conteúdo estão mapeadas para a variável correta do Adobe Analytics.
-Role para baixo até **[!UICONTROL pageName]** para validar se `Page Name` foi capturado corretamente
-![Validação do nome da página com o Assurance](assets/assurance-hitdebugger-content-pagename.png)
+Role para baixo até **[!UICONTROL pageName]** para validar se `Page Name` foi capturado corretamente:
+
+
+    >[!NOTE]
+    >
+    > O valor `pageName` pode ser `test` se você substituiu o objeto `xdm` pelo objeto `data` no exercício anterior.
+    
+    ![Validação de nome de página com Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Validação de cadeia de caracteres do produto e eventos de comércio eletrônico
 
@@ -481,4 +491,4 @@ Parabéns! Você conseguiu! Este é o fim da lição e agora você está pronto 
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
