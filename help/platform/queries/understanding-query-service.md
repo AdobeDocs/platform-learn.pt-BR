@@ -16,7 +16,7 @@ ht-degree: 13%
 
 # Visão geral do Serviço de consulta e do Data Distiller
 
-O Adobe Experience Platform Query Service permite que os usuários explorem, validem e transformem dados de experiência do cliente armazenados no data lake usando SQL, com recursos aprimorados como saída de dados e agendamento disponíveis por meio do complemento Data Distiller. Este vídeo fornece uma visão geral dos principais recursos para ajudar os usuários a entender como aproveitar o Serviço de consulta em vários aplicativos baseados em plataforma. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+O Adobe Experience Platform Query Service permite que os usuários explorem, validem e transformem dados de experiência do cliente armazenados no data lake usando SQL, com recursos aprimorados como saída de dados e agendamento disponíveis por meio do complemento Data Distiller. Este vídeo fornece uma visão geral dos principais recursos para ajudar os usuários a entender como aproveitar o Serviço de consulta em vários aplicativos baseados em plataforma. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
