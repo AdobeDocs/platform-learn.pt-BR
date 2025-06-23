@@ -106,8 +106,8 @@ As seções individuais da cadeia de caracteres do produto Analytics são defini
 >[!NOTE]
 >
 >A partir de 18 de agosto de 2022, o `productListItems[].SKU` tem prioridade para mapear para o nome do produto na variável s.products.
->>O valor definido como `productListItems[].name` é mapeado para o nome do produto apenas se `productListItems[].SKU` não existir. Caso contrário, ele não será mapeado e estará disponível nos dados de contexto.
->>Não defina uma cadeia vazia ou nula como `productListItems[].SKU`. Isso tem o efeito indesejado de mapear para o nome do produto na variável s.products.
+>&#x200B;>O valor definido como `productListItems[].name` é mapeado para o nome do produto apenas se `productListItems[].SKU` não existir. Caso contrário, ele não será mapeado e estará disponível nos dados de contexto.
+>&#x200B;>Não defina uma cadeia vazia ou nula como `productListItems[].SKU`. Isso tem o efeito indesejado de mapear para o nome do produto na variável s.products.
 
 
 ### Definir variáveis no objeto de dados
