@@ -5,9 +5,9 @@ feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3139
-thumbnail: 29795.jpg
+last-substantial-update: 2025-06-23T00:00:00Z
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: 8092c5f120a51b35f068261b70131ef303b4c51d
+source-git-commit: b0466e114d657c2584b23bfd76e4f6c185c83c06
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 13%
@@ -16,9 +16,9 @@ ht-degree: 13%
 
 # Visão geral do Serviço de consulta e do Data Distiller
 
-O Adobe Experience Platform Query Service permite que os usuários explorem, validem e transformem dados de experiência do cliente armazenados no data lake usando SQL, com recursos aprimorados como saída de dados e agendamento disponíveis por meio do complemento Data Distiller. Este vídeo fornece uma visão geral dos principais recursos para ajudar os usuários a entender como aproveitar o Serviço de consulta em vários aplicativos baseados em plataforma. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home).
+O Adobe Experience Platform Query Service permite que os usuários explorem, validem e transformem dados de experiência do cliente armazenados no data lake usando SQL, com recursos aprimorados como saída de dados e agendamento disponíveis por meio do complemento Data Distiller. Este vídeo fornece uma visão geral dos principais recursos para ajudar os usuários a entender como aproveitar o Serviço de consulta em vários aplicativos baseados em plataforma. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/33187?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Uso básico
 
@@ -105,7 +105,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Executar consultas com o serviço de consulta" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33393?format=jpeg&nocache=1740415310683&captions=por_br" alt="Executar consultas com o serviço de consulta"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1740415310683" alt="Executar consultas com o serviço de consulta"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="Noções básicas sobre padrões de uso de dados com o serviço de consulta" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33186?format=jpeg&nocache=1740415310706&captions=por_br" alt="Noções básicas sobre padrões de uso de dados com o serviço de consulta"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415310706" alt="Noções básicas sobre padrões de uso de dados com o serviço de consulta"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="Validar dados no datalake com o Serviço de consulta" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445682?format=jpeg&nocache=1740415312076&captions=por_br" alt="Validar dados no datalake com o Serviço de consulta"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="Validar dados no datalake com o Serviço de consulta"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="Noções básicas sobre padrões de uso de dados com o serviço de consulta" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33186?format=jpeg&nocache=1740415313190&captions=por_br" alt="Noções básicas sobre padrões de uso de dados com o serviço de consulta"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415313190" alt="Noções básicas sobre padrões de uso de dados com o serviço de consulta"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="Recarregue os dados do cliente para fornecer experiências eletrizantes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454945?format=jpeg&nocache=1740415313218&captions=por_br" alt="Recarregue os dados do cliente para fornecer experiências eletrizantes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="Recarregue os dados do cliente para fornecer experiências eletrizantes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
