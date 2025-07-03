@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - API de clima externa, ação de SMS e mui
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -54,10 +54,6 @@ Para a **Configuração de URL**, use este:
 
 ![Demonstração](./images/slackname.png)
 
-Você não precisa alterar os Campos de cabeçalho.
-
-![Demonstração](./images/slackurl.png)
-
 A **Autenticação** deve ser definida como **Sem Autenticação**.
 
 ![Demonstração](./images/slackauth.png)
@@ -84,7 +80,7 @@ Copie o texto abaixo e cole-o na janela pop-up vazia.
 }
 ```
 
-Você verá isto:
+Você verá isso. Clique em **Salvar**.
 
 ![Demonstração](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ Sua ação personalizada agora faz parte da lista **Ações**.
 
 ![Demonstração](./images/slackdone.png)
 
-Você definiu eventos, fontes de dados externas e ações. Agora vamos consolidar tudo isso em uma jornada.
+Você definiu eventos, fontes de dados externas e ações. A seguir, você combinará tudo isso em uma jornada.
 
 ## Próximas etapas
 

@@ -4,7 +4,7 @@ description: Introdução - Usar o sistema de demonstração ao lado para config
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 1%
@@ -17,7 +17,7 @@ Para visualizar os aprendizados neste tutorial e possibilitar que você teste su
 
 Depois de ter acesso ao Sistema de demonstração em seguida, continue com as etapas abaixo.
 
-Vá para [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} e navegue até **Instalação**.
+Vá para [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"} e navegue até **Instalação**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ Na lista suspensa **Ambiente**, selecione sua instância e sandbox.
 
 ![DSN](./images/dsnh1.png)
 
-Em seguida, selecione a predefinição **Usuário do tutorial do AEP**.
+Em seguida, selecione a predefinição **One Adobe Tutorial**.
 
 ![DSN](./images/dsnhome.png)
 

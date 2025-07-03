@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '397'
 ht-degree: 12%
 
 ---
@@ -56,11 +56,14 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [2.4 Real-Time CDP: do Audience Activation para o Hub de Eventos do Microsoft Azure](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md){target="_blank"} | 11/21/2024 | Sim | - |
 | [2.5 Conexões do Real-Time CDP: Encaminhamento de Eventos](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md){target="_blank"} | 11/21/2024 | Sim | - |
 | [2.6 Transmitir dados do Apache Kafka para o Real-Time CDP](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md){target="_blank"} | 11/25/2024 | Sim | - |
-| [3.1 Adobe Journey Optimizer: Orquestração](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 12/30/2024 | Sim | - |
-| [3.2 Adobe Journey Optimizer: fontes de dados externas e ações personalizadas](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 12/30/2024 | Sim | - |
-| [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md){target="_blank"} | 01/06/2025 | Sim | - |
-| [3.4 Adobe Journey Optimizer: Jornadas baseadas em eventos](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 01/05/2025 | Sim | - |
-| [3.5 Adobe Journey Optimizer: serviços de tradução](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 02/08/2025 | Sim | - |
+| [3.1 Adobe Journey Optimizer: Orquestração](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 07/03/2025 | Sim | - |
+| [3.2 Adobe Journey Optimizer: fontes de dados externas e ações personalizadas](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 07/03/2025 | Sim | - |
+| [3.3 Adobe Journey Optimizer: mensagens por push e no aplicativo](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 07/03/2025/2025 | Sim | - |
+| [3.4 Adobe Journey Optimizer: Jornadas baseadas em eventos](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 07/03/2025 | Sim | - |
+| [3.5 Adobe Journey Optimizer: serviços de tradução](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 07/03/2025 | Sim | - |
+| [3.6 Adobe Journey Optimizer: gerenciamento de conteúdo](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 07/03/2025 | Não | Conteúdo sendo desenvolvido |
+| [3.7 Adobe Journey Optimizer: Decisão](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 07/03/2025 | Não | Conteúdo sendo desenvolvido |
+| [3.8 Adobe Journey Optimizer: Campanhas](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 07/03/2025 | Não | Conteúdo sendo desenvolvido |
 
 ## &#x200B;5. Relatórios e insights
 

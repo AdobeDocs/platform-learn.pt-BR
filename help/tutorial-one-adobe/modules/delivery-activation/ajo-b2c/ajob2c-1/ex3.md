@@ -4,14 +4,14 @@ description: Journey Optimizer Crie sua mensagem de email
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
 
-# 3.1.3 Criar Jornada, fragmentos e mensagem
+# 3.1.3 Criar a jornada e a mensagem de email
 
 Neste exercício, você configurará a jornada e a mensagem que precisa ser acionada quando alguém criar uma conta no site de demonstração.
 
@@ -23,7 +23,7 @@ Você será redirecionado para a exibição **Página inicial** no Journey Optim
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.3.1 Criar sua Jornada
+## 3.1.3.1 Crie sua Jornada
 
 No menu esquerdo, clique em **Jornadas**. Em seguida, clique em **Criar Jornada** para criar uma nova jornada.
 
@@ -33,7 +33,7 @@ Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-No exercício anterior, você criou um novo **Evento**. Você nomeou como este `--aepUserLdap--AccountCreationEvent` e substituiu `ldap` pelo seu ldap. Este foi o resultado da criação do Evento:
+No exercício anterior, você criou um novo **Evento**. Você o nomeou desta forma `--aepUserLdap--AccountCreationEvent`. Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -41,7 +41,7 @@ Agora, é necessário tomar este evento como o início desta Jornada. Você pode
 
 ![ACOP](./images/eventlist.png)
 
-Selecione o evento, arraste e solte-o na tela de Jornada. Agora a Jornada tem esta aparência:
+Selecione o evento, arraste e solte-o na tela de jornada. Agora a jornada tem esta aparência:
 
 ![ACOP](./images/journeyevent.png)
 
@@ -57,11 +57,11 @@ Como terceira etapa da jornada, você precisa adicionar uma ação **Email**. V�
 
 ![ACOP](./images/journeyactions.png)
 
-Defina a **Categoria** como **Marketing** e selecione uma configuração de email que permita o envio de emails. Nesse caso, a configuração de email a ser selecionada é **Email**. Verifique se as caixas de seleção para **Cliques no email** e **aberturas de email** estão habilitadas.
+Defina a **Categoria** como **Marketing** e selecione uma configuração de email que permita o envio de emails. Nesse caso, a configuração de email a ser selecionada é **Email-TI**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.1.3.2 Criar a mensagem
+## 3.1.3.2 Crie sua Mensagem
 
 Para criar sua mensagem, clique em **Editar conteúdo**.
 
@@ -194,7 +194,7 @@ Clique na **seta** para voltar para a jornada.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 3.1.3.3 Publicar a jornada
+## 3.1.3.3 Publique sua jornada
 
 Clique em **Salvar**.
 

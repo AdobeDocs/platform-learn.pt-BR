@@ -4,14 +4,14 @@ description: Neste módulo, você aprenderá tudo o que há para saber sobre o J
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '263'
 ht-degree: 2%
 
 ---
 
-# 3.4 Adobe Journey Optimizer
+# 3.4 Adobe Journey Optimizer: jornada e campanhas de confirmação de pedido
 
 Neste módulo, você aprenderá tudo o que há para saber sobre o Adobe Journey Optimizer, que ajuda as empresas a projetar e entregar experiências conectadas, contextuais e personalizadas aos clientes.
 
@@ -45,10 +45,6 @@ Neste exercício, você configurará uma campanha de email tradicional.
 [3.4.3 Aplicar personalização baseada em segmentos em uma mensagem de email](./ex3.md)
 
 Neste exercício, você usará associações de segmento para definir qual conteúdo será exibido em um email.
-
-[3.4.4 Configurar e usar notificações por push](./ex4.md)
-
-Neste exercício, você instalará um aplicativo para dispositivos móveis no dispositivo iOS e configurará e enviará uma notificação por push ao seu dispositivo.
 
 [Resumo e benefícios](./summary.md)
 

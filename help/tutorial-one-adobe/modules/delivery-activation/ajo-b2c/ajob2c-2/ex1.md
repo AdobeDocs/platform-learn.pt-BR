@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - API de clima externa, ação de SMS e mui
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Verifique se o **Tipo** está definido como **Unitário** e, para a seleção do
 
 ![Demonstração](./images/evname.png)
 
-Em seguida, é necessário selecionar um schema. Todos os esquemas mostrados aqui são Esquemas do Adobe Experience Platform.
+Em seguida, é necessário selecionar um schema.
 
 ![Demonstração](./images/evschema.png)
 
@@ -50,12 +50,12 @@ Vamos ver rapidamente como esses esquemas são definidos no Adobe Experience Pla
 No menu esquerdo, vá para **Schemas** e abra-o em uma nova guia do navegador. Em **Esquemas**, vá para **Procurar** para ver a lista de Esquemas disponíveis.
 Abra o Esquema `Demo System - Event Schema for Website (Global v1.1)`.
 
-![Assimilação de dados](./images/schemas.png)
+![Ingestão de dados](./images/schemas.png)
 
 Depois de abrir o Esquema, você verá que o grupo de campos `Orchestration eventID` faz parte do esquema.
 Este grupo de campos tem apenas dois campos, `_experience.campaign.orchestration.eventID` e `originJourneyID`.
 
-![Assimilação de dados](./images/schemageo.png)
+![Ingestão de dados](./images/schemageo.png)
 
 Quando esse grupo de campos e esse campo de ID de evento específico fizerem parte de um esquema, esse esquema estará disponível para uso no Adobe Journey Optimizer.
 
@@ -109,7 +109,7 @@ Clicar no ícone **Exibir carga** abre uma amostra de carga XDM para este evento
 
 Anote o `eventID` como você vai precisar dele na última vez para testar sua configuração.
 
-Neste exemplo, o `eventID` é `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`.
+Neste exemplo, o `eventID` é `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`.
 
 Agora você definiu o evento que acionará a jornada que estamos criando. Quando a jornada for acionada, os campos de geofence como Cidade e quaisquer outros que você tenha escolhido (como País, Latitude e Longitude) serão disponibilizados para a jornada.
 

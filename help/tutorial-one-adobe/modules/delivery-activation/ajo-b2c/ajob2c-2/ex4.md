@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer - Configurar a jornada e a mensagem
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
-ht-degree: 5%
+source-wordcount: '1484'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ Para esse caso de uso, o objetivo é enviar mensagens diferentes com base nas co
 
 Para essas três condições, será necessário definir três mensagens no Adobe Journey Optimizer.
 
-## 3.2.4.1 Criar a jornada
+## 3.2.4.1 Crie sua jornada
 
 Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
@@ -43,7 +43,7 @@ Como Nome da jornada, use `--aepUserLdap-- - Geofence Entry Journey`. Nenhum out
 
 ![Demonstração](./images/joname.png)
 
-À esquerda da tela, dê uma olhada em **Eventos**. Você deve ver o evento criado anteriormente nessa lista. Selecione-a e, em seguida, arraste-a e solte-a na tela de jornada. Sua jornada fica assim. Clique em **Salvar**.
+À esquerda da tela, dê uma olhada em **Eventos**. Você deve ver seu evento criado anteriormente nessa lista, chamada `--aepUserLdap--GeofenceEntry`. Selecione-a e, em seguida, arraste-a e solte-a na tela de jornada. Sua jornada fica assim.
 
 ![Demonstração](./images/joevents.png)
 
@@ -189,7 +189,7 @@ Agora você tem três caminhos configurados. Clique em **Salvar**.
 
 Como essa é uma jornada para fins de aprendizado, você configurará algumas ações para mostrar a variedade de opções que os profissionais de marketing agora têm para enviar mensagens.
 
-## 3.2.4.2 Enviar mensagens para o caminho: mais frio que 10° Celsius
+## 3.2.4.2 Enviar mensagens para caminho: Mais frio que 10° Celsius
 
 Para cada um dos contextos de temperatura, você tentará enviar uma mensagem de texto para um cliente. Neste exercício, você enviará uma mensagem real para um canal do Slack em vez de um número de celular.
 
@@ -201,7 +201,7 @@ No menu esquerdo, volte para **Ações**, selecione a Ação `--aepUserLdap--Tex
 
 ![Demonstração](./images/joa18.png)
 
-Vá para **Parâmetros de Ação** e clique no ícone **Editar** do parâmetro `textToSlack`.
+Role para baixo até **Solicitar Parâmetros** e clique no ícone **Editar** do parâmetro `textToSlack`.
 
 ![Demonstração](./images/joa19.png)
 
@@ -215,7 +215,7 @@ Selecione o código abaixo, copie-o e cole-o no **Editor do Modo Avançado**. Cl
 
 ![Demonstração](./images/joa21.png)
 
-Você verá sua ação concluída. Clique em **Salvar**.
+Você verá sua ação concluída. Role para cima e clique em **Salvar**.
 
 ![Demonstração](./images/joa22.png)
 
@@ -233,7 +233,7 @@ No menu esquerdo, volte para **Ações**, selecione a Ação `--aepUserLdap--Tex
 
 ![Demonstração](./images/jop18.png)
 
-Vá para **Parâmetros de Ação** e clique no ícone **Editar** do parâmetro `textToSlack`.
+Role para baixo até **Solicitar Parâmetros** e clique no ícone **Editar** do parâmetro `textToSlack`.
 
 ![Demonstração](./images/joa19z.png)
 
@@ -247,13 +247,13 @@ Selecione o código abaixo, copie-o e cole-o no **Editor do Modo Avançado**. Cl
 
 ![Demonstração](./images/jop21.png)
 
-Você verá sua ação concluída. Clique em **Ok**.
+Você verá sua ação concluída. Role para cima e clique em **Salvar**.
 
 ![Demonstração](./images/jop22.png)
 
 Esse caminho da jornada agora está pronto.
 
-## 3.2.4.4 Enviar mensagens para o caminho: mais quente que 25° Celsius
+## 3.2.4.4 Enviar mensagens para caminho: mais quente que 25° Celsius
 
 Para cada um dos contextos de temperatura, você tentará enviar uma mensagem ao cliente. Neste exercício, você enviará uma mensagem real para um canal do Slack em vez de um número de celular.
 
@@ -265,7 +265,7 @@ No menu esquerdo, volte para **Ações**, selecione a Ação `--aepUserLdap--Tex
 
 ![Demonstração](./images/jod18.png)
 
-Vá para **Parâmetros de Ação** e clique no ícone **Editar** do parâmetro `textToSlack`.
+Role para baixo até **Solicitar Parâmetros** e clique no ícone **Editar** do parâmetro `textToSlack`.
 
 ![Demonstração](./images/joa19zzz.png)
 
@@ -285,7 +285,7 @@ Você verá sua ação concluída. Clique em **Salvar**.
 
 Esse caminho da jornada agora está pronto.
 
-## 3.2.4.5 Publicar a jornada
+## 3.2.4.5 Publique sua jornada
 
 A jornada está totalmente configurada. Clique em **Publicar**.
 

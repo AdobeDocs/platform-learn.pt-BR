@@ -4,9 +4,9 @@ breadcrumb-title: Tutorial técnico abrangente para aplicativos Adobe, do Creati
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
 workflow-type: tm+mt
-source-wordcount: '1179'
+source-wordcount: '1217'
 ht-degree: 3%
 
 ---
@@ -171,21 +171,17 @@ ht-degree: 3%
          + [3.2.4 Criar a jornada e as mensagens](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
          + [3.2.5 Acionar a jornada](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
          + [Resumo e benefícios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
-      + 3.3 Adobe Journey Optimizer: Offer Decisioning {#ajo33}
-         + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
-         + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
-         + [3.3.2 Configurar as ofertas e a decisão](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
-         + [3.3.3 Prepare sua propriedade do Cliente de coleta de dados da Adobe Experience Platform e a configuração do Web SDK para o Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-         + [3.3.4 Combinar Adobe Target e Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex4.md)
-         + [3.3.5 Use sua decisão em um email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
-         + [3.3.6 Testar sua decisão usando a API](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
+      + 3.3 Adobe Journey Optimizer: Mensagens por push e no aplicativo {#ajo33}
+         + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
+         + [3.3.1 Introdução a notificações por push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+         + [3.3.2 Configurar uma jornada com mensagens de push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
+         + [3.3.3 Configurar uma campanha com mensagens no aplicativo](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
          + [Resumo e benefícios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
-      + 3.4 Adobe Journey Optimizer: Jornadas baseadas em eventos {#ajo34}
+      + 3.4 Adobe Journey Optimizer: jornada e campanhas de confirmação de pedido {#ajo34}
          + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
          + [3.4.1 Configurar uma jornada com base em acionador - Confirmação de pedido](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
          + [3.4.2 Configurar uma campanha](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
          + [3.4.3 Aplicar personalização baseada em segmentos em uma mensagem de email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-         + [3.4.4 Configurar e usar notificações por push](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex4.md)
          + [Resumo e benefícios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
       + 3.5 Adobe Journey Optimizer: serviços de tradução {#ajo35}
          + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
@@ -193,6 +189,22 @@ ht-degree: 3%
          + [3.5.2 Criar a campanha](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
          + [3.5.3 Adicionar idiomas ao email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
          + [Resumo e benefícios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
+      + 3.6 Adobe Journey Optimizer: gerenciamento de conteúdo  {#ajo36}
+         + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+         + [3.6.1 Cartões de conteúdo](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
+         + [3.6.2 Landing Pages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
+         + [3.6.3 AJO e GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
+         + [Resumo e benefícios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
+      + 3.7 Adobe Journey Optimizer: Experience Decisioning {#ajo37}
+         + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+         + [3.7.1 Decisão da experiência 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
+         + [3.7.2 Configurar as ofertas e a decisão](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
+         + [3.7.3 Configuração do Web SDK para o Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
+         + [Resumo e benefícios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
+      + 3.8 Adobe Journey Optimizer: Campanhas {#ajo38}
+         + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+         + [3.8.1 Introdução às campanhas](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
+         + [Resumo e benefícios](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
 
 + Relatórios e insights {#reporting}
    + Customer Journey Analytics  {#cjab2c}

@@ -4,22 +4,22 @@ description: Atualizar a ID de configuração e testar a Jornada
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
 
 # 3.1.3 Atualize a propriedade Coleção de dados e teste a jornada
 
-## 3.1.3.1 Atualizar a propriedade Coleção de dados
+## 3.1.3.1 Atualize sua propriedade de Coleção de dados
 
-Vá para [Coleção de dados do Adobe Experience Platform](https://experience.adobe.com/launch/) e selecione **Marcas**.
+Vá para [Coleção de dados do Adobe Experience Platform](https://experience.adobe.com/data-collection/home) e selecione **Marcas**.
 
 ![Página de propriedades](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-Em **Introdução**, o Sistema de Demonstração criou duas propriedades do Cliente para você: uma para o site e outra para o aplicativo móvel. Localize-os procurando por `--aepUserLdap--` na caixa **[!UICONTROL Pesquisar]**. Clique para abrir a propriedade **Web**.
+Em **Introdução**, o Sistema de demonstração em seguida criou algumas propriedades de marcas para você, incluindo uma para o site e outra para o aplicativo móvel. Localize-os procurando por `--aepUserLdap-- - One Adobe` na caixa **[!UICONTROL Pesquisar]**. Clique para abrir a propriedade **Web**.
 
 ![Caixa de pesquisa](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -49,7 +49,7 @@ Você verá isto:
 
 Navegue até o campo `_experience.campaign.orchestration.eventID`. Remova o valor atual e cole sua eventID lá.
 
-Lembrando que a ID de Evento pode ser encontrada no Adobe Journey Optimizer em **Configurações > Eventos**, e você encontrará a ID de evento na carga de exemplo do seu evento, que tem esta aparência: `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`.
+Lembrando que a ID de Evento pode ser encontrada no Adobe Journey Optimizer em **Configurações > Eventos**, e você encontrará a ID de evento na carga de exemplo do seu evento, que tem esta aparência: `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`.
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -67,7 +67,7 @@ Clique em **Adicionar todos os recursos alterados** e em **Salvar e criar no des
 
 Sua biblioteca será atualizada e, após 1 a 2 minutos, você poderá testar sua configuração.
 
-## 3.1.3.2 Testar a Jornada
+## 3.1.3.2 Testar sua Jornada
 
 Ir para [https://dsn.adobe.com](https://dsn.adobe.com). Depois de fazer logon com sua Adobe ID, você verá isso. Clique nos 3 pontos **...** do projeto do site e clique em **Executar** para abri-lo.
 

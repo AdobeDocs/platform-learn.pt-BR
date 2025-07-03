@@ -4,9 +4,9 @@ description: Journey Optimizer - Criar os fragmentos
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Você será redirecionado para a exibição **Página inicial** no Journey Optim
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.2.1 Criar o fragmento de cabeçalho
+## 3.1.2.1 Criar seu fragmento de cabeçalho
 
 No menu esquerdo, clique em **Fragmentos**. Um fragmento é um componente reutilizável no Journey Optimizer, o que evita a duplicação e facilita alterações futuras que devem afetar todas as mensagens, como alterações em um cabeçalho ou rodapé em uma mensagem de email.
 
@@ -49,7 +49,7 @@ Você verá um pop-up que abre, mostrando sua Biblioteca de mídia da AEM Assets
 
 >[!NOTE]
 >
->Se você não vir as imagens do Citi Signal na Biblioteca da AEM Assets, poderá encontrá-las [aqui](./../../../../assets/ajo/CitiSignal-images.zip). Baixe-as na área de trabalho, crie a pasta **citi-signal-images** e carregue todas as imagens nessa pasta.
+>Se você não vir as imagens do CitiSignal na Biblioteca da AEM Assets, poderá encontrá-las [aqui](./../../../../assets/ajo/CitiSignal-images.zip). Baixe-as na área de trabalho, crie a pasta **citi-signal-images** e carregue todas as imagens nessa pasta.
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -78,7 +78,7 @@ Em seguida, você deve criar um novo fragmento para o rodapé das mensagens de e
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.1.2.2 Criar o fragmento de Rodapé
+## 3.1.2.2 Criar seu fragmento de rodapé
 
 Clique em **Criar fragmento**.
 
@@ -231,8 +231,6 @@ Clique em **Publicar** para publicar seu rodapé para que ele possa ser usado em
 Após alguns minutos, você verá que o status do seu rodapé mudou para **Live**.
 
 ![Journey Optimizer](./images/fragm38.png)
-
-Você terminou este exercício agora.
 
 ## Próximas etapas
 
