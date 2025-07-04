@@ -4,9 +4,9 @@ description: Neste módulo, você aprenderá tudo o que há para saber sobre o J
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,6 @@ Neste módulo, você aprenderá tudo o que há para saber sobre o Adobe Journey 
 - Familiarizar-se com o Adobe Journey Optimizer
 - Criar mensagens de email e push
 - Configurar jornadas baseadas em acionador e em lote
-- Enviar notificações por email e por push como parte de uma jornada de cliente
 
 ## Pré-requisitos
 

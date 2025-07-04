@@ -4,9 +4,9 @@ description: Nesta seção, você configurará uma jornada baseada em acionador 
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Você será redirecionado para a exibição **Página inicial** no Journey Optim
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.1.1 Criar o evento
+## 3.4.1.1 Criar seu evento
 
 No menu, vá para **Configurações** e clique em **Gerenciar** em **Eventos**.
 
@@ -40,7 +40,7 @@ Para o **Tipo de ID do Evento**, selecione **Gerado pelo Sistema**.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-O próximo é a seleção Esquema. Um esquema foi preparado para este exercício. Use o esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+O próximo é a seleção do schema. Um esquema foi preparado para este exercício. Use o esquema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 Depois de selecionar o esquema, você verá vários campos sendo selecionados na seção **Carga**. Clique no ícone **Editar/Lápis** para adicionar outros campos a este evento.
 
@@ -78,13 +78,13 @@ Agora você verá um exemplo da carga útil esperada. Seu evento tem uma eventID
 ![Journey Optimizer](./images/oc42.png)
 
 A ID do evento é o que precisa ser enviado para o Adobe Journey Optimizer para acionar a jornada que você criará na próxima etapa. Anote essa eventID, pois ela será necessária em uma das próximas etapas.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 Clique em **Ok**, seguido de **Cancelar**.
 
 Seu evento agora está configurado e pronto para ser usado.
 
-## 3.4.1.2 Criar a jornada
+## 3.4.1.2 Crie sua jornada
 
 No menu, vá para **Jornadas** e clique em **Criar Jornada**.
 
@@ -102,19 +102,15 @@ Em seguida, em **Ações**, pesquise a ação **Email** e adicione-a à tela.
 
 ![Journey Optimizer](./images/oc47.png)
 
-Defina a **Categoria** como **Marketing** e selecione uma superfície de email que permita o envio de emails. Nesse caso, a superfície de email a ser selecionada é **Email**. Verifique se as caixas de seleção para **Cliques no email** e **aberturas de email** estão habilitadas.
+Defina a **Categoria** como **Marketing** e selecione uma superfície de email que permita o envio de emails. Nesse caso, a superfície de email a ser selecionada é **Email**. A próxima etapa é criar a mensagem. Para fazer isso, clique em **Editar conteúdo**.
 
 ![ACOP](./images/journeyactions1.png)
-
-A próxima etapa é criar a mensagem. Para fazer isso, clique em **Editar conteúdo**.
-
-![ACOP](./images/journeyactions2.png)
 
 Agora vocês podem ver isso. Clique no campo de texto **Linha de assunto**.
 
 ![ACOP](./images/journeyactions3.png)
 
-Na área de texto, comece a gravar **Obrigado por seu pedido** e clique no ícone **Personalization**.
+Na área de texto, comece a gravar `Thanks for your order, ` e clique no ícone **Personalization**.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -345,11 +341,11 @@ Sua jornada foi publicada.
 
 ![Journey Optimizer](./images/oc513.png)
 
-## 3.4.1.5 Atualizar a propriedade do Cliente de coleta de dados do Adobe Experience Platform
+## 3.4.1.5 Atualize sua propriedade de Cliente da Coleção de Dados da Adobe Experience Platform
 
 Vá para [Coleção de dados do Adobe Experience Platform](https://experience.adobe.com/launch/) e selecione **Marcas**.
 
-Esta é a página Propriedades da coleção de dados do Adobe Experience Platform que você viu antes.
+Esta é a página de propriedades Coleta de dados do Adobe Experience Platform que você viu antes.
 
 ![Página de propriedades](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
@@ -361,7 +357,7 @@ Vá para **Elementos de Dados**. Pesquise e abra o elemento de dados **XDM - Pur
 
 ![Journey Optimizer](./images/oc91.png)
 
-Você verá isso. Navegue até o campo **_experience.campaign.orchestration.eventID** e preencha sua eventID aqui. A eventID a ser preenchida aqui é a eventID que você criou como parte do exercício 3.4.1.1 Clique em **Salvar** ou **Salvar na biblioteca**.
+Você verá isso. Navegue até o campo **_experience.campaign.orchestration.eventID** e preencha sua eventID aqui. A eventID a ser preenchida aqui é a eventID que você criou como parte do exercício 3.4.1.1 Clique em **Salvar** ou **Salvar na Biblioteca**.
 
 ![Journey Optimizer](./images/oc92.png)
 
@@ -403,15 +399,11 @@ Consulte o painel Visualizador de perfis e o Perfil do cliente em tempo real com
 
 ![Demonstração](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-Vá para a página Registro/Logon. Clique em **CRIAR UMA CONTA**.
+Vá para a página **Entrar**, clique em **CRIAR UMA CONTA** e preencha estes campos. Clique em **Registrar** e você será redirecionado para a página anterior.
 
 ![Demonstração](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-Preencha seus detalhes e clique em **Registrar**; depois disso, você será redirecionado para a página anterior.
-
-![Demonstração](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-Adicionar qualquer produto ao carrinho
+Adicione qualquer produto ao carrinho.
 
 ![Journey Optimizer](./images/cart1a.png)
 
