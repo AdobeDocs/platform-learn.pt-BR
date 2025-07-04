@@ -4,9 +4,9 @@ description: Introdução - Uso do aplicativo móvel
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 53f21d39caa047170811a063ff9d01d57e456626
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -15,39 +15,39 @@ ht-degree: 0%
 
 ## Baixar o aplicativo
 
-Vá para [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"} no computador. Faça logon usando sua Adobe ID e você verá isso.
+Vá para [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"} no computador e vá para **Versão do Beta**. Faça logon usando sua Adobe ID e você verá isso.
 
 ![DSN](./images/mobileapp.png)
 
-Use o aplicativo **Câmera** no smartphone para instalar o aplicativo móvel para o SO do dispositivo. Para esta habilitação, você precisa instalar a **Versão 2.x** que usa o Adobe Experience Platform Mobile SDK.
+Use o aplicativo **Câmera** no smartphone para instalar o aplicativo móvel para o SO do dispositivo. Para esta habilitação, você precisa instalar a versão **0.6.1** (ou posterior) que usa o Adobe Experience Platform Mobile SDK.
 
 >[!NOTE]
 >
 >Depois de instalar o aplicativo pela primeira vez em um dispositivo iOS, você poderá receber uma mensagem de erro ao tentar abrir o aplicativo que diz: **Desenvolvedor corporativo não confiável**. Para corrigir isso, você precisa ir para **Configurações > Geral > VPN &amp; Device Management > Adobe Systems Inc.** e clicar em **Confiar na Adobe Systems Inc.**.
 
+Após verificar o código QR, selecione **Instalar**.
+
+![DSN](./images/mobileappn0.png)
+
 Depois que o aplicativo for instalado, você o encontrará na tela inicial do dispositivo. Clique no ícone para abrir o aplicativo.
 
 ![DSN](./images/mobileappn1.png)
 
-Quando estiver usando o aplicativo pela primeira vez, você será solicitado a fazer logon usando sua Adobe ID. Conclua o processo de logon.
+Depois de fazer logon, você verá uma notificação solicitando sua permissão para enviar notificações. Enviaremos notificações como parte do tutorial, então clique em **Permitir**.
 
 ![DSN](./images/mobileappn2.png)
 
-Depois de fazer logon, você verá uma notificação solicitando sua permissão para enviar notificações. Enviaremos notificações como parte do tutorial, então clique em **Permitir**.
+Você verá a página inicial do aplicativo. Vá para **Configurações**.
 
 ![DSN](./images/mobileappn3.png)
 
-Você verá a página inicial do aplicativo. Vá para **Configurações**.
+Nas configurações, você verá que, atualmente, um **Projeto público** está carregado no aplicativo. Clique em **Projeto personalizado**.
 
 ![DSN](./images/mobileappn4.png)
 
-Nas configurações, você verá que, atualmente, um **Projeto público** está carregado no aplicativo. Clique em **Projeto personalizado**.
-
-![DSN](./images/mobileappn5.png)
-
 Agora você pode carregar um projeto personalizado. Clique no código QR para carregar facilmente seu projeto.
 
-![DSN](./images/mobileappn6.png)
+![DSN](./images/mobileappn5.png)
 
 Após o exercício anterior, você teve esse resultado. Clique para abrir o **projeto Telco do Mobile Edge** que foi criado para você.
 
@@ -73,11 +73,11 @@ Você verá este pop-up, que contém um código QR. Digitalize este código QR d
 
 ![DSN](./images/web8c.png)
 
-Você verá sua ID de projeto exibida no aplicativo e depois poderá clicar em **Salvar**.
+Você verá sua ID de projeto sendo carregada no aplicativo, depois disso você poderá clicar em **Alternar**.
 
 ![DSN](./images/mobileappn7.png)
 
-Agora, volte para a **Página inicial** no aplicativo. Seu aplicativo está pronto para ser usado.
+Você deverá ver a marca de demonstração **CitiSignal** sendo carregada. Seu aplicativo está pronto para ser usado.
 
 ![DSN](./images/mobileappn8.png)
 

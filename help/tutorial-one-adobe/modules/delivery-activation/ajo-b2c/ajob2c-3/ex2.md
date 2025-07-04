@@ -3,19 +3,27 @@ title: Configurar uma jornada com mensagens por push
 description: Configurar uma jornada com mensagens por push
 kt: 5342
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '770'
 ht-degree: 2%
 
 ---
 
 # 3.3.2 Configurar uma jornada com mensagens de push
 
+Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
-## 3.4.4.6 Criar um novo evento
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Ir para **Journey Optimizer**. No menu esquerdo, vá para **Configurações** e clique em **Gerenciar** em **Eventos**.
+Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
+
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+
+## 3.3.2.1 Criar um novo evento
+
+No menu esquerdo, vá para **Configurações** e clique em **Gerenciar** em **Eventos**.
 
 ![ACOP](./images/acopmenu.png)
 
@@ -32,13 +40,13 @@ A seguir está a seleção **Tipo de ID de Evento**. Selecione **Gerado pelo Sis
 
 O próximo é a seleção Esquema. Um esquema foi preparado para este exercício. Use o esquema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
-Depois de selecionar o esquema, você verá vários campos sendo selecionados na seção **Carga**. Seu evento está totalmente configurado.
+Depois de selecionar o esquema, você verá vários campos sendo selecionados na seção **Carga**. Verifique se o campo **Namespace** está definido como **ECID**. Seu evento está totalmente configurado.
 
 Clique em **Salvar**.
 
 ![ACOP](./images/eventschema.png)
 
-O Evento agora está configurado e salvo. Clique no evento novamente para abrir a tela **Editar Evento** novamente.
+Seu evento agora está configurado e salvo. Clique no evento novamente para abrir a tela **Editar Evento** novamente.
 
 ![ACOP](./images/eventdone.png)
 
@@ -50,20 +58,24 @@ Agora você verá um exemplo da carga útil esperada.
 
 Seu Evento tem uma eventID de orquestração exclusiva, que você pode encontrar rolando para baixo nessa carga até ver `_experience.campaign.orchestration.eventID`.
 
+A ID do evento é o que precisa ser enviado para o Adobe Experience Platform para acionar a Jornada que você criará na próxima etapa. Anote essa eventID, pois ela será necessária na próxima etapa.
+`"eventID": "aa895251f76831e6440f169f1bb9d2a4388f0696d8e2782cfab192a275817dfa"`
+
+Clique em **Ok**.
+
 ![ACOP](./images/payloadeventID.png)
 
-A ID do evento é o que precisa ser enviado para o Adobe Experience Platform para acionar a Jornada que você criará na próxima etapa. Anote essa eventID, pois ela será necessária na próxima etapa.
-`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
+Clique em **Cancelar**.
 
-Clique em **Ok**, seguido de **Cancelar**.
+![ACOP](./images/payloadeventIDa.png)
 
-## 3.4.4.7 Criar uma jornada
+## 3.3.2.2 Criar uma jornada
 
-No menu, vá para **Jornadas** e clique em **Criar Jornada**.
+No menu esquerdo, vá para **Jornada** e clique em **Criar Jornada**.
 
 ![DSN](./images/sjourney1.png)
 
-Você verá isso. Dê um nome à sua jornada. Usar `--aepUserLdap-- - Store Entry journey`. Clique em **Salvar**.
+Você verá isso. Nomeie sua jornada: `--aepUserLdap-- - Store Entry journey`. Clique em **Salvar**.
 
 ![DSN](./images/sjourney3.png)
 
@@ -89,7 +101,7 @@ Você verá isso. Clique no ícone de **personalização** do campo **Título**.
 
 ![Push](./images/bp5.png)
 
-Você verá isso. Agora é possível selecionar qualquer atributo de Perfil diretamente do Perfil de cliente em tempo real.
+Você verá isso. Agora é possível selecionar qualquer atributo de perfil diretamente do Perfil do cliente em tempo real.
 
 Pesquise pelo campo **Nome** e clique no ícone **+** ao lado do campo **Nome**. Você verá o token de personalização para o Nome que está sendo adicionado: **{{profile.person.name.firstName}}**.
 
@@ -129,23 +141,61 @@ Sua jornada foi publicada.
 
 ![DSN](./images/sjourney11.png)
 
-## 3.4.4.8 Testar sua jornada e mensagem por push
+## 3.3.2.3 Atualize sua propriedade de coleção de dados para dispositivos móveis
 
-No aplicativo móvel DX Demo 2.0, acesse a tela **Configurações**. Clique no botão **Armazenar entrada**.
+Em **Introdução**, o Sistema de demonstração em seguida criou propriedades de marcas para você: uma para o site e outra para o aplicativo móvel. Localize-os procurando por `--aepUserLdap--` na caixa **Pesquisar**. Clique para abrir a propriedade **Mobile**.
 
->[!NOTE]
->
->O botão **Armazenar Entrada** está sendo implementado no momento. Você ainda não o encontrará no aplicativo.
+![DSN](./images/pushpoi1.png)
 
-![DSN](./images/demo1b.png)
+Você deverá ver isso.
 
-Feche o aplicativo imediatamente após clicar no ícone **Entrada da loja**. Caso contrário, a mensagem de push não será exibida.
+![DSN](./images/pushpoi2.png)
 
-Após alguns segundos, você verá a mensagem ser exibida.
+No menu esquerdo, vá para **Regras** e clique para abrir a regra **Entrada de local**.
 
-![DSN](./images/demo2.png)
+![DSN](./images/pushpoi3.png)
 
-Você concluiu este exercício.
+Você deverá ver isso. Clique na ação **Mobile Core - Attach Data**.
+
+![DSN](./images/pushpoi4.png)
+
+Você deverá ver isso.
+
+![DSN](./images/pushpoi5.png)
+
+Cole a eventID do seu evento `--aepUserLdap--StoreEntryEvent` na janela **Carga JSON**. Clique em **Manter alterações**.
+
+![DSN](./images/pushpoi6.png)
+
+Clique em **Salvar** ou **Salvar na Biblioteca**.
+
+![DSN](./images/pushpoi7.png)
+
+Vá para **Fluxo de Publicação** e clique para abrir a biblioteca **Principal**.
+
+![DSN](./images/pushpoi8.png)
+
+Clique em **Adicionar todos os recursos alterados** e em **Salvar e criar no desenvolvimento**.
+
+![DSN](./images/pushpoi9.png)
+
+## 3.3.2.4 Testar sua jornada e mensagem por push
+
+Abra o aplicativo **DSN Mobile**.
+
+![DSN](./images/dxdemo1.png)
+
+Vá para a página **Localizador de Loja**.
+
+![DSN](./images/dxdemo2.png)
+
+Clique em **Simular entrada do POI**.
+
+![DSN](./images/dxdemo3.png)
+
+Após alguns segundos, você verá a notificação por push aparecer.
+
+![DSN](./images/dxdemo4.png)
 
 ## Próximas etapas
 
