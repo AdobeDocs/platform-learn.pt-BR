@@ -86,7 +86,7 @@ Em seguida, você verá que a sequência de dados para dispositivos móveis est�
 
 ![Coleta de dados do Adobe Experience Platform](./images/launchprop2.png)
 
-Você estará de volta aqui. Você verá a extensão para **AEP Assurance**. O AEP Assurance ajuda a inspecionar, testar, simular e validar como você coleta dados ou fornece experiências em seu aplicativo móvel. Leia mais sobre o AEP Assurance aqui: [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home).
+Você estará de volta aqui. Você verá a extensão para **AEP Assurance**. O AEP Assurance ajuda a inspecionar, testar, simular e validar como você coleta dados ou fornece experiências em seu aplicativo móvel. Leia mais sobre o AEP Assurance aqui: [https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home).
 
 ![Coleta de dados do Adobe Experience Platform](./images/launchprop8.png)
 
