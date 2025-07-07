@@ -5,13 +5,13 @@ feature: Collaboration
 role: Leader, User
 level: Beginner
 duration: 92
-last-substantial-update: 2025-04-17T00:00:00Z
-jira: KT-17403
+last-substantial-update: 2025-07-07T00:00:00Z
+jira: KT-17316
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: 00bfaeeec3b361c58a48baced83f328a9455fa19
+source-git-commit: 94742275a77a4d1f1c240ab5c01bdddf923dcd50
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 16%
+source-wordcount: '577'
+ht-degree: 13%
 
 ---
 
@@ -21,15 +21,93 @@ Com o Adobe Real-Time Customer Data Platform (CDP) Collaboration, você pode des
 
 Abaixo você encontrará vídeos e outros recursos para ajudá-lo a configurar, usar e obter valor do Real-Time CDP Collaboration. Ativos adicionais serão adicionados a esta página e site, portanto, verifique com frequência. Feliz aprendizagem!
 
-Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/home){target="_blank"} do Real-Time CDP Collaboration.
+Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"} do Real-Time CDP Collaboration.
 
-[![ExL LIVE 10 de abril de 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/pt-br/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 10 de abril de 2025](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## Introdução
 
-Obtenha uma introdução ao Adobe Real-Time Collaboration, um aplicativo de colaboração de dados criado com propósitos específicos que permite descobrir e ativar públicos-alvo de alto valor e usar recursos de medição para gerar resultados tangíveis.
+<!-- CARDS
+{cta=Watch}
+* real-time-cdp-collaboration-intro.md
+* rtcdp-overview-for-agency-practitioners.md
+* rtcdp-collaboration-process-and-people.md
 
->[!VIDEO](https://video.tv.adobe.com/v/3446806?learn=on&enablevpops&captions=por_br)
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Real-Time CDP Collaboration intro">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="real-time-cdp-collaboration-intro.md" title="Introdução ao Real-Time CDP Collaboration" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1751925455077" alt="Introdução ao Real-Time CDP Collaboration"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" title="Introdução ao Real-Time CDP Collaboration">Introdução ao Real-Time CDP Collaboration</a>
+                    </p>
+                    <p class="is-size-6">Obtenha uma introdução ao Adobe Real-Time CDP Collaboration, um aplicativo de colaboração de dados criado com propósitos específicos que permite descobrir e ativar públicos-alvo de alto valor e usar recursos de medição para gerar resultados tangíveis.</p>
+                </div>
+                <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Assistir</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Real-Time CDP Overview for Agency Practitioners">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="rtcdp-overview-for-agency-practitioners.md" title="Visão geral da Real-Time CDP para profissionais da agência" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1751925455060" alt="Visão geral da Real-Time CDP para profissionais da agência"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="rtcdp-overview-for-agency-practitioners.md" target="_blank" rel="referrer" title="Visão geral da Real-Time CDP para profissionais da agência">Visão geral do Real-Time CDP para profissionais da agência</a>
+                    </p>
+                    <p class="is-size-6">Este vídeo tem como objetivo fornecer aos profissionais de mídia paga ou de agências uma visão geral de alto nível da prop de valor do Real-Time CDP, o que é, como funciona e o que faz com foco nas fontes de dados e públicos-alvo que alimentam seu caso de uso e fluxos de trabalho do Real-Time CDP Collaboration.</p>
+                </div>
+                <a href="rtcdp-overview-for-agency-practitioners.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Assistir</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Real-Time CDP Collaboration - Process and People">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - Processo e Pessoas" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1751925455067" alt="Real-Time CDP Collaboration - Processo e Pessoas"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="rtcdp-collaboration-process-and-people.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration - Processo e Pessoas">Real-Time CDP Collaboration - Processo e Pessoas</a>
+                    </p>
+                    <p class="is-size-6">Este vídeo fornece orientação para os usuários do Real-Time CDP Collaboration, tanto profissionais de agências quanto equipes de tecnologia de marketing, sobre como essas equipes multifuncionais devem trabalhar juntas em casos de uso diferentes, fontes de dados, públicos-alvo e metas para garantir o sucesso e a eficiência operacional ao adotar o Real-Time CDP Collaboration</p>
+                </div>
+                <a href="rtcdp-collaboration-process-and-people.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Assistir</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
 
 
 ## Configurar
@@ -47,7 +125,7 @@ Obtenha uma introdução ao Adobe Real-Time Collaboration, um aplicativo de cola
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Definir permissões para o Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452235/?format=jpeg&nocache=1750198179177&captions=por_br" alt="Definir permissões para o Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1751925455752" alt="Definir permissões para o Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -70,7 +148,7 @@ Obtenha uma introdução ao Adobe Real-Time Collaboration, um aplicativo de cola
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-up-an-advertiser-account.md" title="Configurar uma conta do anunciante no Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452264/?format=jpeg&nocache=1750198179181" alt="Configurar uma conta do anunciante no Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452264/?format=jpeg&nocache=1751925455767" alt="Configurar uma conta do anunciante no Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,7 +185,7 @@ Obtenha uma introdução ao Adobe Real-Time Collaboration, um aplicativo de cola
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="reference-audiences-as-an-advertiser.md" title="Referencie públicos-alvo como um anunciante no Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452217/?format=jpeg&nocache=1750198179565" alt="Referencie públicos-alvo como um anunciante no Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452217/?format=jpeg&nocache=1751925456102" alt="Referencie públicos-alvo como um anunciante no Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +208,7 @@ Obtenha uma introdução ao Adobe Real-Time Collaboration, um aplicativo de cola
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="connect-with-publishers.md" title="Conectar-se a editores no Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1750198179552" alt="Conectar-se a editores no Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452218/?format=jpeg&nocache=1751925456111" alt="Conectar-se a editores no Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -153,7 +231,7 @@ Obtenha uma introdução ao Adobe Real-Time Collaboration, um aplicativo de cola
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Criar um projeto no Real-Time CDP Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464039/?format=jpeg&nocache=1750198179535&captions=por_br" alt="Criar um projeto no Real-Time CDP Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1751925456092" alt="Criar um projeto no Real-Time CDP Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
