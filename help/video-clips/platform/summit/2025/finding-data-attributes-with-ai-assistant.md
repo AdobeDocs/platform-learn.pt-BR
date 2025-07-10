@@ -19,4 +19,4 @@ ht-degree: 0%
 Veja como o Assistente de IA ajuda os usuários a localizar rapidamente atributos de dados e campos XDM, economizando horas de esforço manual.
 
 <!--  -->
->[!VIDEO](https://video.tv.adobe.com/v/3459308?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462181?learn=on&enablevpops=true&captions=por_br)
