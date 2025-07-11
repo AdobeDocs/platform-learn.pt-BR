@@ -7,7 +7,7 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 3%
@@ -20,9 +20,9 @@ Saiba como configurar um ambiente de sandbox da Experience Platform com dados de
 
 ## Exemplo de caso de uso de dados
 
-Os usuários empresariais do Experience Platform geralmente precisam percorrer uma série de etapas que incluem a identificação de grupos de campos, a criação de esquemas, a preparação de dados, a criação de conjuntos de dados e a assimilação de dados antes que possam explorar os recursos de marketing oferecidos pelo Experience Platform. Este tutorial automatiza algumas etapas para que você possa colocar os dados em uma sandbox da Platform o mais rápido possível.
+Os usuários empresariais da Experience Platform geralmente precisam passar por uma série de etapas que incluem a identificação de grupos de campos, a criação de esquemas, a preparação de dados, a criação de conjuntos de dados e a assimilação de dados antes que possam explorar os recursos de marketing oferecidos pela Experience Platform. Este tutorial automatiza algumas etapas para que você possa colocar os dados em uma sandbox da Platform o mais rápido possível.
 
-Este tutorial se concentra em uma marca fictícia de varejo chamada Luma. Eles investem no Adobe Experience Platform para combinar dados de fidelidade, CRM, catálogo de produtos e compra offline em perfis de clientes em tempo real e ativam esses perfis para elevar o nível do marketing. Geramos dados de amostra para o Luma e, no restante deste tutorial, você importará esses dados para um dos seus ambientes de sandbox do Experience Platform.
+Este tutorial se concentra em uma marca fictícia de varejo chamada Luma. Eles investem no Adobe Experience Platform para combinar dados de fidelidade, CRM, catálogo de produtos e compra offline em perfis de clientes em tempo real e ativam esses perfis para elevar o nível do marketing. Geramos dados de amostra para o Luma e, no restante deste tutorial, você importará esses dados para um dos ambientes da sandbox da Experience Platform.
 
 >[!NOTE]
 >
@@ -32,8 +32,8 @@ Este tutorial se concentra em uma marca fictícia de varejo chamada Luma. Eles i
 ## Pré-requisitos
 
 * Você tem acesso às APIs do Experience Platform e sabe como realizar a autenticação. Caso contrário, confira este [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=pt-BR).
-* Você tem acesso a uma sandbox de desenvolvimento de Experience Platform.
-* Você sabe sua ID de locatário do Experience Platform. Você pode obtê-la fazendo uma [solicitação de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=pt-BR#know-your-tenant_id) autenticada
+* Você tem acesso a uma sandbox de desenvolvimento do Experience Platform.
+* Você sabe sua ID de locatário do Experience Platform. Você pode obtê-la fazendo uma [solicitação de API](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id) autenticada
 ou extraindo-o do URL ao fazer logon na sua conta da Platform. Por exemplo, na URL a seguir, o locatário é &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
 
 ## Usando o [!DNL Postman] {#postman}
@@ -81,7 +81,7 @@ Antes de seguir as etapas, verifique se você baixou o aplicativo [Postman](http
 1. No Postman, selecione seu ambiente na lista suspensa no canto superior direito e clique no ícone de olho para exibir as variáveis de ambiente:
    ![Seleção de ambiente](../assets/data-generator/images/env-selection.png)
 
-1. Verifique se as variáveis de ambiente a seguir foram preenchidas. Para saber como obter o valor das variáveis de ambiente, consulte o tutorial [Autenticar para APIs Experience Platform](/help/platform/authentication/platform-api-authentication.md) para obter instruções passo a passo.
+1. Verifique se as variáveis de ambiente a seguir foram preenchidas. Para saber como obter o valor das variáveis de ambiente, consulte o tutorial [Autenticar para APIs do Experience Platform](/help/platform/api/platform-api-authentication.md) para obter instruções passo a passo.
 
    * `CLIENT_SECRET`
    * `API_KEY`—`Client ID` no Adobe Developer Console
@@ -120,7 +120,7 @@ Em seguida, é necessário importar as coleções para o Postman.
 
 ### Autenticar
 
-Em seguida, é necessário autenticar e gerar um token de usuário. Esteja ciente de que os métodos de geração de token usados neste tutorial são adequados somente para uso de não produção. A Assinatura local carrega uma biblioteca do JavaScript de um host de terceiros e a Assinatura remota envia a chave privada para um serviço da Web de Adobe e operado. Embora o Adobe não armazene essa chave privada, as chaves de produção nunca devem ser compartilhadas com ninguém.
+Em seguida, é necessário autenticar e gerar um token de usuário. Esteja ciente de que os métodos de geração de token usados neste tutorial são adequados somente para uso de não produção. A Assinatura local carrega uma biblioteca do JavaScript de um host de terceiros e a Assinatura remota envia a chave privada para um serviço da Web de propriedade da Adobe e operado por ela. Embora a Adobe não armazene essa chave privada, as chaves de produção nunca devem ser compartilhadas com ninguém.
 
 1. Abra a coleção `0-Authentication`, selecione a solicitação `OAuth: Request Access Token` e clique em `SEND` para autenticar e obter o token de acesso.
 
@@ -187,16 +187,16 @@ Ao navegar pelos dados nas guias **[!UICONTROL Atributos]** e **[!UICONTROL Even
 
 Se você quiser saber mais sobre o Adobe Journey Optimizer, esta sandbox contém tudo o que você precisa para enfrentar os [desafios do Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=pt-BR)
 
-Se você quiser saber mais sobre políticas de mesclagem, governança de dados, serviço de consulta e o construtor de segmentos, vá para a [lição 11 do tutorial Introdução aos arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=pt-BR). As lições anteriores deste outro tutorial ensinaram a criar manualmente tudo o que acabou de ser preenchido por essas coleções do Postman — aproveite a vantagem inicial!
+Se você quiser saber mais sobre políticas de mesclagem, governança de dados, serviço de consulta e o construtor de segmentos, vá para a [lição 11 do tutorial Introdução aos arquitetos de dados e engenheiros de dados](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). As lições anteriores deste outro tutorial ensinaram a criar manualmente tudo o que acabou de ser preenchido por essas coleções do Postman — aproveite a vantagem inicial!
 
-Se você quiser criar uma amostra de implementação do SDK da Web para vincular a esta sandbox, passe pelo
-[Implementar o Adobe Experience Cloud com o tutorial do SDK da Web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR). Depois de definir as lições de &quot;Configuração inicial&quot;, &quot;Configuração de tags&quot; e &quot;Configurar Experience Platform&quot; do tutorial do SDK da Web, faça logon no site da Luma usando os primeiros dez endereços de email no arquivo `luma-crm.json` usando a senha `test` para ver a mesclagem dos fragmentos de perfil com os dados carregados neste tutorial.
+Se você quiser criar uma amostra da implementação do Web SDK para vincular a esta sandbox, passe pelo
+[Tutorial sobre Implementação do Adobe Experience Cloud com Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR). Depois de definir as lições de &quot;Configuração inicial&quot;, &quot;Configuração de tags&quot; e &quot;Configurar o Experience Platform&quot; do tutorial do Web SDK, faça logon no site do Luma usando os primeiros dez endereços de email no arquivo `luma-crm.json` usando a senha `test` para ver a mesclagem dos fragmentos de perfil com os dados carregados neste tutorial.
 
-Se você quiser criar um exemplo de implementação do SDK móvel para vincular a esta sandbox, passe pelo
-[Tutorial Implementar o Adobe Experience Cloud em aplicativos para dispositivos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR). Depois de configurar as lições &quot;Configuração inicial&quot;, &quot;Implementação de aplicativo&quot; e &quot;Experience Platform&quot; do tutorial do SDK da Web, faça logon no site do Luma usando os primeiros endereços de email no arquivo `luma-crm.json` para ver uma mesclagem de fragmento de perfil com dados carregados neste tutorial.
+Se você quiser criar um exemplo de implementação do Mobile SDK para vincular a esta sandbox, passe pelo
+[Tutorial Implementar o Adobe Experience Cloud em aplicativos para dispositivos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR). Depois de configurar as lições &quot;Configuração inicial&quot;, &quot;Implementação de aplicativo&quot; e &quot;Experience Platform&quot; do tutorial do Web SDK, faça logon no site do Luma usando os primeiros endereços de email no arquivo `luma-crm.json` para ver uma mesclagem de fragmento de perfil com dados carregados neste tutorial.
 
 ## Redefinir ambiente de sandbox {#reset-sandbox}
 
 A redefinição de uma sandbox de não produção exclui todos os recursos associados a essa sandbox (esquemas, conjuntos de dados e assim por diante), mantendo o nome da sandbox e as permissões associadas. Essa sandbox &quot;limpa&quot; continua disponível com o mesmo nome para os usuários que têm acesso a ela.
 
-Siga as etapas [aqui](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=pt-BR#reset-a-sandbox) para redefinir um ambiente de sandbox.
+Siga as etapas [aqui](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) para redefinir um ambiente de sandbox.
