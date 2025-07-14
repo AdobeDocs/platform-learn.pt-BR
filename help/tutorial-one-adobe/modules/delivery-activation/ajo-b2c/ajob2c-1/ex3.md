@@ -4,9 +4,9 @@ description: Journey Optimizer Crie sua mensagem de email
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: ea8255de9869061cd21d2b5e7c8690f84be0a25b
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ Clique novamente em **Publicar**.
 
 ![ACOP](./images/publish1.png)
 
-Após alguns minutos, o status da sua jornada mudará para **Live** e você verá um painel em tempo real do desempenho da sua jornada.
+Após alguns minutos, o status da sua jornada mudará para **Live** e você verá um painel do desempenho da sua jornada em tempo real.
 
 ![ACOP](./images/published.png)
 
