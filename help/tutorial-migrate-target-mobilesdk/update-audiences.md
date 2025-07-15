@@ -1,10 +1,10 @@
 ---
-title: Atualizar públicos-alvo e scripts de perfil do Target - Migrar a implementação do Adobe Target no aplicativo móvel para o Adobe Journey Optimizer - Extensão de decisão
-description: Saiba como atualizar públicos-alvo e scripts de perfil do Adobe Target para compatibilidade com a extensão do Decisioning.
+title: Atualizar públicos-alvo e scripts de perfil do Target - Migre a implementação do Adobe Target no aplicativo móvel para a extensão do Offer Decisioning e do Target
+description: Saiba como atualizar públicos-alvo e scripts de perfil do Adobe Target para compatibilidade com a extensão do Offer Decisioning e do Target.
 exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 # Atualizar públicos-alvo e scripts de perfil do Target para compatibilidade com a extensão móvel do Decisioning
 
 
-Após concluir as atualizações técnicas para migrar o Target para a extensão Decisioning, talvez seja necessário atualizar alguns dos públicos-alvo, scripts de perfil e atividades para garantir uma transição suave.
+Após concluir as atualizações técnicas para migrar o Target para a extensão do Offer Decisioning e do Target, talvez seja necessário atualizar alguns dos públicos-alvo, scripts de perfil e atividades para garantir uma transição suave.
 
 >[!INFO]
 >
@@ -29,9 +29,9 @@ Se você migrar parâmetros de mbox para o objeto `xdm`, antes de publicar suas 
 
 Se você migrar parâmetros de mbox para o objeto `xdm`, os públicos-alvo que usam parâmetros de mbox personalizados deverão ser atualizados para usar os novos nomes de parâmetros XDM. Por exemplo, um parâmetro personalizado para `page_name` provavelmente seria mapeado para `web.webpagedetails.pageName`.
 
-Uma abordagem para garantir a compatibilidade com a extensão do Target e a extensão de Decisão é atualizar qualquer público relevante para que `OR` condições sejam usadas, conforme mostrado abaixo:
+Uma abordagem para garantir a compatibilidade com a extensão do Target e a extensão do Offer Decisioning e do Target é atualizar qualquer público relevante para que `OR` condições sejam usadas, conforme mostrado abaixo:
 
-![Como exibir e atualizar um público-alvo do Target para compatibilidade com a extensão do Decisioning](assets/target-audience-update.png){zoomable="yes"}
+![Como exibir e atualizar um público-alvo do Target para compatibilidade com a extensão do Offer Decisioning e do Target](assets/target-audience-update.png){zoomable="yes"}
 
 ## Editar scripts de perfil
 
@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Para obter mais informações e práticas recomendadas, consulte a documentação dedicada sobre [scripts de perfil](https://experienceleague.adobe.com/pt-br/docs/target/using/audiences/visitor-profiles/profile-parameters).
+Para obter mais informações e práticas recomendadas, consulte a documentação dedicada sobre [scripts de perfil](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters).
 
 ## Atualizar tokens de parâmetro para conteúdo dinâmico
 
-Se você migrar parâmetros mbox para o objeto `xdm` e tiver ofertas, designs de recomendações ou atividades que usam [substituição de conteúdo dinâmico](https://experienceleague.adobe.com/pt-br/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), talvez seja necessário atualizá-los de acordo para levar em conta os novos nomes de parâmetros XDM.
+Se você migrar parâmetros mbox para o objeto `xdm` e tiver ofertas, designs de recomendações ou atividades que usam [substituição de conteúdo dinâmico](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), talvez seja necessário atualizá-los de acordo para levar em conta os novos nomes de parâmetros XDM.
 
 Dependendo de como você está usando a substituição de token para parâmetros mbox, talvez seja possível aprimorar a configuração existente para levar em conta nomes de parâmetros antigos e novos. No entanto, em situações em que o código JavaScript personalizado não é possível, como em ofertas JSON, você deve criar cópias e fazer atualizações após a conclusão da migração e estar ativo no site de produção.
 
@@ -88,4 +88,4 @@ Em seguida, saiba como [validar a implementação do Target](validate.md).
 
 >[!NOTE]
 >
->Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Decisioning. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=pt#M463).
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Offer Decisioning e do Target. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

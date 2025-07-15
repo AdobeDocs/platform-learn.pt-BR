@@ -1,11 +1,11 @@
 ---
-title: Usar o Places com o SDK móvel da plataforma
+title: Usar o Places com o Platform Mobile SDK
 description: Saiba como usar o serviço de geolocalização do Places no aplicativo móvel.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1591'
 ht-degree: 2%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 Saiba como usar o serviço de geolocalização do Places em seu aplicativo.
 
-O Serviço de locais de coleta de dados da Adobe Experience Platform é um serviço de geolocalização que permite que aplicativos móveis com percepção de localização compreendam o contexto de localização. O serviço está usando interfaces SDK avançadas e fáceis de usar acompanhadas por um banco de dados flexível de pontos de interesse (POIs).
+O Serviço de locais de coleta de dados da Adobe Experience Platform é um serviço de geolocalização que permite que aplicativos móveis com percepção de localização compreendam o contexto de localização. O serviço está usando interfaces avançadas e fáceis de usar do SDK acompanhadas por um banco de dados flexível de pontos de interesse (POIs).
 
 ## Pré-requisitos
 
@@ -31,7 +31,7 @@ Nesta lição, você
 * Entenda como definir pontos de interesse no serviço Places.
 * Atualize a propriedade da tag com a extensão Places.
 * Atualize seu esquema para capturar eventos de localização geográfica.
-* Valide a configuração no Assurance.
+* Validar configuração no Assurance.
 * Atualize seu aplicativo para registrar a extensão Places.
 * Implemente o rastreamento de localização geográfica do serviço Places em seu aplicativo.
 
@@ -74,13 +74,12 @@ Você define alguns pontos de interesse no serviço Places.
 1. Procure a extensão **[!UICONTROL Places]**.
 1. Instale a extensão.
 
-   ![Adicionar extensão de decisão](assets/tag-places-extension.png)
+   ![Adicionar extensão do Offer Decisioning e do Target](assets/tag-places-extension.png)
 
 1. Na caixa de diálogo **[!UICONTROL Instalar Extensão]**:
    1. Selecione **[!DNL Luma]** na lista **[!UICONTROL Selecionar uma Biblioteca]**.
    1. Verifique se você escolheu sua biblioteca de trabalho, por exemplo **[!UICONTROL Compilação Inicial]**.
    1. Selecione **[!UICONTROL Salvar na Biblioteca e Criar]** em **[!UICONTROL Salvar na Biblioteca]**.
-
       ![Instalar extensão do Places](assets/places-install-extension.png).
 
 1. Sua biblioteca foi recriada.
@@ -140,7 +139,6 @@ Em seguida, você definirá regras para trabalhar com esses elementos de dados.
 1. Selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo de **[!UICONTROL EVENTS]**.
    1. Selecione **[!UICONTROL Places]** da lista **[!UICONTROL Extension]** e selecione **[!UICONTROL Enter POI]** da lista **[!UICONTROL Event Type]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
-
       ![Evento de marca](assets/tags-event-mobile-core.png).
 1. Selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo de **[!UICONTROL AÇÕES]**.
    1. Selecione **[!UICONTROL Mobile Core]** na lista **[!UICONTROL Extension]**, selecione **[!UICONTROL Attach Data]** no **[!UICONTROL Action Type]** da lista. Esta ação anexa dados de carga.
@@ -171,11 +169,10 @@ Em seguida, você definirá regras para trabalhar com esses elementos de dados.
       Você também pode inserir `{%% ... %%}` valores de espaço reservado do elemento de dados no JSON selecionando os ![Dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). Uma caixa de diálogo pop-up permite que você escolha qualquer elemento de dados criado.
 
    1. Selecione **[!UICONTROL Manter alterações]**.
-
       ![Ação de marcas](assets/tags-action-mobile-core.png)
 
 1. Selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado da ação **[!UICONTROL Mobile Core - Anexar dados]**.
-   1. Selecione **[!UICONTROL Adobe Experience Platform Edge Network]** na lista **[!UICONTROL Extension]** e selecione **[!UICONTROL Encaminhar evento para Edge Network]**. Essa ação garante que o evento e os dados de payload adicionais sejam encaminhados para o Edge Network da plataforma.
+   1. Selecione **[!UICONTROL Adobe Experience Platform Edge Network]** na lista **[!UICONTROL Extension]** e selecione **[!UICONTROL Encaminhar evento para o Edge Network]**. Essa ação garante que o evento e os dados de payload adicionais sejam encaminhados para o Platform Edge Network.
    1. Selecione **[!UICONTROL Manter alterações]**.
 
 1. Para salvar a regra, selecione **[!UICONTROL Salvar na biblioteca]**.
@@ -217,7 +214,7 @@ Vamos criar outra regra
    1. Selecione **[!UICONTROL Manter alterações]**.
 
 1. Selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado da ação **[!UICONTROL Mobile Core - Anexar dados]**.
-   1. Selecione **[!UICONTROL Adobe Experience Platform Edge Network]** na lista **[!UICONTROL Extension]** e selecione **[!UICONTROL Encaminhar evento para Edge Network]**.
+   1. Selecione **[!UICONTROL Adobe Experience Platform Edge Network]** na lista **[!UICONTROL Extension]** e selecione **[!UICONTROL Encaminhar evento para o Edge Network]**.
    1. Selecione **[!UICONTROL Manter alterações]**.
 
 1. Para salvar a regra, selecione **[!UICONTROL Salvar na biblioteca]**.
@@ -236,9 +233,9 @@ Para garantir que todas as alterações em sua tag sejam publicadas
 
 ## Validar configuração no Assurance
 
-Para validar sua configuração no Assurance:
+Para validar a configuração no Assurance:
 
-1. Vá para a interface do usuário do Assurance.
+1. Vá para a interface do Assurance.
 1. Se ainda não estiver disponível no painel à esquerda, selecione **[!UICONTROL Configurar]** no painel à esquerda e selecione ![Adicionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado de **[!UICONTROL Eventos]** e **[!UICONTROL Mapear e simular]** abaixo de **[!UICONTROL PLACES SERVICE]**.
 1. Selecione **[!UICONTROL Salvar]**.
 1. Selecione **[!UICONTROL Mapear e simular]** no painel esquerdo.
@@ -253,14 +250,14 @@ Para validar sua configuração no Assurance:
 
 ## Implementar o Places no aplicativo
 
-Conforme discutido nas lições anteriores, a instalação de uma extensão de tag móvel fornece apenas a configuração. Em seguida, você deve instalar e registrar o SDK do Places. Se essas etapas não estiverem claras, reveja a seção [Instalar SDKs](install-sdks.md).
+Conforme discutido nas lições anteriores, a instalação de uma extensão de tag móvel fornece apenas a configuração. Em seguida, você deve instalar e registrar o Places SDK. Se essas etapas não estiverem claras, reveja a seção [Instalar SDKs](install-sdks.md).
 
 >[!NOTE]
 >
->Se você concluiu a seção [Instalar SDKs](install-sdks.md), o SDK do Places já está instalado e você pode ignorar essa etapa.
+>Se você concluiu a seção [Instalar SDKs](install-sdks.md), o Places SDK já está instalado e você pode ignorar essa etapa.
 >
 
-1. No Xcode, verifique se [AEP Places](https://github.com/adobe/aepsdk-places-ios) foram adicionados à lista de pacotes nas dependências de pacotes. Consulte [Gerenciador de pacotes do Swift](install-sdks.md#swift-package-manager).
+1. No Xcode, verifique se [AEP Places](https://github.com/adobe/aepsdk-places-ios) foi adicionado à lista de pacotes nas dependências de pacotes. Consulte [Gerenciador de pacotes do Swift](install-sdks.md#swift-package-manager).
 1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** no navegador de projetos Xcode.
 1. Certifique-se de que `AEPPlaces` faça parte da sua lista de importações.
 
@@ -333,13 +330,13 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 
    <img src="assets/appentryexit.png" width="300" />
 
-1. Você deve ver os eventos na interface do usuário do Assurance.
+1. Você deve ver os eventos na interface do Assurance.
 
 
 
 ## Próximas etapas
 
-Agora você deve ter todas as ferramentas para começar a adicionar mais funcionalidade à funcionalidade de geolocalização no aplicativo. Depois de encaminhar os eventos para o Edge Network, e uma vez configurado o aplicativo para [Experience Platform](platform.md), você deverá ver os eventos de experiência que aparecem para o perfil usado no aplicativo.
+Agora você deve ter todas as ferramentas para começar a adicionar mais funcionalidade à funcionalidade de geolocalização no aplicativo. Depois de encaminhar os eventos para a Edge Network e configurar o aplicativo para o [Experience Platform](platform.md), você deverá ver os eventos de experiência que aparecem para o perfil usado no aplicativo.
 
 Na seção Journey Optimizer deste tutorial, você verá que os eventos de experiência podem ser usados para acionar jornadas (consulte [notificação por push](journey-optimizer-inapp.md) e [mensagens no aplicativo](journey-optimizer-push.md) com o Journey Optimizer). Por exemplo, o exemplo usual de enviar ao usuário do aplicativo uma notificação por push com alguma promoção de produto quando esse usuário entra na cerca geográfica de uma loja física.
 
@@ -347,8 +344,8 @@ Você viu uma implementação da funcionalidade para seu aplicativo, orientada p
 
 >[!SUCCESS]
 >
->Agora você habilitou o aplicativo para serviços de geolocalização usando a extensão Places no SDK móvel do Experience Platform.
+>Agora você habilitou o aplicativo para serviços de geolocalização usando a extensão Places no Experience Platform Mobile SDK.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Mapear dados para o Adobe Analytics](analytics.md)**
