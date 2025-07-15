@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-Para obter mais informações e práticas recomendadas, consulte a documentação dedicada sobre [scripts de perfil](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters).
+Para obter mais informações e práticas recomendadas, consulte a documentação dedicada sobre [scripts de perfil](https://experienceleague.adobe.com/pt-br/docs/target/using/audiences/visitor-profiles/profile-parameters).
 
 ## Atualizar tokens de parâmetro para conteúdo dinâmico
 
-Se você migrar parâmetros mbox para o objeto `xdm` e tiver ofertas, designs de recomendações ou atividades que usam [substituição de conteúdo dinâmico](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), talvez seja necessário atualizá-los de acordo para levar em conta os novos nomes de parâmetros XDM.
+Se você migrar parâmetros mbox para o objeto `xdm` e tiver ofertas, designs de recomendações ou atividades que usam [substituição de conteúdo dinâmico](https://experienceleague.adobe.com/pt-br/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer), talvez seja necessário atualizá-los de acordo para levar em conta os novos nomes de parâmetros XDM.
 
 Dependendo de como você está usando a substituição de token para parâmetros mbox, talvez seja possível aprimorar a configuração existente para levar em conta nomes de parâmetros antigos e novos. No entanto, em situações em que o código JavaScript personalizado não é possível, como em ofertas JSON, você deve criar cópias e fazer atualizações após a conclusão da migração e estar ativo no site de produção.
 
@@ -88,4 +88,4 @@ Em seguida, saiba como [validar a implementação do Target](validate.md).
 
 >[!NOTE]
 >
->Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Offer Decisioning e do Target. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>Estamos empenhados em ajudá-lo a ser bem-sucedido na migração para dispositivos móveis do Target da extensão do Target para a extensão do Offer Decisioning e do Target. Se você encontrar obstáculos com sua migração ou achar que há informações críticas ausentes neste guia, envie-nos uma mensagem em [esta discussão da comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=pt#M463).
