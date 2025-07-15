@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 1%
+source-wordcount: '1038'
+ht-degree: 2%
 
 ---
 
@@ -233,6 +233,8 @@ No exercício anterior, você baixou o arquivo [CitiSignal-GSPeM-assets.zip](../
 
 ![GSPeM](./images/gspem17.png)
 
+### Modelo meta
+
 Vá para **Conteúdo** > **Modelos**. Clique em **+ Adicionar modelo**.
 
 ![GSPeM](./images/gspem125.png)
@@ -261,6 +263,8 @@ Use para o campo **Nome do modelo**:
 Seu modelo foi salvo e está disponível na biblioteca de modelos.
 
 ![GSPeM](./images/gspem131.png)
+
+### Exibir modelos de anúncio de banner
 
 Clique em **+ Adicionar modelo**.
 
@@ -348,6 +352,39 @@ Use para o campo **Nome do modelo**:
 Seu modelo foi salvo e está disponível na biblioteca de modelos.
 
 ![GSPeM](./images/gspem152.png)
+
+### Modelo de email
+
+Clique em **+ Adicionar modelo**.
+
+![GSPeM](./images/gspem153.png)
+
+Selecione **Email** e clique em **Procurar**.
+
+![GSPeM](./images/gspem154.png)
+
+Na pasta que contém os arquivos **CitiSignal-GSPeM-assets** baixados, navegue até a pasta **modelos**. Selecione o arquivo **citisignal-email-template.html** e clique em **Abrir**.
+
+![GSPeM](./images/gspem155.png)
+
+Você deverá ver isso. Clique em **Next**.
+
+![GSPeM](./images/gspem156.png)
+
+Clique em **Next**.
+
+![GSPeM](./images/gspem157.png)
+
+Use para o campo **Nome do modelo**:
+`--aepUserLdap---citisignal-email-template`.
+
+Clique em **Publicar modelo**.
+
+![GSPeM](./images/gspem158.png)
+
+Seu modelo foi salvo e está disponível na biblioteca de modelos.
+
+![GSPeM](./images/gspem159.png)
 
 Agora você configurou os modelos necessários para o próximo exercício.
 

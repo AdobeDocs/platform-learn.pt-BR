@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
+source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
 workflow-type: tm+mt
 source-wordcount: '3788'
 ht-degree: 0%
@@ -76,7 +76,7 @@ A primeira coisa que é necessária para conseguir isso é uma versão em preto 
 
 ### 1.1.1.3.1 Criar sua imagem de referência de composição
 
-Você pode usar [esta imagem de exemplo](./images/CitiSignal.jpg) ou criar seu próprio texto para experimentar. Siga as etapas abaixo no Adobe Illustrator para criar seu próprio arquivo de imagem. Se você optar por usar a imagem predefinida, ignore a seção abaixo e vá para a etapa **1.1.1.2.2 Gerar sua imagem** diretamente.
+Você pode usar [esta imagem de exemplo](./images/CitiSignal.jpg) ou criar seu próprio texto para experimentar. Siga as etapas abaixo no Adobe Illustrator para criar seu próprio arquivo de imagem. Se você optar por usar a imagem predefinida, ignore a seção abaixo e vá para a etapa **1.1.1.3.2 Gerar sua imagem** diretamente.
 
 Abra o **Adobe Illustrator**. Clique em **Novo arquivo**.
 
@@ -451,7 +451,7 @@ Você deverá ver uma imagem hiperrealista de **cavalos em um campo**.
 
 Retorne à solicitação denominada **POST - Firefly - T2I V4** da coleção **FF - Firefly Services Tech Insiders** e vá para os **Cabeçalhos** da solicitação.
 
-Altere a variável **x-model-version** para `image4_ultra`. Neste exemplo, você usará `image4_standard`.
+Altere a variável **x-model-version** para `image4_ultra`. Neste exemplo, você usará `image4_ultra`.
 
 ![Firefly](./images/ffim4_11.png)
 

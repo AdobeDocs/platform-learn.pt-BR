@@ -1,17 +1,18 @@
 ---
-title: AJO e GENSTUDIO FOR PERFORMANCE MARKETING
-description: AJO e GENSTUDIO FOR PERFORMANCE MARKETING
-kt: 5342
-doc-type: tutorial
-exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+title: Ativação da campanha do GenStudio for Performance Marketing para o Meta
+description: Ativação da campanha do GenStudio for Performance Marketing para o Meta
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
+source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# 3.6.3 AJO e GenStudio for Performance Marketing
+# 1.3.4 Criar experiência de email para o AJO
 
 >[!IMPORTANT]
 >
@@ -19,29 +20,21 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Para concluir este exercício, você precisa ter acesso a uma instância provisionada para o Adobe GenStudio for Performance Marketing.
+>Para executar todas as etapas deste exercício, é necessário ter acesso a um ambiente existente do Adobe Workfront e, nesse ambiente, criar um fluxo de trabalho de projeto e aprovação. Se você seguir o exercício [Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}, terá a configuração necessária disponível.
 
->[!IMPORTANT]
->
->Para executar todas as etapas deste exercício, é necessário ter acesso a um ambiente existente do Adobe Workfront e, nesse ambiente, criar um fluxo de trabalho de projeto e aprovação. Se você seguir o exercício [Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./../../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}, terá a configuração necessária disponível.
+## 1.3.4.1 Criar e Aprovar Experiência de Email
 
-## 1.3.4.1 Criar e aprovar experiência de email no Adobe GenStudio
+No menu esquerdo, vá para **Criar**. Selecione **Email**.
 
-Ir para [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Abra o **GenStudio**.
-
-![GSPeM](./../../../creation-production/module1.3/images/gspem1.png)
-
-Você deverá ver isso. No menu esquerdo, vá para **Criar**. Selecione **Email**.
-
-![GSPeM](./../../../creation-production/module1.3/images/gsemail1.png)
+![GSPeM](./images/gsemail1.png)
 
 Selecione o modelo de **Email** que você importou antes, chamado `--aepUserLdap---citisignal-email-template`. Clique em **Usar**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail2.png)
+![GSPeM](./images/gsemail2.png)
 
 Você deverá ver isso. Altere o nome do seu anúncio para `--aepUserLdap-- - Email Online Gamers Fiber Max`.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail3.png)
+![GSPeM](./images/gsemail3.png)
 
 Em **Parâmetros**, selecione as seguintes opções:
 
@@ -52,91 +45,91 @@ Em **Parâmetros**, selecione as seguintes opções:
 
 Clique em **Selecionar do conteúdo**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail4.png)
+![GSPeM](./images/gsemail4.png)
 
 Selecione o ativo `--aepUserLdap-- - neon rabbit.png`. Clique em **Usar**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail5.png)
+![GSPeM](./images/gsemail5.png)
 
 Digite o prompt `convince online gamers to start playing online multiplayer games using CitiSignal internet` e clique em **Gerar**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail6.png)
+![GSPeM](./images/gsemail6.png)
 
 Você deve ver algo como isso, com quatro variações de email sendo geradas. O modo de exibição padrão mostra o modo de exibição **dispositivo móvel**. Você pode alternar para o modo de exibição de área de trabalho clicando no ícone **computador**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail7.png)
+![GSPeM](./images/gsemail7.png)
 
 Para cada email, uma pontuação de conformidade é calculada automaticamente. Clique na pontuação para ver mais detalhes.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail8.png)
+![GSPeM](./images/gsemail8.png)
 
 Clique em **Exibir e corrigir problemas**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail9.png)
+![GSPeM](./images/gsemail9.png)
 
 Você pode ver mais detalhes sobre o que pode fazer para otimizar a pontuação de complicação.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail10.png)
+![GSPeM](./images/gsemail10.png)
 
 Em seguida, clique em **Solicitar aprovação**, que se conectará ao Adobe Workfront.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail11.png)
+![GSPeM](./images/gsemail11.png)
 
 Selecione seu projeto do Adobe Workfront, que deve ser nomeado como `--aepUserLdap-- - CitiSignal Fiber Launch`. Insira seu próprio endereço de email em **Convidar pessoas** e verifique se sua função está definida como **Aprovador**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail12.png)
+![GSPeM](./images/gsemail12.png)
 
 Como alternativa, você também pode usar um fluxo de trabalho de aprovação existente no Adobe Workfront. Para fazer isso, clique em **Usar modelo** e selecione o modelo `--aepuserLdap-- - Approval Workflow`. Clique em **Enviar**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail13.png)
+![GSPeM](./images/gsemail13.png)
 
 Clique em **Exibir comentários no Workfront**. Você será enviado agora para a Interface do Usuário do Adobe Workfront Proof.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail14.png)
+![GSPeM](./images/gsemail14.png)
 
 Na interface do Adobe Workfront Proof, clique em **Tomar decisão**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail15.png)
+![GSPeM](./images/gsemail15.png)
 
 Selecione **Aprovado** e clique em **Tomar decisão**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail16.png)
+![GSPeM](./images/gsemail16.png)
 
 Clique em **Publicar**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail17.png)
+![GSPeM](./images/gsemail17.png)
 
 Selecione sua Campanha `--aepUserLdap-- - CitiSignal Fiber Launch Campaign` e clique em **Publicar**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail18.png)
+![GSPeM](./images/gsemail18.png)
 
 Clique em **Abrir no Conteúdo**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail19.png)
+![GSPeM](./images/gsemail19.png)
 
 As 4 experiências de email agora estão disponíveis em **Conteúdo** > **Experiências**.
 
-![GSPeM](./../../../creation-production/module1.3/images/gsemail20.png)
+![GSPeM](./images/gsemail20.png)
 
 ## 1.3.4.2 Criar uma campanha no AJO
 
 Faça login no Adobe Journey Optimizer em [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![ACOP](./../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
 Você será redirecionado para a exibição **Página inicial** no Journey Optimizer. Primeiro, verifique se você está usando a sandbox correta. A sandbox a ser usada é chamada `--aepSandboxName--`. Você estará na exibição **Página inicial** da sua sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![ACOP](./../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
 Agora você criará uma campanha. Ao contrário da jornada baseada em eventos do exercício anterior, que depende de eventos de experiência de entrada, entradas de público-alvo ou saídas para acionar uma jornada para um cliente específico, as campanhas direcionam todo um público-alvo uma vez com conteúdo exclusivo, como boletins informativos, promoções únicas ou informações genéricas ou periodicamente com conteúdo semelhante enviado regularmente, como por exemplo campanhas de aniversário e lembretes.
 
 No menu, vá para **Campanhas** e clique em **Criar campanha**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail21.png)
+![Journey Optimizer](./images/gsemail21.png)
 
 Selecione **Agendado - Marketing** e clique em **Criar**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail22.png)
+![Journey Optimizer](./images/gsemail22.png)
 
 Na tela de criação da campanha, configure o seguinte:
 
@@ -145,15 +138,15 @@ Na tela de criação da campanha, configure o seguinte:
 
 Clique em **Ações**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail23.png)
+![Journey Optimizer](./images/gsemail23.png)
 
 Clique em **+ Adicionar ação** e selecione **Email**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail24.png)
+![Journey Optimizer](./images/gsemail24.png)
 
 Em seguida, selecione uma **configuração de email** existente e clique em **Editar conteúdo**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail25.png)
+![Journey Optimizer](./images/gsemail25.png)
 
 Você verá isso. Para a **Linha de assunto**, use esta:
 
@@ -163,80 +156,80 @@ Você verá isso. Para a **Linha de assunto**, use esta:
 
 Em seguida, clique em **Editar conteúdo**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail26.png)
+![Journey Optimizer](./images/gsemail26.png)
 
 Clique em **Importar HTML**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail27.png)
+![Journey Optimizer](./images/gsemail27.png)
 
 Em seguida, clique no botão para **Adobe GenStudio for Performance Marketing**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail28.png)
+![Journey Optimizer](./images/gsemail28.png)
 
 Você deverá ver uma janela pop-up que mostra todas as experiências de email publicadas no GenStudio for Performance Marketing. Selecione uma das experiências de email disponíveis e clique em **Usar**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail29.png)
+![Journey Optimizer](./images/gsemail29.png)
 
 Selecione seu próprio repositório do AEM Assets CS, que deve se chamar `--aepUserLdap-- - CitiSignal dev`, e clique em **Importar**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail30.png)
+![Journey Optimizer](./images/gsemail30.png)
 
 Você deverá ver isso. Selecione o botão de imagem ausente e clique em **Selecionar um ativo**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail31.png)
+![Journey Optimizer](./images/gsemail31.png)
 
 Vá para a pasta semelhante a esta, começando com **GenStudio.zip....** e selecione a imagem `--aepUserLdap-- - neon rabbit.png`. Clique em **Selecionar**
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail32.png)
+![Journey Optimizer](./images/gsemail32.png)
 
 Você deverá ver isso.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail33.png)
+![Journey Optimizer](./images/gsemail33.png)
 
 Role para baixo até o rodapé, selecione a palavra **Cancelar inscrição** e clique no ícone **link**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail38.png)
+![Journey Optimizer](./images/gsemail38.png)
 
 Defina o **Type** como **Opção de não participação/Cancelamento de assinatura externo** e defina a URL como `https://techinsiders.org/unsubscribe.html` (não é permitido ter uma URL em branco para o link de cancelamento de assinatura).
 
 Clique em **Salvar** e na **seta** no canto superior esquerdo da tela para voltar para a configuração da campanha.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail39.png)
+![Journey Optimizer](./images/gsemail39.png)
 
 Ir para **Público**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail34.png)
+![Journey Optimizer](./images/gsemail34.png)
 
 Clique em **Selecionar audiência**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail35.png)
+![Journey Optimizer](./images/gsemail35.png)
 
 Selecione a audiência da lista de assinaturas dos Jogadores Online, que deve se chamar `--aepUserLdap--_SL_Interest_Online_Gaming`. Clique em **Salvar**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail36.png)
+![Journey Optimizer](./images/gsemail36.png)
 
 Clique em **Revisar para ativar**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail37.png)
+![Journey Optimizer](./images/gsemail37.png)
 
 Se a configuração da sua campanha não tiver problemas, você poderá clicar em **Ativar**.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail40.png)
+![Journey Optimizer](./images/gsemail40.png)
 
 Sua campanha será ativada, o que leva alguns minutos.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail41.png)
+![Journey Optimizer](./images/gsemail41.png)
 
 Após alguns minutos, a campanha é ativada e o email será enviado para a lista de assinaturas selecionada.
 
-![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail42.png)
+![Journey Optimizer](./images/gsemail42.png)
 
 Você concluiu este exercício agora.
 
 ## Próximas etapas
 
-Ir para [Resumo e Benefícios](./summary.md)
+Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
-Voltar para [Adobe Journey Optimizer: Gerenciamento de Conteúdo](./ajocontent.md){target="_blank"}
+Voltar para [GenStudio for Performance Marketing](./genstudio.md){target="_blank"}
 
-Voltar para [Todos os módulos](./../../../../overview.md){target="_blank"}
+Voltar para [Todos os Módulos](./../../../overview.md){target="_blank"}
