@@ -80,7 +80,7 @@ Campaigns
 + Administração {#admin}
    + [Visão geral](/help/platform/admin/overview.md)
    + [Adicionar usuários](/help/platform/admin/add-users.md)
-   + [Adicionar usuários à Coleção de Dados](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
+   + [Adicionar usuários à Coleção de Dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions)
    + [Adicionar desenvolvedores](/help/platform/admin/add-developers.md)
    + [Adicionar administradores de produto](/help/platform/admin/add-product-administrators.md)
    + [Configurar o controle de acesso baseado em atributos](/help/platform/admin/configure-attribute-based-access-control.md)
@@ -125,15 +125,15 @@ Campaigns
    + [Criar e ativar públicos-alvo da conta (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [Demonstração da segmentação por transmissão](/help/platform/audiences/streaming-segmentation-demo.md)
    + [Avaliar públicos-alvo em lote sob demanda](/help/platform/audiences/evaluate-audiences-on-demand.md)
-   + [Avaliar uma regra de público-alvo](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [Criar um conjunto de dados para exportar os dados](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [Avaliar uma regra de público-alvo](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=pt-BR){target="_blank"}
+   + [Criar um conjunto de dados para exportar os dados](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html?lang=pt-BR){target="_blank"}
    + [Configuração da conexão de Correspondência de segmentos](/help/platform/segments/segment-match-connection-setup.md)
    + [Governança de dados da Correspondência de segmentos](/help/platform/segments/segment-match-data-governance.md)
    + [Fluxo de configuração da Correspondência de segmentos](/help/platform/segments/segment-match-configuration-flow.md)
    + [Insights de pré-compartilhamento da correspondência de segmentos](/help/platform/segments/segment-match-pre-share-insights.md)
    + [Correspondência de segmentos recebendo dados](/help/platform/segments/segment-match-receiving-data.md)
 + [Logs de auditoria](/help/platform/governance/audit-logs.md)
-+ [Coleta de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [Coleta de dados](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=pt-BR){target="_blank"}
 + Colaboração {#collaboration}
    + [Visão geral do Real-Time CDP Collaboration](collaboration/real-time-cdp-collaboration-overview.md)
    + [Introdução ao Collaboration](collaboration/real-time-cdp-collaboration-intro.md)
@@ -158,27 +158,27 @@ Campaigns
    + [Visão geral](/help/platform/data-hygiene/overview.md)
    + [Preparo de dados para higiene de dados](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [Excluir conjuntos de dados e lotes](/help/platform/data-hygiene/delete-datasets-and-batches.md)
-   + [Expirar conjuntos de dados](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [Expirar conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [Perfil pseudônimo e expiração de evento (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [Excluir perfis](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/profiles/delete-profiles)
-   + [Atualizar um atributo de perfil](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
+   + [Atualizar um atributo de perfil](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Ingestão de dados {#data-ingestion}
    + [Visão geral](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [Visão geral da assimilação em lote](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [Criar e preencher um conjunto de dados](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [Excluir conjuntos de dados e lotes](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [Mapear um arquivo CSV para XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
-   + [Visão geral das fontes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
+   + [Mapear um arquivo CSV para XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=pt-BR){target="_blank"}
+   + [Visão geral das fontes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html?lang=pt-BR)
    + [Assimilar dados do Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
-   + [Assimilar dados do Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Assimilar dados do Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=pt-BR)
    + [Assimilar dados do armazenamento na nuvem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=pt-BR)
    + [Assimilar dados do CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=pt-BR)
-   + [Assimilar dados de bancos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
+   + [Assimilar dados de bancos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html?lang=pt-BR)
    + [Visão geral da assimilação por transmissão](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [Transmitir dados com a API HTTP](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=pt-BR)
    + [Dados de fluxo usando Conectores de origem](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=pt-BR)
-   + [Tutoriais do Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [Tutoriais do Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+   + [Tutoriais do Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=pt-BR){target="_blank"}
+   + [Tutoriais do Mobile SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=pt-BR){target="_blank"}
 + Ciclo de vida dos dados {#data-lifecycle}
    + [Expirar conjuntos de dados](/help/platform/data-lifecycle/expire-datasets.md)
 + Destinos {#destinations}
@@ -231,7 +231,7 @@ Campaigns
    + [Compreensão do Perfil do cliente em tempo real](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [Diagrama de visão geral do perfil](/help/platform/profiles/overview-diagram.md)
    + [Enviar dados para o perfil](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [Personalizar detalhes de exibição de perfil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+   + [Personalizar detalhes de exibição de perfil](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html?lang=pt-BR){target="_blank"}
    + [Exibir perfis de conta](/help/platform/profiles/view-account-profiles.md)
    + [Criar políticas de mesclagem](/help/platform/profiles/create-merge-policies.md)
    + [Visão geral dos esquemas de união](/help/platform/profiles/union-schemas-overview.md)
@@ -260,12 +260,12 @@ Campaigns
    + [Funções definidas pelo Adobe](/help/platform/queries/adobe-defined-functions.md)
    + [Padrões de uso de dados](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [Executar consultas](/help/platform/queries/run-queries.md)
-   + [Gerar conjuntos de dados a partir dos resultados da consulta](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+   + [Gerar conjuntos de dados a partir dos resultados da consulta](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html?lang=pt-BR){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [Analisar e visualizar dados](/help/platform/queries/analyze-and-visualize.md)
    + [Criar painéis usando ferramentas de BI](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [Recarregue os dados do cliente](/help/platform/queries/recharge-your-customer-data.md)
-   + [Conectar clientes ao Serviço de Consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [Conectar clientes ao Serviço de Consulta](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=pt-BR){target="_blank"}
    + [Validar dados no datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Esquemas {#schemas}
    + [Visão geral](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -281,7 +281,7 @@ Campaigns
    + [Usar campos enumerados e valores sugeridos](/help/platform/schemas/use-enumerated-fields.md)
    + [Copiar esquemas entre sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [Atualizar esquemas](/help/platform/schemas/update-schemas.md)
-   + [Criar um esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
+   + [Criar um esquema ad hoc](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html?lang=pt-BR){target="_blank"}
 + Origens {#sources}
    + [Visão geral](/help/platform/sources/overview.md)
    + [Assimilar dados do Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -299,10 +299,10 @@ Campaigns
    + [Criar e publicar uma instância de manual](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Integrações da Experience Cloud {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=pt-BR)
-   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=pt-BR)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
-   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html?lang=pt-BR)
+   + [Target](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + Tendências do setor {#industry}
    + [O futuro do gerenciamento de dados e do ambiente em mudança](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [Os dois lados da moeda - marcas e consumidores](/help/platform/industry/brands-vs-consumers.md)
