@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Este vídeo tem como objetivo fornecer aos profissionais de mídia paga ou de agências uma visão geral de alto nível da prop de valor do Real-Time CDP, o que é, como funciona e o que faz com foco nas fontes de dados e públicos-alvo que alimentam seu caso de uso e fluxos de trabalho do Real-Time CDP Collaboration.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464663/?learn=on&enablevpops&captions=por_br)
