@@ -1,22 +1,21 @@
 ---
 title: Executar consultas com o serviço de consulta
-description: Este vídeo mostra como executar queries na interface do Adobe Experience Platform e em um cliente PSQL. Além disso, é demonstrado o uso de propriedades individuais em um objeto XDM, o uso de funções definidas pelo Adobe e o uso de CREATE TABLE AS SELECT (CTAS).
+description: Saiba como usar o Editor de consultas do Adobe Experience Platform para criar, executar e gerenciar consultas SQL com eficiência. Os visualizadores aprenderão a usar recursos como o navegador de objetos, preenchimento automático, consultas parametrizadas e ferramentas de agendamento para simplificar fluxos de trabalho de dados e gerar insights acionáveis em toda a organização.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 3d32a0557ef389fead5387c1e5f85d2c8c55631c
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 1%
+source-wordcount: '109'
+ht-degree: 0%
 
 ---
 
 # Executar consultas
 
-Este vídeo mostra como executar queries na interface do Adobe Experience Platform e em um cliente PSQL. Além disso, é demonstrado o uso de propriedades individuais em um objeto XDM, o uso de funções definidas pelo Adobe e o uso de CREATE TABLE AS SELECT (CTAS). Para obter a documentação detalhada do produto, consulte o [Guia da Interface do Usuário do Editor de Consultas](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=pt-BR).
-Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
+Saiba como usar o Editor de consultas do Adobe Experience Platform para criar, executar e gerenciar consultas SQL com eficiência. Os visualizadores aprenderão a usar recursos como o navegador de objetos, preenchimento automático, consultas parametrizadas e ferramentas de agendamento para simplificar fluxos de trabalho de dados e gerar insights acionáveis em toda a organização. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/33393?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
