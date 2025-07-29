@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Saiba como conectar bancos de dados do Oracle no Adobe Experience Platform para descobrir esquemas, criar modelos de dados e usar os dados para enriquecimento de público. O vídeo aborda o processo passo a passo de adição de um banco de dados federado do Oracle, desde a navegação até a seção Dados federados até a inserção de detalhes de conexão.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470069/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470081/?learn=on&enablevpops&captions=por_br)

@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Saiba como assinar alertas de Composição de público-alvo federado para receber notificações no aplicativo ou por email para execuções bem-sucedidas e com falha. Para ativar essa opção, configure as preferências nas Configurações de notificação no produto Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470059/?learn=on&enablevpops&captions=por_br)
 
 
 ## Como ativar notificações
