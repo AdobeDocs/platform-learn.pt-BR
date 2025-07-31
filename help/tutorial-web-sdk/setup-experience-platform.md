@@ -44,7 +44,7 @@ Para concluir esta lição, primeiro você deve:
 
 ## Criar um conjunto de dados
 
-Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um [conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
+Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um [conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
 Vamos configurar um conjunto de dados para seus dados de evento da Web do Luma:
 
@@ -160,7 +160,7 @@ Para confirmar que os dados chegaram ao data lake da Platform, uma opção rápi
 
 >[!INFO]
 >
->  Para obter mais detalhes sobre o serviço de consulta da Adobe Experience Platform, consulte [Explorar dados](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) na seção de tutoriais da Platform.
+>  Para obter mais detalhes sobre o serviço de consulta da Adobe Experience Platform, consulte [Explorar dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/queries/explore-data) na seção de tutoriais da Platform.
 
 
 ## Ativar o conjunto de dados e o esquema para o Perfil do cliente em tempo real
@@ -340,4 +340,4 @@ Como esse é um público-alvo muito simples, podemos usar o método de avaliaç�
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)

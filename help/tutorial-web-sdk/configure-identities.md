@@ -17,7 +17,7 @@ Saiba como configurar namespaces de identidade para usar com o SDK da web da Ado
 
 O [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home) define uma ID de visitante comum (a ECID) em todos os aplicativos do Adobe baseados na SDK para potencializar recursos do Experience Cloud, como o compartilhamento de público-alvo entre aplicativos. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com outros sistemas, como o sistema de CRM (relacionamento com o cliente).
 
-O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sim, há dois!) usa as ECIDs e as IDs do cliente para gerar gráficos de identidade, permitindo mesclar atributos e comportamentos em Perfis de clientes em tempo real.
+O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) (sim, há dois!) usa as ECIDs e as IDs do cliente para gerar gráficos de identidade, permitindo mesclar atributos e comportamentos em Perfis de clientes em tempo real.
 
 >[!NOTE]
 >
@@ -98,4 +98,4 @@ Agora que as identidades estão em vigor, o fluxo de dados pode ser configurado.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)

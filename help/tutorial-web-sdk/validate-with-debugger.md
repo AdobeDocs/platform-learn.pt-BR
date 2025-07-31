@@ -143,7 +143,7 @@ Esses tipos de detalhes de solicitação também estão visíveis na guia **Rede
 
 Conforme você aprendeu na lição [Configurar uma sequência de dados](configure-datastream.md), o Platform Web SDK envia dados da sua propriedade digital para o Platform Edge Network. Em seguida, o Platform Edge Network faz solicitações adicionais do lado do servidor para os serviços correspondentes ativados no fluxo de dados. Você pode validar as solicitações do lado do servidor feitas pelo Platform Edge Network usando o Edge Trace no Debugger.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home). -->
 
 
 ### Ativar o Edge Trace
@@ -167,4 +167,4 @@ Nesse ponto, não é possível visualizar solicitações do Platform Edge Networ
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
