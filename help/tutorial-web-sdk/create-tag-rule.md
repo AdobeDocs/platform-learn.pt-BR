@@ -70,7 +70,7 @@ Todas essas regras serão sequenciadas corretamente usando a opção &quot;[!UIC
 
 Este vídeo fornece uma visão geral do processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454032/?learn=on&enablevpops&captions=por_br)
 
 ### Campos de configuração global
 
