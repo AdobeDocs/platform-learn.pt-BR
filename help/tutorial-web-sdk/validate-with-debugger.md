@@ -4,9 +4,9 @@ description: Saiba como validar a implementação do Platform Web SDK com o Adob
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ O Experience Platform Debugger é uma extensão disponível para os navegadores 
 
 Se você nunca usou o depurador antes, assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/36163?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 Nesta lição, você usa a [extensão do Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para substituir a propriedade de tag codificada no [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) com sua própria propriedade.
 
@@ -143,7 +143,7 @@ Esses tipos de detalhes de solicitação também estão visíveis na guia **Rede
 
 Conforme você aprendeu na lição [Configurar uma sequência de dados](configure-datastream.md), o Platform Web SDK envia dados da sua propriedade digital para o Platform Edge Network. Em seguida, o Platform Edge Network faz solicitações adicionais do lado do servidor para os serviços correspondentes ativados no fluxo de dados. Você pode validar as solicitações do lado do servidor feitas pelo Platform Edge Network usando o Edge Trace no Debugger.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Ativar o Edge Trace
@@ -165,8 +165,6 @@ Para ativar o Edge Trace:
 
 Nesse ponto, não é possível visualizar solicitações do Platform Edge Network que vão para aplicativos do Adobe porque você não ativou nenhuma no fluxo de dados. Em lições futuras, use o Edge Trace para exibir as solicitações de saída do lado do servidor para os aplicativos da Adobe e para o encaminhamento de eventos. Mas, primeiro, saiba mais sobre outra ferramenta para validar solicitações do lado do servidor feitas pelo Platform Edge Network — Adobe Experience Platform Assurance!
 
-[Próximo: ](validate-with-assurance.md)
-
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

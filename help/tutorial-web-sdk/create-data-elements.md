@@ -1,19 +1,19 @@
 ---
-title: Criar elementos de dados para o SDK da Web da plataforma
+title: Criar elementos de dados para o Platform Web SDK
 description: Saiba como criar um objeto XDM e mapear elementos de dados para ele em tags. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
 
 # Criar elementos de dados
 
-Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade no [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, preencha os campos no esquema XDM com o tipo de elemento de dados Variável da extensão do SDK da Web da Adobe Experience Platform.
+Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade no [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, preencha os campos no esquema XDM com o tipo de elemento de dados Variável da extensão do Adobe Experience Platform Web SDK.
 
 ## Objetivos de aprendizagem
 
@@ -31,7 +31,7 @@ Você entende o que é uma camada de dados e concluiu as lições anteriores no 
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
 * [Configurar uma sequência de dados](configure-datastream.md)
-* [Extensão SDK da Web instalada na propriedade da tag](install-web-sdk.md)
+* [Extensão do Web SDK instalada na propriedade da tag](install-web-sdk.md)
 
 
 >[!IMPORTANT]
@@ -54,9 +54,9 @@ Há várias maneiras de mapear dados da camada de dados para o XDM usando a func
 
 ### Implementar o XDM na camada de dados
 
-Essa abordagem envolve o uso do objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um elemento de dados de objeto XDM nas tags. Se sua implementação não estiver usando um gerenciador de tags, essa abordagem poderá ser ideal, pois você pode enviar dados para o XDM diretamente do seu aplicativo usando o [comando sendEvent do XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
+Essa abordagem envolve o uso do objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um elemento de dados de objeto XDM nas tags. Se sua implementação não estiver usando um gerenciador de tags, essa abordagem poderá ser ideal, pois você pode enviar dados para o XDM diretamente do seu aplicativo usando o [comando sendEvent do XDM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
 
-Veja abaixo um exemplo de como seria a camada de dados usando o formato da Camada de dados do cliente Adobe:
+Veja abaixo um exemplo de como a camada de dados seria usada com o formato da Camada de dados do cliente Adobe:
 
 +++XDM no exemplo de Camada de dados
 
@@ -117,7 +117,7 @@ Essa abordagem envolve o mapeamento de variáveis de camada de dados individuais
 #### Pontos positivos
 
 * A abordagem mais flexível, pois você pode controlar variáveis individuais e transformar dados antes que eles cheguem ao XDM
-* Pode usar acionadores de tags Adobe e a funcionalidade de refugo para transmitir dados ao XDM
+* Pode usar acionadores de tags da Adobe e a funcionalidade de refugo para transmitir dados ao XDM
 * Pode mapear elementos de dados para pixels de terceiros no lado do cliente
 
 #### Pontos negativos
@@ -129,17 +129,17 @@ Essa abordagem envolve o mapeamento de variáveis de camada de dados individuais
 >
 > Camada de dados Google
 > 
-> Se sua organização já usa o Google Analytics e tem o objeto tradicional dataLayer da Google em seu site, você pode usar a [extensão de Camada de Dados da Google](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nas tags. Isso permite que você implante a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
+> Se sua organização já usa a Google Analytics e tem o objeto tradicional dataLayer da Google em seu site, você pode usar a [extensão de Camada de Dados da Google](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nas tags. Isso permite implantar a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
 
 ### Mapear para XDM no fluxo de dados
 
-Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de Dados para Coleta de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) e ignora o mapeamento de variáveis de camada de dados para XDM nas marcas.
+Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de Dados para Coleta de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) e ignora o mapeamento de variáveis de camada de dados para XDM nas marcas.
 
 #### Pontos positivos
 
 * Flexível, pois é possível mapear variáveis individuais para o XDM
-* Capacidade de [calcular novos valores](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/data-handling) a partir de uma camada de dados antes que ela vá para o XDM
-* Aproveite uma [Interface do usuário de mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep#create-mapping) para mapear campos nos dados de origem para o XDM com uma interface do tipo apontar-e-clicar
+* Capacidade de [calcular novos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) a partir de uma camada de dados antes que ela vá para o XDM
+* Aproveite uma [Interface do usuário de mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) para mapear campos nos dados de origem para o XDM com uma interface do tipo apontar-e-clicar
 
 #### Pontos negativos
 
@@ -155,7 +155,7 @@ Essa abordagem usa uma funcionalidade integrada à configuração de sequência 
 
 ## Criar elementos de dados para capturar a camada de dados
 
-Antes de criar o objeto XDM, crie o seguinte conjunto de elementos de dados para a camada de dados [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
+Antes de criar o objeto XDM, crie o seguinte conjunto de elementos de dados para a camada de dados do [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
 1. Vá para **[!UICONTROL Elementos de Dados]** e selecione **[!UICONTROL Adicionar Elemento de Dados]** (ou **[!UICONTROL Criar Novo Elemento de Dados]** se não houver elementos de dados existentes na propriedade de marca)
 
@@ -264,7 +264,7 @@ Para criar o elemento de dados Variable para XDM, vincule-o ao esquema criado na
 
 1. Selecione **[!UICONTROL Adicionar elemento de dados]**
 1. Nomeie seu Elemento de Dados `xdm.variable.content`. Recomenda-se adicionar um prefixo &quot;xdm&quot; aos Elementos de dados específicos do XDM para organizar melhor a propriedade da tag
-1. Selecione o **[!UICONTROL Adobe Experience Platform Web SDK]** como a **[!UICONTROL Extensão]**
+1. Selecione a **[!UICONTROL Adobe Experience Platform Web SDK]** como a **[!UICONTROL Extensão]**
 1. Selecione a **[!UICONTROL Variável]** como o **[!UICONTROL Tipo de Elemento de Dados]**
 1. Selecione **[!UICONTROL XDM]** como a **[!UICONTROL propriedade]**
 1. Selecione a **[!UICONTROL Sandbox]** em que você criou o esquema
@@ -277,10 +277,10 @@ Em seguida, crie o elemento de dados Variable para seu objeto de dados:
 
 1. Selecione **[!UICONTROL Adicionar elemento de dados]**
 1. Nomeie seu Elemento de Dados `data.variable`. Recomenda-se usar o prefixo &quot;dados&quot; nos elementos de dados específicos do objeto de dados para organizar melhor a propriedade da tag
-1. Selecione o **[!UICONTROL Adobe Experience Platform Web SDK]** como a **[!UICONTROL Extensão]**
+1. Selecione a **[!UICONTROL Adobe Experience Platform Web SDK]** como a **[!UICONTROL Extensão]**
 1. Selecione a **[!UICONTROL Variável]** como o **[!UICONTROL Tipo de Elemento de Dados]**
 1. Selecione **[!UICONTROL dados]** como a **[!UICONTROL propriedade]**
-1. Selecione as soluções de Experience Cloud que deseja implementar como parte deste tutorial
+1. Selecione as soluções da Experience Cloud que deseja implementar como parte deste tutorial
 1. Selecione **[!UICONTROL Salvar]**
 
    ![Elemento de dados de variável para o objeto de dados](assets/data-element-data-variable.png.png)
@@ -288,7 +288,7 @@ Em seguida, crie o elemento de dados Variable para seu objeto de dados:
 
 Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
-| Elementos de dados da extensão principal | Elementos de dados da extensão SDK da Web da plataforma |
+| Elementos de dados da extensão principal | Elementos de dados da extensão do Platform Web SDK |
 -----------------------------|-------------------------------
 | `cart.orderId` | `data.variable` |
 | `cart.productInfo` | `xdm.variable.content` |
@@ -306,10 +306,8 @@ Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 >
 >Em uma lição futura [Criar regras de tag](create-tag-rule.md), você aprenderá como os elementos de dados **[!UICONTROL Variável]** permitem empilhar várias regras em tags usando o **[!UICONTROL Tipo de ação Atualizar variável]**.
 
-Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para o Platform Edge Network com uma regra de tags. Mas, primeiro, saiba mais sobre como coletar identidades com o SDK da Web.
-
-[Próximo: ](create-identities.md)
+Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para o Platform Edge Network com uma regra de tags. Mas primeiro, saiba como coletar identidades com o Web SDK.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de Discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

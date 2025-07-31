@@ -4,9 +4,9 @@ description: Saiba como enviar um evento para a Platform Edge Network com seu ob
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ Todas essas regras serão sequenciadas corretamente usando a opção &quot;[!UIC
 
 Este vídeo fornece uma visão geral do processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454032/?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campos de configuração global
 
@@ -238,7 +238,7 @@ Compare o elemento de dados com a estrutura `productListItems` (dica, ele deve c
 >[!IMPORTANT]
 >
 >Observe como as variáveis numéricas são convertidas, com valores de cadeia de caracteres na camada de dados, como `price` e `qty` reformatados em números no elemento de dados. Esses requisitos de formato são importantes para a integridade de dados na Platform e são determinados durante a etapa [configurar schemas](configure-schemas.md). No exemplo, **[!UICONTROL quantity]** usa o tipo de dados **[!UICONTROL Integer]**.
-> ![Tipo de dados de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
+>> ![Tipo de dados de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
 
 Agora, vamos mapear nossa matriz para o objeto XDM:
 
@@ -393,8 +393,6 @@ Como você pode ver na tela [!UICONTROL Fluxo de publicação], há muito mais n
 
 Agora você está pronto para validar os dados na solicitação usando o Adobe Experience Platform Debugger.
 
-[Próximo ](validate-with-debugger.md)
-
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -3,9 +3,9 @@ title: Transmitir dados para o Adobe Experience Platform com o Platform Web SDK
 description: Saiba como transmitir dados da Web para o Adobe Experience Platform com o Web SDK. Esta lição é parte do tutorial Implementar a Adobe Experience Cloud com o SDK da web.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2306'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Para concluir esta lição, primeiro você deve:
 
 ## Criar um conjunto de dados
 
-Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um [conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
+Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um [conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
 Vamos configurar um conjunto de dados para seus dados de evento da Web do Luma:
 
@@ -160,14 +160,14 @@ Para confirmar que os dados chegaram ao data lake da Platform, uma opção rápi
 
 >[!INFO]
 >
->  Para obter mais detalhes sobre o serviço de consulta da Adobe Experience Platform, consulte [Explorar dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/queries/explore-data) na seção de tutoriais da Platform.
+>  Para obter mais detalhes sobre o serviço de consulta da Adobe Experience Platform, consulte [Explorar dados](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) na seção de tutoriais da Platform.
 
 
 ## Ativar o conjunto de dados e o esquema para o Perfil do cliente em tempo real
 
 Para clientes do Real-Time Customer Data Platform e do Journey Optimizer, a próxima etapa é ativar o conjunto de dados e o esquema para o Perfil do cliente em tempo real. A transmissão de dados do Web SDK será uma das muitas fontes de dados que fluem para a Platform e você deseja unir seus dados da Web a outras fontes de dados para criar perfis de clientes de 360 graus. Para saber mais sobre o Perfil do cliente em tempo real, assista a este vídeo curto:
 
->[!VIDEO](https://video.tv.adobe.com/v/31686?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -338,8 +338,6 @@ Os públicos-alvo agrupam perfis em torno de características comuns. Crie um p�
 Como esse é um público-alvo muito simples, podemos usar o método de avaliação do Edge. Os públicos do Edge avaliam na borda, portanto, na mesma solicitação feita pelo Web SDK ao Platform Edge Network, podemos avaliar a definição do público e confirmar imediatamente se o usuário se qualificará.
 
 
-[Próximo: ](setup-analytics.md)
-
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -4,18 +4,18 @@ description: Saiba como configurar o Adobe Analytics usando o Experience Platfor
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2903'
 ht-degree: 1%
 
 ---
 
 # Configurar o Adobe Analytics com o Adobe Experience Platform Web SDK
 
-Saiba como configurar o Adobe Analytics usando o [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/web-sdk/overview), criar regras de tag para enviar dados ao Adobe Analytics e validar se o Analytics está capturando dados conforme esperado.
+Saiba como configurar o Adobe Analytics usando o [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), criar regras de tag para enviar dados ao Adobe Analytics e validar se o Analytics está capturando dados conforme esperado.
 
-O [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics?lang=pt-BR) é um aplicativo líder do setor que faz você ser capaz de entender seus clientes como pessoas e de orientar seus negócios com informações de inteligência de clientes.
+O [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics?lang=pt-BR) é um aplicativo líder do setor que faz você ser capaz de entender seus clientes como pessoas e de orientar seus negócios com informações de inteligência de clientes.
 
 ![Diagrama do Web SDK para Adobe Analytics](assets/dc-websdk-aa.png)
 
@@ -35,7 +35,7 @@ Para concluir esta lição, primeiro você deve:
 
 * Estar familiarizado com o Adobe Analytics e ter acesso a ele.
 
-* Ter pelo menos uma ID de conjunto de relatórios de teste/desenvolvimento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, [crie um](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Ter pelo menos uma ID de conjunto de relatórios de teste/desenvolvimento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, [crie um](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Conclua as lições anteriores nas seções Configuração inicial e Configuração de tags deste tutorial.
 
@@ -93,7 +93,7 @@ Se implementar o Web SDK for Adobe Analytics com um esquema XDM, como você tem 
 | `commerce.productViews.value` | prodView |
 | `commerce.productListViews.value` | scView |
 | `commerce.checkouts.value` | scCheckout |
-| `commerce.purchases.value` | Aquisição |
+| `commerce.purchases.value` | compra |
 | `commerce.order.currencyCode` | s.currencyCode |
 | `commerce.order.purchaseID` | s.purchaseID |
 | `productListItems[].SKU` | s.products=;nome do produto;;; (principal - consulte a Observação abaixo) |
@@ -106,8 +106,8 @@ As seções individuais da cadeia de caracteres do produto Analytics são defini
 >[!NOTE]
 >
 >A partir de 18 de agosto de 2022, o `productListItems[].SKU` tem prioridade para mapear para o nome do produto na variável s.products.
->&#x200B;>O valor definido como `productListItems[].name` é mapeado para o nome do produto apenas se `productListItems[].SKU` não existir. Caso contrário, ele não será mapeado e estará disponível nos dados de contexto.
->&#x200B;>Não defina uma cadeia vazia ou nula como `productListItems[].SKU`. Isso tem o efeito indesejado de mapear para o nome do produto na variável s.products.
+>>O valor definido como `productListItems[].name` é mapeado para o nome do produto apenas se `productListItems[].SKU` não existir. Caso contrário, ele não será mapeado e estará disponível nos dados de contexto.
+>>Não defina uma cadeia vazia ou nula como `productListItems[].SKU`. Isso tem o efeito indesejado de mapear para o nome do produto na variável s.products.
 
 
 ### Definir variáveis no objeto de dados
@@ -487,8 +487,6 @@ Continue a validar sua implementação revisando o carrinho, o checkout e os eve
 
 Parabéns! Você conseguiu! Este é o fim da lição e agora você está pronto para implementar o Adobe Analytics com o Platform Web SDK em seu próprio site.
 
-[Próximo: ](setup-audience-manager.md)
-
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
