@@ -4,7 +4,7 @@ description: AJO e GENSTUDIO FOR PERFORMANCE MARKETING
 kt: 5342
 doc-type: tutorial
 exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Para executar todas as etapas deste exercício, é necessário ter acesso a um ambiente existente do Adobe Workfront e, nesse ambiente, criar um fluxo de trabalho de projeto e aprovação. Se você seguir o exercício [Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./../../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}, terá a configuração necessária disponível.
+>Para executar todas as etapas deste exercício, é necessário ter acesso a um ambiente existente do Adobe Workfront e, nesse ambiente, criar um fluxo de trabalho de projeto e aprovação. Se você seguir o exercício [Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./../../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"}, terá a configuração necessária disponível.
 
 ## 1.3.4.1 Criar e aprovar experiência de email no Adobe GenStudio
 

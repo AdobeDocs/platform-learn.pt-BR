@@ -1,13 +1,14 @@
 ---
-title: Ativação da campanha do GenStudio for Performance Marketing para o Meta
-description: Ativação da campanha do GenStudio for Performance Marketing para o Meta
+title: Criar experiência de email do GenStudio for Performance Marketing para o AJO
+description: Criar experiência de email do GenStudio for Performance Marketing para o AJO
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Para executar todas as etapas deste exercício, é necessário ter acesso a um ambiente existente do Adobe Workfront e, nesse ambiente, criar um fluxo de trabalho de projeto e aprovação. Se você seguir o exercício [Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}, terá a configuração necessária disponível.
+>Para executar todas as etapas deste exercício, é necessário ter acesso a um ambiente existente do Adobe Workfront e, nesse ambiente, criar um fluxo de trabalho de projeto e aprovação. Se você seguir o exercício [Gerenciamento de Fluxo de Trabalho com o Adobe Workfront](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"}, terá a configuração necessária disponível.
 
 ## 1.3.4.1 Criar e Aprovar Experiência de Email
 
@@ -40,7 +41,7 @@ Em **Parâmetros**, selecione as seguintes opções:
 
 - **Marca**: `--aepUserLdap-- - CitiSignal`
 - **Idioma**: `English (US)`
-- **Pessoa**: `--aepUserLdap-- - Smart Home Families`
+- **Pessoa**: `--aepUserLdap-- - Online Gamers`
 - **Produto**: `--aepUserLdap-- - CitiSignal Fiber Max`
 
 Clique em **Selecionar do conteúdo**.
