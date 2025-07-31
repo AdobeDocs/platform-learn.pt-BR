@@ -240,7 +240,7 @@ Para criar a primeira **oferta**, siga estas etapas:
 
    ![Adicionar detalhes da oferta](assets/decisioning-add-offer-details.png)
 
-1. Agora você deve adicionar **representações** para definir onde a oferta é exibida. Vamos escolher o **canal da Web**. Também vamos escolher o *posicionamento* do **do {Banner** Homepage configurado anteriormente. O **posicionamento** selecionado é do tipo HTML; portanto, você pode adicionar conteúdo HTML, JSON ou TEXT diretamente ao editor para criar a oferta usando o botão de opção **Personalizado**.
+1. Agora você deve adicionar **representações** para definir onde a oferta é exibida. Vamos escolher o **canal da Web**. Também vamos escolher o *posicionamento* do **do &lbrace;Banner** Homepage configurado anteriormente. O **posicionamento** selecionado é do tipo HTML; portanto, você pode adicionar conteúdo HTML, JSON ou TEXT diretamente ao editor para criar a oferta usando o botão de opção **Personalizado**.
 
    ![Adicionar detalhes da representação](assets/decisioning-add-representation-details.png)
 

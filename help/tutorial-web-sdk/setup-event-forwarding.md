@@ -143,7 +143,7 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 >[!TIP]
 >
 >Você também pode encontrar o caminho do objeto XDM usando as ferramentas de rede do navegador da Web, filtrando solicitações de `/ee`, abrindo o sinal [!UICONTROL **Carga**] e aprofundando na variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
->> ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
 
 1. Vá para a propriedade **[!UICONTROL Encaminhamento de Eventos]** criada recentemente
 
