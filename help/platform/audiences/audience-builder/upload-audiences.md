@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Saiba como fazer upload de públicos-alvo no formato CSV na Adobe Experience Platform. Para obter mais informações, consulte a [documentação do Construtor de segmentos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423361/?learn=on&enablevpops&captions=por_br)

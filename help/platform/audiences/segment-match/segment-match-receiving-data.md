@@ -18,5 +18,5 @@ ht-degree: 90%
 
 Com a Correspondência de segmentos, os dados podem ser compartilhados por seus parceiros estratégicos. Neste vídeo, saiba como aprovar e receber os dados, e onde você pode visualizá-los e adicioná-los aos seus próprios segmentos.
 
->[!VIDEO](https://video.tv.adobe.com/v/344419/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3417369/?learn=on&enablevpops&captions=por_br)
 
