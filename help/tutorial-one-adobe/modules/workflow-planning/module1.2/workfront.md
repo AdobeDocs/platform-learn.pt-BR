@@ -3,14 +3,15 @@ title: Gerenciamento de fluxo de trabalho com o Adobe Workfront
 description: Gerenciamento de fluxo de trabalho com o Adobe Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
 
-# 1.2 Gerenciamento de fluxos de trabalho com o Adobe Workfront
+# 1.2 Gerenciamento de fluxos de trabalho com o fluxo de trabalho do Adobe Workfront
 
 ## Objetivos de aprendizagem
 
@@ -22,15 +23,19 @@ ht-degree: 2%
 
 ## Exercícios
 
-[1.2.1 Introdução ao Workfront](./ex1.md){target="_blank"}
+[1.2.1 Integração de Metadados do Workfront + AEM Assets CS](./ex1.md){target="_blank"}
 
-Neste exercício, você definirá várias configurações básicas no Workfront.
+Neste exercício, você configurará a integração Workfront + AEM Assets CS.
 
 [1.2.2 Prova com o Workfront](./ex2.md)
 
 Neste exercício, você configurará e usará um fluxo de trabalho de aprovação de prova.
 
-[1.2.5 Integração do Workfront + Photoshop](./ex5.md){target="_blank"}
+[1.2.4 Integração Workfront + AEM Sites CS](./ex4.md){target="_blank"}
+
+Neste exercício, você configurará e começará a usar o plug-in que conecta o Adobe Experience Manager Cloud Service Sites com o Adobe Workfront.
+
+[1.2.5 Integração Workfront + Photoshop](./ex5.md){target="_blank"}
 
 Neste exercício, você configurará e começará a usar o plug-in que conecta o Adobe Photoshop com o Adobe Workfront.
 

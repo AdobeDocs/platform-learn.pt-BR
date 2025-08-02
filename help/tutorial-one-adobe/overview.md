@@ -3,9 +3,9 @@ title: Visão geral - Tutorial técnico abrangente - Uma Adobe
 description: Tutorial técnico completo - Uma Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 Este tutorial é muito diverso e oferece insights claros nos seguintes aplicativos:
 
 - Adobe Firefly Services, Adobe Photoshop, E/S de estrutura Adobe, Preparação do Adobe Substance 3D
-- Adobe Workfront, Adobe Workfront Planning &amp; Adobe Workfront Fusion
+- Fluxo de trabalho do Adobe Workfront, Adobe Workfront Planning &amp; Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets, Forms e Edge Delivery Services
 - AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
@@ -64,7 +64,7 @@ Neste módulo fundamental, você preparará tudo para poder acessar e usar o amb
 
 Neste módulo, você configurará e usará o Adobe Workfront Planning para criar um novo espaço de trabalho, definir tipos de registro, gerenciar registros, criar um novo formulário de solicitação e utilizar o assistente do AI.
 
-[Gerenciamento de Fluxo de Trabalho 1.2 com o Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2 Gerenciamento de Fluxo de Trabalho com o Fluxo de Trabalho do Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 Neste módulo, você configurará e usará o Adobe Workfront para gerenciar fluxos de aprovação e usará integrações com o Adobe Experience Manager Assets, Universal Editor, Photoshop e muito mais.
 
