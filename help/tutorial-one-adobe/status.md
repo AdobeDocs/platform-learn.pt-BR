@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '414'
 ht-degree: 12%
 
 ---
@@ -24,8 +24,8 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Planejamento do Adobe Workfront](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 07/29/2025 | Não | Conteúdo ainda não concluído |
-| [Gerenciamento de Fluxo de Trabalho 1.2 com o Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 07/29/2025 | Não | Conteúdo ainda não concluído |
+| [1.1 Planejamento do Adobe Workfront](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 08/02/2025 | Sim | - |
+| [Gerenciamento de Fluxo de Trabalho 1.2 com o Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 08/02/2025 | Sim | Conteúdo ainda não concluído |
 
 ## &#x200B;2. Criação e produção
 
@@ -35,6 +35,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [1.2 Automação de Fluxo de Trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} | 06/04/2025 | Sim | - |
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 06/16/2025 | Sim | - |
 | [1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 04/01/2025 | Sim | - |
+| [1.5 Simplifique seu fluxo de trabalho com Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 08/02/2025 | Sim | - |
 
 
 ## &#x200B;3. Gestão de ativos
@@ -72,6 +73,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [1.1 Customer Journey Analytics: criar um painel usando o Analysis Workspace sobre o Adobe Experience Platform](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"} | 01/06/2025 | Sim | - |
 | [1.2 Customer Journey Analytics: assimilar e analisar dados do Google Analytics no Adobe Experience Platform com o Conector de Source do BigQuery](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 01/07/2025 | Não | Há um problema com a modelagem da preparação de dados para os dados de origem. Uma correção está pendente. |
 | [2.1 Serviço de consulta](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 12/04/2024 | Sim | - |
+| [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 08/02/2025 | Não | Conteúdo sendo desenvolvido |
 
 {style="table-layout:auto"}
 

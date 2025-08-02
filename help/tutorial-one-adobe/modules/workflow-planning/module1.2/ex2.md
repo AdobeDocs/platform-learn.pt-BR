@@ -4,9 +4,9 @@ description: Prova com o Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -224,6 +224,14 @@ Clique em **Selecionar pasta**.
 Após 1-2 minutos, seu documento será publicado no AEM Assets. Você verá um ícone do AEM ao lado do nome do documento.
 
 ![WF](./images/wfp37a.png)
+
+Clique em **Marcar como concluído** para concluir esta tarefa.
+
+![WF](./images/wfp37b.png)
+
+Você deverá ver isso.
+
+![WF](./images/wfp37c.png)
 
 ## 1.2.2.5 Exibir seu arquivo no AEM Assets
 
