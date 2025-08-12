@@ -63,6 +63,6 @@ Este exercício orienta você na criação de um público-alvo do Data Warehouse
 
 **Observação:** usamos informações de produto e crédito para criar nosso público-alvo que não moveu dados confidenciais, como pontuação de crédito, para plataformas downstream para ativação.
 
-Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Agora que nosso público-alvo federado foi criado, vamos avançar com [o mapeamento para uma conta S3](map-federated-audience-to-s3.md).
