@@ -69,7 +69,7 @@ Nesta lição, você aprenderá como um público-alvo federado pode ser usado em
 
 11. Agora que a personalização do nome foi adicionada, adicione `Hi, ` na frente da variável de personalização. Depois clique em **Salvar**.
 
-   ![jornada-email-salvar](assets/journey-email-save.png)
+    ![jornada-email-salvar](assets/journey-email-save.png)
 
 12. Clique no botão **Voltar** duas vezes para retornar à tela de jornada. No menu **Ação: Email** à direita, clique em **Salvar**.
 
