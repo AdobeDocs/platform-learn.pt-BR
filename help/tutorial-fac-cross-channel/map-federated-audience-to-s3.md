@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ Neste exercício, você aprenderá a aproveitar os atributos de público-alvo no
 
 5. Na seção **Agendando**, deixe todas as configurações padrão e clique em **Avançar**.
 
-6. Na etapa **Mapping**, verifique se o item a seguir está incluído e selecionado como a **Chave de Desduplicação**. Em seguida, clique em **Avançar**:
-   - `xdm: personalEmail.address`
+6. Na etapa **Mapping**, verifique se `xdm: personalEmail.address` está incluído e selecionado como a **Chave de Desduplicação**. Em seguida, clique em **Avançar**:
 
    ![chave-de-desduplicação](assets/deduplication-key.png)
 

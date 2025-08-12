@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '300'
 ht-degree: 3%
 
 ---
@@ -26,19 +26,21 @@ Este exercício orienta você na criação de um público-alvo do Data Warehouse
 
    ![criar-composição](assets/create-composition.png)
 
-3. Rotular sua composição como `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Clique em **Criar**.
+3. Rotular sua composição como `SecurFinancial Customers - No Loans, Good Credit`. Clique em **Criar**.
 
 4. Clique no botão **+** na tela e selecione **Criar público-alvo**. O painel direito deve ser exibido.
 
 5. Clique em **Selecionar um esquema**, selecione o esquema **FSI_CRM** e clique em **Confirmar**.
 
 6. Clique em **Continuar**. Na janela do construtor de consultas, clique no botão **+** e depois em **Condição Personalizada**. Crie as seguintes condições:
-   - `CURRENTPRODUCTS does not contain loan`
-   - `AND`
-   - `CREDITSCORE greater than or equal to 650`
-   - Usamos dados de preferência de marketing para segmentar clientes que optaram pelo email como canal de comunicação preferido:
-   - `AND`
-   - `CONSENTSMARKETINGPREFERRED equal to email`
+
+   `CURRENTPRODUCTS does not contain loan`
+   `AND`
+   `CREDITSCORE greater than or equal to 650`
+   `AND`
+   `CONSENTSMARKETINGPREFERRED equal to email`
+
+   *A última condição garante que os dados de preferência de marketing sejam usados para segmentar clientes que optaram por email como seu canal de comunicação preferido*.
 
    **Observação:** o campo de valor diferencia maiúsculas de minúsculas.
 
@@ -46,16 +48,16 @@ Este exercício orienta você na criação de um público-alvo do Data Warehouse
 
    ![construtor de consultas](assets/query-builder.png)
 
-7. Clique no botão **+** seguinte e em **Salvar público-alvo**.
-
-   Rotular esta etapa como `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Use o mesmo valor que o rótulo do público-alvo.
+7. Clique no botão **+** seguinte e em **Salvar público-alvo**. Rotular esta etapa como `SecurFinancial Customers - No Loans, Good Credit`. Use o mesmo valor que o rótulo do público-alvo.
 
 8. Adicione os seguintes mapeamentos de público-alvo:
+
    - **Campo de público-alvo do Source:** EMAIL
    - **Campo de público-alvo do Source:** PRODUTOSATUAIS
    - **Campo de público-alvo do Source:** NOME
 
 9. Selecione a identidade e o namespace principais a serem usados para perfis:
+
    - **Campo de identidade principal:** email
    - **Namespace de identidade:** email
 
@@ -63,6 +65,6 @@ Este exercício orienta você na criação de um público-alvo do Data Warehouse
 
 **Observação:** usamos informações de produto e crédito para criar nosso público-alvo que não moveu dados confidenciais, como pontuação de crédito, para plataformas downstream para ativação.
 
-Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Agora que nosso público-alvo federado foi criado, vamos avançar com [o mapeamento para uma conta S3](map-federated-audience-to-s3.md).
