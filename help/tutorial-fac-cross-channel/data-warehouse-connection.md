@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Começamos configurando uma conexão entre o Adobe Experience Platform e o Data Warehouse corporativo para habilitar a Federated Audience Composition. Isso permite consultar dados diretamente de depósitos compatíveis sem replicação. Além disso, criamos Esquemas e Modelos de dados com base nas tabelas do Data Warehouse.
 
-Para demonstrar, nos conectamos a uma conta do Snowflake. A Federated Audience Composition oferece suporte a uma lista crescente de conexões de warehouse em nuvem. Consulte a [lista atualizada de integrações](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+Para demonstrar, nos conectamos a uma conta do Snowflake. A Federated Audience Composition oferece suporte a uma lista crescente de conexões de warehouse em nuvem. Consulte a [lista atualizada de integrações](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 ## Etapas
 
