@@ -7,30 +7,30 @@ jira: KT-18743
 thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11T00:00:00Z
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
 
-
 # Visão geral
 
-A Federated Audience Composition é um recurso avançado disponível para ambientes do Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. Ele permite que arquitetos e engenheiros de dados criem e enriqueçam públicos diretamente de data warehouses de terceiros [compatíveis](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} sem replicar dados para a Adobe Experience Platform. Este tutorial fornece orientação prática para usuários técnicos para conectar data warehouses empresariais, criar e enriquecer públicos-alvo e ativá-los para experiências de marketing personalizadas.
+A Federated Audience Composition é um recurso avançado disponível para ambientes do Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. Ele permite que arquitetos e engenheiros de dados criem e enriqueçam públicos diretamente de data warehouses de terceiros [compatíveis](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} sem replicar dados para a Adobe Experience Platform. Este tutorial fornece orientação prática para usuários técnicos para conectar data warehouses empresariais, criar e enriquecer públicos-alvo e ativá-los para experiências de marketing personalizadas.
 
-## Objetivos de aprendizagem
+## Guia visual
 
-Ao concluir este tutorial, você irá:
+Este guia visual mostra as etapas de cada uma das atividades realizadas para dar suporte a vários aspectos do cenário de negócios. O objetivo é fornecer atividades que você pode aproveitar em seu ambiente, incluindo:
 
-- Entenda como conectar o Adobe Experience Platform a um data warehouse corporativo.
-- Saiba como criar e gerenciar públicos-alvo usando a Composição de público-alvo federado.
-- Explore como enriquecer os públicos-alvo existentes com dados de warehouse.
+- Conectar o Adobe Experience Platform a um data warehouse corporativo.
+- Crie e gerencie públicos-alvo usando a Composição de público-alvo federado.
 - Mapeie públicos federados para destinos externos, como o Amazon S3.
+- Enriqueça os públicos existentes com dados federados.
+- Crie públicos-alvo para impulsionar personalização &quot;no momento&quot;.
 - Crie jornadas do cliente usando dados de público-alvo federado.
-- Valide dados e processos por meio de exercícios práticos e demonstrações.
 
-Este tutorial foi projetado para arquitetos de dados e engenheiros de dados que trabalham com Real-Time CDP ou Journey Optimizer. Ele presume estar familiarizado com o Adobe Experience Platform e os conceitos básicos do data warehouse.
+Este guia foi projetado para arquitetos de dados e engenheiros de dados que trabalham com Real-Time CDP ou Journey Optimizer. Ele presume estar familiarizado com o Adobe Experience Platform e os conceitos básicos do data warehouse.
 
 ## Contexto de negócios
 
@@ -45,25 +45,16 @@ A SecurFinancial é uma importante empresa de serviços financeiros. Ele aprovei
 
 O SecurFinancial gostaria de lançar uma campanha por e-mail para redirecionar seus clientes pré-qualificados para um empréstimo com base em um bom crédito e que não têm um empréstimo ativo em seu portfólio do SecurFinancial. Embora estejam assimilando dados comportamentais online em tempo real, eles enfrentam desafios para identificar a pré-qualificação do cliente, pois estão impedidos de assimilar informações de crédito na AEP. Para qualificar clientes pré-qualificados sem mover dados restritos, eles usarão a Federated Audience Composition para enriquecer seu público comportamental do AEP.
 
-
-
 ## Pré-requisitos
 
-Para seguir este tutorial, verifique se você tem:
+Para executar atividades semelhantes em seu ambiente, verifique se você tem:
 
 - Acesso a uma conta do Adobe Experience Platform provisionada com o Real-Time CDP ou o Journey Optimizer.
 - Permissões de administrador do sistema ou a capacidade de ter permissões configuradas.
-- Familiaridade com conceitos do Adobe Experience Platform, como esquemas, conjuntos de dados e públicos-alvo (recomendado: conclua a [Introdução à lista de reprodução do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/playlists/experience-platform-introduction?lang=en){target="_blank"} no Experience League).
+- Familiaridade com conceitos do Adobe Experience Platform, como esquemas, conjuntos de dados e públicos-alvo (recomendado: conclua a [Introdução à lista de reprodução do Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} no Experience League).
 - Acesso a um data warehouse corporativo compatível (por exemplo, Amazon Redshift, Azure Synapse Analytics, Snowflake ou Google BigQuery).
 - Conhecimento básico de SQL para consulta de data warehouses.
-
-## Usando este tutorial
-
-Este tutorial está estruturado para usuários técnicos. As lições são criadas uma na outra, portanto, complete-as em ordem, a menos que indicado de outra forma.
-
-## Notas técnicas
-
 - **Ambientes de sandbox**: crie uma sandbox na instância do Real-Time CDP de sua organização para testar com segurança sem afetar os dados de produção.
-- **Conexão do Data Warehouse**: este tutorial usa uma conexão do Snowflake, mas você pode usar qualquer [warehouse de nuvem com suporte](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/start/access-prerequisites).
+- **Conexão do Data Warehouse**: este tutorial usa uma conexão do Snowflake, mas você pode usar qualquer [warehouse de nuvem com suporte](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites).
 
-Comece com a lição [Data Warehouse Connection](data-warehouse-connection.md) para começar a configurar seu ambiente.
+Vamos começar com a [Data Warehouse Connection](data-warehouse-connection.md).

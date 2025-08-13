@@ -2,22 +2,22 @@
 title: Mapear um público-alvo federado para S3
 seo-title: Map a federated audience to S3 | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Mapear um público-alvo federado para S3
-description: Nesta lição, mapearemos um público-alvo federado para um destino downstream do Real-Time CDP para oferecer suporte a uma experiência offline personalizada.
+description: Neste exercício visual, mapearemos um público-alvo federado para um destino downstream do Real-Time CDP para oferecer suporte a uma experiência offline personalizada.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-
 # Mapear o público-alvo federado para S3 para aproveitar os atributos do público-alvo para enriquecimento
 
-Neste exercício, você aprenderá a aproveitar os atributos de público-alvo no data warehouse para enriquecer a experiência do público-alvo em workflows de ativação downstream usando destinos do RTCDP. Para o SecurFinancial, esses atributos federados podem ser usados para aprimorar a experiência de personalização offline do público-alvo do cliente. Neste exemplo, mapearemos o público-alvo federado para um destino do Amazon S3 pré-configurado.
+Você pode aproveitar os atributos de público-alvo no data warehouse para enriquecer a experiência do público-alvo em workflows de ativação downstream usando destinos do RTCDP. Para o SecurFinancial, esses atributos federados podem ser usados para aprimorar a experiência de personalização offline do público-alvo do cliente. Abaixo, o público-alvo federado é mapeado para um destino do Amazon S3 pré-configurado.
 
 ## Etapas
 
@@ -31,22 +31,26 @@ Neste exercício, você aprenderá a aproveitar os atributos de público-alvo no
 
    ![selecionar-destino-s3](assets/select-s3-destination.png)
 
-4. Selecione o público **SecureFinancial Customers - No Loans, Good Credit**.
+4. Selecione o público-alvo apropriado. Em nosso exemplo: **Clientes SecureFinancial - Sem Empréstimos, Bom Crédito** público-alvo.
 
    ![select-s3-audience](assets/select-s3-audience.png)
 
-5. Na seção **Agendando**, deixe todas as configurações padrão e clique em **Avançar**.
+5. Na seção **Agendando**, use as configurações padrão e clique em **Avançar**.
 
-6. Na etapa **Mapping**, verifique se `xdm: personalEmail.address` está incluído e selecionado como a **Chave de Desduplicação**. Em seguida, clique em **Avançar**:
+6. Na etapa **Mapping**, escolha a chave de eliminação de duplicação. Em nosso exemplo, `xdm: personalEmail.address` está incluído e selecionado como a **Chave de Eliminação de Duplicação**. Em seguida, clique em **Avançar**:
 
    ![chave-de-desduplicação](assets/deduplication-key.png)
 
-7. Na etapa de mapeamento a seguir, é possível selecionar atributos de enriquecimento com base nos mapeamentos de campo de público-alvo na composição de público-alvo federado. Clique no ícone de **lápis (editar)** para exibir os atributos pré-selecionados.
+7. Na etapa de mapeamento, selecione atributos de enriquecimento com base nos mapeamentos de campo de público-alvo na composição de público-alvo federado. Clique no ícone de **lápis (editar)** para exibir os atributos pré-selecionados.
 
    ![editar-atributos](assets/edit-attributes.png)
 
    ![atributos finais](assets/final-attribution.png)
 
 8. Revise seu mapeamento de público e clique em **Concluir**.
+
+>[**RESUMO**]
+>
+> Criamos um público-alvo com sucesso e o ativamos para um destino S3 com facilidade. A interface amigável da plataforma permite que as equipes de marketing criem e ativem públicos rapidamente, reduzindo o tempo de implantação. Os clientes que adotam essa abordagem entraram em operação com o primeiro caso de uso em menos de dois meses.
 
 Estamos prontos para avançar para [criar uma jornada](build-journey-federated-audience.md).

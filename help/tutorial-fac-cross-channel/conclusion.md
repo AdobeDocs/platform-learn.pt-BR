@@ -2,29 +2,30 @@
 title: Conclusão
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Conclusão
-description: Nesta lição, resumimos os aprendizados e os principais argumentos.
+description: Concluindo, resumimos os aprendizados e os principais argumentos.
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 1%
 
 ---
-
 
 # Conclusão
 
 A Composição de público-alvo federado da Experience Platform oferece novos caminhos e acesso expandido para criar públicos-alvo de data warehouses empresariais para potencializar experiências iniciadas pela marca e no momento.
 
-Este tutorial forneceu uma introdução prática à Composição de público-alvo federado no Adobe Experience Platform. Você aprendeu a:
+Este guia visual é uma introdução à Composição de Público-Alvo Federado no Adobe Experience Platform. Você aprendeu a:
 
-- Conectar um data warehouse à Adobe Experience Platform.
-- Crie e enriqueça públicos-alvo usando dados de warehouse sem replicação.
-- Exportar públicos-alvo para o Amazon S3 para uso downstream.
-- Crie jornadas personalizadas do cliente com públicos federados.
-- Enriqueça os públicos da Experience Platform com dados federados.
+- Conectar o Adobe Experience Platform a um data warehouse corporativo.
+- Crie e gerencie públicos-alvo usando a Composição de público-alvo federado.
+- Mapeie públicos federados para destinos externos, como o Amazon S3.
+- Enriqueça os públicos existentes com dados federados.
+- Crie públicos-alvo para impulsionar personalização &quot;no momento&quot;.
+- Crie jornadas do cliente usando dados de público-alvo federado.
 
 ## Principais aprendizados
 
