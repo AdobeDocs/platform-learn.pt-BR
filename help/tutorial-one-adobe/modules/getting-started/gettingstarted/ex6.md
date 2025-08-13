@@ -4,9 +4,9 @@ description: Introdução - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Sua tela deve ter esta aparência.
 
 ![Nova integração do Adobe I/O](./images/api1.png)
 
-Selecione **Creative Cloud** e escolha **Firefly - Firefly Services**, depois selecione **Próximo**.
+Selecione **Adobe Firefly Services** e escolha **Firefly - Firefly Services**, depois selecione **Próximo**.
 
 ![Nova integração do Adobe I/O](./images/api3.png)
 
@@ -67,11 +67,11 @@ Você deverá ver isso.
 >
 >Dependendo do caminho de aprendizado selecionado, talvez você não tenha acesso à API do Photoshop Services. Você só terá acesso à API do Photoshop Services se estiver no Caminho de Aprendizado **Firefly**, **Workfront Fusion**, **ALL** ou quando estiver participando de um **workshop presencial**. Você pode pular esta etapa se não estiver em um desses caminhos de aprendizagem.
 >
->Selecione **+ Adicionar ao Projeto** e **API**.
+Selecione **+ Adicionar ao Projeto** e **API**.
 
 ![Armazenamento do Azure](./images/ps2.png)
 
-Selecione **Creative Cloud** e escolha **Photoshop - Firefly Services**. Selecione **Próximo**.
+Selecione **Adobe Firefly Services** e escolha **Photoshop - Firefly Services**. Selecione **Próximo**.
 
 ![Armazenamento do Azure](./images/ps3.png)
 
