@@ -1,20 +1,20 @@
 ---
-title: Mapear um público-alvo federado para S3
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+title: Mapear um público-alvo federado para um destino S3
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Mapear um público-alvo federado para S3
 description: Neste exercício, mapearemos um público-alvo federado para um destino downstream do Real-Time CDP para oferecer suporte a uma experiência offline personalizada.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Mapear o público-alvo federado para S3 para aproveitar os atributos do público-alvo para enriquecimento
+# Mapear um Público federado para um destino S3 para aproveitar os atributos do público-alvo para enriquecimento
 
 Você pode aproveitar os atributos de público-alvo no data warehouse para enriquecer a experiência do público-alvo em workflows de ativação downstream usando destinos do RTCDP. Para o SecurFinancial, esses atributos federados podem ser usados para aprimorar a experiência de personalização offline do público-alvo do cliente. Abaixo, o público-alvo federado é mapeado para um destino do Amazon S3 pré-configurado.
 
@@ -50,6 +50,6 @@ Você pode aproveitar os atributos de público-alvo no data warehouse para enriq
 
 >[**!SUMMARY**]
 >
-> Criamos um público-alvo com sucesso e o ativamos para um destino S3 com facilidade. A interface amigável permite que as equipes de marketing criem e ativem públicos rapidamente sem mover dados subjacentes.
+> Criamos um público-alvo com sucesso e o ativamos para um destino S3 com facilidade. Qualquer outra solução pode pegar esse público-alvo e usá-lo imediatamente. A interface amigável permite que as equipes de marketing criem e ativem públicos rapidamente sem mover dados subjacentes. Os clientes que fazem essa abordagem ENTRARAM EM OPERAÇÃO com seu primeiro uso em cerca de um mês.
 
 Agora vamos [criar uma jornada](build-journey-federated-audience.md).

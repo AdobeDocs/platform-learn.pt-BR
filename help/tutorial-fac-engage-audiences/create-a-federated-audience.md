@@ -1,22 +1,22 @@
 ---
 title: Criar um público-alvo federado
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Criar um público-alvo federado
-description: Neste exercício, configuramos uma conexão entre o Adobe Experience Platform e o Data Warehouse corporativo para habilitar a Federated Audience Composition.
+description: Neste exercício, criamos um público-alvo do data warehouse do Snowflake usando a Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # Criar um público federado
 
-Em seguida, orientamos você na criação de um público-alvo do nosso Data Warehouse usando a Composição de público-alvo federado. O público-alvo é composto de clientes do SecurFinancial com pontuação de crédito de 650 ou superior e que atualmente não têm um empréstimo em seu portfólio do SecurFinancial.
+Em seguida, orientamos você na criação de um público-alvo do data warehouse do Snowflake usando a Federated Audience Composition. O público-alvo é composto de clientes do SecurFinancial com pontuação de crédito de 650 ou superior e que atualmente não têm um empréstimo em seu portfólio do SecurFinancial.
 
 ## Etapas
 
@@ -64,6 +64,6 @@ Em seguida, orientamos você na criação de um público-alvo do nosso Data Ware
 >
 > Neste exemplo, as informações de produto e crédito foram usadas para criar nosso público-alvo por meio do acesso direto aos dados corporativos do Snowflake, sem fazer uma cópia deles no Adobe Experience Platform. Depois que o sistema externo processa o query, somente o email relevante, os produtos atuais e os valores de nome serão trazidos para a definição de público-alvo para ativação downstream. Isso se aplica a todos os destinos compatíveis com o RTCDP.
 
-Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Agora que nosso público-alvo federado foi criado, nós o [mapearemos para uma conta S3](map-federated-audience-to-s3.md).

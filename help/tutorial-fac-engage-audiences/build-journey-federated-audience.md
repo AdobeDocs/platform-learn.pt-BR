@@ -1,24 +1,24 @@
 ---
-title: Criar uma Jornada com um público-alvo federado
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Criar uma Jornada com um público-alvo federado
+title: Criar uma jornada com um público-alvo federado
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Criar uma jornada com um público-alvo federado
 description: Neste exercício, um público-alvo federado é usado em uma jornada do Journey Optimizer.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 1%
 
 ---
 
-# Criar uma Jornada com um público-alvo federado
+# Criar uma jornada com um público-alvo federado
 
 Públicos federados podem ser usados em jornadas no Adobe Journey Optimizer (AJO). Isso inclui o uso de atributos consultados da Composição de público-alvo federado para personalizar as mensagens.
 
-Para dar continuidade à história do SecurFinancial, especificamente o caso de uso de redirecionamento e personalização de clientes, orquestramos uma jornada para clientes pré-qualificados. O objetivo é enviar um e-mail personalizado com base nos atributos federados do Data Warehouse do SecurFinancial.
+Para dar continuidade à história do SecurFinancial, especificamente o caso de uso de redirecionamento e personalização de clientes, orquestramos uma jornada para clientes pré-qualificados. O objetivo é enviar um e-mail personalizado com base nos atributos federados do data warehouse do SecurFinancial.
 
 ## Etapas
 
@@ -70,7 +70,7 @@ Para dar continuidade à história do SecurFinancial, especificamente o caso de 
 
 11. Agora que a personalização do nome foi adicionada, adicione `Hi, ` na frente da variável de personalização. Depois clique em **Salvar**.
 
-    ![jornada-email-salvar](assets/journey-email-save.png)
+   ![jornada-email-salvar](assets/journey-email-save.png)
 
 12. Clique no botão **Voltar** duas vezes para retornar à tela de jornada. No menu **Ação: Email** à direita, clique em **Salvar**.
 
