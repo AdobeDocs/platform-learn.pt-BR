@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Para dar continuidade à história do SecurFinancial, especificamente o caso de 
 
 11. Agora que a personalização do nome foi adicionada, adicione `Hi, ` na frente da variável de personalização. Depois clique em **Salvar**.
 
-    ![jornada-email-salvar](assets/journey-email-save.png)
+   ![jornada-email-salvar](assets/journey-email-save.png)
 
 12. Clique no botão **Voltar** duas vezes para retornar à tela de jornada. No menu **Ação: Email** à direita, clique em **Salvar**.
 
@@ -78,4 +78,4 @@ Para dar continuidade à história do SecurFinancial, especificamente o caso de 
 
 Criamos uma jornada no AJO usando um público federado e atributos de enriquecimento federados.
 
-Agora vamos ver como [enriquecer os públicos-alvo existentes](federated-audience-composition.md) na Experience Platform com dados federados do data warehouse.
+Agora vamos ver como [enriquecer um público-alvo](federated-audience-composition.md) no Experience Platform com dados do data warehouse.
