@@ -63,7 +63,7 @@ Você deverá ver isso.
 >
 >Dependendo do caminho de aprendizado selecionado, talvez você não tenha acesso à API do Photoshop Services. Você só terá acesso à API do Photoshop Services se estiver no Caminho de Aprendizado **Firefly**, **Workfront Fusion**, **ALL** ou quando estiver participando de um **workshop presencial**. Você pode pular esta etapa se não estiver em um desses caminhos de aprendizagem.
 >
-Selecione **+ Adicionar ao Projeto** e **API**.
+>Selecione **+ Adicionar ao Projeto** e **API**.
 
 ![Armazenamento do Azure](./images/ps2.png)
 
