@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Fornecer personalização &quot;no momento&quot; usando o Edge Network
 
-A Composição de público-alvo federado permite enriquecer públicos-alvo existentes no Adobe Experience Platform (AEP) usando dados de público-alvo compostos que foram federados a partir do data warehouse corporativo. Esses dados não serão mantidos no Adobe Experience Platform, mas você pode usar os recursos de [encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} para enviar esses dados diretamente para o data warehouse.
+A Composição de público-alvo federado permite enriquecer públicos-alvo existentes no Adobe Experience Platform (AEP) usando dados de público-alvo compostos que foram federados a partir do data warehouse corporativo. Esses dados não serão mantidos no Adobe Experience Platform, mas você pode usar os recursos de [encaminhamento de eventos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} para enviar esses dados diretamente para o data warehouse.
 
 Neste exercício, usamos um público-alvo federado consultado com pontuação de crédito e atividade de empréstimo para enriquecer o público-alvo comportamental dos visitantes da página da Web de aplicativos de empréstimo.
 
