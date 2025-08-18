@@ -3,22 +3,31 @@ title: Planejamento do Adobe Workfront
 description: Planejamento do Adobe Workfront
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 4%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
 # 1.1 Planejamento do Adobe Workfront
 
+Este exercício guiará você pelos aspectos fundamentais do Workfront Planning, incluindo a criação de espaços de trabalho, a definição de tipos de registro, o gerenciamento de registros e a utilização do Assistente de IA para operações simplificadas. Executar este laboratório fará com que você se familiarize com essa solução poderosa e lhe dará um ponto de partida para explorar os recursos mais adiante.
+
 ## Objetivos de aprendizagem
 
-- Saiba como usar o Adobe Workfront Planning.
+Depois de concluir este laboratório, você estará familiarizado com os seguintes itens:
+
+- Entenda os componentes principais do Workfront Planning: espaços de trabalho, tipos de registro e registros.
+- Crie um novo Workspace adaptado a um ciclo de vida operacional específico.
+- Defina e personalize Tipos de registro no Workspace.
+- Gerenciar Registros, incluindo criação, atualização e exclusão de entradas.
+- Utilize o Assistente de IA para executar ações com eficiência.
 
 ## Pré-requisitos
 
-- Acesso ao Workfront Planning.
+- Acesso à conta do Adobe Workfront com o pacote Workfront Planning.
 
 ## Exercícios
 

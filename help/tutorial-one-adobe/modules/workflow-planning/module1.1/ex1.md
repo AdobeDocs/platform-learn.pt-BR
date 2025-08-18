@@ -4,9 +4,9 @@ description: Introdução ao Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ Clique para abrir o tipo de registro **Unidade de Negócios** recém-criado.
 
 ![Planejamento Workfront](./images/wfpl10.png)
 
-Agora você verá uma exibição de tabela vazia, pois seu tipo de registro recém-criado ainda não tem nenhum campo definido.
+Agora você verá uma exibição de tabela vazia, pois seu tipo de registro recém-criado ainda não tem nenhum registro de unidade de negócios definido.
 
 ![Planejamento Workfront](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Clique em **Salvar**.
 
 ![Planejamento Workfront](./images/wfpl17.png)
 
-Agora você criou um novo tipo de registro e excluiu e criou campos. Volte para a tela de visão geral do Workspace clicando na seta no canto superior esquerdo.
+Clique nos 3 pontos **...** no primeiro registro e selecione **Exibir**.
+
+![Planejamento Workfront](./images/wfpla1.png)
+
+Defina o **Nome** como `Consumer Services`.
+
+Defina a **Descrição** como `Handles residential offerings like mobile plans, internet packages, and customer support.`.
+
+Defina você mesmo o **Líder de Unidade de Negócios**.
+
+Depois de concluído, clique na seta para voltar à tela anterior.
+
+![Planejamento Workfront](./images/wfpla2.png)
+
+Clique nos 3 pontos **...** no segundo registro e selecione **Exibir**.
+
+![Planejamento Workfront](./images/wfpla3.png)
+
+Definir o **Nome** como `Enterprise & Business Solutions`
+
+Definir a **Descrição** como `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+Defina você mesmo o **Líder de Unidade de Negócios**.
+
+Depois de concluído, clique na seta para voltar à tela anterior.
+
+![Planejamento Workfront](./images/wfpla4.png)
+
+Clique nos 3 pontos **...** no terceiro registro e selecione **Exibir**.
+
+![Planejamento Workfront](./images/wfpla5.png)
+
+Definir o **Nome** como `Sales & Marketing`
+
+Definir a **Descrição** como `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+Defina você mesmo o **Líder de Unidade de Negócios**.
+
+Depois de concluído, clique na seta para voltar à tela anterior.
+
+![Planejamento Workfront](./images/wfpla6.png)
+
+Agora você criou um novo tipo de registro, excluiu e criou campos e criou 3 unidades de negócios. Volte para a tela de visão geral do Workspace clicando na seta no canto superior esquerdo.
 
 ![Planejamento Workfront](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Clique para abrir **Campanhas**.
 
 ![Planejamento Workfront](./images/wfpl20.png)
 
-Clique no ícone **+** para criar um novo campo. Selecione **Nova conexão** e **Personas**.
+Clique no ícone **+** para criar um novo campo. Selecione **Nova conexão** e **Unidade de Negócios**.
 
 ![Planejamento Workfront](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ Na tela de visão geral Campanhas, clique nos 3 pontos **...** e selecione **Cri
 
 ![Planejamento Workfront](./images/wfpl25.png)
 
-Altere o nome para `Campaign Request Form`. Clique em **Salvar**.
+Altere o nome para `Campaign Request Form`. Clique em **Criar**.
 
 ![Planejamento Workfront](./images/wfpl26.png)
 
@@ -186,6 +228,8 @@ Defina o **Resumo da campanha** como:
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
+
+Preencha os outros campos conforme desejar.
 
 Clique em **Enviar solicitação**.
 
@@ -297,19 +341,15 @@ Após alguns segundos, você verá uma confirmação de que a automação foi co
 
 ![Planejamento Workfront](./images/wfpl47.png)
 
-Para verificar o Programa no Workfront, abra o menu e clique em **Portfólios**.
+Para verificar o Programa no Workfront, role para a direita e clique no programa na coluna **Programa Conectado**.
 
 ![Planejamento Workfront](./images/wfpl48.png)
 
-Abra seu portfólio, que deve se chamar `--aepUserLdap-- - Marketing`.
-
-![Planejamento Workfront](./images/wfpl49.png)
-
-Vá para **Programas** e você deverá ver o programa que acabou de ser criado pela automação que você configurou.
+Você deverá ver o programa que acabou de ser criado pela automação configurada.
 
 ![Planejamento Workfront](./images/wfpl50.png)
 
-Próxima Etapa: [1.2.2 A SER DEFINIDA](./ex1.md){target="_blank"}
+Próxima etapa: [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para [Introdução ao Workfront Planning](./wfplanning.md){target="_blank"}
 
