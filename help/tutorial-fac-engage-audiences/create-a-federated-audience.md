@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -60,10 +60,10 @@ Em seguida, orientamos você na criação de um público-alvo do data warehouse 
 
 10. Clique em **Salvar** e em **Iniciar** para executar a consulta da composição.
 
->[**RESUMO**]
->
-> Neste exemplo, as informações de produto e crédito foram usadas para criar nosso público-alvo por meio do acesso direto aos dados corporativos do Snowflake, sem fazer uma cópia deles no Adobe Experience Platform. Depois que o sistema externo processa o query, somente o email relevante, os produtos atuais e os valores de nome serão trazidos para a definição de público-alvo para ativação downstream. Isso se aplica a todos os destinos compatíveis com o RTCDP.
+### RESUMO
 
-Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Neste exemplo, as informações de produto e crédito foram usadas para criar nosso público-alvo por meio do acesso direto aos dados corporativos do Snowflake, sem fazer uma cópia deles no Adobe Experience Platform. Depois que o sistema externo processa o query, somente o email relevante, os produtos atuais e os valores de nome serão trazidos para a definição de público-alvo para ativação downstream. Isso se aplica a todos os destinos compatíveis com o RTCDP.
+
+Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Agora que nosso público-alvo federado foi criado, nós o [mapearemos para um destino S3 no Experience Platform](map-federated-audience-to-s3.md).

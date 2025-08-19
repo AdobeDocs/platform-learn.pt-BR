@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ Você pode aproveitar os atributos de público-alvo no data warehouse para enriq
 
 8. Revise seu mapeamento de público e clique em **Concluir**.
 
->[**!SUMMARY**]
->
-> Criamos um público-alvo com sucesso e o ativamos para um destino S3 com facilidade. Qualquer outra solução pode pegar esse público-alvo e usá-lo imediatamente. A interface amigável permite que as equipes de marketing criem e ativem públicos rapidamente sem mover dados subjacentes. Os clientes que fazem essa abordagem ENTRARAM NO AR com seu primeiro caso de uso em cerca de um mês.
+### RESUMO
+
+Criamos um público-alvo com sucesso e o ativamos para um destino S3 com facilidade. Qualquer outra solução pode pegar esse público-alvo e usá-lo imediatamente. A interface amigável permite que as equipes de marketing criem e ativem públicos rapidamente sem mover dados subjacentes. Os clientes que fazem essa abordagem ENTRARAM NO AR com seu primeiro caso de uso em cerca de um mês.
 
 
 Agora vamos [criar uma jornada](build-journey-federated-audience.md).
