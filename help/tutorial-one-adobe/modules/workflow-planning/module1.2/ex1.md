@@ -4,10 +4,10 @@ description: Introdução ao Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 0%
+source-wordcount: '1099'
+ht-degree: 1%
 
 ---
 
@@ -26,6 +26,22 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Se você tiver configurado anteriormente um Programa AEM CS com um ambiente AEM Assets CS, pode ser que sua sandbox AEM CS tenha hibernado. Considerando que a deshibernação de uma sandbox desse tipo leva de 10 a 15 minutos, seria uma boa ideia iniciar o processo de deshibernação agora para que você não precise aguardar mais tarde.
+
+## Terminologia de fluxo de trabalho do Workfront 1.2.1.1
+
+A seguir estão os principais objetos e conceitos do Workfront:
+
+| Nome | Última atualização |
+| ---------------------- | ------------ | 
+| Portfólio | Uma coleção de projetos com características unificadoras. Esses projetos geralmente competem pelos mesmos recursos, orçamento ou período. |
+| Programa | Um subconjunto em um portfólio, em que projetos semelhantes podem ser agrupados para alcançar um benefício bem definido. |
+| Projeto | Uma grande quantidade de trabalho que deve ser concluída dentro de um período específico e deve usar um orçamento e número de recursos específicos. Para torná-lo gerenciável, divida o projeto em uma série de tarefas. Concluir todas as tarefas resulta na conclusão do projeto. |
+| Modelo de projeto | Você pode usar modelos de projeto para capturar a maioria dos processos, informações e configurações repetíveis associados aos projetos em sua organização. Depois de criar modelos, você pode anexá-los a projetos existentes ou usá-los para criar novos projetos. |
+| Tarefa | Uma atividade que deve ser executada como uma etapa para atingir uma meta final (concluir o projeto). Tarefas nunca podem existir independentemente. Eles sempre fazem parte de um projeto. |
+| Atribuição | Um usuário, função de trabalho ou equipe atribuída a um problema ou tarefa. Projetos, portfólios ou programas não podem ter atribuições. |
+| Documento/Versão | Qualquer arquivo anexado a um objeto no Workfront. Sempre que o mesmo documento for carregado no mesmo objeto, um número de versão será atribuído a ele. Os usuários podem exibir e alterar várias opções de uma versão anterior de um documento. |
+| Aprovação | Um determinado item de trabalho, como uma tarefa, um documento ou uma folha de horas, pode exigir que um supervisor ou outro usuário faça logoff no item de trabalho. Esse processo de aprovação é chamado de aprovação. |
+
 
 Ir para [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Clique para abrir o **Workfront**.
 

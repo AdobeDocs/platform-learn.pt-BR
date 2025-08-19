@@ -4,9 +4,9 @@ description: Prova com o Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '1613'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Defina o **Nome do modelo** como `--aepUserLdap-- - Approval Workflow` e defina 
 
 ![WF](./images/wfp3.png)
 
-Role para baixo e, em **Estágios** > **Estágio 1**, adicione-se com a **Função** do **Revisor e Aprovador**.
+Role para baixo e, em **Estágios** > **Estágio 1**, altere a função de **Criador de provas** para **Revisor e Aprovador**. Você também pode adicionar qualquer outra pessoa, por exemplo, adicionar a si mesmo selecionando seu usuário e definindo a **Função** de **Revisor e Aprovador**.
 
 Clique em **Criar**.
 
@@ -41,7 +41,37 @@ O fluxo de trabalho básico de aprovação agora está pronto para ser usado.
 
 ![WF](./images/wfp5.png)
 
-## 1.2.2.2 Criar um novo projeto
+## 1.2.2.2 Habilitar o Workfront Blueprint
+
+Na próxima etapa, você criará um novo projeto usando um modelo. A Adobe Workfront fornece vários blueprints disponíveis que precisam ser ativados.
+
+Para o caso de uso do CitiSignal, o blueprint **Integrated Campaign Execution** é o que você precisa usar.
+
+Para instalar esse blueprint, abra o menu e selecione **Blueprints**.
+
+![WF](./images/blueprint1.png)
+
+Selecione o filtro **Marketing** e role para baixo para encontrar o blueprint **Execução de campanha integrada**. Clique em **Instalar**.
+
+![WF](./images/blueprint2.png)
+
+Clique em **Continuar**.
+
+![WF](./images/blueprint3.png)
+
+Clique em **Instalar como está...**.
+
+![WF](./images/blueprint4.png)
+
+Você deverá ver isso. A instalação pode levar alguns minutos.
+
+![WF](./images/blueprint5.png)
+
+Após alguns minutos, o blueprint será instalado.
+
+![WF](./images/blueprint6.png)
+
+## 1.2.2.3 Criar um novo projeto
 
 Abra o **menu** e vá para **Programas**.
 
@@ -55,15 +85,23 @@ Clique no programa que você criou antes, chamado `--aepUserLdap-- CitiSignal Fi
 
 ![WF](./images/wfp6b.png)
 
-No seu programa, vá para **Projetos**. Clique em **+ Novo projeto** e selecione **Novo projeto**.
+No seu programa, vá para **Projetos**. Clique em **+ Novo projeto** e selecione **Novo projeto do modelo**.
 
 ![WF](./images/wfp6.png)
 
-Você deverá ver isso. Altere o nome para `--aepUserLdap-- - CitiSignal Fiber Launch`.
+Selecione o modelo **Integrated Campaign Execution** e clique em **Usar modelo**.
+
+![WF](./images/wfp6g.png)
+
+Você deverá ver isso. Altere o nome para `--aepUserLdap-- - CitiSignal Fiber Launch Winter 2026` e clique em **Criar projeto**.
 
 ![WF](./images/wfp6c.png)
 
-Vá para **Detalhes do projeto**. Clique em **+Adicionar** em **Descrição**.
+Seu projeto foi criado. Vá para **Detalhes do projeto**.
+
+![WF](./images/wfp6h.png)
+
+Vá para **Detalhes do projeto**. Clique para selecionar o texto atual em **Descrição**.
 
 ![WF](./images/wfp6d.png)
 
@@ -73,57 +111,164 @@ Clique em **Salvar alterações**.
 
 ![WF](./images/wfp6e.png)
 
-Seu projeto foi criado.
+Seu projeto está pronto para ser usado.
 
 ![WF](./images/wfp7.png)
 
-## 1.2.2.3 Criar uma nova tarefa
+As tarefas e dependências no projeto foram criadas com base no modelo escolhido e definido como. proprietário do projeto. O status do projeto foi definido como **Planning**. Você pode alterar o status do projeto selecionando outro valor na lista.
 
-Vá para **Tarefas** e clique em **+ Nova Tarefa**.
+![WF](./images/wfp7z.png)
+
+## 1.2.2.4 Criar uma nova tarefa
+
+Passe o mouse sobre a tarefa **Começar a Criar Modelos de Design** e clique nos 3 pontos **...**.
 
 ![WF](./images/wfp7a.png)
 
-Digite este nome para sua tarefa: `Create assets for Fiber campaign`.
+Selecione a opção **Inserir tarefa abaixo**.
 
-Definir o campo **Descrição** como: `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+![WF](./images/wfp7x.png)
 
-Clique em **Criar tarefa**.
+Digite este nome para sua tarefa: `Create layout using approved assets and copy`.
+
+Defina o campo **Atribuições** para a função **Designer**.
+Defina o campo **Duração** para **5 dias**.
+Definir a predecessora do campo como **9**.
+Insira uma data para os campos **Início em** e **Conclusão em**.
+
+Clique em outro lugar na tela para salvar a nova tarefa.
 
 ![WF](./images/wfp8.png)
 
-Você deverá ver isso.
+Você deverá ver isso. Clique na tarefa para abri-la.
 
 ![WF](./images/wfp9.png)
 
-Na coluna **Atribuição**, adicione seu próprio nome.
+Vá para **Detalhes da tarefa** e defina o campo **Descrição** como: `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+
+Clique em **Salvar alterações**.
 
 ![WF](./images/wfp9a.png)
 
-A tarefa será atribuída a você.
+Você deverá ver isso. Clique no campo **Projeto** para voltar ao seu projeto.
 
 ![WF](./images/wfp9b.png)
 
-## 1.2.2.4 Adicionar um novo Documento à sua Tarefa passar pelo fluxo de aprovação
+No modo de exibição **Projeto**, vá para **Balanceador de Carga de Trabalho**.
 
-Clique no logotipo **Workfront** para voltar à página de visão geral. Você deverá ver o projeto que acabou de criar aparecer na visão geral. Clique no projeto para abri-lo.
+![WF](./images/wfpwlb1.png)
 
-![WF](./images/wfp9c.png)
+Clique em **Atribuições em massa**.
 
-Em **Tarefas**, clique em para abrir a tarefa.
+![WF](./images/wfpwlb2.png)
 
-![WF](./images/wfp9d.png)
+Selecione a **Atribuição de função** do **Designer** e clique no campo **Usuário a ser atribuído**. Isso mostrará todos os usuários que têm uma função do **Designer** na sua instância do Workfront. Nesse caso, selecione o usuário fictício **Melissa Jenkins**.
 
-Ir para **Documentos**. Clique em **+ Adicionar novo** e selecione **Documento**.
+![WF](./images/wfpwlb3.png)
+
+Clique em **Atribuir**. O usuário que você selecionou será atribuído agora às tarefas do projeto que estão vinculadas à função **Designer**.
+
+![WF](./images/wfpwlb4.png)
+
+As tarefas agora estão atribuídas. Clique em **Tarefas** para voltar para a página de visão geral de **Tarefas**.
+
+![WF](./images/wfpwlb5.png)
+
+Clique na tarefa que você criou, chamada
+**Criar layout usando ativos aprovados e copiar**.
+
+![WF](./images/wfpwlb6.png)
+
+Agora você começará a trabalhar nessa tarefa como parte desse exercício. Você pode ver que Melissa Jenkins está atribuída a esta tarefa no momento. Para alterar isso para você mesmo, clique no campo **Atribuições** e selecione **Atribuir a mim**.
+
+![WF](./images/wfpwlb7.png)
+
+Clique em **Salvar**.
+
+![WF](./images/wfpwlb8.png)
+
+Clique em **Trabalhar nisto**.
+
+![WF](./images/wfpwlb9.png)
+
+Você deverá ver isso.
+
+![WF](./images/wfpwlb10.png)
+
+Como parte dessa tarefa, você precisa criar uma nova imagem e carregá-la como um documento no Workfront. Agora você mesmo criará esse ativo usando o Adobe Express.
+
+## 1.2.2.5 Criar ativo com Adobe Firely Services e Adobe Express
+
+Ir para [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Digite o prompt `a neon rabbit running very fast through space` e clique em **Gerar**.
+
+![GSPeM](./images/gsasset1.png)
+
+Você verá várias imagens sendo geradas. Escolha a imagem de que você mais gosta, clique no ícone **Compartilhar** na imagem e selecione **Abrir no Adobe Express**.
+
+![GSPeM](./images/gsasset2.png)
+
+Em seguida, você verá a imagem que acabou de gerar ficar disponível no Adobe Express para edição. Agora é necessário adicionar o logotipo CitiSignal na imagem. Para fazer isso, vá para **Marcas**.
+
+![GSPeM](./images/gsasset3.png)
+
+Você deverá ver um modelo de marca CitiSignal. que foi criado no GenStudio for Performance Marketing aparecem no Adobe Express. Clique para selecionar um modelo de marca que tenha `CitiSignal` em seu nome.
+
+![GSPeM](./images/gsasset4.png)
+
+Vá para **Logotipos** e clique no logotipo **branco** do Citisignal para soltá-lo na imagem.
+
+![GSPeM](./images/gsasset5.png)
+
+Posicione o logotipo do CitiSignal na parte superior da imagem, não muito longe do meio.
+
+![GSPeM](./images/gsasset6.png)
+
+Ir para **Texto**.
+
+![GSPeM](./images/gsasset6a.png)
+
+Clique em **Adicionar seu texto**.
+
+![GSPeM](./images/gsasset6b.png)
+
+Insira o texto `Timetravel now!`, altere a cor e o tamanho da fonte, defina o texto como **Negrito** para ter uma imagem semelhante a esta.
+
+![GSPeM](./images/gsasset6c.png)
+
+Em seguida, clique em **Compartilhar**.
+
+![GSPeM](./images/gsasset7.png)
+
+Selecione **AEM Assets**.
+
+![GSPeM](./images/gsasset8.png)
+
+Altere o nome do arquivo para `CitiSignal - Neon Rabbit - Timetravel now!`.
+Clique em **Selecionar pasta**.
+
+![GSPeM](./images/gsasset9.png)
+
+Selecione o repositório do AEM Assets CS, que deve se chamar `--aepUserLdap-- - CitiSignal` e selecione a pasta `--aepUserLdap-- - CitiSignal Fiber Campaign`. Clique em **Selecionar**.
+
+![GSPeM](./images/gsasset11.png)
+
+Você deverá ver isso. Clique em **Carregar 1 ativo**. Sua imagem será carregada no AEM Assets CS.
+
+![GSPeM](./images/gsasset12.png)
+
+## 1.2.2.6 Adicione um novo Documento à sua Tarefa e inicie o fluxo de aprovação
+
+Volte para a tela **Detalhes da tarefa**. Ir para **Documentos**. Clique em **+ Adicionar novo** e selecione seu repositório do AEM Assets CS, que deve ser nomeado como `--aepUserLdap-- - CitiSignal`.
 
 ![WF](./images/wfp10.png)
 
-Baixe [este arquivo](./images/2048x2048.png) na área de trabalho.
+Clique duas vezes para abrir a pasta `--aepUserLdap-- CitiSignal Fiber Campaign`.
+
+![WF](./images/wfp10a.png)
+
+Selecione o arquivo criado na etapa anterior, denominado **CitiSignal - Neon rabbit - Timetravel Now!.ping**. Clique em **Selecionar**.
 
 ![WF](./images/2048x2048.png){width="50px" align="left"}
-
-Selecione o arquivo **2048x2048.png** e clique em **Abrir**.
-
-![WF](./images/wfp12.png)
 
 Você deveria ficar com isso. Passe o mouse sobre o documento carregado. Clique em **Criar prova** e escolha **Prova avançada**.
 
@@ -133,10 +278,6 @@ Na janela **nova prova**, selecione **Automatizado** e, em seguida, selecione o 
 
 ![WF](./images/wfp14.png)
 
-Clique em **Trabalhar nisto**.
-
-![WF](./images/wfp17.png)
-
 Clique em **Abrir prova**
 
 ![WF](./images/wfp18.png)
@@ -145,41 +286,57 @@ Agora você pode revisar a prova. Selecione **Adicionar comentário** para adici
 
 ![WF](./images/wfp19.png)
 
-Insira seu comentário e clique em **Postar**. Clique em **Fechar**.
+Insira seu comentário e clique em **Postar**. Em seguida, clique em **Tomar uma decisão**.
 
 ![WF](./images/wfp20.png)
-
-Em seguida, você precisa alterar sua função de **Revisor** para **Revisor e Aprovador**. Para fazer isso, volte para a sua Tarefa e clique em **Fluxo de trabalho de revisão**.
-
-![WF](./images/wfp21.png)
-
-Altere sua função de **Revisor** para **Revisor e Aprovador**.
-
-![WF](./images/wfp22.png)
-
-Volte para Tarefa e abra a prova novamente. Agora você vê um novo botão, **Tomar decisão**. Clique nele.
-
-![WF](./images/wfp23.png)
 
 Selecione **Alterações necessárias** e clique em **tomar uma decisão**.
 
 ![WF](./images/wfp24.png)
 
-Retorne à sua **Tarefa** e ao **Documento**. Agora é necessário carregar uma segunda imagem que considere os comentários fornecidos.
+Retorne à sua **Tarefa** e ao **Documento**. Você verá que o texto **Alterações necessárias** também aparece lá.
 
 ![WF](./images/wfp25.png)
 
-Baixe [este arquivo](./images/2048x2048_buynow.png) na área de trabalho.
+Agora é necessário fazer alterações de design, o que será feito no Adobe Express.
 
-![este arquivo](./images/2048x2048_buynow.png){width="50px" align="left"}
+## 1.2.2.7 Fazer alterações de design no Adobe Express
 
-Na exibição Tarefa, selecione o arquivo de imagem antigo que não foi aprovado. Em seguida, clique em **+ Adicionar novo**, selecione **Versão** e selecione **Documento**.
+Vá para [https://new.express.adobe.com/your-stuff/files](https://new.express.adobe.com/your-stuff/files) e abra a imagem criada anteriormente novamente.
+
+![WF](./images/wfp25a.png)
+
+Altere o texto do CTA para `Get On Board Now!`.
+
+![WF](./images/wfp25b.png)
+
+Clique em **Compartilhar** e selecione **AEM Assets**.
+
+![WF](./images/wfp25c.png)
+
+Insira o nome `CitiSignal - Neon Rabbit - Get On Board Now!` e clique em **Selecionar pasta** para selecionar uma pasta de destino.
+
+![WF](./images/wfp25d.png)
+
+Selecione o repositório do AEM Assets CS, que deve se chamar `--aepUserLdap-- - CitiSignal` e selecione a pasta `--aepUserLdap-- - CitiSignal Fiber Campaign`. Clique em **Selecionar**.
+
+![WF](./images/wfp25e.png)
+
+Clique em **carregar 1 ativo**.
+
+![WF](./images/wfp25f.png)
+
+O novo ativo agora é criado e armazenado no AEM Assets.
+
+## 1.2.2.8 Adicione uma nova versão do documento à sua tarefa
+
+Na Visualização de tarefa no Adobe Workfront, selecione o arquivo de imagem antigo que não foi aprovado. Em seguida, clique em **+ Adicionar novo**, selecione **Versão** e selecione seu repositório do AEM Assets CS, que deve ser nomeado como `--aepUserLdap-- - CitiSignal`.
 
 ![WF](./images/wfp26.png)
 
-Selecione o arquivo **2048x2048_buynow.png** e clique em **Abrir**.
+Navegue até a pasta `--aepUserLdap-- CitiSignal Fiber Campaign` e selecione o arquivo `CitiSignal - Neon Rabit - Get On Board Now!.png`. Clique em **Selecionar**.
 
-![WF](./images/wfp27.png)
+![WF](./images/wfp26a.png)
 
 Você deveria ficar com isso. Clique em **Criar prova** e selecione novamente **Prova avançada**.
 
@@ -193,15 +350,19 @@ Selecione **Abrir Prova**.
 
 ![WF](./images/wfp30.png)
 
-Agora você pode ver duas versões do arquivo próximas uma da outra.
+Agora você pode ver duas versões do arquivo próximas uma da outra. Clique no botão **Comparar provas**.
 
 ![WF](./images/wfp31.png)
 
-Clique em **Tomar decisão**, selecione **Aprovado** e clique novamente em **Tomar decisão**.
+Você deverá ver ambas as versões da imagem próximas uma da outra. Clique em **Tomar decisão**.
 
 ![WF](./images/wfp32.png)
 
-Clique no **Nome da Tarefa** para voltar para a visão geral da Tarefa.
+Selecione **Aprovado** e clique em **Tomar decisão** novamente.
+
+![WF](./images/wfp32a.png)
+
+Feche a exibição **Comparar provas** fechando a versão esquerda da imagem. Clique no **Nome da Tarefa** para voltar para a visão geral da Tarefa.
 
 ![WF](./images/wfp33.png)
 
@@ -233,7 +394,7 @@ Você deverá ver isso.
 
 ![WF](./images/wfp37c.png)
 
-## 1.2.2.5 Exibir seu arquivo no AEM Assets
+## 1.2.2.9 Exibir seu arquivo no AEM Assets
 
 Vá para sua pasta no AEM Assets CS, chamada `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
 
