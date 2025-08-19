@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1298'
 ht-degree: 3%
 
 ---
@@ -78,6 +78,8 @@ ht-degree: 3%
    + 1.5 Simplifique seu fluxo de trabalho com o Frame.io {#crpr5}
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
       + [1.5.1 Introdução ao Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+      + [1.5.2 Aprovações com Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
+      + [1.5.3 Frame.io e Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + Gerenciamento de ativos {#assetmgmt}
@@ -90,6 +92,10 @@ ht-degree: 3%
       + [1.1.5 Bloco personalizado avançado](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 Plug-in AEM Edge Delivery Services MarTech](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
+   + 1.2 Adobe Experience Manager Assets {#assetm2}
+      + [Visão geral](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
+      + [1.2.1 Introdução ao AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
+      + [Resumo e benefícios](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + Entrega e ativação {#activation}
    + Coleção de dados {#dc}
