@@ -64,6 +64,6 @@ Em seguida, orientamos você na criação de um público-alvo do data warehouse 
 
 Neste exemplo, as informações de produto e crédito foram usadas para criar nosso público-alvo por meio do acesso direto aos dados corporativos do Snowflake, sem fazer uma cópia deles no Adobe Experience Platform. Depois que o sistema externo processa o query, somente o email relevante, os produtos atuais e os valores de nome serão trazidos para a definição de público-alvo para ativação downstream. Isso se aplica a todos os destinos compatíveis com o RTCDP.
 
-Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Agora que nosso público-alvo federado foi criado, nós o [mapearemos para um destino S3 no Experience Platform](map-federated-audience-to-s3.md).
