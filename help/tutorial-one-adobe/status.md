@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '432'
 ht-degree: 12%
 
 ---
@@ -36,13 +36,15 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 06/16/2025 | Sim | - |
 | [1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 04/01/2025 | Sim | - |
 | [1.5 Simplifique seu fluxo de trabalho com Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 08/02/2025 | Sim | - |
+| [1.6 GenStudio for Performance Marketing - Extensibilidade](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 08/20/2025 | - | - |
 
 
 ## &#x200B;3. Gestão de ativos
 
 | Nome | Última atualização | Trabalhando 100% | Observações |
 | ---------------------- | ------------ | ------------ |------------ |
-| [2.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 05/01/2025 | Sim | - |
+| [1.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 05/01/2025 | Sim | - |
+| [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 08/20/2025 | Sim | - |
 
 ## &#x200B;4. Entrega e ativação
 

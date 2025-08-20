@@ -4,16 +4,20 @@ description: Introdução ao Workfront Planning
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Introdução ao Workfront Planning
 
-## Terminologia de Planejamento do Workfront 1.1.1.1
+## 1.1.1.1 Resumo da campanha do CitiSignal
+
+Para entender o contexto do CitiSignal e o que eles estão tentando alcançar, baixe e leia o resumo da campanha do CitiSignal aqui: [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf).
+
+## Terminologia de Planejamento do Workfront 1.1.1.2
 
 A seguir estão os principais objetos e conceitos do Workfront Planning:
 
@@ -31,7 +35,7 @@ A seguir estão os principais objetos e conceitos do Workfront Planning:
 
 Agora você vai colocar a mão na massa e começar a criar alguns desses objetos você mesmo.
 
-## 1.1.1.2 Workspace, Tipo de Registro, Campos
+## 1.1.1.3 Workspace, Tipo de Registro, Campos
 
 Ir para [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Clique para abrir o **Workfront**.
 
@@ -61,7 +65,7 @@ Você deveria ficar com isso.
 
 ![Planejamento Workfront](./images/wfpl7a.png)
 
-## 1.1.1.3 Taxonomias: Tipo De Registro E Campos
+## 1.1.1.4 Taxonomias: Tipo De Registro E Campos
 
 Em **Taxonomias**, clique em **+ Adicionar tipo de registro** e selecione **Adicionar manualmente**.
 
@@ -165,7 +169,7 @@ Você deverá ver isso.
 
 ![Planejamento Workfront](./images/wfpl19.png)
 
-## 1.1.1.4 Tipos de Registros Operacionais: Campos
+## 1.1.1.5 Tipos de Registros Operacionais: Campos
 
 Clique para abrir **Campanhas**.
 
@@ -187,7 +191,7 @@ O novo campo é mostrado na exibição de tabela.
 
 ![Planejamento Workfront](./images/wfpl24.png)
 
-## 1.1.1.5 Criar um Formulário de Solicitação
+## 1.1.1.6 Criar um Formulário de Solicitação
 
 Na tela de visão geral Campanhas, clique nos 3 pontos **...** e selecione **Criar formulário de solicitação**.
 
@@ -209,7 +213,7 @@ Clique na seta no canto superior esquerdo para voltar à tela Visão geral das C
 
 ![Planejamento Workfront](./images/wfpl29.png)
 
-## 1.1.1.6 Enviar um novo registro usando o Formulário de solicitação
+## 1.1.1.7 Enviar um novo registro usando o Formulário de solicitação
 
 Na tela de visão geral das Campanhas, clique em **+ Novo Registro**.
 
@@ -243,7 +247,7 @@ Você deve ver a campanha recém-criada na visão geral.
 
 ![Planejamento Workfront](./images/wfpl35.png)
 
-## 1.1.1.7 Criar Portfolio e formulário personalizado
+## 1.1.1.8 Criar Portfolio e formulário personalizado
 
 Na próxima etapa, você criará uma automação que obterá informações da campanha criada no Workfront Planning e que usará essas informações no Workfront para criar um programa. Antes de criar a automação, há duas coisas para configurar no Workfront primeiro: um portfólio e um formulário personalizado.
 
