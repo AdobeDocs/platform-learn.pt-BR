@@ -5,14 +5,15 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 1%
+source-wordcount: '832'
+ht-degree: 0%
 
 ---
 
-# 1.6.3 Criar aplicativo DAM externo
+# 1.6.3 Criar e implantar o aplicativo DAM externo
 
 ## 1.6.3.1 Baixar arquivos de aplicativo de exemplo
 
@@ -131,15 +132,15 @@ AWS_REGION=
 AWS_BUCKET_NAME=
 ```
 
-Os campos **AWS_ACCESS_KEY_ID** e **AWS_SECRET_ACCESS_KEY** estavam disponíveis após a criação do usuário IAM no exercício anterior. Você foi solicitado a anotá-los, agora é possível copiar os valores.
+Os campos **`AWS_ACCESS_KEY_ID`** e **`AWS_SECRET_ACCESS_KEY`** estavam disponíveis após a criação do usuário IAM no exercício anterior. Você foi solicitado a anotá-los, agora é possível copiar os valores.
 
 ![ETL](./images/cred1.png)
 
-O campo **AWS_REGION** pode ser retirado do modo de exibição Início do AWS S3, ao lado do nome do seu bucket. Neste exemplo, a região é **us-west-2**.
+O campo **`AWS_REGION`** pode ser retirado do modo de exibição Início do AWS S3, ao lado do nome do seu bucket. Neste exemplo, a região é **us-west-2**.
 
 ![ETL](./images/bucket2.png)
 
-O campo **AWS_BUCKET_NAME** deve ser `--aepUserLdap---gspem-dam`.
+O campo **`AWS_BUCKET_NAME`** deve ser `--aepUserLdap---gspem-dam`.
 
 Essas informações permitem atualizar os valores de cada uma dessas variáveis.
 
@@ -169,9 +170,53 @@ Na janela do terminal, execute o comando `aio app run`. Você deve ver isso apó
 
 ![Ext DAM](./images/extdam24.png)
 
+Agora você confirmou que seu aplicativo está em execução. A próxima etapa é implantá-lo.
+
+Primeiro, pressione **CTRL+C** para interromper a execução do aplicativo. Em seguida, insira o comando `aio app deploy`. Esse comando implantará seu código no Adobe IO.
+
+Como resultado, você receberá um URL semelhante para acessar o aplicativo implantado:
+
+`https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+![Ext DAM](./images/extdam27.png)
+
+Para fins de teste, agora você pode usar essa URL como um parâmetro de cadeia de caracteres de consulta adicionando `?ext=` como prefixo à URL acima. Isso resulta no seguinte parâmetro da cadeia de caracteres de consulta:
+
+`?ext=https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+Ir para [https://experience.adobe.com/genstudio/create](https://experience.adobe.com/genstudio/create).
+
+![Ext DAM](./images/extdam25.png)
+
+Em seguida, adicione o parâmetro da cadeia de caracteres de consulta antes de **#**. O novo URL deve ter esta aparência:
+
+`https://experience.adobe.com/?ext=https://133309-201burgundyguan.adobeio-static.net/index.html#/@experienceplatform/genstudio/create`
+
+A página será carregada normalmente. Clique em **Banners** para começar a criar um novo banner.
+
+![Ext DAM](./images/extdam26.png)
+
+Selecione um modelo e clique em **Usar**.
+
+![Ext DAM](./images/extdam28.png)
+
+Clique em **Selecionar do conteúdo**.
+
+![Ext DAM](./images/extdam29.png)
+
+É possível selecionar o DAM externo na lista suspensa.
+
+![Ext DAM](./images/extdam30.png)
+
+Ao fazer alterações no código em seu computador local, será necessário reimplantar seu aplicativo. Ao implantar novamente, use este comando de terminal:
+
+`aio app deploy --force-build --force-deploy`
+
+Seu aplicativo está pronto para ser publicado.
+
 ## Próximas etapas
 
-Vá para [Implante seu código e publique seu aplicativo de forma privada](./ex4.md){target="_blank"}
+Ir para [Publicar seu aplicativo de forma privada](./ex4.md){target="_blank"}
 
 Voltar para [GenStudio for Performance Marketing - Extensibilidade](./genstudioext.md){target="_blank"}
 

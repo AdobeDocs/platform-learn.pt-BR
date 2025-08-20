@@ -1,14 +1,15 @@
 ---
-title: GenStudio para marketing de desempenho
-description: GenStudio para marketing de desempenho
+title: GenStudio for Performance Marketing - Extensibilidade
+description: GenStudio for Performance Marketing - Extensibilidade
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 3%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -36,13 +37,13 @@ Neste exercício, você configurará seu projeto do Adobe IO com o App Builder.
 
 Neste exercício, você criará seu bucket do Amazon AWS S3 e seu usuário do IAM.
 
-[1.6.3 Criar seu aplicativo DAM externo](./ex3.md){target="_blank"}
+[1.6.3 Criar e implantar seu aplicativo DAM externo](./ex3.md){target="_blank"}
 
 Neste exercício, você criará seu aplicativo DAM externo usando um modelo predefinido.
 
-[1.6.4 Implante seu código e publique seu aplicativo de forma privada](./ex4.md){target="_blank"}
+[1.6.4 Publicar seu aplicativo de forma privada](./ex4.md){target="_blank"}
 
-Neste exercício, você implantará seu código no Adobe IO e no App Builder e publicará seu aplicativo de forma privada.
+Neste exercício, você publicará seu aplicativo de forma privada.
 
 [Resumo e benefícios](./summary.md){target="_blank"}
 

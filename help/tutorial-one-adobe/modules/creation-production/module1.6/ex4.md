@@ -5,22 +5,79 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '44'
-ht-degree: 6%
+source-wordcount: '314'
+ht-degree: 1%
 
 ---
 
 # 1.6.4 Implante seu código e publique seu aplicativo de forma privada
 
+Publicar seu aplicativo de forma privada significa que ele está disponível no GenStudio for Performance Marketing sem precisar usar o parâmetro de sequência de consulta.
 
+## 1.6.4.1 Publicar seu aplicativo
 
-![ETL](./images/s3.jpeg){width="50px" align="left"}
+Ir para [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"}.
+
+>[!NOTE]
+>
+> A captura de tela abaixo mostra uma organização específica sendo selecionada. Quando você estiver assistindo a este tutorial, é muito provável que sua organização tenha um nome diferente. Quando se inscreveu neste tutorial, você recebeu os detalhes do ambiente que devem ser usados. Siga estas instruções.
+
+Abra o projeto do Adobe IO com o App Builder, que deve ser o nome `--aepUserLdap-- GSPeM EXT`.
+
+![Extensibilidade do GSPeM](./images/gspemextpub1.png)
+
+Ir para **Produção**.
+
+![Extensibilidade do GSPeM](./images/gspemextpub2.png)
+
+Clique em **Publicar de forma privada**.
+
+![Extensibilidade do GSPeM](./images/gspemextpub3.png)
+
+Em seguida, é necessário preencher vários campos.
+
+![Extensibilidade do GSPeM](./images/gspemextpub4.png)
+
+Preencha os seguintes campos assim:
+
+- **Título do aplicativo**: `--aepUserLdap-- - External DAM AWS S3`.
+- **Descrição do aplicativo**: `External DAM AWS S3`
+- **Email de contato**: digite seu endereço de email
+- **Ícone de Aplicativo**: baixe e use esta imagem: [Imagem S3](./images/s3.jpeg)
+- **Observação para o revisor**: AWS S3 DAM externo
+
+Clique em **Enviar**.
+
+![Extensibilidade do GSPeM](./images/gspemextpub5.png)
+
+Clique em **Enviar**.
+
+![Extensibilidade do GSPeM](./images/gspemextpub6.png)
+
+## 1.6.4.2 Aprove seu aplicativo
+
+Depois que um desenvolvedor enviar um novo aplicativo para publicação, os administradores de sistema da sua organização serão notificados e precisarão revisar e aprovar.
+
+Se você for um administrador do sistema, receberá esse email e poderá clicar em **Meu Exchange** para iniciar esse processo.
+
+![Extensibilidade do GSPeM](./images/gspemextpub7.png)
+
+No **Adobe Exchange**, os aplicativos do App Builder são exibidos e o aplicativo que acabou de ser enviado aguarda revisão. Clique no botão **Avaliação** do aplicativo `--aepUserLdap-- - External DAM AWS S3`.
+
+![Extensibilidade do GSPeM](./images/gspemextpub8.png)
+
+Adicione um comentário e clique em **Aprovar**.
+
+![Extensibilidade do GSPeM](./images/gspemextpub9.png)
+
+Seu aplicativo agora está aprovado e funcionará automaticamente no GenStudio for Performance Marketing, sem a necessidade de especificar o parâmetro da sequência de caracteres de consulta.
 
 ## Próximas etapas
 
-Ir para [-](./ex2.md){target="_blank"}
+Ir para [Resumo e Benefícios](./summary.md){target="_blank"}
 
 Voltar para [GenStudio for Performance Marketing - Extensibilidade](./genstudioext.md){target="_blank"}
 
