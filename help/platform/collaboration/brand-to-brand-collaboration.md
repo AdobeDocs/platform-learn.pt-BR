@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Saiba mais sobre os casos de uso compatíveis com a colaboração entre marcas e os recursos específicos introduzidos para dar suporte a esses fluxos de trabalho.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470941/?learn=on&enablevpops&captions=por_br)
