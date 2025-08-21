@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 6%
+source-wordcount: '502'
+ht-degree: 7%
 
 ---
 
@@ -139,19 +140,39 @@ Você deverá ver isso.
 
 ![ETL](./images/bucket4.png)
 
-Você pode baixar arquivos de imagem CitiSignal [aqui](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}.
+Você pode baixar arquivos de imagem CitiSignal [aqui](./images/package.zip){target="_blank"}.
 
 Exporte os arquivos para a área de trabalho.
 
 ![ETL](./images/bucket5.png)
 
-Pegue os 2 arquivos de imagens nessa pasta e solte-os na janela de upload do bucket do S3. Clique em **Carregar**.
+Clique em **Adicionar pasta**.
 
 ![ETL](./images/bucket6.png)
 
-Você deverá ver isso. Seu bucket do S3, seus arquivos de imagem e seu usuário do IAM agora estão prontos para serem usados pelo aplicativo DAM externo.
+Selecione a pasta **assets** da pasta de download **package**. Clique em **Carregar**.
 
 ![ETL](./images/bucket7.png)
+
+Você deverá ver isso. Clique novamente em **Adicionar pasta**.
+
+![ETL](./images/bucket8.png)
+
+Selecione a pasta **miniaturas** da pasta de download **pacote**. Clique em **Carregar**.
+
+![ETL](./images/bucket9.png)
+
+Você deverá ver isso. Clique em **Carregar**.
+
+![ETL](./images/bucket10.png)
+
+O upload foi concluído. Clique em **Fechar**.
+
+![ETL](./images/bucket11.png)
+
+Agora você deve ter essa estrutura de pastas no seu bucket do S3.
+
+![ETL](./images/bucket12.png)
 
 ## Próximas etapas
 
