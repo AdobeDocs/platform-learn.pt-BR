@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Ativar públicos em projetos do Collaboration
 
-Saiba como ativar públicos-alvo para seus parceiros de colaboração em projetos Real-Time CDP Collaboration. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}.
+Saiba como ativar públicos-alvo para seus parceiros de colaboração em projetos Real-Time CDP Collaboration. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471677/?learn=on&enablevpops)

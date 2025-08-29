@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Descubra sobreposições de público dentro de projetos do Collaboration
 
-Saiba como comparar as sobreposições de público-alvo dentro de projetos do Real-Time CDP Collaboration. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
+Saiba como comparar as sobreposições de público-alvo dentro de projetos do Real-Time CDP Collaboration. Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
