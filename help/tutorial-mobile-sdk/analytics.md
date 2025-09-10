@@ -54,11 +54,11 @@ Para enviar seus dados XDM da Edge Network para o Adobe Analytics, configure o s
 
 ## Mapeamento automático
 
-Muitos dos campos XDM padrão são mapeados automaticamente para variáveis do Analytics. Veja a [lista completa](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping).
+Muitos dos campos XDM padrão são mapeados automaticamente para variáveis do Analytics. Veja a [lista completa](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping).
 
 ### Exemplo #1 - s.products
 
-Um bom exemplo é a [variável de produtos](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products), que não pode ser preenchida com as regras de processamento. Com uma implementação XDM, você passa todos os dados necessários em `productListItems` e `s.products` são automaticamente preenchidos por meio do mapeamento do Analytics.
+Um bom exemplo é a [variável de produtos](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/products), que não pode ser preenchida com as regras de processamento. Com uma implementação XDM, você passa todos os dados necessários em `productListItems` e `s.products` são automaticamente preenchidos por meio do mapeamento do Analytics.
 
 Este objeto:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->Se `productListItems[].SKU` e `productListItems[].name` contêm dados, o valor em `productListItems[].SKU` é usado. Consulte [Mapeamento de variáveis do Analytics no Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping) para obter mais informações.
+>Se `productListItems[].SKU` e `productListItems[].name` contêm dados, o valor em `productListItems[].SKU` é usado. Consulte [Mapeamento de variáveis do Analytics no Adobe Experience Edge](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) para obter mais informações.
 
 
 ### Exemplo #2 - scAdd
@@ -211,7 +211,7 @@ Para mapear esses dados de contexto XDM para seus dados do Analytics em seu conj
 
 ### eVars de merchandising
 
-Se você estiver usando [eVars de merchandising](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) na configuração do Analytics, será necessário estender a carga XDM definida em [Rastrear dados do evento](events.md) para capturar essas informações de merchandising. Um exemplo de variável de merchandising é `evar1`, em que você deseja capturar a cor de produtos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
+Se você estiver usando [eVars de merchandising](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars) na configuração do Analytics, será necessário estender a carga XDM definida em [Rastrear dados do evento](events.md) para capturar essas informações de merchandising. Um exemplo de variável de merchandising é `evar1`, em que você deseja capturar a cor de produtos, como `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
 
 * No JSON:
 
@@ -301,7 +301,7 @@ Veja como uma regra de processamento usando esses dados pode ser exibida:
 >Na primeira vez que você mapeia para uma regra de processamento, a interface não mostra as variáveis de dados de contexto do objeto XDM. Para corrigir isso, selecione qualquer valor, Salve e volte para editar. Todas as variáveis XDM agora devem aparecer.
 
 
-Consulte [Mapear variáveis contextData em props e eVars com regras de processamento](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
+Consulte [Mapear variáveis contextData em props e eVars com regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules).
 
 >[!TIP]
 >

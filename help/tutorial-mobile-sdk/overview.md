@@ -64,7 +64,7 @@ Nessas lições, presume-se que você tenha uma Adobe ID e as permissões de ní
    * **[!UICONTROL Direitos de propriedade]**—itens de permissão para **[!UICONTROL Desenvolver]**, **[!UICONTROL Aprovar]**, **[!UICONTROL Publicar]**, **[!UICONTROL Gerenciar extensões]** e **[!UICONTROL Gerenciar ambientes]**.
    * **[!UICONTROL Direitos da Empresa]**—itens de permissão para **[!UICONTROL Gerenciar Propriedades]**
 
-     Para obter mais informações sobre permissões de marcas, consulte [Permissões de usuário para marcas](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} na documentação do produto.
+     Para obter mais informações sobre permissões de marcas, consulte [Permissões de usuário para marcas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions){target="_blank"} na documentação do produto.
 * No Experience Platform, você deve ter:
    * **[!UICONTROL Modelagem de Dados]** — itens de permissão para gerenciar e exibir esquemas.
    * **[!UICONTROL Identity Management]** — itens de permissão para gerenciar e exibir namespaces de identidade.
@@ -74,7 +74,7 @@ Nessas lições, presume-se que você tenha uma Adobe ID e as permissões de ní
       * **[!UICONTROL Gerenciamento de dados]**—itens de permissão para gerenciar e exibir conjuntos de dados.
       * Uma **sandbox** de desenvolvimento que você pode usar para este tutorial.
 
-   * Para as lições do Journey Optimizer, você precisa de permissões para configurar o **serviço de notificação por push** e criar uma **superfície de aplicativo**, uma **jornada**, uma **mensagem** e **predefinições de mensagem**. Além disso, para o Gerenciamento de decisões, você precisa das permissões adequadas para **gerenciar ofertas** e **decisões**, conforme descrito em [Níveis de permissão](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
+   * Para as lições do Journey Optimizer, você precisa de permissões para configurar o **serviço de notificação por push** e criar uma **superfície de aplicativo**, uma **jornada**, uma **mensagem** e **predefinições de mensagem**. Além disso, para o Gerenciamento de decisões, você precisa das permissões adequadas para **gerenciar ofertas** e **decisões**, conforme descrito em [Níveis de permissão](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 * Para o Adobe Analytics, você deve saber quais **conjuntos de relatórios** você pode usar para concluir este tutorial.
 
@@ -129,6 +129,6 @@ Vamos começar!
 
 >[!SUCCESS]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
 
 Próximo: **[Criar um esquema XDM](create-schema.md)**

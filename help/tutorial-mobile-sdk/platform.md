@@ -43,7 +43,7 @@ Nesta lição, você vai:
 
 ## Criar um conjunto de dados
 
-Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados (normalmente uma tabela) que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados. Consulte a [documentação](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) para obter mais informações.
+Todos os dados assimilados com sucesso na Adobe Experience Platform são mantidos no data lake como conjuntos de dados. Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados (normalmente uma tabela) que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados. Consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview) para obter mais informações.
 
 1. Navegue até a interface do Experience Platform. Selecione **[!UICONTROL Experience Platform]** no menu Aplicativos ![Aplicativos](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg), no canto superior direito.
 
@@ -106,7 +106,7 @@ Abra o conjunto de dados na interface da Platform. Você deve ver os dados que c
 Você também deve ver registros e campos de exemplo usando o recurso **[!UICONTROL Visualizar conjunto de dados]**:
 ![validar ciclo de vida enviado ao conjunto de dados da plataforma](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-Uma ferramenta mais robusta para validação de dados é o [serviço de consulta](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) da Platform.
+Uma ferramenta mais robusta para validação de dados é o [serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/queries/explore-data) da Platform.
 
 ## Ativar o Perfil do cliente em tempo real
 
@@ -169,7 +169,7 @@ Há muito mais que os profissionais de marketing e análise podem fazer com dado
 
 >[!SUCCESS]
 >
->Agora você configurou o aplicativo para enviar dados não apenas para a Edge Network, mas também para o Adobe Experience Platform.<br>Obrigado por investir seu tempo na aprendizagem sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Agora você configurou o aplicativo para enviar dados não apenas para a Edge Network, mas também para o Adobe Experience Platform.<br>Obrigado por investir seu tempo na aprendizagem sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
 >
 
 Próximo: **[Criar e enviar notificações por push](journey-optimizer-push.md)**
