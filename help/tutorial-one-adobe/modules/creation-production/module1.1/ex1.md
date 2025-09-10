@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ Agora você aprendeu a usar o Firefly para resolver um problema de design em que
 
 Ir para [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image). Você deverá ver isso. Clique na lista suspensa **Modelo**. Você observará que há três versões disponíveis do Adobe Firefly Services:
 
-- Imagem 3 do Firefly
+- Firefly Image 3
 - Imagem 4 do Firefly
 - Firefly Image 4 Ultra
 
@@ -166,7 +166,7 @@ Ir para [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/gen
 
 >[!NOTE]
 >
->O Firefly Image 3 e o Image 4 estão disponíveis para todos que usam o Adobe Firefly Services, enquanto o Firefly Image 4 Ultra requer uma licença Firefly Pro.
+>O Firefly Image 3 e a Imagem 4 estão disponíveis para todos que usam o Adobe Firefly Services, enquanto a Firefly Image 4 Ultra requer uma licença Firefly Pro.
 
 Clique para selecionar **Firefly Image 3** para este exercício.
 
@@ -403,13 +403,13 @@ Você verá que a imagem original é usada em uma disposição diferente, o que 
 
 ## 1.1.1.8 API do Firefly Services, Texto 2, Imagem 4 e Imagem 4 Ultra
 
-Com o recente lançamento do Firefly Image Model 4, várias melhorias foram disponibilizadas:
+Com a recente versão do Firefly Image Model 4, várias melhorias foram disponibilizadas:
 
-- O Firefly Image Model 4 oferece saída de resolução de 2K com definição e detalhes aprimorados.
+- A Firefly Image Model 4 oferece saída de resolução de 2K com definição e detalhes aprimorados.
 - O Firefly Image Model 4 oferece melhorias significativas na renderização de texto, humanos, animais e arquitetura.
-- O Firefly Image Model 4 mantém o compromisso da Adobe com IA gerativa compatível com IP e segura comercialmente.
+- A Firefly Image Model 4 mantém o compromisso da Adobe com IA gerativa compatível com IP e segura comercialmente.
 
-O Firefly Image Model 4 oferece imagens excepcionais de pessoas, animais e cenas detalhadas, e você pode usar o Image Model 4 Ultra para gerar imagens com interações humanas hiper-realistas, elementos arquitetônicos e paisagens complexas&#x200B;
+O Firefly Image Model 4 oferece imagens excepcionais de pessoas, animais e cenas detalhadas, e você pode usar o Image Model 4 Ultra para gerar imagens com interações humanas hiper-realistas, elementos arquitetônicos e paisagens complexas.&#x200B;
 
 ### 1.1.1.8.1 image4_standard
 
