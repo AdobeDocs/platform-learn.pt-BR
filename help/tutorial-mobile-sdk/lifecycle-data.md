@@ -3,7 +3,7 @@ title: Coletar dados de ciclo de vida com o Platform Mobile SDK
 description: Saiba como coletar dados do ciclo de vida em um aplicativo móvel.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 2%
@@ -86,7 +86,7 @@ Agora, você pode atualizar seu projeto para registrar os eventos de ciclo de vi
 
 1. Quando o aplicativo entra em segundo plano, você deseja pausar a coleção de dados do ciclo de vida da função `override fun onActivityPaused` do aplicativo. Adicionar este código a `override fun onActivityPaused(activity: Activity)`:
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
@@ -150,6 +150,6 @@ Você deve ver **[!UICONTROL eventos de Fechamento de Aplicativo (Plano de Fundo
 >
 >Agora você configurou o aplicativo para enviar eventos de estado do aplicativo (primeiro plano, segundo plano) para a Adobe Experience Platform Edge Network e todos os serviços definidos na sequência de dados.
 >
-> Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
+> Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Próximo: **[Rastrear dados do evento](events.md)**
