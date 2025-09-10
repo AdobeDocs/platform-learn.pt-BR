@@ -144,7 +144,7 @@ Na interface da Platform,
 
 ![pesquisar um valor de identidade](assets/platform-profile-lookup.png){zoomable="yes"}
 
-Na tela **[!UICONTROL Detalhes]**, você pode ver informações básicas sobre o usuário, incluindo as **[!UICONTROL ** identidades vinculadas **]**:
+Na tela **[!UICONTROL Detalhes]**, você pode ver informações básicas sobre o usuário, incluindo as **[!UICONTROL **&#x200B; identidades vinculadas &#x200B;**]**:
 ![detalhes do perfil](assets/platform-profile-details.png){zoomable="yes"}
 
 No **[!UICONTROL Eventos]**, você pode ver os eventos coletados da implementação do aplicativo móvel para este usuário:

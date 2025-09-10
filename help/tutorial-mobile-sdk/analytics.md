@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >Campos personalizados são colocados sob o identificador da organização da Experience Cloud.
 >
-O nome do locatário `_techmarketingdemos` é substituído pelo valor exclusivo de sua organização.
+>O nome do locatário `_techmarketingdemos` é substituído pelo valor exclusivo de sua organização.
 
 
 
