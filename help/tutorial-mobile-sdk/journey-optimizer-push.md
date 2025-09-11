@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Saiba como criar notificações por push para aplicativos móveis com o Experience Platform Mobile SDK e o Journey Optimizer.
 
-O Journey Optimizer permite criar jornadas e enviar mensagens para públicos-alvo direcionados. Antes de enviar notificações por push com o Journey Optimizer, você deve garantir que as configurações e integrações adequadas estejam em vigor. Para entender o fluxo de dados das Notificações por push no Journey Optimizer, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/push/push-config/push-gs).
+O Journey Optimizer permite criar jornadas e enviar mensagens para públicos-alvo direcionados. Antes de enviar notificações por push com o Journey Optimizer, você deve garantir que as configurações e integrações adequadas estejam em vigor. Para entender o fluxo de dados das Notificações por push no Journey Optimizer, consulte a [documentação](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-gs).
 
 ![Arquitetura](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -30,7 +30,7 @@ O Journey Optimizer permite criar jornadas e enviar mensagens para públicos-alv
 
 * O aplicativo foi criado e executado com sucesso com SDKs instalados e configurados.
 * Configure o aplicativo para Adobe Experience Platform.
-* Acesso ao Journey Optimizer e [permissões suficientes](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/push/push-config/push-configuration). Além disso, você precisa de permissão suficiente para os seguintes recursos do Journey Optimizer.
+* Acesso ao Journey Optimizer e [permissões suficientes](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-configuration). Além disso, você precisa de permissão suficiente para os seguintes recursos do Journey Optimizer.
    * Criar uma credencial de push.
    * Criar uma configuração de canal de push.
    * Criar uma jornada.
@@ -174,12 +174,12 @@ Depois de criar uma configuração de credencial de push, você deve criar uma c
    > Os nomes devem começar com uma letra (A-Z). Ele só pode conter caracteres alfanuméricos. Também é possível usar os caracteres de sublinhado `_`, ponto `.` e hífen `-`.
 
 
-1. Para atribuir rótulos de uso de dados personalizados ou de núcleo à configuração, você pode selecionar **[!UICONTROL Gerenciar acesso]**. [Saiba mais sobre o OLAC (Controle de Acesso em Nível de Objeto)](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/object-based-access).
+1. Para atribuir rótulos de uso de dados personalizados ou de núcleo à configuração, você pode selecionar **[!UICONTROL Gerenciar acesso]**. [Saiba mais sobre o OLAC (Controle de Acesso em Nível de Objeto)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Selecione o canal **Push**.
 
 
-1. Selecione **[!UICONTROL Ação(ões) de marketing]** para associar políticas de consentimento às mensagens que usam essa configuração. Todas as políticas de consentimento associadas às ações de marketing são usadas para respeitar as preferências dos clientes. [Saiba mais sobre ações de marketing](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+1. Selecione **[!UICONTROL Ação(ões) de marketing]** para associar políticas de consentimento às mensagens que usam essa configuração. Todas as políticas de consentimento associadas às ações de marketing são usadas para respeitar as preferências dos clientes. [Saiba mais sobre ações de marketing](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
 
 1. Escolha sua **[!UICONTROL Plataforma]**. Você pode configurar o **[!UICONTROL iOS]** e o **[!UICONTROL Android]** para uma configuração de canal.
 
@@ -203,7 +203,7 @@ Para garantir que os dados enviados do aplicativo móvel para a Edge Network sej
 
    1. Se ainda não estiver selecionado, selecione **[!UICONTROL Conjunto de Dados de Perfis por Push da AJO]** em **[!UICONTROL Conjunto de Dados de Perfil]**. Este conjunto de dados de perfil é necessário ao usar a chamada de API `MobileCore.setPushIdentifier` (consulte [Registrar token de dispositivo para notificações por push](#register-device-token-for-push-notifications)). Essa seleção também garante que o identificador exclusivo para notificações por push (também conhecido como identificador por push) seja armazenado como parte do perfil do usuário.
 
-   1. **[!UICONTROL Adobe Journey Optimizer]** está selecionado. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) para obter mais informações.
+   1. **[!UICONTROL Adobe Journey Optimizer]** está selecionado. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) para obter mais informações.
 
    1. Para salvar a configuração da sequência de dados, selecione **[!UICONTROL Salvar]**.
 
@@ -256,11 +256,11 @@ Para que seu aplicativo funcione com a Journey Optimizer, é necessário atualiz
 
 >[!TAB iOS]
 
-<img src="assets/luma-app-push.png" width="300" />
+<img src="assets/luma-app-push.png" width="300">
 
 >[!TAB Android]
 
-<img src="assets/luma-app-push-android.png" width="300" />
+<img src="assets/luma-app-push-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -419,7 +419,7 @@ Conforme discutido nas lições anteriores, a instalação de uma extensão de t
 >[!IMPORTANT]
 >
 >**Somente para iOS**: o `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` determina se as notificações por push estão usando uma sandbox APNs ou um servidor de produção para enviar notificações por push. Ao testar seu aplicativo no simulador ou em um dispositivo, verifique se `messaging.useSandbox` está definido como `true` para que você receba notificações por push. Ao implantar seu aplicativo para produção a ser testada usando o Testflight da Apple, verifique se definiu `messaging.useSandbox` como `false`; caso contrário, seu aplicativo de produção não poderá receber notificações por push.<br/><br/>
->&#x200B;>O Firebase Cloud Messaging (FCM) **não** suporta o conceito de sandboxes para notificações por push.
+>>O Firebase Cloud Messaging (FCM) **não** suporta o conceito de sandboxes para notificações por push.
 
 
 ## Criar sua própria notificação por push
@@ -443,7 +443,7 @@ Você definirá um novo tipo de evento, ainda não disponível como parte da lis
 
 ### Definir um evento
 
-Os eventos no Journey Optimizer permitem acionar jornadas para enviar mensagens, por exemplo, notificações por push. Consulte [Sobre eventos](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) para obter mais informações.
+Os eventos no Journey Optimizer permitem acionar jornadas para enviar mensagens, por exemplo, notificações por push. Consulte [Sobre eventos](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events) para obter mais informações.
 
 1. Na interface do usuário do Journey Optimizer, selecione **[!UICONTROL Configurações]** no painel esquerdo.
 
@@ -682,7 +682,7 @@ Para validar o evento e a jornada de notificação por push:
 
    Você verá a notificação por push aparecer na parte superior do aplicativo.
 
-   <img src="assets/ajo-test-push.png" width="300" />
+   <img src="assets/ajo-test-push.png" width="300">
 
 >[!TAB Android]
 
@@ -694,7 +694,7 @@ Para validar o evento e a jornada de notificação por push:
 
    Você verá a notificação por push aparecer na parte superior do aplicativo.
 
-   <img src="assets/ajo-test-push-android.png" width="300" />
+   <img src="assets/ajo-test-push-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -711,6 +711,6 @@ Agora você deve ter todas as ferramentas para lidar com notificações por push
 >
 >Agora você ativou o aplicativo para notificação por push usando o Journey Optimizer e a extensão do Journey Optimizer para o Experience Platform Mobile SDK.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Criar e enviar mensagens no aplicativo](journey-optimizer-inapp.md)**

@@ -3,7 +3,7 @@ title: Coletar dados de perfil com o Platform Mobile SDK
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 2%
@@ -123,7 +123,7 @@ Depois de atualizar o atributo de um usuário, ele estará disponível para outr
    Este código:
 
    1. Chama a API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) com o nome de atributo `isPaidUser` como elemento único na matriz `attributeNames`.
-   1. Em seguida, verifica o valor do atributo `isPaidUser` e, quando `yes`, coloca um selo na variável Ícone <img src="assets/paiduser.png" width="20" /> na barra de ferramentas, na parte superior direita.
+   1. Em seguida, verifica o valor do atributo `isPaidUser` e, quando `yes`, coloca um selo na variável Ícone <img src="assets/paiduser.png" width="20"> na barra de ferramentas, na parte superior direita.
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ Depois de atualizar o atributo de um usuário, ele estará disponível para outr
    Este código:
 
    1. Chama a API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) com o nome de atributo `isPaidUser` como elemento único na matriz `attributeNames`.
-   1. Em seguida, verifica o valor do atributo `isPaidUser`. Quando `yes`, o código substitui o ícone de pessoa por um selo na Ícone <img src="assets/paiduser.png" width="20" /> na barra de ferramentas, na parte superior direita.
+   1. Em seguida, verifica o valor do atributo `isPaidUser`. Quando `yes`, o código substitui o ícone de pessoa por um selo na Ícone <img src="assets/paiduser.png" width="20"> na barra de ferramentas, na parte superior direita.
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ Consulte a [Referência da API](https://developer.adobe.com/client-sdks/document
 1. Selecione **[!DNL Products]** na barra de guias.
 1. Selecione um produto.
 1. Selecionar <img src="assets/saveforlater.png" width="15" />.
-1. Selecionar <img src="assets/addtocart.png" width="20" />.
+1. Selecionar <img src="assets/addtocart.png" width="20">.
 1. Selecionar <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ Consulte a [Referência da API](https://developer.adobe.com/client-sdks/document
 
 1. Selecione **[!DNL Products]** na barra de guias.
 1. Selecione um produto.
-1. Selecionar<img src="assets/heart.png" width="25" />.
-1. Selecionar <img src="assets/addtocart.png" width="20" />.
+1. Selecionar<img src="assets/heart.png" width="25">.
+1. Selecionar <img src="assets/addtocart.png" width="20">.
 1. Selecionar <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
@@ -214,6 +214,6 @@ Na interface do usuário do Assurance, você deve ver eventos de **[!UICONTROL U
 >
 >Agora você configurou seu aplicativo para atualizar atributos de perfis na Edge Network e (quando configurado) com o Adobe Experience Platform.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Usar Locais](places.md)**
