@@ -27,7 +27,7 @@ Nesta lição, você vai:
 
 ## Possíveis problemas de rastreamento
 
-ECIDs separadas (identidade da Experience Cloud) são geradas ao enviar dados da parte nativa do aplicativo e de uma WebView no aplicativo. Essas ECIDs separadas resultam em ocorrências desconectadas e dados inflacionados de visitas e visitantes. Mais informações sobre a ECID podem ser encontradas na [visão geral da ECID](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid).
+ECIDs separadas (identidade da Experience Cloud) são geradas ao enviar dados da parte nativa do aplicativo e de uma WebView no aplicativo. Essas ECIDs separadas resultam em ocorrências desconectadas e dados inflacionados de visitas e visitantes. Mais informações sobre a ECID podem ser encontradas na [visão geral da ECID](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/ecid).
 
 Para resolver as ocorrências desconectadas e os dados inflados, é necessário passar a ECID do usuário da parte nativa do aplicativo para um WebView que você possa querer usar no aplicativo.
 
@@ -151,6 +151,6 @@ Infelizmente, a depuração da sessão da Web é limitada. Por exemplo, você n�
 >
 >Agora você configurou o aplicativo para mostrar conteúdo com base em um URL em uma visualização da Web usando a mesma ECID que a ECID já emitida pelo Adobe Experience Platform Mobile SDK.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
 
 Próximo: **[Identidade](identity.md)**
