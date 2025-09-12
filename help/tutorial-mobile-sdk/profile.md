@@ -3,10 +3,10 @@ title: Coletar dados de perfil com o Platform Mobile SDK
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 2%
+source-wordcount: '786'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ Seria útil para direcionamento e personalização no aplicativo saber rapidamen
 
    1. Usa o dicionário `profileMap` como valor para o parâmetro `attributeDict` da chamada de API [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes).
 
-1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** no navegador do Projeto Xcode e localize a chamada para `updateUserAttributes` (dentro do código das Compras <img src="assets/purchase.png" width="15" /> botão). Adicione o seguinte código:
+1. Navegue até **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** no navegador do Projeto Xcode e localize a chamada para `updateUserAttributes` (dentro do código do botão Compras ![Cartão de Crédito](/help/assets/icons/CreditCard.svg)). Adicione o seguinte código:
 
    ```swift
    // Update attributes
@@ -87,7 +87,7 @@ Seria útil para direcionamento e personalização no aplicativo saber rapidamen
 
    1. Usa o mapa `profileMap` como valor para o parâmetro `attributeDict` da chamada de API [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes).
 
-1. Navegue até **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizações]** > **[!UICONTROL ProductView.kt]** e localize a chamada para `updateUserAttributes` (dentro do código das compras <img src="assets/purchase.png" width="15" /> botão). Adicione o seguinte código:
+1. Navegue até **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL visualizações]** > **[!UICONTROL ProductView.kt]** e localize a chamada para `updateUserAttributes` (dentro do código do botão Compras ![Cartão de Crédito](/help/assets/icons/CreditCard.svg)). Adicione o seguinte código:
 
    ```kotlin
    // Update attributes
@@ -123,7 +123,7 @@ Depois de atualizar o atributo de um usuário, ele estará disponível para outr
    Este código:
 
    1. Chama a API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) com o nome de atributo `isPaidUser` como elemento único na matriz `attributeNames`.
-   1. Em seguida, verifica o valor do atributo `isPaidUser` e, quando `yes`, coloca um selo na variável Ícone <img src="assets/paiduser.png" width="20"> na barra de ferramentas, na parte superior direita.
+   1. Em seguida, verifica o valor do atributo `isPaidUser` e, quando `yes`, coloca um selo no ícone ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) na barra de ferramentas, na parte superior direita.
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ Depois de atualizar o atributo de um usuário, ele estará disponível para outr
    Este código:
 
    1. Chama a API [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) com o nome de atributo `isPaidUser` como elemento único na matriz `attributeNames`.
-   1. Em seguida, verifica o valor do atributo `isPaidUser`. Quando `yes`, o código substitui o ícone de pessoa por um selo na Ícone <img src="assets/paiduser.png" width="20"> na barra de ferramentas, na parte superior direita.
+   1. Em seguida, verifica o valor do atributo `isPaidUser`. Quando `yes`, o código substitui o ícone de pessoa por um ícone de selo na barra de ferramentas na parte superior direita.
 
 >[!ENDTABS]
 
@@ -156,24 +156,24 @@ Consulte a [Referência da API](https://developer.adobe.com/client-sdks/document
 
 1. Selecione **[!UICONTROL Página inicial]** na barra de guias.
 1. Mova o ícone do Assurance para a esquerda.
-1. Para abrir a planilha de Logon, selecione o Botão <img src="assets/login.png" width="15" />.
+1. Para abrir a folha Logon, selecione o botão ![Usuário](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Para inserir um email e uma ID do cliente aleatórios, selecione Botão <img src="assets/insert.png" width="15" /> .
+1. Para inserir um email e uma ID do cliente aleatórios, selecione o botão > .
 1. Selecione **[!UICONTROL Logon]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
 
 1. Selecione **[!DNL Products]** na barra de guias.
 1. Selecione um produto.
-1. Selecionar <img src="assets/saveforlater.png" width="15" />.
-1. Selecionar <img src="assets/addtocart.png" width="20">.
-1. Selecionar <img src="assets/purchase.png" width="15" />.
+1. Selecione ![Coração](/help/assets/icons/Heart.svg).
+1. Selecione ![ShoppingCart](/help/assets/icons/ShoppingCart.svg).
+1. Selecione ![CreditCard](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3.png" width="300">
 
-1. Voltar à tela **[!UICONTROL Residencial]**. Você verá que uma medalha foi adicionada <img src="assets/person-badge-icon.png" width="15" />.
+1. Voltar à tela **[!UICONTROL Residencial]**. Você deve ver que uma medalha foi adicionada ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg).
 
    <img src="./assets/personbadges.png" width="300">
 
@@ -182,20 +182,20 @@ Consulte a [Referência da API](https://developer.adobe.com/client-sdks/document
 
 1. Selecione **[!UICONTROL Página inicial]** na barra de guias.
 1. Mova o ícone do Assurance para a esquerda.
-1. Para abrir a planilha de Logon, selecione o Botão <img src="assets/login.png" width="15" />.
+1. Para abrir a folha Logon, selecione o botão ![Usuário](/help/assets/icons/User.svg).
 
    <img src="./assets/mobile-app-events-1-android.png" width="300">
 
-1. Para inserir um email e uma ID do cliente aleatórios, selecione Botão <img src="assets/insert.png" width="15" /> .
+1. Para inserir um email e uma ID de cliente aleatórios, selecione **[!UICONTROL Gerar Email Aleatório]**.
 1. Selecione **[!UICONTROL Logon]**.
 
    <img src="./assets/mobile-app-events-2-android.png" width="300">
 
 1. Selecione **[!DNL Products]** na barra de guias.
 1. Selecione um produto.
-1. Selecionar<img src="assets/heart.png" width="25">.
-1. Selecionar <img src="assets/addtocart.png" width="20">.
-1. Selecionar <img src="assets/purchase.png" width="15" />.
+1. Selecionar ![Miniatura](/help/assets/icons/ThumbUp.svg)
+1. Selecione ![ShoppingCart](/help/assets/icons/ShoppingCart.svg).
+1. Selecione ![CreditCard](/help/assets/icons/CreditCard.svg).
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
 
@@ -214,6 +214,6 @@ Na interface do usuário do Assurance, você deve ver eventos de **[!UICONTROL U
 >
 >Agora você configurou seu aplicativo para atualizar atributos de perfis na Edge Network e (quando configurado) com o Adobe Experience Platform.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Usar Locais](places.md)**
