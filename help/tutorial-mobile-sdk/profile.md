@@ -3,9 +3,9 @@ title: Coletar dados de perfil com o Platform Mobile SDK
 description: Saiba como coletar dados de perfil em um aplicativo móvel.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ Consulte a [Referência da API](https://developer.adobe.com/client-sdks/document
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. Para inserir um email e uma ID do cliente aleatórios, selecione o botão > .
+1. Para inserir um email e uma ID de cliente aleatórios, selecione a **[!UICONTROL A Botão |]** .
 1. Selecione **[!UICONTROL Logon]**.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
@@ -214,6 +214,6 @@ Na interface do usuário do Assurance, você deve ver eventos de **[!UICONTROL U
 >
 >Agora você configurou seu aplicativo para atualizar atributos de perfis na Edge Network e (quando configurado) com o Adobe Experience Platform.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Usar Locais](places.md)**
