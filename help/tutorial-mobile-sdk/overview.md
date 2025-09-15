@@ -4,9 +4,9 @@ description: Saiba como implementar os aplicativos móveis do Adobe Experience C
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 9129d7ab2ac33626240b0375e6424c0f6943290f
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ O Experience Platform Mobile SDK é um SDK do lado do cliente que permite aos cl
 ![Arquitetura](assets/architecture.png){zoomable="yes"}
 
 
-Este tutorial o orienta pela implementação do Platform Mobile SDK em um aplicativo de amostra chamado Luma. O [aplicativo Luma](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) tem uma funcionalidade que permite a criação de uma implementação realista. Após concluir este tutorial, você deve estar pronto para começar a implementar todas as suas soluções de marketing por meio do Experience Platform Mobile SDK em seus próprios aplicativos móveis.
+Este tutorial o orienta pela implementação do Platform Mobile SDK em um aplicativo de amostra chamado Luma. O aplicativo Luma tem funcionalidade que permite a criação de uma implementação realista. Após concluir este tutorial, você deve estar pronto para começar a implementar todas as suas soluções de marketing por meio do Experience Platform Mobile SDK em seus próprios aplicativos móveis.
 
 As lições foram projetadas para:
 
@@ -64,7 +64,7 @@ Nessas lições, presume-se que você tenha uma Adobe ID e as permissões de ní
    * **[!UICONTROL Direitos de propriedade]**—itens de permissão para **[!UICONTROL Desenvolver]**, **[!UICONTROL Aprovar]**, **[!UICONTROL Publicar]**, **[!UICONTROL Gerenciar extensões]** e **[!UICONTROL Gerenciar ambientes]**.
    * **[!UICONTROL Direitos da Empresa]**—itens de permissão para **[!UICONTROL Gerenciar Propriedades]**
 
-     Para obter mais informações sobre permissões de marcas, consulte [Permissões de usuário para marcas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions){target="_blank"} na documentação do produto.
+     Para obter mais informações sobre permissões de marcas, consulte [Permissões de usuário para marcas](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"} na documentação do produto.
 * No Experience Platform, você deve ter:
    * **[!UICONTROL Modelagem de Dados]** — itens de permissão para gerenciar e exibir esquemas.
    * **[!UICONTROL Identity Management]** — itens de permissão para gerenciar e exibir namespaces de identidade.
@@ -74,7 +74,7 @@ Nessas lições, presume-se que você tenha uma Adobe ID e as permissões de ní
       * **[!UICONTROL Gerenciamento de dados]**—itens de permissão para gerenciar e exibir conjuntos de dados.
       * Uma **sandbox** de desenvolvimento que você pode usar para este tutorial.
 
-   * Para as lições do Journey Optimizer, você precisa de permissões para configurar o **serviço de notificação por push** e criar uma **superfície de aplicativo**, uma **jornada**, uma **mensagem** e **predefinições de mensagem**. Além disso, para o Gerenciamento de decisões, você precisa das permissões adequadas para **gerenciar ofertas** e **decisões**, conforme descrito em [Níveis de permissão](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/high-low-permissions).
+   * Para as lições do Journey Optimizer, você precisa de permissões para configurar o **serviço de notificação por push** e criar uma **superfície de aplicativo**, uma **jornada**, uma **mensagem** e **predefinições de mensagem**. Além disso, para o Gerenciamento de decisões, você precisa das permissões adequadas para **gerenciar ofertas** e **decisões**, conforme descrito em [Níveis de permissão](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 * Para o Adobe Analytics, você deve saber quais **conjuntos de relatórios** você pode usar para concluir este tutorial.
 
@@ -119,9 +119,8 @@ Duas versões do aplicativo de amostra estão disponíveis para download. Ambas 
 
 Você usa o Android como plataforma, [!DNL Kotlin]+[!DNL Java] como linguagem de programação, [!DNL JetPack Compose] como estrutura de interface do usuário e [!DNL Android Studio] como ambiente de desenvolvimento integrado (IDE). No entanto, muitos dos conceitos de implementação explicados são semelhantes para outras plataformas de desenvolvimento. Muitos já concluíram com sucesso este tutorial com pouca ou nenhuma experiência anterior do Android / Kotlin+Java / JetPack Compose. Não é necessário ser um especialista para concluir as lições, mas você aprenderá mais com elas se ler e entender o código confortavelmente.
 
-Você pode baixar uma versão de teste produzida final do aplicativo da Google Play.
+Se preferir, você pode [participar de um teste para uma versão ](https://play.google.com/apps/internaltest/4700642199234438150) do aplicativo da Google Play.
 
-[![Baixar](assets/download-app-android.svg)](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
 
 >[!ENDTABS]
 
@@ -129,6 +128,6 @@ Vamos começar!
 
 >[!SUCCESS]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Criar um esquema XDM](create-schema.md)**
