@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Configurar um destino social
 
-Saiba como conectar e ativar públicos-alvo a um destino social. Este vídeo demonstra o fluxo de trabalho usando um destino de públicos correspondentes do LinkedIn no Adobe Real-Time Customer Data Platform.  Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/overview).
+Saiba como conectar e ativar públicos-alvo a um destino social. Este vídeo demonstra o fluxo de trabalho usando um destino de públicos correspondentes do LinkedIn no Adobe Real-Time Customer Data Platform.  Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/social/overview).
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 
