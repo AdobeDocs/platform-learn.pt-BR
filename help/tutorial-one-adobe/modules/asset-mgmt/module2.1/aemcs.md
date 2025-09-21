@@ -4,9 +4,9 @@ description: ADOBE EXPERIENCE MANAGER CLOUD SERVICE & EDGE DELIVERY SERVICES
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -27,23 +27,19 @@ ht-degree: 1%
 
 Neste exercício, você criará seu Programa Cloud Manager, que criará os produtos Sites, Assets e Edge Delivery Services para você.
 
-[1.1.2 Criar seu site baseado em documento](./ex2.md){target="_blank"}
-
-Neste exercício de introdução, você configurará seu próprio site baseado em documentos copiando um modelo de site existente.
-
-[1.1.3 Configurar o ambiente do AEM CS](./ex3.md){target="_blank"}
+[1.1.2 Configurar o ambiente do AEM CS](./ex3.md){target="_blank"}
 
 Neste exercício, você configurará seu ambiente AEM CS e acessará seu site CitiSignal.
 
-[1.1.4 Bloco Personalizado Básico](./ex4.md){target="_blank"}
+[1.1.3 Bloco Personalizado Básico](./ex4.md){target="_blank"}
 
 Neste exercício, você desenvolverá um bloco personalizado básico para o seu site.
 
-[1.1.5 Bloco Personalizado Avançado](./ex5.md){target="_blank"}
+[1.1.4 Bloco Personalizado Avançado](./ex5.md){target="_blank"}
 
 Neste exercício, você desenvolverá um bloco personalizado avançado para o seu site.
 
-[1.1.6 Plug-in MarTech para AEM Edge Delivery Services](./ex6.md){target="_blank"}
+[1.1.5 Plug-in MarTech para AEM Edge Delivery Services](./ex6.md){target="_blank"}
 
 Neste exercício, você implementará o plug-in AEM MarTech. O plug-in AEM MarTech ajuda a configurar rapidamente uma pilha completa do MarTech para seu projeto do AEM.
 

@@ -4,16 +4,16 @@ description: AEM CS - Bloco personalizado básico
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.4 Desenvolver um bloco personalizado básico
+# 1.1.3 Desenvolver um bloco personalizado básico
 
-## 1.1.4.1 Configurar o ambiente de desenvolvimento local
+## 1.1.3.1 Configurar o ambiente de desenvolvimento local
 
 Vá para [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, baixe e instale o **Github Desktop**.
 
@@ -43,7 +43,7 @@ Você verá agora que a pasta está aberta no Visual Studio Code e está pronto 
 
 ![Bloquear](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 Criar um bloco personalizado básico
+## 1.1.3.2 Criar um bloco personalizado básico
 
 A Adobe recomenda desenvolver blocos em uma abordagem de três fases:
 
@@ -145,7 +145,7 @@ Salve as alterações.
 
 ![Bloquear](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 Confirme suas alterações
+## 1.1.3.3 Confirme suas alterações
 
 Agora você fez várias alterações em seu projeto que precisam ser enviadas de volta ao repositório do GitHub. Para fazer isso, abra o **GitHub Desktop**.
 
@@ -169,7 +169,7 @@ No navegador, vá para a conta GitHub e para o repositório criado para o CitiSi
 
 ![Bloquear](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 Adicionar seu bloco a uma página
+## 1.1.3.4 Adicionar seu bloco a uma página
 
 Agora que seu bloco básico de cotações está definido e comprometido com o projeto CitiSignal, você pode adicionar um bloco **fiberoffer** a uma página existente.
 
@@ -249,7 +249,7 @@ Clique novamente em **Publicar**.
 
 Sua nova página foi publicada.
 
-## 1.1.4.5 Adicionar sua nova página ao menu de navegação
+## 1.1.3.5 Adicionar sua nova página ao menu de navegação
 
 Na visão geral do AEM Sites, vá para **CitiSignal** > **Fragmentos** e marque a caixa de seleção para **Cabeçalho**. Clique em **Edit**.
 
@@ -284,7 +284,7 @@ Aqui está seu bloco personalizado básico, mas agora renderizado no site.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-Próxima Etapa: [1.1.5 Bloco Personalizado Avançado](./ex5.md){target="_blank"}
+Próxima Etapa: [Bloco Personalizado Avançado](./ex5.md){target="_blank"}
 
 Voltar para o [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./aemcs.md){target="_blank"}
 

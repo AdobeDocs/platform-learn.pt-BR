@@ -3,9 +3,9 @@ title: Visão geral - Tutorial técnico abrangente - Uma Adobe
 description: Tutorial técnico completo - Uma Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1246'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ Neste módulo, você usará o Adobe Frame.io em combinação com o Adobe Premier
 
 Neste módulo, você criará um aplicativo personalizado para estender a capacidade no GenStudio for Performance Marketing, usando o Adobe IO e o App Builder.
 
-### &#x200B;3. Gestão de ativos
+### &#x200B;3. Gerenciamento de ativos e sites
 
 [1.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
@@ -103,6 +103,10 @@ Neste módulo, você configurará seu Programa Adobe Experience Manager Cloud Se
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 Neste módulo, você explorará o AEM Assets.
+
+[1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
+
+Neste módulo, você criará sua instância do Adobe Commerce as a Cloud Service. Você conectará sua instância do Commerce à AEM Sites CS Storefront e ao ambiente do AEM Assets CS.
 
 ### &#x200B;4. Entrega e ativação
 
