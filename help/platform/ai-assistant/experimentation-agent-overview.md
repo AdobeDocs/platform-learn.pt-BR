@@ -20,5 +20,5 @@ ht-degree: 0%
 
 O Agente de experimentação acelera a otimização digital com insights, configuração guiada e análise automatizada para profissionais de marketing, analistas e administradores.
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
