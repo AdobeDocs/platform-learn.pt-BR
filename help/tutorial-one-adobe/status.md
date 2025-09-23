@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '467'
 ht-degree: 12%
 
 ---
@@ -77,6 +77,13 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [1.2 Customer Journey Analytics: assimilar e analisar dados do Google Analytics no Adobe Experience Platform com o Conector de Source do BigQuery](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 01/07/2025 | Não | Há um problema com a modelagem da preparação de dados para os dados de origem. Uma correção está pendente. |
 | [2.1 Serviço de consulta](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 12/04/2024 | Sim | - |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 08/02/2025 | Não | Conteúdo sendo desenvolvido |
+
+## &#x200B;6. IA
+
+| Nome | Última atualização | Trabalhando 100% | Observações |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 IA de agente](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09/23/2025 | NÃO | - |
+| [1.2 IA de agente](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09/23/2025 | NÃO | - |
 
 {style="table-layout:auto"}
 
