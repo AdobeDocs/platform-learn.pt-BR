@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -87,7 +87,7 @@ Agora é necessário fornecer as imagens de referência para o Modelo personaliz
 
 ![Modelos personalizados do Firefly](./images/ffcm7.png){zoomable="yes"}
 
-Baixe as imagens de referência [aqui](https://tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip). Descompacte o arquivo de download, que fornecerá isso.
+Baixe as imagens de referência [aqui](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip). Descompacte o arquivo de download, que fornecerá isso.
 
 ![Modelos personalizados do Firefly](./images/ffcm8.png){zoomable="yes"}
 

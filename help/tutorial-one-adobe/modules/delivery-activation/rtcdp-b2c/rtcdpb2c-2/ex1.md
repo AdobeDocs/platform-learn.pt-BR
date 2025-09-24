@@ -4,7 +4,7 @@ description: IA do cliente - Preparação de dados (assimilação)
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 2%
@@ -24,11 +24,11 @@ Faça logon no Adobe Experience Platform acessando esta URL: [https://experience
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](../../datacollection/dc1.2/images/home.png)
+![Ingestão de dados](../../datacollection/dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
-![Assimilação de dados](../../datacollection/dc1.2/images/sb1.png)
+![Ingestão de dados](../../datacollection/dc1.2/images/sb1.png)
 
 No menu esquerdo, clique em **Esquemas** e vá para **Procurar**. Clique em **Criar Esquema**.
 
@@ -112,7 +112,7 @@ Depois que o **Esquema** e o **Conjunto de dados** estiverem configurados, você
 
 Os dados preparados para os eventos de experiência neste exercício devem estar em conformidade com os requisitos e o esquema do [Grupo de Campos XDM de Evento de Experiência do Consumidor](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Baixe o arquivo zip com dados de demonstração deste local: [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
+Baixe o arquivo zip com dados de demonstração deste local: [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
 Você baixou um arquivo chamado **CUSTOM-CAI-EVENTS-WEB.zip**. Coloque o arquivo na área de trabalho do seu computador e descompacte-o, e você verá uma pasta chamada **CUSTOM-CAI-EVENTS-WEB**.
 

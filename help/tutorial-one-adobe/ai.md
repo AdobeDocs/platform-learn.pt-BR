@@ -2,7 +2,8 @@
 title: Visão geral Laboratórios técnicos de IA do Agentic
 description: Visão geral Laboratórios técnicos de IA do Agentic
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Os Laboratórios técnicos de IA de agentes estão em andamento e serão lançados em novembro/dezembro de 2025.
 
-## 1.1 Introdução aos agentes e IA
+[1.1 Introdução aos agentes e IA](./modules/agentic-ai/module1.1/agenticai.md)
 
 **Meta**
 
@@ -37,7 +38,7 @@ Elementos técnicos:
 - Servidor MCP, Notebook Python
 - APIs do Adobe
 
-## 1.2 Collaboration do agente
+[1.2 Collaboration do agente](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **Meta**
 

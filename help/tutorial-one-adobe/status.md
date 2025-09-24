@@ -3,10 +3,10 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: 47d036564be9c009e26903b20778e61fd1c78635
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 12%
+source-wordcount: '473'
+ht-degree: 14%
 
 ---
 
@@ -45,7 +45,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 05/01/2025 | Sim | - |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 08/20/2025 | Sim | - |
-| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 09/19/2025 | Sim | - |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 09/23/2025 | Sim | - |
 
 ## &#x200B;4. Entrega e ativação
 
@@ -82,8 +82,8 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 IA de agente](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09/23/2025 | NÃO | - |
-| [1.2 IA de agente](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09/23/2025 | NÃO | - |
+| [1.1 IA de agente](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09/23/2025 | Não | Trabalho em curso |
+| [1.2 Agente Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 09/23/2025 | Não | Trabalho em curso |
 
 {style="table-layout:auto"}
 

@@ -4,9 +4,9 @@ description: AEM CS - Bloco personalizado básico
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '843'
 ht-degree: 1%
 
 ---
@@ -17,31 +17,31 @@ ht-degree: 1%
 
 Vá para [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, baixe e instale o **Github Desktop**.
 
-![Bloquear](./images/block1.png){zoomable="yes"}
+![Bloquear](./images/block1.png)
 
 Depois que o Github Desktop for instalado, acesse o repositório GitHub criado no exercício anterior. Clique em **&lt;> Código** e em **Abrir com o GitHub Desktop**.
 
-![Bloquear](./images/block2.png){zoomable="yes"}
+![Bloquear](./images/block2.png)
 
 Seu repositório GitHub será aberto no GitHub Desktop. Você pode alterar o **Caminho Local**. Clique em **Clonar**.
 
-![Bloquear](./images/block3.png){zoomable="yes"}
+![Bloquear](./images/block3.png)
 
 Uma pasta local será criada.
 
-![Bloquear](./images/block4.png){zoomable="yes"}
+![Bloquear](./images/block4.png)
 
 Abra o Visual Studio Code. Ir para **Arquivo** > **Abrir pasta**.
 
-![Bloquear](./images/block5.png){zoomable="yes"}
+![Bloquear](./images/block5.png)
 
-Selecione a pasta usada pela configuração do GitHub para **citisignal**.
+Selecione a pasta usada pela configuração do GitHub para **citisignal-aem-accs**.
 
-![Bloquear](./images/block6.png){zoomable="yes"}
+![Bloquear](./images/block6.png)
 
 Você verá agora que a pasta está aberta no Visual Studio Code e está pronto para criar um novo bloco.
 
-![Bloquear](./images/block7.png){zoomable="yes"}
+![Bloquear](./images/block7.png)
 
 ## 1.1.3.2 Criar um bloco personalizado básico
 
@@ -55,11 +55,11 @@ A Adobe recomenda desenvolver blocos em uma abordagem de três fases:
 
 No Visual Studio Code, abra o arquivo **component-definition.json**.
 
-![Bloquear](./images/block8.png){zoomable="yes"}
+![Bloquear](./images/block8.png)
 
-Role para baixo até ver o componente **Quote**. Coloque o cursor próximo ao colchete do último componente.
+Role para baixo até ver os **Blocos**. Coloque o cursor abaixo do colchete do componente **Cartões**
 
-![Bloquear](./images/block9.png){zoomable="yes"}
+![Bloquear](./images/block9.png)
 
 Cole esse código e insira uma vírgula **,** após o bloco de código:
 
@@ -86,17 +86,17 @@ Cole esse código e insira uma vírgula **,** após o bloco de código:
 
 Salve as alterações.
 
-![Bloquear](./images/block10.png){zoomable="yes"}
+![Bloquear](./images/block10.png)
 
 ### component-models.json
 
 No Visual Studio Code, abra o arquivo **component-models.json**.
 
-![Bloquear](./images/block11.png){zoomable="yes"}
+![Bloquear](./images/block11.png)
 
 Role para baixo até ver o último item. Coloque o cursor próximo ao colchete do último componente.
 
-![Bloquear](./images/block12.png){zoomable="yes"}
+![Bloquear](./images/block12.png)
 
 Insira uma vírgula **,**, e, por push, insira e, na próxima linha, cole este código:
 
@@ -131,19 +131,19 @@ Insira uma vírgula **,**, e, por push, insira e, na próxima linha, cole este c
 
 Salve as alterações.
 
-![Bloquear](./images/block13.png){zoomable="yes"}
+![Bloquear](./images/block13.png)
 
 ### component-filters.json
 
 No Visual Studio Code, abra o arquivo **component-filters.json**.
 
-![Bloquear](./images/block14.png){zoomable="yes"}
+![Bloquear](./images/block14.png)
 
-Em **seção**, insira uma vírgula **,** e a ID do seu componente **fiberoffer** após a última linha atual.
+Em **seção**, insira uma vírgula `,` e cole a identificação do componente `"fiberoffer"` após a última linha atual.
 
 Salve as alterações.
 
-![Bloquear](./images/block15.png){zoomable="yes"}
+![Bloquear](./images/block15.png)
 
 ## 1.1.3.3 Confirme suas alterações
 
@@ -151,23 +151,23 @@ Agora você fez várias alterações em seu projeto que precisam ser enviadas de
 
 Você deverá ver os 3 arquivos que acabou de editar em **Alterações**. Revise suas alterações.
 
-![Bloquear](./images/block16.png){zoomable="yes"}
+![Bloquear](./images/block16.png)
 
 Digite um nome para a sua PR, `Fiber Offer custom block`. Clique em **Confirmar para principal**.
 
-![Bloquear](./images/block17.png){zoomable="yes"}
+![Bloquear](./images/block17.png)
 
 Você deverá ver isso. Clique em **Origem de push**.
 
-![Bloquear](./images/block18.png){zoomable="yes"}
+![Bloquear](./images/block18.png)
 
 Após alguns segundos, suas alterações foram enviadas para o repositório do GitHub.
 
-![Bloquear](./images/block19.png){zoomable="yes"}
+![Bloquear](./images/block19.png)
 
 No navegador, vá para a conta GitHub e para o repositório criado para o CitiSignal. Você deverá ver algo assim, mostrando que suas alterações foram recebidas.
 
-![Bloquear](./images/block20.png){zoomable="yes"}
+![Bloquear](./images/block20.png)
 
 ## 1.1.3.4 Adicionar seu bloco a uma página
 
@@ -175,11 +175,11 @@ Agora que seu bloco básico de cotações está definido e comprometido com o pr
 
 Ir para [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Clique no **Programa** para abri-lo.
 
-![AEMCS](./images/aemcs6.png){zoomable="yes"}
+![AEMCS](./images/aemcs6.png)
 
 Em seguida, clique nos 3 pontos **...** na guia **Ambientes** e clique em **Exibir Detalhes**.
 
-![AEMCS](./images/aemcs9.png){zoomable="yes"}
+![AEMCS](./images/aemcs9.png)
 
 Você verá os detalhes do ambiente. Clique na URL do seu ambiente **Author**.
 
@@ -187,89 +187,97 @@ Você verá os detalhes do ambiente. Clique na URL do seu ambiente **Author**.
 >
 >É possível que seu ambiente esteja hibernado. Se esse for o caso, será necessário cancelar a hibernação do ambiente primeiro.
 
-![AEMCS](./images/aemcs10.png){zoomable="yes"}
+![AEMCS](./images/aemcs10.png)
 
 Em seguida, você deverá ver seu ambiente de autor do AEM. Ir para **Sites**.
 
-![AEMCS](./images/block21.png){zoomable="yes"}
+![AEMCS](./images/block21.png)
 
-Vá para **CitiSignal** > **us** > **en**.
+Vá para **CitiSignal**. Clique em **Criar** e selecione **Página**.
 
-![AEMCS](./images/block22.png){zoomable="yes"}
-
-Clique em **Criar** e selecione **Página**.
-
-![AEMCS](./images/block23.png){zoomable="yes"}
+![AEMCS](./images/block23.png)
 
 Selecione **Página** e clique em **Avançar**.
 
-![AEMCS](./images/block24.png){zoomable="yes"}
+![AEMCS](./images/block24.png)
 
 Insira os seguintes valores:
 
-- Título: **Fibra de CitiSignal**
-- Nome: **citisignal-fiber**
-- Título da página: **Fibra de CitiSignal**
+- Título: **Fibra**
+- Nome: **fibra**
+- Título da página: **Fibra**
 
 Clique em **Criar**.
 
-![AEMCS](./images/block25.png){zoomable="yes"}
+![AEMCS](./images/block25.png)
+
+Selecione **Abrir**.
+
+![AEMCS](./images/block22.png)
 
 Você deverá ver isso.
 
-![AEMCS](./images/block26.png){zoomable="yes"}
+![AEMCS](./images/block26.png)
 
 Clique na área em branco para selecionar o componente **seção**. Em seguida, clique no ícone de mais **+** no menu direito.
 
-![AEMCS](./images/block27.png){zoomable="yes"}
+![AEMCS](./images/block27.png)
 
 Em seguida, você deve ver seu bloco personalizado mostrado na lista de blocos disponíveis. Clique para selecioná-la.
 
-![AEMCS](./images/block28.png){zoomable="yes"}
+![AEMCS](./images/block28.png)
 
 Você verá campos como **Texto da oferta**, **CTA da oferta** e **Imagem da oferta** sendo adicionados ao editor. Clique em **+ Adicionar** no campo **Imagem da oferta** para selecionar uma imagem.
 
-![AEMCS](./images/block29.png){zoomable="yes"}
+![AEMCS](./images/block29.png)
 
 Você deverá ver isso. Clique para abrir a pasta **citisignal**.
 
-![AEMCS](./images/blockpub1.png){zoomable="yes"}
+![AEMCS](./images/blockpub1.png)
 
 Selecione a imagem **product-enrichment-1.png**. Clique em **Selecionar**.
 
-![AEMCS](./images/blockpub2.png){zoomable="yes"}
+![AEMCS](./images/blockpub2.png)
 
 Você deveria ficar com isso. Clique em **Publicar**.
 
-![AEMCS](./images/blockpub3.png){zoomable="yes"}
+![AEMCS](./images/blockpub3.png)
 
 Clique novamente em **Publicar**.
 
-![AEMCS](./images/blockpub4.png){zoomable="yes"}
+![AEMCS](./images/blockpub4.png)
 
 Sua nova página foi publicada.
 
 ## 1.1.3.5 Adicionar sua nova página ao menu de navegação
 
-Na visão geral do AEM Sites, vá para **CitiSignal** > **Fragmentos** e marque a caixa de seleção para **Cabeçalho**. Clique em **Edit**.
+Na visão geral do AEM Sites, vá para **CitiSignal** e marque a caixa de seleção do arquivo **Header/nav**. Clique em **Edit**.
 
-![AEMCS](./images/nav0.png){zoomable="yes"}
+![AEMCS](./images/nav0.png)
+
+Selecione o campo **Texto** na tela de visualização e clique no campo **Texto**, no lado direito da tela, para editá-lo.
+
+![AEMCS](./images/nav0a.png)
 
 Adicione uma opção de menu ao menu de navegação com o texto `Fiber`. Selecione o texto **Fibra** e clique no ícone **link**.
 
-![AEMCS](./images/nav1.png){zoomable="yes"}
+![AEMCS](./images/nav1.png)
 
-Digite isto para o **URL** `/us/en/citisignal-fiber` e clique no ícone **V** para confirmar.
+Digite isto para o **URL** `/content/CitiSignal/fiber.html` e clique no ícone **V** para confirmar.
 
-![AEMCS](./images/nav3.png){zoomable="yes"}
+![AEMCS](./images/nav3.png)
+
+Você deveria ficar com isso. Clique em **Concluído**.
+
+![AEMCS](./images/nav4.png)
 
 Você deveria ficar com isso. Clique em **Publicar**.
 
-![AEMCS](./images/nav4.png){zoomable="yes"}
+![AEMCS](./images/nav4a.png)
 
 Clique novamente em **Publicar**.
 
-![AEMCS](./images/nav5.png){zoomable="yes"}
+![AEMCS](./images/nav5.png)
 
 Agora é possível exibir as alterações em seu site indo para `main--citisignal--XXX.aem.page/us/en/` e/ou `main--citisignal--XXX.aem.live/us/en/`, depois de substituir XXX pela sua conta de usuário do GitHub, que neste exemplo é `woutervangeluwe`.
 
@@ -278,13 +286,13 @@ Neste exemplo, o URL completo torna-se isto:
 
 Você deverá ver isso. Clique em **Fibra**.
 
-![AEMCS](./images/nav6.png){zoomable="yes"}
+![AEMCS](./images/nav6.png)
 
 Aqui está seu bloco personalizado básico, mas agora renderizado no site.
 
-![AEMCS](./images/nav7.png){zoomable="yes"}
+![AEMCS](./images/nav7.png)
 
-Próxima Etapa: [Bloco Personalizado Avançado](./ex5.md){target="_blank"}
+Próxima Etapa: [Bloco Personalizado Avançado](./ex4.md){target="_blank"}
 
 Voltar para o [Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./aemcs.md){target="_blank"}
 

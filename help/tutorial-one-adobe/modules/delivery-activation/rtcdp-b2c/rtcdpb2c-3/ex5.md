@@ -4,7 +4,7 @@ description: Real-time CDP - Criar um público-alvo e realizar ações - Enviar 
 kt: 5342
 doc-type: tutorial
 exl-id: 2a9a982b-0ffd-468d-9b71-77224e2c7e1d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 ## Verificar o fluxo de dados
 
@@ -27,27 +27,27 @@ O destino do Adobe Target no Real-Time CDP é conectado ao fluxo de dados usado 
 
 No menu esquerdo, role para baixo e clique em **Datastreams**. Em Datastreams, pesquise por seu datastream chamado `--aepUserLdap-- - Demo System Datastream`. Clique na sequência de dados para abri-la.
 
-![Assimilação de dados](./images/atdestds1.png)
+![Ingestão de dados](./images/atdestds1.png)
 
 Você verá isto, clique em **...** ao lado de **Adobe Experience Platform** e em **Editar**.
 
-![Assimilação de dados](./images/atdestds4.png)
+![Ingestão de dados](./images/atdestds4.png)
 
 Marque as caixas de seleção para **Segmentação do Edge** e **Destinos do Personalization**. Clique em **Salvar**.
 
-![Assimilação de dados](./images/atdestds4a.png)
+![Ingestão de dados](./images/atdestds4a.png)
 
 Em seguida, clique em **+ Adicionar Serviço**.
 
-![Assimilação de dados](./images/atdestds4b.png)
+![Ingestão de dados](./images/atdestds4b.png)
 
 Selecione o serviço **Adobe Target**. Clique em **Salvar**.
 
-![Assimilação de dados](./images/atdestds5.png)
+![Ingestão de dados](./images/atdestds5.png)
 
 A sequência de dados agora está configurada para o Adobe Target.
 
-![Assimilação de dados](./images/atdestds5a.png)
+![Ingestão de dados](./images/atdestds5a.png)
 
 ## Configurar o destino do Adobe Target
 
@@ -146,7 +146,7 @@ Agora vamos alterar a Imagem do Herói na página inicial do site. Clique para a
 Cole o código a seguir.
 
 ```javascript
-<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
+<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
 document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > div > div > p").innerHTML="What about 10% off of your next Galaxy S24 smartphone?";
 </script>
 ```
