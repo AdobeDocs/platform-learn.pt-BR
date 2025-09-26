@@ -3,10 +3,11 @@ title: Introdução ao Adobe Commerce as a Cloud Service
 description: Introdução ao Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +182,7 @@ Configure a segunda opção usando o nome `512GB` em todas as três colunas e cl
 
 ![AEM Assets](./images/accs30.png)
 
-Configure a terceira opção usando o nome `1TB` em todas as três colunas e clique novamente em **Adicionar Opção**.
+Configure a terceira opção usando o nome `1TB` em todas as 3 colunas.
 
 ![AEM Assets](./images/accs31.png)
 
@@ -234,7 +235,7 @@ Você deverá ver isso. Clique em **Gerar Produtos**.
 
 ![AEM Assets](./images/accs42.png)
 
-Clique em **Salvar**.
+Defina a **Quantidade** de cada produto para `10000`. Clique em **Salvar**.
 
 ![AEM Assets](./images/accs43.png)
 
@@ -255,7 +256,6 @@ Você deverá ver isso. Clique em **Voltar**.
 Agora você verá o produto **iPhone Air** e suas variações no Catálogo de Produtos.
 
 ![AEM Assets](./images/accs47.png)
-
 
 Próxima etapa: [Conectar o ACCS à Loja AEM Sites CS/EDS](./ex2.md){target="_blank"}
 
