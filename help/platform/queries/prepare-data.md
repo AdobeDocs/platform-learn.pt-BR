@@ -18,4 +18,4 @@ ht-degree: 6%
 
 Saiba como limpar, preparar e combinar dados de vários conjuntos de dados para criar um novo usando as funções CTAS (Create Table AS) e Spark SQL para relatórios e painéis. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475297?learn=on&enablevpops&captions=por_br)
