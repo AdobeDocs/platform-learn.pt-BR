@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Funções definidas pelo Adobe
 
-Saiba como usar funções definidas pelo Adobe no Serviço de consulta do Adobe Experience Platform para executar tarefas comerciais comuns em dados de evento de experiência. Para obter mais informações, visite [funções SQL definidas pela Adobe no Serviço de Consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions).
+Saiba como usar funções definidas pelo Adobe no Serviço de consulta do Adobe Experience Platform para executar tarefas comerciais comuns em dados de evento de experiência. Para obter mais informações, visite [funções SQL definidas pela Adobe no Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/sql/adobe-defined-functions).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)

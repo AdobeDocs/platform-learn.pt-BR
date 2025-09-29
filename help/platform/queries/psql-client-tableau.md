@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Conectar o Tableau ao Serviço de consulta
 
-Saiba como se conectar ao Serviço de consulta de vários aplicativos de cliente de desktop que oferecem suporte ao protocolo PostgreSQL e como usar ferramentas e drivers PostgreSQL para conectar e gravar consultas. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Saiba como se conectar ao Serviço de consulta de vários aplicativos de cliente de desktop que oferecem suporte ao protocolo PostgreSQL e como usar ferramentas e drivers PostgreSQL para conectar e gravar consultas. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)

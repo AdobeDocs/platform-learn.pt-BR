@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # Analisar e visualizar insights omnicanal no Tableau usando o Serviço de consulta
 
-Saiba como usar o Serviço de consulta da Adobe Experience Platform com ferramentas de visualização de dados externas usando um exemplo de análise de churn. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Saiba como usar o Serviço de consulta da Adobe Experience Platform com ferramentas de visualização de dados externas usando um exemplo de análise de churn. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)
