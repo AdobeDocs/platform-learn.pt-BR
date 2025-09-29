@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Os painéis de monitoramento de capacidade e transmissão oferecem às empresas visibilidade e controle sobre o uso da plataforma. Eles ajudam a alocar o throughput, detectar picos ou subutilização e fornecem insights em tempo real sobre o desempenho, permitindo decisões proativas e alertas para evitar sobrecarga e garantir que os serviços essenciais permaneçam estáveis.
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475278/?learn=on&enablevpops&captions=por_br)
