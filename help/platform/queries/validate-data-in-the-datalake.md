@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Saiba como validar se os dados foram assimilados com êxito no datalake usando o serviço de consulta da Adobe Experience Platform. Para obter a documentação detalhada do produto, consulte o [Guia da Interface do Usuário do Editor de Consultas](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445682?learn=on&enablevpops&captions=por_br)

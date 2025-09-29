@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Saiba como os engenheiros de dados podem usar o serviço de consulta para transformar dados e gerar novos conjuntos de dados. Execute essas consultas em um cronograma para potencializar painéis e segmentação automatizados. Para obter mais informações, visite [Gerar conjuntos de dados de saída a partir dos resultados da consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/create-datasets).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475297?learn=on&enablevpops&captions=por_br)

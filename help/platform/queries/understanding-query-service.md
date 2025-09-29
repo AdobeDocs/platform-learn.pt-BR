@@ -18,7 +18,7 @@ ht-degree: 10%
 
 O Adobe Experience Platform Query Service permite que os usuários explorem, validem e transformem dados de experiência do cliente armazenados no data lake usando SQL, com recursos aprimorados como saída de dados e agendamento disponíveis por meio do complemento Data Distiller. Este vídeo fornece uma visão geral dos principais recursos para ajudar os usuários a entender como aproveitar o Serviço de consulta em vários aplicativos baseados em plataforma. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464266?learn=on&enablevpops&captions=por_br)
 
 ## Uso básico
 
@@ -35,7 +35,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="Executar consultas com o serviço de consulta" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="Executar consultas com o serviço de consulta"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33393?format=jpeg&nocache=1759180596408&captions=por_br" alt="Executar consultas com o serviço de consulta"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Derivar dados com o Data Distiller" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Derivar dados com o Data Distiller"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475297?format=jpeg&nocache=1759180596403&captions=por_br" alt="Derivar dados com o Data Distiller"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ O Adobe Experience Platform Query Service permite que os usuários explorem, val
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="Recarregue os dados do cliente para fornecer experiências eletrizantes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="Recarregue os dados do cliente para fornecer experiências eletrizantes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454945?format=jpeg&nocache=1759180596865&captions=por_br" alt="Recarregue os dados do cliente para fornecer experiências eletrizantes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
