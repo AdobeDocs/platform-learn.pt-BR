@@ -1,21 +1,21 @@
 ---
-title: Preparar dados
-description: Saiba como limpar, preparar e combinar dados de vários conjuntos de dados para criar um novo usando as funções CTAS (Create Table AS) e Spark SQL para relatórios e painéis.
+title: Derivar dados com o Data Distiller
+description: Saiba como os engenheiros de dados podem usar o serviço de consulta para transformar dados e gerar novos conjuntos de dados. Execute essas consultas em um cronograma para potencializar painéis e segmentação automatizados.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-8005
-thumbnail: 333699.jpg
+last-substantial-update: 2025-09-23T00:00:00Z
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 1712f2b22b8042e0cf96e619ca1a2e99e5368a18
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 6%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
-# Preparar dados
+# Derivar dados com o Data Distiller
 
-Saiba como limpar, preparar e combinar dados de vários conjuntos de dados para criar um novo usando as funções CTAS (Create Table AS) e Spark SQL para relatórios e painéis. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=pt-BR).
+Saiba como os engenheiros de dados podem usar o serviço de consulta para transformar dados e gerar novos conjuntos de dados. Execute essas consultas em um cronograma para potencializar painéis e segmentação automatizados. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/3475297?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
