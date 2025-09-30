@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Visão geral do Audience Agent
 
-O Audience Agent simplifica o gerenciamento de público-alvo com criação conversacional, otimização, insights e integração segura em aplicativos B2B/B2C. Para obter mais informações, consulte a [documentação do Audience Agent](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience).
+O Audience Agent simplifica o gerenciamento de público-alvo com criação conversacional, otimização, insights e integração segura em aplicativos B2B/B2C. Para obter mais informações, consulte a [documentação do Audience Agent](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/audience).
 
 >[!SLIDE](audience-agent-overview)
