@@ -18,4 +18,4 @@ ht-degree: 0%
 
 Saiba como validar dados assimilados usando funções SQL. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475330?learn=on&enablevpops&captions=por_br)
