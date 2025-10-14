@@ -16,7 +16,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações |
 | ---------------------- | ------------ | ------------ |------------ |
-| [0. Introdução ](./modules/gettingstarted/gettingstarted/getting-started.md) | 11/14/2024 | Sim | - |
+| [0. Introdução &#x200B;](./modules/gettingstarted/gettingstarted/getting-started.md) | 11/14/2024 | Sim | - |
 | [1.1 Foundation - Configuração da Coleção de Dados da Adobe Experience Platform e da Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 11/18/2024 | Sim | - |
 | [1.2 Foundation - Assimilação de dados](./modules/datacollection/module1.2/data-ingestion.md) | 11/18/2024 | Sim | - |
 | [1.3 Composição de Público Federado](./modules/datacollection/module1.3/fac.md) | 01/07/2025 | Sim | - |

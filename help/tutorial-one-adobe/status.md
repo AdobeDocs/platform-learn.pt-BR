@@ -18,7 +18,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações |
 | ---------------------- | ------------ | ------------ |------------ |
-| [0. Introdução ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - |
+| [0. Introdução &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - |
 
 ## &#x200B;1. Fluxo de trabalho e planejamento
 

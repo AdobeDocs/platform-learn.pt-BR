@@ -119,7 +119,7 @@ Duas versões do aplicativo de amostra estão disponíveis para download. Ambas 
 
 Você usa o Android como plataforma, [!DNL Kotlin]+[!DNL Java] como linguagem de programação, [!DNL JetPack Compose] como estrutura de interface do usuário e [!DNL Android Studio] como ambiente de desenvolvimento integrado (IDE). No entanto, muitos dos conceitos de implementação explicados são semelhantes para outras plataformas de desenvolvimento. Muitos já concluíram com sucesso este tutorial com pouca ou nenhuma experiência anterior do Android / Kotlin+Java / JetPack Compose. Não é necessário ser um especialista para concluir as lições, mas você aprenderá mais com elas se ler e entender o código confortavelmente.
 
-Se preferir, você pode [participar de um teste para uma versão ](https://play.google.com/apps/internaltest/4700642199234438150) do aplicativo da Google Play.
+Se preferir, você pode [participar de um teste para uma versão &#x200B;](https://play.google.com/apps/internaltest/4700642199234438150) do aplicativo da Google Play.
 
 
 >[!ENDTABS]

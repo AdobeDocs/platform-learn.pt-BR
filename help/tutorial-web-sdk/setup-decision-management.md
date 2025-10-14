@@ -175,7 +175,7 @@ Para criar a disposição, siga estas etapas:
 1. Depois que a disposição é criada, ela é exibida na lista de disposições.
 1. Selecione a linha que contém a nova disposição e anote a ID de disposição, pois isso pode ser necessário para configuração dentro do Escopo da decisão.
 
-   ![Consulte a ID de Posicionamento ](assets/decisioning-placement-id.png)
+   ![Consulte a ID de Posicionamento &#x200B;](assets/decisioning-placement-id.png)
 
 ### Regras de decisão para status de fidelidade
 

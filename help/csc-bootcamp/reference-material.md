@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## Slide deck
 
-Essa documentação pode ajudá-lo a se familiarizar com o conceito dessa campanha de inicialização, bem como com uma cadeia de fornecimento de conteúdo. No entanto, há sempre algumas coisas que queríamos mostrar, mas não podíamos incluir mais. Você pode encontrar essas informações na [apresentação de slides a seguir](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) e em nossa [Arte da possível demonstração](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
+Essa documentação pode ajudá-lo a se familiarizar com o conceito dessa campanha de inicialização, bem como com uma cadeia de fornecimento de conteúdo. No entanto, há sempre algumas coisas que queríamos mostrar, mas não podíamos incluir mais. Você pode encontrar essas informações na [apresentação de slides a seguir](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&csf=1&web=1&e=57aFUU) e em nossa [Arte da possível demonstração](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
 
 ## Conheça a Adobe
 
