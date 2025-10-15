@@ -24,7 +24,7 @@ Saiba como o SDK da Web da Adobe Experience Platform e a rede de borda permitem 
 
 >[!NOTE]
 >
->Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Meet Alloy.js e Nunca Marcar para um eVar ou Mbox Novamente](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>Este vídeo é um trecho da sessão do Adobe Summit 2020 *[Meet Alloy.js e Nunca Marcar para um eVar ou Mbox Novamente](https://business.adobe.com/br/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 >
 >O recurso de encaminhamento pelo lado do servidor discutido neste vídeo agora está disponível para todos os clientes licenciados. Consulte a [documentação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)
 
