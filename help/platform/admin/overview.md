@@ -34,7 +34,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="Adicionar usuários" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="Adicionar usuários"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475978?captions=por_br&format=jpeg&nocache=1740173302150" alt="Adicionar usuários"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,7 +80,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="Adicionar administradores" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="Adicionar administradores"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475946?captions=por_br&format=jpeg&nocache=1740173302208" alt="Adicionar administradores"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

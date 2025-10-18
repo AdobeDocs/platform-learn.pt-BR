@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Saiba mais sobre o processo de adicionar rótulos de Privacidade de dados às variáveis do Analytics, incluindo um detalhamento do que cada tipo de rótulo significa e quando usá-los. Para obter mais informações, consulte a [documentação do Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450667?captions=por_br&learn=on&enablevpops)

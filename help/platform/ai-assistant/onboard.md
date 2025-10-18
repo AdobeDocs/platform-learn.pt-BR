@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Saiba como usar o Assistente de IA para aprimorar rapidamente novos recursos e reduzir o tempo de integração. Para obter mais informações, consulte o [Guia de perguntas do Assistente de IA](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ai-assistant/questions).
 
->[!VIDEO](https://video.tv.adobe.com/v/3438032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475935/?captions=por_br&learn=on&enablevpops)

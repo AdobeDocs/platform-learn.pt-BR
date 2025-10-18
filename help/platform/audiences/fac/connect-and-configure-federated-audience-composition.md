@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Saiba como se conectar ao data warehouse e configurar essa conexão para a Composição de público-alvo federado. Para obter mais informações, visite a [Documentação de composição de público-alvo federado](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451561/?captions=por_br&learn=on&enablevpops)

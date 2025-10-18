@@ -128,7 +128,7 @@ Para começar, entre em contato com o administrador do Adobe Experience Platform
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Adicionar administradores de produto para aplicativos baseados em Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Adicionar administradores de produto para aplicativos baseados em Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475946?captions=por_br&format=jpeg&nocache=1756504085478" alt="Adicionar administradores de produto para aplicativos baseados em Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

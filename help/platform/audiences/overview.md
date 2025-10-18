@@ -290,7 +290,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="Visão geral da composição do Federated Audience" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="Visão geral da composição do Federated Audience"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450887/?captions=por_br&format=jpeg&nocache=1740173579477" alt="Visão geral da composição do Federated Audience"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Conectar e configurar a Composição de Público-Alvo Federado" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Conectar e configurar a Composição de Público-Alvo Federado"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451561/?captions=por_br&format=jpeg&nocache=1740173579488" alt="Conectar e configurar a Composição de Público-Alvo Federado"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

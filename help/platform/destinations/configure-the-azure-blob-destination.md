@@ -22,5 +22,5 @@ Saiba como configurar uma conexão e enviar dados para o destino do Armazenament
 
 Para obter mais informações, visite a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob).
 
->[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346821/?captions=por_br&learn=on&enablevpops)
 

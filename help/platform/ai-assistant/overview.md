@@ -38,7 +38,7 @@ Configure-se com o Assistente de IA e aprenda seus recursos básicos.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="Obter acesso ao Assistente de IA" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="Obter acesso ao Assistente de IA"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475924/?captions=por_br&format=jpeg&nocache=1748392732990" alt="Obter acesso ao Assistente de IA"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ O Assistente de IA é uma ferramenta útil para conhecer novos produtos ou obter
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="Usar o Assistente de IA para reduzir o tempo de integração" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="Usar o Assistente de IA para reduzir o tempo de integração"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475935/?captions=por_br&format=jpeg&nocache=1748392735030" alt="Usar o Assistente de IA para reduzir o tempo de integração"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

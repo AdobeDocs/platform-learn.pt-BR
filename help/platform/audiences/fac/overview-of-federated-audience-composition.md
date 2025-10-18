@@ -20,4 +20,4 @@ ht-degree: 45%
 
 A Composição de público-alvo federado da Experience Platform oferece flexibilidade e eficiência no gerenciamento de dados aos usuários da Adobe Real-Time CDP e do Adobe Journey Optimizer. Com a Composição de público-alvo federado, você pode acessar o data warehouse corporativo usando uma interface amigável para profissionais de marketing para criar públicos-alvo e aproveitar conjuntos de dados em fluxos de trabalho do Adobe Experience Platform sem precisar importar todos os dados do data warehouse para o Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432261/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450887/?captions=por_br&learn=on&enablevpops)
