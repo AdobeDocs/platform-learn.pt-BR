@@ -4,9 +4,9 @@ description: Saiba como implementar a extensão Assurance em um aplicativo móve
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1661'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Nesta lição, você vai:
 
 ## Confirmar acesso
 
-Confirme se sua organização tem acesso ao Assurance. Você, como usuário, deve ser adicionado ao perfil do Adobe Experience Platform. Consulte [Acesso de usuário](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/user-access) no guia do Assurance para obter mais informações.
+Confirme se sua organização tem acesso ao Assurance. Você, como usuário, deve ser adicionado ao perfil do Adobe Experience Platform. Consulte [Acesso de usuário](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access) no guia do Assurance para obter mais informações.
 
 ## Implementação
 
@@ -172,7 +172,7 @@ O Assurance funciona abrindo um URL, por meio de um navegador ou um código QR. 
 
 Certifique-se de especificar um `android:scheme` (por exemplo. `lumatutorialandroid`) e `android:host` (por exemplo `default`) para definir a URL base.
 
-Para saber mais sobre deep links no Android, consulte [Criar deep links para conteúdo do aplicativo](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+Para saber mais sobre deep links no Android, consulte [Criar deep links](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"} na documentação do Android.
 
 O Assurance funciona abrindo um URL, por meio de um navegador ou um código QR. Esse URL começa com o URL de base, que abre o aplicativo e contém parâmetros adicionais. Esses parâmetros exclusivos são usados para conectar a sessão.  No aplicativo de exemplo, o deep link é `lumatutorialandroid://default`.
 
@@ -388,7 +388,7 @@ Se você vir extensões desatualizadas, consulte a [documentação do Android St
 >
 >Agora você configurou o aplicativo para usar o Assurance no restante do tutorial.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Próximo: **[Implementar Consentimento](consent.md)**
