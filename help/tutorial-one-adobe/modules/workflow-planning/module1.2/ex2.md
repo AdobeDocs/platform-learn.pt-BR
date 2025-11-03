@@ -4,9 +4,9 @@ description: Prova com o Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -197,66 +197,11 @@ Você deverá ver isso.
 
 Como parte dessa tarefa, você precisa criar uma nova imagem e carregá-la como um documento no Workfront. Agora você mesmo criará esse ativo usando o Adobe Express.
 
-## 1.2.2.5 Criar ativo com o Adobe Firefly Services e o Adobe Express
+## 1.2.2.5 Adicione um novo Documento à sua Tarefa e inicie o fluxo de aprovação
 
-Ir para [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Digite o prompt `a neon rabbit running very fast through space` e clique em **Gerar**.
+Para este exercício, você precisa baixar e usar este ativo: [timetravelnow.png](./images/timetravelnow.png)
 
-![GSPeM](./images/gsasset1.png)
-
-Você verá várias imagens sendo geradas. Escolha a imagem de que você mais gosta, clique no ícone **Compartilhar** na imagem e selecione **Abrir no Adobe Express**.
-
-![GSPeM](./images/gsasset2.png)
-
-Em seguida, você verá a imagem que acabou de gerar ficar disponível no Adobe Express para edição. Agora é necessário adicionar o logotipo CitiSignal na imagem. Para fazer isso, vá para **Marcas**.
-
-![GSPeM](./images/gsasset3.png)
-
-Você deverá ver um modelo de marca CitiSignal. que foi criado no GenStudio for Performance Marketing aparecem no Adobe Express. Clique para selecionar um modelo de marca que tenha `CitiSignal` em seu nome.
-
-![GSPeM](./images/gsasset4.png)
-
-Vá para **Logotipos** e clique no logotipo **branco** do Citisignal para soltá-lo na imagem.
-
-![GSPeM](./images/gsasset5.png)
-
-Posicione o logotipo do CitiSignal na parte superior da imagem, não muito longe do meio.
-
-![GSPeM](./images/gsasset6.png)
-
-Ir para **Texto**.
-
-![GSPeM](./images/gsasset6a.png)
-
-Clique em **Adicionar seu texto**.
-
-![GSPeM](./images/gsasset6b.png)
-
-Insira o texto `Timetravel now!`, altere a cor e o tamanho da fonte, defina o texto como **Negrito** para ter uma imagem semelhante a esta.
-
-![GSPeM](./images/gsasset6c.png)
-
-Em seguida, clique em **Compartilhar**.
-
-![GSPeM](./images/gsasset7.png)
-
-Selecione **AEM Assets**.
-
-![GSPeM](./images/gsasset8.png)
-
-Altere o nome do arquivo para `CitiSignal - Neon Rabbit - Timetravel now!`.
-Clique em **Selecionar pasta**.
-
-![GSPeM](./images/gsasset9.png)
-
-Selecione o repositório do AEM Assets CS, que deve se chamar `--aepUserLdap-- - CitiSignal` e selecione a pasta `--aepUserLdap-- - CitiSignal Fiber Campaign`. Clique em **Selecionar**.
-
-![GSPeM](./images/gsasset11.png)
-
-Você deverá ver isso. Clique em **Carregar 1 ativo**. Sua imagem será carregada no AEM Assets CS.
-
-![GSPeM](./images/gsasset12.png)
-
-## 1.2.2.6 Adicione um novo Documento à sua Tarefa e inicie o fluxo de aprovação
+![WF](./images/timetravelnow.png)
 
 Volte para a tela **Detalhes da tarefa**. Ir para **Documentos**. Clique em **+ Adicionar novo** e selecione seu repositório do AEM Assets CS, que deve ser nomeado como `--aepUserLdap-- - CitiSignal`.
 
@@ -300,35 +245,11 @@ Retorne à sua **Tarefa** e ao **Documento**. Você verá que o texto **Alteraç
 
 Agora é necessário fazer alterações de design, o que será feito no Adobe Express.
 
-## 1.2.2.7 Fazer alterações de design no Adobe Express
+## 1.2.2.6 Adicione uma nova versão do documento à sua tarefa
 
-Vá para [https://new.express.adobe.com/your-stuff/files](https://new.express.adobe.com/your-stuff/files) e abra a imagem criada anteriormente novamente.
+Para este exercício, você precisa baixar e usar este ativo: [getonboard.png](./images/getonboard.png)
 
-![WF](./images/wfp25a.png)
-
-Altere o texto do CTA para `Get On Board Now!`.
-
-![WF](./images/wfp25b.png)
-
-Clique em **Compartilhar** e selecione **AEM Assets**.
-
-![WF](./images/wfp25c.png)
-
-Insira o nome `CitiSignal - Neon Rabbit - Get On Board Now!` e clique em **Selecionar pasta** para selecionar uma pasta de destino.
-
-![WF](./images/wfp25d.png)
-
-Selecione o repositório do AEM Assets CS, que deve se chamar `--aepUserLdap-- - CitiSignal` e selecione a pasta `--aepUserLdap-- - CitiSignal Fiber Campaign`. Clique em **Selecionar**.
-
-![WF](./images/wfp25e.png)
-
-Clique em **carregar 1 ativo**.
-
-![WF](./images/wfp25f.png)
-
-O novo ativo agora é criado e armazenado no AEM Assets.
-
-## 1.2.2.8 Adicione uma nova versão do documento à sua tarefa
+![WF](./images/getonboard.png)
 
 Na Visualização de tarefa no Adobe Workfront, selecione o arquivo de imagem antigo que não foi aprovado. Em seguida, clique em **+ Adicionar novo**, selecione **Versão** e selecione seu repositório do AEM Assets CS, que deve ser nomeado como `--aepUserLdap-- - CitiSignal`.
 
@@ -394,7 +315,7 @@ Você deverá ver isso.
 
 ![WF](./images/wfp37c.png)
 
-## 1.2.2.9 Exibir seu arquivo no AEM Assets
+## 1.2.2.7 Exibir seu arquivo no AEM Assets
 
 Vá para sua pasta no AEM Assets CS, chamada `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
 

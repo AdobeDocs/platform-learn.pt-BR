@@ -1,39 +1,45 @@
 ---
-title: Serviços da Adobe Firefly
-description: Serviços da Adobe Firefly
+title: Adobe Firefly Services
+description: Adobe Firefly Services
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '176'
 ht-degree: 2%
 
 ---
 
-# 1.1 Visão geral dos serviços da Adobe Firefly
+# 1.1 Visão geral do Adobe Firefly Services
 
-Saiba mais sobre as várias maneiras de usar os Serviços da Adobe Firefly.
+Saiba mais sobre as várias maneiras de usar o Adobe Firefly Services.
 
 ## Pré-requisitos
 
 Acesso ao Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
 
+## Vídeo
+
+Neste vídeo, você receberá uma explicação e uma demonstração de todas as etapas envolvidas neste exercício.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476493?quality=12&learn=on)
+
 ## Exercícios
 
-[1.1.1 Introdução aos Serviços da Firefly](./ex1.md){target="_blank"}
+[1.1.1 Introdução ao Firefly Services](./ex1.md){target="_blank"}
 
-Neste exercício, explore os Serviços da Firefly e entenda seus recursos.
+Neste exercício, explore o Firefly Services e entenda seus recursos.
 
 [1.1.2 Otimizar o processo do Firefly usando o Microsoft Azure e URLs pré-assinadas](./ex2.md){target="_blank"}
 
-Neste exercício, explore os Serviços da Firefly e entenda seus recursos.
+Neste exercício, explore o Firefly Services e entenda seus recursos.
 
 [1.1.3 Trabalhando com APIs do Photoshop](./ex3.md){target="_blank"}
 
-Neste exercício, saiba como usar os Serviços da Firefly junto com a Adobe Photoshop.
+Neste exercício, aprenda a usar o Firefly Services em conjunto com o Adobe Photoshop.
 
 [1.1.4 API de Modelos personalizados do Firefly](./ex4.md){target="_blank"}
 
@@ -41,7 +47,7 @@ Neste exercício, saiba como usar a API de modelos de cliente do Firefly.
 
 [Resumo e benefícios](./summary.md){target="_blank"}
 
-Saiba mais sobre um resumo e os benefícios dos Serviços da Firefly.
+Saiba mais sobre um resumo e os benefícios do Firefly Services.
 
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

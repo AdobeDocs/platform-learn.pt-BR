@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---
@@ -34,6 +34,16 @@ Neste módulo, você aprenderá a executar todas as etapas acima sozinho e termi
 - Acesso ao Adobe Workfront e ao Adobe Workfront Planning
 - Acesso a uma sandbox do Adobe Experience Manager Cloud Service com o Content Hub ativado
 
+## Vídeo
+
+Neste vídeo, você receberá uma explicação e uma demonstração de todas as etapas envolvidas neste exercício.
+
+>[!NOTE]
+>
+>Este vídeo ainda não tem áudio. Quando o áudio estiver disponível, uma nova versão será carregada.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
+
 ## Exercícios
 
 [1.3.1 Configuração: marcas](./ex1.md){target="_blank"}
@@ -44,9 +54,9 @@ Neste exercício, você configurará uma marca CitiSignal no GenStudio for Perfo
 
 Neste exercício, você configurará personas, produtos e modelos no GenStudio for Performance Marketing.
 
-[1.3.3 Ativação de campanha para Meta](./ex3.md){target="_blank"}
+[1.3.3 Ativação de campanha para o Meta](./ex3.md){target="_blank"}
 
-Neste exercício, você criará uma Campanha. Você também configurará uma conexão com o Meta e percorrerá todas as etapas necessárias para criar um anúncio, aprovar um anúncio usando o Adobe Workfront e publicar um anúncio no Meta.
+Neste exercício, você criará uma Campanha. Você também irá configurar uma conexão com o Meta e percorrerá todas as etapas necessárias para criar um anúncio, aprovar um anúncio usando o Adobe Workfront e publicar um anúncio no Meta.
 
 [1.3.4 Criar experiência de email para o AJO](./ex4.md){target="_blank"}
 
