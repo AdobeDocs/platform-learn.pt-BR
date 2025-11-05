@@ -4,7 +4,7 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -56,9 +56,9 @@ ht-degree: 3%
    + 1.2 Automação de fluxo de trabalho do Creative com o Workfront Fusion {#crpr2}
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Introdução ao Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
-      + [1.2.2 Automação usando conectores](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.3 Frame.io e Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [1.2.4 Frame.io para Workfront Fusion para AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.2 Automação usando conectores](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
+      + [1.2.3 Frame.io e Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
+      + [1.2.4 Frame.io para Workfront Fusion para AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
