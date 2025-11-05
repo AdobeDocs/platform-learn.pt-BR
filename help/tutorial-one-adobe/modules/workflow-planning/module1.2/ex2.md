@@ -4,9 +4,9 @@ description: Prova com o Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ Para este exercício, você precisa baixar e usar este ativo: [timetravelnow.png
 
 ![WF](./images/timetravelnow.png)
 
-Volte para a tela **Detalhes do projeto**. Ir para **Documentos**. Clique em **+ Adicionar novo** e selecione **Documento**.
+Vá para **Documentos** da sua Tarefa. Clique em **+ Adicionar novo** e selecione **Documento**.
 
 ![WF](./images/wfp10.png)
 
@@ -243,7 +243,7 @@ Retorne à sua **Tarefa** e ao **Documento**. Você verá que o texto **Alteraç
 
 ![WF](./images/wfp25.png)
 
-Agora é necessário fazer alterações de design, o que será feito no Adobe Express.
+Agora é necessário fazer alterações de design e fazer upload de uma nova versão da imagem.
 
 ## 1.2.2.6 Adicione uma nova versão do documento à sua tarefa
 
@@ -251,11 +251,11 @@ Para este exercício, você precisa baixar e usar este ativo: [getonboard.png](.
 
 ![WF](./images/getonboard.png)
 
-Na Visualização de tarefa no Adobe Workfront, selecione o arquivo de imagem antigo que não foi aprovado. Em seguida, clique em **+ Adicionar novo**, selecione **Versão** e selecione seu repositório do AEM Assets CS, que deve ser nomeado como `--aepUserLdap-- - CitiSignal`.
+Na Visualização de tarefa no Adobe Workfront, selecione o arquivo de imagem antigo que não foi aprovado. Em seguida, clique em **+ Adicionar novo**, selecione **Versão** e escolha **Documento**.
 
 ![WF](./images/wfp26.png)
 
-Navegue até a pasta `--aepUserLdap-- CitiSignal Fiber Campaign` e selecione o arquivo `CitiSignal - Neon Rabit - Get On Board Now!.png`. Clique em **Selecionar**.
+Clique para selecionar o arquivo `getonboardnow.png`. Clique em **Abrir**.
 
 ![WF](./images/wfp26a.png)
 
@@ -291,11 +291,11 @@ Você voltará à exibição Tarefa, com um ativo aprovado. Esse ativo agora pre
 
 ![WF](./images/wfp34.png)
 
-Selecione o documento aprovado. Clique no ícone de **Seta de compartilhamento** e selecione sua integração com o AEM Assets, que deve se chamar `--aepUserLdap-- - CitiSignal AEM`.
+Selecione o documento aprovado. Clique no ícone de **Seta de compartilhamento** e selecione sua integração com o AEM Assets, que deve se chamar `--aepUserLdap-- - CitiSignal AEM+ACCS`.
 
 ![WF](./images/wfp35.png)
 
-Clique duas vezes na pasta criada anteriormente, que deve se chamar `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
+Clique duas vezes na pasta criada anteriormente, que deve se chamar `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![WF](./images/wfp36.png)
 
@@ -317,7 +317,7 @@ Você deverá ver isso.
 
 ## 1.2.2.7 Exibir seu arquivo no AEM Assets
 
-Vá para sua pasta no AEM Assets CS, chamada `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
+Vá para sua pasta no AEM Assets CS, chamada `--aepUserLdap-- - CitiSignal Fiber Campaign`.
 
 ![WF](./images/wfppaem1.png)
 

@@ -4,7 +4,7 @@ description: Introdução ao Workfront
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 1%
@@ -109,7 +109,7 @@ Em seguida, clique em **Criar pasta**.
 
 ![WF](./images/wfbaem3a.png)
 
-Nomeie sua pasta `--aepUserLdap-- - CitiSignal Fiber Launch Assets` e clique em **Criar**.
+Nomeie sua pasta `--aepUserLdap-- - CitiSignal Fiber Campaign` e clique em **Criar**.
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ Em seguida, selecione o quarto campo e clique novamente no ícone **Esquema** ao
 
 ![WF](./images/wfbaem11a.png)
 
-Você verá esse pop-up novamente. No campo de pesquisa, digite `wm:document` e selecione o campo **ID do Projeto**. Clique em **Selecionar**.
+Você verá esse pop-up novamente. No campo de pesquisa, digite `wm:document` e selecione o campo **Status do Documento**. Clique em **Selecionar**.
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ Em seguida, selecione o quinto campo e clique no ícone **Esquema** ao lado do c
 
 ![WF](./images/wfbaem103.png)
 
-Você verá esse pop-up novamente. No campo de pesquisa, digite `wm:document` e selecione o campo **ID do Projeto**. Clique em **Selecionar**.
+Você verá esse pop-up novamente. No campo de pesquisa, digite `wm:document` e selecione o campo **Nome do Documento**. Clique em **Selecionar**.
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ Em seguida, é necessário atribuir o Formulário de metadados à pasta criada a
 
 ![WF](./images/wfbaem15.png)
 
-Selecione sua pasta, que deve se chamar `--aepUserLdap-- - CitiSignal Fiber Launch Assets`. Clique em **Atribuir**.
+Selecione sua pasta, que deve se chamar `--aepUserLdap-- - CitiSignal Fiber Campaign`. Clique em **Atribuir**.
 
 ![WF](./images/wfbaem16.png)
 
