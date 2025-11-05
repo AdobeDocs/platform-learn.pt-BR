@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Usando as chaves e os valores acima, você pode configurar o objeto **Definir v�
 
 ![WF Fusion](./images/wffusion11.png)
 
-Insira o **nome da variável**: **CONST_client_id** e seu **valor da variável**, selecione **Adicionar**.
+Insira o **Nome da variável**: **`CONST_client_id`** e seu **Valor da variável**, selecione **Adicionar**.
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ Selecione **Adicionar item**.
 
 ![WF Fusion](./images/wffusion13.png)
 
-Insira o **nome da variável**: **CONST_client_secret** e seu **valor da variável**, selecione **Adicionar**.
+Insira o **Nome da variável**: **`CONST_client_secret`** e seu **Valor da variável**, selecione **Adicionar**.
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ Selecione **Adicionar item**.
 
 ![WF Fusion](./images/wffusion15.png)
 
-Insira o **nome da variável**: **CONST_scope** e seu **valor da variável**, selecione **Adicionar**.
+Insira o **Nome da variável**: **`CONST_scope`** e seu **Valor da variável**, selecione **Adicionar**.
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -230,7 +230,7 @@ Sua tela deve ter esta aparência:
 
 ![WF Fusion](./images/wffusion45.png)
 
-Em seguida, altere o nome do cenário para `--aepUserLdap-- - Adobe I/O Authentication`.
+Em seguida, altere o nome do cenário para `--aepUserLdap-- - Firefly + Photoshop`.
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,7 +240,7 @@ Selecione **Salvar**.
 
 ## Próximas etapas
 
-Ir para [Usar APIs do Adobe no Workfront Fusion](./ex2.md){target="_blank"}
+Ir para [Automação usando Conectores](./ex4.md){target="_blank"}
 
 Retorne ao [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
