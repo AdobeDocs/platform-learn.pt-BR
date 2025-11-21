@@ -20,4 +20,4 @@ Saiba como o SDK móvel da Adobe Experience Platform capacita o engajamento comp
 >
 > A inicialização agora é **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/33158?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
