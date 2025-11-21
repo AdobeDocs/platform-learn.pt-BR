@@ -18,4 +18,4 @@ ht-degree: 46%
 
 Saiba como criar uma instância da IA de atribuição para entender o impacto de seus canais e campanhas de marketing. Para obter mais informações, visite a [documentação da IA de atribuição](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36601?captions=por_br&learn=on&enablevpops)

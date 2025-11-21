@@ -19,7 +19,7 @@ ht-degree: 45%
 
 Uma introdução geral aos Serviços inteligentes, que capacita analistas e profissionais de marketing a usar o potencial da inteligência artificial e do aprendizado de máquina em casos de uso de experiência do cliente, sem conhecimento especializado em ciência de dados. Para obter mais informações, consulte a [documentação dos Serviços inteligentes](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36604?captions=por_br&learn=on&enablevpops)
 
 ## IA do cliente
 
@@ -39,7 +39,7 @@ Saiba como criar propensão ao cliente e pontuações de churn que são adiciona
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="Introdução à IA do cliente" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="Introdução à IA do cliente"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36529?captions=por_br&format=jpeg&nocache=1740250112240" alt="Introdução à IA do cliente"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ Saiba como criar propensão ao cliente e pontuações de churn que são adiciona
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="Configurar o Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="Configurar o Customer AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36603?captions=por_br&format=jpeg&nocache=1740250112226" alt="Configurar o Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ Saiba como criar propensão ao cliente e pontuações de churn que são adiciona
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-customer-ai-scores-and-insights.md" title="Usar pontuações e insights do Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="Usar pontuações e insights do Customer AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36602?captions=por_br&format=jpeg&nocache=1740250112262" alt="Usar pontuações e insights do Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -108,7 +108,7 @@ Saiba como criar propensão ao cliente e pontuações de churn que são adiciona
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="Valor comercial do Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="Valor comercial do Customer AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328480?captions=por_br&format=jpeg&nocache=1740250112251" alt="Valor comercial do Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -147,7 +147,7 @@ Saiba como usar modelos para entender o impacto do seu marketing.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="Introdução à IA de atribuição" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="Introdução à IA de atribuição"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36595?captions=por_br&format=jpeg&nocache=1740250113366" alt="Introdução à IA de atribuição"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -170,7 +170,7 @@ Saiba como usar modelos para entender o impacto do seu marketing.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="Configurar o Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="Configurar o Attribution AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36601?captions=por_br&format=jpeg&nocache=1740250113378" alt="Configurar o Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -193,7 +193,7 @@ Saiba como usar modelos para entender o impacto do seu marketing.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-attribution-ai-scores-and-insights.md" title="Usar pontuações e insights do Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="Usar pontuações e insights do Attribution AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413369?captions=por_br&format=jpeg&nocache=1740250113402" alt="Usar pontuações e insights do Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ Saiba como usar modelos para entender o impacto do seu marketing.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="Valor comercial do Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="Valor comercial do Attribution AI"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328471?captions=por_br&format=jpeg&nocache=1740250113390" alt="Valor comercial do Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -18,7 +18,7 @@ ht-degree: 13%
 
 Saiba como usar fontes ou conectores de origem na interface do Adobe Experience Platform. As fontes são integrações facilmente configuráveis que permitem assimilar dados da Adobe, de aplicativos próprios e de terceiros, no Perfil do cliente em tempo real da plataforma e no data lake. Para obter mais informações, consulte a [documentação das fontes](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32687?captions=por_br&learn=on&enablevpops)
 
 <!--should have a whole section for data prep-->
 
@@ -38,7 +38,7 @@ Saiba como usar fontes ou conectores de origem na interface do Adobe Experience 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="Assimilar dados usando Conectores CRM Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="Assimilar dados usando Conectores CRM Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32645?captions=por_br&format=jpeg&nocache=1740415500926" alt="Assimilar dados usando Conectores CRM Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ Saiba como usar fontes ou conectores de origem na interface do Adobe Experience 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="Assimilar dados usando os Conectores do Source de armazenamento na nuvem" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="Assimilar dados usando os Conectores do Source de armazenamento na nuvem"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32643?captions=por_br&format=jpeg&nocache=1740415500914" alt="Assimilar dados usando os Conectores do Source de armazenamento na nuvem"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ Saiba como usar fontes ou conectores de origem na interface do Adobe Experience 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="Assimilar dados usando um conector de origem de banco de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="Assimilar dados usando um conector de origem de banco de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413372?captions=por_br&format=jpeg&nocache=1740415500936" alt="Assimilar dados usando um conector de origem de banco de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,7 +107,7 @@ Saiba como usar fontes ou conectores de origem na interface do Adobe Experience 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-source-connector.md" title="Dados de fluxo usando Conectores do Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740415500903" alt="Dados de fluxo usando Conectores do Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3417770?captions=por_br&format=jpeg&nocache=1740415500903" alt="Dados de fluxo usando Conectores do Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ Saiba como usar fontes ou conectores de origem na interface do Adobe Experience 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Assimilar dados usando o conector de origem do Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Assimilar dados usando o conector de origem do Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430257?captions=por_br&format=jpeg&nocache=1740415502122" alt="Assimilar dados usando o conector de origem do Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ Saiba como usar fontes ou conectores de origem na interface do Adobe Experience 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Assimilar dados do Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Assimilar dados do Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451865?captions=por_br&format=jpeg&nocache=1740415502109" alt="Assimilar dados do Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -244,7 +244,7 @@ Saiba como usar fontes ou conectores de origem na interface do Adobe Experience 
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="Solução de problemas - Não é possível se conectar ao conector de origem SFTP" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="Solução de problemas - Não é possível se conectar ao conector de origem SFTP"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443475?captions=por_br&format=jpeg&nocache=1740415502267" alt="Solução de problemas - Não é possível se conectar ao conector de origem SFTP"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

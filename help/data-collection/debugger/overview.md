@@ -19,7 +19,7 @@ ht-degree: 54%
 
 Saiba como a [extensão do Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) e o [complemento do Firefox](https://addons.mozilla.org/pt-BR/firefox/addon/adobe-experience-platform-dbg/) do Adobe Experience Platform Debugger ajudam a depurar as implementações da Web do Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags e muito mais.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36163?captions=por_br&learn=on&enablevpops)
 
 ## Recursos adicionais
 

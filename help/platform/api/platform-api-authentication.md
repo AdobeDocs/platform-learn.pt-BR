@@ -33,7 +33,7 @@ O recurso [Exportar Detalhes para Postman](https://developer.adobe.com/console/h
 >Consulte o [Tutorial Adicionar desenvolvedores e dar permissões às credenciais da API](../admin/add-developers.md) para obter instruções detalhadas.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31682/?captions=por_br&learn=on&enablevpops)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ O recurso [Exportar Detalhes para Postman](https://developer.adobe.com/console/h
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Gerar um token de acesso da API do Experience Platform com o Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Gerar um token de acesso da API do Experience Platform com o Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32726/?captions=por_br&format=jpeg&nocache=1752259602830" alt="Gerar um token de acesso da API do Experience Platform com o Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ O recurso [Exportar Detalhes para Postman](https://developer.adobe.com/console/h
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="Usar APIs do Experience Platform com o Postman" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="Usar APIs do Experience Platform com o Postman"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32724/?captions=por_br&format=jpeg&nocache=1752259602844" alt="Usar APIs do Experience Platform com o Postman"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
