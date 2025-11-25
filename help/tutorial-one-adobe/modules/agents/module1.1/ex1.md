@@ -3,9 +3,9 @@ title: Introdução ao Agent Orchestrator
 description: Introdução ao Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
+source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -373,15 +373,13 @@ Suprimir se o assinante de Fibre atual ou se houver um tíquete para instalaçã
 
 Respeite as preferências de recusa.
 
-Plano de medição (CJA):
+**Plano de medição (CJA)**:
 
 Rastrear: entrega, abrir, clicar, visualização PDP, início da finalização, conclusão do pedido.
 
 KPIs: Taxa de conversão para Máximo de fibra, aumento vs. controle, instalação de tempo.
 
 Diagnóstico: relatório de fallout por segmento de dispositivo/gênero.
-
-Forma
 
 Como tudo isso se encaixa (o modelo mental do profissional de marketing)
 
@@ -395,11 +393,103 @@ Validar pontos de atrito (fallout de CJA na jornada SciFi).
 
 Ativar contra segmentos de alta propensão (Heavy Downloaders ∩ SciFi).
 
+Ir para [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Você deverá ver isso. Verifique se você está na organização **Experience Platform International**.
+
+Clique na janela **contexto**.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Defina o contexto como:
+
+- **Source de Documentação**: **Journey Optimizer**
+- **Sandbox**: **Acelerar**
+- **Dataview**: **Acelerar B2C 2026**
+
+Clique em **Definir contexto**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
 Insira o seguinte **Prompt** e clique no botão **gerar**.
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
+
+![Agent Orchestrator](./images/aocj1.png)
+
+Você deverá ver isso. Insira `yes` e clique em gerar.
+
+![Agent Orchestrator](./images/aocj2.png)
+
+Você deverá ver isso. Insira `yes` e clique em gerar.
+
+![Agent Orchestrator](./images/aocj3.png)
+
+Você deverá ver isso. Insira `The first one` e clique em gerar.
+
+![Agent Orchestrator](./images/aocj4.png)
+
+Você deverá ver isso. Insira `yes` e clique em gerar.
+
+![Agent Orchestrator](./images/aocj5.png)
+
+Revise a resposta. Insira `yes` e clique em gerar.
+
+![Agent Orchestrator](./images/aocj6.png)
+
+Clique em **Revisão**.
+
+![Agent Orchestrator](./images/aocj7.png)
+
+Atualize o nome da jornada com seu LDAP para torná-lo exclusivo. Clique em **Salvar**.
+
+![Agent Orchestrator](./images/aocj8.png)
+
+Sua jornada foi criada no modo de rascunho.
+
+![Agent Orchestrator](./images/aocj9.png)
+
+## 1.1.1.10 Experimentos
+
+Ir para [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+
+Você deverá ver isso. Verifique se você está na organização **Experience Platform International**.
+
+Clique na janela **contexto**.
+
+![Agent Orchestrator](./images/ao2.png)
+
+Defina o contexto como:
+
+- **Source de Documentação**: **Journey Optimizer**
+- **Sandbox**: **Acelerar**
+- **Dataview**: **Acelerar B2C 2026**
+
+Clique em **Definir contexto**.
+
+![Agent Orchestrator](./images/aoea3.png)
+
+Insira o seguinte **Prompt** e clique no botão **gerar**.
+
+```javascript
+How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+```
+
+![Agent Orchestrator](./images/aoea0.png)
+
+Você deverá ver isso:
+
+![Agent Orchestrator](./images/aoea1.png)
+
+Clique na sugestão para comparar as taxas de conversão de cada tratamento e clique em **gerar**.
+
+![Agent Orchestrator](./images/aoea2.png)
+
+Você deverá ver uma comparação detalhada como esta:
+
+![Agent Orchestrator](./images/aoea4.png)
 
 Voltar para [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
