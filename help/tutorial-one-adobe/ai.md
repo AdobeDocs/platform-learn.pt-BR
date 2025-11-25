@@ -3,9 +3,9 @@ title: Visão geral Laboratórios técnicos de IA do Agentic
 description: Visão geral Laboratórios técnicos de IA do Agentic
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,22 @@ ht-degree: 0%
 
 ## Visão geral - Trabalho em andamento
 
-Os Laboratórios técnicos de IA de agentes estão em andamento e serão lançados em novembro/dezembro de 2025.
+[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-[1.1 Introdução aos agentes e IA](./modules/agentic-ai/module1.1/agenticai.md)
+**Meta**
+
+Saiba como usar agentes da Adobe Experience Platform e o Agent Orchestrator para:
+
+- Analisar tendências de compra
+- Identificar públicos de alta propensão
+- Validar o desempenho da jornada
+- Crie uma nova jornada para a distribuição máxima de fibra CitiSignal
+
+[1.2 Introdução aos agentes e IA](./modules/agents/module1.2/agenticai.md)
+
+>[!NOTE]
+>
+>Este módulo ainda não foi lançado.
 
 **Meta**
 
@@ -38,7 +51,11 @@ Elementos técnicos:
 - Servidor MCP, Notebook Python
 - APIs do Adobe
 
-[1.2 Collaboration do agente](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Collaboration do agente](./modules/agents/module1.3/agentcollaboration.md)
+
+>[!NOTE]
+>
+>Este módulo ainda não foi lançado.
 
 **Meta**
 

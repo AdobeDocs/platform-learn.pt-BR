@@ -3,10 +3,10 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 715b96b7ba92d63ef3ab39b6083ebf4418f67c8a
+source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 9%
+source-wordcount: '540'
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações | Investimento de tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Introdução &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
+| [0. Introdução ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
 
 ## &#x200B;1. Fluxo de trabalho e planejamento
 
@@ -82,8 +82,9 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações | Investimento de tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 IA de agente](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 09/23/2025 | Não | Trabalho em progresso | A definir |
-| [1.2 Agente Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 09/23/2025 | Não | Trabalho em progresso | A definir |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 11/25/2025 | Não | Trabalho em progresso | A definir |
+| [1.2 IA de agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 11/25/2025 | Não | Trabalho em progresso | A definir |
+| [1.3 Agente Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 11/25/2025 | Não | Trabalho em progresso | A definir |
 
 {style="table-layout:auto"}
 
