@@ -3,14 +3,20 @@ title: Introdução ao Agent Orchestrator
 description: Introdução ao Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: bb31fe8a36f1c9ee9d212500e2e58e01be1129b8
+source-git-commit: 121cbb5ea8f8b713c6ebae008f7f0d9b3a79e476
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1393'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Introdução ao Agent Orchestrator
+
+## Vídeo
+
+Neste vídeo, você receberá uma explicação e uma demonstração de todas as etapas envolvidas neste exercício.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
 
 ## 1.1.1.1 Definir contexto no Agent Orchestrator
 
@@ -62,7 +68,9 @@ Você deverá ver isso:
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-`Show me purchases by mainCategory = Fiber over the last 2 months per week`
+```javascript
+Show me purchases by mainCategory = Fiber over the last 2 months per week
+```
 
 ![Agent Orchestrator](./images/ao6.png)
 
@@ -213,7 +221,7 @@ Com base nas descobertas e pesquisas acima, há uma correlação entre clientes 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
 ```javascript
-Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
 ![Agent Orchestrator](./images/ao32.png)
