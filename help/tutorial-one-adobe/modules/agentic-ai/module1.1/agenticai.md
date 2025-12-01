@@ -4,10 +4,10 @@ description: IA agêntica
 kt: 5342
 doc-type: tutorial
 exl-id: 434e7c16-92ef-4c2f-b958-3549d5150301
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 0a329e63dec0f5819e2c9baea0257e86c66247c8
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 10%
+source-wordcount: '64'
+ht-degree: 12%
 
 ---
 
@@ -22,10 +22,6 @@ Neste módulo, você criará seu próprio agente e explorará os vários element
 - ...
 
 ## Exercícios
-
-[1.1.1 Introdução à IA de agente](./ex1.md){target="_blank"}
-
-Neste exercício, ...
 
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
