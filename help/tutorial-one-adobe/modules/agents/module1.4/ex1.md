@@ -3,18 +3,14 @@ title: Introdução ao Brand Concierge
 description: Introdução ao Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Introdução ao Brand Concierge
-
->[!IMPORTANT]
->
->Este exercício está sendo realizado e ainda não foi concluído.
 
 ## Vídeo
 
@@ -211,6 +207,34 @@ Você estará de volta aqui.
 
 ![Brand Concierge](./images/bc25.png)
 
+Após 10-20 minutos, o **Status** das duas fontes de conhecimento deve ser **Concluído**. Clique em **Página inicial**.
+
+![Brand Concierge](./images/bc27.png)
+
+Você deverá ver isso. Clique em **+ Conectar** no cartão **Links de site**.
+
+![Brand Concierge](./images/bc28.png)
+
+Selecione o site **CitiSignal** de origem do conhecimento e clique em **Salvar**.
+
+![Brand Concierge](./images/bc29.png)
+
+Você deverá ver isso. Clique em **+ Conectar** no cartão **Catálogo de produtos**.
+
+![Brand Concierge](./images/bc30.png)
+
+Selecione a fonte de conhecimento **CitiSignal Products** e clique em **Salvar**.
+
+![Brand Concierge](./images/bc31.png)
+
+Você deverá ver isso. Clique em **Visualizar** para começar a interagir com a Brand Concierge.
+
+![Brand Concierge](./images/bc32.png)
+
+Agora você pode começar a fazer perguntas relacionadas às fontes de conhecimento fornecidas.
+
+![Brand Concierge](./images/bc33.png)
+
 ## Etapas de integração do AEP 1.4.1.3
 
 O Brand Concierge usa o Adobe Experience Platform para armazenar dados de interação de conversas. A conexão entre o Brand Concierge e o Experience Platform requer que um fluxo de dados seja configurado e usado pelo Brand Concierge.
@@ -242,6 +266,10 @@ A sequência de dados agora está configurada. Copie o nome e a ID da sequência
 ### API de gerenciamento de configuração do Brand Concierge
 
 A próxima etapa é habilitar a API de Gerenciamento de configuração do Brand Concierge para configurar o fluxo de dados que você acabou de criar. Isso é necessário para resolver problemas como ID de organização IMS e detalhes da sandbox durante o processamento de solicitações.
+
+No momento, essa é uma etapa interna do Adobe que precisa ocorrer. Esta etapa é necessária porque, caso contrário, a configuração da sequência de dados não é correta para uso pelo Brand Concierge.
+
+Próxima Etapa: [Implementar o Brand Concierge em seu site](./ex2.md){target="_blank"}
 
 Voltar para [Brand Concierge](./brandconcierge.md){target="_blank"}
 

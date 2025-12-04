@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 69a0bdd4d8150f3e0a9a294a409eab958211388e
+source-git-commit: b384842ce17731e241a1404a1d5c41cc70b434ff
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Saiba como usar agentes da Adobe Experience Platform e o Brand Concierge para:
 ## Pré-requisitos
 
 - Acesso ao Adobe Journey Optimizer e ao Customer Journey Analytics
-- Familiaridade com [conceitos do Brand Concierge](https://experienceleague.adobe.com/pt-br/docs/brand-concierge/content/home)
+- Familiaridade com [conceitos do Brand Concierge](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - Acesso aos dados de demonstração do CitiSignal: Compras, Pedidos, Públicos-alvo, Jornada
 
 ## Exercícios
@@ -29,6 +29,10 @@ Saiba como usar agentes da Adobe Experience Platform e o Brand Concierge para:
 [1.4.1 Introdução ao Brand Concierge](./ex1.md){target="_blank"}
 
 Neste exercício, você explorará as habilidades do Brand Concierge.
+
+[1.4.2 Implementar o Brand Concierge em seu site](./ex1.md){target="_blank"}
+
+Neste exercício, você implementará sua instância do Brand Concierge no site.
 
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
