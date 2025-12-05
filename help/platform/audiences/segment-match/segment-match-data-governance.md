@@ -25,4 +25,4 @@ Saiba como configurar e usar controles de governança de dados no Real-Time CDP 
 > * Para clientes nos Estados Unidos, Canadá, EMEA, Austrália e Nova Zelândia: a Adobe recomenda que os clientes do Real-Time CDP Prime e Ultimate façam a transição de casos de uso de colaboração de dados da Correspondência de segmentos para o Real-Time CDP Collaboration. Exiba a [documentação](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/home){target="_blank"} e o [guia de início rápido](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/quick-start-guide){target="_blank"} da Real-Time CDP Collaboration e entre em contato com a equipe de conta da Adobe para saber mais.
 > * Para clientes em todas as outras regiões: a Correspondência de segmentos é a opção recomendada até que o Real-Time CDP Collaboration seja lançado nessas regiões geográficas em 2026.
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346362/?captions=por_br&learn=on&enablevpops)
