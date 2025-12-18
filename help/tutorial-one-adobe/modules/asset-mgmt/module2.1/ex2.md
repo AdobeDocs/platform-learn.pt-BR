@@ -4,9 +4,9 @@ description: Configurar o ambiente do AEM CS
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
+source-git-commit: 13f74467a74eb3d8bbd135f5b8c7d9bb1a177f8b
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -120,6 +120,17 @@ ZZ = `citisignal-aem-accs`
 Esses 3 valores combinados levam a esta nova URL que precisa ser configurada no arquivo `fstab.yaml`.
 
 `https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
+
+Você também deve verificar se essas linhas de código também são adicionadas ao arquivo:
+
+```
+folders:
+  /products/: /products/default
+```
+
+>[!IMPORTANT]
+>
+>Você pode ver essas linhas de código nas linhas 6 e 7 na imagem abaixo. Caso essas linhas estejam ausentes, adicione-as manualmente.
 
 Clique em **Confirmar alterações...**.
 
