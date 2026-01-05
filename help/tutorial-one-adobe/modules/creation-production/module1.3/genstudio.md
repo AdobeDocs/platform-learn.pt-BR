@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 815bea1378de139f8d19b6f46669f4d53b5775b4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,6 @@ Neste módulo, você aprenderá a executar todas as etapas acima sozinho e termi
 ## Vídeo
 
 Neste vídeo, você receberá uma explicação e uma demonstração de todas as etapas envolvidas neste exercício.
-
->[!NOTE]
->
->Este vídeo ainda não tem áudio. Quando o áudio estiver disponível, uma nova versão será carregada.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
 
