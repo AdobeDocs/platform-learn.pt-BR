@@ -3,14 +3,18 @@ title: Adobe Marketing Agent com ChatGPT
 description: Adobe Marketing Agent com ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent com ChatGPT
+
+>[!IMPORTANT]
+>
+>Este laboratório usa um recurso que ainda não foi lançado. O recurso ainda está sendo desenvolvido e, portanto, ainda não está disponível para o público geral.
 
 ## Vídeo
 
