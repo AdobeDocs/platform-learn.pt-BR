@@ -140,7 +140,7 @@ Um caso de uso importante para políticas de mesclagem é o para governança de 
 
 ## Recursos adicionais
 
-* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=pt-BR)
 * [Referência da API de Políticas de Mesclagem (parte da API de Perfil do Cliente em Tempo Real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Agora vamos seguir para a [estrutura de governança de dados](apply-data-governance-framework.md).
