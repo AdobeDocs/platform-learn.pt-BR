@@ -11,9 +11,9 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Manteremos a interface do usuário para esta lição, mas também existem opçõ
 **Os Arquitetos de Dados** precisarão criar políticas de mesclagem fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre políticas de mesclagem:
->[!VIDEO](https://video.tv.adobe.com/v/3413365?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Permissões necessárias
 
@@ -122,7 +122,7 @@ A ID do CRM é um campo de identidade em `Luma Loyalty Dataset`, mas somente as 
 1. Selecione o botão **[!UICONTROL Mostrar perfil]**
 1. Selecione a ID do perfil para abrir o perfil
 1. Vá para a guia **[!UICONTROL Atributos]**
-1. Observe que outros detalhes do perfil do conjunto de dados do CRM, como o número do telefone celular e o endereço de email, não estão disponíveis porque apenas
+1. Observe que outros detalhes do perfil do conjunto de dados do CRM, como o número do celular e o endereço de email, não estão disponíveis porque nossa política de mesclagem do `Loyalty Only` não inclui o conjunto de dados do CRM.
    ![Os dados do CRM não podem ser visualizados na política Somente Fidelidade](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. Vá para a guia **[!UICONTROL Eventos]**
 1. Os dados do ExperienceEvent estão disponíveis apesar de não serem explicitamente incluídos nos conjuntos de dados da política de mesclagem:
@@ -140,7 +140,7 @@ Um caso de uso importante para políticas de mesclagem é o para governança de 
 
 ## Recursos adicionais
 
-* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=pt-BR)
+* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Referência da API de Políticas de Mesclagem (parte da API de Perfil do Cliente em Tempo Real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Agora vamos seguir para a [estrutura de governança de dados](apply-data-governance-framework.md).
