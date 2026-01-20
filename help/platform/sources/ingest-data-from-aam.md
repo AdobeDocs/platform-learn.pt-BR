@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Assimilar dados usando o conector de dados do Adobe Audience Manager
 
-Neste vídeo de integração, saiba como usar o conector de dados do Audience Manager para trazer características e segmentos do AAM para a Plataforma e combiná-los com outros dados avançados. Para obter mais informações, consulte a [documentação do conector de origem do Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).
+Neste vídeo de integração, saiba como usar o conector de dados do Audience Manager para trazer características e segmentos do AAM para a Plataforma e combiná-los com outros dados avançados. Para obter mais informações, consulte a [documentação do conector de origem do Audience Manager](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

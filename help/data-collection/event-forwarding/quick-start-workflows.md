@@ -22,6 +22,6 @@ Este vídeo orienta os usuários sobre dois casos de uso avançados para aprovei
 1. Uso do workflow para criar objetos de referência. 
 1. Copiar os objetos de referência em uma implementação existente.
 
-Para obter mais informações sobre o fluxo de trabalho de início rápido da API de Conversões do Meta, visite [a documentação](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
+Para obter mais informações sobre o fluxo de trabalho de início rápido da API de Conversões do Meta, visite [a documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/server/meta/overview#quick-start).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

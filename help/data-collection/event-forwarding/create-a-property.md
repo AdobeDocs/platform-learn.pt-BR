@@ -14,7 +14,7 @@ ht-degree: 19%
 
 # Criar uma propriedade de encaminhamento de eventos
 
-Saiba como criar uma propriedade de encaminhamento de eventos em Coleção de dados. Para obter mais informações, visite a [documentação de propriedade de criação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
+Saiba como criar uma propriedade de encaminhamento de eventos em Coleção de dados. Para obter mais informações, visite a [documentação de propriedade de criação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=pt-BR#create-an-event-forwarding-property).
 
 >[!NOTE]
 >
