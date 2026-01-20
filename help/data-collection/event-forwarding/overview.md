@@ -4,9 +4,8 @@ description: Saiba como o encaminhamento de eventos centraliza a coleção de da
 feature: Event Forwarding
 level: Beginner
 jira: KT-6419
-thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '131'
 ht-degree: 41%
@@ -15,7 +14,7 @@ ht-degree: 41%
 
 # Visão geral do encaminhamento de eventos
 
-Saiba como o encaminhamento de eventos centraliza a coleta de dados, reduz a quantidade de código necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções que não são da Adobe por meio do Adobe Experience Platform Edge Network. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR).
+Saiba como o encaminhamento de eventos centraliza a coleta de dados, reduz a quantidade de código necessária nos aplicativos para dispositivos móveis e da Web, e transmite dados para soluções que não são da Adobe por meio do Adobe Experience Platform Edge Network. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 >[!NOTE]
 >

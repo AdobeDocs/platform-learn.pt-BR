@@ -4,9 +4,8 @@ description: Saiba como criar uma regra de encaminhamento de eventos em Coleçã
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
-thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 19%
@@ -15,7 +14,7 @@ ht-degree: 19%
 
 # Criar uma regra de encaminhamento de eventos
 
-Saiba como criar uma regra de encaminhamento de eventos em Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR).
+Saiba como criar uma regra de encaminhamento de eventos em Coleção de dados. Para obter mais informações, consulte a [documentação sobre encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ Saiba como criar uma regra de encaminhamento de eventos em Coleção de dados. P
 > * O Platform Launch Server Side agora é **[!DNL event forwarding]**
 > * As configurações do Edge agora são **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3418854?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)

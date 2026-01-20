@@ -4,9 +4,8 @@ description: Saiba como configurar um fluxo de dados para o encaminhamento de ev
 feature: Event Forwarding, Datastreams
 level: Intermediate
 jira: KT-6421
-thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 18%
@@ -15,7 +14,7 @@ ht-degree: 18%
 
 # Configurar uma sequência de dados para o encaminhamento de eventos
 
-Saiba como configurar um fluxo de dados para o encaminhamento de eventos. Para obter mais informações, visite [a documentação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=pt-BR#create-a-datastream)
+Saiba como configurar um fluxo de dados para o encaminhamento de eventos. Para obter mais informações, visite [a documentação de encaminhamento de eventos](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
 
 
 >[!NOTE]
@@ -26,4 +25,4 @@ Saiba como configurar um fluxo de dados para o encaminhamento de eventos. Para o
 > * O Platform Launch Server Side agora é **[!DNL event forwarding]**
 > * As configurações do Edge agora são **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3418852?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)

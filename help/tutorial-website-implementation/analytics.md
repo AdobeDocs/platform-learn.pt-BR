@@ -1,9 +1,9 @@
 ---
 title: Adicionar o Adobe Analytics
-description: Saiba como implementar o Adobe Analytics usando a extensão de tag do Adobe Analytics, enviar o sinal de exibição de página, adicionar variáveis, rastrear eventos e adicionar plug-ins. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
+description: Saiba como implementar o Adobe Analytics usando a extensão de tag do Adobe Analytics, enviar o sinal de exibição de página, adicionar variáveis, rastrear eventos e adicionar plug-ins. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 69%
@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Adicionar o Adobe Analytics
 
-Nesta lição, você implementará a [extensão Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR) e criará regras para enviar dados ao Adobe Analytics.
+Nesta lição, você implementará a [extensão Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) e criará regras para enviar dados ao Adobe Analytics.
 
 [O Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=pt-BR) é uma solução líder do setor que torna você capaz de entender seus clientes como pessoas e orientar seus negócios com informações de inteligência de clientes.
 
@@ -21,7 +21,7 @@ Nesta lição, você implementará a [extensão Adobe Analytics](https://experie
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -41,7 +41,7 @@ Há muitas coisas que podem ser implementadas para o Analytics em tags. Esta li�
 
 É necessário que você tenha completado as lições em [Configurar tags](create-a-property.md) e [Adicionar o Serviço de Identidade](id-service.md).
 
-Além disso, você precisará de pelo menos uma ID de conjunto de relatórios e seu servidor de rastreamento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, crie um. Se não tiver certeza sobre como fazer isso, consulte [a documentação](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=pt-BR). Você pode recuperar o servidor de rastreamento da implementação atual, do consultor da Adobe ou do representante do Atendimento ao cliente
+Além disso, você precisará de pelo menos uma ID de conjunto de relatórios e seu servidor de rastreamento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, crie um. Se não tiver certeza sobre como fazer isso, consulte [a documentação](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Você pode recuperar o servidor de rastreamento da implementação atual, do consultor da Adobe ou do representante do Atendimento ao cliente
 
 ## Adicionar a extensão do Analytics
 
@@ -261,7 +261,7 @@ Agora, use os novos elementos de dados e a extensão para criar a regra da pági
 
 1. Selecione **[!UICONTROL Extensão > Adobe Analytics]**
 1. Selecione **[!UICONTROL Tipo de ação > Definir variáveis]**
-1. Selecione **[!UICONTROL eVar 1 > Definir como]** e insira `product detail page`
+1. Selecione **[!UICONTROL eVar1 > Definir como]** e insira `product detail page`
 1. Defina **[!UICONTROL event1]**, deixando os valores opcionais em branco
 1. Em Eventos, clique no botão **[!UICONTROL Adicionar outro]**
 1. Defina o evento **[!UICONTROL prodView]**, deixando os valores opcionais em branco
@@ -281,7 +281,7 @@ Você acabou de criar uma regra que define variáveis antes do beacon ser enviad
 
 1. Abra o [site de demonstração do Luma](https://luma.enablementadobe.com/content/luma/us/en.html) no navegador Chrome
 1. Navegue até qualquer página de detalhes do produto
-1. Clique no ícone Depurador ![Abrir o Experience Cloud Debugger](images/analytics-debuggerIcon.png) para abrir o **[!UICONTROL Adobe Experience Cloud Debugger]**
+1. Clique no ícone do Debugger ![Abrir o Experience Cloud Debugger](images/analytics-debuggerIcon.png) para abrir o **[!UICONTROL Adobe Experience Cloud Debugger]**
 1. Clique na guia Analytics
 1. Expanda o conjunto de relatórios
 1. Observe as Variáveis de detalhes do produto que agora estão no depurador, especificamente se `eVar1` tiver sido definida como &quot;página de detalhes do produto&quot;, se a variável `Events` estiver definida como &quot;event1&quot; e &quot;prodView&quot;, se a variável Produtos estiver definida com a ID de produto do produto que você está visualizando e que seu Nome de página ainda está definido pela extensão do Analytics.
@@ -426,7 +426,7 @@ Na verdade, você chamará dois plug-ins neste código, mas um deles está integ
 
 A finalidade deste plug-in é impedir que os valores sejam duplicados falsamente no código quando um visitante atualiza uma página ou usa o botão Voltar do navegador para voltar para uma página na qual um valor foi definido. Nesta lição, você a usará para impedir que o evento `clickthrough` seja duplicado.
 
-O código desse plug-in está disponível na [documentação do Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=pt-BR), mas também foi incluído aqui para facilitar a cópia/colagem.
+O código desse plug-in está disponível na [documentação do Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), mas também foi incluído aqui para facilitar a cópia/colagem.
 
 1. Copie o código a seguir
 
@@ -445,7 +445,7 @@ Agora você pode chamar este plug-in de dentro do doPlugins.
 
 Agora que o código foi preparado e pode ser referenciado, é possível fazer as chamadas para plug-ins dentro da função doPlugins.
 
-Primeiro, chame um plug-in que foi incorporado à biblioteca do AppMeasurement; por isso ele é conhecido como &quot;utilitário&quot;. É chamado de `s.Util.getQueryParam` por ser parte do objeto s, é um utilitário incorporado e capturará valores com base em um parâmetro da string de consulta no URL.
+Primeiro, chame um plug-in que foi incorporado à biblioteca do AppMeasurement; por isso ele é conhecido como &quot;utilitário&quot;. É chamado de `s.Util.getQueryParam` por ser parte do objeto s, é um utilitário integrado e capturará valores com base em um parâmetro da string de consulta no URL.
 
 1. Copie o código a seguir:
 
