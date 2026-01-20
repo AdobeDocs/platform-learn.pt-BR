@@ -16,4 +16,4 @@ ht-degree: 0%
 
 Vídeo de visão geral da extensão de encaminhamento de eventos do Adobe para o Mailchimp. Para obter mais informações, visite a [documentação da extensão de encaminhamento de eventos do Mailchimp](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3412574/?captions=por_br&learn=on&enablevpops)
