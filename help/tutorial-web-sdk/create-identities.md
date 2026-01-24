@@ -47,7 +47,7 @@ A [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/pt-br/docs/exp
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Leia mais sobre como [ECIDs são rastreados usando o Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
+Leia mais sobre como [ECIDs são rastreados usando o Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/identity/overview).
 
 As ECIDs são definidas usando uma combinação de cookies primários e do Platform Edge Network. Por padrão, os cookies de identidade primários são definidos no lado do cliente pelo Web SDK. Para levar em conta as restrições do navegador na duração do cookie, você pode optar por definir seus próprios cookies de identidade primários no lado do servidor. Esses cookies de identidade são chamados de IDs de dispositivo primário (FPIDs).
 
@@ -61,7 +61,7 @@ FPIDs são cookies próprios _você definiu usando seus próprios servidores da 
 
 Depois que um cookie FPID é definido, seu valor pode ser buscado e enviado para o Adobe à medida que os dados do evento são coletados. Os FPIDs coletados são usados como seeds para gerar ECIDs no Platform Edge Network, que continuam a ser os identificadores padrão nos aplicativos Adobe Experience Cloud.
 
-Embora os FPIDs não sejam usados neste tutorial, é recomendável usar os FPIDs na implementação de seu próprio Web SDK. Leia mais sobre [IDs de dispositivo próprio no Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
+Embora os FPIDs não sejam usados neste tutorial, é recomendável usar os FPIDs na implementação de seu próprio Web SDK. Leia mais sobre [IDs de dispositivo próprio no Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >

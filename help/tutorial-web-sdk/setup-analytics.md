@@ -78,7 +78,7 @@ A partir de maio de 2024, não será mais necessário criar um esquema XDM para 
 
 ### Campos mapeados automaticamente
 
-Muitos campos XDM são mapeados automaticamente para variáveis do Analytics. Para obter a lista mais atualizada de mapeamentos, consulte [Mapeamento de variáveis do Analytics na Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Muitos campos XDM são mapeados automaticamente para variáveis do Analytics. Para obter a lista mais atualizada de mapeamentos, consulte [Mapeamento de variáveis do Analytics na Adobe Experience Edge](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Isso ocorre se _mesmo que você não tenha definido um esquema personalizado_. O Experience Platform Web SDK coleta alguns dados automaticamente e os envia para o Platform Edge Network como campos XDM. Por exemplo, o Web SDK lê a URL da página atual e a envia como o campo XDM `web.webPageDetails.URL`. Esse campo é encaminhado ao Adobe Analytics e preenche automaticamente os relatórios de URL da página no Adobe Analytics.
 

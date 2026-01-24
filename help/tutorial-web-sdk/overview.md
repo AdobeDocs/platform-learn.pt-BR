@@ -14,7 +14,7 @@ ht-degree: 7%
 
 Saiba como implementar os aplicativos da Experience Cloud usando o SDK da web da Adobe Experience Platform. 
 
-O Experience Platform Web SDK é uma biblioteca JavaScript do lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com aplicativos da Adobe e serviços de terceiros por meio do Adobe Experience Platform Edge Network. Consulte a [Visão geral do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) para obter informações mais detalhadas.
+O Experience Platform Web SDK é uma biblioteca JavaScript do lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com aplicativos da Adobe e serviços de terceiros por meio do Adobe Experience Platform Edge Network. Consulte a [Visão geral do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/home) para obter informações mais detalhadas.
 
 ![Arquitetura Experience Platform Web SDK](assets/dc-websdk.png)
 

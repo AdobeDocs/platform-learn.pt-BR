@@ -117,7 +117,7 @@ O estilo de pré-ocultação para implementações síncronas pode ser configura
 >
 >A configuração de estilo de pré-ocultação deve ser usada somente para implementações síncronas. Esse estilo deve estar em branco ou ser comentado se estiver usando uma implementação assíncrona de tags.
 
-Para saber mais sobre como o Platform Web SDK pode gerenciar a cintilação, consulte a seção do guia: [gerenciamento da cintilação para experiências personalizadas](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker).
+Para saber mais sobre como o Platform Web SDK pode gerenciar a cintilação, consulte a seção do guia: [gerenciamento da cintilação para experiências personalizadas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/personalization/manage-flicker).
 
 
 ## Configurar o fluxo de dados
@@ -216,7 +216,7 @@ A configuração de renderizar decisões de personalização visual faz com que 
 >
 >Normalmente, a configuração [!UICONTROL Renderizar decisões de personalização visual] só deve ser habilitada para uma única ação Enviar Evento por carregamento de página completo. Se várias ações Enviar evento tiverem essa configuração ativada, as solicitações de renderização subsequentes serão ignoradas.
 
-Se preferir renderizar ou executar ações nessas decisões usando o código personalizado, você pode deixar a configuração [!UICONTROL Renderizar decisões de personalização visual] desabilitada. O Platform Web SDK é flexível e oferece esse recurso para fornecer controle total. Consulte o manual para obter mais informações sobre [renderização manual de conteúdo personalizado](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content).
+Se preferir renderizar ou executar ações nessas decisões usando o código personalizado, você pode deixar a configuração [!UICONTROL Renderizar decisões de personalização visual] desabilitada. O Platform Web SDK é flexível e oferece esse recurso para fornecer controle total. Consulte o manual para obter mais informações sobre [renderização manual de conteúdo personalizado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/personalization/rendering-personalization-content).
 
 
 ### Configurar uma atividade do Target com o Visual Experience Composer

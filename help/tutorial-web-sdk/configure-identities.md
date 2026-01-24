@@ -45,7 +45,7 @@ Você já deve ter concluído as lições anteriores:
 >
 >A [Extensão do Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) não é necessária ao implementar o Adobe Experience Platform Web SDK, pois a biblioteca do Web SDK JavaScript contém a funcionalidade do serviço de ID de visitante.
 >
-> Se o site já estiver usando o Serviço da Experience Cloud ID no seu site, por meio da API de visitante ou da extensão de tag do Serviço da Experience Cloud ID, e você quiser continuar usando-o ao migrar para o Adobe Experience Platform Web SDK, será necessário usar a versão mais recente da API de visitante ou a extensão de tag do Serviço da Experience Cloud ID. Consulte [Migração de ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) para obter mais informações.
+> Se o site já estiver usando o Serviço da Experience Cloud ID no seu site, por meio da API de visitante ou da extensão de tag do Serviço da Experience Cloud ID, e você quiser continuar usando-o ao migrar para o Adobe Experience Platform Web SDK, será necessário usar a versão mais recente da API de visitante ou a extensão de tag do Serviço da Experience Cloud ID. Consulte [Migração de ID](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/identity/overview) para obter mais informações.
 
 ## Criar um namespace de identidade
 
