@@ -1,27 +1,27 @@
 ---
-title: Adobe Marketing Agent com o Microsoft Copilot
-description: Adobe Marketing Agent com o Microsoft Copilot
+title: Adobe Marketing Agent for Microsoft 365 Copilot
+description: Adobe Marketing Agent para Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
+source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
-# 1.1.3 Adobe Marketing Agent com Microsoft Copilot
-
-[!BADGE Beta]
-
-+++Ver detalhes
-Ao usar o Adobe Marketing Agent com o Microsoft Copilot Beta, você reconhece que o Beta é fornecido &quot;no estado em que se encontra&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte à Beta. É recomendável ter cuidado e não depender de forma alguma do funcionamento ou desempenho correto desse Beta e/ou dos materiais que o acompanham. O Beta é considerado Informações confidenciais da Adobe.  Qualquer &quot;Feedback&quot; (informação sobre o Beta incluindo, mas não se limitando a, problemas ou defeitos encontrados durante o uso do Beta, sugestões, melhorias e recomendações) fornecido por Você ao Adobe é atribuído ao Adobe, incluindo todos os direitos, cargos e interesses no e no Feedback.
-
-+++
+# 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
 
 >[!IMPORTANT]
 >
 >Este laboratório usa um recurso que ainda não foi lançado. O recurso ainda está sendo desenvolvido e, portanto, ainda não está disponível para o público geral.
+
+[!BADGE Beta]
+
++++Detalhes do Beta
+Ao usar o Adobe Marketing Agent com Microsoft 365 Copilot Beta, você reconhece que o Beta é fornecido &quot;no estado em que se encontra&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte à Beta. É recomendável ter cuidado e não depender de forma alguma do funcionamento ou desempenho correto desse Beta e/ou dos materiais que o acompanham. O Beta é considerado Informações confidenciais da Adobe.  Qualquer &quot;Feedback&quot; (informação sobre o Beta incluindo, mas não se limitando a, problemas ou defeitos encontrados durante o uso do Beta, sugestões, melhorias e recomendações) fornecido por Você ao Adobe é atribuído ao Adobe, incluindo todos os direitos, cargos e interesses no e no Feedback.
+
++++
 
 ## Pré-requisitos
 
@@ -30,7 +30,7 @@ Para seguir as etapas neste laboratório conforme documentado abaixo, o seguinte
 - Acesso ao Real-Time CDP, Journey Optimizer e Customer Journey Analytics
 - Acesso ao Assistente de IA no Adobe Experience Cloud
 - Acesso ao AEP Agent Orchestrator
-- Acesso ao Microsoft Copilot
+- Acesso ao Microsoft 365 Copilot
 
 ## Vídeo
 
@@ -38,7 +38,7 @@ Neste vídeo, você receberá uma explicação e uma demonstração de todas as 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
-## 1.1.3.1 Adicionar o Adobe Marketing Agent ao Microsoft Teams e Copilot
+## 1.1.3.1 Adicionar o Adobe Marketing Agent ao Microsoft 365 Teams &amp; Copilot
 
 Abra o Microsoft Teams e faça logon usando os detalhes da sua conta. Depois de fazer logon, você deverá ver isso.
 
@@ -98,7 +98,7 @@ Cole o código na janela do Adobe Marketing Agent no Copilot e clique no botão 
 
 ![GPTchat](./images/copilotlogin6.png)
 
-Você verá algo semelhante a isso. Agora você está conectado com sucesso ao Adobe Marketing Agent no Microsoft Copilot.
+Você verá algo semelhante a isso. Agora você está conectado com êxito ao Adobe Marketing Agent no Microsoft 365 Copilot.
 
 ![GPTchat](./images/copilotlogin7.png)
 
