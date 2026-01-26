@@ -4,9 +4,9 @@ description: Customer Journey Analytics - Conectar conjuntos de dados do Adobe E
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -62,9 +62,9 @@ Então você terá isto. Clique em **Next**.
 
 ![demonstração](./images/cja9.png)
 
-## 1.1.2.3 Compilação de ID de pessoa e dados
+## Compilação de dados e ID de pessoa 1.1.2.3
 
-### ID de pessoa
+### ID da pessoa
 
 A meta agora é unir esses conjuntos de dados. Para cada conjunto de dados selecionado, você verá um campo chamado **ID de pessoa**. Cada conjunto de dados tem seu próprio campo ID de pessoa.
 
@@ -80,9 +80,9 @@ No entanto, você ainda pode influenciar qual identificador será usado para com
 
 Como mencionado, você pode definir IDs de pessoa diferentes para cada conjunto de dados. Isso permite reunir diferentes conjuntos de dados de várias origens no CJA. Imagine trazer o NPS ou dados de pesquisa que seriam muito interessantes e úteis para entender o contexto e por que algo aconteceu.
 
-O nome do campo ID de pessoa não é importante, desde que o valor nos campos ID de pessoa corresponda. Digamos que temos `email` em um conjunto de dados e `emailAddress` em outro conjunto de dados definido como ID de pessoa. Se `delaigle@adobe.com` for o mesmo valor para o campo de ID de pessoa em ambos os conjuntos de dados, o CJA poderá compilar os dados.
+O nome do campo ID de pessoa não é importante, desde que o valor nos campos ID de pessoa corresponda. Digamos que temos `email` em um conjunto de dados e `emailAddress` em outro conjunto de dados definido como ID de pessoa. Se `delaigle@adobe.com` for o mesmo valor para o campo de ID de pessoa em ambos os conjuntos de dados, a CJA poderá compilar os dados.
 
-Revise as Perguntas frequentes do CJA aqui para entender as nuances da identificação: [Perguntas frequentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR).
+Revise as Perguntas frequentes do CJA aqui para entender as nuances da compilação de identidade: [Perguntas frequentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### Costura de dados usando a ID de pessoa
 
@@ -96,7 +96,7 @@ Acesse cada conjunto de dados para atualizar a ID de pessoa. Agora preencha o ca
 
 Depois de compilar os dois conjuntos de dados, você estará pronto para continuar.
 
-| conjunto de dados | ID de pessoa |
+| conjunto de dados | ID da pessoa |
 | ----------------- |-------------| 
 | Sistema de demonstração - Conjunto de dados de evento para site (Global v1.1) | email |
 | Sistema de demonstração - Conjunto de dados de evento para call center (Global v1.1) | email |
@@ -128,7 +128,7 @@ Após criar sua **Conexão**, pode levar algumas horas até que seus dados estej
 
 ## Próximas etapas
 
-Ir para [1.1.3 Criar uma Exibição de Dados](./ex3.md)(./ex2.md){target="_blank"}
+Ir para [1.1.3 Criar uma Exibição de Dados](./ex3.md){target="_blank"}
 
 Voltar para [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

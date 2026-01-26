@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1446'
 ht-degree: 3%
 
 ---
@@ -274,13 +274,16 @@ ht-degree: 3%
       + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Introdução ao Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 Adobe Marketing Agent com ChatGPT](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent com Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
    + 1.2 Introdução aos agentes e IA {#agents2}
       + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Introdução à IA do Agentic](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.3 Collaboration do agente {#agents3}
-      + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-      + [1.3.1 Introdução ao Agent Collaboration](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
    + 1.4 Brand Concierge {#agents4}
       + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
       + [1.4.1 Introdução ao Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
       + [1.4.2 Implementar o Brand Concierge em seu site](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analytics e agentes {#agents5}
+      + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA e ChatGPT com servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA &amp; Claude.ai com servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics e ChatGPT com servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)

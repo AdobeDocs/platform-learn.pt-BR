@@ -3,10 +3,10 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 3%
+source-wordcount: '211'
+ht-degree: 2%
 
 ---
 
@@ -42,6 +42,10 @@ Neste exercício, você explorará as habilidades da Agent Orchestrator com base
 [1.1.2 Adobe Marketing Agent com ChatGPT](./ex2.md){target="_blank"}
 
 Neste exercício, você explorará as habilidades da Agent Orchestrator com base na campanha de lançamento do CitiSignal para Fibre Max, usando o Adobe Marketing Agent com ChatGPT.
+
+[1.1.3 Adobe Marketing Agent com Microsoft Copilot](./ex3.md){target="_blank"}
+
+Neste exercício, você explorará as habilidades da Agent Orchestrator com base na campanha de lançamento do CitiSignal para Fibre Max, usando o Adobe Marketing Agent com o Microsoft Copilot.
 
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
