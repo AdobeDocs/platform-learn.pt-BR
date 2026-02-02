@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,9 @@ ht-degree: 3%
       + [1.6.3 Criar e implantar o aplicativo DAM externo](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Publicar seu aplicativo de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7 Workflow Builder {#crpr7}
+      + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1 Introdução ao Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + Gerenciamento de ativos {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [Visão geral](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Introdução ao Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Resumo e benefícios](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + Agentes {#agents}
    + [Visão geral do Agentic AI](/help/tutorial-one-adobe/ai.md)
    + 1.1 Agent Orchestrator {#agents1}

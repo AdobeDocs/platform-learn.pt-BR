@@ -4,9 +4,9 @@ description: Introdução - Configuração do Postman
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '462'
 ht-degree: 3%
 
 ---
@@ -25,15 +25,19 @@ Neste vídeo, você receberá uma explicação e uma demonstração de todas as 
 
 ## Instalar PostBuster
 
-Ir para [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+Ir para [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
 
 Clique para baixar a versão mais recente do **PostBuster**.
 
 ![PostBuster](./images/pb1.png)
 
-Baixe a versão correta para seu sistema operacional.
+Clique na versão correta para seu sistema operacional.
 
 ![PostBuster](./images/pb2.png)
+
+Baixe o arquivo.
+
+![PostBuster](./images/pb2a.png)
 
 Depois que o download for concluído e instalado, abra o PostBuster. Você deverá ver isso. Clique em **Importar**.
 
