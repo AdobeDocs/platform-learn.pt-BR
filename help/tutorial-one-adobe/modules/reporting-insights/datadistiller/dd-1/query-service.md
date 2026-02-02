@@ -1,12 +1,12 @@
 ---
-title: Query Service
-description: Query Service
+title: Serviço de consultas
+description: Serviço de consultas
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ Usaremos dados que foram inseridos na plataforma usando dados de interação na 
 - Conjuntos de dados (conjunto de dados usado durante o laboratório, pré-carregado para você)
 - PostgreSQL
 - Desktop Tableau ou Microsoft Power BI
-- **Baixar estes ativos**:
-   - [JSON - Dados de amostra: Interações no site](./../../../../assets/json/ee.json)
-   - [JSON - Dados de amostra: Interações da central de atendimento](./../../../../assets/json/callcenter.json)
-   - [JSON - Dados de amostra: Fidelidade](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >
