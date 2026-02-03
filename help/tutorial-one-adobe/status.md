@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 9%
 
 ---
@@ -18,7 +18,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações | Investimento de tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Introdução &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
+| [0. Introdução ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
 
 ## &#x200B;1. Fluxo de trabalho e planejamento
 
@@ -37,6 +37,8 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 04/01/2025 | Sim | - | 45 min |
 | [1.5 Simplifique seu fluxo de trabalho com Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 08/02/2025 | Sim | - | 1h |
 | [1.6 GenStudio for Performance Marketing - Extensibilidade](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 08/21/2025 | Sim | - | 1h 30min |
+| [1.7 Construtor de Fluxo de Trabalho](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | Não | Conteúdo em desenvolvimento | - |
+| [1.8 Gerenciamento de Armazenamento Corporativo](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | Não | Conteúdo em desenvolvimento | - |
 
 
 ## &#x200B;3. Gestão de ativos
@@ -82,10 +84,10 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações | Investimento de tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 01/23/2026 | Sim | - | 90 min |
-| [1.2 IA de agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 01/23/2026 | Não | Conteúdo sendo desenvolvido | A definir |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 02/02/2026 | Sim | - | 60 min |
+| [1.2 IA de agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | Não | Conteúdo sendo desenvolvido | A definir |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 01/23/2026 | Sim | - | 90 min |
-| [1.5 Análises e agentes](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 01/23/2026 | Não | Conteúdo sendo desenvolvido | A definir |
+| [1.5 Análises e agentes](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | Sim | - | 45 min |
 
 {style="table-layout:auto"}
 

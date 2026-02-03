@@ -3,9 +3,9 @@ title: Adobe Analytics & Claude.ai com servidor MCP
 description: Adobe Analytics & Claude.ai com servidor MCP
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -191,6 +191,26 @@ Analyze different metrics by marketing channel
 Você deveria ver algo assim.
 
 ![Claude.ai e CJA](./images/claudeaa113.png)
+
+Insira o seguinte **Prompt** e clique no botão **enviar**.
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![Claude.ai e CJA](./images/claudeaa114.png)
+
+Você verá algo assim, primeiro mostrando **Principais Códigos de Rastreamento por Visitas**.
+
+![Claude.ai e CJA](./images/claudeaa115.png)
+
+Você pode ver os códigos de rastreamento que geraram mais compras no relatório **Principais códigos de rastreamento por pedidos (compras)**.
+
+![Claude.ai e CJA](./images/claudeaa116.png)
+
+E você encontrará insights adicionais fornecidos pelo Claude.ai com base nos dados provenientes do Adobe Analytics.
+
+![Claude.ai e CJA](./images/claudeaa117.png)
 
 Você terminou este exercício agora.
 
