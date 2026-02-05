@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
+source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1501'
 ht-degree: 3%
 
 ---
@@ -296,3 +296,9 @@ ht-degree: 3%
       + [1.5.1 CJA e ChatGPT com servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
       + [1.5.2 CJA &amp; Claude.ai com servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
       + [1.5.3 Adobe Analytics &amp; Claude.ai com servidor MCP](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6 AEM e agentes {#agents6}
+      + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+   + 1.7 Ferramentas de desenvolvedor inteligente para Adobe Commerce {#agents7}
+      + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1 Configuração do ambiente de desenvolvimento](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
