@@ -47,7 +47,7 @@ Você deverá ver isso.
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-Agora você deve receber um email como o abaixo, que contém sua senha temporária. Para alterar sua senha ou recuperá-la caso não tenha recebido um email, você deve instalar o **aplicativo de desktop do Adobe Dynamic Media Classic**. Você pode encontrar instruções de instalação aqui: [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
+Agora você deve receber um email como o abaixo, que contém sua senha temporária. Para alterar sua senha ou recuperá-la caso não tenha recebido um email, você deve instalar o **aplicativo de desktop do Adobe Dynamic Media Classic**. Você pode encontrar instruções de instalação aqui: [https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/pt-br/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app).
 
 Siga as instruções e volte aqui depois que o aplicativo estiver instalado no sistema.
 
