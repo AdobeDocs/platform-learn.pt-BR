@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
+source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
 workflow-type: tm+mt
-source-wordcount: '1529'
+source-wordcount: '1540'
 ht-degree: 3%
 
 ---
@@ -109,7 +109,8 @@ ht-degree: 3%
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
    + 1.4 Adobe Experience Manager Assets e Dynamic Media {#assetm4}
       + [Visão geral](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
-      + [1.4.1 Introdução ao AEM Assets e Dynamic Media](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
+      + [1.4.1 Criar ativos e modelo de mídia dinâmica](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
+      + [1.4.2 Usar seu modelo de mídia dinâmica com o Adobe Journey Optimizer](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex2.md)
    + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
       + [Visão geral](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
       + [1.5.1 Introdução ao Adobe Commerce as a Cloud Service](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
@@ -118,7 +119,7 @@ ht-degree: 3%
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + Entrega e ativação {#activation}
-   + Coleção de dados {#dc}
+   + Coleta de dados {#dc}
       + 1.1 Coleta de dados do Adobe Experience Platform e Web SDK {#dc11}
          + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
          + [1.1.1 Noções básicas sobre a coleta de dados do Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
