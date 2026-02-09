@@ -179,7 +179,7 @@ Para criar a disposição, siga estas etapas:
 1. Depois que a disposição é criada, ela é exibida na lista de disposições.
 1. Selecione a linha que contém a nova disposição e anote a ID de disposição, pois isso pode ser necessário para configuração dentro do Escopo da decisão.
 
-   ![Consulte a ID de Posicionamento ](assets/decisioning-placement-id.png)
+   ![Consulte a ID de Posicionamento &#x200B;](assets/decisioning-placement-id.png)
 
 ### Regras de decisão para status de fidelidade
 
@@ -244,7 +244,7 @@ Para criar a primeira **oferta**, siga estas etapas:
 
    ![Adicionar detalhes da oferta](assets/decisioning-add-offer-details.png)
 
-1. Agora você deve adicionar **representações** para definir onde a oferta é exibida. Vamos escolher o **canal da Web**. Também vamos escolher o *posicionamento* do **do {Banner** Homepage configurado anteriormente. O **posicionamento** selecionado é do tipo HTML; portanto, você pode adicionar conteúdo HTML, JSON ou TEXT diretamente ao editor para criar a oferta usando o botão de opção **Personalizado**.
+1. Agora você deve adicionar **representações** para definir onde a oferta é exibida. Vamos escolher o **canal da Web**. Também vamos escolher o *posicionamento* do **do &lbrace;Banner** Homepage configurado anteriormente. O **posicionamento** selecionado é do tipo HTML; portanto, você pode adicionar conteúdo HTML, JSON ou TEXT diretamente ao editor para criar a oferta usando o botão de opção **Personalizado**.
 
    ![Adicionar detalhes da representação](assets/decisioning-add-representation-details.png)
 

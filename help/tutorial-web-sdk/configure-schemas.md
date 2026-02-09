@@ -118,7 +118,7 @@ Quando possível, é recomendável usar grupos de campo existentes e aderir a um
 
 >[!TIP]
 > 
->Neste exercício, você adiciona os grupos de campos predefinidos recomendados para a coleta de dados na Web: _**[!UICONTROL ExperienceEvent do AEP Web SDK]**_ e _**[!UICONTROL Evento de Experiência do Consumidor]**_.
+>Neste exercício, você adiciona os grupos de campos predefinidos recomendados para a coleta de dados na Web: _&#x200B;**[!UICONTROL ExperienceEvent do AEP Web SDK]**&#x200B;_ e _&#x200B;**[!UICONTROL Evento de Experiência do Consumidor]**&#x200B;_.
 >
 
 
