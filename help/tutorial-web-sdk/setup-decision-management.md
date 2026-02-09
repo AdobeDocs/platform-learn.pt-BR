@@ -60,7 +60,7 @@ No momento, as ofertas baseadas em eventos não são compatíveis com o Adobe Jo
 
 ## Conceder acesso à Gestão de decisões
 
-Para conceder acesso à funcionalidade de Gestão de decisões, você deve criar um **Perfil de produto** e atribuir as permissões correspondentes aos usuários. [Saiba mais sobre como gerenciar usuários e permissões do Journey Optimizer nesta seção](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Para conceder acesso à funcionalidade de Gestão de decisões, você deve criar um **Perfil de produto** e atribuir as permissões correspondentes aos usuários. [Saiba mais sobre como gerenciar usuários e permissões do Journey Optimizer nesta seção](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configurar o fluxo de dados
 
@@ -343,7 +343,7 @@ Para iniciar o teste, selecione a guia **Simulações** no menu **Ofertas**.
 
 ### Teste de ofertas de fidelidade
 
-1. Selecione um perfil de teste para usar na simulação. Clique em **Gerenciar perfil**. [Para criar ou designar um novo perfil de teste para teste de oferta, siga este guia](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Selecione um perfil de teste para usar na simulação. Clique em **Gerenciar perfil**. [Para criar ou designar um novo perfil de teste para teste de oferta, siga este guia](https://experienceleague.adobe.com/pt-br/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -375,7 +375,7 @@ A extensão **Adobe Experience Platform Debugger**, disponível para Chrome e Fi
 
 Você pode usar o depurador no site Luma para validar a lógica de decisão na produção. Essa validação é uma boa prática depois que o caso de uso de Fidelidade de recompensas está em execução, para garantir que tudo seja configurado corretamente.
 
-[Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar a validação usando o depurador:
 
@@ -406,4 +406,4 @@ Para iniciar a validação usando o depurador:
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)

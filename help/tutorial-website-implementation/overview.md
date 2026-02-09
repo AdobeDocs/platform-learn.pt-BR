@@ -44,7 +44,7 @@ Depois de concluir este, você poderá:
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 >[!NOTE]
@@ -55,7 +55,7 @@ Depois de concluir este, você poderá:
 
 Nessas lições, presume-se que você tenha uma Adobe ID e as permissões necessárias para concluir os exercícios. Caso contrário, pode ser necessário entrar em contato com o administrador da Experience Cloud para solicitar acesso.
 
-* Para tags, você deve ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes. Para obter mais informações sobre permissões de usuário de marca, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Para tags, você deve ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes. Para obter mais informações sobre permissões de usuário de marca, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR).
 * No Adobe Analytics, você deve conhecer o servidor de rastreamento e quais conjuntos de relatórios você usará para concluir este tutorial
 * Para o Audience Manager, você deve conhecer seu subdomínio do Audience Manager (também conhecido como &quot;Nome do parceiro&quot;, &quot;ID do parceiro&quot; ou &quot;Subdomínio do parceiro&quot;)
 
@@ -130,7 +130,7 @@ Nessas lições, você implementará a Adobe Experience Cloud em um site de vare
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/pt-BR/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

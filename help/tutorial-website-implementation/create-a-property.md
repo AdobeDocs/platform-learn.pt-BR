@@ -22,14 +22,14 @@ Basicamente, uma propriedade é basicamente um container que você preenche com 
 
 ## Pré-requisitos
 
-Para concluir as próximas lições, é necessário ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes nas tags. Se você não conseguir concluir nenhuma dessas etapas porque as opções da interface do usuário não estão disponíveis, entre em contato com o administrador da Experience Cloud para solicitar acesso. Para obter mais informações sobre permissões de usuário de marca, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+Para concluir as próximas lições, é necessário ter permissão para desenvolver, aprovar, publicar, gerenciar extensões e gerenciar ambientes nas tags. Se você não conseguir concluir nenhuma dessas etapas porque as opções da interface do usuário não estão disponíveis, entre em contato com o administrador da Experience Cloud para solicitar acesso. Para obter mais informações sobre permissões de usuário de marca, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR).
 
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -56,7 +56,7 @@ Deve aparecer a tela `Tags Properties` (se nenhuma propriedade tiver sido criada
 
 ## Criar uma propriedade
 
-Basicamente, uma propriedade é basicamente um container que você preenche com extensões, regras, elementos de dados e bibliotecas à medida que implanta tags no site. Uma propriedade pode ser qualquer agrupamento de um ou mais domínios e subdomínios. É possível gerenciar e rastrear esses ativos da mesma maneira. Por exemplo, suponhamos que você tenha vários sites baseados em um só modelo e queira rastrear os mesmos recursos em todos. É possível aplicar uma propriedade a vários domínios. Para obter mais informações sobre como criar propriedades, consulte [&quot;Empresas e propriedades&quot;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html) na documentação do produto.
+Basicamente, uma propriedade é basicamente um container que você preenche com extensões, regras, elementos de dados e bibliotecas à medida que implanta tags no site. Uma propriedade pode ser qualquer agrupamento de um ou mais domínios e subdomínios. É possível gerenciar e rastrear esses ativos da mesma maneira. Por exemplo, suponhamos que você tenha vários sites baseados em um só modelo e queira rastrear os mesmos recursos em todos. É possível aplicar uma propriedade a vários domínios. Para obter mais informações sobre como criar propriedades, consulte [&quot;Empresas e propriedades&quot;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=pt-BR) na documentação do produto.
 
 **Para criar uma propriedade**
 
