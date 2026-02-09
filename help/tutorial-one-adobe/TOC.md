@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
+source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1529'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,10 @@ ht-degree: 3%
    + 1.7 Workflow Builder {#crpr7}
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Introdução ao Workflow Builder](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
-   + 1.8 Gerenciamento de armazenamento corporativo {#crpr8}
+   + 1.8 Revisão e aprovação unificadas com Workfront, Frame.io e gerenciamento de armazenamento corporativo {#crpr8}
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-      + [1.8.1 Workfront e ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-      + [1.8.2 Frame.io e ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-      + [1.8.3 Adobe Express e ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
+      + [1.8.1 Introdução ao Workfront, Frame.io e ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Criar um novo ativo, analisá-lo e aprová-lo](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + Gerenciamento de ativos {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -119,7 +118,7 @@ ht-degree: 3%
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + Entrega e ativação {#activation}
-   + Coleta de dados {#dc}
+   + Coleção de dados {#dc}
       + 1.1 Coleta de dados do Adobe Experience Platform e Web SDK {#dc11}
          + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
          + [1.1.1 Noções básicas sobre a coleta de dados do Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
