@@ -1,17 +1,22 @@
 ---
 title: Alternar ambientes de tag com o Adobe Experience Cloud Debugger
-description: Saiba como usar o Experience Cloud Debugger para carregar diferentes códigos incorporados de tag. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
+description: Saiba como usar o Experience Cloud Debugger para carregar diferentes códigos incorporados de tag. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 24%
+source-wordcount: '620'
+ht-degree: 23%
 
 ---
 
 # Alternar ambientes de tag com o Experience Cloud Debugger
 
 Nesta lição, você usará a [extensão do Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) para substituir a propriedade de tag codificada no [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) com sua própria propriedade.
+
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 Essa técnica é chamada de alternação de ambiente e será útil posteriormente, ao trabalhar com tags em seu próprio site. Você poderá carregar seu site de produção em seu navegador, mas com seu ambiente de tag de *desenvolvimento*. Isso permite fazer e validar de forma segura as alterações nas tags independentemente das suas versões de código normais.  Afinal, essa separação das versões de tag de marketing das versões regulares de código é um dos principais motivos pelos quais os clientes usam tags!
 
@@ -20,7 +25,7 @@ Essa técnica é chamada de alternação de ambiente e será útil posteriorment
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -46,7 +51,7 @@ No final desta lição, você poderá:
 
 1. Abra o [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) no navegador Chrome
 
-1. Abra a [Extensão do depurador do Experience Platform](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) clicando no ícone ![Ícone do depurador](images/icon-debugger.png)
+1. Abra a [extensão do Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) clicando no ícone ![Debugger](images/icon-debugger.png)
 
    ![Clique no ícone Depurador](images/switchEnvironments-openDebugger.png)
 

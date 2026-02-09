@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2543'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,10 @@ Saiba como implementar o recurso de Gestão de decisões da Adobe Journey Optimi
 
 Ao seguir este tutorial, os usuários do Journey Optimizer estão equipados para usar os recursos de Gestão de decisões, aprimorando a personalização e a relevância das interações com os clientes.
 
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ![Diagrama do Web SDK e Adobe Analytics](assets/dc-websdk-ajo.png)
 
@@ -56,7 +60,7 @@ No momento, as ofertas baseadas em eventos não são compatíveis com o Adobe Jo
 
 ## Conceder acesso à Gestão de decisões
 
-Para conceder acesso à funcionalidade de Gestão de decisões, você deve criar um **Perfil de produto** e atribuir as permissões correspondentes aos usuários. [Saiba mais sobre como gerenciar usuários e permissões do Journey Optimizer nesta seção](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+Para conceder acesso à funcionalidade de Gestão de decisões, você deve criar um **Perfil de produto** e atribuir as permissões correspondentes aos usuários. [Saiba mais sobre como gerenciar usuários e permissões do Journey Optimizer nesta seção](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configurar o fluxo de dados
 
@@ -175,7 +179,7 @@ Para criar a disposição, siga estas etapas:
 1. Depois que a disposição é criada, ela é exibida na lista de disposições.
 1. Selecione a linha que contém a nova disposição e anote a ID de disposição, pois isso pode ser necessário para configuração dentro do Escopo da decisão.
 
-   ![Consulte a ID de Posicionamento &#x200B;](assets/decisioning-placement-id.png)
+   ![Consulte a ID de Posicionamento ](assets/decisioning-placement-id.png)
 
 ### Regras de decisão para status de fidelidade
 
@@ -240,7 +244,7 @@ Para criar a primeira **oferta**, siga estas etapas:
 
    ![Adicionar detalhes da oferta](assets/decisioning-add-offer-details.png)
 
-1. Agora você deve adicionar **representações** para definir onde a oferta é exibida. Vamos escolher o **canal da Web**. Também vamos escolher o *posicionamento* do **do &lbrace;Banner** Homepage configurado anteriormente. O **posicionamento** selecionado é do tipo HTML; portanto, você pode adicionar conteúdo HTML, JSON ou TEXT diretamente ao editor para criar a oferta usando o botão de opção **Personalizado**.
+1. Agora você deve adicionar **representações** para definir onde a oferta é exibida. Vamos escolher o **canal da Web**. Também vamos escolher o *posicionamento* do **do {Banner** Homepage configurado anteriormente. O **posicionamento** selecionado é do tipo HTML; portanto, você pode adicionar conteúdo HTML, JSON ou TEXT diretamente ao editor para criar a oferta usando o botão de opção **Personalizado**.
 
    ![Adicionar detalhes da representação](assets/decisioning-add-representation-details.png)
 
@@ -339,7 +343,7 @@ Para iniciar o teste, selecione a guia **Simulações** no menu **Ofertas**.
 
 ### Teste de ofertas de fidelidade
 
-1. Selecione um perfil de teste para usar na simulação. Clique em **Gerenciar perfil**. [Para criar ou designar um novo perfil de teste para teste de oferta, siga este guia](https://experienceleague.adobe.com/pt-br/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Selecione um perfil de teste para usar na simulação. Clique em **Gerenciar perfil**. [Para criar ou designar um novo perfil de teste para teste de oferta, siga este guia](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +375,7 @@ A extensão **Adobe Experience Platform Debugger**, disponível para Chrome e Fi
 
 Você pode usar o depurador no site Luma para validar a lógica de decisão na produção. Essa validação é uma boa prática depois que o caso de uso de Fidelidade de recompensas está em execução, para garantir que tudo seja configurado corretamente.
 
-[Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/debugger/overview).
+[Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar a validação usando o depurador:
 
@@ -402,4 +406,4 @@ Para iniciar a validação usando o depurador:
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

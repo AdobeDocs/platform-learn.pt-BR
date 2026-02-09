@@ -3,25 +3,30 @@ title: Adicionar o serviço de identidade da Adobe Experience Platform com tags
 description: Saiba como adicionar a extensão do Serviço de identidade da Adobe Experience Platform e usar a ação Definir IDs do cliente para coletar IDs do cliente. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 65%
+source-wordcount: '1977'
+ht-degree: 62%
 
 ---
 
 # Adicionar o Serviço de identidade da Adobe Experience Platform
 
-Esta lição guiará você pelas etapas necessárias para implementar a extensão [Serviço de identidade da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=pt-BR) e enviar as IDs do cliente.
+Esta lição guiará você pelas etapas necessárias para implementar a extensão [Serviço de identidade da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) e enviar as IDs do cliente.
 
-O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR) define uma ID de visitante comum em todas as soluções da Adobe para potencializar recursos da Experience Cloud como o compartilhamento de público-alvo entre soluções. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com os sistemas de CRM (relacionamento com o cliente).
+O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=pt-BR) define uma ID de visitante comum em todas as soluções da Adobe para potencializar recursos da Experience Cloud como o compartilhamento de público-alvo entre soluções. Você também pode enviar suas próprias IDs do cliente para o Serviço para habilitar o direcionamento entre dispositivos e integrações com os sistemas de CRM (relacionamento com o cliente).
+
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -90,14 +95,13 @@ A extensão do Serviço de identidade é uma das poucas extensões de tag que fa
    1. Expanda `Cookies` no lado esquerdo.
    1. Clique no domínio `https://luma.enablementadobe.com`
    1. Procure o cookie AMCV_ no lado direito. Você pode ver vários desde que carregou o site Luma usando a propriedade de tag codificada, bem como mapeada para a sua.
-
       ![Verifique o cookie AMCV_](images/idservice-AMCVCookie.png)
 
-Pronto! Você adicionou sua primeira extensão! Para obter mais detalhes sobre as opções de configuração do Serviço de identidade, consulte [a documentação](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=pt-BR).
+Pronto! Você adicionou sua primeira extensão! Para obter mais detalhes sobre as opções de configuração do Serviço de identidade, consulte [a documentação](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
 
 ## Enviar IDs do cliente
 
-Em seguida, você enviará uma [ID do cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=pt-BR) ao Serviço de identidade. Isso permite que você [integre seu CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) à Experience Cloud e rastreie os visitantes em todos os dispositivos.
+Em seguida, você enviará uma [ID do cliente](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) ao Serviço de identidade. Isso permite que você [integre seu CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=pt-BR) à Experience Cloud e rastreie os visitantes em todos os dispositivos.
 
 Na lição anterior, [Adicionar elementos de dados, regras e bibliotecas](add-data-elements-rules.md), você criou um elemento de dados e o usou em uma regra. Agora, você usará as mesmas técnicas para enviar uma ID do cliente quando o visitante é autenticado.
 
@@ -196,7 +200,7 @@ O Serviço de identidade da Adobe Experience Platform transmite as IDs do client
       ![definir o estado de autenticação](images/idservice-customerId-authStateCondition.png)
 
 1. Certifique-se de que `Equals` seja o operador
-1. Digite &quot;conectado&quot; no campo de texto; isso faz com que a regra seja acionada sempre que o elemento de dados “Estado de autenticação” tiver um valor “conectado”
+1. Digite &quot;conectado&quot; no campo de texto; isso faz com que a regra seja acionada sempre que o elemento de dados &quot;Estado de autenticação&quot; tiver um valor &quot;conectado&quot;
 
 1. Clique em **[!UICONTROL Manter alterações]**
 

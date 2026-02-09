@@ -4,9 +4,9 @@ description: Saiba como configurar namespaces de identidade para usar com o Adob
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '686'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,11 @@ Saiba como configurar namespaces de identidade para usar com o SDK da web da Ado
 
 O [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/pt-br/docs/id-service/using/home) define uma ID de visitante comum (a ECID) em todos os aplicativos do Adobe baseados na SDK para potencializar recursos do Experience Cloud, como o compartilhamento de público-alvo entre aplicativos. Você também pode enviar suas próprias IDs do cliente para o Serviço para ativar o direcionamento entre dispositivos e integrações com outros sistemas, como o sistema de CRM (relacionamento com o cliente).
 
-O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) (sim, há dois!) usa as ECIDs e as IDs do cliente para gerar gráficos de identidade, permitindo mesclar atributos e comportamentos em Perfis de clientes em tempo real.
+O [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (sim, há dois!) usa as ECIDs e as IDs do cliente para gerar gráficos de identidade, permitindo mesclar atributos e comportamentos em Perfis de clientes em tempo real.
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 >[!NOTE]
 >
@@ -45,7 +49,7 @@ Você já deve ter concluído as lições anteriores:
 >
 >A [Extensão do Experience Cloud ID](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) não é necessária ao implementar o Adobe Experience Platform Web SDK, pois a biblioteca do Web SDK JavaScript contém a funcionalidade do serviço de ID de visitante.
 >
-> Se o site já estiver usando o Serviço da Experience Cloud ID no seu site, por meio da API de visitante ou da extensão de tag do Serviço da Experience Cloud ID, e você quiser continuar usando-o ao migrar para o Adobe Experience Platform Web SDK, será necessário usar a versão mais recente da API de visitante ou a extensão de tag do Serviço da Experience Cloud ID. Consulte [Migração de ID](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/identity/overview) para obter mais informações.
+> Se o site já estiver usando o Serviço da Experience Cloud ID no seu site, por meio da API de visitante ou da extensão de tag do Serviço da Experience Cloud ID, e você quiser continuar usando-o ao migrar para o Adobe Experience Platform Web SDK, será necessário usar a versão mais recente da API de visitante ou a extensão de tag do Serviço da Experience Cloud ID. Consulte [Migração de ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) para obter mais informações.
 
 ## Criar um namespace de identidade
 
@@ -53,7 +57,7 @@ Neste exercício, você cria um namespace de identidade para o campo de identida
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre identidade no Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/3422776?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Agora, crie um namespace para a ID do CRM da Luma:
 
@@ -98,4 +102,4 @@ Agora que as identidades estão em vigor, o fluxo de dados pode ser configurado.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

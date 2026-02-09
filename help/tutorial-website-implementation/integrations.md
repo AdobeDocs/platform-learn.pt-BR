@@ -2,16 +2,21 @@
 title: Implementar integrações do Experience Cloud com tags
 description: Saiba como validar as integrações do Audiences, A4T e Atributos do cliente na implementação da Adobe Experience Cloud. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 85%
+source-wordcount: '1231'
+ht-degree: 83%
 
 ---
 
 # Integrações da Experience Cloud
 
 Nesta lição, você verificará as principais integrações entre as soluções que acabou de implementar. A boa notícia é que, ao completar as lições anteriores, já implementou os aspectos principais das integrações! Não é necessário fazer qualquer trabalho adicional nesta lição além de ler e validar.
+
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ## Objetivos de aprendizagem
 
@@ -28,10 +33,10 @@ Você deve concluir todas as lições anteriores neste tutorial antes de seguir 
 >
 >Muitos requisitos de permissões de usuário, configurações de conta e etapas de provisionamento que estão além do escopo deste tutorial são necessários para usar essas integrações. Se você ainda não estiver usando essas integrações na implementação atual da Experience Cloud, considere:
 >
->* Analisar todos os requisitos das [integrações dos serviços principais](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/getting-started)
->* Analisar os requisitos completos da [integração do Analytics for Target](https://experienceleague.adobe.com/pt-br/docs/target/using/integrate/a4t/before-implement)
+>* Analisar todos os requisitos das [integrações dos serviços principais](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Analisar os requisitos completos da [integração do Analytics for Target](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
-## Audiences
+## Públicos-alvo
 
 O [Audiences](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/services/audiences/overview) faz parte do serviço principal de pessoas e permite compartilhar públicos-alvo entre soluções. Por exemplo, você pode criar um público-alvo no Audience Manager e usá-lo para fornecer conteúdo personalizado ao Target.
 
@@ -71,7 +76,7 @@ Essas etapas de validação se concentrarão na parte crítica visível na imple
 
 ## Analytics for Target (A4T)
 
-A integração do [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=pt-BR) permite aproveitar seus dados do Analytics como fonte para as métricas de relatório no Target.
+A integração do [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) permite aproveitar seus dados do Analytics como fonte para as métricas de relatório no Target.
 
 Os principais requisitos para implementar o A4T—que você já fez—são:
 

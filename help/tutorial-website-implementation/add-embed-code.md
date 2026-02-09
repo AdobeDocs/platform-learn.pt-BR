@@ -1,11 +1,11 @@
 ---
 title: Adicionar o código incorporado do
-description: Saiba como obter os códigos incorporados da propriedade de tag e implementá-los no site. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
+description: Saiba como obter os códigos incorporados da propriedade de tag e implementá-los no site. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 45%
+source-wordcount: '1069'
+ht-degree: 43%
 
 ---
 
@@ -13,12 +13,17 @@ ht-degree: 45%
 
 Nesta lição, você implementará o código incorporado assíncrono do ambiente de desenvolvimento da propriedade de tag. Ao longo do caminho, você aprenderá sobre dois conceitos principais de tags: Ambientes e Códigos incorporados.
 
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
+
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -104,7 +109,7 @@ Caso ainda não o tenha feito, copie o código de página html de exemplo e cole
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/pt-BR/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
@@ -132,7 +137,7 @@ Vamos consultar algumas das práticas recomendadas de implementação de tags de
 
    * *Recomendamos fortemente* criar em seu site uma camada de dados contendo todos os atributos necessários para preencher variáveis no Analytics, no Target e em outras soluções de marketing. Essa página de exemplo contém apenas uma camada de dados muito simples, mas uma camada de dados real pode conter muitos mais detalhes sobre a página, como o visitante, os detalhes do carrinho de compras etc. Para obter mais informações sobre camadas de dados, consulte [Camada de dados digitais da experiência do cliente 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
-   * Defina sua camada de dados antes do código incorporado da tag, para maximizar o que você pode fazer com soluções em Experience Cloud.
+   * Defina sua camada de dados antes do código incorporado da tag, para maximizar o que você pode fazer com as soluções da Experience Cloud.
 
 * **Bibliotecas do JavaScript Helper**: se você já tiver uma biblioteca como a JQuery implementada no `<head>` de suas páginas, carregue-a antes das marcas para aproveitar a sintaxe nas marcas e no Target
 

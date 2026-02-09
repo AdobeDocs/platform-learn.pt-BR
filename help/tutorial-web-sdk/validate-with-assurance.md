@@ -4,9 +4,9 @@ description: Saiba como validar a implementação do SDK da web da Platform com 
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '637'
 ht-degree: 7%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 7%
 
 O Adobe Experience Platform Assurance é um recurso que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou serve experiências. Leia mais sobre o [Adobe Assurance](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home).
 
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ## Objetivos de aprendizagem
 
@@ -94,4 +98,4 @@ Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

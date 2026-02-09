@@ -1,11 +1,11 @@
 ---
 title: Adicionar um elemento de dados, uma regra e uma biblioteca
-description: Saiba como criar Elementos de dados, Regras e uma Biblioteca em tags. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
+description: Saiba como criar Elementos de dados, Regras e uma Biblioteca em tags. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 54%
+source-wordcount: '1473'
+ht-degree: 53%
 
 ---
 
@@ -15,12 +15,17 @@ Nesta lição, você criará seu primeiro Elemento de dados, Regra e Biblioteca.
 
 Os elementos e as regras de dados são os blocos que formam a base das tags. Os Elementos de dados armazenam os atributos que você deseja enviar para as soluções de marketing e publicidade, enquanto as Regras acionam as solicitações para essas soluções nas condições certas. As bibliotecas são arquivos JavaScript carregados na página para fazer todo o trabalho. Nesta lição, você usará todos os três para forçar a página de amostra faça algo.
 
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
+
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem

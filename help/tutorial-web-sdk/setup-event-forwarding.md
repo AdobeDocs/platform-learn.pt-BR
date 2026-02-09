@@ -4,10 +4,10 @@ description: Saiba como usar a propriedade de encaminhamento de eventos usando d
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 4%
+source-wordcount: '1904'
+ht-degree: 3%
 
 ---
 
@@ -15,8 +15,12 @@ ht-degree: 4%
 
 Saiba como usar o encaminhamento de eventos com dados do SDK da web da Adobe Experience Platform.
 
-O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam da Adobe diretamente do Adobe Experience Platform Edge Network, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos na [visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/event-forwarding/overview).
+O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam da Adobe diretamente do Adobe Experience Platform Edge Network, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos na [visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ![Diagrama do Web SDK e do encaminhamento de eventos](assets/dc-websdk-eventforwarding.png)
 
@@ -24,7 +28,7 @@ Para usar o encaminhamento de eventos no Adobe Experience Platform, os dados dev
 
 * [SDK da Web da Adobe Experience Platform](overview.md)
 * [SDK móvel da Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/pt-br/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -143,7 +147,7 @@ Neste exercício, você encaminhará a altura da janela de visualização do nav
 >[!TIP]
 >
 >Você também pode encontrar o caminho do objeto XDM usando as ferramentas de rede do navegador da Web, filtrando solicitações de `/ee`, abrindo o sinal [!UICONTROL **Carga**] e aprofundando na variável que você está procurando. Em seguida, clique com o botão direito do mouse e selecione &quot;Copiar caminho da propriedade&quot;. Veja um exemplo de Altura da janela de visualização do navegador:
->&#x200B;> ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
+> ![Caminho XDM do encaminhamento de eventos](assets/event-forwarding-xdm-path.png)
 
 1. Vá para a propriedade **[!UICONTROL Encaminhamento de Eventos]** criada recentemente
 
@@ -323,4 +327,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

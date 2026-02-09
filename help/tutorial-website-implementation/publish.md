@@ -1,24 +1,29 @@
 ---
-title: Publish sua propriedade de tag
-description: Saiba como publicar sua propriedade de tag do ambiente de desenvolvimento para os ambientes de preparo e produção. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
+title: Publicar a propriedade da tag
+description: Saiba como publicar sua propriedade de tag do ambiente de desenvolvimento para os ambientes de preparo e produção. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 58%
+source-wordcount: '603'
+ht-degree: 55%
 
 ---
 
-# Publish sua propriedade de tag
+# Publicar a propriedade da tag
 
 Depois de implementar algumas das soluções principais da Adobe Experience Cloud no ambiente de desenvolvimento, é hora de aprender o fluxo de trabalho de publicação.
+
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -69,13 +74,13 @@ Em um cenário da vida real, a próxima etapa do processo normalmente deve ser a
 
 1. Abra o [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) no navegador Chrome
 
-1. Abra a [Extensão do depurador do Experience Platform](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) clicando no ícone ![Ícone do depurador](images/icon-debugger.png)
+1. Abra a [extensão do Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) clicando no ícone ![Debugger](images/icon-debugger.png)
 
    ![Clique no ícone Depurador](images/switchEnvironments-openDebugger.png)
 
 1. Acesse a guia Ferramentas
 
-1. Adobe Na seção **[!UICONTROL Iniciar > Substituir código incorporado do Launch]**, cole o código incorporado de armazenamento temporário que está na área de transferência
+1. Na seção **[!UICONTROL Adobe Launch > Substituir código incorporado do Launch]**, cole o código incorporado de Armazenamento temporário que está na área de transferência
 1. Ative a opção **[!UICONTROL Aplicar através da luma.enablementadobe.com]**
 
 1. Clique no ícone do disco para salvar
@@ -102,11 +107,11 @@ Na vida real, uma vez que a sua equipe de controle de qualidade tenha se descone
 
 1. A biblioteca agora aparecerá na coluna [!UICONTROL Aprovado] no estado não criado (ponto amarelo):
 
-1. Abra a lista suspensa e selecione **[!UICONTROL Build e Publish para produção]**:
+1. Abra a lista suspensa e selecione **[!UICONTROL Criar e publicar na produção]**:
 
    ![Clique em Criar e publicar na produção](images/publishing-buildAndPublishToProduction.png)
 
-1. Clique no **[!UICONTROL Publish]** na caixa de diálogo:
+1. Clique em **[!UICONTROL Publicar]** na caixa de diálogo:
 
    ![Clique em Publicar](images/publishing-publish.png)
 

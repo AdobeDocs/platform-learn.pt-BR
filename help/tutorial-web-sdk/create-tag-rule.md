@@ -4,9 +4,9 @@ description: Saiba como enviar um evento para a Platform Edge Network com seu ob
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '2014'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 2%
 # Criar regras de tag
 
 Saiba como enviar eventos para a Adobe Experience Platform Edge Network com seu objeto XDM usando regras de tag. Uma regra de tag é uma combinação de eventos, condições e ações que instrui a propriedade de tag a fazer algo. Com o Platform Web SDK, as regras são usadas para enviar eventos para o Platform Edge Network com os dados corretos.
+
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ## Objetivos de aprendizagem
 
@@ -70,7 +75,7 @@ Todas essas regras serão sequenciadas corretamente usando a opção &quot;[!UIC
 
 Este vídeo fornece uma visão geral do processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454032/?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campos de configuração global
 
@@ -238,7 +243,7 @@ Compare o elemento de dados com a estrutura `productListItems` (dica, ele deve c
 >[!IMPORTANT]
 >
 >Observe como as variáveis numéricas são convertidas, com valores de cadeia de caracteres na camada de dados, como `price` e `qty` reformatados em números no elemento de dados. Esses requisitos de formato são importantes para a integridade de dados na Platform e são determinados durante a etapa [configurar schemas](configure-schemas.md). No exemplo, **[!UICONTROL quantity]** usa o tipo de dados **[!UICONTROL Integer]**.
->&#x200B;> ![Tipo de dados de esquema XDM &#x200B;](assets/set-up-analytics-quantity-integer.png)
+> ![Tipo de dados de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
 
 Agora, vamos mapear nossa matriz para o objeto XDM:
 
@@ -395,4 +400,4 @@ Agora você está pronto para validar os dados na solicitação usando o Adobe E
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

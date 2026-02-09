@@ -1,27 +1,32 @@
 ---
 title: Adicionar o Adobe Audience Manager
-description: Saiba como implementar o Adobe Audience Manager em seu site usando o encaminhamento pelo lado do servidor e tags. Esta lição é parte do tutorial Implementar o Experience Cloud nos sites.
+description: Saiba como implementar o Adobe Audience Manager em seu site usando o encaminhamento pelo lado do servidor e tags. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 73%
+source-wordcount: '1781'
+ht-degree: 69%
 
 ---
 
 # Adicionar o Adobe Audience Manager
 
-Esta lição o guiará pelas etapas para ativar o Adobe Audience Manager usando o encaminhamento pelo lado do servidor.
+Esta lição o guiará pelas etapas para habilitar o Adobe Audience Manager usando o encaminhamento pelo lado do servidor.
 
 O [Adobe Audience Manager](https://docs.adobe.com/content/help/pt-BR/experience-cloud/user-guides/home.translate.html) (AAM) fornece serviços líderes do setor para o gerenciamento online de dados de público-alvo, proporcionando aos anunciantes e editores as ferramentas necessárias para controlar e aproveitar seus ativos de dados e ajudar a aumentar o sucesso das vendas.
+
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 >[!NOTE]
 >
 >O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
 >
 > * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
+> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
 > * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
@@ -38,13 +43,13 @@ Para concluir esta lição, será necessário:
 
 1. Para concluir as lições em [Configurar marcas](create-a-property.md), [Adicionar Adobe Analytics](analytics.md) e [Adicionar o Serviço de Identidade](id-service.md).
 
-1. Acesso de administrador ao Adobe Analytics para que você possa ativar o encaminhamento pelo lado do servidor para o conjunto de relatórios que estiver usando neste tutorial. Como alternativa, você pode solicitar que um administrador na sua organização faça isso seguindo as instruções abaixo.
+1. Acesso de administrador ao Adobe Analytics para que você possa habilitar o encaminhamento pelo lado do servidor para o conjunto de relatórios que estiver usando neste tutorial. Como alternativa, você pode solicitar que um administrador na sua organização faça isso seguindo as instruções abaixo.
 
-1. Seu “Subdomínio do Audience Manager” (também conhecido como “Nome do parceiro”, “ID do parceiro” ou “Subdomínio do parceiro”). Se você já implementou o Audience Manager em seu site, a maneira mais fácil de obter essa informação é acessar seu site e abrir o Debugger. O subdomínio está disponível na guia Resumo, localizada na seção Audience Manager:
+1. Seu &quot;Subdomínio do Audience Manager&quot; (também conhecido como &quot;Nome do parceiro&quot;, &quot;ID do parceiro&quot; ou &quot;Subdomínio do parceiro&quot;). Se você já implementou o Audience Manager em seu site, a maneira mais fácil de obter essa informação é acessar seu site e abrir o Debugger. O subdomínio está disponível na guia Resumo, localizada na seção Audience Manager:
 
    ![Você pode usar o Debugger para localizar o Subdomínio do Audience Manager no seu site](images/aam-debugger-partner.png)
 
-Se ainda não tiver o Audience Manager implementado, siga estas instruções para [obter seu Subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=pt-BR).
+Se ainda não tiver o Audience Manager implementado, siga estas instruções para [obter seu Subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 ## Opções de implementação
 
@@ -56,18 +61,18 @@ Há duas maneiras de implementar o Audience Manager em um site:
 
 Como você já implantou o Adobe Analytics neste tutorial, você implantará o Audience Manager usando o encaminhamento pelo lado do servidor. Para obter uma descrição completa e uma lista de requisitos para o encaminhamento pelo lado do servidor, consulte a [documentação](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=pt-BR) para que possa se familiarizar com o funcionamento, além de saber o que é necessário e como validar o recurso.
 
-## Ativar encaminhamento pelo lado do servidor
+## Habilitar encaminhamento pelo lado do servidor
 
 Há duas etapas principais para executar uma implementação do SSF:
 
 1. Ativar um &quot;alternador&quot; no Admin Console do Analytics para encaminhar dados do Analytics para o Audience Manager *por conjunto de relatórios*.
 1. Colocar o código no lugar, que é feito por meio de tags. Para que isso funcione corretamente, será necessário ter a extensão do Serviço de identidade da Adobe Experience Platform instalada, bem como a extensão do Analytics (na verdade, você *não* precisará da extensão AAM, descrita abaixo).
 
-### Ativar o encaminhamento pelo lado do servidor no Admin Console do Analytics
+### Habilitar o encaminhamento pelo lado do servidor no Admin Console do Analytics
 
 É necessária uma configuração no Admin Console do Adobe Analytics para iniciar o encaminhamento de dados do Adobe Analytics para o Adobe Audience Manager. Como pode levar até quatro horas para o encaminhamento dos dados ser iniciado, é indicado fazer essa etapa primeiro.
 
-#### Para ativar o SSF no Admin Console do Analytics
+#### Para habilitar o SSF no Admin Console do Analytics
 
 1. Faça logon no Analytics por meio da interface do usuário da Experience Cloud. Se você não tiver acesso de Administrador ao Analytics, precisará conversar com o administrador da Experience Cloud ou do Analytics para atribuir acesso ou concluir essas etapas para você.
 
@@ -95,17 +100,17 @@ Há duas etapas principais para executar uma implementação do SSF:
 >
 >Como o SSF precisa ser ativado por conjunto de relatórios, repita esta etapa para seus conjuntos de relatórios reais quando implantar o SSF em seu conjunto de relatórios do site.
 >
->Além disso, se a opção SSF estiver acinzentada, será necessário &quot;mapear os conjuntos de relatórios para sua organização na Experience Cloud para ativar a opção. Isso é explicado [na documentação](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=pt-BR).
+>Além disso, se a opção SSF estiver acinzentada, será necessário &quot;mapear os conjuntos de relatórios para sua organização na Experience Cloud para habilitar a opção. Isso é explicado [na documentação](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-Uma vez concluída essa etapa, e se você tiver o Serviço de identidade da Adobe Experience Platform habilitado, os dados serão encaminhados do Analytics para o AAM. No entanto, para concluir o processo de forma que a resposta retorne corretamente do AAM à página (e também ao Analytics por meio do recurso Audience Analytics ), você deve concluir a etapa a seguir nas tags também. Não se preocupe, é super fácil.
+Uma vez concluída essa etapa, e se você tiver o Serviço de identidade da Adobe Experience Platform habilitado, os dados serão encaminhados do Analytics para o AAM. No entanto, para concluir o processo de forma que a resposta retorne corretamente do AAM à página (e também ao Analytics por meio do recurso do Audience Analytics), você deve concluir a etapa a seguir nas tags também. Não se preocupe, é super fácil.
 
 ### Ativar o encaminhamento pelo lado do servidor nas tags
 
-Esta é a segunda de duas etapas para habilitar o SSF. Você já inverteu o switch no Admin Console do Analytics e agora precisa apenas adicionar o código, o que as tags farão se você simplesmente marcar a caixa correta.
+Esta é a segunda de duas etapas para habilitar o SSF. Você já inverteu o switch no Analytics Admin Console e agora precisa apenas adicionar o código, o que as tags farão se você simplesmente marcar a caixa correta.
 
 >[!NOTE]
 >
->Para implementar o encaminhamento pelo lado do servidor dos dados do Analytics para o AAM, editaremos/configuraremos a extensão Analytics em tags, **não** a extensão AAM. A extensão AAM é usada exclusivamente para implementações DIL do lado do cliente, para aqueles que não têm o Adobe Analytics. Portanto, as etapas a seguir estão corretas quando o enviam para a extensão Analytics para configurar isso.
+>Para implementar o encaminhamento pelo lado do servidor dos dados do Analytics na AAM, editaremos/configuraremos a extensão Analytics em tags, **não** a extensão AAM. A extensão AAM é usada exclusivamente para implementações DIL do lado do cliente, para aqueles que não têm o Adobe Analytics. Portanto, as etapas a seguir estão corretas quando o enviam para a extensão Analytics para configurar isso.
 
 #### Para ativar o SSF em tags
 
@@ -117,7 +122,7 @@ Esta é a segunda de duas etapas para habilitar o SSF. Você já inverteu o swit
 
 1. Marque a caixa para **[!UICONTROL Compartilhar automaticamente dados do Analytics com o Audience Manager]**. Isso adicionará o &quot;Módulo&quot; (código) do Audience Manager à implementação `AppMeasurement.js` do Analytics.
 
-1. Adicione o &quot;Subdomínio do Audience Manager&quot; (também conhecido como &quot;Nome do parceiro&quot;, &quot;ID do parceiro&quot;, &quot;Subdomínio do parceiro&quot;). Siga estas instruções para [obter o subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=pt-BR).
+1. Adicione o &quot;Subdomínio do Audience Manager&quot; (também conhecido como &quot;Nome do parceiro&quot;, &quot;ID do parceiro&quot;, &quot;Subdomínio do parceiro&quot;). Siga estas instruções para [obter o subdomínio do Audience Manager](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html).
 
 1. Clique em **[!UICONTROL Salvar na biblioteca e na build]**
 
@@ -131,7 +136,7 @@ A forma principal de validar que o encaminhamento pelo lado do servidor está em
 
 #### Verifique se o código está sendo carregado corretamente
 
-O código instalado pelas tags para lidar com o encaminhamento e, especialmente, com a resposta do AAM à página, é chamado de Audience Manager
+O código que as tags instalam para lidar com o encaminhamento e, especialmente, com a resposta do AAM à página, é chamado de Audience Manager
 &quot;Módulo.&quot; Podemos usar o Experience Cloud Debugger para garantir que ele foi carregado.
 
 1. Abra o site Luma
@@ -152,7 +157,7 @@ Em seguida, também podemos verificar se o depurador está coletando a &quot;ID 
 
 >[!WARNING]
 >
->Você pode notar que a seção Audience Manager do depurador se refere a &quot;DIL&quot;, que é a &quot;Data Integration Library&quot; e normalmente se refere a uma implementação do lado do cliente, em oposição à abordagem do lado do servidor que implementamos aqui. A verdade é que o &quot;Módulo&quot; do AAM (usado nesta abordagem SSF) usa muito do mesmo código da biblioteca DIL do lado do cliente e, portanto, esse depurador está reportando como tal. Se você seguir as etapas deste tutorial e o restante dos itens nesta seção de validação estiver correto, esteja certo de que o encaminhamento pelo lado do servidor está funcionando.
+>Observe que a seção Audience Manager do depurador se refere à &quot;DIL&quot;, que é a &quot;Data Integration Library&quot;, e geralmente se refere a uma implementação do lado do cliente, em oposição à abordagem do lado do servidor que implementamos aqui. A verdade é que o &quot;Módulo&quot; do AAM (usado nesta abordagem SSF) usa muito do mesmo código da biblioteca DIL do lado do cliente e, portanto, esse depurador está reportando como tal. Se você seguir as etapas deste tutorial e o restante dos itens nesta seção de validação estiver correto, esteja certo de que o encaminhamento pelo lado do servidor está funcionando.
 
 #### Verifique a solicitação e a resposta do Analytics
 
@@ -175,8 +180,8 @@ Infelizmente, neste momento, a Experience Cloud não suporta a exibição da res
 
 >[!WARNING]
 >
->Cuidado com o falso &quot;sucesso&quot; - se houver uma resposta e tudo parece estar funcionando, **verifique** se você tem esse objeto &quot;stuff&quot;. Caso não tenha, você poderá ver uma mensagem na resposta que diz &quot;status&quot;: &quot;SUCCESS&quot;. Por mais louco que isso pareça, isso é prova de que **NÃO** está funcionando corretamente. Caso esteja lendo isso, significa que você concluiu esta segunda etapa (o código nas tags), mas que o encaminhamento no Admin Console do Analytics (a primeira etapa desta seção) ainda não foi concluído. Nesse caso, é necessário verificar se o SSF foi ativado no Admin Console do Analytics. Se tiver ativado e ainda não tiver passado quatro horas, aguarde.
+>Cuidado com o falso &quot;sucesso&quot; - se houver uma resposta e tudo parece estar funcionando, **verifique** se você tem esse objeto &quot;stuff&quot;. Caso não tenha, você poderá ver uma mensagem na resposta que diz &quot;status&quot;: &quot;SUCCESS&quot;. Por mais louco que isso pareça, isso é prova de que **NÃO** está funcionando corretamente. Caso esteja lendo isso, significa que você concluiu esta segunda etapa (o código nas tags), mas que o encaminhamento no Analytics Admin Console (a primeira etapa desta seção) ainda não foi concluído. Nesse caso, é necessário verificar se o SSF foi habilitado no Admin Console do Analytics. Se tiver ativado e ainda não tiver passado quatro horas, aguarde.
 
 ![Resposta AA - falso sucesso](images/aam-responseFalseSuccess.png)
 
-[Próximos &quot;Integrações de Experience Cloud&quot; >](integrations.md)
+[Próximos &quot;Integrações da Experience Cloud&quot; >](integrations.md)

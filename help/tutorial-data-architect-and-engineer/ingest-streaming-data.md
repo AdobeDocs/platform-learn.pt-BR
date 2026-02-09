@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '3266'
+source-wordcount: '3298'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,11 @@ ht-degree: 0%
 <!--1hr-->
 
 Nesta lição, você transmitirá dados usando o Adobe Experience Platform Web SDK.
+
+
+>[!WARNING]
+>
+> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 Há duas tarefas principais que devem ser concluídas na interface da Coleção de dados:
 
@@ -31,9 +36,9 @@ Há duas tarefas principais que devem ser concluídas na interface da Coleção 
 
 Antes de começar os exercícios, assista a estes dois pequenos vídeos para saber mais sobre a assimilação de dados por transmissão e o Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31683?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37265?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -176,7 +181,7 @@ Agora criaremos uma regra para enviar dados para a Platform. Uma regra é uma co
 1. Atribua um nome à regra `All Pages - Library Loaded`
 1. Em **[!UICONTROL Eventos]**, selecione o botão **[!UICONTROL Adicionar]**
    ![Nomear a regra e adicionar um evento](assets/websdk-property-nameRule.png)
-1. Use a **[!UICONTROL Extensão de]**&#x200B;**[!UICONTROL do &lbrace;Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
+1. Use a **[!UICONTROL Extensão de]****[!UICONTROL do {Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
 1. Selecione **[!UICONTROL Manter alterações]** para retornar à tela de regra principal
    ![Adicionar o evento de biblioteca carregada](assets/websdk-property-addEvent.png)
 1. Deixe **[!UICONTROL Condições]** em branco, pois queremos que esta regra seja acionada em todas as páginas, de acordo com o nome que demos a ela
@@ -254,7 +259,7 @@ O Experience Platform Debugger é uma extensão disponível para o Chrome que aj
 
 Se você nunca usou o Debugger antes (e este é diferente do Adobe Experience Cloud Debugger mais antigo), assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/36163?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra o site Luma
 
