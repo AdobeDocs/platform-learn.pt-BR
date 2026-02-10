@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
-source-git-commit: c92e21cbc385eb1cf31887c1f829af0e9ddf6ae6
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1022'
 ht-degree: 1%
 
 ---
@@ -63,10 +63,6 @@ Clique em **Instalar blueprint**.
 
 ![WF](./images/blueprint4.png)
 
-Você deverá ver isso. A instalação pode levar alguns minutos.
-
-![WF](./images/blueprint5.png)
-
 Após alguns minutos, o blueprint será instalado.
 
 ![WF](./images/blueprint6.png)
@@ -89,7 +85,7 @@ Vá para **Programas** e clique em **+ Novo Programa**. Selecione **Novo Program
 
 ![WF](./images/wfnp1.png)
 
-Digite o nome do programa: `--aepUserLdap-- CitiSignal Fiber Launch`.
+Digite o nome do programa: `--aepUserLdap-- - CitiSignal Fiber Launch`.
 
 ![WF](./images/wfp6b.png)
 
