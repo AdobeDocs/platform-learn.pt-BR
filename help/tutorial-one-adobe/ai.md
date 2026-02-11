@@ -3,9 +3,9 @@ title: Visão geral Laboratórios técnicos de IA do Agentic
 description: Visão geral Laboratórios técnicos de IA do Agentic
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,12 @@ Neste exercício, você aprenderá a:
 
 - Conecte o ChatGPT e/ou o Claude.ai ao **Customer Journey Analytics** e execute as tarefas de análise de dados
 - Conecte o ChatGPT e/ou o Claude.ai ao **Adobe Analytics** e execute as tarefas de análise de dados
+
+[1.7 Ferramentas de desenvolvedor inteligente para Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
+
+**Meta**
+
+Neste módulo, você usará ferramentas inteligentes de desenvolvedor, como o Cursor.ai, para desenvolver uma extensão para seu ambiente do Adobe Commerce as a Cloud Service. O objetivo dessa extensão é encaminhar eventos de pedido recebidos para um endpoint de terceiros. O encaminhamento de eventos no Adobe Commerce as a Cloud Service depende do Adobe I/O App Builder, Adobe I/O Events e Adobe I/O Runtime. A configuração de todos esses serviços será assistida por Cursor.ai.
 
 ![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
