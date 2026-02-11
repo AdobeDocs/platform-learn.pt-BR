@@ -4,9 +4,9 @@ description: IA do cliente - Painel de pontuação e segmentação (previsão e 
 kt: 5342
 doc-type: tutorial
 exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -55,13 +55,11 @@ Agora você pode usar esse segmento para direcionamento usando, por exemplo, a R
 
 ## Cleanup
 
-Para garantir que nenhum dado de demonstração desnecessário seja mantido em seu ambiente, exclua o conjunto de dados `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` depois de concluir este exercício com êxito. Se você não excluir os dados de demonstração, haverá um impacto de custo para sua instância da AEP.
+Para garantir que nenhum dado de demonstração desnecessário seja mantido em seu ambiente, exclua o conjunto de dados `--aepUserLdap-- - Demo System - Customer Experience Event Dataset` depois de concluir este exercício com êxito. Se você não excluir os dados de demonstração, haverá um impacto de custo para sua instância do AEP.
 
 ![Perfil](./images/cleanup.png)
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Volte para os [Serviços inteligentes](./intelligent-services.md){target="_blank"}
 

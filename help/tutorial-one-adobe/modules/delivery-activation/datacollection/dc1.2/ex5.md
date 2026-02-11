@@ -4,18 +4,18 @@ description: Foundation - Assimilação de dados - Assimilação de dados de fon
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 3%
 
 ---
 
 # 1.2.5 Zona de aterrissagem de dados
 
-Neste exercício, o objetivo é configurar seu conector de Source da Data Landing Zone com o armazenamento de blobs do Azure.
+Neste exercício, o objetivo é configurar o conector do Source da Data Landing Zone com o armazenamento de blobs da Azure.
 
-A Zona de aterrissagem de dados é uma interface de armazenamento de blobs do Azure fornecida pela Adobe Experience Platform, que concede acesso a um recurso de armazenamento de arquivos seguro e baseado em nuvem para trazer arquivos para a plataforma. A Zona de aterrissagem de dados é compatível com a autenticação baseada em SAS e seus dados são protegidos com mecanismos de segurança de armazenamento de blobs do Azure padrão em repouso e em trânsito. A autenticação baseada em SAS permite acessar com segurança o contêiner da Data Landing Zone por meio de uma conexão pública com a Internet.
+A Zona de aterrissagem de dados é uma interface de armazenamento de blobs da Azure fornecida pela Adobe Experience Platform, que concede acesso a um recurso seguro de armazenamento de arquivos baseado em nuvem para trazer arquivos para a plataforma. A Data Landing Zone oferece suporte à autenticação baseada em SAS e seus dados são protegidos com os mecanismos padrão de segurança de armazenamento Azure Blob em repouso e em trânsito. A autenticação baseada em SAS permite acessar com segurança o contêiner da Data Landing Zone por meio de uma conexão pública com a Internet.
 
 >[!NOTE]
 >
@@ -40,21 +40,21 @@ Para copiar blobs ou arquivos para a sua Zona de aterrissagem de dados da Adobe 
 
 ![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
-## 1.2.5.2 Conectar a zona de aterrissagem de dados à Adobe Experience Platform
+## 1.2.5.2 Conectar a Zona de Aterrissagem de Dados à Adobe Experience Platform
 
 Faça logon no Adobe Experience Platform acessando esta URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./images/home.png)
+![Ingestão de dados](./images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``.  Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
-![Assimilação de dados](./images/sb1.png)
+![Ingestão de dados](./images/sb1.png)
 
 No menu esquerdo, vá para **Fontes**. No catálogo Fontes, pesquise por **aterrissagem de dados**.
 
-![Assimilação de dados](./images/sourcesdlz.png)
+![Ingestão de dados](./images/sourcesdlz.png)
 
 Clique no cartão **Data Landing Zone** e você verá as credenciais na guia direita.
 
@@ -64,9 +64,9 @@ Clique no ícone conforme indicado para copiar o **SASUri**.
 
 ![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
 
-## Copie o arquivo csv para a zona de aterrissagem de dados da AEP
+## Copie o arquivo csv na zona de aterrissagem de dados do AEP
 
-Agora você assimilará dados na Adobe Experience Platform usando as ferramentas de linha de comando do Azure com o AZCopy.
+Agora você assimilará dados na Adobe Experience Platform usando as ferramentas de linha de comando da Azure com o AZCopy.
 
 Abra um terminal no local de instalação do Azcopy e execute o seguinte comando para copiar um arquivo para a zona de aterrissagem de dados da AEP:
 
@@ -138,7 +138,7 @@ Selecione o campo ``--aepTenantId--``.identification.core.ecid na estrutura do e
 
 Você precisa mapear alguns outros campos, clique em **+ Novo tipo de campo** seguido de **Adicionar novo campo** e adicionar campos para este mapeamento
 
-| origem | destino |
+| origem | target |
 |---|---|
 | resource.info.pagename | web.webPageDetails.name |
 | carimbo de data e hora | carimbo de data e hora |
@@ -169,8 +169,6 @@ O carregamento dos dados pode levar alguns minutos. Quando for bem-sucedido, voc
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para [Assimilação de dados](./data-ingestion.md){target="_blank"}
 

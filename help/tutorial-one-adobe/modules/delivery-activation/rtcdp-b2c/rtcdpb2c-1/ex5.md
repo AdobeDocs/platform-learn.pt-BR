@@ -4,10 +4,10 @@ description: Veja seu Perfil de cliente em tempo real em ação na central de at
 kt: 5342
 doc-type: tutorial
 exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
@@ -57,8 +57,6 @@ Agora você verá as informações que seriam exibidas na central de atendimento
 ![Demonstração](./images/20.png)
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para [Perfil de cliente em tempo real](./real-time-customer-profile.md){target="_blank"}
 

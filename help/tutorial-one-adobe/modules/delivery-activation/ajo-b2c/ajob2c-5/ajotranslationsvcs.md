@@ -4,9 +4,9 @@ description: Serviços de tradução da Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -35,10 +35,6 @@ Neste exercício, você configurará seu Provedor de traduções usando o Micros
 [3.5.3 Adicionar idiomas ao email](./ex3.md)
 
 Neste exercício, você adicionará idiomas ao email na campanha.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

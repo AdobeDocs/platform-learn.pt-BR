@@ -4,9 +4,9 @@ description: Instale e configure o Kafka Connect e o Adobe Experience Platform S
 kt: 5342
 doc-type: tutorial
 exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,7 @@ Você verá isso. Clique no botão azul **Enviar**, após o qual você deverá v
 
 ![Kafka](./images/kc11.png)
 
-Para criar um conector, clique para abrir a segunda solicitação na coleção Kafka, **PÓS Criar Conector de Coletor AEP** e vá para **Corpo**. Você verá isso. Na linha 11, onde diz **&quot;aep.endpoint&quot;: &quot;&quot;**, é necessário colar na URL do ponto de extremidade de transmissão da API HTTP recebida ao final de um dos exercícios anteriores. A URL do ponto de extremidade de Streaming da API HTTP tem esta aparência: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
+Para criar um conector, clique para abrir a segunda solicitação na coleção Kafka, **PÓS Criar Conector do Coletor do AEP** e vá para **Corpo**. Você verá isso. Na linha 11, onde diz **&quot;aep.endpoint&quot;: &quot;&quot;**, é necessário colar na URL do ponto de extremidade de transmissão da API HTTP recebida ao final de um dos exercícios anteriores. A URL do ponto de extremidade de Streaming da API HTTP tem esta aparência: `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`.
 
 ![Kafka](./images/kc12a.png)
 
@@ -232,8 +232,6 @@ Em seguida, volte para o site de demonstração e atualize a página. Agora voc�
 Você concluiu este exercício.
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para [Transmitir dados do Apache Kafka para o Adobe Experience Platform](./aep-apache-kafka.md){target="_blank"}
 

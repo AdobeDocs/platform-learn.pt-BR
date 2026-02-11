@@ -4,9 +4,9 @@ description: Atualizar a ID de configuração e testar a Jornada
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '629'
 ht-degree: 1%
 
 ---
@@ -122,8 +122,6 @@ Você também verá a entrada da jornada e o progresso pela jornada no painel da
 ![Iniciar Instalação](./images/emaildash.png)
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para [Adobe Journey Optimizer: Orquestração](./journey-orchestration-create-account.md){target="_blank"}
 

@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f427235f-a7ee-49fb-af46-c0e8baf47789
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -58,10 +58,6 @@ Use o público-alvo criado para configurar uma Atividade de direcionamento de ex
 [2.3.6 SDK de destinos](./ex6.md)
 
 Configure seu próprio destino usando o Destinations SDK.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,9 +4,9 @@ description: Neste módulo, você aprenderá a configurar seu próprio cluster d
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -49,10 +49,6 @@ Neste exercício, você configurará um Conector HTTP API Source no Adobe Experi
 [2.6.4 Instale e configure o Kafka Connect e o Conector do dissipador do Adobe Experience Platform](./ex4.md)
 
 Neste exercício, você usará o Kafka Connect para instalar e usar o Adobe Experience Platform Sink Connector e enviará eventos para o Adobe Experience Platform manualmente.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

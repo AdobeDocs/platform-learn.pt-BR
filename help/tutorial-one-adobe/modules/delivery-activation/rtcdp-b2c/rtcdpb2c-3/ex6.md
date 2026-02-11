@@ -4,9 +4,9 @@ description: Real-time CDP - Destinos SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1131'
+source-wordcount: '1126'
 ht-degree: 5%
 
 ---
@@ -35,7 +35,7 @@ Para este exercício, será necessário configurar um endpoint para que, quando 
 
 Clique em **copiar** para copiar a url. Você precisará especificar esse url no próximo exercício. A URL neste exemplo é `https://eodts05snjmjz67.m.pipedream.net`.
 
-![Assimilação de dados](./images/webhook1.png)
+![Ingestão de dados](./images/webhook1.png)
 
 Quanto ao formato, usaremos um modelo padrão que transmitirá as qualificações ou não qualificações do público-alvo junto com metadados como identificadores de clientes. Os modelos podem ser personalizados para atender às expectativas de endpoints específicos, mas neste exercício reutilizaremos um modelo padrão, o que resultará em uma carga como essa que será transmitida para o endpoint.
 
@@ -72,15 +72,15 @@ Para fazer isso, abra o aplicativo Postman e vá para **API de Criação de Dest
 
 Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}**.
 
-![Assimilação de dados](./images/sdkpm1.png)
+![Ingestão de dados](./images/sdkpm1.png)
 
 Substituir por `--aepSandboxName--`.
 
-![Assimilação de dados](./images/sdkpm2.png)
+![Ingestão de dados](./images/sdkpm2.png)
 
 Em seguida, vá para **Corpo**. selecione o espaço reservado **{{body}}**.
 
-![Assimilação de dados](./images/sdkpm3.png)
+![Ingestão de dados](./images/sdkpm3.png)
 
 Agora é necessário substituir o espaço reservado **{{body}}** pelo código abaixo:
 
@@ -107,11 +107,11 @@ Agora é necessário substituir o espaço reservado **{{body}}** pelo código ab
 
 Depois de colar o código acima, você precisa atualizar manualmente o campo **urlBasedDestination.url.value** e defini-lo para a url do webhook criado na etapa anterior, que era `https://eodts05snjmjz67.m.pipedream.net` neste exemplo.
 
-![Assimilação de dados](./images/sdkpm4.png)
+![Ingestão de dados](./images/sdkpm4.png)
 
 Depois de atualizar o campo **urlBasedDestination.url.value**, ele deve ficar assim. Clique em **Enviar**.
 
-![Assimilação de dados](./images/sdkpm5.png)
+![Ingestão de dados](./images/sdkpm5.png)
 
 >[!NOTE]
 >
@@ -120,17 +120,17 @@ Depois de atualizar o campo **urlBasedDestination.url.value**, ele deve ficar as
 Depois de clicar em **Enviar**, seu modelo de servidor será criado e, como parte da resposta, você verá um campo chamado **instanceId**. Anote-o, como você precisará dele na próxima etapa. Neste exemplo, a **instanceId** é
 `52482c90-8a1e-42fc-b729-7f0252e5cebd`.
 
-![Assimilação de dados](./images/sdkpm6.png)
+![Ingestão de dados](./images/sdkpm6.png)
 
 ## Criar sua configuração de destino
 
 No Postman, em **API de Criação de Destino**, vá para **Configurações de destino** e clique para abrir a solicitação **POST - Criar uma configuração de destino**. Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}** e substitua-o por `--aepSandboxName--`.
 
-![Assimilação de dados](./images/sdkpm7.png)
+![Ingestão de dados](./images/sdkpm7.png)
 
 Em seguida, vá para **Corpo**. selecione o espaço reservado **{{body}}**.
 
-![Assimilação de dados](./images/sdkpm9.png)
+![Ingestão de dados](./images/sdkpm9.png)
 
 Agora é necessário substituir o espaço reservado **{{body}}** pelo código abaixo:
 
@@ -160,7 +160,7 @@ Agora é necessário substituir o espaço reservado **{{body}}** pelo código ab
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=pt-BR",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
@@ -197,63 +197,63 @@ Agora é necessário substituir o espaço reservado **{{body}}** pelo código ab
 }
 ```
 
-![Assimilação de dados](./images/sdkpm11.png)
+![Ingestão de dados](./images/sdkpm11.png)
 
 Depois de colar o código acima, é necessário atualizar manualmente o campo **destinationDelivery. destinationServerId**, e você precisa defini-lo como **instanceId** do modelo de servidor de destino que você criou na etapa anterior, que era `52482c90-8a1e-42fc-b729-7f0252e5cebd` neste exemplo. Em seguida, clique em **Enviar**.
 
-![Assimilação de dados](./images/sdkpm10.png)
+![Ingestão de dados](./images/sdkpm10.png)
 
 Você verá essa resposta.
 
-![Assimilação de dados](./images/sdkpm12.png)
+![Ingestão de dados](./images/sdkpm12.png)
 
 Seu destino foi criado no Adobe Experience Platform. Vamos lá verificar.
 
 Ir para [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a [!UICONTROL sandbox] apropriada, você verá a alteração da tela e agora estará na [!UICONTROL sandbox] dedicada.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 No menu esquerdo, vá para **Destinos**, clique em **Catálogo** e role para baixo até a categoria **Streaming**. Você verá seu destino disponível lá agora.
 
-![Assimilação de dados](./images/destsdk1.png)
+![Ingestão de dados](./images/destsdk1.png)
 
 ## Vincular o público ao destino
 
 Em **Destinos** > **Catálogo**, clique em **Configurar** no seu destino para começar a adicionar públicos ao novo destino.
 
-![Assimilação de dados](./images/destsdk2.png)
+![Ingestão de dados](./images/destsdk2.png)
 
 Insira um valor aleatório para o **token do portador**, como **1234**. Clique em **Conectar ao destino**.
 
-![Assimilação de dados](./images/destsdk3.png)
+![Ingestão de dados](./images/destsdk3.png)
 
 Você verá isso. Como um nome para o seu destino, use `--aepUserLdap-- - Webhook`. Selecione um endpoint de escolha, neste exemplo **EU**. Clique em **Next**.
 
-![Assimilação de dados](./images/destsdk4.png)
+![Ingestão de dados](./images/destsdk4.png)
 
 Opcionalmente, é possível selecionar uma política de governança de dados. Clique em **Next**.
 
-![Assimilação de dados](./images/destsdk5.png)
+![Ingestão de dados](./images/destsdk5.png)
 
 Selecione o público-alvo criado anteriormente, chamado `--aepUserLdap-- - Interest in Galaxy S24`. Clique em **Next**.
 
-![Assimilação de dados](./images/destsdk6.png)
+![Ingestão de dados](./images/destsdk6.png)
 
 Você verá isso. Mapeie o **CAMPO DO SOURCE** `--aepTenantId--.identification.core.ecid` para o campo `Identity: ecid`. Clique em **Next**.
 
-![Assimilação de dados](./images/destsdk7.png)
+![Ingestão de dados](./images/destsdk7.png)
 
 Clique em **Concluir**.
 
-![Assimilação de dados](./images/destsdk8.png)
+![Ingestão de dados](./images/destsdk8.png)
 
 Seu destino agora está ativo, as novas qualificações de público-alvo serão transmitidas para seu webhook personalizado agora.
 
-![Assimilação de dados](./images/destsdk9.png)
+![Ingestão de dados](./images/destsdk9.png)
 
 ## Testar a ativação do público
 
@@ -284,23 +284,21 @@ Em seguida, você verá seu site carregado em uma janela incógnita do navegador
 Neste exemplo, você deseja responder a um cliente específico que exibe um produto específico.
 Na página inicial do **Citi Signal**, vá para **Telefones e dispositivos** e clique no produto **Galaxy S24**.
 
-![Assimilação de dados](./images/homegalaxy.png)
+![Ingestão de dados](./images/homegalaxy.png)
 
 A página do produto do Galaxy S24 foi visualizada, portanto, seu público se qualificará para o seu perfil nos minutos seguintes.
 
-![Assimilação de dados](./images/homegalaxy1.png)
+![Ingestão de dados](./images/homegalaxy1.png)
 
 Ao abrir o Visualizador de Perfis e acessar **Públicos-alvo**, você verá o público-alvo qualificado.
 
-![Assimilação de dados](./images/homegalaxydsdk.png)
+![Ingestão de dados](./images/homegalaxydsdk.png)
 
 Agora volte para o webhook aberto em [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net), em que você deve ver uma nova solicitação de entrada, originada no Adobe Experience Platform e que contém o evento de qualificação de público-alvo.
 
-![Assimilação de dados](./images/destsdk10.png)
+![Ingestão de dados](./images/destsdk10.png)
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para a [CDP em tempo real - Criar um público-alvo e executar ações](./real-time-cdp-build-a-segment-take-action.md){target="_blank"}
 

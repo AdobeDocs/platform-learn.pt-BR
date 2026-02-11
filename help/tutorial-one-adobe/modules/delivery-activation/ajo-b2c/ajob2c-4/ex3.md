@@ -4,9 +4,9 @@ description: Este exercício explica como usar a personalização de segmentos e
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -49,11 +49,11 @@ Você verá isso.
 
 ![Journey Optimizer](./images/sbp5.png)
 
-Abra o **Content Components** e arraste uma **coluna 1:1** acima da oferta do AirPods.
+Abra o **Content Components** e arraste uma **1:1 coluna** acima da oferta do AirPods.
 
 ![Journey Optimizer](./images/sbp6.png)
 
-Arraste e solte um componente **Texto** nessa coluna 1:1.
+Arraste e solte um componente **Texto** nessa coluna :1.
 
 ![Journey Optimizer](./images/sbp6a.png)
 
@@ -71,12 +71,12 @@ Selecione o segmento `--aepUserLdap-- - Interest in Plans` e clique no ícone **
 
 Em seguida, você deve deixar a primeira linha como está e substituir as linhas 2 e 3 por este código:
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 Então você terá isto. Clique em **Salvar**.
 
@@ -107,8 +107,6 @@ Se você se qualificar para o segmento que foi usado, verá isso no email que re
 Você concluiu este exercício.
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para [Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

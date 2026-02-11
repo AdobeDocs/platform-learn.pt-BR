@@ -4,9 +4,9 @@ description: Foundation - Configuração da coleta de dados do Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: 8c613648-9007-49fb-898f-039c366297da
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Este módulo apresenta alguns conceitos e tecnologias que têm um impacto além 
 - Saiba mais sobre os fluxos de dados usados por uma marca para assimilar dados para seus produtos da Adobe.
 - Saiba como enviar dados para a Adobe Experience Platform e outros produtos por meio do Adobe Experience Platform Edge Network.
 - Saiba como criar Elementos de dados e Regras que coletam dados da Web e de dispositivos móveis.
-- Saiba mais sobre os eventos de rastreamento do [Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home) e como depurar seu conteúdo.
+- Saiba mais sobre os eventos de rastreamento do [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) e como depurar seu conteúdo.
 - Saiba o que é uma camada de dados e o que a Adobe recomenda ao implementar uma.
-- Saiba quais são as etapas para implementar o [Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/web-sdk/home) do zero.
+- Saiba quais são as etapas para implementar o [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) do zero.
 - Saiba mais sobre a diferença entre uma implementação da Web e móvel.
 
 ## Pré-requisitos
@@ -67,10 +67,6 @@ Neste exercício, configure uma atividade no Adobe Target, implementada por meio
 [Requisitos do esquema XDM do 1.1.7 no Adobe Experience Platform](./ex7.md)
 
 Para garantir que o Web SDK possa assimilar dados na Adobe Experience Platform, há um requisito para que um mixin XDM específico faça parte do esquema XDM no Adobe Experience Platform.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

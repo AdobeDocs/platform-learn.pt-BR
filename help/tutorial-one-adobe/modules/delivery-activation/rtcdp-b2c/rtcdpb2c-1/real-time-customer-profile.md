@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,6 @@ Neste exercício, você criará um segmento usando o Construtor de segmentos da 
 [2.1.5 Veja seu Perfil de cliente em tempo real em ação na central de atendimento](./ex5.md)
 
 Neste exercício, você representará um funcionário da central de atendimento que recebe uma chamada de um cliente. Para realmente causar um impacto na experiência desse cliente, você precisará acessar todas as informações disponíveis em tempo real.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

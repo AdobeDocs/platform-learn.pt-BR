@@ -4,9 +4,9 @@ description: Foundation - FAC - Criar uma composição federada
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -19,11 +19,11 @@ Faça logon no Adobe Experience Platform acessando esta URL: [https://experience
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./../dc1.2/images/home.png)
+![Ingestão de dados](./../dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada `--aepSandboxName--`. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
-![Assimilação de dados](./../dc1.2/images/sb1.png)
+![Ingestão de dados](./../dc1.2/images/sb1.png)
 
 ## 1.3.3.1 Crie seu público
 
@@ -146,8 +146,6 @@ O público-alvo agora é preenchido e pode ser direcionado de dentro do ecossist
 ![FAC](./images/fedcomp22.png)
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para a [Composição de Público-Alvo Federado](./fac.md){target="_blank"}
 

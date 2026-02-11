@@ -4,9 +4,9 @@ description: Neste módulo, você aprenderá tudo o que há para saber sobre o J
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '240'
 ht-degree: 2%
 
 ---
@@ -44,10 +44,6 @@ Neste exercício, você configurará uma campanha de email tradicional.
 [3.4.3 Aplicar personalização baseada em segmentos em uma mensagem de email](./ex3.md)
 
 Neste exercício, você usará associações de segmento para definir qual conteúdo será exibido em um email.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

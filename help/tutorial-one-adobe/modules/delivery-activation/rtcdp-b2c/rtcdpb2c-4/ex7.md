@@ -1,21 +1,21 @@
 ---
-title: Audience Activation para o Hub de Eventos do Microsoft Azure - Ação
-description: Audience Activation para o Hub de Eventos do Microsoft Azure - Ação
+title: Audience Activation para o Hub de eventos do Microsoft Azure - Ação
+description: Audience Activation para o Hub de eventos do Microsoft Azure - Ação
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # 2.4.7 Cenário completo
 
-## Iniciar acionador do Hub de Eventos do Azure
+## Iniciar acionador do Hub de Eventos da Azure
 
-Para mostrar a carga enviada pela Adobe Experience Platform Real-time CDP para nosso Azure Event Hub na qualificação de público, precisamos iniciar nossa simples função de acionador do Azure Event Hub. Esta função irá &quot;despejar&quot; a carga para o console no Visual Studio Code. Mas lembre-se de que essa função pode ser estendida de qualquer maneira para fazer interface com todos os tipos de ambientes usando APIs e protocolos dedicados.
+Para mostrar o conteúdo enviado pela Adobe Experience Platform Real-time CDP ao nosso Azure Event Hub após a qualificação do público, precisamos iniciar nossa simples função de acionador do Azure Event Hub. Esta função irá &quot;despejar&quot; a carga para o console no Visual Studio Code. Mas lembre-se de que essa função pode ser estendida de qualquer maneira para fazer interface com todos os tipos de ambientes usando APIs e protocolos dedicados.
 
 ### Inicie o Visual Studio Code e inicie o projeto
 
@@ -110,8 +110,6 @@ Um status de público-alvo de **realizado** significa que seu perfil faz parte d
 
 ## Próximas etapas
 
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
-
-Voltar para [Real-Time CDP: Audience Activation para o Hub de Eventos do Microsoft Azure](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+Voltar para [Real-Time CDP: Audience Activation para o Hub de Eventos da Microsoft Azure](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 Voltar para [Todos os módulos](./../../../../overview.md){target="_blank"}

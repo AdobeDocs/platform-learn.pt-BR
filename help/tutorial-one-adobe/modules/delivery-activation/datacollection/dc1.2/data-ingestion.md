@@ -4,9 +4,9 @@ description: Foundation - Assimilação de dados
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -54,11 +54,7 @@ Neste exercício, você estará no site e no aplicativo móvel e se comportará 
 
 [1.2.5 Zona de aterrissagem de dados](./ex5.md)
 
-Configure seu conector de Source da Zona de aterrissagem de dados com o armazenamento do Azure Blob.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
+Configure seu conector do Source da Data Landing Zone com o armazenamento do Azure Blob.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

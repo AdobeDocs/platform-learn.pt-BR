@@ -4,9 +4,9 @@ description: Encaminhar eventos para o ecossistema do AWS
 kt: 5342
 doc-type: tutorial
 exl-id: 9b5f1466-d173-40a0-beed-d4e859e64e40
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1566'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 ## É bom saber
 
 O Adobe Experience Platform oferece suporte a vários serviços da Amazon como destino.
-Kinesis e S3 são [destinos de exportação de perfil](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=pt-BR) e podem ser usados como parte do Real-Time CDP da Adobe Experience Platform.
+Kinesis e S3 são [destinos de exportação de perfil](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) e podem ser usados como parte do Real-Time CDP da Adobe Experience Platform.
 Você pode alimentar facilmente eventos de segmento de alto valor e atributos de perfil associados em seus sistemas de escolha.
 
 Neste exercício, você aprenderá a configurar seu próprio fluxo do Amazon Kinesis para transmitir dados do evento provenientes do ecossistema do Adobe Experience Platform Edge para um destino de armazenamento na nuvem, como o Amazon S3. Isso é útil caso você queira coletar eventos de experiência de propriedades da Web e de dispositivos móveis e enviá-los para o seu datalake para análise e relatórios operacionais. As soluções de dados geralmente assimilam dados em lote com grandes importações diárias de arquivos. Elas não expõem o endpoint http público que pode ser usado em conjunto com o encaminhamento de eventos.
@@ -344,8 +344,6 @@ Ao baixar esse arquivo e abri-lo usando um editor de texto, você verá que ele 
 >Assim que a configuração estiver funcionando como esperado, não se esqueça de desligar seu AWS Kinesis Data Stream e Data Firehose para evitar ser cobrado!
 
 ## Próximas etapas
-
-Ir para [Resumo e benefícios](./summary.md){target="_blank"}
 
 Voltar para [Conexões do Real-Time CDP: Encaminhamento de Eventos](./aep-data-collection-ssf.md){target="_blank"}
 

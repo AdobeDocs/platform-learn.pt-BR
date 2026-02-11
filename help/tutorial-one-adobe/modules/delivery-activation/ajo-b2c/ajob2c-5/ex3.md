@@ -4,9 +4,9 @@ description: Serviços de tradução da AJO
 kt: 5342
 doc-type: tutorial
 exl-id: fff315ce-88d2-407f-b8c4-c24517688e60
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -88,8 +88,6 @@ Certifique-se de que sua campanha esteja no estado **Parada**.
 Você terminou este exercício agora.
 
 ## Próximas etapas
-
-Ir para [Resumo e Benefícios](./summary.md)
 
 Voltar para [Adobe Journey Optimizer: Serviços de Tradução](./ajotranslationsvcs.md){target="_blank"}
 

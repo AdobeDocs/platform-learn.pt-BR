@@ -4,9 +4,9 @@ description: Neste módulo, você usará os conjuntos de dados, esquemas e a pro
 kt: 5342
 doc-type: tutorial
 exl-id: dbf5e995-9c2e-4f72-b336-e942cb22cde5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,6 @@ Neste exercício, você criará e configurará uma Google Cloud Function e come�
 [2.5.5 Encaminhar eventos para o AWS Kinesis e o AWS S3](./ex5.md)
 
 Neste exercício, você configurará o ambiente do AWS usando o AWS IAM, o AWS Kinesis, o AWS Firehose e o AWS S3; depois disso, iniciará o encaminhamento dos dados do evento coletados pelo Web SDK.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

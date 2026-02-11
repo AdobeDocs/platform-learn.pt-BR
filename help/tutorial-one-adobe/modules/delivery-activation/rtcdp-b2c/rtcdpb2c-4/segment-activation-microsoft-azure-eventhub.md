@@ -1,19 +1,19 @@
 ---
-title: Audience Activation para o Hub de Eventos do Microsoft Azure
-description: Audience Activation para o Hub de Eventos do Microsoft Azure
+title: Audience Activation para o Hub de eventos do Microsoft Azure
+description: Audience Activation para o Hub de eventos do Microsoft Azure
 kt: 5342
 doc-type: tutorial
 exl-id: c1f5566d-0f57-4554-95ee-950d66373716
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # 2.4 Real-Time CDP: Audience Activation para o Hub de eventos do Microsoft Azure
 
-Neste módulo, você configurará um destino do Microsoft Azure EventHub como destino em tempo real para a CDP em tempo real do Adobe Experience Platform. Você também configurará e implantará uma função do Azure que será acionada em tempo real sempre que a Adobe Experience Platform fornecer uma carga de público-alvo para seu destino do Azure EventHub. A Azure Function que você acionará mostrará o mecanismo dos recursos de ativação da Adobe Experience Platform Real-time CDP.
+Neste módulo, você configurará um destino do Microsoft Azure EventHub como destino em tempo real para a CDP em tempo real do Adobe Experience Platform. Você também configurará e implantará uma função do Azure que será acionada em tempo real sempre que o Adobe Experience Platform fornecer uma carga de público-alvo para seu destino do Azure EventHub. A função do Azure que você acionará mostrará o mecanismo dos recursos de ativação da Adobe Experience Platform Real-time CDP.
 
 Como parte desse módulo, você também compreenderá o que aciona a Real-time CDP para realmente fornecer uma carga útil a um destino especificado. Também discutiremos o status de uma qualificação de público-alvo e como ela está relacionada à ativação.
 
@@ -24,10 +24,10 @@ Os Hubs de eventos do Microsoft Azure são um serviço de assimilação de dados
 ## Objetivos de aprendizagem
 
 - Familiarize-se com os Hubs de Eventos do Microsoft Azure
-- Configure um destino RTCDP para seu Hub de Eventos do Microsoft Azure
+- Configurar um destino do RTCDP para o seu Hub de eventos do Microsoft Azure
 - Entenda quando a Real-time CDP é ativada e como é a carga de ativação
-- Configure o Visual Studio Code para desenvolver, testar e implantar seu projeto do Azure
-- Criar e implantar uma função do Azure que consuma qualificações de público-alvo entregues em tempo real pela RTCDP
+- Configurar o Visual Studio Code para desenvolver, testar e implantar seu projeto do Azure
+- Criar e implantar uma função do Azure que consuma qualificações de público-alvo fornecidas em tempo real pela RTCDP
 
 ## Pré-requisitos
 
@@ -42,11 +42,11 @@ Os Hubs de eventos do Microsoft Azure são um serviço de assimilação de dados
 
 [2.4.1 Configurar o ambiente](./ex1.md)
 
-Neste exercício, você configurará seu ambiente do Microsoft Azure.
+Neste exercício, você configurará seu ambiente Microsoft Azure.
 
 [2.4.2 Configurar o ambiente do Microsoft Azure EventHub](./ex2.md)
 
-Neste exercício, você configurará seu ambiente do Microsoft Azure EventHub.
+Neste exercício, você configurará seu ambiente Microsoft Azure EventHub.
 
 [2.4.3 Configurar o destino do Hub de eventos do Azure no Adobe Experience Platform](./ex3.md)
 
@@ -66,11 +66,7 @@ Neste exercício, você criará uma função do Azure que será acionada em temp
 
 [2.4.7 Cenário completo](./ex7.md)
 
-Neste ponto, tudo está configurado. Agora você pode navegar pelo site de demonstração e obter qualificações de público-alvo entregues à função de Acionador do Hub de Eventos do Microsoft Azure.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
+Neste ponto, tudo está configurado. Agora você pode navegar pelo site de demonstração e obter qualificações de público-alvo para a função de Acionador do Hub de Eventos da Microsoft Azure.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,9 +4,9 @@ description: Coleção de dados - Composição de público-alvo federado
 kt: 5342
 doc-type: tutorial
 exl-id: a2449e72-794a-4ff0-a208-28303fd574d1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -42,15 +42,11 @@ Neste exercício, você configurará sua conta de avaliação do Snowflake e a c
 
 [1.3.2 Criar esquemas, modelo de dados e links](./ex2.md)
 
-Neste exercício, você configurará seu modelo de dados na AEP para os dados federados.
+Neste exercício, você configurará seu modelo de dados no AEP para os dados federados.
 
 [1.3.3 Criar uma composição federada](./ex3.md)
 
-Neste exercício, você configurará seu modelo de dados na AEP para os dados federados.
-
-[Resumo e benefícios](./summary.md)
-
-Resumo desse módulo e visão geral dos benefícios.
+Neste exercício, você configurará seu modelo de dados no AEP para os dados federados.
 
 ![Informantes técnicos](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
