@@ -3,7 +3,7 @@ title: Visão geral Laboratórios técnicos de IA do Agentic
 description: Visão geral Laboratórios técnicos de IA do Agentic
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Neste exercício, você aprenderá a:
 
 **Meta**
 
-Neste módulo, você usará ferramentas inteligentes de desenvolvedor, como o Cursor.ai, para desenvolver uma extensão para seu ambiente do Adobe Commerce as a Cloud Service. O objetivo dessa extensão é encaminhar eventos de pedido recebidos para um endpoint de terceiros. O encaminhamento de eventos no Adobe Commerce as a Cloud Service depende do Adobe I/O App Builder, Adobe I/O Events e Adobe I/O Runtime. A configuração de todos esses serviços será assistida por Cursor.ai.
+Neste módulo, você usará ferramentas inteligentes de desenvolvedor, como o Cursor, para desenvolver uma extensão para seu ambiente do Adobe Commerce as a Cloud Service. O objetivo dessa extensão é encaminhar eventos de pedido recebidos para um endpoint de terceiros. O encaminhamento de eventos no Adobe Commerce as a Cloud Service depende do Adobe I/O App Builder, Adobe I/O Events e Adobe I/O Runtime. A configuração de todos esses serviços será assistida pelo Cursor.
 
 ![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
