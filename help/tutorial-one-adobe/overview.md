@@ -3,9 +3,9 @@ title: Visão geral - Tutorial técnico abrangente - Uma Adobe
 description: Tutorial técnico completo - Uma Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -94,9 +94,9 @@ Neste módulo, você usará o Adobe Frame.io em combinação com o Adobe Premier
 
 Neste módulo, você criará um aplicativo personalizado para estender a capacidade no GenStudio for Performance Marketing, usando o Adobe IO e o App Builder.
 
-[1.7 Construtor de Fluxo de Trabalho](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[1.7 Fluxos de trabalho personalizados do Firefly](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-Neste módulo, você usará o Workflow Builder para resolver casos de uso de design criativo e automação repetíveis.
+Neste módulo, você usará Fluxos de trabalho personalizados no Firefly para resolver casos de uso de design criativo e automação repetíveis.
 
 [1.8 Revisão e aprovação unificadas com Workfront, Frame.io e Gerenciamento de armazenamento corporativo](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
