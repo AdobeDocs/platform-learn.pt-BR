@@ -4,7 +4,7 @@ description: Foundation - Configuração da coleção de dados do Adobe Experien
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
+source-git-commit: f9aab1a556e1d58a3f76f0ca877ecbd5f5e6e12f
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 2%
@@ -22,7 +22,7 @@ A Coleção de dados da Adobe Experience Platform é usada pelas marcas para vá
 - Permitir testes e gerenciamento do ciclo de vida.
 - Insira tags personalizadas do JavaScript e de terceiros, todas gerenciadas em um único local.
 
-## Explorar a interface
+## Explore a interface
 
 Vá para [Coleção de dados do Adobe Experience Platform](https://experience.adobe.com/#/data-collection/). Verifique se você está usando o ambiente correto, que deveria ser `--aepImsOrgName--`.
 
@@ -63,8 +63,8 @@ Algumas leituras adicionais para os interessados em entender melhor a Coleção 
 
 - [Guia do Usuário da Coleção de Dados da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)
 - [Tutorial Implementar a Adobe Experience Cloud com o SDK da web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR)
-- [Configurar permissões de usuário](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR)
-- [Documentação da API](https://developer.adobelaunch.com/api/)
+- [Configurar permissões de usuário](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [Documentação da API](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
 
 ## Próximas etapas
 
