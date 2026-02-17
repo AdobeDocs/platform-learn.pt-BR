@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
+source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Manteremos a interface do usuário para esta lição, mas também existem opçõ
 **Os Arquitetos de Dados** precisarão criar políticas de mesclagem fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre políticas de mesclagem:
->[!VIDEO](https://video.tv.adobe.com/v/3413365?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Permissões necessárias
 
@@ -83,7 +83,7 @@ Vamos ver se a política de mesclagem está fazendo o que esperaríamos:
 1. Vá para a guia **[!UICONTROL Procurar]**
 1. Altere a **[!UICONTROL política de mesclagem]** para sua nova política `Loyalty Prioritized`
 1. Como o **[!UICONTROL Namespace de identidade]**, use seu `Luma CRM Id`
-1. Como o **[!UICONTROL Valor de identidade]** usa `b642b4217b34b1e8d3bd915fc65c4452`
+1. Como o **[!UICONTROL Valor de identidade]** usa `f660ab912ec121d1b1e928a0bb4bc61b`
 1. Selecione o botão **[!UICONTROL Mostrar perfil]**
 1. `Daniel` voltou!
 
@@ -110,7 +110,7 @@ Agora vamos ver o que essa política de mesclagem faz:
 1. Vá para a guia **[!UICONTROL Procurar]**
 1. Altere a **[!UICONTROL política de mesclagem]** para sua nova política `Loyalty Only`
 1. Como o **[!UICONTROL Namespace de identidade]**, use seu `Luma CRM Id`
-1. Como o **[!UICONTROL Valor de identidade]** usa `b642b4217b34b1e8d3bd915fc65c4452`
+1. Como o **[!UICONTROL Valor de identidade]** usa `f660ab912ec121d1b1e928a0bb4bc61b`
 1. Selecione o botão **[!UICONTROL Mostrar perfil]**
 1. Confirme se nenhum perfil foi encontrado:
    ![Somente Fidelidade sem pesquisa de ID do CRM.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ Um caso de uso importante para políticas de mesclagem é o para governança de 
 
 ## Recursos adicionais
 
-* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=pt-BR)
+* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Referência da API de Políticas de Mesclagem (parte da API de Perfil do Cliente em Tempo Real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Agora vamos seguir para a [estrutura de governança de dados](apply-data-governance-framework.md).
