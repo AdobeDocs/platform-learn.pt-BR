@@ -184,7 +184,7 @@ Agora criaremos uma regra para enviar dados para a Platform. Uma regra é uma co
 1. Atribua um nome à regra `All Pages - Library Loaded`
 1. Em **[!UICONTROL Eventos]**, selecione o botão **[!UICONTROL Adicionar]**
    ![Nomear a regra e adicionar um evento](assets/websdk-property-nameRule.png)
-1. Use a **[!UICONTROL Extensão de]****[!UICONTROL do {Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
+1. Use a **[!UICONTROL Extensão de]**&#x200B;**[!UICONTROL do &lbrace;Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
 1. Selecione **[!UICONTROL Manter alterações]** para retornar à tela de regra principal
    ![Adicionar o evento de biblioteca carregada](assets/websdk-property-addEvent.png)
 1. Deixe **[!UICONTROL Condições]** em branco, pois queremos que esta regra seja acionada em todas as páginas, de acordo com o nome que demos a ela
