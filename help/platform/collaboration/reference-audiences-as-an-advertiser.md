@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Públicos-alvo da Source como anunciante no Real-Time CDP Collaboration
 
-Como anunciante, saiba como fornecer públicos-alvo, trazendo-os para sua interface para que possam ser usados conforme você colabora com parceiros. Para obter a documentação detalhada, consulte [origem e gerenciar públicos-alvo](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/source-audiences/onboard-audiences){target="_blank"}.
+Como anunciante, saiba como fornecer públicos-alvo, trazendo-os para sua interface para que possam ser usados conforme você colabora com parceiros. Para obter a documentação detalhada, consulte [origem e gerenciar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/real-time-cdp-collaboration/using/setup/source-audiences/onboard-audiences){target="_blank"}.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)
