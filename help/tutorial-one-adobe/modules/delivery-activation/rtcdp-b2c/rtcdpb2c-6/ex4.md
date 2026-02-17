@@ -4,7 +4,7 @@ description: Instale e configure o Kafka Connect e o Adobe Experience Platform S
 kt: 5342
 doc-type: tutorial
 exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 38a5f35d337a67b5abe4b9c97319bc3d5d0897c7
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -198,7 +198,7 @@ Você deve ter algo assim:
 
 ![Kafka](./images/kc21.png)
 
-Em seguida, copie o evento de experiência completa para a área de transferência. O espaço em branco da carga JSON precisa ser removido e uma ferramenta online será usada para fazer isso. Vá para [http://jsonviewer.stack.hu/](http://jsonviewer.stack.hu/) para fazer isso.
+Em seguida, copie o evento de experiência completa para a área de transferência. O espaço em branco da carga JSON precisa ser removido e uma ferramenta online será usada para fazer isso. Vá para [https://jsonviewer.stack.hu/](https://jsonviewer.stack.hu/) para fazer isso.
 
 Cole o evento de experiência no editor e clique em **Remover espaço em branco**.
 
