@@ -4,9 +4,9 @@ description: Campanhas do Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 2e4808654f285b21ea2dcc4570ea879b98a772b0
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '211'
 ht-degree: 4%
 
 ---
@@ -33,6 +33,12 @@ O Adobe Journey Optimizer Campaign Orchestration vem com um esquema XDM relacion
 ## Pré-requisitos
 
 - Acesso às Campanhas Orquestradas da Adobe Journey Optimizer
+
+## Vídeo
+
+Neste vídeo, você receberá uma explicação e uma demonstração de todas as etapas envolvidas neste exercício.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479938?quality=12&learn=on)
 
 ## Exercícios
 
