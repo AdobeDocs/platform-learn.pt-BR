@@ -63,8 +63,8 @@ Algumas leituras adicionais para os interessados em entender melhor a Coleção 
 
 - [Guia do Usuário da Coleção de Dados da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)
 - [Tutorial Implementar a Adobe Experience Cloud com o SDK da web](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=pt-BR)
-- [Configurar permissões de usuário](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
-- [Documentação da API](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
+- [Configurar permissões de usuário](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=pt-BR)
+- [Documentação da API](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/api/overview)
 
 ## Próximas etapas
 
