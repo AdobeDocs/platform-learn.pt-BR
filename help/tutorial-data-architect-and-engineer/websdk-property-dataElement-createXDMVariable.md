@@ -35,9 +35,9 @@ Há duas tarefas principais: coleta de dados
 
 Antes de começar os exercícios, assista a estes dois pequenos vídeos para saber mais sobre a assimilação de dados por transmissão e o Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31683?captions=por_br&learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37265?captions=por_br&learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ O Experience Platform Debugger é uma extensão disponível para o Chrome que aj
 
 Se você nunca usou o Debugger antes, assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36163?captions=por_br&learn=on&enablevpops)
 
 ### Abra o site Luma
 
