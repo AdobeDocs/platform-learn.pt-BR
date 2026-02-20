@@ -4,18 +4,28 @@ description: Adobe Experience Manager e agentes
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
+source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 8%
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
 
 # 1.6 Adobe Experience Manager e agentes
 
+O Adobe Experience Manager agora inclui vários agentes sob medida, cada um projetado para assumir o trabalho que, historicamente, exigia muito esforço manual. Não são assistentes de IA genéricos, mas agentes treinados em domínio que entendem o AEM profundamente e operam em conteúdo, código, ativos, governança e otimização.
+
+- **Experience Production Agent**, que acelera atualizações, alterações de conteúdo e até mesmo migrações completas de site.
+- **Agente de governança**, aplica regras de marca, direitos e conformidade automaticamente.
+- O **Discovery Agent** prepara o conteúdo para a descoberta nativa de IA e atua como um estrategista inteligente.
+- O **Agente de otimização de conteúdo** cria instantaneamente variações de ativos prontas para desempenho e específicas para canais.
+- O **Agente de Desenvolvimento** acelera os desenvolvedores com a solução de problemas assistida por IA e o ajuste de desempenho.
+
+Juntos, esses agentes movem o AEM muito além dos recursos tradicionais do CMS para operações automatizadas de experiências. Cada um desses agentes é projetado com os humanos no controle, garantindo precisão, confiança e supervisão.
+
 ## Objetivos de aprendizagem
 
-A CONFIRMAR
+- Saiba como usar os vários agentes do AEM disponíveis
 
 ## Pré-requisitos
 
@@ -29,9 +39,9 @@ Neste vídeo, você receberá uma explicação e uma demonstração de todas as 
 
 ## Exercícios
 
-[1.6.1 Content Production Agent](./ex1.md){target="_blank"}
+[1.6.1 Introdução aos AEM Agents](./ex1.md){target="_blank"}
 
-A CONFIRMAR
+Neste exercício, você explorará o **Discovery Agent** e o **Experience Production Agent**.
 
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
