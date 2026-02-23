@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 1e20509f0005c6060764fa3f572acbd14fb76600
+source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '595'
 ht-degree: 10%
 
 ---
@@ -18,7 +18,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações | Investimento de tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Introdução &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
+| [0. Introdução ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
 
 ## Fluxo de trabalho e planejamento
 
@@ -47,6 +47,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 05/01/2025 | Sim | - | 1h 30min |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 08/20/2025 | Sim | - | 30min |
+| [1.3 Adobe Experience Manager Forms com Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"} | 02/23/2026 | Sim | - | 60 min |
 | [1.4 Adobe Experience Manager Assets e Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"} | 02/17/2026 | Sim | - | 1h30min |
 | [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 09/23/2025 | Sim | - | 1h30min |
 

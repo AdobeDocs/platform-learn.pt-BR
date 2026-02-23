@@ -1,22 +1,22 @@
 ---
-title: Ativação técnica do GenStudio para a cadeia de fornecimento de conteúdo
-description: Ativação técnica do GenStudio para a cadeia de fornecimento de conteúdo
+title: Ativação técnica do GenStudio for Content Supply chain
+description: Ativação técnica do GenStudio for Content Supply chain
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# Visão geral - Ativação técnica do GenStudio para a cadeia de fornecimento de conteúdo
+# Visão geral - Ativação técnica do GenStudio for Content Supply chain
 
 ![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Visão geral
 
-Se você estiver participando de um de nossos workshops ao vivo de capacitação técnica da GenStudio para a cadeia de fornecimento de conteúdo, este é o ponto de partida para os laboratórios de tecnologia que você vai realizar.
+Se você estiver participando de um de nossos workshops ao vivo sobre a capacitação técnica para o GenStudio for Content Supply chain, este é o ponto de partida para os laboratórios de tecnologia que você vai realizar.
 
 Nos Laboratórios técnicos, como parte desse workshop de capacitação técnica, você aprenderá de maneira prática sobre os seguintes aplicativos:
 
@@ -28,7 +28,7 @@ Nos Laboratórios técnicos, como parte desse workshop de capacitação técnica
 
 Os laboratórios de tecnologia que você participará fazem parte de um tutorial One Adobe mais amplo, em que você pode aprender ainda mais sobre as soluções amplas da Adobe Creative Cloud e da Adobe Experience Cloud. Se estiver interessado em ver o que está disponível, confira aqui: [Visão geral do tutorial do One Adobe](./overview.md)
 
-## Laboratórios técnicos do GenStudio para a cadeia de fornecimento de conteúdo
+## GenStudio para laboratórios técnicos de conteúdo da Supply chain
 
 Abaixo estão os Laboratórios técnicos que você participará como parte desse workshop de capacitação técnica.
 
