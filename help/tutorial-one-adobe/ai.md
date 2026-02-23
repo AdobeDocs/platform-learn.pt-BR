@@ -3,9 +3,9 @@ title: Visão geral Laboratórios técnicos de IA do Agentic
 description: Visão geral Laboratórios técnicos de IA do Agentic
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,20 @@ Neste exercício, você aprenderá a:
 
 - Conecte o ChatGPT e/ou o Claude.ai ao **Customer Journey Analytics** e execute as tarefas de análise de dados
 - Conecte o ChatGPT e/ou o Claude.ai ao **Adobe Analytics** e execute as tarefas de análise de dados
+
+[1.6 AEM e agentes](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**Meta**
+
+O Adobe Experience Manager agora inclui vários agentes sob medida, cada um projetado para assumir o trabalho que, historicamente, exigia muito esforço manual. Não são assistentes de IA genéricos, mas agentes treinados em domínio que entendem o AEM profundamente e operam em conteúdo, código, ativos, governança e otimização.
+
+- **Experience Production Agent**, que acelera atualizações, alterações de conteúdo e até mesmo migrações completas de site.
+- **Agente de governança**, aplica regras de marca, direitos e conformidade automaticamente.
+- O **Discovery Agent** prepara o conteúdo para a descoberta nativa de IA e atua como um estrategista inteligente.
+- O **Agente de otimização de conteúdo** cria instantaneamente variações de ativos prontas para desempenho e específicas para canais.
+- O **Agente de Desenvolvimento** acelera os desenvolvedores com a solução de problemas assistida por IA e o ajuste de desempenho.
+
+Neste exercício, você aprenderá a usar esses agentes usando o Assistente de IA e o Cursor por meio da configuração personalizada do servidor MCP.
 
 [1.7 Ferramentas de desenvolvedor inteligente para Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md)
 

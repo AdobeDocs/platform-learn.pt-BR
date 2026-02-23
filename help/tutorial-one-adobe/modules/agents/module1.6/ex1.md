@@ -4,9 +4,9 @@ description: Introdução aos agentes do AEM
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: c7108c2818ee7fad820af33b99f277181bcf6a02
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
-source-wordcount: '1674'
+source-wordcount: '1682'
 ht-degree: 1%
 
 ---
@@ -472,15 +472,15 @@ Ir para [https://experience.adobe.com/#/ai-assistant/chat](https://experience.ad
 Digite o prompt a seguir e clique em **enviar**.
 
 ```
-Create a new adaptive form using Edge Delivery Services with the following details:
+Create a new adaptive form using Edge Delivery Services and the existing CitiSignal site, with the following details:
 - Form name: "citisignal-fiber-max-interest-2"
 - Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
 - When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
 ```
 
-
-
 ## Próximas etapas
+
+Ir para [1.6.2 Servidores e Cursor MCP do AEM](./ex2.md){target="_blank"}
 
 Voltar para [AEM e Agentes](./aemagents.md){target="_blank"}
 
