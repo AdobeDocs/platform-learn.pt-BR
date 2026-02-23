@@ -4,9 +4,9 @@ description: Introdução aos agentes do AEM
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: abec60dbd2a67228fb5bbcedaadc7494e0057eda
+source-git-commit: c7108c2818ee7fad820af33b99f277181bcf6a02
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -461,7 +461,24 @@ Você deverá receber uma confirmação de que as alterações foram publicadas.
 
 ### Atualização de conteúdo - Criação do formulário
 
-A habilidade de Criação de formulários permite que os usuários criem formulários adaptáveis por meio de prompts de linguagem naturais, sem depender de equipes de desenvolvimento ou TI. Esse recurso acelera o desenvolvimento de formulários, mantendo a consistência da marca e permitindo que os usuários empresariais criem formulários sem um conhecimento técnico profundo do produto.
+No módulo [Adobe Experience Manager Forms com Edge Delivery Services](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} você pode encontrar as etapas envolvidas na criação de um formulário de forma manual.
+
+A habilidade de Criação de formulários agora permite que os usuários criem formulários adaptáveis por meio de prompts de linguagem naturais, sem depender de equipes de desenvolvimento ou TI. Esse recurso acelera o desenvolvimento de formulários, mantendo a consistência da marca e permitindo que os usuários empresariais criem formulários sem um conhecimento técnico profundo do produto.
+
+Ir para [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat).
+
+![Agentes da AEM](./images/aemagentsforms1.png)
+
+Digite o prompt a seguir e clique em **enviar**.
+
+```
+Create a new adaptive form using Edge Delivery Services with the following details:
+- Form name: "citisignal-fiber-max-interest-2"
+- Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
+- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
+```
+
+
 
 ## Próximas etapas
 
