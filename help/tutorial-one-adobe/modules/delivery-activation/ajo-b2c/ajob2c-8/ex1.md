@@ -4,9 +4,9 @@ description: Configuração da sua base de dados relacional
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
+source-git-commit: defdae3329e1409159f59c4a0ef2aa21c7e3949b
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2159'
 ht-degree: 4%
 
 ---
@@ -730,6 +730,52 @@ Clique em **Salvar**.
 Você deveria ficar com isso.
 
 ![OC do AJO](./images/ajoocptd8.png)
+
+## Canal de email do 3.8.1.4
+
+No menu esquerdo, vá para **Canais**. Clique em **Criar configuração de canal**.
+
+![OC do AJO](./images/ajoocchannel1.png)
+
+Use o nome: `--aepUserLdap---citisignal-email-oc`. Selecione o canal **Email**
+
+![OC do AJO](./images/ajoocchannel2.png)
+
+Selecione um **subdomínio** e um **pool de IP** disponíveis.
+
+![OC do AJO](./images/ajoocchannel3.png)
+
+Role para baixo e preencha os **Parâmetros de cabeçalho**.
+
+- **De nome**: `info@techinsiders.org`
+- **Do prefixo de email**: `info`
+- **Responder ao nome**: `info@techinsiders.org`
+- **Responder ao email**: `info@techinsiders.org`
+- **Prefixo de email de erro**: `error`
+
+![OC do AJO](./images/ajoocchannel4.png)
+
+Role para baixo. Vá para **Campanha orquestrada**. Marque a caixa de seleção **Habilitado**. Selecione **Targeting dimension**.
+
+![OC do AJO](./images/ajoocchannel5.png)
+
+Para **Dimension de Destino de Perfil**, selecione `--aepUserLdap--_citisignal_recipients - email`.
+
+Selecione **Dimension de Destino** e clique no ícone **abrir pasta**.
+
+![OC do AJO](./images/ajoocchannel6.png)
+
+Clique em `--aepUserLdap--_citisignal_recipients`.
+
+![OC do AJO](./images/ajoocchannel7.png)
+
+Selecione o campo **email** e clique em **Selecionar**.
+
+![OC do AJO](./images/ajoocchannel8.png)
+
+Role para cima e clique em **Enviar**.
+
+![OC do AJO](./images/ajoocchannel9.png)
 
 No próximo exercício, você começará a usar esses dados como parte de uma campanha orquestrada.
 
