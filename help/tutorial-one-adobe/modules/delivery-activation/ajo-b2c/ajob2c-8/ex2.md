@@ -4,9 +4,9 @@ description: Criar sua campanha orquestrada
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -578,6 +578,30 @@ Para a **Linha de assunto**, cole isto:
 Clique em **Editar corpo do email**.
 
 ![OC do AJO](./images/ajooc126.png)
+
+Baixe o arquivo [family_account_review.zip](./assets/family_account_review.zip) na área de trabalho.
+
+![OC do AJO](./images/ajooc127.png)
+
+Clique em **Importar HTML**.
+
+![OC do AJO](./images/ajooc128.png)
+
+Clique em para selecionar o arquivo.
+
+![OC do AJO](./images/ajooc129.png)
+
+Selecione o arquivo **`family_account_review.zip`**.
+
+![OC do AJO](./images/ajooc130.png)
+
+Clique em **Next**.
+
+![OC do AJO](./images/ajooc131.png)
+
+Você deverá ver isso.
+
+![OC do AJO](./images/ajooc132.png)
 
 ## Próximas etapas
 
