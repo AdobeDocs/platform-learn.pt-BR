@@ -6,7 +6,7 @@ jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1547'
 ht-degree: 3%
 
 ---
@@ -91,6 +91,7 @@ Neste exercício, você criará um esquema XDM usando os grupos de campos de lin
 1. Selecione o botão **[!UICONTROL Criar Esquema]** na parte superior direita
 
    ![Criar Esquema](assets/schema-xdm-create-schema.png)
+1. Selecione **[!UICONTROL Manual]** na próxima tela
 1. Selecione **[!UICONTROL Evento de experiência]** na tela a seguir
 1. Selecionar **[!UICONTROL Próximo]**
 
@@ -103,7 +104,7 @@ Neste exercício, você criará um esquema XDM usando os grupos de campos de lin
    >Uma convenção de nomenclatura comum para esquemas XDM é nomear o esquema após a origem dos dados.
 
 
-1. Selecione Concluir
+1. Selecionar **[!UICONTROL Término]**
 
    ![Término do Evento de Experiência de Esquema](assets/schema-name-schema.png)
 

@@ -4,9 +4,9 @@ description: Saiba como validar a implementação do SDK da web da Platform com 
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 7%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 7%
 O Adobe Experience Platform Assurance é um recurso que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou serve experiências. Leia mais sobre o [Adobe Assurance](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home).
 
 
->[!WARNING]
->
-> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ## Objetivos de aprendizagem
 
@@ -29,7 +26,7 @@ No final desta lição, você poderá:
 
 ## Pré-requisitos
 
-Você está familiarizado com as tags da Coleção de dados e o [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} e concluiu as lições anteriores no tutorial:
+Você está familiarizado com as tags da Coleção de dados e o [site de demonstração Luma](https://newluma.enablementadobe.com){target="_blank"} e concluiu as lições anteriores no tutorial:
 
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
@@ -51,7 +48,7 @@ Toda vez que você ativa o Edge Trace no Adobe Experience Platform Debugger, uma
 
 Analisar como fizemos isso na lição Debugger:
 
-1. Vá para o [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html) e use o depurador para [alternar a propriedade da marca no site para sua própria propriedade de desenvolvimento](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Vá para o [site de demonstração Luma](https://newluma.enablementadobe.com) e use o depurador para [alternar a propriedade da marca no site para sua própria propriedade de desenvolvimento](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Na navegação à esquerda do **[!UICONTROL Experience Platform Debugger]**, selecione **[!UICONTROL Logs]**
 1. Selecione a guia **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]**
 
@@ -70,7 +67,7 @@ Analisar como fizemos isso na lição Debugger:
    ![Criar uma sessão do Assurance](assets/assurance-create-session.png)
 1. Selecionar Início
 1. Nomeie a sessão, por exemplo, `Luma Web SDK validation`
-1. Como a **[!UICONTROL URL Base]**, digite `https://luma.enablementadobe.com/`
+1. Como a **[!UICONTROL URL Base]**, digite `https://newluma.enablementadobe.com/`
    ![Nomear a sessão do Assurance](assets/assurance-name-session.png)
 1. Na próxima tela, selecione **[!UICONTROL Copiar Link]**
 1. Selecione o ícone para copiar o link para a área de transferência
@@ -98,4 +95,4 @@ Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

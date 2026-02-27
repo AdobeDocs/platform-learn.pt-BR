@@ -4,10 +4,10 @@ description: Saiba como instalar e configurar a extensão de tag do Platform Web
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 10%
+source-wordcount: '602'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,6 @@ ht-degree: 10%
 Saiba como instalar e configurar a extensão de tag do Adobe Experience Platform Web SDK. A maneira mais fácil de implementar o Web SDK é usando o gerenciador de tags da Adobe, as tags (antes conhecidas como Launch). A extensão de tag do Platform Web SDK é a _única extensão de tag_ necessária para enviar dados para _todos os aplicativos da Adobe Experience Cloud_, incluindo [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform e [Journey Optimizer](setup-web-channel.md)!
 
 
->[!WARNING]
->
-> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ## Objetivos de aprendizagem
 
@@ -44,7 +41,7 @@ Crie uma nova propriedade de tag para o tutorial:
 1. Selecione **[!UICONTROL Tags]** na navegação à esquerda
 1. Selecione o botão **[!UICONTROL Nova propriedade]**
    ![Adicionar uma nova propriedade](assets/websdk-property-addNewProperty.png)
-1. Como o **[!UICONTROL Nome]**, digite `Web SDK Course` (adicione seu nome ao final, se várias pessoas da sua empresa estiverem fazendo este tutorial)
+1. Como o **[!UICONTROL Nome]**, digite `Luma Web SDK Tutorial` (adicione seu nome ao final, se várias pessoas da sua empresa estiverem fazendo este tutorial)
 1. Como os **[!UICONTROL Domínios]**, digite `enablementadobe.com` (explicado mais tarde)
 1. Selecione **[!UICONTROL Salvar]**
    ![Detalhes da propriedade](assets/websdk-property-propertyDetails.png)
@@ -66,17 +63,14 @@ Com seu esquema XDM, sequência de dados e propriedade de tag criados, você est
 Deixe a maioria das configurações padrão e atualize-as posteriormente, conforme necessário. A única coisa que você deve fazer agora é vincular a extensão ao seu fluxo de dados:
 
 1. Em **[!UICONTROL Datastreams]**, selecione o método de entrada **[!UICONTROL Escolher da lista]**
-1. Selecione a sandbox em que você criou o esquema, o namespace de identidade e o fluxo de dados
-1. Selecione a sequência de dados criada anteriormente, `Luma Web SDK`
+1. Configure o **[!UICONTROL Ambiente de Produção]**. (Os outros ambientes de tag na propriedade herdarão as configurações de produção):
+   1. Selecione a sandbox em que você criou o esquema, o namespace de identidade e o fluxo de dados
+   1. Selecione a sequência de dados criada anteriormente, `Luma Web SDK: Development Environment`
 1. Selecione **[!UICONTROL Salvar]**
-
-   >[!NOTE]
-   >
-   > Se não conseguir encontrar a sequência de dados, vá para a lição [Configurar uma sequência de dados](configure-datastream.md) e siga as etapas para criar uma
 
    ![Seleção de sequência de dados](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Para obter mais informações sobre cada seção da extensão, consulte [Configurar a extensão do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Para obter mais informações sobre cada seção da extensão, consulte [Configurar a extensão do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -90,4 +84,4 @@ Agora que você instalou o Platform Web SDK e o associou à sequência de dados,
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

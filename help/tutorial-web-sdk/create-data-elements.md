@@ -4,21 +4,18 @@ description: Saiba como criar um objeto XDM e mapear elementos de dados para ele
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 30581466024454c7e8f5bd469864161f48f4ce5a
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1275'
 ht-degree: 2%
 
 ---
 
 # Criar elementos de dados
 
-Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade no [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html). Em seguida, preencha os campos no esquema XDM com o tipo de elemento de dados Variável da extensão do Adobe Experience Platform Web SDK.
+Saiba como criar elementos de dados em tags para dados de conteúdo, comércio e identidade no [site de demonstração Luma](https://newluma.enablementadobe.com). Em seguida, preencha os campos no esquema XDM com o tipo de elemento de dados Variável da extensão do Adobe Experience Platform Web SDK.
 
 
->[!WARNING]
->
-> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
 
 ## Objetivos de aprendizagem
 
@@ -41,7 +38,7 @@ Você entende o que é uma camada de dados e concluiu as lições anteriores no 
 
 >[!IMPORTANT]
 >
->Os dados para esta lição vêm da camada de dados `[!UICONTROL digitalData]` no site Luma. Para exibir a camada de dados, abra o console do desenvolvedor e digite `[!UICONTROL digitalData]` para ver a camada de dados completa disponível.![camada de dados digitalData](assets/data-element-data-layer.png)
+>Os dados para esta lição vêm da camada de dados `[!UICONTROL adobeDataLayer]` no site Luma. Para exibir a camada de dados, abra o console do desenvolvedor e digite `[!UICONTROL adobeDataLayer]` para ver a camada de dados completa disponível.![camada de dados adobeDataLayer](assets/data-element-data-layer-new.png)
 
 
 ## Abordagens da camada de dados
@@ -59,7 +56,7 @@ Há várias maneiras de mapear dados da camada de dados para o XDM usando a func
 
 ### Implementar o XDM na camada de dados
 
-Essa abordagem envolve o uso do objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um elemento de dados de objeto XDM nas tags. Se sua implementação não estiver usando um gerenciador de tags, essa abordagem poderá ser ideal, pois você pode enviar dados para o XDM diretamente do seu aplicativo usando o [comando sendEvent do XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
+Essa abordagem envolve o uso do objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um elemento de dados de objeto XDM nas tags. Se sua implementação não estiver usando um gerenciador de tags, essa abordagem poderá ser ideal, pois você pode enviar dados para o XDM diretamente do seu aplicativo usando o [comando sendEvent do XDM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
 
 Veja abaixo um exemplo de como a camada de dados seria usada com o formato da Camada de dados do cliente Adobe:
 
@@ -84,7 +81,7 @@ window.adobeDataLayer.push({
                "id":"",
                "value":"1"
             },
-            "URL":"https://luma.enablementadobe.com/",
+            "URL":"https://newluma.enablementadobe.com/",
             "isErrorPage":"",
             "isHomePage":"",
             "name":"luma:home",
@@ -134,17 +131,17 @@ Essa abordagem envolve o mapeamento de variáveis de camada de dados individuais
 >
 > Camada de dados Google
 > 
-> Se sua organização já usa a Google Analytics e tem o objeto tradicional dataLayer da Google em seu site, você pode usar a [extensão de Camada de Dados da Google](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nas tags. Isso permite implantar a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
+> Se sua organização já usa a Google Analytics e tem o objeto tradicional dataLayer da Google em seu site, você pode usar a [extensão de Camada de Dados da Google](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nas tags. Isso permite implantar a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
 
 ### Mapear para XDM no fluxo de dados
 
-Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de Dados para Coleta de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) e ignora o mapeamento de variáveis de camada de dados para XDM nas marcas.
+Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de Dados para Coleta de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) e ignora o mapeamento de variáveis de camada de dados para XDM nas marcas.
 
 #### Pontos positivos
 
 * Flexível, pois é possível mapear variáveis individuais para o XDM
-* Capacidade de [calcular novos valores](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/data-handling) a partir de uma camada de dados antes que ela vá para o XDM
-* Aproveite uma [Interface do usuário de mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep#create-mapping) para mapear campos nos dados de origem para o XDM com uma interface do tipo apontar-e-clicar
+* Capacidade de [calcular novos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) a partir de uma camada de dados antes que ela vá para o XDM
+* Aproveite uma [Interface do usuário de mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) para mapear campos nos dados de origem para o XDM com uma interface do tipo apontar-e-clicar
 
 #### Pontos negativos
 
@@ -160,14 +157,14 @@ Essa abordagem usa uma funcionalidade integrada à configuração de sequência 
 
 ## Criar elementos de dados para capturar a camada de dados
 
-Antes de criar o objeto XDM, crie o seguinte conjunto de elementos de dados para a camada de dados do [site de demonstração Luma](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
+Antes de criar o objeto XDM, crie o seguinte conjunto de elementos de dados para a camada de dados do [site de demonstração Luma](https://newluma.enablementadobe.com){target="_blank"}:
 
 1. Vá para **[!UICONTROL Elementos de Dados]** e selecione **[!UICONTROL Adicionar Elemento de Dados]** (ou **[!UICONTROL Criar Novo Elemento de Dados]** se não houver elementos de dados existentes na propriedade de marca)
 
    ![Criar Elemento de Dados](assets/data-element-create.png)
 
-1. Nomeie o elemento de dados `page.pageInfo.pageName`
-1. Use a **[!UICONTROL Variável JavaScript]** **[!UICONTROL Tipo de elemento de dados]** para apontar para um valor na camada de dados da Luma: `digitalData.page.pageInfo.pageName`
+1. Nomeie o elemento de dados `Page Name`
+1. Use a **[!UICONTROL Variável JavaScript]** **[!UICONTROL Tipo de elemento de dados]** para apontar para um valor na camada de dados da Luma: `adobeDataLayer.0.page.name`
 
 1. Marque as caixas **[!UICONTROL Forçar valor minúsculo]** e **[!UICONTROL Limpar texto]** para padronizar o caso e remover espaços irrelevantes
 
@@ -179,87 +176,47 @@ Antes de criar o objeto XDM, crie o seguinte conjunto de elementos de dados para
 
 Crie esses elementos de dados adicionais seguindo as mesmas etapas:
 
-* **`page.pageInfo.server`** mapeado para
-  `digitalData.page.pageInfo.server`
+* **`User Id`** mapeado para
+  `adobeDataLayer.0.user.id`
 
-* **`page.pageInfo.hierarchie1`** mapeado para
-  `digitalData.page.pageInfo.hierarchie1`
+* **`User Logged In`** mapeado para
+  `adobeDataLayer.0.user.loggedIn`
 
-* **`user.profile.attributes.username`** mapeado para
-  `digitalData.user.0.profile.0.attributes.username`
-
-* **`user.profile.attributes.loggedIn`** mapeado para
-  `digitalData.user.0.profile.0.attributes.loggedIn`
-
-* **`product.productInfo.sku`** mapeado para `digitalData.product.0.productInfo.sku`
-<!--digitalData.product.0.productInfo.sku
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.sku;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.productInfo.title`** mapeado para `digitalData.product.0.productInfo.title`
-* **`cart.orderId`** mapeado para `digitalData.cart.orderId`
-<!--
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.title;
-    });
-    return cartItem;
-    ```
-    -->
-* **`product.category`** usando o **[!UICONTROL Código personalizado]** **[!UICONTROL Tipo de elemento de dados]** e o seguinte código personalizado para analisar a URL do site para a categoria de nível superior:
+* **`Ecommerce Product Id`** mapeado para `adobeDataLayer.0.ecommerce.detail.products.0.id`
+* **`Ecommerce Product Name`** mapeado para `adobeDataLayer.0.ecommerce.detail.products.0.name`
+* **`Ecommerce Purchase Id`** mapeado para `adobeDataLayer.0.ecommerce.purchase.actionField.id`
+* **`Ecommerce Product Category`** usando o **[!UICONTROL Código personalizado]** **[!UICONTROL Tipo de elemento de dados]** e o seguinte código personalizado:
 
   ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
+  return adobeDataLayer[0].ecommerce.detail.products[0].category+":"+adobeDataLayer[0].ecommerce.detail.products[0].subcategory;
   ```
 
-* **`cart.productInfo`** usando o seguinte código personalizado:
+* **`Ecommerce Cart Products`** usando o seguinte código personalizado:
 
   ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  cartItem.push({
-  "SKU": item.sku
-  });
-  });
-  return cartItem; 
+  const cartProducts = adobeDataLayer
+  .flatMap(evt => Array.isArray(evt?.ecommerce?.cart?.items) ? evt.ecommerce.cart.items : [])
+  .filter(item => item && item.id && item.name && item.brand)
+  .map(({ id, name, brand }) => ({ id, name, brand }));
+  
+  return cartProducts;
   ```
 
-* **`cart.productInfo.purchase`** usando o seguinte código personalizado:
+* **`Ecommerce Checkout Products`** usando o seguinte código personalizado:
 
   ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  var qty = parseInt(item.qty);
-  var price = parseInt(item.price);
-  cartItem.push({
-  "SKU": item.sku,
-  "quantity": qty,
-  "priceTotal": price
-  });
-  });
-  return cartItem; 
+  const checkoutProducts = adobeDataLayer
+  .flatMap(evt => Array.isArray(evt?.ecommerce?.checkout?.products) ? evt.ecommerce.checkout.products : [])
+  .filter(item => item && item.id && item.name && item.brand)
+  .map(({ id, name, brand }) => ({ id, name, brand }));
+  
+  return checkoutProducts;
   ```
-
 
 
 >[!CAUTION]
 >
->O tipo de elemento de dados [!UICONTROL variável JavaScript] trata referências de matriz como pontos em vez de colchetes, portanto, referenciar o elemento de dados username como `digitalData.user[0].profile[0].attributes.username` **não funcionará**.
+>O tipo de elemento de dados [!UICONTROL variável JavaScript] trata referências de matriz como pontos em vez de colchetes, portanto, referenciar o elemento de dados username como `adobeDataLayer[0].page.name` **não funcionará**.
 
 ## Criar elementos de dados variáveis para XDM e objetos de dados
 
@@ -268,7 +225,7 @@ Os elementos de dados que você acabou de criar serão usados para criar um obje
 Para criar o elemento de dados Variable para XDM, vincule-o ao esquema criado na lição [Configurar um esquema](configure-schemas.md):
 
 1. Selecione **[!UICONTROL Adicionar elemento de dados]**
-1. Nomeie seu Elemento de Dados `xdm.variable.content`. Recomenda-se adicionar um prefixo &quot;xdm&quot; aos Elementos de dados específicos do XDM para organizar melhor a propriedade da tag
+1. Nomeie seu Elemento de Dados `XDM Variable`. Recomenda-se adicionar um prefixo &quot;xdm&quot; aos Elementos de dados específicos do XDM para organizar melhor a propriedade da tag
 1. Selecione a **[!UICONTROL Adobe Experience Platform Web SDK]** como a **[!UICONTROL Extensão]**
 1. Selecione a **[!UICONTROL Variável]** como o **[!UICONTROL Tipo de Elemento de Dados]**
 1. Selecione **[!UICONTROL XDM]** como a **[!UICONTROL propriedade]**
@@ -281,38 +238,33 @@ Para criar o elemento de dados Variable para XDM, vincule-o ao esquema criado na
 Em seguida, crie o elemento de dados Variable para seu objeto de dados:
 
 1. Selecione **[!UICONTROL Adicionar elemento de dados]**
-1. Nomeie seu Elemento de Dados `data.variable`. Recomenda-se usar o prefixo &quot;dados&quot; nos elementos de dados específicos do objeto de dados para organizar melhor a propriedade da tag
+1. Nomeie seu Elemento de Dados `Data Variable`.
 1. Selecione a **[!UICONTROL Adobe Experience Platform Web SDK]** como a **[!UICONTROL Extensão]**
 1. Selecione a **[!UICONTROL Variável]** como o **[!UICONTROL Tipo de Elemento de Dados]**
 1. Selecione **[!UICONTROL dados]** como a **[!UICONTROL propriedade]**
 1. Selecione as soluções da Experience Cloud que deseja implementar como parte deste tutorial
 1. Selecione **[!UICONTROL Salvar]**
 
-   ![Elemento de dados de variável para o objeto de dados](assets/data-element-data-variable.png.png)
+   ![Elemento de dados de variável para o objeto de dados](assets/data-element-data-variable.png)
 
 
 Ao final dessas etapas, você deve ter os seguintes elementos de dados criados:
 
 | Elementos de dados da extensão principal | Elementos de dados da extensão do Platform Web SDK |
 -----------------------------|-------------------------------
-| `cart.orderId` | `data.variable` |
-| `cart.productInfo` | `xdm.variable.content` |
-| `cart.productInfo.purchase` | |
-| `page.pageInfo.hierarchie1` | |
-| `page.pageInfo.pageName` | |
-| `page.pageInfo.server` | |
-| `product.category` | |
-| `product.productInfo.sku` | |
-| `product.productInfo.title` | |
-| `user.profile.attributes.loggedIn` | |
-| `user.profile.attributes.username` | |
-
->[!TIP]
->
->Em uma lição futura [Criar regras de tag](create-tag-rule.md), você aprenderá como os elementos de dados **[!UICONTROL Variável]** permitem empilhar várias regras em tags usando o **[!UICONTROL Tipo de ação Atualizar variável]**.
+| `Ecommerce Cart Products` | `Data Variable` |
+| `Ecommerce Checkout Products` | `XDM Variable` |
+| `Ecommerce Checkout Products` | |
+| `Ecommerce Product Category` | |
+| `Ecommerce Product Id` | |
+| `Ecommerce Product Name` | |
+| `Ecommerce Purchase Id` | |
+| `Page Name` | |
+| `User Id` | |
+| `User Logged In` | |
 
 Com esses elementos de dados implementados, você estará pronto para começar a enviar dados para o Platform Edge Network com uma regra de tags. Mas primeiro, saiba como coletar identidades com o Web SDK.
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
