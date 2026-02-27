@@ -54,7 +54,7 @@ Neste exercício, você cria um namespace de identidade para o campo de identida
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre identidade no Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422776?captions=por_br&learn=on&enablevpops)
 
 Agora, crie um namespace para a ID do CRM da Luma:
 
