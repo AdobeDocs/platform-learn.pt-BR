@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # Configurar o canal da Web do Journey Optimizer com o Web SDK
 
-Saiba como implementar o [canal da Web](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) do Adobe Journey Optimizer usando o Adobe Experience Platform Web SDK. Esta lição aborda os pré-requisitos básicos do canal da Web, as etapas detalhadas de configuração e um aprofundamento sobre um caso de uso centrado no status de fidelidade.
+Saiba como implementar o [canal da Web](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/web/get-started-web) do Adobe Journey Optimizer usando o Adobe Experience Platform Web SDK. Esta lição aborda os pré-requisitos básicos do canal da Web, as etapas detalhadas de configuração e um aprofundamento sobre um caso de uso centrado no status de fidelidade.
 
 Ao seguir esta lição, os usuários do Journey Optimizer estão equipados para usar o canal da Web para personalização online avançada usando o web designer do Journey Optimizer.
 
@@ -55,7 +55,7 @@ Para concluir as lições desta seção, primeiro você deve:
   > 1. O site é incorporado em um iframe.
   > 1. O site de controle de qualidade ou preparo do cliente não está acessível externamente (é um site interno).
 
-* Ao criar experiências na Web e incluir conteúdo da biblioteca do Adobe Experience Manager Assets Essentials, é necessário [configurar o subdomínio para publicar este conteúdo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
+* Ao criar experiências na Web e incluir conteúdo da biblioteca do Adobe Experience Manager Assets Essentials, é necessário [configurar o subdomínio para publicar este conteúdo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * Se estiver usando o recurso de experimentação de conteúdo, verifique se o conjunto de dados da Web também está incluído na configuração de relatórios.
 * Atualmente, há suporte para dois tipos de implementações para habilitar a criação e o delivery de campanhas de canal da Web nas propriedades da Web:
    * Somente no lado do cliente: para modificar seu site, você deve implementar o Adobe Experience Platform Web SDK.
@@ -128,7 +128,7 @@ Para configurar a opção na política de mesclagem:
 
 Para usar experimentos de conteúdo em campanhas de canal da Web, você deve garantir que o conjunto de dados da Web usado também seja incluído na configuração dos relatórios. O sistema de relatórios do Journey Optimizer usa o conjunto de dados somente leitura para preencher relatórios de experimentação de conteúdo prontos para uso.
 
-[A adição de conjuntos de dados para os relatórios de experimento de conteúdo está detalhada nesta seção](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[A adição de conjuntos de dados para os relatórios de experimento de conteúdo está detalhada nesta seção](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## Visão geral do caso de uso - Recompensas de fidelidade
 
@@ -334,7 +334,7 @@ A extensão do Adobe Experience Platform Debugger, disponível para o Chrome e o
 
 Você pode usar o depurador no site Luma para validar a experiência do canal da Web em produção. Esta é uma prática recomendada depois que o caso de uso de Recompensas de fidelidade estiver em execução, para garantir que tudo seja configurado corretamente.
 
-[Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[Saiba como configurar o depurador em seu navegador usando o guia aqui](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/debugger/overview).
 
 Para iniciar a validação usando o depurador:
 
@@ -369,4 +369,4 @@ Para iniciar a validação usando o depurador:
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
