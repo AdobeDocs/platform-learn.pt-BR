@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 1%
@@ -21,7 +21,7 @@ O Journey Optimizer permite criar campanhas para enviar mensagens no aplicativo 
 
 ![Arquitetura](assets/architecture-ajo.png){zoomable="yes"}
 
-Antes de enviar mensagens no aplicativo com o Journey Optimizer, você deve garantir que as configurações e integrações adequadas estejam em vigor. Para entender o fluxo de dados de mensagens no aplicativo no Journey Optimizer, consulte [a documentação](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/in-app/inapp-configuration).
+Antes de enviar mensagens no aplicativo com o Journey Optimizer, você deve garantir que as configurações e integrações adequadas estejam em vigor. Para entender o fluxo de dados de mensagens no aplicativo no Journey Optimizer, consulte [a documentação](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration).
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Antes de enviar mensagens no aplicativo com o Journey Optimizer, você deve gara
 
 * O aplicativo com SDKs instalados e configurados foi criado e executado com sucesso.
 * Configure o aplicativo para Adobe Experience Platform.
-* Acesso ao Journey Optimizer e [permissões suficientes para notificações por push](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/push/push-config/push-configuration). Além disso, você precisa de permissão suficiente para os seguintes recursos do Journey Optimizer.
+* Acesso ao Journey Optimizer e [permissões suficientes para notificações por push](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration). Além disso, você precisa de permissão suficiente para os seguintes recursos do Journey Optimizer.
    * Gerenciar campanhas.
 * Dispositivo ou simulador físico iOS para teste.
 
@@ -67,11 +67,11 @@ Para começar, você deve criar uma configuração de canal para enviar notifica
    >
    > Os nomes devem começar com uma letra (A-Z). Ele só pode conter caracteres alfanuméricos. Também é possível usar os caracteres de sublinhado `_`, ponto `.` e hífen `-`.
 
-1. Para atribuir rótulos de uso de dados personalizados ou de núcleo à configuração, você pode selecionar **[!UICONTROL Gerenciar acesso]**. [Saiba mais sobre o OLAC (Controle de Acesso em Nível de Objeto)](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/object-based-access).
+1. Para atribuir rótulos de uso de dados personalizados ou de núcleo à configuração, você pode selecionar **[!UICONTROL Gerenciar acesso]**. [Saiba mais sobre o OLAC (Controle de Acesso em Nível de Objeto)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Selecione o canal **Mensagens no aplicativo**.
 
-1. Selecione **[!UICONTROL Ação de marketing]**(s) para associar políticas de consentimento às mensagens que usam essa configuração. Todas as políticas de consentimento associadas à ação de marketing são usadas para respeitar as preferências dos clientes. [Saiba mais sobre ações de marketing](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Por exemplo: Direcionamento por push.
+1. Selecione **[!UICONTROL Ação de marketing]**(s) para associar políticas de consentimento às mensagens que usam essa configuração. Todas as políticas de consentimento associadas à ação de marketing são usadas para respeitar as preferências dos clientes. [Saiba mais sobre ações de marketing](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). Por exemplo: Direcionamento por push.
 
 1. Selecione a Platform para a qual deseja definir as configurações. Essa configuração permite especificar o aplicativo de destino para cada plataforma e garante uma entrega de conteúdo consistente em várias plataformas.
 
@@ -93,7 +93,7 @@ Para garantir que os dados enviados do aplicativo móvel para a Edge Network sej
 
 1. Na interface da Coleção de dados, selecione **[!UICONTROL Datastreams]** e selecione sua sequência de dados, por exemplo **[!DNL Luma Mobile App]**.
 1. Selecione ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** e selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** no menu de contexto.
-1. Na tela **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, verifique se o **[!UICONTROL Adobe Journey Optimizer]** está selecionado. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) para obter mais informações.
+1. Na tela **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, verifique se o **[!UICONTROL Adobe Journey Optimizer]** está selecionado. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) para obter mais informações.
 1. Para salvar a configuração da sequência de dados, selecione **[!UICONTROL Salvar]**.
 
 
@@ -238,7 +238,7 @@ O hub de eventos da SDK publica e recebe dados de eventos de extensões registra
       1. Habilitar **[!UICONTROL Formatação avançada]**.
       1. Selecione **[!UICONTROL Modal]** como o **[!UICONTROL Layout de mensagens]**. Na caixa de diálogo **[!UICONTROL Alternar layout]**, selecione **[!UICONTROL Alterar layout]**.
       1. Na guia **[!UICONTROL Conteúdo]**.
-         1. Digite `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` para a **[!UICONTROL URL de mídia]**.
+         1. Digite `https://newluma.enablementadobe.com/images/logo.png` para a **[!UICONTROL URL de mídia]**.
          1. Insira um **[!UICONTROL Cabeçalho]**, por exemplo `Welcome to this Luma In-App Message`, e insira um **[!UICONTROL Corpo]**, por exemplo `Triggered by pushing that button in the app...`.
 
          ![Conteúdo da mensagem no aplicativo](assets/in-app-message-content.png){zoomable="yes"}
@@ -354,6 +354,6 @@ Agora você deve ter todas as ferramentas para começar a adicionar mensagens no
 >
 >Você habilitou o aplicativo para mensagens no aplicativo e adicionou uma campanha de mensagens no aplicativo usando o Journey Optimizer e a extensão Journey Optimizer para o Experience Platform Mobile SDK.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Criar e exibir ofertas](journey-optimizer-offers.md)**

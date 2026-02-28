@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
 workflow-type: tm+mt
 source-wordcount: '2882'
 ht-degree: 1%
@@ -35,7 +35,7 @@ A gestão de decisões facilita a personalização com uma biblioteca central de
 
 * O aplicativo com SDKs instalados e configurados foi criado e executado com sucesso.
 * Configure o aplicativo para Adobe Experience Platform.
-* Acesso ao Journey Optimizer - Gerenciamento de decisões com as [permissões apropriadas para gerenciar ofertas e decisões](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/high-low-permissions).
+* Acesso ao Journey Optimizer - Gerenciamento de decisões com as [permissões apropriadas para gerenciar ofertas e decisões](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions).
 
 
 ## Objetivos de aprendizagem
@@ -63,7 +63,7 @@ Para garantir que os dados enviados do aplicativo móvel para a Platform Edge Ne
 
 1. Na interface da Coleção de dados, selecione **[!UICONTROL Datastreams]** e selecione sua sequência de dados, por exemplo **[!DNL Luma Mobile App]**.
 1. Selecione ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** e selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** no menu de contexto.
-1. Na tela **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, verifique se o **[!UICONTROL Offer Decisioning]**, o **[!UICONTROL Edge Segmentation]** e o **[!UICONTROL Adobe Journey Optimizer]** estão selecionados. Se você fizer a lição do Target, selecione também **[!UICONTROL Personalization Destinations]**. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) para obter mais informações.
+1. Na tela **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, verifique se o **[!UICONTROL Offer Decisioning]**, o **[!UICONTROL Edge Segmentation]** e o **[!UICONTROL Adobe Journey Optimizer]** estão selecionados. Se você fizer a lição do Target, selecione também **[!UICONTROL Personalization Destinations]**. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) para obter mais informações.
 1. Para salvar a configuração da sequência de dados, selecione **[!UICONTROL Salvar]**.
 
    ![Configuração da sequência de dados do AEP](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
@@ -145,7 +145,7 @@ Para criar a disposição JSON para dispositivos móveis:
          { 
              "title": "Juno Jacket",
              "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
-             "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
+             "image": "https://newluma.enablementadobe.com/images/wj06-purple_main.jpg" 
          }  
          ```
 
@@ -174,10 +174,10 @@ Para criar a disposição JSON para dispositivos móveis:
 
       | Nome da oferta | Conteúdo de oferta em JSON |
       |---|---|
-      | Luma - Afirmar Garrafa de Água | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
-      | Luma - Tee fitness desejado | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
-      | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-      | Luma - Camiseta fitness diário do Aero | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
+      | Luma - Afirmar Garrafa de Água | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://newluma.enablementadobe.com/images/ug06-lb-0.jpg" }` |
+      | Luma - Tee fitness desejado | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://newluma.enablementadobe.com/images/ws05-yellow_main.jpg" }` |
+      | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://newluma.enablementadobe.com/images/wj08-gray_main.jpg" }` |
+      | Luma - Camiseta fitness diário do Aero | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://newluma.enablementadobe.com/images/ms01-black_main.jpg" }` |
 
       {style="table-layout:fixed"}
 
@@ -196,7 +196,7 @@ Para criar a disposição JSON para dispositivos móveis:
          {  
             "title": "Luma",
             "text": "Your store for sports wear and equipment.", 
-            "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+            "image": "https://newluma.enablementadobe.com/images/logo.png" 
          }  
          ```
 
@@ -237,7 +237,7 @@ Um critério de avaliação é a combinação de
 * regras de elegibilidade: por exemplo, a oferta está disponível somente para um público-alvo específico?
 * um método de classificação: quando várias ofertas estão disponíveis para seleção, qual método você usa para classificá-las (por exemplo, por prioridade de oferta, usando uma fórmula ou um modelo de IA).
 
-Consulte [Etapas principais para criar e gerenciar ofertas](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) se quiser entender como disposições, regras, classificações, ofertas, representações, coleções, decisões e assim por diante interagem e se relacionam entre si. Esta lição está focada apenas no uso do resultado de uma decisão em vez da flexibilidade na definição de decisões no Journey Optimizer - Gestão de decisões.
+Consulte [Etapas principais para criar e gerenciar ofertas](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps) se quiser entender como disposições, regras, classificações, ofertas, representações, coleções, decisões e assim por diante interagem e se relacionam entre si. Esta lição está focada apenas no uso do resultado de uma decisão em vez da flexibilidade na definição de decisões no Journey Optimizer - Gestão de decisões.
 
 1. Na interface do usuário do Journey Optimizer, selecione **[!UICONTROL Ofertas]** no painel esquerdo.
 1. Selecione **[!UICONTROL Decisões]** na barra superior.
@@ -543,6 +543,6 @@ Agora você deve ter todas as ferramentas para começar a adicionar mais funcion
 >
 >Você habilitou o aplicativo para exibir ofertas usando a extensão Offer Decisioning e Target para o Experience Platform Mobile SDK.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próximo: **[Realizar testes A/B](target.md)**

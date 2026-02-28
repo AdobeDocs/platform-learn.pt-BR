@@ -4,7 +4,7 @@ description: Saiba como usar a propriedade de encaminhamento de eventos usando d
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 Saiba como usar o encaminhamento de eventos com dados do SDK da web da Adobe Experience Platform.
 
-O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam da Adobe diretamente do Adobe Experience Platform Edge Network, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos na [visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/event-forwarding/overview).
+O encaminhamento de eventos é um novo tipo de propriedade disponível em Coleção de dados. O encaminhamento de eventos oferece a capacidade de enviar dados para fornecedores de terceiros que não sejam da Adobe diretamente do Adobe Experience Platform Edge Network, em vez do navegador tradicional do lado do cliente. Saiba mais sobre as vantagens do encaminhamento de eventos na [visão geral do encaminhamento de eventos](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
 
@@ -25,7 +25,7 @@ Para usar o encaminhamento de eventos no Adobe Experience Platform, os dados dev
 
 * [SDK da Web da Adobe Experience Platform](overview.md)
 * [SDK móvel da Adobe Experience Platform](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/pt-br/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -324,4 +324,4 @@ Parabéns! Você configurou o encaminhamento de eventos!
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
