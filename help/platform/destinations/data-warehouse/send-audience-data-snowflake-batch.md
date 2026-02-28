@@ -24,4 +24,4 @@ Saiba como configurar e usar o destino em lote do Snowflake no Adobe Real-Time C
 Para obter mais informações, consulte a [documentação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480189/?captions=por_br&learn=on&enablevpops)
