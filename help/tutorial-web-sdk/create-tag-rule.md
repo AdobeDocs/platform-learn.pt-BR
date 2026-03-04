@@ -225,7 +225,7 @@ Compare o elemento de dados com a estrutura `productListItems` (dica, ele deve c
 >[!IMPORTANT]
 >
 >Ao mapear campos da camada de dados para o XDM, verifique se os campos correspondem ao tipo de dados do campo XDM. No exemplo acima, `quantity` e `priceTotal` devem ser números inteiros ou o registro não será assimilado na Platform.
-> ![Tipo de dados de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
+> ![Tipo de dados de esquema XDM &#x200B;](assets/set-up-analytics-quantity-integer.png)
 
 Agora, vamos mapear nossa matriz para o objeto XDM:
 
