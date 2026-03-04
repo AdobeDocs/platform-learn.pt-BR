@@ -4,17 +4,20 @@ description: Saiba como validar a implementação do SDK da web da Platform com 
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 7%
+source-wordcount: '833'
+ht-degree: 5%
 
 ---
 
 # Validar implementações do Web SDK com o Experience Platform Assurance
 
-O Adobe Experience Platform Assurance é um recurso que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou serve experiências. Leia mais sobre o [Adobe Assurance](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home).
+O [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/pt-br/docs/experience-platform/assurance/home) é um recurso que ajuda a inspecionar, testar, simular e validar a maneira como você coleta dados ou fornece experiências.
 
+Conforme você aprendeu na lição [Configurar uma sequência de dados](configure-datastream.md), o Platform Web SDK envia dados da sua propriedade digital para o Platform Edge Network. Em seguida, o Platform Edge Network encaminha os dados para os serviços ativados no fluxo de dados. Você pode validar as solicitações que entram e saem do Platform Edge Network usando o Assurance.
+
+![Diagrama de validação do Web SDK e do Adobe Experience Platform](assets/dc-websdk-validation.png)
 
 
 ## Objetivos de aprendizagem
@@ -42,17 +45,28 @@ Você está familiarizado com as tags da Coleção de dados e o [site de demonst
 
 Há várias maneiras de iniciar uma sessão do Assurance.
 
-### Iniciar uma sessão do Assurance no Debugger
 
-Toda vez que você ativa o Edge Trace no Adobe Experience Platform Debugger, uma sessão do Assurance é iniciada em segundo plano.
+### Ativar o Edge Trace no Debugger
 
-Analisar como fizemos isso na lição Debugger:
+Para ativar o Edge Trace:
 
 1. Vá para o [site de demonstração Luma](https://luma.enablementadobe.com) e use o depurador para [alternar a propriedade da marca no site para sua própria propriedade de desenvolvimento](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Verifique se você está conectado ao Debugger mostrando o nome da organização. Se o seu nome de usuário estiver sendo exibido, saia e tente entrar novamente.
 1. Na navegação à esquerda do **[!UICONTROL Experience Platform Debugger]**, selecione **[!UICONTROL Logs]**
 1. Selecione a guia **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]**
 
-   ![Conectar ao Edge Trace](assets/analytics-debugger-edgeTrace.png)
+   ![Conectar ao Edge Trace](assets/assurance-edgeTrace-connect.png)
+
+1. Está vazio por enquanto
+
+   ![Edge Trace Conectado](assets/analytics-debugger-edge-connected.png)
+
+1. Atualize a [página inicial do Luma](https://luma.enablementadobe.com/) e verifique o **[!UICONTROL Experience Platform Debugger]** novamente para ver os dados que entram na Platform Edge Network. Nas lições futuras, você poderá ver as solicitações enviadas ao habilitar serviços no fluxo de dados.
+
+   ![Solicitações no Edge Trace](assets/validate-edge-trace.png)
+
+   Toda vez que você ativa o Edge Trace no Adobe Experience Platform Debugger, uma sessão do Assurance é iniciada em segundo plano. Embora seja possível revisar as informações aqui, a interface do Assurance provavelmente será muito mais útil.
+
 1. Com o Edge Trace ativado, você pode ver um ícone de link de saída na parte superior. Selecione o ícone para abrir o Assurance.
 
    ![Iniciar sessão do Assurance](assets/validate-debugger-start-assurnance.png)
@@ -65,7 +79,8 @@ Analisar como fizemos isso na lição Debugger:
 1. Selecione Assurance na navegação à esquerda
 1. Selecione Criar sessão
    ![Criar uma sessão do Assurance](assets/assurance-create-session.png)
-1. Selecionar Início
+1. Usar a opção **[!UICONTROL Conexão de deep link]**
+1. Selecionar **[!UICONTROL Início]**
 1. Nomeie a sessão, por exemplo, `Luma Web SDK validation`
 1. Como a **[!UICONTROL URL Base]**, digite `https://luma.enablementadobe.com/`
    ![Nomear a sessão do Assurance](assets/assurance-name-session.png)
@@ -77,13 +92,27 @@ Analisar como fizemos isso na lição Debugger:
 
 ## Validar o estado atual da implementação do Web SDK
 
-Há informações limitadas para exibir neste estágio da implementação. Um valor que podemos ver é sua Experience Cloud Id (ECID) gerada na Platform Edge Network:
+Há informações limitadas para exibir neste estágio da implementação, pois ainda não habilitamos nenhum serviço no fluxo de dados.
 
-1. Selecione a linha com o evento chamado `Alloy Response Handle`.
+### Exibir solicitações de entrada do Web SDK com `Alloy Request`
+
+Podemos exibir a ocorrência recebida do Web SDK como recebida pela borda:
+
+1. Selecionar a linha `Alloy Request`
+1. Examine Evento Bruto (ou expanda nós na [!UICONTROL Carga] > `ACPExtensionEventData`) até encontrar seu objeto XDM com variáveis familiares:
+
+   ![Solicitação de liga](assets/assurance-alloy-request.png)
+
+
+### Exibir a resposta em `Alloy Response Handle`
+
+Como você sabe, a Experience Cloud Id (ECID) fica visível na resposta do Web SDK depois de ser gerada na Platform Edge Network. Vamos procurá-lo na resposta, conforme visualizado no Assurance:
+
+1. Filtre e selecione a linha com o evento chamado `Alloy Response Handle`.
 1. Um menu é exibido à direita. Selecione o sinal de `+` ao lado de `[!UICONTROL ACPExtensionEventData]`
 1. Detalhe selecionando `[!UICONTROL payload > 0 > payload > 0 > namespace]`. A ID mostrada no último `0` corresponde ao `ECID`. Você sabe que pelo valor que aparece abaixo de `namespace` correspondendo a `ECID`
 
-   ![Assurance validar ECID](assets/validate-assurance-ecid.png)
+   ![Resposta do Assurance Alloy](assets/assurance-alloy-response.png)
 
    >[!CAUTION]
    >
@@ -95,4 +124,4 @@ Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
