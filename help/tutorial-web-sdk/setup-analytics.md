@@ -4,7 +4,7 @@ description: Saiba como configurar o Adobe Analytics usando o Experience Platfor
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 17adeb23768ee005428a204a98d18f4e76b9d945
 workflow-type: tm+mt
 source-wordcount: '2895'
 ht-degree: 1%
@@ -13,9 +13,9 @@ ht-degree: 1%
 
 # Configurar o Adobe Analytics com o Adobe Experience Platform Web SDK
 
-Saiba como configurar o Adobe Analytics usando o [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/web-sdk/overview), criar regras de tag para enviar dados ao Adobe Analytics e validar se o Analytics está capturando dados conforme esperado.
+Saiba como configurar o Adobe Analytics usando o [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), criar regras de tag para enviar dados ao Adobe Analytics e validar se o Analytics está capturando dados conforme esperado.
 
-O [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics?lang=pt-BR) é um aplicativo líder do setor que faz você ser capaz de entender seus clientes como pessoas e de orientar seus negócios com informações de inteligência de clientes.
+O [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics?lang=pt-BR) é um aplicativo líder do setor que faz você ser capaz de entender seus clientes como pessoas e de orientar seus negócios com informações de inteligência de clientes.
 
 
 
@@ -37,7 +37,7 @@ Para concluir esta lição, primeiro você deve:
 
 * Estar familiarizado com o Adobe Analytics e ter acesso a ele.
 
-* Ter pelo menos uma ID de conjunto de relatórios de teste/desenvolvimento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, [crie um](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* Ter pelo menos uma ID de conjunto de relatórios de teste/desenvolvimento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, [crie um](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Conclua as lições anteriores nas seções Configuração inicial e Configuração de tags deste tutorial.
 
@@ -80,7 +80,7 @@ A partir de maio de 2024, não será mais necessário criar um esquema XDM para 
 
 ### Campos mapeados automaticamente
 
-Muitos campos XDM são mapeados automaticamente para variáveis do Analytics. Para obter a lista mais atualizada de mapeamentos, consulte [Mapeamento de variáveis do Analytics na Adobe Experience Edge](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+Muitos campos XDM são mapeados automaticamente para variáveis do Analytics. Para obter a lista mais atualizada de mapeamentos, consulte [Mapeamento de variáveis do Analytics na Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 Isso ocorre se _mesmo que você não tenha definido um esquema personalizado_. O Experience Platform Web SDK coleta alguns dados automaticamente e os envia para o Platform Edge Network como campos XDM. Por exemplo, o Web SDK lê a URL da página atual e a envia como o campo XDM `web.webPageDetails.URL`. Esse campo é encaminhado ao Adobe Analytics e preenche automaticamente os relatórios de URL da página no Adobe Analytics.
 
@@ -250,7 +250,7 @@ Para validar se o Analytics está capturando dados corretamente por meio do Expe
 
 ### Validação da Experience Cloud ID
 
-1. Vá para o [site de demonstração Luma](https://newluma.enablementadobe.com){target="_blank"}
+1. Vá para o [site de demonstração Luma](https://luma.enablementadobe.com){target="_blank"}
 1. Selecione o botão de logon na parte superior direita e use credenciais u: test@test.com p: test to authenticate
 1. Abra o Experience Platform Debugger e [alterne a propriedade da marca no site para sua própria propriedade de desenvolvimento](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
@@ -284,7 +284,7 @@ Para validar se o Analytics está capturando dados corretamente por meio do Expe
 
 ### Validação de substituição do conjunto de relatórios
 
-Acima, você configurou uma substituição de sequência de dados para a [página inicial do Luma](https://newluma.enablementadobe.com).  Para validar essa configuração
+Acima, você configurou uma substituição de sequência de dados para a [página inicial do Luma](https://luma.enablementadobe.com).  Para validar essa configuração
 
 1. Procure uma linha com **[!UICONTROL configuração de sequência de dados após a aplicação da substituição]**. Aqui você encontra o conjunto de relatórios principal e os conjuntos de relatórios adicionais que foram configurados para substituições do conjunto de relatórios.
 
@@ -296,7 +296,7 @@ Acima, você configurou uma substituição de sequência de dados para a [págin
 
 ### Validação de exibições de página de conteúdo
 
-Vá para uma página de produto como a [página de produto Livingston All-Purpose Tight](https://newluma.enablementadobe.com/product.html?id=LLMP09).  Validar se as exibições de página de conteúdo são capturadas pelo Analytics.
+Vá para uma página de produto como a [página de produto Livingston All-Purpose Tight](https://luma.enablementadobe.com/product.html?id=LLMP09).  Validar se as exibições de página de conteúdo são capturadas pelo Analytics.
 
 1. Procure por `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. Role para baixo para ver a variável `[!UICONTROL gn]`. É a sintaxe dinâmica do Analytics para a variável `[!UICONTROL s.pageName]`. Ele captura o nome da página da camada de dados.
@@ -335,8 +335,8 @@ Como você já está em uma página de produto, este exercício continua a usar 
 
 **Validar se o restante dos eventos de comércio eletrônico e das cadeias de caracteres do produto estão definidos para o Analytics**
 
-1. Adicionar [Marco Lightweight Ative Hoodie](https://newluma.enablementadobe.com/product.html?id=LLMH13) ao carrinho
-1. Vá para a [Página de carrinho](https://newluma.enablementadobe.com/cart.html), verifique o Edge Trace para
+1. Adicionar [Marco Lightweight Ative Hoodie](https://luma.enablementadobe.com/product.html?id=LLMH13) ao carrinho
+1. Vá para a [Página de carrinho](https://luma.enablementadobe.com/cart.html), verifique o Edge Trace para
 
    * `eventType` definido como `commerce.productListViews`
    * `[!UICONTROL events: "scView"]` e
@@ -426,4 +426,4 @@ Parabéns! Você conseguiu! Este é o fim da lição e agora você está pronto 
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

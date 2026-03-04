@@ -4,10 +4,10 @@ description: Saiba como instalar e configurar a extensão de tag do Platform Web
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 6e04d7cc2e0bc2b5e080d7501f1d330cdb4edc5f
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 11%
+source-wordcount: '635'
+ht-degree: 10%
 
 ---
 
@@ -33,7 +33,7 @@ Você deve ter concluído as lições anteriores neste tutorial:
 
 ### Adicionar uma propriedade de tag
 
-Primeiro, você deve ter uma propriedade de tag. Uma propriedade é um container para todas as JavaScript, regras e outros recursos necessários para coletar detalhes de uma página da Web e enviá-los para vários locais.
+Uma propriedade de tag é um container para todas as JavaScript, regras e outros recursos necessários para coletar detalhes de uma página da Web e enviá-los para vários locais.
 
 Crie uma nova propriedade de tag para o tutorial:
 
@@ -53,6 +53,7 @@ Com seu esquema XDM, sequência de dados e propriedade de tag criados, você est
 1. Abra a nova propriedade de tag
 1. Ir para **[!UICONTROL Extensões]** > **[!UICONTROL Catálogo]**
 1. Pesquisar por `Adobe Experience Platform Web SDK`
+1. Selecione a extensão `Adobe Experience Platform Web SDK` para abrir a barra lateral
 1. Selecione **[!UICONTROL Instalar]**
 
    ![Instalar Extensão Web SDK](assets/extension-platform-web-sdk.png)
@@ -60,7 +61,7 @@ Com seu esquema XDM, sequência de dados e propriedade de tag criados, você est
 
 ## Vincular a extensão ao fluxo de dados
 
-Deixe a maioria das configurações padrão e atualize-as posteriormente, conforme necessário. A única coisa que você deve fazer agora é vincular a extensão ao seu fluxo de dados:
+Deixe a maioria das configurações padrão e atualize-as posteriormente, conforme necessário. A única coisa que você deve fazer agora é vincular a extensão ao seu fluxo de dados. Isso adiciona o fluxo de dados/id de configuração correto às chamadas de rede feitas do navegador para que as chamadas sejam roteadas para o fluxo de dados correto quando chegarem à Platform Edge Network:
 
 1. Em **[!UICONTROL Datastreams]**, selecione o método de entrada **[!UICONTROL Escolher da lista]**
 1. Configure o **[!UICONTROL Ambiente de Produção]**. (Os outros ambientes de tag na propriedade herdarão as configurações de produção):
@@ -70,7 +71,7 @@ Deixe a maioria das configurações padrão e atualize-as posteriormente, confor
 
    ![Seleção de sequência de dados](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Para obter mais informações sobre cada seção da extensão, consulte [Configurar a extensão do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
+Para obter mais informações sobre cada seção da extensão, consulte [Configurar a extensão do Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
@@ -84,4 +85,4 @@ Agora que você instalou o Platform Web SDK e o associou à sequência de dados,
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

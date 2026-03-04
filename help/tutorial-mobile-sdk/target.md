@@ -6,7 +6,7 @@ feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
+source-git-commit: 86489e09514dda647382ca2d20b53c955f3f7efb
 workflow-type: tm+mt
 source-wordcount: '2102'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Saiba como otimizar e personalizar as experiências em seus aplicativos móveis com o Platform Mobile SDK e o Adobe Target.
 
-O Target fornece tudo o que você precisa para ajustar e personalizar as experiências dos clientes. O Target ajuda a maximizar a receita em sites da Web e para dispositivos móveis, aplicativos, mídia social e outros canais digitais. O Target pode executar testes A/B, testes multivariados, recomendar produtos e conteúdo, conteúdo do Target, personalizar conteúdo automaticamente com IA e muito mais. O foco desta lição está na funcionalidade de teste A/B do Target. Consulte a [Visão geral do Teste A/B](https://experienceleague.adobe.com/pt-br/docs/target/using/activities/abtest/test-ab) para obter mais informações.
+O Target fornece tudo o que você precisa para ajustar e personalizar as experiências dos clientes. O Target ajuda a maximizar a receita em sites da Web e para dispositivos móveis, aplicativos, mídia social e outros canais digitais. O Target pode executar testes A/B, testes multivariados, recomendar produtos e conteúdo, conteúdo do Target, personalizar conteúdo automaticamente com IA e muito mais. O foco desta lição está na funcionalidade de teste A/B do Target. Consulte a [Visão geral do Teste A/B](https://experienceleague.adobe.com/en/docs/target/using/activities/abtest/test-ab) para obter mais informações.
 
 ![Arquitetura](assets/architecture-at.png){zoomable="yes"}
 
@@ -31,7 +31,7 @@ Antes de executar testes A/B com o Target, você deve garantir que as configura�
 ## Pré-requisitos
 
 * O aplicativo com SDKs instalados e configurados foi criado e executado com sucesso.
-* Acesso ao Adobe Target com [permissões, funções, espaços de trabalho e propriedades devidamente configurados](https://experienceleague.adobe.com/pt-br/docs/target/using/administer/manage-users/enterprise/property-channel).
+* Acesso ao Adobe Target com [permissões, funções, espaços de trabalho e propriedades devidamente configurados](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/property-channel).
 
 
 ## Objetivos de aprendizagem
@@ -66,7 +66,7 @@ Para garantir que os dados enviados do aplicativo móvel para o Experience Platf
 
    Você pode encontrar suas propriedades na interface do usuário de Destino, em **[!UICONTROL Administração]** > **[!UICONTROL Propriedades]**. Selecione ![Código](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) para revelar o token de propriedade da propriedade que você deseja usar. O token de propriedade tem um formato como `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; você só deve inserir o valor `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
-   Opcionalmente, você pode especificar uma ID de ambiente do Target. O Target usa ambientes para organizar seus sites e ambientes de pré-produção para facilitar o gerenciamento e separar os relatórios. Os ambientes predefinidos incluem Produção, Armazenamento temporário e Desenvolvimento. Consulte [Ambientes](https://experienceleague.adobe.com/pt-br/docs/target/using/administer/environments) e [ID do Ambiente de Destino](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) para obter mais informações.
+   Opcionalmente, você pode especificar uma ID de ambiente do Target. O Target usa ambientes para organizar seus sites e ambientes de pré-produção para facilitar o gerenciamento e separar os relatórios. Os ambientes predefinidos incluem Produção, Armazenamento temporário e Desenvolvimento. Consulte [Ambientes](https://experienceleague.adobe.com/en/docs/target/using/administer/environments) e [ID do Ambiente de Destino](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) para obter mais informações.
 
    Como opção, você pode especificar um namespace de ID de terceiros do Target para oferecer suporte à sincronização de perfis em um namespace de identidade (por exemplo, CRM ID). Consulte [Namespace de ID de terceiros do Target](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/applications-setup/setup-target) para obter mais informações.
 
@@ -81,7 +81,7 @@ Para garantir que os dados enviados do aplicativo móvel para a Edge Network sej
 
 1. Na interface da Coleção de dados, selecione **[!UICONTROL Datastreams]** e selecione sua sequência de dados, por exemplo **[!DNL Luma Mobile App]**.
 1. Selecione ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) para **[!UICONTROL Experience Platform]** e selecione ![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** no menu de contexto.
-1. Na tela **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, verifique se o **[!UICONTROL Offer Decisioning]**, o **[!UICONTROL Edge Segmentation]** e o **[!UICONTROL Personalization Destinations]** estão selecionados. Se você também seguir as lições do Journey Optimizer, selecione **[!UICONTROL Adobe Journey Optimizer]**. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) para obter mais informações.
+1. Na tela **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**, verifique se o **[!UICONTROL Offer Decisioning]**, o **[!UICONTROL Edge Segmentation]** e o **[!UICONTROL Personalization Destinations]** estão selecionados. Se você também seguir as lições do Journey Optimizer, selecione **[!UICONTROL Adobe Journey Optimizer]**. Consulte [configurações do Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure) para obter mais informações.
 1. Para salvar a configuração da sequência de dados, selecione **[!UICONTROL Salvar]**.
 
    ![Configuração da sequência de dados do AEP](assets/datastream-aep-configuration-target.png){zoomable="yes"}
@@ -140,7 +140,7 @@ Há muitos tipos de atividades que você pode criar no Adobe Target e implementa
 
       ```json
       { 
-          "title": "Luma Anaolog Watch",
+          "title": "Luma Analog Watch",
           "text": "Designed to stand up to your active lifestyle, this women's Luma Analog Watch features a tasteful brushed chrome finish and a stainless steel, water-resistant construction for lasting durability.", 
           "image": "https://newluma.enablementadobe.com/images/Luma_Analog_Watch.jpg" 
       }
@@ -399,6 +399,6 @@ Agora você deve ter todas as ferramentas para começar a adicionar mais testes 
 >
 >Você habilitou o aplicativo para testes A/B e exibiu os resultados de um teste A/B com a extensão Offer Decisioning e Target para o Adobe Experience Platform Mobile SDK.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt).
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Próxima: **[Conclusão e próximas etapas](conclusion.md)**
