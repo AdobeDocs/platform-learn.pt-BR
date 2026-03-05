@@ -66,7 +66,7 @@ Vamos configurar um conjunto de dados para seus dados de evento da Web do Luma:
 
 1. Forneça um **[!UICONTROL Nome]** e uma **[!UICONTROL Descrição]** opcional para o conjunto de dados. Neste exercício, use `Luma Web Event Data` e selecione **[!UICONTROL Concluir]**
 
-   ![Nome do Conjunto de Dados ](assets/experience-platform-create-dataset-schema-name.png)
+   ![Nome do Conjunto de Dados &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 Um conjunto de dados agora está configurado para começar a coletar dados da implementação do Platform Web SDK.
 
@@ -154,7 +154,7 @@ Agora, vamos realmente olhar no conjunto de dados! Uma opção rápida é usar o
 
 1. Uma consulta será executada para obter 100 linhas de dados recentes do conjunto de dados. Você pode detalhar campos XDM individuais, como web.webPageDetails.name:
 
-   ![Visualização do conjunto de dados ](assets/experience-platform-dataset-preview.png)
+   ![Visualização do conjunto de dados &#x200B;](assets/experience-platform-dataset-preview.png)
 
 
 ### Consultar os dados
