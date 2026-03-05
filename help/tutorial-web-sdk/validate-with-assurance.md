@@ -4,7 +4,7 @@ description: Saiba como validar a implementação do SDK da web da Platform com 
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 5%
@@ -29,7 +29,7 @@ No final desta lição, você poderá:
 
 ## Pré-requisitos
 
-Você está familiarizado com as tags da Coleção de dados e o [site de demonstração Luma](https://luma.enablementadobe.com){target="_blank"} e concluiu as lições anteriores no tutorial:
+Você está familiarizado com as tags de Coleção de dados e o [site de demonstração do Luma](https://luma.enablementadobe.com){target="_blank"} e concluiu as lições anteriores no tutorial:
 
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
@@ -50,7 +50,7 @@ Há várias maneiras de iniciar uma sessão do Assurance.
 
 Para ativar o Edge Trace:
 
-1. Vá para o [site de demonstração Luma](https://luma.enablementadobe.com) e use o depurador para [alternar a propriedade da marca no site para sua própria propriedade de desenvolvimento](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. Vá para o [site de demonstração do Luma](https://luma.enablementadobe.com) e use o depurador para [alternar a propriedade da marca no site para sua própria propriedade de desenvolvimento](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Verifique se você está conectado ao Debugger mostrando o nome da organização. Se o seu nome de usuário estiver sendo exibido, saia e tente entrar novamente.
 1. Na navegação à esquerda do **[!UICONTROL Experience Platform Debugger]**, selecione **[!UICONTROL Logs]**
 1. Selecione a guia **[!UICONTROL Edge]** e selecione **[!UICONTROL Conectar]**
@@ -124,4 +124,4 @@ Com um objeto XDM sendo acionado agora em uma página e sabendo como validar sua
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

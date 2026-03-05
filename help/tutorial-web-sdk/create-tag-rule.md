@@ -4,9 +4,9 @@ description: Saiba como enviar um evento para a Platform Edge Network usando reg
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: d15ce3b51424dba51b5b621b6d92eff85edd5b27
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1863'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ No final desta lição, você poderá:
 
 ## Pré-requisitos
 
-Você está familiarizado com as tags da Coleção de dados e o [site de demonstração Luma](https://luma.enablementadobe.com) e concluiu as lições anteriores no tutorial:
+Você está familiarizado com as tags de Coleção de dados e o [site de demonstração do Luma](https://luma.enablementadobe.com) e concluiu as lições anteriores no tutorial:
 
 * [Configurar um esquema XDM](configure-schemas.md)
 * [Configurar um namespace de identidade](configure-identities.md)
@@ -91,7 +91,7 @@ Todas essas regras serão sequenciadas corretamente usando a opção &quot;[!UIC
 
 Este vídeo fornece uma visão geral do processo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3454032/?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Campos de configuração global
 
@@ -225,7 +225,7 @@ Compare o elemento de dados com a estrutura `productListItems` (dica, ele deve c
 >[!IMPORTANT]
 >
 >Ao mapear campos da camada de dados para o XDM, verifique se os campos correspondem ao tipo de dados do campo XDM. No exemplo acima, `quantity` e `priceTotal` devem ser números inteiros ou o registro não será assimilado na Platform.
-> ![Tipo de dados de esquema XDM &#x200B;](assets/set-up-analytics-quantity-integer.png)
+> ![Tipo de dados de esquema XDM ](assets/set-up-analytics-quantity-integer.png)
 
 Agora, vamos mapear nossa matriz para o objeto XDM:
 
@@ -329,7 +329,7 @@ Agora que você definiu as variáveis, é possível criar a regra para enviar o 
 
 Você deve ter as seguintes regras na propriedade:
 
-    ![Verificar lista de regras](assets/create-rule-list-of-rules.png)
+![Verificar lista de regras](assets/create-rule-list-of-rules.png)
 
 ## Publicar as regras em uma biblioteca
 
@@ -364,4 +364,4 @@ Agora você está pronto para validar os dados na solicitação usando o Adobe E
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

@@ -4,7 +4,7 @@ description: Saiba como definir as configurações de privacidade da extensão d
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 1%
@@ -167,7 +167,7 @@ Se um visitante decidir recusar (rejeitar os cookies de rastreamento), você dev
 
 Agora, quando um visitante recusa, a regra configurada da maneira acima é acionada e define o consentimento da Web SDK como **[!UICONTROL Saída]**.
 
-Valide acessando o site de demonstração Luma, rejeite os cookies e confirme se nenhuma solicitação do Web SDK é acionada após a recusa.
+Valide acessando o site de demonstração do Luma, rejeite os cookies e confirme se nenhuma solicitação do Web SDK é acionada após a recusa.
 
 ### Cenário 2: recusa implícita
 
@@ -215,7 +215,7 @@ Depois que essa regra estiver em vigor, a coleção de eventos deverá começar 
 ![Opção De Pós-Visitante De Consentimento](assets/consent-post-user-optin.png)
 
 
-Para obter mais informações sobre consentimento no Web SDK, consulte [Suporte às preferências de consentimento do cliente](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/consent/supporting-consent).
+Para obter mais informações sobre consentimento no Web SDK, consulte [Suporte às preferências de consentimento do cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ Para obter mais informações sobre consentimento no Web SDK, consulte [Suporte 
 
 
 
-Para obter mais informações sobre a ação [!UICONTROL Definir consentimento], consulte [Definir consentimento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Para obter mais informações sobre a ação [!UICONTROL Definir consentimento], consulte [Definir consentimento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
