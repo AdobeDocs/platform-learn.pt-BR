@@ -56,7 +56,7 @@ Há várias maneiras de mapear dados da camada de dados para o XDM usando a func
 
 ### Implementar o XDM na camada de dados
 
-Nessa abordagem, os desenvolvedores da Web implementam um objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um objeto XDM nas tags. Se sua implementação não usa um gerenciador de tags, essa abordagem pode ser ideal, pois você pode enviar dados para o XDM diretamente do seu aplicativo usando o [comando sendEvent do XDM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
+Nessa abordagem, os desenvolvedores da Web implementam um objeto XDM totalmente definido como a estrutura da camada de dados. Em seguida, mapeie toda a camada de dados para um objeto XDM nas tags. Se sua implementação não usa um gerenciador de tags, essa abordagem pode ser ideal, pois você pode enviar dados para o XDM diretamente do seu aplicativo usando o [comando sendEvent do XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). Se você usar tags, poderá criar um elemento de dados de código personalizado capturando toda a camada de dados como um objeto JSON de passagem para o XDM. Em seguida, mapeie o JSON de passagem para o campo do objeto XDM na Ação Enviar evento.
 
 Veja abaixo um exemplo de como a camada de dados seria usada com o formato da Camada de dados do cliente Adobe:
 
@@ -133,12 +133,12 @@ Essa abordagem envolve o mapeamento de variáveis de camada de dados individuais
 
 ### Mapear para XDM no fluxo de dados
 
-Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de Dados para Coleta de Dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) e ignora o mapeamento de variáveis de camada de dados para XDM nas marcas.
+Essa abordagem usa uma funcionalidade integrada à configuração de sequência de dados chamada [Preparação de Dados para Coleta de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) e ignora o mapeamento de variáveis de camada de dados para XDM nas marcas.
 
 #### Pontos positivos
 
 * Mapeamento flexível de variáveis individuais para XDM em uma interface de apontar e clicar
-* Capacidade de [calcular novos valores](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) a partir de uma camada de dados antes que ela vá para o XDM
+* Capacidade de [calcular novos valores](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/functions) ou [transformar tipos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/data-handling) a partir de uma camada de dados antes que ela vá para o XDM
 
 #### Pontos negativos
 
@@ -151,7 +151,7 @@ Essa abordagem usa uma funcionalidade integrada à configuração de sequência 
 >
 > Camada de dados Google
 > 
-> Se sua organização já usa a Google Analytics e tem o objeto tradicional dataLayer da Google em seu site, você pode usar a [extensão de Camada de Dados da Google](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nas tags. Isso permite implantar a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
+> Se sua organização já usa a Google Analytics e tem o objeto tradicional dataLayer da Google em seu site, você pode usar a [extensão de Camada de Dados da Google](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/google-data-layer/overview) nas tags. Isso permite implantar a tecnologia Adobe mais rapidamente, sem precisar solicitar suporte da sua equipe de TI. O mapeamento da camada de dados do Google para o XDM seguiria as mesmas etapas descritas acima.
 
 
 ## Criar elementos de dados para capturar a camada de dados
@@ -277,4 +277,4 @@ Com esses elementos de dados implementados, você estará pronto para começar a
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
