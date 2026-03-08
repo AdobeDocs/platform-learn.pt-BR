@@ -20,4 +20,4 @@ ht-degree: 0%
 Entenda a importância do design do esquema, da extensibilidade e de evitar erros dispendiosos no Adobe Experience Platform.
 
 <!-- 85_S655_3442541_276_best-practices-for-data-modeling-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458291/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460137/?captions=por_br&learn=on&enablevpops=true)

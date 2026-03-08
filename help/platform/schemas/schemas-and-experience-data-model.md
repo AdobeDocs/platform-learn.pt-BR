@@ -18,4 +18,4 @@ ht-degree: 16%
 
 O Experience Data Model (XDM) é o modelo de dados padrão para descrever as experiências do cliente. Ao usar o XDM para criar esquemas e assimilar dados que seguem esses esquemas, você pode começar a usar o sistema XDM. O sistema XDM é a infraestrutura que oferece suporte a perfis de clientes em tempo real, aprendizado de máquina e Customer Journey Analytics no Adobe Experience Platform. Para obter mais informações, visite a [documentação sobre esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38512?captions=por_br&learn=on&enablevpops)
