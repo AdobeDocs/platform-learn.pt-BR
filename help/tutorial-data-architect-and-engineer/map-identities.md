@@ -113,7 +113,7 @@ Vamos criar o Namespace de Identidade `Luma CRM Id`:
    ![Namespace de identidade](assets/identity-createUsingApi.png)
 
 Se você retornar à interface do usuário do, agora deverá ver seus três novos namespaces personalizados:
-![Namespace de identidade ](assets/identity-newIdentities.png)
+![Namespace de identidade &#x200B;](assets/identity-newIdentities.png)
 
 
 ## Rotular campos de identidade em esquemas
@@ -136,7 +136,7 @@ Vamos adicionar uma identidade principal ao `Luma Loyalty Schema`:
 1. Selecione **[!UICONTROL Aplicar]**
 1. Selecione **[!UICONTROL Salvar]**
 
-   ![Identidade principal ](assets/identity-loyalty-primary.png)
+   ![Identidade principal &#x200B;](assets/identity-loyalty-primary.png)
 
 Repita o processo para algum outro esquema:
 

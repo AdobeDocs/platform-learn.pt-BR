@@ -218,7 +218,7 @@ Há uma coisa interessante que aconteceu e que eu quero destacar. Abra esse perf
 
 Parabéns, você acabou de mesclar perfis!
 
-![Perfil mesclado ](assets/ingestion-crm-profileLinkedIdentities.png)
+![Perfil mesclado &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### Validar com eventos de assimilação de dados
 

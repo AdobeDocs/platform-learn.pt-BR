@@ -125,7 +125,7 @@ Os conjuntos de dados também devem ser ativados para o Perfil e o processo é a
 1. Alternar a opção **[!UICONTROL Perfil]**
 1. No modal de confirmação, pressione o botão **[!UICONTROL Habilitar]** para confirmar
 
-   ![ Alternância de perfil](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; Alternância de perfil](assets/profile-loyalty-enableDataset.png)
 
 Repita as etapas acima para esses outros conjuntos de dados:
 
