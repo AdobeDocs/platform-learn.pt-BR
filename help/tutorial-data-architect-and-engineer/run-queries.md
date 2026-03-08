@@ -3,15 +3,15 @@ title: Executar consultas
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Executar consultas
 description: Nesta lição, você aprenderá a configurar, gravar e executar consultas para validar os dados assimilados.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ O Serviço de consulta da Adobe Experience Platform ajuda você a entender seus 
 Os **Arquitetos de Dados** e **Engenheiros de Dados** precisarão usar o serviço de consulta fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre o Serviço de consulta:
->[!VIDEO](https://video.tv.adobe.com/v/33187?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Permissões necessárias
 

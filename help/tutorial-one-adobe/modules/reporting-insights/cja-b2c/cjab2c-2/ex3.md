@@ -4,9 +4,9 @@ description: Assimilar e analise dados do Google Analytics no Adobe Experience P
 kt: 5342
 doc-type: tutorial
 exl-id: 00695ec0-34e0-4a20-afe3-bee4016eef58
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1405'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Neste exercício, você aprenderá a obter os outros 3 campos obrigatórios:
 - clientSecret
 - refreshToken
 
-## 1.2.3.1 Plataforma de autenticação da Google
+## Plataforma de autenticação do Google 1.2.3.1
 
 Para iniciar, volte para a página inicial da Google Cloud Platform. Para fazer isso, basta clicar no logotipo no canto superior esquerdo da tela.
 
@@ -69,7 +69,7 @@ Você verá agora a página inicial da **Plataforma de Autenticação da Google*
 Para o **Nome do aplicativo**, use este:
 
 | Nomenclatura | Exemplo |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - Conector do AEP BigQuery |
 
 Selecione seu endereço de email para o campo **Email de suporte ao usuário**.
@@ -109,8 +109,8 @@ Vários novos campos aparecerão. Agora é necessário inserir o **Nome** da ID 
 Para o campo **Nome**, use este:
 
 | Campo | Valor | Exemplo |
-| ----------------- |-------------| -------------| 
-| Nome | ldap - Conector AEP BigQuery | vangeluw - Conector do Platform BigQuery |
+| ----------------- |-------------| -------------|
+| Nome | ldap - Conector do AEP BigQuery | vangeluw - Conector do Platform BigQuery |
 
 ![demonstração](./images/ex2122.png)
 
@@ -118,7 +118,7 @@ Para o campo **Nome**, use este:
 Clique em **+ ADICIONAR URI** em **URIs de redirecionamento autorizados**. Adicione o novo URI abaixo.
 
 | Campo | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | URIs de redirecionamento autorizados | https://developers.google.com/oauthplayground |
 
 O campo **URIs de redirecionamento autorizados** é muito importante porque você precisará dele mais tarde para obter o RefreshToken necessário para concluir a configuração do Conector de Source do BigQuery no Adobe Experience Platform.
@@ -138,7 +138,7 @@ Copie estes dois campos e cole-os em um arquivo de texto na sua área de trabalh
 Para recapitular a configuração do BigQuery Source Connector no Adobe Experience Platform, agora você já tem esses valores disponíveis:
 
 | Credenciais do BigQuery Connector | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID do projeto | sua própria ID do projeto (por exemplo,: possible-bee-447102-h3) |
 | clientid | yourclientid |
 | cilentsecret | yourclientsecret |
@@ -155,7 +155,7 @@ Clique em **CONFIRM**.
 
 O **refreshToken** ainda está ausente. O refreshToken é um requisito por motivos de segurança. No mundo das APIs, os tokens normalmente expiram a cada 24 horas. Portanto, o **refreshToken** é necessário para atualizar o token de segurança a cada 24 horas, para que a instalação do Source Connector possa continuar se conectando à Google Cloud Platform e ao BigQuery.
 
-## 1.2.3.3 API do BigQuery e o refreshToken
+## API do BigQuery 1.2.3.3 e o refreshToken
 
 Há muitas maneiras de obter um refreshToken para acessar as APIs da Google Cloud Platform. Uma dessas opções é, por exemplo, usar o Postman.
 No entanto, o Google criou algo mais fácil de testar e reproduzir com suas APIs, uma ferramenta chamada **Playground do OAuth 2.0**.
@@ -177,7 +177,7 @@ Dois campos serão exibidos.
 Preencha os campos após esta tabela:
 
 | Configurações da API do Playground | Suas credenciais da API do Google |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID do cliente OAuth | sua ID do cliente (no arquivo de texto da área de trabalho) |
 | Segredo do cliente OAuth | seu próprio Segredo do cliente (no arquivo de texto da área de trabalho) |
 
@@ -234,7 +234,7 @@ Você verá agora o **token de atualização**.
 Copie o **token de atualização** e cole-o no arquivo de texto na área de trabalho junto com as outras Credenciais do BigQuery Source Connector:
 
 | Credenciais do BigQuery Source Connector | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID do projeto | sua própria ID de projeto aleatória (por exemplo,: apt-summer-273608) |
 | clientid | yourclientid |
 | cilentsecret | yourclientsecret |
@@ -248,11 +248,11 @@ Faça logon no Adobe Experience Platform acessando esta URL: [https://experience
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
 No menu esquerdo, vá para Origens. Você verá a página inicial de **Fontes**. No menu **Fontes**, clique em **Bancos de dados**. Clique no cartão **Google BigQuery**. Em seguida, clique em **Configurar**.
 
@@ -269,7 +269,7 @@ Vamos começar nomeando a conexão:
 Use esta convenção de nomenclatura:
 
 | Credenciais do BigQuery Connector | Valor | Exemplo |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Nome da conta | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Conexão BigQuery |
 | Descrição | `--aepUserLdap-- - BigQuery Connection` | vangeluw - Conexão BigQuery |
 
@@ -280,7 +280,7 @@ Você terá isto:
 Em seguida, preencha os detalhes do GCP e da API do BigQuery **Autenticação de conta** que você armazenou em um arquivo de texto na sua área de trabalho:
 
 | Credenciais do BigQuery Connector | Valor |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | ID do projeto | sua própria ID de projeto aleatória (por exemplo,: possible-bee-447102-h3) |
 | clientId | ... |
 | clientSecret | ... |

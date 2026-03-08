@@ -3,7 +3,7 @@ title: Instalar SDKs da Adobe Experience Platform para dispositivos móveis
 description: Saiba como implementar o SDK da Adobe Experience Platform para dispositivos móveis em um aplicativo móvel.
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Saiba como implementar o SDK da Adobe Experience Platform para dispositivos móv
 * Biblioteca de marcas criada com êxito com as extensões descritas na [lição anterior](configure-tags.md).
 * ID do Arquivo de Ambiente de Desenvolvimento das [Instruções de Instalação Móvel](configure-tags.md#generate-sdk-install-instructions).
 * Baixe o [aplicativo de exemplo para o iOS](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) ou o [aplicativo de exemplo para o Android](https://github.com/adobe/Luma-Android).
-* Experiência com [Xcode](https://developer.apple.com/xcode/) (iOS) ou [Android Studio](https://developer.android.com/studio/intro?utm_source=android-studio) (Android)
+* Experiência com [Xcode](Https://developer.apple.com/xcode/) (iOS) ou [Android Studio](https://developer.android.com/studio/intro?utm_source=android-studio) (Android)
 
 ## Objetivos de aprendizagem
 
@@ -253,6 +253,6 @@ Atualize `MobileCore.configureWith(environmentFileId)` com o `environmentFileId`
 >
 >Agora você instalou os pacotes necessários e atualizou seu projeto para registrar as extensões do Adobe Experience Platform Mobile SDK necessárias que você usará para o restante do tutorial.
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Mobile SDK. Se tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-os nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Próximo: **[Configurar Assurance](assurance.md)**

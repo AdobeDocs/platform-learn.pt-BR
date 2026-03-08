@@ -3,7 +3,8 @@ title: Cursor e servidores MCP AEM
 description: Cursor e servidores MCP AEM
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 1%
@@ -68,8 +69,8 @@ Adicione o seguinte servidor MCP ao arquivo **mcp.json**. Pode haver outros Serv
 
 ```json
 "aem": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
-	}
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
+    }
 ```
 
 ![Cursor + AEM](./images/cursorai7.png)
@@ -176,7 +177,7 @@ Adicione o seguinte servidor MCP ao arquivo **mcp.json**. Pode haver outros Serv
 ```
 ,
 "aem-discovery": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
 }
 ```
 

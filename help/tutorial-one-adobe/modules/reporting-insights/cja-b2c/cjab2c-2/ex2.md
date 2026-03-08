@@ -4,9 +4,9 @@ description: Assimilar e analisar dados do Google Analytics no Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ Quando os dados do Google Analytics estão no BigQuery, dimensões, métricas e 
 
 A solução para esse problema é transformar os dados do Google Analytics em um formato legível para facilitar a assimilação no Adobe Experience Platform.
 
-## 1.2.2.1 Criar um conjunto de dados para salvar novas tabelas do BigQuery
+## 1.2.2.1 Crie um conjunto de dados para salvar novas Tabelas do BigQuery
 
 Vá para o [Console do BigQuery](https://console.cloud.google.com/bigquery).
 
@@ -47,7 +47,7 @@ No lado direito da tela, você verá o menu **Criar conjunto de dados**.
 Para a **ID do Conjunto de Dados**, use a convenção de nomenclatura abaixo. Para os outros campos, deixe as configurações padrão.
 
 | Nomenclatura | Exemplo |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 Clique em **CRIAR CONJUNTO DE DADOS**.
@@ -58,7 +58,7 @@ Você voltará ao console do BigQuery com seu conjunto de dados criado.
 
 ![demonstração](./images/ex38.png)
 
-## 1.2.2.2 Criar seu primeiro SQL BigQuery
+## 1.2.2.2 Crie seu primeiro SQL BigQuery
 
 Em seguida, você criará sua primeira query no BigQuery. O objetivo desse query é obter os dados de amostra do Google Analytics e transformá-los para que possam ser assimilados no Adobe Experience Platform. Vá para a guia **Consulta sem título**.
 
@@ -239,7 +239,7 @@ Após a conclusão da execução da consulta, você verá a saída abaixo nos **
 
 ![demonstração](./images/ex312.png)
 
-## 1.2.2.3 Salve os resultados da sua consulta SQL do BigQuery
+## 1.2.2.3 Salve os resultados da sua consulta de SQL do BigQuery
 
 A próxima etapa é salvar a saída de sua consulta clicando no botão **SALVAR RESULTADOS**.
 
@@ -252,13 +252,13 @@ Como o local da saída, selecione **tabela BigQuery**.
 Você verá um novo pop-up, no qual o **Nome do Projeto** e o **Nome do Conjunto de Dados** são preenchidos previamente. O nome do conjunto de dados deve ser o conjunto de dados criado no início deste exercício, com esta convenção de nomenclatura:
 
 | Nomenclatura | Exemplo |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 Agora é necessário inserir um nome de Tabela. Use esta convenção de nomenclatura:
 
 | Nomenclatura | Exemplo |
-| ----------------- |------------- | 
+| ----------------- |------------- |
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 Clique em **SALVAR**.

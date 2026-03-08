@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -31,7 +31,7 @@ Volte para o primeiro nó, selecione **Inicializar constantes** e escolha **Adic
 ![WF Fusion](./images/wffusion69.png)
 
 | Chave | Exemplo de valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER` | `vangeluw` |
 | `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
@@ -39,7 +39,7 @@ Volte para o primeiro nó, selecione **Inicializar constantes** e escolha **Adic
 
 Você pode encontrar suas variáveis voltando ao Postman e abrindo suas **Variáveis de ambiente**.
 
-![Armazenamento do Azure](./../module1.1/images/az105.png)
+![Armazenamento Azure](./../module1.1/images/az105.png)
 
 Copie esses valores no Workfront Fusion e adicione um novo item para cada uma dessas 4 variáveis.
 
@@ -262,7 +262,7 @@ Você deverá ver isso. Em seguida, é necessário definir a saída da ação. C
 
 ![WF Fusion](./images/wffc30.png)
 
-Selecione o **Azure** para **Armazenamento**, cole este `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` em **Local do Arquivo** e selecione **vnd.adobe.photoshop** em **Tipo**. Clique para habilitar **Mostrar configurações avançadas**.
+Selecione **Azure** para **Armazenamento**, cole este `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}` em **Local do Arquivo** e selecione **vnd.adobe.photoshop** em **Tipo**. Clique para habilitar **Mostrar configurações avançadas**.
 
 ![WF Fusion](./images/wffc31.png)
 
@@ -287,7 +287,7 @@ Você deverá ver isso. Clique na bolha no módulo **Adobe Photoshop - Aplicar e
 
 ![WF Fusion](./images/wffc33b.png)
 
-Agora você pode ver que um novo arquivo do PSD foi gerado com sucesso e armazenado em sua Conta de Armazenamento do Microsoft Azure.
+Agora você pode ver que um novo arquivo do PSD foi gerado e armazenado com êxito em sua conta de armazenamento do Microsoft Azure.
 
 ![WF Fusion](./images/wffc33c.png)
 

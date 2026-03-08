@@ -2,12 +2,12 @@
 title: Copiar esquemas entre sandboxes
 description: Este vídeo mostra como copiar um esquema de uma sandbox para outra no Adobe Experience Platform usando a API Exportar/Importar esquema.
 feature: Schemas, Sandboxes
-role: Data Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-7939
 thumbnail: 333592.jpg
 exl-id: d0d23739-3a3a-4938-a400-684f36b0ae82
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 1%
@@ -22,4 +22,4 @@ Este vídeo mostra como copiar um esquema de uma sandbox para outra no Adobe Exp
 >
 >Um processo muito mais fácil e centrado em interface para mover esquemas e outros objetos entre sandboxes foi introduzido no final de 2023, que recomendamos usar. Consulte [Copiar objetos entre sandboxes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3413599?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)

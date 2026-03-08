@@ -4,9 +4,9 @@ description: Assimilar e analise dados do Google Analytics no Adobe Experience P
 kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Para este exercício, você precisa acessar um ambiente da Google Cloud Platform. Se você ainda não tiver acesso ao GCP, crie uma nova conta usando seu endereço de email pessoal.
 
-## 1.2.1.1 Por que conectar o Google BigQuery ao Adobe Experience Platform para obter dados do Google Analytics
+## 1.2.1.1 Por que conectar o Google BigQuery ao Adobe Experience Platform para obter dados do Google Analytics?
 
 O Google Cloud Platform (GCP) é um conjunto de serviços de computação em nuvem pública oferecidos pela Google. A Google Cloud Platform inclui uma variedade de serviços hospedados para computação, armazenamento e desenvolvimento de aplicativos que são executados em hardware da Google.
 
@@ -32,13 +32,13 @@ O Conector GCP/BigQuery Source deve ser usado para...
 - rastreie todo o comportamento do cliente no site e carregue esses dados no Adobe Experience Platform para análise, ciência de dados e casos de uso de personalização que não exigem ativação em tempo real.
 - carregar dados históricos do Google Analytics na Adobe Experience Platform, novamente para análise e casos de uso de ciência de dados
 
-## 1.2.1.2 Sua conta da Google
+## 1.2.1.2 Sua conta do Google
 
 >[!NOTE]
 >
 >Para este exercício, você precisa acessar um ambiente da Google Cloud Platform. Se você ainda não tiver acesso ao GCP, crie uma nova conta usando seu endereço de email pessoal.
 
-## 1.2.1.3 Selecionar ou criar um projeto
+## 1.2.1.3 Selecione ou crie um projeto
 
 Ir para [https://console.cloud.google.com/](https://console.cloud.google.com/).
 

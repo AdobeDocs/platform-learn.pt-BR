@@ -4,7 +4,7 @@ description: Real-time CDP - Destinos SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 5%
@@ -70,7 +70,7 @@ Para fazer isso, abra o aplicativo Postman e vá para **API de Criação de Dest
 >
 >Se você não tiver essa coleção do Postman, volte para o [Exercício 3 no Módulo 2.1](../rtcdpb2c-1/ex3.md) e siga as instruções para configurar o Postman com as coleções do Postman fornecidas.
 
-Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}**.
+Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **`{{SANDBOX_NAME}}`**.
 
 ![Ingestão de dados](./images/sdkpm1.png)
 
@@ -124,7 +124,7 @@ Depois de clicar em **Enviar**, seu modelo de servidor será criado e, como part
 
 ## Criar sua configuração de destino
 
-No Postman, em **API de Criação de Destino**, vá para **Configurações de destino** e clique para abrir a solicitação **POST - Criar uma configuração de destino**. Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **{{SANDBOX_NAME}}** e substitua-o por `--aepSandboxName--`.
+No Postman, em **API de Criação de Destino**, vá para **Configurações de destino** e clique para abrir a solicitação **POST - Criar uma configuração de destino**. Você verá isso. Em **Cabeçalhos**, é necessário atualizar manualmente o valor da chave **x-sandbox-name** e defini-lo como `--aepSandboxName--`. Selecione o valor **`{{SANDBOX_NAME}}`** e substitua-o por `--aepSandboxName--`.
 
 ![Ingestão de dados](./images/sdkpm7.png)
 
@@ -160,7 +160,7 @@ Agora é necessário substituir o espaço reservado **{{body}}** pelo código ab
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=pt-BR",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"

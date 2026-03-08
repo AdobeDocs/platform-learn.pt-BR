@@ -3,12 +3,12 @@ title: Assimilar dados de transmissão
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Assimilar dados de transmissão
 description: Nesta lição, você transmitirá dados no Experience Platform usando a Web SDK.
-role: Data Engineer
+role: Developer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 97fba09ddba62cffe4428592ce25e4f26c3a5850
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Há duas tarefas principais que devem ser concluídas na interface da Coleção 
 
 Antes de começar os exercícios, assista a estes dois pequenos vídeos para saber mais sobre a assimilação de dados por transmissão e o Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31683?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37265?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Embora este tutorial se concentre na assimilação por transmissão de sites com o Web SDK, você também pode transmitir dados usando o [SDK Móvel](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview), a [API do Edge Network Server](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/server-api/overview) e a [API HTTP](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/streaming/http).
+>Embora este tutorial se concentre na assimilação por transmissão de sites com o Web SDK, você também pode transmitir dados usando o [SDK Móvel](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), a [API do Edge Network Server](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) e a [API HTTP](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Permissões necessárias
 
@@ -185,7 +185,7 @@ Agora criaremos uma regra para enviar dados para a Platform. Uma regra é uma co
 1. Atribua um nome à regra `All Pages - Library Loaded`
 1. Em **[!UICONTROL Eventos]**, selecione o botão **[!UICONTROL Adicionar]**
    ![Nomear a regra e adicionar um evento](assets/websdk-property-nameRule.png)
-1. Use a **[!UICONTROL Extensão de]**&#x200B;**[!UICONTROL do &lbrace;Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
+1. Use a **[!UICONTROL Extensão de]****[!UICONTROL do {Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
 1. Selecione **[!UICONTROL Manter alterações]** para retornar à tela de regra principal
    ![Adicionar o evento de biblioteca carregada](assets/websdk-property-addEvent.png)
 1. Deixe **[!UICONTROL Condições]** em branco, pois queremos que esta regra seja acionada em todas as páginas, de acordo com o nome que demos a ela
@@ -263,7 +263,7 @@ O Experience Platform Debugger é uma extensão disponível para o Chrome que aj
 
 Se você nunca usou o Debugger antes (e este é diferente do Adobe Experience Cloud Debugger mais antigo), assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/36163?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra o site Luma
 

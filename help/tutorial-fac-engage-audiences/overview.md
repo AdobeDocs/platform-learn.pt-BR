@@ -2,22 +2,22 @@
 title: Interagir com públicos usando a composição de público federado
 description: Saiba mais sobre a Federated Audience Composition (FAC) e como ela permite que arquitetos e engenheiros de dados preparem e ativem públicos de alto valor diretamente de data warehouses compatíveis.
 breadcrumb-title: Visão geral
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11T00:00:00Z
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
-source-git-commit: e7484bcb8fa643a5c86b7d97da8c45d333e2e0ae
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '566'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # Interagir com públicos do data warehouse usando a Federated Audience Composition
 
-A Federated Audience Composition (FAC) é um módulo para Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. Ele também está disponível com o Adobe Real-Time CDP Composable Audiences (uma solução personalizada para clientes como uma CDP combinável). Ele capacita arquitetos e engenheiros de dados a preparar e ativar públicos-alvo de alto valor diretamente de [data warehouses empresariais compatíveis](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, sem copiar ou mover dados do cliente para o Adobe Experience Platform (AEP). Essa abordagem de CDP combinável (uma solução personalizada para os clientes) está alinhada às tendências do setor, permitindo que as empresas aproveitem sua infraestrutura de dados para experiências digitais personalizadas, mantendo, ao mesmo tempo, a governança de dados.
+A Federated Audience Composition (FAC) é um módulo para Adobe Real-Time Customer Data Platform (Real-Time CDP) e Adobe Journey Optimizer. Ele também está disponível com o Adobe Real-Time CDP Composable Audiences (uma solução personalizada para clientes como uma CDP combinável). Ele capacita arquitetos e engenheiros de dados a preparar e ativar públicos-alvo de alto valor diretamente de [data warehouses empresariais compatíveis](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, sem copiar ou mover dados do cliente para o Adobe Experience Platform (AEP). Essa abordagem de CDP combinável (uma solução personalizada para os clientes) está alinhada às tendências do setor, permitindo que as empresas aproveitem sua infraestrutura de dados para experiências digitais personalizadas, mantendo, ao mesmo tempo, a governança de dados.
 
 ## Contexto comercial
 
@@ -51,10 +51,10 @@ Para executar atividades semelhantes em seu ambiente, verifique se você tem:
 
 - Acesso a uma conta do Adobe Experience Platform provisionada com o Real-Time CDP ou o Journey Optimizer.
 - Permissões de administrador do sistema ou a capacidade de ter permissões configuradas.
-- Familiaridade com conceitos do Adobe Experience Platform, como esquemas, conjuntos de dados e públicos-alvo (recomendado: conclua a [Introdução à lista de reprodução do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/playlists/experience-platform-introduction?lang=en){target="_blank"} no Experience League).
-- Acesso a um [data warehouse de empresa](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} com suporte.
+- Familiaridade com conceitos do Adobe Experience Platform, como esquemas, conjuntos de dados e públicos-alvo (recomendado: conclua a [Introdução à lista de reprodução do Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} no Experience League).
+- Acesso a um [data warehouse de empresa](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} com suporte.
 - Conhecimento básico de SQL para consulta de data warehouses.
 - **Ambientes de sandbox**: crie uma sandbox na instância de sua organização para testar com segurança sem afetar os dados de produção.
-- **Conexão Data Warehouse**: este tutorial usa uma conexão Snowflake, mas você pode usar qualquer [data warehouse com suporte](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/start/access-prerequisites).
+- **Conexão Data Warehouse**: este tutorial usa uma conexão Snowflake, mas você pode usar qualquer [data warehouse com suporte](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites).
 
 Primeiro, vamos analisar a [Arquitetura e fluxo de alto nível para a composição de público-alvo federado](fac-architecture-and-flow.md).

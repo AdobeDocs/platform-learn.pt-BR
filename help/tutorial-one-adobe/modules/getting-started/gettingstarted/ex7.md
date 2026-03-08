@@ -4,7 +4,7 @@ description: Introdução - Configuração do Postman
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 1%
@@ -115,7 +115,7 @@ Se for bem-sucedido, uma resposta contendo um token de portador, um token de ace
 Você deve ver uma resposta semelhante contendo as seguintes informações:
 
 | Chave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **portador** |
 | access_token | **eyJhbGciOiJSUz...** |
 | expires_in | **86399** |

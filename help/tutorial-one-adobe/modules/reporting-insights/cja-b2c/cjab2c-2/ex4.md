@@ -4,9 +4,9 @@ description: Assimilar e analisar dados do Google Analytics no Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '720'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Clique em **Next**.
 
 ![demonstração](./images/datasets1.png)
 
-## 1.2.4.2 Mapeamento XDM
+## 1.2.4.2 mapeamento XDM
 
 Agora você verá isto:
 
@@ -68,7 +68,7 @@ Role para baixo. Agora é necessário mapear cada **Campo Source** do Google Ana
 Use a tabela de mapeamento abaixo para este exercício.
 
 | Campo de origem | Campo de público alvo |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `_id` | `_id` |
 | `_id` | canal._id |
 | `timeStamp` | carimbo de data e hora |
@@ -88,7 +88,7 @@ Use a tabela de mapeamento abaixo para este exercício.
 Para alguns campos, é necessário remover o mapeamento original e criar um novo, para um **Campo Calculado**.
 
 | Campo calculado | Campo de público alvo |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
 | `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
 | `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |
@@ -111,7 +111,7 @@ Clique em **Next**.
 
 ![demonstração](./images/xdm34.png)
 
-## 1.2.4.3 Conexão e agendamento da assimilação de dados
+## 1.2.4.3 Conexão e agendamento de assimilação de dados
 
 Você verá a guia **Agendamento**:
 
@@ -134,7 +134,7 @@ Clique em **Next**.
 
 ![demonstração](./images/ex437.png)
 
-## 1.2.4.4 Analisar e iniciar conexão
+## 1.2.4.4 Revisar e iniciar conexão
 
 Agora você verá uma visão geral detalhada da sua conexão. Verifique se tudo está correto antes de continuar, pois algumas configurações não podem mais ser alteradas posteriormente, como por exemplo, o mapeamento XDM.
 

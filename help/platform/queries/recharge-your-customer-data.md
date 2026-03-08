@@ -2,12 +2,12 @@
 title: Recarregue os dados do cliente para fornecer experiências eletrizantes
 description: Saiba como reduzir o impacto de dados de baixa qualidade, reduzir o tempo de implantação e multiplicar o ROI usando os mesmos dados para uma variedade de casos de uso.
 feature: Queries
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Este vídeo aborda:
 * Recursos de preparação de dados do Adobe Experience Platform que você pode aproveitar
 * Aumento do ROI da Adobe Real-Time CDP, Adobe Journey Optimizer e Customer Journey Analytics
 
->[!VIDEO](https://video.tv.adobe.com/v/3454945?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## Exemplo de SQL
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->Este vídeo é um trecho da sessão *[Recarregando Dados Omnichannel para Experiências de Eletrificação](https://business.adobe.com/br/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* do Adobe Summit 2020.
+>Este vídeo é um trecho da sessão *[Recarregando Dados Omnichannel para Experiências de Eletrificação](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)* do Adobe Summit 2020.

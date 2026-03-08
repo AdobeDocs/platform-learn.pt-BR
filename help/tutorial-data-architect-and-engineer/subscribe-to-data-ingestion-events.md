@@ -3,15 +3,15 @@ title: Assinar eventos de assimilação de dados
 seo-title: Subscribe to data ingestion events | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Assinar eventos de assimilação de dados
 description: Nesta lição, você se inscreverá nos eventos de assimilação de dados configurando um webhook com a Adobe Developer Console e uma ferramenta de desenvolvimento de webhook online. Você usará esses eventos para monitorar o status dos trabalhos de assimilação de dados nas lições subsequentes.
-role: Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ Neste exercício, criaremos um webhook usando uma ferramenta online chamada webh
 
    ![Webhook.site](assets/ioevents-webhook-home.png)
 1. Selecione o botão **Editar** na navegação superior
-1. Como corpo da Resposta, insira `$request.query.challenge$`. As notificações de Adobe I/O Eventos que configuramos posteriormente nesta lição enviam um desafio para o webhook e exigem que ele seja incluído no corpo da resposta.
+1. Como corpo da Resposta, insira `$request.query.challenge$`. As notificações do Adobe I/O Events que configuramos posteriormente nesta lição enviam um desafio para o webhook e exigem que ele seja incluído no corpo da resposta.
 1. Selecione o botão **Salvar**
 
    ![Editar a resposta](assets/ioevents-webhook-editResponse.png)
@@ -81,7 +81,7 @@ Pronto por enquanto, você aprenderá mais sobre essas notificações nas próxi
 ## Recursos adicionais
 
 * [Webhook.site](https://webhook.site/)
-* [Documentação de notificações de assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=pt-BR)
-* [Introdução à documentação de Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
+* [Documentação de notificações de assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [Introdução à documentação do Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, finalmente vamos começar [assimilando dados](ingest-batch-data.md)!

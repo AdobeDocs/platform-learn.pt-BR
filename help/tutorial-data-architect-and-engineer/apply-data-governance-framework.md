@@ -3,12 +3,12 @@ title: Aplicar a estrutura de governança de dados
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Aplicar a estrutura de governança de dados
 description: Nesta lição, você aplicará a estrutura de governança de dados aos dados assimilados na sandbox.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -24,9 +24,9 @@ Nesta lição, você aplicará a estrutura de governança de dados aos dados ass
 O Adobe Experience Platform Data Governance permite gerenciar dados de clientes e garantir conformidade com regulamentos, restrições e políticas aplicáveis ao uso de dados. Ele desempenha um papel fundamental no Experience Platform em vários níveis, incluindo o controle do uso de dados.
 
 Antes de começar os exercícios, assista a estes pequenos vídeos sobre governança de dados:
->[!VIDEO](https://video.tv.adobe.com/v/41325?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/32683?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required

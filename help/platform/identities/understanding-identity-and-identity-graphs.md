@@ -2,15 +2,15 @@
 title: Visão geral dos gráficos de identidade e identidade
 description: Saiba mais sobre os principais recursos de resolução de identidade na Adobe Experience Platform&mdash;coleção de identidades, gráficos de identidade e as APIs. Saiba como o Serviço de identidade vincula identidades desconectadas para fornecer uma experiência conectada consistente por meio da construção de um perfil unificado.
 feature: Identities
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 9%
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 Saiba mais sobre os principais recursos de resolução de identidades no Adobe Experience Platform: coleção de identidades, gráficos de identidade e APIs. Saiba como o Serviço de identidade vincula identidades desconectadas para fornecer uma experiência conectada consistente por meio da construção de um perfil unificado. Para obter mais informações, visite a [documentação do serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3422776?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 ## Configuração de identidades
 
@@ -32,7 +32,7 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Rotular, assimilar e verificar dados de identidade" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31684?format=jpeg&nocache=1740414775790&captions=por_br" alt="Rotular, assimilar e verificar dados de identidade"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Rotular, assimilar e verificar dados de identidade"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -45,8 +45,8 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
                     <p class="is-size-6">Saiba como rotular campos de dados como identidades, assimilar dados de identidade e verificar os dados no gráfico privado do serviço de identidade da Adobe Experience Platform.</p>
                 </div>
                 <a href="label-ingest-and-verify-identity-data.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -65,7 +65,7 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Regras de vinculação do gráfico de identidade - Simulação de gráfico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444048/?format=jpeg&nocache=1740414776009&captions=por_br" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -73,7 +73,7 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="identity-graph-linking-rules/graph-simulation.md" target="_blank" rel="referrer" title="Regras de vinculação do gráfico de identidade - Simulação de gráfico">Regras de vinculação de gráfico de identidade - Simulação de gráfico</a>
+                        <a href="identity-graph-linking-rules/graph-simulation.md" target="_blank" rel="referrer" title="Regras de vinculação do gráfico de identidade - Simulação de gráfico">Regras de vinculação de gráfico de identidade: simulação de gráfico</a>
                     </p>
                     <p class="is-size-6">Saiba como usar o simulador de gráficos para testar as regras de vinculação de gráficos de identidade no Adobe Experience Platform. Faça experimentos com diferentes cenários e jogue com as configurações de prioridade e "único por gráfico" para verificar quais regras são necessárias para sua empresa evitar o colapso dos gráficos.</p>
                 </div>
@@ -111,8 +111,8 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
                     <p class="is-size-6">Saiba como usar o recurso do visualizador de gráficos de identidade para pesquisar, explorar e filtrar gráficos de identidade para validação e depuração.</p>
                 </div>
                 <a href="view-identity-graphs.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>

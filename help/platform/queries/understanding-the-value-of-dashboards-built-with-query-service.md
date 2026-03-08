@@ -2,12 +2,12 @@
 title: Noções básicas sobre o valor de painéis criados com o Serviço de consulta
 description: Com o Adobe Experience Platform, as marcas podem assimilar, armazenar, estruturar e obter todos os conjuntos de dados armazenados&mdash;incluindo dados comportamentais, de CRM, de ponto de venda e muito mais. Usando o Serviço de consulta da Experience Platform, as marcas podem consultar esses conjuntos de dados e responder perguntas específicas sobre os negócios e, em seguida, começar a gerar insights de impacto. Este vídeo demonstra o valor da criação de painéis em ferramentas de Business Intelligence (BI) usando o Serviço de consulta.
 feature: Queries
-role: Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3714
 thumbnail: 28981.jpg
 exl-id: bf78cbeb-151a-43ef-a90b-6438af7ffbeb
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%

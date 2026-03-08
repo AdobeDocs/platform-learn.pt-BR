@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Visualização usando o Customer Journ
 kt: 5342
 doc-type: tutorial
 exl-id: 40498a6d-c306-47db-ae12-4cfea6983f03
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 - Compreensão da interface do Analysis Workspace
 - Conheça alguns recursos que tornam o Analysis Workspace tão diferente.
-- Saiba como analisar no CJA usando o Analysis Workspace
+- Saiba como analisar o no CJA usando o Analysis Workspace
 
 ## Contexto
 
@@ -79,8 +79,8 @@ Quais são os 5 principais produtos visualizados?
 
 Lembre-se de salvar o projeto de vez em quando.
 
-| Sistema operacional | Atalho |
-| ----------------- |-------------| 
+| SO | Atalho |
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Command+S |
 
@@ -125,10 +125,10 @@ Em seguida, clique em **Bloquear seleção** para bloquear essa visualização p
 
 Saiba mais sobre visualizações usando o Analysis Workspace aqui:
 
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=pt-BR](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html?lang=pt-BR)
-- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=pt-BR](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html?lang=pt-BR)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Funil de interação do produto, da visualização à compra
+## Interação de produtos funnel, da visualização à compra
 
 Há muitas maneiras de resolver essa questão. Uma delas é usar o Tipo de interação do produto e usá-lo em uma tabela de forma livre. Outra maneira é usar uma **Visualização de Fallout**. Vamos usar o último conforme queremos visualizar e analisar ao mesmo tempo.
 
@@ -241,7 +241,7 @@ Vamos primeiro segmentar os dados para obter somente usuários com chamadas **po
 No construtor de filtros, dê um nome ao filtro
 
 | Nome | Descrição |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Sensação de chamada - Positiva | Sensação de chamada - Positiva |
 
 ![demonstração](./images/pro47.png)

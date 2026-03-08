@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: d8111a39-ee62-46d7-9aa2-4deab0238951
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba mais sobre o processo passo a passo de integração de públicos, colaboração com editores e ativação de campanhas usando o Real-Time CDP Collaboration da Adobe.
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3459950/?learn=on&enablevpops=true&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)

@@ -2,13 +2,13 @@
 title: Configurar permissões
 seo-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Configurar permissões
-description: Nesta lição, você configurará as permissões de usuário do Adobe Experience Platform usando Adobe Admin Console.
-role: Data Architect, Data Engineer
+description: Nesta lição, você configurará as permissões de usuário do Adobe Experience Platform usando o Admin Console da Adobe.
+role: Developer
 feature: Access Control
 jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 2%
@@ -31,15 +31,15 @@ Os arquitetos de dados e engenheiros de dados são usuários avançados do Adobe
 >
 >Um Administrador de sistema de produtos da Adobe Experience Cloud deve concluir algumas etapas desta lição, que é chamada nos cabeçalhos da seção. Se você não for um Administrador do sistema, entre em contato com um da sua empresa e solicite que eles concluam essas tarefas. Também há uma tarefa que eles precisam concluir durante a [lição Configurar Developer Console e Postman](set-up-developer-console-and-postman.md).
 
-## Sobre o Admin Console
+## Sobre a Admin Console
 
-O [!DNL Admin Console] é a interface usada para administrar o acesso do usuário a todos os produtos da Adobe Experience Cloud. Para obter acesso à Platform, um usuário ou deve ser adicionado ao Admin Console e, em seguida, todos os itens de permissão granulares são gerenciados na tela Permissões do Adobe Experience Platform.
+O [!DNL Admin Console] é a interface usada para administrar o acesso do usuário a todos os produtos da Adobe Experience Cloud. Para acessar a Platform, um usuário ou deve ser adicionado no Admin Console e, em seguida, todos os seus itens de permissão granulares são gerenciados na tela Permissões do Adobe Experience Platform.
 
 
 Este é um resumo rápido das funções existentes para a Platform:
 
 * **Os usuários** de um perfil de produto podem concluir tarefas na interface do usuário da plataforma de acordo com as permissões atribuídas no perfil de produto.
-* **Desenvolvedores** podem criar credenciais de API e projetos na Adobe Developer Console para começar a usar a API Experience Platform
+* **Desenvolvedores** podem criar credenciais de API e projetos no Adobe Developer Console para começar a usar a API do Experience Platform
 * **Os Administradores de Produtos** podem adicionar usuários e desenvolvedores ao produto do Adobe Experience Platform na Adobe Admin Console, bem como gerenciar o acesso granular dos usuários na tela Permissões da interface da Platform.
 * Os **Administradores do sistema** podem adicionar administradores de produtos e administrar essencialmente quaisquer permissões para todos os produtos da Adobe Experience Cloud.
 
@@ -49,7 +49,7 @@ Neste exercício, você, um Administrador do sistema ou um Administrador de prod
 
 >[!NOTE]
 >
->Se você for um Administrador do Sistema que assiste um colega que está fazendo este tutorial, considere adicionar seu colega como um *Administrador de Produto* para o Adobe Experience Platform. Como um Administrador de produto, ele poderá concluir essas etapas por conta própria e administrar outros usuários do Experience Platform no futuro.
+>Se você for um Administrador do Sistema que assiste um colega que está fazendo este tutorial, considere adicionar seu colega como um *Administrador de Produto* para o Adobe Experience Platform. Como Administrador de produto, ele poderá concluir essas etapas por conta própria e administrar outros usuários do Experience Platform no futuro.
 
 Para adicionar o participante do tutorial como um [!UICONTROL Usuário] e [!UICONTROL Desenvolvedor]:
 
@@ -91,11 +91,11 @@ As permissões são gerenciadas em Funções. Crie uma função para o tutorial:
 
    1. Modelagem de dados
    1. Gerenciamento de dados
-   1. Gerenciamento de perfis
+   1. Gerenciamento de perfil
    1. Identity Management
    1. Administração de sandbox
-   1. Query Service
-   1. Coleção de dados
+   1. Serviço de consultas
+   1. Coleta de dados
    1. Governança de dados
    1. Painéis
    1. Alertas

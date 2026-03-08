@@ -3,12 +3,12 @@ title: Mapear identidades
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Mapear identidades
 description: Nesta lição, criaremos namespaces de identidade e adicionaremos campos de identidade aos nossos esquemas.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 6%
@@ -26,7 +26,7 @@ O Serviço de identidade da Adobe Experience Platform ajuda você a obter uma me
 **Os Arquitetos de Dados** precisarão mapear identidades fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre identidade no Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/3422776?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Vamos criar o Namespace de Identidade `Luma CRM Id`:
    ![Namespace de identidade](assets/identity-createUsingApi.png)
 
 Se você retornar à interface do usuário do, agora deverá ver seus três novos namespaces personalizados:
-![Namespace de identidade &#x200B;](assets/identity-newIdentities.png)
+![Namespace de identidade ](assets/identity-newIdentities.png)
 
 
 ## Rotular campos de identidade em esquemas
@@ -136,7 +136,7 @@ Vamos adicionar uma identidade principal ao `Luma Loyalty Schema`:
 1. Selecione **[!UICONTROL Aplicar]**
 1. Selecione **[!UICONTROL Salvar]**
 
-   ![Identidade principal &#x200B;](assets/identity-loyalty-primary.png)
+   ![Identidade principal ](assets/identity-loyalty-primary.png)
 
 Repita o processo para algum outro esquema:
 

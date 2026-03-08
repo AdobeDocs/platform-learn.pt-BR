@@ -2,13 +2,13 @@
 title: Introdução à Adobe Experience Platform para arquitetos e engenheiros de dados
 description: Introdução à Adobe Experience Platform para arquitetos e engenheiros de dados.
 breadcrumb-title: Visão geral
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -26,7 +26,7 @@ _A Introdução à Adobe Experience Platform para Arquitetos de dados e Engenhei
 
 ## Objetivos de aprendizagem
 
-Os arquitetos de dados e os engenheiros de dados devem colaborar estreitamente para uma implantação bem-sucedida do Experience Platform. Este tutorial prático ensina as principais tarefas executadas por _ambas as funções_, para que você saiba como começar a implementar a Platform para sua própria empresa. Você será orientado por exercícios que apresentarão a terminologia, os recursos, a interface e as APIs principais do Experience Platform. Os clientes de aplicativos da Adobe Experience Cloud, como Real-time Customer Data Platform, Customer Journey Analytics e Journey Optimizer, também considerarão esse conteúdo útil, pois os serviços da plataforma são a base essencial desses aplicativos.
+Os arquitetos de dados e os engenheiros de dados devem colaborar estreitamente para uma implantação bem-sucedida do Experience Platform. Este tutorial prático ensina as principais tarefas executadas por _ambas as funções_, para que você saiba como começar a implementar a Platform para sua própria empresa. Você será guiado por exercícios que apresentarão a terminologia, os recursos, a interface e as APIs principais do Experience Platform. Os clientes de aplicativos da Adobe Experience Cloud, como Real-Time Customer Data Platform, Customer Journey Analytics e Journey Optimizer, também considerarão esse conteúdo útil, pois os serviços da plataforma são a base essencial desses aplicativos.
 
 ![Adobe Experience Cloud marketecture destacando os serviços da Platform abordados neste tutorial — identidade, perfil, segmentação, assimilação, consulta e governança](assets/marketecture.png)
 
@@ -37,7 +37,7 @@ Os tópicos incluem:
 * Configuração de um projeto do Developer Console e uso da API da plataforma
 * Gerenciamento de dados — incluindo a criação de esquemas, conjuntos de dados, identidades, políticas de mesclagem e governança de dados
 * Assimilação de dados usando modos de lote e fluxo
-* Captura de dados da Web com o SDK da Web da Adobe Experience Platform
+* Captura de dados da Web com o Adobe Experience Platform Web SDK
 * Criação de perfis de clientes em tempo real
 * Utilização do Serviço de consulta para validar dados e extrair dados
 * Construção de segmentos
@@ -48,7 +48,7 @@ O Adobe Experience Platform é uma plataforma técnica projetada para ajudar voc
 
 ## Pré-requisitos
 
-* Você assistiu à [Introdução à lista de reprodução de Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/playlists/experience-platform-introduction) no Experience League e está familiarizado com os recursos da Platform
+* Você assistiu à [Introdução à lista de reprodução do Adobe Experience Platform](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) no Experience League e está familiarizado com os recursos da plataforma
 * Você tem acesso a uma conta provisionada com a Adobe Experience Platform (ou um aplicativo baseado na plataforma, como o Real-Time CDP ou o Journey Optimizer) e a Coleção de dados (antigo Launch).
 * Você é um Administrador do Sistema dessa conta ou pode ter uma [configurar permissões de usuário](configure-permissions.md) para você.
 
@@ -58,7 +58,7 @@ Este tutorial combina tarefas para engenheiros de dados e arquitetos de dados. C
 
 À medida que você cria vários elementos da Platform durante este tutorial, tente manter os nomes que eu recomendo o máximo possível. No entanto, há alguns nomes de elementos de alto nível que você pode querer personalizar, caso haja várias pessoas em sua organização fazendo este tutorial simultaneamente. Por exemplo, talvez você queira nomear a sandbox da Platform como &quot;Plataforma do tutorial do Luma - Ignatius J Reilly&quot; em vez de apenas &quot;Plataforma do tutorial do Luma&quot;.
 
-Se você ficar preso, tente reler as instruções primeiro e depois use o link ![Registrar um problema](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=pt-BR) na barra lateral de cada página para entrar em contato comigo.
+Se você ficar preso, tente reler as instruções primeiro e depois use o link ![Registrar um problema](https://experienceleague.adobe.com/assets/img/feedback.svg) na barra lateral de cada página para entrar em contato comigo.
 
 ## Notas técnicas
 
@@ -72,7 +72,7 @@ A Platform é criada como API. Embora existam workflows de interface para todos 
 
 ### Tecnologias de terceiros
 
-Embora você use várias tecnologias neste tutorial, você permanecerá quase totalmente no ecossistema de Adobe. Em sua própria implementação da Platform, você provavelmente integrará a Platform a tecnologias específicas de terceiros. Para manter este tutorial relevante para todos os clientes, usaremos uma implementação mais genérica.
+Embora você use várias tecnologias neste tutorial, você permanecerá quase totalmente no ecossistema da Adobe. Em sua própria implementação da Platform, você provavelmente integrará a Platform a tecnologias específicas de terceiros. Para manter este tutorial relevante para todos os clientes, usaremos uma implementação mais genérica.
 
 ## Atualizações do tutorial
 

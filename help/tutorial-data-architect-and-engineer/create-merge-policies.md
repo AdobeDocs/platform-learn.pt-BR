@@ -3,7 +3,7 @@ title: Criar políticas de mesclagem
 seo-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Criar políticas de mesclagem
 description: Nesta lição, você criará políticas de mesclagem para determinar como os dados são mesclados em perfis.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Profiles
 jira: KT-4348
 audience: data architect
@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Manteremos a interface do usuário para esta lição, mas também existem opçõ
 **Os Arquitetos de Dados** precisarão criar políticas de mesclagem fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre políticas de mesclagem:
->[!VIDEO](https://video.tv.adobe.com/v/3413365?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Permissões necessárias
 
@@ -140,7 +140,7 @@ Um caso de uso importante para políticas de mesclagem é o para governança de 
 
 ## Recursos adicionais
 
-* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=pt-BR)
+* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Referência da API de Políticas de Mesclagem (parte da API de Perfil do Cliente em Tempo Real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Agora vamos seguir para a [estrutura de governança de dados](apply-data-governance-framework.md).

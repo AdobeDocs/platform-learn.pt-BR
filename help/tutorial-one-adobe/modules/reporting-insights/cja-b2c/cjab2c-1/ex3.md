@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Criar uma visualização de dados
 kt: 5342
 doc-type: tutorial
 exl-id: 048e4f0f-4713-4249-a118-88906b3ba5c0
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 3%
+source-wordcount: '1591'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 3%
 - Entender as configurações básicas da definição de visita
 - Entender a atribuição e a persistência em uma visualização de dados
 
-## 1.1.3.1 Visualização de dados
+## Visualização de dados 1.1.3.1
 
 Com a conexão concluída, agora é possível avançar para a visualização de influência. Uma diferença entre o Adobe Analytics e o CJA é que o CJA precisa de uma Visualização de dados para limpar e preparar os dados antes da visualização.
 
@@ -40,7 +40,7 @@ Você será redirecionado para o fluxo de trabalho **Criar Exibição de Dados**
 
 ![demonstração](./images/0v2.png)
 
-## 1.1.3.2 Definição da visualização de dados
+## Definição de Visualização de Dados 1.1.3.2
 
 Agora você pode configurar as definições básicas para a Visualização de dados.
 
@@ -55,12 +55,12 @@ Em seguida, dê um nome à sua Visualização de Dados seguindo esta convenção
 Insira o mesmo valor para a descrição: `--aepUserLdap-- – Omnichannel Data View`.
 
 | Nome | Descrição | ID externa |
-| ----------------- |-------------|-------------| 
+| ----------------- |-------------|-------------|
 | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap--123` |
 
 ![demonstração](./images/1v2.png)
 
-Para o **Fuso Horário**, selecione o fuso horário **Horário de Greenwich; Monróvia, Casablanca [GMT]**. Este é um cenário realmente interessante, já que algumas empresas operam em diferentes países e regiões geográficas. A alocação do fuso horário certo para cada país evitará erros típicos de dados, como acreditar que, por exemplo, no Peru, a maioria das pessoas compra camisetas às 4h.
+Para o **Fuso Horário**, selecione o fuso horário **Horário de Greenwich; Monróvia, Casablanca [GMT]**. Este é um cenário realmente interessante, já que algumas empresas operam em diferentes países e regiões geográficas. A alocação do fuso horário certo para cada país evitará erros típicos de dados, como acreditar que, por exemplo, no Peru, a maioria das pessoas compra camisetas às 4:00 da manhã.
 
 ![demonstração](./images/ext7.png)
 
@@ -78,7 +78,7 @@ Clique em **Salvar**.
 
 ![demonstração](./images/12v2a.png)
 
-## 1.1.3.3 Componentes da visualização de dados
+## Componentes da Visualização de Dados do 1.1.3.3
 
 Neste exercício, você configurará os componentes necessários para analisar os dados e visualizá-los usando o Analysis Workspace. Nesta interface, há três áreas principais:
 
@@ -108,12 +108,12 @@ Algo realmente importante são as **configurações de Persistência**. O concei
 
 Se você não alterar essas configurações, o CJA interpretará a dimensão como uma **Prop** (nível de ocorrência). Além disso, podemos alterar a Persistência para tornar a dimensão um **eVar** (manter o valor na jornada).
 
-Se você não estiver familiarizado com eVars e Props, poderá [ler mais sobre eles na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=pt-BR).
+Se você não estiver familiarizado com eVars e Props, poderá [ler mais sobre eles na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
 Vamos deixar o Nome da página como uma propriedade. Dessa forma, você não precisa alterar nenhuma **Configuração de persistência**.
 
 | Nome do componente a ser pesquisado | Novo nome | Configurações de persistência |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Nome (web.webPageDetails.name) | Nome da página |          |
 
 Em seguida, escolha a dimensão **phoneNumber** e solte-a na tela. O novo nome deve ser **Número de Telefone**.
@@ -129,7 +129,7 @@ Para alterar a Persistência, role para baixo no menu direito e abra a guia **Pe
 Marque a caixa de seleção para modificar as configurações de persistência. Selecione o escopo **Mais recente** e **Pessoa (Janela de relatórios)**, pois só nos importamos com o último número de celular dessa pessoa. Se o cliente não preencher o dispositivo móvel em visitas futuras, você ainda verá esse valor preenchido.
 
 | Nome do componente a ser pesquisado | Novo nome | Configurações de persistência |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | phoneNumber | Número de telefone | Mais recente, Janela Relatório de pessoas |
 
 ![demonstração](./images/6v2.png)
@@ -141,7 +141,7 @@ No menu do lado esquerdo, procure por `web.webPageDetails.pageViews.value`. Arra
 Altere o nome para **Exibições de página** nas **Configurações de componente**.
 
 | Nome do componente a ser pesquisado | Novo nome | Configurações de atribuição |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | web.webPageDetails.pageViews.value | Page Views |         |
 
 ![demonstração](./images/7v2.png)
@@ -156,7 +156,7 @@ Em seguida, você precisará configurar muitas Dimensões e Métricas, conforme 
 
 
 | Nome do componente a ser pesquisado | Novo nome | Configurações de persistência |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | brandName | Nome da marca | Mais recente, Sessão |
 | callfeel | Sensação de chamada |          |
 | ID de chamada | Tipo de Interação com Chamada |          |
@@ -175,7 +175,7 @@ Em seguida, você precisará configurar muitas Dimensões e Métricas, conforme 
 ### MÉTRICAS
 
 | Nome do componente a ser pesquisado | Novo nome | Configurações de atribuição |
-| ----------------- |-------------| --------------------| 
+| ----------------- |-------------| --------------------|
 | Quantidade | Quantidade |          |
 | commerce.order.priceTotal | Receita |         |
 
@@ -201,8 +201,8 @@ Clique para selecionar a nova métrica **Tipo de evento**.
 Agora, altere o nome e a descrição do componente para os seguintes valores:
 
 | Nome do componente | Descrição do componente |
-| ----------------- |-------------| 
-| Visualizações de produto | Visualizações de produto |
+| ----------------- |-------------|
+| Exibições do produto | Exibições do produto |
 
 ![demonstração](./images/calcmetr3.png)
 
@@ -262,7 +262,7 @@ A configuração final deve ser semelhante a esta. Clique em **Salvar e continua
 
 ![demonstração](./images/calcmetr8.png)
 
-## 1.1.3.5 Configurações de visualização de dados
+## Configurações de visualização de dados 1.1.3.5
 
 Você deve ser redirecionado para esta tela:
 

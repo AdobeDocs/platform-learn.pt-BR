@@ -2,14 +2,14 @@
 user-guide-title: Interaja com públicos diretamente do data warehouse usando a Federated Audience Composition
 breadcrumb-title: Composição de público-alvo federado
 user-guide-description: Um guia para minimizar a cópia de dados, aproveitando a pilha de tecnologia existente para criar e enriquecer públicos-alvo usando a Composição de público-alvo federado.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 

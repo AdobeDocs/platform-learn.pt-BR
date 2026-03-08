@@ -2,13 +2,13 @@
 title: Usar alertas
 description: Saiba como assinar e administrar alertas na Adobe Experience Platform. Alertas ajudam a monitorar vários processos para garantir que a implementação de sua plataforma esteja funcionando sem problemas.
 feature: Alerts
-role: Data Engineer, User, Admin
+role: Developer, User, Admin
 level: Beginner
 doc-type: Feature Video
 jira: KT-8324
 thumbnail: 336218.jpg
 exl-id: 56f927db-1f16-4c0b-a0e0-a25e43f1a535
-source-git-commit: 64dd58999adea73cdf8b580a2e4da9f1d8944020
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 43%

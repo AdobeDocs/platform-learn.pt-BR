@@ -4,9 +4,9 @@ description: Saiba como definir as configurações de privacidade da extensão d
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1604'
 ht-degree: 1%
 
 ---
@@ -54,12 +54,14 @@ Antes de entrar nas configurações de tag, saiba mais sobre a plataforma de ger
    * Para a CCPA, o consentimento padrão geralmente é definido como `true`. Você referenciará este cenário como **Aceitação implícita** neste tutorial
    * Para o GDPR, o consentimento padrão geralmente é definido como `false`. Você referenciará este cenário como **Recusa implícita** neste tutorial.
 1. Ativar a configuração
-<!--
+
+   <!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
--->
-    >[!NOTE]
-    >
-    >Geralmente, as etapas mencionadas acima são executadas e tratadas pela equipe ou indivíduo responsável pela manipulação do CMP, como OneTrust ou TrustArc.
+    -->
+
+   >[!NOTE]
+   > 
+   >Geralmente, as etapas acima mencionadas são realizadas e tratadas pela equipe ou indivíduo responsável por lidar com a CMP, como OneTrust ou TrustArc.
 
 ## Injetar um CMP
 
@@ -215,7 +217,7 @@ Depois que essa regra estiver em vigor, a coleção de eventos deverá começar 
 ![Opção De Pós-Visitante De Consentimento](assets/consent-post-user-optin.png)
 
 
-Para obter mais informações sobre consentimento no Web SDK, consulte [Suporte às preferências de consentimento do cliente](https://experienceleague.adobe.com/pt-br/docs/experience-platform/edge/consent/supporting-consent).
+Para obter mais informações sobre consentimento no Web SDK, consulte [Suporte às preferências de consentimento do cliente](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 >[!TIP]
 >
@@ -223,8 +225,8 @@ Para obter mais informações sobre consentimento no Web SDK, consulte [Suporte 
 
 
 
-Para obter mais informações sobre a ação [!UICONTROL Definir consentimento], consulte [Definir consentimento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
+Para obter mais informações sobre a ação [!UICONTROL Definir consentimento], consulte [Definir consentimento](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 >[!NOTE]
 >
->Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=pt)
+>Obrigado por investir seu tempo aprendendo sobre o Adobe Experience Platform Web SDK. Se você tiver dúvidas, quiser compartilhar comentários gerais ou tiver sugestões sobre conteúdo futuro, compartilhe-as nesta [postagem de discussão da Comunidade Experience League](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)

@@ -3,11 +3,11 @@ title: Criar uma jornada com um público-alvo federado
 seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Criar uma jornada com um público-alvo federado
 description: Neste exercício, um público-alvo federado é usado em uma jornada do Journey Optimizer.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -70,7 +70,7 @@ Para dar continuidade à história do SecurFinancial, especificamente o caso de 
 
 11. Agora que a personalização do nome foi adicionada, adicione `Hi, ` na frente da variável de personalização. Depois clique em **Salvar**.
 
-    ![jornada-email-salvar](assets/journey-email-save.png)
+   ![jornada-email-salvar](assets/journey-email-save.png)
 
 12. Clique no botão **Voltar** duas vezes para retornar à tela de jornada. No menu **Ação: Email** à direita, clique em **Salvar**.
 

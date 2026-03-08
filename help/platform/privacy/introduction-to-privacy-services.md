@@ -2,12 +2,12 @@
 title: Introdução ao Privacy Service
 description: Saiba mais sobre as regulamentações de privacidade e seus efeitos nas operações de dados. Além disso, saiba como o Privacy Service lida com esses desafios.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7713
 thumbnail: 336074.png
 exl-id: ead028e3-8bdd-406e-8176-1b250809ce94
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 38%
@@ -18,4 +18,4 @@ ht-degree: 38%
 
 Saiba mais sobre as regulamentações de privacidade e seus efeitos nas operações de dados. Além disso, saiba como o Privacy Service lida com esses desafios. Para obter mais informações, consulte a [documentação do Privacy Services](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3445716?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/336074?learn=on&enablevpops)

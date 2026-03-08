@@ -4,7 +4,7 @@ description: Configurar uma jornada com mensagens por push
 kt: 5342
 doc-type: tutorial
 exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 2%
@@ -103,11 +103,11 @@ Você verá isso. Clique no ícone de **personalização** do campo **Título**.
 
 Você verá isso. Agora é possível selecionar qualquer atributo de perfil diretamente do Perfil do cliente em tempo real.
 
-Pesquise pelo campo **Nome** e clique no ícone **+** ao lado do campo **Nome**. Você verá o token de personalização para o Nome que está sendo adicionado: **{{profile.person.name.firstName}}**.
+Pesquise pelo campo **Nome** e clique no ícone **+** ao lado do campo **Nome**. Você verá o token de personalização para o Nome que está sendo adicionado: **`{{profile.person.name.firstName}}`**.
 
 ![Push](./images/bp9.png)
 
-Em seguida, adicione o texto **, bem-vindo à nossa loja!** atrás de **{{profile.person.name.firstName}}**.
+Em seguida, adicione o texto **, bem-vindo à nossa loja!** atrás de **`{{profile.person.name.firstName}}`**.
 
 Clique em **Salvar**.
 

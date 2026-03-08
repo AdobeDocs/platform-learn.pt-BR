@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3787'
 ht-degree: 0%
@@ -248,7 +248,7 @@ A solicitação que você usará aqui é uma solicitação **assíncrona**, que 
 Selecione a solicitação denominada **POST - Firefly - T2I V3 async** da coleção **FF - Firefly Services Tech Insiders**. Vá para **Cabeçalhos** e verifique as combinações de par chave/valor.
 
 | Chave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-api-key` | `{{API_KEY}}` |
 | `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
 
@@ -501,7 +501,7 @@ Você verá a imagem gerada, que não deve conter nenhuma flor.
 
 ## Próximas etapas
 
-Vá para [Otimizar seu processo do Firefly usando o Microsoft Azure e URLs pré-assinadas](./ex2.md){target="_blank"}
+Vá para [Otimizar o processo do Firefly usando o Microsoft Azure e URLs pré-assinadas](./ex2.md){target="_blank"}
 
 Voltar para [Visão geral do Adobe Firefly Services](./firefly-services.md){target="_blank"}
 

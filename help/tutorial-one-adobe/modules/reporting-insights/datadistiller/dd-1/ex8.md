@@ -4,9 +4,9 @@ description: Serviço de consulta - API do serviço de consulta
 kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ Neste exercício, você executará chamadas de API para gerenciar modelos de con
 
 ## Documentação
 
-- [Ajuda do Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=pt-BR)
+- [Ajuda do Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
 - [API de Serviço de Consulta](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## API do serviço de consulta
@@ -93,9 +93,9 @@ Vá para a seção **Corpo** desta solicitação. No **Corpo** desta solicitaç�
 ```sql
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "--aepSandboxName--:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -106,9 +106,9 @@ Depois de adicionar o **ldap** específico, o Corpo deve ser semelhante a:
 ```json
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "tech-insiders:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "tech-insiders:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 

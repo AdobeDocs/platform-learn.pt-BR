@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 2f74b038-f2c2-4c63-bfa4-e554d5522316
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Conheça a estrutura de cinco perguntas da Adobe para definir casos de uso de experiência do cliente para alinhar equipes e impulsionar os resultados de negócios.
 
 <!-- 85_S651_3442537_47_defining-customer-experience-use-cases -->
->[!VIDEO](https://video.tv.adobe.com/v/3459785/?learn=on&enablevpops=true&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3458292/?learn=on&enablevpops=true)

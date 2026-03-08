@@ -5,11 +5,11 @@ user-guide-description: Vídeos e tutoriais explicativos para torná-lo um usuá
 solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
-role: Developer, Data Engineer
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+role: Developer
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 31%
    + [Regras de pilha](tags/stack-rules.md)
    + [Criar e publicar uma biblioteca](tags/build-and-publish-a-library.md)
    + [Implementar em sites com o Web SDK](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Implementar em sites com SDKs de solução](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=pt-BR){target="_blank"}
-   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Implementar em sites com SDKs de solução](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web SDK{#web-sdk}
    + [Visão geral](web-sdk/overview.md)
    + [Demonstração](web-sdk/demo.md)
    + [Tutorial de implementação (com marcas)](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [Tutorial de migração do Target](https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Tutorial de migração do Target](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
    + [Tutorial de migração do Analytics](https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + Consentimento{#consent}
       + [Visão geral](web-sdk/consent/overview.md)
@@ -46,7 +46,7 @@ ht-degree: 31%
    + [Visão geral](mobile-sdk/overview.md)
    + [Criar propriedades móveis](mobile-sdk/create-mobile-properties.md)
    + [Usar gerenciadores de dependências](mobile-sdk/use-dependency-managers.md)
-   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [Implementar em aplicativos móveis](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
    + [Tutorial de migração do Target](https://experienceleague.adobe.com/pt-br/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + API do servidor{#server-api}

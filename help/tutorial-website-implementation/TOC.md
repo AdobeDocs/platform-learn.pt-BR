@@ -1,22 +1,22 @@
 ---
-user-guide-title: Implementar o Experience Cloud em sites com tags
+user-guide-title: Implementar a Experience Cloud em sites com tags
 breadcrumb-title: Tutorial da Web
 user-guide-description: Saiba como implementar soluções da Adobe Experience Cloud em um site com tags.
 solution: Data Collection
 feature: Tags
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 17%
+ht-degree: 19%
 
 ---
 
 
-# Implementar o Experience Cloud em sites com tags {#implement-in-websites}
+# Implementar a Experience Cloud em sites com tags {#implement-in-websites}
 
 + [Tutorial Implementar em sites com tags](overview.md)
 + Configurar tags{#configure-tags}
@@ -30,5 +30,5 @@ ht-degree: 17%
    + [Adicionar o Adobe Analytics](analytics.md)
    + [Adicionar o Adobe Audience Manager](audience-manager.md)
    + [Integrações da Experience Cloud](integrations.md)
-+ Publish sua propriedade{#publish}
-   + [Publish sua propriedade](publish.md)
++ Publicar sua propriedade{#publish}
+   + [Publicar sua propriedade](publish.md)

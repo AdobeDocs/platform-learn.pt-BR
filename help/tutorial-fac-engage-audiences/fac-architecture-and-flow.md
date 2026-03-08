@@ -3,11 +3,11 @@ title: Composição de público-alvo federado Arquitetura e fluxo de alto nível
 seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Fluxo e arquitetura de alto nível Federated Audience Composition
 description: Visão geral da arquitetura de alto nível e do fluxo da Composição do Audience Federated.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
 exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
-source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%

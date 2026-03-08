@@ -1,10 +1,10 @@
 ---
-title: Audience Activation para o Hub de Eventos do Microsoft Azure - Configurar o destino RTCDP do Hub de Eventos na Adobe Experience Platform
-description: Audience Activation para o Hub de Eventos do Microsoft Azure - Configurar o destino RTCDP do Hub de Eventos na Adobe Experience Platform
+title: Audience Activation para o Hub de eventos do Microsoft Azure - Configurar o destino do RTCDP do Hub de eventos no Adobe Experience Platform
+description: Audience Activation para o Hub de eventos do Microsoft Azure - Configurar o destino do RTCDP do Hub de eventos no Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: e48b7b50-c95b-46da-b696-494da3926325
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 2.4.3 Configurar o destino do Hub de eventos do Azure no Adobe Experience Platform
 
-## Identificar parâmetros de Conexão do Azure obrigatórios
+## Identifique os parâmetros obrigatórios de conexão do Azure
 
 Para configurar um destino do Hub de eventos no Adobe Experience Platform, você precisa de:
 
@@ -22,13 +22,13 @@ Para configurar um destino do Hub de eventos no Adobe Experience Platform, você
 - Nome da chave SAS do Azure
 - Chave SAS do Azure
 
-O Hub de Eventos e o namespace do EventHub foram definidos no exercício anterior: [Configurar Hub de Eventos no Azure](./ex2.md)
+O Hub de Eventos e o namespace EventHub foram definidos no exercício anterior: [Configurar Hub de Eventos no Azure](./ex2.md)
 
 ### Namespace dos Hubs de Eventos
 
-Para pesquisar as informações acima no Portal do Azure, navegue até [https://portal.azure.com/#home](https://portal.azure.com/#home). Verifique se você está usando a conta correta do Azure.
+Para pesquisar as informações acima no Azure Portal, navegue até [https://portal.azure.com/#home](https://portal.azure.com/#home). Verifique se você está usando a conta correta do Azure.
 
-Clique em **Todos os recursos** no portal do Azure:
+Clique em **Todos os recursos** no portal Azure:
 
 ![2-01-azure-all-resources.png](./images/201azureallresources.png)
 
@@ -60,7 +60,7 @@ Em seguida, clique em **RootManageSharedAccessKey** para obter o Valor da Chave 
 
 ### Resumo dos valores de destino
 
-Neste ponto, você deve ter identificado todos os valores necessários para definir o destino do Azure Event Hub na CDP em tempo real do Adobe Experience Platform.
+Nesse ponto, você deve ter identificado todos os valores necessários para definir o destino do Hub de eventos do Azure na CDP em tempo real da Adobe Experience Platform.
 
 | Nome do atributo de destino | Valor do atributo de destino | Exemplo de valor |
 |---|---|---|
@@ -69,19 +69,19 @@ Neste ponto, você deve ter identificado todos os valores necessários para defi
 | namespace | Namespace dos Hubs de Eventos | `--aepUserLdap---aep-enablement` |
 | eventHubName | Hub de eventos | `--aepUserLdap---aep-enablement-event-hub` |
 
-## Criar destino do Azure Event Hub no Adobe Experience Platform
+## Criar destino do Hub de eventos do Azure no Adobe Experience Platform
 
 Faça logon no Adobe Experience Platform acessando esta URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Depois de fazer logon, você chegará à página inicial do Adobe Experience Platform.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
 Antes de continuar, você precisa selecionar uma **sandbox**. A sandbox a ser selecionada é chamada ``--aepSandboxName--``. Depois de selecionar a sandbox apropriada, você verá a alteração da tela e agora estará em sua sandbox dedicada.
 
-![Assimilação de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
+![Ingestão de dados](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
-Vá para **Destinos** e vá para **Catálogo**. Selecione **Armazenamento na nuvem**, vá para **Hubs de Eventos do Azure** e clique em **Configurar**.
+Vá para **Destinos** e vá para **Catálogo**. Selecione **Armazenamento na nuvem**, vá para **Hubs de Eventos da Azure** e clique em **Configurar**.
 
 ![2-08-list-destinations.png](./images/208listdestinations.png)
 
@@ -109,6 +109,6 @@ Seu destino foi criado e está disponível no Adobe Experience Platform.
 
 Ir para [2.4.4 Criar um público-alvo](./ex4.md){target="_blank"}
 
-Voltar para [Real-Time CDP: Audience Activation para o Hub de Eventos do Microsoft Azure](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+Voltar para [Real-Time CDP: Audience Activation para o Hub de Eventos da Microsoft Azure](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 Voltar para [Todos os módulos](./../../../../overview.md){target="_blank"}

@@ -4,9 +4,9 @@ description: Assimilar e analisar dados do Google Analytics no Adobe Experience 
 kt: 5342
 doc-type: tutorial
 exl-id: 9380c621-34b0-4d14-baf6-9b6fedd63d5f
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '3114'
+source-wordcount: '3110'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 - Conecte nosso conjunto de dados do BigQuery ao Customer Journey Analytics (CJA)
 - Conecte-se e associe-se à Google Analytics com dados de fidelidade.
-- Familiarizar-se com a interface do CJA
+- Familiarizar-se com a interface do usuário do CJA
 
 ## 1.2.5.1 Criar uma conexão
 
@@ -110,8 +110,8 @@ Insira o mesmo valor para a descrição: `--aepUserLdap-- - GA + Loyalty Data Vi
 Antes de fazer qualquer análise ou visualização, precisamos criar uma visualização de dados com todos os campos, dimensões e métricas e suas configurações de atribuição.
 
 | Campo | Convenção de nomeação |
-| ----------------- |-------------|  
-| Nomear conexão | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA + Visualização de dados de fidelidade |
+| ----------------- |-------------|
+| Nomear conexão | `--aepUserLdap-- - GA + Loyalty Data View` vangeluw - GA + Visualização de dados de fidelidade |
 | Descrição | `--aepUserLdap-- - GA + Loyalty Data View` |
 | ID externa | `--aepUserLdap--GA` |
 
@@ -134,7 +134,7 @@ Adicione os componentes abaixo à visualização de dados. Atualize também os n
 | Métrica | commerce.checkouts.value | Check-outs | `commerce.checkouts.value` |
 | Métrica | commerce.productListRemovals.value | Remoções do carrinho | `commerce.productListRemovals.value` |
 | Métrica | commerce.productListAdds | Adições ao carrinho | `commerce.productListAdds` |
-| Métrica | commerce.productViews.value | Visualizações de produto | `commerce.productViews.value` |
+| Métrica | commerce.productViews.value | Exibições do produto | `commerce.productViews.value` |
 | Métrica | commerce.purchases.value | Compras | `commerce.purchases.value` |
 | Métrica | web.webPageDetails.pageViews | Page Views | `web.webPageDetails.pageViews` |
 | Métrica | pontos | Pontos de fidelidade | `_experienceplatform.loyaltyDetails.points` |
@@ -183,7 +183,7 @@ Na tela **Configurações**, nenhuma alteração é necessária. Clique em **Sal
 
 Agora você está pronto para analisar os dados do Google Analytics no Adobe Analytics Analysis Workspace. Vamos passar para o próximo exercício.
 
-## 1.2.5.3 Criar o projeto
+## 1.2.5.3 Criar seu projeto
 
 No Customer Journey Analytics, vá para **Workspace**. Clique em **Criar projeto**
 
@@ -199,15 +199,15 @@ Agora você tem um projeto em branco:
 
 Primeiro, salve o projeto e dê um nome a ele. Você pode usar o seguinte comando para salvar:
 
-| Sistema operacional | Atalho |
-| ----------------- |-------------| 
+| SO | Atalho |
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Command+S |
 
 Vocês verão esse popup. Use esta convenção de nomenclatura:
 
 | Nome | Descrição |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
 Em seguida, clique em **Salvar**.
@@ -238,7 +238,7 @@ Primeiro, selecione o intervalo de datas correto (**Hoje**) no lado direito do p
 
 >[!NOTE]
 >
->Se você acabou de criar a **Conexão de dados** e a **Visualização de dados**, talvez precise aguardar algumas horas. O CJA precisa de algum tempo para preencher dados históricos quando há uma grande quantidade de registros de dados.
+>Se você acabou de criar a **Conexão de dados** e a **Visualização de dados**, talvez precise aguardar algumas horas. O CJA precisa de tempo para preencher dados históricos quando há uma grande quantidade de registros de dados.
 
 Vamos arrastar e soltar algumas dimensões e métricas para analisar os canais de marketing. Primeiro use a dimensão **Canal de marketing** e arraste e solte-a na tela da **Tabela de forma livre**. (Clique em **Mostrar tudo** caso não veja a métrica imediatamente no menu Métricas)
 
@@ -338,27 +338,27 @@ Podemos continuar dividindo as linhas com segmentos ou intervalos de datas espec
 
 Alcançar o mesmo resultado final com SQL e, em seguida, uma ferramenta de visualização de terceiros é um grande desafio. Especialmente quando você faz perguntas e tenta obter as respostas em tempo real. O Customer Journey Analytics não tem esse desafio e permite que os analistas de dados consultem os dados de forma flexível e em tempo real.
 
-## 1.2.5.3.2 Análise de funil ou fallout
+## Análise de fallout ou Funnel do 1.2.5.3.2
 
-Os funis são um ótimo mecanismo para entender as principais etapas em uma jornada do cliente. Essas etapas também podem vir de interações offline (por exemplo, da central de atendimento) e, em seguida, você pode combiná-las com pontos de contato digitais no mesmo funil.
+Os funis são um ótimo mecanismo para entender as principais etapas em uma jornada do cliente. Essas etapas também podem vir de interações offline (por exemplo, da central de atendimento) e, em seguida, você pode combiná-las com pontos de contato digitais na mesma funnel.
 
 O Customer Journey Analytics permite fazer isso e muito mais. Se você se lembrar do Módulo 13, nós conseguimos clicar com o botão direito do mouse e fazer coisas como:
 
 - Analisar para onde os usuários estão indo após uma etapa de fallout
-- Criar um segmento a partir de qualquer ponto do funil
+- Criar um segmento a partir de qualquer ponto do funnel
 - Ver a tendência em qualquer estágio em uma visualização de Gráfico de linha
 
 
-Vamos ver outra coisa que você pode fazer: como está o funil de Jornada para clientes este mês em relação ao mês anterior? E quanto a mobilidade vs desktop?
+Vamos ver outra coisa que você pode fazer: como está a Jornada ao cliente do Funnel este mês em relação ao mês anterior? E quanto a mobilidade vs desktop?
 
 Abaixo, você criará dois painéis:
 
-- Análise de funil (janeiro)
-- Análise de funil (fevereiro)
+- Análise do funnel (janeiro)
+- Análise do funnel (fevereiro)
 
-Você verá que estamos comparando um funil em diferentes períodos de tempo (janeiro e fevereiro) divididos por Tipo de dispositivo.
+Você verá que estamos comparando uma funnel em diferentes períodos de tempo (janeiro e fevereiro) divididos por Tipo de dispositivo.
 
-Esse tipo de análise não é possível na interface do usuário do Google Analytics ou é muito limitado. Assim, o CJA novamente agrega muito valor aos dados capturados pela Google Analytics.
+Esse tipo de análise não é possível na interface do usuário do Google Analytics ou é muito limitado. Assim, o CJA novamente agrega muito valor aos dados capturados pelo Google Analytics.
 
 Para criar sua primeira visualização de fallout. Feche o painel atual para começar com um novo.
 
@@ -374,9 +374,9 @@ Agora selecione a Visualização **Fallout**.
 
 ![demonstração](./images/pro36.png)
 
-Como um analista, imagine que deseja entender o que está acontecendo com seu funil principal de comércio eletrônico: Página inicial > Pesquisa interna > Detalhes do produto > Check-out > Compra.
+Como um analista, imagine que deseja entender o que está acontecendo com seu funnel principal de comércio eletrônico: Página inicial > Pesquisa interna > Detalhes do produto > Check-out > Compra.
 
-Vamos começar adicionando algumas novas etapas ao funil. Para fazer isso, abra a dimensão **Nome da página**.
+Vamos começar adicionando algumas novas etapas à funnel. Para fazer isso, abra a dimensão **Nome da página**.
 
 ![demonstração](./images/pro37.png)
 
@@ -429,15 +429,15 @@ Você terá uma visualização mais avançada:
 O Customer Journey Analytics permite fazer isso e muito mais. Ao clicar com o botão direito do mouse em qualquer lugar do fallout, você pode...
 
 - Analisar para onde os usuários vão em uma etapa de fallout
-- Criar um segmento a partir de qualquer ponto do funil
+- Criar um segmento a partir de qualquer ponto do funnel
 - Colocar em tendência qualquer etapa em uma visualização de Linha
-- Compare qualquer funil a diferentes períodos de tempo visualmente.
+- Compare qualquer funnel a diferentes períodos de tempo visualmente.
 
 Como exemplo, clique com o botão direito do mouse em qualquer etapa do fallout para ver algumas dessas opções de análise.
 
 ![demonstração](./images/pro52.png)
 
-## 1.2.5.3.3 Análise e visualização de fluxo
+## Análise e visualização de fluxo do 1.2.5.3.3
 
 Se você quiser fazer análise de fluxo avançada usando o Google Analytics, será necessário usar o SQL para extrair os dados e usar uma solução de terceiros para a parte de visualização. O Customer Journey Analytics ajudará nisso.
 
@@ -526,7 +526,7 @@ Agora você tem um kit eficiente para analisar funis e explorar caminhos do comp
 
 Não se esqueça de salvar suas alterações!
 
-## 1.2.5.4 Compartilhamento do projeto
+## 1.2.5.4 Compartilhar o projeto
 
 >[!IMPORTANT]
 >

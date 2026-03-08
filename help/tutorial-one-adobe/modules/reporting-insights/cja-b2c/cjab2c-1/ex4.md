@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Preparação de dados no Analysis Work
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '759'
+ht-degree: 2%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 ## Objetivos
 
-- Compreensão da interface do Analysis Workspace no CJA
+- Entender a interface do usuário do Analysis Workspace no CJA
 - Entenda os conceitos de preparação de dados no Analysis Workspace
 - Saiba como fazer cálculos de dados
 
-## 1.1.4.1 Interface do usuário do Analysis Workspace no CJA
+## Interface do usuário do Analysis Workspace 1.1.4.1 no CJA
 
 O Analysis Workspace remove todas as limitações típicas de um único relatório do Analytics. Ele fornece uma tela robusta e flexível para a criação de projetos de análise personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões, métricas, segmentos e granularidades de tempo) em um projeto. Crie detalhamentos e segmentos instantaneamente, coorte para análise, crie alertas, compare segmentos, faça análises de fluxo e fallout e prepare e programe relatórios para compartilhamento com qualquer pessoa em sua empresa.
 
@@ -29,7 +29,7 @@ A Customer Journey Analytics traz essa solução para os dados da plataforma. Re
 
 Se você não usou o Analysis Workspace antes, recomendamos assistir a este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/35802?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Criar seu projeto
 
@@ -52,8 +52,8 @@ Primeiro, selecione a Visualização de dados correta no canto superior direito 
 
 Em seguida, salve seu projeto e dê um nome a ele. Você pode usar o seguinte comando para salvar:
 
-| Sistema operacional | Atalho |
-| ----------------- |-------------| 
+| SO | Atalho |
+| ----------------- |-------------|
 | Windows | Ctrl+S |
 | Mac | Command+S |
 
@@ -64,7 +64,7 @@ Você verá este pop-up:
 Use esta convenção de nomenclatura:
 
 | Nome | Descrição |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 Em seguida, clique em **Salvar**.
@@ -110,7 +110,7 @@ A taxa de conversão geralmente é representada em porcentagem. Então, vamos al
 Por fim, altere o nome e a descrição da métrica calculada:
 
 | Título | Descrição | ID externa |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | Índice de conversão | Índice de conversão | conversionRate |
 
 Então você terá isto. Clique em **Salvar**.

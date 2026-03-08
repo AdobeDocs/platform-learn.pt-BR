@@ -4,10 +4,10 @@ description: Foundation - Perfil do cliente em tempo real - Visualizar seu próp
 kt: 5342
 doc-type: tutorial
 exl-id: dd80f379-76f2-4023-b958-6ee558e23e88
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2346'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -72,7 +72,7 @@ Selecione os Perfis de produto necessários.
 
 >[!NOTE]
 >
-> Os nomes dos perfis de produtos variam na instância do Adobe Experience Platform, pois são específicos da instância. É necessário selecionar pelo menos um perfil de produto com os direitos de acesso adequados, que são configurados na Adobe Admin Console e na interface de permissões da AEP.
+> Os nomes dos perfis de produtos variam na instância do Adobe Experience Platform, pois são específicos da instância. Você precisa selecionar pelo menos um perfil de produto com os direitos de acesso adequados, que são configurados na interface do usuário de permissões do Adobe Admin Console e do AEP.
 
 Clique em **Salvar API configurada**.
 
@@ -108,7 +108,7 @@ A integração do Adobe I/O foi concluída.
 >
 >Há uma etapa adicional para garantir que esse projeto do Adobe I/O tenha acesso às configurações de permissão do Adobe Experience Platform. A credencial da API do seu projeto precisa ser adicionada à interface de permissões do Adobe Experience Platform, para a qual são necessários direitos de acesso de administrador do sistema. As etapas estão documentadas abaixo, mas talvez seja necessário entrar em contato com o administrador do sistema para que isso seja processado, caso você não tenha os direitos de acesso necessários.
 
-## Permissões da AEP para credencial de API
+## Permissões do AEP para credencial de API
 
 >[!IMPORTANT]
 >
@@ -120,7 +120,7 @@ Vá para **Permissões**, para **Funções** e clique no perfil de produto relev
 
 >[!NOTE]
 >
-> Os nomes dos perfis de produtos variam na instância do Adobe Experience Platform, pois são específicos da instância. É necessário selecionar pelo menos um perfil de produto com os direitos de acesso adequados, que são configurados na Adobe Admin Console e na interface de permissões da AEP.
+> Os nomes dos perfis de produtos variam na instância do Adobe Experience Platform, pois são específicos da instância. Você precisa selecionar pelo menos um perfil de produto com os direitos de acesso adequados, que são configurados na interface do usuário de permissões do Adobe Admin Console e do AEP.
 
 ![Permissões](./images/perm1.png)
 
@@ -210,7 +210,7 @@ Após alguns segundos, você deve ver uma resposta exibida na seção **Body** d
 Se a configuração tiver sido bem-sucedida, você verá uma resposta semelhante que contém as seguintes informações:
 
 | Chave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **portador** |
 | access_token | **eyJhbGciOiJSU...jrNZ6mdaQ** |
 | expires_in | **86399** |
@@ -223,7 +223,7 @@ O token que recebemos agora é válido por 24 horas. Isso significa que, após 2
 
 Agora você pode enviar sua primeira solicitação para as APIs de perfil do cliente em tempo real da plataforma.
 
-No Postman, localize a coleção **Tutorial da AEP**.
+No Postman, localize a coleção **Tutorial do AEP**.
 
 ![Postman](./images/coll_enablement.png)
 
@@ -234,7 +234,7 @@ Em **1. Serviço de Perfil Unificado**, clique na primeira solicitação com o n
 Para essa solicitação, há três variáveis necessárias:
 
 | Chave | Valor | Definição |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | entityId | **id** | a ID específica do cliente |
 | entityIdNS | **namespace** | o namespace específico aplicável à ID |
 | schema.name | **_xdm.context.profile** | o schema específico para o qual deseja receber informações |
@@ -242,7 +242,7 @@ Para essa solicitação, há três variáveis necessárias:
 Portanto, se você quiser solicitar que as APIs da Adobe Experience Platform forneçam todas as informações de perfil de sua própria ECID, será necessário configurar a solicitação da seguinte maneira:
 
 | Chave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **yourECID** |
 | entityIdNS | **ecid** |
 | schema.name | **_xdm.context.profile** |
@@ -398,7 +398,7 @@ Vamos voltar para a Postman e fingir que somos a central de atendimento, e envia
 Portanto, se você quiser solicitar que as APIs da Platform forneçam todas as informações de perfil de um telefone específico, será necessário configurar a solicitação da seguinte maneira:
 
 | Chave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **seu telefone** |
 | entityIdNS | **telefone** (substituir ecid por telefone) |
 | schema.name | **_xdm.context.profile** |
@@ -433,7 +433,7 @@ Vamos fazer o mesmo com seu endereço de email especificando o namespace do **em
 Portanto, se você quiser solicitar que as APIs da Platform forneçam todas as informações de perfil de um endereço de email específico, será necessário configurar a solicitação da seguinte maneira:
 
 | Chave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | entityId | **seu email** |
 | entityIdNS | **email** (substituir Telefone por email) |
 | schema.name | **_xdm.context.profile** |
@@ -476,7 +476,7 @@ A central de atendimento não sabe necessariamente que tipo de identificador é 
 
 Depois de consultar com êxito as APIs da plataforma para obter dados de perfil, vamos fazer o mesmo com os dados do ExperienceEvent.
 
-No Postman, localize a coleção **Tutorial da AEP**.
+No Postman, localize a coleção **Tutorial do AEP**.
 
 ![Postman](./images/coll_enablement.png)
 
@@ -487,7 +487,7 @@ Em **1. Serviço de Perfil Unificado**, selecione a segunda solicitação com o 
 Para essa solicitação, há quatro variáveis necessárias:
 
 | Chave | Valor | Definição |
-|:-------------:| :---------------:|  :---------------:| 
+|:-------------:| :---------------:|  :---------------:|
 | schema.name | **_xdm.context.experienceevent** | o schema específico para o qual deseja receber informações. Nesse caso, estamos procurando dados que são mapeados em relação ao esquema ExperienceEvent. |
 | relatedSchema.name | **_xdm.context.profile** | Enquanto estamos procurando dados mapeados em relação ao esquema ExperienceEvent, precisamos especificar uma identidade para a qual queremos receber esses dados. O esquema que tem acesso à identidade é o Perfil-esquema, então o relacionado Esquema aqui é o Perfil-esquema. |
 | relatedEntityId | **id** | a ID específica do cliente |
@@ -496,7 +496,7 @@ Para essa solicitação, há quatro variáveis necessárias:
 Portanto, se você quiser solicitar que as APIs da Platform forneçam todas as informações de perfil de sua própria ECID, será necessário configurar a solicitação da seguinte maneira:
 
 | Chave | Valor |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | schema.name | **_xdm.context.experienceevent** |
 | relatedSchema.name | **_xdm.context.profile** |
 | relatedEntityId | **yourECID** |

@@ -3,14 +3,14 @@ title: Criar um público-alvo federado
 seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Criar um público-alvo federado
 description: Neste exercício, criamos um público-alvo do data warehouse do Snowflake usando a Federated Audience Composition.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -64,6 +64,6 @@ Em seguida, orientamos você na criação de um público-alvo do data warehouse 
 
 Neste exemplo, as informações de produto e crédito foram usadas para criar nosso público-alvo por meio do acesso direto aos dados corporativos do Snowflake, sem fazer uma cópia deles no Adobe Experience Platform. Depois que o sistema externo processa o query, somente o email relevante, os produtos atuais e os valores de nome serão trazidos para a definição de público-alvo para ativação downstream. Isso se aplica a todos os destinos compatíveis com o RTCDP.
 
-Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/pt-br/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
+Para obter mais informações sobre a composição de públicos, visite [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
 Agora que nosso público-alvo federado foi criado, nós o [mapearemos para um destino S3 no Experience Platform](map-federated-audience-to-s3.md).

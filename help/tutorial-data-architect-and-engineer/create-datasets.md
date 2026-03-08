@@ -3,15 +3,15 @@ title: Criar conjuntos de dados
 seo-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Criar conjuntos de dados
 description: Nesta lição, você criará conjuntos de dados para receber seus dados.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -26,7 +26,7 @@ Todos os dados assimilados com sucesso na Adobe Experience Platform são mantido
 **Os Arquitetos de Dados** precisarão criar conjuntos de dados fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre conjuntos de dados:
->[!VIDEO](https://video.tv.adobe.com/v/34332?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## Permissões necessárias
 
