@@ -108,7 +108,7 @@ Você criará o próximo segmento aplicando a relação que você criou entre o 
 Clique em **[!UICONTROL Segmentos]** na navegação à esquerda e vamos rever nossos três segmentos:
 
 * Dois de nossos segmentos são segmentos em lote e um é um segmento de transmissão.
-* A plataforma assume o padrão de segmentação por transmissão sempre que possível, qualificando o cliente para um segmento assim que ele atender aos critérios. Quando as definições de segmento são muito complexas para transmissão, elas são convertidas automaticamente em lote. Nesse caso, os dois segmentos padronizaram o lote porque a janela de retrospectiva dos eventos de compra era maior que sete dias. Para obter uma lista completa e atual das limitações de transmissão, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
+* A plataforma assume o padrão de segmentação por transmissão sempre que possível, qualificando o cliente para um segmento assim que ele atender aos critérios. Quando as definições de segmento são muito complexas para transmissão, elas são convertidas automaticamente em lote. Nesse caso, os dois segmentos padronizaram o lote porque a janela de retrospectiva dos eventos de compra era maior que sete dias. Para obter uma lista completa e atual das limitações de transmissão, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=pt-BR).
 * Os processos em lote são executados diariamente e podem ser desativados.
 
 ![Comprou o mesmo produto no segmento dos últimos 30 dias](assets/segment-review.png)

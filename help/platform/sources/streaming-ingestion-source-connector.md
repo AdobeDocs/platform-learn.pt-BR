@@ -23,7 +23,7 @@ Saiba como transmitir dados em tempo real de uma fonte de armazenamento na nuvem
 
 ## Recursos adicionais
 
-* [Criar uma conexão de origem Amazon Kinesis na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [Criar uma conexão de origem dos Hubs de Eventos da Azure na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [Criar uma conexão de origem Amazon Kinesis na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=pt-BR)
+* [Criar uma conexão de origem dos Hubs de Eventos da Azure na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=pt-BR)
 * [Documentação do Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/)
 * [Documentação de fluxos de dados do Amazon Kinesis](https://docs.aws.amazon.com/kinesis/index.html)

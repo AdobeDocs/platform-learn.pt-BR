@@ -47,7 +47,7 @@ Quando um link é clicado, o navegador faz uma solicitação a um servidor para 
 
 A maioria dos navegadores tem uma &quot;barra de endereços&quot; que mostra parte ou todo o &quot;endereço&quot; de uma página da Web. Quando o navegador &quot;obtém&quot; a página do link clicado, ele exibe o &quot;endereço&quot; da página nessa barra de endereços. Então, qual é o &quot;endereço&quot; de uma página da web?
 
-Esse `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` acima é o endereço de uma página na Web, e é chamado de URL ou Localizador Uniforme de Recurso. Os URLs podem se referir a uma página como esta, a um arquivo de imagem, a um vídeo ou outros tipos de arquivo.
+Esse `https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html` acima é o endereço de uma página na Web, e é chamado de URL ou Localizador Uniforme de Recurso. Os URLs podem se referir a uma página como esta, a um arquivo de imagem, a um vídeo ou outros tipos de arquivo.
 
 ![Partes de uma URL](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ Os nomes de domínio fazem parte do Sistema de nomes de domínio, mais conhecido
 
 **Origem**
 
-Origem é outro termo de reconhecimento que está intimamente relacionado às partes de um URL. Em um nível básico, uma origem é aproximadamente o `scheme` mais o `host` mais o `domain` como `https://business.adobe.com`. Valores diferentes geralmente representam origens diferentes, como `https://business.adobe.com` e `http://business.adobe.com` não são a mesma origem porque têm esquemas diferentes. `https://www.adobe.com` e `https://business.adobe.com` também não são a mesma origem em muitos usos devido aos diferentes subdomínios.
+Origem é outro termo de reconhecimento que está intimamente relacionado às partes de um URL. Em um nível básico, uma origem é aproximadamente o `scheme` mais o `host` mais o `domain` como `https://business.adobe.com/br`. Valores diferentes geralmente representam origens diferentes, como `https://business.adobe.com/br` e `http://business.adobe.com/br` não são a mesma origem porque têm esquemas diferentes. `https://www.adobe.com` e `https://business.adobe.com/br` também não são a mesma origem em muitos usos devido aos diferentes subdomínios.
 
 **Caminho**
 
@@ -133,13 +133,13 @@ Há vários outros, mas esta é uma lista dos métodos mais comuns ao trabalhar 
 
 Agora que você tem os termos básicos, conceitos e etapas envolvidos com as APIs, podemos observar um exemplo de solicitação de API na prática.
 
-A página do nosso exemplo de navegador tem uma URL de `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. Ao clicar no link do Adobe Experience Platform, o navegador faz uma solicitação `GET` para essa página. Como temos o navegador para fazer o trabalho por nós, basta clicar, mas se um programador quiser que a solicitação aconteça em um aplicativo de software, ele precisará fornecer todos os detalhes necessários para que a solicitação de API seja atendida com êxito.
+A página do nosso exemplo de navegador tem uma URL de `https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html`. Ao clicar no link do Adobe Experience Platform, o navegador faz uma solicitação `GET` para essa página. Como temos o navegador para fazer o trabalho por nós, basta clicar, mas se um programador quiser que a solicitação aconteça em um aplicativo de software, ele precisará fornecer todos os detalhes necessários para que a solicitação de API seja atendida com êxito.
 
 Veja como isso pode parecer no código:
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:

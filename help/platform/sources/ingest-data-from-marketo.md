@@ -35,5 +35,5 @@ Saiba como configurar o conector de origem para o Marketo usando o fluxo de trab
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
 
 Para obter mais informações, consulte a seguinte documentação:
-* [Documentação do conector de origem do Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [Criar um fluxo de dados de fontes usando modelos na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Documentação do conector de origem do Marketo Engage](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=pt-BR).
+* [Criar um fluxo de dados de fontes usando modelos na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=pt-BR#)

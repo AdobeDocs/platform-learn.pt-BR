@@ -79,8 +79,8 @@ Primeiro, obtenha os dados de amostra e personalize-os para seu locatário:
 >
 >Há algumas opções, **[!UICONTROL Diagnóstico de erros]** e **[!UICONTROL Assimilação parcial]**, que você verá em várias telas nesta lição. Essas opções não são abordadas no tutorial. Algumas informações rápidas:
 >
->* Habilitar o diagnóstico de erro gera dados sobre a assimilação dos dados, que podem ser revisados usando a API de acesso a dados. Saiba mais sobre isso em [a documentação](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* A assimilação parcial permite assimilar dados que contêm erros até um determinado limite que você pode especificar. Saiba mais sobre isso em [a documentação](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
+>* Habilitar o diagnóstico de erro gera dados sobre a assimilação dos dados, que podem ser revisados usando a API de acesso a dados. Saiba mais sobre isso em [a documentação](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=pt-BR).
+>* A assimilação parcial permite assimilar dados que contêm erros até um determinado limite que você pode especificar. Saiba mais sobre isso em [a documentação](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=pt-BR)
 
 ### Validar os dados
 
@@ -115,7 +115,7 @@ Se você se inscreveu em eventos de assimilação de dados na lição anterior, 
 
 ![Webhook de assimilação de dados](assets/ingestion-loyalty-webhook.png)
 
-Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) para obter mais detalhes sobre as notificações.
+Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=pt-BR#available-status-notification-events) para obter mais detalhes sobre as notificações.
 
 ## Assimilar dados em lotes com a API da plataforma
 
@@ -226,7 +226,7 @@ Se você se inscreveu em eventos de assimilação de dados na lição anterior, 
 
 ![Webhook de assimilação de dados](assets/ingestion-crm-webhook.png)
 
-Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) para obter mais detalhes sobre as notificações.
+Consulte a [documentação](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=pt-BR#available-status-notification-events) para obter mais detalhes sobre as notificações.
 
 ## Assimilar dados com Workflows
 
@@ -282,7 +282,7 @@ Muitas das Fontes têm um fluxo de trabalho de configuração semelhante, no qua
 
 >[!NOTE]
 >
->Os dados de compras offline que usaremos neste exercício contêm dados de data e hora. Os dados de Datetime devem estar em [cadeias de caracteres formatadas em ISO 8061](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;) ou em Tempo Unix formatadas em milissegundos (1531263959000) e são convertidos no momento da assimilação para o tipo XDM de destino. Para obter mais informações sobre conversão de dados e outras restrições, consulte [a documentação da API de assimilação em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
+>Os dados de compras offline que usaremos neste exercício contêm dados de data e hora. Os dados de Datetime devem estar em [cadeias de caracteres formatadas em ISO 8061](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;) ou em Tempo Unix formatadas em milissegundos (1531263959000) e são convertidos no momento da assimilação para o tipo XDM de destino. Para obter mais informações sobre conversão de dados e outras restrições, consulte [a documentação da API de assimilação em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=pt-BR#types).
 
 ### Baixe, prepare e faça upload dos dados para seu fornecedor de armazenamento na nuvem preferido
 
@@ -334,12 +334,12 @@ Pesquise o perfil com valor `5625458` no namespace `loyaltyId` novamente para ve
 
 A Adobe tem parcerias com vários fornecedores de ETL para oferecer suporte à assimilação de dados na Experience Platform. Devido à variedade de fornecedores de terceiros, o ETL não é abordado neste tutorial, embora você seja bem-vindo para analisar alguns destes recursos:
 
-* [Desenvolvendo integrações ETL para o Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [Desenvolvendo integrações ETL para o Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=pt-BR)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Recursos adicionais
 
-* [Documentação de assimilação em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [Documentação de assimilação em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=pt-BR)
 * [Referência da API de assimilação em lote](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Agora vamos [transmitir dados usando o Web SDK](ingest-streaming-data.md)

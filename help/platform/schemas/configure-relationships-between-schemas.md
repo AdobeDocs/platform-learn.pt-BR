@@ -16,7 +16,7 @@ ht-degree: 15%
 
 # Configurar relações entre esquemas
 
-Este vídeo mostra como configurar uma relação entre dois esquemas no Adobe Experience Platform. As relações permitem usar um conjunto de dados como uma tabela de pesquisa para outro. Para obter a documentação detalhada do produto, consulte [Definir uma relação entre dois esquemas usando o Editor de Esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=pt-BR) e [Definir uma relação entre dois esquemas usando a API do Registro de Esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html)
+Este vídeo mostra como configurar uma relação entre dois esquemas no Adobe Experience Platform. As relações permitem usar um conjunto de dados como uma tabela de pesquisa para outro. Para obter a documentação detalhada do produto, consulte [Definir uma relação entre dois esquemas usando o Editor de Esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=pt-BR) e [Definir uma relação entre dois esquemas usando a API do Registro de Esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html?lang=pt-BR)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on&enablevpops)
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Assimilar dados usando conectores de origem do CRM
 
-Saiba como assimilar facilmente dados em lote de fontes de CRM no Perfil do cliente em tempo real da Adobe Experience Platform e no data lake de forma contínua. Para obter a documentação mais detalhada do produto, consulte [gerenciamento de relacionamento com o cliente (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) na página de visão geral dos Source Connectors.
+Saiba como assimilar facilmente dados em lote de fontes de CRM no Perfil do cliente em tempo real da Adobe Experience Platform e no data lake de forma contínua. Para obter a documentação mais detalhada do produto, consulte [gerenciamento de relacionamento com o cliente (CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR#access-control-for-sources-in-data-ingestion) na página de visão geral dos Source Connectors.
 
 ## Fluxo de trabalho padrão
 
@@ -32,6 +32,6 @@ Saiba como configurar o conector de origem para o Salesforce CRM usando o fluxo 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 Para obter mais informações, consulte a seguinte documentação:
-* [Salesforce cria uma documentação de conexão](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [Criar um fluxo de dados de fontes usando modelos na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Salesforce cria uma documentação de conexão](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=pt-BR).
+* [Criar um fluxo de dados de fontes usando modelos na interface](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=pt-BR#).
 

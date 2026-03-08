@@ -189,13 +189,13 @@ Agora, vamos fazer nossa primeira chamada de API:
 1. Importar para [!DNL Postman]
 1. Abra **API do Registro de Esquemas > Esquemas > Listar esquemas**
 1. Examine as guias **Params** e **Headers** e observe como elas incluem algumas das variáveis de ambiente inseridas anteriormente.
-1. Observe que o campo de valor **Cabeçalhos > Aceitar** está definido como `application/vnd.adobe.xed-id+json`. As APIs do Registro de Esquema exigem um destes [valores do cabeçalho Aceitar especificados](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept), que fornecem formatos diferentes na resposta.
+1. Observe que o campo de valor **Cabeçalhos > Aceitar** está definido como `application/vnd.adobe.xed-id+json`. As APIs do Registro de Esquema exigem um destes [valores do cabeçalho Aceitar especificados](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=pt-BR#accept), que fornecem formatos diferentes na resposta.
 1. Selecione **Enviar** para fazer sua primeira chamada de API da plataforma!
 
 Esperamos que você tenha uma resposta `200 OK` bem-sucedida contendo uma lista de esquemas XDM fornecidos pela Adobe disponíveis em sua sandbox, como mostrado abaixo.
 
 ![Primeira chamada de API no Postman](assets/postman-firstAPICall.png)
 
-Se a chamada não tiver sido bem-sucedida, aguarde um pouco para depurar usando os detalhes de resposta de erro da chamada da API e revise as etapas acima. Se você ficar preso, solicite ajuda no [Fórum da Comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community) ou use o link no lado direito desta página para &quot;Registrar um problema&quot;.
+Se a chamada não tiver sido bem-sucedida, aguarde um pouco para depurar usando os detalhes de resposta de erro da chamada da API e revise as etapas acima. Se você ficar preso, solicite ajuda no [Fórum da Comunidade](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=pt) ou use o link no lado direito desta página para &quot;Registrar um problema&quot;.
 
 Com suas permissões da Platform, sandbox e [!DNL Postman] configuradas, você está pronto para [modelar dados em esquemas](model-data-in-schemas.md)!

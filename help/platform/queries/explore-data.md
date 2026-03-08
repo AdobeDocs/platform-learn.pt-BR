@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Validar dados com o Serviço de consulta
 
-Saiba como validar dados assimilados usando funções SQL. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/en/docs/experience-platform/query/home).
+Saiba como validar dados assimilados usando funções SQL. Para obter mais informações, visite a [documentação do Serviço de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)

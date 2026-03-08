@@ -26,4 +26,4 @@ A exclusão do conjunto de dados permite que os administradores e engenheiros de
 
 >[!NOTE]
 >
-> Todos os clientes da Platform podem [excluir conjuntos de dados sob demanda](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). No momento, a programação de exclusões do conjunto de dados está disponível apenas para clientes do Healthcare Shield ou do Privacy and Security Shield.
+> Todos os clientes da Platform podem [excluir conjuntos de dados sob demanda](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR#delete). No momento, a programação de exclusões do conjunto de dados está disponível apenas para clientes do Healthcare Shield ou do Privacy and Security Shield.

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Aplicar políticas de uso de dados
 
-Saiba como aplicar políticas de uso de dados ao ativar um público-alvo para um destino. Saiba como adicionar ações de marketing a destinos, como analisar uma violação de política durante a ativação e como usar a linhagem de dados para entender e corrigir violações de política. Para saber a abordagem baseada em API, consulte [impor políticas de uso de dados usando a API de Serviço de Política](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html).
+Saiba como aplicar políticas de uso de dados ao ativar um público-alvo para um destino. Saiba como adicionar ações de marketing a destinos, como analisar uma violação de política durante a ativação e como usar a linhagem de dados para entender e corrigir violações de política. Para saber a abordagem baseada em API, consulte [impor políticas de uso de dados usando a API de Serviço de Política](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/33631?learn=on&enablevpops)

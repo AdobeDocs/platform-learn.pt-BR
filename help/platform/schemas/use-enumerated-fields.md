@@ -17,6 +17,6 @@ ht-degree: 33%
 
 # Usar campos enumerados e valores sugeridos
 
-Saiba como usar campos enumerados e valores sugeridos para criar menus suspensos práticos na interface do construtor de segmentos. Para obter mais informações, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html).
+Saiba como usar campos enumerados e valores sugeridos para criar menus suspensos práticos na interface do construtor de segmentos. Para obter mais informações, consulte [a documentação](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=pt-BR).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)
