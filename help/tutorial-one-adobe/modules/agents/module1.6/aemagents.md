@@ -4,9 +4,9 @@ description: Adobe Experience Manager e agentes
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -47,6 +47,9 @@ Neste exercício, você explorará o **Discovery Agent** e o **Experience Produc
 
 Neste exercício, você conectará seu ambiente de Cursor ao AEM usando o AEM MCP Server.
 
+[1.6.3 Dimensionar fragmentos de conteúdo com o servidor ChatGPT e MCP](./ex3.md)
+
+Neste exercício, você criará, gerenciará e traduzirá fragmentos de conteúdo usando o ChatGPT e a funcionalidade personalizada do servidor MCP.
 
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

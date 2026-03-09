@@ -4,9 +4,9 @@ description: Cursor e servidores MCP AEM
 kt: 5342
 doc-type: tutorial
 exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -210,6 +210,8 @@ Você deveria ver algo assim.
 ![Cursor + AEM](./images/cursoraiz12.png)
 
 ## Próximas etapas
+
+Ir para [Fragmentos de conteúdo de escala 1.6.3 com ChatGPT e servidor MCP](./ex3.md){target="_blank"}
 
 Voltar para [AEM e Agentes](./aemagents.md){target="_blank"}
 
