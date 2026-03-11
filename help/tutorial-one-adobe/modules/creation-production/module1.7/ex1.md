@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: a3a78b12f8244c8288eb0fffc82ad769776eb118
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -249,8 +249,20 @@ Após alguns minutos, você deve ver os ativos criados se tornarem disponíveis 
 
 ![Fluxos de trabalho personalizados do Firefly](./images/ffcw58.png)
 
+Volte para o seu fluxo de trabalho. Clique em **Publicar**.
+
+![Fluxos de trabalho personalizados do Firefly](./images/ffcw59.png)
+
+Você deverá ver isso.
+
+![Fluxos de trabalho personalizados do Firefly](./images/ffcw60.png)
+
+Seu fluxo de trabalho agora está publicado e pode ser executado programaticamente como parte do próximo exercício.
+
 ## Próximas etapas
 
-Volte para o [Workflow Builder](./workflowbuilder.md){target="_blank"}
+Ir para [1.7.2 Executar o fluxo de trabalho personalizado programaticamente](./ex2.md){target="_blank"}
+
+Voltar para [Fluxos de Trabalho Personalizados do Firefly](./workflowbuilder.md){target="_blank"}
 
 Voltar para [Todos os Módulos](./../../../overview.md){target="_blank"}
