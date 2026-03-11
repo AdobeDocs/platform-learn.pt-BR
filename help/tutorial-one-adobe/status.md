@@ -3,9 +3,9 @@ title: Status do conteúdo
 description: Status do conteúdo
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 10%
 
 ---
@@ -18,14 +18,14 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 
 | Nome | Última atualização | Trabalhando 100% | Observações | Investimento de tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [0. Introdução &#x200B;](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
+| [0. Introdução ](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 06/04/2025 | Sim | - | 45 min |
 
 ## Fluxo de trabalho e planejamento
 
 | Nome | Última atualização | Trabalhando 100% | Observações | Investimento de tempo |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Planejamento do Adobe Workfront](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 08/02/2025 | Sim | - | 45 min |
-| [Gerenciamento de Fluxo de Trabalho 1.2 com o Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 08/02/2025 | Sim | Conteúdo ainda não concluído | 1h 30min |
+| [Gerenciamento de Fluxo de Trabalho 1.2 com o Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 08/02/2025 | Sim | - | 1h 30min |
 
 ## Criação e produção
 
@@ -37,8 +37,9 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [1.4 Adobe Express e Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 04/01/2025 | Sim | - | 45 min |
 | [1.5 Simplifique seu fluxo de trabalho com Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 08/02/2025 | Sim | - | 1h |
 | [1.6 GenStudio for Performance Marketing - Extensibilidade](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 08/21/2025 | Sim | - | 1h 30min |
-| [1.7 Fluxos de trabalho personalizados do Firefly](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/17/2026 | Sim | - | - |
-| [1.8 Gerenciamento de Armazenamento Corporativo](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/17/2026 | Sim | - | - |
+| [1.7 Fluxos de trabalho personalizados do Firefly](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/17/2026 | Sim | - | 45 min |
+| [1.8 Gerenciamento de Armazenamento Corporativo](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/17/2026 | Sim | - | 45 min |
+| [1.9 Quadros Firefly](./modules/creation-production/module1.9/fireflyboards.md){target="_blank"} | 03/11/2026 | Não | Conteúdo em desenvolvimento | - |
 
 
 ## Gerenciamento de ativos
@@ -90,7 +91,7 @@ Abaixo está uma visão geral do status do conteúdo deste tutorial.
 | [1.2 IA de agente](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | Não | Conteúdo sendo desenvolvido | A definir |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 01/23/2026 | Sim | - | 90 min |
 | [1.5 Análises e agentes](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | Sim | - | 45 min |
-| [1.6 Adobe Experience Manager e agentes](./modules/agents/module1.6/aemagents.md){target="_blank"} | 02/17/2026 | Não | Conteúdo sendo desenvolvido | A definir |
+| [1.6 Adobe Experience Manager e agentes](./modules/agents/module1.6/aemagents.md){target="_blank"} | 03/11/2026 | Sim | - | 90 min |
 | [1.7 Ferramentas de desenvolvedor inteligente para o Adobe Commerce](./modules/agents/module1.7/aiassisteddev.md){target="_blank"} | 02/17/2026 | Sim | - | 45 min |
 
 {style="table-layout:auto"}

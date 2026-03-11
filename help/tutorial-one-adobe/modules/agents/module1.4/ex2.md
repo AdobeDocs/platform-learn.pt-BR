@@ -4,9 +4,9 @@ description: Implementar o Brand Concierge no seu site
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -412,6 +412,8 @@ Você deverá ver isso. Clique em **Brand Concierge**.
 Você deverá ver essa Brand Concierge onde é possível inserir seu prompt.
 
 ![Brand Concierge](./images/aem14.png)
+
+## Próximas etapas
 
 Voltar para [Brand Concierge](./brandconcierge.md){target="_blank"}
 

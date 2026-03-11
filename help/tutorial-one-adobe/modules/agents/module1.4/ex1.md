@@ -4,9 +4,9 @@ description: Introdução ao Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 1f4b945658834b7fd4f52f297fe761c49edd28fe
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1121'
 ht-degree: 1%
 
 ---
@@ -376,7 +376,9 @@ Você deverá receber uma resposta semelhante de volta.
 
 A instância do Brand Concierge agora está pronta para ser implementada no site.
 
-Próxima Etapa: [Implementar o Brand Concierge em seu site](./ex2.md){target="_blank"}
+## Próximas etapas
+
+Ir para [Implementar o Brand Concierge no seu site](./ex2.md){target="_blank"}
 
 Voltar para [Brand Concierge](./brandconcierge.md){target="_blank"}
 
