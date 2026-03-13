@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1558'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 3%
       + [1.1.1 Introdução ao Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 Adobe Marketing Agent para ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-      + [1.1.4 Adobe Marketing Agent para Google Gemini](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.4 Adobe Marketing Agent para Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
    + 1.2 Introdução aos agentes e IA {#agents2}
       + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Introdução à IA do Agentic](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -154,7 +154,7 @@ ht-degree: 3%
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + Entrega e ativação {#activation}
-   + Coleta de dados {#dc}
+   + Coleção de dados {#dc}
       + 1.1 Coleta de dados do Adobe Experience Platform e Web SDK {#dc11}
          + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
          + [1.1.1 Noções básicas sobre a coleta de dados do Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
