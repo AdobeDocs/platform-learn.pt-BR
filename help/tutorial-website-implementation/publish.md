@@ -2,10 +2,10 @@
 title: Publicar a propriedade da tag
 description: Saiba como publicar sua propriedade de tag do ambiente de desenvolvimento para os ambientes de preparo e produção. Esta lição é parte do tutorial Implementar a Experience Cloud em sites.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 55%
+source-wordcount: '550'
+ht-degree: 56%
 
 ---
 
@@ -16,15 +16,8 @@ Depois de implementar algumas das soluções principais da Adobe Experience Clou
 
 >[!WARNING]
 >
-> O site do Luma usado neste tutorial deve ser substituído durante a semana de 16 de fevereiro de 2026. O trabalho realizado como parte deste tutorial pode não se aplicar ao novo site.
+> Este tutorial e seus exercícios no site Luma não são mais mantidos e dependem de bibliotecas JavaScript mais antigas. Para saber a prática recomendada atual, use o [tutorial Implementar o Adobe Experience Cloud com Web SDK](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-web-sdk/overview).
 
->[!NOTE]
->
->O Adobe Experience Platform Launch está sendo integrado à Adobe Experience Platform como um conjunto de tecnologias de coleção de dados. Várias alterações de terminologia foram implementadas na interface do que você deve estar ciente ao usar esse conteúdo:
->
-> * O Platform Launch (lado do cliente) agora é **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=pt-BR)**
-> * O Platform Launch Server Side agora é **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=pt-BR)**
-> * As configurações do Edge agora são **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=pt-BR)**
 
 ## Objetivos de aprendizagem
 
