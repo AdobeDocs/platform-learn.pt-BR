@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Adicionar o Adobe Analytics
 
-Nesta lição, você implementará a [extensão Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) e criará regras para enviar dados ao Adobe Analytics.
+Nesta lição, você implementará a [extensão Adobe Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=pt-BR) e criará regras para enviar dados ao Adobe Analytics.
 
 
 >[!WARNING]
@@ -39,7 +39,7 @@ Há muitas coisas que podem ser implementadas para o Analytics em tags. Esta li�
 
 É necessário que você tenha completado as lições em [Configurar tags](create-a-property.md) e [Adicionar o Serviço de Identidade](id-service.md).
 
-Além disso, você precisará de pelo menos uma ID de conjunto de relatórios e seu servidor de rastreamento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, crie um. Se não tiver certeza sobre como fazer isso, consulte [a documentação](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Você pode recuperar o servidor de rastreamento da implementação atual, do consultor da Adobe ou do representante do Atendimento ao cliente
+Além disso, você precisará de pelo menos uma ID de conjunto de relatórios e seu servidor de rastreamento. Se você não tiver um conjunto de relatórios de teste/desenvolvimento que pode ser usado para este tutorial, crie um. Se não tiver certeza sobre como fazer isso, consulte [a documentação](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite). Você pode recuperar o servidor de rastreamento da implementação atual, do consultor da Adobe ou do representante do Atendimento ao cliente
 
 ## Adicionar a extensão do Analytics
 
@@ -424,7 +424,7 @@ Na verdade, você chamará dois plug-ins neste código, mas um deles está integ
 
 A finalidade deste plug-in é impedir que os valores sejam duplicados falsamente no código quando um visitante atualiza uma página ou usa o botão Voltar do navegador para voltar para uma página na qual um valor foi definido. Nesta lição, você a usará para impedir que o evento `clickthrough` seja duplicado.
 
-O código desse plug-in está disponível na [documentação do Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html), mas também foi incluído aqui para facilitar a cópia/colagem.
+O código desse plug-in está disponível na [documentação do Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=pt-BR), mas também foi incluído aqui para facilitar a cópia/colagem.
 
 1. Copie o código a seguir
 
