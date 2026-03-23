@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
@@ -114,9 +114,9 @@ ht-degree: 3%
       + [1.6.3 Criar e implantar o aplicativo DAM externo](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 Publicar seu aplicativo de forma privada](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Fluxos de trabalho personalizados do Firefly {#crpr7}
+   + 1.7 Firefly Creative Production for Enterprise {#crpr7}
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Introdução aos fluxos de trabalho personalizados do Firefly](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Introdução ao Firefly Creative Production for Enterprise](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
       + [1.7.2 Execute o fluxo de trabalho personalizado de forma programática](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Revisão e aprovação unificadas com Workfront, Frame.io e gerenciamento de armazenamento corporativo {#crpr8}
       + [Visão geral](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
@@ -201,7 +201,7 @@ ht-degree: 3%
          + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1 Configurar o ambiente](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
          + [2.4.2 Configurar o ambiente do Microsoft Azure EventHub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
-         + [2.4.3 Configurar o destino do Hub de eventos do Azure no Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
+         + [2.4.3 Configurar o destino do Hub de eventos da Azure no Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
          + [2.4.4 Criar públicos-alvo](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex4.md)
          + [2.4.5 Ativar o público-alvo](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
          + [2.4.6 Criar seu projeto do Microsoft Azure](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
