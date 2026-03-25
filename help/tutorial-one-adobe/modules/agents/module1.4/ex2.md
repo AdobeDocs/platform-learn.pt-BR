@@ -4,7 +4,7 @@ description: Implementar o Brand Concierge no seu site
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f3a365b1453ee34d9649202bdb523624a469b623
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 0%
@@ -337,9 +337,9 @@ Há dois campos no código abaixo que você precisa atualizar:
 >- **orgId** precisa ser substituída pela ID de Organização IMS da sua instância do Adobe Experience Cloud.
 
 ```javascript
-<script src="/scripts/styleconfigurations.js"></script>
+<script nonce="aem" src="/scripts/styleconfigurations.js"></script>
 
-<script>
+<script nonce="aem">
     !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
@@ -353,9 +353,9 @@ Há dois campos no código abaixo que você precisa atualizar:
     </script>
 
 
-<script src="/scripts/alloy.js"></script>
+<script nonce="aem" src="/scripts/alloy.js"></script>
 
-<script>
+<script nonce="aem">
     alloy("configure", {
         defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
