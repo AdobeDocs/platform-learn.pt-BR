@@ -4,9 +4,9 @@ description: Introdução ao Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: fcf99e48868fd0b189291a7215a2871387ea7532
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
@@ -66,19 +66,15 @@ Ir para [https://experience.adobe.com/](https://experience.adobe.com/){target="_
 
 ![Brand Concierge](./images/bc1.png)
 
-Você deverá ver isso. Clique no menu **seleção de sandbox**.
+Você deverá ver isso. Clique no menu **seleção de sandbox**. Escolha a sandbox que foi atribuída a você. Essa sandbox deve ser chamada `techinsidersX` (substitua X pelo número atribuído).
 
 ![Brand Concierge](./images/bc2.png)
 
-Escolha a sandbox que foi atribuída a você. Essa sandbox deve ser chamada `--aepUserLdap-- - bc`.
+Em seguida, preencha as seguintes variáveis:
 
-![Brand Concierge](./images/bc3.png)
+- **Nome da empresa**: CitiSignal
 
-Clique em **Introdução**.
-
-![Brand Concierge](./images/bc4.png)
-
-Para o nome da sua instância do Brand Concierge, use: `--aepUserLdap-- - CitiSignal Brand Concierge`.
+- **nome da concierge**: `CitiSignal Sales Assistant`.
 
 Digite o seguinte texto em **O que você deseja que a concierge faça?**.
 
@@ -86,45 +82,19 @@ Digite o seguinte texto em **O que você deseja que a concierge faça?**.
 Brand Concierge should help customers find their best device, plan or entertainment deal. Brand Concierge should help users discover internet plans, entertainment deals,  and help find the best available packages. Brand Concierge should also answer questions about devices such as phones and watches.
 ```
 
-Clique em **Criar**.
+- **Link do site**: forneça o link para o site que você está usando
+
+Clique em **Continuar**.
 
 ![Brand Concierge](./images/bc5.png)
 
-Você deverá ver isso. Clique em **Introdução** para adicionar uma fonte de conhecimento.
+Você deverá ver isso. Essas informações foram geradas usando IA com base na entrada fornecida na página anterior. Revise as informações e quando estiver satisfeito com elas, clique em **Gerar concierge**.
 
 ![Brand Concierge](./images/bc6.png)
 
-Selecione **Links de Sites** e clique em **Continuar**.
+Você deverá ver isso. Clique em **+ Adicionar** ao lado de **consultoria de produto para consumidores**.
 
-![Brand Concierge](./images/bc7.png)
-
-Você deverá ver isso. Digite `CitiSignal website` como nome para sua fonte de conhecimento.
-
-Agora é necessário carregar um arquivo csv que contenha os links do seu site. Baixe o [site do CitiSignal vincula o arquivo CSV](./assets/citisignal-website-links.csv) à área de trabalho.
-
-Clique em **Procurar Arquivos**.
-
-![Brand Concierge](./images/bc8.png)
-
-Abra o arquivo **citisignal-website-links.csv** e atualize os links para apontar para o seu próprio site CitiSignal.
-
-![Brand Concierge](./images/bc8a.png)
-
-Selecione o arquivo **citisignal-website-links.csv** que você acabou de baixar e editar. Clique em **Abrir**.
-
-![Brand Concierge](./images/bc9.png)
-
-Seu arquivo foi adicionado a esta fonte de conhecimento. Clique em **Adicionar**.
-
-![Brand Concierge](./images/bc10.png)
-
-Você deverá ver isso. Clique em **Leve-me para casa**.
-
-![Brand Concierge](./images/bc11.png)
-
-Você deverá ver isso. Clique em **Introdução** no cartão **Aviso de produto para consumidores**.
-
-![Brand Concierge](./images/bc12.png)
+![Brand Concierge](./images/bc6a.png)
 
 Você deverá ver isso. Preencha os campos a seguir usando o texto abaixo.
 
@@ -146,51 +116,57 @@ Prioritize positioning the CitiSignal Fiber Max offering.
 Competitor pricing, competitor products
 ```
 
-As atualizações são salvas automaticamente. Clique na **seta** para voltar à tela anterior.
+Clique em **Salvar**.
 
 ![Brand Concierge](./images/bc13.png)
 
-Você deverá ver isso. Clique em **Introdução** para personalizar a expressão da sua marca.
+Clique na **seta** para voltar à tela anterior.
 
-![Brand Concierge](./images/bc14.png)
+![Brand Concierge](./images/bc13a.png)
 
-Você pode fazer suas próprias escolhas na página **Expressão da marca**. Verifique se há uma opção selecionada para cada pergunta.
+Vá para **Knowledge Source** e clique em **Criar sua fonte de conhecimento**.
 
-![Brand Concierge](./images/bc15.png)
+![Brand Concierge](./images/bc7.png)
 
-Role para baixo e selecione qualquer configuração para o campo **Duração da resposta**.
+Selecione **Links do site** e clique em **Continuar**.
 
-As atualizações são salvas automaticamente.
+![Brand Concierge](./images/bc7a.png)
 
-![Brand Concierge](./images/bc16.png)
+Você deverá ver isso. Digite `CitiSignal website` como nome para sua fonte de conhecimento.
 
-Role para cima e clique na **seta** para voltar à tela anterior.
+Agora é necessário carregar um arquivo csv que contenha os links do seu site. Baixe o [site do CitiSignal vincula o arquivo CSV](./assets/citisignal-website-links.csv) à área de trabalho.
 
-![Brand Concierge](./images/bc17.png)
+Clique em **Procurar Arquivos**.
 
-Você estará de volta aqui. Clique em **Fontes de conhecimento**.
+![Brand Concierge](./images/bc8.png)
 
-![Brand Concierge](./images/bc18.png)
+Abra o arquivo **citisignal-website-links.csv** e atualize os links para apontar para o seu próprio site CitiSignal.
 
-Clique em **Criar fontes de conhecimento**.
+![Brand Concierge](./images/bc8a.png)
 
-![Brand Concierge](./images/bc19.png)
+Selecione o arquivo **citisignal-website-links.csv** que você acabou de baixar e editar. Clique em **Abrir**.
+
+![Brand Concierge](./images/bc9.png)
+
+Seu arquivo foi adicionado a esta fonte de conhecimento. Clique em **Adicionar**.
+
+![Brand Concierge](./images/bc10.png)
+
+Você deverá ver isso. Clique em **Criar sua fonte de conhecimento**.
+
+![Brand Concierge](./images/bc11.png)
 
 Selecione **Catálogo de produtos** e clique em **Continuar**.
 
 ![Brand Concierge](./images/bc20.png)
 
-Você deverá ver isso. Digite `CitiSignal Products` como nome para sua fonte de conhecimento.
+Você deverá ver isso. Digite `CitiSignal Products` como nome para sua fonte de conhecimento. Clique em **Procurar Arquivos** e selecione **Procurar no dispositivo**.
 
 ![Brand Concierge](./images/bc21.png)
 
 Agora é necessário carregar um arquivo csv que contenha os links do seu site. Baixe o [catálogo de produtos CitiSignal](./assets/CitiSignal-catalog.json.zip) na área de trabalho e descompacte-o.
 
 ![Brand Concierge](./images/bc26.png)
-
-Clique em **Procurar Arquivos** e selecione **Procurar no dispositivo**.
-
-![Brand Concierge](./images/bc22.png)
 
 Selecione o arquivo **CitiSignal-catalog.json** e clique em **Abrir**.
 
@@ -200,37 +176,9 @@ Você deverá ver isso. Clique em **Adicionar**.
 
 ![Brand Concierge](./images/bc24.png)
 
-Você estará de volta aqui.
+Você estará de volta aqui. O processamento levará de 10 a 20 minutos, portanto, você terá que voltar aqui posteriormente para verificar se o processamento foi bem-sucedido.
 
 ![Brand Concierge](./images/bc25.png)
-
-Após 10-20 minutos, o **Status** das duas fontes de conhecimento deve ser **Concluído**. Clique em **Página inicial**.
-
-![Brand Concierge](./images/bc27.png)
-
-Você deverá ver isso. Clique em **+ Conectar** no cartão **Links de site**.
-
-![Brand Concierge](./images/bc28.png)
-
-Selecione o site **CitiSignal** de origem do conhecimento e clique em **Salvar**.
-
-![Brand Concierge](./images/bc29.png)
-
-Você deverá ver isso. Clique em **+ Conectar** no cartão **Catálogo de produtos**.
-
-![Brand Concierge](./images/bc30.png)
-
-Selecione a fonte de conhecimento **CitiSignal Products** e clique em **Salvar**.
-
-![Brand Concierge](./images/bc31.png)
-
-Você deverá ver isso. Clique em **Visualizar** para começar a interagir com a Brand Concierge.
-
-![Brand Concierge](./images/bc32.png)
-
-Agora você pode começar a fazer perguntas relacionadas às fontes de conhecimento fornecidas.
-
-![Brand Concierge](./images/bc33.png)
 
 ## Etapas de integração do AEP 1.4.1.3
 
@@ -242,7 +190,7 @@ Ir para [https://experience.adobe.com/](https://experience.adobe.com/){target="_
 
 ![Brand Concierge](./images/aep1.png)
 
-Verifique se você selecionou a sandbox correta, que deve ser chamada `--aepUserLdap-- - bc`. No menu esquerdo, role para baixo e selecione **Datastreams**.
+Verifique se você selecionou a sandbox correta, que deve ser chamada `techinsidersX`. No menu esquerdo, role para baixo e selecione **Datastreams**.
 
 ![Brand Concierge](./images/aep2.png)
 
@@ -264,7 +212,7 @@ A sequência de dados agora está configurada. Copie o nome e a ID da sequência
 
 A próxima etapa é habilitar a API de Gerenciamento de configuração do Brand Concierge para configurar o fluxo de dados que você acabou de criar. Isso é necessário para resolver problemas como ID de organização IMS e detalhes da sandbox durante o processamento de solicitações.
 
-Vá para **Controles de administrador**.
+Vá para **Página Inicial** e selecione **Controles de administrador**.
 
 ![Brand Concierge](./images/admincontrols1.png)
 
@@ -296,77 +244,41 @@ Você deverá ver isso.
 
 ## Manifesto do Agent Orchestrator 1.4.1.5
 
-Ir para **Atualizar Manifesto**. Você deverá ver isso.
+Ir para **Atualizar Manifesto**. Você deverá ver isso. Revise as informações em cada campo e faça alterações, se necessário. Depois de fazer as alterações, clique em **Atualizar manifesto.
 
 ![Brand Concierge](./images/admincontrols5.png)
 
-Agora é necessário atualizar os campos no manifesto. Use a entrada abaixo para isso.
+## 1.4.1.6 Concluir configuração da fonte de conhecimento
 
-**Nome do agente**:
-
-```
-CitiSignal Sales Assistant
-```
-
-**Introdução**:
-
-```
-Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
-```
-
-**Funções e responsabilidades**:
-
-```
-You are CitiSignal's AI Sales Assistant focused on:
-1. **Primary Goal**: Selling connectivity products from the knowledge base
-2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
-3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
-4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
-
-- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
-- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
-- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
-- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
-- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
-```
-
-**Escopo**:
-
-```
-You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
-
-# Your Primary Objectives:
-1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
-2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
-3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
-
-# Sales Strategy:
-- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
-- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
-- Use natural transition phrases to introduce entertainment upsells.
-- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
-- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
-
-# Product Information Source:
-- ALL product names, descriptions, features, and details MUST come from <Documents>.
-- Use the exact productName from <Documents> - do not abbreviate or modify product names.
-- Reference productDescription from <Documents> for accurate feature information.
-- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
-```
-
-Clique em **Atualizar Manifesto**.
-
-![Brand Concierge](./images/admincontrols6.png)
-
-Clique em **Página inicial**.
+Ir para **Fontes de Conhecimento**. Após 10-20 minutos, o **Status** das duas fontes de conhecimento deve ser **Concluído**. Quando o status for **Sucesso** para ambas as fontes de conhecimento, clique em **Página inicial**.
 
 ![Brand Concierge](./images/admincontrols10.png)
 
+Você deverá ver isso. Clique em **+ Conectar** no cartão **Links de site**.
+
+![Brand Concierge](./images/bc28.png)
+
+Selecione o site **CitiSignal** de origem do conhecimento e clique em **Salvar**.
+
+![Brand Concierge](./images/bc29.png)
+
+Você deverá ver isso. Clique em **+ Conectar** no cartão **Catálogo de produtos**.
+
+![Brand Concierge](./images/bc30.png)
+
+Selecione a fonte de conhecimento **CitiSignal Products** e clique em **Salvar**.
+
+![Brand Concierge](./images/bc31.png)
+
 Você deverá ver isso. Clique em **Visualizar** para começar a interagir com a Brand Concierge.
 
-![Brand Concierge](./images/bc101.png)
+![Brand Concierge](./images/bc32.png)
 
-Agora você pode começar a fazer perguntas relacionadas às fontes de conhecimento fornecidas. Digite a pergunta `what products do you sell?` e clique em **Enviar**.
+Agora você pode começar a fazer perguntas relacionadas às fontes de conhecimento fornecidas.
+
+![Brand Concierge](./images/bc33.png)
+
+Digite a pergunta `what products do you sell?` e clique em **enviar**.
 
 ![Brand Concierge](./images/bc102.png)
 
