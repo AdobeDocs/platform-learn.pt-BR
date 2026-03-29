@@ -3,9 +3,9 @@ title: Laboratórios técnicos de IA corporativa
 description: Laboratórios técnicos de IA corporativa
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,7 @@ Neste vídeo, você aprenderá sobre a arquitetura por trás da parte da IA agê
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
-Baixe a imagem de visão geral da arquitetura abaixo:
-
-![Informantes técnicos](./assets/images/architecture_agentic.jpg)
+Baixe a imagem de visão geral da arquitetura [aqui](./assets/images/architecture_agentic.jpg).
 
 ### Introdução
 

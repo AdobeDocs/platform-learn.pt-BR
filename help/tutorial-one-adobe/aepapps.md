@@ -2,9 +2,9 @@
 title: Laboratórios técnicos da AEP e de aplicativos
 description: Laboratórios técnicos da AEP e de aplicativos
 doc-type: multipage-overview
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,7 @@ Neste vídeo, você aprenderá sobre a arquitetura por trás da parte do Adobe E
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-Baixe a imagem de visão geral da arquitetura abaixo:
-
-![Informantes técnicos](./assets/images/architecture_data.jpeg)
+Baixe a imagem de visão geral da arquitetura [aqui](./assets/images/architecture_data.jpeg).
 
 ### Introdução
 
