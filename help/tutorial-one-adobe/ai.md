@@ -1,11 +1,11 @@
 ---
-title: Visão geral Laboratórios técnicos de IA do Agentic
-description: Visão geral Laboratórios técnicos de IA do Agentic
+title: Laboratórios técnicos de IA corporativa
+description: Laboratórios técnicos de IA corporativa
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,23 @@ ht-degree: 0%
 
 ![Informantes técnicos](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## Visão geral - Trabalho em andamento
+## Arquitetura do Agentic AI
+
+Neste vídeo, você aprenderá sobre a arquitetura por trás da parte da IA agêntica do tutorial One Adobe.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+Baixe a imagem de visão geral da arquitetura abaixo:
+
+![Informantes técnicos](./assets/images/architecture_agentic.jpg)
+
+### Introdução
+
+[Introdução](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+Neste módulo fundamental, você preparará tudo para poder acessar e usar o ambiente de demonstração.
+
+### Laboratórios técnicos de IA corporativa
 
 [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
@@ -26,6 +42,8 @@ Saiba como usar agentes da Adobe Experience Platform e o Agent Orchestrator para
 - Identificar públicos de alta propensão
 - Validar o desempenho da jornada
 - Crie uma nova jornada para a distribuição máxima de fibra CitiSignal
+
+Você também aprenderá a usar o Adobe Marketing Agent em combinação com ferramentas como Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise e Claude.
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 

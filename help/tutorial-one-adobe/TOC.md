@@ -4,9 +4,9 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,10 @@ ht-degree: 3%
 # Um tutorial técnico do Adobe {#tutorial-one-adobe}
 
 + [Visão geral do tutorial](/help/tutorial-one-adobe/overview.md)
-+ [Status do conteúdo](/help/tutorial-one-adobe/status.md)
 + [Arquitetura](/help/tutorial-one-adobe/architecture.md)
++ [Laboratórios de IA para agências](/help/tutorial-one-adobe/ai.md)
++ [Laboratórios da GenStudio](/help/tutorial-one-adobe/genstudiocsc.md)
++ [AEP e Apps Labs](/help/tutorial-one-adobe/aepapps.md)
 
 + Introdução {#gettingstarted}
    + Introdução {#gettingstarted}
@@ -38,6 +40,7 @@ ht-degree: 3%
       + [1.1.2 Adobe Marketing Agent para ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent para Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.5 Adobe Marketing Agent para Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
    + 1.2 Introdução aos agentes e IA {#agents2}
       + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Introdução à IA do Agentic](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -154,7 +157,7 @@ ht-degree: 3%
       + [Resumo e benefícios](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + Entrega e ativação {#activation}
-   + Coleção de dados {#dc}
+   + Coleta de dados {#dc}
       + 1.1 Coleta de dados do Adobe Experience Platform e Web SDK {#dc11}
          + [Visão geral](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
          + [1.1.1 Noções básicas sobre a coleta de dados do Adobe Experience Platform](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
@@ -298,3 +301,5 @@ ht-degree: 3%
          + [Visão geral](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Introdução ao Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [Resumo e benefícios](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
++ [Status do conteúdo](/help/tutorial-one-adobe/status.md)
