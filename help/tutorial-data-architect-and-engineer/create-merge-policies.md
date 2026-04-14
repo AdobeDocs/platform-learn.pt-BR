@@ -32,7 +32,7 @@ Manteremos a interface do usuário para esta lição, mas também existem opçõ
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre políticas de mesclagem:
 
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413365?captions=por_br&learn=on&enablevpops)
 
 ## Permissões necessárias
 

@@ -20,7 +20,7 @@ ht-degree: 24%
 
 Obtenha uma visão geral de como as regras de vinculação de gráficos de identidade ajudam os arquitetos de dados a manter perfis precisos do cliente e evitar o colapso de gráficos. Para obter mais informações, consulte a [documentação de regras de vinculação de gráfico de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448277/?captions=por_br&learn=on&enablevpops)
 
 ## Configuração
 
@@ -38,7 +38,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Regras de vinculação do gráfico de identidade - Simulação de gráfico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444048/?captions=por_br&format=jpeg&nocache=1747355376342" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="Regras de vinculação do gráfico de identidade - Configurações de identidade" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="Regras de vinculação do gráfico de identidade - Configurações de identidade"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475967/?captions=por_br&format=jpeg&nocache=1747355376336" alt="Regras de vinculação do gráfico de identidade - Configurações de identidade"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
