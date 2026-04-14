@@ -22,7 +22,7 @@ Saiba como começar a usar APIs do Adobe Experience Platform. A primeira etapa �
 
 [[!DNL Postman]](https://www.postman.com/) é um aplicativo de terceiros que ajuda desenvolvedores a interagir rápida e facilmente com APIs do Adobe Experience Platform.
 
-O recurso [Exportar Detalhes para Postman](https://developer.adobe.com/console/home) do **** do Adobe Developer Console fornece uma maneira fácil de exportar os detalhes da conta necessários para acessar e interagir com uma APIs do Experience Platform em um único arquivo de Ambiente do Postman, eliminando a necessidade de copiar e colar valores do Adobe Developer Console no Postman.
+O recurso [Exportar Detalhes para Postman](https://developer.adobe.com/console/home) do **&#x200B;**&#x200B;do Adobe Developer Console fornece uma maneira fácil de exportar os detalhes da conta necessários para acessar e interagir com uma APIs do Experience Platform em um único arquivo de Ambiente do Postman, eliminando a necessidade de copiar e colar valores do Adobe Developer Console no Postman.
 
 >[!IMPORTANT]
 >
