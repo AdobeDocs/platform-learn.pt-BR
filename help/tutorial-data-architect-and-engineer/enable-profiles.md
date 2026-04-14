@@ -26,7 +26,7 @@ Com o Perfil do cliente em tempo real, você pode ter uma visualização integra
 
 Por incrível que pareça, você não precisa ativar *todos os seus dados* para o perfil. Na verdade, você só deve ativar os dados necessários para casos de uso de ativação. Ative os dados que você deseja usar para casos de uso de marketing, integrações com a central de atendimento e assim por diante, onde é necessário acesso rápido a um perfil de cliente robusto. Se você estiver carregando dados somente para análise, eles provavelmente não deverão ser ativados para o perfil.
 
-Há [medidas de proteção importantes para os dados de Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) que você deve examinar ao decidir quais dos seus próprios dados deve habilitar para o perfil.
+Há [medidas de proteção importantes para os dados de Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=pt-BR) que você deve examinar ao decidir quais dos seus próprios dados deve habilitar para o perfil.
 
 <!--is this accurate. Are there other considerations to point out? -->
 

@@ -44,7 +44,7 @@ Antes de começar os exercícios, assista a estes dois pequenos vídeos para sab
 
 >[!NOTE]
 >
->Embora este tutorial se concentre na assimilação por transmissão de sites com o Web SDK, você também pode transmitir dados usando o [SDK Móvel](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), a [API do Edge Network Server](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) e a [API HTTP](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
+>Embora este tutorial se concentre na assimilação por transmissão de sites com o Web SDK, você também pode transmitir dados usando o [SDK Móvel](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview), a [API do Edge Network Server](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/server-api/overview) e a [API HTTP](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Permissões necessárias
 

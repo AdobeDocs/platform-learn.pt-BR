@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # Monitorar o uso de crédito de IA
 
-Saiba como os créditos de IA do Experience Platform funcionam para que você possa rastrear e gerenciar seu uso desde o primeiro dia. Para obter mais informações, consulte a [documentação sobre trabalhos do agente do Adobe Experience Platform e consumo de créditos de IA](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption).
+Saiba como os créditos de IA do Experience Platform funcionam para que você possa rastrear e gerenciar seu uso desde o primeiro dia. Para obter mais informações, consulte a [documentação sobre trabalhos do agente do Adobe Experience Platform e consumo de créditos de IA](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/ai-credit-consumption).
 
 >[!SLIDE](ai-credits)

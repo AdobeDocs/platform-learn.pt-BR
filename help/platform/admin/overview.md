@@ -27,7 +27,7 @@ CARDS
 * add-developers.md{title=Add developers}
 * add-product-administrators.md{title=Add administrators}
 * configure-attribute-based-access-control.md
-* https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
+* https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -127,7 +127,7 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" title="Adicionar usuários à coleção de dados" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions" title="Adicionar usuários à coleção de dados" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="Adicionar usuários à coleção de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -136,11 +136,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="Adicionar usuários à coleção de dados">Adicionar usuários à Coleção de Dados</a>
+                        <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="Adicionar usuários à coleção de dados">Adicionar usuários à Coleção de Dados</a>
                     </p>
                     <p class="is-size-6">Saiba como adicionar usuários e gerenciar permissões para recursos de Coleção de dados do Adobe Experience Platform para que os funcionários da sua empresa tenham o acesso necessário para realizar suas tarefas.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                 </a>
             </div>
@@ -237,7 +237,7 @@ CARDS
 
 <!--
 CARDS
-* https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard
+* https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -245,8 +245,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" title="Painel de uso de licenças" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="Painel de uso de licenças"
+                    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard" title="Painel de uso de licenças" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="Painel de uso de licenças"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -254,11 +254,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="Painel de uso de licenças">Painel de Uso de Licenças</a>
+                        <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="Painel de uso de licenças">Painel de Uso de Licenças</a>
                     </p>
                     <p class="is-size-6">A interface do usuário do Adobe Experience Platform fornece um painel por meio do qual você pode exibir informações importantes sobre o uso de licença da organização.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                 </a>
             </div>
@@ -306,7 +306,7 @@ CARDS
 
 <!--
 CARDS
-* https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags
+* https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -314,8 +314,8 @@ CARDS
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" title="Gerenciamento de tags unificadas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="Gerenciamento de tags unificadas"
+                    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags" title="Gerenciamento de tags unificadas" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="Gerenciamento de tags unificadas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -323,11 +323,11 @@ CARDS
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="Gerenciamento de tags unificadas">Gerenciando Marcas Unificadas</a>
+                        <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="Gerenciamento de tags unificadas">Gerenciando Marcas Unificadas</a>
                     </p>
                     <p class="is-size-6">Este documento fornece informações sobre o gerenciamento de tags unificadas na Adobe Experience Cloud</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
                 </a>
             </div>
