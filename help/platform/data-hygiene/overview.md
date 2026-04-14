@@ -5,10 +5,11 @@ solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimiz
 feature: Data Hygiene
 role: Developer
 level: Intermediate
-source-git-commit: 9c15708f7300672caa963c0635179dd2855e5fed
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -36,7 +37,8 @@ holistic fashion.
 
 O recurso de preparação de dados ajuda a assimilar apenas os campos necessários de uma fonte de dados.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * data-prep-for-data-hygiene.md
 -->
@@ -47,7 +49,7 @@ O recurso de preparação de dados ajuda a assimilar apenas os campos necessári
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Preparo de dados para higiene de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449280/?format=jpeg&nocache=1740251397387&captions=por_br" alt="Preparo de dados para higiene de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Preparo de dados para higiene de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,7 +59,7 @@ O recurso de preparação de dados ajuda a assimilar apenas os campos necessári
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="data-prep-for-data-hygiene.md" target="_blank" rel="referrer" title="Preparo de dados para higiene de dados">Preparação de dados para higiene de dados</a>
                     </p>
-                    <p class="is-size-6">Saiba como oferecer suporte aos princípios de minimização de dados com o recurso de preparação de dados da Experience Platform. Saiba como assimilar somente os campos necessários e os dados de hash durante a assimilação.</p>
+                    <p class="is-size-6">Saiba como oferecer suporte aos princípios de minimização de dados com o recurso de preparação de dados da Experience Platform. Saiba como ingerir somente os campos necessários e os dados de hash durante a ingestão.</p>
                 </div>
                 <a href="data-prep-for-data-hygiene.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Assistir</span>
@@ -71,7 +73,8 @@ O recurso de preparação de dados ajuda a assimilar apenas os campos necessári
 ## Remoção de dados no sistema
 
 Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode excluir conjuntos de dados inteiros sob demanda ou de acordo com uma programação, expirar registros e perfis com configurações de tempo de vida, excluir perfis individuais e atender às solicitações de privacidade.
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * delete-datasets-and-batches.md
 * ../data-lifecycle/expire-datasets.md
@@ -109,7 +112,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Programar exclusões do conjunto de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430303?format=jpeg&nocache=1740251397716&captions=por_br" alt="Programar exclusões do conjunto de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Programar exclusões do conjunto de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +135,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Expirações de perfil pseudônimo e evento de experiência" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449859?format=jpeg&nocache=1740251397705&captions=por_br" alt="Expirações de perfil pseudônimo e evento de experiência"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Expirações de perfil pseudônimo e evento de experiência"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +181,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Introdução ao Privacy Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445716?format=jpeg&nocache=1740251397727&captions=por_br" alt="Introdução ao Privacy Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Introdução ao Privacy Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -205,7 +208,8 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
 
 ## Ajuste de dados no sistema
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../profiles/update-a-specific-attribute-with-upsert.md
 -->
@@ -216,7 +220,7 @@ Existem muitos recursos para ajudá-lo a remover os dados do sistema. Você pode
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Atualizar atributos específicos do perfil usando &quot;upsert&quot;" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443446/?format=jpeg&nocache=1740251398874&captions=por_br" alt="Atualizar atributos específicos do perfil usando &quot;upsert&quot;"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Atualizar atributos específicos do perfil usando &quot;upsert&quot;"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

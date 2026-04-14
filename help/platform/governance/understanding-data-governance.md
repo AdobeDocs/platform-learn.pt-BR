@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 18%
@@ -18,13 +18,14 @@ ht-degree: 18%
 
 Saiba como assumir o controle total de seus dados do momento em que são coletados nas fontes de dados até o momento em que são distribuídos para destinos fora do Adobe Experience Platform. A governança de dados é uma estrutura de fácil extensão profundamente incorporada nos fluxos de trabalho de uso de dados. A estrutura se baseia em três aspectos principais: rótulos, políticas e aplicação. Para obter mais informações, consulte a [documentação sobre governança de dados](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/32683?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 ## Demonstração
 
 Veja uma demonstração completa do recurso de governança de dados no Adobe Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-data-governance.md
 -->
@@ -35,7 +36,7 @@ Veja uma demonstração completa do recurso de governança de dados no Adobe Exp
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="Demonstração completa da governança de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41325?captions=por_br&format=jpeg&nocache=1740179989077" alt="Demonstração completa da governança de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="Demonstração completa da governança de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +61,8 @@ Veja uma demonstração completa do recurso de governança de dados no Adobe Exp
 
 Saiba mais sobre como rótulos, políticas e ações de marketing se unem para automatizar a governança de dados no Experience Platform.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * classify-data-using-labels.md
 * create-data-usage-policies.md{description=Learn how to create and manage data usage policies.}
@@ -73,7 +75,7 @@ Saiba mais sobre como rótulos, políticas e ações de marketing se unem para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="Classificar dados usando rótulos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422793?captions=por_br&format=jpeg&nocache=1740179989358" alt="Classificar dados usando rótulos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="Classificar dados usando rótulos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +98,7 @@ Saiba mais sobre como rótulos, políticas e ações de marketing se unem para a
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="Criar políticas de uso de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37143?captions=por_br&format=jpeg&nocache=1740179989347" alt="Criar políticas de uso de dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="Criar políticas de uso de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -144,7 +146,8 @@ Saiba mais sobre como rótulos, políticas e ações de marketing se unem para a
 
 Saiba mais sobre como o Experience Platform respeita o consentimento do cliente.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * integrate-with-iab-transparency-and-consent-framework-2.md{title=Integrate IAB's Transparency and Consent Framework 2.0}{description=See a demo of how Adobe's Real-Time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties.}
 * enforce-consent.md{description=Learn how to enforce consent in Adobe Experience Platform.}
@@ -156,7 +159,7 @@ Saiba mais sobre como o Experience Platform respeita o consentimento do cliente.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="Integrar a Estrutura de transparência e consentimento 2.0 do IAB" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326481?captions=por_br&format=jpeg&nocache=1740179989597" alt="Integrar a Estrutura de transparência e consentimento 2.0 do IAB"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="Integrar a Estrutura de transparência e consentimento 2.0 do IAB"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +182,7 @@ Saiba mais sobre como o Experience Platform respeita o consentimento do cliente.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="Impor consentimento" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413888?captions=por_br&format=jpeg&nocache=1740179989584" alt="Impor consentimento"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="Impor consentimento"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '3316'
 ht-degree: 0%
@@ -38,13 +38,13 @@ Há duas tarefas principais que devem ser concluídas na interface da Coleção 
 
 Antes de começar os exercícios, assista a estes dois pequenos vídeos para saber mais sobre a assimilação de dados por transmissão e o Web SDK:
 
->[!VIDEO](https://video.tv.adobe.com/v/31683?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37265?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->Embora este tutorial se concentre na assimilação por transmissão de sites com o Web SDK, você também pode transmitir dados usando o [SDK Móvel](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview), a [API do Edge Network Server](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/server-api/overview) e a [API HTTP](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/streaming/http).
+>Embora este tutorial se concentre na assimilação por transmissão de sites com o Web SDK, você também pode transmitir dados usando o [SDK Móvel](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), a [API do Edge Network Server](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) e a [API HTTP](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http).
 
 ## Permissões necessárias
 
@@ -63,7 +63,8 @@ Na lição [Configurar Permissões](configure-permissions.md), você configura t
 * User-role access to the `Luma Tutorial Platform` product profile
 -->
 
-<!--## Create a streaming source
+<!--
+## Create a streaming source
 
 1. Log into the [Experience Platform  user interface](https://experience.adobe.com/platform/)
 1. Go to **[!UICONTROL Sources]** in the left navigation
@@ -77,8 +78,7 @@ Na lição [Configurar Permissões](configure-permissions.md), você configura t
     ![Select your dataset](assets/websdk-source-selectDataset.png)
 1. On the **[!UICONTROL Dataflow detail]** step, select the **[!UICONTROL Next]** button:
     ![Select Next](assets/websdk-source-dataflowName.png)
-    <!--What is a good practice for naming the data flow vs the source-->
-<!--
+    What is a good practice for naming the data flow vs the source
 1. On the **[!UICONTROL Review]** step, review your source details and select the **[!UICONTROL Finish]** button:
     ![Select Finish](assets/websdk-source-review.png)
 -->
@@ -185,7 +185,7 @@ Agora criaremos uma regra para enviar dados para a Platform. Uma regra é uma co
 1. Atribua um nome à regra `All Pages - Library Loaded`
 1. Em **[!UICONTROL Eventos]**, selecione o botão **[!UICONTROL Adicionar]**
    ![Nomear a regra e adicionar um evento](assets/websdk-property-nameRule.png)
-1. Use a **[!UICONTROL Extensão de]**&#x200B;**[!UICONTROL do &lbrace;Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
+1. Use a **[!UICONTROL Extensão de]****[!UICONTROL do {Core]** e selecione **[!UICONTROL Biblioteca Carregada (Início da Página)]** como o **[!UICONTROL Tipo de Evento]**. Essa configuração significa que nossa regra é acionada sempre que a biblioteca do Launch é carregada em uma página.
 1. Selecione **[!UICONTROL Manter alterações]** para retornar à tela de regra principal
    ![Adicionar o evento de biblioteca carregada](assets/websdk-property-addEvent.png)
 1. Deixe **[!UICONTROL Condições]** em branco, pois queremos que esta regra seja acionada em todas as páginas, de acordo com o nome que demos a ela
@@ -263,7 +263,7 @@ O Experience Platform Debugger é uma extensão disponível para o Chrome que aj
 
 Se você nunca usou o Debugger antes (e este é diferente do Adobe Experience Cloud Debugger mais antigo), assista a este vídeo de visão geral de cinco minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/36163?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Abra o site Luma
 
@@ -469,7 +469,7 @@ Para validar se a ID do CRM agora está sendo enviada pelo Web SDK:
 ## Recursos adicionais
 
 * [Implementar a Adobe Experience Cloud com o SDK da Web](/help/tutorial-web-sdk/overview.md)
-* [Documentação de assimilação de streaming](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=pt-BR)
+* [Documentação de assimilação de streaming](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/streaming/overview)
 * [Referência da API de assimilação de fluxo](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 Excelente trabalho! Havia muitas informações sobre o Web SDK e o Launch. Há muito mais envolvido em uma implementação completa, mas essas são as noções básicas para ajudar você a começar e ver os resultados na Platform.

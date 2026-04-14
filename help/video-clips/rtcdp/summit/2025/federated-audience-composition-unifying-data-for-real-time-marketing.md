@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 3bb56992-4fcd-45db-84d4-919c835d3c21
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Saiba como a Federated Audience Composition no Adobe Real-Time CDP permite a integração perfeita de data warehouses externos para ativação de marketing no momento.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-unifying-data-for-realtime-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3459895/?captions=por_br&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458196/?learn=on&enablevpops=true)

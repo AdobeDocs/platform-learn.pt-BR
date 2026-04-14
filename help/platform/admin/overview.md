@@ -5,10 +5,11 @@ solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimiz
 feature: Sandboxes, Access Control, Alerts
 role: Admin
 level: Beginner
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+exl-id: ce6871bc-af9a-4956-be77-aadf9302dae8
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '463'
-ht-degree: 26%
+ht-degree: 32%
 
 ---
 
@@ -20,12 +21,13 @@ Saiba mais sobre os recursos administrativos do Adobe Experience Platform que pe
 
 Saiba como gerenciar permissões de usuário.
 
-<!-- CARDS
+<!--
+CARDS
 * add-users.md{title=Add users}
 * add-developers.md{title=Add developers}
 * add-product-administrators.md{title=Add administrators}
 * configure-attribute-based-access-control.md
-* https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
+* https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -34,7 +36,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="Adicionar usuários" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475978?captions=por_br&format=jpeg&nocache=1740173302150" alt="Adicionar usuários"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="Adicionar usuários"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,7 +59,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="Adicionar desenvolvedores" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446403?format=jpeg&nocache=1740173302176&captions=por_br" alt="Adicionar desenvolvedores"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="Adicionar desenvolvedores"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,7 +82,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="Adicionar administradores" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475946?captions=por_br&format=jpeg&nocache=1740173302208" alt="Adicionar administradores"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="Adicionar administradores"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +105,7 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="Configurar o controle de acesso baseado em atributos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451835?format=jpeg&nocache=1740173302190&captions=por_br" alt="Configurar o controle de acesso baseado em atributos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="Configurar o controle de acesso baseado em atributos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -125,8 +127,8 @@ Saiba como gerenciar permissões de usuário.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions" title="Adicionar usuários à coleção de dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33395/?format=jpeg&nocache=1740173302543&captions=por_br" alt="Adicionar usuários à coleção de dados"
+                    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" title="Adicionar usuários à coleção de dados" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="Adicionar usuários à coleção de dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -134,13 +136,13 @@ Saiba como gerenciar permissões de usuário.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="Adicionar usuários à coleção de dados">Adicionar usuários à Coleção de Dados</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="Adicionar usuários à coleção de dados">Adicionar usuários à Coleção de Dados</a>
                     </p>
                     <p class="is-size-6">Saiba como adicionar usuários e gerenciar permissões para recursos de Coleção de dados do Adobe Experience Platform para que os funcionários da sua empresa tenham o acesso necessário para realizar suas tarefas.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -151,7 +153,8 @@ Saiba como gerenciar permissões de usuário.
 
 Saiba como gerenciar ambientes de sandbox.
 
-<!-- CARDS
+<!--
+CARDS
 * use-sandboxes.md
 * copy-objects-between-sandboxes.md
 * share-packages-across-orgs.md
@@ -163,7 +166,7 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="Usar sandboxes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430295/?format=jpeg&nocache=1740173302789&captions=por_br" alt="Usar sandboxes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="Usar sandboxes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +189,7 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="Copiar configurações entre sandboxes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446089/?format=jpeg&nocache=1740173302776&captions=por_br" alt="Copiar configurações entre sandboxes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="Copiar configurações entre sandboxes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +212,7 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="Compartilhar pacotes entre organizações IMS" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443922/?format=jpeg&nocache=1740173302764&captions=por_br" alt="Compartilhar pacotes entre organizações IMS"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="Compartilhar pacotes entre organizações IMS"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,8 +235,9 @@ Saiba como gerenciar ambientes de sandbox.
 
 ## Uso da licença
 
-<!-- CARDS
-* https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard
+<!--
+CARDS
+* https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -241,8 +245,8 @@ Saiba como gerenciar ambientes de sandbox.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard" title="Painel de Uso da Licença" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="Painel de Uso da Licença"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" title="Painel de uso de licenças" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="Painel de uso de licenças"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -250,13 +254,13 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="Painel de Uso da Licença">Painel de Uso de Licenças</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="Painel de uso de licenças">Painel de Uso de Licenças</a>
                     </p>
                     <p class="is-size-6">A interface do usuário do Adobe Experience Platform fornece um painel por meio do qual você pode exibir informações importantes sobre o uso de licença da organização.</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>
@@ -265,7 +269,8 @@ Saiba como gerenciar ambientes de sandbox.
 
 ## Alertas
 
-<!-- CARDS
+<!--
+CARDS
 {cta = Watch}
 * use-alerts.md
 -->
@@ -299,8 +304,9 @@ Saiba como gerenciar ambientes de sandbox.
 
 ## Tags
 
-<!-- CARDS
-* https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags
+<!--
+CARDS
+* https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -308,8 +314,8 @@ Saiba como gerenciar ambientes de sandbox.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags" title="Gerenciamento de tags unificadas" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="Gerenciamento de tags unificadas"
+                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" title="Gerenciamento de tags unificadas" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="Gerenciamento de tags unificadas"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -317,13 +323,13 @@ Saiba como gerenciar ambientes de sandbox.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="Gerenciamento de tags unificadas">Gerenciando Marcas Unificadas</a>
+                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="Gerenciamento de tags unificadas">Gerenciando Marcas Unificadas</a>
                     </p>
                     <p class="is-size-6">Este documento fornece informações sobre o gerenciamento de tags unificadas na Adobe Experience Cloud</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/pt-br/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
-                </a>
+                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Saiba mais</span>
+                </a>
             </div>
         </div>
     </div>

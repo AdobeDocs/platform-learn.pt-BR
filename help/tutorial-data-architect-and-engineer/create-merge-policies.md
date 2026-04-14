@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,13 +31,15 @@ Manteremos a interface do usuário para esta lição, mas também existem opçõ
 **Os Arquitetos de Dados** precisarão criar políticas de mesclagem fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre políticas de mesclagem:
->[!VIDEO](https://video.tv.adobe.com/v/3413365?captions=por_br&learn=on&enablevpops)
+
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## Permissões necessárias
 
 Na lição [Configurar Permissões](configure-permissions.md), você configura todos os controles de acesso necessários para concluir esta lição.
 
-<!--* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
+<!--
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -140,7 +142,7 @@ Um caso de uso importante para políticas de mesclagem é o para governança de 
 
 ## Recursos adicionais
 
-* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=pt-BR)
+* [Documentação de Políticas de Mesclagem](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [Referência da API de Políticas de Mesclagem (parte da API de Perfil do Cliente em Tempo Real)](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Agora vamos seguir para a [estrutura de governança de dados](apply-data-governance-framework.md).

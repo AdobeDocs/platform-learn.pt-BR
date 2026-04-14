@@ -5,7 +5,7 @@ solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimiz
 feature: Audiences
 role: User
 level: Beginner
-source-git-commit: 0ffafaa23a1305811a8c1063d90ca1a0059a6ca6
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 22%
@@ -18,7 +18,8 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
 
 ## Portal de público
 
-<!-- CARDS
+<!--
+CARDS
 * introduction-to-audience-portal-and-composition.md
 * upload-audiences.md
 -->
@@ -29,7 +30,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Introdução ao portal de público-alvo e composição" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423370/?captions=por_br&format=jpeg&nocache=1740173577252" alt="Introdução ao portal de público-alvo e composição"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Introdução ao portal de público-alvo e composição"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +53,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Fazer upload de públicos-alvo no Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423361/?captions=por_br&format=jpeg&nocache=1740173577237" alt="Fazer upload de públicos-alvo no Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Fazer upload de públicos-alvo no Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -75,7 +76,8 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
 
 ## Construtor de público
 
-<!-- CARDS
+<!--
+CARDS
 * audience-builder/create-audiences.md
 * audience-builder/audience-builder/create-audiences-with-b2b-data.md
 * audience-builder/audience-builder/create-audiences-from-existing-audiences.md
@@ -94,7 +96,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="Criar públicos-alvo" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31685?captions=por_br&format=jpeg&nocache=1740173578323" alt="Criar públicos-alvo"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="Criar públicos-alvo"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +188,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="Criar públicos-alvo dinâmicos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34330?captions=por_br&format=jpeg&nocache=1740173578383" alt="Criar públicos-alvo dinâmicos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="Criar públicos-alvo dinâmicos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +211,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-multi-entity-audiences.md" title="Criar públicos-alvo de várias entidades" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413370?captions=por_br&format=jpeg&nocache=1740173578335" alt="Criar públicos-alvo de várias entidades"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32179?format=jpeg&nocache=1740173578335" alt="Criar públicos-alvo de várias entidades"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -278,7 +280,8 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
 
 ## Composição de público-alvo federado
 
-<!-- CARDS
+<!--
+CARDS
 * fac/overview-of-federated-audience-composition.md
 * fac/connect-and-configure-federated-audience-composition.md
 * fac/create-a-federated-audience-composition.md
@@ -290,7 +293,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="Visão geral da composição do Federated Audience" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450887/?captions=por_br&format=jpeg&nocache=1740173579477" alt="Visão geral da composição do Federated Audience"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="Visão geral da composição do Federated Audience"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +316,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Conectar e configurar a Composição de Público-Alvo Federado" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451561/?captions=por_br&format=jpeg&nocache=1740173579488" alt="Conectar e configurar a Composição de Público-Alvo Federado"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Conectar e configurar a Composição de Público-Alvo Federado"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +339,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="Criar uma composição de público-alvo federado" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448583/?captions=por_br&format=jpeg&nocache=1740173579467" alt="Criar uma composição de público-alvo federado"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="Criar uma composição de público-alvo federado"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -359,7 +362,8 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
 
 ## Demonstrações
 
-<!-- CARDS
+<!--
+CARDS
 * streaming-segmentation-demo.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -369,7 +373,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="Demonstração da segmentação de streaming" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40067?captions=por_br&format=jpeg&nocache=1740173579663" alt="Demonstração da segmentação de streaming"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="Demonstração da segmentação de streaming"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -392,7 +396,8 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
 
 ## Correspondência de segmentos
 
-<!-- CARDS
+<!--
+CARDS
 * ../segments/segment-match-configuration-flow.md
 * ../segments/segment-match-connection-setup.md
 * ../segments/segment-match-data-governance.md
@@ -406,7 +411,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="Fluxo de configuração da Correspondência de segmentos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3409149/?captions=por_br&format=jpeg&nocache=1740173579850" alt="Fluxo de configuração da Correspondência de segmentos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="Fluxo de configuração da Correspondência de segmentos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -429,7 +434,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="Configuração da conexão de Correspondência de segmentos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346355/?captions=por_br&format=jpeg&nocache=1740173579840" alt="Configuração da conexão de Correspondência de segmentos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="Configuração da conexão de Correspondência de segmentos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -452,7 +457,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="Governança de dados da Correspondência de segmentos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346362/?captions=por_br&format=jpeg&nocache=1740173579862" alt="Governança de dados da Correspondência de segmentos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="Governança de dados da Correspondência de segmentos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -475,7 +480,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="Insights de pré-compartilhamento da correspondência de segmentos" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346348/?captions=por_br&format=jpeg&nocache=1740173579872" alt="Insights de pré-compartilhamento da correspondência de segmentos"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="Insights de pré-compartilhamento da correspondência de segmentos"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -498,7 +503,7 @@ Saiba mais sobre públicos-alvo na Adobe Experience Platform.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="Correspondência de segmentos recebendo dados" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3417369/?captions=por_br&format=jpeg&nocache=1740173579825" alt="Correspondência de segmentos recebendo dados"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="Correspondência de segmentos recebendo dados"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

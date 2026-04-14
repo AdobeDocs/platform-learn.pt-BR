@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 1%
@@ -25,13 +25,14 @@ O Serviço de consulta da Adobe Experience Platform ajuda você a entender seus 
 Os **Arquitetos de Dados** e **Engenheiros de Dados** precisarão usar o serviço de consulta fora deste tutorial.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre o Serviço de consulta:
->[!VIDEO](https://video.tv.adobe.com/v/3464266?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## Permissões necessárias
 
 Na lição [Configurar Permissões](configure-permissions.md), você configura todos os controles de acesso necessários para concluir esta lição.
 
-<!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
+<!-- 
+Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -72,13 +73,15 @@ Vamos começar com algumas consultas simples:
    ![Salvando a consulta](assets/queries-loyaltySelect-save.png)
 
 
-<!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
+<!--
+SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
 
 
 SELECT _techmarketingdemos.systemIdentifier.loyaltyId, COUNT(_techmarketingdemos.systemIdentifier.loyaltyId)
 FROM luma_loyalty_dataset 
 GROUP BY _techmarketingdemos.systemIdentifier.loyaltyId
-HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
+HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;
+-->
 
 ## Exercícios adicionais
 

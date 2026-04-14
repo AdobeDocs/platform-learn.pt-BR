@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -43,22 +43,24 @@ Key terms:
 Os **Arquitetos de dados** precisarão criar esquemas fora deste tutorial, mas os **Engenheiros de dados** trabalharão em conjunto com os esquemas criados pelo Arquiteto de dados.
 
 Antes de começar os exercícios, assista a este vídeo curto para saber mais sobre esquemas e o Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/38512?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Para aprofundar a modelagem de dados no Experience Platform, recomendamos assistir à lista de reprodução [Modelar os dados da experiência do cliente com XDM](https://experienceleague.adobe.com/pt-br/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponível gratuitamente no Experience League!
+> Para aprofundar a modelagem de dados no Experience Platform, recomendamos assistir à lista de reprodução [Modelar os dados da experiência do cliente com XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), disponível gratuitamente no Experience League!
 
 ## Permissões necessárias
 
 Na lição [Configurar Permissões](configure-permissions.md), você configura todos os controles de acesso necessários para concluir esta lição.
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--
@@ -86,7 +88,7 @@ Neste exercício, criaremos um esquema para os dados de fidelidade do Luma.
 
 Depois que o esquema for criado, você será redirecionado para o Editor de esquema, onde poderá adicionar campos ao esquema. Você pode adicionar campos individuais diretamente ao esquema ou usar grupos de campos. É importante observar que todos os campos individuais ainda estão associados a uma classe ou grupo de campos. Você pode escolher entre um grande conjunto de grupos de campos padrão do setor fornecidos pelo Adobe ou criar os seus próprios. À medida que você começa a modelar seus próprios dados no Experience Platform, é bom se familiarizar com os grupos de campo padrão do setor fornecidos pelo Adobe. Sempre que possível, é uma prática recomendada usá-los, pois eles às vezes alimentam serviços downstream, como IA do cliente, IA de atribuição e Adobe Analytics.
 
-Ao trabalhar com seus próprios dados, uma etapa significativa será determinar quais dos seus próprios dados devem ser capturados na Platform e como eles devem ser modelados. Este grande tópico é discutido com mais detalhes na lista de reprodução [Modelar os dados da experiência do cliente com o XDM](https://experienceleague.adobe.com/pt-br/playlists/experience-platform-model-your-customer-experience-data-with-xdm). Neste tutorial, eu vou guiá-lo pela implementação de alguns esquemas predeterminados.
+Ao trabalhar com seus próprios dados, uma etapa significativa será determinar quais dos seus próprios dados devem ser capturados na Platform e como eles devem ser modelados. Este grande tópico é discutido com mais detalhes na lista de reprodução [Modelar os dados da experiência do cliente com o XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). Neste tutorial, eu vou guiá-lo pela implementação de alguns esquemas predeterminados.
 
 Para adicionar grupos de campos:
 

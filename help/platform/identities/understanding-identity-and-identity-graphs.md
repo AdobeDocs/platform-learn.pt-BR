@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 15%
@@ -18,11 +18,12 @@ ht-degree: 15%
 
 Saiba mais sobre os principais recursos de resolução de identidades no Adobe Experience Platform: coleção de identidades, gráficos de identidade e APIs. Saiba como o Serviço de identidade vincula identidades desconectadas para fornecer uma experiência conectada consistente por meio da construção de um perfil unificado. Para obter mais informações, visite a [documentação do serviço de identidade](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/3422776?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 ## Configuração de identidades
 
-<!-- CARDS
+<!--
+CARDS
 * label-ingest-and-verify-identity-data.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -32,7 +33,7 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="Rotular, assimilar e verificar dados de identidade" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31684?captions=por_br&format=jpeg&nocache=1740414775790" alt="Rotular, assimilar e verificar dados de identidade"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="Rotular, assimilar e verificar dados de identidade"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -55,7 +56,8 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
 
 ## Regras de vinculação do gráfico de identidade
 
-<!-- CARDS
+<!--
+CARDS
 * identity-graph-linking-rules/graph-simulation.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -65,7 +67,7 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="Regras de vinculação do gráfico de identidade - Simulação de gráfico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444048/?captions=por_br&format=jpeg&nocache=1740414776009" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -88,7 +90,8 @@ Saiba mais sobre os principais recursos de resolução de identidades no Adobe E
 
 ## Gráficos de identidade
 
-<!-- CARDS
+<!--
+CARDS
 * view-identity-graphs.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->

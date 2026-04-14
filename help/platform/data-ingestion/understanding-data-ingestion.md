@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 19%
@@ -18,11 +18,12 @@ ht-degree: 19%
 
 Os recursos de assimilação de dados da Adobe Experience Platform permitem reunir os dados em uma plataforma aberta e escalável com o objetivo de gerenciar perfis de clientes em tempo real. Para obter mais informações, visite a [documentação de Assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=pt-BR).
 
->[!VIDEO](https://video.tv.adobe.com/v/346835?captions=por_br&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 ## Métodos de assimilação de dados
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/overview.md
 * ../../data-collection/web-sdk/overview.md
@@ -35,7 +36,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="Visão geral das fontes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32687?captions=por_br&format=jpeg&nocache=1740414616559" alt="Visão geral das fontes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="Visão geral das fontes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +59,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Visão geral do Adobe Experience Platform Web SDK e do Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37265?captions=por_br&format=jpeg&nocache=1740414616573" alt="Visão geral do Adobe Experience Platform Web SDK e do Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Visão geral do Adobe Experience Platform Web SDK e do Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +82,8 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
 
 ## Velocidade de assimilação de dados
 
-<!-- CARDS
+<!--
+CARDS
 
 * batch-ingestion-overview.md
 * understanding-streaming-ingestion.md
@@ -95,7 +97,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="batch-ingestion-overview.md" title="Visão geral da assimilação de dados em lote" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345665?captions=por_br&format=jpeg&nocache=1740414616813" alt="Visão geral da assimilação de dados em lote"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330995?format=jpeg&nocache=1740414616813" alt="Visão geral da assimilação de dados em lote"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -118,7 +120,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="Visão geral da assimilação de dados de transmissão" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31683?captions=por_br&format=jpeg&nocache=1740414616825" alt="Visão geral da assimilação de dados de transmissão"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="Visão geral da assimilação de dados de transmissão"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +143,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Visão geral do Adobe Experience Platform Web SDK e do Edge Network" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37265?captions=por_br&format=jpeg&nocache=1740414616799" alt="Visão geral do Adobe Experience Platform Web SDK e do Edge Network"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Visão geral do Adobe Experience Platform Web SDK e do Edge Network"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -164,7 +166,8 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
 
 ## Assimilar dados de fontes de terceiros comuns
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-crm.md
 * ../sources/ingest-data-from-cloud-storage.md
@@ -178,7 +181,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="Assimilar dados usando Conectores CRM Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32645?captions=por_br&format=jpeg&nocache=1740414616941" alt="Assimilar dados usando Conectores CRM Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="Assimilar dados usando Conectores CRM Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +204,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="Assimilar dados usando os Conectores do Source de armazenamento na nuvem" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32643?captions=por_br&format=jpeg&nocache=1740414616962" alt="Assimilar dados usando os Conectores do Source de armazenamento na nuvem"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="Assimilar dados usando os Conectores do Source de armazenamento na nuvem"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -224,7 +227,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-source-connector.md" title="Dados de fluxo usando Conectores do Source" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3417770?captions=por_br&format=jpeg&nocache=1740414616930" alt="Dados de fluxo usando Conectores do Source"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740414616930" alt="Dados de fluxo usando Conectores do Source"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -270,7 +273,8 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
 
 ## Assimilar dados de fontes comuns do Adobe
 
-<!-- CARDS
+<!--
+CARDS
 
 * ../sources/ingest-data-from-adobe-analytics.md
 * ../sources/ingest-data-from-marketo.md
@@ -284,7 +288,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Assimilar dados usando o conector de origem do Adobe Analytics" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430257?captions=por_br&format=jpeg&nocache=1740414617197" alt="Assimilar dados usando o conector de origem do Adobe Analytics"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Assimilar dados usando o conector de origem do Adobe Analytics"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +311,7 @@ Os recursos de assimilação de dados da Adobe Experience Platform permitem reun
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Assimilar dados do Marketo Engage" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451865?captions=por_br&format=jpeg&nocache=1740414617186" alt="Assimilar dados do Marketo Engage"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Assimilar dados do Marketo Engage"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -28,8 +28,7 @@ Nesta lição, você se inscreverá nos eventos de assimilação de dados config
 
 Na lição [Configurar Permissões](configure-permissions.md), você configura todos os controles de acesso necessários para concluir esta lição, especificamente:
 
-<!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
--->
+<!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
 
 >[!IMPORTANT]
 >
@@ -81,7 +80,7 @@ Pronto por enquanto, você aprenderá mais sobre essas notificações nas próxi
 ## Recursos adicionais
 
 * [Webhook.site](https://webhook.site/)
-* [Documentação de notificações de assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=pt-BR)
+* [Documentação de notificações de assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
 * [Introdução à documentação do Adobe I/O Events](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, finalmente vamos começar [assimilando dados](ingest-batch-data.md)!

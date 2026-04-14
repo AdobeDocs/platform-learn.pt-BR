@@ -9,24 +9,25 @@ duration: 262
 last-substantial-update: 2025-02-27T00:00:00Z
 jira: KT-16731
 exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
-source-git-commit: 837c9b4386fbca106db313ee4e27fc7b69ea54ff
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 20%
+ht-degree: 24%
 
 ---
 
 # Visão geral das regras de vinculação do gráfico de identidade
 
-Obtenha uma visão geral de como as regras de vinculação de gráficos de identidade ajudam os arquitetos de dados a manter perfis precisos do cliente e evitar o colapso de gráficos. Para obter mais informações, consulte a [documentação de regras de vinculação de gráfico de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
+Obtenha uma visão geral de como as regras de vinculação de gráficos de identidade ajudam os arquitetos de dados a manter perfis precisos do cliente e evitar o colapso de gráficos. Para obter mais informações, consulte a [documentação de regras de vinculação de gráfico de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview).
 
->[!VIDEO](https://video.tv.adobe.com/v/3448277/?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
 ## Configuração
 
 Saiba como simular e aplicar suas regras.
 
-<!-- CARDS
+<!--
+CARDS
 * graph-simulation.md
 * identity-settings.md
 -->
@@ -37,7 +38,7 @@ Saiba como simular e aplicar suas regras.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="Regras de vinculação do gráfico de identidade - Simulação de gráfico" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444048/?format=jpeg&nocache=1747355376342&captions=por_br" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="Regras de vinculação do gráfico de identidade - Simulação de gráfico"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +61,7 @@ Saiba como simular e aplicar suas regras.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="Regras de vinculação do gráfico de identidade - Configurações de identidade" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475967/?captions=por_br&format=jpeg&nocache=1747355376336" alt="Regras de vinculação do gráfico de identidade - Configurações de identidade"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="Regras de vinculação do gráfico de identidade - Configurações de identidade"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -68,7 +69,7 @@ Saiba como simular e aplicar suas regras.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="identity-settings.md" target="_blank" rel="referrer" title="Regras de vinculação do gráfico de identidade - Configurações de identidade">Regras de vinculação do gráfico de identidade - Configurações de identidade</a>
+                        <a href="identity-settings.md" target="_blank" rel="referrer" title="Regras de vinculação do gráfico de identidade - Configurações de identidade">Regras de vinculação do gráfico de identidade: configurações de identidade</a>
                     </p>
                     <p class="is-size-6">Saiba como habilitar e configurar regras de vinculação de gráficos de identidade no Adobe Experience Platform para criar perfis de cliente precisos.</p>
                 </div>

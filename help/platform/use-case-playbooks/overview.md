@@ -9,24 +9,25 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
 # Visão geral dos manuais de caso de uso
 
-Saiba como os manuais de casos de uso podem ajudar clientes da Real-Time CDP e do Journey Optimizer a obter um tempo de retorno mais rápido. Os manuais de casos de uso são um catálogo de dezenas de modelos que abrangem vários setores e objetivos de marketing. Os manuais geram ativos técnicos, como públicos-alvo, jornadas e esquemas, que podem ser personalizados e publicados em outras sandboxes. Para obter mais informações, consulte a [documentação dos manuais de caso de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=pt-BR).
+Saiba como os manuais de casos de uso podem ajudar clientes da Real-Time CDP e do Journey Optimizer a obter um tempo de retorno mais rápido. Os manuais de casos de uso são um catálogo de dezenas de modelos que abrangem vários setores e objetivos de marketing. Os manuais geram ativos técnicos, como públicos-alvo, jornadas e esquemas, que podem ser personalizados e publicados em outras sandboxes. Para obter mais informações, consulte a [documentação dos manuais de caso de uso](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441820/?learn=on&enablevpops&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
 ## Introdução
 
 Saiba como configurar sua conta do Platform para manuais de casos de uso e, em seguida, criar e publicar sua primeira instância de um manual.
 
-<!-- CARDS
+<!--
+CARDS
 * configure-a-playbook-sandbox.md
 * create-and-publish-a-playbook-instance.md
 -->
@@ -37,7 +38,7 @@ Saiba como configurar sua conta do Platform para manuais de casos de uso e, em s
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="Configurar uma sandbox do manual" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449831/?format=jpeg&nocache=1739379898120&captions=por_br" alt="Configurar uma sandbox do manual"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="Configurar uma sandbox do manual"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -45,7 +46,7 @@ Saiba como configurar sua conta do Platform para manuais de casos de uso e, em s
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="Configurar uma sandbox do manual">Configurar uma sandbox do manual</a>
+                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="Configurar uma sandbox do manual">Configurar uma sandbox de manual de estratégia</a>
                     </p>
                     <p class="is-size-6">Saiba como configurar uma sandbox para manuais de casos de uso.</p>
                 </div>
