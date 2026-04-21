@@ -4,9 +4,9 @@ description: Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: f4a448ae-d867-4aa9-970c-7da5c77f48c5
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
@@ -40,10 +40,6 @@ Neste exercício, você vinculará o back-end do ACCS à loja da AEM Sites.
 [1.5.3 Conectar o ACCS ao AEM Assets CS](./ex3.md){target="_blank"}
 
 Neste exercício, você vinculará o back-end do ACCS ao ambiente do AEM Assets CS.
-
-[Resumo e benefícios](./summary.md){target="_blank"}
-
-Resumo desse módulo e visão geral dos benefícios.
 
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
