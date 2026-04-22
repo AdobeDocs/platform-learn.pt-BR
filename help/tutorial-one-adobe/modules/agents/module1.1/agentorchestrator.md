@@ -4,9 +4,9 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '284'
 ht-degree: 2%
 
 ---
@@ -36,9 +36,9 @@ Neste vídeo, você receberá uma explicação e uma demonstração de todas as 
 
 ## Exercícios
 
-[1.1.1 Introdução ao Agent Orchestrator](./ex1.md){target="_blank"}
+Assistente de IA do [1.1.1 e Agent Orchestrator](./ex1.md){target="_blank"}
 
-Neste exercício, você explorará as habilidades da Agent Orchestrator com base na campanha de lançamento do CitiSignal para Fibre Max.
+Neste exercício, você explorará o Assistente de IA e o Agent Orchestrator com base na campanha de lançamento do CitiSignal para Fibre Max.
 
 [1.1.2 Adobe Marketing Agent para ChatGPT Enterprise](./ex2.md){target="_blank"}
 

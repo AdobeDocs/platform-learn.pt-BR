@@ -1,17 +1,17 @@
 ---
-title: Introdução ao Agent Orchestrator
-description: Introdução ao Agent Orchestrator
+title: Assistente de IA e Agent Orchestrator
+description: Assistente de IA e Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
-# 1.1.1 Introdução ao Agent Orchestrator
+# 1.1.1 Assistente de IA e Agent Orchestrator
 
 ## Vídeo
 
@@ -21,7 +21,7 @@ Neste vídeo, você receberá uma explicação e uma demonstração de todas as 
 
 ## 1.1.1.1 Definir contexto no Agent Orchestrator
 
-Ir para [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat).
+Ir para [https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat).
 
 Você deverá ver isso. Verifique se você está na organização `--aepImsOrgName--`.
 
@@ -32,10 +32,6 @@ Clique na janela **contexto**.
 ![Agent Orchestrator](./images/ao2.png)
 
 Defina o contexto como:
-
-- **Source de Documentação**: **Journey Optimizer**
-
-A configuração Source de documentação ajuda a dar preferência a qual conjunto de documentos da liga de experiência verificar se há perguntas relacionadas ao conhecimento do produto/Experience League.
 
 - **Sandbox**: **Prod - One Adobe (VA7)**
 
@@ -104,7 +100,7 @@ Com essas informações, você pode começar a detalhar os dados de compra.
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
 ```javascript
-Show me ordersYTD by preferred genre for the last 2 months
+Show me purchases by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +127,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-Você deverá ver isso. Clique em **Mostrar todos os resultados**.
+Você deverá ver isso. Clique no ícone **visualização**.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -180,7 +176,7 @@ Entenda a definição inicial da jornada &quot;CitiSignal - Promoção de inicia
 Digite o seguinte **Prompt**:
 
 ```javascript
-What was the initial audience in the journey named 
+Which audiences are used by the journey named
 ```
 
 Em seguida, digite manualmente `+CitiSignal fib` para habilitar o preenchimento automático. Selecione a jornada **CitiSignal - Fibre Max Launch Promotion**.
@@ -217,11 +213,11 @@ Role para baixo um pouco. Agora você pode revisar a tabela inspecionando cada n
 
 O Assistente de IA fornece observações e recomendações.
 
-Clique na frase **Veja aqui como obtive os resultados**.
+Clique na frase **Explicação**.
 
 ![Agent Orchestrator](./images/ao21.png)
 
-Você pode ver as etapas seguidas pelo Assistente de IA para chegar aos resultados.
+Você pode ver algumas informações adicionais e contexto.
 
 ![Agent Orchestrator](./images/ao22.png)
 
@@ -247,7 +243,7 @@ Revise o plano. Insira `yes` e clique em **enviar**.
 
 ![Agent Orchestrator](./images/ao33.png)
 
-Revise a expressão de consulta do segmento. Digite `yes` e clique no botão **enviar**.
+Revise a **Definição de público-alvo**. Digite `yes` e clique no botão **enviar**.
 
 ![Agent Orchestrator](./images/ao34.png)
 
@@ -259,17 +255,21 @@ Clique em **Revisão**.
 
 ![Agent Orchestrator](./images/ao36.png)
 
-Revise a definição do segmento. Clique em **Criar**.
+Revise a **Proposta de público-alvo**. Clique em **Criar**.
 
 ![Agent Orchestrator](./images/ao37.png)
 
-Seu público-alvo foi criado.
+Seu público-alvo foi criado. Clique no link para abrir o público-alvo.
 
 ![Agent Orchestrator](./images/ao38.png)
 
 >[!NOTE]
 >
 >Ao criar um novo público-alvo, levará 24 horas até que ele esteja disponível para o Assistente de IA para uso adicional.
+
+Você deverá ver isso.
+
+![Agent Orchestrator](./images/ao38a.png)
 
 ## 1.1.1.8 Encontre públicos-alvo existentes alinhados a alto uso e verifique se eles estão em uso
 
@@ -289,17 +289,21 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-Você deverá ver isso. Agora você deseja ver todos os seus públicos-alvo e o quanto eles mudaram nos últimos dias.
+Você deverá ver isso.
+
+![Agent Orchestrator](./images/ao30a.png)
+
+Agora você deseja ver todos os seus públicos-alvo e o quanto eles mudaram nos últimos dias.
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
 ```javascript
-List how much these audiences changed over the last few days.
+List how much all my audiences changed over the last few days.
 ```
 
 ![Agent Orchestrator](./images/ao31.png)
 
-Você deverá ver isso. Clique em **Mostrar mais**.
+Você deverá ver isso. Clique em **Mostrar todos os resultados**.
 
 ![Agent Orchestrator](./images/ao31a.png)
 
@@ -355,25 +359,21 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-Você deverá ver isso. Insira `yes` e clique em gerar.
+Você deverá ver isso. Digite `yes` e clique em enviar.
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-Você deverá ver isso. Insira `yes` e clique em gerar.
+Você deverá ver isso. Digite `yes` e clique em enviar.
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-Você deverá ver isso. Digite `The first one` e clique em enviar.
+Você deverá ver isso. Digite `the first one` e clique em enviar.
 
 ![Agent Orchestrator](./images/aocj4.png)
 
 Você deverá ver isso. Digite `yes` e clique em enviar.
 
 ![Agent Orchestrator](./images/aocj5.png)
-
-Revise a resposta. Digite `yes` e clique em enviar.
-
-![Agent Orchestrator](./images/aocj6.png)
 
 Clique em **Revisão**.
 
@@ -383,9 +383,13 @@ Atualize o nome da jornada com seu LDAP para torná-lo exclusivo. Clique em **Sa
 
 ![Agent Orchestrator](./images/aocj8.png)
 
-Sua jornada foi criada no modo de rascunho.
+Sua jornada foi criada no modo de rascunho. Clique na jornada para abri-la.
 
 ![Agent Orchestrator](./images/aocj9.png)
+
+Você deverá ver isso.
+
+![Agent Orchestrator](./images/aocj10.png)
 
 ## 1.1.1.10 Gerenciamento de Conflitos de Jornada
 
@@ -419,13 +423,9 @@ Você deverá ver isso. Clique em **enviar**.
 
 ![Agent Orchestrator](./images/aocj70a.png)
 
-Revise as informações de conflito da jornada.
+Revise as informações de conflito de jornada em potencial.
 
 ![Agent Orchestrator](./images/aocj71.png)
-
-Role para baixo para encontrar mais detalhes sobre conflitos de jornada.
-
-![Agent Orchestrator](./images/aocj72.png)
 
 ## 1.1.1.11 Experimentos
 
