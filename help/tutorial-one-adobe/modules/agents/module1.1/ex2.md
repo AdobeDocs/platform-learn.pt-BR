@@ -4,7 +4,7 @@ description: Adobe Marketing Agent para ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -93,7 +93,7 @@ A configuração Exibição de dados ajuda a identificar a exibição de dados q
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 change context
 ```
 
@@ -113,7 +113,7 @@ Obtenha pulsos de alto nível conforme a demanda da categoria — móvel, telefo
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -125,7 +125,7 @@ Você deverá ver isso:
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -145,7 +145,7 @@ Primeiro, você precisa descobrir qual campo é usado para armazenar a preferên
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -159,7 +159,7 @@ Com essas informações, você pode começar a detalhar os dados de compra.
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Show me purchases by favouriteGenre for the last 2 months
 ```
 
@@ -177,7 +177,7 @@ Descubra quais jornadas ativas ou concluídas recentemente incluem &quot;Fibre&q
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -189,7 +189,7 @@ Você deverá ver isso.
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -201,7 +201,7 @@ Você deverá ver isso.
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -219,7 +219,7 @@ Você deseja entender o fallout de desempenho da jornada para saber se há nós 
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 

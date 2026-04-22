@@ -4,21 +4,14 @@ description: Adobe Marketing Agent para Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
-
-[!BADGE Beta]
-
-+++Detalhes do Beta
-Ao usar o Adobe Marketing Agent com Microsoft 365 Copilot Beta, você reconhece que o Beta é fornecido &quot;no estado em que se encontra&quot; sem garantias de nenhum tipo. A Adobe não tem nenhuma obrigação de manter, corrigir, atualizar, alterar, modificar ou oferecer suporte à Beta. É recomendável ter cuidado e não depender de forma alguma do funcionamento ou desempenho correto desse Beta e/ou dos materiais que o acompanham. O Beta é considerado Informações confidenciais da Adobe.  Qualquer &quot;Feedback&quot; (informação sobre o Beta incluindo, mas não se limitando a, problemas ou defeitos encontrados durante o uso do Beta, sugestões, melhorias e recomendações) fornecido por Você ao Adobe é atribuído ao Adobe, incluindo todos os direitos, cargos e interesses no e no Feedback.
-
-+++
 
 ## Pré-requisitos
 
@@ -83,10 +76,6 @@ Uma nova janela será aberta, solicitando que você faça logon usando as creden
 
 ![GPTchat](./images/copilotlogin3.png)
 
-Após a autenticação bem-sucedida, talvez seja necessário selecionar a instância específica que deseja usar. Se você vir essa tela, selecione a instância —aepImsOrgName—.
-
-![GPTchat](./images/copilotlogin4.png)
-
 Você verá um código semelhante sendo gerado. Clique em **Copiar** para copiar o código.
 
 ![GPTchat](./images/copilotlogin5.png)
@@ -105,39 +94,21 @@ Antes de interagir mais com o Adobe Marketing Agent por meio do Copilot, o conte
 
 Para este exercício, o contexto precisa ser definido para usar:
 
-- **Sandbox**: **Prod - Acelerar (VA7)**
+- **Sandbox**: **Prod - One Adobe (VA7)**
 
   A configuração de sandbox ajuda a identificar qual assistente de IA de sandbox deve observar ao fazer perguntas.
 
-- **Dataview**: **Acelerar B2C 2026**
+- **Dataview**: **AdobeOne - Visualização unificada de dados do cliente**
 
   A configuração da visualização de dados ajuda a identificar qual assistente da IA de visualização de dados deve considerar ao fazer perguntas.
 
-![Agent Orchestrator](./images/copilotlogin7.png)
+Primeiro, altere a sandbox para a sandbox correta e clique em **Atualizar exibições de dados**.
 
-Para alterar a sandbox, digite o seguinte comando e clique no botão **enviar**.
+![Agent Orchestrator](./images/copilotlogin7a.png)
 
-```javascript
-change sandbox
-```
+Em seguida, selecione a exibição de dados correta e clique em **Atualizar**.
 
 ![Agent Orchestrator](./images/copilot9.png)
-
-Você verá algo semelhante a isso. Selecione a sandbox que você precisa usar e clique em **selecionar**.
-
-![Agent Orchestrator](./images/copilot10.png)
-
-Você deverá ver isso. Para alterar a exibição de dados, digite o seguinte comando e clique no botão **enviar**.
-
-```javascript
-change dataview
-```
-
-![Agent Orchestrator](./images/copilot11.png)
-
-Você verá algo semelhante a isso. Selecione a exibição de dados que você precisa usar e clique em **selecionar**.
-
-![Agent Orchestrator](./images/copilot12.png)
 
 Você deverá ver isso. O contexto agora está definido corretamente para que você possa começar a enviar prompts específicos em seguida.
 
@@ -151,8 +122,8 @@ Obtenha pulsos de alto nível conforme a demanda da categoria — móvel, telefo
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
-Show me purchases by mainCategory over the last 7 months.
+```
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/copilot18.png)
@@ -163,8 +134,8 @@ Você deverá ver isso:
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+```
+Show me purchases by mainCategory = Fiber over the last 2 months broken down by week
 ```
 
 ![Agent Orchestrator](./images/copilot20.png)
@@ -183,13 +154,13 @@ Primeiro, você precisa descobrir qual campo é usado para armazenar a preferên
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Which field is used to store the preferred genre
 ```
 
 ![Agent Orchestrator](./images/copilot22.png)
 
-Você deverá ver isso, que mostra que o campo usado para o gênero é **_experienceplatform.individualCharacteristics.references.preferredGenre**.
+Você verá isto, que mostra que o campo usado para o gênero é **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**.
 
 ![Agent Orchestrator](./images/copilot23.png)
 
@@ -197,8 +168,8 @@ Com essas informações, você pode começar a detalhar os dados de compra.
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+```
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/copilot24.png)
@@ -219,7 +190,7 @@ Descubra quais jornadas ativas ou concluídas recentemente incluem &quot;Fibre&q
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -231,7 +202,7 @@ Você deverá ver uma lista de jornadas.
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -243,7 +214,7 @@ Você deverá ver isso.
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -261,7 +232,7 @@ Você deseja entender o fallout de desempenho da jornada para saber se há nós 
 
 Insira o seguinte **Prompt** e clique no botão **enviar**.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -271,13 +242,9 @@ Você deverá ver isso.
 
 ![Agent Orchestrator](./images/copilot38.png)
 
-Role para baixo um pouco mais para ver observações e recomendações. Clique nos 3 pontos **...** e selecione **Detalhes da Jornada** para abrir a jornada específica no Adobe Journey Optimizer.
+Role para baixo um pouco mais para ver observações e recomendações.
 
 ![Agent Orchestrator](./images/copilot40.png)
-
-Você deverá ver isso.
-
-![Agent Orchestrator](./images/copilot41.png)
 
 Você concluiu este laboratório.
 
