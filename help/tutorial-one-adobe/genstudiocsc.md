@@ -3,10 +3,10 @@ title: Laboratórios técnicos da GenStudio
 description: Laboratórios técnicos da GenStudio
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -40,9 +40,9 @@ Baixe a imagem de visão geral da arquitetura [aqui](./assets/images/architectur
 
 Abaixo estão os Laboratórios técnicos que você participará como parte desse workshop de capacitação técnica.
 
-### Introdução
+### Introdução - GenStudio
 
-[Introdução](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[Introdução](./modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md){target="_blank"}
 
 Neste módulo fundamental, você preparará tudo para poder acessar e usar o ambiente de demonstração.
 
@@ -52,7 +52,7 @@ Neste módulo fundamental, você preparará tudo para poder acessar e usar o amb
 
 Neste módulo, você configurará e usará o Adobe Workfront Planning para criar um novo espaço de trabalho, definir tipos de registro, gerenciar registros, criar um novo formulário de solicitação e utilizar o assistente do AI.
 
-[1.2 Gerenciamento de Fluxo de Trabalho com o Fluxo de Trabalho do Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2 Gerenciamento de fluxos de trabalho com o fluxo de trabalho do Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 Neste módulo, você configurará e usará o Adobe Workfront para gerenciar fluxos de aprovação e usará integrações com o Adobe Experience Manager Assets, Universal Editor, Photoshop e muito mais.
 
@@ -62,7 +62,7 @@ Neste módulo, você configurará e usará o Adobe Workfront para gerenciar flux
 
 Neste módulo, você usará APIs do Adobe Firefly Services, APIs do Photoshop e Microsoft Azure Storage Services para gerar imagens e armazená-las de forma programática.
 
-[1.2 Automação de Fluxo de Trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Automação de fluxo de trabalho do Creative com o Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 Neste módulo, você usará o Adobe Workfront Fusion para automatizar e dimensionar seus fluxos de trabalho de criação de conteúdo.
 
@@ -74,7 +74,7 @@ Neste módulo, você usará o Adobe GenStudio for Performance Marketing, um apli
 
 Neste módulo, você usará o Adobe Express para criar imagens e vídeos e compartilhará esses ativos em direção ao ecossistema mais amplo da Adobe Experience Cloud.
 
-[1.5 Simplifique seu fluxo de trabalho com Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+[1.5 Simplifique seu fluxo de trabalho com o Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
 
 Neste módulo, você usará o Adobe Frame.io em combinação com o Adobe Premiere Pro para colaborar e revisar imagens e vídeos.
 
@@ -86,13 +86,13 @@ Neste módulo, você criará um aplicativo personalizado para estender a capacid
 
 Neste módulo, você usará Fluxos de trabalho personalizados no Firefly para resolver casos de uso de design criativo e automação repetíveis.
 
-[1.8 Revisão e aprovação unificadas com Workfront, Frame.io e Gerenciamento de armazenamento corporativo](./modules/creation-production/module1.8/esm.md){target="_blank"}
+[1.8 Revisão e aprovação unificadas com Workfront, Frame.io e gerenciamento de armazenamento corporativo](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
 Neste módulo, você conectará os recursos de gerenciamento de projeto e trabalho da Workfront diretamente com a experiência de revisão e colaboração em tempo real da Frame.io.
 
 ### Gerenciamento de ativos e sites
 
-[1.1 Adobe Experience Manager Cloud Service E Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
+[1.1 Adobe Experience Manager Cloud Service e Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 Neste módulo, você configurará seu Programa Adobe Experience Manager Cloud Service, o Site e o repositório do Assets.
 
