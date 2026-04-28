@@ -4,10 +4,10 @@ breadcrumb-title: Um tutorial técnico do Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 19e1d50fdab39f507b91df9e244323e2f54a95ad
+source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 3%
+source-wordcount: '1462'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +32,11 @@ ht-degree: 3%
       + [Opção 1: configuração do Postman](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [Opção 2: configuração PostBuster](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [Aplicativos a serem instalados](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+   + Introdução - IA de agente {#gettingstartedagenticai}
+      + [Visão geral](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md)
+      + [Instalar a extensão do Chrome para a documentação do Experience League](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
+      + [Aplicativos a serem instalados](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
+      + [Usar o site](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
 
 + IA agêntica {#agents}
    + 1.1 Agent Orchestrator {#agents1}
@@ -41,7 +46,7 @@ ht-degree: 3%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent para Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5 Adobe Marketing Agent para Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 —](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 ---](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2 Introdução aos agentes e IA {#agents2}
       + [Visão geral](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Introdução à IA do Agentic](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
