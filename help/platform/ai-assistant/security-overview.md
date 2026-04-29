@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Esta é uma visão geral dos recursos de segurança do Assistente de IA com base na <a href="https://www.adobe.com/cc-shared/assets/pdf/trust-center/ungated/whitepapers/experience-cloud/adobe-experience-platform-agent-orchestrator-security-overview.pdf">folha de fatos de segurança</a>.  Para obter informações adicionais, consulte a [documentação de privacidade do Assistente de IA](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ai-assistant/privacy).
 
->[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441085/?captions=por_br&learn=on&enablevpops)
