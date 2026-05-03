@@ -3,9 +3,10 @@ title: Introdução - Instalar a extensão do Chrome para a documentação do Ex
 description: Introdução - Instalar a extensão do Chrome para a documentação do Experience League
 kt: 5342
 doc-type: tutorial
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: a6057d20-b005-47c9-b294-263eaaf78084
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ Um exemplo desses valores pode ser encontrado abaixo. Atualmente, esses valores 
 | Nome | Chave | Exemplo |
 |:-------------:| :---------------:| :---------------:|
 | ID organizacional IMS | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| Nome da organização IMS | `--aepImsOrgName--` | `Experience Platform International` |
+| Nome da organização IMS | `--aepImsOrgName--` | `Adobe Tech Insiders` |
 | ID do locatário do AEP | `--aepTenantId--` | `_experienceplatform` |
 | Nome da sandbox da AEP | `--aepSandboxName--` | `one-adobe` |
 | LDAP do perfil do aluno | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ No menu **extensões**, clique no ícone de **peça do quebra-cabeça** e fixe a
 
 ## Configurar a extensão do Chrome
 
-Vá para [https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e clique no ícone de extensão para abri-lo.
+Vá para [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} e clique no ícone de extensão para abri-lo.
 
 ![DSN](./images/tuthome.png)
 
@@ -70,9 +71,21 @@ Insira os valores, conforme indicado abaixo, que estão relacionados à sua inst
 
 ![DSN](./images/c8.png)
 
-**Seu LDAP**
+Se você estiver participando de um dos eventos abaixo, use os valores abaixo conforme indicado.
 
-Este é o nome de usuário que será usado como parte do tutorial. Neste exemplo, o LDAP é baseado no endereço de email desse usuário. O endereço de email é **vangeluw@adobe.com**, portanto, o LDAP se torna **vangeluw**.
+| Nome | Laboratórios técnicos de parceiros em Nova Orleans | Workshop presencial de insiders técnicos | Ativação sob demanda de Tech Insiders |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| ID organizacional IMS | `907075E95BF479EC0A495C73@AdobeOrg` | `907075E95BF479EC0A495C73@AdobeOrg` | `0B6930256441790E0A495FFE@AdobeOrg` |
+| Nome da organização IMS | `Adobe Tech Insiders` | `Adobe Tech Insiders` | `CXO Enablement Training LAB` |
+| ID do locatário do AEP | `_experienceplatform` | `_experienceplatform` | `_acsultimatesupport` |
+| Nome da sandbox da AEP | `one-adobe` | `one-adobe` | `one-adobe` |
+| LDAP do perfil do aluno | `XXX` | `XXX` | `XXX` |
+
+**LDAP do Perfil do Aluno**
+
+Este é o nome de usuário que será usado como parte do tutorial. Neste exemplo, o LDAP é baseado no endereço de email desse usuário. Se o endereço de email for **vangeluw@adobe.com**, o LDAP será **vangeluw**.
+
+Se você estiver participando do evento Partner Tech Labs em Nova Orleans, siga a mesma lógica e use a primeira parte de seu endereço de email como LDAP.
 
 O LDAP é usado para garantir que a configuração que você fará esteja vinculada a você e não entre em conflito com outros usuários que possam estar usando a mesma instância e sandbox que você está usando.
 
@@ -91,7 +104,7 @@ Depois de ativar sua configuração, você verá um ponto verde ao lado das inic
 
 ## Verificar conteúdo do tutorial
 
-Como teste, vá para [esta página](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
+Como teste, vá para [esta página](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}.
 
 Agora você deve ver que todas as **Variáveis de ambiente** desta página foram substituídas por seus valores verdadeiros, com base no ambiente ativado na extensão do Chrome.
 

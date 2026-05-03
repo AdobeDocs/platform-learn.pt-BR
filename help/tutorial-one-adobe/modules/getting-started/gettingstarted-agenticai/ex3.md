@@ -2,9 +2,10 @@
 title: Introdução - IA do agente - Use o site da AEM e a sandbox da AEP
 description: Introdução - IA do agente - Use o site da AEM e a sandbox da AEP
 doc-type: multipage-overview
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,11 @@ Quando você tinha acesso ao ambiente de ativação, um número era atribuído a
 >
 >Todas as capturas de tela abaixo estão usando o número 1 somente para fins de ilustração. Você precisa usar o número atribuído a você como parte do email recebido ao percorrer as etapas abaixo.
 
-Seu programa do AEM usa o número atribuído a você em seu nome. O nome do programa AEM deve ser:
+Seu programa do AEM usa o número atribuído a você em seu nome. O nome do programa AEM deve ser um dos seguintes:
 
-- **Tech Insiders - AEM + ACCS X**, em que X representa o número atribuído a você.
+- **`Tech Insiders - AEM + ACCS X`** onde X representa o número que foi atribuído a você.
+- **`Tech Insiders On Demand - AEM + ACCS X`** onde X representa o número que foi atribuído a você.
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**, neste caso, você não tem um número porque está usando seu próprio programa AEM que você mesmo criou.
 
 ![DSN](./images/aem1.png)
 
@@ -70,14 +73,14 @@ Como parte do processo de integração antes do início das sessões do Tech Lab
 
 Para acessar seu site, você pode usar estes URLs padrão:
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 Você precisa substituir o X nesses URLs pelo número que foi atribuído a você.
 
 Além disso, um nome de domínio personalizado foi criado para cada site, que você pode acessar usando este URL:
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 Você precisa substituir o X nesses URLs pelo número que foi atribuído a você.
 
