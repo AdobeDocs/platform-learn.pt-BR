@@ -4,10 +4,10 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: beeb23f59f2191e7f48c9b0283627c8bed1ae11f
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 2%
+source-wordcount: '320'
+ht-degree: 5%
 
 ---
 
@@ -36,7 +36,7 @@ Neste vídeo, você receberá uma explicação e uma demonstração de todas as 
 
 ## Exercícios
 
-Assistente de IA do [1.1.1 e Agent Orchestrator](./ex1.md){target="_blank"}
+[1.1.1 Assistente de IA e Agent Orchestrator](./ex1.md){target="_blank"}
 
 Neste exercício, você explorará o Assistente de IA e o Agent Orchestrator com base na campanha de lançamento do CitiSignal para Fibre Max.
 
@@ -56,10 +56,14 @@ Neste exercício, você explorará as habilidades da Agent Orchestrator com base
 
 Neste exercício, você explorará as habilidades da Agent Orchestrator com base na campanha de lançamento do CitiSignal para Fibre Max, usando o Adobe Marketing Agent com Claude.
 
+[1.1.6 Cablagem de IA](./ex5.md){target="_blank"}
+
+Neste exercício, você explorará as habilidades da Agent Orchestrator usando o novo recurso de IA, no contexto da campanha de lançamento do CitiSignal para Fibre Max.
+
 ![Informantes técnicos](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
 >Em caso de dúvidas, envie um email para **techinsiders@adobe.com** para compartilhar comentários gerais sobre sugestões para conteúdo futuro. Entre em contato diretamente com o Tech Insiders.
 
-[Voltar para Todos os Módulos](../../../overview.md){target="_blank"}
+[Voltar a todos os módulos](../../../overview.md){target="_blank"}
