@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Saiba como configurar a medição no Real-Time CDP Collaboration. Este guia aborda os dados do evento de integração para permitir a criação de relatórios vinculados aos dados de campanha do editor. Uma medição precisa ajuda a analisar o desempenho da campanha e otimizar as estratégias futuras. Assista ao vídeo incorporado para obter etapas e insights detalhados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486351/?captions=por_br&learn=on&enablevpops)
